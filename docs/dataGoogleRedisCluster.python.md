@@ -4,7 +4,7 @@
 
 ### DataGoogleRedisCluster <a name="DataGoogleRedisCluster" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster google_redis_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster google_redis_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer"></a>
 
@@ -40,8 +40,8 @@ dataGoogleRedisCluster.DataGoogleRedisCluster(
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique name of the resource in this scope including project and location using the form: projects/{projectId}/locations/{locationId}/clusters/{clusterId}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer.parameter.region">region</a></code> | <code>str</code> | The name of the region of the Redis cluster. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Unique name of the resource in this scope including project and location using the form: projects/{projectId}/locations/{locationId}/clusters/{clusterId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the region of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
 
 ---
 
@@ -545,7 +545,7 @@ The construct id used in the generated config for the DataGoogleRedisCluster to 
 
 The id of the existing DataGoogleRedisCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -579,6 +579,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.backupCollection">backup_collection</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.crossClusterReplicationConfig">cross_cluster_replication_config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigList">DataGoogleRedisClusterCrossClusterReplicationConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.deletionProtectionEnabled">deletion_protection_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.discoveryEndpoints">discovery_endpoints</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsList">DataGoogleRedisClusterDiscoveryEndpointsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
@@ -799,6 +800,16 @@ cross_cluster_replication_config: DataGoogleRedisClusterCrossClusterReplicationC
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigList">DataGoogleRedisClusterCrossClusterReplicationConfigList</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1269,8 +1280,8 @@ dataGoogleRedisCluster.DataGoogleRedisClusterConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.name">name</a></code> | <code>str</code> | Unique name of the resource in this scope including project and location using the form: projects/{projectId}/locations/{locationId}/clusters/{clusterId}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.region">region</a></code> | <code>str</code> | The name of the region of the Redis cluster. |
 
 ---
@@ -1355,7 +1366,7 @@ name: str
 
 Unique name of the resource in this scope including project and location using the form: projects/{projectId}/locations/{locationId}/clusters/{clusterId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
 
 ---
 
@@ -1367,7 +1378,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1382,7 +1393,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}.
 
 ---
 
@@ -1396,7 +1407,7 @@ region: str
 
 The name of the region of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
 
 ---
 

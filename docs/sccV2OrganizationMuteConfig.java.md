@@ -4,7 +4,7 @@
 
 ### SccV2OrganizationMuteConfig <a name="SccV2OrganizationMuteConfig" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer"></a>
 
@@ -23,6 +23,7 @@ SccV2OrganizationMuteConfig.Builder.create(Construct scope, java.lang.String id)
     .muteConfigId(java.lang.String)
     .organization(java.lang.String)
     .type(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
@@ -45,8 +46,9 @@ SccV2OrganizationMuteConfig.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.muteConfigId">muteConfigId</a></code> | <code>java.lang.String</code> | Unique identifier provided by the client within the parent scope. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | The organization whose Cloud Security Command Center the Mute Config lives in. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the mute config. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the mute config. |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | location Id is provided by organization. If not provided, Use global as default. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts">SccV2OrganizationMuteConfigTimeouts</a></code> | timeouts block. |
 
@@ -123,7 +125,7 @@ the scope in which the mute configuration is being created. E.g.,
 If a filter contains project = X but is created under the
 project = Y scope, it might not match any findings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#filter SccV2OrganizationMuteConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#filter SccV2OrganizationMuteConfig#filter}
 
 ---
 
@@ -133,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Unique identifier provided by the client within the parent scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#mute_config_id SccV2OrganizationMuteConfig#mute_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#mute_config_id SccV2OrganizationMuteConfig#mute_config_id}
 
 ---
 
@@ -143,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The organization whose Cloud Security Command Center the Mute Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#organization SccV2OrganizationMuteConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#organization SccV2OrganizationMuteConfig#organization}
 
 ---
 
@@ -153,7 +155,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#type SccV2OrganizationMuteConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#type SccV2OrganizationMuteConfig#type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#deletion_policy SccV2OrganizationMuteConfig#deletion_policy}
 
 ---
 
@@ -163,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#description SccV2OrganizationMuteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#description SccV2OrganizationMuteConfig#description}
 
 ---
 
@@ -171,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -184,7 +203,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 location Id is provided by organization. If not provided, Use global as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#location SccV2OrganizationMuteConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#location SccV2OrganizationMuteConfig#location}
 
 ---
 
@@ -194,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#timeouts SccV2OrganizationMuteConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#timeouts SccV2OrganizationMuteConfig#timeouts}
 
 ---
 
@@ -227,6 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.resetLocation">resetLocation</a></code> | *No description.* |
@@ -557,6 +577,12 @@ public void putTimeouts(SccV2OrganizationMuteConfigTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.resetDescription"></a>
 
 ```java
@@ -684,7 +710,7 @@ The construct id used in the generated config for the SccV2OrganizationMuteConfi
 
 The id of the existing SccV2OrganizationMuteConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -719,6 +745,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeoutsOutputReference">SccV2OrganizationMuteConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.filterInput">filterInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -727,6 +754,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts">SccV2OrganizationMuteConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.filter">filter</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -929,6 +957,16 @@ public java.lang.String getUpdateTime();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.descriptionInput"></a>
 
 ```java
@@ -1003,6 +1041,16 @@ public IResolvable|SccV2OrganizationMuteConfigTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1118,6 +1166,7 @@ SccV2OrganizationMuteConfigConfig.builder()
     .muteConfigId(java.lang.String)
     .organization(java.lang.String)
     .type(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
@@ -1140,8 +1189,9 @@ SccV2OrganizationMuteConfigConfig.builder()
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.muteConfigId">muteConfigId</a></code> | <code>java.lang.String</code> | Unique identifier provided by the client within the parent scope. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | The organization whose Cloud Security Command Center the Mute Config lives in. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the mute config. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the mute config. |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.location">location</a></code> | <code>java.lang.String</code> | location Id is provided by organization. If not provided, Use global as default. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts">SccV2OrganizationMuteConfigTimeouts</a></code> | timeouts block. |
 
@@ -1232,7 +1282,7 @@ the scope in which the mute configuration is being created. E.g.,
 If a filter contains project = X but is created under the
 project = Y scope, it might not match any findings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#filter SccV2OrganizationMuteConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#filter SccV2OrganizationMuteConfig#filter}
 
 ---
 
@@ -1246,7 +1296,7 @@ public java.lang.String getMuteConfigId();
 
 Unique identifier provided by the client within the parent scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#mute_config_id SccV2OrganizationMuteConfig#mute_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#mute_config_id SccV2OrganizationMuteConfig#mute_config_id}
 
 ---
 
@@ -1260,7 +1310,7 @@ public java.lang.String getOrganization();
 
 The organization whose Cloud Security Command Center the Mute Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#organization SccV2OrganizationMuteConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#organization SccV2OrganizationMuteConfig#organization}
 
 ---
 
@@ -1274,7 +1324,28 @@ public java.lang.String getType();
 
 The type of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#type SccV2OrganizationMuteConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#type SccV2OrganizationMuteConfig#type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#deletion_policy SccV2OrganizationMuteConfig#deletion_policy}
 
 ---
 
@@ -1288,7 +1359,7 @@ public java.lang.String getDescription();
 
 A description of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#description SccV2OrganizationMuteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#description SccV2OrganizationMuteConfig#description}
 
 ---
 
@@ -1300,7 +1371,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#id SccV2OrganizationMuteConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1317,7 +1388,7 @@ public java.lang.String getLocation();
 
 location Id is provided by organization. If not provided, Use global as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#location SccV2OrganizationMuteConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#location SccV2OrganizationMuteConfig#location}
 
 ---
 
@@ -1331,7 +1402,7 @@ public SccV2OrganizationMuteConfigTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#timeouts SccV2OrganizationMuteConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#timeouts SccV2OrganizationMuteConfig#timeouts}
 
 ---
 
@@ -1353,9 +1424,9 @@ SccV2OrganizationMuteConfigTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#create SccV2OrganizationMuteConfig#create}. |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#delete SccV2OrganizationMuteConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#update SccV2OrganizationMuteConfig#update}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#create SccV2OrganizationMuteConfig#create}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#delete SccV2OrganizationMuteConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#update SccV2OrganizationMuteConfig#update}. |
 
 ---
 
@@ -1367,7 +1438,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#create SccV2OrganizationMuteConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#create SccV2OrganizationMuteConfig#create}.
 
 ---
 
@@ -1379,7 +1450,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#delete SccV2OrganizationMuteConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#delete SccV2OrganizationMuteConfig#delete}.
 
 ---
 
@@ -1391,7 +1462,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config#update SccV2OrganizationMuteConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_organization_mute_config#update SccV2OrganizationMuteConfig#update}.
 
 ---
 

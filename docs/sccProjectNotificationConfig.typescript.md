@@ -4,7 +4,7 @@
 
 ### SccProjectNotificationConfig <a name="SccProjectNotificationConfig" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config google_scc_project_notification_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config google_scc_project_notification_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.putStreamingConfig">putStreamingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.resetProject">resetProject</a></code> | *No description.* |
@@ -416,6 +417,12 @@ public putTimeouts(value: SccProjectNotificationConfigTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.resetDescription"></a>
 
 ```typescript
@@ -543,7 +550,7 @@ The construct id used in the generated config for the SccProjectNotificationConf
 
 The id of the existing SccProjectNotificationConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,6 +585,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.streamingConfig">streamingConfig</a></code> | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigStreamingConfigOutputReference">SccProjectNotificationConfigStreamingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeoutsOutputReference">SccProjectNotificationConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.configIdInput">configIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
@@ -585,6 +593,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.streamingConfigInput">streamingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigStreamingConfig">SccProjectNotificationConfigStreamingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts">SccProjectNotificationConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.configId">configId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -784,6 +793,16 @@ public readonly configIdInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.descriptionInput"></a>
 
 ```typescript
@@ -848,6 +867,16 @@ public readonly timeoutsInput: IResolvable | SccProjectNotificationConfigTimeout
 
 ```typescript
 public readonly configId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -938,9 +967,10 @@ const sccProjectNotificationConfigConfig: sccProjectNotificationConfig.SccProjec
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.configId">configId</a></code> | <code>string</code> | This must be unique within the organization. |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.pubsubTopic">pubsubTopic</a></code> | <code>string</code> | The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]". |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.streamingConfig">streamingConfig</a></code> | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigStreamingConfig">SccProjectNotificationConfigStreamingConfig</a></code> | streaming_config block. |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.description">description</a></code> | <code>string</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#id SccProjectNotificationConfig#id}. |
-| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#project SccProjectNotificationConfig#project}. |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#id SccProjectNotificationConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#project SccProjectNotificationConfig#project}. |
 | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts">SccProjectNotificationConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1025,7 +1055,7 @@ public readonly configId: string;
 
 This must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#config_id SccProjectNotificationConfig#config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#config_id SccProjectNotificationConfig#config_id}
 
 ---
 
@@ -1039,7 +1069,7 @@ public readonly pubsubTopic: string;
 
 The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#pubsub_topic SccProjectNotificationConfig#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#pubsub_topic SccProjectNotificationConfig#pubsub_topic}
 
 ---
 
@@ -1053,7 +1083,29 @@ public readonly streamingConfig: SccProjectNotificationConfigStreamingConfig;
 
 streaming_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#streaming_config SccProjectNotificationConfig#streaming_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#streaming_config SccProjectNotificationConfig#streaming_config}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#deletion_policy SccProjectNotificationConfig#deletion_policy}
 
 ---
 
@@ -1067,7 +1119,7 @@ public readonly description: string;
 
 The description of the notification config (max of 1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#description SccProjectNotificationConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#description SccProjectNotificationConfig#description}
 
 ---
 
@@ -1079,7 +1131,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#id SccProjectNotificationConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#id SccProjectNotificationConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1146,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#project SccProjectNotificationConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#project SccProjectNotificationConfig#project}.
 
 ---
 
@@ -1108,7 +1160,7 @@ public readonly timeouts: SccProjectNotificationConfigTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#timeouts SccProjectNotificationConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#timeouts SccProjectNotificationConfig#timeouts}
 
 ---
 
@@ -1165,7 +1217,7 @@ See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#filter SccProjectNotificationConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#filter SccProjectNotificationConfig#filter}
 
 ---
 
@@ -1183,9 +1235,9 @@ const sccProjectNotificationConfigTimeouts: sccProjectNotificationConfig.SccProj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#create SccProjectNotificationConfig#create}. |
-| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#delete SccProjectNotificationConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#update SccProjectNotificationConfig#update}. |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#create SccProjectNotificationConfig#create}. |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#delete SccProjectNotificationConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#update SccProjectNotificationConfig#update}. |
 
 ---
 
@@ -1197,7 +1249,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#create SccProjectNotificationConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#create SccProjectNotificationConfig#create}.
 
 ---
 
@@ -1209,7 +1261,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#delete SccProjectNotificationConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#delete SccProjectNotificationConfig#delete}.
 
 ---
 
@@ -1221,7 +1273,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_notification_config#update SccProjectNotificationConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_notification_config#update SccProjectNotificationConfig#update}.
 
 ---
 

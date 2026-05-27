@@ -4,7 +4,7 @@
 
 ### TagsTagKey <a name="TagsTagKey" id="@cdktn/provider-google.tagsTagKey.TagsTagKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key google_tags_tag_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key google_tags_tag_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetAllowedValuesRegex">resetAllowedValuesRegex</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetPurpose">resetPurpose</a></code> | *No description.* |
@@ -411,6 +412,12 @@ public putTimeouts(value: TagsTagKeyTimeouts): void
 public resetAllowedValuesRegex(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.resetDescription"></a>
 
 ```typescript
@@ -544,7 +551,7 @@ The construct id used in the generated config for the TagsTagKey to import.
 
 The id of the existing TagsTagKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -580,6 +587,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeoutsOutputReference">TagsTagKeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.allowedValuesRegexInput">allowedValuesRegexInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
@@ -588,6 +596,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.shortNameInput">shortNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts">TagsTagKeyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.allowedValuesRegex">allowedValuesRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.parent">parent</a></code> | <code>string</code> | *No description.* |
@@ -799,6 +808,16 @@ public readonly allowedValuesRegexInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.property.descriptionInput"></a>
 
 ```typescript
@@ -873,6 +892,16 @@ public readonly timeoutsInput: IResolvable | TagsTagKeyTimeouts;
 
 ```typescript
 public readonly allowedValuesRegex: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -983,8 +1012,9 @@ const tagsTagKeyConfig: tagsTagKey.TagsTagKeyConfig = { ... }
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.parent">parent</a></code> | <code>string</code> | Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.shortName">shortName</a></code> | <code>string</code> | Input only. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.allowedValuesRegex">allowedValuesRegex</a></code> | <code>string</code> | Regular expression constraint for dynamic tag values, follows RE2 syntax. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.description">description</a></code> | <code>string</code> | User-assigned description of the TagKey. Must not exceed 256 characters. |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#id TagsTagKey#id}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#id TagsTagKey#id}. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.purpose">purpose</a></code> | <code>string</code> | Optional. A purpose cannot be changed once set. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.purposeData">purposeData</a></code> | <code>{[ key: string ]: string}</code> | Optional. Purpose data cannot be changed once set. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts">TagsTagKeyTimeouts</a></code> | timeouts block. |
@@ -1071,7 +1101,7 @@ public readonly parent: string;
 
 Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
 
 ---
 
@@ -1089,7 +1119,7 @@ The user friendly name for a TagKey. The short name should be unique for TagKeys
 
 The short name can have a maximum length of 256 characters. The permitted character set for the shortName includes all UTF-8 encoded Unicode characters except single quotes ('), double quotes ("), backslashes (\\), and forward slashes (/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
 
 ---
 
@@ -1105,7 +1135,29 @@ Regular expression constraint for dynamic tag values, follows RE2 syntax.
 
 If present, it implicitly allows dynamic values (constrained by the regex).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#allowed_values_regex TagsTagKey#allowed_values_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#allowed_values_regex TagsTagKey#allowed_values_regex}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#deletion_policy TagsTagKey#deletion_policy}
 
 ---
 
@@ -1119,7 +1171,7 @@ public readonly description: string;
 
 User-assigned description of the TagKey. Must not exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#description TagsTagKey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#description TagsTagKey#description}
 
 ---
 
@@ -1131,7 +1183,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#id TagsTagKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#id TagsTagKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1150,7 +1202,7 @@ Optional. A purpose cannot be changed once set.
 
 A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL", "DATA_GOVERNANCE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
 
 ---
 
@@ -1166,7 +1218,7 @@ Optional. Purpose data cannot be changed once set.
 
 Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
 
 ---
 
@@ -1180,7 +1232,7 @@ public readonly timeouts: TagsTagKeyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
 
 ---
 
@@ -1198,9 +1250,9 @@ const tagsTagKeyTimeouts: tagsTagKey.TagsTagKeyTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#create TagsTagKey#create}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#update TagsTagKey#update}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#create TagsTagKey#create}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#update TagsTagKey#update}. |
 
 ---
 
@@ -1212,7 +1264,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#create TagsTagKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#create TagsTagKey#create}.
 
 ---
 
@@ -1224,7 +1276,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}.
 
 ---
 
@@ -1236,7 +1288,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_key#update TagsTagKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_tag_key#update TagsTagKey#update}.
 
 ---
 

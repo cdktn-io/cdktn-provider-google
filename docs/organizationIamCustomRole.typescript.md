@@ -4,7 +4,7 @@
 
 ### OrganizationIamCustomRole <a name="OrganizationIamCustomRole" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role google_organization_iam_custom_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role google_organization_iam_custom_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.resetStage">resetStage</a></code> | *No description.* |
@@ -389,6 +390,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.resetDescription"></a>
 
 ```typescript
@@ -510,7 +517,7 @@ The construct id used in the generated config for the OrganizationIamCustomRole 
 
 The id of the existing OrganizationIamCustomRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -542,6 +549,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.deleted">deleted</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.orgIdInput">orgIdInput</a></code> | <code>string</code> | *No description.* |
@@ -549,6 +557,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.roleIdInput">roleIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.stageInput">stageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.orgId">orgId</a></code> | <code>string</code> | *No description.* |
@@ -721,6 +730,16 @@ public readonly name: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.descriptionInput"></a>
 
 ```typescript
@@ -785,6 +804,16 @@ public readonly stageInput: string;
 
 ```typescript
 public readonly titleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRole.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -906,8 +935,9 @@ const organizationIamCustomRoleConfig: organizationIamCustomRole.OrganizationIam
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.permissions">permissions</a></code> | <code>string[]</code> | The names of the permissions this role grants when bound in an IAM policy. |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.roleId">roleId</a></code> | <code>string</code> | The role id to use for this role. |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.title">title</a></code> | <code>string</code> | A human-readable title for the role. |
+| <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.description">description</a></code> | <code>string</code> | A human-readable description for the role. |
-| <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#id OrganizationIamCustomRole#id}. |
+| <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#id OrganizationIamCustomRole#id}. |
 | <code><a href="#@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.stage">stage</a></code> | <code>string</code> | The current launch stage of the role. Defaults to GA. |
 
 ---
@@ -992,7 +1022,7 @@ public readonly orgId: string;
 
 The numeric ID of the organization in which you want to create a custom role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#org_id OrganizationIamCustomRole#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#org_id OrganizationIamCustomRole#org_id}
 
 ---
 
@@ -1008,7 +1038,7 @@ The names of the permissions this role grants when bound in an IAM policy.
 
 At least one permission must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#permissions OrganizationIamCustomRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#permissions OrganizationIamCustomRole#permissions}
 
 ---
 
@@ -1022,7 +1052,7 @@ public readonly roleId: string;
 
 The role id to use for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#role_id OrganizationIamCustomRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#role_id OrganizationIamCustomRole#role_id}
 
 ---
 
@@ -1036,7 +1066,29 @@ public readonly title: string;
 
 A human-readable title for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#title OrganizationIamCustomRole#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#title OrganizationIamCustomRole#title}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.organizationIamCustomRole.OrganizationIamCustomRoleConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#deletion_policy OrganizationIamCustomRole#deletion_policy}
 
 ---
 
@@ -1050,7 +1102,7 @@ public readonly description: string;
 
 A human-readable description for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#description OrganizationIamCustomRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#description OrganizationIamCustomRole#description}
 
 ---
 
@@ -1062,7 +1114,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#id OrganizationIamCustomRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#id OrganizationIamCustomRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1079,7 +1131,7 @@ public readonly stage: string;
 
 The current launch stage of the role. Defaults to GA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_custom_role#stage OrganizationIamCustomRole#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_iam_custom_role#stage OrganizationIamCustomRole#stage}
 
 ---
 

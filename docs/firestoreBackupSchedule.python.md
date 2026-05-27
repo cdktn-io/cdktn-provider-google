@@ -4,7 +4,7 @@
 
 ### FirestoreBackupSchedule <a name="FirestoreBackupSchedule" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer"></a>
 
@@ -24,6 +24,7 @@ firestoreBackupSchedule.FirestoreBackupSchedule(
   retention: str,
   daily_recurrence: FirestoreBackupScheduleDailyRecurrence = None,
   database: str = None,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: FirestoreBackupScheduleTimeouts = None,
@@ -45,8 +46,9 @@ firestoreBackupSchedule.FirestoreBackupSchedule(
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.retention">retention</a></code> | <code>str</code> | At what relative time in the future, compared to its creation time, the backup should be deleted, e.g. keep backups for 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s". |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.dailyRecurrence">daily_recurrence</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleDailyRecurrence">FirestoreBackupScheduleDailyRecurrence</a></code> | daily_recurrence block. |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.database">database</a></code> | <code>str</code> | The Firestore database id. Defaults to '"(default)"'. |
-| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}. |
-| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts">FirestoreBackupScheduleTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.weeklyRecurrence">weekly_recurrence</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleWeeklyRecurrence">FirestoreBackupScheduleWeeklyRecurrence</a></code> | weekly_recurrence block. |
 
@@ -120,7 +122,7 @@ At what relative time in the future, compared to its creation time, the backup s
 
 You can set this to a value up to 14 weeks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#retention FirestoreBackupSchedule#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#retention FirestoreBackupSchedule#retention}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 daily_recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#daily_recurrence FirestoreBackupSchedule#daily_recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#daily_recurrence FirestoreBackupSchedule#daily_recurrence}
 
 ---
 
@@ -140,7 +142,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#database FirestoreBackupSchedule#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#database FirestoreBackupSchedule#database}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#deletion_policy FirestoreBackupSchedule#deletion_policy}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +178,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}.
 
 ---
 
@@ -169,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#timeouts FirestoreBackupSchedule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#timeouts FirestoreBackupSchedule#timeouts}
 
 ---
 
@@ -179,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 weekly_recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#weekly_recurrence FirestoreBackupSchedule#weekly_recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#weekly_recurrence FirestoreBackupSchedule#weekly_recurrence}
 
 ---
 
@@ -216,6 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.putWeeklyRecurrence">put_weekly_recurrence</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetDailyRecurrence">reset_daily_recurrence</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetDatabase">reset_database</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -591,7 +611,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#create FirestoreBackupSchedule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#create FirestoreBackupSchedule#create}.
 
 ---
 
@@ -599,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#delete FirestoreBackupSchedule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#delete FirestoreBackupSchedule#delete}.
 
 ---
 
@@ -607,7 +627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#update FirestoreBackupSchedule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#update FirestoreBackupSchedule#update}.
 
 ---
 
@@ -625,7 +645,7 @@ def put_weekly_recurrence(
 
 The day of week to run. Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#day FirestoreBackupSchedule#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#day FirestoreBackupSchedule#day}
 
 ---
 
@@ -639,6 +659,12 @@ def reset_daily_recurrence() -> None
 
 ```python
 def reset_database() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.resetId"></a>
@@ -779,7 +805,7 @@ The construct id used in the generated config for the FirestoreBackupSchedule to
 
 The id of the existing FirestoreBackupSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,12 +841,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.weeklyRecurrence">weekly_recurrence</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleWeeklyRecurrenceOutputReference">FirestoreBackupScheduleWeeklyRecurrenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.dailyRecurrenceInput">daily_recurrence_input</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleDailyRecurrence">FirestoreBackupScheduleDailyRecurrence</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.retentionInput">retention_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts">FirestoreBackupScheduleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.weeklyRecurrenceInput">weekly_recurrence_input</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleWeeklyRecurrence">FirestoreBackupScheduleWeeklyRecurrence</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.retention">retention</a></code> | <code>str</code> | *No description.* |
@@ -1029,6 +1057,16 @@ database_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.idInput"></a>
 
 ```python
@@ -1083,6 +1121,16 @@ weekly_recurrence_input: FirestoreBackupScheduleWeeklyRecurrence
 
 ```python
 database: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1157,6 +1205,7 @@ firestoreBackupSchedule.FirestoreBackupScheduleConfig(
   retention: str,
   daily_recurrence: FirestoreBackupScheduleDailyRecurrence = None,
   database: str = None,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: FirestoreBackupScheduleTimeouts = None,
@@ -1178,8 +1227,9 @@ firestoreBackupSchedule.FirestoreBackupScheduleConfig(
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.retention">retention</a></code> | <code>str</code> | At what relative time in the future, compared to its creation time, the backup should be deleted, e.g. keep backups for 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s". |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.dailyRecurrence">daily_recurrence</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleDailyRecurrence">FirestoreBackupScheduleDailyRecurrence</a></code> | daily_recurrence block. |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.database">database</a></code> | <code>str</code> | The Firestore database id. Defaults to '"(default)"'. |
-| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}. |
-| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts">FirestoreBackupScheduleTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.weeklyRecurrence">weekly_recurrence</a></code> | <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleWeeklyRecurrence">FirestoreBackupScheduleWeeklyRecurrence</a></code> | weekly_recurrence block. |
 
@@ -1267,7 +1317,7 @@ At what relative time in the future, compared to its creation time, the backup s
 
 You can set this to a value up to 14 weeks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#retention FirestoreBackupSchedule#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#retention FirestoreBackupSchedule#retention}
 
 ---
 
@@ -1281,7 +1331,7 @@ daily_recurrence: FirestoreBackupScheduleDailyRecurrence
 
 daily_recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#daily_recurrence FirestoreBackupSchedule#daily_recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#daily_recurrence FirestoreBackupSchedule#daily_recurrence}
 
 ---
 
@@ -1295,7 +1345,28 @@ database: str
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#database FirestoreBackupSchedule#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#database FirestoreBackupSchedule#database}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#deletion_policy FirestoreBackupSchedule#deletion_policy}
 
 ---
 
@@ -1307,7 +1378,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1322,7 +1393,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}.
 
 ---
 
@@ -1336,7 +1407,7 @@ timeouts: FirestoreBackupScheduleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#timeouts FirestoreBackupSchedule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#timeouts FirestoreBackupSchedule#timeouts}
 
 ---
 
@@ -1350,7 +1421,7 @@ weekly_recurrence: FirestoreBackupScheduleWeeklyRecurrence
 
 weekly_recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#weekly_recurrence FirestoreBackupSchedule#weekly_recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#weekly_recurrence FirestoreBackupSchedule#weekly_recurrence}
 
 ---
 
@@ -1383,9 +1454,9 @@ firestoreBackupSchedule.FirestoreBackupScheduleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#create FirestoreBackupSchedule#create}. |
-| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#delete FirestoreBackupSchedule#delete}. |
-| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#update FirestoreBackupSchedule#update}. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#create FirestoreBackupSchedule#create}. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#delete FirestoreBackupSchedule#delete}. |
+| <code><a href="#@cdktn/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#update FirestoreBackupSchedule#update}. |
 
 ---
 
@@ -1397,7 +1468,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#create FirestoreBackupSchedule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#create FirestoreBackupSchedule#create}.
 
 ---
 
@@ -1409,7 +1480,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#delete FirestoreBackupSchedule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#delete FirestoreBackupSchedule#delete}.
 
 ---
 
@@ -1421,7 +1492,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#update FirestoreBackupSchedule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#update FirestoreBackupSchedule#update}.
 
 ---
 
@@ -1455,7 +1526,7 @@ day: str
 
 The day of week to run. Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule#day FirestoreBackupSchedule#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_backup_schedule#day FirestoreBackupSchedule#day}
 
 ---
 

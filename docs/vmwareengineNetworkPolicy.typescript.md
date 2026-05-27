@@ -4,7 +4,7 @@
 
 ### VmwareengineNetworkPolicy <a name="VmwareengineNetworkPolicy" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.putExternalIp">putExternalIp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.putInternetAccess">putInternetAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.resetExternalIp">resetExternalIp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.resetId">resetId</a></code> | *No description.* |
@@ -431,6 +432,12 @@ public putTimeouts(value: VmwareengineNetworkPolicyTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.resetDescription"></a>
 
 ```typescript
@@ -570,7 +577,7 @@ The construct id used in the generated config for the VmwareengineNetworkPolicy 
 
 The id of the existing VmwareengineNetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -607,6 +614,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.vmwareEngineNetworkCanonical">vmwareEngineNetworkCanonical</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.edgeServicesCidrInput">edgeServicesCidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.externalIpInput">externalIpInput</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIp">VmwareengineNetworkPolicyExternalIp</a></code> | *No description.* |
@@ -617,6 +625,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts">VmwareengineNetworkPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.vmwareEngineNetworkInput">vmwareEngineNetworkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.edgeServicesCidr">edgeServicesCidr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -839,6 +848,16 @@ public readonly vmwareEngineNetworkCanonical: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.descriptionInput"></a>
 
 ```typescript
@@ -933,6 +952,16 @@ public readonly timeoutsInput: IResolvable | VmwareengineNetworkPolicyTimeouts;
 
 ```typescript
 public readonly vmwareEngineNetworkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -1054,11 +1083,12 @@ const vmwareengineNetworkPolicyConfig: vmwareengineNetworkPolicy.VmwareengineNet
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.location">location</a></code> | <code>string</code> | The resource name of the location (region) to create the new network policy in. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.name">name</a></code> | <code>string</code> | The ID of the Network Policy. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.vmwareEngineNetwork">vmwareEngineNetwork</a></code> | <code>string</code> | The relative resource name of the VMware Engine network. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.description">description</a></code> | <code>string</code> | User-provided description for this network policy. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.externalIp">externalIp</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIp">VmwareengineNetworkPolicyExternalIp</a></code> | external_ip block. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#id VmwareengineNetworkPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#id VmwareengineNetworkPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.internetAccess">internetAccess</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccess">VmwareengineNetworkPolicyInternetAccess</a></code> | internet_access block. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#project VmwareengineNetworkPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#project VmwareengineNetworkPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts">VmwareengineNetworkPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1146,7 +1176,7 @@ IP address range in CIDR notation used to create internet access and external IP
 An RFC 1918 CIDR block, with a "/26" prefix, is required. The range cannot overlap with any
 prefixes either in the consumer VPC network or in use by the private clouds attached to that VPC network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#edge_services_cidr VmwareengineNetworkPolicy#edge_services_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#edge_services_cidr VmwareengineNetworkPolicy#edge_services_cidr}
 
 ---
 
@@ -1163,7 +1193,7 @@ The resource name of the location (region) to create the new network policy in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-central1
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#location VmwareengineNetworkPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#location VmwareengineNetworkPolicy#location}
 
 ---
 
@@ -1177,7 +1207,7 @@ public readonly name: string;
 
 The ID of the Network Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#name VmwareengineNetworkPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#name VmwareengineNetworkPolicy#name}
 
 ---
 
@@ -1195,7 +1225,29 @@ Specify the name in the following form:
 projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId} where {project}
 can either be a project number or a project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#vmware_engine_network VmwareengineNetworkPolicy#vmware_engine_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#vmware_engine_network VmwareengineNetworkPolicy#vmware_engine_network}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#deletion_policy VmwareengineNetworkPolicy#deletion_policy}
 
 ---
 
@@ -1209,7 +1261,7 @@ public readonly description: string;
 
 User-provided description for this network policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#description VmwareengineNetworkPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#description VmwareengineNetworkPolicy#description}
 
 ---
 
@@ -1223,7 +1275,7 @@ public readonly externalIp: VmwareengineNetworkPolicyExternalIp;
 
 external_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#external_ip VmwareengineNetworkPolicy#external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#external_ip VmwareengineNetworkPolicy#external_ip}
 
 ---
 
@@ -1235,7 +1287,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#id VmwareengineNetworkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#id VmwareengineNetworkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1252,7 +1304,7 @@ public readonly internetAccess: VmwareengineNetworkPolicyInternetAccess;
 
 internet_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#internet_access VmwareengineNetworkPolicy#internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#internet_access VmwareengineNetworkPolicy#internet_access}
 
 ---
 
@@ -1264,7 +1316,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#project VmwareengineNetworkPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#project VmwareengineNetworkPolicy#project}.
 
 ---
 
@@ -1278,7 +1330,7 @@ public readonly timeouts: VmwareengineNetworkPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#timeouts VmwareengineNetworkPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#timeouts VmwareengineNetworkPolicy#timeouts}
 
 ---
 
@@ -1310,7 +1362,7 @@ public readonly enabled: boolean | IResolvable;
 
 True if the service is enabled; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#enabled VmwareengineNetworkPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#enabled VmwareengineNetworkPolicy#enabled}
 
 ---
 
@@ -1342,7 +1394,7 @@ public readonly enabled: boolean | IResolvable;
 
 True if the service is enabled; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#enabled VmwareengineNetworkPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#enabled VmwareengineNetworkPolicy#enabled}
 
 ---
 
@@ -1360,9 +1412,9 @@ const vmwareengineNetworkPolicyTimeouts: vmwareengineNetworkPolicy.VmwareengineN
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#create VmwareengineNetworkPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#delete VmwareengineNetworkPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#update VmwareengineNetworkPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#create VmwareengineNetworkPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#delete VmwareengineNetworkPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#update VmwareengineNetworkPolicy#update}. |
 
 ---
 
@@ -1374,7 +1426,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#create VmwareengineNetworkPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#create VmwareengineNetworkPolicy#create}.
 
 ---
 
@@ -1386,7 +1438,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#delete VmwareengineNetworkPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#delete VmwareengineNetworkPolicy#delete}.
 
 ---
 
@@ -1398,7 +1450,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_policy#update VmwareengineNetworkPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_policy#update VmwareengineNetworkPolicy#update}.
 
 ---
 

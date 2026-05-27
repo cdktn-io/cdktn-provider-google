@@ -4,7 +4,7 @@
 
 ### ContactCenterInsightsView <a name="ContactCenterInsightsView" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view google_contact_center_insights_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view google_contact_center_insights_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.resetProject">ResetProject</a></code> | *No description.* |
@@ -404,6 +405,12 @@ func PutTimeouts(value ContactCenterInsightsViewTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.resetDisplayName"></a>
 
 ```go
@@ -537,7 +544,7 @@ The construct id used in the generated config for the ContactCenterInsightsView 
 
 The id of the existing ContactCenterInsightsView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -571,12 +578,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeoutsOutputReference">ContactCenterInsightsViewTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.location">Location</a></code> | <code>*string</code> | *No description.* |
@@ -767,6 +776,16 @@ func UpdateTime() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.displayNameInput"></a>
 
 ```go
@@ -821,6 +840,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func ValueInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsView.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -913,6 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterins
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Location: *string,
+	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
@@ -933,9 +963,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterins
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.location">Location</a></code> | <code>*string</code> | Location of the resource. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The human-readable display name of the view. |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#id ContactCenterInsightsView#id}. |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#project ContactCenterInsightsView#project}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#id ContactCenterInsightsView#id}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#project ContactCenterInsightsView#project}. |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts">ContactCenterInsightsViewTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.value">Value</a></code> | <code>*string</code> | A filter to reduce conversation results to a specific subset. Refer to https://cloud.google.com/contact-center/insights/docs/filtering for details. |
 
@@ -1021,7 +1052,28 @@ Location *string
 
 Location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#location ContactCenterInsightsView#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#location ContactCenterInsightsView#location}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#deletion_policy ContactCenterInsightsView#deletion_policy}
 
 ---
 
@@ -1035,7 +1087,7 @@ DisplayName *string
 
 The human-readable display name of the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#display_name ContactCenterInsightsView#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#display_name ContactCenterInsightsView#display_name}
 
 ---
 
@@ -1047,7 +1099,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#id ContactCenterInsightsView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#id ContactCenterInsightsView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1062,7 +1114,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#project ContactCenterInsightsView#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#project ContactCenterInsightsView#project}.
 
 ---
 
@@ -1076,7 +1128,7 @@ Timeouts ContactCenterInsightsViewTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#timeouts ContactCenterInsightsView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#timeouts ContactCenterInsightsView#timeouts}
 
 ---
 
@@ -1090,7 +1142,7 @@ Value *string
 
 A filter to reduce conversation results to a specific subset. Refer to https://cloud.google.com/contact-center/insights/docs/filtering for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#value ContactCenterInsightsView#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#value ContactCenterInsightsView#value}
 
 ---
 
@@ -1112,9 +1164,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterins
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#create ContactCenterInsightsView#create}. |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#delete ContactCenterInsightsView#delete}. |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#update ContactCenterInsightsView#update}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#create ContactCenterInsightsView#create}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#delete ContactCenterInsightsView#delete}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#update ContactCenterInsightsView#update}. |
 
 ---
 
@@ -1126,7 +1178,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#create ContactCenterInsightsView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#create ContactCenterInsightsView#create}.
 
 ---
 
@@ -1138,7 +1190,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#delete ContactCenterInsightsView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#delete ContactCenterInsightsView#delete}.
 
 ---
 
@@ -1150,7 +1202,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_view#update ContactCenterInsightsView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/contact_center_insights_view#update ContactCenterInsightsView#update}.
 
 ---
 

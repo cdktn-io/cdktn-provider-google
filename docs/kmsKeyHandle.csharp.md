@@ -4,7 +4,7 @@
 
 ### KmsKeyHandle <a name="KmsKeyHandle" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle google_kms_key_handle}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle google_kms_key_handle}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the KmsKeyHandle to import.
 
 The id of the existing KmsKeyHandle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,8 +899,8 @@ new KmsKeyHandleConfig {
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.location">Location</a></code> | <code>string</code> | The location for the KeyHandle. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.name">Name</a></code> | <code>string</code> | The resource name for the KeyHandle. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.resourceTypeSelector">ResourceTypeSelector</a></code> | <code>string</code> | Selector of the resource type where we want to protect resources. For example, 'storage.googleapis.com/Bucket'. |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#id KmsKeyHandle#id}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#project KmsKeyHandle#project}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#id KmsKeyHandle#id}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#project KmsKeyHandle#project}. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -985,7 +985,7 @@ public string Location { get; set; }
 
 The location for the KeyHandle. A full list of valid locations can be found by running 'gcloud kms locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#location KmsKeyHandle#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#location KmsKeyHandle#location}
 
 ---
 
@@ -999,7 +999,7 @@ public string Name { get; set; }
 
 The resource name for the KeyHandle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#name KmsKeyHandle#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#name KmsKeyHandle#name}
 
 ---
 
@@ -1013,7 +1013,7 @@ public string ResourceTypeSelector { get; set; }
 
 Selector of the resource type where we want to protect resources. For example, 'storage.googleapis.com/Bucket'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#resource_type_selector KmsKeyHandle#resource_type_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#resource_type_selector KmsKeyHandle#resource_type_selector}
 
 ---
 
@@ -1025,7 +1025,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#id KmsKeyHandle#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#id KmsKeyHandle#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1040,7 +1040,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#project KmsKeyHandle#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#project KmsKeyHandle#project}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public KmsKeyHandleTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#timeouts KmsKeyHandle#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#timeouts KmsKeyHandle#timeouts}
 
 ---
 
@@ -1075,8 +1075,8 @@ new KmsKeyHandleTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#create KmsKeyHandle#create}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#delete KmsKeyHandle#delete}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#create KmsKeyHandle#create}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#delete KmsKeyHandle#delete}. |
 
 ---
 
@@ -1088,7 +1088,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#create KmsKeyHandle#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#create KmsKeyHandle#create}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_handle#delete KmsKeyHandle#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_key_handle#delete KmsKeyHandle#delete}.
 
 ---
 

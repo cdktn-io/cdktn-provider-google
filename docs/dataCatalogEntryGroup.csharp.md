@@ -4,7 +4,7 @@
 
 ### DataCatalogEntryGroup <a name="DataCatalogEntryGroup" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.resetId">ResetId</a></code> | *No description.* |
@@ -405,6 +406,12 @@ private void PutTimeouts(DataCatalogEntryGroupTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.resetDescription"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the DataCatalogEntryGroup to i
 
 The id of the existing DataCatalogEntryGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,6 +583,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference">DataCatalogEntryGroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.entryGroupIdInput">EntryGroupIdInput</a></code> | <code>string</code> | *No description.* |
@@ -583,6 +591,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts">DataCatalogEntryGroupTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.entryGroupId">EntryGroupId</a></code> | <code>string</code> | *No description.* |
@@ -754,6 +763,16 @@ public DataCatalogEntryGroupTimeoutsOutputReference Timeouts { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.descriptionInput"></a>
 
 ```csharp
@@ -821,6 +840,16 @@ public IResolvable|DataCatalogEntryGroupTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts">DataCatalogEntryGroupTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -920,6 +949,7 @@ new DataCatalogEntryGroupConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string EntryGroupId,
+    string DeletionPolicy = null,
     string Description = null,
     string DisplayName = null,
     string Id = null,
@@ -941,10 +971,11 @@ new DataCatalogEntryGroupConfig {
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.entryGroupId">EntryGroupId</a></code> | <code>string</code> | The id of the entry group to create. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.description">Description</a></code> | <code>string</code> | Entry group description, which can consist of several sentences or paragraphs that describe entry group contents. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.displayName">DisplayName</a></code> | <code>string</code> | A short name to identify the entry group, for example, "analytics data - jan 2011". |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.region">Region</a></code> | <code>string</code> | EntryGroup location region. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts">DataCatalogEntryGroupTimeouts</a></code> | timeouts block. |
 
@@ -1033,7 +1064,28 @@ The id of the entry group to create.
 The id must begin with a letter or underscore,
 contain only English letters, numbers and underscores, and be at most 64 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#entry_group_id DataCatalogEntryGroup#entry_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#entry_group_id DataCatalogEntryGroup#entry_group_id}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#deletion_policy DataCatalogEntryGroup#deletion_policy}
 
 ---
 
@@ -1047,7 +1099,7 @@ public string Description { get; set; }
 
 Entry group description, which can consist of several sentences or paragraphs that describe entry group contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#description DataCatalogEntryGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#description DataCatalogEntryGroup#description}
 
 ---
 
@@ -1061,7 +1113,7 @@ public string DisplayName { get; set; }
 
 A short name to identify the entry group, for example, "analytics data - jan 2011".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#display_name DataCatalogEntryGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#display_name DataCatalogEntryGroup#display_name}
 
 ---
 
@@ -1073,7 +1125,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1140,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}.
 
 ---
 
@@ -1102,7 +1154,7 @@ public string Region { get; set; }
 
 EntryGroup location region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#region DataCatalogEntryGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#region DataCatalogEntryGroup#region}
 
 ---
 
@@ -1116,7 +1168,7 @@ public DataCatalogEntryGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#timeouts DataCatalogEntryGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#timeouts DataCatalogEntryGroup#timeouts}
 
 ---
 
@@ -1138,9 +1190,9 @@ new DataCatalogEntryGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}. |
 
 ---
 
@@ -1152,7 +1204,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}.
 
 ---
 
@@ -1164,7 +1216,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}.
 
 ---
 
@@ -1176,7 +1228,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}.
 
 ---
 

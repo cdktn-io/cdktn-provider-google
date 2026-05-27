@@ -4,7 +4,7 @@
 
 ### VmwareengineExternalAddress <a name="VmwareengineExternalAddress" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address google_vmwareengine_external_address}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address google_vmwareengine_external_address}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ func PutTimeouts(value VmwareengineExternalAddressTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.resetDescription"></a>
 
 ```go
@@ -523,7 +530,7 @@ The construct id used in the generated config for the VmwareengineExternalAddres
 
 The id of the existing VmwareengineExternalAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,12 +566,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeoutsOutputReference">VmwareengineExternalAddressTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.uid">Uid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.internalIpInput">InternalIpInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.internalIp">InternalIp</a></code> | <code>*string</code> | *No description.* |
@@ -775,6 +784,16 @@ func UpdateTime() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.descriptionInput"></a>
 
 ```go
@@ -832,6 +851,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -923,6 +952,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareengineexte
 	InternalIp: *string,
 	Name: *string,
 	Parent: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts,
@@ -943,8 +973,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareengineexte
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.internalIp">InternalIp</a></code> | <code>*string</code> | The internal IP address of a workload VM. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the external IP Address. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.parent">Parent</a></code> | <code>*string</code> | The resource name of the private cloud to create a new external address in. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.description">Description</a></code> | <code>*string</code> | User-provided description for this resource. |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#id VmwareengineExternalAddress#id}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#id VmwareengineExternalAddress#id}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts">VmwareengineExternalAddressTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1029,7 +1060,7 @@ InternalIp *string
 
 The internal IP address of a workload VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#internal_ip VmwareengineExternalAddress#internal_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#internal_ip VmwareengineExternalAddress#internal_ip}
 
 ---
 
@@ -1043,7 +1074,7 @@ Name *string
 
 The ID of the external IP Address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#name VmwareengineExternalAddress#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#name VmwareengineExternalAddress#name}
 
 ---
 
@@ -1060,7 +1091,28 @@ The resource name of the private cloud to create a new external address in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#parent VmwareengineExternalAddress#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#parent VmwareengineExternalAddress#parent}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#deletion_policy VmwareengineExternalAddress#deletion_policy}
 
 ---
 
@@ -1074,7 +1126,7 @@ Description *string
 
 User-provided description for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#description VmwareengineExternalAddress#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#description VmwareengineExternalAddress#description}
 
 ---
 
@@ -1086,7 +1138,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#id VmwareengineExternalAddress#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#id VmwareengineExternalAddress#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1103,7 +1155,7 @@ Timeouts VmwareengineExternalAddressTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#timeouts VmwareengineExternalAddress#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#timeouts VmwareengineExternalAddress#timeouts}
 
 ---
 
@@ -1125,9 +1177,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareengineexte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#create VmwareengineExternalAddress#create}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#delete VmwareengineExternalAddress#delete}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#update VmwareengineExternalAddress#update}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#create VmwareengineExternalAddress#create}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#delete VmwareengineExternalAddress#delete}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#update VmwareengineExternalAddress#update}. |
 
 ---
 
@@ -1139,7 +1191,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#create VmwareengineExternalAddress#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#create VmwareengineExternalAddress#create}.
 
 ---
 
@@ -1151,7 +1203,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#delete VmwareengineExternalAddress#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#delete VmwareengineExternalAddress#delete}.
 
 ---
 
@@ -1163,7 +1215,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address#update VmwareengineExternalAddress#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_external_address#update VmwareengineExternalAddress#update}.
 
 ---
 

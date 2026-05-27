@@ -4,7 +4,7 @@
 
 ### NetworkServicesMulticastProducerAssociation <a name="NetworkServicesMulticastProducerAssociation" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association google_network_services_multicast_producer_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association google_network_services_multicast_producer_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer"></a>
 
@@ -25,6 +25,7 @@ networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAsso
   multicast_domain_activation: str,
   multicast_producer_association_id: str,
   network: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -48,10 +49,11 @@ networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAsso
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.multicastDomainActivation">multicast_domain_activation</a></code> | <code>str</code> | The resource name of the multicast domain activation that is in the same zone as this multicast producer association. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.multicastProducerAssociationId">multicast_producer_association_id</a></code> | <code>str</code> | A unique name for the multicast producer association. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.network">network</a></code> | <code>str</code> | The resource name of the multicast producer VPC network. Use following format: 'projects/{project}/locations/global/networks/{network}'. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional text description of the multicast producer association. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key-value pairs. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts">NetworkServicesMulticastProducerAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#location NetworkServicesMulticastProducerAssociation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#location NetworkServicesMulticastProducerAssociation#location}
 
 ---
 
@@ -135,7 +137,7 @@ The resource name of the multicast domain activation that is in the same zone as
 Use the following format:
 // 'projects/* /locations/* /multicastDomainActivations/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#multicast_domain_activation NetworkServicesMulticastProducerAssociation#multicast_domain_activation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#multicast_domain_activation NetworkServicesMulticastProducerAssociation#multicast_domain_activation}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -151,7 +153,7 @@ The name is restricted to letters, numbers, and hyphen, with the first
 character a letter, and the last a letter or a number. The name must not
 exceed 48 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#multicast_producer_association_id NetworkServicesMulticastProducerAssociation#multicast_producer_association_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#multicast_producer_association_id NetworkServicesMulticastProducerAssociation#multicast_producer_association_id}
 
 ---
 
@@ -161,7 +163,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the multicast producer VPC network. Use following format: 'projects/{project}/locations/global/networks/{network}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#network NetworkServicesMulticastProducerAssociation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#network NetworkServicesMulticastProducerAssociation#network}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#deletion_policy NetworkServicesMulticastProducerAssociation#deletion_policy}
 
 ---
 
@@ -171,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional text description of the multicast producer association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#description NetworkServicesMulticastProducerAssociation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#description NetworkServicesMulticastProducerAssociation#description}
 
 ---
 
@@ -179,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +214,7 @@ Labels as key-value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#labels NetworkServicesMulticastProducerAssociation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#labels NetworkServicesMulticastProducerAssociation#labels}
 
 ---
 
@@ -203,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}.
 
 ---
 
@@ -213,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#timeouts NetworkServicesMulticastProducerAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#timeouts NetworkServicesMulticastProducerAssociation#timeouts}
 
 ---
 
@@ -246,6 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.resetLabels">reset_labels</a></code> | *No description.* |
@@ -616,7 +636,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}.
 
 ---
 
@@ -624,7 +644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}.
 
 ---
 
@@ -632,9 +652,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.resetDescription"></a>
 
@@ -780,7 +806,7 @@ The construct id used in the generated config for the NetworkServicesMulticastPr
 
 The id of the existing NetworkServicesMulticastProducerAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,6 +844,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeoutsOutputReference">NetworkServicesMulticastProducerAssociationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.uniqueId">unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -827,6 +854,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts">NetworkServicesMulticastProducerAssociationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1060,6 +1088,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.descriptionInput"></a>
 
 ```python
@@ -1147,6 +1185,16 @@ timeouts_input: IResolvable | NetworkServicesMulticastProducerAssociationTimeout
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts">NetworkServicesMulticastProducerAssociationTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1269,6 +1317,7 @@ networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAsso
   multicast_domain_activation: str,
   multicast_producer_association_id: str,
   network: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -1292,10 +1341,11 @@ networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAsso
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.multicastDomainActivation">multicast_domain_activation</a></code> | <code>str</code> | The resource name of the multicast domain activation that is in the same zone as this multicast producer association. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.multicastProducerAssociationId">multicast_producer_association_id</a></code> | <code>str</code> | A unique name for the multicast producer association. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.network">network</a></code> | <code>str</code> | The resource name of the multicast producer VPC network. Use following format: 'projects/{project}/locations/global/networks/{network}'. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.description">description</a></code> | <code>str</code> | An optional text description of the multicast producer association. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key-value pairs. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts">NetworkServicesMulticastProducerAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1380,7 +1430,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#location NetworkServicesMulticastProducerAssociation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#location NetworkServicesMulticastProducerAssociation#location}
 
 ---
 
@@ -1397,7 +1447,7 @@ The resource name of the multicast domain activation that is in the same zone as
 Use the following format:
 // 'projects/* /locations/* /multicastDomainActivations/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#multicast_domain_activation NetworkServicesMulticastProducerAssociation#multicast_domain_activation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#multicast_domain_activation NetworkServicesMulticastProducerAssociation#multicast_domain_activation}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1417,7 +1467,7 @@ The name is restricted to letters, numbers, and hyphen, with the first
 character a letter, and the last a letter or a number. The name must not
 exceed 48 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#multicast_producer_association_id NetworkServicesMulticastProducerAssociation#multicast_producer_association_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#multicast_producer_association_id NetworkServicesMulticastProducerAssociation#multicast_producer_association_id}
 
 ---
 
@@ -1431,7 +1481,28 @@ network: str
 
 The resource name of the multicast producer VPC network. Use following format: 'projects/{project}/locations/global/networks/{network}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#network NetworkServicesMulticastProducerAssociation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#network NetworkServicesMulticastProducerAssociation#network}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#deletion_policy NetworkServicesMulticastProducerAssociation#deletion_policy}
 
 ---
 
@@ -1445,7 +1516,7 @@ description: str
 
 An optional text description of the multicast producer association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#description NetworkServicesMulticastProducerAssociation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#description NetworkServicesMulticastProducerAssociation#description}
 
 ---
 
@@ -1457,7 +1528,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1477,7 +1548,7 @@ Labels as key-value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#labels NetworkServicesMulticastProducerAssociation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#labels NetworkServicesMulticastProducerAssociation#labels}
 
 ---
 
@@ -1489,7 +1560,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}.
 
 ---
 
@@ -1503,7 +1574,7 @@ timeouts: NetworkServicesMulticastProducerAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#timeouts NetworkServicesMulticastProducerAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#timeouts NetworkServicesMulticastProducerAssociation#timeouts}
 
 ---
 
@@ -1536,9 +1607,9 @@ networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAsso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}. |
 
 ---
 
@@ -1550,7 +1621,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}.
 
 ---
 
@@ -1562,7 +1633,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}.
 
 ---
 
@@ -1574,7 +1645,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}.
 
 ---
 

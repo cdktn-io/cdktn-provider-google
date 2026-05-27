@@ -4,7 +4,7 @@
 
 ### ComputeSslPolicy <a name="ComputeSslPolicy" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy google_compute_ssl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy google_compute_ssl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.resetCustomFeatures">resetCustomFeatures</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.resetMinTlsVersion">resetMinTlsVersion</a></code> | *No description.* |
@@ -412,6 +413,12 @@ public putTimeouts(value: ComputeSslPolicyTimeouts): void
 public resetCustomFeatures(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.resetDescription"></a>
 
 ```typescript
@@ -551,7 +558,7 @@ The construct id used in the generated config for the ComputeSslPolicy to import
 
 The id of the existing ComputeSslPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeoutsOutputReference">ComputeSslPolicyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.customFeaturesInput">customFeaturesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.minTlsVersionInput">minTlsVersionInput</a></code> | <code>string</code> | *No description.* |
@@ -595,6 +603,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts">ComputeSslPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.customFeatures">customFeatures</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.minTlsVersion">minTlsVersion</a></code> | <code>string</code> | *No description.* |
@@ -806,6 +815,16 @@ public readonly customFeaturesInput: string[];
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.descriptionInput"></a>
 
 ```typescript
@@ -883,6 +902,16 @@ public readonly customFeatures: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -989,11 +1018,12 @@ const computeSslPolicyConfig: computeSslPolicy.ComputeSslPolicyConfig = { ... }
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.customFeatures">customFeatures</a></code> | <code>string[]</code> | Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.minTlsVersion">minTlsVersion</a></code> | <code>string</code> | The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer. |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.profile">profile</a></code> | <code>string</code> | Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. |
-| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts">ComputeSslPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1086,7 +1116,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#name ComputeSslPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#name ComputeSslPolicy#name}
 
 ---
 
@@ -1110,7 +1140,29 @@ for which ciphers are available to use. **Note**: this argument
 *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#custom_features ComputeSslPolicy#custom_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#custom_features ComputeSslPolicy#custom_features}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#deletion_policy ComputeSslPolicy#deletion_policy}
 
 ---
 
@@ -1124,7 +1176,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#description ComputeSslPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#description ComputeSslPolicy#description}
 
 ---
 
@@ -1136,7 +1188,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1208,7 @@ The minimum version of SSL protocol that can be used by the clients to establish
 When set to'
 TLS_1_3', the profile field must be set to 'RESTRICTED'. Default value: "TLS_1_0" Possible values: ["TLS_1_0", "TLS_1_1", "TLS_1_2", "TLS_1_3"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#min_tls_version ComputeSslPolicy#min_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#min_tls_version ComputeSslPolicy#min_tls_version}
 
 ---
 
@@ -1180,7 +1232,7 @@ for information on what cipher suites each profile provides. If
 If set to 'FIPS_202205', 'minTlsVersion' must also be set to
 'TLS_1_2'. Default value: "COMPATIBLE" Possible values: ["COMPATIBLE", "MODERN", "RESTRICTED", "CUSTOM", "FIPS_202205"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#profile ComputeSslPolicy#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#profile ComputeSslPolicy#profile}
 
 ---
 
@@ -1192,7 +1244,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}.
 
 ---
 
@@ -1206,7 +1258,7 @@ public readonly timeouts: ComputeSslPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#timeouts ComputeSslPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#timeouts ComputeSslPolicy#timeouts}
 
 ---
 
@@ -1224,9 +1276,9 @@ const computeSslPolicyTimeouts: computeSslPolicy.ComputeSslPolicyTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#create ComputeSslPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#delete ComputeSslPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#update ComputeSslPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#create ComputeSslPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#delete ComputeSslPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#update ComputeSslPolicy#update}. |
 
 ---
 
@@ -1238,7 +1290,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#create ComputeSslPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#create ComputeSslPolicy#create}.
 
 ---
 
@@ -1250,7 +1302,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#delete ComputeSslPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#delete ComputeSslPolicy#delete}.
 
 ---
 
@@ -1262,7 +1314,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#update ComputeSslPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#update ComputeSslPolicy#update}.
 
 ---
 

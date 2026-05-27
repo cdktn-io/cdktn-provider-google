@@ -4,7 +4,7 @@
 
 ### LoggingLinkedDataset <a name="LoggingLinkedDataset" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset google_logging_linked_dataset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset google_logging_linked_dataset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer"></a>
 
@@ -22,6 +22,7 @@ LoggingLinkedDataset.Builder.create(Construct scope, java.lang.String id)
     .bucket(java.lang.String)
     .linkId(java.lang.String)
 //  .bigqueryDataset(IResolvable|java.util.List<LoggingLinkedDatasetBigqueryDataset>)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
@@ -44,8 +45,9 @@ LoggingLinkedDataset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | The bucket to which the linked dataset is attached. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.linkId">linkId</a></code> | <code>java.lang.String</code> | The id of the linked dataset. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.bigqueryDataset">bigqueryDataset</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDataset">LoggingLinkedDatasetBigqueryDataset</a>></code> | bigquery_dataset block. |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Describes this link. The maximum length of the description is 8000 characters. |
-| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}. |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the linked dataset. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | The parent of the linked dataset. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts">LoggingLinkedDatasetTimeouts</a></code> | timeouts block. |
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The bucket to which the linked dataset is attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#bucket LoggingLinkedDataset#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#bucket LoggingLinkedDataset#bucket}
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The id of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#link_id LoggingLinkedDataset#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#link_id LoggingLinkedDataset#link_id}
 
 ---
 
@@ -138,7 +140,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 bigquery_dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#bigquery_dataset LoggingLinkedDataset#bigquery_dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#bigquery_dataset LoggingLinkedDataset#bigquery_dataset}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#deletion_policy LoggingLinkedDataset#deletion_policy}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Describes this link. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#description LoggingLinkedDataset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#description LoggingLinkedDataset#description}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +188,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#location LoggingLinkedDataset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#location LoggingLinkedDataset#location}
 
 ---
 
@@ -179,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#parent LoggingLinkedDataset#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#parent LoggingLinkedDataset#parent}
 
 ---
 
@@ -189,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#timeouts LoggingLinkedDataset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#timeouts LoggingLinkedDataset#timeouts}
 
 ---
 
@@ -224,6 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.putBigqueryDataset">putBigqueryDataset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.resetBigqueryDataset">resetBigqueryDataset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.resetLocation">resetLocation</a></code> | *No description.* |
@@ -573,6 +593,12 @@ public void putTimeouts(LoggingLinkedDatasetTimeouts value)
 public void resetBigqueryDataset()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.resetDescription"></a>
 
 ```java
@@ -706,7 +732,7 @@ The construct id used in the generated config for the LoggingLinkedDataset to im
 
 The id of the existing LoggingLinkedDataset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,6 +769,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeoutsOutputReference">LoggingLinkedDatasetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.bigqueryDatasetInput">bigqueryDatasetInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDataset">LoggingLinkedDatasetBigqueryDataset</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.bucketInput">bucketInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.linkIdInput">linkIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -750,6 +777,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.parentInput">parentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts">LoggingLinkedDatasetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.bucket">bucket</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.linkId">linkId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -970,6 +998,16 @@ public java.lang.String getBucketInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.descriptionInput"></a>
 
 ```java
@@ -1034,6 +1072,16 @@ public IResolvable|LoggingLinkedDatasetTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getBucket();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDataset.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1140,6 +1188,7 @@ LoggingLinkedDatasetConfig.builder()
     .bucket(java.lang.String)
     .linkId(java.lang.String)
 //  .bigqueryDataset(IResolvable|java.util.List<LoggingLinkedDatasetBigqueryDataset>)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
@@ -1162,8 +1211,9 @@ LoggingLinkedDatasetConfig.builder()
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | The bucket to which the linked dataset is attached. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.linkId">linkId</a></code> | <code>java.lang.String</code> | The id of the linked dataset. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.bigqueryDataset">bigqueryDataset</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDataset">LoggingLinkedDatasetBigqueryDataset</a>></code> | bigquery_dataset block. |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.description">description</a></code> | <code>java.lang.String</code> | Describes this link. The maximum length of the description is 8000 characters. |
-| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}. |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the linked dataset. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | The parent of the linked dataset. |
 | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts">LoggingLinkedDatasetTimeouts</a></code> | timeouts block. |
@@ -1250,7 +1300,7 @@ public java.lang.String getBucket();
 
 The bucket to which the linked dataset is attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#bucket LoggingLinkedDataset#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#bucket LoggingLinkedDataset#bucket}
 
 ---
 
@@ -1264,7 +1314,7 @@ public java.lang.String getLinkId();
 
 The id of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#link_id LoggingLinkedDataset#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#link_id LoggingLinkedDataset#link_id}
 
 ---
 
@@ -1278,7 +1328,28 @@ public IResolvable|java.util.List<LoggingLinkedDatasetBigqueryDataset> getBigque
 
 bigquery_dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#bigquery_dataset LoggingLinkedDataset#bigquery_dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#bigquery_dataset LoggingLinkedDataset#bigquery_dataset}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#deletion_policy LoggingLinkedDataset#deletion_policy}
 
 ---
 
@@ -1292,7 +1363,7 @@ public java.lang.String getDescription();
 
 Describes this link. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#description LoggingLinkedDataset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#description LoggingLinkedDataset#description}
 
 ---
 
@@ -1304,7 +1375,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1321,7 +1392,7 @@ public java.lang.String getLocation();
 
 The location of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#location LoggingLinkedDataset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#location LoggingLinkedDataset#location}
 
 ---
 
@@ -1335,7 +1406,7 @@ public java.lang.String getParent();
 
 The parent of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#parent LoggingLinkedDataset#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#parent LoggingLinkedDataset#parent}
 
 ---
 
@@ -1349,7 +1420,7 @@ public LoggingLinkedDatasetTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#timeouts LoggingLinkedDataset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#timeouts LoggingLinkedDataset#timeouts}
 
 ---
 
@@ -1370,8 +1441,8 @@ LoggingLinkedDatasetTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#create LoggingLinkedDataset#create}. |
-| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#delete LoggingLinkedDataset#delete}. |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#create LoggingLinkedDataset#create}. |
+| <code><a href="#@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#delete LoggingLinkedDataset#delete}. |
 
 ---
 
@@ -1383,7 +1454,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#create LoggingLinkedDataset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#create LoggingLinkedDataset#create}.
 
 ---
 
@@ -1395,7 +1466,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset#delete LoggingLinkedDataset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_linked_dataset#delete LoggingLinkedDataset#delete}.
 
 ---
 

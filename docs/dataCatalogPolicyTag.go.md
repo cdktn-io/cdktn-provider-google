@@ -4,7 +4,7 @@
 
 ### DataCatalogPolicyTag <a name="DataCatalogPolicyTag" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag google_data_catalog_policy_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag google_data_catalog_policy_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.resetParentPolicyTag">ResetParentPolicyTag</a></code> | *No description.* |
@@ -403,6 +404,12 @@ func PutTimeouts(value DataCatalogPolicyTagTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.resetDescription"></a>
 
 ```go
@@ -530,7 +537,7 @@ The construct id used in the generated config for the DataCatalogPolicyTag to im
 
 The id of the existing DataCatalogPolicyTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -563,12 +570,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.childPolicyTags">ChildPolicyTags</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeoutsOutputReference">DataCatalogPolicyTagTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.parentPolicyTagInput">ParentPolicyTagInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.taxonomyInput">TaxonomyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -749,6 +758,16 @@ func Timeouts() DataCatalogPolicyTagTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.descriptionInput"></a>
 
 ```go
@@ -806,6 +825,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -896,6 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolic
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Taxonomy: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	ParentPolicyTag: *string,
@@ -916,8 +946,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolic
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User defined name of this policy tag. |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.taxonomy">Taxonomy</a></code> | <code>*string</code> | Taxonomy the policy tag is associated with. |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.description">Description</a></code> | <code>*string</code> | Description of this policy tag. |
-| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#id DataCatalogPolicyTag#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#id DataCatalogPolicyTag#id}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.parentPolicyTag">ParentPolicyTag</a></code> | <code>*string</code> | Resource name of this policy tag's parent policy tag. |
 | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts">DataCatalogPolicyTagTimeouts</a></code> | timeouts block. |
 
@@ -1007,7 +1038,7 @@ It must: be unique within the parent
 taxonomy; contain only unicode letters, numbers, underscores, dashes and spaces;
 not start or end with spaces; and be at most 200 bytes long when encoded in UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#display_name DataCatalogPolicyTag#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#display_name DataCatalogPolicyTag#display_name}
 
 ---
 
@@ -1021,7 +1052,28 @@ Taxonomy *string
 
 Taxonomy the policy tag is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#taxonomy DataCatalogPolicyTag#taxonomy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#taxonomy DataCatalogPolicyTag#taxonomy}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#deletion_policy DataCatalogPolicyTag#deletion_policy}
 
 ---
 
@@ -1040,7 +1092,7 @@ newlines, carriage returns and page breaks; and be at most 2000 bytes long when
 encoded in UTF-8. If not set, defaults to an empty description.
 If not set, defaults to an empty description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#description DataCatalogPolicyTag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#description DataCatalogPolicyTag#description}
 
 ---
 
@@ -1052,7 +1104,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#id DataCatalogPolicyTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#id DataCatalogPolicyTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1072,7 +1124,7 @@ Resource name of this policy tag's parent policy tag.
 If empty, it means this policy tag is a top level policy tag.
 If not set, defaults to an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#parent_policy_tag DataCatalogPolicyTag#parent_policy_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#parent_policy_tag DataCatalogPolicyTag#parent_policy_tag}
 
 ---
 
@@ -1086,7 +1138,7 @@ Timeouts DataCatalogPolicyTagTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#timeouts DataCatalogPolicyTag#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#timeouts DataCatalogPolicyTag#timeouts}
 
 ---
 
@@ -1108,9 +1160,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#create DataCatalogPolicyTag#create}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#delete DataCatalogPolicyTag#delete}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#update DataCatalogPolicyTag#update}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#create DataCatalogPolicyTag#create}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#delete DataCatalogPolicyTag#delete}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#update DataCatalogPolicyTag#update}. |
 
 ---
 
@@ -1122,7 +1174,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#create DataCatalogPolicyTag#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#create DataCatalogPolicyTag#create}.
 
 ---
 
@@ -1134,7 +1186,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#delete DataCatalogPolicyTag#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#delete DataCatalogPolicyTag#delete}.
 
 ---
 
@@ -1146,7 +1198,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_policy_tag#update DataCatalogPolicyTag#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_policy_tag#update DataCatalogPolicyTag#update}.
 
 ---
 

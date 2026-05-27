@@ -4,7 +4,7 @@
 
 ### StorageDefaultObjectAccessControl <a name="StorageDefaultObjectAccessControl" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer"></a>
 
@@ -24,6 +24,7 @@ storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl(
   bucket: str,
   entity: str,
   role: str,
+  deletion_policy: str = None,
   id: str = None,
   object: str = None,
   timeouts: StorageDefaultObjectAccessControlTimeouts = None
@@ -44,7 +45,8 @@ storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl(
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | The name of the bucket. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.entity">entity</a></code> | <code>str</code> | The entity holding the permission, in one of the following forms:   * user-{{userId}}   * user-{{email}} (such as "user-liz@example.com")   * group-{{groupId}}   * group-{{email}} (such as "group-example@googlegroups.com")   * domain-{{domain}} (such as "domain-example.com")   * project-team-{{projectId}}   * allUsers   * allAuthenticatedUsers. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.role">role</a></code> | <code>str</code> | The access permission for the entity. Possible values: ["OWNER", "READER"]. |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.object">object</a></code> | <code>str</code> | The name of the object, if applied to an object. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts">StorageDefaultObjectAccessControlTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#bucket StorageDefaultObjectAccessControl#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#bucket StorageDefaultObjectAccessControl#bucket}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The entity holding the permission, in one of the following forms:   * user-{{userId}}   * user-{{email}} (such as "user-liz@example.com")   * group-{{groupId}}   * group-{{email}} (such as "group-example@googlegroups.com")   * domain-{{domain}} (such as "domain-example.com")   * project-team-{{projectId}}   * allUsers   * allAuthenticatedUsers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#entity StorageDefaultObjectAccessControl#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#entity StorageDefaultObjectAccessControl#entity}
 
 ---
 
@@ -136,7 +138,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The access permission for the entity. Possible values: ["OWNER", "READER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#role StorageDefaultObjectAccessControl#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#role StorageDefaultObjectAccessControl#role}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#deletion_policy StorageDefaultObjectAccessControl#deletion_policy}
 
 ---
 
@@ -144,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the object, if applied to an object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#object StorageDefaultObjectAccessControl#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#object StorageDefaultObjectAccessControl#object}
 
 ---
 
@@ -167,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#timeouts StorageDefaultObjectAccessControl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#timeouts StorageDefaultObjectAccessControl#timeouts}
 
 ---
 
@@ -200,6 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.resetObject">reset_object</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -568,7 +588,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#create StorageDefaultObjectAccessControl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#create StorageDefaultObjectAccessControl#create}.
 
 ---
 
@@ -576,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#delete StorageDefaultObjectAccessControl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#delete StorageDefaultObjectAccessControl#delete}.
 
 ---
 
@@ -584,9 +604,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#update StorageDefaultObjectAccessControl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#update StorageDefaultObjectAccessControl#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.resetId"></a>
 
@@ -720,7 +746,7 @@ The construct id used in the generated config for the StorageDefaultObjectAccess
 
 The id of the existing StorageDefaultObjectAccessControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,12 +783,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.projectTeam">project_team</a></code> | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlProjectTeamList">StorageDefaultObjectAccessControlProjectTeamList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeoutsOutputReference">StorageDefaultObjectAccessControlTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.bucketInput">bucket_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.entityInput">entity_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.objectInput">object_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts">StorageDefaultObjectAccessControlTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.bucket">bucket</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.entity">entity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.object">object</a></code> | <code>str</code> | *No description.* |
@@ -982,6 +1010,16 @@ bucket_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `entity_input`<sup>Optional</sup> <a name="entity_input" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.entityInput"></a>
 
 ```python
@@ -1036,6 +1074,16 @@ timeouts_input: IResolvable | StorageDefaultObjectAccessControlTimeouts
 
 ```python
 bucket: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1120,6 +1168,7 @@ storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig(
   bucket: str,
   entity: str,
   role: str,
+  deletion_policy: str = None,
   id: str = None,
   object: str = None,
   timeouts: StorageDefaultObjectAccessControlTimeouts = None
@@ -1140,7 +1189,8 @@ storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig(
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.bucket">bucket</a></code> | <code>str</code> | The name of the bucket. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.entity">entity</a></code> | <code>str</code> | The entity holding the permission, in one of the following forms:   * user-{{userId}}   * user-{{email}} (such as "user-liz@example.com")   * group-{{groupId}}   * group-{{email}} (such as "group-example@googlegroups.com")   * domain-{{domain}} (such as "domain-example.com")   * project-team-{{projectId}}   * allUsers   * allAuthenticatedUsers. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.role">role</a></code> | <code>str</code> | The access permission for the entity. Possible values: ["OWNER", "READER"]. |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.object">object</a></code> | <code>str</code> | The name of the object, if applied to an object. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts">StorageDefaultObjectAccessControlTimeouts</a></code> | timeouts block. |
 
@@ -1226,7 +1276,7 @@ bucket: str
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#bucket StorageDefaultObjectAccessControl#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#bucket StorageDefaultObjectAccessControl#bucket}
 
 ---
 
@@ -1240,7 +1290,7 @@ entity: str
 
 The entity holding the permission, in one of the following forms:   * user-{{userId}}   * user-{{email}} (such as "user-liz@example.com")   * group-{{groupId}}   * group-{{email}} (such as "group-example@googlegroups.com")   * domain-{{domain}} (such as "domain-example.com")   * project-team-{{projectId}}   * allUsers   * allAuthenticatedUsers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#entity StorageDefaultObjectAccessControl#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#entity StorageDefaultObjectAccessControl#entity}
 
 ---
 
@@ -1254,7 +1304,28 @@ role: str
 
 The access permission for the entity. Possible values: ["OWNER", "READER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#role StorageDefaultObjectAccessControl#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#role StorageDefaultObjectAccessControl#role}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#deletion_policy StorageDefaultObjectAccessControl#deletion_policy}
 
 ---
 
@@ -1266,7 +1337,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#id StorageDefaultObjectAccessControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1283,7 +1354,7 @@ object: str
 
 The name of the object, if applied to an object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#object StorageDefaultObjectAccessControl#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#object StorageDefaultObjectAccessControl#object}
 
 ---
 
@@ -1297,7 +1368,7 @@ timeouts: StorageDefaultObjectAccessControlTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#timeouts StorageDefaultObjectAccessControl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#timeouts StorageDefaultObjectAccessControl#timeouts}
 
 ---
 
@@ -1330,9 +1401,9 @@ storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#create StorageDefaultObjectAccessControl#create}. |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#delete StorageDefaultObjectAccessControl#delete}. |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#update StorageDefaultObjectAccessControl#update}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#create StorageDefaultObjectAccessControl#create}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#delete StorageDefaultObjectAccessControl#delete}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#update StorageDefaultObjectAccessControl#update}. |
 
 ---
 
@@ -1344,7 +1415,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#create StorageDefaultObjectAccessControl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#create StorageDefaultObjectAccessControl#create}.
 
 ---
 
@@ -1356,7 +1427,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#delete StorageDefaultObjectAccessControl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#delete StorageDefaultObjectAccessControl#delete}.
 
 ---
 
@@ -1368,7 +1439,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control#update StorageDefaultObjectAccessControl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_default_object_access_control#update StorageDefaultObjectAccessControl#update}.
 
 ---
 

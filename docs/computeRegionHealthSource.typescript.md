@@ -4,7 +4,7 @@
 
 ### ComputeRegionHealthSource <a name="ComputeRegionHealthSource" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source google_compute_region_health_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source google_compute_region_health_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.resetHealthAggregationPolicy">resetHealthAggregationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.resetProject">resetProject</a></code> | *No description.* |
@@ -404,6 +405,12 @@ public putTimeouts(value: ComputeRegionHealthSourceTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.resetDescription"></a>
 
 ```typescript
@@ -537,7 +544,7 @@ The construct id used in the generated config for the ComputeRegionHealthSource 
 
 The id of the existing ComputeRegionHealthSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,6 +579,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.selfLinkWithId">selfLinkWithId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeoutsOutputReference">ComputeRegionHealthSourceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.healthAggregationPolicyInput">healthAggregationPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -580,6 +588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.sourcesInput">sourcesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.sourceTypeInput">sourceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts">ComputeRegionHealthSourceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.healthAggregationPolicy">healthAggregationPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -782,6 +791,16 @@ public readonly timeouts: ComputeRegionHealthSourceTimeoutsOutputReference;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.descriptionInput"></a>
 
 ```typescript
@@ -859,6 +878,16 @@ public readonly timeoutsInput: IResolvable | ComputeRegionHealthSourceTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts">ComputeRegionHealthSourceTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -976,9 +1005,10 @@ const computeRegionHealthSourceConfig: computeRegionHealthSource.ComputeRegionHe
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.region">region</a></code> | <code>string</code> | URL of the region where the health source resides. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.sourceType">sourceType</a></code> | <code>string</code> | Specifies the type of the 'HealthSource'. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.healthAggregationPolicy">healthAggregationPolicy</a></code> | <code>string</code> | URL to the 'HealthAggregationPolicy' resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#project ComputeRegionHealthSource#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#project ComputeRegionHealthSource#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.sources">sources</a></code> | <code>string[]</code> | URLs to the source resources. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts">ComputeRegionHealthSourceTimeouts</a></code> | timeouts block. |
 
@@ -1072,7 +1102,7 @@ character must be a lowercase letter, and all following characters must
 be a dash, lowercase letter, or digit, except the last character, which
 cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#name ComputeRegionHealthSource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#name ComputeRegionHealthSource#name}
 
 ---
 
@@ -1086,7 +1116,7 @@ public readonly region: string;
 
 URL of the region where the health source resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#region ComputeRegionHealthSource#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#region ComputeRegionHealthSource#region}
 
 ---
 
@@ -1104,7 +1134,29 @@ The only allowed value
 is 'BACKEND_SERVICE'. Must be specified when the
 'HealthSource' is created, and cannot be mutated. Possible values: ["BACKEND_SERVICE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#source_type ComputeRegionHealthSource#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#source_type ComputeRegionHealthSource#source_type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#deletion_policy ComputeRegionHealthSource#deletion_policy}
 
 ---
 
@@ -1118,7 +1170,7 @@ public readonly description: string;
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#description ComputeRegionHealthSource#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#description ComputeRegionHealthSource#description}
 
 ---
 
@@ -1136,7 +1188,7 @@ Must be set. Must
 be regional and in the same region as the 'HealthSource'. Can be
 mutated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#health_aggregation_policy ComputeRegionHealthSource#health_aggregation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#health_aggregation_policy ComputeRegionHealthSource#health_aggregation_policy}
 
 ---
 
@@ -1148,7 +1200,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#project ComputeRegionHealthSource#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#project ComputeRegionHealthSource#project}.
 
 ---
 
@@ -1173,7 +1225,7 @@ deployment for 'INTERNAL_MANAGED' is not supported). The
 'BackendService' may not use 'haPolicy'. Can be
 mutated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#sources ComputeRegionHealthSource#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#sources ComputeRegionHealthSource#sources}
 
 ---
 
@@ -1187,7 +1239,7 @@ public readonly timeouts: ComputeRegionHealthSourceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#timeouts ComputeRegionHealthSource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#timeouts ComputeRegionHealthSource#timeouts}
 
 ---
 
@@ -1205,9 +1257,9 @@ const computeRegionHealthSourceTimeouts: computeRegionHealthSource.ComputeRegion
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#create ComputeRegionHealthSource#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#delete ComputeRegionHealthSource#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#update ComputeRegionHealthSource#update}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#create ComputeRegionHealthSource#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#delete ComputeRegionHealthSource#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#update ComputeRegionHealthSource#update}. |
 
 ---
 
@@ -1219,7 +1271,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#create ComputeRegionHealthSource#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#create ComputeRegionHealthSource#create}.
 
 ---
 
@@ -1231,7 +1283,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#delete ComputeRegionHealthSource#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#delete ComputeRegionHealthSource#delete}.
 
 ---
 
@@ -1243,7 +1295,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source#update ComputeRegionHealthSource#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_health_source#update ComputeRegionHealthSource#update}.
 
 ---
 

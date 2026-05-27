@@ -4,7 +4,7 @@
 
 ### IamOauthClientCredential <a name="IamOauthClientCredential" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential google_iam_oauth_client_credential}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential google_iam_oauth_client_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.resetDisabled">resetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.resetId">resetId</a></code> | *No description.* |
@@ -404,6 +405,12 @@ public putTimeouts(value: IamOauthClientCredentialTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDisabled` <a name="resetDisabled" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.resetDisabled"></a>
 
 ```typescript
@@ -537,7 +544,7 @@ The construct id used in the generated config for the IamOauthClientCredential t
 
 The id of the existing IamOauthClientCredential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -570,6 +577,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeoutsOutputReference">IamOauthClientCredentialTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -578,6 +586,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.oauthclientInput">oauthclientInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts">IamOauthClientCredentialTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -760,6 +769,16 @@ public readonly timeouts: IamOauthClientCredentialTimeoutsOutputReference;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.disabledInput"></a>
 
 ```typescript
@@ -837,6 +856,16 @@ public readonly timeoutsInput: IResolvable | IamOauthClientCredentialTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts">IamOauthClientCredentialTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -954,10 +983,11 @@ const iamOauthClientCredentialConfig: iamOauthClientCredential.IamOauthClientCre
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.location">location</a></code> | <code>string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.oauthclient">oauthclient</a></code> | <code>string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.oauthClientCredentialId">oauthClientCredentialId</a></code> | <code>string</code> | Required. |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the OauthClientCredential is disabled. You cannot use a disabled OauthClientCredential. |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.displayName">displayName</a></code> | <code>string</code> | A user-specified display name of the OauthClientCredential. |
-| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#id IamOauthClientCredential#id}. |
-| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#project IamOauthClientCredential#project}. |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#id IamOauthClientCredential#id}. |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#project IamOauthClientCredential#project}. |
 | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts">IamOauthClientCredentialTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1042,7 +1072,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#location IamOauthClientCredential#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#location IamOauthClientCredential#location}
 
 ---
 
@@ -1056,7 +1086,7 @@ public readonly oauthclient: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#oauthclient IamOauthClientCredential#oauthclient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#oauthclient IamOauthClientCredential#oauthclient}
 
 ---
 
@@ -1075,7 +1105,29 @@ final component of the resource name. This value should be 4-32 characters,
 and may contain the characters [a-z0-9-]. The prefix 'gcp-' is
 reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#oauth_client_credential_id IamOauthClientCredential#oauth_client_credential_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#oauth_client_credential_id IamOauthClientCredential#oauth_client_credential_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#deletion_policy IamOauthClientCredential#deletion_policy}
 
 ---
 
@@ -1089,7 +1141,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether the OauthClientCredential is disabled. You cannot use a disabled OauthClientCredential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#disabled IamOauthClientCredential#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#disabled IamOauthClientCredential#disabled}
 
 ---
 
@@ -1105,7 +1157,7 @@ A user-specified display name of the OauthClientCredential.
 
 Cannot exceed 32 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#display_name IamOauthClientCredential#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#display_name IamOauthClientCredential#display_name}
 
 ---
 
@@ -1117,7 +1169,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#id IamOauthClientCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#id IamOauthClientCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1184,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#project IamOauthClientCredential#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#project IamOauthClientCredential#project}.
 
 ---
 
@@ -1146,7 +1198,7 @@ public readonly timeouts: IamOauthClientCredentialTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#timeouts IamOauthClientCredential#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#timeouts IamOauthClientCredential#timeouts}
 
 ---
 
@@ -1164,9 +1216,9 @@ const iamOauthClientCredentialTimeouts: iamOauthClientCredential.IamOauthClientC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#create IamOauthClientCredential#create}. |
-| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#delete IamOauthClientCredential#delete}. |
-| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#update IamOauthClientCredential#update}. |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#create IamOauthClientCredential#create}. |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#delete IamOauthClientCredential#delete}. |
+| <code><a href="#@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#update IamOauthClientCredential#update}. |
 
 ---
 
@@ -1178,7 +1230,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#create IamOauthClientCredential#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#create IamOauthClientCredential#create}.
 
 ---
 
@@ -1190,7 +1242,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#delete IamOauthClientCredential#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#delete IamOauthClientCredential#delete}.
 
 ---
 
@@ -1202,7 +1254,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client_credential#update IamOauthClientCredential#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client_credential#update IamOauthClientCredential#update}.
 
 ---
 

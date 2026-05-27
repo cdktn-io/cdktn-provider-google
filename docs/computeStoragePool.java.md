@@ -4,7 +4,7 @@
 
 ### ComputeStoragePool <a name="ComputeStoragePool" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool google_compute_storage_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool google_compute_storage_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer"></a>
 
@@ -24,6 +24,7 @@ ComputeStoragePool.Builder.create(Construct scope, java.lang.String id)
     .poolProvisionedThroughput(java.lang.String)
     .storagePoolType(java.lang.String)
 //  .capacityProvisioningType(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
@@ -52,13 +53,14 @@ ComputeStoragePool.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.poolProvisionedThroughput">poolProvisionedThroughput</a></code> | <code>java.lang.String</code> | Provisioned throughput, in MB/s, of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced' or 'hyperdisk-throughput'. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.storagePoolType">storagePoolType</a></code> | <code>java.lang.String</code> | Type of the storage pool. For example, the following are valid values:. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.capacityProvisioningType">capacityProvisioningType</a></code> | <code>java.lang.String</code> | Provisioning type of the byte capacity of the pool. Possible values: ["STANDARD", "ADVANCED"]. |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the StoragePool. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels to apply to this storage pool. These can be later modified by the setLabels method. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolParams">ComputeStoragePoolParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.performanceProvisioningType">performanceProvisioningType</a></code> | <code>java.lang.String</code> | Provisioning type of the performance-related parameters of the pool, such as throughput and IOPS. Possible values: ["STANDARD", "ADVANCED"]. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.poolProvisionedIops">poolProvisionedIops</a></code> | <code>java.lang.String</code> | Provisioned IOPS of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced'. |
-| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts">ComputeStoragePoolTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | A reference to the zone where the storage pool resides. |
 
@@ -138,7 +140,7 @@ which means the first character must be a lowercase letter,
 and all following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#name ComputeStoragePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#name ComputeStoragePool#name}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Size, in GiB, of the storage pool. For more information about the size limits, see https://cloud.google.com/compute/docs/disks/storage-pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#pool_provisioned_capacity_gb ComputeStoragePool#pool_provisioned_capacity_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#pool_provisioned_capacity_gb ComputeStoragePool#pool_provisioned_capacity_gb}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Provisioned throughput, in MB/s, of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced' or 'hyperdisk-throughput'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#pool_provisioned_throughput ComputeStoragePool#pool_provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#pool_provisioned_throughput ComputeStoragePool#pool_provisioned_throughput}
 
 ---
 
@@ -171,7 +173,7 @@ Type of the storage pool. For example, the following are valid values:.
 * 'https://www.googleapis.com/compute/v1/projects/{project_id}/zones/{zone}/storagePoolTypes/hyperdisk-balanced'
 * 'hyperdisk-throughput'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#storage_pool_type ComputeStoragePool#storage_pool_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#storage_pool_type ComputeStoragePool#storage_pool_type}
 
 ---
 
@@ -181,7 +183,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Provisioning type of the byte capacity of the pool. Possible values: ["STANDARD", "ADVANCED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#capacity_provisioning_type ComputeStoragePool#capacity_provisioning_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#capacity_provisioning_type ComputeStoragePool#capacity_provisioning_type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#deletion_policy ComputeStoragePool#deletion_policy}
 
 ---
 
@@ -195,7 +214,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the StoragePool will fail.
 When the field is set to false, deleting the StoragePool is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#deletion_protection ComputeStoragePool#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#deletion_protection ComputeStoragePool#deletion_protection}
 
 ---
 
@@ -205,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#description ComputeStoragePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#description ComputeStoragePool#description}
 
 ---
 
@@ -218,7 +237,7 @@ Labels to apply to this storage pool. These can be later modified by the setLabe
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#labels ComputeStoragePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#labels ComputeStoragePool#labels}
 
 ---
 
@@ -228,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#params ComputeStoragePool#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#params ComputeStoragePool#params}
 
 ---
 
@@ -238,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Provisioning type of the performance-related parameters of the pool, such as throughput and IOPS. Possible values: ["STANDARD", "ADVANCED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#performance_provisioning_type ComputeStoragePool#performance_provisioning_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#performance_provisioning_type ComputeStoragePool#performance_provisioning_type}
 
 ---
 
@@ -248,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Provisioned IOPS of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#pool_provisioned_iops ComputeStoragePool#pool_provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#pool_provisioned_iops ComputeStoragePool#pool_provisioned_iops}
 
 ---
 
@@ -256,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}.
 
 ---
 
@@ -266,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#timeouts ComputeStoragePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#timeouts ComputeStoragePool#timeouts}
 
 ---
 
@@ -276,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A reference to the zone where the storage pool resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#zone ComputeStoragePool#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#zone ComputeStoragePool#zone}
 
 ---
 
@@ -311,6 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.putParams">putParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.resetCapacityProvisioningType">resetCapacityProvisioningType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.resetDeletionProtection">resetDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.resetLabels">resetLabels</a></code> | *No description.* |
@@ -664,6 +684,12 @@ public void putTimeouts(ComputeStoragePoolTimeouts value)
 public void resetCapacityProvisioningType()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDeletionProtection` <a name="resetDeletionProtection" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool.resetDeletionProtection"></a>
 
 ```java
@@ -821,7 +847,7 @@ The construct id used in the generated config for the ComputeStoragePool to impo
 
 The id of the existing ComputeStoragePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,6 +888,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.terraformLabels">terraformLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeoutsOutputReference">ComputeStoragePoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.capacityProvisioningTypeInput">capacityProvisioningTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -876,6 +903,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts">ComputeStoragePoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.capacityProvisioningType">capacityProvisioningType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -1142,6 +1170,16 @@ public java.lang.String getCapacityProvisioningTypeInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `deletionProtectionInput`<sup>Optional</sup> <a name="deletionProtectionInput" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.deletionProtectionInput"></a>
 
 ```java
@@ -1276,6 +1314,16 @@ public java.lang.String getZoneInput();
 
 ```java
 public java.lang.String getCapacityProvisioningType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePool.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1432,6 +1480,7 @@ ComputeStoragePoolConfig.builder()
     .poolProvisionedThroughput(java.lang.String)
     .storagePoolType(java.lang.String)
 //  .capacityProvisioningType(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
@@ -1460,13 +1509,14 @@ ComputeStoragePoolConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.poolProvisionedThroughput">poolProvisionedThroughput</a></code> | <code>java.lang.String</code> | Provisioned throughput, in MB/s, of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced' or 'hyperdisk-throughput'. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.storagePoolType">storagePoolType</a></code> | <code>java.lang.String</code> | Type of the storage pool. For example, the following are valid values:. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.capacityProvisioningType">capacityProvisioningType</a></code> | <code>java.lang.String</code> | Provisioning type of the byte capacity of the pool. Possible values: ["STANDARD", "ADVANCED"]. |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the StoragePool. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels to apply to this storage pool. These can be later modified by the setLabels method. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolParams">ComputeStoragePoolParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.performanceProvisioningType">performanceProvisioningType</a></code> | <code>java.lang.String</code> | Provisioning type of the performance-related parameters of the pool, such as throughput and IOPS. Possible values: ["STANDARD", "ADVANCED"]. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.poolProvisionedIops">poolProvisionedIops</a></code> | <code>java.lang.String</code> | Provisioned IOPS of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced'. |
-| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts">ComputeStoragePoolTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | A reference to the zone where the storage pool resides. |
 
@@ -1560,7 +1610,7 @@ which means the first character must be a lowercase letter,
 and all following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#name ComputeStoragePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#name ComputeStoragePool#name}
 
 ---
 
@@ -1574,7 +1624,7 @@ public java.lang.String getPoolProvisionedCapacityGb();
 
 Size, in GiB, of the storage pool. For more information about the size limits, see https://cloud.google.com/compute/docs/disks/storage-pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#pool_provisioned_capacity_gb ComputeStoragePool#pool_provisioned_capacity_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#pool_provisioned_capacity_gb ComputeStoragePool#pool_provisioned_capacity_gb}
 
 ---
 
@@ -1588,7 +1638,7 @@ public java.lang.String getPoolProvisionedThroughput();
 
 Provisioned throughput, in MB/s, of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced' or 'hyperdisk-throughput'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#pool_provisioned_throughput ComputeStoragePool#pool_provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#pool_provisioned_throughput ComputeStoragePool#pool_provisioned_throughput}
 
 ---
 
@@ -1605,7 +1655,7 @@ Type of the storage pool. For example, the following are valid values:.
 * 'https://www.googleapis.com/compute/v1/projects/{project_id}/zones/{zone}/storagePoolTypes/hyperdisk-balanced'
 * 'hyperdisk-throughput'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#storage_pool_type ComputeStoragePool#storage_pool_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#storage_pool_type ComputeStoragePool#storage_pool_type}
 
 ---
 
@@ -1619,7 +1669,28 @@ public java.lang.String getCapacityProvisioningType();
 
 Provisioning type of the byte capacity of the pool. Possible values: ["STANDARD", "ADVANCED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#capacity_provisioning_type ComputeStoragePool#capacity_provisioning_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#capacity_provisioning_type ComputeStoragePool#capacity_provisioning_type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeStoragePool.ComputeStoragePoolConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#deletion_policy ComputeStoragePool#deletion_policy}
 
 ---
 
@@ -1637,7 +1708,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the StoragePool will fail.
 When the field is set to false, deleting the StoragePool is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#deletion_protection ComputeStoragePool#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#deletion_protection ComputeStoragePool#deletion_protection}
 
 ---
 
@@ -1651,7 +1722,7 @@ public java.lang.String getDescription();
 
 A description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#description ComputeStoragePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#description ComputeStoragePool#description}
 
 ---
 
@@ -1668,7 +1739,7 @@ Labels to apply to this storage pool. These can be later modified by the setLabe
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#labels ComputeStoragePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#labels ComputeStoragePool#labels}
 
 ---
 
@@ -1682,7 +1753,7 @@ public ComputeStoragePoolParams getParams();
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#params ComputeStoragePool#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#params ComputeStoragePool#params}
 
 ---
 
@@ -1696,7 +1767,7 @@ public java.lang.String getPerformanceProvisioningType();
 
 Provisioning type of the performance-related parameters of the pool, such as throughput and IOPS. Possible values: ["STANDARD", "ADVANCED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#performance_provisioning_type ComputeStoragePool#performance_provisioning_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#performance_provisioning_type ComputeStoragePool#performance_provisioning_type}
 
 ---
 
@@ -1710,7 +1781,7 @@ public java.lang.String getPoolProvisionedIops();
 
 Provisioned IOPS of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#pool_provisioned_iops ComputeStoragePool#pool_provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#pool_provisioned_iops ComputeStoragePool#pool_provisioned_iops}
 
 ---
 
@@ -1722,7 +1793,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}.
 
 ---
 
@@ -1736,7 +1807,7 @@ public ComputeStoragePoolTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#timeouts ComputeStoragePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#timeouts ComputeStoragePool#timeouts}
 
 ---
 
@@ -1750,7 +1821,7 @@ public java.lang.String getZone();
 
 A reference to the zone where the storage pool resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#zone ComputeStoragePool#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#zone ComputeStoragePool#zone}
 
 ---
 
@@ -1792,7 +1863,7 @@ The field is immutable and causes resource replacement when mutated. This field 
 set at create time and modifying this field after creation will trigger recreation.
 To apply tags to an existing resource, see the google_tags_tag_binding resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#resource_manager_tags ComputeStoragePool#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#resource_manager_tags ComputeStoragePool#resource_manager_tags}
 
 ---
 
@@ -1838,9 +1909,9 @@ ComputeStoragePoolTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#create ComputeStoragePool#create}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#delete ComputeStoragePool#delete}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#update ComputeStoragePool#update}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#create ComputeStoragePool#create}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#delete ComputeStoragePool#delete}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePool.ComputeStoragePoolTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#update ComputeStoragePool#update}. |
 
 ---
 
@@ -1852,7 +1923,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#create ComputeStoragePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#create ComputeStoragePool#create}.
 
 ---
 
@@ -1864,7 +1935,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#delete ComputeStoragePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#delete ComputeStoragePool#delete}.
 
 ---
 
@@ -1876,7 +1947,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_storage_pool#update ComputeStoragePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_storage_pool#update ComputeStoragePool#update}.
 
 ---
 

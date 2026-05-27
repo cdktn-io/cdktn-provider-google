@@ -4,7 +4,7 @@
 
 ### NetworkSecurityUrlLists <a name="NetworkSecurityUrlLists" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists google_network_security_url_lists}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists google_network_security_url_lists}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer"></a>
 
@@ -22,6 +22,7 @@ NetworkSecurityUrlLists.Builder.create(Construct scope, java.lang.String id)
     .location(java.lang.String)
     .name(java.lang.String)
     .values(java.util.List<java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -43,9 +44,10 @@ NetworkSecurityUrlLists.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the url lists. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Short name of the UrlList resource to be created. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.values">values</a></code> | <code>java.util.List<java.lang.String></code> | FQDNs and URLs. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Free-text description of the resource. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts">NetworkSecurityUrlListsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The location of the url lists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#location NetworkSecurityUrlLists#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#location NetworkSecurityUrlLists#location}
 
 ---
 
@@ -128,7 +130,7 @@ Short name of the UrlList resource to be created.
 
 This value should be 1-63 characters long, containing only letters, numbers, hyphens, and underscores, and should not start with a number. E.g. 'urlList'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#name NetworkSecurityUrlLists#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#name NetworkSecurityUrlLists#name}
 
 ---
 
@@ -138,7 +140,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 FQDNs and URLs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#values NetworkSecurityUrlLists#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#values NetworkSecurityUrlLists#values}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#deletion_policy NetworkSecurityUrlLists#deletion_policy}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Free-text description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#description NetworkSecurityUrlLists#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#description NetworkSecurityUrlLists#description}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +186,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}.
 
 ---
 
@@ -177,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#timeouts NetworkSecurityUrlLists#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#timeouts NetworkSecurityUrlLists#timeouts}
 
 ---
 
@@ -210,6 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.resetProject">resetProject</a></code> | *No description.* |
@@ -540,6 +560,12 @@ public void putTimeouts(NetworkSecurityUrlListsTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.resetDescription"></a>
 
 ```java
@@ -667,7 +693,7 @@ The construct id used in the generated config for the NetworkSecurityUrlLists to
 
 The id of the existing NetworkSecurityUrlLists that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,6 +726,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeoutsOutputReference">NetworkSecurityUrlListsTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -707,6 +734,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts">NetworkSecurityUrlListsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.valuesInput">valuesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -888,6 +916,16 @@ public java.lang.String getUpdateTime();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.descriptionInput"></a>
 
 ```java
@@ -955,6 +993,16 @@ public java.util.List<java.lang.String> getValuesInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlLists.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1056,6 +1104,7 @@ NetworkSecurityUrlListsConfig.builder()
     .location(java.lang.String)
     .name(java.lang.String)
     .values(java.util.List<java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -1077,9 +1126,10 @@ NetworkSecurityUrlListsConfig.builder()
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the url lists. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.name">name</a></code> | <code>java.lang.String</code> | Short name of the UrlList resource to be created. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | FQDNs and URLs. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.description">description</a></code> | <code>java.lang.String</code> | Free-text description of the resource. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts">NetworkSecurityUrlListsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1164,7 +1214,7 @@ public java.lang.String getLocation();
 
 The location of the url lists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#location NetworkSecurityUrlLists#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#location NetworkSecurityUrlLists#location}
 
 ---
 
@@ -1180,7 +1230,7 @@ Short name of the UrlList resource to be created.
 
 This value should be 1-63 characters long, containing only letters, numbers, hyphens, and underscores, and should not start with a number. E.g. 'urlList'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#name NetworkSecurityUrlLists#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#name NetworkSecurityUrlLists#name}
 
 ---
 
@@ -1194,7 +1244,28 @@ public java.util.List<java.lang.String> getValues();
 
 FQDNs and URLs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#values NetworkSecurityUrlLists#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#values NetworkSecurityUrlLists#values}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#deletion_policy NetworkSecurityUrlLists#deletion_policy}
 
 ---
 
@@ -1208,7 +1279,7 @@ public java.lang.String getDescription();
 
 Free-text description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#description NetworkSecurityUrlLists#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#description NetworkSecurityUrlLists#description}
 
 ---
 
@@ -1220,7 +1291,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1235,7 +1306,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}.
 
 ---
 
@@ -1249,7 +1320,7 @@ public NetworkSecurityUrlListsTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#timeouts NetworkSecurityUrlLists#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#timeouts NetworkSecurityUrlLists#timeouts}
 
 ---
 
@@ -1271,9 +1342,9 @@ NetworkSecurityUrlListsTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#create NetworkSecurityUrlLists#create}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#delete NetworkSecurityUrlLists#delete}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#update NetworkSecurityUrlLists#update}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#create NetworkSecurityUrlLists#create}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#delete NetworkSecurityUrlLists#delete}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUrlLists.NetworkSecurityUrlListsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#update NetworkSecurityUrlLists#update}. |
 
 ---
 
@@ -1285,7 +1356,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#create NetworkSecurityUrlLists#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#create NetworkSecurityUrlLists#create}.
 
 ---
 
@@ -1297,7 +1368,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#delete NetworkSecurityUrlLists#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#delete NetworkSecurityUrlLists#delete}.
 
 ---
 
@@ -1309,7 +1380,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_url_lists#update NetworkSecurityUrlLists#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_url_lists#update NetworkSecurityUrlLists#update}.
 
 ---
 

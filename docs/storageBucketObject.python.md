@@ -4,7 +4,7 @@
 
 ### StorageBucketObject <a name="StorageBucketObject" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer"></a>
 
@@ -68,11 +68,11 @@ storageBucketObject.StorageBucketObject(
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.contentType">content_type</a></code> | <code>str</code> | Content-Type of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8". |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.contexts">contexts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a></code> | contexts block. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.customerEncryption">customer_encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryption">StorageBucketObjectCustomerEncryption</a></code> | customer_encryption block. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | The deletion policy for the object. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.eventBasedHold">event_based_hold</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether an object is under event-based hold. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.forceEmptyContentType">force_empty_content_type</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag to set empty Content-Type. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.kmsKeyName">kms_key_name</a></code> | <code>str</code> | Resource name of the Cloud KMS key that will be used to encrypt the object. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | User-provided metadata, in key/value pairs. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer.parameter.retention">retention</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectRetention">StorageBucketObjectRetention</a></code> | retention block. |
@@ -150,7 +150,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the containing bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#bucket StorageBucketObject#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#bucket StorageBucketObject#bucket}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the object. If you're interpolating the name of this object, see output_name instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#name StorageBucketObject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#name StorageBucketObject#name}
 
 ---
 
@@ -172,7 +172,7 @@ Cache-Control directive to specify caching behavior of object data.
 
 If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#cache_control StorageBucketObject#cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#cache_control StorageBucketObject#cache_control}
 
 ---
 
@@ -184,7 +184,7 @@ Data as string to be uploaded.
 
 Must be defined if source is not. Note: The content field is marked as sensitive. To view the raw contents of the object, please define an output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content StorageBucketObject#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content StorageBucketObject#content}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Content-Disposition of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_disposition StorageBucketObject#content_disposition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_disposition StorageBucketObject#content_disposition}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Content-Encoding of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_encoding StorageBucketObject#content_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_encoding StorageBucketObject#content_encoding}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Content-Language of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_language StorageBucketObject#content_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_language StorageBucketObject#content_language}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Content-Type of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_type StorageBucketObject#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_type StorageBucketObject#content_type}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#contexts StorageBucketObject#contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#contexts StorageBucketObject#contexts}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 customer_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#customer_encryption StorageBucketObject#customer_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#customer_encryption StorageBucketObject#customer_encryption}
 
 ---
 
@@ -252,11 +252,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The deletion policy for the object.
+Whether Terraform will be prevented from destroying the instance.
 
-Setting ABANDON allows the resource to be abandoned rather than deleted when removed from your Terraform configuration.
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#deletion_policy StorageBucketObject#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#deletion_policy StorageBucketObject#deletion_policy}
 
 ---
 
@@ -264,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}.
 
 ---
 
@@ -276,7 +281,7 @@ Whether an object is under event-based hold.
 
 Event-based hold is a way to retain objects until an event occurs, which is signified by the hold's release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#event_based_hold StorageBucketObject#event_based_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#event_based_hold StorageBucketObject#event_based_hold}
 
 ---
 
@@ -286,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to set empty Content-Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#force_empty_content_type StorageBucketObject#force_empty_content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#force_empty_content_type StorageBucketObject#force_empty_content_type}
 
 ---
 
@@ -294,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -309,7 +314,7 @@ Resource name of the Cloud KMS key that will be used to encrypt the object.
 
 Overrides the object metadata's kmsKeyName value, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#kms_key_name StorageBucketObject#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#kms_key_name StorageBucketObject#kms_key_name}
 
 ---
 
@@ -319,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-provided metadata, in key/value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#metadata StorageBucketObject#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#metadata StorageBucketObject#metadata}
 
 ---
 
@@ -329,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#retention StorageBucketObject#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#retention StorageBucketObject#retention}
 
 ---
 
@@ -339,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A path to the data you want to upload. Must be defined if content is not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#source StorageBucketObject#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#source StorageBucketObject#source}
 
 ---
 
@@ -349,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-provided md5hash, Base 64 MD5 hash of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#source_md5hash StorageBucketObject#source_md5hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#source_md5hash StorageBucketObject#source_md5hash}
 
 ---
 
@@ -361,7 +366,7 @@ The StorageClass of the new bucket object.
 
 Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. If not provided, this defaults to the bucket's default storage class or to a standard class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#storage_class StorageBucketObject#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#storage_class StorageBucketObject#storage_class}
 
 ---
 
@@ -373,7 +378,7 @@ Whether an object is under temporary hold.
 
 While this flag is set to true, the object is protected against deletion and overwrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#temporary_hold StorageBucketObject#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#temporary_hold StorageBucketObject#temporary_hold}
 
 ---
 
@@ -383,7 +388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#timeouts StorageBucketObject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#timeouts StorageBucketObject#timeouts}
 
 ---
 
@@ -805,7 +810,7 @@ def put_contexts(
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#custom StorageBucketObject#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#custom StorageBucketObject#custom}
 
 ---
 
@@ -824,7 +829,7 @@ def put_customer_encryption(
 
 Base64 encoded customer supplied encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#encryption_key StorageBucketObject#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#encryption_key StorageBucketObject#encryption_key}
 
 ---
 
@@ -834,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The encryption algorithm. Default: AES256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#encryption_algorithm StorageBucketObject#encryption_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#encryption_algorithm StorageBucketObject#encryption_algorithm}
 
 ---
 
@@ -853,7 +858,7 @@ def put_retention(
 
 The object retention mode. Supported values include: "Unlocked", "Locked".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#mode StorageBucketObject#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#mode StorageBucketObject#mode}
 
 ---
 
@@ -863,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Time in RFC 3339 (e.g. 2030-01-01T02:03:04Z) until which object retention protects this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#retain_until_time StorageBucketObject#retain_until_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#retain_until_time StorageBucketObject#retain_until_time}
 
 ---
 
@@ -881,7 +886,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}.
 
 ---
 
@@ -889,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}.
 
 ---
 
@@ -897,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}.
 
 ---
 
@@ -1141,7 +1146,7 @@ The construct id used in the generated config for the StorageBucketObject to imp
 
 The id of the existing StorageBucketObject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1981,11 +1986,11 @@ storageBucketObject.StorageBucketObjectConfig(
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.contentType">content_type</a></code> | <code>str</code> | Content-Type of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8". |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.contexts">contexts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a></code> | contexts block. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.customerEncryption">customer_encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryption">StorageBucketObjectCustomerEncryption</a></code> | customer_encryption block. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | The deletion policy for the object. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.eventBasedHold">event_based_hold</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether an object is under event-based hold. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.forceEmptyContentType">force_empty_content_type</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag to set empty Content-Type. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.kmsKeyName">kms_key_name</a></code> | <code>str</code> | Resource name of the Cloud KMS key that will be used to encrypt the object. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | User-provided metadata, in key/value pairs. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.retention">retention</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectRetention">StorageBucketObjectRetention</a></code> | retention block. |
@@ -2077,7 +2082,7 @@ bucket: str
 
 The name of the containing bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#bucket StorageBucketObject#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#bucket StorageBucketObject#bucket}
 
 ---
 
@@ -2091,7 +2096,7 @@ name: str
 
 The name of the object. If you're interpolating the name of this object, see output_name instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#name StorageBucketObject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#name StorageBucketObject#name}
 
 ---
 
@@ -2107,7 +2112,7 @@ Cache-Control directive to specify caching behavior of object data.
 
 If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#cache_control StorageBucketObject#cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#cache_control StorageBucketObject#cache_control}
 
 ---
 
@@ -2123,7 +2128,7 @@ Data as string to be uploaded.
 
 Must be defined if source is not. Note: The content field is marked as sensitive. To view the raw contents of the object, please define an output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content StorageBucketObject#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content StorageBucketObject#content}
 
 ---
 
@@ -2137,7 +2142,7 @@ content_disposition: str
 
 Content-Disposition of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_disposition StorageBucketObject#content_disposition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_disposition StorageBucketObject#content_disposition}
 
 ---
 
@@ -2151,7 +2156,7 @@ content_encoding: str
 
 Content-Encoding of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_encoding StorageBucketObject#content_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_encoding StorageBucketObject#content_encoding}
 
 ---
 
@@ -2165,7 +2170,7 @@ content_language: str
 
 Content-Language of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_language StorageBucketObject#content_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_language StorageBucketObject#content_language}
 
 ---
 
@@ -2179,7 +2184,7 @@ content_type: str
 
 Content-Type of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#content_type StorageBucketObject#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#content_type StorageBucketObject#content_type}
 
 ---
 
@@ -2193,7 +2198,7 @@ contexts: StorageBucketObjectContexts
 
 contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#contexts StorageBucketObject#contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#contexts StorageBucketObject#contexts}
 
 ---
 
@@ -2207,7 +2212,7 @@ customer_encryption: StorageBucketObjectCustomerEncryption
 
 customer_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#customer_encryption StorageBucketObject#customer_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#customer_encryption StorageBucketObject#customer_encryption}
 
 ---
 
@@ -2219,11 +2224,16 @@ deletion_policy: str
 
 - *Type:* str
 
-The deletion policy for the object.
+Whether Terraform will be prevented from destroying the instance.
 
-Setting ABANDON allows the resource to be abandoned rather than deleted when removed from your Terraform configuration.
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#deletion_policy StorageBucketObject#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#deletion_policy StorageBucketObject#deletion_policy}
 
 ---
 
@@ -2235,7 +2245,7 @@ detect_md5_hash: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}.
 
 ---
 
@@ -2251,7 +2261,7 @@ Whether an object is under event-based hold.
 
 Event-based hold is a way to retain objects until an event occurs, which is signified by the hold's release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#event_based_hold StorageBucketObject#event_based_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#event_based_hold StorageBucketObject#event_based_hold}
 
 ---
 
@@ -2265,7 +2275,7 @@ force_empty_content_type: bool | IResolvable
 
 Flag to set empty Content-Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#force_empty_content_type StorageBucketObject#force_empty_content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#force_empty_content_type StorageBucketObject#force_empty_content_type}
 
 ---
 
@@ -2277,7 +2287,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2296,7 +2306,7 @@ Resource name of the Cloud KMS key that will be used to encrypt the object.
 
 Overrides the object metadata's kmsKeyName value, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#kms_key_name StorageBucketObject#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#kms_key_name StorageBucketObject#kms_key_name}
 
 ---
 
@@ -2310,7 +2320,7 @@ metadata: typing.Mapping[str]
 
 User-provided metadata, in key/value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#metadata StorageBucketObject#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#metadata StorageBucketObject#metadata}
 
 ---
 
@@ -2324,7 +2334,7 @@ retention: StorageBucketObjectRetention
 
 retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#retention StorageBucketObject#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#retention StorageBucketObject#retention}
 
 ---
 
@@ -2338,7 +2348,7 @@ source: str
 
 A path to the data you want to upload. Must be defined if content is not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#source StorageBucketObject#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#source StorageBucketObject#source}
 
 ---
 
@@ -2352,7 +2362,7 @@ source_md5_hash: str
 
 User-provided md5hash, Base 64 MD5 hash of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#source_md5hash StorageBucketObject#source_md5hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#source_md5hash StorageBucketObject#source_md5hash}
 
 ---
 
@@ -2368,7 +2378,7 @@ The StorageClass of the new bucket object.
 
 Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. If not provided, this defaults to the bucket's default storage class or to a standard class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#storage_class StorageBucketObject#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#storage_class StorageBucketObject#storage_class}
 
 ---
 
@@ -2384,7 +2394,7 @@ Whether an object is under temporary hold.
 
 While this flag is set to true, the object is protected against deletion and overwrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#temporary_hold StorageBucketObject#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#temporary_hold StorageBucketObject#temporary_hold}
 
 ---
 
@@ -2398,7 +2408,7 @@ timeouts: StorageBucketObjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#timeouts StorageBucketObject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#timeouts StorageBucketObject#timeouts}
 
 ---
 
@@ -2432,7 +2442,7 @@ custom: IResolvable | typing.List[StorageBucketObjectContextsCustom]
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#custom StorageBucketObject#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#custom StorageBucketObject#custom}
 
 ---
 
@@ -2468,7 +2478,7 @@ key: str
 
 An individual object context. Context keys and their corresponding values must start with an alphanumeric character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#key StorageBucketObject#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#key StorageBucketObject#key}
 
 ---
 
@@ -2482,7 +2492,7 @@ value: str
 
 The value associated with this context. This field holds the primary information for the given context key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#value StorageBucketObject#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#value StorageBucketObject#value}
 
 ---
 
@@ -2518,7 +2528,7 @@ encryption_key: str
 
 Base64 encoded customer supplied encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#encryption_key StorageBucketObject#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#encryption_key StorageBucketObject#encryption_key}
 
 ---
 
@@ -2532,7 +2542,7 @@ encryption_algorithm: str
 
 The encryption algorithm. Default: AES256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#encryption_algorithm StorageBucketObject#encryption_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#encryption_algorithm StorageBucketObject#encryption_algorithm}
 
 ---
 
@@ -2568,7 +2578,7 @@ mode: str
 
 The object retention mode. Supported values include: "Unlocked", "Locked".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#mode StorageBucketObject#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#mode StorageBucketObject#mode}
 
 ---
 
@@ -2582,7 +2592,7 @@ retain_until_time: str
 
 Time in RFC 3339 (e.g. 2030-01-01T02:03:04Z) until which object retention protects this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#retain_until_time StorageBucketObject#retain_until_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#retain_until_time StorageBucketObject#retain_until_time}
 
 ---
 
@@ -2604,9 +2614,9 @@ storageBucketObject.StorageBucketObjectTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}. |
 
 ---
 
@@ -2618,7 +2628,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}.
 
 ---
 
@@ -2630,7 +2640,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}.
 
 ---
 
@@ -2642,7 +2652,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}.
 
 ---
 

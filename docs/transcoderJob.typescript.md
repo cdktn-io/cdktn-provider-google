@@ -4,7 +4,7 @@
 
 ### TranscoderJob <a name="TranscoderJob" id="@cdktn/provider-google.transcoderJob.TranscoderJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job google_transcoder_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job google_transcoder_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig">putConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.resetConfig">resetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.resetProject">resetProject</a></code> | *No description.* |
@@ -424,6 +425,12 @@ public putTimeouts(value: TranscoderJobTimeouts): void
 public resetConfig(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.transcoderJob.TranscoderJob.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.transcoderJob.TranscoderJob.resetId"></a>
 
 ```typescript
@@ -557,7 +564,7 @@ The construct id used in the generated config for the TranscoderJob to import.
 
 The id of the existing TranscoderJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -597,12 +604,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference">TranscoderJobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.configInput">configInput</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA">TranscoderJobConfigA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.templateIdInput">templateIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.location">location</a></code> | <code>string</code> | *No description.* |
@@ -853,6 +862,16 @@ public readonly configInput: TranscoderJobConfigA;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.transcoderJob.TranscoderJob.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.transcoderJob.TranscoderJob.property.idInput"></a>
 
 ```typescript
@@ -910,6 +929,16 @@ public readonly timeoutsInput: IResolvable | TranscoderJobTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.transcoderJob.TranscoderJob.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1006,9 +1035,10 @@ const transcoderJobConfig: transcoderJob.TranscoderJobConfig = { ... }
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.location">location</a></code> | <code>string</code> | The location of the transcoding job resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA">TranscoderJobConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#id TranscoderJob#id}. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#id TranscoderJob#id}. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | The labels associated with this job. You can use these to organize and group your jobs. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#project TranscoderJob#project}. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#project TranscoderJob#project}. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.templateId">templateId</a></code> | <code>string</code> | Specify the templateId to use for populating Job.config. The default is preset/web-hd, which is the only supported preset. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a></code> | timeouts block. |
 
@@ -1094,7 +1124,7 @@ public readonly location: string;
 
 The location of the transcoding job resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#location TranscoderJob#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#location TranscoderJob#location}
 
 ---
 
@@ -1108,7 +1138,29 @@ public readonly config: TranscoderJobConfigA;
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#config TranscoderJob#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#config TranscoderJob#config}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#deletion_policy TranscoderJob#deletion_policy}
 
 ---
 
@@ -1120,7 +1172,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#id TranscoderJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#id TranscoderJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1192,7 @@ The labels associated with this job. You can use these to organize and group you
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#labels TranscoderJob#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#labels TranscoderJob#labels}
 
 ---
 
@@ -1152,7 +1204,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#project TranscoderJob#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#project TranscoderJob#project}.
 
 ---
 
@@ -1166,7 +1218,7 @@ public readonly templateId: string;
 
 Specify the templateId to use for populating Job.config. The default is preset/web-hd, which is the only supported preset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#template_id TranscoderJob#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#template_id TranscoderJob#template_id}
 
 ---
 
@@ -1180,7 +1232,7 @@ public readonly timeouts: TranscoderJobTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#timeouts TranscoderJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#timeouts TranscoderJob#timeouts}
 
 ---
 
@@ -1221,7 +1273,7 @@ public readonly adBreaks: IResolvable | TranscoderJobConfigAdBreaks[];
 
 ad_breaks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#ad_breaks TranscoderJob#ad_breaks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#ad_breaks TranscoderJob#ad_breaks}
 
 ---
 
@@ -1235,7 +1287,7 @@ public readonly editList: IResolvable | TranscoderJobConfigEditListStruct[];
 
 edit_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#edit_list TranscoderJob#edit_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#edit_list TranscoderJob#edit_list}
 
 ---
 
@@ -1249,7 +1301,7 @@ public readonly elementaryStreams: IResolvable | TranscoderJobConfigElementarySt
 
 elementary_streams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#elementary_streams TranscoderJob#elementary_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#elementary_streams TranscoderJob#elementary_streams}
 
 ---
 
@@ -1263,7 +1315,7 @@ public readonly encryptions: IResolvable | TranscoderJobConfigEncryptions[];
 
 encryptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#encryptions TranscoderJob#encryptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#encryptions TranscoderJob#encryptions}
 
 ---
 
@@ -1277,7 +1329,7 @@ public readonly inputs: IResolvable | TranscoderJobConfigInputs[];
 
 inputs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#inputs TranscoderJob#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#inputs TranscoderJob#inputs}
 
 ---
 
@@ -1291,7 +1343,7 @@ public readonly manifests: IResolvable | TranscoderJobConfigManifests[];
 
 manifests block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#manifests TranscoderJob#manifests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#manifests TranscoderJob#manifests}
 
 ---
 
@@ -1305,7 +1357,7 @@ public readonly muxStreams: IResolvable | TranscoderJobConfigMuxStreams[];
 
 mux_streams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#mux_streams TranscoderJob#mux_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#mux_streams TranscoderJob#mux_streams}
 
 ---
 
@@ -1319,7 +1371,7 @@ public readonly output: TranscoderJobConfigOutput;
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#output TranscoderJob#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#output TranscoderJob#output}
 
 ---
 
@@ -1333,7 +1385,7 @@ public readonly overlays: IResolvable | TranscoderJobConfigOverlays[];
 
 overlays block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#overlays TranscoderJob#overlays}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#overlays TranscoderJob#overlays}
 
 ---
 
@@ -1347,7 +1399,7 @@ public readonly pubsubDestination: TranscoderJobConfigPubsubDestination;
 
 pubsub_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#pubsub_destination TranscoderJob#pubsub_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#pubsub_destination TranscoderJob#pubsub_destination}
 
 ---
 
@@ -1379,7 +1431,7 @@ public readonly startTimeOffset: string;
 
 Start time in seconds for the ad break, relative to the output file timeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#start_time_offset TranscoderJob#start_time_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#start_time_offset TranscoderJob#start_time_offset}
 
 ---
 
@@ -1413,7 +1465,7 @@ public readonly inputs: string[];
 
 List of values identifying files that should be used in this atom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#inputs TranscoderJob#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#inputs TranscoderJob#inputs}
 
 ---
 
@@ -1427,7 +1479,7 @@ public readonly key: string;
 
 A unique key for this atom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#key TranscoderJob#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#key TranscoderJob#key}
 
 ---
 
@@ -1441,7 +1493,7 @@ public readonly startTimeOffset: string;
 
 Start time in seconds for the atom, relative to the input file timeline. The default is '0s'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#start_time_offset TranscoderJob#start_time_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#start_time_offset TranscoderJob#start_time_offset}
 
 ---
 
@@ -1475,7 +1527,7 @@ public readonly audioStream: TranscoderJobConfigElementaryStreamsAudioStream;
 
 audio_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#audio_stream TranscoderJob#audio_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#audio_stream TranscoderJob#audio_stream}
 
 ---
 
@@ -1489,7 +1541,7 @@ public readonly key: string;
 
 A unique key for this atom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#key TranscoderJob#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#key TranscoderJob#key}
 
 ---
 
@@ -1503,7 +1555,7 @@ public readonly videoStream: TranscoderJobConfigElementaryStreamsVideoStream;
 
 video_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#video_stream TranscoderJob#video_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#video_stream TranscoderJob#video_stream}
 
 ---
 
@@ -1539,7 +1591,7 @@ public readonly bitrateBps: number;
 
 Audio bitrate in bits per second.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#bitrate_bps TranscoderJob#bitrate_bps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#bitrate_bps TranscoderJob#bitrate_bps}
 
 ---
 
@@ -1553,7 +1605,7 @@ public readonly channelCount: number;
 
 Number of audio channels. The default is '2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#channel_count TranscoderJob#channel_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#channel_count TranscoderJob#channel_count}
 
 ---
 
@@ -1567,7 +1619,7 @@ public readonly channelLayout: string[];
 
 A list of channel names specifying layout of the audio channels. The default is ["fl", "fr"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#channel_layout TranscoderJob#channel_layout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#channel_layout TranscoderJob#channel_layout}
 
 ---
 
@@ -1581,7 +1633,7 @@ public readonly codec: string;
 
 The codec for this audio stream. The default is 'aac'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#codec TranscoderJob#codec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#codec TranscoderJob#codec}
 
 ---
 
@@ -1595,7 +1647,7 @@ public readonly sampleRateHertz: number;
 
 The audio sample rate in Hertz. The default is '48000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#sample_rate_hertz TranscoderJob#sample_rate_hertz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#sample_rate_hertz TranscoderJob#sample_rate_hertz}
 
 ---
 
@@ -1627,7 +1679,7 @@ public readonly h264: TranscoderJobConfigElementaryStreamsVideoStreamH264;
 
 h264 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#h264 TranscoderJob#h264}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#h264 TranscoderJob#h264}
 
 ---
 
@@ -1673,7 +1725,7 @@ public readonly bitrateBps: number;
 
 The video bitrate in bits per second.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#bitrate_bps TranscoderJob#bitrate_bps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#bitrate_bps TranscoderJob#bitrate_bps}
 
 ---
 
@@ -1687,7 +1739,7 @@ public readonly frameRate: number;
 
 The target video frame rate in frames per second (FPS).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#frame_rate TranscoderJob#frame_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#frame_rate TranscoderJob#frame_rate}
 
 ---
 
@@ -1701,7 +1753,7 @@ public readonly crfLevel: number;
 
 Target CRF level. The default is '21'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#crf_level TranscoderJob#crf_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#crf_level TranscoderJob#crf_level}
 
 ---
 
@@ -1715,7 +1767,7 @@ public readonly entropyCoder: string;
 
 The entropy coder to use. The default is 'cabac'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#entropy_coder TranscoderJob#entropy_coder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#entropy_coder TranscoderJob#entropy_coder}
 
 ---
 
@@ -1729,7 +1781,7 @@ public readonly gopDuration: string;
 
 Select the GOP size based on the specified duration. The default is '3s'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#gop_duration TranscoderJob#gop_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#gop_duration TranscoderJob#gop_duration}
 
 ---
 
@@ -1743,7 +1795,7 @@ public readonly heightPixels: number;
 
 The height of the video in pixels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#height_pixels TranscoderJob#height_pixels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#height_pixels TranscoderJob#height_pixels}
 
 ---
 
@@ -1757,7 +1809,7 @@ public readonly hlg: TranscoderJobConfigElementaryStreamsVideoStreamH264Hlg;
 
 hlg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#hlg TranscoderJob#hlg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#hlg TranscoderJob#hlg}
 
 ---
 
@@ -1771,7 +1823,7 @@ public readonly pixelFormat: string;
 
 Pixel format to use. The default is 'yuv420p'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#pixel_format TranscoderJob#pixel_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#pixel_format TranscoderJob#pixel_format}
 
 ---
 
@@ -1785,7 +1837,7 @@ public readonly preset: string;
 
 Enforces the specified codec preset. The default is 'veryfast'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#preset TranscoderJob#preset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#preset TranscoderJob#preset}
 
 ---
 
@@ -1799,7 +1851,7 @@ public readonly profile: string;
 
 Enforces the specified codec profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#profile TranscoderJob#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#profile TranscoderJob#profile}
 
 ---
 
@@ -1813,7 +1865,7 @@ public readonly rateControlMode: string;
 
 Specify the mode. The default is 'vbr'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#rate_control_mode TranscoderJob#rate_control_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#rate_control_mode TranscoderJob#rate_control_mode}
 
 ---
 
@@ -1827,7 +1879,7 @@ public readonly sdr: TranscoderJobConfigElementaryStreamsVideoStreamH264Sdr;
 
 sdr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#sdr TranscoderJob#sdr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#sdr TranscoderJob#sdr}
 
 ---
 
@@ -1841,7 +1893,7 @@ public readonly vbvFullnessBits: number;
 
 Initial fullness of the Video Buffering Verifier (VBV) buffer in bits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#vbv_fullness_bits TranscoderJob#vbv_fullness_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#vbv_fullness_bits TranscoderJob#vbv_fullness_bits}
 
 ---
 
@@ -1855,7 +1907,7 @@ public readonly vbvSizeBits: number;
 
 Size of the Video Buffering Verifier (VBV) buffer in bits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#vbv_size_bits TranscoderJob#vbv_size_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#vbv_size_bits TranscoderJob#vbv_size_bits}
 
 ---
 
@@ -1869,7 +1921,7 @@ public readonly widthPixels: number;
 
 The width of the video in pixels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#width_pixels TranscoderJob#width_pixels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#width_pixels TranscoderJob#width_pixels}
 
 ---
 
@@ -1928,7 +1980,7 @@ public readonly id: string;
 
 Identifier for this set of encryption options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#id TranscoderJob#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#id TranscoderJob#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1945,7 +1997,7 @@ public readonly aes128: TranscoderJobConfigEncryptionsAes128;
 
 aes128 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#aes128 TranscoderJob#aes128}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#aes128 TranscoderJob#aes128}
 
 ---
 
@@ -1959,7 +2011,7 @@ public readonly drmSystems: TranscoderJobConfigEncryptionsDrmSystems;
 
 drm_systems block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#drm_systems TranscoderJob#drm_systems}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#drm_systems TranscoderJob#drm_systems}
 
 ---
 
@@ -1973,7 +2025,7 @@ public readonly mpegCenc: TranscoderJobConfigEncryptionsMpegCenc;
 
 mpeg_cenc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#mpeg_cenc TranscoderJob#mpeg_cenc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#mpeg_cenc TranscoderJob#mpeg_cenc}
 
 ---
 
@@ -1987,7 +2039,7 @@ public readonly sampleAes: TranscoderJobConfigEncryptionsSampleAes;
 
 sample_aes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#sample_aes TranscoderJob#sample_aes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#sample_aes TranscoderJob#sample_aes}
 
 ---
 
@@ -2001,7 +2053,7 @@ public readonly secretManagerKeySource: TranscoderJobConfigEncryptionsSecretMana
 
 secret_manager_key_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#secret_manager_key_source TranscoderJob#secret_manager_key_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#secret_manager_key_source TranscoderJob#secret_manager_key_source}
 
 ---
 
@@ -2047,7 +2099,7 @@ public readonly clearkey: TranscoderJobConfigEncryptionsDrmSystemsClearkey;
 
 clearkey block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#clearkey TranscoderJob#clearkey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#clearkey TranscoderJob#clearkey}
 
 ---
 
@@ -2061,7 +2113,7 @@ public readonly fairplay: TranscoderJobConfigEncryptionsDrmSystemsFairplay;
 
 fairplay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#fairplay TranscoderJob#fairplay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#fairplay TranscoderJob#fairplay}
 
 ---
 
@@ -2075,7 +2127,7 @@ public readonly playready: TranscoderJobConfigEncryptionsDrmSystemsPlayready;
 
 playready block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#playready TranscoderJob#playready}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#playready TranscoderJob#playready}
 
 ---
 
@@ -2089,7 +2141,7 @@ public readonly widevine: TranscoderJobConfigEncryptionsDrmSystemsWidevine;
 
 widevine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#widevine TranscoderJob#widevine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#widevine TranscoderJob#widevine}
 
 ---
 
@@ -2165,7 +2217,7 @@ public readonly scheme: string;
 
 Specify the encryption scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#scheme TranscoderJob#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#scheme TranscoderJob#scheme}
 
 ---
 
@@ -2208,7 +2260,7 @@ public readonly secretVersion: string;
 
 The name of the Secret Version containing the encryption key in the following format: projects/{project}/secrets/{secret_id}/versions/{version_number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#secret_version TranscoderJob#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#secret_version TranscoderJob#secret_version}
 
 ---
 
@@ -2241,7 +2293,7 @@ public readonly key: string;
 
 A unique key for this input. Must be specified when using advanced mapping and edit lists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#key TranscoderJob#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#key TranscoderJob#key}
 
 ---
 
@@ -2258,7 +2310,7 @@ URI of the media.
 Input files must be at least 5 seconds in duration and stored in Cloud Storage (for example, gs://bucket/inputs/file.mp4).
 If empty, the value is populated from Job.input_uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#uri TranscoderJob#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#uri TranscoderJob#uri}
 
 ---
 
@@ -2292,7 +2344,7 @@ public readonly fileName: string;
 
 The name of the generated file. The default is 'manifest'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#file_name TranscoderJob#file_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#file_name TranscoderJob#file_name}
 
 ---
 
@@ -2306,7 +2358,7 @@ public readonly muxStreams: string[];
 
 List of user supplied MuxStream.key values that should appear in this manifest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#mux_streams TranscoderJob#mux_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#mux_streams TranscoderJob#mux_streams}
 
 ---
 
@@ -2320,7 +2372,7 @@ public readonly type: string;
 
 Type of the manifest. Possible values: ["MANIFEST_TYPE_UNSPECIFIED", "HLS", "DASH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#type TranscoderJob#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#type TranscoderJob#type}
 
 ---
 
@@ -2357,7 +2409,7 @@ public readonly container: string;
 
 The container format. The default is 'mp4'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#container TranscoderJob#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#container TranscoderJob#container}
 
 ---
 
@@ -2371,7 +2423,7 @@ public readonly elementaryStreams: string[];
 
 List of ElementaryStream.key values multiplexed in this stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#elementary_streams TranscoderJob#elementary_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#elementary_streams TranscoderJob#elementary_streams}
 
 ---
 
@@ -2385,7 +2437,7 @@ public readonly encryptionId: string;
 
 Identifier of the encryption configuration to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#encryption_id TranscoderJob#encryption_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#encryption_id TranscoderJob#encryption_id}
 
 ---
 
@@ -2399,7 +2451,7 @@ public readonly fileName: string;
 
 The name of the generated file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#file_name TranscoderJob#file_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#file_name TranscoderJob#file_name}
 
 ---
 
@@ -2413,7 +2465,7 @@ public readonly key: string;
 
 A unique key for this multiplexed stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#key TranscoderJob#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#key TranscoderJob#key}
 
 ---
 
@@ -2427,7 +2479,7 @@ public readonly segmentSettings: TranscoderJobConfigMuxStreamsSegmentSettings;
 
 segment_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#segment_settings TranscoderJob#segment_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#segment_settings TranscoderJob#segment_settings}
 
 ---
 
@@ -2459,7 +2511,7 @@ public readonly segmentDuration: string;
 
 Duration of the segments in seconds. The default is '6.0s'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#segment_duration TranscoderJob#segment_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#segment_duration TranscoderJob#segment_duration}
 
 ---
 
@@ -2491,7 +2543,7 @@ public readonly uri: string;
 
 URI for the output file(s). For example, gs://my-bucket/outputs/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#uri TranscoderJob#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#uri TranscoderJob#uri}
 
 ---
 
@@ -2524,7 +2576,7 @@ public readonly animations: IResolvable | TranscoderJobConfigOverlaysAnimations[
 
 animations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#animations TranscoderJob#animations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#animations TranscoderJob#animations}
 
 ---
 
@@ -2538,7 +2590,7 @@ public readonly image: TranscoderJobConfigOverlaysImage;
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#image TranscoderJob#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#image TranscoderJob#image}
 
 ---
 
@@ -2570,7 +2622,7 @@ public readonly animationFade: TranscoderJobConfigOverlaysAnimationsAnimationFad
 
 animation_fade block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#animation_fade TranscoderJob#animation_fade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#animation_fade TranscoderJob#animation_fade}
 
 ---
 
@@ -2611,7 +2663,7 @@ Required. Type of fade animation: 'FADE_IN' or 'FADE_OUT'. The possible values a
 
 * 'FADE_OUT': Fade the overlay object out of view. Possible values: ["FADE_TYPE_UNSPECIFIED", "FADE_IN", "FADE_OUT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#fade_type TranscoderJob#fade_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#fade_type TranscoderJob#fade_type}
 
 ---
 
@@ -2625,7 +2677,7 @@ public readonly endTimeOffset: string;
 
 The time to end the fade animation, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#end_time_offset TranscoderJob#end_time_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#end_time_offset TranscoderJob#end_time_offset}
 
 ---
 
@@ -2639,7 +2691,7 @@ public readonly startTimeOffset: string;
 
 The time to start the fade animation, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#start_time_offset TranscoderJob#start_time_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#start_time_offset TranscoderJob#start_time_offset}
 
 ---
 
@@ -2653,7 +2705,7 @@ public readonly xy: TranscoderJobConfigOverlaysAnimationsAnimationFadeXy;
 
 xy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#xy TranscoderJob#xy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#xy TranscoderJob#xy}
 
 ---
 
@@ -2686,7 +2738,7 @@ public readonly x: number;
 
 Normalized x coordinate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#x TranscoderJob#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#x TranscoderJob#x}
 
 ---
 
@@ -2700,7 +2752,7 @@ public readonly y: number;
 
 Normalized y coordinate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#y TranscoderJob#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#y TranscoderJob#y}
 
 ---
 
@@ -2732,7 +2784,7 @@ public readonly uri: string;
 
 URI of the image in Cloud Storage. For example, gs://bucket/inputs/image.png.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#uri TranscoderJob#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#uri TranscoderJob#uri}
 
 ---
 
@@ -2764,7 +2816,7 @@ public readonly topic: string;
 
 The name of the Pub/Sub topic to publish job completion notification to. For example: projects/{project}/topics/{topic}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#topic TranscoderJob#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#topic TranscoderJob#topic}
 
 ---
 
@@ -2782,9 +2834,9 @@ const transcoderJobTimeouts: transcoderJob.TranscoderJobTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#create TranscoderJob#create}. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#delete TranscoderJob#delete}. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#update TranscoderJob#update}. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#create TranscoderJob#create}. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#delete TranscoderJob#delete}. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#update TranscoderJob#update}. |
 
 ---
 
@@ -2796,7 +2848,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#create TranscoderJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#create TranscoderJob#create}.
 
 ---
 
@@ -2808,7 +2860,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#delete TranscoderJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#delete TranscoderJob#delete}.
 
 ---
 
@@ -2820,7 +2872,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job#update TranscoderJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/transcoder_job#update TranscoderJob#update}.
 
 ---
 

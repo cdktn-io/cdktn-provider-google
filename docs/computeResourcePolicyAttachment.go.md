@@ -4,7 +4,7 @@
 
 ### ComputeResourcePolicyAttachment <a name="ComputeResourcePolicyAttachment" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -403,6 +404,12 @@ func PutTimeouts(value ComputeResourcePolicyAttachmentTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.resetId"></a>
 
 ```go
@@ -530,7 +537,7 @@ The construct id used in the generated config for the ComputeResourcePolicyAttac
 
 The id of the existing ComputeResourcePolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -561,12 +568,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeoutsOutputReference">ComputeResourcePolicyAttachmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.instanceInput">InstanceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.instance">Instance</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -727,6 +736,16 @@ func Timeouts() ComputeResourcePolicyAttachmentTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.idInput"></a>
 
 ```go
@@ -781,6 +800,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func ZoneInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -874,6 +903,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcep
 	Provisioners: *[]interface{},
 	Instance: *string,
 	Name: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts,
@@ -894,8 +924,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcep
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.instance">Instance</a></code> | <code>*string</code> | The name of the instance in which the resource policies are attached to. |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.name">Name</a></code> | <code>*string</code> | The resource policy to be attached to the instance for scheduling start/stop operations. Do not specify the self link. |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}. |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}. |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts">ComputeResourcePolicyAttachmentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.zone">Zone</a></code> | <code>*string</code> | A reference to the zone where the instance resides. |
 
@@ -981,7 +1012,7 @@ Instance *string
 
 The name of the instance in which the resource policies are attached to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
 
 ---
 
@@ -995,7 +1026,28 @@ Name *string
 
 The resource policy to be attached to the instance for scheduling start/stop operations. Do not specify the self link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#deletion_policy ComputeResourcePolicyAttachment#deletion_policy}
 
 ---
 
@@ -1007,7 +1059,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1074,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}.
 
 ---
 
@@ -1036,7 +1088,7 @@ Timeouts ComputeResourcePolicyAttachmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
 
 ---
 
@@ -1050,7 +1102,7 @@ Zone *string
 
 A reference to the zone where the instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
 
 ---
 
@@ -1071,8 +1123,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcep
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}. |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}. |
 
 ---
 
@@ -1084,7 +1136,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}.
 
 ---
 
@@ -1096,7 +1148,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SpannerInstanceConfigA <a name="SpannerInstanceConfigA" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config google_spanner_instance_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config google_spanner_instance_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer"></a>
 
@@ -24,6 +24,7 @@ spannerInstanceConfig.SpannerInstanceConfigA(
   display_name: str,
   replicas: IResolvable | typing.List[SpannerInstanceConfigReplicas],
   base_config: str = None,
+  deletion_policy: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
   name: str = None,
@@ -46,10 +47,11 @@ spannerInstanceConfig.SpannerInstanceConfigA(
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The name of this instance configuration as it appears in UIs. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.replicas">replicas</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicas">SpannerInstanceConfigReplicas</a>]</code> | replicas block. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.baseConfig">base_config</a></code> | <code>str</code> | Base configuration name, e.g. nam3, based on which this configuration is created. Only set for user managed configurations. baseConfig must refer to a configuration of type GOOGLE_MANAGED in the same project as this configuration. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.name">name</a></code> | <code>str</code> | A unique identifier for the instance configuration. Values are of the form projects/<project>/instanceConfigs/[a-z][-a-z0-9]*. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts">SpannerInstanceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of this instance configuration as it appears in UIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#display_name SpannerInstanceConfigA#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#display_name SpannerInstanceConfigA#display_name}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 replicas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
 
 ---
 
@@ -140,7 +142,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Base configuration name, e.g. nam3, based on which this configuration is created. Only set for user managed configurations. baseConfig must refer to a configuration of type GOOGLE_MANAGED in the same project as this configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#base_config SpannerInstanceConfigA#base_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#base_config SpannerInstanceConfigA#base_config}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#deletion_policy SpannerInstanceConfigA#deletion_policy}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +183,7 @@ An object containing a list of "key": value pairs. Example: { "name": "wrench", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#labels SpannerInstanceConfigA#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#labels SpannerInstanceConfigA#labels}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A unique identifier for the instance configuration. Values are of the form projects/<project>/instanceConfigs/[a-z][-a-z0-9]*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#name SpannerInstanceConfigA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#name SpannerInstanceConfigA#name}
 
 ---
 
@@ -182,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}.
 
 ---
 
@@ -192,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#timeouts SpannerInstanceConfigA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#timeouts SpannerInstanceConfigA#timeouts}
 
 ---
 
@@ -227,6 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.putReplicas">put_replicas</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.resetBaseConfig">reset_base_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.resetName">reset_name</a></code> | *No description.* |
@@ -611,7 +631,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#create SpannerInstanceConfigA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#create SpannerInstanceConfigA#create}.
 
 ---
 
@@ -619,7 +639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#delete SpannerInstanceConfigA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#delete SpannerInstanceConfigA#delete}.
 
 ---
 
@@ -627,7 +647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#update SpannerInstanceConfigA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#update SpannerInstanceConfigA#update}.
 
 ---
 
@@ -635,6 +655,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_base_config() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.resetId"></a>
@@ -781,7 +807,7 @@ The construct id used in the generated config for the SpannerInstanceConfigA to 
 
 The id of the existing SpannerInstanceConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,6 +843,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeoutsOutputReference">SpannerInstanceConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.baseConfigInput">base_config_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -825,6 +852,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.replicasInput">replicas_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicas">SpannerInstanceConfigReplicas</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts">SpannerInstanceConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.baseConfig">base_config</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1035,6 +1063,16 @@ base_config_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.displayNameInput"></a>
 
 ```python
@@ -1109,6 +1147,16 @@ timeouts_input: IResolvable | SpannerInstanceConfigTimeouts
 
 ```python
 base_config: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1203,6 +1251,7 @@ spannerInstanceConfig.SpannerInstanceConfigAConfig(
   display_name: str,
   replicas: IResolvable | typing.List[SpannerInstanceConfigReplicas],
   base_config: str = None,
+  deletion_policy: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
   name: str = None,
@@ -1225,10 +1274,11 @@ spannerInstanceConfig.SpannerInstanceConfigAConfig(
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.displayName">display_name</a></code> | <code>str</code> | The name of this instance configuration as it appears in UIs. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.replicas">replicas</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicas">SpannerInstanceConfigReplicas</a>]</code> | replicas block. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.baseConfig">base_config</a></code> | <code>str</code> | Base configuration name, e.g. nam3, based on which this configuration is created. Only set for user managed configurations. baseConfig must refer to a configuration of type GOOGLE_MANAGED in the same project as this configuration. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.name">name</a></code> | <code>str</code> | A unique identifier for the instance configuration. Values are of the form projects/<project>/instanceConfigs/[a-z][-a-z0-9]*. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts">SpannerInstanceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1313,7 +1363,7 @@ display_name: str
 
 The name of this instance configuration as it appears in UIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#display_name SpannerInstanceConfigA#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#display_name SpannerInstanceConfigA#display_name}
 
 ---
 
@@ -1327,7 +1377,7 @@ replicas: IResolvable | typing.List[SpannerInstanceConfigReplicas]
 
 replicas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
 
 ---
 
@@ -1341,7 +1391,28 @@ base_config: str
 
 Base configuration name, e.g. nam3, based on which this configuration is created. Only set for user managed configurations. baseConfig must refer to a configuration of type GOOGLE_MANAGED in the same project as this configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#base_config SpannerInstanceConfigA#base_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#base_config SpannerInstanceConfigA#base_config}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#deletion_policy SpannerInstanceConfigA#deletion_policy}
 
 ---
 
@@ -1353,7 +1424,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1373,7 +1444,7 @@ An object containing a list of "key": value pairs. Example: { "name": "wrench", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#labels SpannerInstanceConfigA#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#labels SpannerInstanceConfigA#labels}
 
 ---
 
@@ -1387,7 +1458,7 @@ name: str
 
 A unique identifier for the instance configuration. Values are of the form projects/<project>/instanceConfigs/[a-z][-a-z0-9]*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#name SpannerInstanceConfigA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#name SpannerInstanceConfigA#name}
 
 ---
 
@@ -1399,7 +1470,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}.
 
 ---
 
@@ -1413,7 +1484,7 @@ timeouts: SpannerInstanceConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#timeouts SpannerInstanceConfigA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#timeouts SpannerInstanceConfigA#timeouts}
 
 ---
 
@@ -1451,7 +1522,7 @@ default_leader_location: bool | IResolvable
 
 If true, this location is designated as the default leader location where leader replicas are placed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#default_leader_location SpannerInstanceConfigA#default_leader_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#default_leader_location SpannerInstanceConfigA#default_leader_location}
 
 ---
 
@@ -1465,7 +1536,7 @@ location: str
 
 The location of the serving resources, e.g. "us-central1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#location SpannerInstanceConfigA#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#location SpannerInstanceConfigA#location}
 
 ---
 
@@ -1479,7 +1550,7 @@ type: str
 
 Indicates the type of replica.  See the [replica types documentation](https://cloud.google.com/spanner/docs/replication#replica_types) for more details. Possible values: ["READ_WRITE", "READ_ONLY", "WITNESS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#type SpannerInstanceConfigA#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#type SpannerInstanceConfigA#type}
 
 ---
 
@@ -1501,9 +1572,9 @@ spannerInstanceConfig.SpannerInstanceConfigTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#create SpannerInstanceConfigA#create}. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#delete SpannerInstanceConfigA#delete}. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#update SpannerInstanceConfigA#update}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#create SpannerInstanceConfigA#create}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#delete SpannerInstanceConfigA#delete}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#update SpannerInstanceConfigA#update}. |
 
 ---
 
@@ -1515,7 +1586,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#create SpannerInstanceConfigA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#create SpannerInstanceConfigA#create}.
 
 ---
 
@@ -1527,7 +1598,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#delete SpannerInstanceConfigA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#delete SpannerInstanceConfigA#delete}.
 
 ---
 
@@ -1539,7 +1610,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#update SpannerInstanceConfigA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_config#update SpannerInstanceConfigA#update}.
 
 ---
 

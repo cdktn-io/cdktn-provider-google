@@ -4,7 +4,7 @@
 
 ### EndpointsService <a name="EndpointsService" id="@cdktn/provider-google.endpointsService.EndpointsService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service google_endpoints_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service google_endpoints_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.endpointsService.EndpointsService.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.resetGrpcConfig">ResetGrpcConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.resetOpenapiConfig">ResetOpenapiConfig</a></code> | *No description.* |
@@ -405,6 +406,12 @@ private void PutTimeouts(EndpointsServiceTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.endpointsService.EndpointsService.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetGrpcConfig` <a name="ResetGrpcConfig" id="@cdktn/provider-google.endpointsService.EndpointsService.resetGrpcConfig"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the EndpointsService to import
 
 The id of the existing EndpointsService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -579,6 +586,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.dnsAddress">DnsAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.endpoints">Endpoints</a></code> | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceEndpointsList">EndpointsServiceEndpointsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeoutsOutputReference">EndpointsServiceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.grpcConfigInput">GrpcConfigInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.openapiConfigInput">OpenapiConfigInput</a></code> | <code>string</code> | *No description.* |
@@ -586,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.protocOutputBase64Input">ProtocOutputBase64Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.serviceNameInput">ServiceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts">EndpointsServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.grpcConfig">GrpcConfig</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsService.property.openapiConfig">OpenapiConfig</a></code> | <code>string</code> | *No description.* |
@@ -787,6 +796,16 @@ public EndpointsServiceTimeoutsOutputReference Timeouts { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.endpointsService.EndpointsService.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `GrpcConfigInput`<sup>Optional</sup> <a name="GrpcConfigInput" id="@cdktn/provider-google.endpointsService.EndpointsService.property.grpcConfigInput"></a>
 
 ```csharp
@@ -854,6 +873,16 @@ public IResolvable|EndpointsServiceTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts">EndpointsServiceTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.endpointsService.EndpointsService.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -979,6 +1008,7 @@ new EndpointsServiceConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ServiceName,
+    string DeletionPolicy = null,
     string GrpcConfig = null,
     string Id = null,
     string OpenapiConfig = null,
@@ -1000,8 +1030,9 @@ new EndpointsServiceConfig {
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.serviceName">ServiceName</a></code> | <code>string</code> | The name of the service. Usually of the form $apiname.endpoints.$projectid.cloud.goog. |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.grpcConfig">GrpcConfig</a></code> | <code>string</code> | The full text of the Service Config YAML file (Example located here). |
-| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#id EndpointsService#id}. |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#id EndpointsService#id}. |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.openapiConfig">OpenapiConfig</a></code> | <code>string</code> | The full text of the OpenAPI YAML configuration as described here. |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.project">Project</a></code> | <code>string</code> | The project ID that the service belongs to. If not provided, provider project is used. |
 | <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.protocOutputBase64">ProtocOutputBase64</a></code> | <code>string</code> | The full contents of the Service Descriptor File generated by protoc. This should be a compiled .pb file, base64-encoded. |
@@ -1089,7 +1120,28 @@ public string ServiceName { get; set; }
 
 The name of the service. Usually of the form $apiname.endpoints.$projectid.cloud.goog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#service_name EndpointsService#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#service_name EndpointsService#service_name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.endpointsService.EndpointsServiceConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#deletion_policy EndpointsService#deletion_policy}
 
 ---
 
@@ -1105,7 +1157,7 @@ The full text of the Service Config YAML file (Example located here).
 
 If provided, must also provide protoc_output_base64. open_api config must not be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#grpc_config EndpointsService#grpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#grpc_config EndpointsService#grpc_config}
 
 ---
 
@@ -1117,7 +1169,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#id EndpointsService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#id EndpointsService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1136,7 +1188,7 @@ The full text of the OpenAPI YAML configuration as described here.
 
 Either this, or both of grpc_config and protoc_output_base64 must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#openapi_config EndpointsService#openapi_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#openapi_config EndpointsService#openapi_config}
 
 ---
 
@@ -1150,7 +1202,7 @@ public string Project { get; set; }
 
 The project ID that the service belongs to. If not provided, provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#project EndpointsService#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#project EndpointsService#project}
 
 ---
 
@@ -1164,7 +1216,7 @@ public string ProtocOutputBase64 { get; set; }
 
 The full contents of the Service Descriptor File generated by protoc. This should be a compiled .pb file, base64-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#protoc_output_base64 EndpointsService#protoc_output_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#protoc_output_base64 EndpointsService#protoc_output_base64}
 
 ---
 
@@ -1178,7 +1230,7 @@ public EndpointsServiceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#timeouts EndpointsService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#timeouts EndpointsService#timeouts}
 
 ---
 
@@ -1213,9 +1265,9 @@ new EndpointsServiceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#create EndpointsService#create}. |
-| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#delete EndpointsService#delete}. |
-| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#update EndpointsService#update}. |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#create EndpointsService#create}. |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#delete EndpointsService#delete}. |
+| <code><a href="#@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#update EndpointsService#update}. |
 
 ---
 
@@ -1227,7 +1279,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#create EndpointsService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#create EndpointsService#create}.
 
 ---
 
@@ -1239,7 +1291,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#delete EndpointsService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#delete EndpointsService#delete}.
 
 ---
 
@@ -1251,7 +1303,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service#update EndpointsService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/endpoints_service#update EndpointsService#update}.
 
 ---
 

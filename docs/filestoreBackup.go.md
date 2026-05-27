@@ -4,7 +4,7 @@
 
 ### FilestoreBackup <a name="FilestoreBackup" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup google_filestore_backup}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup google_filestore_backup}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -405,6 +406,12 @@ func PutTimeouts(value FilestoreBackupTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.resetDescription"></a>
 
 ```go
@@ -544,7 +551,7 @@ The construct id used in the generated config for the FilestoreBackup to import.
 
 The id of the existing FilestoreBackup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -584,6 +591,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.storageBytes">StorageBytes</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeoutsOutputReference">FilestoreBackupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -594,6 +602,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.sourceInstanceInput">SourceInstanceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -848,6 +857,16 @@ func Timeouts() FilestoreBackupTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.descriptionInput"></a>
 
 ```go
@@ -945,6 +964,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1077,6 +1106,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
 	Name: *string,
 	SourceFileShare: *string,
 	SourceInstance: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
@@ -1101,10 +1131,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of the backup. The name must be unique within the specified instance. |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.sourceFileShare">SourceFileShare</a></code> | <code>*string</code> | Name of the file share in the source Cloud Filestore instance that the backup is created from. |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.sourceInstance">SourceInstance</a></code> | <code>*string</code> | The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup. |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.description">Description</a></code> | <code>*string</code> | A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#id FilestoreBackup#id}. |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#id FilestoreBackup#id}. |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels to represent user-provided metadata. |
-| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#project FilestoreBackup#project}. |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#project FilestoreBackup#project}. |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts">FilestoreBackupTimeouts</a></code> | timeouts block. |
 
@@ -1190,7 +1221,7 @@ Location *string
 
 The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#location FilestoreBackup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#location FilestoreBackup#location}
 
 ---
 
@@ -1211,7 +1242,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#name FilestoreBackup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#name FilestoreBackup#name}
 
 ---
 
@@ -1225,7 +1256,7 @@ SourceFileShare *string
 
 Name of the file share in the source Cloud Filestore instance that the backup is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#source_file_share FilestoreBackup#source_file_share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#source_file_share FilestoreBackup#source_file_share}
 
 ---
 
@@ -1239,7 +1270,28 @@ SourceInstance *string
 
 The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#source_instance FilestoreBackup#source_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#source_instance FilestoreBackup#source_instance}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#deletion_policy FilestoreBackup#deletion_policy}
 
 ---
 
@@ -1253,7 +1305,7 @@ Description *string
 
 A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#description FilestoreBackup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#description FilestoreBackup#description}
 
 ---
 
@@ -1265,7 +1317,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#id FilestoreBackup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#id FilestoreBackup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1285,7 +1337,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#labels FilestoreBackup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#labels FilestoreBackup#labels}
 
 ---
 
@@ -1297,7 +1349,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#project FilestoreBackup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#project FilestoreBackup#project}.
 
 ---
 
@@ -1315,7 +1367,7 @@ Resource manager tag keys and values have the same definition as resource manage
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 The field is ignored (both PUT & PATCH) when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#tags FilestoreBackup#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#tags FilestoreBackup#tags}
 
 ---
 
@@ -1329,7 +1381,7 @@ Timeouts FilestoreBackupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#timeouts FilestoreBackup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#timeouts FilestoreBackup#timeouts}
 
 ---
 
@@ -1351,9 +1403,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#create FilestoreBackup#create}. |
-| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#delete FilestoreBackup#delete}. |
-| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#update FilestoreBackup#update}. |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#create FilestoreBackup#create}. |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#delete FilestoreBackup#delete}. |
+| <code><a href="#@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#update FilestoreBackup#update}. |
 
 ---
 
@@ -1365,7 +1417,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#create FilestoreBackup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#create FilestoreBackup#create}.
 
 ---
 
@@ -1377,7 +1429,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#delete FilestoreBackup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#delete FilestoreBackup#delete}.
 
 ---
 
@@ -1389,7 +1441,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_backup#update FilestoreBackup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_backup#update FilestoreBackup#update}.
 
 ---
 

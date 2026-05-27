@@ -4,7 +4,7 @@
 
 ### MonitoringMetricDescriptor <a name="MonitoringMetricDescriptor" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.putLabels">PutLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.putMetadata">PutMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.resetId">ResetId</a></code> | *No description.* |
@@ -434,6 +435,12 @@ private void PutTimeouts(MonitoringMetricDescriptorTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.resetDescription"></a>
 
 ```csharp
@@ -591,7 +598,7 @@ The construct id used in the generated config for the MonitoringMetricDescriptor
 
 The id of the existing MonitoringMetricDescriptor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -626,6 +633,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.monitoredResourceTypes">MonitoredResourceTypes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference">MonitoringMetricDescriptorTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -638,6 +646,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.unitInput">UnitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.valueTypeInput">ValueTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -842,6 +851,16 @@ public MonitoringMetricDescriptorTimeoutsOutputReference Timeouts { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.descriptionInput"></a>
 
 ```csharp
@@ -956,6 +975,16 @@ public string UnitInput { get; }
 
 ```csharp
 public string ValueTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -1090,6 +1119,7 @@ new MonitoringMetricDescriptorConfig {
     string MetricKind,
     string Type,
     string ValueType,
+    string DeletionPolicy = null,
     string Description = null,
     string DisplayName = null,
     string Id = null,
@@ -1116,13 +1146,14 @@ new MonitoringMetricDescriptorConfig {
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.metricKind">MetricKind</a></code> | <code>string</code> | Whether the metric records instantaneous values, changes to a value, etc. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.type">Type</a></code> | <code>string</code> | The metric type, including its DNS name prefix. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.valueType">ValueType</a></code> | <code>string</code> | Whether the measurement is an integer, a floating-point number, etc. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.description">Description</a></code> | <code>string</code> | A detailed description of the metric, which can be used in documentation. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.displayName">DisplayName</a></code> | <code>string</code> | A concise name for the metric, which can be displayed in user interfaces. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#id MonitoringMetricDescriptor#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#id MonitoringMetricDescriptor#id}. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.labels">Labels</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>[]</code> | labels block. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.launchStage">LaunchStage</a></code> | <code>string</code> | The launch stage of the metric definition. Possible values: ["LAUNCH_STAGE_UNSPECIFIED", "UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadata">MonitoringMetricDescriptorMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#project MonitoringMetricDescriptor#project}. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#project MonitoringMetricDescriptor#project}. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.unit">Unit</a></code> | <code>string</code> | The units in which the metric value is reported. |
 
@@ -1210,7 +1241,7 @@ Whether the metric records instantaneous values, changes to a value, etc.
 
 Some combinations of metricKind and valueType might not be supported. Possible values: ["METRIC_KIND_UNSPECIFIED", "GAUGE", "DELTA", "CUMULATIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#metric_kind MonitoringMetricDescriptor#metric_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#metric_kind MonitoringMetricDescriptor#metric_kind}
 
 ---
 
@@ -1226,7 +1257,7 @@ The metric type, including its DNS name prefix.
 
 The type is not URL-encoded. All service defined metrics must be prefixed with the service name, in the format of {service name}/{relative metric name}, such as cloudsql.googleapis.com/database/cpu/utilization. The relative metric name must have only upper and lower-case letters, digits, '/' and underscores '_' are allowed. Additionally, the maximum number of characters allowed for the relative_metric_name is 100. All user-defined metric types have the DNS name custom.googleapis.com, external.googleapis.com, or logging.googleapis.com/user/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#type MonitoringMetricDescriptor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#type MonitoringMetricDescriptor#type}
 
 ---
 
@@ -1242,7 +1273,28 @@ Whether the measurement is an integer, a floating-point number, etc.
 
 Some combinations of metricKind and valueType might not be supported. Possible values: ["BOOL", "INT64", "DOUBLE", "STRING", "DISTRIBUTION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#value_type MonitoringMetricDescriptor#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#value_type MonitoringMetricDescriptor#value_type}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#deletion_policy MonitoringMetricDescriptor#deletion_policy}
 
 ---
 
@@ -1256,7 +1308,7 @@ public string Description { get; set; }
 
 A detailed description of the metric, which can be used in documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#description MonitoringMetricDescriptor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#description MonitoringMetricDescriptor#description}
 
 ---
 
@@ -1272,7 +1324,7 @@ A concise name for the metric, which can be displayed in user interfaces.
 
 Use sentence case without an ending period, for example "Request count".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#display_name MonitoringMetricDescriptor#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#display_name MonitoringMetricDescriptor#display_name}
 
 ---
 
@@ -1284,7 +1336,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#id MonitoringMetricDescriptor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#id MonitoringMetricDescriptor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1301,7 +1353,7 @@ public IResolvable|MonitoringMetricDescriptorLabels[] Labels { get; set; }
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#labels MonitoringMetricDescriptor#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#labels MonitoringMetricDescriptor#labels}
 
 ---
 
@@ -1315,7 +1367,7 @@ public string LaunchStage { get; set; }
 
 The launch stage of the metric definition. Possible values: ["LAUNCH_STAGE_UNSPECIFIED", "UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#launch_stage MonitoringMetricDescriptor#launch_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#launch_stage MonitoringMetricDescriptor#launch_stage}
 
 ---
 
@@ -1329,7 +1381,7 @@ public MonitoringMetricDescriptorMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#metadata MonitoringMetricDescriptor#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#metadata MonitoringMetricDescriptor#metadata}
 
 ---
 
@@ -1341,7 +1393,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#project MonitoringMetricDescriptor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#project MonitoringMetricDescriptor#project}.
 
 ---
 
@@ -1355,7 +1407,7 @@ public MonitoringMetricDescriptorTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#timeouts MonitoringMetricDescriptor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#timeouts MonitoringMetricDescriptor#timeouts}
 
 ---
 
@@ -1390,7 +1442,7 @@ The supported units are a subset of The Unified Code for Units of Measure standa
 More info can be found in the API documentation
 (https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.metricDescriptors).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#unit MonitoringMetricDescriptor#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#unit MonitoringMetricDescriptor#unit}
 
 ---
 
@@ -1430,7 +1482,7 @@ The key for this label.
 
 The key must not exceed 100 characters. The first character of the key must be an upper- or lower-case letter, the remaining characters must be letters, digits or underscores, and the key must match the regular expression [a-zA-Z][a-zA-Z0-9_]*
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#key MonitoringMetricDescriptor#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#key MonitoringMetricDescriptor#key}
 
 ---
 
@@ -1444,7 +1496,7 @@ public string Description { get; set; }
 
 A human-readable description for the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#description MonitoringMetricDescriptor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#description MonitoringMetricDescriptor#description}
 
 ---
 
@@ -1458,7 +1510,7 @@ public string ValueType { get; set; }
 
 The type of data that can be assigned to the label. Default value: "STRING" Possible values: ["STRING", "BOOL", "INT64"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#value_type MonitoringMetricDescriptor#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#value_type MonitoringMetricDescriptor#value_type}
 
 ---
 
@@ -1496,7 +1548,7 @@ The delay of data points caused by ingestion.
 
 Data points older than this age are guaranteed to be ingested and available to be read, excluding data loss due to errors. In '[duration format](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf?&_ga=2.264881487.1507873253.1593446723-935052455.1591817775#google.protobuf.Duration)'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#ingest_delay MonitoringMetricDescriptor#ingest_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#ingest_delay MonitoringMetricDescriptor#ingest_delay}
 
 ---
 
@@ -1512,7 +1564,7 @@ The sampling period of metric data points.
 
 For metrics which are written periodically, consecutive data points are stored at this time interval, excluding data loss due to errors. Metrics with a higher granularity have a smaller sampling period. In '[duration format](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf?&_ga=2.264881487.1507873253.1593446723-935052455.1591817775#google.protobuf.Duration)'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#sample_period MonitoringMetricDescriptor#sample_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#sample_period MonitoringMetricDescriptor#sample_period}
 
 ---
 
@@ -1534,9 +1586,9 @@ new MonitoringMetricDescriptorTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#create MonitoringMetricDescriptor#create}. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#delete MonitoringMetricDescriptor#delete}. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#update MonitoringMetricDescriptor#update}. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#create MonitoringMetricDescriptor#create}. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#delete MonitoringMetricDescriptor#delete}. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#update MonitoringMetricDescriptor#update}. |
 
 ---
 
@@ -1548,7 +1600,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#create MonitoringMetricDescriptor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#create MonitoringMetricDescriptor#create}.
 
 ---
 
@@ -1560,7 +1612,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#delete MonitoringMetricDescriptor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#delete MonitoringMetricDescriptor#delete}.
 
 ---
 
@@ -1572,7 +1624,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_metric_descriptor#update MonitoringMetricDescriptor#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_metric_descriptor#update MonitoringMetricDescriptor#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComputeCrossSiteNetwork <a name="ComputeCrossSiteNetwork" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network google_compute_cross_site_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network google_compute_cross_site_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.resetProject">resetProject</a></code> | *No description.* |
@@ -403,6 +404,12 @@ public putTimeouts(value: ComputeCrossSiteNetworkTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.resetDescription"></a>
 
 ```typescript
@@ -530,7 +537,7 @@ The construct id used in the generated config for the ComputeCrossSiteNetwork to
 
 The id of the existing ComputeCrossSiteNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -561,11 +568,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeoutsOutputReference">ComputeCrossSiteNetworkTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts">ComputeCrossSiteNetworkTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -725,6 +734,16 @@ public readonly timeouts: ComputeCrossSiteNetworkTimeoutsOutputReference;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.descriptionInput"></a>
 
 ```typescript
@@ -772,6 +791,16 @@ public readonly timeoutsInput: IResolvable | ComputeCrossSiteNetworkTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts">ComputeCrossSiteNetworkTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -857,9 +886,10 @@ const computeCrossSiteNetworkConfig: computeCrossSiteNetwork.ComputeCrossSiteNet
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#id ComputeCrossSiteNetwork#id}. |
-| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#project ComputeCrossSiteNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#id ComputeCrossSiteNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#project ComputeCrossSiteNetwork#project}. |
 | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts">ComputeCrossSiteNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -950,7 +980,29 @@ long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means t
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#name ComputeCrossSiteNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#name ComputeCrossSiteNetwork#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#deletion_policy ComputeCrossSiteNetwork#deletion_policy}
 
 ---
 
@@ -964,7 +1016,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#description ComputeCrossSiteNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#description ComputeCrossSiteNetwork#description}
 
 ---
 
@@ -976,7 +1028,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#id ComputeCrossSiteNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#id ComputeCrossSiteNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +1043,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#project ComputeCrossSiteNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#project ComputeCrossSiteNetwork#project}.
 
 ---
 
@@ -1005,7 +1057,7 @@ public readonly timeouts: ComputeCrossSiteNetworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#timeouts ComputeCrossSiteNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#timeouts ComputeCrossSiteNetwork#timeouts}
 
 ---
 
@@ -1023,9 +1075,9 @@ const computeCrossSiteNetworkTimeouts: computeCrossSiteNetwork.ComputeCrossSiteN
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#create ComputeCrossSiteNetwork#create}. |
-| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#delete ComputeCrossSiteNetwork#delete}. |
-| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#update ComputeCrossSiteNetwork#update}. |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#create ComputeCrossSiteNetwork#create}. |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#delete ComputeCrossSiteNetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#update ComputeCrossSiteNetwork#update}. |
 
 ---
 
@@ -1037,7 +1089,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#create ComputeCrossSiteNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#create ComputeCrossSiteNetwork#create}.
 
 ---
 
@@ -1049,7 +1101,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#delete ComputeCrossSiteNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#delete ComputeCrossSiteNetwork#delete}.
 
 ---
 
@@ -1061,7 +1113,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_cross_site_network#update ComputeCrossSiteNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_cross_site_network#update ComputeCrossSiteNetwork#update}.
 
 ---
 

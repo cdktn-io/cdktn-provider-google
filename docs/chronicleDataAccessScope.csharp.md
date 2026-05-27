@@ -4,7 +4,7 @@
 
 ### ChronicleDataAccessScope <a name="ChronicleDataAccessScope" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetAllowAll">ResetAllowAll</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetAllowedDataAccessLabels">ResetAllowedDataAccessLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetDeniedDataAccessLabels">ResetDeniedDataAccessLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetId">ResetId</a></code> | *No description.* |
@@ -444,6 +445,12 @@ private void ResetAllowAll()
 private void ResetAllowedDataAccessLabels()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDeniedDataAccessLabels` <a name="ResetDeniedDataAccessLabels" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.resetDeniedDataAccessLabels"></a>
 
 ```csharp
@@ -577,7 +584,7 @@ The construct id used in the generated config for the ChronicleDataAccessScope t
 
 The id of the existing ChronicleDataAccessScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -619,6 +626,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowAllInput">AllowAllInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowedDataAccessLabelsInput">AllowedDataAccessLabelsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.dataAccessScopeIdInput">DataAccessScopeIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deniedDataAccessLabelsInput">DeniedDataAccessLabelsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -628,6 +636,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowAll">AllowAll</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.dataAccessScopeId">DataAccessScopeId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.instance">Instance</a></code> | <code>string</code> | *No description.* |
@@ -898,6 +907,16 @@ public string DataAccessScopeIdInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DeniedDataAccessLabelsInput`<sup>Optional</sup> <a name="DeniedDataAccessLabelsInput" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deniedDataAccessLabelsInput"></a>
 
 ```csharp
@@ -982,6 +1001,16 @@ public bool|IResolvable AllowAll { get; }
 
 ```csharp
 public string DataAccessScopeId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -1094,7 +1123,7 @@ public string AssetNamespace { get; set; }
 
 The asset namespace configured in the forwarder of the customer's events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
 
 ---
 
@@ -1108,7 +1137,7 @@ public string DataAccessLabel { get; set; }
 
 The name of the data access label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
 
 ---
 
@@ -1122,7 +1151,7 @@ public ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel IngestionLa
 
 ingestion_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
 
 ---
 
@@ -1136,7 +1165,7 @@ public string LogType { get; set; }
 
 The name of the log type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
 
 ---
 
@@ -1172,7 +1201,7 @@ public string IngestionLabelKey { get; set; }
 
 Required. The key of the ingestion label. Always required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
 
 ---
 
@@ -1190,7 +1219,7 @@ The value of the ingestion label. Optional. An object
 with no provided value and some key provided would match
 against the given key and ANY value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
 
 ---
 
@@ -1214,6 +1243,7 @@ new ChronicleDataAccessScopeConfig {
     string Location,
     bool|IResolvable AllowAll = null,
     IResolvable|ChronicleDataAccessScopeAllowedDataAccessLabels[] AllowedDataAccessLabels = null,
+    string DeletionPolicy = null,
     IResolvable|ChronicleDataAccessScopeDeniedDataAccessLabels[] DeniedDataAccessLabels = null,
     string Description = null,
     string Id = null,
@@ -1238,10 +1268,11 @@ new ChronicleDataAccessScopeConfig {
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.location">Location</a></code> | <code>string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.allowAll">AllowAll</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.allowedDataAccessLabels">AllowedDataAccessLabels</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>[]</code> | allowed_data_access_labels block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.deniedDataAccessLabels">DeniedDataAccessLabels</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>[]</code> | denied_data_access_labels block. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.description">Description</a></code> | <code>string</code> | Optional. A description of the data access scope for a human reader. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1330,7 +1361,7 @@ The user provided scope id which will become the last part of the name
 of the scope resource.
 Needs to be compliant with https://google.aip.dev/122
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#data_access_scope_id ChronicleDataAccessScope#data_access_scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#data_access_scope_id ChronicleDataAccessScope#data_access_scope_id}
 
 ---
 
@@ -1344,7 +1375,7 @@ public string Instance { get; set; }
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#instance ChronicleDataAccessScope#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#instance ChronicleDataAccessScope#instance}
 
 ---
 
@@ -1360,7 +1391,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#location ChronicleDataAccessScope#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#location ChronicleDataAccessScope#location}
 
 ---
 
@@ -1383,7 +1414,7 @@ A customer with scope with denied labels A and B and allow_all will be able
 to see all data except data labeled with A and data labeled with B and data
 with labels A and B.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
 
 ---
 
@@ -1397,7 +1428,28 @@ public IResolvable|ChronicleDataAccessScopeAllowedDataAccessLabels[] AllowedData
 
 allowed_data_access_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#deletion_policy ChronicleDataAccessScope#deletion_policy}
 
 ---
 
@@ -1411,7 +1463,7 @@ public IResolvable|ChronicleDataAccessScopeDeniedDataAccessLabels[] DeniedDataAc
 
 denied_data_access_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
 
 ---
 
@@ -1425,7 +1477,7 @@ public string Description { get; set; }
 
 Optional. A description of the data access scope for a human reader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#description ChronicleDataAccessScope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#description ChronicleDataAccessScope#description}
 
 ---
 
@@ -1437,7 +1489,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1452,7 +1504,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}.
 
 ---
 
@@ -1466,7 +1518,7 @@ public ChronicleDataAccessScopeTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#timeouts ChronicleDataAccessScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#timeouts ChronicleDataAccessScope#timeouts}
 
 ---
 
@@ -1506,7 +1558,7 @@ public string AssetNamespace { get; set; }
 
 The asset namespace configured in the forwarder of the customer's events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
 
 ---
 
@@ -1520,7 +1572,7 @@ public string DataAccessLabel { get; set; }
 
 The name of the data access label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
 
 ---
 
@@ -1534,7 +1586,7 @@ public ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel IngestionLab
 
 ingestion_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
 
 ---
 
@@ -1548,7 +1600,7 @@ public string LogType { get; set; }
 
 The name of the log type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
 
 ---
 
@@ -1584,7 +1636,7 @@ public string IngestionLabelKey { get; set; }
 
 Required. The key of the ingestion label. Always required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
 
 ---
 
@@ -1602,7 +1654,7 @@ The value of the ingestion label. Optional. An object
 with no provided value and some key provided would match
 against the given key and ANY value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
 
 ---
 
@@ -1624,9 +1676,9 @@ new ChronicleDataAccessScopeTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#create ChronicleDataAccessScope#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#delete ChronicleDataAccessScope#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#update ChronicleDataAccessScope#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#create ChronicleDataAccessScope#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#delete ChronicleDataAccessScope#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#update ChronicleDataAccessScope#update}. |
 
 ---
 
@@ -1638,7 +1690,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#create ChronicleDataAccessScope#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#create ChronicleDataAccessScope#create}.
 
 ---
 
@@ -1650,7 +1702,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#delete ChronicleDataAccessScope#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#delete ChronicleDataAccessScope#delete}.
 
 ---
 
@@ -1662,7 +1714,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#update ChronicleDataAccessScope#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_scope#update ChronicleDataAccessScope#update}.
 
 ---
 

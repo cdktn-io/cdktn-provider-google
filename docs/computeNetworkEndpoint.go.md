@@ -4,7 +4,7 @@
 
 ### ComputeNetworkEndpoint <a name="ComputeNetworkEndpoint" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint google_compute_network_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint google_compute_network_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetInstance">ResetInstance</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetPort">ResetPort</a></code> | *No description.* |
@@ -405,6 +406,12 @@ func PutTimeouts(value ComputeNetworkEndpointTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetId"></a>
 
 ```go
@@ -544,7 +551,7 @@ The construct id used in the generated config for the ComputeNetworkEndpoint to 
 
 The id of the existing ComputeNetworkEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeoutsOutputReference">ComputeNetworkEndpointTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.instanceInput">InstanceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipAddressInput">IpAddressInput</a></code> | <code>*string</code> | *No description.* |
@@ -583,6 +591,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.instance">Instance</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipAddress">IpAddress</a></code> | <code>*string</code> | *No description.* |
@@ -745,6 +754,16 @@ func Timeouts() ComputeNetworkEndpointTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.idInput"></a>
 
 ```go
@@ -819,6 +838,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func ZoneInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -932,6 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworken
 	Provisioners: *[]interface{},
 	IpAddress: *string,
 	NetworkEndpointGroup: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Instance: *string,
 	Port: *f64,
@@ -954,10 +984,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworken
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | IPv4 address of network endpoint. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.networkEndpointGroup">NetworkEndpointGroup</a></code> | <code>*string</code> | The network endpoint group this endpoint is part of. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.instance">Instance</a></code> | <code>*string</code> | The name for a specific VM instance that the IP address belongs to. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.port">Port</a></code> | <code>*f64</code> | Port number of network endpoint. **Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts">ComputeNetworkEndpointTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.zone">Zone</a></code> | <code>*string</code> | Zone where the containing network endpoint group is located. |
 
@@ -1047,7 +1078,7 @@ The IP address must belong
 to a VM in GCE (either the primary IP or as part of an aliased IP
 range).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#ip_address ComputeNetworkEndpoint#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#ip_address ComputeNetworkEndpoint#ip_address}
 
 ---
 
@@ -1061,7 +1092,28 @@ NetworkEndpointGroup *string
 
 The network endpoint group this endpoint is part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#network_endpoint_group ComputeNetworkEndpoint#network_endpoint_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#network_endpoint_group ComputeNetworkEndpoint#network_endpoint_group}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#deletion_policy ComputeNetworkEndpoint#deletion_policy}
 
 ---
 
@@ -1073,7 +1125,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1093,7 +1145,7 @@ The name for a specific VM instance that the IP address belongs to.
 This is required for network endpoints of type GCE_VM_IP_PORT.
 The instance must be in the same zone of network endpoint group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#instance ComputeNetworkEndpoint#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#instance ComputeNetworkEndpoint#instance}
 
 ---
 
@@ -1107,7 +1159,7 @@ Port *f64
 
 Port number of network endpoint. **Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#port ComputeNetworkEndpoint#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#port ComputeNetworkEndpoint#port}
 
 ---
 
@@ -1119,7 +1171,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}.
 
 ---
 
@@ -1133,7 +1185,7 @@ Timeouts ComputeNetworkEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#timeouts ComputeNetworkEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#timeouts ComputeNetworkEndpoint#timeouts}
 
 ---
 
@@ -1147,7 +1199,7 @@ Zone *string
 
 Zone where the containing network endpoint group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#zone ComputeNetworkEndpoint#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#zone ComputeNetworkEndpoint#zone}
 
 ---
 
@@ -1168,8 +1220,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworken
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}. |
 
 ---
 
@@ -1181,7 +1233,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}.
 
 ---
 
@@ -1193,7 +1245,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}.
 
 ---
 

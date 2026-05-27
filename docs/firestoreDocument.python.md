@@ -4,7 +4,7 @@
 
 ### FirestoreDocument <a name="FirestoreDocument" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document google_firestore_document}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document google_firestore_document}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer"></a>
 
@@ -25,6 +25,7 @@ firestoreDocument.FirestoreDocument(
   document_id: str,
   fields: str,
   database: str = None,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: FirestoreDocumentTimeouts = None
@@ -46,8 +47,9 @@ firestoreDocument.FirestoreDocument(
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.documentId">document_id</a></code> | <code>str</code> | The client-assigned document ID to use for this document during creation. |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.fields">fields</a></code> | <code>str</code> | The document's [fields](https://cloud.google.com/firestore/docs/reference/rest/v1/projects.databases.documents) formated as a json string. |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.database">database</a></code> | <code>str</code> | The Firestore database id. Defaults to '"(default)"'. |
-| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#id FirestoreDocument#id}. |
-| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#project FirestoreDocument#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#id FirestoreDocument#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#project FirestoreDocument#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts">FirestoreDocumentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#collection FirestoreDocument#collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#collection FirestoreDocument#collection}
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The client-assigned document ID to use for this document during creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#document_id FirestoreDocument#document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#document_id FirestoreDocument#document_id}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The document's [fields](https://cloud.google.com/firestore/docs/reference/rest/v1/projects.databases.documents) formated as a json string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#fields FirestoreDocument#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#fields FirestoreDocument#fields}
 
 ---
 
@@ -148,7 +150,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#database FirestoreDocument#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#database FirestoreDocument#database}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#deletion_policy FirestoreDocument#deletion_policy}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#id FirestoreDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#id FirestoreDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +186,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#project FirestoreDocument#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#project FirestoreDocument#project}.
 
 ---
 
@@ -177,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#timeouts FirestoreDocument#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#timeouts FirestoreDocument#timeouts}
 
 ---
 
@@ -211,6 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.resetDatabase">reset_database</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -579,7 +599,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#create FirestoreDocument#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#create FirestoreDocument#create}.
 
 ---
 
@@ -587,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#delete FirestoreDocument#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#delete FirestoreDocument#delete}.
 
 ---
 
@@ -595,7 +615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#update FirestoreDocument#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#update FirestoreDocument#update}.
 
 ---
 
@@ -603,6 +623,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_database() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument.resetId"></a>
@@ -737,7 +763,7 @@ The construct id used in the generated config for the FirestoreDocument to impor
 
 The id of the existing FirestoreDocument that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,6 +800,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.collectionInput">collection_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.documentIdInput">document_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.fieldsInput">fields_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -781,6 +808,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts">FirestoreDocumentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.collection">collection</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.documentId">document_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.fields">fields</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1000,6 +1028,16 @@ database_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `document_id_input`<sup>Optional</sup> <a name="document_id_input" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.documentIdInput"></a>
 
 ```python
@@ -1064,6 +1102,16 @@ collection: str
 
 ```python
 database: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.firestoreDocument.FirestoreDocument.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1149,6 +1197,7 @@ firestoreDocument.FirestoreDocumentConfig(
   document_id: str,
   fields: str,
   database: str = None,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: FirestoreDocumentTimeouts = None
@@ -1170,8 +1219,9 @@ firestoreDocument.FirestoreDocumentConfig(
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.documentId">document_id</a></code> | <code>str</code> | The client-assigned document ID to use for this document during creation. |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.fields">fields</a></code> | <code>str</code> | The document's [fields](https://cloud.google.com/firestore/docs/reference/rest/v1/projects.databases.documents) formated as a json string. |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.database">database</a></code> | <code>str</code> | The Firestore database id. Defaults to '"(default)"'. |
-| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#id FirestoreDocument#id}. |
-| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#project FirestoreDocument#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#id FirestoreDocument#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#project FirestoreDocument#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts">FirestoreDocumentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1256,7 +1306,7 @@ collection: str
 
 The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#collection FirestoreDocument#collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#collection FirestoreDocument#collection}
 
 ---
 
@@ -1270,7 +1320,7 @@ document_id: str
 
 The client-assigned document ID to use for this document during creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#document_id FirestoreDocument#document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#document_id FirestoreDocument#document_id}
 
 ---
 
@@ -1284,7 +1334,7 @@ fields: str
 
 The document's [fields](https://cloud.google.com/firestore/docs/reference/rest/v1/projects.databases.documents) formated as a json string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#fields FirestoreDocument#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#fields FirestoreDocument#fields}
 
 ---
 
@@ -1298,7 +1348,28 @@ database: str
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#database FirestoreDocument#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#database FirestoreDocument#database}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.firestoreDocument.FirestoreDocumentConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#deletion_policy FirestoreDocument#deletion_policy}
 
 ---
 
@@ -1310,7 +1381,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#id FirestoreDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#id FirestoreDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1325,7 +1396,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#project FirestoreDocument#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#project FirestoreDocument#project}.
 
 ---
 
@@ -1339,7 +1410,7 @@ timeouts: FirestoreDocumentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#timeouts FirestoreDocument#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#timeouts FirestoreDocument#timeouts}
 
 ---
 
@@ -1361,9 +1432,9 @@ firestoreDocument.FirestoreDocumentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#create FirestoreDocument#create}. |
-| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#delete FirestoreDocument#delete}. |
-| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#update FirestoreDocument#update}. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#create FirestoreDocument#create}. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#delete FirestoreDocument#delete}. |
+| <code><a href="#@cdktn/provider-google.firestoreDocument.FirestoreDocumentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#update FirestoreDocument#update}. |
 
 ---
 
@@ -1375,7 +1446,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#create FirestoreDocument#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#create FirestoreDocument#create}.
 
 ---
 
@@ -1387,7 +1458,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#delete FirestoreDocument#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#delete FirestoreDocument#delete}.
 
 ---
 
@@ -1399,7 +1470,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document#update FirestoreDocument#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_document#update FirestoreDocument#update}.
 
 ---
 

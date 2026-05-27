@@ -4,7 +4,7 @@
 
 ### DocumentAiProcessor <a name="DocumentAiProcessor" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor google_document_ai_processor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor google_document_ai_processor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer"></a>
 
@@ -22,6 +22,7 @@ DocumentAiProcessor.Builder.create(Construct scope, java.lang.String id)
     .displayName(java.lang.String)
     .location(java.lang.String)
     .type(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .kmsKeyName(java.lang.String)
 //  .project(java.lang.String)
@@ -43,9 +44,10 @@ DocumentAiProcessor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name. Must be unique. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes). |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management. |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts">DocumentAiProcessorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The display name. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#display_name DocumentAiProcessor#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#display_name DocumentAiProcessor#display_name}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#location DocumentAiProcessor#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#location DocumentAiProcessor#location}
 
 ---
 
@@ -136,7 +138,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#type DocumentAiProcessor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#type DocumentAiProcessor#type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#deletion_policy DocumentAiProcessor#deletion_policy}
 
 ---
 
@@ -144,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#kms_key_name DocumentAiProcessor#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#kms_key_name DocumentAiProcessor#kms_key_name}
 
 ---
 
@@ -165,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}.
 
 ---
 
@@ -175,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#timeouts DocumentAiProcessor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#timeouts DocumentAiProcessor#timeouts}
 
 ---
 
@@ -208,6 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.resetKmsKeyName">resetKmsKeyName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.resetProject">resetProject</a></code> | *No description.* |
@@ -538,6 +558,12 @@ public void putTimeouts(DocumentAiProcessorTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.resetId"></a>
 
 ```java
@@ -665,7 +691,7 @@ The construct id used in the generated config for the DocumentAiProcessor to imp
 
 The id of the existing DocumentAiProcessor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -697,6 +723,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference">DocumentAiProcessorTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.kmsKeyNameInput">kmsKeyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -704,6 +731,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts">DocumentAiProcessorTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -875,6 +903,16 @@ public DocumentAiProcessorTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.displayNameInput"></a>
 
 ```java
@@ -939,6 +977,16 @@ public IResolvable|DocumentAiProcessorTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1043,6 +1091,7 @@ DocumentAiProcessorConfig.builder()
     .displayName(java.lang.String)
     .location(java.lang.String)
     .type(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .kmsKeyName(java.lang.String)
 //  .project(java.lang.String)
@@ -1064,9 +1113,10 @@ DocumentAiProcessorConfig.builder()
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name. Must be unique. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes). |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management. |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts">DocumentAiProcessorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1151,7 +1201,7 @@ public java.lang.String getDisplayName();
 
 The display name. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#display_name DocumentAiProcessor#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#display_name DocumentAiProcessor#display_name}
 
 ---
 
@@ -1165,7 +1215,7 @@ public java.lang.String getLocation();
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#location DocumentAiProcessor#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#location DocumentAiProcessor#location}
 
 ---
 
@@ -1179,7 +1229,28 @@ public java.lang.String getType();
 
 The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#type DocumentAiProcessor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#type DocumentAiProcessor#type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#deletion_policy DocumentAiProcessor#deletion_policy}
 
 ---
 
@@ -1191,7 +1262,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1208,7 +1279,7 @@ public java.lang.String getKmsKeyName();
 
 The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#kms_key_name DocumentAiProcessor#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#kms_key_name DocumentAiProcessor#kms_key_name}
 
 ---
 
@@ -1220,7 +1291,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}.
 
 ---
 
@@ -1234,7 +1305,7 @@ public DocumentAiProcessorTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#timeouts DocumentAiProcessor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#timeouts DocumentAiProcessor#timeouts}
 
 ---
 
@@ -1255,8 +1326,8 @@ DocumentAiProcessorTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#create DocumentAiProcessor#create}. |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#create DocumentAiProcessor#create}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}. |
 
 ---
 
@@ -1268,7 +1339,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#create DocumentAiProcessor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#create DocumentAiProcessor#create}.
 
 ---
 
@@ -1280,7 +1351,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}.
 
 ---
 

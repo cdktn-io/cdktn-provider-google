@@ -4,7 +4,7 @@
 
 ### PubsubLiteTopic <a name="PubsubLiteTopic" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.putReservationConfig">PutReservationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.putRetentionConfig">PutRetentionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.resetPartitionConfig">ResetPartitionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.resetProject">ResetProject</a></code> | *No description.* |
@@ -446,6 +447,12 @@ private void PutTimeouts(PubsubLiteTopicTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.resetId"></a>
 
 ```csharp
@@ -597,7 +604,7 @@ The construct id used in the generated config for the PubsubLiteTopic to import.
 
 The id of the existing PubsubLiteTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,6 +638,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.reservationConfig">ReservationConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicReservationConfigOutputReference">PubsubLiteTopicReservationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.retentionConfig">RetentionConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicRetentionConfigOutputReference">PubsubLiteTopicRetentionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeoutsOutputReference">PubsubLiteTopicTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.partitionConfigInput">PartitionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfig">PubsubLiteTopicPartitionConfig</a></code> | *No description.* |
@@ -640,6 +648,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.retentionConfigInput">RetentionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicRetentionConfig">PubsubLiteTopicRetentionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts">PubsubLiteTopicTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.project">Project</a></code> | <code>string</code> | *No description.* |
@@ -830,6 +839,16 @@ public PubsubLiteTopicTimeoutsOutputReference Timeouts { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.idInput"></a>
 
 ```csharp
@@ -914,6 +933,16 @@ public IResolvable|PubsubLiteTopicTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string ZoneInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopic.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -1006,6 +1035,7 @@ new PubsubLiteTopicConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
+    string DeletionPolicy = null,
     string Id = null,
     PubsubLiteTopicPartitionConfig PartitionConfig = null,
     string Project = null,
@@ -1029,9 +1059,10 @@ new PubsubLiteTopicConfig {
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.name">Name</a></code> | <code>string</code> | Name of the topic. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#id PubsubLiteTopic#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#id PubsubLiteTopic#id}. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.partitionConfig">PartitionConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfig">PubsubLiteTopicPartitionConfig</a></code> | partition_config block. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#project PubsubLiteTopic#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#project PubsubLiteTopic#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.region">Region</a></code> | <code>string</code> | The region of the pubsub lite topic. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.reservationConfig">ReservationConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicReservationConfig">PubsubLiteTopicReservationConfig</a></code> | reservation_config block. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.retentionConfig">RetentionConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicRetentionConfig">PubsubLiteTopicRetentionConfig</a></code> | retention_config block. |
@@ -1120,7 +1151,28 @@ public string Name { get; set; }
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#name PubsubLiteTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#name PubsubLiteTopic#name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#deletion_policy PubsubLiteTopic#deletion_policy}
 
 ---
 
@@ -1132,7 +1184,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#id PubsubLiteTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#id PubsubLiteTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1149,7 +1201,7 @@ public PubsubLiteTopicPartitionConfig PartitionConfig { get; set; }
 
 partition_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#partition_config PubsubLiteTopic#partition_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#partition_config PubsubLiteTopic#partition_config}
 
 ---
 
@@ -1161,7 +1213,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#project PubsubLiteTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#project PubsubLiteTopic#project}.
 
 ---
 
@@ -1175,7 +1227,7 @@ public string Region { get; set; }
 
 The region of the pubsub lite topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#region PubsubLiteTopic#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#region PubsubLiteTopic#region}
 
 ---
 
@@ -1189,7 +1241,7 @@ public PubsubLiteTopicReservationConfig ReservationConfig { get; set; }
 
 reservation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#reservation_config PubsubLiteTopic#reservation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#reservation_config PubsubLiteTopic#reservation_config}
 
 ---
 
@@ -1203,7 +1255,7 @@ public PubsubLiteTopicRetentionConfig RetentionConfig { get; set; }
 
 retention_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#retention_config PubsubLiteTopic#retention_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#retention_config PubsubLiteTopic#retention_config}
 
 ---
 
@@ -1217,7 +1269,7 @@ public PubsubLiteTopicTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#timeouts PubsubLiteTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#timeouts PubsubLiteTopic#timeouts}
 
 ---
 
@@ -1231,7 +1283,7 @@ public string Zone { get; set; }
 
 The zone of the pubsub lite topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#zone PubsubLiteTopic#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#zone PubsubLiteTopic#zone}
 
 ---
 
@@ -1267,7 +1319,7 @@ public double Count { get; set; }
 
 The number of partitions in the topic. Must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#count PubsubLiteTopic#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#count PubsubLiteTopic#count}
 
 ---
 
@@ -1281,7 +1333,7 @@ public PubsubLiteTopicPartitionConfigCapacity Capacity { get; set; }
 
 capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#capacity PubsubLiteTopic#capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#capacity PubsubLiteTopic#capacity}
 
 ---
 
@@ -1317,7 +1369,7 @@ public double PublishMibPerSec { get; set; }
 
 Subscribe throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#publish_mib_per_sec PubsubLiteTopic#publish_mib_per_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#publish_mib_per_sec PubsubLiteTopic#publish_mib_per_sec}
 
 ---
 
@@ -1331,7 +1383,7 @@ public double SubscribeMibPerSec { get; set; }
 
 Publish throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#subscribe_mib_per_sec PubsubLiteTopic#subscribe_mib_per_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#subscribe_mib_per_sec PubsubLiteTopic#subscribe_mib_per_sec}
 
 ---
 
@@ -1365,7 +1417,7 @@ public string ThroughputReservation { get; set; }
 
 The Reservation to use for this topic's throughput capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#throughput_reservation PubsubLiteTopic#throughput_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#throughput_reservation PubsubLiteTopic#throughput_reservation}
 
 ---
 
@@ -1405,7 +1457,7 @@ If the number of bytes stored
 in any of the topic's partitions grows beyond this value, older messages will be
 dropped to make room for newer ones, regardless of the value of period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#per_partition_bytes PubsubLiteTopic#per_partition_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#per_partition_bytes PubsubLiteTopic#per_partition_bytes}
 
 ---
 
@@ -1424,7 +1476,7 @@ long as the bytes retained for each partition is below perPartitionBytes. A
 duration in seconds with up to nine fractional digits, terminated by 's'.
 Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#period PubsubLiteTopic#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#period PubsubLiteTopic#period}
 
 ---
 
@@ -1446,9 +1498,9 @@ new PubsubLiteTopicTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#create PubsubLiteTopic#create}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#delete PubsubLiteTopic#delete}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#update PubsubLiteTopic#update}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#create PubsubLiteTopic#create}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#delete PubsubLiteTopic#delete}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#update PubsubLiteTopic#update}. |
 
 ---
 
@@ -1460,7 +1512,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#create PubsubLiteTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#create PubsubLiteTopic#create}.
 
 ---
 
@@ -1472,7 +1524,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#delete PubsubLiteTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#delete PubsubLiteTopic#delete}.
 
 ---
 
@@ -1484,7 +1536,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_topic#update PubsubLiteTopic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_topic#update PubsubLiteTopic#update}.
 
 ---
 

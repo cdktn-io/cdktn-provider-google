@@ -4,7 +4,7 @@
 
 ### ParameterManagerParameterVersion <a name="ParameterManagerParameterVersion" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version google_parameter_manager_parameter_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version google_parameter_manager_parameter_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer"></a>
 
@@ -24,6 +24,7 @@ parameterManagerParameterVersion.ParameterManagerParameterVersion(
   parameter: str,
   parameter_data: str,
   parameter_version_id: str,
+  deletion_policy: str = None,
   disabled: bool | IResolvable = None,
   id: str = None,
   timeouts: ParameterManagerParameterVersionTimeouts = None
@@ -44,8 +45,9 @@ parameterManagerParameterVersion.ParameterManagerParameterVersion(
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.parameter">parameter</a></code> | <code>str</code> | Parameter Manager Parameter resource. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.parameterData">parameter_data</a></code> | <code>str</code> | The Parameter data. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.parameterVersionId">parameter_version_id</a></code> | <code>str</code> | Version ID of the Parameter Version Resource. This must be unique within the Parameter. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current state of Parameter Version. This field is only applicable for updating Parameter Version. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Parameter Manager Parameter resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#parameter ParameterManagerParameterVersion#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#parameter ParameterManagerParameterVersion#parameter}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Parameter data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#parameter_data ParameterManagerParameterVersion#parameter_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#parameter_data ParameterManagerParameterVersion#parameter_data}
 
 ---
 
@@ -136,7 +138,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Version ID of the Parameter Version Resource. This must be unique within the Parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#parameter_version_id ParameterManagerParameterVersion#parameter_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#parameter_version_id ParameterManagerParameterVersion#parameter_version_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#deletion_policy ParameterManagerParameterVersion#deletion_policy}
 
 ---
 
@@ -146,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The current state of Parameter Version. This field is only applicable for updating Parameter Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#disabled ParameterManagerParameterVersion#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#disabled ParameterManagerParameterVersion#disabled}
 
 ---
 
@@ -154,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +186,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#timeouts ParameterManagerParameterVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#timeouts ParameterManagerParameterVersion#timeouts}
 
 ---
 
@@ -200,6 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.resetDisabled">reset_disabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -568,7 +588,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#create ParameterManagerParameterVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#create ParameterManagerParameterVersion#create}.
 
 ---
 
@@ -576,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#delete ParameterManagerParameterVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#delete ParameterManagerParameterVersion#delete}.
 
 ---
 
@@ -584,9 +604,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#update ParameterManagerParameterVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#update ParameterManagerParameterVersion#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_disabled` <a name="reset_disabled" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.resetDisabled"></a>
 
@@ -720,7 +746,7 @@ The construct id used in the generated config for the ParameterManagerParameterV
 
 The id of the existing ParameterManagerParameterVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,12 +781,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference">ParameterManagerParameterVersionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameterDataInput">parameter_data_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameterInput">parameter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameterVersionIdInput">parameter_version_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameter">parameter</a></code> | <code>str</code> | *No description.* |
@@ -961,6 +989,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.disabledInput"></a>
 
 ```python
@@ -1018,6 +1056,16 @@ timeouts_input: IResolvable | ParameterManagerParameterVersionTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1109,6 +1157,7 @@ parameterManagerParameterVersion.ParameterManagerParameterVersionConfig(
   parameter: str,
   parameter_data: str,
   parameter_version_id: str,
+  deletion_policy: str = None,
   disabled: bool | IResolvable = None,
   id: str = None,
   timeouts: ParameterManagerParameterVersionTimeouts = None
@@ -1129,8 +1178,9 @@ parameterManagerParameterVersion.ParameterManagerParameterVersionConfig(
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.parameter">parameter</a></code> | <code>str</code> | Parameter Manager Parameter resource. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.parameterData">parameter_data</a></code> | <code>str</code> | The Parameter data. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.parameterVersionId">parameter_version_id</a></code> | <code>str</code> | Version ID of the Parameter Version Resource. This must be unique within the Parameter. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current state of Parameter Version. This field is only applicable for updating Parameter Version. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1215,7 +1265,7 @@ parameter: str
 
 Parameter Manager Parameter resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#parameter ParameterManagerParameterVersion#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#parameter ParameterManagerParameterVersion#parameter}
 
 ---
 
@@ -1229,7 +1279,7 @@ parameter_data: str
 
 The Parameter data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#parameter_data ParameterManagerParameterVersion#parameter_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#parameter_data ParameterManagerParameterVersion#parameter_data}
 
 ---
 
@@ -1243,7 +1293,28 @@ parameter_version_id: str
 
 Version ID of the Parameter Version Resource. This must be unique within the Parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#parameter_version_id ParameterManagerParameterVersion#parameter_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#parameter_version_id ParameterManagerParameterVersion#parameter_version_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#deletion_policy ParameterManagerParameterVersion#deletion_policy}
 
 ---
 
@@ -1257,7 +1328,7 @@ disabled: bool | IResolvable
 
 The current state of Parameter Version. This field is only applicable for updating Parameter Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#disabled ParameterManagerParameterVersion#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#disabled ParameterManagerParameterVersion#disabled}
 
 ---
 
@@ -1269,7 +1340,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1286,7 +1357,7 @@ timeouts: ParameterManagerParameterVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#timeouts ParameterManagerParameterVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#timeouts ParameterManagerParameterVersion#timeouts}
 
 ---
 
@@ -1308,9 +1379,9 @@ parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#create ParameterManagerParameterVersion#create}. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#delete ParameterManagerParameterVersion#delete}. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#update ParameterManagerParameterVersion#update}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#create ParameterManagerParameterVersion#create}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#delete ParameterManagerParameterVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#update ParameterManagerParameterVersion#update}. |
 
 ---
 
@@ -1322,7 +1393,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#create ParameterManagerParameterVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#create ParameterManagerParameterVersion#create}.
 
 ---
 
@@ -1334,7 +1405,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#delete ParameterManagerParameterVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#delete ParameterManagerParameterVersion#delete}.
 
 ---
 
@@ -1346,7 +1417,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version#update ParameterManagerParameterVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_parameter_version#update ParameterManagerParameterVersion#update}.
 
 ---
 

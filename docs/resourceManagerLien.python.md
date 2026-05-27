@@ -4,7 +4,7 @@
 
 ### ResourceManagerLien <a name="ResourceManagerLien" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien google_resource_manager_lien}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien google_resource_manager_lien}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer"></a>
 
@@ -25,6 +25,7 @@ resourceManagerLien.ResourceManagerLien(
   parent: str,
   reason: str,
   restrictions: typing.List[str],
+  deletion_policy: str = None,
   id: str = None,
   timeouts: ResourceManagerLienTimeouts = None
 )
@@ -45,7 +46,8 @@ resourceManagerLien.ResourceManagerLien(
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.parent">parent</a></code> | <code>str</code> | A reference to the resource this Lien is attached to. |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.reason">reason</a></code> | <code>str</code> | Concise user-visible strings indicating why an action cannot be performed on a resource. Maximum length of 200 characters. |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.restrictions">restrictions</a></code> | <code>typing.List[str]</code> | The types of operations which should be blocked as a result of this Lien. |
-| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}. |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts">ResourceManagerLienTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 A stable, user-visible/meaningful string identifying the origin of the Lien, intended to be inspected programmatically. Maximum length of 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#origin ResourceManagerLien#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#origin ResourceManagerLien#origin}
 
 ---
 
@@ -130,7 +132,7 @@ The server will validate the parent against those for which Liens are supported.
 Since a variety of objects can have Liens against them, you must provide the type
 prefix (e.g. "projects/my-project-name").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#parent ResourceManagerLien#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#parent ResourceManagerLien#parent}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Concise user-visible strings indicating why an action cannot be performed on a resource. Maximum length of 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#reason ResourceManagerLien#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#reason ResourceManagerLien#reason}
 
 ---
 
@@ -155,7 +157,24 @@ the permissions against those for which Liens are supported.  An empty
 list is meaningless and will be rejected.
 e.g. ['resourcemanager.projects.delete']
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#restrictions ResourceManagerLien#restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#restrictions ResourceManagerLien#restrictions}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#deletion_policy ResourceManagerLien#deletion_policy}
 
 ---
 
@@ -163,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -176,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#timeouts ResourceManagerLien#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#timeouts ResourceManagerLien#timeouts}
 
 ---
 
@@ -209,6 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -575,7 +595,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#create ResourceManagerLien#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#create ResourceManagerLien#create}.
 
 ---
 
@@ -583,9 +603,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#delete ResourceManagerLien#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#delete ResourceManagerLien#delete}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.resetId"></a>
 
@@ -713,7 +739,7 @@ The construct id used in the generated config for the ResourceManagerLien to imp
 
 The id of the existing ResourceManagerLien that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,12 +772,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeoutsOutputReference">ResourceManagerLienTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.originInput">origin_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.reasonInput">reason_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.restrictionsInput">restrictions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts">ResourceManagerLienTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.origin">origin</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.parent">parent</a></code> | <code>str</code> | *No description.* |
@@ -932,6 +960,16 @@ timeouts: ResourceManagerLienTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.idInput"></a>
 
 ```python
@@ -989,6 +1027,16 @@ timeouts_input: IResolvable | ResourceManagerLienTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts">ResourceManagerLienTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLien.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1081,6 +1129,7 @@ resourceManagerLien.ResourceManagerLienConfig(
   parent: str,
   reason: str,
   restrictions: typing.List[str],
+  deletion_policy: str = None,
   id: str = None,
   timeouts: ResourceManagerLienTimeouts = None
 )
@@ -1101,7 +1150,8 @@ resourceManagerLien.ResourceManagerLienConfig(
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.parent">parent</a></code> | <code>str</code> | A reference to the resource this Lien is attached to. |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.reason">reason</a></code> | <code>str</code> | Concise user-visible strings indicating why an action cannot be performed on a resource. Maximum length of 200 characters. |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.restrictions">restrictions</a></code> | <code>typing.List[str]</code> | The types of operations which should be blocked as a result of this Lien. |
-| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}. |
 | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts">ResourceManagerLienTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1186,7 +1236,7 @@ origin: str
 
 A stable, user-visible/meaningful string identifying the origin of the Lien, intended to be inspected programmatically. Maximum length of 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#origin ResourceManagerLien#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#origin ResourceManagerLien#origin}
 
 ---
 
@@ -1204,7 +1254,7 @@ The server will validate the parent against those for which Liens are supported.
 Since a variety of objects can have Liens against them, you must provide the type
 prefix (e.g. "projects/my-project-name").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#parent ResourceManagerLien#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#parent ResourceManagerLien#parent}
 
 ---
 
@@ -1218,7 +1268,7 @@ reason: str
 
 Concise user-visible strings indicating why an action cannot be performed on a resource. Maximum length of 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#reason ResourceManagerLien#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#reason ResourceManagerLien#reason}
 
 ---
 
@@ -1237,7 +1287,28 @@ the permissions against those for which Liens are supported.  An empty
 list is meaningless and will be rejected.
 e.g. ['resourcemanager.projects.delete']
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#restrictions ResourceManagerLien#restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#restrictions ResourceManagerLien#restrictions}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.resourceManagerLien.ResourceManagerLienConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#deletion_policy ResourceManagerLien#deletion_policy}
 
 ---
 
@@ -1249,7 +1320,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#id ResourceManagerLien#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1337,7 @@ timeouts: ResourceManagerLienTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#timeouts ResourceManagerLien#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#timeouts ResourceManagerLien#timeouts}
 
 ---
 
@@ -1287,8 +1358,8 @@ resourceManagerLien.ResourceManagerLienTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#create ResourceManagerLien#create}. |
-| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#delete ResourceManagerLien#delete}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#create ResourceManagerLien#create}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerLien.ResourceManagerLienTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#delete ResourceManagerLien#delete}. |
 
 ---
 
@@ -1300,7 +1371,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#create ResourceManagerLien#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#create ResourceManagerLien#create}.
 
 ---
 
@@ -1312,7 +1383,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_lien#delete ResourceManagerLien#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/resource_manager_lien#delete ResourceManagerLien#delete}.
 
 ---
 

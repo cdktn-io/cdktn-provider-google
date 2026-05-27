@@ -4,7 +4,7 @@
 
 ### TagsLocationTagBinding <a name="TagsLocationTagBinding" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ public putTimeouts(value: TagsLocationTagBindingTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.resetId"></a>
 
 ```typescript
@@ -523,7 +530,7 @@ The construct id used in the generated config for the TagsLocationTagBinding to 
 
 The id of the existing TagsLocationTagBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -555,11 +562,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference">TagsLocationTagBindingTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.tagValueInput">tagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts">TagsLocationTagBindingTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.parent">parent</a></code> | <code>string</code> | *No description.* |
@@ -729,6 +738,16 @@ public readonly timeouts: TagsLocationTagBindingTimeoutsOutputReference;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.idInput"></a>
 
 ```typescript
@@ -776,6 +795,16 @@ public readonly timeoutsInput: IResolvable | TagsLocationTagBindingTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts">TagsLocationTagBindingTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -862,7 +891,8 @@ const tagsLocationTagBindingConfig: tagsLocationTagBinding.TagsLocationTagBindin
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.parent">parent</a></code> | <code>string</code> | The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123. |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.tagValue">tagValue</a></code> | <code>string</code> | The TagValue of the TagBinding. Must be either in id format 'tagValues/{tag-value-id}', or namespaced format '{parent-id}/{tag-key-short-name}/{tag-value-short-name}'. |
-| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#id TagsLocationTagBinding#id}. |
+| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#id TagsLocationTagBinding#id}. |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.location">location</a></code> | <code>string</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
 | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts">TagsLocationTagBindingTimeouts</a></code> | timeouts block. |
 
@@ -948,7 +978,7 @@ public readonly parent: string;
 
 The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#parent TagsLocationTagBinding#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#parent TagsLocationTagBinding#parent}
 
 ---
 
@@ -962,7 +992,29 @@ public readonly tagValue: string;
 
 The TagValue of the TagBinding. Must be either in id format 'tagValues/{tag-value-id}', or namespaced format '{parent-id}/{tag-key-short-name}/{tag-value-short-name}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#tag_value TagsLocationTagBinding#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#tag_value TagsLocationTagBinding#tag_value}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#deletion_policy TagsLocationTagBinding#deletion_policy}
 
 ---
 
@@ -974,7 +1026,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#id TagsLocationTagBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#id TagsLocationTagBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +1043,7 @@ public readonly location: string;
 
 The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#location TagsLocationTagBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#location TagsLocationTagBinding#location}
 
 ---
 
@@ -1005,7 +1057,7 @@ public readonly timeouts: TagsLocationTagBindingTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#timeouts TagsLocationTagBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#timeouts TagsLocationTagBinding#timeouts}
 
 ---
 
@@ -1023,8 +1075,8 @@ const tagsLocationTagBindingTimeouts: tagsLocationTagBinding.TagsLocationTagBind
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#create TagsLocationTagBinding#create}. |
-| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#delete TagsLocationTagBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#create TagsLocationTagBinding#create}. |
+| <code><a href="#@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#delete TagsLocationTagBinding#delete}. |
 
 ---
 
@@ -1036,7 +1088,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#create TagsLocationTagBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#create TagsLocationTagBinding#create}.
 
 ---
 
@@ -1048,7 +1100,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#delete TagsLocationTagBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#delete TagsLocationTagBinding#delete}.
 
 ---
 

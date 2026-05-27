@@ -4,7 +4,7 @@
 
 ### OrgPolicyCustomConstraint <a name="OrgPolicyCustomConstraint" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.resetId">resetId</a></code> | *No description.* |
@@ -403,6 +404,12 @@ public putTimeouts(value: OrgPolicyCustomConstraintTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.resetDescription"></a>
 
 ```typescript
@@ -530,7 +537,7 @@ The construct id used in the generated config for the OrgPolicyCustomConstraint 
 
 The id of the existing OrgPolicyCustomConstraint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,6 +571,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.actionTypeInput">actionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.conditionInput">conditionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -574,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts">OrgPolicyCustomConstraintTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.actionType">actionType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.condition">condition</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -766,6 +775,16 @@ public readonly conditionInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.descriptionInput"></a>
 
 ```typescript
@@ -860,6 +879,16 @@ public readonly actionType: string;
 
 ```typescript
 public readonly condition: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -983,9 +1012,10 @@ const orgPolicyCustomConstraintConfig: orgPolicyCustomConstraint.OrgPolicyCustom
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.name">name</a></code> | <code>string</code> | Immutable. The name of the custom constraint. This is unique within the organization. |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.parent">parent</a></code> | <code>string</code> | The parent of the resource, an organization. Format should be 'organizations/{organization_id}'. |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.resourceTypes">resourceTypes</a></code> | <code>string[]</code> | Immutable. |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.description">description</a></code> | <code>string</code> | A human-friendly description of the constraint to display as an error message when the policy is violated. |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.displayName">displayName</a></code> | <code>string</code> | A human-friendly name for the constraint. |
-| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#id OrgPolicyCustomConstraint#id}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#id OrgPolicyCustomConstraint#id}. |
 | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts">OrgPolicyCustomConstraintTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1070,7 +1100,7 @@ public readonly actionType: string;
 
 The action to take if the condition is met. Possible values: ["ALLOW", "DENY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#action_type OrgPolicyCustomConstraint#action_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#action_type OrgPolicyCustomConstraint#action_type}
 
 ---
 
@@ -1084,7 +1114,7 @@ public readonly condition: string;
 
 A CEL condition that refers to a supported service resource, for example 'resource.management.autoUpgrade == false'. For details about CEL usage, see [Common Expression Language](https://docs.cloud.google.com/resource-manager/docs/organization-policy/creating-managing-custom-constraints#common_expression_language).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#condition OrgPolicyCustomConstraint#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#condition OrgPolicyCustomConstraint#condition}
 
 ---
 
@@ -1100,7 +1130,7 @@ A list of RESTful methods for which to enforce the constraint.
 
 Can be 'CREATE', 'UPDATE', or both. Not all Google Cloud services support both methods. To see supported methods for each service, find the service in [Supported services](https://docs.cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#method_types OrgPolicyCustomConstraint#method_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#method_types OrgPolicyCustomConstraint#method_types}
 
 ---
 
@@ -1114,7 +1144,7 @@ public readonly name: string;
 
 Immutable. The name of the custom constraint. This is unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#name OrgPolicyCustomConstraint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#name OrgPolicyCustomConstraint#name}
 
 ---
 
@@ -1128,7 +1158,7 @@ public readonly parent: string;
 
 The parent of the resource, an organization. Format should be 'organizations/{organization_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#parent OrgPolicyCustomConstraint#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#parent OrgPolicyCustomConstraint#parent}
 
 ---
 
@@ -1144,7 +1174,29 @@ Immutable.
 
 The fully qualified name of the Google Cloud REST resource containing the object and field you want to restrict. For example, 'container.googleapis.com/NodePool'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#resource_types OrgPolicyCustomConstraint#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#resource_types OrgPolicyCustomConstraint#resource_types}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#deletion_policy OrgPolicyCustomConstraint#deletion_policy}
 
 ---
 
@@ -1158,7 +1210,7 @@ public readonly description: string;
 
 A human-friendly description of the constraint to display as an error message when the policy is violated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#description OrgPolicyCustomConstraint#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#description OrgPolicyCustomConstraint#description}
 
 ---
 
@@ -1172,7 +1224,7 @@ public readonly displayName: string;
 
 A human-friendly name for the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#display_name OrgPolicyCustomConstraint#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#display_name OrgPolicyCustomConstraint#display_name}
 
 ---
 
@@ -1184,7 +1236,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#id OrgPolicyCustomConstraint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#id OrgPolicyCustomConstraint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1201,7 +1253,7 @@ public readonly timeouts: OrgPolicyCustomConstraintTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#timeouts OrgPolicyCustomConstraint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#timeouts OrgPolicyCustomConstraint#timeouts}
 
 ---
 
@@ -1219,9 +1271,9 @@ const orgPolicyCustomConstraintTimeouts: orgPolicyCustomConstraint.OrgPolicyCust
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#create OrgPolicyCustomConstraint#create}. |
-| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#delete OrgPolicyCustomConstraint#delete}. |
-| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#update OrgPolicyCustomConstraint#update}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#create OrgPolicyCustomConstraint#create}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#delete OrgPolicyCustomConstraint#delete}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#update OrgPolicyCustomConstraint#update}. |
 
 ---
 
@@ -1233,7 +1285,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#create OrgPolicyCustomConstraint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#create OrgPolicyCustomConstraint#create}.
 
 ---
 
@@ -1245,7 +1297,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#delete OrgPolicyCustomConstraint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#delete OrgPolicyCustomConstraint#delete}.
 
 ---
 
@@ -1257,7 +1309,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint#update OrgPolicyCustomConstraint#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_custom_constraint#update OrgPolicyCustomConstraint#update}.
 
 ---
 

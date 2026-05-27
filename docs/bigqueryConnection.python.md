@@ -4,7 +4,7 @@
 
 ### BigqueryConnection <a name="BigqueryConnection" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection google_bigquery_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection google_bigquery_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer"></a>
 
@@ -28,6 +28,7 @@ bigqueryConnection.BigqueryConnection(
   cloud_sql: BigqueryConnectionCloudSql = None,
   configuration: BigqueryConnectionConfiguration = None,
   connection_id: str = None,
+  deletion_policy: str = None,
   description: str = None,
   friendly_name: str = None,
   id: str = None,
@@ -57,12 +58,13 @@ bigqueryConnection.BigqueryConnection(
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.cloudSql">cloud_sql</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a></code> | cloud_sql block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a></code> | configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.connectionId">connection_id</a></code> | <code>str</code> | Optional connection id that should be assigned to the created connection. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.description">description</a></code> | <code>str</code> | A descriptive description for the connection. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.friendlyName">friendly_name</a></code> | <code>str</code> | A descriptive name for the connection. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.kmsKeyName">kms_key_name</a></code> | <code>str</code> | Optional. The Cloud KMS key that is used for encryption. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.location">location</a></code> | <code>str</code> | The geographic location where the connection should reside. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.spark">spark</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionSpark">BigqueryConnectionSpark</a></code> | spark block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts">BigqueryConnectionTimeouts</a></code> | timeouts block. |
 
@@ -134,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_spanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
 
 ---
 
@@ -174,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
 
 ---
 
@@ -184,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#configuration BigqueryConnection#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#configuration BigqueryConnection#configuration}
 
 ---
 
@@ -194,7 +196,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional connection id that should be assigned to the created connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#deletion_policy BigqueryConnection#deletion_policy}
 
 ---
 
@@ -204,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A descriptive description for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
 
 ---
 
@@ -214,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A descriptive name for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
 
 ---
 
@@ -222,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -237,7 +256,7 @@ Optional. The Cloud KMS key that is used for encryption.
 
 Example: projects/[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
 
 ---
 
@@ -254,7 +273,7 @@ Spanner Connections same as spanner region
 AWS allowed regions are aws-us-east-1
 Azure allowed regions are azure-eastus2
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
 
 ---
 
@@ -262,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
 
 ---
 
@@ -272,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spark block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
 
 ---
 
@@ -282,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
 
 ---
 
@@ -329,6 +348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetCloudSql">reset_cloud_sql</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetConfiguration">reset_configuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetConnectionId">reset_connection_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetFriendlyName">reset_friendly_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetId">reset_id</a></code> | *No description.* |
@@ -702,7 +722,7 @@ def put_aws(
 
 access_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#access_role BigqueryConnection#access_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#access_role BigqueryConnection#access_role}
 
 ---
 
@@ -721,7 +741,7 @@ def put_azure(
 
 The id of customer's directory that host the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#customer_tenant_id BigqueryConnection#customer_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#customer_tenant_id BigqueryConnection#customer_tenant_id}
 
 ---
 
@@ -731,7 +751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Azure Application (client) ID where the federated credentials will be hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#federated_application_client_id BigqueryConnection#federated_application_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#federated_application_client_id BigqueryConnection#federated_application_client_id}
 
 ---
 
@@ -760,7 +780,7 @@ def put_cloud_spanner(
 
 Cloud Spanner database in the form 'project/instance/database'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -772,7 +792,7 @@ Cloud Spanner database role for fine-grained access control.
 
 The Cloud Spanner admin should have provisioned the database role with appropriate permissions, such as 'SELECT' and 'INSERT'. Other users should only use roles provided by their Cloud Spanner admins. The database role name must start with a letter, and can only contain letters, numbers, and underscores. For more details, see https://cloud.google.com/spanner/docs/fgac-about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database_role BigqueryConnection#database_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database_role BigqueryConnection#database_role}
 
 ---
 
@@ -784,7 +804,7 @@ Allows setting max parallelism per query when executing on Spanner independent c
 
 If unspecified, default values of parallelism are chosen that are dependent on the Cloud Spanner instance configuration. 'useParallelism' and 'useDataBoost' must be set when setting max parallelism.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#max_parallelism BigqueryConnection#max_parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#max_parallelism BigqueryConnection#max_parallelism}
 
 ---
 
@@ -796,7 +816,7 @@ If set, the request will be executed via Spanner independent compute resources.
 
 'use_parallelism' must be set when using data boost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#use_data_boost BigqueryConnection#use_data_boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#use_data_boost BigqueryConnection#use_data_boost}
 
 ---
 
@@ -806,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If parallelism should be used when reading from Cloud Spanner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#use_parallelism BigqueryConnection#use_parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#use_parallelism BigqueryConnection#use_parallelism}
 
 ---
 
@@ -818,7 +838,7 @@ If the serverless analytics service should be used to read data from Cloud Spann
 
 'useParallelism' must be set when using serverless analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#use_serverless_analytics BigqueryConnection#use_serverless_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#use_serverless_analytics BigqueryConnection#use_serverless_analytics}
 
 ---
 
@@ -839,7 +859,7 @@ def put_cloud_sql(
 
 credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#credential BigqueryConnection#credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#credential BigqueryConnection#credential}
 
 ---
 
@@ -849,7 +869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Database name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -859,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Cloud SQL instance ID in the form project:location:instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#instance_id BigqueryConnection#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#instance_id BigqueryConnection#instance_id}
 
 ---
 
@@ -869,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of the Cloud SQL database. Possible values: ["DATABASE_TYPE_UNSPECIFIED", "POSTGRES", "MYSQL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#type BigqueryConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#type BigqueryConnection#type}
 
 ---
 
@@ -891,7 +911,7 @@ def put_configuration(
 
 asset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#asset BigqueryConnection#asset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#asset BigqueryConnection#asset}
 
 ---
 
@@ -904,7 +924,7 @@ The ID of the connector.
 Possible values include 'google-alloydb', 'google-cloudsql-mysql',
 'google-cloudsql-postgres', and other connector IDs supported by the BigQuery Connector framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#connector_id BigqueryConnection#connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#connector_id BigqueryConnection#connector_id}
 
 ---
 
@@ -914,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#authentication BigqueryConnection#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#authentication BigqueryConnection#authentication}
 
 ---
 
@@ -924,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#endpoint BigqueryConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#endpoint BigqueryConnection#endpoint}
 
 ---
 
@@ -934,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#network BigqueryConnection#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#network BigqueryConnection#network}
 
 ---
 
@@ -953,7 +973,7 @@ def put_spark(
 
 metastore_service_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#metastore_service_config BigqueryConnection#metastore_service_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#metastore_service_config BigqueryConnection#metastore_service_config}
 
 ---
 
@@ -963,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spark_history_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#spark_history_server_config BigqueryConnection#spark_history_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#spark_history_server_config BigqueryConnection#spark_history_server_config}
 
 ---
 
@@ -981,7 +1001,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#create BigqueryConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#create BigqueryConnection#create}.
 
 ---
 
@@ -989,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}.
 
 ---
 
@@ -997,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#update BigqueryConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#update BigqueryConnection#update}.
 
 ---
 
@@ -1041,6 +1061,12 @@ def reset_configuration() -> None
 
 ```python
 def reset_connection_id() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetDescription"></a>
@@ -1205,7 +1231,7 @@ The construct id used in the generated config for the BigqueryConnection to impo
 
 The id of the existing BigqueryConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1252,6 +1278,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.cloudSqlInput">cloud_sql_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.configurationInput">configuration_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.connectionIdInput">connection_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.friendlyNameInput">friendly_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -1261,6 +1288,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.sparkInput">spark_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionSpark">BigqueryConnectionSpark</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts">BigqueryConnectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.connectionId">connection_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.friendlyName">friendly_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1582,6 +1610,16 @@ connection_id_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.descriptionInput"></a>
 
 ```python
@@ -1666,6 +1704,16 @@ timeouts_input: IResolvable | BigqueryConnectionTimeouts
 
 ```python
 connection_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1782,7 +1830,7 @@ access_role: BigqueryConnectionAwsAccessRole
 
 access_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#access_role BigqueryConnection#access_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#access_role BigqueryConnection#access_role}
 
 ---
 
@@ -1816,7 +1864,7 @@ iam_role_id: str
 
 The user’s AWS IAM Role that trusts the Google-owned AWS IAM user Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#iam_role_id BigqueryConnection#iam_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#iam_role_id BigqueryConnection#iam_role_id}
 
 ---
 
@@ -1852,7 +1900,7 @@ customer_tenant_id: str
 
 The id of customer's directory that host the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#customer_tenant_id BigqueryConnection#customer_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#customer_tenant_id BigqueryConnection#customer_tenant_id}
 
 ---
 
@@ -1866,7 +1914,7 @@ federated_application_client_id: str
 
 The Azure Application (client) ID where the federated credentials will be hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#federated_application_client_id BigqueryConnection#federated_application_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#federated_application_client_id BigqueryConnection#federated_application_client_id}
 
 ---
 
@@ -1921,7 +1969,7 @@ database: str
 
 Cloud Spanner database in the form 'project/instance/database'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -1937,7 +1985,7 @@ Cloud Spanner database role for fine-grained access control.
 
 The Cloud Spanner admin should have provisioned the database role with appropriate permissions, such as 'SELECT' and 'INSERT'. Other users should only use roles provided by their Cloud Spanner admins. The database role name must start with a letter, and can only contain letters, numbers, and underscores. For more details, see https://cloud.google.com/spanner/docs/fgac-about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database_role BigqueryConnection#database_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database_role BigqueryConnection#database_role}
 
 ---
 
@@ -1953,7 +2001,7 @@ Allows setting max parallelism per query when executing on Spanner independent c
 
 If unspecified, default values of parallelism are chosen that are dependent on the Cloud Spanner instance configuration. 'useParallelism' and 'useDataBoost' must be set when setting max parallelism.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#max_parallelism BigqueryConnection#max_parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#max_parallelism BigqueryConnection#max_parallelism}
 
 ---
 
@@ -1969,7 +2017,7 @@ If set, the request will be executed via Spanner independent compute resources.
 
 'use_parallelism' must be set when using data boost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#use_data_boost BigqueryConnection#use_data_boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#use_data_boost BigqueryConnection#use_data_boost}
 
 ---
 
@@ -1983,7 +2031,7 @@ use_parallelism: bool | IResolvable
 
 If parallelism should be used when reading from Cloud Spanner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#use_parallelism BigqueryConnection#use_parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#use_parallelism BigqueryConnection#use_parallelism}
 
 ---
 
@@ -1999,7 +2047,7 @@ If the serverless analytics service should be used to read data from Cloud Spann
 
 'useParallelism' must be set when using serverless analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#use_serverless_analytics BigqueryConnection#use_serverless_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#use_serverless_analytics BigqueryConnection#use_serverless_analytics}
 
 ---
 
@@ -2039,7 +2087,7 @@ credential: BigqueryConnectionCloudSqlCredential
 
 credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#credential BigqueryConnection#credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#credential BigqueryConnection#credential}
 
 ---
 
@@ -2053,7 +2101,7 @@ database: str
 
 Database name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -2067,7 +2115,7 @@ instance_id: str
 
 Cloud SQL instance ID in the form project:location:instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#instance_id BigqueryConnection#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#instance_id BigqueryConnection#instance_id}
 
 ---
 
@@ -2081,7 +2129,7 @@ type: str
 
 Type of the Cloud SQL database. Possible values: ["DATABASE_TYPE_UNSPECIFIED", "POSTGRES", "MYSQL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#type BigqueryConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#type BigqueryConnection#type}
 
 ---
 
@@ -2117,7 +2165,7 @@ password: str
 
 Password for database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
 
 ---
 
@@ -2131,7 +2179,7 @@ username: str
 
 Username for database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
 
 ---
 
@@ -2157,6 +2205,7 @@ bigqueryConnection.BigqueryConnectionConfig(
   cloud_sql: BigqueryConnectionCloudSql = None,
   configuration: BigqueryConnectionConfiguration = None,
   connection_id: str = None,
+  deletion_policy: str = None,
   description: str = None,
   friendly_name: str = None,
   id: str = None,
@@ -2186,12 +2235,13 @@ bigqueryConnection.BigqueryConnectionConfig(
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.cloudSql">cloud_sql</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a></code> | cloud_sql block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a></code> | configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.connectionId">connection_id</a></code> | <code>str</code> | Optional connection id that should be assigned to the created connection. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.description">description</a></code> | <code>str</code> | A descriptive description for the connection. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.friendlyName">friendly_name</a></code> | <code>str</code> | A descriptive name for the connection. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.kmsKeyName">kms_key_name</a></code> | <code>str</code> | Optional. The Cloud KMS key that is used for encryption. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.location">location</a></code> | <code>str</code> | The geographic location where the connection should reside. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.spark">spark</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionSpark">BigqueryConnectionSpark</a></code> | spark block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts">BigqueryConnectionTimeouts</a></code> | timeouts block. |
 
@@ -2277,7 +2327,7 @@ aws: BigqueryConnectionAws
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
 
 ---
 
@@ -2291,7 +2341,7 @@ azure: BigqueryConnectionAzure
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
 
 ---
 
@@ -2305,7 +2355,7 @@ cloud_resource: BigqueryConnectionCloudResource
 
 cloud_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
 
 ---
 
@@ -2319,7 +2369,7 @@ cloud_spanner: BigqueryConnectionCloudSpanner
 
 cloud_spanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
 
 ---
 
@@ -2333,7 +2383,7 @@ cloud_sql: BigqueryConnectionCloudSql
 
 cloud_sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
 
 ---
 
@@ -2347,7 +2397,7 @@ configuration: BigqueryConnectionConfiguration
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#configuration BigqueryConnection#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#configuration BigqueryConnection#configuration}
 
 ---
 
@@ -2361,7 +2411,28 @@ connection_id: str
 
 Optional connection id that should be assigned to the created connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#deletion_policy BigqueryConnection#deletion_policy}
 
 ---
 
@@ -2375,7 +2446,7 @@ description: str
 
 A descriptive description for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
 
 ---
 
@@ -2389,7 +2460,7 @@ friendly_name: str
 
 A descriptive name for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
 
 ---
 
@@ -2401,7 +2472,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2420,7 +2491,7 @@ Optional. The Cloud KMS key that is used for encryption.
 
 Example: projects/[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
 
 ---
 
@@ -2441,7 +2512,7 @@ Spanner Connections same as spanner region
 AWS allowed regions are aws-us-east-1
 Azure allowed regions are azure-eastus2
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
 
 ---
 
@@ -2453,7 +2524,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
 
 ---
 
@@ -2467,7 +2538,7 @@ spark: BigqueryConnectionSpark
 
 spark block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
 
 ---
 
@@ -2481,7 +2552,7 @@ timeouts: BigqueryConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
 
 ---
 
@@ -2523,7 +2594,7 @@ asset: BigqueryConnectionConfigurationAsset
 
 asset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#asset BigqueryConnection#asset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#asset BigqueryConnection#asset}
 
 ---
 
@@ -2540,7 +2611,7 @@ The ID of the connector.
 Possible values include 'google-alloydb', 'google-cloudsql-mysql',
 'google-cloudsql-postgres', and other connector IDs supported by the BigQuery Connector framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#connector_id BigqueryConnection#connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#connector_id BigqueryConnection#connector_id}
 
 ---
 
@@ -2554,7 +2625,7 @@ authentication: BigqueryConnectionConfigurationAuthentication
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#authentication BigqueryConnection#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#authentication BigqueryConnection#authentication}
 
 ---
 
@@ -2568,7 +2639,7 @@ endpoint: BigqueryConnectionConfigurationEndpoint
 
 endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#endpoint BigqueryConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#endpoint BigqueryConnection#endpoint}
 
 ---
 
@@ -2582,7 +2653,7 @@ network: BigqueryConnectionConfigurationNetwork
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#network BigqueryConnection#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#network BigqueryConnection#network}
 
 ---
 
@@ -2618,7 +2689,7 @@ database: str
 
 The name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -2632,7 +2703,7 @@ google_cloud_resource: str
 
 The full resource name of the Google Cloud resource. For AlloyDB, this is in the format of '//alloydb.googleapis.com/projects/{project}/locations/{region}/clusters/{cluster}/instances/{instance}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#google_cloud_resource BigqueryConnection#google_cloud_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#google_cloud_resource BigqueryConnection#google_cloud_resource}
 
 ---
 
@@ -2666,7 +2737,7 @@ username_password: BigqueryConnectionConfigurationAuthenticationUsernamePassword
 
 username_password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#username_password BigqueryConnection#username_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#username_password BigqueryConnection#username_password}
 
 ---
 
@@ -2702,7 +2773,7 @@ password: BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword
 
 password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
 
 ---
 
@@ -2716,7 +2787,7 @@ username: str
 
 Username for the connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
 
 ---
 
@@ -2750,7 +2821,7 @@ plaintext: str
 
 The plaintext password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#plaintext BigqueryConnection#plaintext}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#plaintext BigqueryConnection#plaintext}
 
 ---
 
@@ -2784,7 +2855,7 @@ host_port: str
 
 Host and port in the format of 'host:port' for the connector endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#host_port BigqueryConnection#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#host_port BigqueryConnection#host_port}
 
 ---
 
@@ -2818,7 +2889,7 @@ private_service_connect: BigqueryConnectionConfigurationNetworkPrivateServiceCon
 
 private_service_connect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#private_service_connect BigqueryConnection#private_service_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#private_service_connect BigqueryConnection#private_service_connect}
 
 ---
 
@@ -2852,7 +2923,7 @@ network_attachment: str
 
 The resource name of a network attachment in the format of 'projects/{project}/regions/{region}/networkAttachments/{networkAttachment}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#network_attachment BigqueryConnection#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#network_attachment BigqueryConnection#network_attachment}
 
 ---
 
@@ -2888,7 +2959,7 @@ metastore_service_config: BigqueryConnectionSparkMetastoreServiceConfig
 
 metastore_service_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#metastore_service_config BigqueryConnection#metastore_service_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#metastore_service_config BigqueryConnection#metastore_service_config}
 
 ---
 
@@ -2902,7 +2973,7 @@ spark_history_server_config: BigqueryConnectionSparkSparkHistoryServerConfig
 
 spark_history_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#spark_history_server_config BigqueryConnection#spark_history_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#spark_history_server_config BigqueryConnection#spark_history_server_config}
 
 ---
 
@@ -2936,7 +3007,7 @@ metastore_service: str
 
 Resource name of an existing Dataproc Metastore service in the form of projects/[projectId]/locations/[region]/services/[serviceId].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#metastore_service BigqueryConnection#metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#metastore_service BigqueryConnection#metastore_service}
 
 ---
 
@@ -2970,7 +3041,7 @@ dataproc_cluster: str
 
 Resource name of an existing Dataproc Cluster to act as a Spark History Server for the connection if the form of projects/[projectId]/regions/[region]/clusters/[cluster_name].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#dataproc_cluster BigqueryConnection#dataproc_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#dataproc_cluster BigqueryConnection#dataproc_cluster}
 
 ---
 
@@ -2992,9 +3063,9 @@ bigqueryConnection.BigqueryConnectionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#create BigqueryConnection#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#update BigqueryConnection#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#create BigqueryConnection#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#update BigqueryConnection#update}. |
 
 ---
 
@@ -3006,7 +3077,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#create BigqueryConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#create BigqueryConnection#create}.
 
 ---
 
@@ -3018,7 +3089,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}.
 
 ---
 
@@ -3030,7 +3101,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#update BigqueryConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#update BigqueryConnection#update}.
 
 ---
 
@@ -3586,7 +3657,7 @@ def put_access_role(
 
 The user’s AWS IAM Role that trusts the Google-owned AWS IAM user Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#iam_role_id BigqueryConnection#iam_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#iam_role_id BigqueryConnection#iam_role_id}
 
 ---
 
@@ -5326,7 +5397,7 @@ def put_credential(
 
 Password for database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
 
 ---
 
@@ -5336,7 +5407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Username for database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
 
 ---
 
@@ -6062,7 +6133,7 @@ def put_username_password(
 
 password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
 
 ---
 
@@ -6072,7 +6143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Username for the connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
 
 ---
 
@@ -6404,7 +6475,7 @@ def put_password(
 
 The plaintext password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#plaintext BigqueryConnection#plaintext}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#plaintext BigqueryConnection#plaintext}
 
 ---
 
@@ -7352,7 +7423,7 @@ def put_private_service_connect(
 
 The resource name of a network attachment in the format of 'projects/{project}/regions/{region}/networkAttachments/{networkAttachment}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#network_attachment BigqueryConnection#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#network_attachment BigqueryConnection#network_attachment}
 
 ---
 
@@ -7976,7 +8047,7 @@ def put_asset(
 
 The name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -7986,7 +8057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The full resource name of the Google Cloud resource. For AlloyDB, this is in the format of '//alloydb.googleapis.com/projects/{project}/locations/{region}/clusters/{cluster}/instances/{instance}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#google_cloud_resource BigqueryConnection#google_cloud_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#google_cloud_resource BigqueryConnection#google_cloud_resource}
 
 ---
 
@@ -8004,7 +8075,7 @@ def put_authentication(
 
 username_password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#username_password BigqueryConnection#username_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#username_password BigqueryConnection#username_password}
 
 ---
 
@@ -8022,7 +8093,7 @@ def put_endpoint(
 
 Host and port in the format of 'host:port' for the connector endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#host_port BigqueryConnection#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#host_port BigqueryConnection#host_port}
 
 ---
 
@@ -8040,7 +8111,7 @@ def put_network(
 
 private_service_connect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#private_service_connect BigqueryConnection#private_service_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#private_service_connect BigqueryConnection#private_service_connect}
 
 ---
 
@@ -8767,7 +8838,7 @@ def put_metastore_service_config(
 
 Resource name of an existing Dataproc Metastore service in the form of projects/[projectId]/locations/[region]/services/[serviceId].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#metastore_service BigqueryConnection#metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#metastore_service BigqueryConnection#metastore_service}
 
 ---
 
@@ -8785,7 +8856,7 @@ def put_spark_history_server_config(
 
 Resource name of an existing Dataproc Cluster to act as a Spark History Server for the connection if the form of projects/[projectId]/regions/[region]/clusters/[cluster_name].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_connection#dataproc_cluster BigqueryConnection#dataproc_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_connection#dataproc_cluster BigqueryConnection#dataproc_cluster}
 
 ---
 

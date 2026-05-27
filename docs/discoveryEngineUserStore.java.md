@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineUserStore <a name="DiscoveryEngineUserStore" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store google_discovery_engine_user_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store google_discovery_engine_user_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer"></a>
 
@@ -45,8 +45,8 @@ DiscoveryEngineUserStore.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.defaultLicenseConfig">defaultLicenseConfig</a></code> | <code>java.lang.String</code> | The resource name of the default license config assigned to users created in this user store. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.enableExpiredLicenseAutoUpdate">enableExpiredLicenseAutoUpdate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to enable automatic license update for users with expired licenses in this user store. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.enableLicenseAutoRegister">enableLicenseAutoRegister</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to enable automatic license registration for new users created in this user store. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts">DiscoveryEngineUserStoreTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer.parameter.userStoreId">userStoreId</a></code> | <code>java.lang.String</code> | The ID of the user store. Currently only accepts "default_user_store". |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#location DiscoveryEngineUserStore#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#location DiscoveryEngineUserStore#location}
 
 ---
 
@@ -135,7 +135,7 @@ register under the default subscription.
 If the default license config doesn't have remaining license seats left,
 new users will not be assigned with license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#default_license_config DiscoveryEngineUserStore#default_license_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#default_license_config DiscoveryEngineUserStore#default_license_config}
 
 ---
 
@@ -149,7 +149,7 @@ If enabled, users with expired licenses will
 automatically be updated to the default subscription if there are
 remaining license seats.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#enable_expired_license_auto_update DiscoveryEngineUserStore#enable_expired_license_auto_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#enable_expired_license_auto_update DiscoveryEngineUserStore#enable_expired_license_auto_update}
 
 ---
 
@@ -162,7 +162,7 @@ Whether to enable automatic license registration for new users created in this u
 If enabled, new users will automatically register under
 the default subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#enable_license_auto_register DiscoveryEngineUserStore#enable_license_auto_register}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#enable_license_auto_register DiscoveryEngineUserStore#enable_license_auto_register}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#timeouts DiscoveryEngineUserStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#timeouts DiscoveryEngineUserStore#timeouts}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the user store. Currently only accepts "default_user_store".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#user_store_id DiscoveryEngineUserStore#user_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#user_store_id DiscoveryEngineUserStore#user_store_id}
 
 ---
 
@@ -712,7 +712,7 @@ The construct id used in the generated config for the DiscoveryEngineUserStore t
 
 The id of the existing DiscoveryEngineUserStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1135,8 +1135,8 @@ DiscoveryEngineUserStoreConfig.builder()
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.defaultLicenseConfig">defaultLicenseConfig</a></code> | <code>java.lang.String</code> | The resource name of the default license config assigned to users created in this user store. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.enableExpiredLicenseAutoUpdate">enableExpiredLicenseAutoUpdate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to enable automatic license update for users with expired licenses in this user store. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.enableLicenseAutoRegister">enableLicenseAutoRegister</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to enable automatic license registration for new users created in this user store. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts">DiscoveryEngineUserStoreTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.property.userStoreId">userStoreId</a></code> | <code>java.lang.String</code> | The ID of the user store. Currently only accepts "default_user_store". |
 
@@ -1222,7 +1222,7 @@ public java.lang.String getLocation();
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#location DiscoveryEngineUserStore#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#location DiscoveryEngineUserStore#location}
 
 ---
 
@@ -1243,7 +1243,7 @@ register under the default subscription.
 If the default license config doesn't have remaining license seats left,
 new users will not be assigned with license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#default_license_config DiscoveryEngineUserStore#default_license_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#default_license_config DiscoveryEngineUserStore#default_license_config}
 
 ---
 
@@ -1261,7 +1261,7 @@ If enabled, users with expired licenses will
 automatically be updated to the default subscription if there are
 remaining license seats.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#enable_expired_license_auto_update DiscoveryEngineUserStore#enable_expired_license_auto_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#enable_expired_license_auto_update DiscoveryEngineUserStore#enable_expired_license_auto_update}
 
 ---
 
@@ -1278,7 +1278,7 @@ Whether to enable automatic license registration for new users created in this u
 If enabled, new users will automatically register under
 the default subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#enable_license_auto_register DiscoveryEngineUserStore#enable_license_auto_register}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#enable_license_auto_register DiscoveryEngineUserStore#enable_license_auto_register}
 
 ---
 
@@ -1290,7 +1290,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1305,7 +1305,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#project DiscoveryEngineUserStore#project}.
 
 ---
 
@@ -1319,7 +1319,7 @@ public DiscoveryEngineUserStoreTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#timeouts DiscoveryEngineUserStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#timeouts DiscoveryEngineUserStore#timeouts}
 
 ---
 
@@ -1333,7 +1333,7 @@ public java.lang.String getUserStoreId();
 
 The ID of the user store. Currently only accepts "default_user_store".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#user_store_id DiscoveryEngineUserStore#user_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#user_store_id DiscoveryEngineUserStore#user_store_id}
 
 ---
 
@@ -1355,9 +1355,9 @@ DiscoveryEngineUserStoreTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#create DiscoveryEngineUserStore#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#delete DiscoveryEngineUserStore#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#update DiscoveryEngineUserStore#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#create DiscoveryEngineUserStore#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#delete DiscoveryEngineUserStore#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#update DiscoveryEngineUserStore#update}. |
 
 ---
 
@@ -1369,7 +1369,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#create DiscoveryEngineUserStore#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#create DiscoveryEngineUserStore#create}.
 
 ---
 
@@ -1381,7 +1381,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#delete DiscoveryEngineUserStore#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#delete DiscoveryEngineUserStore#delete}.
 
 ---
 
@@ -1393,7 +1393,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#update DiscoveryEngineUserStore#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_user_store#update DiscoveryEngineUserStore#update}.
 
 ---
 

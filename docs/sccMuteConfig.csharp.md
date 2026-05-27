@@ -4,7 +4,7 @@
 
 ### SccMuteConfig <a name="SccMuteConfig" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config google_scc_mute_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config google_scc_mute_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfig.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.resetExpiryTime">ResetExpiryTime</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.resetId">ResetId</a></code> | *No description.* |
@@ -404,6 +405,12 @@ private void PutTimeouts(SccMuteConfigTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfig.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfig.resetDescription"></a>
 
 ```csharp
@@ -537,7 +544,7 @@ The construct id used in the generated config for the SccMuteConfig to import.
 
 The id of the existing SccMuteConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,6 +579,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeoutsOutputReference">SccMuteConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.expiryTimeInput">ExpiryTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.filterInput">FilterInput</a></code> | <code>string</code> | *No description.* |
@@ -580,6 +588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.parentInput">ParentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts">SccMuteConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.expiryTime">ExpiryTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.filter">Filter</a></code> | <code>string</code> | *No description.* |
@@ -782,6 +791,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.descriptionInput"></a>
 
 ```csharp
@@ -856,6 +875,16 @@ public IResolvable|SccMuteConfigTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string TypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -970,6 +999,7 @@ new SccMuteConfigConfig {
     string Filter,
     string MuteConfigId,
     string Parent,
+    string DeletionPolicy = null,
     string Description = null,
     string ExpiryTime = null,
     string Id = null,
@@ -992,9 +1022,10 @@ new SccMuteConfigConfig {
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.filter">Filter</a></code> | <code>string</code> | An expression that defines the filter to apply across create/update events of findings. |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.muteConfigId">MuteConfigId</a></code> | <code>string</code> | Unique identifier provided by the client within the parent scope. |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.parent">Parent</a></code> | <code>string</code> | Resource name of the new mute configs's parent. Its format is "organizations/[organization_id]", "folders/[folder_id]", or "projects/[project_id]". |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.description">Description</a></code> | <code>string</code> | A description of the mute config. |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.expiryTime">ExpiryTime</a></code> | <code>string</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#id SccMuteConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#id SccMuteConfig#id}. |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts">SccMuteConfigTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.type">Type</a></code> | <code>string</code> | The type of the mute config, which determines what type of mute state the config affects. |
 
@@ -1085,7 +1116,7 @@ the scope in which the mute configuration is being created. E.g.,
 If a filter contains project = X but is created under the
 project = Y scope, it might not match any findings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#filter SccMuteConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#filter SccMuteConfig#filter}
 
 ---
 
@@ -1099,7 +1130,7 @@ public string MuteConfigId { get; set; }
 
 Unique identifier provided by the client within the parent scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#mute_config_id SccMuteConfig#mute_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#mute_config_id SccMuteConfig#mute_config_id}
 
 ---
 
@@ -1113,7 +1144,28 @@ public string Parent { get; set; }
 
 Resource name of the new mute configs's parent. Its format is "organizations/[organization_id]", "folders/[folder_id]", or "projects/[project_id]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#parent SccMuteConfig#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#parent SccMuteConfig#parent}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccMuteConfig.SccMuteConfigConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#deletion_policy SccMuteConfig#deletion_policy}
 
 ---
 
@@ -1127,7 +1179,7 @@ public string Description { get; set; }
 
 A description of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#description SccMuteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#description SccMuteConfig#description}
 
 ---
 
@@ -1147,7 +1199,7 @@ If the expiry is set, when the config expires, it is removed from all findings.
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to
 nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#expiry_time SccMuteConfig#expiry_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#expiry_time SccMuteConfig#expiry_time}
 
 ---
 
@@ -1159,7 +1211,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#id SccMuteConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#id SccMuteConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1176,7 +1228,7 @@ public SccMuteConfigTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#timeouts SccMuteConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#timeouts SccMuteConfig#timeouts}
 
 ---
 
@@ -1192,7 +1244,7 @@ The type of the mute config, which determines what type of mute state the config
 
 Default value: "DYNAMIC" Possible values: ["MUTE_CONFIG_TYPE_UNSPECIFIED", "STATIC", "DYNAMIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#type SccMuteConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#type SccMuteConfig#type}
 
 ---
 
@@ -1214,9 +1266,9 @@ new SccMuteConfigTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#create SccMuteConfig#create}. |
-| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#delete SccMuteConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#update SccMuteConfig#update}. |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#create SccMuteConfig#create}. |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#delete SccMuteConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.sccMuteConfig.SccMuteConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#update SccMuteConfig#update}. |
 
 ---
 
@@ -1228,7 +1280,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#create SccMuteConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#create SccMuteConfig#create}.
 
 ---
 
@@ -1240,7 +1292,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#delete SccMuteConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#delete SccMuteConfig#delete}.
 
 ---
 
@@ -1252,7 +1304,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_mute_config#update SccMuteConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_mute_config#update SccMuteConfig#update}.
 
 ---
 

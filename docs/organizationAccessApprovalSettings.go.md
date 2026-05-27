@@ -4,7 +4,7 @@
 
 ### OrganizationAccessApprovalSettings <a name="OrganizationAccessApprovalSettings" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.putEnrolledServices">PutEnrolledServices</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.resetActiveKeyVersion">ResetActiveKeyVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.resetNotificationEmails">ResetNotificationEmails</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -422,6 +423,12 @@ func PutTimeouts(value OrganizationAccessApprovalSettingsTimeouts)
 func ResetActiveKeyVersion()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.resetId"></a>
 
 ```go
@@ -543,7 +550,7 @@ The construct id used in the generated config for the OrganizationAccessApproval
 
 The id of the existing OrganizationAccessApprovalSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -580,12 +587,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeoutsOutputReference">OrganizationAccessApprovalSettingsTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.activeKeyVersionInput">ActiveKeyVersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.enrolledServicesInput">EnrolledServicesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.notificationEmailsInput">NotificationEmailsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.organizationIdInput">OrganizationIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.activeKeyVersion">ActiveKeyVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.notificationEmails">NotificationEmails</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.organizationId">OrganizationId</a></code> | <code>*string</code> | *No description.* |
@@ -804,6 +813,16 @@ func ActiveKeyVersionInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EnrolledServicesInput`<sup>Optional</sup> <a name="EnrolledServicesInput" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.enrolledServicesInput"></a>
 
 ```go
@@ -858,6 +877,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func ActiveKeyVersion() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -932,6 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationacce
 	EnrolledServices: interface{},
 	OrganizationId: *string,
 	ActiveKeyVersion: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	NotificationEmails: *[]*string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts,
@@ -952,7 +982,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationacce
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.enrolledServices">EnrolledServices</a></code> | <code>interface{}</code> | enrolled_services block. |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.organizationId">OrganizationId</a></code> | <code>*string</code> | ID of the organization of the access approval settings. |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.activeKeyVersion">ActiveKeyVersion</a></code> | <code>*string</code> | The asymmetric crypto key version to use for signing approval requests. |
-| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#id OrganizationAccessApprovalSettings#id}. |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#id OrganizationAccessApprovalSettings#id}. |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.notificationEmails">NotificationEmails</a></code> | <code>*[]*string</code> | A list of email addresses to which notifications relating to approval requests should be sent. |
 | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts">OrganizationAccessApprovalSettingsTimeouts</a></code> | timeouts block. |
 
@@ -1038,7 +1069,7 @@ EnrolledServices interface{}
 
 enrolled_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#enrolled_services OrganizationAccessApprovalSettings#enrolled_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#enrolled_services OrganizationAccessApprovalSettings#enrolled_services}
 
 ---
 
@@ -1052,7 +1083,7 @@ OrganizationId *string
 
 ID of the organization of the access approval settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#organization_id OrganizationAccessApprovalSettings#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#organization_id OrganizationAccessApprovalSettings#organization_id}
 
 ---
 
@@ -1068,7 +1099,28 @@ The asymmetric crypto key version to use for signing approval requests.
 
 Empty active_key_version indicates that a Google-managed key should be used for signing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#active_key_version OrganizationAccessApprovalSettings#active_key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#active_key_version OrganizationAccessApprovalSettings#active_key_version}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#deletion_policy OrganizationAccessApprovalSettings#deletion_policy}
 
 ---
 
@@ -1080,7 +1132,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#id OrganizationAccessApprovalSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#id OrganizationAccessApprovalSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1152,7 @@ A list of email addresses to which notifications relating to approval requests s
 Notifications relating to a resource will be sent to all emails in the settings of ancestor
 resources of that resource. A maximum of 50 email addresses are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#notification_emails OrganizationAccessApprovalSettings#notification_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#notification_emails OrganizationAccessApprovalSettings#notification_emails}
 
 ---
 
@@ -1114,7 +1166,7 @@ Timeouts OrganizationAccessApprovalSettingsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#timeouts OrganizationAccessApprovalSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#timeouts OrganizationAccessApprovalSettings#timeouts}
 
 ---
 
@@ -1162,7 +1214,7 @@ iam.googleapis.com
 pubsub.googleapis.com
 storage.googleapis.com
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#cloud_product OrganizationAccessApprovalSettings#cloud_product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#cloud_product OrganizationAccessApprovalSettings#cloud_product}
 
 ---
 
@@ -1176,7 +1228,7 @@ EnrollmentLevel *string
 
 The enrollment level of the service. Default value: "BLOCK_ALL" Possible values: ["BLOCK_ALL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#enrollment_level OrganizationAccessApprovalSettings#enrollment_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#enrollment_level OrganizationAccessApprovalSettings#enrollment_level}
 
 ---
 
@@ -1198,9 +1250,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationacce
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#create OrganizationAccessApprovalSettings#create}. |
-| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#delete OrganizationAccessApprovalSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#update OrganizationAccessApprovalSettings#update}. |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#create OrganizationAccessApprovalSettings#create}. |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#delete OrganizationAccessApprovalSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#update OrganizationAccessApprovalSettings#update}. |
 
 ---
 
@@ -1212,7 +1264,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#create OrganizationAccessApprovalSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#create OrganizationAccessApprovalSettings#create}.
 
 ---
 
@@ -1224,7 +1276,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#delete OrganizationAccessApprovalSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#delete OrganizationAccessApprovalSettings#delete}.
 
 ---
 
@@ -1236,7 +1288,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#update OrganizationAccessApprovalSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#update OrganizationAccessApprovalSettings#update}.
 
 ---
 

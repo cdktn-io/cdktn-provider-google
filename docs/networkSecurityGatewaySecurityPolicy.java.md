@@ -4,7 +4,7 @@
 
 ### NetworkSecurityGatewaySecurityPolicy <a name="NetworkSecurityGatewaySecurityPolicy" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer"></a>
 
@@ -20,6 +20,7 @@ NetworkSecurityGatewaySecurityPolicy.Builder.create(Construct scope, java.lang.S
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
@@ -41,10 +42,11 @@ NetworkSecurityGatewaySecurityPolicy.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy} gatewaySecurityPolicy should match the pattern:(^a-z?$). |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the gateway security policy. The default value is 'global'. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.tlsInspectionPolicy">tlsInspectionPolicy</a></code> | <code>java.lang.String</code> | Name of a TlsInspectionPolicy resource that defines how TLS inspection is performed for any rule that enables it. |
 
@@ -116,7 +118,24 @@ Must be unique amongst siblings in the same scope
 
 Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy} gatewaySecurityPolicy should match the pattern:(^a-z?$).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#name NetworkSecurityGatewaySecurityPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#name NetworkSecurityGatewaySecurityPolicy#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#deletion_policy NetworkSecurityGatewaySecurityPolicy#deletion_policy}
 
 ---
 
@@ -126,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#description NetworkSecurityGatewaySecurityPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#description NetworkSecurityGatewaySecurityPolicy#description}
 
 ---
 
@@ -134,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +166,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the gateway security policy. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#location NetworkSecurityGatewaySecurityPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#location NetworkSecurityGatewaySecurityPolicy#location}
 
 ---
 
@@ -155,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}.
 
 ---
 
@@ -165,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#timeouts NetworkSecurityGatewaySecurityPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#timeouts NetworkSecurityGatewaySecurityPolicy#timeouts}
 
 ---
 
@@ -175,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of a TlsInspectionPolicy resource that defines how TLS inspection is performed for any rule that enables it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#tls_inspection_policy NetworkSecurityGatewaySecurityPolicy#tls_inspection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#tls_inspection_policy NetworkSecurityGatewaySecurityPolicy#tls_inspection_policy}
 
 ---
 
@@ -208,6 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.resetLocation">resetLocation</a></code> | *No description.* |
@@ -540,6 +560,12 @@ public void putTimeouts(NetworkSecurityGatewaySecurityPolicyTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.resetDescription"></a>
 
 ```java
@@ -679,7 +705,7 @@ The construct id used in the generated config for the NetworkSecurityGatewaySecu
 
 The id of the existing NetworkSecurityGatewaySecurityPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -713,6 +739,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.selfLink">selfLink</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference">NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -720,6 +747,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.tlsInspectionPolicyInput">tlsInspectionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -911,6 +939,16 @@ public java.lang.String getUpdateTime();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.descriptionInput"></a>
 
 ```java
@@ -975,6 +1013,16 @@ public IResolvable|NetworkSecurityGatewaySecurityPolicyTimeouts getTimeoutsInput
 
 ```java
 public java.lang.String getTlsInspectionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1077,6 +1125,7 @@ NetworkSecurityGatewaySecurityPolicyConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
@@ -1098,10 +1147,11 @@ NetworkSecurityGatewaySecurityPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy} gatewaySecurityPolicy should match the pattern:(^a-z?$). |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the gateway security policy. The default value is 'global'. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.tlsInspectionPolicy">tlsInspectionPolicy</a></code> | <code>java.lang.String</code> | Name of a TlsInspectionPolicy resource that defines how TLS inspection is performed for any rule that enables it. |
 
@@ -1187,7 +1237,28 @@ public java.lang.String getName();
 
 Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy} gatewaySecurityPolicy should match the pattern:(^a-z?$).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#name NetworkSecurityGatewaySecurityPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#name NetworkSecurityGatewaySecurityPolicy#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#deletion_policy NetworkSecurityGatewaySecurityPolicy#deletion_policy}
 
 ---
 
@@ -1201,7 +1272,7 @@ public java.lang.String getDescription();
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#description NetworkSecurityGatewaySecurityPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#description NetworkSecurityGatewaySecurityPolicy#description}
 
 ---
 
@@ -1213,7 +1284,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1230,7 +1301,7 @@ public java.lang.String getLocation();
 
 The location of the gateway security policy. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#location NetworkSecurityGatewaySecurityPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#location NetworkSecurityGatewaySecurityPolicy#location}
 
 ---
 
@@ -1242,7 +1313,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#project NetworkSecurityGatewaySecurityPolicy#project}.
 
 ---
 
@@ -1256,7 +1327,7 @@ public NetworkSecurityGatewaySecurityPolicyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#timeouts NetworkSecurityGatewaySecurityPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#timeouts NetworkSecurityGatewaySecurityPolicy#timeouts}
 
 ---
 
@@ -1270,7 +1341,7 @@ public java.lang.String getTlsInspectionPolicy();
 
 Name of a TlsInspectionPolicy resource that defines how TLS inspection is performed for any rule that enables it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#tls_inspection_policy NetworkSecurityGatewaySecurityPolicy#tls_inspection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#tls_inspection_policy NetworkSecurityGatewaySecurityPolicy#tls_inspection_policy}
 
 ---
 
@@ -1292,9 +1363,9 @@ NetworkSecurityGatewaySecurityPolicyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#create NetworkSecurityGatewaySecurityPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#delete NetworkSecurityGatewaySecurityPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#update NetworkSecurityGatewaySecurityPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#create NetworkSecurityGatewaySecurityPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#delete NetworkSecurityGatewaySecurityPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#update NetworkSecurityGatewaySecurityPolicy#update}. |
 
 ---
 
@@ -1306,7 +1377,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#create NetworkSecurityGatewaySecurityPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#create NetworkSecurityGatewaySecurityPolicy#create}.
 
 ---
 
@@ -1318,7 +1389,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#delete NetworkSecurityGatewaySecurityPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#delete NetworkSecurityGatewaySecurityPolicy#delete}.
 
 ---
 
@@ -1330,7 +1401,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_gateway_security_policy#update NetworkSecurityGatewaySecurityPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_gateway_security_policy#update NetworkSecurityGatewaySecurityPolicy#update}.
 
 ---
 

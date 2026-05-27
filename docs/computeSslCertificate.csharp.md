@@ -4,7 +4,7 @@
 
 ### ComputeSslCertificate <a name="ComputeSslCertificate" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.resetName">ResetName</a></code> | *No description.* |
@@ -408,6 +409,12 @@ private void PutTimeouts(ComputeSslCertificateTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.resetDescription"></a>
 
 ```csharp
@@ -565,7 +572,7 @@ The construct id used in the generated config for the ComputeSslCertificate to i
 
 The id of the existing ComputeSslCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,6 +608,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeoutsOutputReference">ComputeSslCertificateTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.certificateInput">CertificateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -611,6 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeouts">ComputeSslCertificateTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.certificate">Certificate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -824,6 +833,16 @@ public string CertificateInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.descriptionInput"></a>
 
 ```csharp
@@ -918,6 +937,16 @@ public IResolvable|ComputeSslCertificateTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string Certificate { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -1040,6 +1069,7 @@ new ComputeSslCertificateConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Certificate,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     string Name = null,
@@ -1064,14 +1094,15 @@ new ComputeSslCertificateConfig {
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.certificate">Certificate</a></code> | <code>string</code> | The certificate in PEM format. |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#id ComputeSslCertificate#id}. |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#id ComputeSslCertificate#id}. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Creates a unique name beginning with the specified prefix. Conflicts with name. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | The write-only private key in PEM format. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.privateKeyWo">PrivateKeyWo</a></code> | <code>string</code> | The write-only private key in PEM format. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.privateKeyWoVersion">PrivateKeyWoVersion</a></code> | <code>string</code> | Triggers update of 'private_key_wo' write-only. |
-| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#project ComputeSslCertificate#project}. |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#project ComputeSslCertificate#project}. |
 | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeouts">ComputeSslCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1159,7 +1190,28 @@ The certificate in PEM format.
 The certificate chain must be no greater than 5 certs long.
 The chain must include at least one intermediate cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#certificate ComputeSslCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#certificate ComputeSslCertificate#certificate}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#deletion_policy ComputeSslCertificate#deletion_policy}
 
 ---
 
@@ -1173,7 +1225,7 @@ public string Description { get; set; }
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#description ComputeSslCertificate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#description ComputeSslCertificate#description}
 
 ---
 
@@ -1185,7 +1237,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#id ComputeSslCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#id ComputeSslCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1212,7 +1264,7 @@ character, which cannot be a dash.
 
 These are in the same namespace as the managed SSL certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#name ComputeSslCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#name ComputeSslCertificate#name}
 
 ---
 
@@ -1226,7 +1278,7 @@ public string NamePrefix { get; set; }
 
 Creates a unique name beginning with the specified prefix. Conflicts with name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#name_prefix ComputeSslCertificate#name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#name_prefix ComputeSslCertificate#name_prefix}
 
 ---
 
@@ -1240,7 +1292,7 @@ public string PrivateKey { get; set; }
 
 The write-only private key in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#private_key ComputeSslCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#private_key ComputeSslCertificate#private_key}
 
 ---
 
@@ -1254,7 +1306,7 @@ public string PrivateKeyWo { get; set; }
 
 The write-only private key in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#private_key_wo ComputeSslCertificate#private_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#private_key_wo ComputeSslCertificate#private_key_wo}
 
 ---
 
@@ -1270,7 +1322,7 @@ Triggers update of 'private_key_wo' write-only.
 
 Increment this value when an update to 'private_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#private_key_wo_version ComputeSslCertificate#private_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#private_key_wo_version ComputeSslCertificate#private_key_wo_version}
 
 ---
 
@@ -1282,7 +1334,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#project ComputeSslCertificate#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#project ComputeSslCertificate#project}.
 
 ---
 
@@ -1296,7 +1348,7 @@ public ComputeSslCertificateTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#timeouts ComputeSslCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#timeouts ComputeSslCertificate#timeouts}
 
 ---
 
@@ -1317,8 +1369,8 @@ new ComputeSslCertificateTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#create ComputeSslCertificate#create}. |
-| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#delete ComputeSslCertificate#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#create ComputeSslCertificate#create}. |
+| <code><a href="#@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#delete ComputeSslCertificate#delete}. |
 
 ---
 
@@ -1330,7 +1382,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#create ComputeSslCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#create ComputeSslCertificate#create}.
 
 ---
 
@@ -1342,7 +1394,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#delete ComputeSslCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#delete ComputeSslCertificate#delete}.
 
 ---
 

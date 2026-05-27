@@ -4,7 +4,7 @@
 
 ### FirebaserulesRelease <a name="FirebaserulesRelease" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release google_firebaserules_release}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release google_firebaserules_release}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer"></a>
 
@@ -23,6 +23,7 @@ firebaserulesRelease.FirebaserulesRelease(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   ruleset_name: str,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: FirebaserulesReleaseTimeouts = None
@@ -42,7 +43,8 @@ firebaserulesRelease.FirebaserulesRelease(
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.name">name</a></code> | <code>str</code> | Format: `projects/{project_id}/releases/{release_id}`\Firestore Rules Releases will **always** have the name 'cloud.firestore'. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.rulesetName">ruleset_name</a></code> | <code>str</code> | Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must exist for the `Release` to be created. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.project">project</a></code> | <code>str</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts">FirebaserulesReleaseTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Format: `projects/{project_id}/releases/{release_id}`\Firestore Rules Releases will **always** have the name 'cloud.firestore'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#name FirebaserulesRelease#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#name FirebaserulesRelease#name}
 
 ---
 
@@ -124,7 +126,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must exist for the `Release` to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#ruleset_name FirebaserulesRelease#ruleset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#ruleset_name FirebaserulesRelease#ruleset_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#deletion_policy FirebaserulesRelease#deletion_policy}
 
 ---
 
@@ -132,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +164,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#project FirebaserulesRelease#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#project FirebaserulesRelease#project}
 
 ---
 
@@ -155,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#timeouts FirebaserulesRelease#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#timeouts FirebaserulesRelease#timeouts}
 
 ---
 
@@ -188,6 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -555,7 +575,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#create FirebaserulesRelease#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#create FirebaserulesRelease#create}.
 
 ---
 
@@ -563,9 +583,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#delete FirebaserulesRelease#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#delete FirebaserulesRelease#delete}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.resetId"></a>
 
@@ -699,7 +725,7 @@ The construct id used in the generated config for the FirebaserulesRelease to im
 
 The id of the existing FirebaserulesRelease that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,11 +759,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeoutsOutputReference">FirebaserulesReleaseTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.rulesetNameInput">ruleset_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts">FirebaserulesReleaseTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -927,6 +955,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.idInput"></a>
 
 ```python
@@ -974,6 +1012,16 @@ timeouts_input: IResolvable | FirebaserulesReleaseTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts">FirebaserulesReleaseTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesRelease.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1054,6 +1102,7 @@ firebaserulesRelease.FirebaserulesReleaseConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   ruleset_name: str,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: FirebaserulesReleaseTimeouts = None
@@ -1073,7 +1122,8 @@ firebaserulesRelease.FirebaserulesReleaseConfig(
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.name">name</a></code> | <code>str</code> | Format: `projects/{project_id}/releases/{release_id}`\Firestore Rules Releases will **always** have the name 'cloud.firestore'. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.rulesetName">ruleset_name</a></code> | <code>str</code> | Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must exist for the `Release` to be created. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.project">project</a></code> | <code>str</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts">FirebaserulesReleaseTimeouts</a></code> | timeouts block. |
 
@@ -1159,7 +1209,7 @@ name: str
 
 Format: `projects/{project_id}/releases/{release_id}`\Firestore Rules Releases will **always** have the name 'cloud.firestore'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#name FirebaserulesRelease#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#name FirebaserulesRelease#name}
 
 ---
 
@@ -1173,7 +1223,28 @@ ruleset_name: str
 
 Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must exist for the `Release` to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#ruleset_name FirebaserulesRelease#ruleset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#ruleset_name FirebaserulesRelease#ruleset_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#deletion_policy FirebaserulesRelease#deletion_policy}
 
 ---
 
@@ -1185,7 +1256,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#id FirebaserulesRelease#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1202,7 +1273,7 @@ project: str
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#project FirebaserulesRelease#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#project FirebaserulesRelease#project}
 
 ---
 
@@ -1216,7 +1287,7 @@ timeouts: FirebaserulesReleaseTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#timeouts FirebaserulesRelease#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#timeouts FirebaserulesRelease#timeouts}
 
 ---
 
@@ -1237,8 +1308,8 @@ firebaserulesRelease.FirebaserulesReleaseTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#create FirebaserulesRelease#create}. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#delete FirebaserulesRelease#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#create FirebaserulesRelease#create}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#delete FirebaserulesRelease#delete}. |
 
 ---
 
@@ -1250,7 +1321,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#create FirebaserulesRelease#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#create FirebaserulesRelease#create}.
 
 ---
 
@@ -1262,7 +1333,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_release#delete FirebaserulesRelease#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_release#delete FirebaserulesRelease#delete}.
 
 ---
 

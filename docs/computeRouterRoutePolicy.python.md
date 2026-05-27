@@ -4,7 +4,7 @@
 
 ### ComputeRouterRoutePolicy <a name="ComputeRouterRoutePolicy" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy google_compute_router_route_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy google_compute_router_route_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer"></a>
 
@@ -24,6 +24,7 @@ computeRouterRoutePolicy.ComputeRouterRoutePolicy(
   name: str,
   router: str,
   terms: IResolvable | typing.List[ComputeRouterRoutePolicyTerms],
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   region: str = None,
@@ -46,8 +47,9 @@ computeRouterRoutePolicy.ComputeRouterRoutePolicy(
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the route policy. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.router">router</a></code> | <code>str</code> | The name of the Cloud Router in which this route policy will be configured. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.terms">terms</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTerms">ComputeRouterRoutePolicyTerms</a>]</code> | terms block. |
-| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where the router and NAT reside. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts">ComputeRouterRoutePolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.type">type</a></code> | <code>str</code> | This is policy's type, which is one of IMPORT or EXPORT Possible values: ["ROUTE_POLICY_TYPE_IMPORT", "ROUTE_POLICY_TYPE_EXPORT"]. |
@@ -122,7 +124,7 @@ Name of the route policy.
 
 This policy's name, which must be a resource ID segment and unique within all policies owned by the Router
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#name ComputeRouterRoutePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#name ComputeRouterRoutePolicy#name}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the Cloud Router in which this route policy will be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#router ComputeRouterRoutePolicy#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#router ComputeRouterRoutePolicy#router}
 
 ---
 
@@ -142,7 +144,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 terms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#terms ComputeRouterRoutePolicy#terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#terms ComputeRouterRoutePolicy#terms}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#deletion_policy ComputeRouterRoutePolicy#deletion_policy}
 
 ---
 
@@ -150,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +180,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}.
 
 ---
 
@@ -171,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where the router and NAT reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#region ComputeRouterRoutePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#region ComputeRouterRoutePolicy#region}
 
 ---
 
@@ -181,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#timeouts ComputeRouterRoutePolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#timeouts ComputeRouterRoutePolicy#timeouts}
 
 ---
 
@@ -191,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 This is policy's type, which is one of IMPORT or EXPORT Possible values: ["ROUTE_POLICY_TYPE_IMPORT", "ROUTE_POLICY_TYPE_EXPORT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#type ComputeRouterRoutePolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#type ComputeRouterRoutePolicy#type}
 
 ---
 
@@ -225,6 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.putTerms">put_terms</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.resetRegion">reset_region</a></code> | *No description.* |
@@ -609,7 +629,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#create ComputeRouterRoutePolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#create ComputeRouterRoutePolicy#create}.
 
 ---
 
@@ -617,7 +637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#delete ComputeRouterRoutePolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#delete ComputeRouterRoutePolicy#delete}.
 
 ---
 
@@ -625,9 +645,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#update ComputeRouterRoutePolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#update ComputeRouterRoutePolicy#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.resetId"></a>
 
@@ -773,7 +799,7 @@ The construct id used in the generated config for the ComputeRouterRoutePolicy t
 
 The id of the existing ComputeRouterRoutePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,6 +832,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.fingerprint">fingerprint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.terms">terms</a></code> | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsList">ComputeRouterRoutePolicyTermsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeoutsOutputReference">ComputeRouterRoutePolicyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
@@ -814,6 +841,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.termsInput">terms_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTerms">ComputeRouterRoutePolicyTerms</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts">ComputeRouterRoutePolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -995,6 +1023,16 @@ timeouts: ComputeRouterRoutePolicyTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.idInput"></a>
 
 ```python
@@ -1069,6 +1107,16 @@ timeouts_input: IResolvable | ComputeRouterRoutePolicyTimeouts
 
 ```python
 type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1173,6 +1221,7 @@ computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig(
   name: str,
   router: str,
   terms: IResolvable | typing.List[ComputeRouterRoutePolicyTerms],
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   region: str = None,
@@ -1195,8 +1244,9 @@ computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig(
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.name">name</a></code> | <code>str</code> | Name of the route policy. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.router">router</a></code> | <code>str</code> | The name of the Cloud Router in which this route policy will be configured. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.terms">terms</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTerms">ComputeRouterRoutePolicyTerms</a>]</code> | terms block. |
-| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.region">region</a></code> | <code>str</code> | Region where the router and NAT reside. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts">ComputeRouterRoutePolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.type">type</a></code> | <code>str</code> | This is policy's type, which is one of IMPORT or EXPORT Possible values: ["ROUTE_POLICY_TYPE_IMPORT", "ROUTE_POLICY_TYPE_EXPORT"]. |
@@ -1285,7 +1335,7 @@ Name of the route policy.
 
 This policy's name, which must be a resource ID segment and unique within all policies owned by the Router
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#name ComputeRouterRoutePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#name ComputeRouterRoutePolicy#name}
 
 ---
 
@@ -1299,7 +1349,7 @@ router: str
 
 The name of the Cloud Router in which this route policy will be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#router ComputeRouterRoutePolicy#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#router ComputeRouterRoutePolicy#router}
 
 ---
 
@@ -1313,7 +1363,28 @@ terms: IResolvable | typing.List[ComputeRouterRoutePolicyTerms]
 
 terms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#terms ComputeRouterRoutePolicy#terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#terms ComputeRouterRoutePolicy#terms}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#deletion_policy ComputeRouterRoutePolicy#deletion_policy}
 
 ---
 
@@ -1325,7 +1396,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1340,7 +1411,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#project ComputeRouterRoutePolicy#project}.
 
 ---
 
@@ -1354,7 +1425,7 @@ region: str
 
 Region where the router and NAT reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#region ComputeRouterRoutePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#region ComputeRouterRoutePolicy#region}
 
 ---
 
@@ -1368,7 +1439,7 @@ timeouts: ComputeRouterRoutePolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#timeouts ComputeRouterRoutePolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#timeouts ComputeRouterRoutePolicy#timeouts}
 
 ---
 
@@ -1382,7 +1453,7 @@ type: str
 
 This is policy's type, which is one of IMPORT or EXPORT Possible values: ["ROUTE_POLICY_TYPE_IMPORT", "ROUTE_POLICY_TYPE_EXPORT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#type ComputeRouterRoutePolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#type ComputeRouterRoutePolicy#type}
 
 ---
 
@@ -1420,7 +1491,7 @@ match: ComputeRouterRoutePolicyTermsMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#match ComputeRouterRoutePolicy#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#match ComputeRouterRoutePolicy#match}
 
 ---
 
@@ -1434,7 +1505,7 @@ priority: typing.Union[int, float]
 
 The evaluation priority for this term, which must be between 0 (inclusive) and 2147483648 (exclusive), and unique within the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#priority ComputeRouterRoutePolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#priority ComputeRouterRoutePolicy#priority}
 
 ---
 
@@ -1448,7 +1519,7 @@ actions: IResolvable | typing.List[ComputeRouterRoutePolicyTermsActions]
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#actions ComputeRouterRoutePolicy#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#actions ComputeRouterRoutePolicy#actions}
 
 ---
 
@@ -1488,7 +1559,7 @@ expression: str
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#expression ComputeRouterRoutePolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#expression ComputeRouterRoutePolicy#expression}
 
 ---
 
@@ -1502,7 +1573,7 @@ description: str
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#description ComputeRouterRoutePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#description ComputeRouterRoutePolicy#description}
 
 ---
 
@@ -1516,7 +1587,7 @@ location: str
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#location ComputeRouterRoutePolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#location ComputeRouterRoutePolicy#location}
 
 ---
 
@@ -1530,7 +1601,7 @@ title: str
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#title ComputeRouterRoutePolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#title ComputeRouterRoutePolicy#title}
 
 ---
 
@@ -1570,7 +1641,7 @@ expression: str
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#expression ComputeRouterRoutePolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#expression ComputeRouterRoutePolicy#expression}
 
 ---
 
@@ -1584,7 +1655,7 @@ description: str
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#description ComputeRouterRoutePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#description ComputeRouterRoutePolicy#description}
 
 ---
 
@@ -1598,7 +1669,7 @@ location: str
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#location ComputeRouterRoutePolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#location ComputeRouterRoutePolicy#location}
 
 ---
 
@@ -1612,7 +1683,7 @@ title: str
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#title ComputeRouterRoutePolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#title ComputeRouterRoutePolicy#title}
 
 ---
 
@@ -1634,9 +1705,9 @@ computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#create ComputeRouterRoutePolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#delete ComputeRouterRoutePolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#update ComputeRouterRoutePolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#create ComputeRouterRoutePolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#delete ComputeRouterRoutePolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#update ComputeRouterRoutePolicy#update}. |
 
 ---
 
@@ -1648,7 +1719,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#create ComputeRouterRoutePolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#create ComputeRouterRoutePolicy#create}.
 
 ---
 
@@ -1660,7 +1731,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#delete ComputeRouterRoutePolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#delete ComputeRouterRoutePolicy#delete}.
 
 ---
 
@@ -1672,7 +1743,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#update ComputeRouterRoutePolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#update ComputeRouterRoutePolicy#update}.
 
 ---
 
@@ -3086,7 +3157,7 @@ def put_match(
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#expression ComputeRouterRoutePolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#expression ComputeRouterRoutePolicy#expression}
 
 ---
 
@@ -3096,7 +3167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#description ComputeRouterRoutePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#description ComputeRouterRoutePolicy#description}
 
 ---
 
@@ -3106,7 +3177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#location ComputeRouterRoutePolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#location ComputeRouterRoutePolicy#location}
 
 ---
 
@@ -3116,7 +3187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#title ComputeRouterRoutePolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_router_route_policy#title ComputeRouterRoutePolicy#title}
 
 ---
 

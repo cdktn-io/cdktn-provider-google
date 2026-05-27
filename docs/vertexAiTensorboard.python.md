@@ -4,7 +4,7 @@
 
 ### VertexAiTensorboard <a name="VertexAiTensorboard" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer"></a>
 
@@ -22,6 +22,7 @@ vertexAiTensorboard.VertexAiTensorboard(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
+  deletion_policy: str = None,
   description: str = None,
   encryption_spec: VertexAiTensorboardEncryptionSpec = None,
   id: str = None,
@@ -44,11 +45,12 @@ vertexAiTensorboard.VertexAiTensorboard(
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User provided name of this Tensorboard. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of this Tensorboard. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpec">VertexAiTensorboardEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels with user-defined metadata to organize your Tensorboards. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the tensorboard. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts">VertexAiTensorboardTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +122,24 @@ Must be unique amongst siblings in the same scope
 
 User provided name of this Tensorboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#display_name VertexAiTensorboard#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#display_name VertexAiTensorboard#display_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#deletion_policy VertexAiTensorboard#deletion_policy}
 
 ---
 
@@ -130,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of this Tensorboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#description VertexAiTensorboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#description VertexAiTensorboard#description}
 
 ---
 
@@ -140,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#encryption_spec VertexAiTensorboard#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#encryption_spec VertexAiTensorboard#encryption_spec}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +183,7 @@ The labels with user-defined metadata to organize your Tensorboards.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#labels VertexAiTensorboard#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#labels VertexAiTensorboard#labels}
 
 ---
 
@@ -172,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}.
 
 ---
 
@@ -182,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the tensorboard. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#region VertexAiTensorboard#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#region VertexAiTensorboard#region}
 
 ---
 
@@ -192,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#timeouts VertexAiTensorboard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#timeouts VertexAiTensorboard#timeouts}
 
 ---
 
@@ -226,6 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.putEncryptionSpec">put_encryption_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.resetEncryptionSpec">reset_encryption_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.resetId">reset_id</a></code> | *No description.* |
@@ -600,7 +620,7 @@ The Cloud KMS resource identifier of the customer managed encryption key used to
 
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#kms_key_name VertexAiTensorboard#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#kms_key_name VertexAiTensorboard#kms_key_name}
 
 ---
 
@@ -618,7 +638,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#create VertexAiTensorboard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#create VertexAiTensorboard#create}.
 
 ---
 
@@ -626,7 +646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#delete VertexAiTensorboard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#delete VertexAiTensorboard#delete}.
 
 ---
 
@@ -634,9 +654,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#update VertexAiTensorboard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#update VertexAiTensorboard#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.resetDescription"></a>
 
@@ -794,7 +820,7 @@ The construct id used in the generated config for the VertexAiTensorboard to imp
 
 The id of the existing VertexAiTensorboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,6 +859,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeoutsOutputReference">VertexAiTensorboardTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.encryptionSpecInput">encryption_spec_input</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpec">VertexAiTensorboardEncryptionSpec</a></code> | *No description.* |
@@ -841,6 +868,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts">VertexAiTensorboardTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1082,6 +1110,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.descriptionInput"></a>
 
 ```python
@@ -1159,6 +1197,16 @@ timeouts_input: IResolvable | VertexAiTensorboardTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts">VertexAiTensorboardTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboard.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1258,6 +1306,7 @@ vertexAiTensorboard.VertexAiTensorboardConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
+  deletion_policy: str = None,
   description: str = None,
   encryption_spec: VertexAiTensorboardEncryptionSpec = None,
   id: str = None,
@@ -1280,11 +1329,12 @@ vertexAiTensorboard.VertexAiTensorboardConfig(
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.displayName">display_name</a></code> | <code>str</code> | User provided name of this Tensorboard. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.description">description</a></code> | <code>str</code> | Description of this Tensorboard. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpec">VertexAiTensorboardEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels with user-defined metadata to organize your Tensorboards. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.region">region</a></code> | <code>str</code> | The region of the tensorboard. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts">VertexAiTensorboardTimeouts</a></code> | timeouts block. |
 
@@ -1370,7 +1420,28 @@ display_name: str
 
 User provided name of this Tensorboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#display_name VertexAiTensorboard#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#display_name VertexAiTensorboard#display_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#deletion_policy VertexAiTensorboard#deletion_policy}
 
 ---
 
@@ -1384,7 +1455,7 @@ description: str
 
 Description of this Tensorboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#description VertexAiTensorboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#description VertexAiTensorboard#description}
 
 ---
 
@@ -1398,7 +1469,7 @@ encryption_spec: VertexAiTensorboardEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#encryption_spec VertexAiTensorboard#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#encryption_spec VertexAiTensorboard#encryption_spec}
 
 ---
 
@@ -1410,7 +1481,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#id VertexAiTensorboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1430,7 +1501,7 @@ The labels with user-defined metadata to organize your Tensorboards.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#labels VertexAiTensorboard#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#labels VertexAiTensorboard#labels}
 
 ---
 
@@ -1442,7 +1513,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#project VertexAiTensorboard#project}.
 
 ---
 
@@ -1456,7 +1527,7 @@ region: str
 
 The region of the tensorboard. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#region VertexAiTensorboard#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#region VertexAiTensorboard#region}
 
 ---
 
@@ -1470,7 +1541,7 @@ timeouts: VertexAiTensorboardTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#timeouts VertexAiTensorboard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#timeouts VertexAiTensorboard#timeouts}
 
 ---
 
@@ -1506,7 +1577,7 @@ The Cloud KMS resource identifier of the customer managed encryption key used to
 
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#kms_key_name VertexAiTensorboard#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#kms_key_name VertexAiTensorboard#kms_key_name}
 
 ---
 
@@ -1528,9 +1599,9 @@ vertexAiTensorboard.VertexAiTensorboardTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#create VertexAiTensorboard#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#delete VertexAiTensorboard#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#update VertexAiTensorboard#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#create VertexAiTensorboard#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#delete VertexAiTensorboard#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#update VertexAiTensorboard#update}. |
 
 ---
 
@@ -1542,7 +1613,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#create VertexAiTensorboard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#create VertexAiTensorboard#create}.
 
 ---
 
@@ -1554,7 +1625,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#delete VertexAiTensorboard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#delete VertexAiTensorboard#delete}.
 
 ---
 
@@ -1566,7 +1637,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_tensorboard#update VertexAiTensorboard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_tensorboard#update VertexAiTensorboard#update}.
 
 ---
 

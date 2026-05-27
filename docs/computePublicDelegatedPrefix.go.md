@@ -4,7 +4,7 @@
 
 ### ComputePublicDelegatedPrefix <a name="ComputePublicDelegatedPrefix" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.resetAllocatablePrefixLength">ResetAllocatablePrefixLength</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.resetIsLiveMigration">ResetIsLiveMigration</a></code> | *No description.* |
@@ -412,6 +413,12 @@ func PutTimeouts(value ComputePublicDelegatedPrefixTimeouts)
 func ResetAllocatablePrefixLength()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.resetDescription"></a>
 
 ```go
@@ -551,7 +558,7 @@ The construct id used in the generated config for the ComputePublicDelegatedPref
 
 The id of the existing ComputePublicDelegatedPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeoutsOutputReference">ComputePublicDelegatedPrefixTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.allocatablePrefixLengthInput">AllocatablePrefixLengthInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.ipCidrRangeInput">IpCidrRangeInput</a></code> | <code>*string</code> | *No description.* |
@@ -598,6 +606,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.allocatablePrefixLength">AllocatablePrefixLength</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.ipCidrRange">IpCidrRange</a></code> | <code>*string</code> | *No description.* |
@@ -812,6 +821,16 @@ func AllocatablePrefixLengthInput() *f64
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.descriptionInput"></a>
 
 ```go
@@ -919,6 +938,16 @@ func AllocatablePrefixLength() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1052,6 +1081,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicdel
 	ParentPrefix: *string,
 	Region: *string,
 	AllocatablePrefixLength: *f64,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	IsLiveMigration: interface{},
@@ -1077,11 +1107,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicdel
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.parentPrefix">ParentPrefix</a></code> | <code>*string</code> | The URL of parent prefix. Either PublicAdvertisedPrefix or PublicDelegatedPrefix. |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.region">Region</a></code> | <code>*string</code> | A region where the prefix will reside. |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.allocatablePrefixLength">AllocatablePrefixLength</a></code> | <code>*f64</code> | The allocatable prefix length supported by this public delegated prefix. |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#id ComputePublicDelegatedPrefix#id}. |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#id ComputePublicDelegatedPrefix#id}. |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.isLiveMigration">IsLiveMigration</a></code> | <code>interface{}</code> | If true, the prefix will be live migrated. |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.mode">Mode</a></code> | <code>*string</code> | Specifies the mode of this IPv6 PDP. |
-| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#project ComputePublicDelegatedPrefix#project}. |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#project ComputePublicDelegatedPrefix#project}. |
 | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeouts">ComputePublicDelegatedPrefixTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1166,7 +1197,7 @@ IpCidrRange *string
 
 The IP address range, in CIDR format, represented by this public delegated prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#ip_cidr_range ComputePublicDelegatedPrefix#ip_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#ip_cidr_range ComputePublicDelegatedPrefix#ip_cidr_range}
 
 ---
 
@@ -1187,7 +1218,7 @@ which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#name ComputePublicDelegatedPrefix#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#name ComputePublicDelegatedPrefix#name}
 
 ---
 
@@ -1201,7 +1232,7 @@ ParentPrefix *string
 
 The URL of parent prefix. Either PublicAdvertisedPrefix or PublicDelegatedPrefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#parent_prefix ComputePublicDelegatedPrefix#parent_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#parent_prefix ComputePublicDelegatedPrefix#parent_prefix}
 
 ---
 
@@ -1215,7 +1246,7 @@ Region *string
 
 A region where the prefix will reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#region ComputePublicDelegatedPrefix#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#region ComputePublicDelegatedPrefix#region}
 
 ---
 
@@ -1231,7 +1262,28 @@ The allocatable prefix length supported by this public delegated prefix.
 
 This field is optional and cannot be set for prefixes in DELEGATION mode. It cannot be set for IPv4 prefixes either, and it always defaults to 32.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#allocatable_prefix_length ComputePublicDelegatedPrefix#allocatable_prefix_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#allocatable_prefix_length ComputePublicDelegatedPrefix#allocatable_prefix_length}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#deletion_policy ComputePublicDelegatedPrefix#deletion_policy}
 
 ---
 
@@ -1245,7 +1297,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#description ComputePublicDelegatedPrefix#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#description ComputePublicDelegatedPrefix#description}
 
 ---
 
@@ -1257,7 +1309,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#id ComputePublicDelegatedPrefix#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#id ComputePublicDelegatedPrefix#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1274,7 +1326,7 @@ IsLiveMigration interface{}
 
 If true, the prefix will be live migrated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#is_live_migration ComputePublicDelegatedPrefix#is_live_migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#is_live_migration ComputePublicDelegatedPrefix#is_live_migration}
 
 ---
 
@@ -1295,7 +1347,7 @@ MODE must be one of:
 * EXTERNAL_IPV6_SUBNETWORK_CREATION
 * INTERNAL_IPV6_SUBNETWORK_CREATION Possible values: ["DELEGATION", "EXTERNAL_IPV6_FORWARDING_RULE_CREATION", "EXTERNAL_IPV6_SUBNETWORK_CREATION", "INTERNAL_IPV6_SUBNETWORK_CREATION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#mode ComputePublicDelegatedPrefix#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#mode ComputePublicDelegatedPrefix#mode}
 
 ---
 
@@ -1307,7 +1359,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#project ComputePublicDelegatedPrefix#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#project ComputePublicDelegatedPrefix#project}.
 
 ---
 
@@ -1321,7 +1373,7 @@ Timeouts ComputePublicDelegatedPrefixTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#timeouts ComputePublicDelegatedPrefix#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#timeouts ComputePublicDelegatedPrefix#timeouts}
 
 ---
 
@@ -1355,8 +1407,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicdel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#create ComputePublicDelegatedPrefix#create}. |
-| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#delete ComputePublicDelegatedPrefix#delete}. |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#create ComputePublicDelegatedPrefix#create}. |
+| <code><a href="#@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#delete ComputePublicDelegatedPrefix#delete}. |
 
 ---
 
@@ -1368,7 +1420,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#create ComputePublicDelegatedPrefix#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#create ComputePublicDelegatedPrefix#create}.
 
 ---
 
@@ -1380,7 +1432,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#delete ComputePublicDelegatedPrefix#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#delete ComputePublicDelegatedPrefix#delete}.
 
 ---
 

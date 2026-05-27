@@ -4,7 +4,7 @@
 
 ### VertexAiFeaturestore <a name="VertexAiFeaturestore" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer"></a>
 
@@ -19,6 +19,7 @@ VertexAiFeaturestore.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .deletionPolicy(java.lang.String)
 //  .encryptionSpec(VertexAiFeaturestoreEncryptionSpec)
 //  .forceDestroy(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
@@ -42,13 +43,14 @@ VertexAiFeaturestore.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpec">VertexAiFeaturestoreEncryptionSpec</a></code> | encryption_spec block. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, any EntityTypes and Features for this Featurestore will also be deleted. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A set of key/value label pairs to assign to this Featurestore. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the Featurestore. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.onlineServingConfig">onlineServingConfig</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfig">VertexAiFeaturestoreOnlineServingConfig</a></code> | online_serving_config block. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region of the dataset. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts">VertexAiFeaturestoreTimeouts</a></code> | timeouts block. |
 
@@ -114,13 +116,30 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#deletion_policy VertexAiFeaturestore#deletion_policy}
+
+---
+
 ##### `encryptionSpec`<sup>Optional</sup> <a name="encryptionSpec" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.Initializer.parameter.encryptionSpec"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpec">VertexAiFeaturestoreEncryptionSpec</a>
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#encryption_spec VertexAiFeaturestore#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#encryption_spec VertexAiFeaturestore#encryption_spec}
 
 ---
 
@@ -130,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, any EntityTypes and Features for this Featurestore will also be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#force_destroy VertexAiFeaturestore#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#force_destroy VertexAiFeaturestore#force_destroy}
 
 ---
 
@@ -138,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -154,7 +173,7 @@ A set of key/value label pairs to assign to this Featurestore.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#labels VertexAiFeaturestore#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#labels VertexAiFeaturestore#labels}
 
 ---
 
@@ -166,7 +185,7 @@ The name of the Featurestore.
 
 This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#name VertexAiFeaturestore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#name VertexAiFeaturestore#name}
 
 ---
 
@@ -176,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 online_serving_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#online_serving_config VertexAiFeaturestore#online_serving_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#online_serving_config VertexAiFeaturestore#online_serving_config}
 
 ---
 
@@ -184,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}.
 
 ---
 
@@ -194,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the dataset. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#region VertexAiFeaturestore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#region VertexAiFeaturestore#region}
 
 ---
 
@@ -204,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#timeouts VertexAiFeaturestore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#timeouts VertexAiFeaturestore#timeouts}
 
 ---
 
@@ -239,6 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.putEncryptionSpec">putEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.putOnlineServingConfig">putOnlineServingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.resetEncryptionSpec">resetEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.resetId">resetId</a></code> | *No description.* |
@@ -598,6 +618,12 @@ public void putTimeouts(VertexAiFeaturestoreTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetEncryptionSpec` <a name="resetEncryptionSpec" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.resetEncryptionSpec"></a>
 
 ```java
@@ -755,7 +781,7 @@ The construct id used in the generated config for the VertexAiFeaturestore to im
 
 The id of the existing VertexAiFeaturestore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,6 +819,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.terraformLabels">terraformLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeoutsOutputReference">VertexAiFeaturestoreTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.encryptionSpecInput">encryptionSpecInput</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpec">VertexAiFeaturestoreEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.forceDestroyInput">forceDestroyInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -802,6 +829,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts">VertexAiFeaturestoreTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -1033,6 +1061,16 @@ public java.lang.String getUpdateTime();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `encryptionSpecInput`<sup>Optional</sup> <a name="encryptionSpecInput" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.encryptionSpecInput"></a>
 
 ```java
@@ -1120,6 +1158,16 @@ public IResolvable|VertexAiFeaturestoreTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts">VertexAiFeaturestoreTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestore.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1218,6 +1266,7 @@ VertexAiFeaturestoreConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .deletionPolicy(java.lang.String)
 //  .encryptionSpec(VertexAiFeaturestoreEncryptionSpec)
 //  .forceDestroy(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
@@ -1241,13 +1290,14 @@ VertexAiFeaturestoreConfig.builder()
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpec">VertexAiFeaturestoreEncryptionSpec</a></code> | encryption_spec block. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, any EntityTypes and Features for this Featurestore will also be deleted. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A set of key/value label pairs to assign to this Featurestore. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the Featurestore. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.onlineServingConfig">onlineServingConfig</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfig">VertexAiFeaturestoreOnlineServingConfig</a></code> | online_serving_config block. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region of the dataset. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts">VertexAiFeaturestoreTimeouts</a></code> | timeouts block. |
 
@@ -1323,6 +1373,27 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#deletion_policy VertexAiFeaturestore#deletion_policy}
+
+---
+
 ##### `encryptionSpec`<sup>Optional</sup> <a name="encryptionSpec" id="@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig.property.encryptionSpec"></a>
 
 ```java
@@ -1333,7 +1404,7 @@ public VertexAiFeaturestoreEncryptionSpec getEncryptionSpec();
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#encryption_spec VertexAiFeaturestore#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#encryption_spec VertexAiFeaturestore#encryption_spec}
 
 ---
 
@@ -1347,7 +1418,7 @@ public java.lang.Boolean|IResolvable getForceDestroy();
 
 If set to true, any EntityTypes and Features for this Featurestore will also be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#force_destroy VertexAiFeaturestore#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#force_destroy VertexAiFeaturestore#force_destroy}
 
 ---
 
@@ -1359,7 +1430,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#id VertexAiFeaturestore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1379,7 +1450,7 @@ A set of key/value label pairs to assign to this Featurestore.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#labels VertexAiFeaturestore#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#labels VertexAiFeaturestore#labels}
 
 ---
 
@@ -1395,7 +1466,7 @@ The name of the Featurestore.
 
 This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#name VertexAiFeaturestore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#name VertexAiFeaturestore#name}
 
 ---
 
@@ -1409,7 +1480,7 @@ public VertexAiFeaturestoreOnlineServingConfig getOnlineServingConfig();
 
 online_serving_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#online_serving_config VertexAiFeaturestore#online_serving_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#online_serving_config VertexAiFeaturestore#online_serving_config}
 
 ---
 
@@ -1421,7 +1492,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#project VertexAiFeaturestore#project}.
 
 ---
 
@@ -1435,7 +1506,7 @@ public java.lang.String getRegion();
 
 The region of the dataset. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#region VertexAiFeaturestore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#region VertexAiFeaturestore#region}
 
 ---
 
@@ -1449,7 +1520,7 @@ public VertexAiFeaturestoreTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#timeouts VertexAiFeaturestore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#timeouts VertexAiFeaturestore#timeouts}
 
 ---
 
@@ -1485,7 +1556,7 @@ The Cloud KMS resource identifier of the customer managed encryption key used to
 
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the compute resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#kms_key_name VertexAiFeaturestore#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#kms_key_name VertexAiFeaturestore#kms_key_name}
 
 ---
 
@@ -1523,7 +1594,7 @@ The number of nodes for each cluster.
 
 The number of nodes will not scale automatically but can be scaled manually by providing different values when updating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#fixed_node_count VertexAiFeaturestore#fixed_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#fixed_node_count VertexAiFeaturestore#fixed_node_count}
 
 ---
 
@@ -1537,7 +1608,7 @@ public VertexAiFeaturestoreOnlineServingConfigScaling getScaling();
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#scaling VertexAiFeaturestore#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#scaling VertexAiFeaturestore#scaling}
 
 ---
 
@@ -1575,7 +1646,7 @@ The maximum number of nodes to scale up to.
 
 Must be greater than minNodeCount, and less than or equal to 10 times of 'minNodeCount'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#max_node_count VertexAiFeaturestore#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#max_node_count VertexAiFeaturestore#max_node_count}
 
 ---
 
@@ -1589,7 +1660,7 @@ public java.lang.Number getMinNodeCount();
 
 The minimum number of nodes to scale down to. Must be greater than or equal to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#min_node_count VertexAiFeaturestore#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#min_node_count VertexAiFeaturestore#min_node_count}
 
 ---
 
@@ -1611,9 +1682,9 @@ VertexAiFeaturestoreTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#create VertexAiFeaturestore#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#delete VertexAiFeaturestore#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#update VertexAiFeaturestore#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#create VertexAiFeaturestore#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#delete VertexAiFeaturestore#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#update VertexAiFeaturestore#update}. |
 
 ---
 
@@ -1625,7 +1696,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#create VertexAiFeaturestore#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#create VertexAiFeaturestore#create}.
 
 ---
 
@@ -1637,7 +1708,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#delete VertexAiFeaturestore#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#delete VertexAiFeaturestore#delete}.
 
 ---
 
@@ -1649,7 +1720,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore#update VertexAiFeaturestore#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_featurestore#update VertexAiFeaturestore#update}.
 
 ---
 

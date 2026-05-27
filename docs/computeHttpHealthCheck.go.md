@@ -4,7 +4,7 @@
 
 ### ComputeHttpHealthCheck <a name="ComputeHttpHealthCheck" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check google_compute_http_health_check}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check google_compute_http_health_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.resetCheckIntervalSec">ResetCheckIntervalSec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.resetHealthyThreshold">ResetHealthyThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.resetHost">ResetHost</a></code> | *No description.* |
@@ -416,6 +417,12 @@ func PutTimeouts(value ComputeHttpHealthCheckTimeouts)
 func ResetCheckIntervalSec()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.resetDescription"></a>
 
 ```go
@@ -579,7 +586,7 @@ The construct id used in the generated config for the ComputeHttpHealthCheck to 
 
 The id of the existing ComputeHttpHealthCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -613,6 +620,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeoutsOutputReference">ComputeHttpHealthCheckTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.checkIntervalSecInput">CheckIntervalSecInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.healthyThresholdInput">HealthyThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.hostInput">HostInput</a></code> | <code>*string</code> | *No description.* |
@@ -625,6 +633,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.unhealthyThresholdInput">UnhealthyThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.checkIntervalSec">CheckIntervalSec</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.host">Host</a></code> | <code>*string</code> | *No description.* |
@@ -820,6 +829,16 @@ func CheckIntervalSecInput() *f64
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.descriptionInput"></a>
 
 ```go
@@ -937,6 +956,16 @@ func CheckIntervalSec() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1077,6 +1106,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computehttphealt
 	Provisioners: *[]interface{},
 	Name: *string,
 	CheckIntervalSec: *f64,
+	DeletionPolicy: *string,
 	Description: *string,
 	HealthyThreshold: *f64,
 	Host: *string,
@@ -1103,12 +1133,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computehttphealt
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.checkIntervalSec">CheckIntervalSec</a></code> | <code>*f64</code> | How often (in seconds) to send a health check. The default value is 5 seconds. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.host">Host</a></code> | <code>*string</code> | The value of the host header in the HTTP health check request. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.port">Port</a></code> | <code>*f64</code> | The TCP port number for the HTTP health check request. The default value is 80. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.requestPath">RequestPath</a></code> | <code>*string</code> | The request path of the HTTP health check request. The default value is /. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts">ComputeHttpHealthCheckTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.timeoutSec">TimeoutSec</a></code> | <code>*f64</code> | How long (in seconds) to wait before claiming failure. |
@@ -1204,7 +1235,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#name ComputeHttpHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#name ComputeHttpHealthCheck#name}
 
 ---
 
@@ -1218,7 +1249,28 @@ CheckIntervalSec *f64
 
 How often (in seconds) to send a health check. The default value is 5 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#check_interval_sec ComputeHttpHealthCheck#check_interval_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#check_interval_sec ComputeHttpHealthCheck#check_interval_sec}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#deletion_policy ComputeHttpHealthCheck#deletion_policy}
 
 ---
 
@@ -1232,7 +1284,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#description ComputeHttpHealthCheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#description ComputeHttpHealthCheck#description}
 
 ---
 
@@ -1246,7 +1298,7 @@ HealthyThreshold *f64
 
 A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#healthy_threshold ComputeHttpHealthCheck#healthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#healthy_threshold ComputeHttpHealthCheck#healthy_threshold}
 
 ---
 
@@ -1264,7 +1316,7 @@ If
 left empty (default value), the public IP on behalf of which this
 health check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#host ComputeHttpHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#host ComputeHttpHealthCheck#host}
 
 ---
 
@@ -1276,7 +1328,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1293,7 +1345,7 @@ Port *f64
 
 The TCP port number for the HTTP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#port ComputeHttpHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#port ComputeHttpHealthCheck#port}
 
 ---
 
@@ -1305,7 +1357,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}.
 
 ---
 
@@ -1319,7 +1371,7 @@ RequestPath *string
 
 The request path of the HTTP health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#request_path ComputeHttpHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#request_path ComputeHttpHealthCheck#request_path}
 
 ---
 
@@ -1333,7 +1385,7 @@ Timeouts ComputeHttpHealthCheckTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#timeouts ComputeHttpHealthCheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#timeouts ComputeHttpHealthCheck#timeouts}
 
 ---
 
@@ -1350,7 +1402,7 @@ How long (in seconds) to wait before claiming failure.
 The default value is 5 seconds.  It is invalid for timeoutSec to have
 greater value than checkIntervalSec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#timeout_sec ComputeHttpHealthCheck#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#timeout_sec ComputeHttpHealthCheck#timeout_sec}
 
 ---
 
@@ -1364,7 +1416,7 @@ UnhealthyThreshold *f64
 
 A so-far healthy instance will be marked unhealthy after this many consecutive failures. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#unhealthy_threshold ComputeHttpHealthCheck#unhealthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#unhealthy_threshold ComputeHttpHealthCheck#unhealthy_threshold}
 
 ---
 
@@ -1386,9 +1438,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computehttphealt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}. |
 
 ---
 
@@ -1400,7 +1452,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}.
 
 ---
 
@@ -1412,7 +1464,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}.
 
 ---
 
@@ -1424,7 +1476,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}.
 
 ---
 

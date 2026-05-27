@@ -4,7 +4,7 @@
 
 ### DataflowJob <a name="DataflowJob" id="@cdktn/provider-google.dataflowJob.DataflowJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job google_dataflow_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job google_dataflow_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataflowJob.DataflowJob.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.resetAdditionalExperiments">ResetAdditionalExperiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.resetEnableStreamingEngine">ResetEnableStreamingEngine</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.resetIpConfiguration">ResetIpConfiguration</a></code> | *No description.* |
@@ -424,6 +425,12 @@ func PutTimeouts(value DataflowJobTimeouts)
 func ResetAdditionalExperiments()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dataflowJob.DataflowJob.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetEnableStreamingEngine` <a name="ResetEnableStreamingEngine" id="@cdktn/provider-google.dataflowJob.DataflowJob.resetEnableStreamingEngine"></a>
 
 ```go
@@ -635,7 +642,7 @@ The construct id used in the generated config for the DataflowJob to import.
 
 The id of the existing DataflowJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,6 +679,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobTimeoutsOutputReference">DataflowJobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.additionalExperimentsInput">AdditionalExperimentsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.enableStreamingEngineInput">EnableStreamingEngineInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.ipConfigurationInput">IpConfigurationInput</a></code> | <code>*string</code> | *No description.* |
@@ -694,6 +702,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.transformNameMappingInput">TransformNameMappingInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.additionalExperiments">AdditionalExperiments</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.enableStreamingEngine">EnableStreamingEngine</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJob.property.ipConfiguration">IpConfiguration</a></code> | <code>*string</code> | *No description.* |
@@ -929,6 +938,16 @@ func AdditionalExperimentsInput() *[]*string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dataflowJob.DataflowJob.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EnableStreamingEngineInput`<sup>Optional</sup> <a name="EnableStreamingEngineInput" id="@cdktn/provider-google.dataflowJob.DataflowJob.property.enableStreamingEngineInput"></a>
 
 ```go
@@ -1146,6 +1165,16 @@ func AdditionalExperiments() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataflowJob.DataflowJob.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1388,6 +1417,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataflowjob"
 	TempGcsLocation: *string,
 	TemplateGcsPath: *string,
 	AdditionalExperiments: *[]*string,
+	DeletionPolicy: *string,
 	EnableStreamingEngine: interface{},
 	Id: *string,
 	IpConfiguration: *string,
@@ -1424,8 +1454,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataflowjob"
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.tempGcsLocation">TempGcsLocation</a></code> | <code>*string</code> | A writeable location on Google Cloud Storage for the Dataflow job to dump its temporary data. |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.templateGcsPath">TemplateGcsPath</a></code> | <code>*string</code> | The Google Cloud Storage path to the Dataflow job template. |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.additionalExperiments">AdditionalExperiments</a></code> | <code>*[]*string</code> | List of experiments that should be used by the job. An example value is ["enable_stackdriver_agent_metrics"]. |
+| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.enableStreamingEngine">EnableStreamingEngine</a></code> | <code>interface{}</code> | Indicates if the job should use the streaming engine feature. |
-| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#id DataflowJob#id}. |
+| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#id DataflowJob#id}. |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.ipConfiguration">IpConfiguration</a></code> | <code>*string</code> | The configuration for VM IPs. Options are "WORKER_IP_PUBLIC" or "WORKER_IP_PRIVATE". |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.kmsKeyName">KmsKeyName</a></code> | <code>*string</code> | The name for the Cloud KMS key for the job. Key format is: projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY. |
 | <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User labels to be specified for the job. |
@@ -1525,7 +1556,7 @@ Name *string
 
 A unique name for the resource, required by Dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#name DataflowJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#name DataflowJob#name}
 
 ---
 
@@ -1539,7 +1570,7 @@ TempGcsLocation *string
 
 A writeable location on Google Cloud Storage for the Dataflow job to dump its temporary data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#temp_gcs_location DataflowJob#temp_gcs_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#temp_gcs_location DataflowJob#temp_gcs_location}
 
 ---
 
@@ -1553,7 +1584,7 @@ TemplateGcsPath *string
 
 The Google Cloud Storage path to the Dataflow job template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#template_gcs_path DataflowJob#template_gcs_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#template_gcs_path DataflowJob#template_gcs_path}
 
 ---
 
@@ -1567,7 +1598,28 @@ AdditionalExperiments *[]*string
 
 List of experiments that should be used by the job. An example value is ["enable_stackdriver_agent_metrics"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#additional_experiments DataflowJob#additional_experiments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#additional_experiments DataflowJob#additional_experiments}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataflowJob.DataflowJobConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#deletion_policy DataflowJob#deletion_policy}
 
 ---
 
@@ -1581,7 +1633,7 @@ EnableStreamingEngine interface{}
 
 Indicates if the job should use the streaming engine feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#enable_streaming_engine DataflowJob#enable_streaming_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#enable_streaming_engine DataflowJob#enable_streaming_engine}
 
 ---
 
@@ -1593,7 +1645,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#id DataflowJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#id DataflowJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1610,7 +1662,7 @@ IpConfiguration *string
 
 The configuration for VM IPs. Options are "WORKER_IP_PUBLIC" or "WORKER_IP_PRIVATE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#ip_configuration DataflowJob#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#ip_configuration DataflowJob#ip_configuration}
 
 ---
 
@@ -1624,7 +1676,7 @@ KmsKeyName *string
 
 The name for the Cloud KMS key for the job. Key format is: projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#kms_key_name DataflowJob#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#kms_key_name DataflowJob#kms_key_name}
 
 ---
 
@@ -1641,7 +1693,7 @@ User labels to be specified for the job.
 Keys and values should follow the restrictions specified in the labeling restrictions page. NOTE: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#labels DataflowJob#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#labels DataflowJob#labels}
 
 ---
 
@@ -1655,7 +1707,7 @@ MachineType *string
 
 The machine type to use for the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#machine_type DataflowJob#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#machine_type DataflowJob#machine_type}
 
 ---
 
@@ -1669,7 +1721,7 @@ MaxWorkers *f64
 
 The number of workers permitted to work on the job. More workers may improve processing speed at additional cost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#max_workers DataflowJob#max_workers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#max_workers DataflowJob#max_workers}
 
 ---
 
@@ -1683,7 +1735,7 @@ Network *string
 
 The network to which VMs will be assigned. If it is not provided, "default" will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#network DataflowJob#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#network DataflowJob#network}
 
 ---
 
@@ -1697,7 +1749,7 @@ OnDelete *string
 
 One of "drain" or "cancel". Specifies behavior of deletion during terraform destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#on_delete DataflowJob#on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#on_delete DataflowJob#on_delete}
 
 ---
 
@@ -1711,7 +1763,7 @@ Parameters *map[string]*string
 
 Key/Value pairs to be passed to the Dataflow job (as used in the template).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#parameters DataflowJob#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#parameters DataflowJob#parameters}
 
 ---
 
@@ -1725,7 +1777,7 @@ Project *string
 
 The project in which the resource belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#project DataflowJob#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#project DataflowJob#project}
 
 ---
 
@@ -1739,7 +1791,7 @@ Region *string
 
 The region in which the created job should run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#region DataflowJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#region DataflowJob#region}
 
 ---
 
@@ -1753,7 +1805,7 @@ ServiceAccountEmail *string
 
 The Service Account email used to create the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#service_account_email DataflowJob#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#service_account_email DataflowJob#service_account_email}
 
 ---
 
@@ -1769,7 +1821,7 @@ If true, treat DRAINING and CANCELLING as terminal job states and do not wait fo
 
 WARNING: this will lead to job name conflicts if you do not ensure that the job names are different, e.g. by embedding a release ID or by using a random_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#skip_wait_on_job_termination DataflowJob#skip_wait_on_job_termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#skip_wait_on_job_termination DataflowJob#skip_wait_on_job_termination}
 
 ---
 
@@ -1783,7 +1835,7 @@ Subnetwork *string
 
 The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#subnetwork DataflowJob#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#subnetwork DataflowJob#subnetwork}
 
 ---
 
@@ -1797,7 +1849,7 @@ Timeouts DataflowJobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#timeouts DataflowJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#timeouts DataflowJob#timeouts}
 
 ---
 
@@ -1813,7 +1865,7 @@ Only applicable when updating a pipeline.
 
 Map of transform name prefixes of the job to be replaced with the corresponding name prefixes of the new job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#transform_name_mapping DataflowJob#transform_name_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#transform_name_mapping DataflowJob#transform_name_mapping}
 
 ---
 
@@ -1827,7 +1879,7 @@ Zone *string
 
 The zone in which the created job should run. If it is not provided, the provider zone is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#zone DataflowJob#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#zone DataflowJob#zone}
 
 ---
 
@@ -1847,7 +1899,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataflowjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#update DataflowJob#update}. |
+| <code><a href="#@cdktn/provider-google.dataflowJob.DataflowJobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#update DataflowJob#update}. |
 
 ---
 
@@ -1859,7 +1911,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataflow_job#update DataflowJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataflow_job#update DataflowJob#update}.
 
 ---
 

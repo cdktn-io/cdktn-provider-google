@@ -4,7 +4,7 @@
 
 ### LoggingLogView <a name="LoggingLogView" id="@cdktn/provider-google.loggingLogView.LoggingLogView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view google_logging_log_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view google_logging_log_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer"></a>
 
@@ -23,6 +23,7 @@ loggingLogView.LoggingLogView(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   bucket: str,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   filter: str = None,
   id: str = None,
@@ -45,9 +46,10 @@ loggingLogView.LoggingLogView(
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | The bucket of the resource. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'. |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.description">description</a></code> | <code>str</code> | Describes this view. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.filter">filter</a></code> | <code>str</code> | Filter that restricts which log entries in a bucket are visible in this view. |
-| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#id LoggingLogView#id}. |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#id LoggingLogView#id}. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.parent">parent</a></code> | <code>str</code> | The parent of the resource. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts">LoggingLogViewTimeouts</a></code> | timeouts block. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The bucket of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#bucket LoggingLogView#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#bucket LoggingLogView#bucket}
 
 ---
 
@@ -130,7 +132,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#name LoggingLogView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#name LoggingLogView#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingLogView.LoggingLogView.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#deletion_policy LoggingLogView#deletion_policy}
 
 ---
 
@@ -140,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Describes this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#description LoggingLogView#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#description LoggingLogView#description}
 
 ---
 
@@ -152,7 +171,7 @@ Filter that restricts which log entries in a bucket are visible in this view.
 
 Filters are restricted to be a logical AND of ==/!= of any of the following: - originating project/folder/organization/billing account. - resource type - log id For example: SOURCE("projects/myproject") AND resource.type = "gce_instance" AND LOG_ID("stdout")
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#filter LoggingLogView#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#filter LoggingLogView#filter}
 
 ---
 
@@ -160,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#id LoggingLogView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#id LoggingLogView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +192,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#location LoggingLogView#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#location LoggingLogView#location}
 
 ---
 
@@ -183,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#parent LoggingLogView#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#parent LoggingLogView#parent}
 
 ---
 
@@ -193,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#timeouts LoggingLogView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#timeouts LoggingLogView#timeouts}
 
 ---
 
@@ -226,6 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.resetId">reset_id</a></code> | *No description.* |
@@ -597,7 +617,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#create LoggingLogView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#create LoggingLogView#create}.
 
 ---
 
@@ -605,7 +625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#delete LoggingLogView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#delete LoggingLogView#delete}.
 
 ---
 
@@ -613,9 +633,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#update LoggingLogView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#update LoggingLogView#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.loggingLogView.LoggingLogView.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.loggingLogView.LoggingLogView.resetDescription"></a>
 
@@ -767,7 +793,7 @@ The construct id used in the generated config for the LoggingLogView to import.
 
 The id of the existing LoggingLogView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,6 +827,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeoutsOutputReference">LoggingLogViewTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.bucketInput">bucket_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -809,6 +836,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts">LoggingLogViewTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.bucket">bucket</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.filter">filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogView.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1000,6 +1028,16 @@ bucket_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.loggingLogView.LoggingLogView.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.loggingLogView.LoggingLogView.property.descriptionInput"></a>
 
 ```python
@@ -1074,6 +1112,16 @@ timeouts_input: IResolvable | LoggingLogViewTimeouts
 
 ```python
 bucket: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingLogView.LoggingLogView.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1177,6 +1225,7 @@ loggingLogView.LoggingLogViewConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   bucket: str,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   filter: str = None,
   id: str = None,
@@ -1199,9 +1248,10 @@ loggingLogView.LoggingLogViewConfig(
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.bucket">bucket</a></code> | <code>str</code> | The bucket of the resource. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.name">name</a></code> | <code>str</code> | The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'. |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.description">description</a></code> | <code>str</code> | Describes this view. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.filter">filter</a></code> | <code>str</code> | Filter that restricts which log entries in a bucket are visible in this view. |
-| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#id LoggingLogView#id}. |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#id LoggingLogView#id}. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.location">location</a></code> | <code>str</code> | The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.parent">parent</a></code> | <code>str</code> | The parent of the resource. |
 | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts">LoggingLogViewTimeouts</a></code> | timeouts block. |
@@ -1288,7 +1338,7 @@ bucket: str
 
 The bucket of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#bucket LoggingLogView#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#bucket LoggingLogView#bucket}
 
 ---
 
@@ -1302,7 +1352,28 @@ name: str
 
 The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#name LoggingLogView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#name LoggingLogView#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingLogView.LoggingLogViewConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#deletion_policy LoggingLogView#deletion_policy}
 
 ---
 
@@ -1316,7 +1387,7 @@ description: str
 
 Describes this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#description LoggingLogView#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#description LoggingLogView#description}
 
 ---
 
@@ -1332,7 +1403,7 @@ Filter that restricts which log entries in a bucket are visible in this view.
 
 Filters are restricted to be a logical AND of ==/!= of any of the following: - originating project/folder/organization/billing account. - resource type - log id For example: SOURCE("projects/myproject") AND resource.type = "gce_instance" AND LOG_ID("stdout")
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#filter LoggingLogView#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#filter LoggingLogView#filter}
 
 ---
 
@@ -1344,7 +1415,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#id LoggingLogView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#id LoggingLogView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1361,7 +1432,7 @@ location: str
 
 The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#location LoggingLogView#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#location LoggingLogView#location}
 
 ---
 
@@ -1375,7 +1446,7 @@ parent: str
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#parent LoggingLogView#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#parent LoggingLogView#parent}
 
 ---
 
@@ -1389,7 +1460,7 @@ timeouts: LoggingLogViewTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#timeouts LoggingLogView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#timeouts LoggingLogView#timeouts}
 
 ---
 
@@ -1411,9 +1482,9 @@ loggingLogView.LoggingLogViewTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#create LoggingLogView#create}. |
-| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#delete LoggingLogView#delete}. |
-| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#update LoggingLogView#update}. |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#create LoggingLogView#create}. |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#delete LoggingLogView#delete}. |
+| <code><a href="#@cdktn/provider-google.loggingLogView.LoggingLogViewTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#update LoggingLogView#update}. |
 
 ---
 
@@ -1425,7 +1496,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#create LoggingLogView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#create LoggingLogView#create}.
 
 ---
 
@@ -1437,7 +1508,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#delete LoggingLogView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#delete LoggingLogView#delete}.
 
 ---
 
@@ -1449,7 +1520,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view#update LoggingLogView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view#update LoggingLogView#update}.
 
 ---
 

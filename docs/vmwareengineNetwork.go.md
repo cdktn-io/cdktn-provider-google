@@ -4,7 +4,7 @@
 
 ### VmwareengineNetwork <a name="VmwareengineNetwork" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network google_vmwareengine_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network google_vmwareengine_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.resetProject">ResetProject</a></code> | *No description.* |
@@ -403,6 +404,12 @@ func PutTimeouts(value VmwareengineNetworkTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.resetDescription"></a>
 
 ```go
@@ -530,7 +537,7 @@ The construct id used in the generated config for the VmwareengineNetwork to imp
 
 The id of the existing VmwareengineNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -567,6 +574,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.uid">Uid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.vpcNetworks">VpcNetworks</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkVpcNetworksList">VmwareengineNetworkVpcNetworksList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
@@ -574,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.location">Location</a></code> | <code>*string</code> | *No description.* |
@@ -795,6 +804,16 @@ func VpcNetworks() VmwareengineNetworkVpcNetworksList
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.descriptionInput"></a>
 
 ```go
@@ -859,6 +878,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func TypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -963,6 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginenetw
 	Location: *string,
 	Name: *string,
 	Type: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Project: *string,
@@ -984,9 +1014,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginenetw
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.location">Location</a></code> | <code>*string</code> | The location where the VMwareEngineNetwork should reside. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the VMwareEngineNetwork. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.type">Type</a></code> | <code>*string</code> | VMware Engine network type. Possible values: ["LEGACY", "STANDARD"]. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.description">Description</a></code> | <code>*string</code> | User-provided description for this VMware Engine network. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts">VmwareengineNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1071,7 +1102,7 @@ Location *string
 
 The location where the VMwareEngineNetwork should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#location VmwareengineNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#location VmwareengineNetwork#location}
 
 ---
 
@@ -1085,7 +1116,7 @@ Name *string
 
 The ID of the VMwareEngineNetwork.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#name VmwareengineNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#name VmwareengineNetwork#name}
 
 ---
 
@@ -1099,7 +1130,28 @@ Type *string
 
 VMware Engine network type. Possible values: ["LEGACY", "STANDARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#type VmwareengineNetwork#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#type VmwareengineNetwork#type}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#deletion_policy VmwareengineNetwork#deletion_policy}
 
 ---
 
@@ -1113,7 +1165,7 @@ Description *string
 
 User-provided description for this VMware Engine network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#description VmwareengineNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#description VmwareengineNetwork#description}
 
 ---
 
@@ -1125,7 +1177,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1192,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}.
 
 ---
 
@@ -1154,7 +1206,7 @@ Timeouts VmwareengineNetworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#timeouts VmwareengineNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#timeouts VmwareengineNetwork#timeouts}
 
 ---
 
@@ -1176,9 +1228,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginenetw
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}. |
 
 ---
 
@@ -1190,7 +1242,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}.
 
 ---
 
@@ -1202,7 +1254,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}.
 
 ---
 
@@ -1214,7 +1266,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunService <a name="DataGoogleCloudRunService" id="@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service google_cloud_run_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service google_cloud_run_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleCloudRunService 
 
 The id of the existing DataGoogleCloudRunService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -430,6 +430,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.autogenerateRevisionName">AutogenerateRevisionName</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceMetadataList">DataGoogleCloudRunServiceMetadataList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.status">Status</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusList">DataGoogleCloudRunServiceStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.template">Template</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateList">DataGoogleCloudRunServiceTemplateList</a></code> | *No description.* |
@@ -574,6 +575,16 @@ public IResolvable AutogenerateRevisionName { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunService.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -752,8 +763,8 @@ new DataGoogleCloudRunServiceConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceConfig.property.location">Location</a></code> | <code>string</code> | The location of the cloud run instance. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceConfig.property.name">Name</a></code> | <code>string</code> | Name must be unique within a Google Cloud project and region. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service#id DataGoogleCloudRunService#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service#project DataGoogleCloudRunService#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service#id DataGoogleCloudRunService#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service#project DataGoogleCloudRunService#project}. |
 
 ---
 
@@ -837,7 +848,7 @@ public string Location { get; set; }
 
 The location of the cloud run instance. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service#location DataGoogleCloudRunService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service#location DataGoogleCloudRunService#location}
 
 ---
 
@@ -855,7 +866,7 @@ Is required when creating resources. Name is primarily intended
 for creation idempotence and configuration definition. Cannot be updated.
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service#name DataGoogleCloudRunService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service#name DataGoogleCloudRunService#name}
 
 ---
 
@@ -867,7 +878,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service#id DataGoogleCloudRunService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service#id DataGoogleCloudRunService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -882,7 +893,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_service#project DataGoogleCloudRunService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_service#project DataGoogleCloudRunService#project}.
 
 ---
 

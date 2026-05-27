@@ -4,7 +4,7 @@
 
 ### LoggingOrganizationBucketConfig <a name="LoggingOrganizationBucketConfig" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer"></a>
 
@@ -25,6 +25,7 @@ loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig(
   location: str,
   organization: str,
   cmek_settings: LoggingOrganizationBucketConfigCmekSettings = None,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   index_configs: IResolvable | typing.List[LoggingOrganizationBucketConfigIndexConfigs] = None,
@@ -47,8 +48,9 @@ loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig(
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the bucket. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The parent resource that contains the logging bucket. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.cmekSettings">cmek_settings</a></code> | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings">LoggingOrganizationBucketConfigCmekSettings</a></code> | cmek_settings block. |
+| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description for this bucket. |
-| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}. |
+| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.indexConfigs">index_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigIndexConfigs">LoggingOrganizationBucketConfigIndexConfigs</a>]</code> | index_configs block. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.retentionDays">retention_days</a></code> | <code>typing.Union[int, float]</code> | Logs will be retained by default for this amount of time, after which they will automatically be deleted. |
 
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#bucket_id LoggingOrganizationBucketConfig#bucket_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#bucket_id LoggingOrganizationBucketConfig#bucket_id}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#location LoggingOrganizationBucketConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#location LoggingOrganizationBucketConfig#location}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent resource that contains the logging bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#organization LoggingOrganizationBucketConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#organization LoggingOrganizationBucketConfig#organization}
 
 ---
 
@@ -150,7 +152,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cmek_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#cmek_settings LoggingOrganizationBucketConfig#cmek_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#cmek_settings LoggingOrganizationBucketConfig#cmek_settings}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#deletion_policy LoggingOrganizationBucketConfig#deletion_policy}
 
 ---
 
@@ -160,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description for this bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#description LoggingOrganizationBucketConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#description LoggingOrganizationBucketConfig#description}
 
 ---
 
@@ -168,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +200,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 index_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#index_configs LoggingOrganizationBucketConfig#index_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#index_configs LoggingOrganizationBucketConfig#index_configs}
 
 ---
 
@@ -193,7 +212,7 @@ Logs will be retained by default for this amount of time, after which they will 
 
 The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#retention_days LoggingOrganizationBucketConfig#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#retention_days LoggingOrganizationBucketConfig#retention_days}
 
 ---
 
@@ -228,6 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.putCmekSettings">put_cmek_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.putIndexConfigs">put_index_configs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.resetCmekSettings">reset_cmek_settings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.resetIndexConfigs">reset_index_configs</a></code> | *No description.* |
@@ -603,7 +623,7 @@ To enable CMEK for the bucket, set this field to a valid kmsKeyName for which th
 The Cloud KMS key used by the bucket can be updated by changing the kmsKeyName to a new valid key name. Encryption operations that are in progress will be completed with the key that was in use when they started. Decryption operations will be completed using the key that was used at the time of encryption unless access to that key has been revoked.
 See [Enabling CMEK for Logging Buckets](https://cloud.google.com/logging/docs/routing/managed-encryption-storage) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#kms_key_name LoggingOrganizationBucketConfig#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#kms_key_name LoggingOrganizationBucketConfig#kms_key_name}
 
 ---
 
@@ -625,6 +645,12 @@ def put_index_configs(
 
 ```python
 def reset_cmek_settings() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.resetDescription"></a>
@@ -765,7 +791,7 @@ The construct id used in the generated config for the LoggingOrganizationBucketC
 
 The id of the existing LoggingOrganizationBucketConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,6 +827,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.bucketIdInput">bucket_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.cmekSettingsInput">cmek_settings_input</a></code> | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings">LoggingOrganizationBucketConfigCmekSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.indexConfigsInput">index_configs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigIndexConfigs">LoggingOrganizationBucketConfigIndexConfigs</a>]</code> | *No description.* |
@@ -808,6 +835,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.retentionDaysInput">retention_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.bucketId">bucket_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -1018,6 +1046,16 @@ cmek_settings_input: LoggingOrganizationBucketConfigCmekSettings
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.descriptionInput"></a>
 
 ```python
@@ -1082,6 +1120,16 @@ retention_days_input: typing.Union[int, float]
 
 ```python
 bucket_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1194,7 +1242,7 @@ To enable CMEK for the bucket, set this field to a valid kmsKeyName for which th
 The Cloud KMS key used by the bucket can be updated by changing the kmsKeyName to a new valid key name. Encryption operations that are in progress will be completed with the key that was in use when they started. Decryption operations will be completed using the key that was used at the time of encryption unless access to that key has been revoked.
 See [Enabling CMEK for Logging Buckets](https://cloud.google.com/logging/docs/routing/managed-encryption-storage) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#kms_key_name LoggingOrganizationBucketConfig#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#kms_key_name LoggingOrganizationBucketConfig#kms_key_name}
 
 ---
 
@@ -1217,6 +1265,7 @@ loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig(
   location: str,
   organization: str,
   cmek_settings: LoggingOrganizationBucketConfigCmekSettings = None,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   index_configs: IResolvable | typing.List[LoggingOrganizationBucketConfigIndexConfigs] = None,
@@ -1239,8 +1288,9 @@ loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig(
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.location">location</a></code> | <code>str</code> | The location of the bucket. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.organization">organization</a></code> | <code>str</code> | The parent resource that contains the logging bucket. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.cmekSettings">cmek_settings</a></code> | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings">LoggingOrganizationBucketConfigCmekSettings</a></code> | cmek_settings block. |
+| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.description">description</a></code> | <code>str</code> | An optional description for this bucket. |
-| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}. |
+| <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.indexConfigs">index_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigIndexConfigs">LoggingOrganizationBucketConfigIndexConfigs</a>]</code> | index_configs block. |
 | <code><a href="#@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.retentionDays">retention_days</a></code> | <code>typing.Union[int, float]</code> | Logs will be retained by default for this amount of time, after which they will automatically be deleted. |
 
@@ -1326,7 +1376,7 @@ bucket_id: str
 
 The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#bucket_id LoggingOrganizationBucketConfig#bucket_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#bucket_id LoggingOrganizationBucketConfig#bucket_id}
 
 ---
 
@@ -1340,7 +1390,7 @@ location: str
 
 The location of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#location LoggingOrganizationBucketConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#location LoggingOrganizationBucketConfig#location}
 
 ---
 
@@ -1354,7 +1404,7 @@ organization: str
 
 The parent resource that contains the logging bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#organization LoggingOrganizationBucketConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#organization LoggingOrganizationBucketConfig#organization}
 
 ---
 
@@ -1368,7 +1418,28 @@ cmek_settings: LoggingOrganizationBucketConfigCmekSettings
 
 cmek_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#cmek_settings LoggingOrganizationBucketConfig#cmek_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#cmek_settings LoggingOrganizationBucketConfig#cmek_settings}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#deletion_policy LoggingOrganizationBucketConfig#deletion_policy}
 
 ---
 
@@ -1382,7 +1453,7 @@ description: str
 
 An optional description for this bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#description LoggingOrganizationBucketConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#description LoggingOrganizationBucketConfig#description}
 
 ---
 
@@ -1394,7 +1465,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#id LoggingOrganizationBucketConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1411,7 +1482,7 @@ index_configs: IResolvable | typing.List[LoggingOrganizationBucketConfigIndexCon
 
 index_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#index_configs LoggingOrganizationBucketConfig#index_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#index_configs LoggingOrganizationBucketConfig#index_configs}
 
 ---
 
@@ -1427,7 +1498,7 @@ Logs will be retained by default for this amount of time, after which they will 
 
 The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#retention_days LoggingOrganizationBucketConfig#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#retention_days LoggingOrganizationBucketConfig#retention_days}
 
 ---
 
@@ -1463,7 +1534,7 @@ field_path: str
 
 The LogEntry field path to index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#field_path LoggingOrganizationBucketConfig#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#field_path LoggingOrganizationBucketConfig#field_path}
 
 ---
 
@@ -1480,7 +1551,7 @@ The type of data in this index Note that some paths are automatically indexed, a
 See [indexing documentation](https://cloud.google.com/logging/docs/view/advanced-queries#indexed-fields) for details.
 For example: jsonPayload.request.status
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#type LoggingOrganizationBucketConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_organization_bucket_config#type LoggingOrganizationBucketConfig#type}
 
 ---
 

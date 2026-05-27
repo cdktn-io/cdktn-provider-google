@@ -4,7 +4,7 @@
 
 ### ComputeInterconnect <a name="ComputeInterconnect" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect google_compute_interconnect}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect google_compute_interconnect}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer"></a>
 
@@ -28,6 +28,7 @@ computeInterconnect.ComputeInterconnect(
   requested_link_count: typing.Union[int, float],
   admin_enabled: bool | IResolvable = None,
   customer_name: str = None,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -60,14 +61,15 @@ computeInterconnect.ComputeInterconnect(
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.requestedLinkCount">requested_link_count</a></code> | <code>typing.Union[int, float]</code> | Target number of physical links in the link bundle, as requested by the customer. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.adminEnabled">admin_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Administrative status of the interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.customerName">customer_name</a></code> | <code>str</code> | Customer name, to put in the Letter of Authorization as the party authorized to request a crossconnect. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels for this resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.macsec">macsec</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec">ComputeInterconnectMacsec</a></code> | macsec block. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.macsecEnabled">macsec_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.nocContactEmail">noc_contact_email</a></code> | <code>str</code> | Email address to contact the customer NOC for operations and maintenance notifications regarding this Interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectParams">ComputeInterconnectParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.remoteLocation">remote_location</a></code> | <code>str</code> | Indicates that this is a Cross-Cloud Interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.requestedFeatures">requested_features</a></code> | <code>typing.List[str]</code> | List of features to request for this Interconnect connection. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | timeouts block. |
@@ -146,7 +148,7 @@ Can take one of the following values:
 * PARTNER: A partner-managed interconnection shared between customers though a partner.
 * DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
 
 ---
 
@@ -163,7 +165,7 @@ bundle, not the speed of the entire bundle. Can take one of the following values
 * LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics.
 * LINK_TYPE_ETHERNET_400G_LR4: A 400G Ethernet with LR4 optics Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR", "LINK_TYPE_ETHERNET_400G_LR4"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
 
 ---
 
@@ -173,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 URL of the InterconnectLocation object that represents where this connection is to be provisioned. Specifies the location inside Google's Networks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
 
 ---
 
@@ -189,7 +191,7 @@ long and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
 
 ---
 
@@ -199,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target number of physical links in the link bundle, as requested by the customer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
 
 ---
 
@@ -213,7 +215,7 @@ When this is set to true, the Interconnect is
 functional and can carry traffic. When set to false, no packets can be carried over the
 interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
 
 ---
 
@@ -226,7 +228,24 @@ Customer name, to put in the Letter of Authorization as the party authorized to 
 This field is required for Dedicated and Partner Interconnect, should not be specified
 for cross-cloud interconnect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#deletion_policy ComputeInterconnect#deletion_policy}
 
 ---
 
@@ -236,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
 
 ---
 
@@ -244,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -263,7 +282,7 @@ method. Each label key/value pair must comply with RFC1035. Label values may be 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
 
 ---
 
@@ -273,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 macsec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
 
 ---
 
@@ -283,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
 
 ---
 
@@ -298,7 +317,7 @@ all other forms described, such as Cloud Monitoring logs alerting and Cloud Noti
 This field is required for users who sign up for Cloud Interconnect using workforce identity
 federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
 
 ---
 
@@ -308,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
 
 ---
 
@@ -316,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}.
 
 ---
 
@@ -329,7 +348,7 @@ Indicates that this is a Cross-Cloud Interconnect.
 This field specifies the location outside
 of Google's network that the interconnect is connected to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
 
 ---
 
@@ -347,7 +366,7 @@ Possible values include:
 * 'IF_CROSS_SITE_NETWORK': Provisions the connection exclusively for Cross-Site Networking.
   Note: 'MACSEC' is a legacy value for compatibility reasons and has the same effect as 'IF_MACSEC'. 'IF_MACSEC' is preferred. Possible values: ["MACSEC", "CROSS_SITE_NETWORK", "IF_MACSEC", "IF_L2_FORWARDING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
 
 ---
 
@@ -357,7 +376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
 
 ---
 
@@ -394,6 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetAdminEnabled">reset_admin_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetCustomerName">reset_customer_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetLabels">reset_labels</a></code> | *No description.* |
@@ -771,7 +791,7 @@ def put_macsec(
 
 pre_shared_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
 
 ---
 
@@ -785,7 +805,7 @@ By default, the Interconnect
 connection is configured with a must-secure security policy that drops all traffic
 if the MKA session cannot be established with your router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
 
 ---
 
@@ -807,7 +827,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
 
 ---
 
@@ -825,7 +845,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}.
 
 ---
 
@@ -833,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}.
 
 ---
 
@@ -841,7 +861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}.
 
 ---
 
@@ -855,6 +875,12 @@ def reset_admin_enabled() -> None
 
 ```python
 def reset_customer_name() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetDescription"></a>
@@ -1037,7 +1063,7 @@ The construct id used in the generated config for the ComputeInterconnect to imp
 
 The id of the existing ComputeInterconnect that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1089,6 +1115,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.wireGroups">wire_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabledInput">admin_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.customerNameInput">customer_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.interconnectTypeInput">interconnect_type_input</a></code> | <code>str</code> | *No description.* |
@@ -1107,6 +1134,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabled">admin_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.customerName">customer_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.interconnectType">interconnect_type</a></code> | <code>str</code> | *No description.* |
@@ -1485,6 +1513,16 @@ customer_name_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.descriptionInput"></a>
 
 ```python
@@ -1659,6 +1697,16 @@ admin_enabled: bool | IResolvable
 
 ```python
 customer_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1848,6 +1896,7 @@ computeInterconnect.ComputeInterconnectConfig(
   requested_link_count: typing.Union[int, float],
   admin_enabled: bool | IResolvable = None,
   customer_name: str = None,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -1880,14 +1929,15 @@ computeInterconnect.ComputeInterconnectConfig(
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.requestedLinkCount">requested_link_count</a></code> | <code>typing.Union[int, float]</code> | Target number of physical links in the link bundle, as requested by the customer. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.adminEnabled">admin_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Administrative status of the interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.customerName">customer_name</a></code> | <code>str</code> | Customer name, to put in the Letter of Authorization as the party authorized to request a crossconnect. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels for this resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.macsec">macsec</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec">ComputeInterconnectMacsec</a></code> | macsec block. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.macsecEnabled">macsec_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.nocContactEmail">noc_contact_email</a></code> | <code>str</code> | Email address to contact the customer NOC for operations and maintenance notifications regarding this Interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectParams">ComputeInterconnectParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.remoteLocation">remote_location</a></code> | <code>str</code> | Indicates that this is a Cross-Cloud Interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.requestedFeatures">requested_features</a></code> | <code>typing.List[str]</code> | List of features to request for this Interconnect connection. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | timeouts block. |
@@ -1980,7 +2030,7 @@ Can take one of the following values:
 * PARTNER: A partner-managed interconnection shared between customers though a partner.
 * DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
 
 ---
 
@@ -2001,7 +2051,7 @@ bundle, not the speed of the entire bundle. Can take one of the following values
 * LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics.
 * LINK_TYPE_ETHERNET_400G_LR4: A 400G Ethernet with LR4 optics Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR", "LINK_TYPE_ETHERNET_400G_LR4"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
 
 ---
 
@@ -2015,7 +2065,7 @@ location: str
 
 URL of the InterconnectLocation object that represents where this connection is to be provisioned. Specifies the location inside Google's Networks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
 
 ---
 
@@ -2035,7 +2085,7 @@ long and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
 
 ---
 
@@ -2049,7 +2099,7 @@ requested_link_count: typing.Union[int, float]
 
 Target number of physical links in the link bundle, as requested by the customer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
 
 ---
 
@@ -2067,7 +2117,7 @@ When this is set to true, the Interconnect is
 functional and can carry traffic. When set to false, no packets can be carried over the
 interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
 
 ---
 
@@ -2084,7 +2134,28 @@ Customer name, to put in the Letter of Authorization as the party authorized to 
 This field is required for Dedicated and Partner Interconnect, should not be specified
 for cross-cloud interconnect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#deletion_policy ComputeInterconnect#deletion_policy}
 
 ---
 
@@ -2098,7 +2169,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
 
 ---
 
@@ -2110,7 +2181,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2133,7 +2204,7 @@ method. Each label key/value pair must comply with RFC1035. Label values may be 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
 
 ---
 
@@ -2147,7 +2218,7 @@ macsec: ComputeInterconnectMacsec
 
 macsec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
 
 ---
 
@@ -2161,7 +2232,7 @@ macsec_enabled: bool | IResolvable
 
 Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
 
 ---
 
@@ -2180,7 +2251,7 @@ all other forms described, such as Cloud Monitoring logs alerting and Cloud Noti
 This field is required for users who sign up for Cloud Interconnect using workforce identity
 federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
 
 ---
 
@@ -2194,7 +2265,7 @@ params: ComputeInterconnectParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
 
 ---
 
@@ -2206,7 +2277,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}.
 
 ---
 
@@ -2223,7 +2294,7 @@ Indicates that this is a Cross-Cloud Interconnect.
 This field specifies the location outside
 of Google's network that the interconnect is connected to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
 
 ---
 
@@ -2245,7 +2316,7 @@ Possible values include:
 * 'IF_CROSS_SITE_NETWORK': Provisions the connection exclusively for Cross-Site Networking.
   Note: 'MACSEC' is a legacy value for compatibility reasons and has the same effect as 'IF_MACSEC'. 'IF_MACSEC' is preferred. Possible values: ["MACSEC", "CROSS_SITE_NETWORK", "IF_MACSEC", "IF_L2_FORWARDING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
 
 ---
 
@@ -2259,7 +2330,7 @@ timeouts: ComputeInterconnectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
 
 ---
 
@@ -2306,7 +2377,7 @@ pre_shared_keys: IResolvable | typing.List[ComputeInterconnectMacsecPreSharedKey
 
 pre_shared_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
 
 ---
 
@@ -2324,7 +2395,7 @@ By default, the Interconnect
 connection is configured with a must-secure security policy that drops all traffic
 if the MKA session cannot be established with your router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
 
 ---
 
@@ -2368,7 +2439,7 @@ the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which means the firs
 must be a lowercase letter, and all following characters must be a dash, lowercase
 letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
 
 ---
 
@@ -2386,7 +2457,7 @@ By default, the Interconnect
 connection is configured with a must-secure security policy that drops all traffic
 if the MKA session cannot be established with your router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
 
 ---
 
@@ -2406,7 +2477,7 @@ has multiple keys, startTime is mandatory for each key. The start times of keys 
 be in increasing order. The start times of two consecutive keys must be at least 6
 hours apart.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
 
 ---
 
@@ -2444,7 +2515,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
 
 ---
 
@@ -2466,9 +2537,9 @@ computeInterconnect.ComputeInterconnectTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}. |
 
 ---
 
@@ -2480,7 +2551,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}.
 
 ---
 
@@ -2492,7 +2563,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}.
 
 ---
 
@@ -2504,7 +2575,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}.
 
 ---
 

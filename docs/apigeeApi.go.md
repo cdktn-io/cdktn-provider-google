@@ -4,7 +4,7 @@
 
 ### ApigeeApi <a name="ApigeeApi" id="@cdktn/provider-google.apigeeApi.ApigeeApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api google_apigee_api}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api google_apigee_api}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApi.ApigeeApi.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.resetDetectMd5Hash">ResetDetectMd5Hash</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ func PutTimeouts(value ApigeeApiTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.apigeeApi.ApigeeApi.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDetectMd5Hash` <a name="ResetDetectMd5Hash" id="@cdktn/provider-google.apigeeApi.ApigeeApi.resetDetectMd5Hash"></a>
 
 ```go
@@ -523,7 +530,7 @@ The construct id used in the generated config for the ApigeeApi to import.
 
 The id of the existing ApigeeApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,12 +566,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.revision">Revision</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeoutsOutputReference">ApigeeApiTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.configBundleInput">ConfigBundleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.detectMd5HashInput">DetectMd5HashInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.orgIdInput">OrgIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.configBundle">ConfigBundle</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.detectMd5Hash">DetectMd5Hash</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApi.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -774,6 +783,16 @@ func ConfigBundleInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.apigeeApi.ApigeeApi.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DetectMd5HashInput`<sup>Optional</sup> <a name="DetectMd5HashInput" id="@cdktn/provider-google.apigeeApi.ApigeeApi.property.detectMd5HashInput"></a>
 
 ```go
@@ -828,6 +847,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func ConfigBundle() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeApi.ApigeeApi.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -912,6 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeapi"
 	ConfigBundle: *string,
 	Name: *string,
 	OrgId: *string,
+	DeletionPolicy: *string,
 	DetectMd5Hash: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeApi.ApigeeApiTimeouts,
@@ -932,8 +962,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeapi"
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.configBundle">ConfigBundle</a></code> | <code>*string</code> | Path to the config zip bundle. |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.name">Name</a></code> | <code>*string</code> | Name of the API proxy. This field only accepts the following characters: A-Za-z0-9._-. |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.orgId">OrgId</a></code> | <code>*string</code> | The Apigee Organization name associated with the Apigee instance. |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.detectMd5Hash">DetectMd5Hash</a></code> | <code>*string</code> | A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. |
-| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#id ApigeeApi#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#id ApigeeApi#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts">ApigeeApiTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1018,7 +1049,7 @@ ConfigBundle *string
 
 Path to the config zip bundle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#config_bundle ApigeeApi#config_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#config_bundle ApigeeApi#config_bundle}
 
 ---
 
@@ -1032,7 +1063,7 @@ Name *string
 
 Name of the API proxy. This field only accepts the following characters: A-Za-z0-9._-.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#name ApigeeApi#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#name ApigeeApi#name}
 
 ---
 
@@ -1046,7 +1077,28 @@ OrgId *string
 
 The Apigee Organization name associated with the Apigee instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#org_id ApigeeApi#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#org_id ApigeeApi#org_id}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeApi.ApigeeApiConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#deletion_policy ApigeeApi#deletion_policy}
 
 ---
 
@@ -1062,7 +1114,7 @@ A hash of local config bundle in string, user needs to use a Terraform Hash func
 
 A change in hash will trigger an update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#detect_md5hash ApigeeApi#detect_md5hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#detect_md5hash ApigeeApi#detect_md5hash}
 
 ---
 
@@ -1074,7 +1126,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#id ApigeeApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#id ApigeeApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1143,7 @@ Timeouts ApigeeApiTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#timeouts ApigeeApi#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#timeouts ApigeeApi#timeouts}
 
 ---
 
@@ -1126,9 +1178,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeapi"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#create ApigeeApi#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#delete ApigeeApi#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#update ApigeeApi#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#create ApigeeApi#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#delete ApigeeApi#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#update ApigeeApi#update}. |
 
 ---
 
@@ -1140,7 +1192,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#create ApigeeApi#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#create ApigeeApi#create}.
 
 ---
 
@@ -1152,7 +1204,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#delete ApigeeApi#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#delete ApigeeApi#delete}.
 
 ---
 
@@ -1164,7 +1216,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api#update ApigeeApi#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api#update ApigeeApi#update}.
 
 ---
 

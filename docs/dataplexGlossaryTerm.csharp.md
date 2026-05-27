@@ -4,7 +4,7 @@
 
 ### DataplexGlossaryTerm <a name="DataplexGlossaryTerm" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term google_dataplex_glossary_term}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term google_dataplex_glossary_term}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.resetGlossaryId">ResetGlossaryId</a></code> | *No description.* |
@@ -407,6 +408,12 @@ private void PutTimeouts(DataplexGlossaryTermTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.resetDescription"></a>
 
 ```csharp
@@ -558,7 +565,7 @@ The construct id used in the generated config for the DataplexGlossaryTerm to im
 
 The id of the existing DataplexGlossaryTerm that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -595,6 +602,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeoutsOutputReference">DataplexGlossaryTermTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.uid">Uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.glossaryIdInput">GlossaryIdInput</a></code> | <code>string</code> | *No description.* |
@@ -605,6 +613,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.termIdInput">TermIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts">DataplexGlossaryTermTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.glossaryId">GlossaryId</a></code> | <code>string</code> | *No description.* |
@@ -829,6 +838,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.descriptionInput"></a>
 
 ```csharp
@@ -926,6 +945,16 @@ public IResolvable|DataplexGlossaryTermTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts">DataplexGlossaryTermTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTerm.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1056,6 +1085,7 @@ new DataplexGlossaryTermConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Location,
     string Parent,
+    string DeletionPolicy = null,
     string Description = null,
     string DisplayName = null,
     string GlossaryId = null,
@@ -1080,12 +1110,13 @@ new DataplexGlossaryTermConfig {
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.location">Location</a></code> | <code>string</code> | The location where the glossary term should reside. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.parent">Parent</a></code> | <code>string</code> | The immediate parent of the GlossaryTerm in the resource-hierarchy. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.description">Description</a></code> | <code>string</code> | The user-mutable description of the GlossaryTerm. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.displayName">DisplayName</a></code> | <code>string</code> | User friendly display name of the GlossaryTerm. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.glossaryId">GlossaryId</a></code> | <code>string</code> | The glossary id for creation. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | User-defined labels for the GlossaryTerm. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.termId">TermId</a></code> | <code>string</code> | The term id for creation. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts">DataplexGlossaryTermTimeouts</a></code> | timeouts block. |
 
@@ -1171,7 +1202,7 @@ public string Location { get; set; }
 
 The location where the glossary term should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#location DataplexGlossaryTerm#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#location DataplexGlossaryTerm#location}
 
 ---
 
@@ -1187,7 +1218,28 @@ The immediate parent of the GlossaryTerm in the resource-hierarchy.
 
 It can either be a Glossary or a Term. Format: projects/{projectId}/locations/{locationId}/glossaries/{glossaryId} OR projects/{projectId}/locations/{locationId}/glossaries/{glossaryId}/terms/{termId}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#parent DataplexGlossaryTerm#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#parent DataplexGlossaryTerm#parent}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#deletion_policy DataplexGlossaryTerm#deletion_policy}
 
 ---
 
@@ -1201,7 +1253,7 @@ public string Description { get; set; }
 
 The user-mutable description of the GlossaryTerm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#description DataplexGlossaryTerm#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#description DataplexGlossaryTerm#description}
 
 ---
 
@@ -1217,7 +1269,7 @@ User friendly display name of the GlossaryTerm.
 
 This is user-mutable. This will be same as the termId, if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#display_name DataplexGlossaryTerm#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#display_name DataplexGlossaryTerm#display_name}
 
 ---
 
@@ -1231,7 +1283,7 @@ public string GlossaryId { get; set; }
 
 The glossary id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#glossary_id DataplexGlossaryTerm#glossary_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#glossary_id DataplexGlossaryTerm#glossary_id}
 
 ---
 
@@ -1243,7 +1295,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1263,7 +1315,7 @@ User-defined labels for the GlossaryTerm.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#labels DataplexGlossaryTerm#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#labels DataplexGlossaryTerm#labels}
 
 ---
 
@@ -1275,7 +1327,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}.
 
 ---
 
@@ -1289,7 +1341,7 @@ public string TermId { get; set; }
 
 The term id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#term_id DataplexGlossaryTerm#term_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#term_id DataplexGlossaryTerm#term_id}
 
 ---
 
@@ -1303,7 +1355,7 @@ public DataplexGlossaryTermTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#timeouts DataplexGlossaryTerm#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#timeouts DataplexGlossaryTerm#timeouts}
 
 ---
 
@@ -1325,9 +1377,9 @@ new DataplexGlossaryTermTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#create DataplexGlossaryTerm#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#delete DataplexGlossaryTerm#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#update DataplexGlossaryTerm#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#create DataplexGlossaryTerm#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#delete DataplexGlossaryTerm#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryTerm.DataplexGlossaryTermTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#update DataplexGlossaryTerm#update}. |
 
 ---
 
@@ -1339,7 +1391,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#create DataplexGlossaryTerm#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#create DataplexGlossaryTerm#create}.
 
 ---
 
@@ -1351,7 +1403,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#delete DataplexGlossaryTerm#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#delete DataplexGlossaryTerm#delete}.
 
 ---
 
@@ -1363,7 +1415,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary_term#update DataplexGlossaryTerm#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_glossary_term#update DataplexGlossaryTerm#update}.
 
 ---
 

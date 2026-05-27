@@ -4,7 +4,7 @@
 
 ### DialogflowIntent <a name="DialogflowIntent" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent google_dialogflow_intent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent google_dialogflow_intent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntent.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetAction">ResetAction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetDefaultResponsePlatforms">ResetDefaultResponsePlatforms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetEvents">ResetEvents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetInputContextNames">ResetInputContextNames</a></code> | *No description.* |
@@ -424,6 +425,12 @@ private void ResetAction()
 private void ResetDefaultResponsePlatforms()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetEvents` <a name="ResetEvents" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntent.resetEvents"></a>
 
 ```csharp
@@ -593,7 +600,7 @@ The construct id used in the generated config for the DialogflowIntent to import
 
 The id of the existing DialogflowIntent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -629,6 +636,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeoutsOutputReference">DialogflowIntentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.actionInput">ActionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.defaultResponsePlatformsInput">DefaultResponsePlatformsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.eventsInput">EventsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -643,6 +651,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.webhookStateInput">WebhookStateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.action">Action</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.defaultResponsePlatforms">DefaultResponsePlatforms</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.events">Events</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -859,6 +868,16 @@ public string[] DefaultResponsePlatformsInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.displayNameInput"></a>
 
 ```csharp
@@ -996,6 +1015,16 @@ public string[] DefaultResponsePlatforms { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntent.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1147,6 +1176,7 @@ new DialogflowIntentConfig {
     string DisplayName,
     string Action = null,
     string[] DefaultResponsePlatforms = null,
+    string DeletionPolicy = null,
     string[] Events = null,
     string Id = null,
     string[] InputContextNames = null,
@@ -1175,14 +1205,15 @@ new DialogflowIntentConfig {
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The name of this intent to be displayed on the console. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.action">Action</a></code> | <code>string</code> | The name of the action associated with the intent. Note: The action name must not contain whitespaces. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.defaultResponsePlatforms">DefaultResponsePlatforms</a></code> | <code>string[]</code> | The list of platforms for which the first responses will be copied from the messages in PLATFORM_UNSPECIFIED (i.e. default platform). Possible values: ["FACEBOOK", "SLACK", "TELEGRAM", "KIK", "SKYPE", "LINE", "VIBER", "ACTIONS_ON_GOOGLE", "GOOGLE_HANGOUTS"]. |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.events">Events</a></code> | <code>string[]</code> | The collection of event names that trigger the intent. |
-| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#id DialogflowIntent#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#id DialogflowIntent#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.inputContextNames">InputContextNames</a></code> | <code>string[]</code> | The list of context names required for this intent to be triggered. Format: projects/<Project ID>/agent/sessions/-/contexts/<Context ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.isFallback">IsFallback</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Indicates whether this is a fallback intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.mlDisabled">MlDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Indicates whether Machine Learning is disabled for the intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.parentFollowupIntentName">ParentFollowupIntentName</a></code> | <code>string</code> | The unique identifier of the parent intent in the chain of followup intents. Format: projects/<Project ID>/agent/intents/<Intent ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.priority">Priority</a></code> | <code>double</code> | The priority of this intent. |
-| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#project DialogflowIntent#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#project DialogflowIntent#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.resetContexts">ResetContexts</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Indicates whether to delete all contexts in the current session when this intent is matched. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts">DialogflowIntentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.webhookState">WebhookState</a></code> | <code>string</code> | Indicates whether webhooks are enabled for the intent. |
@@ -1269,7 +1300,7 @@ public string DisplayName { get; set; }
 
 The name of this intent to be displayed on the console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#display_name DialogflowIntent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#display_name DialogflowIntent#display_name}
 
 ---
 
@@ -1283,7 +1314,7 @@ public string Action { get; set; }
 
 The name of the action associated with the intent. Note: The action name must not contain whitespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#action DialogflowIntent#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#action DialogflowIntent#action}
 
 ---
 
@@ -1297,7 +1328,28 @@ public string[] DefaultResponsePlatforms { get; set; }
 
 The list of platforms for which the first responses will be copied from the messages in PLATFORM_UNSPECIFIED (i.e. default platform). Possible values: ["FACEBOOK", "SLACK", "TELEGRAM", "KIK", "SKYPE", "LINE", "VIBER", "ACTIONS_ON_GOOGLE", "GOOGLE_HANGOUTS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#default_response_platforms DialogflowIntent#default_response_platforms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#default_response_platforms DialogflowIntent#default_response_platforms}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#deletion_policy DialogflowIntent#deletion_policy}
 
 ---
 
@@ -1315,7 +1367,7 @@ If the collection of input contexts is not empty, all of
 the contexts must be present in the active user session for an event to trigger this intent. See the
 [events reference](https://cloud.google.com/dialogflow/docs/events-overview) for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#events DialogflowIntent#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#events DialogflowIntent#events}
 
 ---
 
@@ -1327,7 +1379,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#id DialogflowIntent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#id DialogflowIntent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1344,7 +1396,7 @@ public string[] InputContextNames { get; set; }
 
 The list of context names required for this intent to be triggered. Format: projects/<Project ID>/agent/sessions/-/contexts/<Context ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#input_context_names DialogflowIntent#input_context_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#input_context_names DialogflowIntent#input_context_names}
 
 ---
 
@@ -1358,7 +1410,7 @@ public bool|IResolvable IsFallback { get; set; }
 
 Indicates whether this is a fallback intent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#is_fallback DialogflowIntent#is_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#is_fallback DialogflowIntent#is_fallback}
 
 ---
 
@@ -1375,7 +1427,7 @@ Indicates whether Machine Learning is disabled for the intent.
 Note: If mlDisabled setting is set to true, then this intent is not taken into account during inference in ML
 ONLY match mode. Also, auto-markup in the UI is turned off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#ml_disabled DialogflowIntent#ml_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#ml_disabled DialogflowIntent#ml_disabled}
 
 ---
 
@@ -1389,7 +1441,7 @@ public string ParentFollowupIntentName { get; set; }
 
 The unique identifier of the parent intent in the chain of followup intents. Format: projects/<Project ID>/agent/intents/<Intent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#parent_followup_intent_name DialogflowIntent#parent_followup_intent_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#parent_followup_intent_name DialogflowIntent#parent_followup_intent_name}
 
 ---
 
@@ -1409,7 +1461,7 @@ Higher numbers represent higher priorities.
   to the Normal priority in the console.
 * If the supplied value is negative, the intent is ignored in runtime detect intent requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#priority DialogflowIntent#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#priority DialogflowIntent#priority}
 
 ---
 
@@ -1421,7 +1473,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#project DialogflowIntent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#project DialogflowIntent#project}.
 
 ---
 
@@ -1435,7 +1487,7 @@ public bool|IResolvable ResetContexts { get; set; }
 
 Indicates whether to delete all contexts in the current session when this intent is matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#reset_contexts DialogflowIntent#reset_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#reset_contexts DialogflowIntent#reset_contexts}
 
 ---
 
@@ -1449,7 +1501,7 @@ public DialogflowIntentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#timeouts DialogflowIntent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#timeouts DialogflowIntent#timeouts}
 
 ---
 
@@ -1467,7 +1519,7 @@ Indicates whether webhooks are enabled for the intent.
 * WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING: Webhook is enabled in the agent and in the intent. Also, each slot
   filling prompt is forwarded to the webhook. Possible values: ["WEBHOOK_STATE_ENABLED", "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#webhook_state DialogflowIntent#webhook_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#webhook_state DialogflowIntent#webhook_state}
 
 ---
 
@@ -1502,9 +1554,9 @@ new DialogflowIntentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#create DialogflowIntent#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#delete DialogflowIntent#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#update DialogflowIntent#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#create DialogflowIntent#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#delete DialogflowIntent#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#update DialogflowIntent#update}. |
 
 ---
 
@@ -1516,7 +1568,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#create DialogflowIntent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#create DialogflowIntent#create}.
 
 ---
 
@@ -1528,7 +1580,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#delete DialogflowIntent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#delete DialogflowIntent#delete}.
 
 ---
 
@@ -1540,7 +1592,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#update DialogflowIntent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_intent#update DialogflowIntent#update}.
 
 ---
 

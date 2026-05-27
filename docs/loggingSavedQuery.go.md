@@ -4,7 +4,7 @@
 
 ### LoggingSavedQuery <a name="LoggingSavedQuery" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query google_logging_saved_query}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query google_logging_saved_query}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.putLoggingQuery">PutLoggingQuery</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.putOpsAnalyticsQuery">PutOpsAnalyticsQuery</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.resetLoggingQuery">ResetLoggingQuery</a></code> | *No description.* |
@@ -430,6 +431,12 @@ func PutTimeouts(value LoggingSavedQueryTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.resetDescription"></a>
 
 ```go
@@ -563,7 +570,7 @@ The construct id used in the generated config for the LoggingSavedQuery to impor
 
 The id of the existing LoggingSavedQuery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,6 +605,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.opsAnalyticsQuery">OpsAnalyticsQuery</a></code> | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQueryOutputReference">LoggingSavedQueryOpsAnalyticsQueryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeoutsOutputReference">LoggingSavedQueryTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -608,6 +616,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.visibilityInput">VisibilityInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -810,6 +819,16 @@ func UpdateTime() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.descriptionInput"></a>
 
 ```go
@@ -904,6 +923,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func VisibilityInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -1020,6 +1049,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquer
 	Name: *string,
 	Parent: *string,
 	Visibility: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	LoggingQuery: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingSavedQuery.LoggingSavedQueryLoggingQuery,
@@ -1044,8 +1074,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquer
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.name">Name</a></code> | <code>*string</code> | The name of the saved query. For example: 'my-saved-query'. |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.parent">Parent</a></code> | <code>*string</code> | The parent of the resource. |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.visibility">Visibility</a></code> | <code>*string</code> | The visibility of the saved query. Possible values: ["SHARED", "PRIVATE"]. |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.description">Description</a></code> | <code>*string</code> | A description of the saved query. |
-| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#id LoggingSavedQuery#id}. |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#id LoggingSavedQuery#id}. |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.loggingQuery">LoggingQuery</a></code> | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuery">LoggingSavedQueryLoggingQuery</a></code> | logging_query block. |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.opsAnalyticsQuery">OpsAnalyticsQuery</a></code> | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQuery">LoggingSavedQueryOpsAnalyticsQuery</a></code> | ops_analytics_query block. |
 | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts">LoggingSavedQueryTimeouts</a></code> | timeouts block. |
@@ -1132,7 +1163,7 @@ DisplayName *string
 
 The user-visible display name of the saved query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#display_name LoggingSavedQuery#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#display_name LoggingSavedQuery#display_name}
 
 ---
 
@@ -1146,7 +1177,7 @@ Location *string
 
 The location of the resource see [supported regions](https://docs.cloud.google.com/logging/docs/region-support#bucket-regions).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#location LoggingSavedQuery#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#location LoggingSavedQuery#location}
 
 ---
 
@@ -1160,7 +1191,7 @@ Name *string
 
 The name of the saved query. For example: 'my-saved-query'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#name LoggingSavedQuery#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#name LoggingSavedQuery#name}
 
 ---
 
@@ -1174,7 +1205,7 @@ Parent *string
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#parent LoggingSavedQuery#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#parent LoggingSavedQuery#parent}
 
 ---
 
@@ -1188,7 +1219,28 @@ Visibility *string
 
 The visibility of the saved query. Possible values: ["SHARED", "PRIVATE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#visibility LoggingSavedQuery#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#visibility LoggingSavedQuery#visibility}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#deletion_policy LoggingSavedQuery#deletion_policy}
 
 ---
 
@@ -1202,7 +1254,7 @@ Description *string
 
 A description of the saved query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#description LoggingSavedQuery#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#description LoggingSavedQuery#description}
 
 ---
 
@@ -1214,7 +1266,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#id LoggingSavedQuery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#id LoggingSavedQuery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1231,7 +1283,7 @@ LoggingQuery LoggingSavedQueryLoggingQuery
 
 logging_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#logging_query LoggingSavedQuery#logging_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#logging_query LoggingSavedQuery#logging_query}
 
 ---
 
@@ -1245,7 +1297,7 @@ OpsAnalyticsQuery LoggingSavedQueryOpsAnalyticsQuery
 
 ops_analytics_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#ops_analytics_query LoggingSavedQuery#ops_analytics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#ops_analytics_query LoggingSavedQuery#ops_analytics_query}
 
 ---
 
@@ -1259,7 +1311,7 @@ Timeouts LoggingSavedQueryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#timeouts LoggingSavedQuery#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#timeouts LoggingSavedQuery#timeouts}
 
 ---
 
@@ -1299,7 +1351,7 @@ Filter *string
 
 An [advanced logs filter](https://cloud.google.com/logging/docs/view/advanced-filters) which is used to match log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#filter LoggingSavedQuery#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#filter LoggingSavedQuery#filter}
 
 ---
 
@@ -1313,7 +1365,7 @@ SummaryFieldEnd *f64
 
 Characters will be counted from the end of the string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#summary_field_end LoggingSavedQuery#summary_field_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#summary_field_end LoggingSavedQuery#summary_field_end}
 
 ---
 
@@ -1327,7 +1379,7 @@ SummaryFields interface{}
 
 summary_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#summary_fields LoggingSavedQuery#summary_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#summary_fields LoggingSavedQuery#summary_fields}
 
 ---
 
@@ -1341,7 +1393,7 @@ SummaryFieldStart *f64
 
 Characters will be counted from the start of the string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#summary_field_start LoggingSavedQuery#summary_field_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#summary_field_start LoggingSavedQuery#summary_field_start}
 
 ---
 
@@ -1375,7 +1427,7 @@ Field *string
 
 The field from the LogEntry to include in the summary line.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#field LoggingSavedQuery#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#field LoggingSavedQuery#field}
 
 ---
 
@@ -1409,7 +1461,7 @@ SqlQueryText *string
 
 A logs analytics SQL query, which generally follows BigQuery format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#sql_query_text LoggingSavedQuery#sql_query_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#sql_query_text LoggingSavedQuery#sql_query_text}
 
 ---
 
@@ -1431,9 +1483,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#create LoggingSavedQuery#create}. |
-| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#delete LoggingSavedQuery#delete}. |
-| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#update LoggingSavedQuery#update}. |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#create LoggingSavedQuery#create}. |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#delete LoggingSavedQuery#delete}. |
+| <code><a href="#@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#update LoggingSavedQuery#update}. |
 
 ---
 
@@ -1445,7 +1497,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#create LoggingSavedQuery#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#create LoggingSavedQuery#create}.
 
 ---
 
@@ -1457,7 +1509,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#delete LoggingSavedQuery#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#delete LoggingSavedQuery#delete}.
 
 ---
 
@@ -1469,7 +1521,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_saved_query#update LoggingSavedQuery#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_saved_query#update LoggingSavedQuery#update}.
 
 ---
 

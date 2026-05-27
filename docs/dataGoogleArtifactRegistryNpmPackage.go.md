@@ -4,7 +4,7 @@
 
 ### DataGoogleArtifactRegistryNpmPackage <a name="DataGoogleArtifactRegistryNpmPackage" id="@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package google_artifact_registry_npm_package}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package google_artifact_registry_npm_package}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackage.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleArtifactRegistry
 
 The id of the existing DataGoogleArtifactRegistryNpmPackage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifa
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackageConfig.property.location">Location</a></code> | <code>*string</code> | The region of the Artifact Registry repository. |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackageConfig.property.packageName">PackageName</a></code> | <code>*string</code> | The name of the Npm package. |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackageConfig.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | The repository ID containing the Npm package. |
-| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package#id DataGoogleArtifactRegistryNpmPackage#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package#id DataGoogleArtifactRegistryNpmPackage#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryNpmPackage.DataGoogleArtifactRegistryNpmPackageConfig.property.project">Project</a></code> | <code>*string</code> | Project ID of the project. |
 
 ---
@@ -861,7 +861,7 @@ Location *string
 
 The region of the Artifact Registry repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package#location DataGoogleArtifactRegistryNpmPackage#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package#location DataGoogleArtifactRegistryNpmPackage#location}
 
 ---
 
@@ -875,7 +875,7 @@ PackageName *string
 
 The name of the Npm package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package#package_name DataGoogleArtifactRegistryNpmPackage#package_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package#package_name DataGoogleArtifactRegistryNpmPackage#package_name}
 
 ---
 
@@ -889,7 +889,7 @@ RepositoryId *string
 
 The repository ID containing the Npm package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package#repository_id DataGoogleArtifactRegistryNpmPackage#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package#repository_id DataGoogleArtifactRegistryNpmPackage#repository_id}
 
 ---
 
@@ -901,7 +901,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package#id DataGoogleArtifactRegistryNpmPackage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package#id DataGoogleArtifactRegistryNpmPackage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -918,7 +918,7 @@ Project *string
 
 Project ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_npm_package#project DataGoogleArtifactRegistryNpmPackage#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/artifact_registry_npm_package#project DataGoogleArtifactRegistryNpmPackage#project}
 
 ---
 

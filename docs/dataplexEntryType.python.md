@@ -4,7 +4,7 @@
 
 ### DataplexEntryType <a name="DataplexEntryType" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type google_dataplex_entry_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type google_dataplex_entry_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer"></a>
 
@@ -21,6 +21,7 @@ dataplexEntryType.DataplexEntryType(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   entry_type_id: str = None,
@@ -47,14 +48,15 @@ dataplexEntryType.DataplexEntryType(
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the EntryType. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User friendly display name. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.entryTypeId">entry_type_id</a></code> | <code>str</code> | The entry type id of the entry type. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the EntryType. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.location">location</a></code> | <code>str</code> | The location where entry type will be created in. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.platform">platform</a></code> | <code>str</code> | The platform that Entries of this type belongs to. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.requiredAspects">required_aspects</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeRequiredAspects">DataplexEntryTypeRequiredAspects</a>]</code> | required_aspects block. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.systemAttribute">system_attribute</a></code> | <code>str</code> | The system that Entries of this type belongs to. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts">DataplexEntryTypeTimeouts</a></code> | timeouts block. |
@@ -122,13 +124,30 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#deletion_policy DataplexEntryType#deletion_policy}
+
+---
+
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.Initializer.parameter.description"></a>
 
 - *Type:* str
 
 Description of the EntryType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#description DataplexEntryType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#description DataplexEntryType#description}
 
 ---
 
@@ -138,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#display_name DataplexEntryType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#display_name DataplexEntryType#display_name}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The entry type id of the entry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#entry_type_id DataplexEntryType#entry_type_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#entry_type_id DataplexEntryType#entry_type_id}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -172,7 +191,7 @@ User-defined labels for the EntryType.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#labels DataplexEntryType#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#labels DataplexEntryType#labels}
 
 ---
 
@@ -182,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location where entry type will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#location DataplexEntryType#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#location DataplexEntryType#location}
 
 ---
 
@@ -192,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The platform that Entries of this type belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#platform DataplexEntryType#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#platform DataplexEntryType#platform}
 
 ---
 
@@ -200,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}.
 
 ---
 
@@ -210,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 required_aspects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#required_aspects DataplexEntryType#required_aspects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#required_aspects DataplexEntryType#required_aspects}
 
 ---
 
@@ -220,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The system that Entries of this type belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#system DataplexEntryType#system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#system DataplexEntryType#system}
 
 ---
 
@@ -230,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#timeouts DataplexEntryType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#timeouts DataplexEntryType#timeouts}
 
 ---
 
@@ -240,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates the class this Entry Type belongs to, for example, TABLE, DATABASE, MODEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#type_aliases DataplexEntryType#type_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#type_aliases DataplexEntryType#type_aliases}
 
 ---
 
@@ -274,6 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.putRequiredAspects">put_required_aspects</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.resetEntryTypeId">reset_entry_type_id</a></code> | *No description.* |
@@ -665,7 +685,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}.
 
 ---
 
@@ -673,7 +693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}.
 
 ---
 
@@ -681,9 +701,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.resetDescription"></a>
 
@@ -871,7 +897,7 @@ The construct id used in the generated config for the DataplexEntryType to impor
 
 The id of the existing DataplexEntryType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,6 +935,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeoutsOutputReference">DataplexEntryTypeTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.entryTypeIdInput">entry_type_id_input</a></code> | <code>str</code> | *No description.* |
@@ -921,6 +948,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.systemAttributeInput">system_attribute_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts">DataplexEntryTypeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.typeAliasesInput">type_aliases_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.entryTypeId">entry_type_id</a></code> | <code>str</code> | *No description.* |
@@ -1156,6 +1184,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.descriptionInput"></a>
 
 ```python
@@ -1273,6 +1311,16 @@ type_aliases_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryType.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1411,6 +1459,7 @@ dataplexEntryType.DataplexEntryTypeConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   entry_type_id: str = None,
@@ -1437,14 +1486,15 @@ dataplexEntryType.DataplexEntryTypeConfig(
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.description">description</a></code> | <code>str</code> | Description of the EntryType. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.displayName">display_name</a></code> | <code>str</code> | User friendly display name. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.entryTypeId">entry_type_id</a></code> | <code>str</code> | The entry type id of the entry type. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the EntryType. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.location">location</a></code> | <code>str</code> | The location where entry type will be created in. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.platform">platform</a></code> | <code>str</code> | The platform that Entries of this type belongs to. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.requiredAspects">required_aspects</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeRequiredAspects">DataplexEntryTypeRequiredAspects</a>]</code> | required_aspects block. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.systemAttribute">system_attribute</a></code> | <code>str</code> | The system that Entries of this type belongs to. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts">DataplexEntryTypeTimeouts</a></code> | timeouts block. |
@@ -1522,6 +1572,27 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#deletion_policy DataplexEntryType#deletion_policy}
+
+---
+
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeConfig.property.description"></a>
 
 ```python
@@ -1532,7 +1603,7 @@ description: str
 
 Description of the EntryType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#description DataplexEntryType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#description DataplexEntryType#description}
 
 ---
 
@@ -1546,7 +1617,7 @@ display_name: str
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#display_name DataplexEntryType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#display_name DataplexEntryType#display_name}
 
 ---
 
@@ -1560,7 +1631,7 @@ entry_type_id: str
 
 The entry type id of the entry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#entry_type_id DataplexEntryType#entry_type_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#entry_type_id DataplexEntryType#entry_type_id}
 
 ---
 
@@ -1572,7 +1643,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1592,7 +1663,7 @@ User-defined labels for the EntryType.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#labels DataplexEntryType#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#labels DataplexEntryType#labels}
 
 ---
 
@@ -1606,7 +1677,7 @@ location: str
 
 The location where entry type will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#location DataplexEntryType#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#location DataplexEntryType#location}
 
 ---
 
@@ -1620,7 +1691,7 @@ platform: str
 
 The platform that Entries of this type belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#platform DataplexEntryType#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#platform DataplexEntryType#platform}
 
 ---
 
@@ -1632,7 +1703,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}.
 
 ---
 
@@ -1646,7 +1717,7 @@ required_aspects: IResolvable | typing.List[DataplexEntryTypeRequiredAspects]
 
 required_aspects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#required_aspects DataplexEntryType#required_aspects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#required_aspects DataplexEntryType#required_aspects}
 
 ---
 
@@ -1660,7 +1731,7 @@ system_attribute: str
 
 The system that Entries of this type belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#system DataplexEntryType#system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#system DataplexEntryType#system}
 
 ---
 
@@ -1674,7 +1745,7 @@ timeouts: DataplexEntryTypeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#timeouts DataplexEntryType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#timeouts DataplexEntryType#timeouts}
 
 ---
 
@@ -1688,7 +1759,7 @@ type_aliases: typing.List[str]
 
 Indicates the class this Entry Type belongs to, for example, TABLE, DATABASE, MODEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#type_aliases DataplexEntryType#type_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#type_aliases DataplexEntryType#type_aliases}
 
 ---
 
@@ -1722,7 +1793,7 @@ type: str
 
 Required aspect type for the entry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#type DataplexEntryType#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#type DataplexEntryType#type}
 
 ---
 
@@ -1744,9 +1815,9 @@ dataplexEntryType.DataplexEntryTypeTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryType.DataplexEntryTypeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}. |
 
 ---
 
@@ -1758,7 +1829,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}.
 
 ---
 
@@ -1770,7 +1841,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}.
 
 ---
 
@@ -1782,7 +1853,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}.
 
 ---
 

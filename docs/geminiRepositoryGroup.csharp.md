@@ -4,7 +4,7 @@
 
 ### GeminiRepositoryGroup <a name="GeminiRepositoryGroup" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group google_gemini_repository_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group google_gemini_repository_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.putRepositories">PutRepositories</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.resetProject">ResetProject</a></code> | *No description.* |
@@ -416,6 +417,12 @@ private void PutTimeouts(GeminiRepositoryGroupTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.resetId"></a>
 
 ```csharp
@@ -543,7 +550,7 @@ The construct id used in the generated config for the GeminiRepositoryGroup to i
 
 The id of the existing GeminiRepositoryGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,6 +588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeoutsOutputReference">GeminiRepositoryGroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.codeRepositoryIndexInput">CodeRepositoryIndexInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
@@ -589,6 +597,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.repositoryGroupIdInput">RepositoryGroupIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts">GeminiRepositoryGroupTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.codeRepositoryIndex">CodeRepositoryIndex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.location">Location</a></code> | <code>string</code> | *No description.* |
@@ -819,6 +828,16 @@ public string CodeRepositoryIndexInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.idInput"></a>
 
 ```csharp
@@ -893,6 +912,16 @@ public IResolvable|GeminiRepositoryGroupTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string CodeRepositoryIndex { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -988,6 +1017,7 @@ new GeminiRepositoryGroupConfig {
     string Location,
     IResolvable|GeminiRepositoryGroupRepositories[] Repositories,
     string RepositoryGroupId,
+    string DeletionPolicy = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
     string Project = null,
@@ -1010,9 +1040,10 @@ new GeminiRepositoryGroupConfig {
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.location">Location</a></code> | <code>string</code> | The location of the Code Repository Index, for example 'us-central1'. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.repositories">Repositories</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupRepositories">GeminiRepositoryGroupRepositories</a>[]</code> | repositories block. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.repositoryGroupId">RepositoryGroupId</a></code> | <code>string</code> | Required. Id of the Repository Group. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Optional. Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts">GeminiRepositoryGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1097,7 +1128,7 @@ public string CodeRepositoryIndex { get; set; }
 
 Required. Id of the Code Repository Index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#code_repository_index GeminiRepositoryGroup#code_repository_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#code_repository_index GeminiRepositoryGroup#code_repository_index}
 
 ---
 
@@ -1111,7 +1142,7 @@ public string Location { get; set; }
 
 The location of the Code Repository Index, for example 'us-central1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#location GeminiRepositoryGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#location GeminiRepositoryGroup#location}
 
 ---
 
@@ -1125,7 +1156,7 @@ public IResolvable|GeminiRepositoryGroupRepositories[] Repositories { get; set; 
 
 repositories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#repositories GeminiRepositoryGroup#repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#repositories GeminiRepositoryGroup#repositories}
 
 ---
 
@@ -1139,7 +1170,28 @@ public string RepositoryGroupId { get; set; }
 
 Required. Id of the Repository Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#repository_group_id GeminiRepositoryGroup#repository_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#repository_group_id GeminiRepositoryGroup#repository_group_id}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#deletion_policy GeminiRepositoryGroup#deletion_policy}
 
 ---
 
@@ -1151,7 +1203,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1171,7 +1223,7 @@ Optional. Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#labels GeminiRepositoryGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#labels GeminiRepositoryGroup#labels}
 
 ---
 
@@ -1183,7 +1235,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}.
 
 ---
 
@@ -1197,7 +1249,7 @@ public GeminiRepositoryGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#timeouts GeminiRepositoryGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#timeouts GeminiRepositoryGroup#timeouts}
 
 ---
 
@@ -1233,7 +1285,7 @@ public string BranchPattern { get; set; }
 
 Required. The Git branch pattern used for indexing in RE2 syntax. See https://github.com/google/re2/wiki/syntax for syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#branch_pattern GeminiRepositoryGroup#branch_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#branch_pattern GeminiRepositoryGroup#branch_pattern}
 
 ---
 
@@ -1247,7 +1299,7 @@ public string Resource { get; set; }
 
 Required. The DeveloperConnect repository full resource name, relative resource name or resource URL to be indexed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#resource GeminiRepositoryGroup#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#resource GeminiRepositoryGroup#resource}
 
 ---
 
@@ -1269,9 +1321,9 @@ new GeminiRepositoryGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}. |
 
 ---
 
@@ -1283,7 +1335,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}.
 
 ---
 
@@ -1295,7 +1347,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}.
 
 ---
 
@@ -1307,7 +1359,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}.
 
 ---
 

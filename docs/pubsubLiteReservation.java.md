@@ -4,7 +4,7 @@
 
 ### PubsubLiteReservation <a name="PubsubLiteReservation" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation google_pubsub_lite_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation google_pubsub_lite_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer"></a>
 
@@ -21,6 +21,7 @@ PubsubLiteReservation.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .throughputCapacity(java.lang.Number)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
@@ -41,8 +42,9 @@ PubsubLiteReservation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the reservation. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.throughputCapacity">throughputCapacity</a></code> | <code>java.lang.Number</code> | The reserved throughput capacity. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region of the pubsub lite reservation. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts">PubsubLiteReservationTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#name PubsubLiteReservation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#name PubsubLiteReservation#name}
 
 ---
 
@@ -128,7 +130,24 @@ Every unit of throughput capacity is
 equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#throughput_capacity PubsubLiteReservation#throughput_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#throughput_capacity PubsubLiteReservation#throughput_capacity}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#deletion_policy PubsubLiteReservation#deletion_policy}
 
 ---
 
@@ -136,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +166,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}.
 
 ---
 
@@ -157,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the pubsub lite reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#region PubsubLiteReservation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#region PubsubLiteReservation#region}
 
 ---
 
@@ -167,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#timeouts PubsubLiteReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#timeouts PubsubLiteReservation#timeouts}
 
 ---
 
@@ -200,6 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.resetRegion">resetRegion</a></code> | *No description.* |
@@ -530,6 +550,12 @@ public void putTimeouts(PubsubLiteReservationTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.resetId"></a>
 
 ```java
@@ -657,7 +683,7 @@ The construct id used in the generated config for the PubsubLiteReservation to i
 
 The id of the existing PubsubLiteReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -688,12 +714,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference">PubsubLiteReservationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.throughputCapacityInput">throughputCapacityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts">PubsubLiteReservationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -854,6 +882,16 @@ public PubsubLiteReservationTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.idInput"></a>
 
 ```java
@@ -911,6 +949,16 @@ public IResolvable|PubsubLiteReservationTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts">PubsubLiteReservationTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1001,6 +1049,7 @@ PubsubLiteReservationConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .throughputCapacity(java.lang.Number)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
@@ -1021,8 +1070,9 @@ PubsubLiteReservationConfig.builder()
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the reservation. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.throughputCapacity">throughputCapacity</a></code> | <code>java.lang.Number</code> | The reserved throughput capacity. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region of the pubsub lite reservation. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts">PubsubLiteReservationTimeouts</a></code> | timeouts block. |
 
@@ -1108,7 +1158,7 @@ public java.lang.String getName();
 
 Name of the reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#name PubsubLiteReservation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#name PubsubLiteReservation#name}
 
 ---
 
@@ -1126,7 +1176,28 @@ Every unit of throughput capacity is
 equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#throughput_capacity PubsubLiteReservation#throughput_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#throughput_capacity PubsubLiteReservation#throughput_capacity}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#deletion_policy PubsubLiteReservation#deletion_policy}
 
 ---
 
@@ -1138,7 +1209,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1224,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}.
 
 ---
 
@@ -1167,7 +1238,7 @@ public java.lang.String getRegion();
 
 The region of the pubsub lite reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#region PubsubLiteReservation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#region PubsubLiteReservation#region}
 
 ---
 
@@ -1181,7 +1252,7 @@ public PubsubLiteReservationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#timeouts PubsubLiteReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#timeouts PubsubLiteReservation#timeouts}
 
 ---
 
@@ -1203,9 +1274,9 @@ PubsubLiteReservationTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#create PubsubLiteReservation#create}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#delete PubsubLiteReservation#delete}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#update PubsubLiteReservation#update}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#create PubsubLiteReservation#create}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#delete PubsubLiteReservation#delete}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#update PubsubLiteReservation#update}. |
 
 ---
 
@@ -1217,7 +1288,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#create PubsubLiteReservation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#create PubsubLiteReservation#create}.
 
 ---
 
@@ -1229,7 +1300,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#delete PubsubLiteReservation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#delete PubsubLiteReservation#delete}.
 
 ---
 
@@ -1241,7 +1312,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation#update PubsubLiteReservation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_lite_reservation#update PubsubLiteReservation#update}.
 
 ---
 

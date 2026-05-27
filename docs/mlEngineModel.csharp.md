@@ -4,7 +4,7 @@
 
 ### MlEngineModel <a name="MlEngineModel" id="@cdktn/provider-google.mlEngineModel.MlEngineModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model google_ml_engine_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model google_ml_engine_model}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.mlEngineModel.MlEngineModel.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.putDefaultVersion">PutDefaultVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.resetDefaultVersion">ResetDefaultVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -427,6 +428,12 @@ private void PutTimeouts(MlEngineModelTimeouts Value)
 private void ResetDefaultVersion()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.mlEngineModel.MlEngineModel.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.mlEngineModel.MlEngineModel.resetDescription"></a>
 
 ```csharp
@@ -578,7 +585,7 @@ The construct id used in the generated config for the MlEngineModel to import.
 
 The id of the existing MlEngineModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -613,6 +620,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeoutsOutputReference">MlEngineModelTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.defaultVersionInput">DefaultVersionInput</a></code> | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelDefaultVersion">MlEngineModelDefaultVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -622,6 +630,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.regionsInput">RegionsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts">MlEngineModelTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModel.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -825,6 +834,16 @@ public MlEngineModelDefaultVersion DefaultVersionInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.mlEngineModel.MlEngineModel.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.mlEngineModel.MlEngineModel.property.descriptionInput"></a>
 
 ```csharp
@@ -912,6 +931,16 @@ public IResolvable|MlEngineModelTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts">MlEngineModelTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.mlEngineModel.MlEngineModel.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1032,6 +1061,7 @@ new MlEngineModelConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     MlEngineModelDefaultVersion DefaultVersion = null,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -1056,12 +1086,13 @@ new MlEngineModelConfig {
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.name">Name</a></code> | <code>string</code> | The name specified for the model. |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.defaultVersion">DefaultVersion</a></code> | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelDefaultVersion">MlEngineModelDefaultVersion</a></code> | default_version block. |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.description">Description</a></code> | <code>string</code> | The description specified for the model when it was created. |
-| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#id MlEngineModel#id}. |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#id MlEngineModel#id}. |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | One or more labels that you can add, to organize your models. |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.onlinePredictionConsoleLogging">OnlinePredictionConsoleLogging</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If true, online prediction nodes send stderr and stdout streams to Stackdriver Logging. |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.onlinePredictionLogging">OnlinePredictionLogging</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If true, online prediction access logs are sent to StackDriver Logging. |
-| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#project MlEngineModel#project}. |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#project MlEngineModel#project}. |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.regions">Regions</a></code> | <code>string[]</code> | The list of regions where the model is going to be deployed. Currently only one region per model is supported. |
 | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts">MlEngineModelTimeouts</a></code> | timeouts block. |
 
@@ -1147,7 +1178,7 @@ public string Name { get; set; }
 
 The name specified for the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#name MlEngineModel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#name MlEngineModel#name}
 
 ---
 
@@ -1161,7 +1192,28 @@ public MlEngineModelDefaultVersion DefaultVersion { get; set; }
 
 default_version block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#default_version MlEngineModel#default_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#default_version MlEngineModel#default_version}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.mlEngineModel.MlEngineModelConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#deletion_policy MlEngineModel#deletion_policy}
 
 ---
 
@@ -1175,7 +1227,7 @@ public string Description { get; set; }
 
 The description specified for the model when it was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#description MlEngineModel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#description MlEngineModel#description}
 
 ---
 
@@ -1187,7 +1239,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#id MlEngineModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#id MlEngineModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1259,7 @@ One or more labels that you can add, to organize your models.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#labels MlEngineModel#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#labels MlEngineModel#labels}
 
 ---
 
@@ -1221,7 +1273,7 @@ public bool|IResolvable OnlinePredictionConsoleLogging { get; set; }
 
 If true, online prediction nodes send stderr and stdout streams to Stackdriver Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#online_prediction_console_logging MlEngineModel#online_prediction_console_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#online_prediction_console_logging MlEngineModel#online_prediction_console_logging}
 
 ---
 
@@ -1235,7 +1287,7 @@ public bool|IResolvable OnlinePredictionLogging { get; set; }
 
 If true, online prediction access logs are sent to StackDriver Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#online_prediction_logging MlEngineModel#online_prediction_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#online_prediction_logging MlEngineModel#online_prediction_logging}
 
 ---
 
@@ -1247,7 +1299,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#project MlEngineModel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#project MlEngineModel#project}.
 
 ---
 
@@ -1261,7 +1313,7 @@ public string[] Regions { get; set; }
 
 The list of regions where the model is going to be deployed. Currently only one region per model is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#regions MlEngineModel#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#regions MlEngineModel#regions}
 
 ---
 
@@ -1275,7 +1327,7 @@ public MlEngineModelTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#timeouts MlEngineModel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#timeouts MlEngineModel#timeouts}
 
 ---
 
@@ -1309,7 +1361,7 @@ public string Name { get; set; }
 
 The name specified for the version when it was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#name MlEngineModel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#name MlEngineModel#name}
 
 ---
 
@@ -1331,9 +1383,9 @@ new MlEngineModelTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#create MlEngineModel#create}. |
-| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#delete MlEngineModel#delete}. |
-| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#update MlEngineModel#update}. |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#create MlEngineModel#create}. |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#delete MlEngineModel#delete}. |
+| <code><a href="#@cdktn/provider-google.mlEngineModel.MlEngineModelTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#update MlEngineModel#update}. |
 
 ---
 
@@ -1345,7 +1397,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#create MlEngineModel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#create MlEngineModel#create}.
 
 ---
 
@@ -1357,7 +1409,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#delete MlEngineModel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#delete MlEngineModel#delete}.
 
 ---
 
@@ -1369,7 +1421,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#update MlEngineModel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ml_engine_model#update MlEngineModel#update}.
 
 ---
 

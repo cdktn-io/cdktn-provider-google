@@ -4,7 +4,7 @@
 
 ### NetworkServicesTcpRoute <a name="NetworkServicesTcpRoute" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route google_network_services_tcp_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route google_network_services_tcp_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.putRules">PutRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.resetGateways">ResetGateways</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.resetId">ResetId</a></code> | *No description.* |
@@ -419,6 +420,12 @@ func PutTimeouts(value NetworkServicesTcpRouteTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.resetDescription"></a>
 
 ```go
@@ -564,7 +571,7 @@ The construct id used in the generated config for the NetworkServicesTcpRoute to
 
 The id of the existing NetworkServicesTcpRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,6 +608,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeoutsOutputReference">NetworkServicesTcpRouteTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.gatewaysInput">GatewaysInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -610,6 +618,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.gateways">Gateways</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -832,6 +841,16 @@ func UpdateTime() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.descriptionInput"></a>
 
 ```go
@@ -919,6 +938,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1029,6 +1058,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicest
 	Provisioners: *[]interface{},
 	Name: *string,
 	Rules: interface{},
+	DeletionPolicy: *string,
 	Description: *string,
 	Gateways: *[]*string,
 	Id: *string,
@@ -1052,12 +1082,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicest
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.name">Name</a></code> | <code>*string</code> | Name of the TcpRoute resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.description">Description</a></code> | <code>*string</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.gateways">Gateways</a></code> | <code>*[]*string</code> | Gateways defines a list of gateways this TcpRoute is attached to, as one of the routing rules to route the requests served by the gateway. |
-| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#id NetworkServicesTcpRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#id NetworkServicesTcpRoute#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Set of label tags associated with the TcpRoute resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.meshes">Meshes</a></code> | <code>*[]*string</code> | Meshes defines a list of meshes this TcpRoute is attached to, as one of the routing rules to route the requests served by the mesh. |
-| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#project NetworkServicesTcpRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#project NetworkServicesTcpRoute#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts">NetworkServicesTcpRouteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1142,7 +1173,7 @@ Name *string
 
 Name of the TcpRoute resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#name NetworkServicesTcpRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#name NetworkServicesTcpRoute#name}
 
 ---
 
@@ -1156,7 +1187,28 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#rules NetworkServicesTcpRoute#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#rules NetworkServicesTcpRoute#rules}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#deletion_policy NetworkServicesTcpRoute#deletion_policy}
 
 ---
 
@@ -1170,7 +1222,7 @@ Description *string
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#description NetworkServicesTcpRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#description NetworkServicesTcpRoute#description}
 
 ---
 
@@ -1186,7 +1238,7 @@ Gateways defines a list of gateways this TcpRoute is attached to, as one of the 
 
 Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#gateways NetworkServicesTcpRoute#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#gateways NetworkServicesTcpRoute#gateways}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1200,7 +1252,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#id NetworkServicesTcpRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#id NetworkServicesTcpRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1220,7 +1272,7 @@ Set of label tags associated with the TcpRoute resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#labels NetworkServicesTcpRoute#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#labels NetworkServicesTcpRoute#labels}
 
 ---
 
@@ -1237,7 +1289,7 @@ Meshes defines a list of meshes this TcpRoute is attached to, as one of the rout
 Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
 The attached Mesh should be of a type SIDECAR
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#meshes NetworkServicesTcpRoute#meshes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#meshes NetworkServicesTcpRoute#meshes}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1251,7 +1303,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#project NetworkServicesTcpRoute#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#project NetworkServicesTcpRoute#project}.
 
 ---
 
@@ -1265,7 +1317,7 @@ Timeouts NetworkServicesTcpRouteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#timeouts NetworkServicesTcpRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#timeouts NetworkServicesTcpRoute#timeouts}
 
 ---
 
@@ -1301,7 +1353,7 @@ Action NetworkServicesTcpRouteRulesAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#action NetworkServicesTcpRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#action NetworkServicesTcpRoute#action}
 
 ---
 
@@ -1315,7 +1367,7 @@ Matches interface{}
 
 matches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#matches NetworkServicesTcpRoute#matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#matches NetworkServicesTcpRoute#matches}
 
 ---
 
@@ -1353,7 +1405,7 @@ Destinations interface{}
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#destinations NetworkServicesTcpRoute#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#destinations NetworkServicesTcpRoute#destinations}
 
 ---
 
@@ -1371,7 +1423,7 @@ The idle timeout is defined as the period in which there are no bytes sent or re
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#idle_timeout NetworkServicesTcpRoute#idle_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#idle_timeout NetworkServicesTcpRoute#idle_timeout}
 
 ---
 
@@ -1385,7 +1437,7 @@ OriginalDestination interface{}
 
 If true, Router will use the destination IP and port of the original connection as the destination of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#original_destination NetworkServicesTcpRoute#original_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#original_destination NetworkServicesTcpRoute#original_destination}
 
 ---
 
@@ -1421,7 +1473,7 @@ ServiceName *string
 
 The URL of a BackendService to route traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#service_name NetworkServicesTcpRoute#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#service_name NetworkServicesTcpRoute#service_name}
 
 ---
 
@@ -1440,7 +1492,7 @@ If only one serviceName is specified and it has a weight greater than 0, 100% of
 If weights are specified for any one service name, they need to be specified for all of them.
 If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#weight NetworkServicesTcpRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#weight NetworkServicesTcpRoute#weight}
 
 ---
 
@@ -1479,7 +1531,7 @@ Must be specified in the CIDR range format.
 A CIDR range consists of an IP Address and a prefix length to construct the subnet mask.
 By default, the prefix length is 32 (i.e. matches a single IP address). Only IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this exact IP address. "10.0.0.0/8" - matches against any IP address within the 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any IP address'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#address NetworkServicesTcpRoute#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#address NetworkServicesTcpRoute#address}
 
 ---
 
@@ -1493,7 +1545,7 @@ Port *string
 
 Specifies the destination port to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#port NetworkServicesTcpRoute#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#port NetworkServicesTcpRoute#port}
 
 ---
 
@@ -1515,9 +1567,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#create NetworkServicesTcpRoute#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#delete NetworkServicesTcpRoute#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#update NetworkServicesTcpRoute#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#create NetworkServicesTcpRoute#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#delete NetworkServicesTcpRoute#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#update NetworkServicesTcpRoute#update}. |
 
 ---
 
@@ -1529,7 +1581,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#create NetworkServicesTcpRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#create NetworkServicesTcpRoute#create}.
 
 ---
 
@@ -1541,7 +1593,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#delete NetworkServicesTcpRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#delete NetworkServicesTcpRoute#delete}.
 
 ---
 
@@ -1553,7 +1605,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#update NetworkServicesTcpRoute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tcp_route#update NetworkServicesTcpRoute#update}.
 
 ---
 

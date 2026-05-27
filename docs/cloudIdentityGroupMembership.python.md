@@ -4,7 +4,7 @@
 
 ### CloudIdentityGroupMembership <a name="CloudIdentityGroupMembership" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer"></a>
 
@@ -24,6 +24,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembership(
   group: str,
   roles: IResolvable | typing.List[CloudIdentityGroupMembershipRoles],
   create_ignore_already_exists: bool | IResolvable = None,
+  deletion_policy: str = None,
   id: str = None,
   preferred_member_key: CloudIdentityGroupMembershipPreferredMemberKey = None,
   timeouts: CloudIdentityGroupMembershipTimeouts = None
@@ -44,7 +45,8 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembership(
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.group">group</a></code> | <code>str</code> | The name of the Group to create this membership in. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.roles">roles</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | roles block. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, skip group member creation if a membership with the same name already exists. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.preferredMemberKey">preferred_member_key</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKey">CloudIdentityGroupMembershipPreferredMemberKey</a></code> | preferred_member_key block. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the Group to create this membership in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#group CloudIdentityGroupMembership#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#group CloudIdentityGroupMembership#group}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 roles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#roles CloudIdentityGroupMembership#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#roles CloudIdentityGroupMembership#roles}
 
 ---
 
@@ -138,7 +140,24 @@ If set to true, skip group member creation if a membership with the same name al
 
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#create_ignore_already_exists CloudIdentityGroupMembership#create_ignore_already_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#create_ignore_already_exists CloudIdentityGroupMembership#create_ignore_already_exists}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#deletion_policy CloudIdentityGroupMembership#deletion_policy}
 
 ---
 
@@ -146,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +178,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 preferred_member_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#preferred_member_key CloudIdentityGroupMembership#preferred_member_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#preferred_member_key CloudIdentityGroupMembership#preferred_member_key}
 
 ---
 
@@ -169,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#timeouts CloudIdentityGroupMembership#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#timeouts CloudIdentityGroupMembership#timeouts}
 
 ---
 
@@ -205,6 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.putRoles">put_roles</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.resetCreateIgnoreAlreadyExists">reset_create_ignore_already_exists</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.resetPreferredMemberKey">reset_preferred_member_key</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -582,7 +602,7 @@ to the Identity Source's requirements.
 
 Must be unique within a namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -602,7 +622,7 @@ If specified, the EntityKey represents an external-identity-mapped group.
 The namespace must correspond to an identity source created in Admin Console
 and must be in the form of 'identitysources/{identity_source_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#namespace CloudIdentityGroupMembership#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#namespace CloudIdentityGroupMembership#namespace}
 
 ---
 
@@ -634,7 +654,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#create CloudIdentityGroupMembership#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#create CloudIdentityGroupMembership#create}.
 
 ---
 
@@ -642,7 +662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#delete CloudIdentityGroupMembership#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#delete CloudIdentityGroupMembership#delete}.
 
 ---
 
@@ -650,7 +670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#update CloudIdentityGroupMembership#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#update CloudIdentityGroupMembership#update}.
 
 ---
 
@@ -658,6 +678,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_create_ignore_already_exists() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.resetId"></a>
@@ -792,7 +818,7 @@ The construct id used in the generated config for the CloudIdentityGroupMembersh
 
 The id of the existing CloudIdentityGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,12 +856,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.createIgnoreAlreadyExistsInput">create_ignore_already_exists_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.preferredMemberKeyInput">preferred_member_key_input</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKey">CloudIdentityGroupMembershipPreferredMemberKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.rolesInput">roles_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.group">group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -1063,6 +1091,16 @@ create_ignore_already_exists_input: bool | IResolvable
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `group_input`<sup>Optional</sup> <a name="group_input" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.groupInput"></a>
 
 ```python
@@ -1120,6 +1158,16 @@ create_ignore_already_exists: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1181,6 +1229,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig(
   group: str,
   roles: IResolvable | typing.List[CloudIdentityGroupMembershipRoles],
   create_ignore_already_exists: bool | IResolvable = None,
+  deletion_policy: str = None,
   id: str = None,
   preferred_member_key: CloudIdentityGroupMembershipPreferredMemberKey = None,
   timeouts: CloudIdentityGroupMembershipTimeouts = None
@@ -1201,7 +1250,8 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig(
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.group">group</a></code> | <code>str</code> | The name of the Group to create this membership in. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.roles">roles</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | roles block. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, skip group member creation if a membership with the same name already exists. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.preferredMemberKey">preferred_member_key</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKey">CloudIdentityGroupMembershipPreferredMemberKey</a></code> | preferred_member_key block. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | timeouts block. |
 
@@ -1287,7 +1337,7 @@ group: str
 
 The name of the Group to create this membership in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#group CloudIdentityGroupMembership#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#group CloudIdentityGroupMembership#group}
 
 ---
 
@@ -1301,7 +1351,7 @@ roles: IResolvable | typing.List[CloudIdentityGroupMembershipRoles]
 
 roles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#roles CloudIdentityGroupMembership#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#roles CloudIdentityGroupMembership#roles}
 
 ---
 
@@ -1317,7 +1367,28 @@ If set to true, skip group member creation if a membership with the same name al
 
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#create_ignore_already_exists CloudIdentityGroupMembership#create_ignore_already_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#create_ignore_already_exists CloudIdentityGroupMembership#create_ignore_already_exists}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#deletion_policy CloudIdentityGroupMembership#deletion_policy}
 
 ---
 
@@ -1329,7 +1400,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1346,7 +1417,7 @@ preferred_member_key: CloudIdentityGroupMembershipPreferredMemberKey
 
 preferred_member_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#preferred_member_key CloudIdentityGroupMembership#preferred_member_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#preferred_member_key CloudIdentityGroupMembership#preferred_member_key}
 
 ---
 
@@ -1360,7 +1431,7 @@ timeouts: CloudIdentityGroupMembershipTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#timeouts CloudIdentityGroupMembership#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#timeouts CloudIdentityGroupMembership#timeouts}
 
 ---
 
@@ -1404,7 +1475,7 @@ to the Identity Source's requirements.
 
 Must be unique within a namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1428,7 +1499,7 @@ If specified, the EntityKey represents an external-identity-mapped group.
 The namespace must correspond to an identity source created in Admin Console
 and must be in the form of 'identitysources/{identity_source_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#namespace CloudIdentityGroupMembership#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#namespace CloudIdentityGroupMembership#namespace}
 
 ---
 
@@ -1464,7 +1535,7 @@ name: str
 
 The name of the MembershipRole. Must be one of OWNER, MANAGER, MEMBER. Possible values: ["OWNER", "MANAGER", "MEMBER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#name CloudIdentityGroupMembership#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#name CloudIdentityGroupMembership#name}
 
 ---
 
@@ -1478,7 +1549,7 @@ expiry_detail: CloudIdentityGroupMembershipRolesExpiryDetail
 
 expiry_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#expiry_detail CloudIdentityGroupMembership#expiry_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#expiry_detail CloudIdentityGroupMembership#expiry_detail}
 
 ---
 
@@ -1517,7 +1588,7 @@ resolution and up to nine fractional digits.
 
 Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#expire_time CloudIdentityGroupMembership#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#expire_time CloudIdentityGroupMembership#expire_time}
 
 ---
 
@@ -1539,9 +1610,9 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#create CloudIdentityGroupMembership#create}. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#delete CloudIdentityGroupMembership#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#update CloudIdentityGroupMembership#update}. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#create CloudIdentityGroupMembership#create}. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#delete CloudIdentityGroupMembership#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#update CloudIdentityGroupMembership#update}. |
 
 ---
 
@@ -1553,7 +1624,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#create CloudIdentityGroupMembership#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#create CloudIdentityGroupMembership#create}.
 
 ---
 
@@ -1565,7 +1636,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#delete CloudIdentityGroupMembership#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#delete CloudIdentityGroupMembership#delete}.
 
 ---
 
@@ -1577,7 +1648,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#update CloudIdentityGroupMembership#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#update CloudIdentityGroupMembership#update}.
 
 ---
 
@@ -2643,7 +2714,7 @@ resolution and up to nine fractional digits.
 
 Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group_membership#expire_time CloudIdentityGroupMembership#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_identity_group_membership#expire_time CloudIdentityGroupMembership#expire_time}
 
 ---
 

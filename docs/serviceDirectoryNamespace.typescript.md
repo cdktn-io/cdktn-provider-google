@@ -4,7 +4,7 @@
 
 ### ServiceDirectoryNamespace <a name="ServiceDirectoryNamespace" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace google_service_directory_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace google_service_directory_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.resetProject">resetProject</a></code> | *No description.* |
@@ -403,6 +404,12 @@ public putTimeouts(value: ServiceDirectoryNamespaceTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.resetId"></a>
 
 ```typescript
@@ -530,7 +537,7 @@ The construct id used in the generated config for the ServiceDirectoryNamespace 
 
 The id of the existing ServiceDirectoryNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,12 +571,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeoutsOutputReference">ServiceDirectoryNamespaceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.namespaceIdInput">namespaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts">ServiceDirectoryNamespaceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.location">location</a></code> | <code>string</code> | *No description.* |
@@ -760,6 +769,16 @@ public readonly timeouts: ServiceDirectoryNamespaceTimeoutsOutputReference;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.idInput"></a>
 
 ```typescript
@@ -817,6 +836,16 @@ public readonly timeoutsInput: IResolvable | ServiceDirectoryNamespaceTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts">ServiceDirectoryNamespaceTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespace.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -913,9 +942,10 @@ const serviceDirectoryNamespaceConfig: serviceDirectoryNamespace.ServiceDirector
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.location">location</a></code> | <code>string</code> | The location for the Namespace. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.namespaceId">namespaceId</a></code> | <code>string</code> | The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#id ServiceDirectoryNamespace#id}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#id ServiceDirectoryNamespace#id}. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Resource labels associated with this Namespace. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#project ServiceDirectoryNamespace#project}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#project ServiceDirectoryNamespace#project}. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts">ServiceDirectoryNamespaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1000,7 +1030,7 @@ public readonly location: string;
 
 The location for the Namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#location ServiceDirectoryNamespace#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#location ServiceDirectoryNamespace#location}
 
 ---
 
@@ -1014,7 +1044,29 @@ public readonly namespaceId: string;
 
 The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#namespace_id ServiceDirectoryNamespace#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#namespace_id ServiceDirectoryNamespace#namespace_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#deletion_policy ServiceDirectoryNamespace#deletion_policy}
 
 ---
 
@@ -1026,7 +1078,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#id ServiceDirectoryNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#id ServiceDirectoryNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1103,7 @@ be no longer than 63 characters.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#labels ServiceDirectoryNamespace#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#labels ServiceDirectoryNamespace#labels}
 
 ---
 
@@ -1063,7 +1115,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#project ServiceDirectoryNamespace#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#project ServiceDirectoryNamespace#project}.
 
 ---
 
@@ -1077,7 +1129,7 @@ public readonly timeouts: ServiceDirectoryNamespaceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#timeouts ServiceDirectoryNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#timeouts ServiceDirectoryNamespace#timeouts}
 
 ---
 
@@ -1095,9 +1147,9 @@ const serviceDirectoryNamespaceTimeouts: serviceDirectoryNamespace.ServiceDirect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#create ServiceDirectoryNamespace#create}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#delete ServiceDirectoryNamespace#delete}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#update ServiceDirectoryNamespace#update}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#create ServiceDirectoryNamespace#create}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#delete ServiceDirectoryNamespace#delete}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespace.ServiceDirectoryNamespaceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#update ServiceDirectoryNamespace#update}. |
 
 ---
 
@@ -1109,7 +1161,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#create ServiceDirectoryNamespace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#create ServiceDirectoryNamespace#create}.
 
 ---
 
@@ -1121,7 +1173,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#delete ServiceDirectoryNamespace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#delete ServiceDirectoryNamespace#delete}.
 
 ---
 
@@ -1133,7 +1185,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_namespace#update ServiceDirectoryNamespace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/service_directory_namespace#update ServiceDirectoryNamespace#update}.
 
 ---
 

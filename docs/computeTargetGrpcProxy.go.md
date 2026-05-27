@@ -4,7 +4,7 @@
 
 ### ComputeTargetGrpcProxy <a name="ComputeTargetGrpcProxy" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy google_compute_target_grpc_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy google_compute_target_grpc_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.resetProject">ResetProject</a></code> | *No description.* |
@@ -405,6 +406,12 @@ func PutTimeouts(value ComputeTargetGrpcProxyTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.resetDescription"></a>
 
 ```go
@@ -544,7 +551,7 @@ The construct id used in the generated config for the ComputeTargetGrpcProxy to 
 
 The id of the existing ComputeTargetGrpcProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -579,6 +586,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.selfLinkWithId">SelfLinkWithId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeoutsOutputReference">ComputeTargetGrpcProxyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -586,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.urlMapInput">UrlMapInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.validateForProxylessInput">ValidateForProxylessInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -787,6 +796,16 @@ func Timeouts() ComputeTargetGrpcProxyTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.descriptionInput"></a>
 
 ```go
@@ -854,6 +873,16 @@ func ValidateForProxylessInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -953,6 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetgrp
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Project: *string,
@@ -974,9 +1004,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetgrp
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#id ComputeTargetGrpcProxy#id}. |
-| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#project ComputeTargetGrpcProxy#project}. |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#id ComputeTargetGrpcProxy#id}. |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#project ComputeTargetGrpcProxy#project}. |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts">ComputeTargetGrpcProxyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.urlMap">UrlMap</a></code> | <code>*string</code> | URL to the UrlMap resource that defines the mapping from URL to the BackendService. |
 | <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.validateForProxyless">ValidateForProxyless</a></code> | <code>interface{}</code> | If true, indicates that the BackendServices referenced by the urlMap may be accessed by gRPC applications without using a sidecar proxy. |
@@ -1071,7 +1102,28 @@ means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#name ComputeTargetGrpcProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#name ComputeTargetGrpcProxy#name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#deletion_policy ComputeTargetGrpcProxy#deletion_policy}
 
 ---
 
@@ -1085,7 +1137,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#description ComputeTargetGrpcProxy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#description ComputeTargetGrpcProxy#description}
 
 ---
 
@@ -1097,7 +1149,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#id ComputeTargetGrpcProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#id ComputeTargetGrpcProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1164,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#project ComputeTargetGrpcProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#project ComputeTargetGrpcProxy#project}.
 
 ---
 
@@ -1126,7 +1178,7 @@ Timeouts ComputeTargetGrpcProxyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#timeouts ComputeTargetGrpcProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#timeouts ComputeTargetGrpcProxy#timeouts}
 
 ---
 
@@ -1143,7 +1195,7 @@ URL to the UrlMap resource that defines the mapping from URL to the BackendServi
 The protocol field in the BackendService
 must be set to GRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#url_map ComputeTargetGrpcProxy#url_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#url_map ComputeTargetGrpcProxy#url_map}
 
 ---
 
@@ -1166,7 +1218,7 @@ applications via a sidecar proxy. In this case, a gRPC application
 must not use "xds:///" scheme in the target URI of the service
 it is connecting to
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#validate_for_proxyless ComputeTargetGrpcProxy#validate_for_proxyless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#validate_for_proxyless ComputeTargetGrpcProxy#validate_for_proxyless}
 
 ---
 
@@ -1188,9 +1240,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetgrp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#create ComputeTargetGrpcProxy#create}. |
-| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#delete ComputeTargetGrpcProxy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#update ComputeTargetGrpcProxy#update}. |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#create ComputeTargetGrpcProxy#create}. |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#delete ComputeTargetGrpcProxy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#update ComputeTargetGrpcProxy#update}. |
 
 ---
 
@@ -1202,7 +1254,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#create ComputeTargetGrpcProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#create ComputeTargetGrpcProxy#create}.
 
 ---
 
@@ -1214,7 +1266,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#delete ComputeTargetGrpcProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#delete ComputeTargetGrpcProxy#delete}.
 
 ---
 
@@ -1226,7 +1278,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_grpc_proxy#update ComputeTargetGrpcProxy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_grpc_proxy#update ComputeTargetGrpcProxy#update}.
 
 ---
 

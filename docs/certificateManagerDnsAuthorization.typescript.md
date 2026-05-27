@@ -4,7 +4,7 @@
 
 ### CertificateManagerDnsAuthorization <a name="CertificateManagerDnsAuthorization" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.resetLabels">resetLabels</a></code> | *No description.* |
@@ -406,6 +407,12 @@ public putTimeouts(value: CertificateManagerDnsAuthorizationTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.resetDescription"></a>
 
 ```typescript
@@ -551,7 +558,7 @@ The construct id used in the generated config for the CertificateManagerDnsAutho
 
 The id of the existing CertificateManagerDnsAuthorization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -585,6 +592,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeoutsOutputReference">CertificateManagerDnsAuthorizationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.domainInput">domainInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -594,6 +602,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts">CertificateManagerDnsAuthorizationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.domain">domain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -787,6 +796,16 @@ public readonly timeouts: CertificateManagerDnsAuthorizationTimeoutsOutputRefere
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.descriptionInput"></a>
 
 ```typescript
@@ -871,6 +890,16 @@ public readonly timeoutsInput: IResolvable | CertificateManagerDnsAuthorizationT
 
 ```typescript
 public readonly typeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -1000,11 +1029,12 @@ const certificateManagerDnsAuthorizationConfig: certificateManagerDnsAuthorizati
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.domain">domain</a></code> | <code>string</code> | A domain which is being authorized. |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.name">name</a></code> | <code>string</code> | Name of the resource; |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.description">description</a></code> | <code>string</code> | A human-readable description of the resource. |
-| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#id CertificateManagerDnsAuthorization#id}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#id CertificateManagerDnsAuthorization#id}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Set of label tags associated with the DNS Authorization resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.location">location</a></code> | <code>string</code> | The Certificate Manager location. If not specified, "global" is used. |
-| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#project CertificateManagerDnsAuthorization#project}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#project CertificateManagerDnsAuthorization#project}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts">CertificateManagerDnsAuthorizationTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.type">type</a></code> | <code>string</code> | type of DNS authorization. |
 
@@ -1094,7 +1124,7 @@ A DnsAuthorization resource covers a
 single domain and its wildcard, e.g. authorization for "example.com" can
 be used to issue certificates for "example.com" and "*.example.com".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#domain CertificateManagerDnsAuthorization#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#domain CertificateManagerDnsAuthorization#domain}
 
 ---
 
@@ -1112,7 +1142,29 @@ provided by the client when the resource is created.
 The name must be 1-64 characters long, and match the regular expression [a-zA-Z][a-zA-Z0-9_-]* which means the first character must be a letter,
 and all following characters must be a dash, underscore, letter or digit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#name CertificateManagerDnsAuthorization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#name CertificateManagerDnsAuthorization#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#deletion_policy CertificateManagerDnsAuthorization#deletion_policy}
 
 ---
 
@@ -1126,7 +1178,7 @@ public readonly description: string;
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#description CertificateManagerDnsAuthorization#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#description CertificateManagerDnsAuthorization#description}
 
 ---
 
@@ -1138,7 +1190,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#id CertificateManagerDnsAuthorization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#id CertificateManagerDnsAuthorization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1210,7 @@ Set of label tags associated with the DNS Authorization resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#labels CertificateManagerDnsAuthorization#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#labels CertificateManagerDnsAuthorization#labels}
 
 ---
 
@@ -1172,7 +1224,7 @@ public readonly location: string;
 
 The Certificate Manager location. If not specified, "global" is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#location CertificateManagerDnsAuthorization#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#location CertificateManagerDnsAuthorization#location}
 
 ---
 
@@ -1184,7 +1236,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#project CertificateManagerDnsAuthorization#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#project CertificateManagerDnsAuthorization#project}.
 
 ---
 
@@ -1198,7 +1250,7 @@ public readonly timeouts: CertificateManagerDnsAuthorizationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#timeouts CertificateManagerDnsAuthorization#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#timeouts CertificateManagerDnsAuthorization#timeouts}
 
 ---
 
@@ -1221,7 +1273,7 @@ PER_PROJECT_RECORD DNS authorization allows for independent management
 of Google-managed certificates with DNS authorization across multiple
 projects. Possible values: ["FIXED_RECORD", "PER_PROJECT_RECORD"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#type CertificateManagerDnsAuthorization#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#type CertificateManagerDnsAuthorization#type}
 
 ---
 
@@ -1250,9 +1302,9 @@ const certificateManagerDnsAuthorizationTimeouts: certificateManagerDnsAuthoriza
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#create CertificateManagerDnsAuthorization#create}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#delete CertificateManagerDnsAuthorization#delete}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#update CertificateManagerDnsAuthorization#update}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#create CertificateManagerDnsAuthorization#create}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#delete CertificateManagerDnsAuthorization#delete}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#update CertificateManagerDnsAuthorization#update}. |
 
 ---
 
@@ -1264,7 +1316,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#create CertificateManagerDnsAuthorization#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#create CertificateManagerDnsAuthorization#create}.
 
 ---
 
@@ -1276,7 +1328,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#delete CertificateManagerDnsAuthorization#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#delete CertificateManagerDnsAuthorization#delete}.
 
 ---
 
@@ -1288,7 +1340,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_dns_authorization#update CertificateManagerDnsAuthorization#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_dns_authorization#update CertificateManagerDnsAuthorization#update}.
 
 ---
 

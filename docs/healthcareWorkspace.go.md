@@ -4,7 +4,7 @@
 
 ### HealthcareWorkspace <a name="HealthcareWorkspace" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace google_healthcare_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace google_healthcare_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.putSettings">PutSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -415,6 +416,12 @@ func PutTimeouts(value HealthcareWorkspaceTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.resetId"></a>
 
 ```go
@@ -536,7 +543,7 @@ The construct id used in the generated config for the HealthcareWorkspace to imp
 
 The id of the existing HealthcareWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -571,12 +578,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeoutsOutputReference">HealthcareWorkspaceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.datasetInput">DatasetInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.settingsInput">SettingsInput</a></code> | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceSettings">HealthcareWorkspaceSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.dataset">Dataset</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -775,6 +784,16 @@ func DatasetInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.idInput"></a>
 
 ```go
@@ -829,6 +848,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func Dataset() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspace.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -903,6 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareworksp
 	Dataset: *string,
 	Name: *string,
 	Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.healthcareWorkspace.HealthcareWorkspaceSettings,
+	DeletionPolicy: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.healthcareWorkspace.HealthcareWorkspaceTimeouts,
@@ -923,7 +953,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareworksp
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.dataset">Dataset</a></code> | <code>*string</code> | Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'. |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | The name of the workspace, in the format 'projects/{projectId}/locations/{location}/datasets/{datasetId}/dataMapperWorkspaces/{workspaceId}'. |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceSettings">HealthcareWorkspaceSettings</a></code> | settings block. |
-| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}. |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The user labels. |
 | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts">HealthcareWorkspaceTimeouts</a></code> | timeouts block. |
 
@@ -1009,7 +1040,7 @@ Dataset *string
 
 Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#dataset HealthcareWorkspace#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#dataset HealthcareWorkspace#dataset}
 
 ---
 
@@ -1023,7 +1054,7 @@ Name *string
 
 The name of the workspace, in the format 'projects/{projectId}/locations/{location}/datasets/{datasetId}/dataMapperWorkspaces/{workspaceId}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}
 
 ---
 
@@ -1037,7 +1068,28 @@ Settings HealthcareWorkspaceSettings
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#settings HealthcareWorkspace#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#settings HealthcareWorkspace#settings}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#deletion_policy HealthcareWorkspace#deletion_policy}
 
 ---
 
@@ -1049,7 +1101,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1071,7 +1123,7 @@ An object containing a list of "key": value pairs. Example: { "name": "wrench", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#labels HealthcareWorkspace#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#labels HealthcareWorkspace#labels}
 
 ---
 
@@ -1085,7 +1137,7 @@ Timeouts HealthcareWorkspaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#timeouts HealthcareWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#timeouts HealthcareWorkspace#timeouts}
 
 ---
 
@@ -1119,7 +1171,7 @@ DataProjectIds *[]*string
 
 Project IDs for data projects hosted in a workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#data_project_ids HealthcareWorkspace#data_project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#data_project_ids HealthcareWorkspace#data_project_ids}
 
 ---
 
@@ -1141,9 +1193,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareworksp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}. |
-| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}. |
-| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}. |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}. |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}. |
+| <code><a href="#@cdktn/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}. |
 
 ---
 
@@ -1155,7 +1207,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}.
 
 ---
 
@@ -1167,7 +1219,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}.
 
 ---
 
@@ -1179,7 +1231,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}.
 
 ---
 

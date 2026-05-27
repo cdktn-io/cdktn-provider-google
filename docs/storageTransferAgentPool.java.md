@@ -4,7 +4,7 @@
 
 ### StorageTransferAgentPool <a name="StorageTransferAgentPool" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer"></a>
 
@@ -21,6 +21,7 @@ StorageTransferAgentPool.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .bandwidthLimit(StorageTransferAgentPoolBandwidthLimit)
+//  .deletionPolicy(java.lang.String)
 //  .displayName(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -41,9 +42,10 @@ StorageTransferAgentPool.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The ID of the agent pool to create. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.bandwidthLimit">bandwidthLimit</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit">StorageTransferAgentPoolBandwidthLimit</a></code> | bandwidth_limit block. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Specifies the client-specified AgentPool description. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts">StorageTransferAgentPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -125,7 +127,7 @@ The agentPoolId must meet the following requirements:
 
 As expressed by the regular expression: ^(?!goog)[a-z](%5Ba-z0-9-._~%5D*%5Ba-z0-9%5D)?$.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
 
 ---
 
@@ -135,7 +137,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 bandwidth_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#deletion_policy StorageTransferAgentPool#deletion_policy}
 
 ---
 
@@ -145,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the client-specified AgentPool description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
 
 ---
 
@@ -153,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}.
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
 
 ---
 
@@ -209,6 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.putBandwidthLimit">putBandwidthLimit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.resetBandwidthLimit">resetBandwidthLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.resetProject">resetProject</a></code> | *No description.* |
@@ -557,6 +577,12 @@ public void putTimeouts(StorageTransferAgentPoolTimeouts value)
 public void resetBandwidthLimit()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDisplayName` <a name="resetDisplayName" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.resetDisplayName"></a>
 
 ```java
@@ -684,7 +710,7 @@ The construct id used in the generated config for the StorageTransferAgentPool t
 
 The id of the existing StorageTransferAgentPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,11 +744,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference">StorageTransferAgentPoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.bandwidthLimitInput">bandwidthLimitInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit">StorageTransferAgentPoolBandwidthLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts">StorageTransferAgentPoolTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -912,6 +940,16 @@ public StorageTransferAgentPoolBandwidthLimit getBandwidthLimitInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.displayNameInput"></a>
 
 ```java
@@ -959,6 +997,16 @@ public IResolvable|StorageTransferAgentPoolTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts">StorageTransferAgentPoolTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1052,7 +1100,7 @@ public java.lang.String getLimitMbps();
 
 Bandwidth rate in megabytes per second, distributed across all the agents in the pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#limit_mbps StorageTransferAgentPool#limit_mbps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#limit_mbps StorageTransferAgentPool#limit_mbps}
 
 ---
 
@@ -1073,6 +1121,7 @@ StorageTransferAgentPoolConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .bandwidthLimit(StorageTransferAgentPoolBandwidthLimit)
+//  .deletionPolicy(java.lang.String)
 //  .displayName(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -1093,9 +1142,10 @@ StorageTransferAgentPoolConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.name">name</a></code> | <code>java.lang.String</code> | The ID of the agent pool to create. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.bandwidthLimit">bandwidthLimit</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit">StorageTransferAgentPoolBandwidthLimit</a></code> | bandwidth_limit block. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Specifies the client-specified AgentPool description. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts">StorageTransferAgentPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1191,7 +1241,7 @@ The agentPoolId must meet the following requirements:
 
 As expressed by the regular expression: ^(?!goog)[a-z](%5Ba-z0-9-._~%5D*%5Ba-z0-9%5D)?$.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
 
 ---
 
@@ -1205,7 +1255,28 @@ public StorageTransferAgentPoolBandwidthLimit getBandwidthLimit();
 
 bandwidth_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#deletion_policy StorageTransferAgentPool#deletion_policy}
 
 ---
 
@@ -1219,7 +1290,7 @@ public java.lang.String getDisplayName();
 
 Specifies the client-specified AgentPool description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
 
 ---
 
@@ -1231,7 +1302,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1246,7 +1317,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}.
 
 ---
 
@@ -1260,7 +1331,7 @@ public StorageTransferAgentPoolTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
 
 ---
 
@@ -1282,9 +1353,9 @@ StorageTransferAgentPoolTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}. |
 
 ---
 
@@ -1296,7 +1367,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}.
 
 ---
 
@@ -1308,7 +1379,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}.
 
 ---
 
@@ -1320,7 +1391,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}.
 
 ---
 

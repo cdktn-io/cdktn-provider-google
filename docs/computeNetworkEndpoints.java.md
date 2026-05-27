@@ -4,7 +4,7 @@
 
 ### ComputeNetworkEndpoints <a name="ComputeNetworkEndpoints" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints google_compute_network_endpoints}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints google_compute_network_endpoints}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer"></a>
 
@@ -20,6 +20,7 @@ ComputeNetworkEndpoints.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .networkEndpointGroup(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .networkEndpoints(IResolvable|java.util.List<ComputeNetworkEndpointsNetworkEndpoints>)
 //  .project(java.lang.String)
@@ -40,9 +41,10 @@ ComputeNetworkEndpoints.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.networkEndpointGroup">networkEndpointGroup</a></code> | <code>java.lang.String</code> | The network endpoint group these endpoints are part of. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.networkEndpoints">networkEndpoints</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsNetworkEndpoints">ComputeNetworkEndpointsNetworkEndpoints</a>></code> | network_endpoints block. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts">ComputeNetworkEndpointsTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Zone where the containing network endpoint group is located. |
 
@@ -114,7 +116,24 @@ Must be unique amongst siblings in the same scope
 
 The network endpoint group these endpoints are part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#deletion_policy ComputeNetworkEndpoints#deletion_policy}
 
 ---
 
@@ -122,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +154,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 network_endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
 
 ---
 
@@ -143,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}.
 
 ---
 
@@ -153,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
 
 ---
 
@@ -163,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Zone where the containing network endpoint group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
 
 ---
 
@@ -197,6 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.putNetworkEndpoints">putNetworkEndpoints</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.resetNetworkEndpoints">resetNetworkEndpoints</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.resetProject">resetProject</a></code> | *No description.* |
@@ -540,6 +560,12 @@ public void putTimeouts(ComputeNetworkEndpointsTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.resetId"></a>
 
 ```java
@@ -673,7 +699,7 @@ The construct id used in the generated config for the ComputeNetworkEndpoints to
 
 The id of the existing ComputeNetworkEndpoints that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -705,12 +731,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.networkEndpoints">networkEndpoints</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsNetworkEndpointsList">ComputeNetworkEndpointsNetworkEndpointsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeoutsOutputReference">ComputeNetworkEndpointsTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.networkEndpointGroupInput">networkEndpointGroupInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.networkEndpointsInput">networkEndpointsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsNetworkEndpoints">ComputeNetworkEndpointsNetworkEndpoints</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts">ComputeNetworkEndpointsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.networkEndpointGroup">networkEndpointGroup</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -880,6 +908,16 @@ public ComputeNetworkEndpointsTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.idInput"></a>
 
 ```java
@@ -934,6 +972,16 @@ public IResolvable|ComputeNetworkEndpointsTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getZoneInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1016,6 +1064,7 @@ ComputeNetworkEndpointsConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .networkEndpointGroup(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .networkEndpoints(IResolvable|java.util.List<ComputeNetworkEndpointsNetworkEndpoints>)
 //  .project(java.lang.String)
@@ -1036,9 +1085,10 @@ ComputeNetworkEndpointsConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.networkEndpointGroup">networkEndpointGroup</a></code> | <code>java.lang.String</code> | The network endpoint group these endpoints are part of. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.networkEndpoints">networkEndpoints</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsNetworkEndpoints">ComputeNetworkEndpointsNetworkEndpoints</a>></code> | network_endpoints block. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts">ComputeNetworkEndpointsTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Zone where the containing network endpoint group is located. |
 
@@ -1124,7 +1174,28 @@ public java.lang.String getNetworkEndpointGroup();
 
 The network endpoint group these endpoints are part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#deletion_policy ComputeNetworkEndpoints#deletion_policy}
 
 ---
 
@@ -1136,7 +1207,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1224,7 @@ public IResolvable|java.util.List<ComputeNetworkEndpointsNetworkEndpoints> getNe
 
 network_endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
 
 ---
 
@@ -1165,7 +1236,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}.
 
 ---
 
@@ -1179,7 +1250,7 @@ public ComputeNetworkEndpointsTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
 
 ---
 
@@ -1193,7 +1264,7 @@ public java.lang.String getZone();
 
 Zone where the containing network endpoint group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
 
 ---
 
@@ -1235,7 +1306,7 @@ The IP address must belong
 to a VM in GCE (either the primary IP or as part of an aliased IP
 range).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#ip_address ComputeNetworkEndpoints#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#ip_address ComputeNetworkEndpoints#ip_address}
 
 ---
 
@@ -1252,7 +1323,7 @@ The name for a specific VM instance that the IP address belongs to.
 This is required for network endpoints of type GCE_VM_IP_PORT.
 The instance must be in the same zone as the network endpoint group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#instance ComputeNetworkEndpoints#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#instance ComputeNetworkEndpoints#instance}
 
 ---
 
@@ -1266,7 +1337,7 @@ public java.lang.Number getPort();
 
 Port number of network endpoint. **Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#port ComputeNetworkEndpoints#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#port ComputeNetworkEndpoints#port}
 
 ---
 
@@ -1288,9 +1359,9 @@ ComputeNetworkEndpointsTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}. |
 
 ---
 
@@ -1302,7 +1373,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}.
 
 ---
 
@@ -1314,7 +1385,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}.
 
 ---
 
@@ -1326,7 +1397,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}.
 
 ---
 

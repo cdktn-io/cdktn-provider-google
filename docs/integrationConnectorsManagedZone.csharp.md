@@ -4,7 +4,7 @@
 
 ### IntegrationConnectorsManagedZone <a name="IntegrationConnectorsManagedZone" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone google_integration_connectors_managed_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone google_integration_connectors_managed_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -404,6 +405,12 @@ private void PutTimeouts(IntegrationConnectorsManagedZoneTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.resetDescription"></a>
 
 ```csharp
@@ -537,7 +544,7 @@ The construct id used in the generated config for the IntegrationConnectorsManag
 
 The id of the existing IntegrationConnectorsManagedZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,6 +579,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeoutsOutputReference">IntegrationConnectorsManagedZoneTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.dnsInput">DnsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -581,6 +589,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.targetProjectInput">TargetProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.targetVpcInput">TargetVpcInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts">IntegrationConnectorsManagedZoneTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.dns">Dns</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -784,6 +793,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.descriptionInput"></a>
 
 ```csharp
@@ -871,6 +890,16 @@ public IResolvable|IntegrationConnectorsManagedZoneTimeouts TimeoutsInput { get;
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts">IntegrationConnectorsManagedZoneTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -993,6 +1022,7 @@ new IntegrationConnectorsManagedZoneConfig {
     string Name,
     string TargetProject,
     string TargetVpc,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -1016,10 +1046,11 @@ new IntegrationConnectorsManagedZoneConfig {
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.name">Name</a></code> | <code>string</code> | Name of Managed Zone needs to be created. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.targetProject">TargetProject</a></code> | <code>string</code> | The name of the Target Project. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.targetVpc">TargetVpc</a></code> | <code>string</code> | The name of the Target Project VPC Network. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.description">Description</a></code> | <code>string</code> | Description of the resource. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#id IntegrationConnectorsManagedZone#id}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#id IntegrationConnectorsManagedZone#id}. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#project IntegrationConnectorsManagedZone#project}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#project IntegrationConnectorsManagedZone#project}. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts">IntegrationConnectorsManagedZoneTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1104,7 +1135,7 @@ public string Dns { get; set; }
 
 DNS Name of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#dns IntegrationConnectorsManagedZone#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#dns IntegrationConnectorsManagedZone#dns}
 
 ---
 
@@ -1118,7 +1149,7 @@ public string Name { get; set; }
 
 Name of Managed Zone needs to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#name IntegrationConnectorsManagedZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#name IntegrationConnectorsManagedZone#name}
 
 ---
 
@@ -1132,7 +1163,7 @@ public string TargetProject { get; set; }
 
 The name of the Target Project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#target_project IntegrationConnectorsManagedZone#target_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#target_project IntegrationConnectorsManagedZone#target_project}
 
 ---
 
@@ -1146,7 +1177,28 @@ public string TargetVpc { get; set; }
 
 The name of the Target Project VPC Network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#target_vpc IntegrationConnectorsManagedZone#target_vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#target_vpc IntegrationConnectorsManagedZone#target_vpc}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#deletion_policy IntegrationConnectorsManagedZone#deletion_policy}
 
 ---
 
@@ -1160,7 +1212,7 @@ public string Description { get; set; }
 
 Description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#description IntegrationConnectorsManagedZone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#description IntegrationConnectorsManagedZone#description}
 
 ---
 
@@ -1172,7 +1224,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#id IntegrationConnectorsManagedZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#id IntegrationConnectorsManagedZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1192,7 +1244,7 @@ Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#labels IntegrationConnectorsManagedZone#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#labels IntegrationConnectorsManagedZone#labels}
 
 ---
 
@@ -1204,7 +1256,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#project IntegrationConnectorsManagedZone#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#project IntegrationConnectorsManagedZone#project}.
 
 ---
 
@@ -1218,7 +1270,7 @@ public IntegrationConnectorsManagedZoneTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#timeouts IntegrationConnectorsManagedZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#timeouts IntegrationConnectorsManagedZone#timeouts}
 
 ---
 
@@ -1240,9 +1292,9 @@ new IntegrationConnectorsManagedZoneTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#create IntegrationConnectorsManagedZone#create}. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#delete IntegrationConnectorsManagedZone#delete}. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#update IntegrationConnectorsManagedZone#update}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#create IntegrationConnectorsManagedZone#create}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#delete IntegrationConnectorsManagedZone#delete}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#update IntegrationConnectorsManagedZone#update}. |
 
 ---
 
@@ -1254,7 +1306,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#create IntegrationConnectorsManagedZone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#create IntegrationConnectorsManagedZone#create}.
 
 ---
 
@@ -1266,7 +1318,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#delete IntegrationConnectorsManagedZone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#delete IntegrationConnectorsManagedZone#delete}.
 
 ---
 
@@ -1278,7 +1330,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_managed_zone#update IntegrationConnectorsManagedZone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integration_connectors_managed_zone#update IntegrationConnectorsManagedZone#update}.
 
 ---
 

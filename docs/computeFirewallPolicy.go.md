@@ -4,7 +4,7 @@
 
 ### ComputeFirewallPolicy <a name="ComputeFirewallPolicy" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy google_compute_firewall_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy google_compute_firewall_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ func PutTimeouts(value ComputeFirewallPolicyTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.resetDescription"></a>
 
 ```go
@@ -523,7 +530,7 @@ The construct id used in the generated config for the ComputeFirewallPolicy to i
 
 The id of the existing ComputeFirewallPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -561,11 +568,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.selfLinkWithId">SelfLinkWithId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeoutsOutputReference">ComputeFirewallPolicyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.shortNameInput">ShortNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
@@ -795,6 +804,16 @@ func Timeouts() ComputeFirewallPolicyTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.descriptionInput"></a>
 
 ```go
@@ -842,6 +861,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicy.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -922,6 +951,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallp
 	Provisioners: *[]interface{},
 	Parent: *string,
 	ShortName: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeFirewallPolicy.ComputeFirewallPolicyTimeouts,
@@ -941,8 +971,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallp
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.parent">Parent</a></code> | <code>*string</code> | The parent of the firewall policy. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.shortName">ShortName</a></code> | <code>*string</code> | User-provided name of the Organization firewall policy. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#id ComputeFirewallPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#id ComputeFirewallPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeouts">ComputeFirewallPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1027,7 +1058,7 @@ Parent *string
 
 The parent of the firewall policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#parent ComputeFirewallPolicy#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#parent ComputeFirewallPolicy#parent}
 
 ---
 
@@ -1045,7 +1076,28 @@ The name should be unique in the organization in which the firewall policy is cr
 This field is not applicable to network firewall policies. This name must be set on creation and cannot be changed. The name must be 1-63 characters long, and comply with RFC1035.
 Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#short_name ComputeFirewallPolicy#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#short_name ComputeFirewallPolicy#short_name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#deletion_policy ComputeFirewallPolicy#deletion_policy}
 
 ---
 
@@ -1059,7 +1111,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#description ComputeFirewallPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#description ComputeFirewallPolicy#description}
 
 ---
 
@@ -1071,7 +1123,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#id ComputeFirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#id ComputeFirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1140,7 @@ Timeouts ComputeFirewallPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#timeouts ComputeFirewallPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#timeouts ComputeFirewallPolicy#timeouts}
 
 ---
 
@@ -1110,9 +1162,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#create ComputeFirewallPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#delete ComputeFirewallPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#update ComputeFirewallPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#create ComputeFirewallPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#delete ComputeFirewallPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicy.ComputeFirewallPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#update ComputeFirewallPolicy#update}. |
 
 ---
 
@@ -1124,7 +1176,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#create ComputeFirewallPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#create ComputeFirewallPolicy#create}.
 
 ---
 
@@ -1136,7 +1188,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#delete ComputeFirewallPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#delete ComputeFirewallPolicy#delete}.
 
 ---
 
@@ -1148,7 +1200,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall_policy#update ComputeFirewallPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_firewall_policy#update ComputeFirewallPolicy#update}.
 
 ---
 

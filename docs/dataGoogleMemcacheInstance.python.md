@@ -4,7 +4,7 @@
 
 ### DataGoogleMemcacheInstance <a name="DataGoogleMemcacheInstance" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance google_memcache_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance google_memcache_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer"></a>
 
@@ -40,8 +40,8 @@ dataGoogleMemcacheInstance.DataGoogleMemcacheInstance(
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of the instance. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the Memcache instance. If it is not provided, the provider region is used. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The resource name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#name DataGoogleMemcacheInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#name DataGoogleMemcacheInstance#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the Memcache instance. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#region DataGoogleMemcacheInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#region DataGoogleMemcacheInstance#region}
 
 ---
 
@@ -545,7 +545,7 @@ The construct id used in the generated config for the DataGoogleMemcacheInstance
 
 The id of the existing DataGoogleMemcacheInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,6 +575,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.authorizedNetwork">authorized_network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.deletionProtection">deletion_protection</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.discoveryEndpoint">discovery_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
@@ -738,6 +739,16 @@ authorized_network: str
 
 ```python
 create_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1038,8 +1049,8 @@ dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.name">name</a></code> | <code>str</code> | The resource name of the instance. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.property.region">region</a></code> | <code>str</code> | The region of the Memcache instance. If it is not provided, the provider region is used. |
 
 ---
@@ -1124,7 +1135,7 @@ name: str
 
 The resource name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#name DataGoogleMemcacheInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#name DataGoogleMemcacheInstance#name}
 
 ---
 
@@ -1136,7 +1147,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#id DataGoogleMemcacheInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1151,7 +1162,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#project DataGoogleMemcacheInstance#project}.
 
 ---
 
@@ -1165,7 +1176,7 @@ region: str
 
 The region of the Memcache instance. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/memcache_instance#region DataGoogleMemcacheInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/memcache_instance#region DataGoogleMemcacheInstance#region}
 
 ---
 

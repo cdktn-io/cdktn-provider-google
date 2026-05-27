@@ -4,7 +4,7 @@
 
 ### ManagedKafkaTopic <a name="ManagedKafkaTopic" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic google_managed_kafka_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic google_managed_kafka_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer"></a>
 
@@ -26,6 +26,7 @@ managedKafkaTopic.ManagedKafkaTopic(
   replication_factor: typing.Union[int, float],
   topic_id: str,
   configs: typing.Mapping[str] = None,
+  deletion_policy: str = None,
   id: str = None,
   partition_count: typing.Union[int, float] = None,
   project: str = None,
@@ -49,9 +50,10 @@ managedKafkaTopic.ManagedKafkaTopic(
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.replicationFactor">replication_factor</a></code> | <code>typing.Union[int, float]</code> | The number of replicas of each partition. A replication factor of 3 is recommended for high availability. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.topicId">topic_id</a></code> | <code>str</code> | The ID to use for the topic, which will become the final component of the topic's name. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.configs">configs</a></code> | <code>typing.Mapping[str]</code> | Configuration for the topic that are overridden from the cluster defaults. |
-| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.partitionCount">partition_count</a></code> | <code>typing.Union[int, float]</code> | The number of partitions in a topic. |
-| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts">ManagedKafkaTopicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#cluster ManagedKafkaTopic#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#cluster ManagedKafkaTopic#cluster}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#location ManagedKafkaTopic#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#location ManagedKafkaTopic#location}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of replicas of each partition. A replication factor of 3 is recommended for high availability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#replication_factor ManagedKafkaTopic#replication_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#replication_factor ManagedKafkaTopic#replication_factor}
 
 ---
 
@@ -154,7 +156,7 @@ The ID to use for the topic, which will become the final component of the topic'
 
 This value is structured like: 'my-topic-name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#topic_id ManagedKafkaTopic#topic_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#topic_id ManagedKafkaTopic#topic_id}
 
 ---
 
@@ -166,7 +168,24 @@ Configuration for the topic that are overridden from the cluster defaults.
 
 The key of the map is a Kafka topic property name, for example: 'cleanup.policy=compact', 'compression.type=producer'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#configs ManagedKafkaTopic#configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#configs ManagedKafkaTopic#configs}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#deletion_policy ManagedKafkaTopic#deletion_policy}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +208,7 @@ The number of partitions in a topic.
 
 You can increase the partition count for a topic, but you cannot decrease it. Increasing partitions for a topic that uses a key might change how messages are distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#partition_count ManagedKafkaTopic#partition_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#partition_count ManagedKafkaTopic#partition_count}
 
 ---
 
@@ -197,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}.
 
 ---
 
@@ -207,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#timeouts ManagedKafkaTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#timeouts ManagedKafkaTopic#timeouts}
 
 ---
 
@@ -241,6 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.resetConfigs">reset_configs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.resetPartitionCount">reset_partition_count</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.resetProject">reset_project</a></code> | *No description.* |
@@ -610,7 +630,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#create ManagedKafkaTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#create ManagedKafkaTopic#create}.
 
 ---
 
@@ -618,7 +638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#delete ManagedKafkaTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#delete ManagedKafkaTopic#delete}.
 
 ---
 
@@ -626,7 +646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#update ManagedKafkaTopic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#update ManagedKafkaTopic#update}.
 
 ---
 
@@ -634,6 +654,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_configs() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.resetId"></a>
@@ -774,7 +800,7 @@ The construct id used in the generated config for the ManagedKafkaTopic to impor
 
 The id of the existing ManagedKafkaTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,6 +834,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeoutsOutputReference">ManagedKafkaTopicTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.configsInput">configs_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.partitionCountInput">partition_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -817,6 +844,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.topicIdInput">topic_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.configs">configs</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.partitionCount">partition_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1008,6 +1036,16 @@ configs_input: typing.Mapping[str]
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.idInput"></a>
 
 ```python
@@ -1095,6 +1133,16 @@ configs: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopic.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1198,6 +1246,7 @@ managedKafkaTopic.ManagedKafkaTopicConfig(
   replication_factor: typing.Union[int, float],
   topic_id: str,
   configs: typing.Mapping[str] = None,
+  deletion_policy: str = None,
   id: str = None,
   partition_count: typing.Union[int, float] = None,
   project: str = None,
@@ -1221,9 +1270,10 @@ managedKafkaTopic.ManagedKafkaTopicConfig(
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.replicationFactor">replication_factor</a></code> | <code>typing.Union[int, float]</code> | The number of replicas of each partition. A replication factor of 3 is recommended for high availability. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.topicId">topic_id</a></code> | <code>str</code> | The ID to use for the topic, which will become the final component of the topic's name. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.configs">configs</a></code> | <code>typing.Mapping[str]</code> | Configuration for the topic that are overridden from the cluster defaults. |
-| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.partitionCount">partition_count</a></code> | <code>typing.Union[int, float]</code> | The number of partitions in a topic. |
-| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts">ManagedKafkaTopicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1308,7 +1358,7 @@ cluster: str
 
 The cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#cluster ManagedKafkaTopic#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#cluster ManagedKafkaTopic#cluster}
 
 ---
 
@@ -1322,7 +1372,7 @@ location: str
 
 ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#location ManagedKafkaTopic#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#location ManagedKafkaTopic#location}
 
 ---
 
@@ -1336,7 +1386,7 @@ replication_factor: typing.Union[int, float]
 
 The number of replicas of each partition. A replication factor of 3 is recommended for high availability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#replication_factor ManagedKafkaTopic#replication_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#replication_factor ManagedKafkaTopic#replication_factor}
 
 ---
 
@@ -1352,7 +1402,7 @@ The ID to use for the topic, which will become the final component of the topic'
 
 This value is structured like: 'my-topic-name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#topic_id ManagedKafkaTopic#topic_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#topic_id ManagedKafkaTopic#topic_id}
 
 ---
 
@@ -1368,7 +1418,28 @@ Configuration for the topic that are overridden from the cluster defaults.
 
 The key of the map is a Kafka topic property name, for example: 'cleanup.policy=compact', 'compression.type=producer'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#configs ManagedKafkaTopic#configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#configs ManagedKafkaTopic#configs}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#deletion_policy ManagedKafkaTopic#deletion_policy}
 
 ---
 
@@ -1380,7 +1451,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#id ManagedKafkaTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1399,7 +1470,7 @@ The number of partitions in a topic.
 
 You can increase the partition count for a topic, but you cannot decrease it. Increasing partitions for a topic that uses a key might change how messages are distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#partition_count ManagedKafkaTopic#partition_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#partition_count ManagedKafkaTopic#partition_count}
 
 ---
 
@@ -1411,7 +1482,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#project ManagedKafkaTopic#project}.
 
 ---
 
@@ -1425,7 +1496,7 @@ timeouts: ManagedKafkaTopicTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#timeouts ManagedKafkaTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#timeouts ManagedKafkaTopic#timeouts}
 
 ---
 
@@ -1447,9 +1518,9 @@ managedKafkaTopic.ManagedKafkaTopicTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#create ManagedKafkaTopic#create}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#delete ManagedKafkaTopic#delete}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#update ManagedKafkaTopic#update}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#create ManagedKafkaTopic#create}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#delete ManagedKafkaTopic#delete}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#update ManagedKafkaTopic#update}. |
 
 ---
 
@@ -1461,7 +1532,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#create ManagedKafkaTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#create ManagedKafkaTopic#create}.
 
 ---
 
@@ -1473,7 +1544,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#delete ManagedKafkaTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#delete ManagedKafkaTopic#delete}.
 
 ---
 
@@ -1485,7 +1556,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_topic#update ManagedKafkaTopic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_topic#update ManagedKafkaTopic#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComputeImage <a name="ComputeImage" id="@cdktn/provider-google.computeImage.ComputeImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image google_compute_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image google_compute_image}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImage.Initializer"></a>
 
@@ -22,6 +22,7 @@ computeImage.ComputeImage(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   disk_size_gb: typing.Union[int, float] = None,
   family: str = None,
@@ -57,16 +58,17 @@ computeImage.ComputeImage(
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource; |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | Size of the image when restored onto a persistent disk (in GB). |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.family">family</a></code> | <code>str</code> | The name of the image family to which this image belongs. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.guestOsFeatures">guest_os_features</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeImage.ComputeImageGuestOsFeatures">ComputeImageGuestOsFeatures</a>]</code> | guest_os_features block. |
-| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#id ComputeImage#id}. |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#id ComputeImage#id}. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.imageEncryptionKey">image_encryption_key</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageImageEncryptionKey">ComputeImageImageEncryptionKey</a></code> | image_encryption_key block. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels to apply to this Image. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.licenses">licenses</a></code> | <code>typing.List[str]</code> | Any applicable license URI. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageParams">ComputeImageParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#project ComputeImage#project}. |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#project ComputeImage#project}. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.rawDisk">raw_disk</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageRawDisk">ComputeImageRawDisk</a></code> | raw_disk block. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.shieldedInstanceInitialState">shielded_instance_initial_state</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialState">ComputeImageShieldedInstanceInitialState</a></code> | shielded_instance_initial_state block. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.sourceDisk">source_disk</a></code> | <code>str</code> | The source disk to create this image based on. |
@@ -154,7 +156,24 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#name ComputeImage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#name ComputeImage#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeImage.ComputeImage.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#deletion_policy ComputeImage#deletion_policy}
 
 ---
 
@@ -164,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#description ComputeImage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#description ComputeImage#description}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Size of the image when restored onto a persistent disk (in GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#disk_size_gb ComputeImage#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#disk_size_gb ComputeImage#disk_size_gb}
 
 ---
 
@@ -190,7 +209,7 @@ image name. The image family always returns its latest image that is
 not deprecated. The name of the image family must comply with
 RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#family ComputeImage#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#family ComputeImage#family}
 
 ---
 
@@ -200,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 guest_os_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#guest_os_features ComputeImage#guest_os_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#guest_os_features ComputeImage#guest_os_features}
 
 ---
 
@@ -208,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#id ComputeImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#id ComputeImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -221,7 +240,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#image_encryption_key ComputeImage#image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#image_encryption_key ComputeImage#image_encryption_key}
 
 ---
 
@@ -234,7 +253,7 @@ Labels to apply to this Image.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#labels ComputeImage#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#labels ComputeImage#labels}
 
 ---
 
@@ -244,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#licenses ComputeImage#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#licenses ComputeImage#licenses}
 
 ---
 
@@ -254,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#params ComputeImage#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#params ComputeImage#params}
 
 ---
 
@@ -262,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#project ComputeImage#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#project ComputeImage#project}.
 
 ---
 
@@ -272,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 raw_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_disk ComputeImage#raw_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_disk ComputeImage#raw_disk}
 
 ---
 
@@ -282,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 shielded_instance_initial_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#shielded_instance_initial_state ComputeImage#shielded_instance_initial_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#shielded_instance_initial_state ComputeImage#shielded_instance_initial_state}
 
 ---
 
@@ -295,7 +314,7 @@ The source disk to create this image based on.
 You must provide either this property or the
 rawDisk.source property but not both to create an image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_disk ComputeImage#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_disk ComputeImage#source_disk}
 
 ---
 
@@ -305,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_disk_encryption_key ComputeImage#source_disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_disk_encryption_key ComputeImage#source_disk_encryption_key}
 
 ---
 
@@ -323,7 +342,7 @@ URL of one of the following:
 * The rawDisk.source URL
 * The sourceDisk URL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_image ComputeImage#source_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_image ComputeImage#source_image}
 
 ---
 
@@ -333,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_image_encryption_key ComputeImage#source_image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_image_encryption_key ComputeImage#source_image_encryption_key}
 
 ---
 
@@ -351,7 +370,7 @@ In order to create an image, you must provide the full or partial URL of one of 
 * The rawDisk.source URL
 * The sourceDisk URL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_snapshot ComputeImage#source_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_snapshot ComputeImage#source_snapshot}
 
 ---
 
@@ -361,7 +380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_snapshot_encryption_key ComputeImage#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_snapshot_encryption_key ComputeImage#source_snapshot_encryption_key}
 
 ---
 
@@ -371,7 +390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Cloud Storage bucket storage location of the image (regional or multi-regional). Reference link: https://cloud.google.com/compute/docs/reference/rest/v1/images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#storage_locations ComputeImage#storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#storage_locations ComputeImage#storage_locations}
 
 ---
 
@@ -381,7 +400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#timeouts ComputeImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#timeouts ComputeImage#timeouts}
 
 ---
 
@@ -422,6 +441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.putSourceImageEncryptionKey">put_source_image_encryption_key</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.putSourceSnapshotEncryptionKey">put_source_snapshot_encryption_key</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.resetDiskSizeGb">reset_disk_size_gb</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.resetFamily">reset_family</a></code> | *No description.* |
@@ -824,7 +844,7 @@ def put_image_encryption_key(
 
 The self link of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -837,7 +857,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -847,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -857,7 +877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -883,7 +903,7 @@ The field is immutable and causes resource replacement when mutated. This field 
 set at create time and modifying this field after creation will trigger recreation.
 To apply tags to an existing resource, see the google_tags_tag_binding resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#resource_manager_tags ComputeImage#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#resource_manager_tags ComputeImage#resource_manager_tags}
 
 ---
 
@@ -903,7 +923,7 @@ def put_raw_disk(
 
 The full Google Cloud Storage URL where disk storage is stored You must provide either this property or the sourceDisk property but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source ComputeImage#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source ComputeImage#source}
 
 ---
 
@@ -917,7 +937,7 @@ This is just a container and transmission format
 and not a runtime format. Provided by the client when the disk
 image is created. Default value: "TAR" Possible values: ["TAR"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#container_type ComputeImage#container_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#container_type ComputeImage#container_type}
 
 ---
 
@@ -929,7 +949,7 @@ An optional SHA1 checksum of the disk image before unpackaging.
 
 This is provided by the client when the disk image is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#sha1 ComputeImage#sha1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#sha1 ComputeImage#sha1}
 
 ---
 
@@ -950,7 +970,7 @@ def put_shielded_instance_initial_state(
 
 dbs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#dbs ComputeImage#dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#dbs ComputeImage#dbs}
 
 ---
 
@@ -960,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dbxs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#dbxs ComputeImage#dbxs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#dbxs ComputeImage#dbxs}
 
 ---
 
@@ -970,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 keks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#keks ComputeImage#keks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#keks ComputeImage#keks}
 
 ---
 
@@ -980,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 pk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#pk ComputeImage#pk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#pk ComputeImage#pk}
 
 ---
 
@@ -1007,7 +1027,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -1020,7 +1040,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -1030,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -1042,7 +1062,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -1069,7 +1089,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -1082,7 +1102,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -1092,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -1104,7 +1124,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -1131,7 +1151,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -1144,7 +1164,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -1154,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -1166,7 +1186,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -1184,7 +1204,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#create ComputeImage#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#create ComputeImage#create}.
 
 ---
 
@@ -1192,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#delete ComputeImage#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#delete ComputeImage#delete}.
 
 ---
 
@@ -1200,9 +1220,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#update ComputeImage#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#update ComputeImage#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.computeImage.ComputeImage.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.computeImage.ComputeImage.resetDescription"></a>
 
@@ -1438,7 +1464,7 @@ The construct id used in the generated config for the ComputeImage to import.
 
 The id of the existing ComputeImage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1483,6 +1509,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.sourceSnapshotEncryptionKey">source_snapshot_encryption_key</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageSourceSnapshotEncryptionKeyOutputReference">ComputeImageSourceSnapshotEncryptionKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageTimeoutsOutputReference">ComputeImageTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.diskSizeGbInput">disk_size_gb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.familyInput">family_input</a></code> | <code>str</code> | *No description.* |
@@ -1504,6 +1531,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.sourceSnapshotInput">source_snapshot_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.storageLocationsInput">storage_locations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeImage.ComputeImageTimeouts">ComputeImageTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImage.property.family">family</a></code> | <code>str</code> | *No description.* |
@@ -1811,6 +1839,16 @@ timeouts: ComputeImageTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.computeImage.ComputeImage.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.computeImage.ComputeImage.property.descriptionInput"></a>
 
 ```python
@@ -2021,6 +2059,16 @@ timeouts_input: IResolvable | ComputeImageTimeouts
 
 ---
 
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeImage.ComputeImage.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.computeImage.ComputeImage.property.description"></a>
 
 ```python
@@ -2177,6 +2225,7 @@ computeImage.ComputeImageConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   disk_size_gb: typing.Union[int, float] = None,
   family: str = None,
@@ -2212,16 +2261,17 @@ computeImage.ComputeImageConfig(
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.name">name</a></code> | <code>str</code> | Name of the resource; |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | Size of the image when restored onto a persistent disk (in GB). |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.family">family</a></code> | <code>str</code> | The name of the image family to which this image belongs. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.guestOsFeatures">guest_os_features</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeImage.ComputeImageGuestOsFeatures">ComputeImageGuestOsFeatures</a>]</code> | guest_os_features block. |
-| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#id ComputeImage#id}. |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#id ComputeImage#id}. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.imageEncryptionKey">image_encryption_key</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageImageEncryptionKey">ComputeImageImageEncryptionKey</a></code> | image_encryption_key block. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels to apply to this Image. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.licenses">licenses</a></code> | <code>typing.List[str]</code> | Any applicable license URI. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageParams">ComputeImageParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#project ComputeImage#project}. |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#project ComputeImage#project}. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.rawDisk">raw_disk</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageRawDisk">ComputeImageRawDisk</a></code> | raw_disk block. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.shieldedInstanceInitialState">shielded_instance_initial_state</a></code> | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialState">ComputeImageShieldedInstanceInitialState</a></code> | shielded_instance_initial_state block. |
 | <code><a href="#@cdktn/provider-google.computeImage.ComputeImageConfig.property.sourceDisk">source_disk</a></code> | <code>str</code> | The source disk to create this image based on. |
@@ -2323,7 +2373,28 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#name ComputeImage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#name ComputeImage#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeImage.ComputeImageConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#deletion_policy ComputeImage#deletion_policy}
 
 ---
 
@@ -2337,7 +2408,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#description ComputeImage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#description ComputeImage#description}
 
 ---
 
@@ -2351,7 +2422,7 @@ disk_size_gb: typing.Union[int, float]
 
 Size of the image when restored onto a persistent disk (in GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#disk_size_gb ComputeImage#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#disk_size_gb ComputeImage#disk_size_gb}
 
 ---
 
@@ -2371,7 +2442,7 @@ image name. The image family always returns its latest image that is
 not deprecated. The name of the image family must comply with
 RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#family ComputeImage#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#family ComputeImage#family}
 
 ---
 
@@ -2385,7 +2456,7 @@ guest_os_features: IResolvable | typing.List[ComputeImageGuestOsFeatures]
 
 guest_os_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#guest_os_features ComputeImage#guest_os_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#guest_os_features ComputeImage#guest_os_features}
 
 ---
 
@@ -2397,7 +2468,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#id ComputeImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#id ComputeImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2414,7 +2485,7 @@ image_encryption_key: ComputeImageImageEncryptionKey
 
 image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#image_encryption_key ComputeImage#image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#image_encryption_key ComputeImage#image_encryption_key}
 
 ---
 
@@ -2431,7 +2502,7 @@ Labels to apply to this Image.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#labels ComputeImage#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#labels ComputeImage#labels}
 
 ---
 
@@ -2445,7 +2516,7 @@ licenses: typing.List[str]
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#licenses ComputeImage#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#licenses ComputeImage#licenses}
 
 ---
 
@@ -2459,7 +2530,7 @@ params: ComputeImageParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#params ComputeImage#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#params ComputeImage#params}
 
 ---
 
@@ -2471,7 +2542,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#project ComputeImage#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#project ComputeImage#project}.
 
 ---
 
@@ -2485,7 +2556,7 @@ raw_disk: ComputeImageRawDisk
 
 raw_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_disk ComputeImage#raw_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_disk ComputeImage#raw_disk}
 
 ---
 
@@ -2499,7 +2570,7 @@ shielded_instance_initial_state: ComputeImageShieldedInstanceInitialState
 
 shielded_instance_initial_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#shielded_instance_initial_state ComputeImage#shielded_instance_initial_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#shielded_instance_initial_state ComputeImage#shielded_instance_initial_state}
 
 ---
 
@@ -2516,7 +2587,7 @@ The source disk to create this image based on.
 You must provide either this property or the
 rawDisk.source property but not both to create an image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_disk ComputeImage#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_disk ComputeImage#source_disk}
 
 ---
 
@@ -2530,7 +2601,7 @@ source_disk_encryption_key: ComputeImageSourceDiskEncryptionKey
 
 source_disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_disk_encryption_key ComputeImage#source_disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_disk_encryption_key ComputeImage#source_disk_encryption_key}
 
 ---
 
@@ -2552,7 +2623,7 @@ URL of one of the following:
 * The rawDisk.source URL
 * The sourceDisk URL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_image ComputeImage#source_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_image ComputeImage#source_image}
 
 ---
 
@@ -2566,7 +2637,7 @@ source_image_encryption_key: ComputeImageSourceImageEncryptionKey
 
 source_image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_image_encryption_key ComputeImage#source_image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_image_encryption_key ComputeImage#source_image_encryption_key}
 
 ---
 
@@ -2588,7 +2659,7 @@ In order to create an image, you must provide the full or partial URL of one of 
 * The rawDisk.source URL
 * The sourceDisk URL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_snapshot ComputeImage#source_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_snapshot ComputeImage#source_snapshot}
 
 ---
 
@@ -2602,7 +2673,7 @@ source_snapshot_encryption_key: ComputeImageSourceSnapshotEncryptionKey
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source_snapshot_encryption_key ComputeImage#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source_snapshot_encryption_key ComputeImage#source_snapshot_encryption_key}
 
 ---
 
@@ -2616,7 +2687,7 @@ storage_locations: typing.List[str]
 
 Cloud Storage bucket storage location of the image (regional or multi-regional). Reference link: https://cloud.google.com/compute/docs/reference/rest/v1/images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#storage_locations ComputeImage#storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#storage_locations ComputeImage#storage_locations}
 
 ---
 
@@ -2630,7 +2701,7 @@ timeouts: ComputeImageTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#timeouts ComputeImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#timeouts ComputeImage#timeouts}
 
 ---
 
@@ -2666,7 +2737,7 @@ The type of supported feature.
 
 Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options. Possible values: ["MULTI_IP_SUBNET", "SECURE_BOOT", "SEV_CAPABLE", "UEFI_COMPATIBLE", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "GVNIC", "IDPF", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "SUSPEND_RESUME_COMPATIBLE", "TDX_CAPABLE", "SEV_LIVE_MIGRATABLE_V2", "SNP_SVSM_CAPABLE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#type ComputeImage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#type ComputeImage#type}
 
 ---
 
@@ -2706,7 +2777,7 @@ kms_key_self_link: str
 
 The self link of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -2723,7 +2794,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -2737,7 +2808,7 @@ raw_key: str
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -2751,7 +2822,7 @@ rsa_encrypted_key: str
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -2793,7 +2864,7 @@ The field is immutable and causes resource replacement when mutated. This field 
 set at create time and modifying this field after creation will trigger recreation.
 To apply tags to an existing resource, see the google_tags_tag_binding resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#resource_manager_tags ComputeImage#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#resource_manager_tags ComputeImage#resource_manager_tags}
 
 ---
 
@@ -2831,7 +2902,7 @@ source: str
 
 The full Google Cloud Storage URL where disk storage is stored You must provide either this property or the sourceDisk property but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#source ComputeImage#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#source ComputeImage#source}
 
 ---
 
@@ -2849,7 +2920,7 @@ This is just a container and transmission format
 and not a runtime format. Provided by the client when the disk
 image is created. Default value: "TAR" Possible values: ["TAR"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#container_type ComputeImage#container_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#container_type ComputeImage#container_type}
 
 ---
 
@@ -2865,7 +2936,7 @@ An optional SHA1 checksum of the disk image before unpackaging.
 
 This is provided by the client when the disk image is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#sha1 ComputeImage#sha1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#sha1 ComputeImage#sha1}
 
 ---
 
@@ -2905,7 +2976,7 @@ dbs: IResolvable | typing.List[ComputeImageShieldedInstanceInitialStateDbs]
 
 dbs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#dbs ComputeImage#dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#dbs ComputeImage#dbs}
 
 ---
 
@@ -2919,7 +2990,7 @@ dbxs: IResolvable | typing.List[ComputeImageShieldedInstanceInitialStateDbxs]
 
 dbxs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#dbxs ComputeImage#dbxs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#dbxs ComputeImage#dbxs}
 
 ---
 
@@ -2933,7 +3004,7 @@ keks: IResolvable | typing.List[ComputeImageShieldedInstanceInitialStateKeks]
 
 keks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#keks ComputeImage#keks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#keks ComputeImage#keks}
 
 ---
 
@@ -2947,7 +3018,7 @@ pk: ComputeImageShieldedInstanceInitialStatePk
 
 pk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#pk ComputeImage#pk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#pk ComputeImage#pk}
 
 ---
 
@@ -2985,7 +3056,7 @@ The raw content in the secure keys file.
 
 A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#content ComputeImage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#content ComputeImage#content}
 
 ---
 
@@ -2999,7 +3070,7 @@ file_type: str
 
 The file type of source file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#file_type ComputeImage#file_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#file_type ComputeImage#file_type}
 
 ---
 
@@ -3037,7 +3108,7 @@ The raw content in the secure keys file.
 
 A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#content ComputeImage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#content ComputeImage#content}
 
 ---
 
@@ -3051,7 +3122,7 @@ file_type: str
 
 The file type of source file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#file_type ComputeImage#file_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#file_type ComputeImage#file_type}
 
 ---
 
@@ -3089,7 +3160,7 @@ The raw content in the secure keys file.
 
 A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#content ComputeImage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#content ComputeImage#content}
 
 ---
 
@@ -3103,7 +3174,7 @@ file_type: str
 
 The file type of source file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#file_type ComputeImage#file_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#file_type ComputeImage#file_type}
 
 ---
 
@@ -3141,7 +3212,7 @@ The raw content in the secure keys file.
 
 A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#content ComputeImage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#content ComputeImage#content}
 
 ---
 
@@ -3155,7 +3226,7 @@ file_type: str
 
 The file type of source file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#file_type ComputeImage#file_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#file_type ComputeImage#file_type}
 
 ---
 
@@ -3201,7 +3272,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -3218,7 +3289,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -3232,7 +3303,7 @@ raw_key: str
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -3248,7 +3319,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -3294,7 +3365,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -3311,7 +3382,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -3325,7 +3396,7 @@ raw_key: str
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -3341,7 +3412,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -3387,7 +3458,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_self_link ComputeImage#kms_key_self_link}
 
 ---
 
@@ -3404,7 +3475,7 @@ The service account being used for the encryption request for the given KMS key.
 If absent, the Compute Engine default service
 account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#kms_key_service_account ComputeImage#kms_key_service_account}
 
 ---
 
@@ -3418,7 +3489,7 @@ raw_key: str
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#raw_key ComputeImage#raw_key}
 
 ---
 
@@ -3434,7 +3505,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#rsa_encrypted_key ComputeImage#rsa_encrypted_key}
 
 ---
 
@@ -3456,9 +3527,9 @@ computeImage.ComputeImageTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#create ComputeImage#create}. |
-| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#delete ComputeImage#delete}. |
-| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#update ComputeImage#update}. |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#create ComputeImage#create}. |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#delete ComputeImage#delete}. |
+| <code><a href="#@cdktn/provider-google.computeImage.ComputeImageTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#update ComputeImage#update}. |
 
 ---
 
@@ -3470,7 +3541,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#create ComputeImage#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#create ComputeImage#create}.
 
 ---
 
@@ -3482,7 +3553,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#delete ComputeImage#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#delete ComputeImage#delete}.
 
 ---
 
@@ -3494,7 +3565,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#update ComputeImage#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#update ComputeImage#update}.
 
 ---
 
@@ -6873,7 +6944,7 @@ The raw content in the secure keys file.
 
 A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#content ComputeImage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#content ComputeImage#content}
 
 ---
 
@@ -6883,7 +6954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The file type of source file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_image#file_type ComputeImage#file_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_image#file_type ComputeImage#file_type}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CertificateManagerCertificate <a name="CertificateManagerCertificate" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer"></a>
 
@@ -22,6 +22,7 @@ certificateManagerCertificate.CertificateManagerCertificate(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -46,12 +47,13 @@ certificateManagerCertificate.CertificateManagerCertificate(
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | A user-defined name of the certificate. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.description">description</a></code> | <code>str</code> | A human-readable description of the resource. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Set of label tags associated with the Certificate resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.location">location</a></code> | <code>str</code> | The Certificate Manager location. If not specified, "global" is used. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.managed">managed</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateManaged">CertificateManagerCertificateManaged</a></code> | managed block. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.scope">scope</a></code> | <code>str</code> | The scope of the certificate. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.selfManaged">self_managed</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManaged">CertificateManagerCertificateSelfManaged</a></code> | self_managed block. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts">CertificateManagerCertificateTimeouts</a></code> | timeouts block. |
@@ -128,7 +130,24 @@ Certificate names must be unique
 The name must be 1-64 characters long, and match the regular expression [a-zA-Z][a-zA-Z0-9_-]* which means the first character must be a letter,
 and all following characters must be a dash, underscore, letter or digit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#name CertificateManagerCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#name CertificateManagerCertificate#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#deletion_policy CertificateManagerCertificate#deletion_policy}
 
 ---
 
@@ -138,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#description CertificateManagerCertificate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#description CertificateManagerCertificate#description}
 
 ---
 
@@ -146,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -162,7 +181,7 @@ Set of label tags associated with the Certificate resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#labels CertificateManagerCertificate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#labels CertificateManagerCertificate#labels}
 
 ---
 
@@ -172,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Certificate Manager location. If not specified, "global" is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#location CertificateManagerCertificate#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#location CertificateManagerCertificate#location}
 
 ---
 
@@ -182,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#managed CertificateManagerCertificate#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#managed CertificateManagerCertificate#managed}
 
 ---
 
@@ -190,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}.
 
 ---
 
@@ -212,7 +231,7 @@ See https://cloud.google.com/compute/docs/regions-zones.
 CLIENT_AUTH: Certificates with CLIENT_AUTH scope are used by a load balancer (TLS client) to be presented to the backend (TLS server) when backend mTLS is configured.
 See https://cloud.google.com/load-balancing/docs/backend-authenticated-tls-backend-mtls#client-certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#scope CertificateManagerCertificate#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#scope CertificateManagerCertificate#scope}
 
 ---
 
@@ -222,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 self_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#self_managed CertificateManagerCertificate#self_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#self_managed CertificateManagerCertificate#self_managed}
 
 ---
 
@@ -232,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#timeouts CertificateManagerCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#timeouts CertificateManagerCertificate#timeouts}
 
 ---
 
@@ -267,6 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.putManaged">put_managed</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.putSelfManaged">put_self_managed</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.resetLabels">reset_labels</a></code> | *No description.* |
@@ -643,7 +663,7 @@ def put_managed(
 
 Authorizations that will be used for performing domain authorization. Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#dns_authorizations CertificateManagerCertificate#dns_authorizations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#dns_authorizations CertificateManagerCertificate#dns_authorizations}
 
 ---
 
@@ -653,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The domains for which a managed SSL certificate will be generated. Wildcard domains are only supported with DNS challenge resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#domains CertificateManagerCertificate#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#domains CertificateManagerCertificate#domains}
 
 ---
 
@@ -666,7 +686,7 @@ The resource name for a CertificateIssuanceConfig used to configure private PKI 
 If this field is not set, the certificates will instead be publicly signed as documented at https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs#caa.
 Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#issuance_config CertificateManagerCertificate#issuance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#issuance_config CertificateManagerCertificate#issuance_config}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -691,7 +711,7 @@ The certificate chain in PEM-encoded form.
 
 Leaf certificate comes first, followed by intermediate ones if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#certificate_pem CertificateManagerCertificate#certificate_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#certificate_pem CertificateManagerCertificate#certificate_pem}
 
 ---
 
@@ -703,7 +723,7 @@ The certificate chain in PEM-encoded form.
 
 Leaf certificate comes first, followed by intermediate ones if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#pem_certificate CertificateManagerCertificate#pem_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#pem_certificate CertificateManagerCertificate#pem_certificate}
 
 ---
 
@@ -713,7 +733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The private key of the leaf certificate in PEM-encoded form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#pem_private_key CertificateManagerCertificate#pem_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#pem_private_key CertificateManagerCertificate#pem_private_key}
 
 ---
 
@@ -723,7 +743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The private key of the leaf certificate in PEM-encoded form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#private_key_pem CertificateManagerCertificate#private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#private_key_pem CertificateManagerCertificate#private_key_pem}
 
 ---
 
@@ -741,7 +761,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#create CertificateManagerCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#create CertificateManagerCertificate#create}.
 
 ---
 
@@ -749,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#delete CertificateManagerCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#delete CertificateManagerCertificate#delete}.
 
 ---
 
@@ -757,9 +777,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#update CertificateManagerCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#update CertificateManagerCertificate#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.resetDescription"></a>
 
@@ -929,7 +955,7 @@ The construct id used in the generated config for the CertificateManagerCertific
 
 The id of the existing CertificateManagerCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,6 +991,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.selfManaged">self_managed</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManagedOutputReference">CertificateManagerCertificateSelfManagedOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeoutsOutputReference">CertificateManagerCertificateTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -975,6 +1002,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.selfManagedInput">self_managed_input</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManaged">CertificateManagerCertificateSelfManaged</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts">CertificateManagerCertificateTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1187,6 +1215,16 @@ timeouts: CertificateManagerCertificateTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.descriptionInput"></a>
 
 ```python
@@ -1284,6 +1322,16 @@ timeouts_input: IResolvable | CertificateManagerCertificateTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts">CertificateManagerCertificateTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificate.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1393,6 +1441,7 @@ certificateManagerCertificate.CertificateManagerCertificateConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -1417,12 +1466,13 @@ certificateManagerCertificate.CertificateManagerCertificateConfig(
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.name">name</a></code> | <code>str</code> | A user-defined name of the certificate. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.description">description</a></code> | <code>str</code> | A human-readable description of the resource. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Set of label tags associated with the Certificate resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.location">location</a></code> | <code>str</code> | The Certificate Manager location. If not specified, "global" is used. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.managed">managed</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateManaged">CertificateManagerCertificateManaged</a></code> | managed block. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.scope">scope</a></code> | <code>str</code> | The scope of the certificate. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.selfManaged">self_managed</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManaged">CertificateManagerCertificateSelfManaged</a></code> | self_managed block. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts">CertificateManagerCertificateTimeouts</a></code> | timeouts block. |
@@ -1513,7 +1563,28 @@ Certificate names must be unique
 The name must be 1-64 characters long, and match the regular expression [a-zA-Z][a-zA-Z0-9_-]* which means the first character must be a letter,
 and all following characters must be a dash, underscore, letter or digit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#name CertificateManagerCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#name CertificateManagerCertificate#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#deletion_policy CertificateManagerCertificate#deletion_policy}
 
 ---
 
@@ -1527,7 +1598,7 @@ description: str
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#description CertificateManagerCertificate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#description CertificateManagerCertificate#description}
 
 ---
 
@@ -1539,7 +1610,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#id CertificateManagerCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1559,7 +1630,7 @@ Set of label tags associated with the Certificate resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#labels CertificateManagerCertificate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#labels CertificateManagerCertificate#labels}
 
 ---
 
@@ -1573,7 +1644,7 @@ location: str
 
 The Certificate Manager location. If not specified, "global" is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#location CertificateManagerCertificate#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#location CertificateManagerCertificate#location}
 
 ---
 
@@ -1587,7 +1658,7 @@ managed: CertificateManagerCertificateManaged
 
 managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#managed CertificateManagerCertificate#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#managed CertificateManagerCertificate#managed}
 
 ---
 
@@ -1599,7 +1670,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#project CertificateManagerCertificate#project}.
 
 ---
 
@@ -1625,7 +1696,7 @@ See https://cloud.google.com/compute/docs/regions-zones.
 CLIENT_AUTH: Certificates with CLIENT_AUTH scope are used by a load balancer (TLS client) to be presented to the backend (TLS server) when backend mTLS is configured.
 See https://cloud.google.com/load-balancing/docs/backend-authenticated-tls-backend-mtls#client-certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#scope CertificateManagerCertificate#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#scope CertificateManagerCertificate#scope}
 
 ---
 
@@ -1639,7 +1710,7 @@ self_managed: CertificateManagerCertificateSelfManaged
 
 self_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#self_managed CertificateManagerCertificate#self_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#self_managed CertificateManagerCertificate#self_managed}
 
 ---
 
@@ -1653,7 +1724,7 @@ timeouts: CertificateManagerCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#timeouts CertificateManagerCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#timeouts CertificateManagerCertificate#timeouts}
 
 ---
 
@@ -1691,7 +1762,7 @@ dns_authorizations: typing.List[str]
 
 Authorizations that will be used for performing domain authorization. Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#dns_authorizations CertificateManagerCertificate#dns_authorizations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#dns_authorizations CertificateManagerCertificate#dns_authorizations}
 
 ---
 
@@ -1705,7 +1776,7 @@ domains: typing.List[str]
 
 The domains for which a managed SSL certificate will be generated. Wildcard domains are only supported with DNS challenge resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#domains CertificateManagerCertificate#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#domains CertificateManagerCertificate#domains}
 
 ---
 
@@ -1722,7 +1793,7 @@ The resource name for a CertificateIssuanceConfig used to configure private PKI 
 If this field is not set, the certificates will instead be publicly signed as documented at https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs#caa.
 Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#issuance_config CertificateManagerCertificate#issuance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#issuance_config CertificateManagerCertificate#issuance_config}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1788,7 +1859,7 @@ The certificate chain in PEM-encoded form.
 
 Leaf certificate comes first, followed by intermediate ones if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#certificate_pem CertificateManagerCertificate#certificate_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#certificate_pem CertificateManagerCertificate#certificate_pem}
 
 ---
 
@@ -1804,7 +1875,7 @@ The certificate chain in PEM-encoded form.
 
 Leaf certificate comes first, followed by intermediate ones if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#pem_certificate CertificateManagerCertificate#pem_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#pem_certificate CertificateManagerCertificate#pem_certificate}
 
 ---
 
@@ -1818,7 +1889,7 @@ pem_private_key: str
 
 The private key of the leaf certificate in PEM-encoded form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#pem_private_key CertificateManagerCertificate#pem_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#pem_private_key CertificateManagerCertificate#pem_private_key}
 
 ---
 
@@ -1832,7 +1903,7 @@ private_key_pem: str
 
 The private key of the leaf certificate in PEM-encoded form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#private_key_pem CertificateManagerCertificate#private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#private_key_pem CertificateManagerCertificate#private_key_pem}
 
 ---
 
@@ -1854,9 +1925,9 @@ certificateManagerCertificate.CertificateManagerCertificateTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#create CertificateManagerCertificate#create}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#delete CertificateManagerCertificate#delete}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#update CertificateManagerCertificate#update}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#create CertificateManagerCertificate#create}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#delete CertificateManagerCertificate#delete}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#update CertificateManagerCertificate#update}. |
 
 ---
 
@@ -1868,7 +1939,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#create CertificateManagerCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#create CertificateManagerCertificate#create}.
 
 ---
 
@@ -1880,7 +1951,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#delete CertificateManagerCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#delete CertificateManagerCertificate#delete}.
 
 ---
 
@@ -1892,7 +1963,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate#update CertificateManagerCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate#update CertificateManagerCertificate#update}.
 
 ---
 

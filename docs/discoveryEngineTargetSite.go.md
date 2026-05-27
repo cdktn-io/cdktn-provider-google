@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineTargetSite <a name="DiscoveryEngineTargetSite" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site google_discovery_engine_target_site}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site google_discovery_engine_target_site}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.resetExactMatch">ResetExactMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.resetProject">ResetProject</a></code> | *No description.* |
@@ -404,6 +405,12 @@ func PutTimeouts(value DiscoveryEngineTargetSiteTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetExactMatch` <a name="ResetExactMatch" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.resetExactMatch"></a>
 
 ```go
@@ -537,7 +544,7 @@ The construct id used in the generated config for the DiscoveryEngineTargetSite 
 
 The id of the existing DiscoveryEngineTargetSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -577,6 +584,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeoutsOutputReference">DiscoveryEngineTargetSiteTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.dataStoreIdInput">DataStoreIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.exactMatchInput">ExactMatchInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
@@ -585,6 +593,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.dataStoreId">DataStoreId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.exactMatch">ExactMatch</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.location">Location</a></code> | <code>*string</code> | *No description.* |
@@ -836,6 +845,16 @@ func DataStoreIdInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ExactMatchInput`<sup>Optional</sup> <a name="ExactMatchInput" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.exactMatchInput"></a>
 
 ```go
@@ -910,6 +929,16 @@ func TypeInput() *string
 
 ```go
 func DataStoreId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -1014,6 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginet
 	DataStoreId: *string,
 	Location: *string,
 	ProvidedUriPattern: *string,
+	DeletionPolicy: *string,
 	ExactMatch: interface{},
 	Id: *string,
 	Project: *string,
@@ -1036,9 +1066,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginet
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.dataStoreId">DataStoreId</a></code> | <code>*string</code> | The unique id of the data store. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.location">Location</a></code> | <code>*string</code> | The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu". |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.providedUriPattern">ProvidedUriPattern</a></code> | <code>*string</code> | The user provided URI pattern from which the 'generated_uri_pattern' is generated. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.exactMatch">ExactMatch</a></code> | <code>interface{}</code> | If set to false, a uri_pattern is generated to include all pages whose address contains the provided_uri_pattern. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#id DiscoveryEngineTargetSite#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#project DiscoveryEngineTargetSite#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#id DiscoveryEngineTargetSite#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#project DiscoveryEngineTargetSite#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts">DiscoveryEngineTargetSiteTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.type">Type</a></code> | <code>*string</code> | The possible target site types. Possible values: ["INCLUDE", "EXCLUDE"]. |
 
@@ -1124,7 +1155,7 @@ DataStoreId *string
 
 The unique id of the data store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#data_store_id DiscoveryEngineTargetSite#data_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#data_store_id DiscoveryEngineTargetSite#data_store_id}
 
 ---
 
@@ -1138,7 +1169,7 @@ Location *string
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#location DiscoveryEngineTargetSite#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#location DiscoveryEngineTargetSite#location}
 
 ---
 
@@ -1152,7 +1183,28 @@ ProvidedUriPattern *string
 
 The user provided URI pattern from which the 'generated_uri_pattern' is generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#provided_uri_pattern DiscoveryEngineTargetSite#provided_uri_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#provided_uri_pattern DiscoveryEngineTargetSite#provided_uri_pattern}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#deletion_policy DiscoveryEngineTargetSite#deletion_policy}
 
 ---
 
@@ -1172,7 +1224,7 @@ just the specific page if the provided_uri_pattern is a specific one.
 provided_uri_pattern is always normalized to generate the URI pattern to
 be used by the search engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#exact_match DiscoveryEngineTargetSite#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#exact_match DiscoveryEngineTargetSite#exact_match}
 
 ---
 
@@ -1184,7 +1236,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#id DiscoveryEngineTargetSite#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#id DiscoveryEngineTargetSite#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1199,7 +1251,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#project DiscoveryEngineTargetSite#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#project DiscoveryEngineTargetSite#project}.
 
 ---
 
@@ -1213,7 +1265,7 @@ Timeouts DiscoveryEngineTargetSiteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#timeouts DiscoveryEngineTargetSite#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#timeouts DiscoveryEngineTargetSite#timeouts}
 
 ---
 
@@ -1227,7 +1279,7 @@ Type *string
 
 The possible target site types. Possible values: ["INCLUDE", "EXCLUDE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#type DiscoveryEngineTargetSite#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#type DiscoveryEngineTargetSite#type}
 
 ---
 
@@ -1287,8 +1339,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#create DiscoveryEngineTargetSite#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#delete DiscoveryEngineTargetSite#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#create DiscoveryEngineTargetSite#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#delete DiscoveryEngineTargetSite#delete}. |
 
 ---
 
@@ -1300,7 +1352,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#create DiscoveryEngineTargetSite#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#create DiscoveryEngineTargetSite#create}.
 
 ---
 
@@ -1312,7 +1364,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_target_site#delete DiscoveryEngineTargetSite#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_target_site#delete DiscoveryEngineTargetSite#delete}.
 
 ---
 

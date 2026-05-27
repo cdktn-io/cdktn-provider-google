@@ -4,7 +4,7 @@
 
 ### NetworkServicesHttpRoute <a name="NetworkServicesHttpRoute" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route google_network_services_http_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route google_network_services_http_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer"></a>
 
@@ -24,6 +24,7 @@ networkServicesHttpRoute.NetworkServicesHttpRoute(
   hostnames: typing.List[str],
   name: str,
   rules: IResolvable | typing.List[NetworkServicesHttpRouteRules],
+  deletion_policy: str = None,
   description: str = None,
   gateways: typing.List[str] = None,
   id: str = None,
@@ -48,12 +49,13 @@ networkServicesHttpRoute.NetworkServicesHttpRoute(
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.hostnames">hostnames</a></code> | <code>typing.List[str]</code> | Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the HttpRoute resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRules">NetworkServicesHttpRouteRules</a>]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.description">description</a></code> | <code>str</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.gateways">gateways</a></code> | <code>typing.List[str]</code> | Gateways defines a list of gateways this HttpRoute is attached to, as one of the routing rules to route the requests served by the gateway. |
-| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Set of label tags associated with the HttpRoute resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.meshes">meshes</a></code> | <code>typing.List[str]</code> | Meshes defines a list of meshes this HttpRoute is attached to, as one of the routing rules to route the requests served by the mesh. |
-| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts">NetworkServicesHttpRouteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#hostnames NetworkServicesHttpRoute#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#hostnames NetworkServicesHttpRoute#hostnames}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the HttpRoute resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#name NetworkServicesHttpRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#name NetworkServicesHttpRoute#name}
 
 ---
 
@@ -144,7 +146,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#rules NetworkServicesHttpRoute#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#rules NetworkServicesHttpRoute#rules}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#deletion_policy NetworkServicesHttpRoute#deletion_policy}
 
 ---
 
@@ -154,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#description NetworkServicesHttpRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#description NetworkServicesHttpRoute#description}
 
 ---
 
@@ -166,7 +185,7 @@ Gateways defines a list of gateways this HttpRoute is attached to, as one of the
 
 Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#gateways NetworkServicesHttpRoute#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#gateways NetworkServicesHttpRoute#gateways}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -176,7 +195,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -192,7 +211,7 @@ Set of label tags associated with the HttpRoute resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#labels NetworkServicesHttpRoute#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#labels NetworkServicesHttpRoute#labels}
 
 ---
 
@@ -205,7 +224,7 @@ Meshes defines a list of meshes this HttpRoute is attached to, as one of the rou
 Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>.
 The attached Mesh should be of a type SIDECAR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#meshes NetworkServicesHttpRoute#meshes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#meshes NetworkServicesHttpRoute#meshes}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -215,7 +234,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}.
 
 ---
 
@@ -225,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#timeouts NetworkServicesHttpRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#timeouts NetworkServicesHttpRoute#timeouts}
 
 ---
 
@@ -259,6 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.putRules">put_rules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.resetGateways">reset_gateways</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.resetId">reset_id</a></code> | *No description.* |
@@ -645,7 +665,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}.
 
 ---
 
@@ -653,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}.
 
 ---
 
@@ -661,9 +681,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.resetDescription"></a>
 
@@ -821,7 +847,7 @@ The construct id used in the generated config for the NetworkServicesHttpRoute t
 
 The id of the existing NetworkServicesHttpRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,6 +884,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeoutsOutputReference">NetworkServicesHttpRouteTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.gatewaysInput">gateways_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.hostnamesInput">hostnames_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -868,6 +895,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.rulesInput">rules_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRules">NetworkServicesHttpRouteRules</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts">NetworkServicesHttpRouteTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.gateways">gateways</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.hostnames">hostnames</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1091,6 +1119,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.descriptionInput"></a>
 
 ```python
@@ -1188,6 +1226,16 @@ timeouts_input: IResolvable | NetworkServicesHttpRouteTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts">NetworkServicesHttpRouteTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1309,6 +1357,7 @@ networkServicesHttpRoute.NetworkServicesHttpRouteConfig(
   hostnames: typing.List[str],
   name: str,
   rules: IResolvable | typing.List[NetworkServicesHttpRouteRules],
+  deletion_policy: str = None,
   description: str = None,
   gateways: typing.List[str] = None,
   id: str = None,
@@ -1333,12 +1382,13 @@ networkServicesHttpRoute.NetworkServicesHttpRouteConfig(
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.hostnames">hostnames</a></code> | <code>typing.List[str]</code> | Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.name">name</a></code> | <code>str</code> | Name of the HttpRoute resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRules">NetworkServicesHttpRouteRules</a>]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.description">description</a></code> | <code>str</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.gateways">gateways</a></code> | <code>typing.List[str]</code> | Gateways defines a list of gateways this HttpRoute is attached to, as one of the routing rules to route the requests served by the gateway. |
-| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Set of label tags associated with the HttpRoute resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.meshes">meshes</a></code> | <code>typing.List[str]</code> | Meshes defines a list of meshes this HttpRoute is attached to, as one of the routing rules to route the requests served by the mesh. |
-| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts">NetworkServicesHttpRouteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1423,7 +1473,7 @@ hostnames: typing.List[str]
 
 Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#hostnames NetworkServicesHttpRoute#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#hostnames NetworkServicesHttpRoute#hostnames}
 
 ---
 
@@ -1437,7 +1487,7 @@ name: str
 
 Name of the HttpRoute resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#name NetworkServicesHttpRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#name NetworkServicesHttpRoute#name}
 
 ---
 
@@ -1451,7 +1501,28 @@ rules: IResolvable | typing.List[NetworkServicesHttpRouteRules]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#rules NetworkServicesHttpRoute#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#rules NetworkServicesHttpRoute#rules}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#deletion_policy NetworkServicesHttpRoute#deletion_policy}
 
 ---
 
@@ -1465,7 +1536,7 @@ description: str
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#description NetworkServicesHttpRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#description NetworkServicesHttpRoute#description}
 
 ---
 
@@ -1481,7 +1552,7 @@ Gateways defines a list of gateways this HttpRoute is attached to, as one of the
 
 Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#gateways NetworkServicesHttpRoute#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#gateways NetworkServicesHttpRoute#gateways}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1495,7 +1566,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1515,7 +1586,7 @@ Set of label tags associated with the HttpRoute resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#labels NetworkServicesHttpRoute#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#labels NetworkServicesHttpRoute#labels}
 
 ---
 
@@ -1532,7 +1603,7 @@ Meshes defines a list of meshes this HttpRoute is attached to, as one of the rou
 Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>.
 The attached Mesh should be of a type SIDECAR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#meshes NetworkServicesHttpRoute#meshes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#meshes NetworkServicesHttpRoute#meshes}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1546,7 +1617,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}.
 
 ---
 
@@ -1560,7 +1631,7 @@ timeouts: NetworkServicesHttpRouteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#timeouts NetworkServicesHttpRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#timeouts NetworkServicesHttpRoute#timeouts}
 
 ---
 
@@ -1596,7 +1667,7 @@ action: NetworkServicesHttpRouteRulesAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#action NetworkServicesHttpRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#action NetworkServicesHttpRoute#action}
 
 ---
 
@@ -1610,7 +1681,7 @@ matches: IResolvable | typing.List[NetworkServicesHttpRouteRulesMatches]
 
 matches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#matches NetworkServicesHttpRoute#matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#matches NetworkServicesHttpRoute#matches}
 
 ---
 
@@ -1662,7 +1733,7 @@ cors_policy: NetworkServicesHttpRouteRulesActionCorsPolicy
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#cors_policy NetworkServicesHttpRoute#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#cors_policy NetworkServicesHttpRoute#cors_policy}
 
 ---
 
@@ -1676,7 +1747,7 @@ destinations: IResolvable | typing.List[NetworkServicesHttpRouteRulesActionDesti
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#destinations NetworkServicesHttpRoute#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#destinations NetworkServicesHttpRoute#destinations}
 
 ---
 
@@ -1690,7 +1761,7 @@ fault_injection_policy: NetworkServicesHttpRouteRulesActionFaultInjectionPolicy
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#fault_injection_policy NetworkServicesHttpRoute#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#fault_injection_policy NetworkServicesHttpRoute#fault_injection_policy}
 
 ---
 
@@ -1704,7 +1775,7 @@ redirect: NetworkServicesHttpRouteRulesActionRedirect
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#redirect NetworkServicesHttpRoute#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#redirect NetworkServicesHttpRoute#redirect}
 
 ---
 
@@ -1718,7 +1789,7 @@ request_header_modifier: NetworkServicesHttpRouteRulesActionRequestHeaderModifie
 
 request_header_modifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#request_header_modifier NetworkServicesHttpRoute#request_header_modifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#request_header_modifier NetworkServicesHttpRoute#request_header_modifier}
 
 ---
 
@@ -1732,7 +1803,7 @@ request_mirror_policy: NetworkServicesHttpRouteRulesActionRequestMirrorPolicy
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#request_mirror_policy NetworkServicesHttpRoute#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#request_mirror_policy NetworkServicesHttpRoute#request_mirror_policy}
 
 ---
 
@@ -1746,7 +1817,7 @@ response_header_modifier: NetworkServicesHttpRouteRulesActionResponseHeaderModif
 
 response_header_modifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#response_header_modifier NetworkServicesHttpRoute#response_header_modifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#response_header_modifier NetworkServicesHttpRoute#response_header_modifier}
 
 ---
 
@@ -1760,7 +1831,7 @@ retry_policy: NetworkServicesHttpRouteRulesActionRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#retry_policy NetworkServicesHttpRoute#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#retry_policy NetworkServicesHttpRoute#retry_policy}
 
 ---
 
@@ -1774,7 +1845,7 @@ timeout: str
 
 Specifies the timeout for selected route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#timeout NetworkServicesHttpRoute#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#timeout NetworkServicesHttpRoute#timeout}
 
 ---
 
@@ -1788,7 +1859,7 @@ url_rewrite: NetworkServicesHttpRouteRulesActionUrlRewrite
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#url_rewrite NetworkServicesHttpRoute#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#url_rewrite NetworkServicesHttpRoute#url_rewrite}
 
 ---
 
@@ -1836,7 +1907,7 @@ allow_credentials: bool | IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_credentials NetworkServicesHttpRoute#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_credentials NetworkServicesHttpRoute#allow_credentials}
 
 ---
 
@@ -1850,7 +1921,7 @@ allow_headers: typing.List[str]
 
 Specifies the content for Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_headers NetworkServicesHttpRoute#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_headers NetworkServicesHttpRoute#allow_headers}
 
 ---
 
@@ -1864,7 +1935,7 @@ allow_methods: typing.List[str]
 
 Specifies the content for Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_methods NetworkServicesHttpRoute#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_methods NetworkServicesHttpRoute#allow_methods}
 
 ---
 
@@ -1878,7 +1949,7 @@ allow_origin_regexes: typing.List[str]
 
 Specifies the regular expression patterns that match allowed origins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_origin_regexes NetworkServicesHttpRoute#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_origin_regexes NetworkServicesHttpRoute#allow_origin_regexes}
 
 ---
 
@@ -1892,7 +1963,7 @@ allow_origins: typing.List[str]
 
 Specifies the list of origins that will be allowed to do CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_origins NetworkServicesHttpRoute#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_origins NetworkServicesHttpRoute#allow_origins}
 
 ---
 
@@ -1908,7 +1979,7 @@ If true, the CORS policy is disabled.
 
 The default value is false, which indicates that the CORS policy is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#disabled NetworkServicesHttpRoute#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#disabled NetworkServicesHttpRoute#disabled}
 
 ---
 
@@ -1922,7 +1993,7 @@ expose_headers: typing.List[str]
 
 Specifies the content for Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#expose_headers NetworkServicesHttpRoute#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#expose_headers NetworkServicesHttpRoute#expose_headers}
 
 ---
 
@@ -1936,7 +2007,7 @@ max_age: str
 
 Specifies how long result of a preflight request can be cached in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#max_age NetworkServicesHttpRoute#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#max_age NetworkServicesHttpRoute#max_age}
 
 ---
 
@@ -1972,7 +2043,7 @@ service_name: str
 
 The URL of a BackendService to route traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
 
 ---
 
@@ -1991,7 +2062,7 @@ If only one serviceName is specified and it has a weight greater than 0, 100% of
 If weights are specified for any one service name, they need to be specified for all of them.
 If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
 
 ---
 
@@ -2027,7 +2098,7 @@ abort: NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#abort NetworkServicesHttpRoute#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#abort NetworkServicesHttpRoute#abort}
 
 ---
 
@@ -2041,7 +2112,7 @@ delay: NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#delay NetworkServicesHttpRoute#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#delay NetworkServicesHttpRoute#delay}
 
 ---
 
@@ -2077,7 +2148,7 @@ http_status: typing.Union[int, float]
 
 The HTTP status code used to abort the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#http_status NetworkServicesHttpRoute#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#http_status NetworkServicesHttpRoute#http_status}
 
 ---
 
@@ -2091,7 +2162,7 @@ percentage: typing.Union[int, float]
 
 The percentage of traffic which will be aborted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
 
 ---
 
@@ -2127,7 +2198,7 @@ fixed_delay: str
 
 Specify a fixed delay before forwarding the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#fixed_delay NetworkServicesHttpRoute#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#fixed_delay NetworkServicesHttpRoute#fixed_delay}
 
 ---
 
@@ -2141,7 +2212,7 @@ percentage: typing.Union[int, float]
 
 The percentage of traffic on which delay will be injected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
 
 ---
 
@@ -2187,7 +2258,7 @@ host_redirect: str
 
 The host that will be used in the redirect response instead of the one that was supplied in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#host_redirect NetworkServicesHttpRoute#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#host_redirect NetworkServicesHttpRoute#host_redirect}
 
 ---
 
@@ -2201,7 +2272,7 @@ https_redirect: bool | IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#https_redirect NetworkServicesHttpRoute#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#https_redirect NetworkServicesHttpRoute#https_redirect}
 
 ---
 
@@ -2217,7 +2288,7 @@ The path that will be used in the redirect response instead of the one that was 
 
 pathRedirect can not be supplied together with prefixRedirect. Supply one alone or neither. If neither is supplied, the path of the original request will be used for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#path_redirect NetworkServicesHttpRoute#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#path_redirect NetworkServicesHttpRoute#path_redirect}
 
 ---
 
@@ -2231,7 +2302,7 @@ port_redirect: typing.Union[int, float]
 
 The port that will be used in the redirected request instead of the one that was supplied in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#port_redirect NetworkServicesHttpRoute#port_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#port_redirect NetworkServicesHttpRoute#port_redirect}
 
 ---
 
@@ -2245,7 +2316,7 @@ prefix_rewrite: str
 
 Indicates that during redirection, the matched prefix (or path) should be swapped with this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#prefix_rewrite NetworkServicesHttpRoute#prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#prefix_rewrite NetworkServicesHttpRoute#prefix_rewrite}
 
 ---
 
@@ -2259,7 +2330,7 @@ response_code: str
 
 The HTTP Status code to use for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#response_code NetworkServicesHttpRoute#response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#response_code NetworkServicesHttpRoute#response_code}
 
 ---
 
@@ -2273,7 +2344,7 @@ strip_query: bool | IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#strip_query NetworkServicesHttpRoute#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#strip_query NetworkServicesHttpRoute#strip_query}
 
 ---
 
@@ -2311,7 +2382,7 @@ add: typing.Mapping[str]
 
 Add the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
 
 ---
 
@@ -2325,7 +2396,7 @@ remove: typing.List[str]
 
 Remove headers (matching by header names) specified in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
 
 ---
 
@@ -2339,7 +2410,7 @@ set: typing.Mapping[str]
 
 Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
 
 ---
 
@@ -2373,7 +2444,7 @@ destination: NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#destination NetworkServicesHttpRoute#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#destination NetworkServicesHttpRoute#destination}
 
 ---
 
@@ -2409,7 +2480,7 @@ service_name: str
 
 The URL of a BackendService to route traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
 
 ---
 
@@ -2428,7 +2499,7 @@ If only one serviceName is specified and it has a weight greater than 0, 100% of
 If weights are specified for any one service name, they need to be specified for all of them.
 If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
 
 ---
 
@@ -2466,7 +2537,7 @@ add: typing.Mapping[str]
 
 Add the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
 
 ---
 
@@ -2480,7 +2551,7 @@ remove: typing.List[str]
 
 Remove headers (matching by header names) specified in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
 
 ---
 
@@ -2494,7 +2565,7 @@ set: typing.Mapping[str]
 
 Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
 
 ---
 
@@ -2532,7 +2603,7 @@ num_retries: typing.Union[int, float]
 
 Specifies the allowed number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#num_retries NetworkServicesHttpRoute#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#num_retries NetworkServicesHttpRoute#num_retries}
 
 ---
 
@@ -2548,7 +2619,7 @@ Specifies a non-zero timeout per retry attempt.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#per_try_timeout NetworkServicesHttpRoute#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#per_try_timeout NetworkServicesHttpRoute#per_try_timeout}
 
 ---
 
@@ -2562,7 +2633,7 @@ retry_conditions: typing.List[str]
 
 Specifies one or more conditions when this retry policy applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#retry_conditions NetworkServicesHttpRoute#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#retry_conditions NetworkServicesHttpRoute#retry_conditions}
 
 ---
 
@@ -2598,7 +2669,7 @@ host_rewrite: str
 
 Prior to forwarding the request to the selected destination, the requests host header is replaced by this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#host_rewrite NetworkServicesHttpRoute#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#host_rewrite NetworkServicesHttpRoute#host_rewrite}
 
 ---
 
@@ -2612,7 +2683,7 @@ path_prefix_rewrite: str
 
 Prior to forwarding the request to the selected destination, the matching portion of the requests path is replaced by this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#path_prefix_rewrite NetworkServicesHttpRoute#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#path_prefix_rewrite NetworkServicesHttpRoute#path_prefix_rewrite}
 
 ---
 
@@ -2656,7 +2727,7 @@ full_path_match: str
 
 The HTTP request path value should exactly match this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#full_path_match NetworkServicesHttpRoute#full_path_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#full_path_match NetworkServicesHttpRoute#full_path_match}
 
 ---
 
@@ -2670,7 +2741,7 @@ headers: IResolvable | typing.List[NetworkServicesHttpRouteRulesMatchesHeaders]
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#headers NetworkServicesHttpRoute#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#headers NetworkServicesHttpRoute#headers}
 
 ---
 
@@ -2684,7 +2755,7 @@ ignore_case: bool | IResolvable
 
 Specifies if prefixMatch and fullPathMatch matches are case sensitive. The default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#ignore_case NetworkServicesHttpRoute#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#ignore_case NetworkServicesHttpRoute#ignore_case}
 
 ---
 
@@ -2698,7 +2769,7 @@ prefix_match: str
 
 The HTTP request path value must begin with specified prefixMatch. prefixMatch must begin with a /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
 
 ---
 
@@ -2712,7 +2783,7 @@ query_parameters: IResolvable | typing.List[NetworkServicesHttpRouteRulesMatches
 
 query_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#query_parameters NetworkServicesHttpRoute#query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#query_parameters NetworkServicesHttpRoute#query_parameters}
 
 ---
 
@@ -2728,7 +2799,7 @@ The HTTP request path value must satisfy the regular expression specified by reg
 
 For regular expression grammar, please see https://github.com/google/re2/wiki/Syntax
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
 
 ---
 
@@ -2776,7 +2847,7 @@ exact_match: str
 
 The value of the header should match exactly the content of exactMatch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
 
 ---
 
@@ -2790,7 +2861,7 @@ header: str
 
 The name of the HTTP header to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#header NetworkServicesHttpRoute#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#header NetworkServicesHttpRoute#header}
 
 ---
 
@@ -2804,7 +2875,7 @@ invert_match: bool | IResolvable
 
 If specified, the match result will be inverted before checking. Default value is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#invert_match NetworkServicesHttpRoute#invert_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#invert_match NetworkServicesHttpRoute#invert_match}
 
 ---
 
@@ -2818,7 +2889,7 @@ prefix_match: str
 
 The value of the header must start with the contents of prefixMatch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
 
 ---
 
@@ -2832,7 +2903,7 @@ present_match: bool | IResolvable
 
 A header with headerName must exist. The match takes place whether or not the header has a value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
 
 ---
 
@@ -2846,7 +2917,7 @@ range_match: NetworkServicesHttpRouteRulesMatchesHeadersRangeMatch
 
 range_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#range_match NetworkServicesHttpRoute#range_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#range_match NetworkServicesHttpRoute#range_match}
 
 ---
 
@@ -2860,7 +2931,7 @@ regex_match: str
 
 The value of the header must match the regular expression specified in regexMatch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
 
 ---
 
@@ -2874,7 +2945,7 @@ suffix_match: str
 
 The value of the header must end with the contents of suffixMatch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#suffix_match NetworkServicesHttpRoute#suffix_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#suffix_match NetworkServicesHttpRoute#suffix_match}
 
 ---
 
@@ -2910,7 +2981,7 @@ end: typing.Union[int, float]
 
 End of the range (exclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#end NetworkServicesHttpRoute#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#end NetworkServicesHttpRoute#end}
 
 ---
 
@@ -2924,7 +2995,7 @@ start: typing.Union[int, float]
 
 Start of the range (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#start NetworkServicesHttpRoute#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#start NetworkServicesHttpRoute#start}
 
 ---
 
@@ -2964,7 +3035,7 @@ exact_match: str
 
 The value of the query parameter must exactly match the contents of exactMatch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
 
 ---
 
@@ -2978,7 +3049,7 @@ present_match: bool | IResolvable
 
 Specifies that the QueryParameterMatcher matches if request contains query parameter, irrespective of whether the parameter has a value or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
 
 ---
 
@@ -2992,7 +3063,7 @@ query_parameter: str
 
 The name of the query parameter to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#query_parameter NetworkServicesHttpRoute#query_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#query_parameter NetworkServicesHttpRoute#query_parameter}
 
 ---
 
@@ -3006,7 +3077,7 @@ regex_match: str
 
 The value of the query parameter must match the regular expression specified by regexMatch.For regular expression grammar, please see https://github.com/google/re2/wiki/Syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
 
 ---
 
@@ -3028,9 +3099,9 @@ networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}. |
 
 ---
 
@@ -3042,7 +3113,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}.
 
 ---
 
@@ -3054,7 +3125,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}.
 
 ---
 
@@ -3066,7 +3137,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}.
 
 ---
 
@@ -5011,7 +5082,7 @@ def put_abort(
 
 The HTTP status code used to abort the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#http_status NetworkServicesHttpRoute#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#http_status NetworkServicesHttpRoute#http_status}
 
 ---
 
@@ -5021,7 +5092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of traffic which will be aborted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
 
 ---
 
@@ -5040,7 +5111,7 @@ def put_delay(
 
 Specify a fixed delay before forwarding the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#fixed_delay NetworkServicesHttpRoute#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#fixed_delay NetworkServicesHttpRoute#fixed_delay}
 
 ---
 
@@ -5050,7 +5121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of traffic on which delay will be injected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
 
 ---
 
@@ -5424,7 +5495,7 @@ def put_cors_policy(
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_credentials NetworkServicesHttpRoute#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_credentials NetworkServicesHttpRoute#allow_credentials}
 
 ---
 
@@ -5434,7 +5505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_headers NetworkServicesHttpRoute#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_headers NetworkServicesHttpRoute#allow_headers}
 
 ---
 
@@ -5444,7 +5515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_methods NetworkServicesHttpRoute#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_methods NetworkServicesHttpRoute#allow_methods}
 
 ---
 
@@ -5454,7 +5525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the regular expression patterns that match allowed origins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_origin_regexes NetworkServicesHttpRoute#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_origin_regexes NetworkServicesHttpRoute#allow_origin_regexes}
 
 ---
 
@@ -5464,7 +5535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the list of origins that will be allowed to do CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_origins NetworkServicesHttpRoute#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#allow_origins NetworkServicesHttpRoute#allow_origins}
 
 ---
 
@@ -5476,7 +5547,7 @@ If true, the CORS policy is disabled.
 
 The default value is false, which indicates that the CORS policy is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#disabled NetworkServicesHttpRoute#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#disabled NetworkServicesHttpRoute#disabled}
 
 ---
 
@@ -5486,7 +5557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#expose_headers NetworkServicesHttpRoute#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#expose_headers NetworkServicesHttpRoute#expose_headers}
 
 ---
 
@@ -5496,7 +5567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies how long result of a preflight request can be cached in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#max_age NetworkServicesHttpRoute#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#max_age NetworkServicesHttpRoute#max_age}
 
 ---
 
@@ -5529,7 +5600,7 @@ def put_fault_injection_policy(
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#abort NetworkServicesHttpRoute#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#abort NetworkServicesHttpRoute#abort}
 
 ---
 
@@ -5539,7 +5610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#delay NetworkServicesHttpRoute#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#delay NetworkServicesHttpRoute#delay}
 
 ---
 
@@ -5563,7 +5634,7 @@ def put_redirect(
 
 The host that will be used in the redirect response instead of the one that was supplied in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#host_redirect NetworkServicesHttpRoute#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#host_redirect NetworkServicesHttpRoute#host_redirect}
 
 ---
 
@@ -5573,7 +5644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, the URL scheme in the redirected request is set to https.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#https_redirect NetworkServicesHttpRoute#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#https_redirect NetworkServicesHttpRoute#https_redirect}
 
 ---
 
@@ -5585,7 +5656,7 @@ The path that will be used in the redirect response instead of the one that was 
 
 pathRedirect can not be supplied together with prefixRedirect. Supply one alone or neither. If neither is supplied, the path of the original request will be used for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#path_redirect NetworkServicesHttpRoute#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#path_redirect NetworkServicesHttpRoute#path_redirect}
 
 ---
 
@@ -5595,7 +5666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The port that will be used in the redirected request instead of the one that was supplied in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#port_redirect NetworkServicesHttpRoute#port_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#port_redirect NetworkServicesHttpRoute#port_redirect}
 
 ---
 
@@ -5605,7 +5676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates that during redirection, the matched prefix (or path) should be swapped with this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#prefix_rewrite NetworkServicesHttpRoute#prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#prefix_rewrite NetworkServicesHttpRoute#prefix_rewrite}
 
 ---
 
@@ -5615,7 +5686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The HTTP Status code to use for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#response_code NetworkServicesHttpRoute#response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#response_code NetworkServicesHttpRoute#response_code}
 
 ---
 
@@ -5625,7 +5696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#strip_query NetworkServicesHttpRoute#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#strip_query NetworkServicesHttpRoute#strip_query}
 
 ---
 
@@ -5645,7 +5716,7 @@ def put_request_header_modifier(
 
 Add the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
 
 ---
 
@@ -5655,7 +5726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Remove headers (matching by header names) specified in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
 
 ---
 
@@ -5665,7 +5736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
 
 ---
 
@@ -5683,7 +5754,7 @@ def put_request_mirror_policy(
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#destination NetworkServicesHttpRoute#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#destination NetworkServicesHttpRoute#destination}
 
 ---
 
@@ -5703,7 +5774,7 @@ def put_response_header_modifier(
 
 Add the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
 
 ---
 
@@ -5713,7 +5784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Remove headers (matching by header names) specified in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
 
 ---
 
@@ -5723,7 +5794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
 
 ---
 
@@ -5743,7 +5814,7 @@ def put_retry_policy(
 
 Specifies the allowed number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#num_retries NetworkServicesHttpRoute#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#num_retries NetworkServicesHttpRoute#num_retries}
 
 ---
 
@@ -5755,7 +5826,7 @@ Specifies a non-zero timeout per retry attempt.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#per_try_timeout NetworkServicesHttpRoute#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#per_try_timeout NetworkServicesHttpRoute#per_try_timeout}
 
 ---
 
@@ -5765,7 +5836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies one or more conditions when this retry policy applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#retry_conditions NetworkServicesHttpRoute#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#retry_conditions NetworkServicesHttpRoute#retry_conditions}
 
 ---
 
@@ -5784,7 +5855,7 @@ def put_url_rewrite(
 
 Prior to forwarding the request to the selected destination, the requests host header is replaced by this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#host_rewrite NetworkServicesHttpRoute#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#host_rewrite NetworkServicesHttpRoute#host_rewrite}
 
 ---
 
@@ -5794,7 +5865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Prior to forwarding the request to the selected destination, the matching portion of the requests path is replaced by this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#path_prefix_rewrite NetworkServicesHttpRoute#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#path_prefix_rewrite NetworkServicesHttpRoute#path_prefix_rewrite}
 
 ---
 
@@ -7539,7 +7610,7 @@ def put_destination(
 
 The URL of a BackendService to route traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
 
 ---
 
@@ -7554,7 +7625,7 @@ If only one serviceName is specified and it has a weight greater than 0, 100% of
 If weights are specified for any one service name, they need to be specified for all of them.
 If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
 
 ---
 
@@ -9298,7 +9369,7 @@ def put_range_match(
 
 End of the range (exclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#end NetworkServicesHttpRoute#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#end NetworkServicesHttpRoute#end}
 
 ---
 
@@ -9308,7 +9379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Start of the range (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#start NetworkServicesHttpRoute#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#start NetworkServicesHttpRoute#start}
 
 ---
 
@@ -11423,7 +11494,7 @@ def put_action(
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#cors_policy NetworkServicesHttpRoute#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#cors_policy NetworkServicesHttpRoute#cors_policy}
 
 ---
 
@@ -11433,7 +11504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#destinations NetworkServicesHttpRoute#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#destinations NetworkServicesHttpRoute#destinations}
 
 ---
 
@@ -11443,7 +11514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#fault_injection_policy NetworkServicesHttpRoute#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#fault_injection_policy NetworkServicesHttpRoute#fault_injection_policy}
 
 ---
 
@@ -11453,7 +11524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#redirect NetworkServicesHttpRoute#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#redirect NetworkServicesHttpRoute#redirect}
 
 ---
 
@@ -11463,7 +11534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 request_header_modifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#request_header_modifier NetworkServicesHttpRoute#request_header_modifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#request_header_modifier NetworkServicesHttpRoute#request_header_modifier}
 
 ---
 
@@ -11473,7 +11544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#request_mirror_policy NetworkServicesHttpRoute#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#request_mirror_policy NetworkServicesHttpRoute#request_mirror_policy}
 
 ---
 
@@ -11483,7 +11554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_header_modifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#response_header_modifier NetworkServicesHttpRoute#response_header_modifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#response_header_modifier NetworkServicesHttpRoute#response_header_modifier}
 
 ---
 
@@ -11493,7 +11564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#retry_policy NetworkServicesHttpRoute#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#retry_policy NetworkServicesHttpRoute#retry_policy}
 
 ---
 
@@ -11503,7 +11574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the timeout for selected route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#timeout NetworkServicesHttpRoute#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#timeout NetworkServicesHttpRoute#timeout}
 
 ---
 
@@ -11513,7 +11584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#url_rewrite NetworkServicesHttpRoute#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_http_route#url_rewrite NetworkServicesHttpRoute#url_rewrite}
 
 ---
 

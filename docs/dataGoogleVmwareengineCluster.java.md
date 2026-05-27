@@ -4,7 +4,7 @@
 
 ### DataGoogleVmwareengineCluster <a name="DataGoogleVmwareengineCluster" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataGoogleVmwareengineCluster.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The ID of the Cluster. |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | The resource name of the private cloud to create a new cluster in. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
 
 ---
 
@@ -121,7 +121,7 @@ The resource name of the private cloud to create a new cluster in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
 
 ---
 
@@ -129,7 +129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataGoogleVmwareengineClus
 
 The id of the existing DataGoogleVmwareengineCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -515,6 +515,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.autoscalingSettings">autoscalingSettings</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterAutoscalingSettingsList">DataGoogleVmwareengineClusterAutoscalingSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.datastoreMountConfig">datastoreMountConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList">DataGoogleVmwareengineClusterDatastoreMountConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.management">management</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.nodeTypeConfigs">nodeTypeConfigs</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterNodeTypeConfigsList">DataGoogleVmwareengineClusterNodeTypeConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -678,6 +679,16 @@ public DataGoogleVmwareengineClusterDatastoreMountConfigList getDatastoreMountCo
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList">DataGoogleVmwareengineClusterDatastoreMountConfigList</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -905,7 +916,7 @@ DataGoogleVmwareengineClusterConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | The ID of the Cluster. |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | The resource name of the private cloud to create a new cluster in. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
 
 ---
 
@@ -989,7 +1000,7 @@ public java.lang.String getName();
 
 The ID of the Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
 
 ---
 
@@ -1006,7 +1017,7 @@ The resource name of the private cloud to create a new cluster in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
 
 ---
 
@@ -1018,7 +1029,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

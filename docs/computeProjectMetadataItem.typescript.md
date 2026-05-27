@@ -4,7 +4,7 @@
 
 ### ComputeProjectMetadataItem <a name="ComputeProjectMetadataItem" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item google_compute_project_metadata_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item google_compute_project_metadata_item}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ public putTimeouts(value: ComputeProjectMetadataItemTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.resetId"></a>
 
 ```typescript
@@ -523,7 +530,7 @@ The construct id used in the generated config for the ComputeProjectMetadataItem
 
 The id of the existing ComputeProjectMetadataItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,11 +561,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference">ComputeProjectMetadataItemTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts">ComputeProjectMetadataItemTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -718,6 +727,16 @@ public readonly timeouts: ComputeProjectMetadataItemTimeoutsOutputReference;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.idInput"></a>
 
 ```typescript
@@ -762,6 +781,16 @@ public readonly timeoutsInput: IResolvable | ComputeProjectMetadataItemTimeouts;
 
 ```typescript
 public readonly valueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -851,7 +880,8 @@ const computeProjectMetadataItemConfig: computeProjectMetadataItem.ComputeProjec
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.key">key</a></code> | <code>string</code> | The metadata key to set. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.value">value</a></code> | <code>string</code> | The value to set for the given metadata key. |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts">ComputeProjectMetadataItemTimeouts</a></code> | timeouts block. |
 
@@ -937,7 +967,7 @@ public readonly key: string;
 
 The metadata key to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#key ComputeProjectMetadataItem#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#key ComputeProjectMetadataItem#key}
 
 ---
 
@@ -951,7 +981,29 @@ public readonly value: string;
 
 The value to set for the given metadata key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#value ComputeProjectMetadataItem#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#value ComputeProjectMetadataItem#value}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#deletion_policy ComputeProjectMetadataItem#deletion_policy}
 
 ---
 
@@ -963,7 +1015,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +1034,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#project ComputeProjectMetadataItem#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#project ComputeProjectMetadataItem#project}
 
 ---
 
@@ -996,7 +1048,7 @@ public readonly timeouts: ComputeProjectMetadataItemTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#timeouts ComputeProjectMetadataItem#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#timeouts ComputeProjectMetadataItem#timeouts}
 
 ---
 
@@ -1014,9 +1066,9 @@ const computeProjectMetadataItemTimeouts: computeProjectMetadataItem.ComputeProj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}. |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}. |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}. |
 
 ---
 
@@ -1028,7 +1080,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}.
 
 ---
 
@@ -1040,7 +1092,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}.
 
 ---
 
@@ -1052,7 +1104,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}.
 
 ---
 

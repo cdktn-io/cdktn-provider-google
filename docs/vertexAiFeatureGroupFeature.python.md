@@ -4,7 +4,7 @@
 
 ### VertexAiFeatureGroupFeature <a name="VertexAiFeatureGroupFeature" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature google_vertex_ai_feature_group_feature}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer"></a>
 
@@ -24,6 +24,7 @@ vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature(
   feature_group: str,
   name: str,
   region: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -47,10 +48,11 @@ vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature(
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.featureGroup">feature_group</a></code> | <code>str</code> | The name of the Feature Group. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of the Feature Group Feature. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.region">region</a></code> | <code>str</code> | The region for the resource. It should be the same as the feature group's region. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the FeatureGroup. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels with user-defined metadata to organize your FeatureGroup. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts">VertexAiFeatureGroupFeatureTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.versionColumnName">version_column_name</a></code> | <code>str</code> | The name of the BigQuery Table/View column hosting data for this version. |
 
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the Feature Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#feature_group VertexAiFeatureGroupFeature#feature_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#feature_group VertexAiFeatureGroupFeature#feature_group}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the Feature Group Feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#name VertexAiFeatureGroupFeature#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#name VertexAiFeatureGroupFeature#name}
 
 ---
 
@@ -142,7 +144,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region for the resource. It should be the same as the feature group's region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#region VertexAiFeatureGroupFeature#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#region VertexAiFeatureGroupFeature#region}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#deletion_policy VertexAiFeatureGroupFeature#deletion_policy}
 
 ---
 
@@ -152,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the FeatureGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#description VertexAiFeatureGroupFeature#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#description VertexAiFeatureGroupFeature#description}
 
 ---
 
@@ -160,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -176,7 +195,7 @@ The labels with user-defined metadata to organize your FeatureGroup.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#labels VertexAiFeatureGroupFeature#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#labels VertexAiFeatureGroupFeature#labels}
 
 ---
 
@@ -184,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}.
 
 ---
 
@@ -194,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#timeouts VertexAiFeatureGroupFeature#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#timeouts VertexAiFeatureGroupFeature#timeouts}
 
 ---
 
@@ -206,7 +225,7 @@ The name of the BigQuery Table/View column hosting data for this version.
 
 If no value is provided, will use featureId.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#version_column_name VertexAiFeatureGroupFeature#version_column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#version_column_name VertexAiFeatureGroupFeature#version_column_name}
 
 ---
 
@@ -239,6 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.resetLabels">reset_labels</a></code> | *No description.* |
@@ -610,7 +630,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#create VertexAiFeatureGroupFeature#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#create VertexAiFeatureGroupFeature#create}.
 
 ---
 
@@ -618,7 +638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#delete VertexAiFeatureGroupFeature#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#delete VertexAiFeatureGroupFeature#delete}.
 
 ---
 
@@ -626,9 +646,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#update VertexAiFeatureGroupFeature#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#update VertexAiFeatureGroupFeature#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.resetDescription"></a>
 
@@ -780,7 +806,7 @@ The construct id used in the generated config for the VertexAiFeatureGroupFeatur
 
 The id of the existing VertexAiFeatureGroupFeature that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,6 +841,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeoutsOutputReference">VertexAiFeatureGroupFeatureTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.featureGroupInput">feature_group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -824,6 +851,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts">VertexAiFeatureGroupFeatureTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.versionColumnNameInput">version_column_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.featureGroup">feature_group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1027,6 +1055,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.descriptionInput"></a>
 
 ```python
@@ -1111,6 +1149,16 @@ timeouts_input: IResolvable | VertexAiFeatureGroupFeatureTimeouts
 
 ```python
 version_column_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1235,6 +1283,7 @@ vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig(
   feature_group: str,
   name: str,
   region: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -1258,10 +1307,11 @@ vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig(
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.featureGroup">feature_group</a></code> | <code>str</code> | The name of the Feature Group. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.name">name</a></code> | <code>str</code> | The resource name of the Feature Group Feature. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.region">region</a></code> | <code>str</code> | The region for the resource. It should be the same as the feature group's region. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.description">description</a></code> | <code>str</code> | The description of the FeatureGroup. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels with user-defined metadata to organize your FeatureGroup. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts">VertexAiFeatureGroupFeatureTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.versionColumnName">version_column_name</a></code> | <code>str</code> | The name of the BigQuery Table/View column hosting data for this version. |
 
@@ -1347,7 +1397,7 @@ feature_group: str
 
 The name of the Feature Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#feature_group VertexAiFeatureGroupFeature#feature_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#feature_group VertexAiFeatureGroupFeature#feature_group}
 
 ---
 
@@ -1361,7 +1411,7 @@ name: str
 
 The resource name of the Feature Group Feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#name VertexAiFeatureGroupFeature#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#name VertexAiFeatureGroupFeature#name}
 
 ---
 
@@ -1375,7 +1425,28 @@ region: str
 
 The region for the resource. It should be the same as the feature group's region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#region VertexAiFeatureGroupFeature#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#region VertexAiFeatureGroupFeature#region}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#deletion_policy VertexAiFeatureGroupFeature#deletion_policy}
 
 ---
 
@@ -1389,7 +1460,7 @@ description: str
 
 The description of the FeatureGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#description VertexAiFeatureGroupFeature#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#description VertexAiFeatureGroupFeature#description}
 
 ---
 
@@ -1401,7 +1472,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#id VertexAiFeatureGroupFeature#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1421,7 +1492,7 @@ The labels with user-defined metadata to organize your FeatureGroup.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#labels VertexAiFeatureGroupFeature#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#labels VertexAiFeatureGroupFeature#labels}
 
 ---
 
@@ -1433,7 +1504,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#project VertexAiFeatureGroupFeature#project}.
 
 ---
 
@@ -1447,7 +1518,7 @@ timeouts: VertexAiFeatureGroupFeatureTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#timeouts VertexAiFeatureGroupFeature#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#timeouts VertexAiFeatureGroupFeature#timeouts}
 
 ---
 
@@ -1463,7 +1534,7 @@ The name of the BigQuery Table/View column hosting data for this version.
 
 If no value is provided, will use featureId.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#version_column_name VertexAiFeatureGroupFeature#version_column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#version_column_name VertexAiFeatureGroupFeature#version_column_name}
 
 ---
 
@@ -1485,9 +1556,9 @@ vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#create VertexAiFeatureGroupFeature#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#delete VertexAiFeatureGroupFeature#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#update VertexAiFeatureGroupFeature#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#create VertexAiFeatureGroupFeature#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#delete VertexAiFeatureGroupFeature#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#update VertexAiFeatureGroupFeature#update}. |
 
 ---
 
@@ -1499,7 +1570,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#create VertexAiFeatureGroupFeature#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#create VertexAiFeatureGroupFeature#create}.
 
 ---
 
@@ -1511,7 +1582,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#delete VertexAiFeatureGroupFeature#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#delete VertexAiFeatureGroupFeature#delete}.
 
 ---
 
@@ -1523,7 +1594,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_group_feature#update VertexAiFeatureGroupFeature#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vertex_ai_feature_group_feature#update VertexAiFeatureGroupFeature#update}.
 
 ---
 

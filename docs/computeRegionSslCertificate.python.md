@@ -4,7 +4,7 @@
 
 ### ComputeRegionSslCertificate <a name="ComputeRegionSslCertificate" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate google_compute_region_ssl_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate google_compute_region_ssl_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer"></a>
 
@@ -22,6 +22,7 @@ computeRegionSslCertificate.ComputeRegionSslCertificate(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   certificate: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   name: str = None,
@@ -47,14 +48,15 @@ computeRegionSslCertificate.ComputeRegionSslCertificate(
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.certificate">certificate</a></code> | <code>str</code> | The certificate in PEM format. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Creates a unique name beginning with the specified prefix. Conflicts with name. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | The write-only private key in PEM format. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.privateKeyWo">private_key_wo</a></code> | <code>str</code> | The write-only private key in PEM format. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.privateKeyWoVersion">private_key_wo_version</a></code> | <code>str</code> | Triggers update of 'private_key_wo' write-only. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.region">region</a></code> | <code>str</code> | The Region in which the created regional ssl certificate should reside. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts">ComputeRegionSslCertificateTimeouts</a></code> | timeouts block. |
 
@@ -129,7 +131,24 @@ The certificate in PEM format.
 The certificate chain must be no greater than 5 certs long.
 The chain must include at least one intermediate cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#certificate ComputeRegionSslCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#certificate ComputeRegionSslCertificate#certificate}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#deletion_policy ComputeRegionSslCertificate#deletion_policy}
 
 ---
 
@@ -139,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#description ComputeRegionSslCertificate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#description ComputeRegionSslCertificate#description}
 
 ---
 
@@ -147,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -170,7 +189,7 @@ character, which cannot be a dash.
 
 These are in the same namespace as the managed SSL certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#name ComputeRegionSslCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#name ComputeRegionSslCertificate#name}
 
 ---
 
@@ -180,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Creates a unique name beginning with the specified prefix. Conflicts with name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#name_prefix ComputeRegionSslCertificate#name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#name_prefix ComputeRegionSslCertificate#name_prefix}
 
 ---
 
@@ -190,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The write-only private key in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#private_key ComputeRegionSslCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#private_key ComputeRegionSslCertificate#private_key}
 
 ---
 
@@ -200,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The write-only private key in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#private_key_wo ComputeRegionSslCertificate#private_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#private_key_wo ComputeRegionSslCertificate#private_key_wo}
 
 ---
 
@@ -212,7 +231,7 @@ Triggers update of 'private_key_wo' write-only.
 
 Increment this value when an update to 'private_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#private_key_wo_version ComputeRegionSslCertificate#private_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#private_key_wo_version ComputeRegionSslCertificate#private_key_wo_version}
 
 ---
 
@@ -220,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}.
 
 ---
 
@@ -232,7 +251,7 @@ The Region in which the created regional ssl certificate should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#region ComputeRegionSslCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#region ComputeRegionSslCertificate#region}
 
 ---
 
@@ -242,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#timeouts ComputeRegionSslCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#timeouts ComputeRegionSslCertificate#timeouts}
 
 ---
 
@@ -275,6 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetName">reset_name</a></code> | *No description.* |
@@ -649,7 +669,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}.
 
 ---
 
@@ -657,9 +677,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetDescription"></a>
 
@@ -835,7 +861,7 @@ The construct id used in the generated config for the ComputeRegionSslCertificat
 
 The id of the existing ComputeRegionSslCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,6 +897,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference">ComputeRegionSslCertificateTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.certificateInput">certificate_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -882,6 +909,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts">ComputeRegionSslCertificateTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.certificate">certificate</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1096,6 +1124,16 @@ certificate_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.descriptionInput"></a>
 
 ```python
@@ -1200,6 +1238,16 @@ timeouts_input: IResolvable | ComputeRegionSslCertificateTimeouts
 
 ```python
 certificate: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1332,6 +1380,7 @@ computeRegionSslCertificate.ComputeRegionSslCertificateConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   certificate: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   name: str = None,
@@ -1357,14 +1406,15 @@ computeRegionSslCertificate.ComputeRegionSslCertificateConfig(
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.certificate">certificate</a></code> | <code>str</code> | The certificate in PEM format. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Creates a unique name beginning with the specified prefix. Conflicts with name. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKey">private_key</a></code> | <code>str</code> | The write-only private key in PEM format. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKeyWo">private_key_wo</a></code> | <code>str</code> | The write-only private key in PEM format. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKeyWoVersion">private_key_wo_version</a></code> | <code>str</code> | Triggers update of 'private_key_wo' write-only. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.region">region</a></code> | <code>str</code> | The Region in which the created regional ssl certificate should reside. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts">ComputeRegionSslCertificateTimeouts</a></code> | timeouts block. |
 
@@ -1453,7 +1503,28 @@ The certificate in PEM format.
 The certificate chain must be no greater than 5 certs long.
 The chain must include at least one intermediate cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#certificate ComputeRegionSslCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#certificate ComputeRegionSslCertificate#certificate}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#deletion_policy ComputeRegionSslCertificate#deletion_policy}
 
 ---
 
@@ -1467,7 +1538,7 @@ description: str
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#description ComputeRegionSslCertificate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#description ComputeRegionSslCertificate#description}
 
 ---
 
@@ -1479,7 +1550,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1506,7 +1577,7 @@ character, which cannot be a dash.
 
 These are in the same namespace as the managed SSL certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#name ComputeRegionSslCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#name ComputeRegionSslCertificate#name}
 
 ---
 
@@ -1520,7 +1591,7 @@ name_prefix: str
 
 Creates a unique name beginning with the specified prefix. Conflicts with name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#name_prefix ComputeRegionSslCertificate#name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#name_prefix ComputeRegionSslCertificate#name_prefix}
 
 ---
 
@@ -1534,7 +1605,7 @@ private_key: str
 
 The write-only private key in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#private_key ComputeRegionSslCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#private_key ComputeRegionSslCertificate#private_key}
 
 ---
 
@@ -1548,7 +1619,7 @@ private_key_wo: str
 
 The write-only private key in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#private_key_wo ComputeRegionSslCertificate#private_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#private_key_wo ComputeRegionSslCertificate#private_key_wo}
 
 ---
 
@@ -1564,7 +1635,7 @@ Triggers update of 'private_key_wo' write-only.
 
 Increment this value when an update to 'private_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#private_key_wo_version ComputeRegionSslCertificate#private_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#private_key_wo_version ComputeRegionSslCertificate#private_key_wo_version}
 
 ---
 
@@ -1576,7 +1647,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}.
 
 ---
 
@@ -1592,7 +1663,7 @@ The Region in which the created regional ssl certificate should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#region ComputeRegionSslCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#region ComputeRegionSslCertificate#region}
 
 ---
 
@@ -1606,7 +1677,7 @@ timeouts: ComputeRegionSslCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#timeouts ComputeRegionSslCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#timeouts ComputeRegionSslCertificate#timeouts}
 
 ---
 
@@ -1627,8 +1698,8 @@ computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}. |
 
 ---
 
@@ -1640,7 +1711,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}.
 
 ---
 
@@ -1652,7 +1723,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}.
 
 ---
 

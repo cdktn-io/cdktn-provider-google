@@ -4,7 +4,7 @@
 
 ### BinaryAuthorizationAttestor <a name="BinaryAuthorizationAttestor" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor google_binary_authorization_attestor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor google_binary_authorization_attestor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer"></a>
 
@@ -21,6 +21,7 @@ BinaryAuthorizationAttestor.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .attestationAuthorityNote(BinaryAuthorizationAttestorAttestationAuthorityNote)
     .name(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -41,9 +42,10 @@ BinaryAuthorizationAttestor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.attestationAuthorityNote">attestationAuthorityNote</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNote">BinaryAuthorizationAttestorAttestationAuthorityNote</a></code> | attestation_authority_note block. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The resource name. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts">BinaryAuthorizationAttestorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 attestation_authority_note block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
 
 ---
 
@@ -124,7 +126,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#deletion_policy BinaryAuthorizationAttestor#deletion_policy}
 
 ---
 
@@ -134,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
 
 ---
 
@@ -142,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +172,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
 
 ---
 
@@ -163,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
 
 ---
 
@@ -197,6 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.putAttestationAuthorityNote">putAttestationAuthorityNote</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.resetProject">resetProject</a></code> | *No description.* |
@@ -539,6 +559,12 @@ public void putTimeouts(BinaryAuthorizationAttestorTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.resetDescription"></a>
 
 ```java
@@ -666,7 +692,7 @@ The construct id used in the generated config for the BinaryAuthorizationAttesto
 
 The id of the existing BinaryAuthorizationAttestor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,11 +725,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.attestationAuthorityNote">attestationAuthorityNote</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference">BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference">BinaryAuthorizationAttestorTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.attestationAuthorityNoteInput">attestationAuthorityNoteInput</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNote">BinaryAuthorizationAttestorAttestationAuthorityNote</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts">BinaryAuthorizationAttestorTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -883,6 +911,16 @@ public BinaryAuthorizationAttestorAttestationAuthorityNote getAttestationAuthori
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.descriptionInput"></a>
 
 ```java
@@ -930,6 +968,16 @@ public IResolvable|BinaryAuthorizationAttestorTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts">BinaryAuthorizationAttestorTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1032,7 +1080,7 @@ An attestation by this attestor is stored as a Container Analysis
 ATTESTATION_AUTHORITY Occurrence that names a container image
 and that links to this Note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#note_reference BinaryAuthorizationAttestor#note_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#note_reference BinaryAuthorizationAttestor#note_reference}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1048,7 +1096,7 @@ public IResolvable|java.util.List<BinaryAuthorizationAttestorAttestationAuthorit
 
 public_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
 
 ---
 
@@ -1088,7 +1136,7 @@ public java.lang.String getAsciiArmoredPgpPublicKey();
 
 ASCII-armored representation of a PGP public key, as the entire output by the command 'gpg --export --armor foo@example.com' (either LF or CRLF line endings). When using this field, id should be left blank. The BinAuthz API handlers will calculate the ID and fill it in automatically. BinAuthz computes this ID as the OpenPGP RFC4880 V4 fingerprint, represented as upper-case hex. If id is provided by the caller, it will be overwritten by the API-calculated ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#ascii_armored_pgp_public_key BinaryAuthorizationAttestor#ascii_armored_pgp_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#ascii_armored_pgp_public_key BinaryAuthorizationAttestor#ascii_armored_pgp_public_key}
 
 ---
 
@@ -1102,7 +1150,7 @@ public java.lang.String getComment();
 
 A descriptive comment. This field may be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#comment BinaryAuthorizationAttestor#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#comment BinaryAuthorizationAttestor#comment}
 
 ---
 
@@ -1123,7 +1171,7 @@ field exactly. Additional restrictions on this field can
 be imposed based on which public key type is encapsulated.
 See the documentation on publicKey cases below for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1188,7 @@ public BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKe
 
 pkix_public_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#pkix_public_key BinaryAuthorizationAttestor#pkix_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#pkix_public_key BinaryAuthorizationAttestor#pkix_public_key}
 
 ---
 
@@ -1176,7 +1224,7 @@ public java.lang.String getPublicKeyPem();
 
 A PEM-encoded public key, as described in 'https://tools.ietf.org/html/rfc7468#section-13'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#public_key_pem BinaryAuthorizationAttestor#public_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#public_key_pem BinaryAuthorizationAttestor#public_key_pem}
 
 ---
 
@@ -1195,7 +1243,7 @@ match the structure and any object identifiers encoded in
 publicKeyPem (i.e. this algorithm must match that of the
 public key).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#signature_algorithm BinaryAuthorizationAttestor#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#signature_algorithm BinaryAuthorizationAttestor#signature_algorithm}
 
 ---
 
@@ -1216,6 +1264,7 @@ BinaryAuthorizationAttestorConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .attestationAuthorityNote(BinaryAuthorizationAttestorAttestationAuthorityNote)
     .name(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -1236,9 +1285,10 @@ BinaryAuthorizationAttestorConfig.builder()
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.attestationAuthorityNote">attestationAuthorityNote</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNote">BinaryAuthorizationAttestorAttestationAuthorityNote</a></code> | attestation_authority_note block. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.name">name</a></code> | <code>java.lang.String</code> | The resource name. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.description">description</a></code> | <code>java.lang.String</code> | A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts">BinaryAuthorizationAttestorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1323,7 +1373,7 @@ public BinaryAuthorizationAttestorAttestationAuthorityNote getAttestationAuthori
 
 attestation_authority_note block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
 
 ---
 
@@ -1337,7 +1387,28 @@ public java.lang.String getName();
 
 The resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#deletion_policy BinaryAuthorizationAttestor#deletion_policy}
 
 ---
 
@@ -1351,7 +1422,7 @@ public java.lang.String getDescription();
 
 A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
 
 ---
 
@@ -1363,7 +1434,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1378,7 +1449,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
 
 ---
 
@@ -1392,7 +1463,7 @@ public BinaryAuthorizationAttestorTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
 
 ---
 
@@ -1414,9 +1485,9 @@ BinaryAuthorizationAttestorTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}. |
 
 ---
 
@@ -1428,7 +1499,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}.
 
 ---
 
@@ -1440,7 +1511,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}.
 
 ---
 
@@ -1452,7 +1523,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}.
 
 ---
 

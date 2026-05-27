@@ -4,7 +4,7 @@
 
 ### SpannerInstancePartition <a name="SpannerInstancePartition" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition google_spanner_instance_partition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition google_spanner_instance_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.putAutoscalingConfig">putAutoscalingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.resetAutoscalingConfig">resetAutoscalingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.resetNodeCount">resetNodeCount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.resetProcessingUnits">resetProcessingUnits</a></code> | *No description.* |
@@ -424,6 +425,12 @@ public putTimeouts(value: SpannerInstancePartitionTimeouts): void
 public resetAutoscalingConfig(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.resetId"></a>
 
 ```typescript
@@ -557,7 +564,7 @@ The construct id used in the generated config for the SpannerInstancePartition t
 
 The id of the existing SpannerInstancePartition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -592,6 +599,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeoutsOutputReference">SpannerInstancePartitionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.autoscalingConfigInput">autoscalingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfig">SpannerInstancePartitionAutoscalingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.configInput">configInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.instanceInput">instanceInput</a></code> | <code>string</code> | *No description.* |
@@ -601,6 +609,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts">SpannerInstancePartitionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.config">config</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.instance">instance</a></code> | <code>string</code> | *No description.* |
@@ -803,6 +812,16 @@ public readonly configInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.displayNameInput"></a>
 
 ```typescript
@@ -887,6 +906,16 @@ public readonly timeoutsInput: IResolvable | SpannerInstancePartitionTimeouts;
 
 ```typescript
 public readonly config: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -1012,7 +1041,7 @@ public readonly autoscalingLimits: SpannerInstancePartitionAutoscalingConfigAuto
 
 autoscaling_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#autoscaling_limits SpannerInstancePartition#autoscaling_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#autoscaling_limits SpannerInstancePartition#autoscaling_limits}
 
 ---
 
@@ -1026,7 +1055,7 @@ public readonly autoscalingTargets: SpannerInstancePartitionAutoscalingConfigAut
 
 autoscaling_targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#autoscaling_targets SpannerInstancePartition#autoscaling_targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#autoscaling_targets SpannerInstancePartition#autoscaling_targets}
 
 ---
 
@@ -1064,7 +1093,7 @@ Specifies maximum number of nodes allocated to the instance partition.
 If set, this number
 should be greater than or equal to min_nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#max_nodes SpannerInstancePartition#max_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#max_nodes SpannerInstancePartition#max_nodes}
 
 ---
 
@@ -1081,7 +1110,7 @@ Specifies maximum number of processing units allocated to the instance partition
 If set, this number should be multiples of 1000 and be greater than or equal to
 min_processing_units.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#max_processing_units SpannerInstancePartition#max_processing_units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#max_processing_units SpannerInstancePartition#max_processing_units}
 
 ---
 
@@ -1098,7 +1127,7 @@ Specifies number of nodes allocated to the instance partition.
 If set, this number
 should be greater than or equal to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#min_nodes SpannerInstancePartition#min_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#min_nodes SpannerInstancePartition#min_nodes}
 
 ---
 
@@ -1112,7 +1141,7 @@ public readonly minProcessingUnits: number;
 
 Specifies minimum number of processing units allocated to the instance partition. If set, this number should be multiples of 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#min_processing_units SpannerInstancePartition#min_processing_units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#min_processing_units SpannerInstancePartition#min_processing_units}
 
 ---
 
@@ -1148,7 +1177,7 @@ Specifies the target high priority cpu utilization percentage that the autoscale
 
 This number is on a scale from 0 (no utilization) to 100 (full utilization).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#high_priority_cpu_utilization_percent SpannerInstancePartition#high_priority_cpu_utilization_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#high_priority_cpu_utilization_percent SpannerInstancePartition#high_priority_cpu_utilization_percent}
 
 ---
 
@@ -1164,7 +1193,7 @@ Specifies the target storage utilization percentage that the autoscaler should b
 
 This number is on a scale from 0 (no utilization) to 100 (full utilization).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#storage_utilization_percent SpannerInstancePartition#storage_utilization_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#storage_utilization_percent SpannerInstancePartition#storage_utilization_percent}
 
 ---
 
@@ -1182,7 +1211,7 @@ This number is on a scale from 0 (no utilization) to 100 (full utilization). The
 If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
 The value should be higher than high_priority_cpu_utilization_percent if present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#total_cpu_utilization_percent SpannerInstancePartition#total_cpu_utilization_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#total_cpu_utilization_percent SpannerInstancePartition#total_cpu_utilization_percent}
 
 ---
 
@@ -1212,10 +1241,11 @@ const spannerInstancePartitionConfig: spannerInstancePartition.SpannerInstancePa
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.instance">instance</a></code> | <code>string</code> | The instance to create the instance partition in. |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.name">name</a></code> | <code>string</code> | A unique identifier for the instance partition, which cannot be changed after the instance partition is created. |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.autoscalingConfig">autoscalingConfig</a></code> | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfig">SpannerInstancePartitionAutoscalingConfig</a></code> | autoscaling_config block. |
-| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#id SpannerInstancePartition#id}. |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#id SpannerInstancePartition#id}. |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.nodeCount">nodeCount</a></code> | <code>number</code> | The number of nodes allocated to this instance partition. |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.processingUnits">processingUnits</a></code> | <code>number</code> | The number of processing units allocated to this instance partition. Exactly one of either node_count, processing_units, or autoscaling_config must be present. |
-| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#project SpannerInstancePartition#project}. |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#project SpannerInstancePartition#project}. |
 | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts">SpannerInstancePartitionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1300,7 +1330,7 @@ public readonly config: string;
 
 The name of the instance partition's configuration (similar to a region) which defines the geographic placement and replication of data in this instance partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#config SpannerInstancePartition#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#config SpannerInstancePartition#config}
 
 ---
 
@@ -1316,7 +1346,7 @@ The descriptive name for this instance partition as it appears in UIs.
 
 Must be unique per project and between 4 and 30 characters in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#display_name SpannerInstancePartition#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#display_name SpannerInstancePartition#display_name}
 
 ---
 
@@ -1330,7 +1360,7 @@ public readonly instance: string;
 
 The instance to create the instance partition in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#instance SpannerInstancePartition#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#instance SpannerInstancePartition#instance}
 
 ---
 
@@ -1347,7 +1377,7 @@ A unique identifier for the instance partition, which cannot be changed after th
 The name must be between 2 and 64 characters
 and match the regular expression [a-z][a-z0-9\\-]{0,61}[a-z0-9].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#name SpannerInstancePartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#name SpannerInstancePartition#name}
 
 ---
 
@@ -1361,7 +1391,29 @@ public readonly autoscalingConfig: SpannerInstancePartitionAutoscalingConfig;
 
 autoscaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#autoscaling_config SpannerInstancePartition#autoscaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#autoscaling_config SpannerInstancePartition#autoscaling_config}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#deletion_policy SpannerInstancePartition#deletion_policy}
 
 ---
 
@@ -1373,7 +1425,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#id SpannerInstancePartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#id SpannerInstancePartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1394,7 +1446,7 @@ One node equals
 1000 processing units. Exactly one of either node_count, processing_units,
 or autoscaling_config must be present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#node_count SpannerInstancePartition#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#node_count SpannerInstancePartition#node_count}
 
 ---
 
@@ -1408,7 +1460,7 @@ public readonly processingUnits: number;
 
 The number of processing units allocated to this instance partition. Exactly one of either node_count, processing_units, or autoscaling_config must be present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#processing_units SpannerInstancePartition#processing_units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#processing_units SpannerInstancePartition#processing_units}
 
 ---
 
@@ -1420,7 +1472,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#project SpannerInstancePartition#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#project SpannerInstancePartition#project}.
 
 ---
 
@@ -1434,7 +1486,7 @@ public readonly timeouts: SpannerInstancePartitionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#timeouts SpannerInstancePartition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#timeouts SpannerInstancePartition#timeouts}
 
 ---
 
@@ -1452,9 +1504,9 @@ const spannerInstancePartitionTimeouts: spannerInstancePartition.SpannerInstance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#create SpannerInstancePartition#create}. |
-| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#delete SpannerInstancePartition#delete}. |
-| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#update SpannerInstancePartition#update}. |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#create SpannerInstancePartition#create}. |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#delete SpannerInstancePartition#delete}. |
+| <code><a href="#@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#update SpannerInstancePartition#update}. |
 
 ---
 
@@ -1466,7 +1518,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#create SpannerInstancePartition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#create SpannerInstancePartition#create}.
 
 ---
 
@@ -1478,7 +1530,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#delete SpannerInstancePartition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#delete SpannerInstancePartition#delete}.
 
 ---
 
@@ -1490,7 +1542,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_partition#update SpannerInstancePartition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_instance_partition#update SpannerInstancePartition#update}.
 
 ---
 

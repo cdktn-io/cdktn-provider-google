@@ -4,7 +4,7 @@
 
 ### BigqueryRowAccessPolicy <a name="BigqueryRowAccessPolicy" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy google_bigquery_row_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy google_bigquery_row_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.resetGrantees">ResetGrantees</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.resetProject">ResetProject</a></code> | *No description.* |
@@ -403,6 +404,12 @@ private void PutTimeouts(BigqueryRowAccessPolicyTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetGrantees` <a name="ResetGrantees" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.resetGrantees"></a>
 
 ```csharp
@@ -530,7 +537,7 @@ The construct id used in the generated config for the BigqueryRowAccessPolicy to
 
 The id of the existing BigqueryRowAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,6 +571,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.lastModifiedTime">LastModifiedTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeoutsOutputReference">BigqueryRowAccessPolicyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.datasetIdInput">DatasetIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.filterPredicateInput">FilterPredicateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.granteesInput">GranteesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -572,6 +580,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.tableIdInput">TableIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts">BigqueryRowAccessPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.datasetId">DatasetId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.filterPredicate">FilterPredicate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.grantees">Grantees</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -763,6 +772,16 @@ public string DatasetIdInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `FilterPredicateInput`<sup>Optional</sup> <a name="FilterPredicateInput" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.filterPredicateInput"></a>
 
 ```csharp
@@ -837,6 +856,16 @@ public IResolvable|BigqueryRowAccessPolicyTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string DatasetId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -942,6 +971,7 @@ new BigqueryRowAccessPolicyConfig {
     string FilterPredicate,
     string PolicyId,
     string TableId,
+    string DeletionPolicy = null,
     string[] Grantees = null,
     string Id = null,
     string Project = null,
@@ -964,9 +994,10 @@ new BigqueryRowAccessPolicyConfig {
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.filterPredicate">FilterPredicate</a></code> | <code>string</code> | A SQL boolean expression that represents the rows defined by this row access policy, similar to the boolean expression in a WHERE clause of a SELECT query on a table. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.policyId">PolicyId</a></code> | <code>string</code> | The ID of the row access policy. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.tableId">TableId</a></code> | <code>string</code> | The ID of the table containing this row access policy. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.grantees">Grantees</a></code> | <code>string[]</code> | Input only. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts">BigqueryRowAccessPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1051,7 +1082,7 @@ public string DatasetId { get; set; }
 
 The ID of the dataset containing this row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#dataset_id BigqueryRowAccessPolicy#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#dataset_id BigqueryRowAccessPolicy#dataset_id}
 
 ---
 
@@ -1073,7 +1104,7 @@ date_field = CAST('2019-9-27' as DATE)
 nullable_field is not NULL
 numeric_field BETWEEN 1.0 AND 5.0
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#filter_predicate BigqueryRowAccessPolicy#filter_predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#filter_predicate BigqueryRowAccessPolicy#filter_predicate}
 
 ---
 
@@ -1091,7 +1122,7 @@ The ID must contain only
 letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum
 length is 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#policy_id BigqueryRowAccessPolicy#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#policy_id BigqueryRowAccessPolicy#policy_id}
 
 ---
 
@@ -1105,7 +1136,28 @@ public string TableId { get; set; }
 
 The ID of the table containing this row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#table_id BigqueryRowAccessPolicy#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#table_id BigqueryRowAccessPolicy#table_id}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#deletion_policy BigqueryRowAccessPolicy#deletion_policy}
 
 ---
 
@@ -1143,7 +1195,7 @@ grantees types:
   BigQuery requires authentication before a user can access the service,
   allUsers includes only authenticated users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#grantees BigqueryRowAccessPolicy#grantees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#grantees BigqueryRowAccessPolicy#grantees}
 
 ---
 
@@ -1155,7 +1207,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1170,7 +1222,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}.
 
 ---
 
@@ -1184,7 +1236,7 @@ public BigqueryRowAccessPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#timeouts BigqueryRowAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#timeouts BigqueryRowAccessPolicy#timeouts}
 
 ---
 
@@ -1206,9 +1258,9 @@ new BigqueryRowAccessPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}. |
 
 ---
 
@@ -1220,7 +1272,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}.
 
 ---
 
@@ -1232,7 +1284,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}.
 
 ---
 
@@ -1244,7 +1296,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}.
 
 ---
 

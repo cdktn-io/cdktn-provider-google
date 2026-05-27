@@ -4,7 +4,7 @@
 
 ### MigrationCenterGroup <a name="MigrationCenterGroup" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group google_migration_center_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group google_migration_center_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer"></a>
 
@@ -23,6 +23,7 @@ migrationCenterGroup.MigrationCenterGroup(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   group_id: str,
   location: str,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   id: str = None,
@@ -45,11 +46,12 @@ migrationCenterGroup.MigrationCenterGroup(
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | Required. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the group. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | Optional. The description of the group. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Optional. User-friendly display name. |
-| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts">MigrationCenterGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Required.
 
 User specified ID for the group. It will become the last component of the group name. The ID must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. The ID must match the regular expression: '[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#group_id MigrationCenterGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#group_id MigrationCenterGroup#group_id}
 
 ---
 
@@ -132,7 +134,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#location MigrationCenterGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#location MigrationCenterGroup#location}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#deletion_policy MigrationCenterGroup#deletion_policy}
 
 ---
 
@@ -142,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The description of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#description MigrationCenterGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#description MigrationCenterGroup#description}
 
 ---
 
@@ -152,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. User-friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#display_name MigrationCenterGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#display_name MigrationCenterGroup#display_name}
 
 ---
 
@@ -160,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -176,7 +195,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#labels MigrationCenterGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#labels MigrationCenterGroup#labels}
 
 ---
 
@@ -184,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}.
 
 ---
 
@@ -194,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#timeouts MigrationCenterGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#timeouts MigrationCenterGroup#timeouts}
 
 ---
 
@@ -227,6 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.resetId">reset_id</a></code> | *No description.* |
@@ -598,7 +618,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#create MigrationCenterGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#create MigrationCenterGroup#create}.
 
 ---
 
@@ -606,7 +626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#delete MigrationCenterGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#delete MigrationCenterGroup#delete}.
 
 ---
 
@@ -614,9 +634,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#update MigrationCenterGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#update MigrationCenterGroup#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.resetDescription"></a>
 
@@ -768,7 +794,7 @@ The construct id used in the generated config for the MigrationCenterGroup to im
 
 The id of the existing MigrationCenterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,6 +830,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeoutsOutputReference">MigrationCenterGroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.groupIdInput">group_id_input</a></code> | <code>str</code> | *No description.* |
@@ -812,6 +839,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts">MigrationCenterGroupTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.groupId">group_id</a></code> | <code>str</code> | *No description.* |
@@ -1024,6 +1052,16 @@ update_time: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.descriptionInput"></a>
 
 ```python
@@ -1101,6 +1139,16 @@ timeouts_input: IResolvable | MigrationCenterGroupTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts">MigrationCenterGroupTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroup.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1211,6 +1259,7 @@ migrationCenterGroup.MigrationCenterGroupConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   group_id: str,
   location: str,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   id: str = None,
@@ -1233,11 +1282,12 @@ migrationCenterGroup.MigrationCenterGroupConfig(
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.groupId">group_id</a></code> | <code>str</code> | Required. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.location">location</a></code> | <code>str</code> | The location of the group. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.description">description</a></code> | <code>str</code> | Optional. The description of the group. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.displayName">display_name</a></code> | <code>str</code> | Optional. User-friendly display name. |
-| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts">MigrationCenterGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1324,7 +1374,7 @@ Required.
 
 User specified ID for the group. It will become the last component of the group name. The ID must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. The ID must match the regular expression: '[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#group_id MigrationCenterGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#group_id MigrationCenterGroup#group_id}
 
 ---
 
@@ -1338,7 +1388,28 @@ location: str
 
 The location of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#location MigrationCenterGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#location MigrationCenterGroup#location}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#deletion_policy MigrationCenterGroup#deletion_policy}
 
 ---
 
@@ -1352,7 +1423,7 @@ description: str
 
 Optional. The description of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#description MigrationCenterGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#description MigrationCenterGroup#description}
 
 ---
 
@@ -1366,7 +1437,7 @@ display_name: str
 
 Optional. User-friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#display_name MigrationCenterGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#display_name MigrationCenterGroup#display_name}
 
 ---
 
@@ -1378,7 +1449,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#id MigrationCenterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1398,7 +1469,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#labels MigrationCenterGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#labels MigrationCenterGroup#labels}
 
 ---
 
@@ -1410,7 +1481,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#project MigrationCenterGroup#project}.
 
 ---
 
@@ -1424,7 +1495,7 @@ timeouts: MigrationCenterGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#timeouts MigrationCenterGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#timeouts MigrationCenterGroup#timeouts}
 
 ---
 
@@ -1446,9 +1517,9 @@ migrationCenterGroup.MigrationCenterGroupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#create MigrationCenterGroup#create}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#delete MigrationCenterGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#update MigrationCenterGroup#update}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#create MigrationCenterGroup#create}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#delete MigrationCenterGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#update MigrationCenterGroup#update}. |
 
 ---
 
@@ -1460,7 +1531,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#create MigrationCenterGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#create MigrationCenterGroup#create}.
 
 ---
 
@@ -1472,7 +1543,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#delete MigrationCenterGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#delete MigrationCenterGroup#delete}.
 
 ---
 
@@ -1484,7 +1555,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group#update MigrationCenterGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_group#update MigrationCenterGroup#update}.
 
 ---
 
