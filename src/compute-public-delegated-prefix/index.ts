@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,29 @@ export interface ComputePublicDelegatedPrefixConfig extends cdktn.TerraformMetaA
   /**
   * The allocatable prefix length supported by this public delegated prefix. This field is optional and cannot be set for prefixes in DELEGATION mode. It cannot be set for IPv4 prefixes either, and it always defaults to 32.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#allocatable_prefix_length ComputePublicDelegatedPrefix#allocatable_prefix_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#allocatable_prefix_length ComputePublicDelegatedPrefix#allocatable_prefix_length}
   */
   readonly allocatablePrefixLength?: number;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#deletion_policy ComputePublicDelegatedPrefix#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#description ComputePublicDelegatedPrefix#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#description ComputePublicDelegatedPrefix#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#id ComputePublicDelegatedPrefix#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#id ComputePublicDelegatedPrefix#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +46,13 @@ export interface ComputePublicDelegatedPrefixConfig extends cdktn.TerraformMetaA
   /**
   * The IP address range, in CIDR format, represented by this public delegated prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#ip_cidr_range ComputePublicDelegatedPrefix#ip_cidr_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#ip_cidr_range ComputePublicDelegatedPrefix#ip_cidr_range}
   */
   readonly ipCidrRange: string;
   /**
   * If true, the prefix will be live migrated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#is_live_migration ComputePublicDelegatedPrefix#is_live_migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#is_live_migration ComputePublicDelegatedPrefix#is_live_migration}
   */
   readonly isLiveMigration?: boolean | cdktn.IResolvable;
   /**
@@ -50,7 +62,7 @@ export interface ComputePublicDelegatedPrefixConfig extends cdktn.TerraformMetaA
   *   * EXTERNAL_IPV6_SUBNETWORK_CREATION
   *   * INTERNAL_IPV6_SUBNETWORK_CREATION Possible values: ["DELEGATION", "EXTERNAL_IPV6_FORWARDING_RULE_CREATION", "EXTERNAL_IPV6_SUBNETWORK_CREATION", "INTERNAL_IPV6_SUBNETWORK_CREATION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#mode ComputePublicDelegatedPrefix#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#mode ComputePublicDelegatedPrefix#mode}
   */
   readonly mode?: string;
   /**
@@ -61,29 +73,29 @@ export interface ComputePublicDelegatedPrefixConfig extends cdktn.TerraformMetaA
   * following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#name ComputePublicDelegatedPrefix#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#name ComputePublicDelegatedPrefix#name}
   */
   readonly name: string;
   /**
   * The URL of parent prefix. Either PublicAdvertisedPrefix or PublicDelegatedPrefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#parent_prefix ComputePublicDelegatedPrefix#parent_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#parent_prefix ComputePublicDelegatedPrefix#parent_prefix}
   */
   readonly parentPrefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#project ComputePublicDelegatedPrefix#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#project ComputePublicDelegatedPrefix#project}
   */
   readonly project?: string;
   /**
   * A region where the prefix will reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#region ComputePublicDelegatedPrefix#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#region ComputePublicDelegatedPrefix#region}
   */
   readonly region: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#timeouts ComputePublicDelegatedPrefix#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#timeouts ComputePublicDelegatedPrefix#timeouts}
   */
   readonly timeouts?: ComputePublicDelegatedPrefixTimeouts;
 }
@@ -202,7 +214,7 @@ export class ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList extends c
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -214,11 +226,11 @@ export class ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList extends c
 }
 export interface ComputePublicDelegatedPrefixTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#create ComputePublicDelegatedPrefix#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#create ComputePublicDelegatedPrefix#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#delete ComputePublicDelegatedPrefix#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#delete ComputePublicDelegatedPrefix#delete}
   */
   readonly delete?: string;
 }
@@ -341,7 +353,7 @@ export class ComputePublicDelegatedPrefixTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix}
 */
 export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
 
@@ -357,7 +369,7 @@ export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputePublicDelegatedPrefix resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputePublicDelegatedPrefix to import
-  * @param importFromId The id of the existing ComputePublicDelegatedPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputePublicDelegatedPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputePublicDelegatedPrefix to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -369,7 +381,7 @@ export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -380,7 +392,7 @@ export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_public_delegated_prefix',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -392,6 +404,7 @@ export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._allocatablePrefixLength = config.allocatablePrefixLength;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._ipCidrRange = config.ipCidrRange;
@@ -422,6 +435,22 @@ export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allocatablePrefixLengthInput() {
     return this._allocatablePrefixLength;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -600,6 +629,7 @@ export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocatable_prefix_length: cdktn.numberToTerraform(this._allocatablePrefixLength),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       ip_cidr_range: cdktn.stringToTerraform(this._ipCidrRange),
@@ -620,6 +650,12 @@ export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),

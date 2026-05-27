@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +15,44 @@ export interface ApigeeDeveloperAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of API products associated with the developer app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#api_products ApigeeDeveloperApp#api_products}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#api_products ApigeeDeveloperApp#api_products}
   */
   readonly apiProducts?: string[];
   /**
   * Developer app family.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#app_family ApigeeDeveloperApp#app_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#app_family ApigeeDeveloperApp#app_family}
   */
   readonly appFamily?: string;
   /**
   * Callback URL used by OAuth 2.0 authorization servers to communicate
   * authorization codes back to developer apps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#callback_url ApigeeDeveloperApp#callback_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#callback_url ApigeeDeveloperApp#callback_url}
   */
   readonly callbackUrl: string;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#deletion_policy ApigeeDeveloperApp#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
   /**
   * Email address of the developer.
   * This value is used to uniquely identify the developer in Apigee hybrid.
   * Note that the email address has to be in lowercase only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#developer_email ApigeeDeveloperApp#developer_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#developer_email ApigeeDeveloperApp#developer_email}
   */
   readonly developerEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#id ApigeeDeveloperApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#id ApigeeDeveloperApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -51,20 +63,20 @@ export interface ApigeeDeveloperAppConfig extends cdktn.TerraformMetaArguments {
   * for the developer app. If not set or left to the default value of -1,
   * the API key never expires. The expiration time can't be updated after it is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#key_expires_in ApigeeDeveloperApp#key_expires_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#key_expires_in ApigeeDeveloperApp#key_expires_in}
   */
   readonly keyExpiresIn?: string;
   /**
   * Name of the developer app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization associated with the Apigee instance,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#org_id ApigeeDeveloperApp#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#org_id ApigeeDeveloperApp#org_id}
   */
   readonly orgId: string;
   /**
@@ -72,25 +84,25 @@ export interface ApigeeDeveloperAppConfig extends cdktn.TerraformMetaArguments {
   * The specified scopes must already exist for the API product that
   * you associate with the developer app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#scopes ApigeeDeveloperApp#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#scopes ApigeeDeveloperApp#scopes}
   */
   readonly scopes?: string[];
   /**
   * Status of the credential. Valid values include approved or revoked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#status ApigeeDeveloperApp#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#status ApigeeDeveloperApp#status}
   */
   readonly status?: string;
   /**
   * attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#attributes ApigeeDeveloperApp#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#attributes ApigeeDeveloperApp#attributes}
   */
   readonly attributes?: ApigeeDeveloperAppAttributes[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#timeouts ApigeeDeveloperApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#timeouts ApigeeDeveloperApp#timeouts}
   */
   readonly timeouts?: ApigeeDeveloperAppTimeouts;
 }
@@ -164,7 +176,7 @@ export class ApigeeDeveloperAppCredentialsApiProductsList extends cdktn.ComplexL
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -244,7 +256,7 @@ export class ApigeeDeveloperAppCredentialsAttributesList extends cdktn.ComplexLi
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -356,7 +368,7 @@ export class ApigeeDeveloperAppCredentialsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -370,13 +382,13 @@ export interface ApigeeDeveloperAppAttributes {
   /**
   * Key of the attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
   */
   readonly name?: string;
   /**
   * Value of the attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#value ApigeeDeveloperApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#value ApigeeDeveloperApp#value}
   */
   readonly value?: string;
 }
@@ -509,7 +521,7 @@ export class ApigeeDeveloperAppAttributesList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -521,15 +533,15 @@ export class ApigeeDeveloperAppAttributesList extends cdktn.ComplexList {
 }
 export interface ApigeeDeveloperAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#create ApigeeDeveloperApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#create ApigeeDeveloperApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#delete ApigeeDeveloperApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#delete ApigeeDeveloperApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#update ApigeeDeveloperApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#update ApigeeDeveloperApp#update}
   */
   readonly update?: string;
 }
@@ -681,7 +693,7 @@ export class ApigeeDeveloperAppTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app google_apigee_developer_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app google_apigee_developer_app}
 */
 export class ApigeeDeveloperApp extends cdktn.TerraformResource {
 
@@ -697,7 +709,7 @@ export class ApigeeDeveloperApp extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeDeveloperApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeDeveloperApp to import
-  * @param importFromId The id of the existing ApigeeDeveloperApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeDeveloperApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeDeveloperApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -709,7 +721,7 @@ export class ApigeeDeveloperApp extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app google_apigee_developer_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer_app google_apigee_developer_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -720,7 +732,7 @@ export class ApigeeDeveloperApp extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_developer_app',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -734,6 +746,7 @@ export class ApigeeDeveloperApp extends cdktn.TerraformResource {
     this._apiProducts = config.apiProducts;
     this._appFamily = config.appFamily;
     this._callbackUrl = config.callbackUrl;
+    this._deletionPolicy = config.deletionPolicy;
     this._developerEmail = config.developerEmail;
     this._id = config.id;
     this._keyExpiresIn = config.keyExpiresIn;
@@ -808,6 +821,22 @@ export class ApigeeDeveloperApp extends cdktn.TerraformResource {
   private _credentials = new ApigeeDeveloperAppCredentialsList(this, "credentials", false);
   public get credentials() {
     return this._credentials;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // developer_email - computed: false, optional: false, required: true
@@ -964,6 +993,7 @@ export class ApigeeDeveloperApp extends cdktn.TerraformResource {
       api_products: cdktn.listMapper(cdktn.stringToTerraform, false)(this._apiProducts),
       app_family: cdktn.stringToTerraform(this._appFamily),
       callback_url: cdktn.stringToTerraform(this._callbackUrl),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       developer_email: cdktn.stringToTerraform(this._developerEmail),
       id: cdktn.stringToTerraform(this._id),
       key_expires_in: cdktn.stringToTerraform(this._keyExpiresIn),
@@ -992,6 +1022,12 @@ export class ApigeeDeveloperApp extends cdktn.TerraformResource {
       },
       callback_url: {
         value: cdktn.stringToHclTerraform(this._callbackUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

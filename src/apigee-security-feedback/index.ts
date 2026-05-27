@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,41 @@ export interface ApigeeSecurityFeedbackConfig extends cdktn.TerraformMetaArgumen
   /**
   * Optional text the user can provide for additional, unstructured context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#comment ApigeeSecurityFeedback#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#comment ApigeeSecurityFeedback#comment}
   */
   readonly comment?: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#deletion_policy ApigeeSecurityFeedback#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The display name of the feedback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#display_name ApigeeSecurityFeedback#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#display_name ApigeeSecurityFeedback#display_name}
   */
   readonly displayName?: string;
   /**
   * Resource ID of the security feedback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#feedback_id ApigeeSecurityFeedback#feedback_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#feedback_id ApigeeSecurityFeedback#feedback_id}
   */
   readonly feedbackId: string;
   /**
   * The type of feedback being submitted. Possible values: ["EXCLUDED_DETECTION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#feedback_type ApigeeSecurityFeedback#feedback_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#feedback_type ApigeeSecurityFeedback#feedback_type}
   */
   readonly feedbackType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,25 +59,25 @@ export interface ApigeeSecurityFeedbackConfig extends cdktn.TerraformMetaArgumen
   * The Apigee Organization associated with the Apigee Security Feedback,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#org_id ApigeeSecurityFeedback#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#org_id ApigeeSecurityFeedback#org_id}
   */
   readonly orgId: string;
   /**
   * The reason for the feedback. Possible values: ["INTERNAL_SYSTEM", "NON_RISK_CLIENT", "NAT", "PENETRATION_TEST", "OTHER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#reason ApigeeSecurityFeedback#reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#reason ApigeeSecurityFeedback#reason}
   */
   readonly reason?: string;
   /**
   * feedback_contexts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#feedback_contexts ApigeeSecurityFeedback#feedback_contexts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#feedback_contexts ApigeeSecurityFeedback#feedback_contexts}
   */
   readonly feedbackContexts: ApigeeSecurityFeedbackFeedbackContexts[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#timeouts ApigeeSecurityFeedback#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#timeouts ApigeeSecurityFeedback#timeouts}
   */
   readonly timeouts?: ApigeeSecurityFeedbackTimeouts;
 }
@@ -73,13 +85,13 @@ export interface ApigeeSecurityFeedbackFeedbackContexts {
   /**
   * The attribute the user is providing feedback about. Possible values: ["ATTRIBUTE_ENVIRONMENTS", "ATTRIBUTE_IP_ADDRESS_RANGES"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#attribute ApigeeSecurityFeedback#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#attribute ApigeeSecurityFeedback#attribute}
   */
   readonly attribute: string;
   /**
   * The values of the attribute the user is providing feedback about, separated by commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#values ApigeeSecurityFeedback#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#values ApigeeSecurityFeedback#values}
   */
   readonly values: string[];
 }
@@ -206,7 +218,7 @@ export class ApigeeSecurityFeedbackFeedbackContextsList extends cdktn.ComplexLis
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -218,15 +230,15 @@ export class ApigeeSecurityFeedbackFeedbackContextsList extends cdktn.ComplexLis
 }
 export interface ApigeeSecurityFeedbackTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}
   */
   readonly update?: string;
 }
@@ -378,7 +390,7 @@ export class ApigeeSecurityFeedbackTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback google_apigee_security_feedback}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback google_apigee_security_feedback}
 */
 export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
 
@@ -394,7 +406,7 @@ export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeSecurityFeedback resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeSecurityFeedback to import
-  * @param importFromId The id of the existing ApigeeSecurityFeedback that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeSecurityFeedback that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeSecurityFeedback to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -406,7 +418,7 @@ export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback google_apigee_security_feedback} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_feedback google_apigee_security_feedback} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -417,7 +429,7 @@ export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_security_feedback',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -429,6 +441,7 @@ export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._comment = config.comment;
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._feedbackId = config.feedbackId;
     this._feedbackType = config.feedbackType;
@@ -462,6 +475,22 @@ export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // display_name - computed: false, optional: true, required: false
@@ -597,6 +626,7 @@ export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       comment: cdktn.stringToTerraform(this._comment),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       feedback_id: cdktn.stringToTerraform(this._feedbackId),
       feedback_type: cdktn.stringToTerraform(this._feedbackType),
@@ -612,6 +642,12 @@ export class ApigeeSecurityFeedback extends cdktn.TerraformResource {
     const attrs = {
       comment: {
         value: cdktn.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

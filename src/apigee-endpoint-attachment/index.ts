@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface ApigeeEndpointAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#deletion_policy ApigeeEndpointAttachment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * ID of the endpoint attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#endpoint_attachment_id ApigeeEndpointAttachment#endpoint_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#endpoint_attachment_id ApigeeEndpointAttachment#endpoint_attachment_id}
   */
   readonly endpointAttachmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#id ApigeeEndpointAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#id ApigeeEndpointAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,20 +40,20 @@ export interface ApigeeEndpointAttachmentConfig extends cdktn.TerraformMetaArgum
   /**
   * Location of the endpoint attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#location ApigeeEndpointAttachment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#location ApigeeEndpointAttachment#location}
   */
   readonly location: string;
   /**
   * The Apigee Organization associated with the Apigee instance,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#org_id ApigeeEndpointAttachment#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#org_id ApigeeEndpointAttachment#org_id}
   */
   readonly orgId: string;
   /**
   * Format: projects/* /regions/* /serviceAttachments/*
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#service_attachment ApigeeEndpointAttachment#service_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#service_attachment ApigeeEndpointAttachment#service_attachment}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -49,17 +61,17 @@ export interface ApigeeEndpointAttachmentConfig extends cdktn.TerraformMetaArgum
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#timeouts ApigeeEndpointAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#timeouts ApigeeEndpointAttachment#timeouts}
   */
   readonly timeouts?: ApigeeEndpointAttachmentTimeouts;
 }
 export interface ApigeeEndpointAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#create ApigeeEndpointAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#create ApigeeEndpointAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#delete ApigeeEndpointAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#delete ApigeeEndpointAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -182,7 +194,7 @@ export class ApigeeEndpointAttachmentTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment google_apigee_endpoint_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment google_apigee_endpoint_attachment}
 */
 export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
 
@@ -198,7 +210,7 @@ export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeEndpointAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeEndpointAttachment to import
-  * @param importFromId The id of the existing ApigeeEndpointAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeEndpointAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeEndpointAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -210,7 +222,7 @@ export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +233,7 @@ export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_endpoint_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -232,6 +244,7 @@ export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._endpointAttachmentId = config.endpointAttachmentId;
     this._id = config.id;
     this._location = config.location;
@@ -247,6 +260,22 @@ export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
   // connection_state - computed: true, optional: false, required: false
   public get connectionState() {
     return this.getStringAttribute('connection_state');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // endpoint_attachment_id - computed: false, optional: false, required: true
@@ -349,6 +378,7 @@ export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       endpoint_attachment_id: cdktn.stringToTerraform(this._endpointAttachmentId),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
@@ -360,6 +390,12 @@ export class ApigeeEndpointAttachment extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       endpoint_attachment_id: {
         value: cdktn.stringToHclTerraform(this._endpointAttachmentId),
         isBlock: false,

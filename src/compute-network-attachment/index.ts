@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,65 @@ export interface ComputeNetworkAttachmentConfig extends cdktn.TerraformMetaArgum
   /**
   * The connection preference of service attachment. The value can be set to ACCEPT_AUTOMATIC. An ACCEPT_AUTOMATIC service attachment is one that always accepts the connection from consumer forwarding rules. Possible values: ["ACCEPT_AUTOMATIC", "ACCEPT_MANUAL", "INVALID"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#connection_preference ComputeNetworkAttachment#connection_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#connection_preference ComputeNetworkAttachment#connection_preference}
   */
   readonly connectionPreference: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#deletion_policy ComputeNetworkAttachment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#description ComputeNetworkAttachment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#description ComputeNetworkAttachment#description}
   */
   readonly description?: string;
   /**
   * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#name ComputeNetworkAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#name ComputeNetworkAttachment#name}
   */
   readonly name: string;
   /**
   * Projects that are allowed to connect to this network attachment. The project can be specified using its id or number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#producer_accept_lists ComputeNetworkAttachment#producer_accept_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#producer_accept_lists ComputeNetworkAttachment#producer_accept_lists}
   */
   readonly producerAcceptLists?: string[];
   /**
   * Projects that are not allowed to connect to this network attachment. The project can be specified using its id or number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#producer_reject_lists ComputeNetworkAttachment#producer_reject_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#producer_reject_lists ComputeNetworkAttachment#producer_reject_lists}
   */
   readonly producerRejectLists?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#project ComputeNetworkAttachment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#project ComputeNetworkAttachment#project}
   */
   readonly project?: string;
   /**
   * URL of the region where the network attachment resides. This field applies only to the region resource. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#region ComputeNetworkAttachment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#region ComputeNetworkAttachment#region}
   */
   readonly region?: string;
   /**
   * An array of URLs where each entry is the URL of a subnet provided by the service consumer to use for endpoints in the producers that connect to this network attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#subnetworks ComputeNetworkAttachment#subnetworks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#subnetworks ComputeNetworkAttachment#subnetworks}
   */
   readonly subnetworks: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#timeouts ComputeNetworkAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#timeouts ComputeNetworkAttachment#timeouts}
   */
   readonly timeouts?: ComputeNetworkAttachmentTimeouts;
 }
@@ -150,7 +162,7 @@ export class ComputeNetworkAttachmentConnectionEndpointsList extends cdktn.Compl
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -162,15 +174,15 @@ export class ComputeNetworkAttachmentConnectionEndpointsList extends cdktn.Compl
 }
 export interface ComputeNetworkAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#create ComputeNetworkAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#create ComputeNetworkAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#delete ComputeNetworkAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#delete ComputeNetworkAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#update ComputeNetworkAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#update ComputeNetworkAttachment#update}
   */
   readonly update?: string;
 }
@@ -322,7 +334,7 @@ export class ComputeNetworkAttachmentTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment google_compute_network_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment google_compute_network_attachment}
 */
 export class ComputeNetworkAttachment extends cdktn.TerraformResource {
 
@@ -338,7 +350,7 @@ export class ComputeNetworkAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeNetworkAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeNetworkAttachment to import
-  * @param importFromId The id of the existing ComputeNetworkAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeNetworkAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeNetworkAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -350,7 +362,7 @@ export class ComputeNetworkAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_attachment google_compute_network_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_attachment google_compute_network_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -361,7 +373,7 @@ export class ComputeNetworkAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_network_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -373,6 +385,7 @@ export class ComputeNetworkAttachment extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._connectionPreference = config.connectionPreference;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._name = config.name;
     this._producerAcceptLists = config.producerAcceptLists;
@@ -409,6 +422,22 @@ export class ComputeNetworkAttachment extends cdktn.TerraformResource {
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
     return this.getStringAttribute('creation_timestamp');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -570,6 +599,7 @@ export class ComputeNetworkAttachment extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       connection_preference: cdktn.stringToTerraform(this._connectionPreference),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       name: cdktn.stringToTerraform(this._name),
       producer_accept_lists: cdktn.listMapper(cdktn.stringToTerraform, false)(this._producerAcceptLists),
@@ -585,6 +615,12 @@ export class ComputeNetworkAttachment extends cdktn.TerraformResource {
     const attrs = {
       connection_preference: {
         value: cdktn.stringToHclTerraform(this._connectionPreference),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

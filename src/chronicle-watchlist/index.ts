@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,9 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface ChronicleWatchlistConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#deletion_policy ChronicleWatchlist#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Optional. Description of the watchlist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
   */
   readonly description?: string;
   /**
@@ -23,11 +35,11 @@ export interface ChronicleWatchlistConfig extends cdktn.TerraformMetaArguments {
   * Note that it must be at least one character and less than 63 characters
   * (https://google.aip.dev/148).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,13 +48,13 @@ export interface ChronicleWatchlistConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
   */
   readonly location: string;
   /**
@@ -50,11 +62,11 @@ export interface ChronicleWatchlistConfig extends cdktn.TerraformMetaArguments {
   * in this watchlist.
   * The default is 1.0 if it is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
   */
   readonly multiplyingFactor?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}
   */
   readonly project?: string;
   /**
@@ -63,25 +75,25 @@ export interface ChronicleWatchlistConfig extends cdktn.TerraformMetaArguments {
   * This value should be 4-63 characters, and valid characters
   * are /a-z-/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
   */
   readonly watchlistId?: string;
   /**
   * entity_population_mechanism block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
   */
   readonly entityPopulationMechanism: ChronicleWatchlistEntityPopulationMechanism;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
   */
   readonly timeouts?: ChronicleWatchlistTimeouts;
   /**
   * watchlist_user_preferences block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
   */
   readonly watchlistUserPreferences?: ChronicleWatchlistWatchlistUserPreferences;
 }
@@ -155,7 +167,7 @@ export class ChronicleWatchlistEntityCountList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -218,7 +230,7 @@ export interface ChronicleWatchlistEntityPopulationMechanism {
   /**
   * manual block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
   */
   readonly manual?: ChronicleWatchlistEntityPopulationMechanismManual;
 }
@@ -302,15 +314,15 @@ export class ChronicleWatchlistEntityPopulationMechanismOutputReference extends 
 }
 export interface ChronicleWatchlistTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}
   */
   readonly update?: string;
 }
@@ -464,7 +476,7 @@ export interface ChronicleWatchlistWatchlistUserPreferences {
   /**
   * Optional. Whether the watchlist is pinned on the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
   */
   readonly pinned?: boolean | cdktn.IResolvable;
 }
@@ -548,7 +560,7 @@ export class ChronicleWatchlistWatchlistUserPreferencesOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist google_chronicle_watchlist}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist google_chronicle_watchlist}
 */
 export class ChronicleWatchlist extends cdktn.TerraformResource {
 
@@ -564,7 +576,7 @@ export class ChronicleWatchlist extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleWatchlist resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleWatchlist to import
-  * @param importFromId The id of the existing ChronicleWatchlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleWatchlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleWatchlist to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -576,7 +588,7 @@ export class ChronicleWatchlist extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist google_chronicle_watchlist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist google_chronicle_watchlist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -587,7 +599,7 @@ export class ChronicleWatchlist extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_watchlist',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -598,6 +610,7 @@ export class ChronicleWatchlist extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._displayName = config.displayName;
     this._id = config.id;
@@ -618,6 +631,22 @@ export class ChronicleWatchlist extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -806,6 +835,7 @@ export class ChronicleWatchlist extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
@@ -822,6 +852,12 @@ export class ChronicleWatchlist extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,

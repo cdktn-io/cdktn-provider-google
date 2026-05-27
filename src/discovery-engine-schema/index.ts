@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,23 @@ export interface DiscoveryEngineSchemaConfig extends cdktn.TerraformMetaArgument
   /**
   * The unique id of the data store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#data_store_id DiscoveryEngineSchema#data_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#data_store_id DiscoveryEngineSchema#data_store_id}
   */
   readonly dataStoreId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#deletion_policy DiscoveryEngineSchema#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,40 +40,40 @@ export interface DiscoveryEngineSchemaConfig extends cdktn.TerraformMetaArgument
   /**
   * The JSON representation of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#json_schema DiscoveryEngineSchema#json_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#json_schema DiscoveryEngineSchema#json_schema}
   */
   readonly jsonSchema?: string;
   /**
   * The geographic location where the data store should reside. The value can
   * only be one of "global", "us" and "eu".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#location DiscoveryEngineSchema#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#location DiscoveryEngineSchema#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}
   */
   readonly project?: string;
   /**
   * The unique id of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#schema_id DiscoveryEngineSchema#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#schema_id DiscoveryEngineSchema#schema_id}
   */
   readonly schemaId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#timeouts DiscoveryEngineSchema#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#timeouts DiscoveryEngineSchema#timeouts}
   */
   readonly timeouts?: DiscoveryEngineSchemaTimeouts;
 }
 export interface DiscoveryEngineSchemaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#create DiscoveryEngineSchema#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#create DiscoveryEngineSchema#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#delete DiscoveryEngineSchema#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#delete DiscoveryEngineSchema#delete}
   */
   readonly delete?: string;
 }
@@ -184,7 +196,7 @@ export class DiscoveryEngineSchemaTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema google_discovery_engine_schema}
 */
 export class DiscoveryEngineSchema extends cdktn.TerraformResource {
 
@@ -200,7 +212,7 @@ export class DiscoveryEngineSchema extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DiscoveryEngineSchema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineSchema to import
-  * @param importFromId The id of the existing DiscoveryEngineSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DiscoveryEngineSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineSchema to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -212,7 +224,7 @@ export class DiscoveryEngineSchema extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_schema google_discovery_engine_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_schema google_discovery_engine_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +235,7 @@ export class DiscoveryEngineSchema extends cdktn.TerraformResource {
       terraformResourceType: 'google_discovery_engine_schema',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -235,6 +247,7 @@ export class DiscoveryEngineSchema extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._dataStoreId = config.dataStoreId;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._jsonSchema = config.jsonSchema;
     this._location = config.location;
@@ -258,6 +271,22 @@ export class DiscoveryEngineSchema extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dataStoreIdInput() {
     return this._dataStoreId;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -362,6 +391,7 @@ export class DiscoveryEngineSchema extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       data_store_id: cdktn.stringToTerraform(this._dataStoreId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       json_schema: cdktn.stringToTerraform(this._jsonSchema),
       location: cdktn.stringToTerraform(this._location),
@@ -375,6 +405,12 @@ export class DiscoveryEngineSchema extends cdktn.TerraformResource {
     const attrs = {
       data_store_id: {
         value: cdktn.stringToHclTerraform(this._dataStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

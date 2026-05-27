@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,48 +15,60 @@ export interface FirestoreFieldConfig extends cdktn.TerraformMetaArguments {
   /**
   * The id of the collection group to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#collection FirestoreField#collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#collection FirestoreField#collection}
   */
   readonly collection: string;
   /**
   * The Firestore database id. Defaults to '"(default)"'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#database FirestoreField#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#database FirestoreField#database}
   */
   readonly database?: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#deletion_policy FirestoreField#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The id of the field to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#field FirestoreField#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#field FirestoreField#field}
   */
   readonly field: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#id FirestoreField#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#id FirestoreField#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#project FirestoreField#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#project FirestoreField#project}
   */
   readonly project?: string;
   /**
   * index_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#index_config FirestoreField#index_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#index_config FirestoreField#index_config}
   */
   readonly indexConfig?: FirestoreFieldIndexConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#timeouts FirestoreField#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#timeouts FirestoreField#timeouts}
   */
   readonly timeouts?: FirestoreFieldTimeouts;
   /**
   * ttl_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#ttl_config FirestoreField#ttl_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#ttl_config FirestoreField#ttl_config}
   */
   readonly ttlConfig?: FirestoreFieldTtlConfig;
 }
@@ -65,14 +77,14 @@ export interface FirestoreFieldIndexConfigIndexes {
   * Indicates that this field supports operations on arrayValues. Only one of 'order' and 'arrayConfig' can
   * be specified. Possible values: ["CONTAINS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#array_config FirestoreField#array_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#array_config FirestoreField#array_config}
   */
   readonly arrayConfig?: string;
   /**
   * Indicates that this field supports ordering by the specified order or comparing using =, <, <=, >, >=, !=.
   * Only one of 'order' and 'arrayConfig' can be specified. Possible values: ["ASCENDING", "DESCENDING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#order FirestoreField#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#order FirestoreField#order}
   */
   readonly order?: string;
   /**
@@ -80,7 +92,7 @@ export interface FirestoreFieldIndexConfigIndexes {
   * the collection at query time. Collection group scope allows queries across all
   * collections with the same id. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#query_scope FirestoreField#query_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#query_scope FirestoreField#query_scope}
   */
   readonly queryScope?: string;
 }
@@ -242,7 +254,7 @@ export class FirestoreFieldIndexConfigIndexesList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -256,7 +268,7 @@ export interface FirestoreFieldIndexConfig {
   /**
   * indexes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#indexes FirestoreField#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#indexes FirestoreField#indexes}
   */
   readonly indexes?: FirestoreFieldIndexConfigIndexes[] | cdktn.IResolvable;
 }
@@ -340,15 +352,15 @@ export class FirestoreFieldIndexConfigOutputReference extends cdktn.ComplexObjec
 }
 export interface FirestoreFieldTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#create FirestoreField#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#create FirestoreField#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#delete FirestoreField#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#delete FirestoreField#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#update FirestoreField#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#update FirestoreField#update}
   */
   readonly update?: string;
 }
@@ -554,7 +566,7 @@ export class FirestoreFieldTtlConfigOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field google_firestore_field}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field google_firestore_field}
 */
 export class FirestoreField extends cdktn.TerraformResource {
 
@@ -570,7 +582,7 @@ export class FirestoreField extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FirestoreField resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirestoreField to import
-  * @param importFromId The id of the existing FirestoreField that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FirestoreField that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirestoreField to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -582,7 +594,7 @@ export class FirestoreField extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_field google_firestore_field} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firestore_field google_firestore_field} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -593,7 +605,7 @@ export class FirestoreField extends cdktn.TerraformResource {
       terraformResourceType: 'google_firestore_field',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -606,6 +618,7 @@ export class FirestoreField extends cdktn.TerraformResource {
     });
     this._collection = config.collection;
     this._database = config.database;
+    this._deletionPolicy = config.deletionPolicy;
     this._field = config.field;
     this._id = config.id;
     this._project = config.project;
@@ -645,6 +658,22 @@ export class FirestoreField extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
     return this._database;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // field - computed: false, optional: false, required: true
@@ -753,6 +782,7 @@ export class FirestoreField extends cdktn.TerraformResource {
     return {
       collection: cdktn.stringToTerraform(this._collection),
       database: cdktn.stringToTerraform(this._database),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       field: cdktn.stringToTerraform(this._field),
       id: cdktn.stringToTerraform(this._id),
       project: cdktn.stringToTerraform(this._project),
@@ -772,6 +802,12 @@ export class FirestoreField extends cdktn.TerraformResource {
       },
       database: {
         value: cdktn.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

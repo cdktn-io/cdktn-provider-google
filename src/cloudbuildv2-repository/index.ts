@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,11 +18,23 @@ export interface Cloudbuildv2RepositoryConfig extends cdktn.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#annotations Cloudbuildv2Repository#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#annotations Cloudbuildv2Repository#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#id Cloudbuildv2Repository#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#deletion_policy Cloudbuildv2Repository#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#id Cloudbuildv2Repository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,45 +43,45 @@ export interface Cloudbuildv2RepositoryConfig extends cdktn.TerraformMetaArgumen
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#location Cloudbuildv2Repository#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#location Cloudbuildv2Repository#location}
   */
   readonly location?: string;
   /**
   * Name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#name Cloudbuildv2Repository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#name Cloudbuildv2Repository#name}
   */
   readonly name: string;
   /**
   * The connection for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#parent_connection Cloudbuildv2Repository#parent_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#parent_connection Cloudbuildv2Repository#parent_connection}
   */
   readonly parentConnection: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#project Cloudbuildv2Repository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#project Cloudbuildv2Repository#project}
   */
   readonly project?: string;
   /**
   * Required. Git Clone HTTPS URI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#remote_uri Cloudbuildv2Repository#remote_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#remote_uri Cloudbuildv2Repository#remote_uri}
   */
   readonly remoteUri: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#timeouts Cloudbuildv2Repository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#timeouts Cloudbuildv2Repository#timeouts}
   */
   readonly timeouts?: Cloudbuildv2RepositoryTimeouts;
 }
 export interface Cloudbuildv2RepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#create Cloudbuildv2Repository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#create Cloudbuildv2Repository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#delete Cloudbuildv2Repository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#delete Cloudbuildv2Repository#delete}
   */
   readonly delete?: string;
 }
@@ -192,7 +204,7 @@ export class Cloudbuildv2RepositoryTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository google_cloudbuildv2_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository google_cloudbuildv2_repository}
 */
 export class Cloudbuildv2Repository extends cdktn.TerraformResource {
 
@@ -208,7 +220,7 @@ export class Cloudbuildv2Repository extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Cloudbuildv2Repository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Cloudbuildv2Repository to import
-  * @param importFromId The id of the existing Cloudbuildv2Repository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Cloudbuildv2Repository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Cloudbuildv2Repository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -220,7 +232,7 @@ export class Cloudbuildv2Repository extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_repository google_cloudbuildv2_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuildv2_repository google_cloudbuildv2_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +243,7 @@ export class Cloudbuildv2Repository extends cdktn.TerraformResource {
       terraformResourceType: 'google_cloudbuildv2_repository',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -243,6 +255,7 @@ export class Cloudbuildv2Repository extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._annotations = config.annotations;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._location = config.location;
     this._name = config.name;
@@ -275,6 +288,22 @@ export class Cloudbuildv2Repository extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // effective_annotations - computed: true, optional: false, required: false
@@ -403,6 +432,7 @@ export class Cloudbuildv2Repository extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
@@ -420,6 +450,12 @@ export class Cloudbuildv2Repository extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),

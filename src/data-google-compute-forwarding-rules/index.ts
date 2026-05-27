@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rules
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_forwarding_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeForwardingRulesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rules#id DataGoogleComputeForwardingRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_forwarding_rules#id DataGoogleComputeForwardingRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rules#project DataGoogleComputeForwardingRules#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_forwarding_rules#project DataGoogleComputeForwardingRules#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rules#region DataGoogleComputeForwardingRules#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_forwarding_rules#region DataGoogleComputeForwardingRules#region}
   */
   readonly region?: string;
 }
@@ -98,7 +98,7 @@ export class DataGoogleComputeForwardingRulesRulesServiceDirectoryRegistrationsL
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -187,6 +187,11 @@ export class DataGoogleComputeForwardingRulesRulesOutputReference extends cdktn.
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
     return this.getStringAttribute('creation_timestamp');
+  }
+
+  // deletion_policy - computed: true, optional: false, required: false
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
   }
 
   // description - computed: true, optional: false, required: false
@@ -352,7 +357,7 @@ export class DataGoogleComputeForwardingRulesRulesList extends cdktn.ComplexList
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -364,7 +369,7 @@ export class DataGoogleComputeForwardingRulesRulesList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules}
 */
 export class DataGoogleComputeForwardingRules extends cdktn.TerraformDataSource {
 
@@ -380,7 +385,7 @@ export class DataGoogleComputeForwardingRules extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataGoogleComputeForwardingRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeForwardingRules to import
-  * @param importFromId The id of the existing DataGoogleComputeForwardingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeForwardingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_forwarding_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeForwardingRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -392,7 +397,7 @@ export class DataGoogleComputeForwardingRules extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +408,7 @@ export class DataGoogleComputeForwardingRules extends cdktn.TerraformDataSource 
       terraformResourceType: 'google_compute_forwarding_rules',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

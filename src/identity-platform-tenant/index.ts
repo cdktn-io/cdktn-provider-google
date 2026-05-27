@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +15,62 @@ export interface IdentityPlatformTenantConfig extends cdktn.TerraformMetaArgumen
   /**
   * Whether to allow email/password user authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#allow_password_signup IdentityPlatformTenant#allow_password_signup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#allow_password_signup IdentityPlatformTenant#allow_password_signup}
   */
   readonly allowPasswordSignup?: boolean | cdktn.IResolvable;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#deletion_policy IdentityPlatformTenant#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
   /**
   * Whether authentication is disabled for the tenant. If true, the users under
   * the disabled tenant are not allowed to sign-in. Admins of the disabled tenant
   * are not able to manage its users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#disable_auth IdentityPlatformTenant#disable_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#disable_auth IdentityPlatformTenant#disable_auth}
   */
   readonly disableAuth?: boolean | cdktn.IResolvable;
   /**
   * Human friendly display name of the tenant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#display_name IdentityPlatformTenant#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#display_name IdentityPlatformTenant#display_name}
   */
   readonly displayName: string;
   /**
   * Whether to enable email link user authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#enable_email_link_signin IdentityPlatformTenant#enable_email_link_signin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#enable_email_link_signin IdentityPlatformTenant#enable_email_link_signin}
   */
   readonly enableEmailLinkSignin?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#id IdentityPlatformTenant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#id IdentityPlatformTenant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#project IdentityPlatformTenant#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#project IdentityPlatformTenant#project}
   */
   readonly project?: string;
   /**
   * client block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#client IdentityPlatformTenant#client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#client IdentityPlatformTenant#client}
   */
   readonly client?: IdentityPlatformTenantClient;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#timeouts IdentityPlatformTenant#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#timeouts IdentityPlatformTenant#timeouts}
   */
   readonly timeouts?: IdentityPlatformTenantTimeouts;
 }
@@ -66,13 +78,13 @@ export interface IdentityPlatformTenantClientPermissions {
   /**
   * When true, end users cannot delete their account on the associated project through any of our API methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#disabled_user_deletion IdentityPlatformTenant#disabled_user_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#disabled_user_deletion IdentityPlatformTenant#disabled_user_deletion}
   */
   readonly disabledUserDeletion?: boolean | cdktn.IResolvable;
   /**
   * When true, end users cannot sign up for a new account on the associated project through any of our API methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#disabled_user_signup IdentityPlatformTenant#disabled_user_signup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#disabled_user_signup IdentityPlatformTenant#disabled_user_signup}
   */
   readonly disabledUserSignup?: boolean | cdktn.IResolvable;
 }
@@ -187,7 +199,7 @@ export interface IdentityPlatformTenantClient {
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#permissions IdentityPlatformTenant#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#permissions IdentityPlatformTenant#permissions}
   */
   readonly permissions?: IdentityPlatformTenantClientPermissions;
 }
@@ -271,15 +283,15 @@ export class IdentityPlatformTenantClientOutputReference extends cdktn.ComplexOb
 }
 export interface IdentityPlatformTenantTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#create IdentityPlatformTenant#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#create IdentityPlatformTenant#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#delete IdentityPlatformTenant#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#delete IdentityPlatformTenant#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#update IdentityPlatformTenant#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#update IdentityPlatformTenant#update}
   */
   readonly update?: string;
 }
@@ -431,7 +443,7 @@ export class IdentityPlatformTenantTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant google_identity_platform_tenant}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant google_identity_platform_tenant}
 */
 export class IdentityPlatformTenant extends cdktn.TerraformResource {
 
@@ -447,7 +459,7 @@ export class IdentityPlatformTenant extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IdentityPlatformTenant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityPlatformTenant to import
-  * @param importFromId The id of the existing IdentityPlatformTenant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityPlatformTenant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityPlatformTenant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -459,7 +471,7 @@ export class IdentityPlatformTenant extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -470,7 +482,7 @@ export class IdentityPlatformTenant extends cdktn.TerraformResource {
       terraformResourceType: 'google_identity_platform_tenant',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -482,6 +494,7 @@ export class IdentityPlatformTenant extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._allowPasswordSignup = config.allowPasswordSignup;
+    this._deletionPolicy = config.deletionPolicy;
     this._disableAuth = config.disableAuth;
     this._displayName = config.displayName;
     this._enableEmailLinkSignin = config.enableEmailLinkSignin;
@@ -509,6 +522,22 @@ export class IdentityPlatformTenant extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowPasswordSignupInput() {
     return this._allowPasswordSignup;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // disable_auth - computed: false, optional: true, required: false
@@ -632,6 +661,7 @@ export class IdentityPlatformTenant extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_password_signup: cdktn.booleanToTerraform(this._allowPasswordSignup),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       disable_auth: cdktn.booleanToTerraform(this._disableAuth),
       display_name: cdktn.stringToTerraform(this._displayName),
       enable_email_link_signin: cdktn.booleanToTerraform(this._enableEmailLinkSignin),
@@ -649,6 +679,12 @@ export class IdentityPlatformTenant extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       disable_auth: {
         value: cdktn.booleanToHclTerraform(this._disableAuth),

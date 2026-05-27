@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,23 +18,35 @@ export interface WorkstationsWorkstationConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#annotations WorkstationsWorkstation#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#annotations WorkstationsWorkstation#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#deletion_policy WorkstationsWorkstation#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Human-readable name for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#display_name WorkstationsWorkstation#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#display_name WorkstationsWorkstation#display_name}
   */
   readonly displayName?: string;
   /**
   * 'Client-specified environment variables passed to the workstation container's entrypoint.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#env WorkstationsWorkstation#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#env WorkstationsWorkstation#env}
   */
   readonly env?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,62 +58,62 @@ export interface WorkstationsWorkstationConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#labels WorkstationsWorkstation#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#labels WorkstationsWorkstation#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the workstation parent resources reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#location WorkstationsWorkstation#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#location WorkstationsWorkstation#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}
   */
   readonly project?: string;
   /**
   * Full resource name of the source workstation from which the workstation's persistent
   * directories will be cloned from during creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#source_workstation WorkstationsWorkstation#source_workstation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#source_workstation WorkstationsWorkstation#source_workstation}
   */
   readonly sourceWorkstation?: string;
   /**
   * The ID of the parent workstation cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_cluster_id WorkstationsWorkstation#workstation_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_cluster_id WorkstationsWorkstation#workstation_cluster_id}
   */
   readonly workstationClusterId: string;
   /**
   * The ID of the parent workstation cluster config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_config_id WorkstationsWorkstation#workstation_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_config_id WorkstationsWorkstation#workstation_config_id}
   */
   readonly workstationConfigId: string;
   /**
   * ID to use for the workstation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_id WorkstationsWorkstation#workstation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_id WorkstationsWorkstation#workstation_id}
   */
   readonly workstationId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#timeouts WorkstationsWorkstation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#timeouts WorkstationsWorkstation#timeouts}
   */
   readonly timeouts?: WorkstationsWorkstationTimeouts;
 }
 export interface WorkstationsWorkstationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}
   */
   readonly update?: string;
 }
@@ -253,7 +265,7 @@ export class WorkstationsWorkstationTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation google_workstations_workstation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation google_workstations_workstation}
 */
 export class WorkstationsWorkstation extends cdktn.TerraformResource {
 
@@ -269,7 +281,7 @@ export class WorkstationsWorkstation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkstationsWorkstation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkstationsWorkstation to import
-  * @param importFromId The id of the existing WorkstationsWorkstation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkstationsWorkstation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkstationsWorkstation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -281,7 +293,7 @@ export class WorkstationsWorkstation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation google_workstations_workstation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation google_workstations_workstation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -292,7 +304,7 @@ export class WorkstationsWorkstation extends cdktn.TerraformResource {
       terraformResourceType: 'google_workstations_workstation',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -304,6 +316,7 @@ export class WorkstationsWorkstation extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._annotations = config.annotations;
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._env = config.env;
     this._id = config.id;
@@ -340,6 +353,22 @@ export class WorkstationsWorkstation extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // display_name - computed: false, optional: true, required: false
@@ -551,6 +580,7 @@ export class WorkstationsWorkstation extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       env: cdktn.hashMapper(cdktn.stringToTerraform)(this._env),
       id: cdktn.stringToTerraform(this._id),
@@ -572,6 +602,12 @@ export class WorkstationsWorkstation extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       display_name: {
         value: cdktn.stringToHclTerraform(this._displayName),

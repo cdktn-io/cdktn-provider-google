@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,77 +13,89 @@ import * as cdktn from 'cdktn';
 
 export interface ActiveDirectoryDomainTrustConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#deletion_policy ActiveDirectoryDomainTrust#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The fully qualified domain name. e.g. mydomain.myorganization.com, with the restrictions
   * of https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locations.global.domains.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#domain ActiveDirectoryDomainTrust#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#domain ActiveDirectoryDomainTrust#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}
   */
   readonly project?: string;
   /**
   * Whether the trusted side has forest/domain wide access or selective access to an approved set of resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#selective_authentication ActiveDirectoryDomainTrust#selective_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#selective_authentication ActiveDirectoryDomainTrust#selective_authentication}
   */
   readonly selectiveAuthentication?: boolean | cdktn.IResolvable;
   /**
   * The target DNS server IP addresses which can resolve the remote domain involved in the trust.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#target_dns_ip_addresses ActiveDirectoryDomainTrust#target_dns_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#target_dns_ip_addresses ActiveDirectoryDomainTrust#target_dns_ip_addresses}
   */
   readonly targetDnsIpAddresses: string[];
   /**
   * The fully qualified target domain name which will be in trust with the current domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#target_domain_name ActiveDirectoryDomainTrust#target_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#target_domain_name ActiveDirectoryDomainTrust#target_domain_name}
   */
   readonly targetDomainName: string;
   /**
   * The trust direction, which decides if the current domain is trusted, trusting, or both. Possible values: ["INBOUND", "OUTBOUND", "BIDIRECTIONAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#trust_direction ActiveDirectoryDomainTrust#trust_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#trust_direction ActiveDirectoryDomainTrust#trust_direction}
   */
   readonly trustDirection: string;
   /**
   * The trust secret used for the handshake with the target domain. This will not be stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#trust_handshake_secret ActiveDirectoryDomainTrust#trust_handshake_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#trust_handshake_secret ActiveDirectoryDomainTrust#trust_handshake_secret}
   */
   readonly trustHandshakeSecret: string;
   /**
   * The type of trust represented by the trust resource. Possible values: ["FOREST", "EXTERNAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#trust_type ActiveDirectoryDomainTrust#trust_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#trust_type ActiveDirectoryDomainTrust#trust_type}
   */
   readonly trustType: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#timeouts ActiveDirectoryDomainTrust#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#timeouts ActiveDirectoryDomainTrust#timeouts}
   */
   readonly timeouts?: ActiveDirectoryDomainTrustTimeouts;
 }
 export interface ActiveDirectoryDomainTrustTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}
   */
   readonly update?: string;
 }
@@ -235,7 +247,7 @@ export class ActiveDirectoryDomainTrustTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}
 */
 export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
 
@@ -251,7 +263,7 @@ export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ActiveDirectoryDomainTrust resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActiveDirectoryDomainTrust to import
-  * @param importFromId The id of the existing ActiveDirectoryDomainTrust that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActiveDirectoryDomainTrust that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActiveDirectoryDomainTrust to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -263,7 +275,7 @@ export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -274,7 +286,7 @@ export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
       terraformResourceType: 'google_active_directory_domain_trust',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -285,6 +297,7 @@ export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._domain = config.domain;
     this._id = config.id;
     this._project = config.project;
@@ -300,6 +313,22 @@ export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // domain - computed: false, optional: false, required: true
   private _domain?: string; 
@@ -449,6 +478,7 @@ export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       domain: cdktn.stringToTerraform(this._domain),
       id: cdktn.stringToTerraform(this._id),
       project: cdktn.stringToTerraform(this._project),
@@ -464,6 +494,12 @@ export class ActiveDirectoryDomainTrust extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       domain: {
         value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,17 +18,29 @@ export interface ChronicleDataAccessLabelConfig extends cdktn.TerraformMetaArgum
   * maximum number of characters should be 63. Regex pattern is as per AIP:
   * https://google.aip.dev/122#resource-id-segments
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#data_access_label_id ChronicleDataAccessLabel#data_access_label_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#data_access_label_id ChronicleDataAccessLabel#data_access_label_id}
   */
   readonly dataAccessLabelId: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#deletion_policy ChronicleDataAccessLabel#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Optional. A description of the data access label for a human reader.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#description ChronicleDataAccessLabel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#description ChronicleDataAccessLabel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#id ChronicleDataAccessLabel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#id ChronicleDataAccessLabel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,43 +49,43 @@ export interface ChronicleDataAccessLabelConfig extends cdktn.TerraformMetaArgum
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#instance ChronicleDataAccessLabel#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#instance ChronicleDataAccessLabel#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#location ChronicleDataAccessLabel#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#location ChronicleDataAccessLabel#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#project ChronicleDataAccessLabel#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#project ChronicleDataAccessLabel#project}
   */
   readonly project?: string;
   /**
   * A UDM query over event data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#udm_query ChronicleDataAccessLabel#udm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#udm_query ChronicleDataAccessLabel#udm_query}
   */
   readonly udmQuery: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#timeouts ChronicleDataAccessLabel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#timeouts ChronicleDataAccessLabel#timeouts}
   */
   readonly timeouts?: ChronicleDataAccessLabelTimeouts;
 }
 export interface ChronicleDataAccessLabelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#create ChronicleDataAccessLabel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#create ChronicleDataAccessLabel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#delete ChronicleDataAccessLabel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#delete ChronicleDataAccessLabel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#update ChronicleDataAccessLabel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#update ChronicleDataAccessLabel#update}
   */
   readonly update?: string;
 }
@@ -225,7 +237,7 @@ export class ChronicleDataAccessLabelTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label google_chronicle_data_access_label}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label google_chronicle_data_access_label}
 */
 export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
 
@@ -241,7 +253,7 @@ export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleDataAccessLabel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleDataAccessLabel to import
-  * @param importFromId The id of the existing ChronicleDataAccessLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleDataAccessLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleDataAccessLabel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -253,7 +265,7 @@ export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label google_chronicle_data_access_label} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label google_chronicle_data_access_label} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -264,7 +276,7 @@ export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_data_access_label',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -276,6 +288,7 @@ export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._dataAccessLabelId = config.dataAccessLabelId;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._instance = config.instance;
@@ -310,6 +323,22 @@ export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dataAccessLabelIdInput() {
     return this._dataAccessLabelId;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -442,6 +471,7 @@ export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       data_access_label_id: cdktn.stringToTerraform(this._dataAccessLabelId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       instance: cdktn.stringToTerraform(this._instance),
@@ -456,6 +486,12 @@ export class ChronicleDataAccessLabel extends cdktn.TerraformResource {
     const attrs = {
       data_access_label_id: {
         value: cdktn.stringToHclTerraform(this._dataAccessLabelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface BackupDrBackupVaultConfig extends cdktn.TerraformMetaArguments 
   /**
   * Access restriction for the backup vault. Default value is 'WITHIN_ORGANIZATION' if not provided during creation. Default value: "WITHIN_ORGANIZATION" Possible values: ["ACCESS_RESTRICTION_UNSPECIFIED", "WITHIN_PROJECT", "WITHIN_ORGANIZATION", "UNRESTRICTED", "WITHIN_ORG_BUT_UNRESTRICTED_FOR_BA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
   */
   readonly accessRestriction?: string;
   /**
   * Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
   */
   readonly allowMissing?: boolean | cdktn.IResolvable;
   /**
@@ -31,37 +31,49 @@ export interface BackupDrBackupVaultConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Required. The default and minimum enforced retention for each backup within the backup vault. The enforced retention for each backup can be extended.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
   */
   readonly backupMinimumEnforcedRetentionDuration: string;
   /**
   * How a backup's enforced retention end time is inherited. Default value is 'INHERIT_VAULT_RETENTION' if not provided during creation. Possible values: ["BACKUP_RETENTION_INHERITANCE_UNSPECIFIED", "INHERIT_VAULT_RETENTION", "MATCH_BACKUP_EXPIRE_TIME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
   */
   readonly backupRetentionInheritance?: string;
   /**
   * Required. ID of the requesting object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
   */
   readonly backupVaultId: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#deletion_policy BackupDrBackupVault#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Optional. The description of the BackupVault instance (2048 characters or less).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
   */
   readonly description?: string;
   /**
   * Optional. Time after which the BackupVault resource is locked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
   */
   readonly effectiveTime?: string;
   /**
@@ -69,7 +81,7 @@ export interface BackupDrBackupVaultConfig extends cdktn.TerraformMetaArguments 
   *    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
   *    * deletion of a backup vault instance that is being referenced by an active backup plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
   */
   readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
@@ -78,11 +90,11 @@ export interface BackupDrBackupVaultConfig extends cdktn.TerraformMetaArguments 
   *  expiration schedule defined by the associated backup plan is shorter than the minimum
   *  retention set by the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
   */
   readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -92,14 +104,14 @@ export interface BackupDrBackupVaultConfig extends cdktn.TerraformMetaArguments 
   * If set, the following restrictions against deletion of the backup vault instance can be overridden:
   *    * deletion of a backup vault instance that is being referenced by an active backup plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
   */
   readonly ignoreBackupPlanReferences?: boolean | cdktn.IResolvable;
   /**
   * If set, the following restrictions against deletion of the backup vault instance can be overridden:
   *    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
   */
   readonly ignoreInactiveDatasources?: boolean | cdktn.IResolvable;
   /**
@@ -108,29 +120,29 @@ export interface BackupDrBackupVaultConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The GCP location for the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}
   */
   readonly project?: string;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
   */
   readonly encryptionConfig?: BackupDrBackupVaultEncryptionConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
   */
   readonly timeouts?: BackupDrBackupVaultTimeouts;
 }
@@ -138,7 +150,7 @@ export interface BackupDrBackupVaultEncryptionConfig {
   /**
   * The Resource name of the Cloud KMS key to be used to encrypt new backups. The key must be in the same location as the backup vault. The key must be a Cloud KMS CryptoKey.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#kms_key_name BackupDrBackupVault#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#kms_key_name BackupDrBackupVault#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -222,15 +234,15 @@ export class BackupDrBackupVaultEncryptionConfigOutputReference extends cdktn.Co
 }
 export interface BackupDrBackupVaultTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}
   */
   readonly update?: string;
 }
@@ -382,7 +394,7 @@ export class BackupDrBackupVaultTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}
 */
 export class BackupDrBackupVault extends cdktn.TerraformResource {
 
@@ -398,7 +410,7 @@ export class BackupDrBackupVault extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BackupDrBackupVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupDrBackupVault to import
-  * @param importFromId The id of the existing BackupDrBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupDrBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupDrBackupVault to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -410,7 +422,7 @@ export class BackupDrBackupVault extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -421,7 +433,7 @@ export class BackupDrBackupVault extends cdktn.TerraformResource {
       terraformResourceType: 'google_backup_dr_backup_vault',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -438,6 +450,7 @@ export class BackupDrBackupVault extends cdktn.TerraformResource {
     this._backupMinimumEnforcedRetentionDuration = config.backupMinimumEnforcedRetentionDuration;
     this._backupRetentionInheritance = config.backupRetentionInheritance;
     this._backupVaultId = config.backupVaultId;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._effectiveTime = config.effectiveTime;
     this._forceDelete = config.forceDelete;
@@ -559,6 +572,22 @@ export class BackupDrBackupVault extends cdktn.TerraformResource {
   // deletable - computed: true, optional: false, required: false
   public get deletable() {
     return this.getBooleanAttribute('deletable');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -815,6 +844,7 @@ export class BackupDrBackupVault extends cdktn.TerraformResource {
       backup_minimum_enforced_retention_duration: cdktn.stringToTerraform(this._backupMinimumEnforcedRetentionDuration),
       backup_retention_inheritance: cdktn.stringToTerraform(this._backupRetentionInheritance),
       backup_vault_id: cdktn.stringToTerraform(this._backupVaultId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       effective_time: cdktn.stringToTerraform(this._effectiveTime),
       force_delete: cdktn.booleanToTerraform(this._forceDelete),
@@ -864,6 +894,12 @@ export class BackupDrBackupVault extends cdktn.TerraformResource {
       },
       backup_vault_id: {
         value: cdktn.stringToHclTerraform(this._backupVaultId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

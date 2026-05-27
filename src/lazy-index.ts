@@ -35,6 +35,7 @@ Object.defineProperty(exports, 'apigeeApiDeployment', { get: function () { retur
 Object.defineProperty(exports, 'apigeeApiProduct', { get: function () { return require('./apigee-api-product'); } });
 Object.defineProperty(exports, 'apigeeAppGroup', { get: function () { return require('./apigee-app-group'); } });
 Object.defineProperty(exports, 'apigeeControlPlaneAccess', { get: function () { return require('./apigee-control-plane-access'); } });
+Object.defineProperty(exports, 'apigeeDataCollector', { get: function () { return require('./apigee-data-collector'); } });
 Object.defineProperty(exports, 'apigeeDeveloper', { get: function () { return require('./apigee-developer'); } });
 Object.defineProperty(exports, 'apigeeDeveloperApp', { get: function () { return require('./apigee-developer-app'); } });
 Object.defineProperty(exports, 'apigeeDnsZone', { get: function () { return require('./apigee-dns-zone'); } });
@@ -210,6 +211,7 @@ Object.defineProperty(exports, 'chronicleDataAccessLabel', { get: function () { 
 Object.defineProperty(exports, 'chronicleDataAccessScope', { get: function () { return require('./chronicle-data-access-scope'); } });
 Object.defineProperty(exports, 'chronicleDataTable', { get: function () { return require('./chronicle-data-table'); } });
 Object.defineProperty(exports, 'chronicleDataTableRow', { get: function () { return require('./chronicle-data-table-row'); } });
+Object.defineProperty(exports, 'chronicleNativeDashboard', { get: function () { return require('./chronicle-native-dashboard'); } });
 Object.defineProperty(exports, 'chronicleReferenceList', { get: function () { return require('./chronicle-reference-list'); } });
 Object.defineProperty(exports, 'chronicleRetrohunt', { get: function () { return require('./chronicle-retrohunt'); } });
 Object.defineProperty(exports, 'chronicleRule', { get: function () { return require('./chronicle-rule'); } });
@@ -447,6 +449,7 @@ Object.defineProperty(exports, 'computeWireGroup', { get: function () { return r
 Object.defineProperty(exports, 'contactCenterInsightsAnalysisRule', { get: function () { return require('./contact-center-insights-analysis-rule'); } });
 Object.defineProperty(exports, 'contactCenterInsightsAssessmentRule', { get: function () { return require('./contact-center-insights-assessment-rule'); } });
 Object.defineProperty(exports, 'contactCenterInsightsAutoLabelingRule', { get: function () { return require('./contact-center-insights-auto-labeling-rule'); } });
+Object.defineProperty(exports, 'contactCenterInsightsEncryptionSpec', { get: function () { return require('./contact-center-insights-encryption-spec'); } });
 Object.defineProperty(exports, 'contactCenterInsightsQaQuestion', { get: function () { return require('./contact-center-insights-qa-question'); } });
 Object.defineProperty(exports, 'contactCenterInsightsQaScorecard', { get: function () { return require('./contact-center-insights-qa-scorecard'); } });
 Object.defineProperty(exports, 'contactCenterInsightsQaScorecardRevision', { get: function () { return require('./contact-center-insights-qa-scorecard-revision'); } });
@@ -1524,6 +1527,7 @@ Object.defineProperty(exports, 'dataGoogleKmsSecret', { get: function () { retur
 Object.defineProperty(exports, 'dataGoogleKmsSecretAsymmetric', { get: function () { return require('./data-google-kms-secret-asymmetric'); } });
 Object.defineProperty(exports, 'dataGoogleKmsSecretCiphertext', { get: function () { return require('./data-google-kms-secret-ciphertext'); } });
 Object.defineProperty(exports, 'dataGoogleLoggingFolderSettings', { get: function () { return require('./data-google-logging-folder-settings'); } });
+Object.defineProperty(exports, 'dataGoogleLoggingLogView', { get: function () { return require('./data-google-logging-log-view'); } });
 Object.defineProperty(exports, 'dataGoogleLoggingLogViewIamPolicy', { get: function () { return require('./data-google-logging-log-view-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleLoggingOrganizationSettings', { get: function () { return require('./data-google-logging-organization-settings'); } });
 Object.defineProperty(exports, 'dataGoogleLoggingProjectCmekSettings', { get: function () { return require('./data-google-logging-project-cmek-settings'); } });

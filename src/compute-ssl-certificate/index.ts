@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,17 +17,29 @@ export interface ComputeSslCertificateConfig extends cdktn.TerraformMetaArgument
   * The certificate chain must be no greater than 5 certs long.
   * The chain must include at least one intermediate cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#certificate ComputeSslCertificate#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#certificate ComputeSslCertificate#certificate}
   */
   readonly certificate: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#deletion_policy ComputeSslCertificate#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#description ComputeSslCertificate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#description ComputeSslCertificate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#id ComputeSslCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#id ComputeSslCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,51 +56,51 @@ export interface ComputeSslCertificateConfig extends cdktn.TerraformMetaArgument
   * 
   * These are in the same namespace as the managed SSL certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#name ComputeSslCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#name ComputeSslCertificate#name}
   */
   readonly name?: string;
   /**
   * Creates a unique name beginning with the specified prefix. Conflicts with name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#name_prefix ComputeSslCertificate#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#name_prefix ComputeSslCertificate#name_prefix}
   */
   readonly namePrefix?: string;
   /**
   * The write-only private key in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#private_key ComputeSslCertificate#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#private_key ComputeSslCertificate#private_key}
   */
   readonly privateKey?: string;
   /**
   * The write-only private key in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#private_key_wo ComputeSslCertificate#private_key_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#private_key_wo ComputeSslCertificate#private_key_wo}
   */
   readonly privateKeyWo?: string;
   /**
   * Triggers update of 'private_key_wo' write-only. Increment this value when an update to 'private_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#private_key_wo_version ComputeSslCertificate#private_key_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#private_key_wo_version ComputeSslCertificate#private_key_wo_version}
   */
   readonly privateKeyWoVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#project ComputeSslCertificate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#project ComputeSslCertificate#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#timeouts ComputeSslCertificate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#timeouts ComputeSslCertificate#timeouts}
   */
   readonly timeouts?: ComputeSslCertificateTimeouts;
 }
 export interface ComputeSslCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#create ComputeSslCertificate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#create ComputeSslCertificate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#delete ComputeSslCertificate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#delete ComputeSslCertificate#delete}
   */
   readonly delete?: string;
 }
@@ -211,7 +223,7 @@ export class ComputeSslCertificateTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate}
 */
 export class ComputeSslCertificate extends cdktn.TerraformResource {
 
@@ -227,7 +239,7 @@ export class ComputeSslCertificate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeSslCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSslCertificate to import
-  * @param importFromId The id of the existing ComputeSslCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeSslCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSslCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -239,7 +251,7 @@ export class ComputeSslCertificate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +262,7 @@ export class ComputeSslCertificate extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_ssl_certificate',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -262,6 +274,7 @@ export class ComputeSslCertificate extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._certificate = config.certificate;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
@@ -298,6 +311,22 @@ export class ComputeSslCertificate extends cdktn.TerraformResource {
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
     return this.getStringAttribute('creation_timestamp');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -461,6 +490,7 @@ export class ComputeSslCertificate extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate: cdktn.stringToTerraform(this._certificate),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -477,6 +507,12 @@ export class ComputeSslCertificate extends cdktn.TerraformResource {
     const attrs = {
       certificate: {
         value: cdktn.stringToHclTerraform(this._certificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

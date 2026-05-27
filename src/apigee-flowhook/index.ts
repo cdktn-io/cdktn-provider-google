@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,41 @@ export interface ApigeeFlowhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Flag that specifies whether execution should continue if the flow hook throws an exception. Set to true to continue execution. Set to false to stop execution if the flow hook throws an exception. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#continue_on_error ApigeeFlowhook#continue_on_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#continue_on_error ApigeeFlowhook#continue_on_error}
   */
   readonly continueOnError?: boolean | cdktn.IResolvable;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#deletion_policy ApigeeFlowhook#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Description of the flow hook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#description ApigeeFlowhook#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#description ApigeeFlowhook#description}
   */
   readonly description?: string;
   /**
   * The resource ID of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#environment ApigeeFlowhook#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#environment ApigeeFlowhook#environment}
   */
   readonly environment: string;
   /**
   * Where in the API call flow the flow hook is invoked. Must be one of PreProxyFlowHook, PostProxyFlowHook, PreTargetFlowHook, or PostTargetFlowHook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#flow_hook_point ApigeeFlowhook#flow_hook_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#flow_hook_point ApigeeFlowhook#flow_hook_point}
   */
   readonly flowHookPoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#id ApigeeFlowhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#id ApigeeFlowhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,29 +58,29 @@ export interface ApigeeFlowhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Apigee Organization associated with the environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#org_id ApigeeFlowhook#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#org_id ApigeeFlowhook#org_id}
   */
   readonly orgId: string;
   /**
   * Id of the Sharedflow attaching to a flowhook point.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#sharedflow ApigeeFlowhook#sharedflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#sharedflow ApigeeFlowhook#sharedflow}
   */
   readonly sharedflow: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#timeouts ApigeeFlowhook#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#timeouts ApigeeFlowhook#timeouts}
   */
   readonly timeouts?: ApigeeFlowhookTimeouts;
 }
 export interface ApigeeFlowhookTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#create ApigeeFlowhook#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#create ApigeeFlowhook#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#delete ApigeeFlowhook#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#delete ApigeeFlowhook#delete}
   */
   readonly delete?: string;
 }
@@ -191,7 +203,7 @@ export class ApigeeFlowhookTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook google_apigee_flowhook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook google_apigee_flowhook}
 */
 export class ApigeeFlowhook extends cdktn.TerraformResource {
 
@@ -207,7 +219,7 @@ export class ApigeeFlowhook extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeFlowhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeFlowhook to import
-  * @param importFromId The id of the existing ApigeeFlowhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeFlowhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeFlowhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -219,7 +231,7 @@ export class ApigeeFlowhook extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_flowhook google_apigee_flowhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_flowhook google_apigee_flowhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -230,7 +242,7 @@ export class ApigeeFlowhook extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_flowhook',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -242,6 +254,7 @@ export class ApigeeFlowhook extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._continueOnError = config.continueOnError;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._environment = config.environment;
     this._flowHookPoint = config.flowHookPoint;
@@ -269,6 +282,22 @@ export class ApigeeFlowhook extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get continueOnErrorInput() {
     return this._continueOnError;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -378,6 +407,7 @@ export class ApigeeFlowhook extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       continue_on_error: cdktn.booleanToTerraform(this._continueOnError),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       environment: cdktn.stringToTerraform(this._environment),
       flow_hook_point: cdktn.stringToTerraform(this._flowHookPoint),
@@ -395,6 +425,12 @@ export class ApigeeFlowhook extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),

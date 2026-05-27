@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface ComputeAutoscalerConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#deletion_policy ComputeAutoscaler#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#description ComputeAutoscaler#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#description ComputeAutoscaler#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#id ComputeAutoscaler#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#id ComputeAutoscaler#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,35 +44,35 @@ export interface ComputeAutoscalerConfig extends cdktn.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#project ComputeAutoscaler#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#project ComputeAutoscaler#project}
   */
   readonly project?: string;
   /**
   * URL of the managed instance group that this autoscaler will scale.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
   */
   readonly target: string;
   /**
   * URL of the zone where the instance group resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#zone ComputeAutoscaler#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#zone ComputeAutoscaler#zone}
   */
   readonly zone?: string;
   /**
   * autoscaling_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#autoscaling_policy ComputeAutoscaler#autoscaling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#autoscaling_policy ComputeAutoscaler#autoscaling_policy}
   */
   readonly autoscalingPolicy: ComputeAutoscalerAutoscalingPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#timeouts ComputeAutoscaler#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#timeouts ComputeAutoscaler#timeouts}
   */
   readonly timeouts?: ComputeAutoscalerTimeouts;
 }
@@ -72,7 +84,7 @@ export interface ComputeAutoscalerAutoscalingPolicyCpuUtilization {
   * 
   * - OPTIMIZE_AVAILABILITY. Predictive autoscaling improves availability by monitoring daily and weekly load patterns and scaling out ahead of anticipated demand.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#predictive_method ComputeAutoscaler#predictive_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#predictive_method ComputeAutoscaler#predictive_method}
   */
   readonly predictiveMethod?: string;
   /**
@@ -90,7 +102,7 @@ export interface ComputeAutoscalerAutoscalingPolicyCpuUtilization {
   * specified or until the average utilization reaches the target
   * utilization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
   */
   readonly target: number;
 }
@@ -204,7 +216,7 @@ export interface ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization {
   * balancing configuration) that autoscaler should maintain. Must
   * be a positive float value. If not defined, the default is 0.8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
   */
   readonly target: number;
 }
@@ -318,7 +330,7 @@ export interface ComputeAutoscalerAutoscalingPolicyMetric {
   * TimeSeries are returned upon the query execution, the autoscaler
   * will sum their respective values to obtain its scaling value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#filter ComputeAutoscaler#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#filter ComputeAutoscaler#filter}
   */
   readonly filter?: string;
   /**
@@ -327,7 +339,7 @@ export interface ComputeAutoscalerAutoscalingPolicyMetric {
   * 
   * The metric must have a value type of INT64 or DOUBLE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
   */
   readonly name: string;
   /**
@@ -348,7 +360,7 @@ export interface ComputeAutoscalerAutoscalingPolicyMetric {
   * single instance, it could be better used with utilization_target
   * instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#single_instance_assignment ComputeAutoscaler#single_instance_assignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#single_instance_assignment ComputeAutoscaler#single_instance_assignment}
   */
   readonly singleInstanceAssignment?: number;
   /**
@@ -362,14 +374,14 @@ export interface ComputeAutoscalerAutoscalingPolicyMetric {
   * The autoscaler will work to keep this value constant for each
   * of the instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
   */
   readonly target?: number;
   /**
   * Defines how target utilization value is expressed for a
   * Stackdriver Monitoring metric. Possible values: ["GAUGE", "DELTA_PER_SECOND", "DELTA_PER_MINUTE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#type ComputeAutoscaler#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#type ComputeAutoscaler#type}
   */
   readonly type?: string;
 }
@@ -586,7 +598,7 @@ export class ComputeAutoscalerAutoscalingPolicyMetricList extends cdktn.ComplexL
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -601,14 +613,14 @@ export interface ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInRepl
   * Specifies a fixed number of VM instances. This must be a positive
   * integer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#fixed ComputeAutoscaler#fixed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#fixed ComputeAutoscaler#fixed}
   */
   readonly fixed?: number;
   /**
   * Specifies a percentage of instances between 0 to 100%, inclusive.
   * For example, specify 80 for 80%.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#percent ComputeAutoscaler#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#percent ComputeAutoscaler#percent}
   */
   readonly percent?: number;
 }
@@ -724,13 +736,13 @@ export interface ComputeAutoscalerAutoscalingPolicyScaleInControl {
   * How long back autoscaling should look when computing recommendations
   * to include directives regarding slower scale down, as described above.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#time_window_sec ComputeAutoscaler#time_window_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#time_window_sec ComputeAutoscaler#time_window_sec}
   */
   readonly timeWindowSec?: number;
   /**
   * max_scaled_in_replicas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#max_scaled_in_replicas ComputeAutoscaler#max_scaled_in_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#max_scaled_in_replicas ComputeAutoscaler#max_scaled_in_replicas}
   */
   readonly maxScaledInReplicas?: ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas;
 }
@@ -845,41 +857,41 @@ export interface ComputeAutoscalerAutoscalingPolicyScalingSchedules {
   /**
   * A description of a scaling schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#description ComputeAutoscaler#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#description ComputeAutoscaler#description}
   */
   readonly description?: string;
   /**
   * A boolean value that specifies if a scaling schedule can influence autoscaler recommendations. If set to true, then a scaling schedule has no effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#disabled ComputeAutoscaler#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#disabled ComputeAutoscaler#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The duration of time intervals (in seconds) for which this scaling schedule will be running. The minimum allowed value is 300.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#duration_sec ComputeAutoscaler#duration_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#duration_sec ComputeAutoscaler#duration_sec}
   */
   readonly durationSec: number;
   /**
   * Minimum number of VM instances that autoscaler will recommend in time intervals starting according to schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#min_required_replicas ComputeAutoscaler#min_required_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#min_required_replicas ComputeAutoscaler#min_required_replicas}
   */
   readonly minRequiredReplicas: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
   */
   readonly name: string;
   /**
   * The start timestamps of time intervals when this scaling schedule should provide a scaling signal. This field uses the extended cron format (with an optional year field).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#schedule ComputeAutoscaler#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#schedule ComputeAutoscaler#schedule}
   */
   readonly schedule: string;
   /**
   * The time zone to be used when interpreting the schedule. The value of this field must be a time zone name from the tz database: http://en.wikipedia.org/wiki/Tz_database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#time_zone ComputeAutoscaler#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#time_zone ComputeAutoscaler#time_zone}
   */
   readonly timeZone?: string;
 }
@@ -1145,7 +1157,7 @@ export class ComputeAutoscalerAutoscalingPolicyScalingSchedulesList extends cdkt
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1168,7 +1180,7 @@ export interface ComputeAutoscalerAutoscalingPolicy {
   * instance may take to initialize. To do this, create an instance
   * and time the startup process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#cooldown_period ComputeAutoscaler#cooldown_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#cooldown_period ComputeAutoscaler#cooldown_period}
   */
   readonly cooldownPeriod?: number;
   /**
@@ -1177,7 +1189,7 @@ export interface ComputeAutoscalerAutoscalingPolicy {
   * maximum number of replicas should not be lower than minimal number
   * of replicas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#max_replicas ComputeAutoscaler#max_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#max_replicas ComputeAutoscaler#max_replicas}
   */
   readonly maxReplicas: number;
   /**
@@ -1186,43 +1198,54 @@ export interface ComputeAutoscalerAutoscalingPolicy {
   * choose a default value depending on maximum number of instances
   * allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#min_replicas ComputeAutoscaler#min_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#min_replicas ComputeAutoscaler#min_replicas}
   */
   readonly minReplicas: number;
   /**
   * Defines operating mode for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#mode ComputeAutoscaler#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#mode ComputeAutoscaler#mode}
   */
   readonly mode?: string;
   /**
+  * The number of seconds that the autoscaler waits for load stabilization
+  * before making scale-in decisions.
+  * 
+  * This might appear as a delay in scaling in but it is an important mechanism
+  * for your application to not have fluctuating size due to short term load
+  * fluctuations.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#stabilization_period ComputeAutoscaler#stabilization_period}
+  */
+  readonly stabilizationPeriod?: number;
+  /**
   * cpu_utilization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#cpu_utilization ComputeAutoscaler#cpu_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#cpu_utilization ComputeAutoscaler#cpu_utilization}
   */
   readonly cpuUtilization?: ComputeAutoscalerAutoscalingPolicyCpuUtilization;
   /**
   * load_balancing_utilization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#load_balancing_utilization ComputeAutoscaler#load_balancing_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#load_balancing_utilization ComputeAutoscaler#load_balancing_utilization}
   */
   readonly loadBalancingUtilization?: ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization;
   /**
   * metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#metric ComputeAutoscaler#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#metric ComputeAutoscaler#metric}
   */
   readonly metric?: ComputeAutoscalerAutoscalingPolicyMetric[] | cdktn.IResolvable;
   /**
   * scale_in_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#scale_in_control ComputeAutoscaler#scale_in_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#scale_in_control ComputeAutoscaler#scale_in_control}
   */
   readonly scaleInControl?: ComputeAutoscalerAutoscalingPolicyScaleInControl;
   /**
   * scaling_schedules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#scaling_schedules ComputeAutoscaler#scaling_schedules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#scaling_schedules ComputeAutoscaler#scaling_schedules}
   */
   readonly scalingSchedules?: ComputeAutoscalerAutoscalingPolicyScalingSchedules[] | cdktn.IResolvable;
 }
@@ -1237,6 +1260,7 @@ export function computeAutoscalerAutoscalingPolicyToTerraform(struct?: ComputeAu
     max_replicas: cdktn.numberToTerraform(struct!.maxReplicas),
     min_replicas: cdktn.numberToTerraform(struct!.minReplicas),
     mode: cdktn.stringToTerraform(struct!.mode),
+    stabilization_period: cdktn.numberToTerraform(struct!.stabilizationPeriod),
     cpu_utilization: computeAutoscalerAutoscalingPolicyCpuUtilizationToTerraform(struct!.cpuUtilization),
     load_balancing_utilization: computeAutoscalerAutoscalingPolicyLoadBalancingUtilizationToTerraform(struct!.loadBalancingUtilization),
     metric: cdktn.listMapper(computeAutoscalerAutoscalingPolicyMetricToTerraform, true)(struct!.metric),
@@ -1275,6 +1299,12 @@ export function computeAutoscalerAutoscalingPolicyToHclTerraform(struct?: Comput
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    stabilization_period: {
+      value: cdktn.numberToHclTerraform(struct!.stabilizationPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
     cpu_utilization: {
       value: computeAutoscalerAutoscalingPolicyCpuUtilizationToHclTerraform(struct!.cpuUtilization),
@@ -1342,6 +1372,10 @@ export class ComputeAutoscalerAutoscalingPolicyOutputReference extends cdktn.Com
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
+    if (this._stabilizationPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stabilizationPeriod = this._stabilizationPeriod;
+    }
     if (this._cpuUtilization?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cpuUtilization = this._cpuUtilization?.internalValue;
@@ -1372,6 +1406,7 @@ export class ComputeAutoscalerAutoscalingPolicyOutputReference extends cdktn.Com
       this._maxReplicas = undefined;
       this._minReplicas = undefined;
       this._mode = undefined;
+      this._stabilizationPeriod = undefined;
       this._cpuUtilization.internalValue = undefined;
       this._loadBalancingUtilization.internalValue = undefined;
       this._metric.internalValue = undefined;
@@ -1384,6 +1419,7 @@ export class ComputeAutoscalerAutoscalingPolicyOutputReference extends cdktn.Com
       this._maxReplicas = value.maxReplicas;
       this._minReplicas = value.minReplicas;
       this._mode = value.mode;
+      this._stabilizationPeriod = value.stabilizationPeriod;
       this._cpuUtilization.internalValue = value.cpuUtilization;
       this._loadBalancingUtilization.internalValue = value.loadBalancingUtilization;
       this._metric.internalValue = value.metric;
@@ -1448,6 +1484,22 @@ export class ComputeAutoscalerAutoscalingPolicyOutputReference extends cdktn.Com
   // Temporarily expose input value. Use with caution.
   public get modeInput() {
     return this._mode;
+  }
+
+  // stabilization_period - computed: false, optional: true, required: false
+  private _stabilizationPeriod?: number; 
+  public get stabilizationPeriod() {
+    return this.getNumberAttribute('stabilization_period');
+  }
+  public set stabilizationPeriod(value: number) {
+    this._stabilizationPeriod = value;
+  }
+  public resetStabilizationPeriod() {
+    this._stabilizationPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stabilizationPeriodInput() {
+    return this._stabilizationPeriod;
   }
 
   // cpu_utilization - computed: false, optional: true, required: false
@@ -1532,15 +1584,15 @@ export class ComputeAutoscalerAutoscalingPolicyOutputReference extends cdktn.Com
 }
 export interface ComputeAutoscalerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#create ComputeAutoscaler#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#create ComputeAutoscaler#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#delete ComputeAutoscaler#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#delete ComputeAutoscaler#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#update ComputeAutoscaler#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#update ComputeAutoscaler#update}
   */
   readonly update?: string;
 }
@@ -1692,7 +1744,7 @@ export class ComputeAutoscalerTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler google_compute_autoscaler}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler google_compute_autoscaler}
 */
 export class ComputeAutoscaler extends cdktn.TerraformResource {
 
@@ -1708,7 +1760,7 @@ export class ComputeAutoscaler extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeAutoscaler resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeAutoscaler to import
-  * @param importFromId The id of the existing ComputeAutoscaler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeAutoscaler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeAutoscaler to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1720,7 +1772,7 @@ export class ComputeAutoscaler extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_autoscaler google_compute_autoscaler} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_autoscaler google_compute_autoscaler} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1731,7 +1783,7 @@ export class ComputeAutoscaler extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_autoscaler',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1742,6 +1794,7 @@ export class ComputeAutoscaler extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
@@ -1759,6 +1812,22 @@ export class ComputeAutoscaler extends cdktn.TerraformResource {
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
     return this.getStringAttribute('creation_timestamp');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -1891,6 +1960,7 @@ export class ComputeAutoscaler extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -1904,6 +1974,12 @@ export class ComputeAutoscaler extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,

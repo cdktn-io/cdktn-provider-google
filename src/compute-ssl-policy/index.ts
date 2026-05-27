@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -24,17 +24,29 @@ export interface ComputeSslPolicyConfig extends cdktn.TerraformMetaArguments {
   * *must* be present when using the 'CUSTOM' profile. This argument
   * *must not* be present when using any other profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#custom_features ComputeSslPolicy#custom_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#custom_features ComputeSslPolicy#custom_features}
   */
   readonly customFeatures?: string[];
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#deletion_policy ComputeSslPolicy#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#description ComputeSslPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#description ComputeSslPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,7 +57,7 @@ export interface ComputeSslPolicyConfig extends cdktn.TerraformMetaArguments {
   * to establish a connection with the load balancer. When set to'
   * TLS_1_3', the profile field must be set to 'RESTRICTED'. Default value: "TLS_1_0" Possible values: ["TLS_1_0", "TLS_1_1", "TLS_1_2", "TLS_1_3"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#min_tls_version ComputeSslPolicy#min_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#min_tls_version ComputeSslPolicy#min_tls_version}
   */
   readonly minTlsVersion?: string;
   /**
@@ -57,7 +69,7 @@ export interface ComputeSslPolicyConfig extends cdktn.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#name ComputeSslPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#name ComputeSslPolicy#name}
   */
   readonly name: string;
   /**
@@ -72,31 +84,31 @@ export interface ComputeSslPolicyConfig extends cdktn.TerraformMetaArguments {
   * If set to 'FIPS_202205', 'minTlsVersion' must also be set to
   * 'TLS_1_2'. Default value: "COMPATIBLE" Possible values: ["COMPATIBLE", "MODERN", "RESTRICTED", "CUSTOM", "FIPS_202205"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#profile ComputeSslPolicy#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#profile ComputeSslPolicy#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#timeouts ComputeSslPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#timeouts ComputeSslPolicy#timeouts}
   */
   readonly timeouts?: ComputeSslPolicyTimeouts;
 }
 export interface ComputeSslPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#create ComputeSslPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#create ComputeSslPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#delete ComputeSslPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#delete ComputeSslPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#update ComputeSslPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#update ComputeSslPolicy#update}
   */
   readonly update?: string;
 }
@@ -248,7 +260,7 @@ export class ComputeSslPolicyTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy google_compute_ssl_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy google_compute_ssl_policy}
 */
 export class ComputeSslPolicy extends cdktn.TerraformResource {
 
@@ -264,7 +276,7 @@ export class ComputeSslPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeSslPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSslPolicy to import
-  * @param importFromId The id of the existing ComputeSslPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeSslPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSslPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -276,7 +288,7 @@ export class ComputeSslPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy google_compute_ssl_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ssl_policy google_compute_ssl_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -287,7 +299,7 @@ export class ComputeSslPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_ssl_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -299,6 +311,7 @@ export class ComputeSslPolicy extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._customFeatures = config.customFeatures;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._minTlsVersion = config.minTlsVersion;
@@ -331,6 +344,22 @@ export class ComputeSslPolicy extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customFeaturesInput() {
     return this._customFeatures;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -464,6 +493,7 @@ export class ComputeSslPolicy extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       custom_features: cdktn.listMapper(cdktn.stringToTerraform, false)(this._customFeatures),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       min_tls_version: cdktn.stringToTerraform(this._minTlsVersion),
@@ -481,6 +511,12 @@ export class ComputeSslPolicy extends cdktn.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),

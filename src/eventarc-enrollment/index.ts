@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,38 +18,50 @@ export interface EventarcEnrollmentConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#annotations EventarcEnrollment#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#annotations EventarcEnrollment#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * A CEL expression identifying which messages this enrollment applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#cel_match EventarcEnrollment#cel_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#cel_match EventarcEnrollment#cel_match}
   */
   readonly celMatch: string;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#deletion_policy EventarcEnrollment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
   /**
   * Destination is the Pipeline that the Enrollment is delivering to. It must
   * point to the full resource name of a Pipeline. Format:
   * "projects/{PROJECT_ID}/locations/{region}/pipelines/{PIPELINE_ID)"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#destination EventarcEnrollment#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#destination EventarcEnrollment#destination}
   */
   readonly destination: string;
   /**
   * Resource display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#display_name EventarcEnrollment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#display_name EventarcEnrollment#display_name}
   */
   readonly displayName?: string;
   /**
   * The user-provided ID to be assigned to the Enrollment. It should match the
   * format '^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#enrollment_id EventarcEnrollment#enrollment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#enrollment_id EventarcEnrollment#enrollment_id}
   */
   readonly enrollmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#id EventarcEnrollment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#id EventarcEnrollment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -61,13 +73,13 @@ export interface EventarcEnrollmentConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#labels EventarcEnrollment#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#labels EventarcEnrollment#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#location EventarcEnrollment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#location EventarcEnrollment#location}
   */
   readonly location: string;
   /**
@@ -75,31 +87,31 @@ export interface EventarcEnrollmentConfig extends cdktn.TerraformMetaArguments {
   * matches the form
   * projects/{project}/locations/{location}/messageBuses/{messageBus}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#message_bus EventarcEnrollment#message_bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#message_bus EventarcEnrollment#message_bus}
   */
   readonly messageBus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#project EventarcEnrollment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#project EventarcEnrollment#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#timeouts EventarcEnrollment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#timeouts EventarcEnrollment#timeouts}
   */
   readonly timeouts?: EventarcEnrollmentTimeouts;
 }
 export interface EventarcEnrollmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#create EventarcEnrollment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#create EventarcEnrollment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#delete EventarcEnrollment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#delete EventarcEnrollment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#update EventarcEnrollment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#update EventarcEnrollment#update}
   */
   readonly update?: string;
 }
@@ -251,7 +263,7 @@ export class EventarcEnrollmentTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment google_eventarc_enrollment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment google_eventarc_enrollment}
 */
 export class EventarcEnrollment extends cdktn.TerraformResource {
 
@@ -267,7 +279,7 @@ export class EventarcEnrollment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventarcEnrollment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventarcEnrollment to import
-  * @param importFromId The id of the existing EventarcEnrollment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventarcEnrollment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventarcEnrollment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -279,7 +291,7 @@ export class EventarcEnrollment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment google_eventarc_enrollment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment google_eventarc_enrollment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -290,7 +302,7 @@ export class EventarcEnrollment extends cdktn.TerraformResource {
       terraformResourceType: 'google_eventarc_enrollment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -303,6 +315,7 @@ export class EventarcEnrollment extends cdktn.TerraformResource {
     });
     this._annotations = config.annotations;
     this._celMatch = config.celMatch;
+    this._deletionPolicy = config.deletionPolicy;
     this._destination = config.destination;
     this._displayName = config.displayName;
     this._enrollmentId = config.enrollmentId;
@@ -350,6 +363,22 @@ export class EventarcEnrollment extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // destination - computed: false, optional: false, required: true
@@ -530,6 +559,7 @@ export class EventarcEnrollment extends cdktn.TerraformResource {
     return {
       annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
       cel_match: cdktn.stringToTerraform(this._celMatch),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       destination: cdktn.stringToTerraform(this._destination),
       display_name: cdktn.stringToTerraform(this._displayName),
       enrollment_id: cdktn.stringToTerraform(this._enrollmentId),
@@ -552,6 +582,12 @@ export class EventarcEnrollment extends cdktn.TerraformResource {
       },
       cel_match: {
         value: cdktn.stringToHclTerraform(this._celMatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

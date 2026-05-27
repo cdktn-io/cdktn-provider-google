@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,23 @@ export interface DiscoveryEngineSitemapConfig extends cdktn.TerraformMetaArgumen
   /**
   * The unique id of the data store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#data_store_id DiscoveryEngineSitemap#data_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#data_store_id DiscoveryEngineSitemap#data_store_id}
   */
   readonly dataStoreId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#id DiscoveryEngineSitemap#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#deletion_policy DiscoveryEngineSitemap#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#id DiscoveryEngineSitemap#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,33 +41,33 @@ export interface DiscoveryEngineSitemapConfig extends cdktn.TerraformMetaArgumen
   * The geographic location where the data store should reside. The value can
   * only be one of "global", "us" and "eu".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#location DiscoveryEngineSitemap#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#location DiscoveryEngineSitemap#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#project DiscoveryEngineSitemap#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#project DiscoveryEngineSitemap#project}
   */
   readonly project?: string;
   /**
   * Public URI for the sitemap, e.g. "www.example.com/sitemap.xml".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#uri DiscoveryEngineSitemap#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#uri DiscoveryEngineSitemap#uri}
   */
   readonly uri?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#timeouts DiscoveryEngineSitemap#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#timeouts DiscoveryEngineSitemap#timeouts}
   */
   readonly timeouts?: DiscoveryEngineSitemapTimeouts;
 }
 export interface DiscoveryEngineSitemapTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#create DiscoveryEngineSitemap#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#create DiscoveryEngineSitemap#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#delete DiscoveryEngineSitemap#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#delete DiscoveryEngineSitemap#delete}
   */
   readonly delete?: string;
 }
@@ -178,7 +190,7 @@ export class DiscoveryEngineSitemapTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap google_discovery_engine_sitemap}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap google_discovery_engine_sitemap}
 */
 export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
 
@@ -194,7 +206,7 @@ export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DiscoveryEngineSitemap resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineSitemap to import
-  * @param importFromId The id of the existing DiscoveryEngineSitemap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DiscoveryEngineSitemap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineSitemap to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -206,7 +218,7 @@ export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap google_discovery_engine_sitemap} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_sitemap google_discovery_engine_sitemap} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -217,7 +229,7 @@ export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
       terraformResourceType: 'google_discovery_engine_sitemap',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -229,6 +241,7 @@ export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._dataStoreId = config.dataStoreId;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._location = config.location;
     this._project = config.project;
@@ -256,6 +269,22 @@ export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dataStoreIdInput() {
     return this._dataStoreId;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -352,6 +381,7 @@ export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       data_store_id: cdktn.stringToTerraform(this._dataStoreId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
@@ -364,6 +394,12 @@ export class DiscoveryEngineSitemap extends cdktn.TerraformResource {
     const attrs = {
       data_store_id: {
         value: cdktn.stringToHclTerraform(this._dataStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

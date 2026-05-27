@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,35 @@ export interface BackupDrBackupPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the backup plan
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#backup_plan_id BackupDrBackupPlan#backup_plan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#backup_plan_id BackupDrBackupPlan#backup_plan_id}
   */
   readonly backupPlanId: string;
   /**
   * Backup vault where the backups gets stored using this Backup plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#backup_vault BackupDrBackupPlan#backup_vault}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#backup_vault BackupDrBackupPlan#backup_vault}
   */
   readonly backupVault: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#deletion_policy BackupDrBackupPlan#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The description allows for additional details about 'BackupPlan' and its use cases to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#description BackupDrBackupPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#description BackupDrBackupPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#id BackupDrBackupPlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#id BackupDrBackupPlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,48 +52,54 @@ export interface BackupDrBackupPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * The location for the backup plan
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#location BackupDrBackupPlan#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#location BackupDrBackupPlan#location}
   */
   readonly location: string;
   /**
   * This is only applicable for CloudSql resource. Days for which logs will be stored. This value should be greater than or equal to minimum enforced log retention duration of the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#log_retention_days BackupDrBackupPlan#log_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#log_retention_days BackupDrBackupPlan#log_retention_days}
   */
   readonly logRetentionDays?: number;
   /**
   * The maximum number of days for which an on-demand backup taken with custom retention can be retained.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#max_custom_on_demand_retention_days BackupDrBackupPlan#max_custom_on_demand_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#max_custom_on_demand_retention_days BackupDrBackupPlan#max_custom_on_demand_retention_days}
   */
   readonly maxCustomOnDemandRetentionDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#project BackupDrBackupPlan#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#project BackupDrBackupPlan#project}
   */
   readonly project?: string;
   /**
   * The resource type to which the 'BackupPlan' will be applied.
   * Examples include, "compute.googleapis.com/Instance", "compute.googleapis.com/Disk", "sqladmin.googleapis.com/Instance", "alloydb.googleapis.com/Cluster", "file.googleapis.com/Instance" and "storage.googleapis.com/Bucket".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#resource_type BackupDrBackupPlan#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#resource_type BackupDrBackupPlan#resource_type}
   */
   readonly resourceType: string;
   /**
   * backup_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#backup_rules BackupDrBackupPlan#backup_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#backup_rules BackupDrBackupPlan#backup_rules}
   */
   readonly backupRules?: BackupDrBackupPlanBackupRules[] | cdktn.IResolvable;
   /**
+  * compute_instance_backup_plan_properties block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#compute_instance_backup_plan_properties BackupDrBackupPlan#compute_instance_backup_plan_properties}
+  */
+  readonly computeInstanceBackupPlanProperties?: BackupDrBackupPlanComputeInstanceBackupPlanProperties;
+  /**
   * disk_backup_plan_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#disk_backup_plan_properties BackupDrBackupPlan#disk_backup_plan_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#disk_backup_plan_properties BackupDrBackupPlan#disk_backup_plan_properties}
   */
   readonly diskBackupPlanProperties?: BackupDrBackupPlanDiskBackupPlanProperties;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#timeouts BackupDrBackupPlan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#timeouts BackupDrBackupPlan#timeouts}
   */
   readonly timeouts?: BackupDrBackupPlanTimeouts;
 }
@@ -90,13 +108,13 @@ export interface BackupDrBackupPlanBackupRulesStandardScheduleBackupWindow {
   * The hour of the day (1-24) when the window ends, for example, if the value of end hour of the day is 10, that means the backup window end time is 10:00.
   * The end hour of the day should be greater than the start
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#end_hour_of_day BackupDrBackupPlan#end_hour_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#end_hour_of_day BackupDrBackupPlan#end_hour_of_day}
   */
   readonly endHourOfDay?: number;
   /**
   * The hour of the day (0-23) when the window starts, for example, if the value of the start hour of the day is 6, that means the backup window starts at 6:00.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#start_hour_of_day BackupDrBackupPlan#start_hour_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#start_hour_of_day BackupDrBackupPlan#start_hour_of_day}
   */
   readonly startHourOfDay: number;
 }
@@ -208,13 +226,13 @@ export interface BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonth {
   /**
   * Specifies the day of the week. Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#day_of_week BackupDrBackupPlan#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#day_of_week BackupDrBackupPlan#day_of_week}
   */
   readonly dayOfWeek: string;
   /**
   * WeekOfMonth enumerates possible weeks in the month, e.g. the first, third, or last week of the month. Possible values: ["WEEK_OF_MONTH_UNSPECIFIED", "FIRST", "SECOND", "THIRD", "FOURTH", "LAST"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#week_of_month BackupDrBackupPlan#week_of_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#week_of_month BackupDrBackupPlan#week_of_month}
   */
   readonly weekOfMonth: string;
 }
@@ -323,50 +341,50 @@ export interface BackupDrBackupPlanBackupRulesStandardSchedule {
   /**
   * Specifies days of months like 1, 5, or 14 on which jobs will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#days_of_month BackupDrBackupPlan#days_of_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#days_of_month BackupDrBackupPlan#days_of_month}
   */
   readonly daysOfMonth?: number[];
   /**
   * Specifies days of week like MONDAY or TUESDAY, on which jobs will run. This is required for 'recurrence_type', 'WEEKLY' and is not applicable otherwise. Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#days_of_week BackupDrBackupPlan#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#days_of_week BackupDrBackupPlan#days_of_week}
   */
   readonly daysOfWeek?: string[];
   /**
   * Specifies frequency for hourly backups. An hourly frequency of 2 means jobs will run every 2 hours from start time till end time defined.
   * This is required for 'recurrence_type', 'HOURLY' and is not applicable otherwise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#hourly_frequency BackupDrBackupPlan#hourly_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#hourly_frequency BackupDrBackupPlan#hourly_frequency}
   */
   readonly hourlyFrequency?: number;
   /**
   * Specifies values of months Possible values: ["MONTH_UNSPECIFIED", "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#months BackupDrBackupPlan#months}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#months BackupDrBackupPlan#months}
   */
   readonly months?: string[];
   /**
   * RecurrenceType enumerates the applicable periodicity for the schedule. Possible values: ["HOURLY", "DAILY", "WEEKLY", "MONTHLY", "YEARLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#recurrence_type BackupDrBackupPlan#recurrence_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#recurrence_type BackupDrBackupPlan#recurrence_type}
   */
   readonly recurrenceType: string;
   /**
   * The time zone to be used when interpreting the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#time_zone BackupDrBackupPlan#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#time_zone BackupDrBackupPlan#time_zone}
   */
   readonly timeZone: string;
   /**
   * backup_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#backup_window BackupDrBackupPlan#backup_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#backup_window BackupDrBackupPlan#backup_window}
   */
   readonly backupWindow?: BackupDrBackupPlanBackupRulesStandardScheduleBackupWindow;
   /**
   * week_day_of_month block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#week_day_of_month BackupDrBackupPlan#week_day_of_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#week_day_of_month BackupDrBackupPlan#week_day_of_month}
   */
   readonly weekDayOfMonth?: BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonth;
 }
@@ -649,19 +667,19 @@ export interface BackupDrBackupPlanBackupRules {
   /**
   * Configures the duration for which backup data will be kept. The value should be greater than or equal to minimum enforced retention of the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#backup_retention_days BackupDrBackupPlan#backup_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#backup_retention_days BackupDrBackupPlan#backup_retention_days}
   */
   readonly backupRetentionDays: number;
   /**
   * The unique ID of this 'BackupRule'. The 'rule_id' is unique per 'BackupPlan'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#rule_id BackupDrBackupPlan#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#rule_id BackupDrBackupPlan#rule_id}
   */
   readonly ruleId: string;
   /**
   * standard_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#standard_schedule BackupDrBackupPlan#standard_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#standard_schedule BackupDrBackupPlan#standard_schedule}
   */
   readonly standardSchedule: BackupDrBackupPlanBackupRulesStandardSchedule;
 }
@@ -814,7 +832,7 @@ export class BackupDrBackupPlanBackupRulesList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -824,6 +842,91 @@ export class BackupDrBackupPlanBackupRulesList extends cdktn.ComplexList {
     return new BackupDrBackupPlanBackupRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BackupDrBackupPlanComputeInstanceBackupPlanProperties {
+  /**
+  * Indicates whether to perform a guest flush operation before taking a
+  * compute instance backup. When set to true, the system will attempt
+  * to ensure application-consistent backups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#guest_flush BackupDrBackupPlan#guest_flush}
+  */
+  readonly guestFlush: boolean | cdktn.IResolvable;
+}
+
+export function backupDrBackupPlanComputeInstanceBackupPlanPropertiesToTerraform(struct?: BackupDrBackupPlanComputeInstanceBackupPlanPropertiesOutputReference | BackupDrBackupPlanComputeInstanceBackupPlanProperties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    guest_flush: cdktn.booleanToTerraform(struct!.guestFlush),
+  }
+}
+
+
+export function backupDrBackupPlanComputeInstanceBackupPlanPropertiesToHclTerraform(struct?: BackupDrBackupPlanComputeInstanceBackupPlanPropertiesOutputReference | BackupDrBackupPlanComputeInstanceBackupPlanProperties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    guest_flush: {
+      value: cdktn.booleanToHclTerraform(struct!.guestFlush),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BackupDrBackupPlanComputeInstanceBackupPlanPropertiesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BackupDrBackupPlanComputeInstanceBackupPlanProperties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._guestFlush !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.guestFlush = this._guestFlush;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupDrBackupPlanComputeInstanceBackupPlanProperties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._guestFlush = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._guestFlush = value.guestFlush;
+    }
+  }
+
+  // guest_flush - computed: false, optional: false, required: true
+  private _guestFlush?: boolean | cdktn.IResolvable; 
+  public get guestFlush() {
+    return this.getBooleanAttribute('guest_flush');
+  }
+  public set guestFlush(value: boolean | cdktn.IResolvable) {
+    this._guestFlush = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get guestFlushInput() {
+    return this._guestFlush;
+  }
+}
 export interface BackupDrBackupPlanDiskBackupPlanProperties {
   /**
   * Indicates whether to perform a guest flush operation before taking a disk
@@ -831,7 +934,7 @@ export interface BackupDrBackupPlanDiskBackupPlanProperties {
   * application-consistent backups. When set to false, the system will
   * create crash-consistent backups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#guest_flush BackupDrBackupPlan#guest_flush}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#guest_flush BackupDrBackupPlan#guest_flush}
   */
   readonly guestFlush: boolean | cdktn.IResolvable;
 }
@@ -912,15 +1015,15 @@ export class BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference extends c
 }
 export interface BackupDrBackupPlanTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#create BackupDrBackupPlan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#create BackupDrBackupPlan#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#delete BackupDrBackupPlan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#delete BackupDrBackupPlan#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#update BackupDrBackupPlan#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#update BackupDrBackupPlan#update}
   */
   readonly update?: string;
 }
@@ -1072,7 +1175,7 @@ export class BackupDrBackupPlanTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}
 */
 export class BackupDrBackupPlan extends cdktn.TerraformResource {
 
@@ -1088,7 +1191,7 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BackupDrBackupPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupDrBackupPlan to import
-  * @param importFromId The id of the existing BackupDrBackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupDrBackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupDrBackupPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1100,7 +1203,7 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1111,7 +1214,7 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
       terraformResourceType: 'google_backup_dr_backup_plan',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1124,6 +1227,7 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
     });
     this._backupPlanId = config.backupPlanId;
     this._backupVault = config.backupVault;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._location = config.location;
@@ -1132,6 +1236,7 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
     this._project = config.project;
     this._resourceType = config.resourceType;
     this._backupRules.internalValue = config.backupRules;
+    this._computeInstanceBackupPlanProperties.internalValue = config.computeInstanceBackupPlanProperties;
     this._diskBackupPlanProperties.internalValue = config.diskBackupPlanProperties;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1174,6 +1279,22 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -1313,6 +1434,22 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
     return this._backupRules.internalValue;
   }
 
+  // compute_instance_backup_plan_properties - computed: false, optional: true, required: false
+  private _computeInstanceBackupPlanProperties = new BackupDrBackupPlanComputeInstanceBackupPlanPropertiesOutputReference(this, "compute_instance_backup_plan_properties");
+  public get computeInstanceBackupPlanProperties() {
+    return this._computeInstanceBackupPlanProperties;
+  }
+  public putComputeInstanceBackupPlanProperties(value: BackupDrBackupPlanComputeInstanceBackupPlanProperties) {
+    this._computeInstanceBackupPlanProperties.internalValue = value;
+  }
+  public resetComputeInstanceBackupPlanProperties() {
+    this._computeInstanceBackupPlanProperties.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeInstanceBackupPlanPropertiesInput() {
+    return this._computeInstanceBackupPlanProperties.internalValue;
+  }
+
   // disk_backup_plan_properties - computed: false, optional: true, required: false
   private _diskBackupPlanProperties = new BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference(this, "disk_backup_plan_properties");
   public get diskBackupPlanProperties() {
@@ -1353,6 +1490,7 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
     return {
       backup_plan_id: cdktn.stringToTerraform(this._backupPlanId),
       backup_vault: cdktn.stringToTerraform(this._backupVault),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
@@ -1361,6 +1499,7 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
       project: cdktn.stringToTerraform(this._project),
       resource_type: cdktn.stringToTerraform(this._resourceType),
       backup_rules: cdktn.listMapper(backupDrBackupPlanBackupRulesToTerraform, true)(this._backupRules.internalValue),
+      compute_instance_backup_plan_properties: backupDrBackupPlanComputeInstanceBackupPlanPropertiesToTerraform(this._computeInstanceBackupPlanProperties.internalValue),
       disk_backup_plan_properties: backupDrBackupPlanDiskBackupPlanPropertiesToTerraform(this._diskBackupPlanProperties.internalValue),
       timeouts: backupDrBackupPlanTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1376,6 +1515,12 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
       },
       backup_vault: {
         value: cdktn.stringToHclTerraform(this._backupVault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1427,6 +1572,12 @@ export class BackupDrBackupPlan extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "BackupDrBackupPlanBackupRulesList",
+      },
+      compute_instance_backup_plan_properties: {
+        value: backupDrBackupPlanComputeInstanceBackupPlanPropertiesToHclTerraform(this._computeInstanceBackupPlanProperties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BackupDrBackupPlanComputeInstanceBackupPlanPropertiesList",
       },
       disk_backup_plan_properties: {
         value: backupDrBackupPlanDiskBackupPlanPropertiesToHclTerraform(this._diskBackupPlanProperties.internalValue),

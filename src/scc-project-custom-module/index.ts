@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,54 @@ import * as cdktn from 'cdktn';
 
 export interface SccProjectCustomModuleConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#deletion_policy SccProjectCustomModule#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The display name of the Security Health Analytics custom module. This
   * display name becomes the finding category for all findings that are
   * returned by this custom module. The display name must be between 1 and
   * 128 characters, start with a lowercase letter, and contain alphanumeric
   * characters or underscores only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#display_name SccProjectCustomModule#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#display_name SccProjectCustomModule#display_name}
   */
   readonly displayName: string;
   /**
   * The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#enablement_state SccProjectCustomModule#enablement_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#enablement_state SccProjectCustomModule#enablement_state}
   */
   readonly enablementState: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}
   */
   readonly project?: string;
   /**
   * custom_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#custom_config SccProjectCustomModule#custom_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#custom_config SccProjectCustomModule#custom_config}
   */
   readonly customConfig: SccProjectCustomModuleCustomConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#timeouts SccProjectCustomModule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#timeouts SccProjectCustomModule#timeouts}
   */
   readonly timeouts?: SccProjectCustomModuleTimeouts;
 }
@@ -57,27 +69,27 @@ export interface SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueEx
   * Description of the expression. This is a longer text which describes the
   * expression, e.g. when hovered over it in a UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a
   * file name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose. This can
   * be used e.g. in UIs which allow to enter the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
   */
   readonly title?: string;
 }
@@ -247,13 +259,13 @@ export interface SccProjectCustomModuleCustomConfigCustomOutputProperties {
   /**
   * Name of the property for the custom output.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#name SccProjectCustomModule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#name SccProjectCustomModule#name}
   */
   readonly name?: string;
   /**
   * value_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#value_expression SccProjectCustomModule#value_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#value_expression SccProjectCustomModule#value_expression}
   */
   readonly valueExpression?: SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression;
 }
@@ -386,7 +398,7 @@ export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesList extend
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -400,7 +412,7 @@ export interface SccProjectCustomModuleCustomConfigCustomOutput {
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
   */
   readonly properties?: SccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktn.IResolvable;
 }
@@ -487,27 +499,27 @@ export interface SccProjectCustomModuleCustomConfigPredicate {
   * Description of the expression. This is a longer text which describes the
   * expression, e.g. when hovered over it in a UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a
   * file name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose. This can
   * be used e.g. in UIs which allow to enter the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
   */
   readonly title?: string;
 }
@@ -677,7 +689,7 @@ export interface SccProjectCustomModuleCustomConfigResourceSelector {
   /**
   * The resource types to run the detector on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#resource_types SccProjectCustomModule#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#resource_types SccProjectCustomModule#resource_types}
   */
   readonly resourceTypes: string[];
 }
@@ -762,7 +774,7 @@ export interface SccProjectCustomModuleCustomConfig {
   * module detects. This explanation is returned with each finding instance to
   * help investigators understand the detected issue. The text must be enclosed in quotation marks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
   */
   readonly description?: string;
   /**
@@ -770,31 +782,31 @@ export interface SccProjectCustomModuleCustomConfig {
   * the detected issue. This explanation is returned with each finding generated by
   * this module in the nextSteps property of the finding JSON.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#recommendation SccProjectCustomModule#recommendation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#recommendation SccProjectCustomModule#recommendation}
   */
   readonly recommendation: string;
   /**
   * The severity to assign to findings generated by the module. Possible values: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#severity SccProjectCustomModule#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#severity SccProjectCustomModule#severity}
   */
   readonly severity: string;
   /**
   * custom_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#custom_output SccProjectCustomModule#custom_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#custom_output SccProjectCustomModule#custom_output}
   */
   readonly customOutput?: SccProjectCustomModuleCustomConfigCustomOutput;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#predicate SccProjectCustomModule#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#predicate SccProjectCustomModule#predicate}
   */
   readonly predicate: SccProjectCustomModuleCustomConfigPredicate;
   /**
   * resource_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#resource_selector SccProjectCustomModule#resource_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#resource_selector SccProjectCustomModule#resource_selector}
   */
   readonly resourceSelector: SccProjectCustomModuleCustomConfigResourceSelector;
 }
@@ -1011,15 +1023,15 @@ export class SccProjectCustomModuleCustomConfigOutputReference extends cdktn.Com
 }
 export interface SccProjectCustomModuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}
   */
   readonly update?: string;
 }
@@ -1171,7 +1183,7 @@ export class SccProjectCustomModuleTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module google_scc_project_custom_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module google_scc_project_custom_module}
 */
 export class SccProjectCustomModule extends cdktn.TerraformResource {
 
@@ -1187,7 +1199,7 @@ export class SccProjectCustomModule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SccProjectCustomModule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccProjectCustomModule to import
-  * @param importFromId The id of the existing SccProjectCustomModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SccProjectCustomModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccProjectCustomModule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1199,7 +1211,7 @@ export class SccProjectCustomModule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module google_scc_project_custom_module} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_project_custom_module google_scc_project_custom_module} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1210,7 +1222,7 @@ export class SccProjectCustomModule extends cdktn.TerraformResource {
       terraformResourceType: 'google_scc_project_custom_module',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1221,6 +1233,7 @@ export class SccProjectCustomModule extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._enablementState = config.enablementState;
     this._id = config.id;
@@ -1236,6 +1249,22 @@ export class SccProjectCustomModule extends cdktn.TerraformResource {
   // ancestor_module - computed: true, optional: false, required: false
   public get ancestorModule() {
     return this.getStringAttribute('ancestor_module');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // display_name - computed: false, optional: false, required: true
@@ -1346,6 +1375,7 @@ export class SccProjectCustomModule extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       enablement_state: cdktn.stringToTerraform(this._enablementState),
       id: cdktn.stringToTerraform(this._id),
@@ -1357,6 +1387,12 @@ export class SccProjectCustomModule extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       display_name: {
         value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,

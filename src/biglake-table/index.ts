@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,23 @@ export interface BiglakeTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * The id of the parent database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#database BiglakeTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#database BiglakeTable#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#id BiglakeTable#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#deletion_policy BiglakeTable#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#id BiglakeTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,25 +41,25 @@ export interface BiglakeTableConfig extends cdktn.TerraformMetaArguments {
   * Output only. The name of the Table. Format:
   * projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#name BiglakeTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#name BiglakeTable#name}
   */
   readonly name: string;
   /**
   * The database type. Possible values: ["HIVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#type BiglakeTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#type BiglakeTable#type}
   */
   readonly type?: string;
   /**
   * hive_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
   */
   readonly hiveOptions?: BiglakeTableHiveOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
   */
   readonly timeouts?: BiglakeTableTimeouts;
 }
@@ -55,19 +67,19 @@ export interface BiglakeTableHiveOptionsStorageDescriptor {
   /**
   * The fully qualified Java class name of the input format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
   */
   readonly inputFormat?: string;
   /**
   * Cloud Storage folder URI where the table data is stored, starting with "gs://".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
   */
   readonly locationUri?: string;
   /**
   * The fully qualified Java class name of the output format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
   */
   readonly outputFormat?: string;
 }
@@ -213,19 +225,19 @@ export interface BiglakeTableHiveOptions {
   * list of "key": value pairs.
   * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
   */
   readonly tableType?: string;
   /**
   * storage_descriptor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
   */
   readonly storageDescriptor?: BiglakeTableHiveOptionsStorageDescriptor;
 }
@@ -367,15 +379,15 @@ export class BiglakeTableHiveOptionsOutputReference extends cdktn.ComplexObject 
 }
 export interface BiglakeTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#create BiglakeTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#create BiglakeTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#delete BiglakeTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#delete BiglakeTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#update BiglakeTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#update BiglakeTable#update}
   */
   readonly update?: string;
 }
@@ -527,7 +539,7 @@ export class BiglakeTableTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table google_biglake_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table google_biglake_table}
 */
 export class BiglakeTable extends cdktn.TerraformResource {
 
@@ -543,7 +555,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeTable to import
-  * @param importFromId The id of the existing BiglakeTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -555,7 +567,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table google_biglake_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table google_biglake_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -566,7 +578,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_table',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -578,6 +590,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._database = config.database;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._name = config.name;
     this._type = config.type;
@@ -613,6 +626,22 @@ export class BiglakeTable extends cdktn.TerraformResource {
   // delete_time - computed: true, optional: false, required: false
   public get deleteTime() {
     return this.getStringAttribute('delete_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -714,6 +743,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       database: cdktn.stringToTerraform(this._database),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       type: cdktn.stringToTerraform(this._type),
@@ -726,6 +756,12 @@ export class BiglakeTable extends cdktn.TerraformResource {
     const attrs = {
       database: {
         value: cdktn.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

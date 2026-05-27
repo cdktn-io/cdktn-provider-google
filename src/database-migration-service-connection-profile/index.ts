@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,29 @@ export interface DatabaseMigrationServiceConnectionProfileConfig extends cdktn.T
   /**
   * The ID of the connection profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#connection_profile_id DatabaseMigrationServiceConnectionProfile#connection_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#connection_profile_id DatabaseMigrationServiceConnectionProfile#connection_profile_id}
   */
   readonly connectionProfileId: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#deletion_policy DatabaseMigrationServiceConnectionProfile#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The connection profile display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#display_name DatabaseMigrationServiceConnectionProfile#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#display_name DatabaseMigrationServiceConnectionProfile#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#id DatabaseMigrationServiceConnectionProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#id DatabaseMigrationServiceConnectionProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,53 +50,59 @@ export interface DatabaseMigrationServiceConnectionProfileConfig extends cdktn.T
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#labels DatabaseMigrationServiceConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#labels DatabaseMigrationServiceConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the connection profile should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#location DatabaseMigrationServiceConnectionProfile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#location DatabaseMigrationServiceConnectionProfile#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#project DatabaseMigrationServiceConnectionProfile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#project DatabaseMigrationServiceConnectionProfile#project}
   */
   readonly project?: string;
   /**
+  * The connection profile role. Possible values: ["SOURCE", "DESTINATION"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#role DatabaseMigrationServiceConnectionProfile#role}
+  */
+  readonly role?: string;
+  /**
   * alloydb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#alloydb DatabaseMigrationServiceConnectionProfile#alloydb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#alloydb DatabaseMigrationServiceConnectionProfile#alloydb}
   */
   readonly alloydb?: DatabaseMigrationServiceConnectionProfileAlloydb;
   /**
   * cloudsql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#cloudsql DatabaseMigrationServiceConnectionProfile#cloudsql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#cloudsql DatabaseMigrationServiceConnectionProfile#cloudsql}
   */
   readonly cloudsql?: DatabaseMigrationServiceConnectionProfileCloudsql;
   /**
   * mysql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#mysql DatabaseMigrationServiceConnectionProfile#mysql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#mysql DatabaseMigrationServiceConnectionProfile#mysql}
   */
   readonly mysql?: DatabaseMigrationServiceConnectionProfileMysql;
   /**
   * oracle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#oracle DatabaseMigrationServiceConnectionProfile#oracle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#oracle DatabaseMigrationServiceConnectionProfile#oracle}
   */
   readonly oracle?: DatabaseMigrationServiceConnectionProfileOracle;
   /**
   * postgresql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#postgresql DatabaseMigrationServiceConnectionProfile#postgresql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#postgresql DatabaseMigrationServiceConnectionProfile#postgresql}
   */
   readonly postgresql?: DatabaseMigrationServiceConnectionProfilePostgresql;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#timeouts DatabaseMigrationServiceConnectionProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#timeouts DatabaseMigrationServiceConnectionProfile#timeouts}
   */
   readonly timeouts?: DatabaseMigrationServiceConnectionProfileTimeouts;
 }
@@ -164,7 +182,7 @@ export class DatabaseMigrationServiceConnectionProfileErrorList extends cdktn.Co
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -178,13 +196,13 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitial
   /**
   * The initial password for the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password: string;
   /**
   * The database username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#user DatabaseMigrationServiceConnectionProfile#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#user DatabaseMigrationServiceConnectionProfile#user}
   */
   readonly user: string;
 }
@@ -298,7 +316,7 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimary
   /**
   * The number of CPU's in the VM instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#cpu_count DatabaseMigrationServiceConnectionProfile#cpu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#cpu_count DatabaseMigrationServiceConnectionProfile#cpu_count}
   */
   readonly cpuCount: number;
 }
@@ -381,13 +399,13 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimary
   /**
   * Database flags to pass to AlloyDB when DMS is creating the AlloyDB cluster and instances. See the AlloyDB documentation for how these can be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#database_flags DatabaseMigrationServiceConnectionProfile#database_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#database_flags DatabaseMigrationServiceConnectionProfile#database_flags}
   */
   readonly databaseFlags?: { [key: string]: string };
   /**
   * The database username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#id DatabaseMigrationServiceConnectionProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#id DatabaseMigrationServiceConnectionProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -396,13 +414,13 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimary
   /**
   * Labels for the AlloyDB primary instance created by DMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#labels DatabaseMigrationServiceConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#labels DatabaseMigrationServiceConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * machine_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#machine_config DatabaseMigrationServiceConnectionProfile#machine_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#machine_config DatabaseMigrationServiceConnectionProfile#machine_config}
   */
   readonly machineConfig: DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfig;
 }
@@ -574,26 +592,26 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettings {
   /**
   * Labels for the AlloyDB cluster created by DMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#labels DatabaseMigrationServiceConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#labels DatabaseMigrationServiceConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Required. The resource link for the VPC network in which cluster resources are created and from which they are accessible via Private IP. The network must belong to the same project as the cluster.
   * It is specified in the form: 'projects/{project_number}/global/networks/{network_id}'. This is required to create a cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#vpc_network DatabaseMigrationServiceConnectionProfile#vpc_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#vpc_network DatabaseMigrationServiceConnectionProfile#vpc_network}
   */
   readonly vpcNetwork: string;
   /**
   * initial_user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#initial_user DatabaseMigrationServiceConnectionProfile#initial_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#initial_user DatabaseMigrationServiceConnectionProfile#initial_user}
   */
   readonly initialUser: DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUser;
   /**
   * primary_instance_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#primary_instance_settings DatabaseMigrationServiceConnectionProfile#primary_instance_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#primary_instance_settings DatabaseMigrationServiceConnectionProfile#primary_instance_settings}
   */
   readonly primaryInstanceSettings?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettings;
 }
@@ -760,13 +778,13 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydb {
   /**
   * Required. The AlloyDB cluster ID that this connection profile is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#cluster_id DatabaseMigrationServiceConnectionProfile#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#cluster_id DatabaseMigrationServiceConnectionProfile#cluster_id}
   */
   readonly clusterId: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#settings DatabaseMigrationServiceConnectionProfile#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#settings DatabaseMigrationServiceConnectionProfile#settings}
   */
   readonly settings?: DatabaseMigrationServiceConnectionProfileAlloydbSettings;
 }
@@ -878,25 +896,25 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConf
   /**
   * The time when this access control entry expires in RFC 3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#expire_time DatabaseMigrationServiceConnectionProfile#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#expire_time DatabaseMigrationServiceConnectionProfile#expire_time}
   */
   readonly expireTime?: string;
   /**
   * A label to identify this entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#label DatabaseMigrationServiceConnectionProfile#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#label DatabaseMigrationServiceConnectionProfile#label}
   */
   readonly label?: string;
   /**
   * Input only. The time-to-leave of this access control entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ttl DatabaseMigrationServiceConnectionProfile#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ttl DatabaseMigrationServiceConnectionProfile#ttl}
   */
   readonly ttl?: string;
   /**
   * The allowlisted value for the access control list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#value DatabaseMigrationServiceConnectionProfile#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#value DatabaseMigrationServiceConnectionProfile#value}
   */
   readonly value: string;
 }
@@ -1084,7 +1102,7 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAu
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1098,26 +1116,26 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConf
   /**
   * Whether the instance should be assigned an IPv4 address or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#enable_ipv4 DatabaseMigrationServiceConnectionProfile#enable_ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#enable_ipv4 DatabaseMigrationServiceConnectionProfile#enable_ipv4}
   */
   readonly enableIpv4?: boolean | cdktn.IResolvable;
   /**
   * The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default.
   * This setting can be updated, but it cannot be removed after it is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#private_network DatabaseMigrationServiceConnectionProfile#private_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#private_network DatabaseMigrationServiceConnectionProfile#private_network}
   */
   readonly privateNetwork?: string;
   /**
   * Whether SSL connections over IP should be enforced or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#require_ssl DatabaseMigrationServiceConnectionProfile#require_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#require_ssl DatabaseMigrationServiceConnectionProfile#require_ssl}
   */
   readonly requireSsl?: boolean | cdktn.IResolvable;
   /**
   * authorized_networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#authorized_networks DatabaseMigrationServiceConnectionProfile#authorized_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#authorized_networks DatabaseMigrationServiceConnectionProfile#authorized_networks}
   */
   readonly authorizedNetworks?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktn.IResolvable;
 }
@@ -1290,100 +1308,100 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettings {
   /**
   * The activation policy specifies when the instance is activated; it is applicable only when the instance state is 'RUNNABLE'. Possible values: ["ALWAYS", "NEVER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#activation_policy DatabaseMigrationServiceConnectionProfile#activation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#activation_policy DatabaseMigrationServiceConnectionProfile#activation_policy}
   */
   readonly activationPolicy?: string;
   /**
   * If you enable this setting, Cloud SQL checks your available storage every 30 seconds. If the available storage falls below a threshold size, Cloud SQL automatically adds additional storage capacity.
   * If the available storage repeatedly falls below the threshold size, Cloud SQL continues to add storage until it reaches the maximum of 30 TB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#auto_storage_increase DatabaseMigrationServiceConnectionProfile#auto_storage_increase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#auto_storage_increase DatabaseMigrationServiceConnectionProfile#auto_storage_increase}
   */
   readonly autoStorageIncrease?: boolean | cdktn.IResolvable;
   /**
   * The KMS key name used for the csql instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#cmek_key_name DatabaseMigrationServiceConnectionProfile#cmek_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#cmek_key_name DatabaseMigrationServiceConnectionProfile#cmek_key_name}
   */
   readonly cmekKeyName?: string;
   /**
   * The Cloud SQL default instance level collation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#collation DatabaseMigrationServiceConnectionProfile#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#collation DatabaseMigrationServiceConnectionProfile#collation}
   */
   readonly collation?: string;
   /**
   * The storage capacity available to the database, in GB. The minimum (and default) size is 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#data_disk_size_gb DatabaseMigrationServiceConnectionProfile#data_disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#data_disk_size_gb DatabaseMigrationServiceConnectionProfile#data_disk_size_gb}
   */
   readonly dataDiskSizeGb?: string;
   /**
   * The type of storage. Possible values: ["PD_SSD", "PD_HDD"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#data_disk_type DatabaseMigrationServiceConnectionProfile#data_disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#data_disk_type DatabaseMigrationServiceConnectionProfile#data_disk_type}
   */
   readonly dataDiskType?: string;
   /**
   * The database flags passed to the Cloud SQL instance at startup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#database_flags DatabaseMigrationServiceConnectionProfile#database_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#database_flags DatabaseMigrationServiceConnectionProfile#database_flags}
   */
   readonly databaseFlags?: { [key: string]: string };
   /**
   * The database engine type and version.
   * Currently supported values located at https://cloud.google.com/database-migration/docs/reference/rest/v1/projects.locations.connectionProfiles#sqldatabaseversion
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#database_version DatabaseMigrationServiceConnectionProfile#database_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#database_version DatabaseMigrationServiceConnectionProfile#database_version}
   */
   readonly databaseVersion?: string;
   /**
   * The edition of the given Cloud SQL instance. Possible values: ["ENTERPRISE", "ENTERPRISE_PLUS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#edition DatabaseMigrationServiceConnectionProfile#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#edition DatabaseMigrationServiceConnectionProfile#edition}
   */
   readonly edition?: string;
   /**
   * Input only. Initial root password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#root_password DatabaseMigrationServiceConnectionProfile#root_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#root_password DatabaseMigrationServiceConnectionProfile#root_password}
   */
   readonly rootPassword?: string;
   /**
   * The Database Migration Service source connection profile ID, in the format: projects/my_project_name/locations/us-central1/connectionProfiles/connection_profile_ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#source_id DatabaseMigrationServiceConnectionProfile#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#source_id DatabaseMigrationServiceConnectionProfile#source_id}
   */
   readonly sourceId: string;
   /**
   * The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#storage_auto_resize_limit DatabaseMigrationServiceConnectionProfile#storage_auto_resize_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#storage_auto_resize_limit DatabaseMigrationServiceConnectionProfile#storage_auto_resize_limit}
   */
   readonly storageAutoResizeLimit?: string;
   /**
   * The tier (or machine type) for this instance, for example: db-n1-standard-1 (MySQL instances) or db-custom-1-3840 (PostgreSQL instances).
   * For more information, see https://cloud.google.com/sql/docs/mysql/instance-settings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#tier DatabaseMigrationServiceConnectionProfile#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#tier DatabaseMigrationServiceConnectionProfile#tier}
   */
   readonly tier?: string;
   /**
   * The resource labels for a Cloud SQL instance to use to annotate any related underlying resources such as Compute Engine VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#user_labels DatabaseMigrationServiceConnectionProfile#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#user_labels DatabaseMigrationServiceConnectionProfile#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * The Google Cloud Platform zone where your Cloud SQL datdabse instance is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#zone DatabaseMigrationServiceConnectionProfile#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#zone DatabaseMigrationServiceConnectionProfile#zone}
   */
   readonly zone?: string;
   /**
   * ip_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ip_config DatabaseMigrationServiceConnectionProfile#ip_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ip_config DatabaseMigrationServiceConnectionProfile#ip_config}
   */
   readonly ipConfig?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig;
 }
@@ -1906,7 +1924,7 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsql {
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#settings DatabaseMigrationServiceConnectionProfile#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#settings DatabaseMigrationServiceConnectionProfile#settings}
   */
   readonly settings?: DatabaseMigrationServiceConnectionProfileCloudsqlSettings;
 }
@@ -2008,27 +2026,27 @@ export interface DatabaseMigrationServiceConnectionProfileMysqlSsl {
   * Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
   * The replica will use this certificate to verify it's connecting to the right host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ca_certificate DatabaseMigrationServiceConnectionProfile#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ca_certificate DatabaseMigrationServiceConnectionProfile#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
   * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
   * If this field is used then the 'clientKey' field is mandatory
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#client_certificate DatabaseMigrationServiceConnectionProfile#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#client_certificate DatabaseMigrationServiceConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
   * If this field is used then the 'clientCertificate' field is mandatory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#client_key DatabaseMigrationServiceConnectionProfile#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#client_key DatabaseMigrationServiceConnectionProfile#client_key}
   */
   readonly clientKey?: string;
   /**
   * The current connection profile state. Possible values: ["SERVER_ONLY", "SERVER_CLIENT", "REQUIRED", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#type DatabaseMigrationServiceConnectionProfile#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#type DatabaseMigrationServiceConnectionProfile#type}
   */
   readonly type?: string;
 }
@@ -2199,40 +2217,40 @@ export class DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference ex
 }
 export interface DatabaseMigrationServiceConnectionProfileMysql {
   /**
-  * If the source is a Cloud SQL database, use this field to provide the Cloud SQL instance ID of the source.
+  * If the connection profile is a Cloud SQL database, use this field to provide the Cloud SQL instance ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#cloud_sql_id DatabaseMigrationServiceConnectionProfile#cloud_sql_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#cloud_sql_id DatabaseMigrationServiceConnectionProfile#cloud_sql_id}
   */
   readonly cloudSqlId?: string;
   /**
   * The IP or hostname of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#host DatabaseMigrationServiceConnectionProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#host DatabaseMigrationServiceConnectionProfile#host}
   */
   readonly host?: string;
   /**
   * Input only. The password for the user that Database Migration Service will be using to connect to the database.
   * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password?: string;
   /**
   * The network port of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * The username that Database Migration Service will use to connect to the database. The value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
   */
   readonly username?: string;
   /**
   * ssl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ssl DatabaseMigrationServiceConnectionProfile#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ssl DatabaseMigrationServiceConnectionProfile#ssl}
   */
   readonly ssl?: DatabaseMigrationServiceConnectionProfileMysqlSsl;
 }
@@ -2468,31 +2486,31 @@ export interface DatabaseMigrationServiceConnectionProfileOracleForwardSshConnec
   /**
   * Required. Hostname for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#hostname DatabaseMigrationServiceConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#hostname DatabaseMigrationServiceConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Input only. SSH password. Only one of 'password' and 'private_key' can be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password?: string;
   /**
   * Port for the SSH tunnel, default value is 22.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
   */
   readonly port: number;
   /**
   * Input only. SSH private key. Only one of 'password' and 'private_key' can be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#private_key DatabaseMigrationServiceConnectionProfile#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#private_key DatabaseMigrationServiceConnectionProfile#private_key}
   */
   readonly privateKey?: string;
   /**
   * Required. Username for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -2685,7 +2703,7 @@ export interface DatabaseMigrationServiceConnectionProfileOraclePrivateConnectiv
   /**
   * Required. The resource name (URI) of the private connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#private_connection DatabaseMigrationServiceConnectionProfile#private_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#private_connection DatabaseMigrationServiceConnectionProfile#private_connection}
   */
   readonly privateConnection: string;
 }
@@ -2769,21 +2787,21 @@ export interface DatabaseMigrationServiceConnectionProfileOracleSsl {
   * Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
   * The replica will use this certificate to verify it's connecting to the right host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ca_certificate DatabaseMigrationServiceConnectionProfile#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ca_certificate DatabaseMigrationServiceConnectionProfile#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
   * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
   * If this field is used then the 'clientKey' field is mandatory
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#client_certificate DatabaseMigrationServiceConnectionProfile#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#client_certificate DatabaseMigrationServiceConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
   * If this field is used then the 'clientCertificate' field is mandatory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#client_key DatabaseMigrationServiceConnectionProfile#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#client_key DatabaseMigrationServiceConnectionProfile#client_key}
   */
   readonly clientKey?: string;
 }
@@ -2981,56 +2999,56 @@ export interface DatabaseMigrationServiceConnectionProfileOracle {
   /**
   * Required. Database service for the Oracle connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#database_service DatabaseMigrationServiceConnectionProfile#database_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#database_service DatabaseMigrationServiceConnectionProfile#database_service}
   */
   readonly databaseService: string;
   /**
   * Required. The IP or hostname of the source Oracle database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#host DatabaseMigrationServiceConnectionProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#host DatabaseMigrationServiceConnectionProfile#host}
   */
   readonly host: string;
   /**
   * Required. Input only. The password for the user that Database Migration Service will be using to connect to the database.
   * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Required. The network port of the source Oracle database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
   */
   readonly port: number;
   /**
   * Required. The username that Database Migration Service will use to connect to the database. The value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
   */
   readonly username: string;
   /**
   * forward_ssh_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#forward_ssh_connectivity DatabaseMigrationServiceConnectionProfile#forward_ssh_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#forward_ssh_connectivity DatabaseMigrationServiceConnectionProfile#forward_ssh_connectivity}
   */
   readonly forwardSshConnectivity?: DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity;
   /**
   * private_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#private_connectivity DatabaseMigrationServiceConnectionProfile#private_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#private_connectivity DatabaseMigrationServiceConnectionProfile#private_connectivity}
   */
   readonly privateConnectivity?: DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity;
   /**
   * ssl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ssl DatabaseMigrationServiceConnectionProfile#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ssl DatabaseMigrationServiceConnectionProfile#ssl}
   */
   readonly ssl?: DatabaseMigrationServiceConnectionProfileOracleSsl;
   /**
   * static_service_ip_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#static_service_ip_connectivity DatabaseMigrationServiceConnectionProfile#static_service_ip_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#static_service_ip_connectivity DatabaseMigrationServiceConnectionProfile#static_service_ip_connectivity}
   */
   readonly staticServiceIpConnectivity?: DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity;
 }
@@ -3334,32 +3352,115 @@ export class DatabaseMigrationServiceConnectionProfileOracleOutputReference exte
     return this._staticServiceIpConnectivity.internalValue;
   }
 }
+export interface DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivity {
+  /**
+  * Required. The resource name (URI) of the private connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#private_connection DatabaseMigrationServiceConnectionProfile#private_connection}
+  */
+  readonly privateConnection: string;
+}
+
+export function databaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityToTerraform(struct?: DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityOutputReference | DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    private_connection: cdktn.stringToTerraform(struct!.privateConnection),
+  }
+}
+
+
+export function databaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityOutputReference | DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    private_connection: {
+      value: cdktn.stringToHclTerraform(struct!.privateConnection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._privateConnection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateConnection = this._privateConnection;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._privateConnection = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._privateConnection = value.privateConnection;
+    }
+  }
+
+  // private_connection - computed: false, optional: false, required: true
+  private _privateConnection?: string; 
+  public get privateConnection() {
+    return this.getStringAttribute('private_connection');
+  }
+  public set privateConnection(value: string) {
+    this._privateConnection = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateConnectionInput() {
+    return this._privateConnection;
+  }
+}
 export interface DatabaseMigrationServiceConnectionProfilePostgresqlSsl {
   /**
   * Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
   * The replica will use this certificate to verify it's connecting to the right host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ca_certificate DatabaseMigrationServiceConnectionProfile#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ca_certificate DatabaseMigrationServiceConnectionProfile#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
   * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
   * If this field is used then the 'clientKey' field is mandatory
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#client_certificate DatabaseMigrationServiceConnectionProfile#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#client_certificate DatabaseMigrationServiceConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
   * If this field is used then the 'clientCertificate' field is mandatory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#client_key DatabaseMigrationServiceConnectionProfile#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#client_key DatabaseMigrationServiceConnectionProfile#client_key}
   */
   readonly clientKey?: string;
   /**
   * The current connection profile state. Possible values: ["SERVER_ONLY", "SERVER_CLIENT", "REQUIRED", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#type DatabaseMigrationServiceConnectionProfile#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#type DatabaseMigrationServiceConnectionProfile#type}
   */
   readonly type?: string;
 }
@@ -3530,46 +3631,58 @@ export class DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReferen
 }
 export interface DatabaseMigrationServiceConnectionProfilePostgresql {
   /**
-  * If the connected database is an AlloyDB instance, use this field to provide the AlloyDB cluster ID.
+  * If the connection profile is an AlloyDB instance, use this field to provide the AlloyDB cluster ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#alloydb_cluster_id DatabaseMigrationServiceConnectionProfile#alloydb_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#alloydb_cluster_id DatabaseMigrationServiceConnectionProfile#alloydb_cluster_id}
   */
   readonly alloydbClusterId?: string;
   /**
-  * If the source is a Cloud SQL database, use this field to provide the Cloud SQL instance ID of the source.
+  * If the connection profile is a Cloud SQL database, use this field to provide the Cloud SQL instance ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#cloud_sql_id DatabaseMigrationServiceConnectionProfile#cloud_sql_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#cloud_sql_id DatabaseMigrationServiceConnectionProfile#cloud_sql_id}
   */
   readonly cloudSqlId?: string;
   /**
+  * The name of the specific database within the host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#database DatabaseMigrationServiceConnectionProfile#database}
+  */
+  readonly database?: string;
+  /**
   * The IP or hostname of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#host DatabaseMigrationServiceConnectionProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#host DatabaseMigrationServiceConnectionProfile#host}
   */
   readonly host?: string;
   /**
   * Input only. The password for the user that Database Migration Service will be using to connect to the database.
   * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#password DatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password?: string;
   /**
   * The network port of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#port DatabaseMigrationServiceConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * The username that Database Migration Service will use to connect to the database. The value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#username DatabaseMigrationServiceConnectionProfile#username}
   */
   readonly username?: string;
   /**
+  * private_connectivity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#private_connectivity DatabaseMigrationServiceConnectionProfile#private_connectivity}
+  */
+  readonly privateConnectivity?: DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivity;
+  /**
   * ssl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#ssl DatabaseMigrationServiceConnectionProfile#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#ssl DatabaseMigrationServiceConnectionProfile#ssl}
   */
   readonly ssl?: DatabaseMigrationServiceConnectionProfilePostgresqlSsl;
 }
@@ -3582,10 +3695,12 @@ export function databaseMigrationServiceConnectionProfilePostgresqlToTerraform(s
   return {
     alloydb_cluster_id: cdktn.stringToTerraform(struct!.alloydbClusterId),
     cloud_sql_id: cdktn.stringToTerraform(struct!.cloudSqlId),
+    database: cdktn.stringToTerraform(struct!.database),
     host: cdktn.stringToTerraform(struct!.host),
     password: cdktn.stringToTerraform(struct!.password),
     port: cdktn.numberToTerraform(struct!.port),
     username: cdktn.stringToTerraform(struct!.username),
+    private_connectivity: databaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityToTerraform(struct!.privateConnectivity),
     ssl: databaseMigrationServiceConnectionProfilePostgresqlSslToTerraform(struct!.ssl),
   }
 }
@@ -3605,6 +3720,12 @@ export function databaseMigrationServiceConnectionProfilePostgresqlToHclTerrafor
     },
     cloud_sql_id: {
       value: cdktn.stringToHclTerraform(struct!.cloudSqlId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database: {
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3632,6 +3753,12 @@ export function databaseMigrationServiceConnectionProfilePostgresqlToHclTerrafor
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    private_connectivity: {
+      value: databaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityToHclTerraform(struct!.privateConnectivity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityList",
     },
     ssl: {
       value: databaseMigrationServiceConnectionProfilePostgresqlSslToHclTerraform(struct!.ssl),
@@ -3667,6 +3794,10 @@ export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference 
       hasAnyValues = true;
       internalValueResult.cloudSqlId = this._cloudSqlId;
     }
+    if (this._database !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.database = this._database;
+    }
     if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
@@ -3683,6 +3814,10 @@ export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference 
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
+    if (this._privateConnectivity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateConnectivity = this._privateConnectivity?.internalValue;
+    }
     if (this._ssl?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ssl = this._ssl?.internalValue;
@@ -3695,20 +3830,24 @@ export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference 
       this.isEmptyObject = false;
       this._alloydbClusterId = undefined;
       this._cloudSqlId = undefined;
+      this._database = undefined;
       this._host = undefined;
       this._password = undefined;
       this._port = undefined;
       this._username = undefined;
+      this._privateConnectivity.internalValue = undefined;
       this._ssl.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._alloydbClusterId = value.alloydbClusterId;
       this._cloudSqlId = value.cloudSqlId;
+      this._database = value.database;
       this._host = value.host;
       this._password = value.password;
       this._port = value.port;
       this._username = value.username;
+      this._privateConnectivity.internalValue = value.privateConnectivity;
       this._ssl.internalValue = value.ssl;
     }
   }
@@ -3743,6 +3882,22 @@ export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference 
   // Temporarily expose input value. Use with caution.
   public get cloudSqlIdInput() {
     return this._cloudSqlId;
+  }
+
+  // database - computed: true, optional: true, required: false
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  public resetDatabase() {
+    this._database = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
   }
 
   // host - computed: false, optional: true, required: false
@@ -3819,6 +3974,22 @@ export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference 
     return this._username;
   }
 
+  // private_connectivity - computed: false, optional: true, required: false
+  private _privateConnectivity = new DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivityOutputReference(this, "private_connectivity");
+  public get privateConnectivity() {
+    return this._privateConnectivity;
+  }
+  public putPrivateConnectivity(value: DatabaseMigrationServiceConnectionProfilePostgresqlPrivateConnectivity) {
+    this._privateConnectivity.internalValue = value;
+  }
+  public resetPrivateConnectivity() {
+    this._privateConnectivity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateConnectivityInput() {
+    return this._privateConnectivity.internalValue;
+  }
+
   // ssl - computed: false, optional: true, required: false
   private _ssl = new DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference(this, "ssl");
   public get ssl() {
@@ -3837,15 +4008,15 @@ export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference 
 }
 export interface DatabaseMigrationServiceConnectionProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#create DatabaseMigrationServiceConnectionProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#create DatabaseMigrationServiceConnectionProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#delete DatabaseMigrationServiceConnectionProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#delete DatabaseMigrationServiceConnectionProfile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#update DatabaseMigrationServiceConnectionProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#update DatabaseMigrationServiceConnectionProfile#update}
   */
   readonly update?: string;
 }
@@ -3997,7 +4168,7 @@ export class DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}
 */
 export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformResource {
 
@@ -4013,7 +4184,7 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
   * Generates CDKTN code for importing a DatabaseMigrationServiceConnectionProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMigrationServiceConnectionProfile to import
-  * @param importFromId The id of the existing DatabaseMigrationServiceConnectionProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseMigrationServiceConnectionProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMigrationServiceConnectionProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4025,7 +4196,7 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4036,7 +4207,7 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
       terraformResourceType: 'google_database_migration_service_connection_profile',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -4048,11 +4219,13 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
       forEach: config.forEach
     });
     this._connectionProfileId = config.connectionProfileId;
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._id = config.id;
     this._labels = config.labels;
     this._location = config.location;
     this._project = config.project;
+    this._role = config.role;
     this._alloydb.internalValue = config.alloydb;
     this._cloudsql.internalValue = config.cloudsql;
     this._mysql.internalValue = config.mysql;
@@ -4086,6 +4259,22 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
   // dbprovider - computed: true, optional: false, required: false
   public get dbprovider() {
     return this.getStringAttribute('dbprovider');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // display_name - computed: false, optional: true, required: false
@@ -4183,6 +4372,22 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // role - computed: true, optional: true, required: false
+  private _role?: string; 
+  public get role() {
+    return this.getStringAttribute('role');
+  }
+  public set role(value: string) {
+    this._role = value;
+  }
+  public resetRole() {
+    this._role = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role;
   }
 
   // state - computed: true, optional: false, required: false
@@ -4299,11 +4504,13 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       connection_profile_id: cdktn.stringToTerraform(this._connectionProfileId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
+      role: cdktn.stringToTerraform(this._role),
       alloydb: databaseMigrationServiceConnectionProfileAlloydbToTerraform(this._alloydb.internalValue),
       cloudsql: databaseMigrationServiceConnectionProfileCloudsqlToTerraform(this._cloudsql.internalValue),
       mysql: databaseMigrationServiceConnectionProfileMysqlToTerraform(this._mysql.internalValue),
@@ -4317,6 +4524,12 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
     const attrs = {
       connection_profile_id: {
         value: cdktn.stringToHclTerraform(this._connectionProfileId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -4347,6 +4560,12 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformRe
       },
       project: {
         value: cdktn.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

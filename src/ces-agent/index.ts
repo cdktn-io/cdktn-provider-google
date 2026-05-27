@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,32 +17,44 @@ export interface CesAgentConfig extends cdktn.TerraformMetaArguments {
   * the agent's resource name. If not provided, a unique ID will be
   * automatically assigned for the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#agent_id CesAgent#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#agent_id CesAgent#agent_id}
   */
   readonly agentId?: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#app CesAgent#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#app CesAgent#app}
   */
   readonly app: string;
   /**
   * List of child agents in the agent tree.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
   */
   readonly childAgents?: string[];
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#deletion_policy CesAgent#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Human-readable description of the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Display name of the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#display_name CesAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#display_name CesAgent#display_name}
   */
   readonly displayName: string;
   /**
@@ -50,11 +62,11 @@ export interface CesAgentConfig extends cdktn.TerraformMetaArguments {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#guardrails CesAgent#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#guardrails CesAgent#guardrails}
   */
   readonly guardrails?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#id CesAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#id CesAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,90 +75,90 @@ export interface CesAgentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Instructions for the LLM model to guide the agent's behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#instruction CesAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#instruction CesAgent#instruction}
   */
   readonly instruction?: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#location CesAgent#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#location CesAgent#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#project CesAgent#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#project CesAgent#project}
   */
   readonly project?: string;
   /**
   * List of available tools for the agent.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#tools CesAgent#tools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#tools CesAgent#tools}
   */
   readonly tools?: string[];
   /**
   * after_agent_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
   */
   readonly afterAgentCallbacks?: CesAgentAfterAgentCallbacks[] | cdktn.IResolvable;
   /**
   * after_model_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
   */
   readonly afterModelCallbacks?: CesAgentAfterModelCallbacks[] | cdktn.IResolvable;
   /**
   * after_tool_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
   */
   readonly afterToolCallbacks?: CesAgentAfterToolCallbacks[] | cdktn.IResolvable;
   /**
   * before_agent_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
   */
   readonly beforeAgentCallbacks?: CesAgentBeforeAgentCallbacks[] | cdktn.IResolvable;
   /**
   * before_model_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
   */
   readonly beforeModelCallbacks?: CesAgentBeforeModelCallbacks[] | cdktn.IResolvable;
   /**
   * before_tool_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
   */
   readonly beforeToolCallbacks?: CesAgentBeforeToolCallbacks[] | cdktn.IResolvable;
   /**
   * llm_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
   */
   readonly llmAgent?: CesAgentLlmAgent;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#model_settings CesAgent#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#model_settings CesAgent#model_settings}
   */
   readonly modelSettings?: CesAgentModelSettings;
   /**
   * remote_dialogflow_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
   */
   readonly remoteDialogflowAgent?: CesAgentRemoteDialogflowAgent;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#timeouts CesAgent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#timeouts CesAgent#timeouts}
   */
   readonly timeouts?: CesAgentTimeouts;
   /**
   * toolsets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
   */
   readonly toolsets?: CesAgentToolsets[] | cdktn.IResolvable;
 }
@@ -154,20 +166,20 @@ export interface CesAgentAfterAgentCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -326,7 +338,7 @@ export class CesAgentAfterAgentCallbacksList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -340,20 +352,20 @@ export interface CesAgentAfterModelCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -512,7 +524,7 @@ export class CesAgentAfterModelCallbacksList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -526,20 +538,20 @@ export interface CesAgentAfterToolCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -698,7 +710,7 @@ export class CesAgentAfterToolCallbacksList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -712,20 +724,20 @@ export interface CesAgentBeforeAgentCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -884,7 +896,7 @@ export class CesAgentBeforeAgentCallbacksList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -898,20 +910,20 @@ export interface CesAgentBeforeModelCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -1070,7 +1082,7 @@ export class CesAgentBeforeModelCallbacksList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1084,20 +1096,20 @@ export interface CesAgentBeforeToolCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -1256,7 +1268,7 @@ export class CesAgentBeforeToolCallbacksList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1320,7 +1332,7 @@ export interface CesAgentModelSettings {
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#model CesAgent#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#model CesAgent#model}
   */
   readonly model?: string;
   /**
@@ -1329,7 +1341,7 @@ export interface CesAgentModelSettings {
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#temperature CesAgent#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#temperature CesAgent#temperature}
   */
   readonly temperature?: number;
 }
@@ -1447,27 +1459,27 @@ export interface CesAgentRemoteDialogflowAgent {
   * agent resource name.
   * Format: 'projects/{project}/locations/{location}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#agent CesAgent#agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#agent CesAgent#agent}
   */
   readonly agent: string;
   /**
   * The environment ID of the Dialogflow agent be used for the agent
   * execution. If not specified, the draft environment will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#environment_id CesAgent#environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#environment_id CesAgent#environment_id}
   */
   readonly environmentId?: string;
   /**
   * The flow ID of the flow in the Dialogflow agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#flow_id CesAgent#flow_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#flow_id CesAgent#flow_id}
   */
   readonly flowId: string;
   /**
   * The mapping of the app variables names to the Dialogflow session
   * parameters names to be sent to the Dialogflow agent as input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#input_variable_mapping CesAgent#input_variable_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#input_variable_mapping CesAgent#input_variable_mapping}
   */
   readonly inputVariableMapping?: { [key: string]: string };
   /**
@@ -1475,13 +1487,13 @@ export interface CesAgentRemoteDialogflowAgent {
   * variables names to be sent back to the CES agent after the Dialogflow
   * agent execution ends.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#output_variable_mapping CesAgent#output_variable_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#output_variable_mapping CesAgent#output_variable_mapping}
   */
   readonly outputVariableMapping?: { [key: string]: string };
   /**
   * Indicates whether to respect the message-level interruption settings configured in the Dialogflow agent. * If false: all response messages from the Dialogflow agent follow the app-level barge-in settings. * If true: only response messages with ['allow_playback_interruption'](https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#text) set to true will be interruptable, all other messages follow the app-level barge-in settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#respect_response_interruption_settings CesAgent#respect_response_interruption_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#respect_response_interruption_settings CesAgent#respect_response_interruption_settings}
   */
   readonly respectResponseInterruptionSettings?: boolean | cdktn.IResolvable;
 }
@@ -1704,15 +1716,15 @@ export class CesAgentRemoteDialogflowAgentOutputReference extends cdktn.ComplexO
 }
 export interface CesAgentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#create CesAgent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#create CesAgent#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#delete CesAgent#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#delete CesAgent#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#update CesAgent#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#update CesAgent#update}
   */
   readonly update?: string;
 }
@@ -1866,7 +1878,7 @@ export interface CesAgentToolsets {
   /**
   * The tools IDs to filter the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#tool_ids CesAgent#tool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#tool_ids CesAgent#tool_ids}
   */
   readonly toolIds?: string[];
   /**
@@ -1874,7 +1886,7 @@ export interface CesAgentToolsets {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/toolsets/{toolset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#toolset CesAgent#toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#toolset CesAgent#toolset}
   */
   readonly toolset: string;
 }
@@ -2004,7 +2016,7 @@ export class CesAgentToolsetsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -2016,7 +2028,7 @@ export class CesAgentToolsetsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent google_ces_agent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent google_ces_agent}
 */
 export class CesAgent extends cdktn.TerraformResource {
 
@@ -2032,7 +2044,7 @@ export class CesAgent extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesAgent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesAgent to import
-  * @param importFromId The id of the existing CesAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2044,7 +2056,7 @@ export class CesAgent extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent google_ces_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_agent google_ces_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2055,7 +2067,7 @@ export class CesAgent extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_agent',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -2069,6 +2081,7 @@ export class CesAgent extends cdktn.TerraformResource {
     this._agentId = config.agentId;
     this._app = config.app;
     this._childAgents = config.childAgents;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._displayName = config.displayName;
     this._guardrails = config.guardrails;
@@ -2142,6 +2155,22 @@ export class CesAgent extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -2471,6 +2500,7 @@ export class CesAgent extends cdktn.TerraformResource {
       agent_id: cdktn.stringToTerraform(this._agentId),
       app: cdktn.stringToTerraform(this._app),
       child_agents: cdktn.listMapper(cdktn.stringToTerraform, false)(this._childAgents),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       display_name: cdktn.stringToTerraform(this._displayName),
       guardrails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._guardrails),
@@ -2512,6 +2542,12 @@ export class CesAgent extends cdktn.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
