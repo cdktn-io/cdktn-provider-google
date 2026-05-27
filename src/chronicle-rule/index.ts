@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,9 @@ import * as cdktn from 'cdktn';
 
 export interface ChronicleRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Policy to determine if the rule should be deleted forcefully.
-  * If deletion_policy = "FORCE", any retrohunts and any detections associated with the rule
-  * will also be deleted. If deletion_policy = "DEFAULT", the call will only succeed if the
-  * rule has no associated retrohunts, including completed retrohunts, and no
-  * associated detections. Regardless of this field's value, the rule
-  * deployment associated with this rule will also be deleted.
-  * Possible values: DEFAULT, FORCE
+  * This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/chronicle_rule.html.markdown for specifics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#deletion_policy ChronicleRule#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#deletion_policy ChronicleRule#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -31,11 +25,11 @@ export interface ChronicleRuleConfig extends cdktn.TerraformMetaArguments {
   * otherwise.
   * Populated in BASIC view and FULL view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#etag ChronicleRule#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#etag ChronicleRule#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#id ChronicleRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#id ChronicleRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,23 +38,23 @@ export interface ChronicleRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#instance ChronicleRule#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#instance ChronicleRule#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#location ChronicleRule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#location ChronicleRule#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#project ChronicleRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#project ChronicleRule#project}
   */
   readonly project?: string;
   /**
   * Rule Id is the ID of the Rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#rule_id ChronicleRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#rule_id ChronicleRule#rule_id}
   */
   readonly ruleId?: string;
   /**
@@ -72,20 +66,20 @@ export interface ChronicleRuleConfig extends cdktn.TerraformMetaArguments {
   * The scope should be in the format:
   * "projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#scope ChronicleRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#scope ChronicleRule#scope}
   */
   readonly scope?: string;
   /**
   * The YARA-L content of the rule.
   * Populated in FULL view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#text ChronicleRule#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#text ChronicleRule#text}
   */
   readonly text?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#timeouts ChronicleRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#timeouts ChronicleRule#timeouts}
   */
   readonly timeouts?: ChronicleRuleTimeouts;
 }
@@ -169,7 +163,7 @@ export class ChronicleRuleCompilationDiagnosticsPositionList extends cdktn.Compl
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -260,7 +254,7 @@ export class ChronicleRuleCompilationDiagnosticsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -335,7 +329,7 @@ export class ChronicleRuleSeverityList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -347,15 +341,15 @@ export class ChronicleRuleSeverityList extends cdktn.ComplexList {
 }
 export interface ChronicleRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#create ChronicleRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#create ChronicleRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#delete ChronicleRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#delete ChronicleRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#update ChronicleRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#update ChronicleRule#update}
   */
   readonly update?: string;
 }
@@ -507,7 +501,7 @@ export class ChronicleRuleTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule google_chronicle_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule google_chronicle_rule}
 */
 export class ChronicleRule extends cdktn.TerraformResource {
 
@@ -523,7 +517,7 @@ export class ChronicleRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleRule to import
-  * @param importFromId The id of the existing ChronicleRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -535,7 +529,7 @@ export class ChronicleRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule google_chronicle_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_rule google_chronicle_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -546,7 +540,7 @@ export class ChronicleRule extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_rule',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -604,7 +598,7 @@ export class ChronicleRule extends cdktn.TerraformResource {
     return this.getListAttribute('data_tables');
   }
 
-  // deletion_policy - computed: false, optional: true, required: false
+  // deletion_policy - computed: true, optional: true, required: false
   private _deletionPolicy?: string; 
   public get deletionPolicy() {
     return this.getStringAttribute('deletion_policy');

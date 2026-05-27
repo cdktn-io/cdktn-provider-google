@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,35 @@ export interface ComputeWireGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the wire group is administratively enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#admin_enabled ComputeWireGroup#admin_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#admin_enabled ComputeWireGroup#admin_enabled}
   */
   readonly adminEnabled?: boolean | cdktn.IResolvable;
   /**
   * Required cross site network to which wire group belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#cross_site_network ComputeWireGroup#cross_site_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#cross_site_network ComputeWireGroup#cross_site_network}
   */
   readonly crossSiteNetwork: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#deletion_policy ComputeWireGroup#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#description ComputeWireGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#description ComputeWireGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,29 +56,29 @@ export interface ComputeWireGroupConfig extends cdktn.TerraformMetaArguments {
   * character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#name ComputeWireGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#name ComputeWireGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}
   */
   readonly project?: string;
   /**
   * endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#endpoints ComputeWireGroup#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#endpoints ComputeWireGroup#endpoints}
   */
   readonly endpoints?: ComputeWireGroupEndpoints[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#timeouts ComputeWireGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#timeouts ComputeWireGroup#timeouts}
   */
   readonly timeouts?: ComputeWireGroupTimeouts;
   /**
   * wire_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#wire_properties ComputeWireGroup#wire_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#wire_properties ComputeWireGroup#wire_properties}
   */
   readonly wireProperties?: ComputeWireGroupWireProperties;
 }
@@ -140,7 +152,7 @@ export class ComputeWireGroupTopologyEndpointsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -216,7 +228,7 @@ export class ComputeWireGroupTopologyList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -296,7 +308,7 @@ export class ComputeWireGroupWiresEndpointsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -376,7 +388,7 @@ export class ComputeWireGroupWiresWirePropertiesList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -468,7 +480,7 @@ export class ComputeWireGroupWiresList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -480,17 +492,17 @@ export class ComputeWireGroupWiresList extends cdktn.ComplexList {
 }
 export interface ComputeWireGroupEndpointsInterconnects {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}
   */
   readonly interconnect?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}
   */
   readonly interconnectName: string;
   /**
   * VLAN tags for the interconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#vlan_tags ComputeWireGroup#vlan_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#vlan_tags ComputeWireGroup#vlan_tags}
   */
   readonly vlanTags?: number[];
 }
@@ -649,7 +661,7 @@ export class ComputeWireGroupEndpointsInterconnectsList extends cdktn.ComplexLis
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -661,13 +673,13 @@ export class ComputeWireGroupEndpointsInterconnectsList extends cdktn.ComplexLis
 }
 export interface ComputeWireGroupEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}
   */
   readonly endpoint: string;
   /**
   * interconnects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#interconnects ComputeWireGroup#interconnects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#interconnects ComputeWireGroup#interconnects}
   */
   readonly interconnects?: ComputeWireGroupEndpointsInterconnects[] | cdktn.IResolvable;
 }
@@ -797,7 +809,7 @@ export class ComputeWireGroupEndpointsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -809,15 +821,15 @@ export class ComputeWireGroupEndpointsList extends cdktn.ComplexList {
 }
 export interface ComputeWireGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}
   */
   readonly update?: string;
 }
@@ -974,13 +986,13 @@ export interface ComputeWireGroupWireProperties {
   * SHARED_WITH_WIRE_GROUP: this is the default behavior, which configures one unmetered bandwidth allocation for the wire group. The unmetered bandwidth is divided equally across each wire in the group, but dynamic
   * throttling reallocates unused unmetered bandwidth from unused or underused wires to other wires in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#bandwidth_allocation ComputeWireGroup#bandwidth_allocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#bandwidth_allocation ComputeWireGroup#bandwidth_allocation}
   */
   readonly bandwidthAllocation: string;
   /**
   * The unmetered bandwidth setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#bandwidth_unmetered ComputeWireGroup#bandwidth_unmetered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#bandwidth_unmetered ComputeWireGroup#bandwidth_unmetered}
   */
   readonly bandwidthUnmetered?: number;
   /**
@@ -988,7 +1000,7 @@ export interface ComputeWireGroupWireProperties {
   * NONE: default.
   * DISABLE_PORT: set the port line protocol down when inline probes detect a fault. This setting is only permitted on port mode pseudowires.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#fault_response ComputeWireGroup#fault_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#fault_response ComputeWireGroup#fault_response}
   */
   readonly faultResponse?: string;
 }
@@ -1127,7 +1139,7 @@ export class ComputeWireGroupWirePropertiesOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group google_compute_wire_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group google_compute_wire_group}
 */
 export class ComputeWireGroup extends cdktn.TerraformResource {
 
@@ -1143,7 +1155,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeWireGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeWireGroup to import
-  * @param importFromId The id of the existing ComputeWireGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeWireGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeWireGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1155,7 +1167,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group google_compute_wire_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_wire_group google_compute_wire_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1166,7 +1178,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_wire_group',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1179,6 +1191,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
     });
     this._adminEnabled = config.adminEnabled;
     this._crossSiteNetwork = config.crossSiteNetwork;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
@@ -1224,6 +1237,22 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get crossSiteNetworkInput() {
     return this._crossSiteNetwork;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -1355,6 +1384,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
     return {
       admin_enabled: cdktn.booleanToTerraform(this._adminEnabled),
       cross_site_network: cdktn.stringToTerraform(this._crossSiteNetwork),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -1375,6 +1405,12 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
       },
       cross_site_network: {
         value: cdktn.stringToHclTerraform(this._crossSiteNetwork),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

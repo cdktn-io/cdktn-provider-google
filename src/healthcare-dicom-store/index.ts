@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,23 @@ export interface HealthcareDicomStoreConfig extends cdktn.TerraformMetaArguments
   * Identifies the dataset addressed by this request. Must be in the format
   * 'projects/{project}/locations/{location}/datasets/{dataset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#dataset HealthcareDicomStore#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#dataset HealthcareDicomStore#dataset}
   */
   readonly dataset: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#id HealthcareDicomStore#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#deletion_policy HealthcareDicomStore#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#id HealthcareDicomStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,7 +56,7 @@ export interface HealthcareDicomStoreConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#labels HealthcareDicomStore#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#labels HealthcareDicomStore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -52,19 +64,19 @@ export interface HealthcareDicomStoreConfig extends cdktn.TerraformMetaArguments
   * 
   * ** Changing this property may recreate the Dicom store (removing all data) **
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#name HealthcareDicomStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#name HealthcareDicomStore#name}
   */
   readonly name: string;
   /**
   * notification_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#notification_config HealthcareDicomStore#notification_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#notification_config HealthcareDicomStore#notification_config}
   */
   readonly notificationConfig?: HealthcareDicomStoreNotificationConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#timeouts HealthcareDicomStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#timeouts HealthcareDicomStore#timeouts}
   */
   readonly timeouts?: HealthcareDicomStoreTimeouts;
 }
@@ -77,13 +89,13 @@ export interface HealthcareDicomStoreNotificationConfig {
   * project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
   * Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#pubsub_topic HealthcareDicomStore#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#pubsub_topic HealthcareDicomStore#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * Indicates whether or not to send Pub/Sub notifications on bulk import. Only supported for DICOM imports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#send_for_bulk_import HealthcareDicomStore#send_for_bulk_import}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#send_for_bulk_import HealthcareDicomStore#send_for_bulk_import}
   */
   readonly sendForBulkImport?: boolean | cdktn.IResolvable;
 }
@@ -193,15 +205,15 @@ export class HealthcareDicomStoreNotificationConfigOutputReference extends cdktn
 }
 export interface HealthcareDicomStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#create HealthcareDicomStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#create HealthcareDicomStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#delete HealthcareDicomStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#delete HealthcareDicomStore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#update HealthcareDicomStore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#update HealthcareDicomStore#update}
   */
   readonly update?: string;
 }
@@ -353,7 +365,7 @@ export class HealthcareDicomStoreTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store}
 */
 export class HealthcareDicomStore extends cdktn.TerraformResource {
 
@@ -369,7 +381,7 @@ export class HealthcareDicomStore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a HealthcareDicomStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HealthcareDicomStore to import
-  * @param importFromId The id of the existing HealthcareDicomStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HealthcareDicomStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HealthcareDicomStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -381,7 +393,7 @@ export class HealthcareDicomStore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -392,7 +404,7 @@ export class HealthcareDicomStore extends cdktn.TerraformResource {
       terraformResourceType: 'google_healthcare_dicom_store',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -404,6 +416,7 @@ export class HealthcareDicomStore extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._dataset = config.dataset;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
@@ -426,6 +439,22 @@ export class HealthcareDicomStore extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get datasetInput() {
     return this._dataset;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // effective_labels - computed: true, optional: false, required: false
@@ -529,6 +558,7 @@ export class HealthcareDicomStore extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dataset: cdktn.stringToTerraform(this._dataset),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       name: cdktn.stringToTerraform(this._name),
@@ -541,6 +571,12 @@ export class HealthcareDicomStore extends cdktn.TerraformResource {
     const attrs = {
       dataset: {
         value: cdktn.stringToHclTerraform(this._dataset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

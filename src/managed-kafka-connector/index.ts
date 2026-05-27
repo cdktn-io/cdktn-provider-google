@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,35 @@ export interface ManagedKafkaConnectorConfig extends cdktn.TerraformMetaArgument
   /**
   * Connector config as keys/values. The keys of the map are connector property names, for example: 'connector.class', 'tasks.max', 'key.converter'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#configs ManagedKafkaConnector#configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#configs ManagedKafkaConnector#configs}
   */
   readonly configs?: { [key: string]: string };
   /**
   * The connect cluster name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#connect_cluster ManagedKafkaConnector#connect_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#connect_cluster ManagedKafkaConnector#connect_cluster}
   */
   readonly connectCluster: string;
   /**
   * The ID to use for the connector, which will become the final component of the connector's name. This value is structured like: 'my-connector-id'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#connector_id ManagedKafkaConnector#connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#connector_id ManagedKafkaConnector#connector_id}
   */
   readonly connectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#id ManagedKafkaConnector#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#deletion_policy ManagedKafkaConnector#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#id ManagedKafkaConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,23 +52,23 @@ export interface ManagedKafkaConnectorConfig extends cdktn.TerraformMetaArgument
   /**
   * ID of the location of the Kafka Connect resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#location ManagedKafkaConnector#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#location ManagedKafkaConnector#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#project ManagedKafkaConnector#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#project ManagedKafkaConnector#project}
   */
   readonly project?: string;
   /**
   * task_restart_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#task_restart_policy ManagedKafkaConnector#task_restart_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#task_restart_policy ManagedKafkaConnector#task_restart_policy}
   */
   readonly taskRestartPolicy?: ManagedKafkaConnectorTaskRestartPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#timeouts ManagedKafkaConnector#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#timeouts ManagedKafkaConnector#timeouts}
   */
   readonly timeouts?: ManagedKafkaConnectorTimeouts;
 }
@@ -65,14 +77,14 @@ export interface ManagedKafkaConnectorTaskRestartPolicy {
   * The maximum amount of time to wait before retrying a failed task. This sets an upper bound for the backoff delay.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#maximum_backoff ManagedKafkaConnector#maximum_backoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#maximum_backoff ManagedKafkaConnector#maximum_backoff}
   */
   readonly maximumBackoff?: string;
   /**
   * The minimum amount of time to wait before retrying a failed task. This sets a lower bound for the backoff delay.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#minimum_backoff ManagedKafkaConnector#minimum_backoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#minimum_backoff ManagedKafkaConnector#minimum_backoff}
   */
   readonly minimumBackoff?: string;
 }
@@ -185,15 +197,15 @@ export class ManagedKafkaConnectorTaskRestartPolicyOutputReference extends cdktn
 }
 export interface ManagedKafkaConnectorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#create ManagedKafkaConnector#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#create ManagedKafkaConnector#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#delete ManagedKafkaConnector#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#delete ManagedKafkaConnector#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#update ManagedKafkaConnector#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#update ManagedKafkaConnector#update}
   */
   readonly update?: string;
 }
@@ -345,7 +357,7 @@ export class ManagedKafkaConnectorTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector google_managed_kafka_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector google_managed_kafka_connector}
 */
 export class ManagedKafkaConnector extends cdktn.TerraformResource {
 
@@ -361,7 +373,7 @@ export class ManagedKafkaConnector extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ManagedKafkaConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedKafkaConnector to import
-  * @param importFromId The id of the existing ManagedKafkaConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedKafkaConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedKafkaConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -373,7 +385,7 @@ export class ManagedKafkaConnector extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connector google_managed_kafka_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_connector google_managed_kafka_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -384,7 +396,7 @@ export class ManagedKafkaConnector extends cdktn.TerraformResource {
       terraformResourceType: 'google_managed_kafka_connector',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -398,6 +410,7 @@ export class ManagedKafkaConnector extends cdktn.TerraformResource {
     this._configs = config.configs;
     this._connectCluster = config.connectCluster;
     this._connectorId = config.connectorId;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._location = config.location;
     this._project = config.project;
@@ -449,6 +462,22 @@ export class ManagedKafkaConnector extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get connectorIdInput() {
     return this._connectorId;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -547,6 +576,7 @@ export class ManagedKafkaConnector extends cdktn.TerraformResource {
       configs: cdktn.hashMapper(cdktn.stringToTerraform)(this._configs),
       connect_cluster: cdktn.stringToTerraform(this._connectCluster),
       connector_id: cdktn.stringToTerraform(this._connectorId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
@@ -571,6 +601,12 @@ export class ManagedKafkaConnector extends cdktn.TerraformResource {
       },
       connector_id: {
         value: cdktn.stringToHclTerraform(this._connectorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

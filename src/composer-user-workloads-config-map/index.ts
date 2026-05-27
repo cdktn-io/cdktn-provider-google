@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,29 @@ export interface ComposerUserWorkloadsConfigMapConfig extends cdktn.TerraformMet
   * The "data" field of Kubernetes ConfigMap, organized in key-value pairs.
   * For details see: https://kubernetes.io/docs/concepts/configuration/configmap/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#data ComposerUserWorkloadsConfigMap#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#data ComposerUserWorkloadsConfigMap#data}
   */
   readonly data?: { [key: string]: string };
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#deletion_policy ComposerUserWorkloadsConfigMap#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Environment where the Kubernetes ConfigMap will be stored and used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#environment ComposerUserWorkloadsConfigMap#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#environment ComposerUserWorkloadsConfigMap#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#id ComposerUserWorkloadsConfigMap#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#id ComposerUserWorkloadsConfigMap#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,37 +47,37 @@ export interface ComposerUserWorkloadsConfigMapConfig extends cdktn.TerraformMet
   /**
   * Name of the Kubernetes ConfigMap.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#name ComposerUserWorkloadsConfigMap#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#name ComposerUserWorkloadsConfigMap#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#project ComposerUserWorkloadsConfigMap#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#project ComposerUserWorkloadsConfigMap#project}
   */
   readonly project?: string;
   /**
   * The location or Compute Engine region for the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#region ComposerUserWorkloadsConfigMap#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#region ComposerUserWorkloadsConfigMap#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#timeouts ComposerUserWorkloadsConfigMap#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#timeouts ComposerUserWorkloadsConfigMap#timeouts}
   */
   readonly timeouts?: ComposerUserWorkloadsConfigMapTimeouts;
 }
 export interface ComposerUserWorkloadsConfigMapTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#create ComposerUserWorkloadsConfigMap#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#create ComposerUserWorkloadsConfigMap#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#delete ComposerUserWorkloadsConfigMap#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#delete ComposerUserWorkloadsConfigMap#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#update ComposerUserWorkloadsConfigMap#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#update ComposerUserWorkloadsConfigMap#update}
   */
   readonly update?: string;
 }
@@ -217,7 +229,7 @@ export class ComposerUserWorkloadsConfigMapTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map}
 */
 export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
 
@@ -233,7 +245,7 @@ export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComposerUserWorkloadsConfigMap resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComposerUserWorkloadsConfigMap to import
-  * @param importFromId The id of the existing ComposerUserWorkloadsConfigMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComposerUserWorkloadsConfigMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComposerUserWorkloadsConfigMap to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -245,7 +257,7 @@ export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_config_map google_composer_user_workloads_config_map} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -256,7 +268,7 @@ export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
       terraformResourceType: 'google_composer_user_workloads_config_map',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -268,6 +280,7 @@ export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._data = config.data;
+    this._deletionPolicy = config.deletionPolicy;
     this._environment = config.environment;
     this._id = config.id;
     this._name = config.name;
@@ -294,6 +307,22 @@ export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dataInput() {
     return this._data;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // environment - computed: false, optional: false, required: true
@@ -393,6 +422,7 @@ export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       data: cdktn.hashMapper(cdktn.stringToTerraform)(this._data),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       environment: cdktn.stringToTerraform(this._environment),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -409,6 +439,12 @@ export class ComposerUserWorkloadsConfigMap extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       environment: {
         value: cdktn.stringToHclTerraform(this._environment),

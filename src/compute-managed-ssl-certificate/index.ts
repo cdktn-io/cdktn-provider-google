@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface ComputeManagedSslCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#deletion_policy ComputeManagedSslCertificate#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#description ComputeManagedSslCertificate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#description ComputeManagedSslCertificate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#id ComputeManagedSslCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#id ComputeManagedSslCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,30 +48,30 @@ export interface ComputeManagedSslCertificateConfig extends cdktn.TerraformMetaA
   * 
   * These are in the same namespace as the managed SSL certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#name ComputeManagedSslCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#name ComputeManagedSslCertificate#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#project ComputeManagedSslCertificate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#project ComputeManagedSslCertificate#project}
   */
   readonly project?: string;
   /**
   * Enum field whose value is always 'MANAGED' - used to signal to the API
   * which type this is. Default value: "MANAGED" Possible values: ["MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#type ComputeManagedSslCertificate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#type ComputeManagedSslCertificate#type}
   */
   readonly type?: string;
   /**
   * managed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#managed ComputeManagedSslCertificate#managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#managed ComputeManagedSslCertificate#managed}
   */
   readonly managed?: ComputeManagedSslCertificateManaged;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#timeouts ComputeManagedSslCertificate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#timeouts ComputeManagedSslCertificate#timeouts}
   */
   readonly timeouts?: ComputeManagedSslCertificateTimeouts;
 }
@@ -68,7 +80,7 @@ export interface ComputeManagedSslCertificateManaged {
   * Domains for which a managed SSL certificate will be valid.  Currently,
   * there can be up to 100 domains in this list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#domains ComputeManagedSslCertificate#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#domains ComputeManagedSslCertificate#domains}
   */
   readonly domains: string[];
 }
@@ -149,11 +161,11 @@ export class ComputeManagedSslCertificateManagedOutputReference extends cdktn.Co
 }
 export interface ComputeManagedSslCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#create ComputeManagedSslCertificate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#create ComputeManagedSslCertificate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#delete ComputeManagedSslCertificate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#delete ComputeManagedSslCertificate#delete}
   */
   readonly delete?: string;
 }
@@ -276,7 +288,7 @@ export class ComputeManagedSslCertificateTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate}
 */
 export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
 
@@ -292,7 +304,7 @@ export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeManagedSslCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeManagedSslCertificate to import
-  * @param importFromId The id of the existing ComputeManagedSslCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeManagedSslCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeManagedSslCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -304,7 +316,7 @@ export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -315,7 +327,7 @@ export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_managed_ssl_certificate',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -326,6 +338,7 @@ export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
@@ -347,6 +360,22 @@ export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
     return this.getStringAttribute('creation_timestamp');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -482,6 +511,7 @@ export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -494,6 +524,12 @@ export class ComputeManagedSslCertificate extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,

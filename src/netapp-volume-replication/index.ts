@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,13 +21,25 @@ export interface NetappVolumeReplicationConfig extends cdktn.TerraformMetaArgume
   * For production use, it is recommended to keep this parameter false to avoid accidental volume
   * deletion. Handle with care. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#delete_destination_volume NetappVolumeReplication#delete_destination_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#delete_destination_volume NetappVolumeReplication#delete_destination_volume}
   */
   readonly deleteDestinationVolume?: boolean | cdktn.IResolvable;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#deletion_policy NetappVolumeReplication#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
   */
   readonly description?: string;
   /**
@@ -36,11 +48,11 @@ export interface NetappVolumeReplicationConfig extends cdktn.TerraformMetaArgume
   * to stop anyway. All data transferred to the destination will be discarded and content of destination
   * volume will remain at the state of the last successful update. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#force_stopping NetappVolumeReplication#force_stopping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#force_stopping NetappVolumeReplication#force_stopping}
   */
   readonly forceStopping?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,23 +65,23 @@ export interface NetappVolumeReplicationConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#labels NetappVolumeReplication#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#labels NetappVolumeReplication#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of region for this resource. The resource needs to be created in the region of the destination volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#location NetappVolumeReplication#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#location NetappVolumeReplication#location}
   */
   readonly location: string;
   /**
   * The name of the replication. Needs to be unique per location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#name NetappVolumeReplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#name NetappVolumeReplication#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#project NetappVolumeReplication#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#project NetappVolumeReplication#project}
   */
   readonly project?: string;
   /**
@@ -78,19 +90,19 @@ export interface NetappVolumeReplicationConfig extends cdktn.TerraformMetaArgume
   * Set to true to enable/resume the mirror. WARNING: Resuming a mirror overwrites any changes
   * done to the destination volume with the content of the source volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#replication_enabled NetappVolumeReplication#replication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#replication_enabled NetappVolumeReplication#replication_enabled}
   */
   readonly replicationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the replication interval. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#replication_schedule NetappVolumeReplication#replication_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#replication_schedule NetappVolumeReplication#replication_schedule}
   */
   readonly replicationSchedule: string;
   /**
   * The name of the existing source volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#volume_name NetappVolumeReplication#volume_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#volume_name NetappVolumeReplication#volume_name}
   */
   readonly volumeName: string;
   /**
@@ -98,19 +110,19 @@ export interface NetappVolumeReplicationConfig extends cdktn.TerraformMetaArgume
   * for mirror_state to reach MIRRORED. If you want Terraform to wait for the mirror to finish on
   * create/stop/resume operations, set this parameter to true. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#wait_for_mirror NetappVolumeReplication#wait_for_mirror}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#wait_for_mirror NetappVolumeReplication#wait_for_mirror}
   */
   readonly waitForMirror?: boolean | cdktn.IResolvable;
   /**
   * destination_volume_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#destination_volume_parameters NetappVolumeReplication#destination_volume_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#destination_volume_parameters NetappVolumeReplication#destination_volume_parameters}
   */
   readonly destinationVolumeParameters?: NetappVolumeReplicationDestinationVolumeParameters;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#timeouts NetappVolumeReplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#timeouts NetappVolumeReplication#timeouts}
   */
   readonly timeouts?: NetappVolumeReplicationTimeouts;
 }
@@ -209,7 +221,7 @@ export class NetappVolumeReplicationHybridPeeringDetailsList extends cdktn.Compl
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -284,7 +296,7 @@ export class NetappVolumeReplicationHybridReplicationUserCommandsList extends cd
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -394,7 +406,7 @@ export class NetappVolumeReplicationTransferStatsList extends cdktn.ComplexList 
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -409,13 +421,13 @@ export interface NetappVolumeReplicationDestinationVolumeParametersTieringPolicy
   * Optional. Time in days to mark the volume's data block as cold and make it eligible for tiering, can be range from 2-183.
   * Default is 31.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#cooling_threshold_days NetappVolumeReplication#cooling_threshold_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#cooling_threshold_days NetappVolumeReplication#cooling_threshold_days}
   */
   readonly coolingThresholdDays?: number;
   /**
   * Optional. Flag indicating if the volume has tiering policy enable/pause. Default is PAUSED. Default value: "PAUSED" Possible values: ["ENABLED", "PAUSED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#tier_action NetappVolumeReplication#tier_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#tier_action NetappVolumeReplication#tier_action}
   */
   readonly tierAction?: string;
 }
@@ -530,31 +542,31 @@ export interface NetappVolumeReplicationDestinationVolumeParameters {
   /**
   * Description for the destination volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
   */
   readonly description?: string;
   /**
   * Share name for destination volume. If not specified, name of source volume's share name will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#share_name NetappVolumeReplication#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#share_name NetappVolumeReplication#share_name}
   */
   readonly shareName?: string;
   /**
   * Name of an existing storage pool for the destination volume with format: 'projects/{{project}}/locations/{{location}}/storagePools/{{poolId}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#storage_pool NetappVolumeReplication#storage_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#storage_pool NetappVolumeReplication#storage_pool}
   */
   readonly storagePool: string;
   /**
   * Name for the destination volume to be created. If not specified, the name of the source volume will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#volume_id NetappVolumeReplication#volume_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#volume_id NetappVolumeReplication#volume_id}
   */
   readonly volumeId?: string;
   /**
   * tiering_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#tiering_policy NetappVolumeReplication#tiering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#tiering_policy NetappVolumeReplication#tiering_policy}
   */
   readonly tieringPolicy?: NetappVolumeReplicationDestinationVolumeParametersTieringPolicy;
 }
@@ -751,15 +763,15 @@ export class NetappVolumeReplicationDestinationVolumeParametersOutputReference e
 }
 export interface NetappVolumeReplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#create NetappVolumeReplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#create NetappVolumeReplication#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#delete NetappVolumeReplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#delete NetappVolumeReplication#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#update NetappVolumeReplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#update NetappVolumeReplication#update}
   */
   readonly update?: string;
 }
@@ -911,7 +923,7 @@ export class NetappVolumeReplicationTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}
 */
 export class NetappVolumeReplication extends cdktn.TerraformResource {
 
@@ -927,7 +939,7 @@ export class NetappVolumeReplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetappVolumeReplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappVolumeReplication to import
-  * @param importFromId The id of the existing NetappVolumeReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappVolumeReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappVolumeReplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -939,7 +951,7 @@ export class NetappVolumeReplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -950,7 +962,7 @@ export class NetappVolumeReplication extends cdktn.TerraformResource {
       terraformResourceType: 'google_netapp_volume_replication',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -962,6 +974,7 @@ export class NetappVolumeReplication extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._deleteDestinationVolume = config.deleteDestinationVolume;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._forceStopping = config.forceStopping;
     this._id = config.id;
@@ -1000,6 +1013,22 @@ export class NetappVolumeReplication extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deleteDestinationVolumeInput() {
     return this._deleteDestinationVolume;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -1275,6 +1304,7 @@ export class NetappVolumeReplication extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       delete_destination_volume: cdktn.booleanToTerraform(this._deleteDestinationVolume),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       force_stopping: cdktn.booleanToTerraform(this._forceStopping),
       id: cdktn.stringToTerraform(this._id),
@@ -1298,6 +1328,12 @@ export class NetappVolumeReplication extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),

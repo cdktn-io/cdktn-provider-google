@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,10 +13,22 @@ import * as cdktn from 'cdktn';
 
 export interface ComputeRegionCompositeHealthCheckConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#deletion_policy ComputeRegionCompositeHealthCheck#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource. Provide this property when you
   * create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#description ComputeRegionCompositeHealthCheck#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#description ComputeRegionCompositeHealthCheck#description}
   */
   readonly description?: string;
   /**
@@ -27,7 +39,7 @@ export interface ComputeRegionCompositeHealthCheckConfig extends cdktn.Terraform
   * as the CompositeHealthCheck (cross-region deployment for
   * INTERNAL_MANAGED is not supported). Can be mutated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#health_destination ComputeRegionCompositeHealthCheck#health_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#health_destination ComputeRegionCompositeHealthCheck#health_destination}
   */
   readonly healthDestination: string;
   /**
@@ -37,7 +49,7 @@ export interface ComputeRegionCompositeHealthCheckConfig extends cdktn.Terraform
   * Must be regional and in the same region as the
   * CompositeHealthCheck. Can be mutated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#health_sources ComputeRegionCompositeHealthCheck#health_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#health_sources ComputeRegionCompositeHealthCheck#health_sources}
   */
   readonly healthSources?: string[];
   /**
@@ -49,37 +61,37 @@ export interface ComputeRegionCompositeHealthCheckConfig extends cdktn.Terraform
   * be a dash, lowercase letter, or digit, except the last character, which
   * cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#name ComputeRegionCompositeHealthCheck#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#name ComputeRegionCompositeHealthCheck#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#project ComputeRegionCompositeHealthCheck#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#project ComputeRegionCompositeHealthCheck#project}
   */
   readonly project?: string;
   /**
   * URL of the region where the composite health check resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#region ComputeRegionCompositeHealthCheck#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#region ComputeRegionCompositeHealthCheck#region}
   */
   readonly region: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#timeouts ComputeRegionCompositeHealthCheck#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#timeouts ComputeRegionCompositeHealthCheck#timeouts}
   */
   readonly timeouts?: ComputeRegionCompositeHealthCheckTimeouts;
 }
 export interface ComputeRegionCompositeHealthCheckTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#create ComputeRegionCompositeHealthCheck#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#create ComputeRegionCompositeHealthCheck#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#delete ComputeRegionCompositeHealthCheck#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#delete ComputeRegionCompositeHealthCheck#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#update ComputeRegionCompositeHealthCheck#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#update ComputeRegionCompositeHealthCheck#update}
   */
   readonly update?: string;
 }
@@ -231,7 +243,7 @@ export class ComputeRegionCompositeHealthCheckTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check google_compute_region_composite_health_check}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check google_compute_region_composite_health_check}
 */
 export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
 
@@ -247,7 +259,7 @@ export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeRegionCompositeHealthCheck resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionCompositeHealthCheck to import
-  * @param importFromId The id of the existing ComputeRegionCompositeHealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeRegionCompositeHealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionCompositeHealthCheck to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -259,7 +271,7 @@ export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_composite_health_check google_compute_region_composite_health_check} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_composite_health_check google_compute_region_composite_health_check} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -270,7 +282,7 @@ export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_region_composite_health_check',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -281,6 +293,7 @@ export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._healthDestination = config.healthDestination;
     this._healthSources = config.healthSources;
@@ -297,6 +310,22 @@ export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
     return this.getStringAttribute('creation_timestamp');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -423,6 +452,7 @@ export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       health_destination: cdktn.stringToTerraform(this._healthDestination),
       health_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._healthSources),
@@ -435,6 +465,12 @@ export class ComputeRegionCompositeHealthCheck extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,

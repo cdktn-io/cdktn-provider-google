@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,23 @@ export interface DiscoveryEngineCmekConfigConfig extends cdktn.TerraformMetaArgu
   /**
   * The unique id of the cmek config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#cmek_config_id DiscoveryEngineCmekConfig#cmek_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#cmek_config_id DiscoveryEngineCmekConfig#cmek_config_id}
   */
   readonly cmekConfigId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#id DiscoveryEngineCmekConfig#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#deletion_policy DiscoveryEngineCmekConfig#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#id DiscoveryEngineCmekConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,37 +41,37 @@ export interface DiscoveryEngineCmekConfigConfig extends cdktn.TerraformMetaArgu
   * KMS key resource name which will be used to encrypt resources
   * 'projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{keyId}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
   */
   readonly kmsKey: string;
   /**
   * The geographic location where the CMEK config should reside. The value can
   * only be one of "us" and "eu".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#location DiscoveryEngineCmekConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#location DiscoveryEngineCmekConfig#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#project DiscoveryEngineCmekConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#project DiscoveryEngineCmekConfig#project}
   */
   readonly project?: string;
   /**
   * Set the following CmekConfig as the default to be used for child resources
   * if one is not specified. The default value is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#set_default DiscoveryEngineCmekConfig#set_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#set_default DiscoveryEngineCmekConfig#set_default}
   */
   readonly setDefault?: boolean | cdktn.IResolvable;
   /**
   * single_region_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#single_region_keys DiscoveryEngineCmekConfig#single_region_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#single_region_keys DiscoveryEngineCmekConfig#single_region_keys}
   */
   readonly singleRegionKeys?: DiscoveryEngineCmekConfigSingleRegionKeys[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#timeouts DiscoveryEngineCmekConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#timeouts DiscoveryEngineCmekConfig#timeouts}
   */
   readonly timeouts?: DiscoveryEngineCmekConfigTimeouts;
 }
@@ -69,7 +81,7 @@ export interface DiscoveryEngineCmekConfigSingleRegionKeys {
   * resources
   * 'projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{keyId}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
   */
   readonly kmsKey: string;
 }
@@ -170,7 +182,7 @@ export class DiscoveryEngineCmekConfigSingleRegionKeysList extends cdktn.Complex
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -182,15 +194,15 @@ export class DiscoveryEngineCmekConfigSingleRegionKeysList extends cdktn.Complex
 }
 export interface DiscoveryEngineCmekConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#create DiscoveryEngineCmekConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#create DiscoveryEngineCmekConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#delete DiscoveryEngineCmekConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#delete DiscoveryEngineCmekConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#update DiscoveryEngineCmekConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#update DiscoveryEngineCmekConfig#update}
   */
   readonly update?: string;
 }
@@ -342,7 +354,7 @@ export class DiscoveryEngineCmekConfigTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config}
 */
 export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
 
@@ -358,7 +370,7 @@ export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DiscoveryEngineCmekConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineCmekConfig to import
-  * @param importFromId The id of the existing DiscoveryEngineCmekConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DiscoveryEngineCmekConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineCmekConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -370,7 +382,7 @@ export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -381,7 +393,7 @@ export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_discovery_engine_cmek_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -393,6 +405,7 @@ export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._cmekConfigId = config.cmekConfigId;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._kmsKey = config.kmsKey;
     this._location = config.location;
@@ -417,6 +430,22 @@ export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cmekConfigIdInput() {
     return this._cmekConfigId;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -562,6 +591,7 @@ export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cmek_config_id: cdktn.stringToTerraform(this._cmekConfigId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       kms_key: cdktn.stringToTerraform(this._kmsKey),
       location: cdktn.stringToTerraform(this._location),
@@ -576,6 +606,12 @@ export class DiscoveryEngineCmekConfig extends cdktn.TerraformResource {
     const attrs = {
       cmek_config_id: {
         value: cdktn.stringToHclTerraform(this._cmekConfigId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

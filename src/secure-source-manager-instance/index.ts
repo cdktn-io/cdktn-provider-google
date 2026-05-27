@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface SecureSourceManagerInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * The deletion policy for the instance. Setting 'ABANDON' allows the resource
-  * to be abandoned, rather than deleted. Setting 'DELETE' deletes the resource
-  * and all its contents. Setting 'PREVENT' prevents the resource from accidental
-  * deletion by erroring out during plan.
-  * Default is 'PREVENT'.  Possible values are:
-  *   * DELETE
-  *   * PREVENT
-  *   * ABANDON
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "PREVENT".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#deletion_policy SecureSourceManagerInstance#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#deletion_policy SecureSourceManagerInstance#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#id SecureSourceManagerInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#id SecureSourceManagerInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,13 +34,13 @@ export interface SecureSourceManagerInstanceConfig extends cdktn.TerraformMetaAr
   /**
   * The name for the Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#instance_id SecureSourceManagerInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#instance_id SecureSourceManagerInstance#instance_id}
   */
   readonly instanceId: string;
   /**
   * Customer-managed encryption key name, in the format projects/* /locations/* /keyRings/* /cryptoKeys/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#kms_key SecureSourceManagerInstance#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#kms_key SecureSourceManagerInstance#kms_key}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -53,35 +52,35 @@ export interface SecureSourceManagerInstanceConfig extends cdktn.TerraformMetaAr
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#labels SecureSourceManagerInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#labels SecureSourceManagerInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#location SecureSourceManagerInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#location SecureSourceManagerInstance#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#project SecureSourceManagerInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#project SecureSourceManagerInstance#project}
   */
   readonly project?: string;
   /**
   * private_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#private_config SecureSourceManagerInstance#private_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#private_config SecureSourceManagerInstance#private_config}
   */
   readonly privateConfig?: SecureSourceManagerInstancePrivateConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#timeouts SecureSourceManagerInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#timeouts SecureSourceManagerInstance#timeouts}
   */
   readonly timeouts?: SecureSourceManagerInstanceTimeouts;
   /**
   * workforce_identity_federation_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#workforce_identity_federation_config SecureSourceManagerInstance#workforce_identity_federation_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#workforce_identity_federation_config SecureSourceManagerInstance#workforce_identity_federation_config}
   */
   readonly workforceIdentityFederationConfig?: SecureSourceManagerInstanceWorkforceIdentityFederationConfig;
 }
@@ -165,7 +164,7 @@ export class SecureSourceManagerInstanceHostConfigList extends cdktn.ComplexList
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -179,25 +178,25 @@ export interface SecureSourceManagerInstancePrivateConfigCustomHostConfig {
   /**
   * API hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#api SecureSourceManagerInstance#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#api SecureSourceManagerInstance#api}
   */
   readonly api: string;
   /**
   * Git HTTP hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#git_http SecureSourceManagerInstance#git_http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#git_http SecureSourceManagerInstance#git_http}
   */
   readonly gitHttp: string;
   /**
   * Git SSH hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#git_ssh SecureSourceManagerInstance#git_ssh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#git_ssh SecureSourceManagerInstance#git_ssh}
   */
   readonly gitSsh: string;
   /**
   * HTML hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#html SecureSourceManagerInstance#html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#html SecureSourceManagerInstance#html}
   */
   readonly html: string;
 }
@@ -358,19 +357,19 @@ export interface SecureSourceManagerInstancePrivateConfig {
   /**
   * CA pool resource, resource must in the format of 'projects/{project}/locations/{location}/caPools/{ca_pool}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#ca_pool SecureSourceManagerInstance#ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#ca_pool SecureSourceManagerInstance#ca_pool}
   */
   readonly caPool?: string;
   /**
   * 'Indicate if it's private instance.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#is_private SecureSourceManagerInstance#is_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#is_private SecureSourceManagerInstance#is_private}
   */
   readonly isPrivate: boolean | cdktn.IResolvable;
   /**
   * custom_host_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#custom_host_config SecureSourceManagerInstance#custom_host_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#custom_host_config SecureSourceManagerInstance#custom_host_config}
   */
   readonly customHostConfig?: SecureSourceManagerInstancePrivateConfigCustomHostConfig;
 }
@@ -519,15 +518,15 @@ export class SecureSourceManagerInstancePrivateConfigOutputReference extends cdk
 }
 export interface SecureSourceManagerInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#create SecureSourceManagerInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#create SecureSourceManagerInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#delete SecureSourceManagerInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#delete SecureSourceManagerInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#update SecureSourceManagerInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#update SecureSourceManagerInstance#update}
   */
   readonly update?: string;
 }
@@ -681,7 +680,7 @@ export interface SecureSourceManagerInstanceWorkforceIdentityFederationConfig {
   /**
   * 'Whether Workforce Identity Federation is enabled.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#enabled SecureSourceManagerInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#enabled SecureSourceManagerInstance#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -762,7 +761,7 @@ export class SecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputR
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}
 */
 export class SecureSourceManagerInstance extends cdktn.TerraformResource {
 
@@ -778,7 +777,7 @@ export class SecureSourceManagerInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecureSourceManagerInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecureSourceManagerInstance to import
-  * @param importFromId The id of the existing SecureSourceManagerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecureSourceManagerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecureSourceManagerInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -790,7 +789,7 @@ export class SecureSourceManagerInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -801,7 +800,7 @@ export class SecureSourceManagerInstance extends cdktn.TerraformResource {
       terraformResourceType: 'google_secure_source_manager_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -833,7 +832,7 @@ export class SecureSourceManagerInstance extends cdktn.TerraformResource {
     return this.getStringAttribute('create_time');
   }
 
-  // deletion_policy - computed: false, optional: true, required: false
+  // deletion_policy - computed: true, optional: true, required: false
   private _deletionPolicy?: string; 
   public get deletionPolicy() {
     return this.getStringAttribute('deletion_policy');

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,20 +16,32 @@ export interface KmsCryptoKeyConfig extends cdktn.TerraformMetaArguments {
   * The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey.
   * The resource name is in the format "projects/* /locations/* /ekmConnections/*" and only applies to "EXTERNAL_VPC" keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly cryptoKeyBackend?: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#deletion_policy KmsCryptoKey#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED.
   * If not specified at creation time, the default duration is 30 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
   */
   readonly destroyScheduledDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,14 +50,14 @@ export interface KmsCryptoKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether this key may contain imported versions only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
   */
   readonly importOnly?: boolean | cdktn.IResolvable;
   /**
   * The KeyRing that this key belongs to.
   * Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
   */
   readonly keyRing: string;
   /**
@@ -55,13 +67,13 @@ export interface KmsCryptoKeyConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The resource name for the CryptoKey.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
   */
   readonly name: string;
   /**
@@ -70,7 +82,7 @@ export interface KmsCryptoKeyConfig extends cdktn.TerraformMetaArguments {
   * for possible inputs.
   * Default value is "ENCRYPT_DECRYPT".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
   */
   readonly purpose?: string;
   /**
@@ -79,7 +91,7 @@ export interface KmsCryptoKeyConfig extends cdktn.TerraformMetaArguments {
   * the format of a decimal number with up to 9 fractional digits, followed by the
   * letter 's' (seconds). It must be greater than a day (ie, 86400).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
   */
   readonly rotationPeriod?: string;
   /**
@@ -88,19 +100,19 @@ export interface KmsCryptoKeyConfig extends cdktn.TerraformMetaArguments {
   * or 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
   * This field is only applicable during initial CryptoKey creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
   */
   readonly skipInitialVersionCreation?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
   */
   readonly timeouts?: KmsCryptoKeyTimeouts;
   /**
   * version_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
   */
   readonly versionTemplate?: KmsCryptoKeyVersionTemplate;
 }
@@ -174,7 +186,7 @@ export class KmsCryptoKeyPrimaryList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -186,15 +198,15 @@ export class KmsCryptoKeyPrimaryList extends cdktn.ComplexList {
 }
 export interface KmsCryptoKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}
   */
   readonly update?: string;
 }
@@ -349,13 +361,13 @@ export interface KmsCryptoKeyVersionTemplate {
   * The algorithm to use when creating a version based on this template.
   * See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
   */
   readonly algorithm: string;
   /**
   * The protection level to use when creating a version based on this template. Possible values include "SOFTWARE", "HSM", "EXTERNAL", "EXTERNAL_VPC". Defaults to "SOFTWARE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
   */
   readonly protectionLevel?: string;
 }
@@ -465,7 +477,7 @@ export class KmsCryptoKeyVersionTemplateOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key google_kms_crypto_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key google_kms_crypto_key}
 */
 export class KmsCryptoKey extends cdktn.TerraformResource {
 
@@ -481,7 +493,7 @@ export class KmsCryptoKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmsCryptoKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsCryptoKey to import
-  * @param importFromId The id of the existing KmsCryptoKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmsCryptoKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsCryptoKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -493,7 +505,7 @@ export class KmsCryptoKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -504,7 +516,7 @@ export class KmsCryptoKey extends cdktn.TerraformResource {
       terraformResourceType: 'google_kms_crypto_key',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -516,6 +528,7 @@ export class KmsCryptoKey extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._cryptoKeyBackend = config.cryptoKeyBackend;
+    this._deletionPolicy = config.deletionPolicy;
     this._destroyScheduledDuration = config.destroyScheduledDuration;
     this._id = config.id;
     this._importOnly = config.importOnly;
@@ -547,6 +560,22 @@ export class KmsCryptoKey extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cryptoKeyBackendInput() {
     return this._cryptoKeyBackend;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // destroy_scheduled_duration - computed: true, optional: true, required: false
@@ -744,6 +773,7 @@ export class KmsCryptoKey extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       crypto_key_backend: cdktn.stringToTerraform(this._cryptoKeyBackend),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       destroy_scheduled_duration: cdktn.stringToTerraform(this._destroyScheduledDuration),
       id: cdktn.stringToTerraform(this._id),
       import_only: cdktn.booleanToTerraform(this._importOnly),
@@ -762,6 +792,12 @@ export class KmsCryptoKey extends cdktn.TerraformResource {
     const attrs = {
       crypto_key_backend: {
         value: cdktn.stringToHclTerraform(this._cryptoKeyBackend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

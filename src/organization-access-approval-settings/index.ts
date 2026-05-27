@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,23 @@ export interface OrganizationAccessApprovalSettingsConfig extends cdktn.Terrafor
   * The asymmetric crypto key version to use for signing approval requests.
   * Empty active_key_version indicates that a Google-managed key should be used for signing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#active_key_version OrganizationAccessApprovalSettings#active_key_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#active_key_version OrganizationAccessApprovalSettings#active_key_version}
   */
   readonly activeKeyVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#id OrganizationAccessApprovalSettings#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#deletion_policy OrganizationAccessApprovalSettings#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#id OrganizationAccessApprovalSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,25 +43,25 @@ export interface OrganizationAccessApprovalSettingsConfig extends cdktn.Terrafor
   * Notifications relating to a resource will be sent to all emails in the settings of ancestor
   * resources of that resource. A maximum of 50 email addresses are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#notification_emails OrganizationAccessApprovalSettings#notification_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#notification_emails OrganizationAccessApprovalSettings#notification_emails}
   */
   readonly notificationEmails?: string[];
   /**
   * ID of the organization of the access approval settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#organization_id OrganizationAccessApprovalSettings#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#organization_id OrganizationAccessApprovalSettings#organization_id}
   */
   readonly organizationId: string;
   /**
   * enrolled_services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#enrolled_services OrganizationAccessApprovalSettings#enrolled_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#enrolled_services OrganizationAccessApprovalSettings#enrolled_services}
   */
   readonly enrolledServices: OrganizationAccessApprovalSettingsEnrolledServices[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#timeouts OrganizationAccessApprovalSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#timeouts OrganizationAccessApprovalSettings#timeouts}
   */
   readonly timeouts?: OrganizationAccessApprovalSettingsTimeouts;
 }
@@ -67,13 +79,13 @@ export interface OrganizationAccessApprovalSettingsEnrolledServices {
   *   pubsub.googleapis.com
   *   storage.googleapis.com
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#cloud_product OrganizationAccessApprovalSettings#cloud_product}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#cloud_product OrganizationAccessApprovalSettings#cloud_product}
   */
   readonly cloudProduct: string;
   /**
   * The enrollment level of the service. Default value: "BLOCK_ALL" Possible values: ["BLOCK_ALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#enrollment_level OrganizationAccessApprovalSettings#enrollment_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#enrollment_level OrganizationAccessApprovalSettings#enrollment_level}
   */
   readonly enrollmentLevel?: string;
 }
@@ -203,7 +215,7 @@ export class OrganizationAccessApprovalSettingsEnrolledServicesList extends cdkt
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -215,15 +227,15 @@ export class OrganizationAccessApprovalSettingsEnrolledServicesList extends cdkt
 }
 export interface OrganizationAccessApprovalSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#create OrganizationAccessApprovalSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#create OrganizationAccessApprovalSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#delete OrganizationAccessApprovalSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#delete OrganizationAccessApprovalSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#update OrganizationAccessApprovalSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#update OrganizationAccessApprovalSettings#update}
   */
   readonly update?: string;
 }
@@ -375,7 +387,7 @@ export class OrganizationAccessApprovalSettingsTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings}
 */
 export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource {
 
@@ -391,7 +403,7 @@ export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource 
   * Generates CDKTN code for importing a OrganizationAccessApprovalSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationAccessApprovalSettings to import
-  * @param importFromId The id of the existing OrganizationAccessApprovalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationAccessApprovalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationAccessApprovalSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -403,7 +415,7 @@ export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -414,7 +426,7 @@ export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource 
       terraformResourceType: 'google_organization_access_approval_settings',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -426,6 +438,7 @@ export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource 
       forEach: config.forEach
     });
     this._activeKeyVersion = config.activeKeyVersion;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._notificationEmails = config.notificationEmails;
     this._organizationId = config.organizationId;
@@ -456,6 +469,22 @@ export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource 
   // ancestor_has_active_key_version - computed: true, optional: false, required: false
   public get ancestorHasActiveKeyVersion() {
     return this.getBooleanAttribute('ancestor_has_active_key_version');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // enrolled_ancestor - computed: true, optional: false, required: false
@@ -554,6 +583,7 @@ export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       active_key_version: cdktn.stringToTerraform(this._activeKeyVersion),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       notification_emails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notificationEmails),
       organization_id: cdktn.stringToTerraform(this._organizationId),
@@ -566,6 +596,12 @@ export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource 
     const attrs = {
       active_key_version: {
         value: cdktn.stringToHclTerraform(this._activeKeyVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DialogflowCxTestCaseConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#deletion_policy DialogflowCxTestCase#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The human-readable name of the test case, unique within the agent. Limit of 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#display_name DialogflowCxTestCase#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#display_name DialogflowCxTestCase#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +40,39 @@ export interface DialogflowCxTestCaseConfig extends cdktn.TerraformMetaArguments
   /**
   * Additional freeform notes about the test case. Limit of 400 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#notes DialogflowCxTestCase#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#notes DialogflowCxTestCase#notes}
   */
   readonly notes?: string;
   /**
   * The agent to create the test case for.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#parent DialogflowCxTestCase#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#parent DialogflowCxTestCase#parent}
   */
   readonly parent?: string;
   /**
   * Tags are short descriptions that users may apply to test cases for organizational and filtering purposes.
   * Each tag should start with "#" and has a limit of 30 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#tags DialogflowCxTestCase#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#tags DialogflowCxTestCase#tags}
   */
   readonly tags?: string[];
   /**
   * test_case_conversation_turns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#test_case_conversation_turns DialogflowCxTestCase#test_case_conversation_turns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#test_case_conversation_turns DialogflowCxTestCase#test_case_conversation_turns}
   */
   readonly testCaseConversationTurns?: DialogflowCxTestCaseTestCaseConversationTurns[] | cdktn.IResolvable;
   /**
   * test_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#test_config DialogflowCxTestCase#test_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#test_config DialogflowCxTestCase#test_config}
   */
   readonly testConfig?: DialogflowCxTestCaseTestConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#timeouts DialogflowCxTestCase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#timeouts DialogflowCxTestCase#timeouts}
   */
   readonly timeouts?: DialogflowCxTestCaseTimeouts;
 }
@@ -134,7 +146,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDt
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -209,7 +221,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEv
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -284,7 +296,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTe
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -377,7 +389,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputLi
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -468,7 +480,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsUserInputList ex
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -548,7 +560,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -628,7 +640,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -713,7 +725,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -788,7 +800,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -868,7 +880,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -973,7 +985,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1055,7 +1067,7 @@ export class DialogflowCxTestCaseLastTestResultConversationTurnsList extends cdk
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1151,7 +1163,7 @@ export class DialogflowCxTestCaseLastTestResultList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1165,13 +1177,13 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf
   /**
   * The dtmf digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
   */
   readonly digits?: string;
   /**
   * The finish digit (if any).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
   */
   readonly finishDigit?: string;
 }
@@ -1286,7 +1298,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEven
   /**
   * Name of the event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
   */
   readonly event: string;
 }
@@ -1369,7 +1381,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText
   /**
   * The natural language text to be processed. Text length must not exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
   */
   readonly text: string;
 }
@@ -1453,25 +1465,25 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput {
   * The language of the input. See [Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language) for a list of the currently supported language codes.
   * Note that queries in the same session do not necessarily need to specify the same language.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#language_code DialogflowCxTestCase#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#language_code DialogflowCxTestCase#language_code}
   */
   readonly languageCode?: string;
   /**
   * dtmf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#dtmf DialogflowCxTestCase#dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#dtmf DialogflowCxTestCase#dtmf}
   */
   readonly dtmf?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf;
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
   */
   readonly event?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
   */
   readonly text?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText;
 }
@@ -1644,25 +1656,25 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInput {
   /**
   * Whether sentiment analysis is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#enable_sentiment_analysis DialogflowCxTestCase#enable_sentiment_analysis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#enable_sentiment_analysis DialogflowCxTestCase#enable_sentiment_analysis}
   */
   readonly enableSentimentAnalysis?: boolean | cdktn.IResolvable;
   /**
   * Parameters that need to be injected into the conversation during intent detection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#injected_parameters DialogflowCxTestCase#injected_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#injected_parameters DialogflowCxTestCase#injected_parameters}
   */
   readonly injectedParameters?: string;
   /**
   * If webhooks should be allowed to trigger in response to the user utterance. Often if parameters are injected, webhooks should not be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#is_webhook_enabled DialogflowCxTestCase#is_webhook_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#is_webhook_enabled DialogflowCxTestCase#is_webhook_enabled}
   */
   readonly isWebhookEnabled?: boolean | cdktn.IResolvable;
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#input DialogflowCxTestCase#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#input DialogflowCxTestCase#input}
   */
   readonly input?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput;
 }
@@ -1836,7 +1848,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   * The unique identifier of the page.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
   */
   readonly name?: string;
 }
@@ -1927,7 +1939,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
   */
   readonly text?: string[];
 }
@@ -2031,7 +2043,7 @@ export class DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputText
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -2046,7 +2058,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   * The unique identifier of the intent.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
   */
   readonly name?: string;
 }
@@ -2137,25 +2149,25 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   /**
   * The session parameters available to the bot at this point.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#session_parameters DialogflowCxTestCase#session_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#session_parameters DialogflowCxTestCase#session_parameters}
   */
   readonly sessionParameters?: string;
   /**
   * current_page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#current_page DialogflowCxTestCase#current_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#current_page DialogflowCxTestCase#current_page}
   */
   readonly currentPage?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage;
   /**
   * text_responses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text_responses DialogflowCxTestCase#text_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text_responses DialogflowCxTestCase#text_responses}
   */
   readonly textResponses?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses[] | cdktn.IResolvable;
   /**
   * triggered_intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#triggered_intent DialogflowCxTestCase#triggered_intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#triggered_intent DialogflowCxTestCase#triggered_intent}
   */
   readonly triggeredIntent?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent;
 }
@@ -2328,13 +2340,13 @@ export interface DialogflowCxTestCaseTestCaseConversationTurns {
   /**
   * user_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#user_input DialogflowCxTestCase#user_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#user_input DialogflowCxTestCase#user_input}
   */
   readonly userInput?: DialogflowCxTestCaseTestCaseConversationTurnsUserInput;
   /**
   * virtual_agent_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#virtual_agent_output DialogflowCxTestCase#virtual_agent_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#virtual_agent_output DialogflowCxTestCase#virtual_agent_output}
   */
   readonly virtualAgentOutput?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput;
 }
@@ -2467,7 +2479,7 @@ export class DialogflowCxTestCaseTestCaseConversationTurnsList extends cdktn.Com
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -2483,7 +2495,7 @@ export interface DialogflowCxTestCaseTestConfig {
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#flow DialogflowCxTestCase#flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#flow DialogflowCxTestCase#flow}
   */
   readonly flow?: string;
   /**
@@ -2491,13 +2503,13 @@ export interface DialogflowCxTestCaseTestConfig {
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#page DialogflowCxTestCase#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#page DialogflowCxTestCase#page}
   */
   readonly page?: string;
   /**
   * Session parameters to be compared when calculating differences.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#tracking_parameters DialogflowCxTestCase#tracking_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#tracking_parameters DialogflowCxTestCase#tracking_parameters}
   */
   readonly trackingParameters?: string[];
 }
@@ -2639,15 +2651,15 @@ export class DialogflowCxTestCaseTestConfigOutputReference extends cdktn.Complex
 }
 export interface DialogflowCxTestCaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}
   */
   readonly update?: string;
 }
@@ -2799,7 +2811,7 @@ export class DialogflowCxTestCaseTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}
 */
 export class DialogflowCxTestCase extends cdktn.TerraformResource {
 
@@ -2815,7 +2827,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowCxTestCase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxTestCase to import
-  * @param importFromId The id of the existing DialogflowCxTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowCxTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxTestCase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2827,7 +2839,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2838,7 +2850,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_test_case',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -2849,6 +2861,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._id = config.id;
     this._notes = config.notes;
@@ -2866,6 +2879,22 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
   // creation_time - computed: true, optional: false, required: false
   public get creationTime() {
     return this.getStringAttribute('creation_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // display_name - computed: false, optional: false, required: true
@@ -3010,6 +3039,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
       notes: cdktn.stringToTerraform(this._notes),
@@ -3023,6 +3053,12 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       display_name: {
         value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,

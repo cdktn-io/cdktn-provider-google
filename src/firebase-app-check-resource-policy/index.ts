@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,6 +12,18 @@ import * as cdktn from 'cdktn';
 // Configuration
 
 export interface FirebaseAppCheckResourcePolicyConfig extends cdktn.TerraformMetaArguments {
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#deletion_policy FirebaseAppCheckResourcePolicy#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
   /**
   * The App Check enforcement mode for a service supported by App Check. This will override the EnforcementMode setting on the service.
   * Valid values are:
@@ -45,18 +57,18 @@ export interface FirebaseAppCheckResourcePolicyConfig extends cdktn.TerraformMet
   * If your app has not launched yet, you should enable enforcement immediately, since there are no outdated
   * clients in use. Possible values: ["UNENFORCED", "ENFORCED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#enforcement_mode FirebaseAppCheckResourcePolicy#enforcement_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#enforcement_mode FirebaseAppCheckResourcePolicy#enforcement_mode}
   */
   readonly enforcementMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#id FirebaseAppCheckResourcePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#id FirebaseAppCheckResourcePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#project FirebaseAppCheckResourcePolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#project FirebaseAppCheckResourcePolicy#project}
   */
   readonly project?: string;
   /**
@@ -65,7 +77,7 @@ export interface FirebaseAppCheckResourcePolicyConfig extends cdktn.TerraformMet
   * Currently, the following service IDs are supported:
   * * 'oauth2.googleapis.com' (Google Identity for iOS)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#service_id FirebaseAppCheckResourcePolicy#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#service_id FirebaseAppCheckResourcePolicy#service_id}
   */
   readonly serviceId: string;
   /**
@@ -73,27 +85,27 @@ export interface FirebaseAppCheckResourcePolicyConfig extends cdktn.TerraformMet
   * * iOS OAuth clients (Google Identity for iOS):
   *   '//oauth2.googleapis.com/projects/{project_number}/oauthClients/{oauthClientId}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#target_resource FirebaseAppCheckResourcePolicy#target_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#target_resource FirebaseAppCheckResourcePolicy#target_resource}
   */
   readonly targetResource: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#timeouts FirebaseAppCheckResourcePolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#timeouts FirebaseAppCheckResourcePolicy#timeouts}
   */
   readonly timeouts?: FirebaseAppCheckResourcePolicyTimeouts;
 }
 export interface FirebaseAppCheckResourcePolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#create FirebaseAppCheckResourcePolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#create FirebaseAppCheckResourcePolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#delete FirebaseAppCheckResourcePolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#delete FirebaseAppCheckResourcePolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#update FirebaseAppCheckResourcePolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#update FirebaseAppCheckResourcePolicy#update}
   */
   readonly update?: string;
 }
@@ -245,7 +257,7 @@ export class FirebaseAppCheckResourcePolicyTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy google_firebase_app_check_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy google_firebase_app_check_resource_policy}
 */
 export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
 
@@ -261,7 +273,7 @@ export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FirebaseAppCheckResourcePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirebaseAppCheckResourcePolicy to import
-  * @param importFromId The id of the existing FirebaseAppCheckResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FirebaseAppCheckResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirebaseAppCheckResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -273,7 +285,7 @@ export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_resource_policy google_firebase_app_check_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_resource_policy google_firebase_app_check_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -284,7 +296,7 @@ export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_firebase_app_check_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -295,6 +307,7 @@ export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._enforcementMode = config.enforcementMode;
     this._id = config.id;
     this._project = config.project;
@@ -306,6 +319,22 @@ export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // enforcement_mode - computed: false, optional: true, required: false
   private _enforcementMode?: string; 
@@ -418,6 +447,7 @@ export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       enforcement_mode: cdktn.stringToTerraform(this._enforcementMode),
       id: cdktn.stringToTerraform(this._id),
       project: cdktn.stringToTerraform(this._project),
@@ -429,6 +459,12 @@ export class FirebaseAppCheckResourcePolicy extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       enforcement_mode: {
         value: cdktn.stringToHclTerraform(this._enforcementMode),
         isBlock: false,

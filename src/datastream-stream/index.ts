@@ -28,41 +28,53 @@ DatastreamStreamSourceConfigOutputReference,
 DatastreamStreamTimeouts, 
 datastreamStreamTimeoutsToTerraform, 
 datastreamStreamTimeoutsToHclTerraform, 
-DatastreamStreamTimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+DatastreamStreamTimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DatastreamStreamConfig extends cdktn.TerraformMetaArguments {
   /**
   * Create the stream without validating it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#create_without_validation DatastreamStream#create_without_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#create_without_validation DatastreamStream#create_without_validation}
   */
   readonly createWithoutValidation?: boolean | cdktn.IResolvable;
   /**
   * A reference to a KMS encryption key. If provided, it will be used to encrypt the data. If left blank, data
   * will be encrypted using an internal Stream-specific encryption key provisioned through KMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#customer_managed_encryption_key DatastreamStream#customer_managed_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#customer_managed_encryption_key DatastreamStream#customer_managed_encryption_key}
   */
   readonly customerManagedEncryptionKey?: string;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#deletion_policy DatastreamStream#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
   /**
   * Desired state of the Stream. Set this field to 'RUNNING' to start the stream,
   * 'NOT_STARTED' to create the stream without starting and 'PAUSED' to pause
   * the stream from a 'RUNNING' state.
   * Possible values: NOT_STARTED, RUNNING, PAUSED. Default: NOT_STARTED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#desired_state DatastreamStream#desired_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#desired_state DatastreamStream#desired_state}
   */
   readonly desiredState?: string;
   /**
   * Display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#display_name DatastreamStream#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#display_name DatastreamStream#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#id DatastreamStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#id DatastreamStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -74,65 +86,65 @@ export interface DatastreamStreamConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#labels DatastreamStream#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#labels DatastreamStream#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location this stream is located in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#location DatastreamStream#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#location DatastreamStream#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#project DatastreamStream#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#project DatastreamStream#project}
   */
   readonly project?: string;
   /**
   * The stream identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#stream_id DatastreamStream#stream_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#stream_id DatastreamStream#stream_id}
   */
   readonly streamId: string;
   /**
   * backfill_all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#backfill_all DatastreamStream#backfill_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#backfill_all DatastreamStream#backfill_all}
   */
   readonly backfillAll?: DatastreamStreamBackfillAll;
   /**
   * backfill_none block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#backfill_none DatastreamStream#backfill_none}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#backfill_none DatastreamStream#backfill_none}
   */
   readonly backfillNone?: DatastreamStreamBackfillNone;
   /**
   * destination_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#destination_config DatastreamStream#destination_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#destination_config DatastreamStream#destination_config}
   */
   readonly destinationConfig: DatastreamStreamDestinationConfig;
   /**
   * rule_sets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#rule_sets DatastreamStream#rule_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#rule_sets DatastreamStream#rule_sets}
   */
   readonly ruleSets?: DatastreamStreamRuleSets[] | cdktn.IResolvable;
   /**
   * source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#source_config DatastreamStream#source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#source_config DatastreamStream#source_config}
   */
   readonly sourceConfig: DatastreamStreamSourceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#timeouts DatastreamStream#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#timeouts DatastreamStream#timeouts}
   */
   readonly timeouts?: DatastreamStreamTimeouts;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream google_datastream_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream google_datastream_stream}
 */
 export class DatastreamStream extends cdktn.TerraformResource {
 
@@ -148,7 +160,7 @@ export class DatastreamStream extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DatastreamStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatastreamStream to import
-  * @param importFromId The id of the existing DatastreamStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatastreamStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatastreamStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -160,7 +172,7 @@ export class DatastreamStream extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream google_datastream_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/datastream_stream google_datastream_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -171,7 +183,7 @@ export class DatastreamStream extends cdktn.TerraformResource {
       terraformResourceType: 'google_datastream_stream',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -184,6 +196,7 @@ export class DatastreamStream extends cdktn.TerraformResource {
     });
     this._createWithoutValidation = config.createWithoutValidation;
     this._customerManagedEncryptionKey = config.customerManagedEncryptionKey;
+    this._deletionPolicy = config.deletionPolicy;
     this._desiredState = config.desiredState;
     this._displayName = config.displayName;
     this._id = config.id;
@@ -233,6 +246,22 @@ export class DatastreamStream extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customerManagedEncryptionKeyInput() {
     return this._customerManagedEncryptionKey;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // desired_state - computed: false, optional: true, required: false
@@ -458,6 +487,7 @@ export class DatastreamStream extends cdktn.TerraformResource {
     return {
       create_without_validation: cdktn.booleanToTerraform(this._createWithoutValidation),
       customer_managed_encryption_key: cdktn.stringToTerraform(this._customerManagedEncryptionKey),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       desired_state: cdktn.stringToTerraform(this._desiredState),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
@@ -484,6 +514,12 @@ export class DatastreamStream extends cdktn.TerraformResource {
       },
       customer_managed_encryption_key: {
         value: cdktn.stringToHclTerraform(this._customerManagedEncryptionKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

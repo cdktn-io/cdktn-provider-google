@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,14 +15,14 @@ export interface IamOauthClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Required. The list of OAuth grant types is allowed for the OauthClient.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#allowed_grant_types IamOauthClient#allowed_grant_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#allowed_grant_types IamOauthClient#allowed_grant_types}
   */
   readonly allowedGrantTypes: string[];
   /**
   * Required. The list of redirect uris that is allowed to redirect back
   * when authorization process is completed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#allowed_redirect_uris IamOauthClient#allowed_redirect_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#allowed_redirect_uris IamOauthClient#allowed_redirect_uris}
   */
   readonly allowedRedirectUris: string[];
   /**
@@ -39,7 +39,7 @@ export interface IamOauthClientConfig extends cdktn.TerraformMetaArguments {
   * * 'email': The OAuth client can read a federated identity's email address.
   * * 'groups': The OAuth client can read a federated identity's groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#allowed_scopes IamOauthClient#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#allowed_scopes IamOauthClient#allowed_scopes}
   */
   readonly allowedScopes: string[];
   /**
@@ -51,22 +51,34 @@ export interface IamOauthClientConfig extends cdktn.TerraformMetaArguments {
   * PUBLIC_CLIENT
   * CONFIDENTIAL_CLIENT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#client_type IamOauthClient#client_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#client_type IamOauthClient#client_type}
   */
   readonly clientType?: string;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#deletion_policy IamOauthClient#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
   /**
   * A user-specified description of the OauthClient.
   * 
   * Cannot exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#description IamOauthClient#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#description IamOauthClient#description}
   */
   readonly description?: string;
   /**
   * Whether the OauthClient is disabled. You cannot use a disabled OAuth
   * client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#disabled IamOauthClient#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#disabled IamOauthClient#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
@@ -74,11 +86,11 @@ export interface IamOauthClientConfig extends cdktn.TerraformMetaArguments {
   * 
   * Cannot exceed 32 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#display_name IamOauthClient#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#display_name IamOauthClient#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#id IamOauthClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#id IamOauthClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -87,7 +99,7 @@ export interface IamOauthClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#location IamOauthClient#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#location IamOauthClient#location}
   */
   readonly location: string;
   /**
@@ -97,31 +109,31 @@ export interface IamOauthClientConfig extends cdktn.TerraformMetaArguments {
   * trailing hyphen. The prefix 'gcp-' is reserved for use by Google, and may
   * not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#oauth_client_id IamOauthClient#oauth_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#oauth_client_id IamOauthClient#oauth_client_id}
   */
   readonly oauthClientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#project IamOauthClient#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#project IamOauthClient#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#timeouts IamOauthClient#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#timeouts IamOauthClient#timeouts}
   */
   readonly timeouts?: IamOauthClientTimeouts;
 }
 export interface IamOauthClientTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#create IamOauthClient#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#create IamOauthClient#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#delete IamOauthClient#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#delete IamOauthClient#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#update IamOauthClient#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#update IamOauthClient#update}
   */
   readonly update?: string;
 }
@@ -273,7 +285,7 @@ export class IamOauthClientTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client google_iam_oauth_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client google_iam_oauth_client}
 */
 export class IamOauthClient extends cdktn.TerraformResource {
 
@@ -289,7 +301,7 @@ export class IamOauthClient extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IamOauthClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamOauthClient to import
-  * @param importFromId The id of the existing IamOauthClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IamOauthClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamOauthClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -301,7 +313,7 @@ export class IamOauthClient extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client google_iam_oauth_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_oauth_client google_iam_oauth_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -312,7 +324,7 @@ export class IamOauthClient extends cdktn.TerraformResource {
       terraformResourceType: 'google_iam_oauth_client',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -327,6 +339,7 @@ export class IamOauthClient extends cdktn.TerraformResource {
     this._allowedRedirectUris = config.allowedRedirectUris;
     this._allowedScopes = config.allowedScopes;
     this._clientType = config.clientType;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._disabled = config.disabled;
     this._displayName = config.displayName;
@@ -399,6 +412,22 @@ export class IamOauthClient extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clientTypeInput() {
     return this._clientType;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -548,6 +577,7 @@ export class IamOauthClient extends cdktn.TerraformResource {
       allowed_redirect_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedRedirectUris),
       allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedScopes),
       client_type: cdktn.stringToTerraform(this._clientType),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       disabled: cdktn.booleanToTerraform(this._disabled),
       display_name: cdktn.stringToTerraform(this._displayName),
@@ -581,6 +611,12 @@ export class IamOauthClient extends cdktn.TerraformResource {
       },
       client_type: {
         value: cdktn.stringToHclTerraform(this._clientType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
