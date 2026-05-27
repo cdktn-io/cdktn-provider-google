@@ -4,7 +4,7 @@
 
 ### ApigeeEndpointAttachment <a name="ApigeeEndpointAttachment" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment google_apigee_endpoint_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment google_apigee_endpoint_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -401,6 +402,12 @@ func PutTimeouts(value ApigeeEndpointAttachmentTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.resetId"></a>
 
 ```go
@@ -516,7 +523,7 @@ The construct id used in the generated config for the ApigeeEndpointAttachment t
 
 The id of the existing ApigeeEndpointAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -550,12 +557,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.host">Host</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeoutsOutputReference">ApigeeEndpointAttachmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.endpointAttachmentIdInput">EndpointAttachmentIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.orgIdInput">OrgIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.serviceAttachmentInput">ServiceAttachmentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.endpointAttachmentId">EndpointAttachmentId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.location">Location</a></code> | <code>*string</code> | *No description.* |
@@ -746,6 +755,16 @@ func Timeouts() ApigeeEndpointAttachmentTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EndpointAttachmentIdInput`<sup>Optional</sup> <a name="EndpointAttachmentIdInput" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.endpointAttachmentIdInput"></a>
 
 ```go
@@ -803,6 +822,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -895,6 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeendpointat
 	Location: *string,
 	OrgId: *string,
 	ServiceAttachment: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts,
 }
@@ -915,7 +945,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeendpointat
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.location">Location</a></code> | <code>*string</code> | Location of the endpoint attachment. |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.orgId">OrgId</a></code> | <code>*string</code> | The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.serviceAttachment">ServiceAttachment</a></code> | <code>*string</code> | Format: projects/* /regions/* /serviceAttachments/*. |
-| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#id ApigeeEndpointAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#id ApigeeEndpointAttachment#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts">ApigeeEndpointAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1000,7 +1031,7 @@ EndpointAttachmentId *string
 
 ID of the endpoint attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#endpoint_attachment_id ApigeeEndpointAttachment#endpoint_attachment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#endpoint_attachment_id ApigeeEndpointAttachment#endpoint_attachment_id}
 
 ---
 
@@ -1014,7 +1045,7 @@ Location *string
 
 Location of the endpoint attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#location ApigeeEndpointAttachment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#location ApigeeEndpointAttachment#location}
 
 ---
 
@@ -1028,7 +1059,7 @@ OrgId *string
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#org_id ApigeeEndpointAttachment#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#org_id ApigeeEndpointAttachment#org_id}
 
 ---
 
@@ -1042,9 +1073,30 @@ ServiceAttachment *string
 
 Format: projects/* /regions/* /serviceAttachments/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#service_attachment ApigeeEndpointAttachment#service_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#service_attachment ApigeeEndpointAttachment#service_attachment}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#deletion_policy ApigeeEndpointAttachment#deletion_policy}
 
 ---
 
@@ -1056,7 +1108,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#id ApigeeEndpointAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#id ApigeeEndpointAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1073,7 +1125,7 @@ Timeouts ApigeeEndpointAttachmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#timeouts ApigeeEndpointAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#timeouts ApigeeEndpointAttachment#timeouts}
 
 ---
 
@@ -1094,8 +1146,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeendpointat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#create ApigeeEndpointAttachment#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#delete ApigeeEndpointAttachment#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#create ApigeeEndpointAttachment#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#delete ApigeeEndpointAttachment#delete}. |
 
 ---
 
@@ -1107,7 +1159,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#create ApigeeEndpointAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#create ApigeeEndpointAttachment#create}.
 
 ---
 
@@ -1119,7 +1171,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_endpoint_attachment#delete ApigeeEndpointAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_endpoint_attachment#delete ApigeeEndpointAttachment#delete}.
 
 ---
 

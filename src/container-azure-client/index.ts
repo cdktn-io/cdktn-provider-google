@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,23 @@ export interface ContainerAzureClientConfig extends cdktn.TerraformMetaArguments
   /**
   * The Azure Active Directory Application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#application_id ContainerAzureClient#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#application_id ContainerAzureClient#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#id ContainerAzureClient#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#deletion_policy ContainerAzureClient#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#id ContainerAzureClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,41 +40,41 @@ export interface ContainerAzureClientConfig extends cdktn.TerraformMetaArguments
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#location ContainerAzureClient#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#location ContainerAzureClient#location}
   */
   readonly location: string;
   /**
   * The name of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#name ContainerAzureClient#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#name ContainerAzureClient#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#project ContainerAzureClient#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#project ContainerAzureClient#project}
   */
   readonly project?: string;
   /**
   * The Azure Active Directory Tenant ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#tenant_id ContainerAzureClient#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#tenant_id ContainerAzureClient#tenant_id}
   */
   readonly tenantId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#timeouts ContainerAzureClient#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#timeouts ContainerAzureClient#timeouts}
   */
   readonly timeouts?: ContainerAzureClientTimeouts;
 }
 export interface ContainerAzureClientTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#create ContainerAzureClient#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#create ContainerAzureClient#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#delete ContainerAzureClient#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#delete ContainerAzureClient#delete}
   */
   readonly delete?: string;
 }
@@ -185,7 +197,7 @@ export class ContainerAzureClientTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client google_container_azure_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client google_container_azure_client}
 */
 export class ContainerAzureClient extends cdktn.TerraformResource {
 
@@ -201,7 +213,7 @@ export class ContainerAzureClient extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ContainerAzureClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAzureClient to import
-  * @param importFromId The id of the existing ContainerAzureClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContainerAzureClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAzureClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -213,7 +225,7 @@ export class ContainerAzureClient extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_client google_container_azure_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_azure_client google_container_azure_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +236,7 @@ export class ContainerAzureClient extends cdktn.TerraformResource {
       terraformResourceType: 'google_container_azure_client',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -236,6 +248,7 @@ export class ContainerAzureClient extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._applicationId = config.applicationId;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._location = config.location;
     this._name = config.name;
@@ -269,6 +282,22 @@ export class ContainerAzureClient extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -370,6 +399,7 @@ export class ContainerAzureClient extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_id: cdktn.stringToTerraform(this._applicationId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
@@ -383,6 +413,12 @@ export class ContainerAzureClient extends cdktn.TerraformResource {
     const attrs = {
       application_id: {
         value: cdktn.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

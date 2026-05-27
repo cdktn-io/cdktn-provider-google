@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,56 @@ import * as cdktn from 'cdktn';
 
 export interface DialogflowFulfillmentConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#deletion_policy DialogflowFulfillment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The human-readable name of the fulfillment, unique within the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#display_name DialogflowFulfillment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#display_name DialogflowFulfillment#display_name}
   */
   readonly displayName: string;
   /**
   * Whether fulfillment is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#enabled DialogflowFulfillment#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#enabled DialogflowFulfillment#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#id DialogflowFulfillment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#id DialogflowFulfillment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#project DialogflowFulfillment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#project DialogflowFulfillment#project}
   */
   readonly project?: string;
   /**
   * features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#features DialogflowFulfillment#features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#features DialogflowFulfillment#features}
   */
   readonly features?: DialogflowFulfillmentFeatures[] | cdktn.IResolvable;
   /**
   * generic_web_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#generic_web_service DialogflowFulfillment#generic_web_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#generic_web_service DialogflowFulfillment#generic_web_service}
   */
   readonly genericWebService?: DialogflowFulfillmentGenericWebService;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#timeouts DialogflowFulfillment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#timeouts DialogflowFulfillment#timeouts}
   */
   readonly timeouts?: DialogflowFulfillmentTimeouts;
 }
@@ -59,7 +71,7 @@ export interface DialogflowFulfillmentFeatures {
   * The type of the feature that enabled for fulfillment.
   * * SMALLTALK: Fulfillment is enabled for SmallTalk. Possible values: ["SMALLTALK"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#type DialogflowFulfillment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#type DialogflowFulfillment#type}
   */
   readonly type: string;
 }
@@ -160,7 +172,7 @@ export class DialogflowFulfillmentFeaturesList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -174,25 +186,25 @@ export interface DialogflowFulfillmentGenericWebService {
   /**
   * The password for HTTP Basic authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#password DialogflowFulfillment#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#password DialogflowFulfillment#password}
   */
   readonly password?: string;
   /**
   * The HTTP request headers to send together with fulfillment requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#request_headers DialogflowFulfillment#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#request_headers DialogflowFulfillment#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * The fulfillment URI for receiving POST requests. It must use https protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#uri DialogflowFulfillment#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#uri DialogflowFulfillment#uri}
   */
   readonly uri: string;
   /**
   * The user name for HTTP Basic authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#username DialogflowFulfillment#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#username DialogflowFulfillment#username}
   */
   readonly username?: string;
 }
@@ -360,15 +372,15 @@ export class DialogflowFulfillmentGenericWebServiceOutputReference extends cdktn
 }
 export interface DialogflowFulfillmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}
   */
   readonly update?: string;
 }
@@ -520,7 +532,7 @@ export class DialogflowFulfillmentTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment}
 */
 export class DialogflowFulfillment extends cdktn.TerraformResource {
 
@@ -536,7 +548,7 @@ export class DialogflowFulfillment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowFulfillment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowFulfillment to import
-  * @param importFromId The id of the existing DialogflowFulfillment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowFulfillment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowFulfillment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -548,7 +560,7 @@ export class DialogflowFulfillment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -559,7 +571,7 @@ export class DialogflowFulfillment extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_fulfillment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -570,6 +582,7 @@ export class DialogflowFulfillment extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._enabled = config.enabled;
     this._id = config.id;
@@ -582,6 +595,22 @@ export class DialogflowFulfillment extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // display_name - computed: false, optional: false, required: true
   private _displayName?: string; 
@@ -703,6 +732,7 @@ export class DialogflowFulfillment extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       enabled: cdktn.booleanToTerraform(this._enabled),
       id: cdktn.stringToTerraform(this._id),
@@ -715,6 +745,12 @@ export class DialogflowFulfillment extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       display_name: {
         value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,

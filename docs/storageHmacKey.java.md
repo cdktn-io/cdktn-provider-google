@@ -4,7 +4,7 @@
 
 ### StorageHmacKey <a name="StorageHmacKey" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key google_storage_hmac_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key google_storage_hmac_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer"></a>
 
@@ -20,6 +20,7 @@ StorageHmacKey.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .serviceAccountEmail(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .state(java.lang.String)
@@ -39,8 +40,9 @@ StorageHmacKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.serviceAccountEmail">serviceAccountEmail</a></code> | <code>java.lang.String</code> | The email address of the key's associated service account. |
-| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}. |
-| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}. |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.state">state</a></code> | <code>java.lang.String</code> | The state of the key. |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts">StorageHmacKeyTimeouts</a></code> | timeouts block. |
 
@@ -112,7 +114,24 @@ Must be unique amongst siblings in the same scope
 
 The email address of the key's associated service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#service_account_email StorageHmacKey#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#service_account_email StorageHmacKey#service_account_email}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#deletion_policy StorageHmacKey#deletion_policy}
 
 ---
 
@@ -120,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +150,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}.
 
 ---
 
@@ -143,7 +162,7 @@ The state of the key.
 
 Can be set to one of ACTIVE, INACTIVE. Default value: "ACTIVE" Possible values: ["ACTIVE", "INACTIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#state StorageHmacKey#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#state StorageHmacKey#state}
 
 ---
 
@@ -153,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#timeouts StorageHmacKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#timeouts StorageHmacKey#timeouts}
 
 ---
 
@@ -186,6 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.resetState">resetState</a></code> | *No description.* |
@@ -516,6 +536,12 @@ public void putTimeouts(StorageHmacKeyTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.resetId"></a>
 
 ```java
@@ -643,7 +669,7 @@ The construct id used in the generated config for the StorageHmacKey to import.
 
 The id of the existing StorageHmacKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,11 +704,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.timeCreated">timeCreated</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeoutsOutputReference">StorageHmacKeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.updated">updated</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.serviceAccountEmailInput">serviceAccountEmailInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.stateInput">stateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts">StorageHmacKeyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -882,6 +910,16 @@ public java.lang.String getUpdated();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.idInput"></a>
 
 ```java
@@ -929,6 +967,16 @@ public IResolvable|StorageHmacKeyTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts">StorageHmacKeyTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1008,6 +1056,7 @@ StorageHmacKeyConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .serviceAccountEmail(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .state(java.lang.String)
@@ -1027,8 +1076,9 @@ StorageHmacKeyConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>java.lang.String</code> | The email address of the key's associated service account. |
-| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}. |
-| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}. |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.state">state</a></code> | <code>java.lang.String</code> | The state of the key. |
 | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts">StorageHmacKeyTimeouts</a></code> | timeouts block. |
 
@@ -1114,7 +1164,28 @@ public java.lang.String getServiceAccountEmail();
 
 The email address of the key's associated service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#service_account_email StorageHmacKey#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#service_account_email StorageHmacKey#service_account_email}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#deletion_policy StorageHmacKey#deletion_policy}
 
 ---
 
@@ -1126,7 +1197,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#id StorageHmacKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1141,7 +1212,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#project StorageHmacKey#project}.
 
 ---
 
@@ -1157,7 +1228,7 @@ The state of the key.
 
 Can be set to one of ACTIVE, INACTIVE. Default value: "ACTIVE" Possible values: ["ACTIVE", "INACTIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#state StorageHmacKey#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#state StorageHmacKey#state}
 
 ---
 
@@ -1171,7 +1242,7 @@ public StorageHmacKeyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#timeouts StorageHmacKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#timeouts StorageHmacKey#timeouts}
 
 ---
 
@@ -1193,9 +1264,9 @@ StorageHmacKeyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#create StorageHmacKey#create}. |
-| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#delete StorageHmacKey#delete}. |
-| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#update StorageHmacKey#update}. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#create StorageHmacKey#create}. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#delete StorageHmacKey#delete}. |
+| <code><a href="#@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#update StorageHmacKey#update}. |
 
 ---
 
@@ -1207,7 +1278,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#create StorageHmacKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#create StorageHmacKey#create}.
 
 ---
 
@@ -1219,7 +1290,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#delete StorageHmacKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#delete StorageHmacKey#delete}.
 
 ---
 
@@ -1231,7 +1302,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_hmac_key#update StorageHmacKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_hmac_key#update StorageHmacKey#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DialogflowCxTestCase <a name="DialogflowCxTestCase" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.putTestCaseConversationTurns">PutTestCaseConversationTurns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.putTestConfig">PutTestConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.resetNotes">ResetNotes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.resetParent">ResetParent</a></code> | *No description.* |
@@ -432,6 +433,12 @@ func PutTimeouts(value DialogflowCxTestCaseTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.resetId"></a>
 
 ```go
@@ -577,7 +584,7 @@ The construct id used in the generated config for the DialogflowCxTestCase to im
 
 The id of the existing DialogflowCxTestCase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -613,6 +620,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.testCaseConversationTurns">TestCaseConversationTurns</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsList">DialogflowCxTestCaseTestCaseConversationTurnsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.testConfig">TestConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestConfigOutputReference">DialogflowCxTestCaseTestConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeoutsOutputReference">DialogflowCxTestCaseTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.notesInput">NotesInput</a></code> | <code>*string</code> | *No description.* |
@@ -621,6 +629,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.testCaseConversationTurnsInput">TestCaseConversationTurnsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.testConfigInput">TestConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestConfig">DialogflowCxTestCaseTestConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.notes">Notes</a></code> | <code>*string</code> | *No description.* |
@@ -831,6 +840,16 @@ func Timeouts() DialogflowCxTestCaseTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.displayNameInput"></a>
 
 ```go
@@ -908,6 +927,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCase.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -997,6 +1026,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxtest
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Notes: *string,
 	Parent: *string,
@@ -1019,7 +1049,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxtest
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The human-readable name of the test case, unique within the agent. Limit of 200 characters. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.notes">Notes</a></code> | <code>*string</code> | Additional freeform notes about the test case. Limit of 400 characters. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.parent">Parent</a></code> | <code>*string</code> | The agent to create the test case for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Tags are short descriptions that users may apply to test cases for organizational and filtering purposes. |
@@ -1109,7 +1140,28 @@ DisplayName *string
 
 The human-readable name of the test case, unique within the agent. Limit of 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#display_name DialogflowCxTestCase#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#display_name DialogflowCxTestCase#display_name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#deletion_policy DialogflowCxTestCase#deletion_policy}
 
 ---
 
@@ -1121,7 +1173,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1138,7 +1190,7 @@ Notes *string
 
 Additional freeform notes about the test case. Limit of 400 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#notes DialogflowCxTestCase#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#notes DialogflowCxTestCase#notes}
 
 ---
 
@@ -1152,7 +1204,7 @@ Parent *string
 
 The agent to create the test case for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#parent DialogflowCxTestCase#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#parent DialogflowCxTestCase#parent}
 
 ---
 
@@ -1168,7 +1220,7 @@ Tags are short descriptions that users may apply to test cases for organizationa
 
 Each tag should start with "#" and has a limit of 30 characters
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#tags DialogflowCxTestCase#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#tags DialogflowCxTestCase#tags}
 
 ---
 
@@ -1182,7 +1234,7 @@ TestCaseConversationTurns interface{}
 
 test_case_conversation_turns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#test_case_conversation_turns DialogflowCxTestCase#test_case_conversation_turns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#test_case_conversation_turns DialogflowCxTestCase#test_case_conversation_turns}
 
 ---
 
@@ -1196,7 +1248,7 @@ TestConfig DialogflowCxTestCaseTestConfig
 
 test_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#test_config DialogflowCxTestCase#test_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#test_config DialogflowCxTestCase#test_config}
 
 ---
 
@@ -1210,7 +1262,7 @@ Timeouts DialogflowCxTestCaseTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#timeouts DialogflowCxTestCase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#timeouts DialogflowCxTestCase#timeouts}
 
 ---
 
@@ -1415,7 +1467,7 @@ UserInput DialogflowCxTestCaseTestCaseConversationTurnsUserInput
 
 user_input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#user_input DialogflowCxTestCase#user_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#user_input DialogflowCxTestCase#user_input}
 
 ---
 
@@ -1429,7 +1481,7 @@ VirtualAgentOutput DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 
 virtual_agent_output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#virtual_agent_output DialogflowCxTestCase#virtual_agent_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#virtual_agent_output DialogflowCxTestCase#virtual_agent_output}
 
 ---
 
@@ -1469,7 +1521,7 @@ EnableSentimentAnalysis interface{}
 
 Whether sentiment analysis is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#enable_sentiment_analysis DialogflowCxTestCase#enable_sentiment_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#enable_sentiment_analysis DialogflowCxTestCase#enable_sentiment_analysis}
 
 ---
 
@@ -1483,7 +1535,7 @@ InjectedParameters *string
 
 Parameters that need to be injected into the conversation during intent detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#injected_parameters DialogflowCxTestCase#injected_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#injected_parameters DialogflowCxTestCase#injected_parameters}
 
 ---
 
@@ -1497,7 +1549,7 @@ Input DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#input DialogflowCxTestCase#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#input DialogflowCxTestCase#input}
 
 ---
 
@@ -1513,7 +1565,7 @@ If webhooks should be allowed to trigger in response to the user utterance.
 
 Often if parameters are injected, webhooks should not be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#is_webhook_enabled DialogflowCxTestCase#is_webhook_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#is_webhook_enabled DialogflowCxTestCase#is_webhook_enabled}
 
 ---
 
@@ -1553,7 +1605,7 @@ Dtmf DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf
 
 dtmf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#dtmf DialogflowCxTestCase#dtmf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#dtmf DialogflowCxTestCase#dtmf}
 
 ---
 
@@ -1567,7 +1619,7 @@ Event DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent
 
 event block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
 
 ---
 
@@ -1584,7 +1636,7 @@ The language of the input.
 See [Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language) for a list of the currently supported language codes.
 Note that queries in the same session do not necessarily need to specify the same language.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#language_code DialogflowCxTestCase#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#language_code DialogflowCxTestCase#language_code}
 
 ---
 
@@ -1598,7 +1650,7 @@ Text DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
 
 ---
 
@@ -1634,7 +1686,7 @@ Digits *string
 
 The dtmf digits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
 
 ---
 
@@ -1648,7 +1700,7 @@ FinishDigit *string
 
 The finish digit (if any).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
 
 ---
 
@@ -1682,7 +1734,7 @@ Event *string
 
 Name of the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
 
 ---
 
@@ -1716,7 +1768,7 @@ Text *string
 
 The natural language text to be processed. Text length must not exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
 
 ---
 
@@ -1756,7 +1808,7 @@ CurrentPage DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurre
 
 current_page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#current_page DialogflowCxTestCase#current_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#current_page DialogflowCxTestCase#current_page}
 
 ---
 
@@ -1770,7 +1822,7 @@ SessionParameters *string
 
 The session parameters available to the bot at this point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#session_parameters DialogflowCxTestCase#session_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#session_parameters DialogflowCxTestCase#session_parameters}
 
 ---
 
@@ -1784,7 +1836,7 @@ TextResponses interface{}
 
 text_responses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text_responses DialogflowCxTestCase#text_responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text_responses DialogflowCxTestCase#text_responses}
 
 ---
 
@@ -1798,7 +1850,7 @@ TriggeredIntent DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputT
 
 triggered_intent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#triggered_intent DialogflowCxTestCase#triggered_intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#triggered_intent DialogflowCxTestCase#triggered_intent}
 
 ---
 
@@ -1832,7 +1884,7 @@ Name *string
 
 The unique identifier of the page. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
 
 ---
 
@@ -1866,7 +1918,7 @@ Text *[]*string
 
 A collection of text responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
 
 ---
 
@@ -1900,7 +1952,7 @@ Name *string
 
 The unique identifier of the intent. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
 
 ---
 
@@ -1941,7 +1993,7 @@ Flow name to start the test case with.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
 Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#flow DialogflowCxTestCase#flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#flow DialogflowCxTestCase#flow}
 
 ---
 
@@ -1958,7 +2010,7 @@ The page to start the test case with.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
 Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#page DialogflowCxTestCase#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#page DialogflowCxTestCase#page}
 
 ---
 
@@ -1972,7 +2024,7 @@ TrackingParameters *[]*string
 
 Session parameters to be compared when calculating differences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#tracking_parameters DialogflowCxTestCase#tracking_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#tracking_parameters DialogflowCxTestCase#tracking_parameters}
 
 ---
 
@@ -1994,9 +2046,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxtest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}. |
 
 ---
 
@@ -2008,7 +2060,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}.
 
 ---
 
@@ -2020,7 +2072,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}.
 
 ---
 
@@ -2032,7 +2084,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}.
 
 ---
 

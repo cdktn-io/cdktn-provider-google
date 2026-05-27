@@ -4,7 +4,7 @@
 
 ### MonitoringMonitoredProject <a name="MonitoringMonitoredProject" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer"></a>
 
@@ -21,6 +21,7 @@ MonitoringMonitoredProject.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .metricsScope(java.lang.String)
     .name(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .timeouts(MonitoringMonitoredProjectTimeouts)
     .build();
@@ -39,7 +40,8 @@ MonitoringMonitoredProject.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.metricsScope">metricsScope</a></code> | <code>java.lang.String</code> | Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}. |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Immutable. |
-| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}. |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts">MonitoringMonitoredProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
 
 ---
 
@@ -122,7 +124,24 @@ Immutable.
 
 The resource name of the 'MonitoredProject'. On input, the resource name includes the scoping project ID and monitored project ID. On output, it contains the equivalent project numbers. Example: 'locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}/projects/{MONITORED_PROJECT_ID_OR_NUMBER}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#deletion_policy MonitoringMonitoredProject#deletion_policy}
 
 ---
 
@@ -130,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
 
 ---
 
@@ -176,6 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -504,6 +524,12 @@ public void putTimeouts(MonitoringMonitoredProjectTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.resetId"></a>
 
 ```java
@@ -619,7 +645,7 @@ The construct id used in the generated config for the MonitoringMonitoredProject
 
 The id of the existing MonitoringMonitoredProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,10 +677,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference">MonitoringMonitoredProjectTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.metricsScopeInput">metricsScopeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts">MonitoringMonitoredProjectTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.metricsScope">metricsScope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -823,6 +851,16 @@ public MonitoringMonitoredProjectTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.idInput"></a>
 
 ```java
@@ -860,6 +898,16 @@ public IResolvable|MonitoringMonitoredProjectTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts">MonitoringMonitoredProjectTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -930,6 +978,7 @@ MonitoringMonitoredProjectConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .metricsScope(java.lang.String)
     .name(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .timeouts(MonitoringMonitoredProjectTimeouts)
     .build();
@@ -948,7 +997,8 @@ MonitoringMonitoredProjectConfig.builder()
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.metricsScope">metricsScope</a></code> | <code>java.lang.String</code> | Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}. |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.name">name</a></code> | <code>java.lang.String</code> | Immutable. |
-| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}. |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts">MonitoringMonitoredProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1033,7 +1083,7 @@ public java.lang.String getMetricsScope();
 
 Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
 
 ---
 
@@ -1049,7 +1099,28 @@ Immutable.
 
 The resource name of the 'MonitoredProject'. On input, the resource name includes the scoping project ID and monitored project ID. On output, it contains the equivalent project numbers. Example: 'locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}/projects/{MONITORED_PROJECT_ID_OR_NUMBER}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#deletion_policy MonitoringMonitoredProject#deletion_policy}
 
 ---
 
@@ -1061,7 +1132,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,7 +1149,7 @@ public MonitoringMonitoredProjectTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
 
 ---
 
@@ -1099,8 +1170,8 @@ MonitoringMonitoredProjectTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}. |
-| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}. |
 
 ---
 
@@ -1112,7 +1183,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}.
 
 ---
 
@@ -1124,7 +1195,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}.
 
 ---
 

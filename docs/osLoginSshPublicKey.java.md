@@ -4,7 +4,7 @@
 
 ### OsLoginSshPublicKey <a name="OsLoginSshPublicKey" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key google_os_login_ssh_public_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key google_os_login_ssh_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer"></a>
 
@@ -21,6 +21,7 @@ OsLoginSshPublicKey.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .key(java.lang.String)
     .user(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .expirationTimeUsec(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -41,8 +42,9 @@ OsLoginSshPublicKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Public key text in SSH format, defined by RFC4253 section 6.6. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.user">user</a></code> | <code>java.lang.String</code> | The user email. |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.expirationTimeUsec">expirationTimeUsec</a></code> | <code>java.lang.String</code> | An expiration time in microseconds since epoch. |
-| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}. |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The project ID of the Google Cloud Platform project. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts">OsLoginSshPublicKeyTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Public key text in SSH format, defined by RFC4253 section 6.6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#key OsLoginSshPublicKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#key OsLoginSshPublicKey#key}
 
 ---
 
@@ -124,7 +126,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#user OsLoginSshPublicKey#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#user OsLoginSshPublicKey#user}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#deletion_policy OsLoginSshPublicKey#deletion_policy}
 
 ---
 
@@ -134,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An expiration time in microseconds since epoch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#expiration_time_usec OsLoginSshPublicKey#expiration_time_usec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#expiration_time_usec OsLoginSshPublicKey#expiration_time_usec}
 
 ---
 
@@ -142,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +174,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The project ID of the Google Cloud Platform project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#project OsLoginSshPublicKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#project OsLoginSshPublicKey#project}
 
 ---
 
@@ -165,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#timeouts OsLoginSshPublicKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#timeouts OsLoginSshPublicKey#timeouts}
 
 ---
 
@@ -198,6 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.resetExpirationTimeUsec">resetExpirationTimeUsec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.resetProject">resetProject</a></code> | *No description.* |
@@ -528,6 +548,12 @@ public void putTimeouts(OsLoginSshPublicKeyTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetExpirationTimeUsec` <a name="resetExpirationTimeUsec" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.resetExpirationTimeUsec"></a>
 
 ```java
@@ -655,7 +681,7 @@ The construct id used in the generated config for the OsLoginSshPublicKey to imp
 
 The id of the existing OsLoginSshPublicKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,12 +713,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.fingerprint">fingerprint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference">OsLoginSshPublicKeyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.expirationTimeUsecInput">expirationTimeUsecInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts">OsLoginSshPublicKeyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.expirationTimeUsec">expirationTimeUsec</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -863,6 +891,16 @@ public OsLoginSshPublicKeyTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `expirationTimeUsecInput`<sup>Optional</sup> <a name="expirationTimeUsecInput" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.expirationTimeUsecInput"></a>
 
 ```java
@@ -917,6 +955,16 @@ public IResolvable|OsLoginSshPublicKeyTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getUserInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1010,6 +1058,7 @@ OsLoginSshPublicKeyConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .key(java.lang.String)
     .user(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .expirationTimeUsec(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -1030,8 +1079,9 @@ OsLoginSshPublicKeyConfig.builder()
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.key">key</a></code> | <code>java.lang.String</code> | Public key text in SSH format, defined by RFC4253 section 6.6. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.user">user</a></code> | <code>java.lang.String</code> | The user email. |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.expirationTimeUsec">expirationTimeUsec</a></code> | <code>java.lang.String</code> | An expiration time in microseconds since epoch. |
-| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}. |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.project">project</a></code> | <code>java.lang.String</code> | The project ID of the Google Cloud Platform project. |
 | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts">OsLoginSshPublicKeyTimeouts</a></code> | timeouts block. |
 
@@ -1117,7 +1167,7 @@ public java.lang.String getKey();
 
 Public key text in SSH format, defined by RFC4253 section 6.6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#key OsLoginSshPublicKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#key OsLoginSshPublicKey#key}
 
 ---
 
@@ -1131,7 +1181,28 @@ public java.lang.String getUser();
 
 The user email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#user OsLoginSshPublicKey#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#user OsLoginSshPublicKey#user}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#deletion_policy OsLoginSshPublicKey#deletion_policy}
 
 ---
 
@@ -1145,7 +1216,7 @@ public java.lang.String getExpirationTimeUsec();
 
 An expiration time in microseconds since epoch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#expiration_time_usec OsLoginSshPublicKey#expiration_time_usec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#expiration_time_usec OsLoginSshPublicKey#expiration_time_usec}
 
 ---
 
@@ -1157,7 +1228,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,7 +1245,7 @@ public java.lang.String getProject();
 
 The project ID of the Google Cloud Platform project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#project OsLoginSshPublicKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#project OsLoginSshPublicKey#project}
 
 ---
 
@@ -1188,7 +1259,7 @@ public OsLoginSshPublicKeyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#timeouts OsLoginSshPublicKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#timeouts OsLoginSshPublicKey#timeouts}
 
 ---
 
@@ -1210,9 +1281,9 @@ OsLoginSshPublicKeyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#create OsLoginSshPublicKey#create}. |
-| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#delete OsLoginSshPublicKey#delete}. |
-| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#update OsLoginSshPublicKey#update}. |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#create OsLoginSshPublicKey#create}. |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#delete OsLoginSshPublicKey#delete}. |
+| <code><a href="#@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#update OsLoginSshPublicKey#update}. |
 
 ---
 
@@ -1224,7 +1295,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#create OsLoginSshPublicKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#create OsLoginSshPublicKey#create}.
 
 ---
 
@@ -1236,7 +1307,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#delete OsLoginSshPublicKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#delete OsLoginSshPublicKey#delete}.
 
 ---
 
@@ -1248,7 +1319,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#update OsLoginSshPublicKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#update OsLoginSshPublicKey#update}.
 
 ---
 

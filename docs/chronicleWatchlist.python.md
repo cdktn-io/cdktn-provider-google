@@ -4,7 +4,7 @@
 
 ### ChronicleWatchlist <a name="ChronicleWatchlist" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist google_chronicle_watchlist}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist google_chronicle_watchlist}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer"></a>
 
@@ -25,6 +25,7 @@ chronicleWatchlist.ChronicleWatchlist(
   entity_population_mechanism: ChronicleWatchlistEntityPopulationMechanism,
   instance: str,
   location: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   multiplying_factor: typing.Union[int, float] = None,
@@ -50,10 +51,11 @@ chronicleWatchlist.ChronicleWatchlist(
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.entityPopulationMechanism">entity_population_mechanism</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism">ChronicleWatchlistEntityPopulationMechanism</a></code> | entity_population_mechanism block. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.instance">instance</a></code> | <code>str</code> | The unique identifier for the Chronicle instance, which is the same as the customer ID. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the resource. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.description">description</a></code> | <code>str</code> | Optional. Description of the watchlist. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.multiplyingFactor">multiplying_factor</a></code> | <code>typing.Union[int, float]</code> | Optional. Weight applied to the risk score for entities in this watchlist. The default is 1.0 if it is not specified. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts">ChronicleWatchlistTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.watchlistId">watchlist_id</a></code> | <code>str</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.watchlistUserPreferences">watchlist_user_preferences</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences">ChronicleWatchlistWatchlistUserPreferences</a></code> | watchlist_user_preferences block. |
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Required. Display name of the watchlist. Note that it must be at least one character and less than 63 characters (https://google.aip.dev/148).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 entity_population_mechanism block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
 
 ---
 
@@ -158,7 +160,24 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#deletion_policy ChronicleWatchlist#deletion_policy}
 
 ---
 
@@ -168,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Description of the watchlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
 
 ---
 
@@ -176,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +208,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Optional. Weight applied to the risk score for entities in this watchlist. The default is 1.0 if it is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
 
 ---
 
@@ -197,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}.
 
 ---
 
@@ -207,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
 
 ---
 
@@ -222,7 +241,7 @@ which will become the final component of the watchlist's resource name.
 This value should be 4-63 characters, and valid characters
 are /a-z-/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
 
 ---
 
@@ -232,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 watchlist_user_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
 
 ---
 
@@ -267,6 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.putEntityPopulationMechanism">put_entity_population_mechanism</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.putWatchlistUserPreferences">put_watchlist_user_preferences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.resetMultiplyingFactor">reset_multiplying_factor</a></code> | *No description.* |
@@ -639,7 +659,7 @@ def put_entity_population_mechanism(
 
 manual block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
 
 ---
 
@@ -657,7 +677,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}.
 
 ---
 
@@ -665,7 +685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}.
 
 ---
 
@@ -673,7 +693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}.
 
 ---
 
@@ -691,9 +711,15 @@ def put_watchlist_user_preferences(
 
 Optional. Whether the watchlist is pinned on the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.resetDescription"></a>
 
@@ -851,7 +877,7 @@ The construct id used in the generated config for the ChronicleWatchlist to impo
 
 The id of the existing ChronicleWatchlist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,6 +914,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeoutsOutputReference">ChronicleWatchlistTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.watchlistUserPreferences">watchlist_user_preferences</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferencesOutputReference">ChronicleWatchlistWatchlistUserPreferencesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.entityPopulationMechanismInput">entity_population_mechanism_input</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism">ChronicleWatchlistEntityPopulationMechanism</a></code> | *No description.* |
@@ -899,6 +926,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts">ChronicleWatchlistTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.watchlistIdInput">watchlist_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.watchlistUserPreferencesInput">watchlist_user_preferences_input</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences">ChronicleWatchlistWatchlistUserPreferences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1122,6 +1150,16 @@ watchlist_user_preferences: ChronicleWatchlistWatchlistUserPreferencesOutputRefe
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.descriptionInput"></a>
 
 ```python
@@ -1229,6 +1267,16 @@ watchlist_user_preferences_input: ChronicleWatchlistWatchlistUserPreferences
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences">ChronicleWatchlistWatchlistUserPreferences</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1351,6 +1399,7 @@ chronicleWatchlist.ChronicleWatchlistConfig(
   entity_population_mechanism: ChronicleWatchlistEntityPopulationMechanism,
   instance: str,
   location: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   multiplying_factor: typing.Union[int, float] = None,
@@ -1376,10 +1425,11 @@ chronicleWatchlist.ChronicleWatchlistConfig(
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.entityPopulationMechanism">entity_population_mechanism</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism">ChronicleWatchlistEntityPopulationMechanism</a></code> | entity_population_mechanism block. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.instance">instance</a></code> | <code>str</code> | The unique identifier for the Chronicle instance, which is the same as the customer ID. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.location">location</a></code> | <code>str</code> | The location of the resource. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.description">description</a></code> | <code>str</code> | Optional. Description of the watchlist. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.multiplyingFactor">multiplying_factor</a></code> | <code>typing.Union[int, float]</code> | Optional. Weight applied to the risk score for entities in this watchlist. The default is 1.0 if it is not specified. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts">ChronicleWatchlistTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.watchlistId">watchlist_id</a></code> | <code>str</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.watchlistUserPreferences">watchlist_user_preferences</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences">ChronicleWatchlistWatchlistUserPreferences</a></code> | watchlist_user_preferences block. |
@@ -1466,7 +1516,7 @@ display_name: str
 
 Required. Display name of the watchlist. Note that it must be at least one character and less than 63 characters (https://google.aip.dev/148).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
 
 ---
 
@@ -1480,7 +1530,7 @@ entity_population_mechanism: ChronicleWatchlistEntityPopulationMechanism
 
 entity_population_mechanism block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
 
 ---
 
@@ -1494,7 +1544,7 @@ instance: str
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
 
 ---
 
@@ -1510,7 +1560,28 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#deletion_policy ChronicleWatchlist#deletion_policy}
 
 ---
 
@@ -1524,7 +1595,7 @@ description: str
 
 Optional. Description of the watchlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
 
 ---
 
@@ -1536,7 +1607,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1553,7 +1624,7 @@ multiplying_factor: typing.Union[int, float]
 
 Optional. Weight applied to the risk score for entities in this watchlist. The default is 1.0 if it is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
 
 ---
 
@@ -1565,7 +1636,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}.
 
 ---
 
@@ -1579,7 +1650,7 @@ timeouts: ChronicleWatchlistTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
 
 ---
 
@@ -1598,7 +1669,7 @@ which will become the final component of the watchlist's resource name.
 This value should be 4-63 characters, and valid characters
 are /a-z-/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
 
 ---
 
@@ -1612,7 +1683,7 @@ watchlist_user_preferences: ChronicleWatchlistWatchlistUserPreferences
 
 watchlist_user_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
 
 ---
 
@@ -1657,7 +1728,7 @@ manual: ChronicleWatchlistEntityPopulationMechanismManual
 
 manual block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
 
 ---
 
@@ -1690,9 +1761,9 @@ chronicleWatchlist.ChronicleWatchlistTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}. |
 
 ---
 
@@ -1704,7 +1775,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}.
 
 ---
 
@@ -1716,7 +1787,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}.
 
 ---
 
@@ -1728,7 +1799,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}.
 
 ---
 
@@ -1762,7 +1833,7 @@ pinned: bool | IResolvable
 
 Optional. Whether the watchlist is pinned on the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
 
 ---
 

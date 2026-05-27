@@ -4,7 +4,7 @@
 
 ### DnsResponsePolicyRule <a name="DnsResponsePolicyRule" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer"></a>
 
@@ -24,6 +24,7 @@ dnsResponsePolicyRule.DnsResponsePolicyRule(
   dns_name: str,
   response_policy: str,
   rule_name: str,
+  deletion_policy: str = None,
   id: str = None,
   local_data: DnsResponsePolicyRuleLocalData = None,
   project: str = None,
@@ -45,9 +46,10 @@ dnsResponsePolicyRule.DnsResponsePolicyRule(
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.dnsName">dns_name</a></code> | <code>str</code> | The DNS name (wildcard or exact) to apply this rule to. Must be unique within the Response Policy Rule. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.responsePolicy">response_policy</a></code> | <code>str</code> | Identifies the response policy addressed by this request. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.ruleName">rule_name</a></code> | <code>str</code> | An identifier for this rule. Must be unique with the ResponsePolicy. |
-| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.localData">local_data</a></code> | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalData">DnsResponsePolicyRuleLocalData</a></code> | local_data block. |
-| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts">DnsResponsePolicyRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The DNS name (wildcard or exact) to apply this rule to. Must be unique within the Response Policy Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#dns_name DnsResponsePolicyRule#dns_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#dns_name DnsResponsePolicyRule#dns_name}
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Identifies the response policy addressed by this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#response_policy DnsResponsePolicyRule#response_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#response_policy DnsResponsePolicyRule#response_policy}
 
 ---
 
@@ -138,7 +140,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An identifier for this rule. Must be unique with the ResponsePolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#rule_name DnsResponsePolicyRule#rule_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#rule_name DnsResponsePolicyRule#rule_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#deletion_policy DnsResponsePolicyRule#deletion_policy}
 
 ---
 
@@ -146,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +178,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 local_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#local_data DnsResponsePolicyRule#local_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#local_data DnsResponsePolicyRule#local_data}
 
 ---
 
@@ -167,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}.
 
 ---
 
@@ -177,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#timeouts DnsResponsePolicyRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#timeouts DnsResponsePolicyRule#timeouts}
 
 ---
 
@@ -211,6 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.putLocalData">put_local_data</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.resetLocalData">reset_local_data</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.resetProject">reset_project</a></code> | *No description.* |
@@ -580,7 +600,7 @@ def put_local_data(
 
 local_datas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#local_datas DnsResponsePolicyRule#local_datas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#local_datas DnsResponsePolicyRule#local_datas}
 
 ---
 
@@ -598,7 +618,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#create DnsResponsePolicyRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#create DnsResponsePolicyRule#create}.
 
 ---
 
@@ -606,7 +626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#delete DnsResponsePolicyRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#delete DnsResponsePolicyRule#delete}.
 
 ---
 
@@ -614,9 +634,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#update DnsResponsePolicyRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#update DnsResponsePolicyRule#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.resetId"></a>
 
@@ -756,7 +782,7 @@ The construct id used in the generated config for the DnsResponsePolicyRule to i
 
 The id of the existing DnsResponsePolicyRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,6 +814,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.localData">local_data</a></code> | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalDataOutputReference">DnsResponsePolicyRuleLocalDataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeoutsOutputReference">DnsResponsePolicyRuleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.dnsNameInput">dns_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.localDataInput">local_data_input</a></code> | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalData">DnsResponsePolicyRuleLocalData</a></code> | *No description.* |
@@ -795,6 +822,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.responsePolicyInput">response_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.ruleNameInput">rule_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts">DnsResponsePolicyRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.dnsName">dns_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -965,6 +993,16 @@ timeouts: DnsResponsePolicyRuleTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `dns_name_input`<sup>Optional</sup> <a name="dns_name_input" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.dnsNameInput"></a>
 
 ```python
@@ -1032,6 +1070,16 @@ timeouts_input: IResolvable | DnsResponsePolicyRuleTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts">DnsResponsePolicyRuleTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1123,6 +1171,7 @@ dnsResponsePolicyRule.DnsResponsePolicyRuleConfig(
   dns_name: str,
   response_policy: str,
   rule_name: str,
+  deletion_policy: str = None,
   id: str = None,
   local_data: DnsResponsePolicyRuleLocalData = None,
   project: str = None,
@@ -1144,9 +1193,10 @@ dnsResponsePolicyRule.DnsResponsePolicyRuleConfig(
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.dnsName">dns_name</a></code> | <code>str</code> | The DNS name (wildcard or exact) to apply this rule to. Must be unique within the Response Policy Rule. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.responsePolicy">response_policy</a></code> | <code>str</code> | Identifies the response policy addressed by this request. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.ruleName">rule_name</a></code> | <code>str</code> | An identifier for this rule. Must be unique with the ResponsePolicy. |
-| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.localData">local_data</a></code> | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalData">DnsResponsePolicyRuleLocalData</a></code> | local_data block. |
-| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}. |
 | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts">DnsResponsePolicyRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1231,7 +1281,7 @@ dns_name: str
 
 The DNS name (wildcard or exact) to apply this rule to. Must be unique within the Response Policy Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#dns_name DnsResponsePolicyRule#dns_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#dns_name DnsResponsePolicyRule#dns_name}
 
 ---
 
@@ -1245,7 +1295,7 @@ response_policy: str
 
 Identifies the response policy addressed by this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#response_policy DnsResponsePolicyRule#response_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#response_policy DnsResponsePolicyRule#response_policy}
 
 ---
 
@@ -1259,7 +1309,28 @@ rule_name: str
 
 An identifier for this rule. Must be unique with the ResponsePolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#rule_name DnsResponsePolicyRule#rule_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#rule_name DnsResponsePolicyRule#rule_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#deletion_policy DnsResponsePolicyRule#deletion_policy}
 
 ---
 
@@ -1271,7 +1342,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#id DnsResponsePolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1288,7 +1359,7 @@ local_data: DnsResponsePolicyRuleLocalData
 
 local_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#local_data DnsResponsePolicyRule#local_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#local_data DnsResponsePolicyRule#local_data}
 
 ---
 
@@ -1300,7 +1371,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#project DnsResponsePolicyRule#project}.
 
 ---
 
@@ -1314,7 +1385,7 @@ timeouts: DnsResponsePolicyRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#timeouts DnsResponsePolicyRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#timeouts DnsResponsePolicyRule#timeouts}
 
 ---
 
@@ -1348,7 +1419,7 @@ local_datas: IResolvable | typing.List[DnsResponsePolicyRuleLocalDataLocalDatas]
 
 local_datas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#local_datas DnsResponsePolicyRule#local_datas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#local_datas DnsResponsePolicyRule#local_datas}
 
 ---
 
@@ -1388,7 +1459,7 @@ name: str
 
 For example, www.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#name DnsResponsePolicyRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#name DnsResponsePolicyRule#name}
 
 ---
 
@@ -1404,7 +1475,7 @@ One of valid DNS resource types.
 
 Possible values: ["A", "AAAA", "CAA", "CNAME", "DNSKEY", "DS", "HTTPS", "IPSECVPNKEY", "MX", "NAPTR", "NS", "PTR", "SOA", "SPF", "SRV", "SSHFP", "SVCB", "TLSA", "TXT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#type DnsResponsePolicyRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#type DnsResponsePolicyRule#type}
 
 ---
 
@@ -1418,7 +1489,7 @@ rrdatas: typing.List[str]
 
 As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#rrdatas DnsResponsePolicyRule#rrdatas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#rrdatas DnsResponsePolicyRule#rrdatas}
 
 ---
 
@@ -1432,7 +1503,7 @@ ttl: typing.Union[int, float]
 
 Number of seconds that this ResourceRecordSet can be cached by resolvers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#ttl DnsResponsePolicyRule#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#ttl DnsResponsePolicyRule#ttl}
 
 ---
 
@@ -1454,9 +1525,9 @@ dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#create DnsResponsePolicyRule#create}. |
-| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#delete DnsResponsePolicyRule#delete}. |
-| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#update DnsResponsePolicyRule#update}. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#create DnsResponsePolicyRule#create}. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#delete DnsResponsePolicyRule#delete}. |
+| <code><a href="#@cdktn/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#update DnsResponsePolicyRule#update}. |
 
 ---
 
@@ -1468,7 +1539,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#create DnsResponsePolicyRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#create DnsResponsePolicyRule#create}.
 
 ---
 
@@ -1480,7 +1551,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#delete DnsResponsePolicyRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#delete DnsResponsePolicyRule#delete}.
 
 ---
 
@@ -1492,7 +1563,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy_rule#update DnsResponsePolicyRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dns_response_policy_rule#update DnsResponsePolicyRule#update}.
 
 ---
 

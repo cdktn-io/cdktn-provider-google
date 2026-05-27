@@ -4,7 +4,7 @@
 
 ### FirebaserulesRuleset <a name="FirebaserulesRuleset" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer"></a>
 
@@ -20,6 +20,7 @@ FirebaserulesRuleset.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .source(FirebaserulesRulesetSource)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(FirebaserulesRulesetTimeouts)
@@ -38,7 +39,8 @@ FirebaserulesRuleset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | source block. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | timeouts block. |
 
@@ -110,7 +112,24 @@ Must be unique amongst siblings in the same scope
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#deletion_policy FirebaserulesRuleset#deletion_policy}
 
 ---
 
@@ -118,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +150,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
 
 ---
 
@@ -141,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
 
 ---
 
@@ -175,6 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.putSource">putSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -516,6 +536,12 @@ public void putTimeouts(FirebaserulesRulesetTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.resetId"></a>
 
 ```java
@@ -637,7 +663,7 @@ The construct id used in the generated config for the FirebaserulesRuleset to im
 
 The id of the existing FirebaserulesRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,10 +698,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.source">source</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference">FirebaserulesRulesetSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference">FirebaserulesRulesetTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.sourceInput">sourceInput</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -873,6 +901,16 @@ public FirebaserulesRulesetTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.idInput"></a>
 
 ```java
@@ -910,6 +948,16 @@ public IResolvable|FirebaserulesRulesetTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -969,6 +1017,7 @@ FirebaserulesRulesetConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .source(FirebaserulesRulesetSource)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(FirebaserulesRulesetTimeouts)
@@ -987,7 +1036,8 @@ FirebaserulesRulesetConfig.builder()
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | source block. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.project">project</a></code> | <code>java.lang.String</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | timeouts block. |
 
@@ -1073,7 +1123,28 @@ public FirebaserulesRulesetSource getSource();
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#deletion_policy FirebaserulesRuleset#deletion_policy}
 
 ---
 
@@ -1085,7 +1156,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1102,7 +1173,7 @@ public java.lang.String getProject();
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
 
 ---
 
@@ -1116,7 +1187,7 @@ public FirebaserulesRulesetTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
 
 ---
 
@@ -1164,7 +1235,7 @@ public IResolvable|java.util.List<FirebaserulesRulesetSourceFiles> getFiles();
 
 files block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#files FirebaserulesRuleset#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#files FirebaserulesRuleset#files}
 
 ---
 
@@ -1178,7 +1249,7 @@ public java.lang.String getLanguage();
 
 `Language` of the `Source` bundle. If unspecified, the language will default to `FIREBASE_RULES`. Possible values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#language FirebaserulesRuleset#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#language FirebaserulesRuleset#language}
 
 ---
 
@@ -1216,7 +1287,7 @@ public java.lang.String getContent();
 
 Textual Content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#content FirebaserulesRuleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#content FirebaserulesRuleset#content}
 
 ---
 
@@ -1230,7 +1301,7 @@ public java.lang.String getName();
 
 File name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#name FirebaserulesRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#name FirebaserulesRuleset#name}
 
 ---
 
@@ -1244,7 +1315,7 @@ public java.lang.String getFingerprint();
 
 Fingerprint (e.g. github sha) associated with the `File`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#fingerprint FirebaserulesRuleset#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#fingerprint FirebaserulesRuleset#fingerprint}
 
 ---
 
@@ -1265,8 +1336,8 @@ FirebaserulesRulesetTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}. |
 
 ---
 
@@ -1278,7 +1349,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}.
 
 ---
 
@@ -1290,7 +1361,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### LoggingProjectBucketConfig <a name="LoggingProjectBucketConfig" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.putCmekSettings">PutCmekSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.putIndexConfigs">PutIndexConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.resetCmekSettings">ResetCmekSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.resetEnableAnalytics">ResetEnableAnalytics</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.resetId">ResetId</a></code> | *No description.* |
@@ -425,6 +426,12 @@ func PutIndexConfigs(value interface{})
 func ResetCmekSettings()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.resetDescription"></a>
 
 ```go
@@ -564,7 +571,7 @@ The construct id used in the generated config for the LoggingProjectBucketConfig
 
 The id of the existing LoggingProjectBucketConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -600,6 +607,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.bucketIdInput">BucketIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.cmekSettingsInput">CmekSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings">LoggingProjectBucketConfigCmekSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.enableAnalyticsInput">EnableAnalyticsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -609,6 +617,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.retentionDaysInput">RetentionDaysInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.bucketId">BucketId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.enableAnalytics">EnableAnalytics</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -821,6 +830,16 @@ func CmekSettingsInput() LoggingProjectBucketConfigCmekSettings
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.descriptionInput"></a>
 
 ```go
@@ -905,6 +924,16 @@ func RetentionDaysInput() *f64
 
 ```go
 func BucketId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -1037,7 +1066,7 @@ To enable CMEK for the bucket, set this field to a valid kmsKeyName for which th
 The Cloud KMS key used by the bucket can be updated by changing the kmsKeyName to a new valid key name. Encryption operations that are in progress will be completed with the key that was in use when they started. Decryption operations will be completed using the key that was used at the time of encryption unless access to that key has been revoked.
 See [Enabling CMEK for Logging Buckets](https://cloud.google.com/logging/docs/routing/managed-encryption-storage) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#kms_key_name LoggingProjectBucketConfig#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#kms_key_name LoggingProjectBucketConfig#kms_key_name}
 
 ---
 
@@ -1060,6 +1089,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectbu
 	Location: *string,
 	Project: *string,
 	CmekSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings,
+	DeletionPolicy: *string,
 	Description: *string,
 	EnableAnalytics: interface{},
 	Id: *string,
@@ -1084,9 +1114,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectbu
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.location">Location</a></code> | <code>*string</code> | The location of the bucket. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.project">Project</a></code> | <code>*string</code> | The parent project that contains the logging bucket. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.cmekSettings">CmekSettings</a></code> | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings">LoggingProjectBucketConfigCmekSettings</a></code> | cmek_settings block. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.description">Description</a></code> | <code>*string</code> | An optional description for this bucket. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.enableAnalytics">EnableAnalytics</a></code> | <code>interface{}</code> | Enable log analytics for the bucket. Cannot be disabled once enabled. |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.indexConfigs">IndexConfigs</a></code> | <code>interface{}</code> | index_configs block. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.locked">Locked</a></code> | <code>interface{}</code> | Whether the bucket is locked. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.retentionDays">RetentionDays</a></code> | <code>*f64</code> | Logs will be retained by default for this amount of time, after which they will automatically be deleted. |
@@ -1173,7 +1204,7 @@ BucketId *string
 
 The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#bucket_id LoggingProjectBucketConfig#bucket_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#bucket_id LoggingProjectBucketConfig#bucket_id}
 
 ---
 
@@ -1187,7 +1218,7 @@ Location *string
 
 The location of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#location LoggingProjectBucketConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#location LoggingProjectBucketConfig#location}
 
 ---
 
@@ -1201,7 +1232,7 @@ Project *string
 
 The parent project that contains the logging bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#project LoggingProjectBucketConfig#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#project LoggingProjectBucketConfig#project}
 
 ---
 
@@ -1215,7 +1246,28 @@ CmekSettings LoggingProjectBucketConfigCmekSettings
 
 cmek_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#cmek_settings LoggingProjectBucketConfig#cmek_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#cmek_settings LoggingProjectBucketConfig#cmek_settings}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#deletion_policy LoggingProjectBucketConfig#deletion_policy}
 
 ---
 
@@ -1229,7 +1281,7 @@ Description *string
 
 An optional description for this bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#description LoggingProjectBucketConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#description LoggingProjectBucketConfig#description}
 
 ---
 
@@ -1243,7 +1295,7 @@ EnableAnalytics interface{}
 
 Enable log analytics for the bucket. Cannot be disabled once enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#enable_analytics LoggingProjectBucketConfig#enable_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#enable_analytics LoggingProjectBucketConfig#enable_analytics}
 
 ---
 
@@ -1255,7 +1307,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1272,7 +1324,7 @@ IndexConfigs interface{}
 
 index_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#index_configs LoggingProjectBucketConfig#index_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#index_configs LoggingProjectBucketConfig#index_configs}
 
 ---
 
@@ -1288,7 +1340,7 @@ Whether the bucket is locked.
 
 The retention period on a locked bucket cannot be changed. Locked buckets may only be deleted if they are empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#locked LoggingProjectBucketConfig#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#locked LoggingProjectBucketConfig#locked}
 
 ---
 
@@ -1304,7 +1356,7 @@ Logs will be retained by default for this amount of time, after which they will 
 
 The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#retention_days LoggingProjectBucketConfig#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#retention_days LoggingProjectBucketConfig#retention_days}
 
 ---
 
@@ -1340,7 +1392,7 @@ FieldPath *string
 
 The LogEntry field path to index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#field_path LoggingProjectBucketConfig#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#field_path LoggingProjectBucketConfig#field_path}
 
 ---
 
@@ -1357,7 +1409,7 @@ The type of data in this index Note that some paths are automatically indexed, a
 See [indexing documentation](https://cloud.google.com/logging/docs/view/advanced-queries#indexed-fields) for details.
 For example: jsonPayload.request.status
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#type LoggingProjectBucketConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_project_bucket_config#type LoggingProjectBucketConfig#type}
 
 ---
 

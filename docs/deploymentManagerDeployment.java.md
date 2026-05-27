@@ -4,7 +4,7 @@
 
 ### DeploymentManagerDeployment <a name="DeploymentManagerDeployment" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer"></a>
 
@@ -23,6 +23,7 @@ DeploymentManagerDeployment.Builder.create(Construct scope, java.lang.String id)
     .target(DeploymentManagerDeploymentTarget)
 //  .createPolicy(java.lang.String)
 //  .deletePolicy(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .labels(IResolvable|java.util.List<DeploymentManagerDeploymentLabels>)
@@ -47,11 +48,12 @@ DeploymentManagerDeployment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.target">target</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget">DeploymentManagerDeploymentTarget</a></code> | target block. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.createPolicy">createPolicy</a></code> | <code>java.lang.String</code> | Set the policy to use for creating new resources. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.deletePolicy">deletePolicy</a></code> | <code>java.lang.String</code> | Set the policy to use for deleting new resources on update/delete. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Optional user-provided description of deployment. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.labels">labels</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>></code> | labels block. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.preview">preview</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, a deployment is created with "shell" resources that are not actually instantiated. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Unique name for the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#target DeploymentManagerDeployment#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#target DeploymentManagerDeployment#target}
 
 ---
 
@@ -148,7 +150,7 @@ create and update. Valid values are 'CREATE_OR_ACQUIRE' (default) or
 the deployment will fail. Note that updating this field does not
 actually affect the deployment, just how it is updated. Default value: "CREATE_OR_ACQUIRE" Possible values: ["ACQUIRE", "CREATE_OR_ACQUIRE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#create_policy DeploymentManagerDeployment#create_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#create_policy DeploymentManagerDeployment#create_policy}
 
 ---
 
@@ -164,7 +166,24 @@ resource is deleted after removal from Deployment Manager. If
 and is not actually deleted. Note that updating this field does not
 actually change the deployment, just how it is updated. Default value: "DELETE" Possible values: ["ABANDON", "DELETE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#delete_policy DeploymentManagerDeployment#delete_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#delete_policy DeploymentManagerDeployment#delete_policy}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#deletion_policy DeploymentManagerDeployment#deletion_policy}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional user-provided description of deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#description DeploymentManagerDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#description DeploymentManagerDeployment#description}
 
 ---
 
@@ -182,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +214,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
 
 ---
 
@@ -213,7 +232,7 @@ of a deployment in preview (unless updating to preview=false). Thus,
 Terraform will force-recreate deployments if either preview is updated
 to true or if other fields are updated while preview is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
 
 ---
 
@@ -221,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}.
 
 ---
 
@@ -231,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#timeouts DeploymentManagerDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#timeouts DeploymentManagerDeployment#timeouts}
 
 ---
 
@@ -268,6 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetCreatePolicy">resetCreatePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetDeletePolicy">resetDeletePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetLabels">resetLabels</a></code> | *No description.* |
@@ -636,6 +656,12 @@ public void resetCreatePolicy()
 public void resetDeletePolicy()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.resetDescription"></a>
 
 ```java
@@ -775,7 +801,7 @@ The construct id used in the generated config for the DeploymentManagerDeploymen
 
 The id of the existing DeploymentManagerDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,6 +839,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference">DeploymentManagerDeploymentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.createPolicyInput">createPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletePolicyInput">deletePolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.labelsInput">labelsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>></code> | *No description.* |
@@ -823,6 +850,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.createPolicy">createPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletePolicy">deletePolicy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1053,6 +1081,16 @@ public java.lang.String getDeletePolicyInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.descriptionInput"></a>
 
 ```java
@@ -1153,6 +1191,16 @@ public java.lang.String getDeletePolicy();
 
 ---
 
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.description"></a>
 
 ```java
@@ -1242,6 +1290,7 @@ DeploymentManagerDeploymentConfig.builder()
     .target(DeploymentManagerDeploymentTarget)
 //  .createPolicy(java.lang.String)
 //  .deletePolicy(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .labels(IResolvable|java.util.List<DeploymentManagerDeploymentLabels>)
@@ -1266,11 +1315,12 @@ DeploymentManagerDeploymentConfig.builder()
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.target">target</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget">DeploymentManagerDeploymentTarget</a></code> | target block. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.createPolicy">createPolicy</a></code> | <code>java.lang.String</code> | Set the policy to use for creating new resources. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.deletePolicy">deletePolicy</a></code> | <code>java.lang.String</code> | Set the policy to use for deleting new resources on update/delete. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.description">description</a></code> | <code>java.lang.String</code> | Optional user-provided description of deployment. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.labels">labels</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>></code> | labels block. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.preview">preview</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, a deployment is created with "shell" resources that are not actually instantiated. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1355,7 +1405,7 @@ public java.lang.String getName();
 
 Unique name for the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
 
 ---
 
@@ -1369,7 +1419,7 @@ public DeploymentManagerDeploymentTarget getTarget();
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#target DeploymentManagerDeployment#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#target DeploymentManagerDeployment#target}
 
 ---
 
@@ -1389,7 +1439,7 @@ create and update. Valid values are 'CREATE_OR_ACQUIRE' (default) or
 the deployment will fail. Note that updating this field does not
 actually affect the deployment, just how it is updated. Default value: "CREATE_OR_ACQUIRE" Possible values: ["ACQUIRE", "CREATE_OR_ACQUIRE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#create_policy DeploymentManagerDeployment#create_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#create_policy DeploymentManagerDeployment#create_policy}
 
 ---
 
@@ -1409,7 +1459,28 @@ resource is deleted after removal from Deployment Manager. If
 and is not actually deleted. Note that updating this field does not
 actually change the deployment, just how it is updated. Default value: "DELETE" Possible values: ["ABANDON", "DELETE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#delete_policy DeploymentManagerDeployment#delete_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#delete_policy DeploymentManagerDeployment#delete_policy}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#deletion_policy DeploymentManagerDeployment#deletion_policy}
 
 ---
 
@@ -1423,7 +1494,7 @@ public java.lang.String getDescription();
 
 Optional user-provided description of deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#description DeploymentManagerDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#description DeploymentManagerDeployment#description}
 
 ---
 
@@ -1435,7 +1506,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1452,7 +1523,7 @@ public IResolvable|java.util.List<DeploymentManagerDeploymentLabels> getLabels()
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
 
 ---
 
@@ -1474,7 +1545,7 @@ of a deployment in preview (unless updating to preview=false). Thus,
 Terraform will force-recreate deployments if either preview is updated
 to true or if other fields are updated while preview is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
 
 ---
 
@@ -1486,7 +1557,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}.
 
 ---
 
@@ -1500,7 +1571,7 @@ public DeploymentManagerDeploymentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#timeouts DeploymentManagerDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#timeouts DeploymentManagerDeployment#timeouts}
 
 ---
 
@@ -1536,7 +1607,7 @@ public java.lang.String getKey();
 
 Key for label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#key DeploymentManagerDeployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#key DeploymentManagerDeployment#key}
 
 ---
 
@@ -1550,7 +1621,7 @@ public java.lang.String getValue();
 
 Value of label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#value DeploymentManagerDeployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#value DeploymentManagerDeployment#value}
 
 ---
 
@@ -1586,7 +1657,7 @@ public DeploymentManagerDeploymentTargetConfig getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#config DeploymentManagerDeployment#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#config DeploymentManagerDeployment#config}
 
 ---
 
@@ -1600,7 +1671,7 @@ public IResolvable|java.util.List<DeploymentManagerDeploymentTargetImports> getI
 
 imports block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#imports DeploymentManagerDeployment#imports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#imports DeploymentManagerDeployment#imports}
 
 ---
 
@@ -1634,7 +1705,7 @@ public java.lang.String getContent();
 
 The full YAML contents of your configuration file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#content DeploymentManagerDeployment#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#content DeploymentManagerDeployment#content}
 
 ---
 
@@ -1670,7 +1741,7 @@ public java.lang.String getContent();
 
 The full contents of the template that you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#content DeploymentManagerDeployment#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#content DeploymentManagerDeployment#content}
 
 ---
 
@@ -1684,7 +1755,7 @@ public java.lang.String getName();
 
 The name of the template to import, as declared in the YAML configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
 
 ---
 
@@ -1706,9 +1777,9 @@ DeploymentManagerDeploymentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#create DeploymentManagerDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#delete DeploymentManagerDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#update DeploymentManagerDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#create DeploymentManagerDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#delete DeploymentManagerDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#update DeploymentManagerDeployment#update}. |
 
 ---
 
@@ -1720,7 +1791,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#create DeploymentManagerDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#create DeploymentManagerDeployment#create}.
 
 ---
 
@@ -1732,7 +1803,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#delete DeploymentManagerDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#delete DeploymentManagerDeployment#delete}.
 
 ---
 
@@ -1744,7 +1815,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#update DeploymentManagerDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/deployment_manager_deployment#update DeploymentManagerDeployment#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### KmsAutokeyConfig <a name="KmsAutokeyConfig" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config google_kms_autokey_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config google_kms_autokey_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer"></a>
 
@@ -20,6 +20,7 @@ KmsAutokeyConfig.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .folder(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .keyProject(java.lang.String)
 //  .keyProjectResolutionMode(java.lang.String)
@@ -39,7 +40,8 @@ KmsAutokeyConfig.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | The folder for which to retrieve config. |
-| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}. |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}. |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.keyProject">keyProject</a></code> | <code>java.lang.String</code> | The target key project for a given folder where KMS Autokey will provision a CryptoKey for any new KeyHandle the Developer creates. |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.keyProjectResolutionMode">keyProjectResolutionMode</a></code> | <code>java.lang.String</code> | How Autokey determines which project to use when provisioning CMEK keys. Possible values: ["DEDICATED_KEY_PROJECT", "RESOURCE_PROJECT", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts">KmsAutokeyConfigTimeouts</a></code> | timeouts block. |
@@ -112,7 +114,24 @@ Must be unique amongst siblings in the same scope
 
 The folder for which to retrieve config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#folder KmsAutokeyConfig#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#folder KmsAutokeyConfig#folder}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#deletion_policy KmsAutokeyConfig#deletion_policy}
 
 ---
 
@@ -120,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -136,7 +155,7 @@ The target key project for a given folder where KMS Autokey will provision a Cry
 Should have the form
 'projects/<project_id_or_number>'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#key_project KmsAutokeyConfig#key_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#key_project KmsAutokeyConfig#key_project}
 
 ---
 
@@ -146,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 How Autokey determines which project to use when provisioning CMEK keys. Possible values: ["DEDICATED_KEY_PROJECT", "RESOURCE_PROJECT", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#key_project_resolution_mode KmsAutokeyConfig#key_project_resolution_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#key_project_resolution_mode KmsAutokeyConfig#key_project_resolution_mode}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#timeouts KmsAutokeyConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#timeouts KmsAutokeyConfig#timeouts}
 
 ---
 
@@ -189,6 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.resetKeyProject">resetKeyProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.resetKeyProjectResolutionMode">resetKeyProjectResolutionMode</a></code> | *No description.* |
@@ -519,6 +539,12 @@ public void putTimeouts(KmsAutokeyConfigTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.resetId"></a>
 
 ```java
@@ -646,7 +672,7 @@ The construct id used in the generated config for the KmsAutokeyConfig to import
 
 The id of the existing KmsAutokeyConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,11 +704,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeoutsOutputReference">KmsAutokeyConfigTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.folderInput">folderInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.keyProjectInput">keyProjectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.keyProjectResolutionModeInput">keyProjectResolutionModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts">KmsAutokeyConfigTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.keyProject">keyProject</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -852,6 +880,16 @@ public KmsAutokeyConfigTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `folderInput`<sup>Optional</sup> <a name="folderInput" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.folderInput"></a>
 
 ```java
@@ -899,6 +937,16 @@ public IResolvable|KmsAutokeyConfigTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts">KmsAutokeyConfigTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -978,6 +1026,7 @@ KmsAutokeyConfigConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .folder(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .keyProject(java.lang.String)
 //  .keyProjectResolutionMode(java.lang.String)
@@ -997,7 +1046,8 @@ KmsAutokeyConfigConfig.builder()
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | The folder for which to retrieve config. |
-| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}. |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}. |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.keyProject">keyProject</a></code> | <code>java.lang.String</code> | The target key project for a given folder where KMS Autokey will provision a CryptoKey for any new KeyHandle the Developer creates. |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.keyProjectResolutionMode">keyProjectResolutionMode</a></code> | <code>java.lang.String</code> | How Autokey determines which project to use when provisioning CMEK keys. Possible values: ["DEDICATED_KEY_PROJECT", "RESOURCE_PROJECT", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts">KmsAutokeyConfigTimeouts</a></code> | timeouts block. |
@@ -1084,7 +1134,28 @@ public java.lang.String getFolder();
 
 The folder for which to retrieve config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#folder KmsAutokeyConfig#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#folder KmsAutokeyConfig#folder}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#deletion_policy KmsAutokeyConfig#deletion_policy}
 
 ---
 
@@ -1096,7 +1167,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1187,7 @@ The target key project for a given folder where KMS Autokey will provision a Cry
 Should have the form
 'projects/<project_id_or_number>'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#key_project KmsAutokeyConfig#key_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#key_project KmsAutokeyConfig#key_project}
 
 ---
 
@@ -1130,7 +1201,7 @@ public java.lang.String getKeyProjectResolutionMode();
 
 How Autokey determines which project to use when provisioning CMEK keys. Possible values: ["DEDICATED_KEY_PROJECT", "RESOURCE_PROJECT", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#key_project_resolution_mode KmsAutokeyConfig#key_project_resolution_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#key_project_resolution_mode KmsAutokeyConfig#key_project_resolution_mode}
 
 ---
 
@@ -1144,7 +1215,7 @@ public KmsAutokeyConfigTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#timeouts KmsAutokeyConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#timeouts KmsAutokeyConfig#timeouts}
 
 ---
 
@@ -1166,9 +1237,9 @@ KmsAutokeyConfigTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#create KmsAutokeyConfig#create}. |
-| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#delete KmsAutokeyConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#update KmsAutokeyConfig#update}. |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#create KmsAutokeyConfig#create}. |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#delete KmsAutokeyConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#update KmsAutokeyConfig#update}. |
 
 ---
 
@@ -1180,7 +1251,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#create KmsAutokeyConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#create KmsAutokeyConfig#create}.
 
 ---
 
@@ -1192,7 +1263,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#delete KmsAutokeyConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#delete KmsAutokeyConfig#delete}.
 
 ---
 
@@ -1204,7 +1275,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_autokey_config#update KmsAutokeyConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_autokey_config#update KmsAutokeyConfig#update}.
 
 ---
 

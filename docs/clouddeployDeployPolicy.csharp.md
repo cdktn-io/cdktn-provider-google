@@ -4,7 +4,7 @@
 
 ### ClouddeployDeployPolicy <a name="ClouddeployDeployPolicy" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy google_clouddeploy_deploy_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy google_clouddeploy_deploy_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.putSelectors">PutSelectors</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -438,6 +439,12 @@ private void PutTimeouts(ClouddeployDeployPolicyTimeouts Value)
 private void ResetAnnotations()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.resetDescription"></a>
 
 ```csharp
@@ -577,7 +584,7 @@ The construct id used in the generated config for the ClouddeployDeployPolicy to
 
 The id of the existing ClouddeployDeployPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,6 +625,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.uid">Uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.annotationsInput">AnnotationsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -629,6 +637,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.suspendedInput">SuspendedInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts">ClouddeployDeployPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.annotations">Annotations</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -891,6 +900,16 @@ public System.Collections.Generic.IDictionary<string, string> AnnotationsInput {
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.descriptionInput"></a>
 
 ```csharp
@@ -998,6 +1017,16 @@ public System.Collections.Generic.IDictionary<string, string> Annotations { get;
 ```
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1111,6 +1140,7 @@ new ClouddeployDeployPolicyConfig {
     IResolvable|ClouddeployDeployPolicyRules[] Rules,
     IResolvable|ClouddeployDeployPolicySelectors[] Selectors,
     System.Collections.Generic.IDictionary<string, string> Annotations = null,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -1136,10 +1166,11 @@ new ClouddeployDeployPolicyConfig {
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.rules">Rules</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRules">ClouddeployDeployPolicyRules</a>[]</code> | rules block. |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.selectors">Selectors</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectors">ClouddeployDeployPolicySelectors</a>[]</code> | selectors block. |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.annotations">Annotations</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | User annotations. |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.description">Description</a></code> | <code>string</code> | Description of the 'DeployPolicy'. Max length is 255 characters. |
-| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels are attributes that can be set and used by both the user and by Cloud Deploy. |
-| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#project ClouddeployDeployPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#project ClouddeployDeployPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.suspended">Suspended</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When suspended, the policy will not prevent actions from occurring, even if the action violates the policy. |
 | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts">ClouddeployDeployPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1225,7 +1256,7 @@ public string Location { get; set; }
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#location ClouddeployDeployPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#location ClouddeployDeployPolicy#location}
 
 ---
 
@@ -1239,7 +1270,7 @@ public string Name { get; set; }
 
 Name of the 'DeployPolicy'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#name ClouddeployDeployPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#name ClouddeployDeployPolicy#name}
 
 ---
 
@@ -1253,7 +1284,7 @@ public IResolvable|ClouddeployDeployPolicyRules[] Rules { get; set; }
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#rules ClouddeployDeployPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#rules ClouddeployDeployPolicy#rules}
 
 ---
 
@@ -1267,7 +1298,7 @@ public IResolvable|ClouddeployDeployPolicySelectors[] Selectors { get; set; }
 
 selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#selectors ClouddeployDeployPolicy#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#selectors ClouddeployDeployPolicy#selectors}
 
 ---
 
@@ -1286,7 +1317,28 @@ These attributes can only be set and used by the user, and not by Cloud Deploy. 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#annotations ClouddeployDeployPolicy#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#annotations ClouddeployDeployPolicy#annotations}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#deletion_policy ClouddeployDeployPolicy#deletion_policy}
 
 ---
 
@@ -1300,7 +1352,7 @@ public string Description { get; set; }
 
 Description of the 'DeployPolicy'. Max length is 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#description ClouddeployDeployPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#description ClouddeployDeployPolicy#description}
 
 ---
 
@@ -1312,7 +1364,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1334,7 +1386,7 @@ Labels must meet the following constraints: * Keys and values can contain only l
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
 
 ---
 
@@ -1346,7 +1398,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#project ClouddeployDeployPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#project ClouddeployDeployPolicy#project}.
 
 ---
 
@@ -1360,7 +1412,7 @@ public bool|IResolvable Suspended { get; set; }
 
 When suspended, the policy will not prevent actions from occurring, even if the action violates the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#suspended ClouddeployDeployPolicy#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#suspended ClouddeployDeployPolicy#suspended}
 
 ---
 
@@ -1374,7 +1426,7 @@ public ClouddeployDeployPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#timeouts ClouddeployDeployPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#timeouts ClouddeployDeployPolicy#timeouts}
 
 ---
 
@@ -1408,7 +1460,7 @@ public ClouddeployDeployPolicyRulesRolloutRestriction RolloutRestriction { get; 
 
 rollout_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#rollout_restriction ClouddeployDeployPolicy#rollout_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#rollout_restriction ClouddeployDeployPolicy#rollout_restriction}
 
 ---
 
@@ -1450,7 +1502,7 @@ ID of the rule.
 
 This id must be unique in the 'DeployPolicy' resource to which this rule belongs. The format is 'a-z{0,62}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1469,7 +1521,7 @@ Rollout actions to be restricted as part of the policy.
 
 If left empty, all actions will be restricted. Possible values: ["ADVANCE", "APPROVE", "CANCEL", "CREATE", "IGNORE_JOB", "RETRY_JOB", "ROLLBACK", "TERMINATE_JOBRUN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#actions ClouddeployDeployPolicy#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#actions ClouddeployDeployPolicy#actions}
 
 ---
 
@@ -1483,7 +1535,7 @@ public string[] Invokers { get; set; }
 
 What invoked the action. If left empty, all invoker types will be restricted. Possible values: ["USER", "DEPLOY_AUTOMATION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#invokers ClouddeployDeployPolicy#invokers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#invokers ClouddeployDeployPolicy#invokers}
 
 ---
 
@@ -1497,7 +1549,7 @@ public ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows TimeWindows { g
 
 time_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#time_windows ClouddeployDeployPolicy#time_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#time_windows ClouddeployDeployPolicy#time_windows}
 
 ---
 
@@ -1535,7 +1587,7 @@ public string TimeZone { get; set; }
 
 The time zone in IANA format IANA Time Zone Database (e.g. America/New_York).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#time_zone ClouddeployDeployPolicy#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#time_zone ClouddeployDeployPolicy#time_zone}
 
 ---
 
@@ -1549,7 +1601,7 @@ public IResolvable|ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneT
 
 one_time_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#one_time_windows ClouddeployDeployPolicy#one_time_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#one_time_windows ClouddeployDeployPolicy#one_time_windows}
 
 ---
 
@@ -1563,7 +1615,7 @@ public IResolvable|ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeek
 
 weekly_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#weekly_windows ClouddeployDeployPolicy#weekly_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#weekly_windows ClouddeployDeployPolicy#weekly_windows}
 
 ---
 
@@ -1603,7 +1655,7 @@ public ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEn
 
 end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#end_date ClouddeployDeployPolicy#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#end_date ClouddeployDeployPolicy#end_date}
 
 ---
 
@@ -1617,7 +1669,7 @@ public ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEn
 
 end_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#end_time ClouddeployDeployPolicy#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#end_time ClouddeployDeployPolicy#end_time}
 
 ---
 
@@ -1631,7 +1683,7 @@ public ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsSt
 
 start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#start_date ClouddeployDeployPolicy#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#start_date ClouddeployDeployPolicy#start_date}
 
 ---
 
@@ -1645,7 +1697,7 @@ public ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsSt
 
 start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#start_time ClouddeployDeployPolicy#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#start_time ClouddeployDeployPolicy#start_time}
 
 ---
 
@@ -1683,7 +1735,7 @@ public double Day { get; set; }
 
 Day of a month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#day ClouddeployDeployPolicy#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#day ClouddeployDeployPolicy#day}
 
 ---
 
@@ -1697,7 +1749,7 @@ public double Month { get; set; }
 
 Month of a year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#month ClouddeployDeployPolicy#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#month ClouddeployDeployPolicy#month}
 
 ---
 
@@ -1711,7 +1763,7 @@ public double Year { get; set; }
 
 Year of the date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#year ClouddeployDeployPolicy#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#year ClouddeployDeployPolicy#year}
 
 ---
 
@@ -1753,7 +1805,7 @@ Hours of a day in 24 hour format.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
 
 ---
 
@@ -1767,7 +1819,7 @@ public double Minutes { get; set; }
 
 Minutes of an hour. Must be greater than or equal to 0 and less than or equal to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
 
 ---
 
@@ -1783,7 +1835,7 @@ Fractions of seconds, in nanoseconds.
 
 Must be greater than or equal to 0 and less than or equal to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
 
 ---
 
@@ -1799,7 +1851,7 @@ Seconds of a minute.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 59. An API may allow the value 60 if it allows leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
 
 ---
 
@@ -1839,7 +1891,7 @@ Day of a month.
 
 Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#day ClouddeployDeployPolicy#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#day ClouddeployDeployPolicy#day}
 
 ---
 
@@ -1855,7 +1907,7 @@ Month of a year.
 
 Must be from 1 to 12, or 0 to specify a year without a month and day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#month ClouddeployDeployPolicy#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#month ClouddeployDeployPolicy#month}
 
 ---
 
@@ -1869,7 +1921,7 @@ public double Year { get; set; }
 
 Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#year ClouddeployDeployPolicy#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#year ClouddeployDeployPolicy#year}
 
 ---
 
@@ -1911,7 +1963,7 @@ Hours of a day in 24 hour format.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
 
 ---
 
@@ -1925,7 +1977,7 @@ public double Minutes { get; set; }
 
 Minutes of an hour. Must be greater than or equal to 0 and less than or equal to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
 
 ---
 
@@ -1941,7 +1993,7 @@ Fractions of seconds, in nanoseconds.
 
 Must be greater than or equal to 0 and less than or equal to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
 
 ---
 
@@ -1957,7 +2009,7 @@ Seconds of a minute.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 59. An API may allow the value 60 if it allows leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
 
 ---
 
@@ -1997,7 +2049,7 @@ Days of week.
 
 If left empty, all days of the week will be included. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#days_of_week ClouddeployDeployPolicy#days_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#days_of_week ClouddeployDeployPolicy#days_of_week}
 
 ---
 
@@ -2011,7 +2063,7 @@ public ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEnd
 
 end_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#end_time ClouddeployDeployPolicy#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#end_time ClouddeployDeployPolicy#end_time}
 
 ---
 
@@ -2025,7 +2077,7 @@ public ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsSta
 
 start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#start_time ClouddeployDeployPolicy#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#start_time ClouddeployDeployPolicy#start_time}
 
 ---
 
@@ -2067,7 +2119,7 @@ Hours of a day in 24 hour format.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
 
 ---
 
@@ -2081,7 +2133,7 @@ public double Minutes { get; set; }
 
 Minutes of an hour. Must be greater than or equal to 0 and less than or equal to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
 
 ---
 
@@ -2097,7 +2149,7 @@ Fractions of seconds, in nanoseconds.
 
 Must be greater than or equal to 0 and less than or equal to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
 
 ---
 
@@ -2113,7 +2165,7 @@ Seconds of a minute.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 59. An API may allow the value 60 if it allows leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
 
 ---
 
@@ -2155,7 +2207,7 @@ Hours of a day in 24 hour format.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#hours ClouddeployDeployPolicy#hours}
 
 ---
 
@@ -2169,7 +2221,7 @@ public double Minutes { get; set; }
 
 Minutes of an hour. Must be greater than or equal to 0 and less than or equal to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#minutes ClouddeployDeployPolicy#minutes}
 
 ---
 
@@ -2185,7 +2237,7 @@ Fractions of seconds, in nanoseconds.
 
 Must be greater than or equal to 0 and less than or equal to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#nanos ClouddeployDeployPolicy#nanos}
 
 ---
 
@@ -2201,7 +2253,7 @@ Seconds of a minute.
 
 Must be greater than or equal to 0 and typically must be less than or equal to 59. An API may allow the value 60 if it allows leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#seconds ClouddeployDeployPolicy#seconds}
 
 ---
 
@@ -2237,7 +2289,7 @@ public ClouddeployDeployPolicySelectorsDeliveryPipeline DeliveryPipeline { get; 
 
 delivery_pipeline block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#delivery_pipeline ClouddeployDeployPolicy#delivery_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#delivery_pipeline ClouddeployDeployPolicy#delivery_pipeline}
 
 ---
 
@@ -2251,7 +2303,7 @@ public ClouddeployDeployPolicySelectorsTarget Target { get; set; }
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#target ClouddeployDeployPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#target ClouddeployDeployPolicy#target}
 
 ---
 
@@ -2292,7 +2344,7 @@ The value of this field could be one of the following:
 * The last segment of a pipeline name
 * "*", all delivery pipelines in a location
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2309,7 +2361,7 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 DeliveryPipeline labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
 
 ---
 
@@ -2347,7 +2399,7 @@ ID of the 'Target'.
 
 The value of this field could be one of the following: * The last segment of a target name. It only needs the ID to determine which target is being referred to * "*", all targets in a location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2364,7 +2416,7 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 Target labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
 
 ---
 
@@ -2386,9 +2438,9 @@ new ClouddeployDeployPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#create ClouddeployDeployPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#delete ClouddeployDeployPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#update ClouddeployDeployPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#create ClouddeployDeployPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#delete ClouddeployDeployPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#update ClouddeployDeployPolicy#update}. |
 
 ---
 
@@ -2400,7 +2452,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#create ClouddeployDeployPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#create ClouddeployDeployPolicy#create}.
 
 ---
 
@@ -2412,7 +2464,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#delete ClouddeployDeployPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#delete ClouddeployDeployPolicy#delete}.
 
 ---
 
@@ -2424,7 +2476,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#update ClouddeployDeployPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/clouddeploy_deploy_policy#update ClouddeployDeployPolicy#update}.
 
 ---
 

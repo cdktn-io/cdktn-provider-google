@@ -4,7 +4,7 @@
 
 ### DataCatalogEntry <a name="DataCatalogEntry" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry google_data_catalog_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry google_data_catalog_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer"></a>
 
@@ -23,6 +23,7 @@ dataCatalogEntry.DataCatalogEntry(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   entry_group: str,
   entry_id: str,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   gcs_fileset_spec: DataCatalogEntryGcsFilesetSpec = None,
@@ -49,10 +50,11 @@ dataCatalogEntry.DataCatalogEntry(
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.entryGroup">entry_group</a></code> | <code>str</code> | The name of the entry group this entry is in. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.entryId">entry_id</a></code> | <code>str</code> | The id of the entry to create. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.description">description</a></code> | <code>str</code> | Entry description, which can consist of several sentences or paragraphs that describe entry contents. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Display information such as title and description. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.gcsFilesetSpec">gcs_fileset_spec</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpec">DataCatalogEntryGcsFilesetSpec</a></code> | gcs_fileset_spec block. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.linkedResource">linked_resource</a></code> | <code>str</code> | The resource this metadata entry refers to. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Schema of the entry (e.g. BigQuery, GoogleSQL, Avro schema), as a json string. An entry might not have any schema attached to it. See https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries#schema for what fields this schema can contain. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts">DataCatalogEntryTimeouts</a></code> | timeouts block. |
@@ -128,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the entry group this entry is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#entry_group DataCatalogEntry#entry_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#entry_group DataCatalogEntry#entry_group}
 
 ---
 
@@ -138,7 +140,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The id of the entry to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#entry_id DataCatalogEntry#entry_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#entry_id DataCatalogEntry#entry_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#deletion_policy DataCatalogEntry#deletion_policy}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Entry description, which can consist of several sentences or paragraphs that describe entry contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#description DataCatalogEntry#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#description DataCatalogEntry#description}
 
 ---
 
@@ -161,7 +180,7 @@ Display information such as title and description.
 A short name to identify the entry,
 for example, "Analytics Data - Jan 2011".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#display_name DataCatalogEntry#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#display_name DataCatalogEntry#display_name}
 
 ---
 
@@ -171,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gcs_fileset_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#gcs_fileset_spec DataCatalogEntry#gcs_fileset_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#gcs_fileset_spec DataCatalogEntry#gcs_fileset_spec}
 
 ---
 
@@ -179,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -198,7 +217,7 @@ For example, the linkedResource for a table resource from BigQuery is:
 Output only when Entry is of type in the EntryType enum. For entries with userSpecifiedType,
 this field is optional and defaults to an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#linked_resource DataCatalogEntry#linked_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#linked_resource DataCatalogEntry#linked_resource}
 
 ---
 
@@ -208,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Schema of the entry (e.g. BigQuery, GoogleSQL, Avro schema), as a json string. An entry might not have any schema attached to it. See https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries#schema for what fields this schema can contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#schema DataCatalogEntry#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#schema DataCatalogEntry#schema}
 
 ---
 
@@ -218,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#timeouts DataCatalogEntry#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#timeouts DataCatalogEntry#timeouts}
 
 ---
 
@@ -231,7 +250,7 @@ The type of the entry.
 Only used for Entries with types in the EntryType enum.
 Currently, only FILESET enum value is allowed. All other entries created through Data Catalog must use userSpecifiedType. Possible values: ["FILESET"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#type DataCatalogEntry#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#type DataCatalogEntry#type}
 
 ---
 
@@ -244,7 +263,7 @@ This field indicates the entry's source system that Data Catalog does not integr
 userSpecifiedSystem strings must begin with a letter or underscore and can only contain letters, numbers,
 and underscores; are case insensitive; must be at least 1 character and at most 64 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#user_specified_system DataCatalogEntry#user_specified_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#user_specified_system DataCatalogEntry#user_specified_system}
 
 ---
 
@@ -259,7 +278,7 @@ to be created, then provide a custom value, for example "my_special_type".
 userSpecifiedType strings must begin with a letter or underscore and can only contain letters,
 numbers, and underscores; are case insensitive; must be at least 1 character and at most 64 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#user_specified_type DataCatalogEntry#user_specified_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#user_specified_type DataCatalogEntry#user_specified_type}
 
 ---
 
@@ -293,6 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.putGcsFilesetSpec">put_gcs_fileset_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.resetGcsFilesetSpec">reset_gcs_fileset_spec</a></code> | *No description.* |
@@ -680,7 +700,7 @@ for more information. Note that bucket wildcards are currently not supported. Ex
 * gs://bucket_name/a/* /b: matches all files in bucket_name that match a/* /b pattern, such as a/c/b, a/d/b
 * gs://another_bucket/a.txt: matches gs://another_bucket/a.txt
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#file_patterns DataCatalogEntry#file_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#file_patterns DataCatalogEntry#file_patterns}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -700,7 +720,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#create DataCatalogEntry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#create DataCatalogEntry#create}.
 
 ---
 
@@ -708,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#delete DataCatalogEntry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#delete DataCatalogEntry#delete}.
 
 ---
 
@@ -716,9 +736,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#update DataCatalogEntry#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#update DataCatalogEntry#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.resetDescription"></a>
 
@@ -894,7 +920,7 @@ The construct id used in the generated config for the DataCatalogEntry to import
 
 The id of the existing DataCatalogEntry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -930,6 +956,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.integratedSystem">integrated_system</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeoutsOutputReference">DataCatalogEntryTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.entryGroupInput">entry_group_input</a></code> | <code>str</code> | *No description.* |
@@ -942,6 +969,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.userSpecifiedSystemInput">user_specified_system_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.userSpecifiedTypeInput">user_specified_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.entryGroup">entry_group</a></code> | <code>str</code> | *No description.* |
@@ -1157,6 +1185,16 @@ timeouts: DataCatalogEntryTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.descriptionInput"></a>
 
 ```python
@@ -1271,6 +1309,16 @@ user_specified_system_input: str
 
 ```python
 user_specified_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntry.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1458,6 +1506,7 @@ dataCatalogEntry.DataCatalogEntryConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   entry_group: str,
   entry_id: str,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   gcs_fileset_spec: DataCatalogEntryGcsFilesetSpec = None,
@@ -1484,10 +1533,11 @@ dataCatalogEntry.DataCatalogEntryConfig(
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.entryGroup">entry_group</a></code> | <code>str</code> | The name of the entry group this entry is in. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.entryId">entry_id</a></code> | <code>str</code> | The id of the entry to create. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.description">description</a></code> | <code>str</code> | Entry description, which can consist of several sentences or paragraphs that describe entry contents. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.displayName">display_name</a></code> | <code>str</code> | Display information such as title and description. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.gcsFilesetSpec">gcs_fileset_spec</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpec">DataCatalogEntryGcsFilesetSpec</a></code> | gcs_fileset_spec block. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.linkedResource">linked_resource</a></code> | <code>str</code> | The resource this metadata entry refers to. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.schema">schema</a></code> | <code>str</code> | Schema of the entry (e.g. BigQuery, GoogleSQL, Avro schema), as a json string. An entry might not have any schema attached to it. See https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries#schema for what fields this schema can contain. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts">DataCatalogEntryTimeouts</a></code> | timeouts block. |
@@ -1577,7 +1627,7 @@ entry_group: str
 
 The name of the entry group this entry is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#entry_group DataCatalogEntry#entry_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#entry_group DataCatalogEntry#entry_group}
 
 ---
 
@@ -1591,7 +1641,28 @@ entry_id: str
 
 The id of the entry to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#entry_id DataCatalogEntry#entry_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#entry_id DataCatalogEntry#entry_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#deletion_policy DataCatalogEntry#deletion_policy}
 
 ---
 
@@ -1605,7 +1676,7 @@ description: str
 
 Entry description, which can consist of several sentences or paragraphs that describe entry contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#description DataCatalogEntry#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#description DataCatalogEntry#description}
 
 ---
 
@@ -1622,7 +1693,7 @@ Display information such as title and description.
 A short name to identify the entry,
 for example, "Analytics Data - Jan 2011".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#display_name DataCatalogEntry#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#display_name DataCatalogEntry#display_name}
 
 ---
 
@@ -1636,7 +1707,7 @@ gcs_fileset_spec: DataCatalogEntryGcsFilesetSpec
 
 gcs_fileset_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#gcs_fileset_spec DataCatalogEntry#gcs_fileset_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#gcs_fileset_spec DataCatalogEntry#gcs_fileset_spec}
 
 ---
 
@@ -1648,7 +1719,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#id DataCatalogEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1671,7 +1742,7 @@ For example, the linkedResource for a table resource from BigQuery is:
 Output only when Entry is of type in the EntryType enum. For entries with userSpecifiedType,
 this field is optional and defaults to an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#linked_resource DataCatalogEntry#linked_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#linked_resource DataCatalogEntry#linked_resource}
 
 ---
 
@@ -1685,7 +1756,7 @@ schema: str
 
 Schema of the entry (e.g. BigQuery, GoogleSQL, Avro schema), as a json string. An entry might not have any schema attached to it. See https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries#schema for what fields this schema can contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#schema DataCatalogEntry#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#schema DataCatalogEntry#schema}
 
 ---
 
@@ -1699,7 +1770,7 @@ timeouts: DataCatalogEntryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#timeouts DataCatalogEntry#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#timeouts DataCatalogEntry#timeouts}
 
 ---
 
@@ -1716,7 +1787,7 @@ The type of the entry.
 Only used for Entries with types in the EntryType enum.
 Currently, only FILESET enum value is allowed. All other entries created through Data Catalog must use userSpecifiedType. Possible values: ["FILESET"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#type DataCatalogEntry#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#type DataCatalogEntry#type}
 
 ---
 
@@ -1733,7 +1804,7 @@ This field indicates the entry's source system that Data Catalog does not integr
 userSpecifiedSystem strings must begin with a letter or underscore and can only contain letters, numbers,
 and underscores; are case insensitive; must be at least 1 character and at most 64 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#user_specified_system DataCatalogEntry#user_specified_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#user_specified_system DataCatalogEntry#user_specified_system}
 
 ---
 
@@ -1752,7 +1823,7 @@ to be created, then provide a custom value, for example "my_special_type".
 userSpecifiedType strings must begin with a letter or underscore and can only contain letters,
 numbers, and underscores; are case insensitive; must be at least 1 character and at most 64 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#user_specified_type DataCatalogEntry#user_specified_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#user_specified_type DataCatalogEntry#user_specified_type}
 
 ---
 
@@ -1798,7 +1869,7 @@ for more information. Note that bucket wildcards are currently not supported. Ex
 * gs://bucket_name/a/* /b: matches all files in bucket_name that match a/* /b pattern, such as a/c/b, a/d/b
 * gs://another_bucket/a.txt: matches gs://another_bucket/a.txt
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#file_patterns DataCatalogEntry#file_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#file_patterns DataCatalogEntry#file_patterns}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1833,9 +1904,9 @@ dataCatalogEntry.DataCatalogEntryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#create DataCatalogEntry#create}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#delete DataCatalogEntry#delete}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#update DataCatalogEntry#update}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#create DataCatalogEntry#create}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#delete DataCatalogEntry#delete}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#update DataCatalogEntry#update}. |
 
 ---
 
@@ -1847,7 +1918,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#create DataCatalogEntry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#create DataCatalogEntry#create}.
 
 ---
 
@@ -1859,7 +1930,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#delete DataCatalogEntry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#delete DataCatalogEntry#delete}.
 
 ---
 
@@ -1871,7 +1942,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_entry#update DataCatalogEntry#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_entry#update DataCatalogEntry#update}.
 
 ---
 

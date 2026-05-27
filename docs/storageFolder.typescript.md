@@ -4,7 +4,7 @@
 
 ### StorageFolder <a name="StorageFolder" id="@cdktn/provider-google.storageFolder.StorageFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder google_storage_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder google_storage_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageFolder.StorageFolder.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ public putTimeouts(value: StorageFolderTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.storageFolder.StorageFolder.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetForceDestroy` <a name="resetForceDestroy" id="@cdktn/provider-google.storageFolder.StorageFolder.resetForceDestroy"></a>
 
 ```typescript
@@ -523,7 +530,7 @@ The construct id used in the generated config for the StorageFolder to import.
 
 The id of the existing StorageFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,11 +566,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeoutsOutputReference">StorageFolderTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts">StorageFolderTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolder.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -772,6 +781,16 @@ public readonly bucketInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.storageFolder.StorageFolder.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `forceDestroyInput`<sup>Optional</sup> <a name="forceDestroyInput" id="@cdktn/provider-google.storageFolder.StorageFolder.property.forceDestroyInput"></a>
 
 ```typescript
@@ -816,6 +835,16 @@ public readonly timeoutsInput: IResolvable | StorageFolderTimeouts;
 
 ```typescript
 public readonly bucket: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageFolder.StorageFolder.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -895,8 +924,9 @@ const storageFolderConfig: storageFolder.StorageFolderConfig = { ... }
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.bucket">bucket</a></code> | <code>string</code> | The name of the bucket that contains the folder. |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.name">name</a></code> | <code>string</code> | The name of the folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/', 'example@#/', 'a-b/d-f/'. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, items within folder if any will be force destroyed. |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#id StorageFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#id StorageFolder#id}. |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts">StorageFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -981,7 +1011,7 @@ public readonly bucket: string;
 
 The name of the bucket that contains the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#bucket StorageFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#bucket StorageFolder#bucket}
 
 ---
 
@@ -995,7 +1025,29 @@ public readonly name: string;
 
 The name of the folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/', 'example@#/', 'a-b/d-f/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#name StorageFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#name StorageFolder#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageFolder.StorageFolderConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#deletion_policy StorageFolder#deletion_policy}
 
 ---
 
@@ -1009,7 +1061,7 @@ public readonly forceDestroy: boolean | IResolvable;
 
 If set to true, items within folder if any will be force destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#force_destroy StorageFolder#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#force_destroy StorageFolder#force_destroy}
 
 ---
 
@@ -1021,7 +1073,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#id StorageFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#id StorageFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1038,7 +1090,7 @@ public readonly timeouts: StorageFolderTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#timeouts StorageFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#timeouts StorageFolder#timeouts}
 
 ---
 
@@ -1056,9 +1108,9 @@ const storageFolderTimeouts: storageFolder.StorageFolderTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#create StorageFolder#create}. |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#delete StorageFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#update StorageFolder#update}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#create StorageFolder#create}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#delete StorageFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#update StorageFolder#update}. |
 
 ---
 
@@ -1070,7 +1122,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#create StorageFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#create StorageFolder#create}.
 
 ---
 
@@ -1082,7 +1134,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#delete StorageFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#delete StorageFolder#delete}.
 
 ---
 
@@ -1094,7 +1146,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_folder#update StorageFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_folder#update StorageFolder#update}.
 
 ---
 

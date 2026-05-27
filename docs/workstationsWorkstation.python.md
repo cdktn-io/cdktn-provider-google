@@ -4,7 +4,7 @@
 
 ### WorkstationsWorkstation <a name="WorkstationsWorkstation" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation google_workstations_workstation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation google_workstations_workstation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer"></a>
 
@@ -26,6 +26,7 @@ workstationsWorkstation.WorkstationsWorkstation(
   workstation_config_id: str,
   workstation_id: str,
   annotations: typing.Mapping[str] = None,
+  deletion_policy: str = None,
   display_name: str = None,
   env: typing.Mapping[str] = None,
   id: str = None,
@@ -52,11 +53,12 @@ workstationsWorkstation.WorkstationsWorkstation(
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.workstationConfigId">workstation_config_id</a></code> | <code>str</code> | The ID of the parent workstation cluster config. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.workstationId">workstation_id</a></code> | <code>str</code> | ID to use for the workstation. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Client-specified annotations. This is distinct from labels. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Human-readable name for this resource. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.env">env</a></code> | <code>typing.Mapping[str]</code> | 'Client-specified environment variables passed to the workstation container's entrypoint.'. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.sourceWorkstation">source_workstation</a></code> | <code>str</code> | Full resource name of the source workstation from which the workstation's persistent directories will be cloned from during creation. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts">WorkstationsWorkstationTimeouts</a></code> | timeouts block. |
 
@@ -128,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The location where the workstation parent resources reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#location WorkstationsWorkstation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#location WorkstationsWorkstation#location}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the parent workstation cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_cluster_id WorkstationsWorkstation#workstation_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_cluster_id WorkstationsWorkstation#workstation_cluster_id}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the parent workstation cluster config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_config_id WorkstationsWorkstation#workstation_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_config_id WorkstationsWorkstation#workstation_config_id}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID to use for the workstation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_id WorkstationsWorkstation#workstation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_id WorkstationsWorkstation#workstation_id}
 
 ---
 
@@ -171,7 +173,24 @@ Client-specified annotations. This is distinct from labels.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#annotations WorkstationsWorkstation#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#annotations WorkstationsWorkstation#annotations}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#deletion_policy WorkstationsWorkstation#deletion_policy}
 
 ---
 
@@ -181,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable name for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#display_name WorkstationsWorkstation#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#display_name WorkstationsWorkstation#display_name}
 
 ---
 
@@ -191,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 'Client-specified environment variables passed to the workstation container's entrypoint.'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#env WorkstationsWorkstation#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#env WorkstationsWorkstation#env}
 
 ---
 
@@ -199,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -215,7 +234,7 @@ Client-specified labels that are applied to the resource and that are also propa
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#labels WorkstationsWorkstation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#labels WorkstationsWorkstation#labels}
 
 ---
 
@@ -223,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}.
 
 ---
 
@@ -233,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Full resource name of the source workstation from which the workstation's persistent directories will be cloned from during creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#source_workstation WorkstationsWorkstation#source_workstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#source_workstation WorkstationsWorkstation#source_workstation}
 
 ---
 
@@ -243,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#timeouts WorkstationsWorkstation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#timeouts WorkstationsWorkstation#timeouts}
 
 ---
 
@@ -277,6 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.resetAnnotations">reset_annotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.resetEnv">reset_env</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.resetId">reset_id</a></code> | *No description.* |
@@ -649,7 +669,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}.
 
 ---
 
@@ -657,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}.
 
 ---
 
@@ -665,7 +685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}.
 
 ---
 
@@ -673,6 +693,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_annotations() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_display_name` <a name="reset_display_name" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.resetDisplayName"></a>
@@ -831,7 +857,7 @@ The construct id used in the generated config for the WorkstationsWorkstation to
 
 The id of the existing WorkstationsWorkstation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,6 +897,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeoutsOutputReference">WorkstationsWorkstationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.annotationsInput">annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.envInput">env_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -883,6 +910,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.workstationConfigIdInput">workstation_config_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.workstationIdInput">workstation_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.env">env</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1138,6 +1166,16 @@ annotations_input: typing.Mapping[str]
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.displayNameInput"></a>
 
 ```python
@@ -1255,6 +1293,16 @@ annotations: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstation.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1398,6 +1446,7 @@ workstationsWorkstation.WorkstationsWorkstationConfig(
   workstation_config_id: str,
   workstation_id: str,
   annotations: typing.Mapping[str] = None,
+  deletion_policy: str = None,
   display_name: str = None,
   env: typing.Mapping[str] = None,
   id: str = None,
@@ -1424,11 +1473,12 @@ workstationsWorkstation.WorkstationsWorkstationConfig(
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.workstationConfigId">workstation_config_id</a></code> | <code>str</code> | The ID of the parent workstation cluster config. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.workstationId">workstation_id</a></code> | <code>str</code> | ID to use for the workstation. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Client-specified annotations. This is distinct from labels. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.displayName">display_name</a></code> | <code>str</code> | Human-readable name for this resource. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.env">env</a></code> | <code>typing.Mapping[str]</code> | 'Client-specified environment variables passed to the workstation container's entrypoint.'. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.sourceWorkstation">source_workstation</a></code> | <code>str</code> | Full resource name of the source workstation from which the workstation's persistent directories will be cloned from during creation. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts">WorkstationsWorkstationTimeouts</a></code> | timeouts block. |
 
@@ -1514,7 +1564,7 @@ location: str
 
 The location where the workstation parent resources reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#location WorkstationsWorkstation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#location WorkstationsWorkstation#location}
 
 ---
 
@@ -1528,7 +1578,7 @@ workstation_cluster_id: str
 
 The ID of the parent workstation cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_cluster_id WorkstationsWorkstation#workstation_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_cluster_id WorkstationsWorkstation#workstation_cluster_id}
 
 ---
 
@@ -1542,7 +1592,7 @@ workstation_config_id: str
 
 The ID of the parent workstation cluster config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_config_id WorkstationsWorkstation#workstation_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_config_id WorkstationsWorkstation#workstation_config_id}
 
 ---
 
@@ -1556,7 +1606,7 @@ workstation_id: str
 
 ID to use for the workstation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#workstation_id WorkstationsWorkstation#workstation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#workstation_id WorkstationsWorkstation#workstation_id}
 
 ---
 
@@ -1573,7 +1623,28 @@ Client-specified annotations. This is distinct from labels.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#annotations WorkstationsWorkstation#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#annotations WorkstationsWorkstation#annotations}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#deletion_policy WorkstationsWorkstation#deletion_policy}
 
 ---
 
@@ -1587,7 +1658,7 @@ display_name: str
 
 Human-readable name for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#display_name WorkstationsWorkstation#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#display_name WorkstationsWorkstation#display_name}
 
 ---
 
@@ -1601,7 +1672,7 @@ env: typing.Mapping[str]
 
 'Client-specified environment variables passed to the workstation container's entrypoint.'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#env WorkstationsWorkstation#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#env WorkstationsWorkstation#env}
 
 ---
 
@@ -1613,7 +1684,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#id WorkstationsWorkstation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1633,7 +1704,7 @@ Client-specified labels that are applied to the resource and that are also propa
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#labels WorkstationsWorkstation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#labels WorkstationsWorkstation#labels}
 
 ---
 
@@ -1645,7 +1716,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#project WorkstationsWorkstation#project}.
 
 ---
 
@@ -1659,7 +1730,7 @@ source_workstation: str
 
 Full resource name of the source workstation from which the workstation's persistent directories will be cloned from during creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#source_workstation WorkstationsWorkstation#source_workstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#source_workstation WorkstationsWorkstation#source_workstation}
 
 ---
 
@@ -1673,7 +1744,7 @@ timeouts: WorkstationsWorkstationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#timeouts WorkstationsWorkstation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#timeouts WorkstationsWorkstation#timeouts}
 
 ---
 
@@ -1695,9 +1766,9 @@ workstationsWorkstation.WorkstationsWorkstationTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}. |
 
 ---
 
@@ -1709,7 +1780,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#create WorkstationsWorkstation#create}.
 
 ---
 
@@ -1721,7 +1792,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#delete WorkstationsWorkstation#delete}.
 
 ---
 
@@ -1733,7 +1804,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/workstations_workstation#update WorkstationsWorkstation#update}.
 
 ---
 

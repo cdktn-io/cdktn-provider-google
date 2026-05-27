@@ -4,7 +4,7 @@
 
 ### ComputeTargetInstance <a name="ComputeTargetInstance" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance google_compute_target_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance google_compute_target_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer"></a>
 
@@ -23,6 +23,7 @@ computeTargetInstance.ComputeTargetInstance(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   instance: str,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   nat_policy: str = None,
@@ -45,10 +46,11 @@ computeTargetInstance.ComputeTargetInstance(
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.instance">instance</a></code> | <code>str</code> | The Compute instance VM handling traffic for this target instance. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.natPolicy">nat_policy</a></code> | <code>str</code> | NAT option controlling how IPs are NAT'ed to the instance. |
-| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts">ComputeTargetInstanceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.zone">zone</a></code> | <code>str</code> | URL of the zone where the target instance resides. |
 
@@ -126,7 +128,7 @@ name is given, the zone will default to the given zone or
 the provider-default zone and the project will default to the
 provider-level project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#instance ComputeTargetInstance#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#instance ComputeTargetInstance#instance}
 
 ---
 
@@ -144,7 +146,24 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#name ComputeTargetInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#name ComputeTargetInstance#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#deletion_policy ComputeTargetInstance#deletion_policy}
 
 ---
 
@@ -154,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#description ComputeTargetInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#description ComputeTargetInstance#description}
 
 ---
 
@@ -162,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +196,7 @@ NAT option controlling how IPs are NAT'ed to the instance.
 
 Currently only NO_NAT (default value) is supported. Default value: "NO_NAT" Possible values: ["NO_NAT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#nat_policy ComputeTargetInstance#nat_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#nat_policy ComputeTargetInstance#nat_policy}
 
 ---
 
@@ -185,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}.
 
 ---
 
@@ -195,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#timeouts ComputeTargetInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#timeouts ComputeTargetInstance#timeouts}
 
 ---
 
@@ -205,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 URL of the zone where the target instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#zone ComputeTargetInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#zone ComputeTargetInstance#zone}
 
 ---
 
@@ -238,6 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.resetNatPolicy">reset_nat_policy</a></code> | *No description.* |
@@ -608,7 +628,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#create ComputeTargetInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#create ComputeTargetInstance#create}.
 
 ---
 
@@ -616,9 +636,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#delete ComputeTargetInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#delete ComputeTargetInstance#delete}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.resetDescription"></a>
 
@@ -770,7 +796,7 @@ The construct id used in the generated config for the ComputeTargetInstance to i
 
 The id of the existing ComputeTargetInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -803,6 +829,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.creationTimestamp">creation_timestamp</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeoutsOutputReference">ComputeTargetInstanceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
@@ -811,6 +838,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts">ComputeTargetInstanceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.instance">instance</a></code> | <code>str</code> | *No description.* |
@@ -993,6 +1021,16 @@ timeouts: ComputeTargetInstanceTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.descriptionInput"></a>
 
 ```python
@@ -1067,6 +1105,16 @@ timeouts_input: IResolvable | ComputeTargetInstanceTimeouts
 
 ```python
 zone_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1180,6 +1228,7 @@ computeTargetInstance.ComputeTargetInstanceConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   instance: str,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   nat_policy: str = None,
@@ -1202,10 +1251,11 @@ computeTargetInstance.ComputeTargetInstanceConfig(
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.instance">instance</a></code> | <code>str</code> | The Compute instance VM handling traffic for this target instance. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.natPolicy">nat_policy</a></code> | <code>str</code> | NAT option controlling how IPs are NAT'ed to the instance. |
-| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts">ComputeTargetInstanceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.zone">zone</a></code> | <code>str</code> | URL of the zone where the target instance resides. |
 
@@ -1297,7 +1347,7 @@ name is given, the zone will default to the given zone or
 the provider-default zone and the project will default to the
 provider-level project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#instance ComputeTargetInstance#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#instance ComputeTargetInstance#instance}
 
 ---
 
@@ -1319,7 +1369,28 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#name ComputeTargetInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#name ComputeTargetInstance#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#deletion_policy ComputeTargetInstance#deletion_policy}
 
 ---
 
@@ -1333,7 +1404,7 @@ description: str
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#description ComputeTargetInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#description ComputeTargetInstance#description}
 
 ---
 
@@ -1345,7 +1416,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#id ComputeTargetInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1364,7 +1435,7 @@ NAT option controlling how IPs are NAT'ed to the instance.
 
 Currently only NO_NAT (default value) is supported. Default value: "NO_NAT" Possible values: ["NO_NAT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#nat_policy ComputeTargetInstance#nat_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#nat_policy ComputeTargetInstance#nat_policy}
 
 ---
 
@@ -1376,7 +1447,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#project ComputeTargetInstance#project}.
 
 ---
 
@@ -1390,7 +1461,7 @@ timeouts: ComputeTargetInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#timeouts ComputeTargetInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#timeouts ComputeTargetInstance#timeouts}
 
 ---
 
@@ -1404,7 +1475,7 @@ zone: str
 
 URL of the zone where the target instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#zone ComputeTargetInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#zone ComputeTargetInstance#zone}
 
 ---
 
@@ -1425,8 +1496,8 @@ computeTargetInstance.ComputeTargetInstanceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#create ComputeTargetInstance#create}. |
-| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#delete ComputeTargetInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#create ComputeTargetInstance#create}. |
+| <code><a href="#@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#delete ComputeTargetInstance#delete}. |
 
 ---
 
@@ -1438,7 +1509,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#create ComputeTargetInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#create ComputeTargetInstance#create}.
 
 ---
 
@@ -1450,7 +1521,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_instance#delete ComputeTargetInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_instance#delete ComputeTargetInstance#delete}.
 
 ---
 

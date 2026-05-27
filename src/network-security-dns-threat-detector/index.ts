@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface NetworkSecurityDnsThreatDetectorConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#deletion_policy NetworkSecurityDnsThreatDetector#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * List of networks that are excluded from detection. Format: projects/{project}/global/networks/{name}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#excluded_networks NetworkSecurityDnsThreatDetector#excluded_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#excluded_networks NetworkSecurityDnsThreatDetector#excluded_networks}
   */
   readonly excludedNetworks?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#id NetworkSecurityDnsThreatDetector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#id NetworkSecurityDnsThreatDetector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -33,49 +45,49 @@ export interface NetworkSecurityDnsThreatDetectorConfig extends cdktn.TerraformM
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#labels NetworkSecurityDnsThreatDetector#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#labels NetworkSecurityDnsThreatDetector#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the DNS Threat Detector. The only supported value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#location NetworkSecurityDnsThreatDetector#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#location NetworkSecurityDnsThreatDetector#location}
   */
   readonly location?: string;
   /**
   * Name of the DnsThreatDetector resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#name NetworkSecurityDnsThreatDetector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#name NetworkSecurityDnsThreatDetector#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#project NetworkSecurityDnsThreatDetector#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#project NetworkSecurityDnsThreatDetector#project}
   */
   readonly project?: string;
   /**
   * DNS Threat Detection provider. The only supported value is 'INFOBLOX'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#threat_detector_provider NetworkSecurityDnsThreatDetector#threat_detector_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#threat_detector_provider NetworkSecurityDnsThreatDetector#threat_detector_provider}
   */
   readonly threatDetectorProvider?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#timeouts NetworkSecurityDnsThreatDetector#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#timeouts NetworkSecurityDnsThreatDetector#timeouts}
   */
   readonly timeouts?: NetworkSecurityDnsThreatDetectorTimeouts;
 }
 export interface NetworkSecurityDnsThreatDetectorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#create NetworkSecurityDnsThreatDetector#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#create NetworkSecurityDnsThreatDetector#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#delete NetworkSecurityDnsThreatDetector#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#delete NetworkSecurityDnsThreatDetector#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#update NetworkSecurityDnsThreatDetector#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#update NetworkSecurityDnsThreatDetector#update}
   */
   readonly update?: string;
 }
@@ -227,7 +239,7 @@ export class NetworkSecurityDnsThreatDetectorTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector}
 */
 export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
 
@@ -243,7 +255,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityDnsThreatDetector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityDnsThreatDetector to import
-  * @param importFromId The id of the existing NetworkSecurityDnsThreatDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityDnsThreatDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityDnsThreatDetector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -255,7 +267,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +278,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_dns_threat_detector',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -277,6 +289,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._excludedNetworks = config.excludedNetworks;
     this._id = config.id;
     this._labels = config.labels;
@@ -294,6 +307,22 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // effective_labels - computed: true, optional: false, required: false
@@ -444,6 +473,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       excluded_networks: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedNetworks),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
@@ -457,6 +487,12 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       excluded_networks: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedNetworks),
         isBlock: false,

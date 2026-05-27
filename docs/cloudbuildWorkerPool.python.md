@@ -4,7 +4,7 @@
 
 ### CloudbuildWorkerPool <a name="CloudbuildWorkerPool" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer"></a>
 
@@ -24,6 +24,7 @@ cloudbuildWorkerPool.CloudbuildWorkerPool(
   location: str,
   name: str,
   annotations: typing.Mapping[str] = None,
+  deletion_policy: str = None,
   display_name: str = None,
   id: str = None,
   network_config: CloudbuildWorkerPoolNetworkConfig = None,
@@ -48,8 +49,9 @@ cloudbuildWorkerPool.CloudbuildWorkerPool(
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.name">name</a></code> | <code>str</code> | User-defined name of the `WorkerPool`. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | User specified annotations. See https://google.aip.dev/128#annotations for more details such as format and size limitations. |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | A user-specified, human-readable name for the `WorkerPool`. If provided, this value must be 1-63 characters. |
-| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.networkConfig">network_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig">CloudbuildWorkerPoolNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.privateServiceConnect">private_service_connect</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnect">CloudbuildWorkerPoolPrivateServiceConnect</a></code> | private_service_connect block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.project">project</a></code> | <code>str</code> | The project for the resource. |
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#location CloudbuildWorkerPool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#location CloudbuildWorkerPool#location}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-defined name of the `WorkerPool`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#name CloudbuildWorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#name CloudbuildWorkerPool#name}
 
 ---
 
@@ -147,7 +149,24 @@ User specified annotations. See https://google.aip.dev/128#annotations for more 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field `effective_annotations` for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#annotations CloudbuildWorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#annotations CloudbuildWorkerPool#annotations}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#deletion_policy CloudbuildWorkerPool#deletion_policy}
 
 ---
 
@@ -157,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A user-specified, human-readable name for the `WorkerPool`. If provided, this value must be 1-63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#display_name CloudbuildWorkerPool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#display_name CloudbuildWorkerPool#display_name}
 
 ---
 
@@ -165,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -178,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#network_config CloudbuildWorkerPool#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#network_config CloudbuildWorkerPool#network_config}
 
 ---
 
@@ -188,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 private_service_connect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#private_service_connect CloudbuildWorkerPool#private_service_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#private_service_connect CloudbuildWorkerPool#private_service_connect}
 
 ---
 
@@ -198,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#project CloudbuildWorkerPool#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#project CloudbuildWorkerPool#project}
 
 ---
 
@@ -208,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#timeouts CloudbuildWorkerPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#timeouts CloudbuildWorkerPool#timeouts}
 
 ---
 
@@ -218,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#worker_config CloudbuildWorkerPool#worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#worker_config CloudbuildWorkerPool#worker_config}
 
 ---
 
@@ -255,6 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.putWorkerConfig">put_worker_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.resetAnnotations">reset_annotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.resetNetworkConfig">reset_network_config</a></code> | *No description.* |
@@ -630,7 +650,7 @@ Required.
 
 Immutable. The network definition that the workers are peered to. If this section is left empty, the workers will be peered to `WorkerPool.project_id` on the service producer network. Must be in the format `projects/{project}/global/networks/{network}`, where `{project}` is a project number, such as `12345`, and `{network}` is the name of a VPC network in the project. See [Understanding network configuration options](https://cloud.google.com/cloud-build/docs/custom-workers/set-up-custom-worker-pool-environment#understanding_the_network_configuration_options)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#peered_network CloudbuildWorkerPool#peered_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#peered_network CloudbuildWorkerPool#peered_network}
 
 ---
 
@@ -642,7 +662,7 @@ Optional.
 
 Immutable. Subnet IP range within the peered network. This is specified in CIDR notation with a slash and the subnet prefix size. You can optionally specify an IP address before the subnet prefix value. e.g. `192.168.0.0/29` would specify an IP range starting at 192.168.0.0 with a prefix size of 29 bits. `/16` would specify a prefix size of 16 bits, with an automatically determined IP within the peered VPC. If unspecified, a value of `/24` will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#peered_network_ip_range CloudbuildWorkerPool#peered_network_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#peered_network_ip_range CloudbuildWorkerPool#peered_network_ip_range}
 
 ---
 
@@ -663,7 +683,7 @@ Required.
 
 Immutable. The network attachment that the worker network interface is connected to. Must be in the format `projects/{project}/regions/{region}/networkAttachments/{networkAttachment}`. The region of network attachment must be the same as the worker pool. See [Network Attachments](https://cloud.google.com/vpc/docs/about-network-attachments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#network_attachment CloudbuildWorkerPool#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#network_attachment CloudbuildWorkerPool#network_attachment}
 
 ---
 
@@ -675,7 +695,7 @@ Immutable.
 
 Route all traffic through PSC interface. Enable this if you want full control of traffic in the private pool. Configure Cloud NAT for the subnet of network attachment if you need to access public Internet. If false, Only route private IPs, e.g. 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 through PSC interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#route_all_traffic CloudbuildWorkerPool#route_all_traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#route_all_traffic CloudbuildWorkerPool#route_all_traffic}
 
 ---
 
@@ -693,7 +713,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#create CloudbuildWorkerPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#create CloudbuildWorkerPool#create}.
 
 ---
 
@@ -701,7 +721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#delete CloudbuildWorkerPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#delete CloudbuildWorkerPool#delete}.
 
 ---
 
@@ -709,7 +729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#update CloudbuildWorkerPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#update CloudbuildWorkerPool#update}.
 
 ---
 
@@ -732,7 +752,7 @@ Size of the disk attached to the worker, in GB.
 
 See [Worker pool config file](https://cloud.google.com/cloud-build/docs/custom-workers/worker-pool-config-file). Specify a value of up to 1000. If `0` is specified, Cloud Build will use a standard disk size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#disk_size_gb CloudbuildWorkerPool#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#disk_size_gb CloudbuildWorkerPool#disk_size_gb}
 
 ---
 
@@ -744,7 +764,7 @@ Enable nested virtualization on the worker, if supported by the machine type.
 
 See [Worker pool config file](https://cloud.google.com/build/docs/private-pools/worker-pool-config-file-schema). If left blank, Cloud Build will set this to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#enable_nested_virtualization CloudbuildWorkerPool#enable_nested_virtualization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#enable_nested_virtualization CloudbuildWorkerPool#enable_nested_virtualization}
 
 ---
 
@@ -756,7 +776,7 @@ Machine type of a worker, such as `n1-standard-1`.
 
 See [Worker pool config file](https://cloud.google.com/cloud-build/docs/custom-workers/worker-pool-config-file). If left blank, Cloud Build will use `n1-standard-1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#machine_type CloudbuildWorkerPool#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#machine_type CloudbuildWorkerPool#machine_type}
 
 ---
 
@@ -766,7 +786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, workers are created without any public address, which prevents network egress to public IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#no_external_ip CloudbuildWorkerPool#no_external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#no_external_ip CloudbuildWorkerPool#no_external_ip}
 
 ---
 
@@ -774,6 +794,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_annotations() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_display_name` <a name="reset_display_name" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.resetDisplayName"></a>
@@ -932,7 +958,7 @@ The construct id used in the generated config for the CloudbuildWorkerPool to im
 
 The id of the existing CloudbuildWorkerPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -973,6 +999,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.workerConfig">worker_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfigOutputReference">CloudbuildWorkerPoolWorkerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.annotationsInput">annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
@@ -983,6 +1010,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts">CloudbuildWorkerPoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.workerConfigInput">worker_config_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig">CloudbuildWorkerPoolWorkerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -1243,6 +1271,16 @@ annotations_input: typing.Mapping[str]
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.displayNameInput"></a>
 
 ```python
@@ -1343,6 +1381,16 @@ annotations: typing.Mapping[str]
 
 ---
 
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+---
+
 ##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.property.displayName"></a>
 
 ```python
@@ -1431,6 +1479,7 @@ cloudbuildWorkerPool.CloudbuildWorkerPoolConfig(
   location: str,
   name: str,
   annotations: typing.Mapping[str] = None,
+  deletion_policy: str = None,
   display_name: str = None,
   id: str = None,
   network_config: CloudbuildWorkerPoolNetworkConfig = None,
@@ -1455,8 +1504,9 @@ cloudbuildWorkerPool.CloudbuildWorkerPoolConfig(
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.location">location</a></code> | <code>str</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.name">name</a></code> | <code>str</code> | User-defined name of the `WorkerPool`. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | User specified annotations. See https://google.aip.dev/128#annotations for more details such as format and size limitations. |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.displayName">display_name</a></code> | <code>str</code> | A user-specified, human-readable name for the `WorkerPool`. If provided, this value must be 1-63 characters. |
-| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.networkConfig">network_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig">CloudbuildWorkerPoolNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.privateServiceConnect">private_service_connect</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnect">CloudbuildWorkerPoolPrivateServiceConnect</a></code> | private_service_connect block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.project">project</a></code> | <code>str</code> | The project for the resource. |
@@ -1545,7 +1595,7 @@ location: str
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#location CloudbuildWorkerPool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#location CloudbuildWorkerPool#location}
 
 ---
 
@@ -1559,7 +1609,7 @@ name: str
 
 User-defined name of the `WorkerPool`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#name CloudbuildWorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#name CloudbuildWorkerPool#name}
 
 ---
 
@@ -1576,7 +1626,28 @@ User specified annotations. See https://google.aip.dev/128#annotations for more 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field `effective_annotations` for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#annotations CloudbuildWorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#annotations CloudbuildWorkerPool#annotations}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#deletion_policy CloudbuildWorkerPool#deletion_policy}
 
 ---
 
@@ -1590,7 +1661,7 @@ display_name: str
 
 A user-specified, human-readable name for the `WorkerPool`. If provided, this value must be 1-63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#display_name CloudbuildWorkerPool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#display_name CloudbuildWorkerPool#display_name}
 
 ---
 
@@ -1602,7 +1673,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#id CloudbuildWorkerPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1619,7 +1690,7 @@ network_config: CloudbuildWorkerPoolNetworkConfig
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#network_config CloudbuildWorkerPool#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#network_config CloudbuildWorkerPool#network_config}
 
 ---
 
@@ -1633,7 +1704,7 @@ private_service_connect: CloudbuildWorkerPoolPrivateServiceConnect
 
 private_service_connect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#private_service_connect CloudbuildWorkerPool#private_service_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#private_service_connect CloudbuildWorkerPool#private_service_connect}
 
 ---
 
@@ -1647,7 +1718,7 @@ project: str
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#project CloudbuildWorkerPool#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#project CloudbuildWorkerPool#project}
 
 ---
 
@@ -1661,7 +1732,7 @@ timeouts: CloudbuildWorkerPoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#timeouts CloudbuildWorkerPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#timeouts CloudbuildWorkerPool#timeouts}
 
 ---
 
@@ -1675,7 +1746,7 @@ worker_config: CloudbuildWorkerPoolWorkerConfig
 
 worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#worker_config CloudbuildWorkerPool#worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#worker_config CloudbuildWorkerPool#worker_config}
 
 ---
 
@@ -1713,7 +1784,7 @@ Required.
 
 Immutable. The network definition that the workers are peered to. If this section is left empty, the workers will be peered to `WorkerPool.project_id` on the service producer network. Must be in the format `projects/{project}/global/networks/{network}`, where `{project}` is a project number, such as `12345`, and `{network}` is the name of a VPC network in the project. See [Understanding network configuration options](https://cloud.google.com/cloud-build/docs/custom-workers/set-up-custom-worker-pool-environment#understanding_the_network_configuration_options)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#peered_network CloudbuildWorkerPool#peered_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#peered_network CloudbuildWorkerPool#peered_network}
 
 ---
 
@@ -1729,7 +1800,7 @@ Optional.
 
 Immutable. Subnet IP range within the peered network. This is specified in CIDR notation with a slash and the subnet prefix size. You can optionally specify an IP address before the subnet prefix value. e.g. `192.168.0.0/29` would specify an IP range starting at 192.168.0.0 with a prefix size of 29 bits. `/16` would specify a prefix size of 16 bits, with an automatically determined IP within the peered VPC. If unspecified, a value of `/24` will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#peered_network_ip_range CloudbuildWorkerPool#peered_network_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#peered_network_ip_range CloudbuildWorkerPool#peered_network_ip_range}
 
 ---
 
@@ -1767,7 +1838,7 @@ Required.
 
 Immutable. The network attachment that the worker network interface is connected to. Must be in the format `projects/{project}/regions/{region}/networkAttachments/{networkAttachment}`. The region of network attachment must be the same as the worker pool. See [Network Attachments](https://cloud.google.com/vpc/docs/about-network-attachments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#network_attachment CloudbuildWorkerPool#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#network_attachment CloudbuildWorkerPool#network_attachment}
 
 ---
 
@@ -1783,7 +1854,7 @@ Immutable.
 
 Route all traffic through PSC interface. Enable this if you want full control of traffic in the private pool. Configure Cloud NAT for the subnet of network attachment if you need to access public Internet. If false, Only route private IPs, e.g. 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 through PSC interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#route_all_traffic CloudbuildWorkerPool#route_all_traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#route_all_traffic CloudbuildWorkerPool#route_all_traffic}
 
 ---
 
@@ -1805,9 +1876,9 @@ cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#create CloudbuildWorkerPool#create}. |
-| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#delete CloudbuildWorkerPool#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#update CloudbuildWorkerPool#update}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#create CloudbuildWorkerPool#create}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#delete CloudbuildWorkerPool#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#update CloudbuildWorkerPool#update}. |
 
 ---
 
@@ -1819,7 +1890,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#create CloudbuildWorkerPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#create CloudbuildWorkerPool#create}.
 
 ---
 
@@ -1831,7 +1902,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#delete CloudbuildWorkerPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#delete CloudbuildWorkerPool#delete}.
 
 ---
 
@@ -1843,7 +1914,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#update CloudbuildWorkerPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#update CloudbuildWorkerPool#update}.
 
 ---
 
@@ -1885,7 +1956,7 @@ Size of the disk attached to the worker, in GB.
 
 See [Worker pool config file](https://cloud.google.com/cloud-build/docs/custom-workers/worker-pool-config-file). Specify a value of up to 1000. If `0` is specified, Cloud Build will use a standard disk size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#disk_size_gb CloudbuildWorkerPool#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#disk_size_gb CloudbuildWorkerPool#disk_size_gb}
 
 ---
 
@@ -1901,7 +1972,7 @@ Enable nested virtualization on the worker, if supported by the machine type.
 
 See [Worker pool config file](https://cloud.google.com/build/docs/private-pools/worker-pool-config-file-schema). If left blank, Cloud Build will set this to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#enable_nested_virtualization CloudbuildWorkerPool#enable_nested_virtualization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#enable_nested_virtualization CloudbuildWorkerPool#enable_nested_virtualization}
 
 ---
 
@@ -1917,7 +1988,7 @@ Machine type of a worker, such as `n1-standard-1`.
 
 See [Worker pool config file](https://cloud.google.com/cloud-build/docs/custom-workers/worker-pool-config-file). If left blank, Cloud Build will use `n1-standard-1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#machine_type CloudbuildWorkerPool#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#machine_type CloudbuildWorkerPool#machine_type}
 
 ---
 
@@ -1931,7 +2002,7 @@ no_external_ip: bool | IResolvable
 
 If true, workers are created without any public address, which prevents network egress to public IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#no_external_ip CloudbuildWorkerPool#no_external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloudbuild_worker_pool#no_external_ip CloudbuildWorkerPool#no_external_ip}
 
 ---
 

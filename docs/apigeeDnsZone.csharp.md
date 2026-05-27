@@ -4,7 +4,7 @@
 
 ### ApigeeDnsZone <a name="ApigeeDnsZone" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone google_apigee_dns_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone google_apigee_dns_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.putPeeringConfig">PutPeeringConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -414,6 +415,12 @@ private void PutTimeouts(ApigeeDnsZoneTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.resetId"></a>
 
 ```csharp
@@ -529,7 +536,7 @@ The construct id used in the generated config for the ApigeeDnsZone to import.
 
 The id of the existing ApigeeDnsZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -562,6 +569,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.peeringConfig">PeeringConfig</a></code> | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZonePeeringConfigOutputReference">ApigeeDnsZonePeeringConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeoutsOutputReference">ApigeeDnsZoneTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.dnsZoneIdInput">DnsZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.domainInput">DomainInput</a></code> | <code>string</code> | *No description.* |
@@ -569,6 +577,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.orgIdInput">OrgIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.peeringConfigInput">PeeringConfigInput</a></code> | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZonePeeringConfig">ApigeeDnsZonePeeringConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeouts">ApigeeDnsZoneTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.dnsZoneId">DnsZoneId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.domain">Domain</a></code> | <code>string</code> | *No description.* |
@@ -749,6 +758,16 @@ public ApigeeDnsZoneTimeoutsOutputReference Timeouts { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.descriptionInput"></a>
 
 ```csharp
@@ -816,6 +835,16 @@ public IResolvable|ApigeeDnsZoneTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeouts">ApigeeDnsZoneTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZone.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -909,6 +938,7 @@ new ApigeeDnsZoneConfig {
     string Domain,
     string OrgId,
     ApigeeDnsZonePeeringConfig PeeringConfig,
+    string DeletionPolicy = null,
     string Id = null,
     ApigeeDnsZoneTimeouts Timeouts = null
 };
@@ -930,7 +960,8 @@ new ApigeeDnsZoneConfig {
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.domain">Domain</a></code> | <code>string</code> | Doamin for the zone. |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.orgId">OrgId</a></code> | <code>string</code> | The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.peeringConfig">PeeringConfig</a></code> | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZonePeeringConfig">ApigeeDnsZonePeeringConfig</a></code> | peering_config block. |
-| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#id ApigeeDnsZone#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#id ApigeeDnsZone#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeouts">ApigeeDnsZoneTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1015,7 +1046,7 @@ public string Description { get; set; }
 
 Description for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#description ApigeeDnsZone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#description ApigeeDnsZone#description}
 
 ---
 
@@ -1029,7 +1060,7 @@ public string DnsZoneId { get; set; }
 
 ID of the dns zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#dns_zone_id ApigeeDnsZone#dns_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#dns_zone_id ApigeeDnsZone#dns_zone_id}
 
 ---
 
@@ -1043,7 +1074,7 @@ public string Domain { get; set; }
 
 Doamin for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#domain ApigeeDnsZone#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#domain ApigeeDnsZone#domain}
 
 ---
 
@@ -1057,7 +1088,7 @@ public string OrgId { get; set; }
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#org_id ApigeeDnsZone#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#org_id ApigeeDnsZone#org_id}
 
 ---
 
@@ -1071,7 +1102,28 @@ public ApigeeDnsZonePeeringConfig PeeringConfig { get; set; }
 
 peering_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#peering_config ApigeeDnsZone#peering_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#peering_config ApigeeDnsZone#peering_config}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#deletion_policy ApigeeDnsZone#deletion_policy}
 
 ---
 
@@ -1083,7 +1135,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#id ApigeeDnsZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#id ApigeeDnsZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1152,7 @@ public ApigeeDnsZoneTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#timeouts ApigeeDnsZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#timeouts ApigeeDnsZone#timeouts}
 
 ---
 
@@ -1136,7 +1188,7 @@ public string TargetNetworkId { get; set; }
 
 The name of the producer VPC network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#target_network_id ApigeeDnsZone#target_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#target_network_id ApigeeDnsZone#target_network_id}
 
 ---
 
@@ -1150,7 +1202,7 @@ public string TargetProjectId { get; set; }
 
 The ID of the project that contains the producer VPC network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#target_project_id ApigeeDnsZone#target_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#target_project_id ApigeeDnsZone#target_project_id}
 
 ---
 
@@ -1171,8 +1223,8 @@ new ApigeeDnsZoneTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#create ApigeeDnsZone#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#delete ApigeeDnsZone#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#create ApigeeDnsZone#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeDnsZone.ApigeeDnsZoneTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#delete ApigeeDnsZone#delete}. |
 
 ---
 
@@ -1184,7 +1236,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#create ApigeeDnsZone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#create ApigeeDnsZone#create}.
 
 ---
 
@@ -1196,7 +1248,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_dns_zone#delete ApigeeDnsZone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#delete ApigeeDnsZone#delete}.
 
 ---
 

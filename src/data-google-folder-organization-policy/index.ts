@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/folder_organization_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataGoogleFolderOrganizationPolicyConfig extends cdktn.Terrafor
   /**
   * The name of the Constraint the Policy is configuring, for example, serviceuser.services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy#constraint DataGoogleFolderOrganizationPolicy#constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/folder_organization_policy#constraint DataGoogleFolderOrganizationPolicy#constraint}
   */
   readonly constraint: string;
   /**
   * The resource name of the folder to set the policy for. Its format is folders/{folder_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy#folder DataGoogleFolderOrganizationPolicy#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/folder_organization_policy#folder DataGoogleFolderOrganizationPolicy#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy#id DataGoogleFolderOrganizationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/folder_organization_policy#id DataGoogleFolderOrganizationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -97,7 +97,7 @@ export class DataGoogleFolderOrganizationPolicyBooleanPolicyList extends cdktn.C
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -177,7 +177,7 @@ export class DataGoogleFolderOrganizationPolicyListPolicyAllowList extends cdktn
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -257,7 +257,7 @@ export class DataGoogleFolderOrganizationPolicyListPolicyDenyList extends cdktn.
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -349,7 +349,7 @@ export class DataGoogleFolderOrganizationPolicyListPolicyList extends cdktn.Comp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -424,7 +424,7 @@ export class DataGoogleFolderOrganizationPolicyRestorePolicyList extends cdktn.C
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -436,7 +436,7 @@ export class DataGoogleFolderOrganizationPolicyRestorePolicyList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy google_folder_organization_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/folder_organization_policy google_folder_organization_policy}
 */
 export class DataGoogleFolderOrganizationPolicy extends cdktn.TerraformDataSource {
 
@@ -452,7 +452,7 @@ export class DataGoogleFolderOrganizationPolicy extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataGoogleFolderOrganizationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleFolderOrganizationPolicy to import
-  * @param importFromId The id of the existing DataGoogleFolderOrganizationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleFolderOrganizationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/folder_organization_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleFolderOrganizationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -464,7 +464,7 @@ export class DataGoogleFolderOrganizationPolicy extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy google_folder_organization_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/folder_organization_policy google_folder_organization_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -475,7 +475,7 @@ export class DataGoogleFolderOrganizationPolicy extends cdktn.TerraformDataSourc
       terraformResourceType: 'google_folder_organization_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -512,6 +512,11 @@ export class DataGoogleFolderOrganizationPolicy extends cdktn.TerraformDataSourc
   // Temporarily expose input value. Use with caution.
   public get constraintInput() {
     return this._constraint;
+  }
+
+  // deletion_policy - computed: true, optional: false, required: false
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
   }
 
   // etag - computed: true, optional: false, required: false

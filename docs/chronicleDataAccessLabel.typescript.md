@@ -4,7 +4,7 @@
 
 ### ChronicleDataAccessLabel <a name="ChronicleDataAccessLabel" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label google_chronicle_data_access_label}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label google_chronicle_data_access_label}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.resetProject">resetProject</a></code> | *No description.* |
@@ -403,6 +404,12 @@ public putTimeouts(value: ChronicleDataAccessLabelTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.resetDescription"></a>
 
 ```typescript
@@ -530,7 +537,7 @@ The construct id used in the generated config for the ChronicleDataAccessLabel t
 
 The id of the existing ChronicleDataAccessLabel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,6 +575,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeoutsOutputReference">ChronicleDataAccessLabelTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.dataAccessLabelIdInput">dataAccessLabelIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.instanceInput">instanceInput</a></code> | <code>string</code> | *No description.* |
@@ -576,6 +584,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts">ChronicleDataAccessLabelTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.udmQueryInput">udmQueryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.dataAccessLabelId">dataAccessLabelId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.instance">instance</a></code> | <code>string</code> | *No description.* |
@@ -807,6 +816,16 @@ public readonly dataAccessLabelIdInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.descriptionInput"></a>
 
 ```typescript
@@ -881,6 +900,16 @@ public readonly udmQueryInput: string;
 
 ```typescript
 public readonly dataAccessLabelId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -992,9 +1021,10 @@ const chronicleDataAccessLabelConfig: chronicleDataAccessLabel.ChronicleDataAcce
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.instance">instance</a></code> | <code>string</code> | The unique identifier for the Chronicle instance, which is the same as the customer ID. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.location">location</a></code> | <code>string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.udmQuery">udmQuery</a></code> | <code>string</code> | A UDM query over event data. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.description">description</a></code> | <code>string</code> | Optional. A description of the data access label for a human reader. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#id ChronicleDataAccessLabel#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#project ChronicleDataAccessLabel#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#id ChronicleDataAccessLabel#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#project ChronicleDataAccessLabel#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts">ChronicleDataAccessLabelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1084,7 +1114,7 @@ display name and the final component of the label's resource name. The
 maximum number of characters should be 63. Regex pattern is as per AIP:
 https://google.aip.dev/122#resource-id-segments
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#data_access_label_id ChronicleDataAccessLabel#data_access_label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#data_access_label_id ChronicleDataAccessLabel#data_access_label_id}
 
 ---
 
@@ -1098,7 +1128,7 @@ public readonly instance: string;
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#instance ChronicleDataAccessLabel#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#instance ChronicleDataAccessLabel#instance}
 
 ---
 
@@ -1114,7 +1144,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#location ChronicleDataAccessLabel#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#location ChronicleDataAccessLabel#location}
 
 ---
 
@@ -1128,7 +1158,29 @@ public readonly udmQuery: string;
 
 A UDM query over event data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#udm_query ChronicleDataAccessLabel#udm_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#udm_query ChronicleDataAccessLabel#udm_query}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#deletion_policy ChronicleDataAccessLabel#deletion_policy}
 
 ---
 
@@ -1142,7 +1194,7 @@ public readonly description: string;
 
 Optional. A description of the data access label for a human reader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#description ChronicleDataAccessLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#description ChronicleDataAccessLabel#description}
 
 ---
 
@@ -1154,7 +1206,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#id ChronicleDataAccessLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#id ChronicleDataAccessLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1169,7 +1221,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#project ChronicleDataAccessLabel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#project ChronicleDataAccessLabel#project}.
 
 ---
 
@@ -1183,7 +1235,7 @@ public readonly timeouts: ChronicleDataAccessLabelTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#timeouts ChronicleDataAccessLabel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#timeouts ChronicleDataAccessLabel#timeouts}
 
 ---
 
@@ -1201,9 +1253,9 @@ const chronicleDataAccessLabelTimeouts: chronicleDataAccessLabel.ChronicleDataAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#create ChronicleDataAccessLabel#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#delete ChronicleDataAccessLabel#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#update ChronicleDataAccessLabel#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#create ChronicleDataAccessLabel#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#delete ChronicleDataAccessLabel#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#update ChronicleDataAccessLabel#update}. |
 
 ---
 
@@ -1215,7 +1267,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#create ChronicleDataAccessLabel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#create ChronicleDataAccessLabel#create}.
 
 ---
 
@@ -1227,7 +1279,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#delete ChronicleDataAccessLabel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#delete ChronicleDataAccessLabel#delete}.
 
 ---
 
@@ -1239,7 +1291,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_label#update ChronicleDataAccessLabel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/chronicle_data_access_label#update ChronicleDataAccessLabel#update}.
 
 ---
 

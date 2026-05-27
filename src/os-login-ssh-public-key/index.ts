@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface OsLoginSshPublicKeyConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#deletion_policy OsLoginSshPublicKey#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An expiration time in microseconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#expiration_time_usec OsLoginSshPublicKey#expiration_time_usec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#expiration_time_usec OsLoginSshPublicKey#expiration_time_usec}
   */
   readonly expirationTimeUsec?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#id OsLoginSshPublicKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +40,39 @@ export interface OsLoginSshPublicKeyConfig extends cdktn.TerraformMetaArguments 
   /**
   * Public key text in SSH format, defined by RFC4253 section 6.6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#key OsLoginSshPublicKey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#key OsLoginSshPublicKey#key}
   */
   readonly key: string;
   /**
   * The project ID of the Google Cloud Platform project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#project OsLoginSshPublicKey#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#project OsLoginSshPublicKey#project}
   */
   readonly project?: string;
   /**
   * The user email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#user OsLoginSshPublicKey#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#user OsLoginSshPublicKey#user}
   */
   readonly user: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#timeouts OsLoginSshPublicKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#timeouts OsLoginSshPublicKey#timeouts}
   */
   readonly timeouts?: OsLoginSshPublicKeyTimeouts;
 }
 export interface OsLoginSshPublicKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#create OsLoginSshPublicKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#create OsLoginSshPublicKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#delete OsLoginSshPublicKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#delete OsLoginSshPublicKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#update OsLoginSshPublicKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#update OsLoginSshPublicKey#update}
   */
   readonly update?: string;
 }
@@ -212,7 +224,7 @@ export class OsLoginSshPublicKeyTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key google_os_login_ssh_public_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key google_os_login_ssh_public_key}
 */
 export class OsLoginSshPublicKey extends cdktn.TerraformResource {
 
@@ -228,7 +240,7 @@ export class OsLoginSshPublicKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OsLoginSshPublicKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OsLoginSshPublicKey to import
-  * @param importFromId The id of the existing OsLoginSshPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OsLoginSshPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OsLoginSshPublicKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -240,7 +252,7 @@ export class OsLoginSshPublicKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_login_ssh_public_key google_os_login_ssh_public_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/os_login_ssh_public_key google_os_login_ssh_public_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +263,7 @@ export class OsLoginSshPublicKey extends cdktn.TerraformResource {
       terraformResourceType: 'google_os_login_ssh_public_key',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -262,6 +274,7 @@ export class OsLoginSshPublicKey extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._expirationTimeUsec = config.expirationTimeUsec;
     this._id = config.id;
     this._key = config.key;
@@ -273,6 +286,22 @@ export class OsLoginSshPublicKey extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // expiration_time_usec - computed: false, optional: true, required: false
   private _expirationTimeUsec?: string; 
@@ -375,6 +404,7 @@ export class OsLoginSshPublicKey extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       expiration_time_usec: cdktn.stringToTerraform(this._expirationTimeUsec),
       id: cdktn.stringToTerraform(this._id),
       key: cdktn.stringToTerraform(this._key),
@@ -386,6 +416,12 @@ export class OsLoginSshPublicKey extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       expiration_time_usec: {
         value: cdktn.stringToHclTerraform(this._expirationTimeUsec),
         isBlock: false,

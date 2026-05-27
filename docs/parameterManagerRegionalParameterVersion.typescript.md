@@ -4,7 +4,7 @@
 
 ### ParameterManagerRegionalParameterVersion <a name="ParameterManagerRegionalParameterVersion" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.resetDisabled">resetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ public putTimeouts(value: ParameterManagerRegionalParameterVersionTimeouts): voi
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDisabled` <a name="resetDisabled" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.resetDisabled"></a>
 
 ```typescript
@@ -523,7 +530,7 @@ The construct id used in the generated config for the ParameterManagerRegionalPa
 
 The id of the existing ParameterManagerRegionalParameterVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,12 +566,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeoutsOutputReference">ParameterManagerRegionalParameterVersionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.parameterDataInput">parameterDataInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.parameterInput">parameterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.parameterVersionIdInput">parameterVersionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts">ParameterManagerRegionalParameterVersionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.parameter">parameter</a></code> | <code>string</code> | *No description.* |
@@ -775,6 +784,16 @@ public readonly updateTime: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.disabledInput"></a>
 
 ```typescript
@@ -832,6 +851,16 @@ public readonly timeoutsInput: IResolvable | ParameterManagerRegionalParameterVe
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts">ParameterManagerRegionalParameterVersionTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersion.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -929,8 +958,9 @@ const parameterManagerRegionalParameterVersionConfig: parameterManagerRegionalPa
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.parameter">parameter</a></code> | <code>string</code> | Parameter Manager Regional Parameter resource. |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.parameterData">parameterData</a></code> | <code>string</code> | The Regional Parameter data. |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.parameterVersionId">parameterVersionId</a></code> | <code>string</code> | Version ID of the Regional Parameter Version Resource. This must be unique within the Regional Parameter. |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | The current state of Regional Parameter Version. This field is only applicable for updating Regional Parameter Version. |
-| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#id ParameterManagerRegionalParameterVersion#id}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#id ParameterManagerRegionalParameterVersion#id}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts">ParameterManagerRegionalParameterVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1015,7 +1045,7 @@ public readonly parameter: string;
 
 Parameter Manager Regional Parameter resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#parameter ParameterManagerRegionalParameterVersion#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#parameter ParameterManagerRegionalParameterVersion#parameter}
 
 ---
 
@@ -1029,7 +1059,7 @@ public readonly parameterData: string;
 
 The Regional Parameter data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#parameter_data ParameterManagerRegionalParameterVersion#parameter_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#parameter_data ParameterManagerRegionalParameterVersion#parameter_data}
 
 ---
 
@@ -1043,7 +1073,29 @@ public readonly parameterVersionId: string;
 
 Version ID of the Regional Parameter Version Resource. This must be unique within the Regional Parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#parameter_version_id ParameterManagerRegionalParameterVersion#parameter_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#parameter_version_id ParameterManagerRegionalParameterVersion#parameter_version_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#deletion_policy ParameterManagerRegionalParameterVersion#deletion_policy}
 
 ---
 
@@ -1057,7 +1109,7 @@ public readonly disabled: boolean | IResolvable;
 
 The current state of Regional Parameter Version. This field is only applicable for updating Regional Parameter Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#disabled ParameterManagerRegionalParameterVersion#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#disabled ParameterManagerRegionalParameterVersion#disabled}
 
 ---
 
@@ -1069,7 +1121,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#id ParameterManagerRegionalParameterVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#id ParameterManagerRegionalParameterVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1138,7 @@ public readonly timeouts: ParameterManagerRegionalParameterVersionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#timeouts ParameterManagerRegionalParameterVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#timeouts ParameterManagerRegionalParameterVersion#timeouts}
 
 ---
 
@@ -1104,9 +1156,9 @@ const parameterManagerRegionalParameterVersionTimeouts: parameterManagerRegional
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#create ParameterManagerRegionalParameterVersion#create}. |
-| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#delete ParameterManagerRegionalParameterVersion#delete}. |
-| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#update ParameterManagerRegionalParameterVersion#update}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#create ParameterManagerRegionalParameterVersion#create}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#delete ParameterManagerRegionalParameterVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerRegionalParameterVersion.ParameterManagerRegionalParameterVersionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#update ParameterManagerRegionalParameterVersion#update}. |
 
 ---
 
@@ -1118,7 +1170,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#create ParameterManagerRegionalParameterVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#create ParameterManagerRegionalParameterVersion#create}.
 
 ---
 
@@ -1130,7 +1182,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#delete ParameterManagerRegionalParameterVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#delete ParameterManagerRegionalParameterVersion#delete}.
 
 ---
 
@@ -1142,7 +1194,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter_version#update ParameterManagerRegionalParameterVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/parameter_manager_regional_parameter_version#update ParameterManagerRegionalParameterVersion#update}.
 
 ---
 

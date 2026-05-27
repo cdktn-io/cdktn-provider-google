@@ -4,7 +4,7 @@
 
 ### LoggingFolderSink <a name="LoggingFolderSink" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink google_logging_folder_sink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink google_logging_folder_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer"></a>
 
@@ -25,6 +25,7 @@ loggingFolderSink.LoggingFolderSink(
   folder: str,
   name: str,
   bigquery_options: LoggingFolderSinkBigqueryOptions = None,
+  deletion_policy: str = None,
   description: str = None,
   disabled: bool | IResolvable = None,
   exclusions: IResolvable | typing.List[LoggingFolderSinkExclusions] = None,
@@ -50,11 +51,12 @@ loggingFolderSink.LoggingFolderSink(
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The folder to be exported to the sink. Note that either [FOLDER_ID] or "folders/[FOLDER_ID]" is accepted. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the logging sink. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.bigqueryOptions">bigquery_options</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkBigqueryOptions">LoggingFolderSinkBigqueryOptions</a></code> | bigquery_options block. |
+| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of this sink. The maximum length of the description is 8000 characters. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to True, then this sink is disabled and it does not export any log entries. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.exclusions">exclusions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkExclusions">LoggingFolderSinkExclusions</a>]</code> | exclusions block. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.filter">filter</a></code> | <code>str</code> | The filter to apply when exporting logs. Only log entries that match the filter are exported. |
-| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}. |
+| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.includeChildren">include_children</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to include children folders in the sink export. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.interceptChildren">intercept_children</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to intercept logs from child projects. |
 
@@ -128,7 +130,7 @@ The destination of the sink (or, in other words, where logs are written to).
 
 Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#destination LoggingFolderSink#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#destination LoggingFolderSink#destination}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The folder to be exported to the sink. Note that either [FOLDER_ID] or "folders/[FOLDER_ID]" is accepted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#folder LoggingFolderSink#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#folder LoggingFolderSink#folder}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the logging sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#name LoggingFolderSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#name LoggingFolderSink#name}
 
 ---
 
@@ -158,7 +160,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 bigquery_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#bigquery_options LoggingFolderSink#bigquery_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#bigquery_options LoggingFolderSink#bigquery_options}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#deletion_policy LoggingFolderSink#deletion_policy}
 
 ---
 
@@ -168,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of this sink. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#description LoggingFolderSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#description LoggingFolderSink#description}
 
 ---
 
@@ -178,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to True, then this sink is disabled and it does not export any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#disabled LoggingFolderSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#disabled LoggingFolderSink#disabled}
 
 ---
 
@@ -188,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#exclusions LoggingFolderSink#exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#exclusions LoggingFolderSink#exclusions}
 
 ---
 
@@ -198,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The filter to apply when exporting logs. Only log entries that match the filter are exported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#filter LoggingFolderSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#filter LoggingFolderSink#filter}
 
 ---
 
@@ -206,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -221,7 +240,7 @@ Whether or not to include children folders in the sink export.
 
 If true, logs associated with child projects are also exported; otherwise only logs relating to the provided folder are included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#include_children LoggingFolderSink#include_children}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#include_children LoggingFolderSink#include_children}
 
 ---
 
@@ -233,7 +252,7 @@ Whether or not to intercept logs from child projects.
 
 If true, matching logs will not match with sinks in child resources, except _Required sinks. This sink will be visible to child resources when listing sinks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#intercept_children LoggingFolderSink#intercept_children}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#intercept_children LoggingFolderSink#intercept_children}
 
 ---
 
@@ -268,6 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.putBigqueryOptions">put_bigquery_options</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.putExclusions">put_exclusions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.resetBigqueryOptions">reset_bigquery_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.resetDisabled">reset_disabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.resetExclusions">reset_exclusions</a></code> | *No description.* |
@@ -642,7 +662,7 @@ Whether to use BigQuery's partition tables.
 
 By default, Logging creates dated tables based on the log entries' timestamps, e.g. syslog_20170523. With partitioned tables the date suffix is no longer present and special query syntax has to be used instead. In both cases, tables are sharded based on UTC timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#use_partitioned_tables LoggingFolderSink#use_partitioned_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#use_partitioned_tables LoggingFolderSink#use_partitioned_tables}
 
 ---
 
@@ -664,6 +684,12 @@ def put_exclusions(
 
 ```python
 def reset_bigquery_options() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.resetDescription"></a>
@@ -822,7 +848,7 @@ The construct id used in the generated config for the LoggingFolderSink to impor
 
 The id of the existing LoggingFolderSink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,6 +882,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.exclusions">exclusions</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkExclusionsList">LoggingFolderSinkExclusionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.writerIdentity">writer_identity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.bigqueryOptionsInput">bigquery_options_input</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkBigqueryOptions">LoggingFolderSinkBigqueryOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.destinationInput">destination_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -866,6 +893,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.includeChildrenInput">include_children_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.interceptChildrenInput">intercept_children_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.destination">destination</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -1060,6 +1088,16 @@ bigquery_options_input: LoggingFolderSinkBigqueryOptions
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.descriptionInput"></a>
 
 ```python
@@ -1154,6 +1192,16 @@ intercept_children_input: bool | IResolvable
 
 ```python
 name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSink.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1302,7 +1350,7 @@ Whether to use BigQuery's partition tables.
 
 By default, Logging creates dated tables based on the log entries' timestamps, e.g. syslog_20170523. With partitioned tables the date suffix is no longer present and special query syntax has to be used instead. In both cases, tables are sharded based on UTC timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#use_partitioned_tables LoggingFolderSink#use_partitioned_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#use_partitioned_tables LoggingFolderSink#use_partitioned_tables}
 
 ---
 
@@ -1325,6 +1373,7 @@ loggingFolderSink.LoggingFolderSinkConfig(
   folder: str,
   name: str,
   bigquery_options: LoggingFolderSinkBigqueryOptions = None,
+  deletion_policy: str = None,
   description: str = None,
   disabled: bool | IResolvable = None,
   exclusions: IResolvable | typing.List[LoggingFolderSinkExclusions] = None,
@@ -1350,11 +1399,12 @@ loggingFolderSink.LoggingFolderSinkConfig(
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.folder">folder</a></code> | <code>str</code> | The folder to be exported to the sink. Note that either [FOLDER_ID] or "folders/[FOLDER_ID]" is accepted. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.name">name</a></code> | <code>str</code> | The name of the logging sink. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.bigqueryOptions">bigquery_options</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkBigqueryOptions">LoggingFolderSinkBigqueryOptions</a></code> | bigquery_options block. |
+| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.description">description</a></code> | <code>str</code> | A description of this sink. The maximum length of the description is 8000 characters. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to True, then this sink is disabled and it does not export any log entries. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.exclusions">exclusions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkExclusions">LoggingFolderSinkExclusions</a>]</code> | exclusions block. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.filter">filter</a></code> | <code>str</code> | The filter to apply when exporting logs. Only log entries that match the filter are exported. |
-| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}. |
+| <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.includeChildren">include_children</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to include children folders in the sink export. |
 | <code><a href="#@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.interceptChildren">intercept_children</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to intercept logs from child projects. |
 
@@ -1442,7 +1492,7 @@ The destination of the sink (or, in other words, where logs are written to).
 
 Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#destination LoggingFolderSink#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#destination LoggingFolderSink#destination}
 
 ---
 
@@ -1456,7 +1506,7 @@ folder: str
 
 The folder to be exported to the sink. Note that either [FOLDER_ID] or "folders/[FOLDER_ID]" is accepted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#folder LoggingFolderSink#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#folder LoggingFolderSink#folder}
 
 ---
 
@@ -1470,7 +1520,7 @@ name: str
 
 The name of the logging sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#name LoggingFolderSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#name LoggingFolderSink#name}
 
 ---
 
@@ -1484,7 +1534,28 @@ bigquery_options: LoggingFolderSinkBigqueryOptions
 
 bigquery_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#bigquery_options LoggingFolderSink#bigquery_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#bigquery_options LoggingFolderSink#bigquery_options}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.loggingFolderSink.LoggingFolderSinkConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#deletion_policy LoggingFolderSink#deletion_policy}
 
 ---
 
@@ -1498,7 +1569,7 @@ description: str
 
 A description of this sink. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#description LoggingFolderSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#description LoggingFolderSink#description}
 
 ---
 
@@ -1512,7 +1583,7 @@ disabled: bool | IResolvable
 
 If set to True, then this sink is disabled and it does not export any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#disabled LoggingFolderSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#disabled LoggingFolderSink#disabled}
 
 ---
 
@@ -1526,7 +1597,7 @@ exclusions: IResolvable | typing.List[LoggingFolderSinkExclusions]
 
 exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#exclusions LoggingFolderSink#exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#exclusions LoggingFolderSink#exclusions}
 
 ---
 
@@ -1540,7 +1611,7 @@ filter: str
 
 The filter to apply when exporting logs. Only log entries that match the filter are exported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#filter LoggingFolderSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#filter LoggingFolderSink#filter}
 
 ---
 
@@ -1552,7 +1623,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#id LoggingFolderSink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1571,7 +1642,7 @@ Whether or not to include children folders in the sink export.
 
 If true, logs associated with child projects are also exported; otherwise only logs relating to the provided folder are included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#include_children LoggingFolderSink#include_children}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#include_children LoggingFolderSink#include_children}
 
 ---
 
@@ -1587,7 +1658,7 @@ Whether or not to intercept logs from child projects.
 
 If true, matching logs will not match with sinks in child resources, except _Required sinks. This sink will be visible to child resources when listing sinks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#intercept_children LoggingFolderSink#intercept_children}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#intercept_children LoggingFolderSink#intercept_children}
 
 ---
 
@@ -1629,7 +1700,7 @@ An advanced logs filter that matches the log entries to be excluded.
 
 By using the sample function, you can exclude less than 100% of the matching log entries
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#filter LoggingFolderSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#filter LoggingFolderSink#filter}
 
 ---
 
@@ -1645,7 +1716,7 @@ A client-assigned identifier, such as "load-balancer-exclusion".
 
 Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods. First character has to be alphanumeric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#name LoggingFolderSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#name LoggingFolderSink#name}
 
 ---
 
@@ -1659,7 +1730,7 @@ description: str
 
 A description of this exclusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#description LoggingFolderSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#description LoggingFolderSink#description}
 
 ---
 
@@ -1673,7 +1744,7 @@ disabled: bool | IResolvable
 
 If set to True, then this exclusion is disabled and it does not exclude any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_sink#disabled LoggingFolderSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_folder_sink#disabled LoggingFolderSink#disabled}
 
 ---
 

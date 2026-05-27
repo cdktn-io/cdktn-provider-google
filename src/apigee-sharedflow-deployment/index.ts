@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface ApigeeSharedflowDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#deletion_policy ApigeeSharedflowDeployment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The resource ID of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#environment ApigeeSharedflowDeployment#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#environment ApigeeSharedflowDeployment#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,45 +40,45 @@ export interface ApigeeSharedflowDeploymentConfig extends cdktn.TerraformMetaArg
   /**
   * The Apigee Organization associated with the Apigee instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#org_id ApigeeSharedflowDeployment#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#org_id ApigeeSharedflowDeployment#org_id}
   */
   readonly orgId: string;
   /**
   * Revision of the Sharedflow to be deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#revision ApigeeSharedflowDeployment#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#revision ApigeeSharedflowDeployment#revision}
   */
   readonly revision: string;
   /**
   * The service account represents the identity of the deployed proxy, and determines what permissions it has. The format must be {ACCOUNT_ID}@{PROJECT}.iam.gserviceaccount.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#service_account ApigeeSharedflowDeployment#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#service_account ApigeeSharedflowDeployment#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Id of the Sharedflow to be deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#sharedflow_id ApigeeSharedflowDeployment#sharedflow_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#sharedflow_id ApigeeSharedflowDeployment#sharedflow_id}
   */
   readonly sharedflowId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#timeouts ApigeeSharedflowDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#timeouts ApigeeSharedflowDeployment#timeouts}
   */
   readonly timeouts?: ApigeeSharedflowDeploymentTimeouts;
 }
 export interface ApigeeSharedflowDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}
   */
   readonly update?: string;
 }
@@ -218,7 +230,7 @@ export class ApigeeSharedflowDeploymentTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment}
 */
 export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
 
@@ -234,7 +246,7 @@ export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeSharedflowDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeSharedflowDeployment to import
-  * @param importFromId The id of the existing ApigeeSharedflowDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeSharedflowDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeSharedflowDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -246,7 +258,7 @@ export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,7 +269,7 @@ export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_sharedflow_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -268,6 +280,7 @@ export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._environment = config.environment;
     this._id = config.id;
     this._orgId = config.orgId;
@@ -280,6 +293,22 @@ export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // environment - computed: false, optional: false, required: true
   private _environment?: string; 
@@ -387,6 +416,7 @@ export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       environment: cdktn.stringToTerraform(this._environment),
       id: cdktn.stringToTerraform(this._id),
       org_id: cdktn.stringToTerraform(this._orgId),
@@ -399,6 +429,12 @@ export class ApigeeSharedflowDeployment extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       environment: {
         value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,

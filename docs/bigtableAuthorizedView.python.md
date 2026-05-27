@@ -4,7 +4,7 @@
 
 ### BigtableAuthorizedView <a name="BigtableAuthorizedView" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view google_bigtable_authorized_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view google_bigtable_authorized_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer"></a>
 
@@ -24,6 +24,7 @@ bigtableAuthorizedView.BigtableAuthorizedView(
   instance_name: str,
   name: str,
   table_name: str,
+  deletion_policy: str = None,
   deletion_protection: str = None,
   id: str = None,
   project: str = None,
@@ -46,8 +47,9 @@ bigtableAuthorizedView.BigtableAuthorizedView(
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.instanceName">instance_name</a></code> | <code>str</code> | The name of the Bigtable instance in which the authorized view belongs. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the authorized view. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.tableName">table_name</a></code> | <code>str</code> | The name of the Bigtable table in which the authorized view belongs. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>str</code> | A field to make the authorized view protected against data loss i.e. when set to PROTECTED, deleting the authorized view, the table containing the authorized view, and the instance containing the authorized view would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. Note this field configs the deletion protection provided by the API in the backend, and should not be confused with Terraform-side deletion protection. |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.subsetView">subset_view</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView">BigtableAuthorizedViewSubsetView</a></code> | subset_view block. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a></code> | timeouts block. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the Bigtable instance in which the authorized view belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#instance_name BigtableAuthorizedView#instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#instance_name BigtableAuthorizedView#instance_name}
 
 ---
 
@@ -132,7 +134,7 @@ The name of the authorized view.
 
 Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#name BigtableAuthorizedView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#name BigtableAuthorizedView#name}
 
 ---
 
@@ -142,7 +144,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the Bigtable table in which the authorized view belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#table_name BigtableAuthorizedView#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#table_name BigtableAuthorizedView#table_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#deletion_policy BigtableAuthorizedView#deletion_policy}
 
 ---
 
@@ -152,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A field to make the authorized view protected against data loss i.e. when set to PROTECTED, deleting the authorized view, the table containing the authorized view, and the instance containing the authorized view would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. Note this field configs the deletion protection provided by the API in the backend, and should not be confused with Terraform-side deletion protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#deletion_protection BigtableAuthorizedView#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#deletion_protection BigtableAuthorizedView#deletion_protection}
 
 ---
 
@@ -160,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +194,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#project BigtableAuthorizedView#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#project BigtableAuthorizedView#project}
 
 ---
 
@@ -185,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 subset_view block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#subset_view BigtableAuthorizedView#subset_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#subset_view BigtableAuthorizedView#subset_view}
 
 ---
 
@@ -195,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#timeouts BigtableAuthorizedView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#timeouts BigtableAuthorizedView#timeouts}
 
 ---
 
@@ -229,6 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.putSubsetView">put_subset_view</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.resetDeletionProtection">reset_deletion_protection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.resetProject">reset_project</a></code> | *No description.* |
@@ -600,7 +620,7 @@ def put_subset_view(
 
 family_subsets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#family_subsets BigtableAuthorizedView#family_subsets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#family_subsets BigtableAuthorizedView#family_subsets}
 
 ---
 
@@ -612,7 +632,7 @@ Base64-encoded row prefixes to be included in the authorized view.
 
 To provide access to all rows, include the empty string as a prefix ("").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#row_prefixes BigtableAuthorizedView#row_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#row_prefixes BigtableAuthorizedView#row_prefixes}
 
 ---
 
@@ -629,7 +649,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#create BigtableAuthorizedView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#create BigtableAuthorizedView#create}.
 
 ---
 
@@ -637,9 +657,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#update BigtableAuthorizedView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#update BigtableAuthorizedView#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_deletion_protection` <a name="reset_deletion_protection" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.resetDeletionProtection"></a>
 
@@ -785,7 +811,7 @@ The construct id used in the generated config for the BigtableAuthorizedView to 
 
 The id of the existing BigtableAuthorizedView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,6 +843,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.subsetView">subset_view</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference">BigtableAuthorizedViewSubsetViewOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference">BigtableAuthorizedViewTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.instanceNameInput">instance_name_input</a></code> | <code>str</code> | *No description.* |
@@ -825,6 +852,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.subsetViewInput">subset_view_input</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView">BigtableAuthorizedViewSubsetView</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.tableNameInput">table_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionProtection">deletion_protection</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.instanceName">instance_name</a></code> | <code>str</code> | *No description.* |
@@ -996,6 +1024,16 @@ timeouts: BigtableAuthorizedViewTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `deletion_protection_input`<sup>Optional</sup> <a name="deletion_protection_input" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionProtectionInput"></a>
 
 ```python
@@ -1073,6 +1111,16 @@ timeouts_input: IResolvable | BigtableAuthorizedViewTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1174,6 +1222,7 @@ bigtableAuthorizedView.BigtableAuthorizedViewConfig(
   instance_name: str,
   name: str,
   table_name: str,
+  deletion_policy: str = None,
   deletion_protection: str = None,
   id: str = None,
   project: str = None,
@@ -1196,8 +1245,9 @@ bigtableAuthorizedView.BigtableAuthorizedViewConfig(
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.instanceName">instance_name</a></code> | <code>str</code> | The name of the Bigtable instance in which the authorized view belongs. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.name">name</a></code> | <code>str</code> | The name of the authorized view. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.tableName">table_name</a></code> | <code>str</code> | The name of the Bigtable table in which the authorized view belongs. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.deletionProtection">deletion_protection</a></code> | <code>str</code> | A field to make the authorized view protected against data loss i.e. when set to PROTECTED, deleting the authorized view, the table containing the authorized view, and the instance containing the authorized view would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. Note this field configs the deletion protection provided by the API in the backend, and should not be confused with Terraform-side deletion protection. |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.subsetView">subset_view</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView">BigtableAuthorizedViewSubsetView</a></code> | subset_view block. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a></code> | timeouts block. |
@@ -1284,7 +1334,7 @@ instance_name: str
 
 The name of the Bigtable instance in which the authorized view belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#instance_name BigtableAuthorizedView#instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#instance_name BigtableAuthorizedView#instance_name}
 
 ---
 
@@ -1300,7 +1350,7 @@ The name of the authorized view.
 
 Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#name BigtableAuthorizedView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#name BigtableAuthorizedView#name}
 
 ---
 
@@ -1314,7 +1364,28 @@ table_name: str
 
 The name of the Bigtable table in which the authorized view belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#table_name BigtableAuthorizedView#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#table_name BigtableAuthorizedView#table_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#deletion_policy BigtableAuthorizedView#deletion_policy}
 
 ---
 
@@ -1328,7 +1399,7 @@ deletion_protection: str
 
 A field to make the authorized view protected against data loss i.e. when set to PROTECTED, deleting the authorized view, the table containing the authorized view, and the instance containing the authorized view would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. Note this field configs the deletion protection provided by the API in the backend, and should not be confused with Terraform-side deletion protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#deletion_protection BigtableAuthorizedView#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#deletion_protection BigtableAuthorizedView#deletion_protection}
 
 ---
 
@@ -1340,7 +1411,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#id BigtableAuthorizedView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1359,7 +1430,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#project BigtableAuthorizedView#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#project BigtableAuthorizedView#project}
 
 ---
 
@@ -1373,7 +1444,7 @@ subset_view: BigtableAuthorizedViewSubsetView
 
 subset_view block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#subset_view BigtableAuthorizedView#subset_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#subset_view BigtableAuthorizedView#subset_view}
 
 ---
 
@@ -1387,7 +1458,7 @@ timeouts: BigtableAuthorizedViewTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#timeouts BigtableAuthorizedView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#timeouts BigtableAuthorizedView#timeouts}
 
 ---
 
@@ -1423,7 +1494,7 @@ family_subsets: IResolvable | typing.List[BigtableAuthorizedViewSubsetViewFamily
 
 family_subsets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#family_subsets BigtableAuthorizedView#family_subsets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#family_subsets BigtableAuthorizedView#family_subsets}
 
 ---
 
@@ -1439,7 +1510,7 @@ Base64-encoded row prefixes to be included in the authorized view.
 
 To provide access to all rows, include the empty string as a prefix ("").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#row_prefixes BigtableAuthorizedView#row_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#row_prefixes BigtableAuthorizedView#row_prefixes}
 
 ---
 
@@ -1477,7 +1548,7 @@ family_name: str
 
 Name of the column family to be included in the authorized view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#family_name BigtableAuthorizedView#family_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#family_name BigtableAuthorizedView#family_name}
 
 ---
 
@@ -1493,7 +1564,7 @@ Base64-encoded prefixes for qualifiers of the column family to be included in th
 
 Every qualifier starting with one of these prefixes is included in the authorized view. To provide access to all qualifiers, include the empty string as a prefix ("").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#qualifier_prefixes BigtableAuthorizedView#qualifier_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#qualifier_prefixes BigtableAuthorizedView#qualifier_prefixes}
 
 ---
 
@@ -1507,7 +1578,7 @@ qualifiers: typing.List[str]
 
 Base64-encoded individual exact column qualifiers of the column family to be included in the authorized view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#qualifiers BigtableAuthorizedView#qualifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#qualifiers BigtableAuthorizedView#qualifiers}
 
 ---
 
@@ -1528,8 +1599,8 @@ bigtableAuthorizedView.BigtableAuthorizedViewTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#create BigtableAuthorizedView#create}. |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#update BigtableAuthorizedView#update}. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#create BigtableAuthorizedView#create}. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#update BigtableAuthorizedView#update}. |
 
 ---
 
@@ -1541,7 +1612,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#create BigtableAuthorizedView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#create BigtableAuthorizedView#create}.
 
 ---
 
@@ -1553,7 +1624,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view#update BigtableAuthorizedView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_authorized_view#update BigtableAuthorizedView#update}.
 
 ---
 

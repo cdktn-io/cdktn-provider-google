@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,17 +20,29 @@ export interface ComputeSnapshotConfig extends cdktn.TerraformMetaArguments {
   * example, for chargeback tracking.  When you describe your snapshot
   * resource, this field is visible only if it has a non-empty value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#chain_name ComputeSnapshot#chain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#chain_name ComputeSnapshot#chain_name}
   */
   readonly chainName?: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#deletion_policy ComputeSnapshot#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#description ComputeSnapshot#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#description ComputeSnapshot#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#id ComputeSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#id ComputeSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,7 +54,7 @@ export interface ComputeSnapshotConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#labels ComputeSnapshot#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#labels ComputeSnapshot#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -54,59 +66,59 @@ export interface ComputeSnapshotConfig extends cdktn.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#name ComputeSnapshot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#name ComputeSnapshot#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#project ComputeSnapshot#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#project ComputeSnapshot#project}
   */
   readonly project?: string;
   /**
   * Indicates the type of the snapshot. Possible values: ["ARCHIVE", "STANDARD"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#snapshot_type ComputeSnapshot#snapshot_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#snapshot_type ComputeSnapshot#snapshot_type}
   */
   readonly snapshotType?: string;
   /**
   * A reference to the disk used to create this snapshot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#source_disk ComputeSnapshot#source_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#source_disk ComputeSnapshot#source_disk}
   */
   readonly sourceDisk?: string;
   /**
   * A reference to the instant snapshot used to create this snapshot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#source_instant_snapshot ComputeSnapshot#source_instant_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#source_instant_snapshot ComputeSnapshot#source_instant_snapshot}
   */
   readonly sourceInstantSnapshot?: string;
   /**
   * Cloud Storage bucket storage location of the snapshot (regional or multi-regional).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#storage_locations ComputeSnapshot#storage_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#storage_locations ComputeSnapshot#storage_locations}
   */
   readonly storageLocations?: string[];
   /**
   * A reference to the zone where the disk is hosted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#zone ComputeSnapshot#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#zone ComputeSnapshot#zone}
   */
   readonly zone?: string;
   /**
   * snapshot_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#snapshot_encryption_key ComputeSnapshot#snapshot_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#snapshot_encryption_key ComputeSnapshot#snapshot_encryption_key}
   */
   readonly snapshotEncryptionKey?: ComputeSnapshotSnapshotEncryptionKey;
   /**
   * source_disk_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#source_disk_encryption_key ComputeSnapshot#source_disk_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#source_disk_encryption_key ComputeSnapshot#source_disk_encryption_key}
   */
   readonly sourceDiskEncryptionKey?: ComputeSnapshotSourceDiskEncryptionKey;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#timeouts ComputeSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#timeouts ComputeSnapshot#timeouts}
   */
   readonly timeouts?: ComputeSnapshotTimeouts;
 }
@@ -114,28 +126,28 @@ export interface ComputeSnapshotSnapshotEncryptionKey {
   /**
   * The name of the encryption key that is stored in Google Cloud KMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
   * If absent, the Compute Engine Service Agent service account is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
   */
   readonly rawKey?: string;
   /**
   * Specifies an encryption key stored in Google Cloud KMS, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
   */
   readonly rsaEncryptedKey?: string;
 }
@@ -313,28 +325,28 @@ export interface ComputeSnapshotSourceDiskEncryptionKey {
   /**
   * The name of the encryption key that is stored in Google Cloud KMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
   * If absent, the Compute Engine Service Agent service account is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
   */
   readonly rawKey?: string;
   /**
   * Specifies an encryption key stored in Google Cloud KMS, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
   */
   readonly rsaEncryptedKey?: string;
 }
@@ -505,15 +517,15 @@ export class ComputeSnapshotSourceDiskEncryptionKeyOutputReference extends cdktn
 }
 export interface ComputeSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#create ComputeSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#create ComputeSnapshot#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#delete ComputeSnapshot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#delete ComputeSnapshot#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#update ComputeSnapshot#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#update ComputeSnapshot#update}
   */
   readonly update?: string;
 }
@@ -665,7 +677,7 @@ export class ComputeSnapshotTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot google_compute_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot google_compute_snapshot}
 */
 export class ComputeSnapshot extends cdktn.TerraformResource {
 
@@ -681,7 +693,7 @@ export class ComputeSnapshot extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSnapshot to import
-  * @param importFromId The id of the existing ComputeSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -693,7 +705,7 @@ export class ComputeSnapshot extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_snapshot google_compute_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot google_compute_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -704,7 +716,7 @@ export class ComputeSnapshot extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -716,6 +728,7 @@ export class ComputeSnapshot extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._chainName = config.chainName;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
     this._labels = config.labels;
@@ -754,6 +767,22 @@ export class ComputeSnapshot extends cdktn.TerraformResource {
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
     return this.getStringAttribute('creation_timestamp');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -1010,6 +1039,7 @@ export class ComputeSnapshot extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       chain_name: cdktn.stringToTerraform(this._chainName),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
@@ -1030,6 +1060,12 @@ export class ComputeSnapshot extends cdktn.TerraformResource {
     const attrs = {
       chain_name: {
         value: cdktn.stringToHclTerraform(this._chainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### VmwareengineNetworkPeering <a name="VmwareengineNetworkPeering" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering google_vmwareengine_network_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering google_vmwareengine_network_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer"></a>
 
@@ -25,6 +25,7 @@ vmwareengineNetworkPeering.VmwareengineNetworkPeering(
   peer_network: str,
   peer_network_type: str,
   vmware_engine_network: str,
+  deletion_policy: str = None,
   description: str = None,
   export_custom_routes: bool | IResolvable = None,
   export_custom_routes_with_public_ip: bool | IResolvable = None,
@@ -51,13 +52,14 @@ vmwareengineNetworkPeering.VmwareengineNetworkPeering(
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.peerNetwork">peer_network</a></code> | <code>str</code> | The relative resource name of the network to peer with a standard VMware Engine network. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.peerNetworkType">peer_network_type</a></code> | <code>str</code> | The type of the network to peer with the VMware Engine network. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.vmwareEngineNetwork">vmware_engine_network</a></code> | <code>str</code> | The relative resource name of the VMware Engine network. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.description">description</a></code> | <code>str</code> | User-provided description for this network peering. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.exportCustomRoutes">export_custom_routes</a></code> | <code>bool \| cdktn.IResolvable</code> | True if custom routes are exported to the peered network; false otherwise. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.exportCustomRoutesWithPublicIp">export_custom_routes_with_public_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | True if all subnet routes with a public IP address range are exported; false otherwise. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.importCustomRoutes">import_custom_routes</a></code> | <code>bool \| cdktn.IResolvable</code> | True if custom routes are imported from the peered network; false otherwise. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.importCustomRoutesWithPublicIp">import_custom_routes_with_public_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | True if custom routes are imported from the peered network; false otherwise. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts">VmwareengineNetworkPeeringTimeouts</a></code> | timeouts block. |
 
 ---
@@ -128,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Network Peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#name VmwareengineNetworkPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#name VmwareengineNetworkPeering#name}
 
 ---
 
@@ -140,7 +142,7 @@ The relative resource name of the network to peer with a standard VMware Engine 
 
 The provided network can be a consumer VPC network or another standard VMware Engine network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#peer_network VmwareengineNetworkPeering#peer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#peer_network VmwareengineNetworkPeering#peer_network}
 
 ---
 
@@ -152,7 +154,7 @@ The type of the network to peer with the VMware Engine network.
 
 Possible values: ["STANDARD", "VMWARE_ENGINE_NETWORK", "PRIVATE_SERVICES_ACCESS", "NETAPP_CLOUD_VOLUMES", "THIRD_PARTY_SERVICE", "DELL_POWERSCALE", "GOOGLE_CLOUD_NETAPP_VOLUMES"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#peer_network_type VmwareengineNetworkPeering#peer_network_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#peer_network_type VmwareengineNetworkPeering#peer_network_type}
 
 ---
 
@@ -166,7 +168,24 @@ Specify the name in the following form:
 projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId} where {project}
 can either be a project number or a project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#vmware_engine_network VmwareengineNetworkPeering#vmware_engine_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#vmware_engine_network VmwareengineNetworkPeering#vmware_engine_network}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#deletion_policy VmwareengineNetworkPeering#deletion_policy}
 
 ---
 
@@ -176,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-provided description for this network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#description VmwareengineNetworkPeering#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#description VmwareengineNetworkPeering#description}
 
 ---
 
@@ -186,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 True if custom routes are exported to the peered network; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#export_custom_routes VmwareengineNetworkPeering#export_custom_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#export_custom_routes VmwareengineNetworkPeering#export_custom_routes}
 
 ---
 
@@ -196,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 True if all subnet routes with a public IP address range are exported; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#export_custom_routes_with_public_ip VmwareengineNetworkPeering#export_custom_routes_with_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#export_custom_routes_with_public_ip VmwareengineNetworkPeering#export_custom_routes_with_public_ip}
 
 ---
 
@@ -204,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -217,7 +236,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 True if custom routes are imported from the peered network; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#import_custom_routes VmwareengineNetworkPeering#import_custom_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#import_custom_routes VmwareengineNetworkPeering#import_custom_routes}
 
 ---
 
@@ -227,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 True if custom routes are imported from the peered network; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#import_custom_routes_with_public_ip VmwareengineNetworkPeering#import_custom_routes_with_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#import_custom_routes_with_public_ip VmwareengineNetworkPeering#import_custom_routes_with_public_ip}
 
 ---
 
@@ -235,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}.
 
 ---
 
@@ -245,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#timeouts VmwareengineNetworkPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#timeouts VmwareengineNetworkPeering#timeouts}
 
 ---
 
@@ -278,6 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.resetExportCustomRoutes">reset_export_custom_routes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.resetExportCustomRoutesWithPublicIp">reset_export_custom_routes_with_public_ip</a></code> | *No description.* |
@@ -651,7 +671,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#create VmwareengineNetworkPeering#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#create VmwareengineNetworkPeering#create}.
 
 ---
 
@@ -659,7 +679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#delete VmwareengineNetworkPeering#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#delete VmwareengineNetworkPeering#delete}.
 
 ---
 
@@ -667,9 +687,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#update VmwareengineNetworkPeering#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#update VmwareengineNetworkPeering#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.resetDescription"></a>
 
@@ -833,7 +859,7 @@ The construct id used in the generated config for the VmwareengineNetworkPeering
 
 The id of the existing VmwareengineNetworkPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,6 +896,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.vmwareEngineNetworkCanonical">vmware_engine_network_canonical</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.exportCustomRoutesInput">export_custom_routes_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.exportCustomRoutesWithPublicIpInput">export_custom_routes_with_public_ip_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -882,6 +909,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts">VmwareengineNetworkPeeringTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.vmwareEngineNetworkInput">vmware_engine_network_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.exportCustomRoutes">export_custom_routes</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.exportCustomRoutesWithPublicIp">export_custom_routes_with_public_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -1108,6 +1136,16 @@ vmware_engine_network_canonical: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.descriptionInput"></a>
 
 ```python
@@ -1222,6 +1260,16 @@ timeouts_input: IResolvable | VmwareengineNetworkPeeringTimeouts
 
 ```python
 vmware_engine_network_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1377,6 +1425,7 @@ vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig(
   peer_network: str,
   peer_network_type: str,
   vmware_engine_network: str,
+  deletion_policy: str = None,
   description: str = None,
   export_custom_routes: bool | IResolvable = None,
   export_custom_routes_with_public_ip: bool | IResolvable = None,
@@ -1403,13 +1452,14 @@ vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig(
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.peerNetwork">peer_network</a></code> | <code>str</code> | The relative resource name of the network to peer with a standard VMware Engine network. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.peerNetworkType">peer_network_type</a></code> | <code>str</code> | The type of the network to peer with the VMware Engine network. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.vmwareEngineNetwork">vmware_engine_network</a></code> | <code>str</code> | The relative resource name of the VMware Engine network. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.description">description</a></code> | <code>str</code> | User-provided description for this network peering. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.exportCustomRoutes">export_custom_routes</a></code> | <code>bool \| cdktn.IResolvable</code> | True if custom routes are exported to the peered network; false otherwise. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.exportCustomRoutesWithPublicIp">export_custom_routes_with_public_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | True if all subnet routes with a public IP address range are exported; false otherwise. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.importCustomRoutes">import_custom_routes</a></code> | <code>bool \| cdktn.IResolvable</code> | True if custom routes are imported from the peered network; false otherwise. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.importCustomRoutesWithPublicIp">import_custom_routes_with_public_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | True if custom routes are imported from the peered network; false otherwise. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts">VmwareengineNetworkPeeringTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1494,7 +1544,7 @@ name: str
 
 The ID of the Network Peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#name VmwareengineNetworkPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#name VmwareengineNetworkPeering#name}
 
 ---
 
@@ -1510,7 +1560,7 @@ The relative resource name of the network to peer with a standard VMware Engine 
 
 The provided network can be a consumer VPC network or another standard VMware Engine network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#peer_network VmwareengineNetworkPeering#peer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#peer_network VmwareengineNetworkPeering#peer_network}
 
 ---
 
@@ -1526,7 +1576,7 @@ The type of the network to peer with the VMware Engine network.
 
 Possible values: ["STANDARD", "VMWARE_ENGINE_NETWORK", "PRIVATE_SERVICES_ACCESS", "NETAPP_CLOUD_VOLUMES", "THIRD_PARTY_SERVICE", "DELL_POWERSCALE", "GOOGLE_CLOUD_NETAPP_VOLUMES"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#peer_network_type VmwareengineNetworkPeering#peer_network_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#peer_network_type VmwareengineNetworkPeering#peer_network_type}
 
 ---
 
@@ -1544,7 +1594,28 @@ Specify the name in the following form:
 projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId} where {project}
 can either be a project number or a project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#vmware_engine_network VmwareengineNetworkPeering#vmware_engine_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#vmware_engine_network VmwareengineNetworkPeering#vmware_engine_network}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#deletion_policy VmwareengineNetworkPeering#deletion_policy}
 
 ---
 
@@ -1558,7 +1629,7 @@ description: str
 
 User-provided description for this network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#description VmwareengineNetworkPeering#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#description VmwareengineNetworkPeering#description}
 
 ---
 
@@ -1572,7 +1643,7 @@ export_custom_routes: bool | IResolvable
 
 True if custom routes are exported to the peered network; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#export_custom_routes VmwareengineNetworkPeering#export_custom_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#export_custom_routes VmwareengineNetworkPeering#export_custom_routes}
 
 ---
 
@@ -1586,7 +1657,7 @@ export_custom_routes_with_public_ip: bool | IResolvable
 
 True if all subnet routes with a public IP address range are exported; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#export_custom_routes_with_public_ip VmwareengineNetworkPeering#export_custom_routes_with_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#export_custom_routes_with_public_ip VmwareengineNetworkPeering#export_custom_routes_with_public_ip}
 
 ---
 
@@ -1598,7 +1669,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1615,7 +1686,7 @@ import_custom_routes: bool | IResolvable
 
 True if custom routes are imported from the peered network; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#import_custom_routes VmwareengineNetworkPeering#import_custom_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#import_custom_routes VmwareengineNetworkPeering#import_custom_routes}
 
 ---
 
@@ -1629,7 +1700,7 @@ import_custom_routes_with_public_ip: bool | IResolvable
 
 True if custom routes are imported from the peered network; false otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#import_custom_routes_with_public_ip VmwareengineNetworkPeering#import_custom_routes_with_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#import_custom_routes_with_public_ip VmwareengineNetworkPeering#import_custom_routes_with_public_ip}
 
 ---
 
@@ -1641,7 +1712,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#project VmwareengineNetworkPeering#project}.
 
 ---
 
@@ -1655,7 +1726,7 @@ timeouts: VmwareengineNetworkPeeringTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#timeouts VmwareengineNetworkPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#timeouts VmwareengineNetworkPeering#timeouts}
 
 ---
 
@@ -1677,9 +1748,9 @@ vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#create VmwareengineNetworkPeering#create}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#delete VmwareengineNetworkPeering#delete}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#update VmwareengineNetworkPeering#update}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#create VmwareengineNetworkPeering#create}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#delete VmwareengineNetworkPeering#delete}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#update VmwareengineNetworkPeering#update}. |
 
 ---
 
@@ -1691,7 +1762,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#create VmwareengineNetworkPeering#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#create VmwareengineNetworkPeering#create}.
 
 ---
 
@@ -1703,7 +1774,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#delete VmwareengineNetworkPeering#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#delete VmwareengineNetworkPeering#delete}.
 
 ---
 
@@ -1715,7 +1786,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_network_peering#update VmwareengineNetworkPeering#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/vmwareengine_network_peering#update VmwareengineNetworkPeering#update}.
 
 ---
 

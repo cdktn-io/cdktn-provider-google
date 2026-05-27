@@ -4,7 +4,7 @@
 
 ### IapTunnelDestGroup <a name="IapTunnelDestGroup" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer"></a>
 
@@ -21,6 +21,7 @@ IapTunnelDestGroup.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .groupName(java.lang.String)
 //  .cidrs(java.util.List<java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .fqdns(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -42,9 +43,10 @@ IapTunnelDestGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Unique tunnel destination group name. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.cidrs">cidrs</a></code> | <code>java.util.List<java.lang.String></code> | List of CIDRs that this group applies to. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.fqdns">fqdns</a></code> | <code>java.util.List<java.lang.String></code> | List of FQDNs that this group applies to. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region of the tunnel group. Must be the same as the network resources in the group. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts">IapTunnelDestGroupTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Unique tunnel destination group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#group_name IapTunnelDestGroup#group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#group_name IapTunnelDestGroup#group_name}
 
 ---
 
@@ -126,7 +128,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of CIDRs that this group applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#cidrs IapTunnelDestGroup#cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#cidrs IapTunnelDestGroup#cidrs}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#deletion_policy IapTunnelDestGroup#deletion_policy}
 
 ---
 
@@ -136,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of FQDNs that this group applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#fqdns IapTunnelDestGroup#fqdns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#fqdns IapTunnelDestGroup#fqdns}
 
 ---
 
@@ -144,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +174,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}.
 
 ---
 
@@ -165,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the tunnel group. Must be the same as the network resources in the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#region IapTunnelDestGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#region IapTunnelDestGroup#region}
 
 ---
 
@@ -175,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#timeouts IapTunnelDestGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#timeouts IapTunnelDestGroup#timeouts}
 
 ---
 
@@ -209,6 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.resetCidrs">resetCidrs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.resetFqdns">resetFqdns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.resetProject">resetProject</a></code> | *No description.* |
@@ -546,6 +566,12 @@ public void putTimeouts(IapTunnelDestGroupTimeouts value)
 public void resetCidrs()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetFqdns` <a name="resetFqdns" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.resetFqdns"></a>
 
 ```java
@@ -679,7 +705,7 @@ The construct id used in the generated config for the IapTunnelDestGroup to impo
 
 The id of the existing IapTunnelDestGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,6 +738,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeoutsOutputReference">IapTunnelDestGroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.cidrsInput">cidrsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.fqdnsInput">fqdnsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.groupNameInput">groupNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -719,6 +746,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts">IapTunnelDestGroupTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.cidrs">cidrs</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.fqdns">fqdns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.groupName">groupName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -899,6 +927,16 @@ public java.util.List<java.lang.String> getCidrsInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `fqdnsInput`<sup>Optional</sup> <a name="fqdnsInput" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.fqdnsInput"></a>
 
 ```java
@@ -966,6 +1004,16 @@ public java.util.List<java.lang.String> getCidrs();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1056,6 +1104,7 @@ IapTunnelDestGroupConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .groupName(java.lang.String)
 //  .cidrs(java.util.List<java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .fqdns(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -1077,9 +1126,10 @@ IapTunnelDestGroupConfig.builder()
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Unique tunnel destination group name. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.cidrs">cidrs</a></code> | <code>java.util.List<java.lang.String></code> | List of CIDRs that this group applies to. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.fqdns">fqdns</a></code> | <code>java.util.List<java.lang.String></code> | List of FQDNs that this group applies to. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region of the tunnel group. Must be the same as the network resources in the group. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts">IapTunnelDestGroupTimeouts</a></code> | timeouts block. |
 
@@ -1165,7 +1215,7 @@ public java.lang.String getGroupName();
 
 Unique tunnel destination group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#group_name IapTunnelDestGroup#group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#group_name IapTunnelDestGroup#group_name}
 
 ---
 
@@ -1179,7 +1229,28 @@ public java.util.List<java.lang.String> getCidrs();
 
 List of CIDRs that this group applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#cidrs IapTunnelDestGroup#cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#cidrs IapTunnelDestGroup#cidrs}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#deletion_policy IapTunnelDestGroup#deletion_policy}
 
 ---
 
@@ -1193,7 +1264,7 @@ public java.util.List<java.lang.String> getFqdns();
 
 List of FQDNs that this group applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#fqdns IapTunnelDestGroup#fqdns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#fqdns IapTunnelDestGroup#fqdns}
 
 ---
 
@@ -1205,7 +1276,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1220,7 +1291,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}.
 
 ---
 
@@ -1234,7 +1305,7 @@ public java.lang.String getRegion();
 
 The region of the tunnel group. Must be the same as the network resources in the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#region IapTunnelDestGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#region IapTunnelDestGroup#region}
 
 ---
 
@@ -1248,7 +1319,7 @@ public IapTunnelDestGroupTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#timeouts IapTunnelDestGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#timeouts IapTunnelDestGroup#timeouts}
 
 ---
 
@@ -1270,9 +1341,9 @@ IapTunnelDestGroupTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#create IapTunnelDestGroup#create}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#delete IapTunnelDestGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#update IapTunnelDestGroup#update}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#create IapTunnelDestGroup#create}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#delete IapTunnelDestGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#update IapTunnelDestGroup#update}. |
 
 ---
 
@@ -1284,7 +1355,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#create IapTunnelDestGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#create IapTunnelDestGroup#create}.
 
 ---
 
@@ -1296,7 +1367,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#delete IapTunnelDestGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#delete IapTunnelDestGroup#delete}.
 
 ---
 
@@ -1308,7 +1379,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_dest_group#update IapTunnelDestGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_tunnel_dest_group#update IapTunnelDestGroup#update}.
 
 ---
 

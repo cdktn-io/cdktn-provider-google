@@ -4,7 +4,7 @@
 
 ### ActiveDirectoryDomain <a name="ActiveDirectoryDomain" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain google_active_directory_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain google_active_directory_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer"></a>
 
@@ -24,6 +24,7 @@ ActiveDirectoryDomain.Builder.create(Construct scope, java.lang.String id)
     .reservedIpRange(java.lang.String)
 //  .admin(java.lang.String)
 //  .authorizedNetworks(java.util.List<java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
@@ -48,10 +49,11 @@ ActiveDirectoryDomain.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.reservedIpRange">reservedIpRange</a></code> | <code>java.lang.String</code> | The CIDR range of internal addresses that are reserved for this domain. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.admin">admin</a></code> | <code>java.lang.String</code> | The name of delegated administrator account used to perform Active Directory operations. If not specified, setupadmin will be used. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.authorizedNetworks">authorizedNetworks</a></code> | <code>java.util.List<java.lang.String></code> | The full names of the Google Compute Engine networks the domain instance is connected to. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the domain. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Resource labels that can contain user-provided metadata. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts">ActiveDirectoryDomainTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The fully qualified domain name. e.g. mydomain.myorganization.com, with the restrictions of https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locations.global.domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#domain_name ActiveDirectoryDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#domain_name ActiveDirectoryDomain#domain_name}
 
 ---
 
@@ -135,7 +137,7 @@ Locations where domain needs to be provisioned.
 [regions][compute/docs/regions-zones/]
 e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#locations ActiveDirectoryDomain#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#locations ActiveDirectoryDomain#locations}
 
 ---
 
@@ -148,7 +150,7 @@ The CIDR range of internal addresses that are reserved for this domain.
 Reserved networks must be /24 or larger.
 Ranges must be unique and non-overlapping with existing subnets in authorizedNetworks
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#reserved_ip_range ActiveDirectoryDomain#reserved_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#reserved_ip_range ActiveDirectoryDomain#reserved_ip_range}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of delegated administrator account used to perform Active Directory operations. If not specified, setupadmin will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#admin ActiveDirectoryDomain#admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#admin ActiveDirectoryDomain#admin}
 
 ---
 
@@ -171,7 +173,24 @@ The full names of the Google Compute Engine networks the domain instance is conn
 The domain is only available on networks listed in authorizedNetworks.
 If CIDR subnets overlap between networks, domain creation will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#authorized_networks ActiveDirectoryDomain#authorized_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#authorized_networks ActiveDirectoryDomain#authorized_networks}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#deletion_policy ActiveDirectoryDomain#deletion_policy}
 
 ---
 
@@ -188,7 +207,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the domain will fail.
 When the field is set to false, deleting the domain is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#deletion_protection ActiveDirectoryDomain#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#deletion_protection ActiveDirectoryDomain#deletion_protection}
 
 ---
 
@@ -196,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -212,7 +231,7 @@ Resource labels that can contain user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#labels ActiveDirectoryDomain#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#labels ActiveDirectoryDomain#labels}
 
 ---
 
@@ -220,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}.
 
 ---
 
@@ -230,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#timeouts ActiveDirectoryDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#timeouts ActiveDirectoryDomain#timeouts}
 
 ---
 
@@ -265,6 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetAdmin">resetAdmin</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetAuthorizedNetworks">resetAuthorizedNetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetDeletionProtection">resetDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetLabels">resetLabels</a></code> | *No description.* |
@@ -608,6 +628,12 @@ public void resetAdmin()
 public void resetAuthorizedNetworks()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDeletionProtection` <a name="resetDeletionProtection" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.resetDeletionProtection"></a>
 
 ```java
@@ -741,7 +767,7 @@ The construct id used in the generated config for the ActiveDirectoryDomain to i
 
 The id of the existing ActiveDirectoryDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,6 +804,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeoutsOutputReference">ActiveDirectoryDomainTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.adminInput">adminInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.authorizedNetworksInput">authorizedNetworksInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.domainNameInput">domainNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -788,6 +815,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts">ActiveDirectoryDomainTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.admin">admin</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.authorizedNetworks">authorizedNetworks</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.domainName">domainName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1010,6 +1038,16 @@ public java.util.List<java.lang.String> getAuthorizedNetworksInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `deletionProtectionInput`<sup>Optional</sup> <a name="deletionProtectionInput" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.deletionProtectionInput"></a>
 
 ```java
@@ -1107,6 +1145,16 @@ public java.util.List<java.lang.String> getAuthorizedNetworks();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomain.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1220,6 +1268,7 @@ ActiveDirectoryDomainConfig.builder()
     .reservedIpRange(java.lang.String)
 //  .admin(java.lang.String)
 //  .authorizedNetworks(java.util.List<java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
@@ -1244,10 +1293,11 @@ ActiveDirectoryDomainConfig.builder()
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.reservedIpRange">reservedIpRange</a></code> | <code>java.lang.String</code> | The CIDR range of internal addresses that are reserved for this domain. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.admin">admin</a></code> | <code>java.lang.String</code> | The name of delegated administrator account used to perform Active Directory operations. If not specified, setupadmin will be used. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.authorizedNetworks">authorizedNetworks</a></code> | <code>java.util.List<java.lang.String></code> | The full names of the Google Compute Engine networks the domain instance is connected to. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the domain. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Resource labels that can contain user-provided metadata. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts">ActiveDirectoryDomainTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1332,7 +1382,7 @@ public java.lang.String getDomainName();
 
 The fully qualified domain name. e.g. mydomain.myorganization.com, with the restrictions of https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locations.global.domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#domain_name ActiveDirectoryDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#domain_name ActiveDirectoryDomain#domain_name}
 
 ---
 
@@ -1349,7 +1399,7 @@ Locations where domain needs to be provisioned.
 [regions][compute/docs/regions-zones/]
 e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#locations ActiveDirectoryDomain#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#locations ActiveDirectoryDomain#locations}
 
 ---
 
@@ -1366,7 +1416,7 @@ The CIDR range of internal addresses that are reserved for this domain.
 Reserved networks must be /24 or larger.
 Ranges must be unique and non-overlapping with existing subnets in authorizedNetworks
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#reserved_ip_range ActiveDirectoryDomain#reserved_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#reserved_ip_range ActiveDirectoryDomain#reserved_ip_range}
 
 ---
 
@@ -1380,7 +1430,7 @@ public java.lang.String getAdmin();
 
 The name of delegated administrator account used to perform Active Directory operations. If not specified, setupadmin will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#admin ActiveDirectoryDomain#admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#admin ActiveDirectoryDomain#admin}
 
 ---
 
@@ -1397,7 +1447,28 @@ The full names of the Google Compute Engine networks the domain instance is conn
 The domain is only available on networks listed in authorizedNetworks.
 If CIDR subnets overlap between networks, domain creation will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#authorized_networks ActiveDirectoryDomain#authorized_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#authorized_networks ActiveDirectoryDomain#authorized_networks}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#deletion_policy ActiveDirectoryDomain#deletion_policy}
 
 ---
 
@@ -1418,7 +1489,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the domain will fail.
 When the field is set to false, deleting the domain is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#deletion_protection ActiveDirectoryDomain#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#deletion_protection ActiveDirectoryDomain#deletion_protection}
 
 ---
 
@@ -1430,7 +1501,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1450,7 +1521,7 @@ Resource labels that can contain user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#labels ActiveDirectoryDomain#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#labels ActiveDirectoryDomain#labels}
 
 ---
 
@@ -1462,7 +1533,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}.
 
 ---
 
@@ -1476,7 +1547,7 @@ public ActiveDirectoryDomainTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#timeouts ActiveDirectoryDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#timeouts ActiveDirectoryDomain#timeouts}
 
 ---
 
@@ -1498,9 +1569,9 @@ ActiveDirectoryDomainTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#create ActiveDirectoryDomain#create}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#delete ActiveDirectoryDomain#delete}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#update ActiveDirectoryDomain#update}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#create ActiveDirectoryDomain#create}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#delete ActiveDirectoryDomain#delete}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#update ActiveDirectoryDomain#update}. |
 
 ---
 
@@ -1512,7 +1583,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#create ActiveDirectoryDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#create ActiveDirectoryDomain#create}.
 
 ---
 
@@ -1524,7 +1595,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#delete ActiveDirectoryDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#delete ActiveDirectoryDomain#delete}.
 
 ---
 
@@ -1536,7 +1607,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain#update ActiveDirectoryDomain#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/active_directory_domain#update ActiveDirectoryDomain#update}.
 
 ---
 

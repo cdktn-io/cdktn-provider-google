@@ -4,7 +4,7 @@
 
 ### SccV2FolderMuteConfig <a name="SccV2FolderMuteConfig" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.resetLocation">ResetLocation</a></code> | *No description.* |
@@ -403,6 +404,12 @@ private void PutTimeouts(SccV2FolderMuteConfigTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.resetDescription"></a>
 
 ```csharp
@@ -530,7 +537,7 @@ The construct id used in the generated config for the SccV2FolderMuteConfig to i
 
 The id of the existing SccV2FolderMuteConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,6 +572,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeoutsOutputReference">SccV2FolderMuteConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.filterInput">FilterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.folderInput">FolderInput</a></code> | <code>string</code> | *No description.* |
@@ -573,6 +581,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.muteConfigIdInput">MuteConfigIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts">SccV2FolderMuteConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.filter">Filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.folder">Folder</a></code> | <code>string</code> | *No description.* |
@@ -775,6 +784,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.descriptionInput"></a>
 
 ```csharp
@@ -849,6 +868,16 @@ public IResolvable|SccV2FolderMuteConfigTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string TypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -964,6 +993,7 @@ new SccV2FolderMuteConfigConfig {
     string Folder,
     string MuteConfigId,
     string Type,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     string Location = null,
@@ -986,8 +1016,9 @@ new SccV2FolderMuteConfigConfig {
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.folder">Folder</a></code> | <code>string</code> | The folder whose Cloud Security Command Center the Mute Config lives in. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.muteConfigId">MuteConfigId</a></code> | <code>string</code> | Unique identifier provided by the client within the parent scope. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.type">Type</a></code> | <code>string</code> | The type of the mute config. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.description">Description</a></code> | <code>string</code> | A description of the mute config. |
-| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#id SccV2FolderMuteConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#id SccV2FolderMuteConfig#id}. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.location">Location</a></code> | <code>string</code> | location Id is provided by folder. If not provided, Use global as default. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts">SccV2FolderMuteConfigTimeouts</a></code> | timeouts block. |
 
@@ -1078,7 +1109,7 @@ the scope in which the mute configuration is being created. E.g.,
 If a filter contains project = X but is created under the
 project = Y scope, it might not match any findings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#filter SccV2FolderMuteConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#filter SccV2FolderMuteConfig#filter}
 
 ---
 
@@ -1092,7 +1123,7 @@ public string Folder { get; set; }
 
 The folder whose Cloud Security Command Center the Mute Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#folder SccV2FolderMuteConfig#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#folder SccV2FolderMuteConfig#folder}
 
 ---
 
@@ -1106,7 +1137,7 @@ public string MuteConfigId { get; set; }
 
 Unique identifier provided by the client within the parent scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#mute_config_id SccV2FolderMuteConfig#mute_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#mute_config_id SccV2FolderMuteConfig#mute_config_id}
 
 ---
 
@@ -1120,7 +1151,28 @@ public string Type { get; set; }
 
 The type of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#type SccV2FolderMuteConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#type SccV2FolderMuteConfig#type}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#deletion_policy SccV2FolderMuteConfig#deletion_policy}
 
 ---
 
@@ -1134,7 +1186,7 @@ public string Description { get; set; }
 
 A description of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#description SccV2FolderMuteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#description SccV2FolderMuteConfig#description}
 
 ---
 
@@ -1146,7 +1198,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#id SccV2FolderMuteConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#id SccV2FolderMuteConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1163,7 +1215,7 @@ public string Location { get; set; }
 
 location Id is provided by folder. If not provided, Use global as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#location SccV2FolderMuteConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#location SccV2FolderMuteConfig#location}
 
 ---
 
@@ -1177,7 +1229,7 @@ public SccV2FolderMuteConfigTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#timeouts SccV2FolderMuteConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#timeouts SccV2FolderMuteConfig#timeouts}
 
 ---
 
@@ -1199,9 +1251,9 @@ new SccV2FolderMuteConfigTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#create SccV2FolderMuteConfig#create}. |
-| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#delete SccV2FolderMuteConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#update SccV2FolderMuteConfig#update}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#create SccV2FolderMuteConfig#create}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#delete SccV2FolderMuteConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderMuteConfig.SccV2FolderMuteConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#update SccV2FolderMuteConfig#update}. |
 
 ---
 
@@ -1213,7 +1265,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#create SccV2FolderMuteConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#create SccV2FolderMuteConfig#create}.
 
 ---
 
@@ -1225,7 +1277,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#delete SccV2FolderMuteConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#delete SccV2FolderMuteConfig#delete}.
 
 ---
 
@@ -1237,7 +1289,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_mute_config#update SccV2FolderMuteConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_mute_config#update SccV2FolderMuteConfig#update}.
 
 ---
 

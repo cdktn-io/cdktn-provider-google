@@ -4,7 +4,7 @@
 
 ### IntegrationsClient <a name="IntegrationsClient" id="@cdktn/provider-google.integrationsClient.IntegrationsClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client google_integrations_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client google_integrations_client}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsClient.IntegrationsClient.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.resetCloudKmsConfig">resetCloudKmsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.resetCreateSampleIntegrations">resetCreateSampleIntegrations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.resetRunAsServiceAccount">resetRunAsServiceAccount</a></code> | *No description.* |
@@ -430,6 +431,12 @@ public resetCloudKmsConfig(): void
 public resetCreateSampleIntegrations(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.integrationsClient.IntegrationsClient.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.integrationsClient.IntegrationsClient.resetId"></a>
 
 ```typescript
@@ -557,7 +564,7 @@ The construct id used in the generated config for the IntegrationsClient to impo
 
 The id of the existing IntegrationsClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -591,12 +598,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientTimeoutsOutputReference">IntegrationsClientTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.cloudKmsConfigInput">cloudKmsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientCloudKmsConfig">IntegrationsClientCloudKmsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.createSampleIntegrationsInput">createSampleIntegrationsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.runAsServiceAccountInput">runAsServiceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientTimeouts">IntegrationsClientTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.createSampleIntegrations">createSampleIntegrations</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClient.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -786,6 +795,16 @@ public readonly createSampleIntegrationsInput: boolean | IResolvable;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.integrationsClient.IntegrationsClient.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.integrationsClient.IntegrationsClient.property.idInput"></a>
 
 ```typescript
@@ -843,6 +862,16 @@ public readonly createSampleIntegrations: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.integrationsClient.IntegrationsClient.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -941,7 +970,7 @@ A Cloud KMS key is a named object containing one or more key versions, along wit
 A key exists on exactly one key ring tied to a
 specific location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#key IntegrationsClient#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#key IntegrationsClient#key}
 
 ---
 
@@ -955,7 +984,7 @@ public readonly kmsLocation: string;
 
 Location name of the key ring, e.g. "us-west1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#kms_location IntegrationsClient#kms_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#kms_location IntegrationsClient#kms_location}
 
 ---
 
@@ -972,7 +1001,7 @@ A key ring organizes keys in a specific Google Cloud location and allows you to 
 A key ring's name does not need to be
 unique across a Google Cloud project, but must be unique within a given location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#kms_ring IntegrationsClient#kms_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#kms_ring IntegrationsClient#kms_ring}
 
 ---
 
@@ -990,7 +1019,7 @@ A key's version is represented by an integer, starting at 1. To decrypt data
 or verify a signature, you must use the same key version that was used to
 encrypt or sign the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#key_version IntegrationsClient#key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#key_version IntegrationsClient#key_version}
 
 ---
 
@@ -1009,7 +1038,7 @@ the kms key is stored at the same project as customer's project and ecrypted
 with CMEK, otherwise, the kms key is stored in the tenant project and
 encrypted with GMEK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#kms_project_id IntegrationsClient#kms_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#kms_project_id IntegrationsClient#kms_project_id}
 
 ---
 
@@ -1037,8 +1066,9 @@ const integrationsClientConfig: integrationsClient.IntegrationsClientConfig = { 
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.location">location</a></code> | <code>string</code> | Location in which client needs to be provisioned. |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.cloudKmsConfig">cloudKmsConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientCloudKmsConfig">IntegrationsClientCloudKmsConfig</a></code> | cloud_kms_config block. |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.createSampleIntegrations">createSampleIntegrations</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if sample integrations should be created along with provisioning. |
-| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#id IntegrationsClient#id}. |
-| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#project IntegrationsClient#project}. |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#id IntegrationsClient#id}. |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#project IntegrationsClient#project}. |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.runAsServiceAccount">runAsServiceAccount</a></code> | <code>string</code> | User input run-as service account, if empty, will bring up a new default service account. |
 | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientTimeouts">IntegrationsClientTimeouts</a></code> | timeouts block. |
 
@@ -1124,7 +1154,7 @@ public readonly location: string;
 
 Location in which client needs to be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#location IntegrationsClient#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#location IntegrationsClient#location}
 
 ---
 
@@ -1138,7 +1168,7 @@ public readonly cloudKmsConfig: IntegrationsClientCloudKmsConfig;
 
 cloud_kms_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#cloud_kms_config IntegrationsClient#cloud_kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#cloud_kms_config IntegrationsClient#cloud_kms_config}
 
 ---
 
@@ -1152,7 +1182,29 @@ public readonly createSampleIntegrations: boolean | IResolvable;
 
 Indicates if sample integrations should be created along with provisioning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#create_sample_integrations IntegrationsClient#create_sample_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#create_sample_integrations IntegrationsClient#create_sample_integrations}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.integrationsClient.IntegrationsClientConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#deletion_policy IntegrationsClient#deletion_policy}
 
 ---
 
@@ -1164,7 +1216,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#id IntegrationsClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#id IntegrationsClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1179,7 +1231,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#project IntegrationsClient#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#project IntegrationsClient#project}.
 
 ---
 
@@ -1193,7 +1245,7 @@ public readonly runAsServiceAccount: string;
 
 User input run-as service account, if empty, will bring up a new default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#run_as_service_account IntegrationsClient#run_as_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#run_as_service_account IntegrationsClient#run_as_service_account}
 
 ---
 
@@ -1207,7 +1259,7 @@ public readonly timeouts: IntegrationsClientTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#timeouts IntegrationsClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#timeouts IntegrationsClient#timeouts}
 
 ---
 
@@ -1225,8 +1277,8 @@ const integrationsClientTimeouts: integrationsClient.IntegrationsClientTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#create IntegrationsClient#create}. |
-| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#delete IntegrationsClient#delete}. |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#create IntegrationsClient#create}. |
+| <code><a href="#@cdktn/provider-google.integrationsClient.IntegrationsClientTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#delete IntegrationsClient#delete}. |
 
 ---
 
@@ -1238,7 +1290,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#create IntegrationsClient#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#create IntegrationsClient#create}.
 
 ---
 
@@ -1250,7 +1302,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client#delete IntegrationsClient#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/integrations_client#delete IntegrationsClient#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleIamTestablePermissions <a name="DataGoogleIamTestablePermissions" id="@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions google_iam_testable_permissions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions google_iam_testable_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleIamTestablePermi
 
 The id of the existing DataGoogleIamTestablePermissions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -713,10 +713,10 @@ new DataGoogleIamTestablePermissionsConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.fullResourceName">FullResourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#full_resource_name DataGoogleIamTestablePermissions#full_resource_name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.customSupportLevel">CustomSupportLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#custom_support_level DataGoogleIamTestablePermissions#custom_support_level}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#id DataGoogleIamTestablePermissions#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.stages">Stages</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#stages DataGoogleIamTestablePermissions#stages}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.fullResourceName">FullResourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#full_resource_name DataGoogleIamTestablePermissions#full_resource_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.customSupportLevel">CustomSupportLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#custom_support_level DataGoogleIamTestablePermissions#custom_support_level}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#id DataGoogleIamTestablePermissions#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig.property.stages">Stages</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#stages DataGoogleIamTestablePermissions#stages}. |
 
 ---
 
@@ -798,7 +798,7 @@ public string FullResourceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#full_resource_name DataGoogleIamTestablePermissions#full_resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#full_resource_name DataGoogleIamTestablePermissions#full_resource_name}.
 
 ---
 
@@ -810,7 +810,7 @@ public string CustomSupportLevel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#custom_support_level DataGoogleIamTestablePermissions#custom_support_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#custom_support_level DataGoogleIamTestablePermissions#custom_support_level}.
 
 ---
 
@@ -822,7 +822,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#id DataGoogleIamTestablePermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#id DataGoogleIamTestablePermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +837,7 @@ public string[] Stages { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions#stages DataGoogleIamTestablePermissions#stages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/iam_testable_permissions#stages DataGoogleIamTestablePermissions#stages}.
 
 ---
 

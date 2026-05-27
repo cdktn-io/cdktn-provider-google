@@ -4,7 +4,7 @@
 
 ### IamFoldersPolicyBinding <a name="IamFoldersPolicyBinding" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding google_iam_folders_policy_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding google_iam_folders_policy_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetCondition">ResetCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetPolicyKind">ResetPolicyKind</a></code> | *No description.* |
@@ -443,6 +444,12 @@ func ResetAnnotations()
 func ResetCondition()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.resetDisplayName"></a>
 
 ```go
@@ -570,7 +577,7 @@ The construct id used in the generated config for the IamFoldersPolicyBinding to
 
 The id of the existing IamFoldersPolicyBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,6 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.annotationsInput">AnnotationsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.conditionInput">ConditionInput</a></code> | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingCondition">IamFoldersPolicyBindingCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.folderInput">FolderInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -622,6 +630,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.targetInput">TargetInput</a></code> | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTarget">IamFoldersPolicyBindingTarget</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.folder">Folder</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -894,6 +903,16 @@ func ConditionInput() IamFoldersPolicyBindingCondition
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.displayNameInput"></a>
 
 ```go
@@ -991,6 +1010,16 @@ func Annotations() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1122,7 +1151,7 @@ Optional.
 
 Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#description IamFoldersPolicyBinding#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#description IamFoldersPolicyBinding#description}
 
 ---
 
@@ -1136,7 +1165,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#expression IamFoldersPolicyBinding#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#expression IamFoldersPolicyBinding#expression}
 
 ---
 
@@ -1152,7 +1181,7 @@ Optional.
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#location IamFoldersPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#location IamFoldersPolicyBinding#location}
 
 ---
 
@@ -1168,7 +1197,7 @@ Optional.
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#title IamFoldersPolicyBinding#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#title IamFoldersPolicyBinding#title}
 
 ---
 
@@ -1194,6 +1223,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicy
 	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamFoldersPolicyBinding.IamFoldersPolicyBindingTarget,
 	Annotations: *map[string]*string,
 	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamFoldersPolicyBinding.IamFoldersPolicyBindingCondition,
+	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
 	PolicyKind: *string,
@@ -1219,8 +1249,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicy
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.target">Target</a></code> | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTarget">IamFoldersPolicyBindingTarget</a></code> | target block. |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | Optional. User defined annotations. See https://google.aip.dev/148#annotations for more details such as format and size limitations. |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingCondition">IamFoldersPolicyBindingCondition</a></code> | condition block. |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. The description of the policy binding. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#id IamFoldersPolicyBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#id IamFoldersPolicyBinding#id}. |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.policyKind">PolicyKind</a></code> | <code>*string</code> | Immutable. |
 | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts">IamFoldersPolicyBindingTimeouts</a></code> | timeouts block. |
 
@@ -1306,7 +1337,7 @@ Folder *string
 
 The parent folder for the PolicyBinding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#folder IamFoldersPolicyBinding#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#folder IamFoldersPolicyBinding#folder}
 
 ---
 
@@ -1320,7 +1351,7 @@ Location *string
 
 The location of the PolicyBinding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#location IamFoldersPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#location IamFoldersPolicyBinding#location}
 
 ---
 
@@ -1336,7 +1367,7 @@ Required.
 
 Immutable. The resource name of the policy to be bound. The binding parent and policy must belong to the same Organization (or Project).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#policy IamFoldersPolicyBinding#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#policy IamFoldersPolicyBinding#policy}
 
 ---
 
@@ -1350,7 +1381,7 @@ PolicyBindingId *string
 
 The Policy Binding ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#policy_binding_id IamFoldersPolicyBinding#policy_binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#policy_binding_id IamFoldersPolicyBinding#policy_binding_id}
 
 ---
 
@@ -1364,7 +1395,7 @@ Target IamFoldersPolicyBindingTarget
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#target IamFoldersPolicyBinding#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#target IamFoldersPolicyBinding#target}
 
 ---
 
@@ -1381,7 +1412,7 @@ Optional. User defined annotations. See https://google.aip.dev/148#annotations f
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#annotations IamFoldersPolicyBinding#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#annotations IamFoldersPolicyBinding#annotations}
 
 ---
 
@@ -1395,7 +1426,28 @@ Condition IamFoldersPolicyBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#condition IamFoldersPolicyBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#condition IamFoldersPolicyBinding#condition}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#deletion_policy IamFoldersPolicyBinding#deletion_policy}
 
 ---
 
@@ -1409,7 +1461,7 @@ DisplayName *string
 
 Optional. The description of the policy binding. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#display_name IamFoldersPolicyBinding#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#display_name IamFoldersPolicyBinding#display_name}
 
 ---
 
@@ -1421,7 +1473,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#id IamFoldersPolicyBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#id IamFoldersPolicyBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1442,7 +1494,7 @@ The kind of the policy to attach in this binding. This
 field must be one of the following:  - Left empty (will be automatically set
 to the policy kind) - The input policy kind   Possible values:  POLICY_KIND_UNSPECIFIED PRINCIPAL_ACCESS_BOUNDARY ACCESS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#policy_kind IamFoldersPolicyBinding#policy_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#policy_kind IamFoldersPolicyBinding#policy_kind}
 
 ---
 
@@ -1456,7 +1508,7 @@ Timeouts IamFoldersPolicyBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#timeouts IamFoldersPolicyBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#timeouts IamFoldersPolicyBinding#timeouts}
 
 ---
 
@@ -1496,7 +1548,7 @@ Examples for each one of the following supported principal set types:
 * Folder: '//cloudresourcemanager.googleapis.com/folders/FOLDER_ID'
   It must be parent by the policy binding's parent (the folder).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#principal_set IamFoldersPolicyBinding#principal_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#principal_set IamFoldersPolicyBinding#principal_set}
 
 ---
 
@@ -1518,9 +1570,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#create IamFoldersPolicyBinding#create}. |
-| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#delete IamFoldersPolicyBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#update IamFoldersPolicyBinding#update}. |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#create IamFoldersPolicyBinding#create}. |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#delete IamFoldersPolicyBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#update IamFoldersPolicyBinding#update}. |
 
 ---
 
@@ -1532,7 +1584,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#create IamFoldersPolicyBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#create IamFoldersPolicyBinding#create}.
 
 ---
 
@@ -1544,7 +1596,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#delete IamFoldersPolicyBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#delete IamFoldersPolicyBinding#delete}.
 
 ---
 
@@ -1556,7 +1608,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_folders_policy_binding#update IamFoldersPolicyBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_folders_policy_binding#update IamFoldersPolicyBinding#update}.
 
 ---
 

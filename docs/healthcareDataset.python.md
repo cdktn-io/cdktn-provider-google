@@ -4,7 +4,7 @@
 
 ### HealthcareDataset <a name="HealthcareDataset" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset google_healthcare_dataset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset google_healthcare_dataset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer"></a>
 
@@ -23,6 +23,7 @@ healthcareDataset.HealthcareDataset(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   location: str,
   name: str,
+  deletion_policy: str = None,
   encryption_spec: HealthcareDatasetEncryptionSpec = None,
   id: str = None,
   project: str = None,
@@ -44,9 +45,10 @@ healthcareDataset.HealthcareDataset(
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the Dataset. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name for the Dataset. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpec">HealthcareDatasetEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}. |
-| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts">HealthcareDatasetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.timeZone">time_zone</a></code> | <code>str</code> | The default timezone used by this dataset. |
 
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The location for the Dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#location HealthcareDataset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#location HealthcareDataset#location}
 
 ---
 
@@ -128,7 +130,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name for the Dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#name HealthcareDataset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#name HealthcareDataset#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#deletion_policy HealthcareDataset#deletion_policy}
 
 ---
 
@@ -138,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#encryption_spec HealthcareDataset#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#encryption_spec HealthcareDataset#encryption_spec}
 
 ---
 
@@ -146,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}.
 
 ---
 
@@ -167,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#timeouts HealthcareDataset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#timeouts HealthcareDataset#timeouts}
 
 ---
 
@@ -181,7 +200,7 @@ Must be a either a valid IANA time zone name such as
 "America/New_York" or empty, which defaults to UTC. This is used for parsing times in resources
 (e.g., HL7 messages) where no explicit timezone is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#time_zone HealthcareDataset#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#time_zone HealthcareDataset#time_zone}
 
 ---
 
@@ -215,6 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.putEncryptionSpec">put_encryption_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.resetEncryptionSpec">reset_encryption_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.resetProject">reset_project</a></code> | *No description.* |
@@ -590,7 +610,7 @@ encryption and the dataset must be in the same location. If empty, the default G
 key will be used to secure this dataset. The format is
 projects/{projectId}/locations/{locationId}/keyRings/{keyRingId}/cryptoKeys/{keyId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#kms_key_name HealthcareDataset#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#kms_key_name HealthcareDataset#kms_key_name}
 
 ---
 
@@ -608,7 +628,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#create HealthcareDataset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#create HealthcareDataset#create}.
 
 ---
 
@@ -616,7 +636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#delete HealthcareDataset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#delete HealthcareDataset#delete}.
 
 ---
 
@@ -624,9 +644,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#update HealthcareDataset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#update HealthcareDataset#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_encryption_spec` <a name="reset_encryption_spec" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset.resetEncryptionSpec"></a>
 
@@ -772,7 +798,7 @@ The construct id used in the generated config for the HealthcareDataset to impor
 
 The id of the existing HealthcareDataset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -805,6 +831,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpecOutputReference">HealthcareDatasetEncryptionSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeoutsOutputReference">HealthcareDatasetTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.encryptionSpecInput">encryption_spec_input</a></code> | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpec">HealthcareDatasetEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
@@ -812,6 +839,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts">HealthcareDatasetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.timeZoneInput">time_zone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -992,6 +1020,16 @@ timeouts: HealthcareDatasetTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `encryption_spec_input`<sup>Optional</sup> <a name="encryption_spec_input" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.encryptionSpecInput"></a>
 
 ```python
@@ -1056,6 +1094,16 @@ timeouts_input: IResolvable | HealthcareDatasetTimeouts
 
 ```python
 time_zone_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.healthcareDataset.HealthcareDataset.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1149,6 +1197,7 @@ healthcareDataset.HealthcareDatasetConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   location: str,
   name: str,
+  deletion_policy: str = None,
   encryption_spec: HealthcareDatasetEncryptionSpec = None,
   id: str = None,
   project: str = None,
@@ -1170,9 +1219,10 @@ healthcareDataset.HealthcareDatasetConfig(
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.location">location</a></code> | <code>str</code> | The location for the Dataset. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.name">name</a></code> | <code>str</code> | The resource name for the Dataset. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpec">HealthcareDatasetEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}. |
-| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts">HealthcareDatasetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.timeZone">time_zone</a></code> | <code>str</code> | The default timezone used by this dataset. |
 
@@ -1258,7 +1308,7 @@ location: str
 
 The location for the Dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#location HealthcareDataset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#location HealthcareDataset#location}
 
 ---
 
@@ -1272,7 +1322,28 @@ name: str
 
 The resource name for the Dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#name HealthcareDataset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#name HealthcareDataset#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.healthcareDataset.HealthcareDatasetConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#deletion_policy HealthcareDataset#deletion_policy}
 
 ---
 
@@ -1286,7 +1357,7 @@ encryption_spec: HealthcareDatasetEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#encryption_spec HealthcareDataset#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#encryption_spec HealthcareDataset#encryption_spec}
 
 ---
 
@@ -1298,7 +1369,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#id HealthcareDataset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1313,7 +1384,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#project HealthcareDataset#project}.
 
 ---
 
@@ -1327,7 +1398,7 @@ timeouts: HealthcareDatasetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#timeouts HealthcareDataset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#timeouts HealthcareDataset#timeouts}
 
 ---
 
@@ -1345,7 +1416,7 @@ Must be a either a valid IANA time zone name such as
 "America/New_York" or empty, which defaults to UTC. This is used for parsing times in resources
 (e.g., HL7 messages) where no explicit timezone is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#time_zone HealthcareDataset#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#time_zone HealthcareDataset#time_zone}
 
 ---
 
@@ -1384,7 +1455,7 @@ encryption and the dataset must be in the same location. If empty, the default G
 key will be used to secure this dataset. The format is
 projects/{projectId}/locations/{locationId}/keyRings/{keyRingId}/cryptoKeys/{keyId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#kms_key_name HealthcareDataset#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#kms_key_name HealthcareDataset#kms_key_name}
 
 ---
 
@@ -1406,9 +1477,9 @@ healthcareDataset.HealthcareDatasetTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#create HealthcareDataset#create}. |
-| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#delete HealthcareDataset#delete}. |
-| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#update HealthcareDataset#update}. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#create HealthcareDataset#create}. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#delete HealthcareDataset#delete}. |
+| <code><a href="#@cdktn/provider-google.healthcareDataset.HealthcareDatasetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#update HealthcareDataset#update}. |
 
 ---
 
@@ -1420,7 +1491,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#create HealthcareDataset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#create HealthcareDataset#create}.
 
 ---
 
@@ -1432,7 +1503,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#delete HealthcareDataset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#delete HealthcareDataset#delete}.
 
 ---
 
@@ -1444,7 +1515,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset#update HealthcareDataset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dataset#update HealthcareDataset#update}.
 
 ---
 

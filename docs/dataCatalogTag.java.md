@@ -4,7 +4,7 @@
 
 ### DataCatalogTag <a name="DataCatalogTag" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag google_data_catalog_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag google_data_catalog_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer"></a>
 
@@ -22,6 +22,7 @@ DataCatalogTag.Builder.create(Construct scope, java.lang.String id)
     .fields(IResolvable|java.util.List<DataCatalogTagFields>)
     .template(java.lang.String)
 //  .column(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .parent(java.lang.String)
 //  .timeouts(DataCatalogTagTimeouts)
@@ -42,7 +43,8 @@ DataCatalogTag.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.fields">fields</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>></code> | fields block. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.template">template</a></code> | <code>java.lang.String</code> | The resource name of the tag template that this tag uses. Example: projects/{project_id}/locations/{location}/tagTemplates/{tagTemplateId} This field cannot be modified after creation. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.column">column</a></code> | <code>java.lang.String</code> | Resources like Entry can have schemas associated with them. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | The name of the parent this tag is attached to. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#fields DataCatalogTag#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#fields DataCatalogTag#fields}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the tag template that this tag uses. Example: projects/{project_id}/locations/{location}/tagTemplates/{tagTemplateId} This field cannot be modified after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#template DataCatalogTag#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#template DataCatalogTag#template}
 
 ---
 
@@ -140,7 +142,24 @@ individual column based on that schema.
 For attaching a tag to a nested column, use '.' to separate the column names. Example:
 'outer_column.inner_column'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#column DataCatalogTag#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#column DataCatalogTag#column}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#deletion_policy DataCatalogTag#deletion_policy}
 
 ---
 
@@ -148,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +183,7 @@ The name of the parent this tag is attached to.
 This can be the name of an entry or an entry group. If an entry group, the tag will be attached to
 all entries in that group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#parent DataCatalogTag#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#parent DataCatalogTag#parent}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#timeouts DataCatalogTag#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#timeouts DataCatalogTag#timeouts}
 
 ---
 
@@ -209,6 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.putFields">putFields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.resetColumn">resetColumn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.resetParent">resetParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -556,6 +576,12 @@ public void putTimeouts(DataCatalogTagTimeouts value)
 public void resetColumn()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.resetId"></a>
 
 ```java
@@ -677,7 +703,7 @@ The construct id used in the generated config for the DataCatalogTag to import.
 
 The id of the existing DataCatalogTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,12 +738,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.templateDisplayname">templateDisplayname</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference">DataCatalogTagTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.columnInput">columnInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.fieldsInput">fieldsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.parentInput">parentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.templateInput">templateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.column">column</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.template">template</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -916,6 +944,16 @@ public java.lang.String getColumnInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `fieldsInput`<sup>Optional</sup> <a name="fieldsInput" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.fieldsInput"></a>
 
 ```java
@@ -970,6 +1008,16 @@ public IResolvable|DataCatalogTagTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getColumn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1044,6 +1092,7 @@ DataCatalogTagConfig.builder()
     .fields(IResolvable|java.util.List<DataCatalogTagFields>)
     .template(java.lang.String)
 //  .column(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .parent(java.lang.String)
 //  .timeouts(DataCatalogTagTimeouts)
@@ -1064,7 +1113,8 @@ DataCatalogTagConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.fields">fields</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>></code> | fields block. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.template">template</a></code> | <code>java.lang.String</code> | The resource name of the tag template that this tag uses. Example: projects/{project_id}/locations/{location}/tagTemplates/{tagTemplateId} This field cannot be modified after creation. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.column">column</a></code> | <code>java.lang.String</code> | Resources like Entry can have schemas associated with them. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | The name of the parent this tag is attached to. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a></code> | timeouts block. |
 
@@ -1150,7 +1200,7 @@ public IResolvable|java.util.List<DataCatalogTagFields> getFields();
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#fields DataCatalogTag#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#fields DataCatalogTag#fields}
 
 ---
 
@@ -1164,7 +1214,7 @@ public java.lang.String getTemplate();
 
 The resource name of the tag template that this tag uses. Example: projects/{project_id}/locations/{location}/tagTemplates/{tagTemplateId} This field cannot be modified after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#template DataCatalogTag#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#template DataCatalogTag#template}
 
 ---
 
@@ -1184,7 +1234,28 @@ individual column based on that schema.
 For attaching a tag to a nested column, use '.' to separate the column names. Example:
 'outer_column.inner_column'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#column DataCatalogTag#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#column DataCatalogTag#column}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#deletion_policy DataCatalogTag#deletion_policy}
 
 ---
 
@@ -1196,7 +1267,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1216,7 +1287,7 @@ The name of the parent this tag is attached to.
 This can be the name of an entry or an entry group. If an entry group, the tag will be attached to
 all entries in that group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#parent DataCatalogTag#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#parent DataCatalogTag#parent}
 
 ---
 
@@ -1230,7 +1301,7 @@ public DataCatalogTagTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#timeouts DataCatalogTag#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#timeouts DataCatalogTag#timeouts}
 
 ---
 
@@ -1255,7 +1326,7 @@ DataCatalogTagFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.fieldName">fieldName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#field_name DataCatalogTag#field_name}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.fieldName">fieldName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#field_name DataCatalogTag#field_name}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.boolValue">boolValue</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Holds the value for a tag field with boolean type. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.doubleValue">doubleValue</a></code> | <code>java.lang.Number</code> | Holds the value for a tag field with double type. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.enumValue">enumValue</a></code> | <code>java.lang.String</code> | The display name of the enum value. |
@@ -1272,7 +1343,7 @@ public java.lang.String getFieldName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#field_name DataCatalogTag#field_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#field_name DataCatalogTag#field_name}.
 
 ---
 
@@ -1286,7 +1357,7 @@ public java.lang.Boolean|IResolvable getBoolValue();
 
 Holds the value for a tag field with boolean type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#bool_value DataCatalogTag#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#bool_value DataCatalogTag#bool_value}
 
 ---
 
@@ -1300,7 +1371,7 @@ public java.lang.Number getDoubleValue();
 
 Holds the value for a tag field with double type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#double_value DataCatalogTag#double_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#double_value DataCatalogTag#double_value}
 
 ---
 
@@ -1314,7 +1385,7 @@ public java.lang.String getEnumValue();
 
 The display name of the enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#enum_value DataCatalogTag#enum_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#enum_value DataCatalogTag#enum_value}
 
 ---
 
@@ -1328,7 +1399,7 @@ public java.lang.String getStringValue();
 
 Holds the value for a tag field with string type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#string_value DataCatalogTag#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#string_value DataCatalogTag#string_value}
 
 ---
 
@@ -1342,7 +1413,7 @@ public java.lang.String getTimestampValue();
 
 Holds the value for a tag field with timestamp type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#timestamp_value DataCatalogTag#timestamp_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#timestamp_value DataCatalogTag#timestamp_value}
 
 ---
 
@@ -1364,9 +1435,9 @@ DataCatalogTagTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#create DataCatalogTag#create}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#delete DataCatalogTag#delete}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#update DataCatalogTag#update}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#create DataCatalogTag#create}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#delete DataCatalogTag#delete}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#update DataCatalogTag#update}. |
 
 ---
 
@@ -1378,7 +1449,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#create DataCatalogTag#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#create DataCatalogTag#create}.
 
 ---
 
@@ -1390,7 +1461,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#delete DataCatalogTag#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#delete DataCatalogTag#delete}.
 
 ---
 
@@ -1402,7 +1473,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#update DataCatalogTag#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_catalog_tag#update DataCatalogTag#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApigeeInstanceAttachment <a name="ApigeeInstanceAttachment" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment google_apigee_instance_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment google_apigee_instance_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer"></a>
 
@@ -21,6 +21,7 @@ ApigeeInstanceAttachment.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .environment(java.lang.String)
     .instanceId(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .timeouts(ApigeeInstanceAttachmentTimeouts)
     .build();
@@ -39,7 +40,8 @@ ApigeeInstanceAttachment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.environment">environment</a></code> | <code>java.lang.String</code> | The resource ID of the environment. |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'. |
-| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts">ApigeeInstanceAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The resource ID of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#environment ApigeeInstanceAttachment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#environment ApigeeInstanceAttachment#environment}
 
 ---
 
@@ -120,7 +122,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#instance_id ApigeeInstanceAttachment#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#instance_id ApigeeInstanceAttachment#instance_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#deletion_policy ApigeeInstanceAttachment#deletion_policy}
 
 ---
 
@@ -128,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +160,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#timeouts ApigeeInstanceAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#timeouts ApigeeInstanceAttachment#timeouts}
 
 ---
 
@@ -174,6 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -502,6 +522,12 @@ public void putTimeouts(ApigeeInstanceAttachmentTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.resetId"></a>
 
 ```java
@@ -617,7 +643,7 @@ The construct id used in the generated config for the ApigeeInstanceAttachment t
 
 The id of the existing ApigeeInstanceAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,10 +675,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeoutsOutputReference">ApigeeInstanceAttachmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.environmentInput">environmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.instanceIdInput">instanceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts">ApigeeInstanceAttachmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.environment">environment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -821,6 +849,16 @@ public ApigeeInstanceAttachmentTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `environmentInput`<sup>Optional</sup> <a name="environmentInput" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.environmentInput"></a>
 
 ```java
@@ -858,6 +896,16 @@ public IResolvable|ApigeeInstanceAttachmentTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts">ApigeeInstanceAttachmentTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -928,6 +976,7 @@ ApigeeInstanceAttachmentConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .environment(java.lang.String)
     .instanceId(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .timeouts(ApigeeInstanceAttachmentTimeouts)
     .build();
@@ -946,7 +995,8 @@ ApigeeInstanceAttachmentConfig.builder()
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.environment">environment</a></code> | <code>java.lang.String</code> | The resource ID of the environment. |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'. |
-| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts">ApigeeInstanceAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1031,7 +1081,7 @@ public java.lang.String getEnvironment();
 
 The resource ID of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#environment ApigeeInstanceAttachment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#environment ApigeeInstanceAttachment#environment}
 
 ---
 
@@ -1045,7 +1095,28 @@ public java.lang.String getInstanceId();
 
 The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#instance_id ApigeeInstanceAttachment#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#instance_id ApigeeInstanceAttachment#instance_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#deletion_policy ApigeeInstanceAttachment#deletion_policy}
 
 ---
 
@@ -1057,7 +1128,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1145,7 @@ public ApigeeInstanceAttachmentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#timeouts ApigeeInstanceAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#timeouts ApigeeInstanceAttachment#timeouts}
 
 ---
 
@@ -1095,8 +1166,8 @@ ApigeeInstanceAttachmentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#create ApigeeInstanceAttachment#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#delete ApigeeInstanceAttachment#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#create ApigeeInstanceAttachment#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#delete ApigeeInstanceAttachment#delete}. |
 
 ---
 
@@ -1108,7 +1179,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#create ApigeeInstanceAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#create ApigeeInstanceAttachment#create}.
 
 ---
 
@@ -1120,7 +1191,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance_attachment#delete ApigeeInstanceAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_instance_attachment#delete ApigeeInstanceAttachment#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### EdgenetworkNetwork <a name="EdgenetworkNetwork" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network google_edgenetwork_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network google_edgenetwork_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -405,6 +406,12 @@ private void PutTimeouts(EdgenetworkNetworkTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.resetDescription"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the EdgenetworkNetwork to impo
 
 The id of the existing EdgenetworkNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -580,6 +587,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeoutsOutputReference">EdgenetworkNetworkTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -589,6 +597,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts">EdgenetworkNetworkTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -802,6 +811,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.descriptionInput"></a>
 
 ```csharp
@@ -886,6 +905,16 @@ public IResolvable|EdgenetworkNetworkTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string ZoneInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -1010,6 +1039,7 @@ new EdgenetworkNetworkConfig {
     string Location,
     string NetworkId,
     string Zone,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -1033,11 +1063,12 @@ new EdgenetworkNetworkConfig {
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.location">Location</a></code> | <code>string</code> | The Google Cloud region to which the target Distributed Cloud Edge zone belongs. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.networkId">NetworkId</a></code> | <code>string</code> | A unique ID that identifies this network. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.zone">Zone</a></code> | <code>string</code> | The name of the target Distributed Cloud Edge zone. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.description">Description</a></code> | <code>string</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels associated with this resource. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.mtu">Mtu</a></code> | <code>double</code> | IP (L3) MTU value of the network. Default value is '1500'. Possible values are: '1500', '9000'. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts">EdgenetworkNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1122,7 +1153,7 @@ public string Location { get; set; }
 
 The Google Cloud region to which the target Distributed Cloud Edge zone belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#location EdgenetworkNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#location EdgenetworkNetwork#location}
 
 ---
 
@@ -1136,7 +1167,7 @@ public string NetworkId { get; set; }
 
 A unique ID that identifies this network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#network_id EdgenetworkNetwork#network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#network_id EdgenetworkNetwork#network_id}
 
 ---
 
@@ -1150,7 +1181,28 @@ public string Zone { get; set; }
 
 The name of the target Distributed Cloud Edge zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#zone EdgenetworkNetwork#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#zone EdgenetworkNetwork#zone}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#deletion_policy EdgenetworkNetwork#deletion_policy}
 
 ---
 
@@ -1164,7 +1216,7 @@ public string Description { get; set; }
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#description EdgenetworkNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#description EdgenetworkNetwork#description}
 
 ---
 
@@ -1176,7 +1228,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1196,7 +1248,7 @@ Labels associated with this resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#labels EdgenetworkNetwork#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#labels EdgenetworkNetwork#labels}
 
 ---
 
@@ -1210,7 +1262,7 @@ public double Mtu { get; set; }
 
 IP (L3) MTU value of the network. Default value is '1500'. Possible values are: '1500', '9000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#mtu EdgenetworkNetwork#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#mtu EdgenetworkNetwork#mtu}
 
 ---
 
@@ -1222,7 +1274,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}.
 
 ---
 
@@ -1236,7 +1288,7 @@ public EdgenetworkNetworkTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#timeouts EdgenetworkNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#timeouts EdgenetworkNetwork#timeouts}
 
 ---
 
@@ -1258,9 +1310,9 @@ new EdgenetworkNetworkTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}. |
 
 ---
 
@@ -1272,7 +1324,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}.
 
 ---
 
@@ -1284,7 +1336,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}.
 
 ---
 
@@ -1296,7 +1348,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}.
 
 ---
 

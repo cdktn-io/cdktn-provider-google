@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,37 @@ import * as cdktn from 'cdktn';
 
 export interface DataplexEntryTypeConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#deletion_policy DataplexEntryType#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Description of the EntryType.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#description DataplexEntryType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#description DataplexEntryType#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#display_name DataplexEntryType#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#display_name DataplexEntryType#display_name}
   */
   readonly displayName?: string;
   /**
   * The entry type id of the entry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#entry_type_id DataplexEntryType#entry_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#entry_type_id DataplexEntryType#entry_type_id}
   */
   readonly entryTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#id DataplexEntryType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,47 +56,47 @@ export interface DataplexEntryTypeConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#labels DataplexEntryType#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#labels DataplexEntryType#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where entry type will be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#location DataplexEntryType#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#location DataplexEntryType#location}
   */
   readonly location?: string;
   /**
   * The platform that Entries of this type belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#platform DataplexEntryType#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#platform DataplexEntryType#platform}
   */
   readonly platform?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#project DataplexEntryType#project}
   */
   readonly project?: string;
   /**
   * The system that Entries of this type belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#system DataplexEntryType#system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#system DataplexEntryType#system}
   */
   readonly systemAttribute?: string;
   /**
   * Indicates the class this Entry Type belongs to, for example, TABLE, DATABASE, MODEL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#type_aliases DataplexEntryType#type_aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#type_aliases DataplexEntryType#type_aliases}
   */
   readonly typeAliases?: string[];
   /**
   * required_aspects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#required_aspects DataplexEntryType#required_aspects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#required_aspects DataplexEntryType#required_aspects}
   */
   readonly requiredAspects?: DataplexEntryTypeRequiredAspects[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#timeouts DataplexEntryType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#timeouts DataplexEntryType#timeouts}
   */
   readonly timeouts?: DataplexEntryTypeTimeouts;
 }
@@ -92,7 +104,7 @@ export interface DataplexEntryTypeRequiredAspects {
   /**
   * Required aspect type for the entry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#type DataplexEntryType#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#type DataplexEntryType#type}
   */
   readonly type?: string;
 }
@@ -196,7 +208,7 @@ export class DataplexEntryTypeRequiredAspectsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -208,15 +220,15 @@ export class DataplexEntryTypeRequiredAspectsList extends cdktn.ComplexList {
 }
 export interface DataplexEntryTypeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#create DataplexEntryType#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#delete DataplexEntryType#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#update DataplexEntryType#update}
   */
   readonly update?: string;
 }
@@ -368,7 +380,7 @@ export class DataplexEntryTypeTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type google_dataplex_entry_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type google_dataplex_entry_type}
 */
 export class DataplexEntryType extends cdktn.TerraformResource {
 
@@ -384,7 +396,7 @@ export class DataplexEntryType extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexEntryType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexEntryType to import
-  * @param importFromId The id of the existing DataplexEntryType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexEntryType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexEntryType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -396,7 +408,7 @@ export class DataplexEntryType extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_type google_dataplex_entry_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_type google_dataplex_entry_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -407,7 +419,7 @@ export class DataplexEntryType extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_entry_type',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -418,6 +430,7 @@ export class DataplexEntryType extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._displayName = config.displayName;
     this._entryTypeId = config.entryTypeId;
@@ -439,6 +452,22 @@ export class DataplexEntryType extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -666,6 +695,7 @@ export class DataplexEntryType extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       display_name: cdktn.stringToTerraform(this._displayName),
       entry_type_id: cdktn.stringToTerraform(this._entryTypeId),
@@ -683,6 +713,12 @@ export class DataplexEntryType extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,

@@ -4,7 +4,7 @@
 
 ### DialogflowFulfillment <a name="DialogflowFulfillment" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.putFeatures">PutFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.putGenericWebService">PutGenericWebService</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.resetFeatures">ResetFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.resetGenericWebService">ResetGenericWebService</a></code> | *No description.* |
@@ -431,6 +432,12 @@ func PutTimeouts(value DialogflowFulfillmentTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetEnabled` <a name="ResetEnabled" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.resetEnabled"></a>
 
 ```go
@@ -570,7 +577,7 @@ The construct id used in the generated config for the DialogflowFulfillment to i
 
 The id of the existing DialogflowFulfillment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -604,6 +611,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.genericWebService">GenericWebService</a></code> | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentGenericWebServiceOutputReference">DialogflowFulfillmentGenericWebServiceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeoutsOutputReference">DialogflowFulfillmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.featuresInput">FeaturesInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -611,6 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -800,6 +809,16 @@ func Timeouts() DialogflowFulfillmentTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.displayNameInput"></a>
 
 ```go
@@ -867,6 +886,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillment.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -946,6 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowfulfil
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
+	DeletionPolicy: *string,
 	Enabled: interface{},
 	Features: interface{},
 	GenericWebService: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowFulfillment.DialogflowFulfillmentGenericWebService,
@@ -967,11 +997,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowfulfil
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The human-readable name of the fulfillment, unique within the agent. |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether fulfillment is enabled. |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.features">Features</a></code> | <code>interface{}</code> | features block. |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.genericWebService">GenericWebService</a></code> | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentGenericWebService">DialogflowFulfillmentGenericWebService</a></code> | generic_web_service block. |
-| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#id DialogflowFulfillment#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#project DialogflowFulfillment#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#id DialogflowFulfillment#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#project DialogflowFulfillment#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts">DialogflowFulfillmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1056,7 +1087,28 @@ DisplayName *string
 
 The human-readable name of the fulfillment, unique within the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#display_name DialogflowFulfillment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#display_name DialogflowFulfillment#display_name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#deletion_policy DialogflowFulfillment#deletion_policy}
 
 ---
 
@@ -1070,7 +1122,7 @@ Enabled interface{}
 
 Whether fulfillment is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#enabled DialogflowFulfillment#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#enabled DialogflowFulfillment#enabled}
 
 ---
 
@@ -1084,7 +1136,7 @@ Features interface{}
 
 features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#features DialogflowFulfillment#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#features DialogflowFulfillment#features}
 
 ---
 
@@ -1098,7 +1150,7 @@ GenericWebService DialogflowFulfillmentGenericWebService
 
 generic_web_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#generic_web_service DialogflowFulfillment#generic_web_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#generic_web_service DialogflowFulfillment#generic_web_service}
 
 ---
 
@@ -1110,7 +1162,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#id DialogflowFulfillment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#id DialogflowFulfillment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1125,7 +1177,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#project DialogflowFulfillment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#project DialogflowFulfillment#project}.
 
 ---
 
@@ -1139,7 +1191,7 @@ Timeouts DialogflowFulfillmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#timeouts DialogflowFulfillment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#timeouts DialogflowFulfillment#timeouts}
 
 ---
 
@@ -1173,7 +1225,7 @@ Type *string
 
 The type of the feature that enabled for fulfillment. * SMALLTALK: Fulfillment is enabled for SmallTalk. Possible values: ["SMALLTALK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#type DialogflowFulfillment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#type DialogflowFulfillment#type}
 
 ---
 
@@ -1213,7 +1265,7 @@ Uri *string
 
 The fulfillment URI for receiving POST requests. It must use https protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#uri DialogflowFulfillment#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#uri DialogflowFulfillment#uri}
 
 ---
 
@@ -1227,7 +1279,7 @@ Password *string
 
 The password for HTTP Basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#password DialogflowFulfillment#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#password DialogflowFulfillment#password}
 
 ---
 
@@ -1241,7 +1293,7 @@ RequestHeaders *map[string]*string
 
 The HTTP request headers to send together with fulfillment requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#request_headers DialogflowFulfillment#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#request_headers DialogflowFulfillment#request_headers}
 
 ---
 
@@ -1255,7 +1307,7 @@ Username *string
 
 The user name for HTTP Basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#username DialogflowFulfillment#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#username DialogflowFulfillment#username}
 
 ---
 
@@ -1277,9 +1329,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowfulfil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}. |
 
 ---
 
@@ -1291,7 +1343,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}.
 
 ---
 
@@ -1303,7 +1355,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}.
 
 ---
 
@@ -1315,7 +1367,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}.
 
 ---
 

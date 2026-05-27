@@ -4,7 +4,7 @@
 
 ### BeyondcorpAppConnection <a name="BeyondcorpAppConnection" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer"></a>
 
@@ -24,6 +24,7 @@ beyondcorpAppConnection.BeyondcorpAppConnection(
   application_endpoint: BeyondcorpAppConnectionApplicationEndpoint,
   name: str,
   connectors: typing.List[str] = None,
+  deletion_policy: str = None,
   display_name: str = None,
   gateway: BeyondcorpAppConnectionGateway = None,
   id: str = None,
@@ -49,11 +50,12 @@ beyondcorpAppConnection.BeyondcorpAppConnection(
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.applicationEndpoint">application_endpoint</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint">BeyondcorpAppConnectionApplicationEndpoint</a></code> | application_endpoint block. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.name">name</a></code> | <code>str</code> | ID of the AppConnection. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.connectors">connectors</a></code> | <code>typing.List[str]</code> | List of AppConnectors that are authorised to be associated with this AppConnection. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | An arbitrary user-provided name for the AppConnection. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.gateway">gateway</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway">BeyondcorpAppConnectionGateway</a></code> | gateway block. |
-| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the AppConnection. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts">BeyondcorpAppConnectionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of network connectivity used by the AppConnection. Refer to https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#type for a list of possible values. |
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 application_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#application_endpoint BeyondcorpAppConnection#application_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#application_endpoint BeyondcorpAppConnection#application_endpoint}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#name BeyondcorpAppConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#name BeyondcorpAppConnection#name}
 
 ---
 
@@ -146,7 +148,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of AppConnectors that are authorised to be associated with this AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#connectors BeyondcorpAppConnection#connectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#connectors BeyondcorpAppConnection#connectors}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#deletion_policy BeyondcorpAppConnection#deletion_policy}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An arbitrary user-provided name for the AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#display_name BeyondcorpAppConnection#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#display_name BeyondcorpAppConnection#display_name}
 
 ---
 
@@ -166,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#gateway BeyondcorpAppConnection#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#gateway BeyondcorpAppConnection#gateway}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -190,7 +209,7 @@ Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#labels BeyondcorpAppConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#labels BeyondcorpAppConnection#labels}
 
 ---
 
@@ -198,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}.
 
 ---
 
@@ -208,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#region BeyondcorpAppConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#region BeyondcorpAppConnection#region}
 
 ---
 
@@ -218,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#timeouts BeyondcorpAppConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#timeouts BeyondcorpAppConnection#timeouts}
 
 ---
 
@@ -228,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of network connectivity used by the AppConnection. Refer to https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#type for a list of possible values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
 
 ---
 
@@ -264,6 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.putGateway">put_gateway</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.resetConnectors">reset_connectors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.resetGateway">reset_gateway</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.resetId">reset_id</a></code> | *No description.* |
@@ -638,7 +658,7 @@ def put_application_endpoint(
 
 Hostname or IP address of the remote application endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#host BeyondcorpAppConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#host BeyondcorpAppConnection#host}
 
 ---
 
@@ -648,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Port of the remote application endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#port BeyondcorpAppConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#port BeyondcorpAppConnection#port}
 
 ---
 
@@ -667,7 +687,7 @@ def put_gateway(
 
 AppGateway name in following format: projects/{project_id}/locations/{locationId}/appgateways/{gateway_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#app_gateway BeyondcorpAppConnection#app_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#app_gateway BeyondcorpAppConnection#app_gateway}
 
 ---
 
@@ -677,7 +697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of hosting used by the gateway. Refer to https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#Type_1 for a list of possible values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
 
 ---
 
@@ -695,7 +715,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#create BeyondcorpAppConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#create BeyondcorpAppConnection#create}.
 
 ---
 
@@ -703,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#delete BeyondcorpAppConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#delete BeyondcorpAppConnection#delete}.
 
 ---
 
@@ -711,7 +731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#update BeyondcorpAppConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#update BeyondcorpAppConnection#update}.
 
 ---
 
@@ -719,6 +739,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_connectors() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_display_name` <a name="reset_display_name" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.resetDisplayName"></a>
@@ -883,7 +909,7 @@ The construct id used in the generated config for the BeyondcorpAppConnection to
 
 The id of the existing BeyondcorpAppConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -920,6 +946,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeoutsOutputReference">BeyondcorpAppConnectionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.applicationEndpointInput">application_endpoint_input</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint">BeyondcorpAppConnectionApplicationEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.connectorsInput">connectors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.gatewayInput">gateway_input</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway">BeyondcorpAppConnectionGateway</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -930,6 +957,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts">BeyondcorpAppConnectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.connectors">connectors</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1152,6 +1180,16 @@ connectors_input: typing.List[str]
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.displayNameInput"></a>
 
 ```python
@@ -1249,6 +1287,16 @@ connectors: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1374,7 +1422,7 @@ host: str
 
 Hostname or IP address of the remote application endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#host BeyondcorpAppConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#host BeyondcorpAppConnection#host}
 
 ---
 
@@ -1388,7 +1436,7 @@ port: typing.Union[int, float]
 
 Port of the remote application endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#port BeyondcorpAppConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#port BeyondcorpAppConnection#port}
 
 ---
 
@@ -1410,6 +1458,7 @@ beyondcorpAppConnection.BeyondcorpAppConnectionConfig(
   application_endpoint: BeyondcorpAppConnectionApplicationEndpoint,
   name: str,
   connectors: typing.List[str] = None,
+  deletion_policy: str = None,
   display_name: str = None,
   gateway: BeyondcorpAppConnectionGateway = None,
   id: str = None,
@@ -1435,11 +1484,12 @@ beyondcorpAppConnection.BeyondcorpAppConnectionConfig(
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.applicationEndpoint">application_endpoint</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint">BeyondcorpAppConnectionApplicationEndpoint</a></code> | application_endpoint block. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.name">name</a></code> | <code>str</code> | ID of the AppConnection. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.connectors">connectors</a></code> | <code>typing.List[str]</code> | List of AppConnectors that are authorised to be associated with this AppConnection. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.displayName">display_name</a></code> | <code>str</code> | An arbitrary user-provided name for the AppConnection. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.gateway">gateway</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway">BeyondcorpAppConnectionGateway</a></code> | gateway block. |
-| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.region">region</a></code> | <code>str</code> | The region of the AppConnection. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts">BeyondcorpAppConnectionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.type">type</a></code> | <code>str</code> | The type of network connectivity used by the AppConnection. Refer to https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#type for a list of possible values. |
@@ -1526,7 +1576,7 @@ application_endpoint: BeyondcorpAppConnectionApplicationEndpoint
 
 application_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#application_endpoint BeyondcorpAppConnection#application_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#application_endpoint BeyondcorpAppConnection#application_endpoint}
 
 ---
 
@@ -1540,7 +1590,7 @@ name: str
 
 ID of the AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#name BeyondcorpAppConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#name BeyondcorpAppConnection#name}
 
 ---
 
@@ -1554,7 +1604,28 @@ connectors: typing.List[str]
 
 List of AppConnectors that are authorised to be associated with this AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#connectors BeyondcorpAppConnection#connectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#connectors BeyondcorpAppConnection#connectors}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#deletion_policy BeyondcorpAppConnection#deletion_policy}
 
 ---
 
@@ -1568,7 +1639,7 @@ display_name: str
 
 An arbitrary user-provided name for the AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#display_name BeyondcorpAppConnection#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#display_name BeyondcorpAppConnection#display_name}
 
 ---
 
@@ -1582,7 +1653,7 @@ gateway: BeyondcorpAppConnectionGateway
 
 gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#gateway BeyondcorpAppConnection#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#gateway BeyondcorpAppConnection#gateway}
 
 ---
 
@@ -1594,7 +1665,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#id BeyondcorpAppConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1614,7 +1685,7 @@ Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#labels BeyondcorpAppConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#labels BeyondcorpAppConnection#labels}
 
 ---
 
@@ -1626,7 +1697,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#project BeyondcorpAppConnection#project}.
 
 ---
 
@@ -1640,7 +1711,7 @@ region: str
 
 The region of the AppConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#region BeyondcorpAppConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#region BeyondcorpAppConnection#region}
 
 ---
 
@@ -1654,7 +1725,7 @@ timeouts: BeyondcorpAppConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#timeouts BeyondcorpAppConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#timeouts BeyondcorpAppConnection#timeouts}
 
 ---
 
@@ -1668,7 +1739,7 @@ type: str
 
 The type of network connectivity used by the AppConnection. Refer to https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#type for a list of possible values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
 
 ---
 
@@ -1704,7 +1775,7 @@ app_gateway: str
 
 AppGateway name in following format: projects/{project_id}/locations/{locationId}/appgateways/{gateway_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#app_gateway BeyondcorpAppConnection#app_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#app_gateway BeyondcorpAppConnection#app_gateway}
 
 ---
 
@@ -1718,7 +1789,7 @@ type: str
 
 The type of hosting used by the gateway. Refer to https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#Type_1 for a list of possible values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#type BeyondcorpAppConnection#type}
 
 ---
 
@@ -1740,9 +1811,9 @@ beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#create BeyondcorpAppConnection#create}. |
-| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#delete BeyondcorpAppConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#update BeyondcorpAppConnection#update}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#create BeyondcorpAppConnection#create}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#delete BeyondcorpAppConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#update BeyondcorpAppConnection#update}. |
 
 ---
 
@@ -1754,7 +1825,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#create BeyondcorpAppConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#create BeyondcorpAppConnection#create}.
 
 ---
 
@@ -1766,7 +1837,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#delete BeyondcorpAppConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#delete BeyondcorpAppConnection#delete}.
 
 ---
 
@@ -1778,7 +1849,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_app_connection#update BeyondcorpAppConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/beyondcorp_app_connection#update BeyondcorpAppConnection#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataprocClusterIamBinding <a name="DataprocClusterIamBinding" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer"></a>
 
@@ -40,13 +40,13 @@ DataprocClusterIamBinding.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.cluster">cluster</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.cluster">cluster</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition">DataprocClusterIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#condition DataprocClusterIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#condition DataprocClusterIamBinding#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}.
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the DataprocClusterIamBinding 
 
 The id of the existing DataprocClusterIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,9 +1035,9 @@ DataprocClusterIamBindingCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#expression DataprocClusterIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#title DataprocClusterIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#description DataprocClusterIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#expression DataprocClusterIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#title DataprocClusterIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#description DataprocClusterIamBinding#description}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#expression DataprocClusterIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#expression DataprocClusterIamBinding#expression}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#title DataprocClusterIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#title DataprocClusterIamBinding#title}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#description DataprocClusterIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#description DataprocClusterIamBinding#description}.
 
 ---
 
@@ -1113,13 +1113,13 @@ DataprocClusterIamBindingConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.cluster">cluster</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.cluster">cluster</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition">DataprocClusterIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getCluster();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#cluster DataprocClusterIamBinding#cluster}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.util.List<java.lang.String> getMembers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#members DataprocClusterIamBinding#members}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#role DataprocClusterIamBinding#role}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public DataprocClusterIamBindingCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#condition DataprocClusterIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#condition DataprocClusterIamBinding#condition}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#id DataprocClusterIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#project DataprocClusterIamBinding#project}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataproc_cluster_iam_binding#region DataprocClusterIamBinding#region}.
 
 ---
 

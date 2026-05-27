@@ -4,7 +4,7 @@
 
 ### CloudSecurityComplianceCloudControl <a name="CloudSecurityComplianceCloudControl" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.putRules">PutRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.resetCategories">ResetCategories</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.resetFindingCategory">ResetFindingCategory</a></code> | *No description.* |
@@ -442,6 +443,12 @@ func PutTimeouts(value CloudSecurityComplianceCloudControlTimeouts)
 func ResetCategories()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.resetDescription"></a>
 
 ```go
@@ -605,7 +612,7 @@ The construct id used in the generated config for the CloudSecurityComplianceClo
 
 The id of the existing CloudSecurityComplianceCloudControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -646,6 +653,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlTimeoutsOutputReference">CloudSecurityComplianceCloudControlTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.categoriesInput">CategoriesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.cloudControlIdInput">CloudControlIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.findingCategoryInput">FindingCategoryInput</a></code> | <code>*string</code> | *No description.* |
@@ -660,6 +668,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.categories">Categories</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.cloudControlId">CloudControlId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.findingCategory">FindingCategory</a></code> | <code>*string</code> | *No description.* |
@@ -924,6 +933,16 @@ func CloudControlIdInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.descriptionInput"></a>
 
 ```go
@@ -1064,6 +1083,16 @@ func CloudControlId() *string
 
 ---
 
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControl.property.description"></a>
 
 ```go
@@ -1193,6 +1222,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycom
 	Location: *string,
 	Organization: *string,
 	Categories: *[]*string,
+	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	FindingCategory: *string,
@@ -1221,10 +1251,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycom
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.organization">Organization</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.categories">Categories</a></code> | <code>*[]*string</code> | The categories of the cloud control. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.description">Description</a></code> | <code>*string</code> | A description of the cloud control. The maximum length is 2000 characters. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the cloud control. The maximum length is 200 characters. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.findingCategory">FindingCategory</a></code> | <code>*string</code> | The finding_category of the cloud control. The maximum length is 255 characters. |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.parameterSpec">ParameterSpec</a></code> | <code>interface{}</code> | parameter_spec block. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.remediationSteps">RemediationSteps</a></code> | <code>*string</code> | The remediation steps for the findings generated by the cloud control. The maximum length is 400 characters. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
@@ -1314,7 +1345,7 @@ CloudControlId *string
 
 ID of the CloudControl. This is the last segment of the CloudControl resource name. Format: '^a-zA-Z{0,61}[a-zA-Z0-9]$'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#cloud_control_id CloudSecurityComplianceCloudControl#cloud_control_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#cloud_control_id CloudSecurityComplianceCloudControl#cloud_control_id}
 
 ---
 
@@ -1330,7 +1361,7 @@ Resource ID segment making up resource 'name'.
 
 It identifies the resource within its parent collection as described in https://google.aip.dev/122. Currently, only "global" is supported as a location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#location CloudSecurityComplianceCloudControl#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#location CloudSecurityComplianceCloudControl#location}
 
 ---
 
@@ -1344,7 +1375,7 @@ Organization *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#organization CloudSecurityComplianceCloudControl#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#organization CloudSecurityComplianceCloudControl#organization}
 
 ---
 
@@ -1358,7 +1389,28 @@ Categories *[]*string
 
 The categories of the cloud control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#categories CloudSecurityComplianceCloudControl#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#categories CloudSecurityComplianceCloudControl#categories}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#deletion_policy CloudSecurityComplianceCloudControl#deletion_policy}
 
 ---
 
@@ -1372,7 +1424,7 @@ Description *string
 
 A description of the cloud control. The maximum length is 2000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
 
 ---
 
@@ -1386,7 +1438,7 @@ DisplayName *string
 
 The display name of the cloud control. The maximum length is 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
 
 ---
 
@@ -1400,7 +1452,7 @@ FindingCategory *string
 
 The finding_category of the cloud control. The maximum length is 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#finding_category CloudSecurityComplianceCloudControl#finding_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#finding_category CloudSecurityComplianceCloudControl#finding_category}
 
 ---
 
@@ -1412,7 +1464,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1429,7 +1481,7 @@ ParameterSpec interface{}
 
 parameter_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#parameter_spec CloudSecurityComplianceCloudControl#parameter_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#parameter_spec CloudSecurityComplianceCloudControl#parameter_spec}
 
 ---
 
@@ -1443,7 +1495,7 @@ RemediationSteps *string
 
 The remediation steps for the findings generated by the cloud control. The maximum length is 400 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#remediation_steps CloudSecurityComplianceCloudControl#remediation_steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#remediation_steps CloudSecurityComplianceCloudControl#remediation_steps}
 
 ---
 
@@ -1457,7 +1509,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#rules CloudSecurityComplianceCloudControl#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#rules CloudSecurityComplianceCloudControl#rules}
 
 ---
 
@@ -1471,7 +1523,7 @@ Severity *string
 
 Possible values: CRITICAL HIGH MEDIUM LOW.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#severity CloudSecurityComplianceCloudControl#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#severity CloudSecurityComplianceCloudControl#severity}
 
 ---
 
@@ -1485,7 +1537,7 @@ SupportedCloudProviders *[]*string
 
 cloud providers supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#supported_cloud_providers CloudSecurityComplianceCloudControl#supported_cloud_providers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#supported_cloud_providers CloudSecurityComplianceCloudControl#supported_cloud_providers}
 
 ---
 
@@ -1499,7 +1551,7 @@ Timeouts CloudSecurityComplianceCloudControlTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#timeouts CloudSecurityComplianceCloudControl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#timeouts CloudSecurityComplianceCloudControl#timeouts}
 
 ---
 
@@ -1549,7 +1601,7 @@ IsRequired interface{}
 
 if the parameter is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
 
 ---
 
@@ -1563,7 +1615,7 @@ Name *string
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
 
 ---
 
@@ -1577,7 +1629,7 @@ ValueType *string
 
 Parameter value type. Possible values: STRING BOOLEAN STRINGLIST NUMBER ONEOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
 
 ---
 
@@ -1591,7 +1643,7 @@ DefaultValue CloudSecurityComplianceCloudControlParameterSpecDefaultValue
 
 default_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
 
 ---
 
@@ -1605,7 +1657,7 @@ Description *string
 
 The description of the parameter. The maximum length is 2000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
 
 ---
 
@@ -1619,7 +1671,7 @@ DisplayName *string
 
 The display name of the parameter. The maximum length is 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
 
 ---
 
@@ -1633,7 +1685,7 @@ SubParameters interface{}
 
 sub_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
 
 ---
 
@@ -1647,7 +1699,7 @@ SubstitutionRules interface{}
 
 substitution_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
 
 ---
 
@@ -1661,7 +1713,7 @@ Validation CloudSecurityComplianceCloudControlParameterSpecValidation
 
 validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
 
 ---
 
@@ -1703,7 +1755,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -1717,7 +1769,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -1731,7 +1783,7 @@ OneofValue CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValu
 
 oneof_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
 
 ---
 
@@ -1745,7 +1797,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecDefaultValueStri
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -1759,7 +1811,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -1795,7 +1847,7 @@ Name *string
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
 
 ---
 
@@ -1809,7 +1861,7 @@ ParameterValue CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneof
 
 parameter_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
 
 ---
 
@@ -1849,7 +1901,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -1863,7 +1915,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -1877,7 +1929,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneo
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -1891,7 +1943,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -1925,7 +1977,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -1959,7 +2011,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -2007,7 +2059,7 @@ IsRequired interface{}
 
 if the parameter is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
 
 ---
 
@@ -2021,7 +2073,7 @@ Name *string
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
 
 ---
 
@@ -2035,7 +2087,7 @@ ValueType *string
 
 Parameter value type. Possible values: STRING BOOLEAN STRINGLIST NUMBER ONEOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
 
 ---
 
@@ -2049,7 +2101,7 @@ DefaultValue CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaul
 
 default_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
 
 ---
 
@@ -2063,7 +2115,7 @@ Description *string
 
 The description of the parameter. The maximum length is 2000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
 
 ---
 
@@ -2077,7 +2129,7 @@ DisplayName *string
 
 The display name of the parameter. The maximum length is 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
 
 ---
 
@@ -2091,7 +2143,7 @@ SubstitutionRules interface{}
 
 substitution_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
 
 ---
 
@@ -2105,7 +2157,7 @@ Validation CloudSecurityComplianceCloudControlParameterSpecSubParametersValidati
 
 validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
 
 ---
 
@@ -2147,7 +2199,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -2161,7 +2213,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -2175,7 +2227,7 @@ OneofValue CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultV
 
 oneof_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
 
 ---
 
@@ -2189,7 +2241,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -2203,7 +2255,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -2239,7 +2291,7 @@ Name *string
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
 
 ---
 
@@ -2253,7 +2305,7 @@ ParameterValue CloudSecurityComplianceCloudControlParameterSpecSubParametersDefa
 
 parameter_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
 
 ---
 
@@ -2293,7 +2345,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -2307,7 +2359,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -2321,7 +2373,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -2335,7 +2387,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -2369,7 +2421,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -2403,7 +2455,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -2439,7 +2491,7 @@ AttributeSubstitutionRule CloudSecurityComplianceCloudControlParameterSpecSubPar
 
 attribute_substitution_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
 
 ---
 
@@ -2453,7 +2505,7 @@ PlaceholderSubstitutionRule CloudSecurityComplianceCloudControlParameterSpecSubP
 
 placeholder_substitution_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
 
 ---
 
@@ -2487,7 +2539,7 @@ Attribute *string
 
 Fully qualified proto attribute path (in dot notation). Example: rules[0].cel_expression.resource_types_values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
 
 ---
 
@@ -2521,7 +2573,7 @@ Attribute *string
 
 Fully qualified proto attribute path (e.g., dot notation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
 
 ---
 
@@ -2559,7 +2611,7 @@ AllowedValues CloudSecurityComplianceCloudControlParameterSpecSubParametersValid
 
 allowed_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
 
 ---
 
@@ -2573,7 +2625,7 @@ IntRange CloudSecurityComplianceCloudControlParameterSpecSubParametersValidation
 
 int_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
 
 ---
 
@@ -2587,7 +2639,7 @@ RegexpPattern CloudSecurityComplianceCloudControlParameterSpecSubParametersValid
 
 regexp_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
 
 ---
 
@@ -2621,7 +2673,7 @@ Values interface{}
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -2663,7 +2715,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -2677,7 +2729,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -2691,7 +2743,7 @@ OneofValue CloudSecurityComplianceCloudControlParameterSpecSubParametersValidati
 
 oneof_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
 
 ---
 
@@ -2705,7 +2757,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -2719,7 +2771,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -2755,7 +2807,7 @@ Name *string
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
 
 ---
 
@@ -2769,7 +2821,7 @@ ParameterValue CloudSecurityComplianceCloudControlParameterSpecSubParametersVali
 
 parameter_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
 
 ---
 
@@ -2809,7 +2861,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -2823,7 +2875,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -2837,7 +2889,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -2851,7 +2903,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -2885,7 +2937,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -2919,7 +2971,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -2955,7 +3007,7 @@ Max *string
 
 Maximum allowed value for the numeric parameter (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
 
 ---
 
@@ -2969,7 +3021,7 @@ Min *string
 
 Minimum allowed value for the numeric parameter (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
 
 ---
 
@@ -3003,7 +3055,7 @@ Pattern *string
 
 Regex Pattern to match the value(s) of parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
 
 ---
 
@@ -3039,7 +3091,7 @@ AttributeSubstitutionRule CloudSecurityComplianceCloudControlParameterSpecSubsti
 
 attribute_substitution_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
 
 ---
 
@@ -3053,7 +3105,7 @@ PlaceholderSubstitutionRule CloudSecurityComplianceCloudControlParameterSpecSubs
 
 placeholder_substitution_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
 
 ---
 
@@ -3087,7 +3139,7 @@ Attribute *string
 
 Fully qualified proto attribute path (in dot notation). Example: rules[0].cel_expression.resource_types_values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
 
 ---
 
@@ -3121,7 +3173,7 @@ Attribute *string
 
 Fully qualified proto attribute path (e.g., dot notation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
 
 ---
 
@@ -3159,7 +3211,7 @@ AllowedValues CloudSecurityComplianceCloudControlParameterSpecValidationAllowedV
 
 allowed_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
 
 ---
 
@@ -3173,7 +3225,7 @@ IntRange CloudSecurityComplianceCloudControlParameterSpecValidationIntRange
 
 int_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
 
 ---
 
@@ -3187,7 +3239,7 @@ RegexpPattern CloudSecurityComplianceCloudControlParameterSpecValidationRegexpPa
 
 regexp_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
 
 ---
 
@@ -3221,7 +3273,7 @@ Values interface{}
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -3263,7 +3315,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -3277,7 +3329,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -3291,7 +3343,7 @@ OneofValue CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValu
 
 oneof_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
 
 ---
 
@@ -3305,7 +3357,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -3319,7 +3371,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -3355,7 +3407,7 @@ Name *string
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
 
 ---
 
@@ -3369,7 +3421,7 @@ ParameterValue CloudSecurityComplianceCloudControlParameterSpecValidationAllowed
 
 parameter_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
 
 ---
 
@@ -3409,7 +3461,7 @@ BoolValue interface{}
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
 
 ---
 
@@ -3423,7 +3475,7 @@ NumberValue *f64
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
 
 ---
 
@@ -3437,7 +3489,7 @@ StringListValue CloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
 
 ---
 
@@ -3451,7 +3503,7 @@ StringValue *string
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 
 ---
 
@@ -3485,7 +3537,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -3519,7 +3571,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -3555,7 +3607,7 @@ Max *string
 
 Maximum allowed value for the numeric parameter (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
 
 ---
 
@@ -3569,7 +3621,7 @@ Min *string
 
 Minimum allowed value for the numeric parameter (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
 
 ---
 
@@ -3603,7 +3655,7 @@ Pattern *string
 
 Regex Pattern to match the value(s) of parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
 
 ---
 
@@ -3641,7 +3693,7 @@ RuleActionTypes *[]*string
 
 The functionality enabled by the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#rule_action_types CloudSecurityComplianceCloudControl#rule_action_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#rule_action_types CloudSecurityComplianceCloudControl#rule_action_types}
 
 ---
 
@@ -3655,7 +3707,7 @@ CelExpression CloudSecurityComplianceCloudControlRulesCelExpression
 
 cel_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#cel_expression CloudSecurityComplianceCloudControl#cel_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#cel_expression CloudSecurityComplianceCloudControl#cel_expression}
 
 ---
 
@@ -3669,7 +3721,7 @@ Description *string
 
 Description of the Rule. The maximum length is 2000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
 
 ---
 
@@ -3705,7 +3757,7 @@ Expression *string
 
 Logic expression in CEL language. The max length of the condition is 1000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#expression CloudSecurityComplianceCloudControl#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#expression CloudSecurityComplianceCloudControl#expression}
 
 ---
 
@@ -3719,7 +3771,7 @@ ResourceTypesValues CloudSecurityComplianceCloudControlRulesCelExpressionResourc
 
 resource_types_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#resource_types_values CloudSecurityComplianceCloudControl#resource_types_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#resource_types_values CloudSecurityComplianceCloudControl#resource_types_values}
 
 ---
 
@@ -3753,7 +3805,7 @@ Values *[]*string
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
 
 ---
 
@@ -3775,9 +3827,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycom
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}. |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}. |
 
 ---
 
@@ -3789,7 +3841,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}.
 
 ---
 
@@ -3801,7 +3853,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}.
 
 ---
 
@@ -3813,7 +3865,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}.
 
 ---
 

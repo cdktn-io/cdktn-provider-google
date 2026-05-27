@@ -4,7 +4,7 @@
 
 ### GkeBackupRestoreChannel <a name="GkeBackupRestoreChannel" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel google_gke_backup_restore_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel google_gke_backup_restore_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer"></a>
 
@@ -24,6 +24,7 @@ gkeBackupRestoreChannel.GkeBackupRestoreChannel(
   destination_project: str,
   location: str,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -46,10 +47,11 @@ gkeBackupRestoreChannel.GkeBackupRestoreChannel(
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.destinationProject">destination_project</a></code> | <code>str</code> | The project where Backups will be restored. The format is 'projects/{project}'. {project} can be project number or project id. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.location">location</a></code> | <code>str</code> | The region of the Restore Channel. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.name">name</a></code> | <code>str</code> | The full name of the RestoreChannel Resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.description">description</a></code> | <code>str</code> | User specified descriptive string for this RestoreChannel. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Description: A set of custom labels supplied by the user. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts">GkeBackupRestoreChannelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The project where Backups will be restored. The format is 'projects/{project}'. {project} can be project number or project id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#destination_project GkeBackupRestoreChannel#destination_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#destination_project GkeBackupRestoreChannel#destination_project}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the Restore Channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#location GkeBackupRestoreChannel#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#location GkeBackupRestoreChannel#location}
 
 ---
 
@@ -140,7 +142,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The full name of the RestoreChannel Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#name GkeBackupRestoreChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#name GkeBackupRestoreChannel#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#deletion_policy GkeBackupRestoreChannel#deletion_policy}
 
 ---
 
@@ -150,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User specified descriptive string for this RestoreChannel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#description GkeBackupRestoreChannel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#description GkeBackupRestoreChannel#description}
 
 ---
 
@@ -158,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +196,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#labels GkeBackupRestoreChannel#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#labels GkeBackupRestoreChannel#labels}
 
 ---
 
@@ -185,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}.
 
 ---
 
@@ -195,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#timeouts GkeBackupRestoreChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#timeouts GkeBackupRestoreChannel#timeouts}
 
 ---
 
@@ -228,6 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.resetLabels">reset_labels</a></code> | *No description.* |
@@ -598,7 +618,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#create GkeBackupRestoreChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#create GkeBackupRestoreChannel#create}.
 
 ---
 
@@ -606,7 +626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#delete GkeBackupRestoreChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#delete GkeBackupRestoreChannel#delete}.
 
 ---
 
@@ -614,9 +634,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#update GkeBackupRestoreChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#update GkeBackupRestoreChannel#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.resetDescription"></a>
 
@@ -762,7 +788,7 @@ The construct id used in the generated config for the GkeBackupRestoreChannel to
 
 The id of the existing GkeBackupRestoreChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,6 +824,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeoutsOutputReference">GkeBackupRestoreChannelTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.uid">uid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.destinationProjectInput">destination_project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -806,6 +833,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts">GkeBackupRestoreChannelTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.destinationProject">destination_project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1018,6 +1046,16 @@ uid: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.descriptionInput"></a>
 
 ```python
@@ -1095,6 +1133,16 @@ timeouts_input: IResolvable | GkeBackupRestoreChannelTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts">GkeBackupRestoreChannelTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1206,6 +1254,7 @@ gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig(
   destination_project: str,
   location: str,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
@@ -1228,10 +1277,11 @@ gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig(
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.destinationProject">destination_project</a></code> | <code>str</code> | The project where Backups will be restored. The format is 'projects/{project}'. {project} can be project number or project id. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.location">location</a></code> | <code>str</code> | The region of the Restore Channel. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.name">name</a></code> | <code>str</code> | The full name of the RestoreChannel Resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.description">description</a></code> | <code>str</code> | User specified descriptive string for this RestoreChannel. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Description: A set of custom labels supplied by the user. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts">GkeBackupRestoreChannelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1316,7 +1366,7 @@ destination_project: str
 
 The project where Backups will be restored. The format is 'projects/{project}'. {project} can be project number or project id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#destination_project GkeBackupRestoreChannel#destination_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#destination_project GkeBackupRestoreChannel#destination_project}
 
 ---
 
@@ -1330,7 +1380,7 @@ location: str
 
 The region of the Restore Channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#location GkeBackupRestoreChannel#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#location GkeBackupRestoreChannel#location}
 
 ---
 
@@ -1344,7 +1394,28 @@ name: str
 
 The full name of the RestoreChannel Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#name GkeBackupRestoreChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#name GkeBackupRestoreChannel#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#deletion_policy GkeBackupRestoreChannel#deletion_policy}
 
 ---
 
@@ -1358,7 +1429,7 @@ description: str
 
 User specified descriptive string for this RestoreChannel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#description GkeBackupRestoreChannel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#description GkeBackupRestoreChannel#description}
 
 ---
 
@@ -1370,7 +1441,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#id GkeBackupRestoreChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1393,7 +1464,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#labels GkeBackupRestoreChannel#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#labels GkeBackupRestoreChannel#labels}
 
 ---
 
@@ -1405,7 +1476,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#project GkeBackupRestoreChannel#project}.
 
 ---
 
@@ -1419,7 +1490,7 @@ timeouts: GkeBackupRestoreChannelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#timeouts GkeBackupRestoreChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#timeouts GkeBackupRestoreChannel#timeouts}
 
 ---
 
@@ -1441,9 +1512,9 @@ gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#create GkeBackupRestoreChannel#create}. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#delete GkeBackupRestoreChannel#delete}. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#update GkeBackupRestoreChannel#update}. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#create GkeBackupRestoreChannel#create}. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#delete GkeBackupRestoreChannel#delete}. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#update GkeBackupRestoreChannel#update}. |
 
 ---
 
@@ -1455,7 +1526,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#create GkeBackupRestoreChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#create GkeBackupRestoreChannel#create}.
 
 ---
 
@@ -1467,7 +1538,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#delete GkeBackupRestoreChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#delete GkeBackupRestoreChannel#delete}.
 
 ---
 
@@ -1479,7 +1550,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_channel#update GkeBackupRestoreChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_backup_restore_channel#update GkeBackupRestoreChannel#update}.
 
 ---
 

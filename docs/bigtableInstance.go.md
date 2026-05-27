@@ -4,7 +4,7 @@
 
 ### BigtableInstance <a name="BigtableInstance" id="@cdktn/provider-google.bigtableInstance.BigtableInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance google_bigtable_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance google_bigtable_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.putCluster">PutCluster</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.resetCluster">ResetCluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.resetDeletionProtection">ResetDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.resetForceDestroy">ResetForceDestroy</a></code> | *No description.* |
@@ -428,6 +429,12 @@ func PutTimeouts(value BigtableInstanceTimeouts)
 func ResetCluster()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDeletionProtection` <a name="ResetDeletionProtection" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.resetDeletionProtection"></a>
 
 ```go
@@ -585,7 +592,7 @@ The construct id used in the generated config for the BigtableInstance to import
 
 The id of the existing BigtableInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,6 +627,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeoutsOutputReference">BigtableInstanceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.clusterInput">ClusterInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.deletionProtectionInput">DeletionProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.forceDestroyInput">ForceDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -630,6 +638,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstance.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | *No description.* |
@@ -834,6 +843,16 @@ func ClusterInput() interface{}
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DeletionProtectionInput`<sup>Optional</sup> <a name="DeletionProtectionInput" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.property.deletionProtectionInput"></a>
 
 ```go
@@ -931,6 +950,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1088,7 +1117,7 @@ The ID of the Cloud Bigtable cluster.
 
 Must be 6-30 characters and must only contain hyphens, lowercase letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#cluster_id BigtableInstance#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#cluster_id BigtableInstance#cluster_id}
 
 ---
 
@@ -1102,7 +1131,7 @@ AutoscalingConfig BigtableInstanceClusterAutoscalingConfig
 
 autoscaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#autoscaling_config BigtableInstance#autoscaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#autoscaling_config BigtableInstance#autoscaling_config}
 
 ---
 
@@ -1118,7 +1147,7 @@ Describes the Cloud KMS encryption key that will be used to protect the destinat
 
 The requirements for this key are: 1) The Cloud Bigtable service account associated with the project that contains this cluster must be granted the cloudkms.cryptoKeyEncrypterDecrypter role on the CMEK key. 2) Only regional keys can be used and the region of the CMEK key must match the region of the cluster. 3) All clusters within an instance must use the same CMEK key. Values are of the form projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#kms_key_name BigtableInstance#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#kms_key_name BigtableInstance#kms_key_name}
 
 ---
 
@@ -1132,7 +1161,7 @@ NodeScalingFactor *string
 
 The node scaling factor of this cluster. One of "NodeScalingFactor1X" or "NodeScalingFactor2X". Defaults to "NodeScalingFactor1X".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#node_scaling_factor BigtableInstance#node_scaling_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#node_scaling_factor BigtableInstance#node_scaling_factor}
 
 ---
 
@@ -1148,7 +1177,7 @@ The number of nodes in the cluster.
 
 If no value is set, Cloud Bigtable automatically allocates nodes based on your data footprint and optimized for 50% storage utilization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#num_nodes BigtableInstance#num_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#num_nodes BigtableInstance#num_nodes}
 
 ---
 
@@ -1162,7 +1191,7 @@ StorageType *string
 
 The storage type to use. One of "SSD" or "HDD". Defaults to "SSD".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#storage_type BigtableInstance#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#storage_type BigtableInstance#storage_type}
 
 ---
 
@@ -1178,7 +1207,7 @@ The zone to create the Cloud Bigtable cluster in.
 
 Each cluster must have a different zone in the same region. Zones that support Bigtable instances are noted on the Cloud Bigtable locations page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#zone BigtableInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#zone BigtableInstance#zone}
 
 ---
 
@@ -1218,7 +1247,7 @@ CpuTarget *f64
 
 The target CPU utilization for autoscaling. Value must be between 10 and 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#cpu_target BigtableInstance#cpu_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#cpu_target BigtableInstance#cpu_target}
 
 ---
 
@@ -1232,7 +1261,7 @@ MaxNodes *f64
 
 The maximum number of nodes for autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#max_nodes BigtableInstance#max_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#max_nodes BigtableInstance#max_nodes}
 
 ---
 
@@ -1246,7 +1275,7 @@ MinNodes *f64
 
 The minimum number of nodes for autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#min_nodes BigtableInstance#min_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#min_nodes BigtableInstance#min_nodes}
 
 ---
 
@@ -1262,7 +1291,7 @@ The target storage utilization for autoscaling, in GB, for each node in a cluste
 
 This number is limited between 2560 (2.5TiB) and 5120 (5TiB) for a SSD cluster and between 8192 (8TiB) and 16384 (16 TiB) for an HDD cluster. If not set, whatever is already set for the cluster will not change, or if the cluster is just being created, it will use the default value of 2560 for SSD clusters and 8192 for HDD clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#storage_target BigtableInstance#storage_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#storage_target BigtableInstance#storage_target}
 
 ---
 
@@ -1283,6 +1312,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigtableinstance
 	Provisioners: *[]interface{},
 	Name: *string,
 	Cluster: interface{},
+	DeletionPolicy: *string,
 	DeletionProtection: interface{},
 	DisplayName: *string,
 	ForceDestroy: interface{},
@@ -1308,10 +1338,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigtableinstance
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.name">Name</a></code> | <code>*string</code> | The name (also called Instance Id in the Cloud Console) of the Cloud Bigtable instance. |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.cluster">Cluster</a></code> | <code>interface{}</code> | cluster block. |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the instance will fail. |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The human-readable display name of the Bigtable instance. Defaults to the instance name. |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | When deleting a BigTable instance, this boolean option will delete all backups within the instance. |
-| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#id BigtableInstance#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#id BigtableInstance#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | The instance type to create. One of "DEVELOPMENT" or "PRODUCTION". Defaults to "PRODUCTION". |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | A mapping of labels to assign to the resource. |
 | <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
@@ -1402,7 +1433,7 @@ The name (also called Instance Id in the Cloud Console) of the Cloud Bigtable in
 
 Must be 6-33 characters and must only contain hyphens, lowercase letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#name BigtableInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#name BigtableInstance#name}
 
 ---
 
@@ -1416,7 +1447,28 @@ Cluster interface{}
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#cluster BigtableInstance#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#cluster BigtableInstance#cluster}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#deletion_policy BigtableInstance#deletion_policy}
 
 ---
 
@@ -1432,7 +1484,7 @@ When the field is set to true or unset in Terraform state, a terraform apply or 
 
 When the field is set to false, deleting the instance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#deletion_protection BigtableInstance#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#deletion_protection BigtableInstance#deletion_protection}
 
 ---
 
@@ -1446,7 +1498,7 @@ DisplayName *string
 
 The human-readable display name of the Bigtable instance. Defaults to the instance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#display_name BigtableInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#display_name BigtableInstance#display_name}
 
 ---
 
@@ -1460,7 +1512,7 @@ ForceDestroy interface{}
 
 When deleting a BigTable instance, this boolean option will delete all backups within the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#force_destroy BigtableInstance#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#force_destroy BigtableInstance#force_destroy}
 
 ---
 
@@ -1472,7 +1524,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#id BigtableInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#id BigtableInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1489,7 +1541,7 @@ InstanceType *string
 
 The instance type to create. One of "DEVELOPMENT" or "PRODUCTION". Defaults to "PRODUCTION".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#instance_type BigtableInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#instance_type BigtableInstance#instance_type}
 
 ---
 
@@ -1506,7 +1558,7 @@ A mapping of labels to assign to the resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#labels BigtableInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#labels BigtableInstance#labels}
 
 ---
 
@@ -1522,7 +1574,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#project BigtableInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#project BigtableInstance#project}
 
 ---
 
@@ -1538,7 +1590,7 @@ A map of Resource Manager Tags.
 
 Keys can be either the numeric tag key ID (tagKeys/123) or the namespaced name (project/tag-key). Values can be the numeric tag value ID (tagValues/456) or the namespaced value (project/tag-key/tag-value). The field is ignored when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#tags BigtableInstance#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#tags BigtableInstance#tags}
 
 ---
 
@@ -1552,7 +1604,7 @@ Timeouts BigtableInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#timeouts BigtableInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#timeouts BigtableInstance#timeouts}
 
 ---
 
@@ -1574,9 +1626,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigtableinstance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#create BigtableInstance#create}. |
-| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#read BigtableInstance#read}. |
-| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#update BigtableInstance#update}. |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#create BigtableInstance#create}. |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#read BigtableInstance#read}. |
+| <code><a href="#@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#update BigtableInstance#update}. |
 
 ---
 
@@ -1588,7 +1640,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#create BigtableInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#create BigtableInstance#create}.
 
 ---
 
@@ -1600,7 +1652,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#read BigtableInstance#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#read BigtableInstance#read}.
 
 ---
 
@@ -1612,7 +1664,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance#update BigtableInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigtable_instance#update BigtableInstance#update}.
 
 ---
 

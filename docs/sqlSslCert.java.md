@@ -4,7 +4,7 @@
 
 ### SqlSslCert <a name="SqlSslCert" id="@cdktn/provider-google.sqlSslCert.SqlSslCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert google_sql_ssl_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert google_sql_ssl_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer"></a>
 
@@ -21,6 +21,7 @@ SqlSslCert.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .commonName(java.lang.String)
     .instance(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(SqlSslCertTimeouts)
@@ -40,7 +41,8 @@ SqlSslCert.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.commonName">commonName</a></code> | <code>java.lang.String</code> | The common name to be used in the certificate to identify the client. |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.instance">instance</a></code> | <code>java.lang.String</code> | The name of the Cloud SQL instance. Changing this forces a new resource to be created. |
-| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}. |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}. |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeouts">SqlSslCertTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +116,7 @@ The common name to be used in the certificate to identify the client.
 
 Constrained to [a-zA-Z.-_ ]+. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#common_name SqlSslCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#common_name SqlSslCert#common_name}
 
 ---
 
@@ -124,7 +126,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the Cloud SQL instance. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#instance SqlSslCert#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#instance SqlSslCert#instance}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sqlSslCert.SqlSslCert.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#deletion_policy SqlSslCert#deletion_policy}
 
 ---
 
@@ -132,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +166,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#project SqlSslCert#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#project SqlSslCert#project}
 
 ---
 
@@ -157,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#timeouts SqlSslCert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#timeouts SqlSslCert#timeouts}
 
 ---
 
@@ -190,6 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -519,6 +539,12 @@ public void putTimeouts(SqlSslCertTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.sqlSslCert.SqlSslCert.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.sqlSslCert.SqlSslCert.resetId"></a>
 
 ```java
@@ -640,7 +666,7 @@ The construct id used in the generated config for the SqlSslCert to import.
 
 The id of the existing SqlSslCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,11 +705,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.sha1Fingerprint">sha1Fingerprint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeoutsOutputReference">SqlSslCertTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.commonNameInput">commonNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.instanceInput">instanceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeouts">SqlSslCertTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.commonName">commonName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.instance">instance</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCert.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -922,6 +950,16 @@ public java.lang.String getCommonNameInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.sqlSslCert.SqlSslCert.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.sqlSslCert.SqlSslCert.property.idInput"></a>
 
 ```java
@@ -966,6 +1004,16 @@ public IResolvable|SqlSslCertTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getCommonName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sqlSslCert.SqlSslCert.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1039,6 +1087,7 @@ SqlSslCertConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .commonName(java.lang.String)
     .instance(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(SqlSslCertTimeouts)
@@ -1058,7 +1107,8 @@ SqlSslCertConfig.builder()
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.commonName">commonName</a></code> | <code>java.lang.String</code> | The common name to be used in the certificate to identify the client. |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.instance">instance</a></code> | <code>java.lang.String</code> | The name of the Cloud SQL instance. Changing this forces a new resource to be created. |
-| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}. |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}. |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeouts">SqlSslCertTimeouts</a></code> | timeouts block. |
 
@@ -1146,7 +1196,7 @@ The common name to be used in the certificate to identify the client.
 
 Constrained to [a-zA-Z.-_ ]+. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#common_name SqlSslCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#common_name SqlSslCert#common_name}
 
 ---
 
@@ -1160,7 +1210,28 @@ public java.lang.String getInstance();
 
 The name of the Cloud SQL instance. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#instance SqlSslCert#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#instance SqlSslCert#instance}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.sqlSslCert.SqlSslCertConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#deletion_policy SqlSslCert#deletion_policy}
 
 ---
 
@@ -1172,7 +1243,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#id SqlSslCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1191,7 +1262,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#project SqlSslCert#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#project SqlSslCert#project}
 
 ---
 
@@ -1205,7 +1276,7 @@ public SqlSslCertTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#timeouts SqlSslCert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#timeouts SqlSslCert#timeouts}
 
 ---
 
@@ -1226,8 +1297,8 @@ SqlSslCertTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#create SqlSslCert#create}. |
-| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#delete SqlSslCert#delete}. |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#create SqlSslCert#create}. |
+| <code><a href="#@cdktn/provider-google.sqlSslCert.SqlSslCertTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#delete SqlSslCert#delete}. |
 
 ---
 
@@ -1239,7 +1310,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#create SqlSslCert#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#create SqlSslCert#create}.
 
 ---
 
@@ -1251,7 +1322,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_ssl_cert#delete SqlSslCert#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/sql_ssl_cert#delete SqlSslCert#delete}.
 
 ---
 

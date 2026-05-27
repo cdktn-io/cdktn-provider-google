@@ -4,7 +4,7 @@
 
 ### ComputeInterconnectGroup <a name="ComputeInterconnectGroup" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer"></a>
 
@@ -23,6 +23,7 @@ computeInterconnectGroup.ComputeInterconnectGroup(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   intent: ComputeInterconnectGroupIntent,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   interconnects: IResolvable | typing.List[ComputeInterconnectGroupInterconnects] = None,
@@ -44,10 +45,11 @@ computeInterconnectGroup.ComputeInterconnectGroup(
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.intent">intent</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupIntent">ComputeInterconnectGroupIntent</a></code> | intent block. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.interconnects">interconnects</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects">ComputeInterconnectGroupInterconnects</a>]</code> | interconnects block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts">ComputeInterconnectGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 intent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
 
 ---
 
@@ -134,7 +136,24 @@ long and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#deletion_policy ComputeInterconnectGroup#deletion_policy}
 
 ---
 
@@ -144,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
 
 ---
 
@@ -152,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +184,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 interconnects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
 
 ---
 
@@ -173,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}.
 
 ---
 
@@ -183,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
 
 ---
 
@@ -218,6 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.putIntent">put_intent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.putInterconnects">put_interconnects</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.resetInterconnects">reset_interconnects</a></code> | *No description.* |
@@ -590,7 +610,7 @@ The reliability the user intends this group to be capable of, in terms of the In
 
 Possible values: ["PRODUCTION_NON_CRITICAL", "PRODUCTION_CRITICAL", "NO_SLA", "AVAILABILITY_SLA_UNSPECIFIED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
 
 ---
 
@@ -622,7 +642,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}.
 
 ---
 
@@ -630,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}.
 
 ---
 
@@ -638,9 +658,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.resetDescription"></a>
 
@@ -786,7 +812,7 @@ The construct id used in the generated config for the ComputeInterconnectGroup t
 
 The id of the existing ComputeInterconnectGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,6 +848,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.interconnects">interconnects</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnectsList">ComputeInterconnectGroupInterconnectsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.physicalStructure">physical_structure</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureList">ComputeInterconnectGroupPhysicalStructureList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeoutsOutputReference">ComputeInterconnectGroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.intentInput">intent_input</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupIntent">ComputeInterconnectGroupIntent</a></code> | *No description.* |
@@ -829,6 +856,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts">ComputeInterconnectGroupTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1038,6 +1066,16 @@ timeouts: ComputeInterconnectGroupTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.descriptionInput"></a>
 
 ```python
@@ -1105,6 +1143,16 @@ timeouts_input: IResolvable | ComputeInterconnectGroupTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts">ComputeInterconnectGroupTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1185,6 +1233,7 @@ computeInterconnectGroup.ComputeInterconnectGroupConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   intent: ComputeInterconnectGroupIntent,
   name: str,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   interconnects: IResolvable | typing.List[ComputeInterconnectGroupInterconnects] = None,
@@ -1206,10 +1255,11 @@ computeInterconnectGroup.ComputeInterconnectGroupConfig(
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.intent">intent</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupIntent">ComputeInterconnectGroupIntent</a></code> | intent block. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.interconnects">interconnects</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects">ComputeInterconnectGroupInterconnects</a>]</code> | interconnects block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts">ComputeInterconnectGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1294,7 +1344,7 @@ intent: ComputeInterconnectGroupIntent
 
 intent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
 
 ---
 
@@ -1314,7 +1364,28 @@ long and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#deletion_policy ComputeInterconnectGroup#deletion_policy}
 
 ---
 
@@ -1328,7 +1399,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
 
 ---
 
@@ -1340,7 +1411,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1357,7 +1428,7 @@ interconnects: IResolvable | typing.List[ComputeInterconnectGroupInterconnects]
 
 interconnects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
 
 ---
 
@@ -1369,7 +1440,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}.
 
 ---
 
@@ -1383,7 +1454,7 @@ timeouts: ComputeInterconnectGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
 
 ---
 
@@ -1452,7 +1523,7 @@ The reliability the user intends this group to be capable of, in terms of the In
 
 Possible values: ["PRODUCTION_NON_CRITICAL", "PRODUCTION_CRITICAL", "NO_SLA", "AVAILABILITY_SLA_UNSPECIFIED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
 
 ---
 
@@ -1473,7 +1544,7 @@ computeInterconnectGroup.ComputeInterconnectGroupInterconnects(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects.property.interconnect">interconnect</a></code> | <code>str</code> | The URL of an Interconnect in this group. All Interconnects in the group are unique. |
 
 ---
@@ -1486,7 +1557,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}.
 
 ---
 
@@ -1500,7 +1571,7 @@ interconnect: str
 
 The URL of an Interconnect in this group. All Interconnects in the group are unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#interconnect ComputeInterconnectGroup#interconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#interconnect ComputeInterconnectGroup#interconnect}
 
 ---
 
@@ -1566,9 +1637,9 @@ computeInterconnectGroup.ComputeInterconnectGroupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}. |
 
 ---
 
@@ -1580,7 +1651,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}.
 
 ---
 
@@ -1592,7 +1663,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}.
 
 ---
 
@@ -1604,7 +1675,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}.
 
 ---
 

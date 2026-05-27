@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeRouter <a name="DataGoogleComputeRouter" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router google_compute_router}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router google_compute_router}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeRouter to
 
 The id of the existing DataGoogleComputeRouter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -438,6 +438,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.bgp">Bgp</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpList">DataGoogleComputeRouterBgpList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.creationTimestamp">CreationTimestamp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.encryptedInterconnectRouter">EncryptedInterconnectRouter</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.md5AuthenticationKeys">Md5AuthenticationKeys</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterMd5AuthenticationKeysList">DataGoogleComputeRouterMd5AuthenticationKeysList</a></code> | *No description.* |
@@ -592,6 +593,16 @@ func Bgp() DataGoogleComputeRouterBgpList
 
 ```go
 func CreationTimestamp() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -830,8 +841,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.network">Network</a></code> | <code>*string</code> | A reference to the network to which this router belongs. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.region">Region</a></code> | <code>*string</code> | Region where the router resides. |
 
 ---
@@ -923,7 +934,7 @@ which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#name DataGoogleComputeRouter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#name DataGoogleComputeRouter#name}
 
 ---
 
@@ -937,7 +948,7 @@ Network *string
 
 A reference to the network to which this router belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#network DataGoogleComputeRouter#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#network DataGoogleComputeRouter#network}
 
 ---
 
@@ -949,7 +960,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -964,7 +975,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}.
 
 ---
 
@@ -978,7 +989,7 @@ Region *string
 
 Region where the router resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_router#region DataGoogleComputeRouter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_router#region DataGoogleComputeRouter#region}
 
 ---
 

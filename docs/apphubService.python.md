@@ -4,7 +4,7 @@
 
 ### ApphubService <a name="ApphubService" id="@cdktn/provider-google.apphubService.ApphubService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service google_apphub_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service google_apphub_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubService.Initializer"></a>
 
@@ -26,6 +26,7 @@ apphubService.ApphubService(
   location: str,
   service_id: str,
   attributes: ApphubServiceAttributes = None,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   id: str = None,
@@ -50,10 +51,11 @@ apphubService.ApphubService(
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.location">location</a></code> | <code>str</code> | Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.serviceId">service_id</a></code> | <code>str</code> | The Service identifier. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.attributes">attributes</a></code> | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceAttributes">ApphubServiceAttributes</a></code> | attributes block. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.description">description</a></code> | <code>str</code> | User-defined description of a Service. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User-defined name for the Service. |
-| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#id ApphubService#id}. |
-| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#project ApphubService#project}. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#id ApphubService#id}. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#project ApphubService#project}. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts">ApphubServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#application_id ApphubService#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#application_id ApphubService#application_id}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Immutable. The resource name of the original discovered service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#discovered_service ApphubService#discovered_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#discovered_service ApphubService#discovered_service}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#location ApphubService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#location ApphubService#location}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Service identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#service_id ApphubService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#service_id ApphubService#service_id}
 
 ---
 
@@ -164,7 +166,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#attributes ApphubService#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#attributes ApphubService#attributes}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apphubService.ApphubService.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#deletion_policy ApphubService#deletion_policy}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-defined description of a Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#description ApphubService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#description ApphubService#description}
 
 ---
 
@@ -184,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-defined name for the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#display_name ApphubService#display_name}
 
 ---
 
@@ -192,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#id ApphubService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#id ApphubService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +222,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#project ApphubService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#project ApphubService#project}.
 
 ---
 
@@ -213,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#timeouts ApphubService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#timeouts ApphubService#timeouts}
 
 ---
 
@@ -248,6 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.putAttributes">put_attributes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.resetAttributes">reset_attributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.resetId">reset_id</a></code> | *No description.* |
@@ -622,7 +642,7 @@ def put_attributes(
 
 business_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#business_owners ApphubService#business_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#business_owners ApphubService#business_owners}
 
 ---
 
@@ -632,7 +652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#criticality ApphubService#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#criticality ApphubService#criticality}
 
 ---
 
@@ -642,7 +662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 developer_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#developer_owners ApphubService#developer_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#developer_owners ApphubService#developer_owners}
 
 ---
 
@@ -652,7 +672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#environment ApphubService#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#environment ApphubService#environment}
 
 ---
 
@@ -662,7 +682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 operator_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#operator_owners ApphubService#operator_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#operator_owners ApphubService#operator_owners}
 
 ---
 
@@ -680,7 +700,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#create ApphubService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#create ApphubService#create}.
 
 ---
 
@@ -688,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#delete ApphubService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#delete ApphubService#delete}.
 
 ---
 
@@ -696,7 +716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#update ApphubService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#update ApphubService#update}.
 
 ---
 
@@ -704,6 +724,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_attributes() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.apphubService.ApphubService.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.apphubService.ApphubService.resetDescription"></a>
@@ -850,7 +876,7 @@ The construct id used in the generated config for the ApphubService to import.
 
 The id of the existing ApphubService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -891,6 +917,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.applicationIdInput">application_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.attributesInput">attributes_input</a></code> | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceAttributes">ApphubServiceAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.discoveredServiceInput">discovered_service_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
@@ -900,6 +927,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.serviceIdInput">service_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts">ApphubServiceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.applicationId">application_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.discoveredService">discovered_service</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubService.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
@@ -1162,6 +1190,16 @@ attributes_input: ApphubServiceAttributes
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.apphubService.ApphubService.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.apphubService.ApphubService.property.descriptionInput"></a>
 
 ```python
@@ -1246,6 +1284,16 @@ timeouts_input: IResolvable | ApphubServiceTimeouts
 
 ```python
 application_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.apphubService.ApphubService.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1380,7 +1428,7 @@ business_owners: IResolvable | typing.List[ApphubServiceAttributesBusinessOwners
 
 business_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#business_owners ApphubService#business_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#business_owners ApphubService#business_owners}
 
 ---
 
@@ -1394,7 +1442,7 @@ criticality: ApphubServiceAttributesCriticality
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#criticality ApphubService#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#criticality ApphubService#criticality}
 
 ---
 
@@ -1408,7 +1456,7 @@ developer_owners: IResolvable | typing.List[ApphubServiceAttributesDeveloperOwne
 
 developer_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#developer_owners ApphubService#developer_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#developer_owners ApphubService#developer_owners}
 
 ---
 
@@ -1422,7 +1470,7 @@ environment: ApphubServiceAttributesEnvironment
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#environment ApphubService#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#environment ApphubService#environment}
 
 ---
 
@@ -1436,7 +1484,7 @@ operator_owners: IResolvable | typing.List[ApphubServiceAttributesOperatorOwners
 
 operator_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#operator_owners ApphubService#operator_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#operator_owners ApphubService#operator_owners}
 
 ---
 
@@ -1472,7 +1520,7 @@ email: str
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#email ApphubService#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#email ApphubService#email}
 
 ---
 
@@ -1486,7 +1534,7 @@ display_name: str
 
 Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#display_name ApphubService#display_name}
 
 ---
 
@@ -1520,7 +1568,7 @@ type: str
 
 Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#type ApphubService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#type ApphubService#type}
 
 ---
 
@@ -1556,7 +1604,7 @@ email: str
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#email ApphubService#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#email ApphubService#email}
 
 ---
 
@@ -1570,7 +1618,7 @@ display_name: str
 
 Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#display_name ApphubService#display_name}
 
 ---
 
@@ -1604,7 +1652,7 @@ type: str
 
 Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#type ApphubService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#type ApphubService#type}
 
 ---
 
@@ -1640,7 +1688,7 @@ email: str
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#email ApphubService#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#email ApphubService#email}
 
 ---
 
@@ -1654,7 +1702,7 @@ display_name: str
 
 Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#display_name ApphubService#display_name}
 
 ---
 
@@ -1678,6 +1726,7 @@ apphubService.ApphubServiceConfig(
   location: str,
   service_id: str,
   attributes: ApphubServiceAttributes = None,
+  deletion_policy: str = None,
   description: str = None,
   display_name: str = None,
   id: str = None,
@@ -1702,10 +1751,11 @@ apphubService.ApphubServiceConfig(
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.location">location</a></code> | <code>str</code> | Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.serviceId">service_id</a></code> | <code>str</code> | The Service identifier. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.attributes">attributes</a></code> | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceAttributes">ApphubServiceAttributes</a></code> | attributes block. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.description">description</a></code> | <code>str</code> | User-defined description of a Service. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.displayName">display_name</a></code> | <code>str</code> | User-defined name for the Service. |
-| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#id ApphubService#id}. |
-| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#project ApphubService#project}. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#id ApphubService#id}. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#project ApphubService#project}. |
 | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts">ApphubServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1790,7 +1840,7 @@ application_id: str
 
 Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#application_id ApphubService#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#application_id ApphubService#application_id}
 
 ---
 
@@ -1804,7 +1854,7 @@ discovered_service: str
 
 Immutable. The resource name of the original discovered service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#discovered_service ApphubService#discovered_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#discovered_service ApphubService#discovered_service}
 
 ---
 
@@ -1818,7 +1868,7 @@ location: str
 
 Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#location ApphubService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#location ApphubService#location}
 
 ---
 
@@ -1832,7 +1882,7 @@ service_id: str
 
 The Service identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#service_id ApphubService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#service_id ApphubService#service_id}
 
 ---
 
@@ -1846,7 +1896,28 @@ attributes: ApphubServiceAttributes
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#attributes ApphubService#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#attributes ApphubService#attributes}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apphubService.ApphubServiceConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#deletion_policy ApphubService#deletion_policy}
 
 ---
 
@@ -1860,7 +1931,7 @@ description: str
 
 User-defined description of a Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#description ApphubService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#description ApphubService#description}
 
 ---
 
@@ -1874,7 +1945,7 @@ display_name: str
 
 User-defined name for the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#display_name ApphubService#display_name}
 
 ---
 
@@ -1886,7 +1957,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#id ApphubService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#id ApphubService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1901,7 +1972,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#project ApphubService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#project ApphubService#project}.
 
 ---
 
@@ -1915,7 +1986,7 @@ timeouts: ApphubServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#timeouts ApphubService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#timeouts ApphubService#timeouts}
 
 ---
 
@@ -2014,9 +2085,9 @@ apphubService.ApphubServiceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#create ApphubService#create}. |
-| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#delete ApphubService#delete}. |
-| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#update ApphubService#update}. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#create ApphubService#create}. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#delete ApphubService#delete}. |
+| <code><a href="#@cdktn/provider-google.apphubService.ApphubServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#update ApphubService#update}. |
 
 ---
 
@@ -2028,7 +2099,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#create ApphubService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#create ApphubService#create}.
 
 ---
 
@@ -2040,7 +2111,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#delete ApphubService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#delete ApphubService#delete}.
 
 ---
 
@@ -2052,7 +2123,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#update ApphubService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#update ApphubService#update}.
 
 ---
 
@@ -4461,7 +4532,7 @@ def put_criticality(
 
 Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#type ApphubService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#type ApphubService#type}
 
 ---
 
@@ -4493,7 +4564,7 @@ def put_environment(
 
 Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#type ApphubService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apphub_service#type ApphubService#type}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NetappVolumeReplication <a name="NetappVolumeReplication" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.putDestinationVolumeParameters">PutDestinationVolumeParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.resetDeleteDestinationVolume">ResetDeleteDestinationVolume</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.resetDestinationVolumeParameters">ResetDestinationVolumeParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.resetForceStopping">ResetForceStopping</a></code> | *No description.* |
@@ -428,6 +429,12 @@ func PutTimeouts(value NetappVolumeReplicationTimeouts)
 func ResetDeleteDestinationVolume()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.resetDescription"></a>
 
 ```go
@@ -585,7 +592,7 @@ The construct id used in the generated config for the NetappVolumeReplication to
 
 The id of the existing NetappVolumeReplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -632,6 +639,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeoutsOutputReference">NetappVolumeReplicationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.transferStats">TransferStats</a></code> | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTransferStatsList">NetappVolumeReplicationTransferStatsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.deleteDestinationVolumeInput">DeleteDestinationVolumeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.destinationVolumeParametersInput">DestinationVolumeParametersInput</a></code> | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationDestinationVolumeParameters">NetappVolumeReplicationDestinationVolumeParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.forceStoppingInput">ForceStoppingInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -646,6 +654,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.volumeNameInput">VolumeNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.waitForMirrorInput">WaitForMirrorInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.deleteDestinationVolume">DeleteDestinationVolume</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.forceStopping">ForceStopping</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -972,6 +981,16 @@ func DeleteDestinationVolumeInput() interface{}
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.descriptionInput"></a>
 
 ```go
@@ -1109,6 +1128,16 @@ func DeleteDestinationVolume() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplication.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1262,6 +1291,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolumerepl
 	ReplicationSchedule: *string,
 	VolumeName: *string,
 	DeleteDestinationVolume: interface{},
+	DeletionPolicy: *string,
 	Description: *string,
 	DestinationVolumeParameters: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolumeReplication.NetappVolumeReplicationDestinationVolumeParameters,
 	ForceStopping: interface{},
@@ -1290,12 +1320,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolumerepl
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.replicationSchedule">ReplicationSchedule</a></code> | <code>*string</code> | Specifies the replication interval. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"]. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.volumeName">VolumeName</a></code> | <code>*string</code> | The name of the existing source volume. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.deleteDestinationVolume">DeleteDestinationVolume</a></code> | <code>interface{}</code> | A destination volume is created as part of replication creation. |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.description">Description</a></code> | <code>*string</code> | An description of this resource. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.destinationVolumeParameters">DestinationVolumeParameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationDestinationVolumeParameters">NetappVolumeReplicationDestinationVolumeParameters</a></code> | destination_volume_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.forceStopping">ForceStopping</a></code> | <code>interface{}</code> | Only replications with mirror_state=MIRRORED can be stopped. |
-| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#project NetappVolumeReplication#project}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#project NetappVolumeReplication#project}. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.replicationEnabled">ReplicationEnabled</a></code> | <code>interface{}</code> | Set to false to stop/break the mirror. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeouts">NetappVolumeReplicationTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.waitForMirror">WaitForMirror</a></code> | <code>interface{}</code> | Replication resource state is independent of mirror_state. |
@@ -1382,7 +1413,7 @@ Location *string
 
 Name of region for this resource. The resource needs to be created in the region of the destination volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#location NetappVolumeReplication#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#location NetappVolumeReplication#location}
 
 ---
 
@@ -1396,7 +1427,7 @@ Name *string
 
 The name of the replication. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#name NetappVolumeReplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#name NetappVolumeReplication#name}
 
 ---
 
@@ -1410,7 +1441,7 @@ ReplicationSchedule *string
 
 Specifies the replication interval. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#replication_schedule NetappVolumeReplication#replication_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#replication_schedule NetappVolumeReplication#replication_schedule}
 
 ---
 
@@ -1424,7 +1455,7 @@ VolumeName *string
 
 The name of the existing source volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#volume_name NetappVolumeReplication#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#volume_name NetappVolumeReplication#volume_name}
 
 ---
 
@@ -1446,7 +1477,28 @@ replication. If you reversed the replication direction, this will be your former
 For production use, it is recommended to keep this parameter false to avoid accidental volume
 deletion. Handle with care. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#delete_destination_volume NetappVolumeReplication#delete_destination_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#delete_destination_volume NetappVolumeReplication#delete_destination_volume}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#deletion_policy NetappVolumeReplication#deletion_policy}
 
 ---
 
@@ -1460,7 +1512,7 @@ Description *string
 
 An description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
 
 ---
 
@@ -1474,7 +1526,7 @@ DestinationVolumeParameters NetappVolumeReplicationDestinationVolumeParameters
 
 destination_volume_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#destination_volume_parameters NetappVolumeReplication#destination_volume_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#destination_volume_parameters NetappVolumeReplication#destination_volume_parameters}
 
 ---
 
@@ -1493,7 +1545,7 @@ currently receives an update and stopping the update might be undesirable. Set t
 to stop anyway. All data transferred to the destination will be discarded and content of destination
 volume will remain at the state of the last successful update. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#force_stopping NetappVolumeReplication#force_stopping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#force_stopping NetappVolumeReplication#force_stopping}
 
 ---
 
@@ -1505,7 +1557,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1525,7 +1577,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#labels NetappVolumeReplication#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#labels NetappVolumeReplication#labels}
 
 ---
 
@@ -1537,7 +1589,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#project NetappVolumeReplication#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#project NetappVolumeReplication#project}.
 
 ---
 
@@ -1556,7 +1608,7 @@ and act independently from the source volume.
 Set to true to enable/resume the mirror. WARNING: Resuming a mirror overwrites any changes
 done to the destination volume with the content of the source volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#replication_enabled NetappVolumeReplication#replication_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#replication_enabled NetappVolumeReplication#replication_enabled}
 
 ---
 
@@ -1570,7 +1622,7 @@ Timeouts NetappVolumeReplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#timeouts NetappVolumeReplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#timeouts NetappVolumeReplication#timeouts}
 
 ---
 
@@ -1588,7 +1640,7 @@ With enough data, it can take many hours
 for mirror_state to reach MIRRORED. If you want Terraform to wait for the mirror to finish on
 create/stop/resume operations, set this parameter to true. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#wait_for_mirror NetappVolumeReplication#wait_for_mirror}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#wait_for_mirror NetappVolumeReplication#wait_for_mirror}
 
 ---
 
@@ -1630,7 +1682,7 @@ StoragePool *string
 
 Name of an existing storage pool for the destination volume with format: 'projects/{{project}}/locations/{{location}}/storagePools/{{poolId}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#storage_pool NetappVolumeReplication#storage_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#storage_pool NetappVolumeReplication#storage_pool}
 
 ---
 
@@ -1644,7 +1696,7 @@ Description *string
 
 Description for the destination volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
 
 ---
 
@@ -1658,7 +1710,7 @@ ShareName *string
 
 Share name for destination volume. If not specified, name of source volume's share name will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#share_name NetappVolumeReplication#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#share_name NetappVolumeReplication#share_name}
 
 ---
 
@@ -1672,7 +1724,7 @@ TieringPolicy NetappVolumeReplicationDestinationVolumeParametersTieringPolicy
 
 tiering_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#tiering_policy NetappVolumeReplication#tiering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#tiering_policy NetappVolumeReplication#tiering_policy}
 
 ---
 
@@ -1688,7 +1740,7 @@ Name for the destination volume to be created.
 
 If not specified, the name of the source volume will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#volume_id NetappVolumeReplication#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#volume_id NetappVolumeReplication#volume_id}
 
 ---
 
@@ -1727,7 +1779,7 @@ Optional.
 Time in days to mark the volume's data block as cold and make it eligible for tiering, can be range from 2-183.
 Default is 31.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#cooling_threshold_days NetappVolumeReplication#cooling_threshold_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#cooling_threshold_days NetappVolumeReplication#cooling_threshold_days}
 
 ---
 
@@ -1743,7 +1795,7 @@ Optional.
 
 Flag indicating if the volume has tiering policy enable/pause. Default is PAUSED. Default value: "PAUSED" Possible values: ["ENABLED", "PAUSED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#tier_action NetappVolumeReplication#tier_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#tier_action NetappVolumeReplication#tier_action}
 
 ---
 
@@ -1791,9 +1843,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolumerepl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#create NetappVolumeReplication#create}. |
-| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#delete NetappVolumeReplication#delete}. |
-| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#update NetappVolumeReplication#update}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#create NetappVolumeReplication#create}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#delete NetappVolumeReplication#delete}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#update NetappVolumeReplication#update}. |
 
 ---
 
@@ -1805,7 +1857,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#create NetappVolumeReplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#create NetappVolumeReplication#create}.
 
 ---
 
@@ -1817,7 +1869,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#delete NetappVolumeReplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#delete NetappVolumeReplication#delete}.
 
 ---
 
@@ -1829,7 +1881,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#update NetappVolumeReplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_volume_replication#update NetappVolumeReplication#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApigeeEnvReferences <a name="ApigeeEnvReferences" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references google_apigee_env_references}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references google_apigee_env_references}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ func PutTimeouts(value ApigeeEnvReferencesTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.resetDescription"></a>
 
 ```go
@@ -523,7 +530,7 @@ The construct id used in the generated config for the ApigeeEnvReferences to imp
 
 The id of the existing ApigeeEnvReferences that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,6 +561,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeoutsOutputReference">ApigeeEnvReferencesTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.envIdInput">EnvIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -561,6 +569,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.refersInput">RefersInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.resourceTypeInput">ResourceTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.envId">EnvId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -722,6 +731,16 @@ func Timeouts() ApigeeEnvReferencesTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.descriptionInput"></a>
 
 ```go
@@ -789,6 +808,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -891,6 +920,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvreferen
 	Name: *string,
 	Refers: *string,
 	ResourceType: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeEnvReferences.ApigeeEnvReferencesTimeouts,
@@ -912,8 +942,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvreferen
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.name">Name</a></code> | <code>*string</code> | Required. The resource id of this reference. Values must match the regular expression [\w\s-.]+. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.refers">Refers</a></code> | <code>*string</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | The type of resource referred to by this reference. Valid values are 'KeyStore' or 'TrustStore'. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.description">Description</a></code> | <code>*string</code> | Optional. A human-readable description of this reference. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts">ApigeeEnvReferencesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -998,7 +1029,7 @@ EnvId *string
 
 The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#env_id ApigeeEnvReferences#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#env_id ApigeeEnvReferences#env_id}
 
 ---
 
@@ -1012,7 +1043,7 @@ Name *string
 
 Required. The resource id of this reference. Values must match the regular expression [\w\s-.]+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#name ApigeeEnvReferences#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#name ApigeeEnvReferences#name}
 
 ---
 
@@ -1028,7 +1059,7 @@ Required.
 
 The id of the resource to which this reference refers. Must be the id of a resource that exists in the parent environment and is of the given resourceType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#refers ApigeeEnvReferences#refers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#refers ApigeeEnvReferences#refers}
 
 ---
 
@@ -1042,7 +1073,28 @@ ResourceType *string
 
 The type of resource referred to by this reference. Valid values are 'KeyStore' or 'TrustStore'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#resource_type ApigeeEnvReferences#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#resource_type ApigeeEnvReferences#resource_type}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#deletion_policy ApigeeEnvReferences#deletion_policy}
 
 ---
 
@@ -1056,7 +1108,7 @@ Description *string
 
 Optional. A human-readable description of this reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#description ApigeeEnvReferences#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#description ApigeeEnvReferences#description}
 
 ---
 
@@ -1068,7 +1120,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1085,7 +1137,7 @@ Timeouts ApigeeEnvReferencesTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#timeouts ApigeeEnvReferences#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#timeouts ApigeeEnvReferences#timeouts}
 
 ---
 
@@ -1107,9 +1159,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvreferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}. |
 
 ---
 
@@ -1121,7 +1173,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}.
 
 ---
 
@@ -1133,7 +1185,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}.
 
 ---
 
@@ -1145,7 +1197,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,23 +18,35 @@ export interface BigqueryCapacityCommitmentConfig extends cdktn.TerraformMetaArg
   * cannot be a dash. Max length is 64 characters. NOTE: this ID won't be kept if the capacity commitment is split
   * or merged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#capacity_commitment_id BigqueryCapacityCommitment#capacity_commitment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#capacity_commitment_id BigqueryCapacityCommitment#capacity_commitment_id}
   */
   readonly capacityCommitmentId?: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#deletion_policy BigqueryCapacityCommitment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#edition BigqueryCapacityCommitment#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#edition BigqueryCapacityCommitment#edition}
   */
   readonly edition?: string;
   /**
   * If true, fail the request if another project in the organization has a capacity commitment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#enforce_single_admin_project_per_org BigqueryCapacityCommitment#enforce_single_admin_project_per_org}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#enforce_single_admin_project_per_org BigqueryCapacityCommitment#enforce_single_admin_project_per_org}
   */
   readonly enforceSingleAdminProjectPerOrg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#id BigqueryCapacityCommitment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#id BigqueryCapacityCommitment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,49 +56,49 @@ export interface BigqueryCapacityCommitmentConfig extends cdktn.TerraformMetaArg
   * The geographic location where the transfer config should reside.
   * Examples: US, EU, asia-northeast1. The default value is US.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#location BigqueryCapacityCommitment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#location BigqueryCapacityCommitment#location}
   */
   readonly location?: string;
   /**
   * Capacity commitment plan. Valid values are at https://cloud.google.com/bigquery/docs/reference/reservations/rpc/google.cloud.bigquery.reservation.v1#commitmentplan
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#plan BigqueryCapacityCommitment#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#plan BigqueryCapacityCommitment#plan}
   */
   readonly plan: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#project BigqueryCapacityCommitment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#project BigqueryCapacityCommitment#project}
   */
   readonly project?: string;
   /**
   * The plan this capacity commitment is converted to after commitmentEndTime passes. Once the plan is changed, committed period is extended according to commitment plan. Only applicable for some commitment plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#renewal_plan BigqueryCapacityCommitment#renewal_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#renewal_plan BigqueryCapacityCommitment#renewal_plan}
   */
   readonly renewalPlan?: string;
   /**
   * Number of slots in this commitment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#slot_count BigqueryCapacityCommitment#slot_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#slot_count BigqueryCapacityCommitment#slot_count}
   */
   readonly slotCount: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#timeouts BigqueryCapacityCommitment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#timeouts BigqueryCapacityCommitment#timeouts}
   */
   readonly timeouts?: BigqueryCapacityCommitmentTimeouts;
 }
 export interface BigqueryCapacityCommitmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#create BigqueryCapacityCommitment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#create BigqueryCapacityCommitment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#delete BigqueryCapacityCommitment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#delete BigqueryCapacityCommitment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#update BigqueryCapacityCommitment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#update BigqueryCapacityCommitment#update}
   */
   readonly update?: string;
 }
@@ -238,7 +250,7 @@ export class BigqueryCapacityCommitmentTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment google_bigquery_capacity_commitment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment google_bigquery_capacity_commitment}
 */
 export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
 
@@ -254,7 +266,7 @@ export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BigqueryCapacityCommitment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryCapacityCommitment to import
-  * @param importFromId The id of the existing BigqueryCapacityCommitment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BigqueryCapacityCommitment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryCapacityCommitment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -266,7 +278,7 @@ export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -277,7 +289,7 @@ export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
       terraformResourceType: 'google_bigquery_capacity_commitment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -289,6 +301,7 @@ export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._capacityCommitmentId = config.capacityCommitmentId;
+    this._deletionPolicy = config.deletionPolicy;
     this._edition = config.edition;
     this._enforceSingleAdminProjectPerOrg = config.enforceSingleAdminProjectPerOrg;
     this._id = config.id;
@@ -328,6 +341,22 @@ export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
   // commitment_start_time - computed: true, optional: false, required: false
   public get commitmentStartTime() {
     return this.getStringAttribute('commitment_start_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // edition - computed: false, optional: true, required: false
@@ -485,6 +514,7 @@ export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       capacity_commitment_id: cdktn.stringToTerraform(this._capacityCommitmentId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       edition: cdktn.stringToTerraform(this._edition),
       enforce_single_admin_project_per_org: cdktn.stringToTerraform(this._enforceSingleAdminProjectPerOrg),
       id: cdktn.stringToTerraform(this._id),
@@ -501,6 +531,12 @@ export class BigqueryCapacityCommitment extends cdktn.TerraformResource {
     const attrs = {
       capacity_commitment_id: {
         value: cdktn.stringToHclTerraform(this._capacityCommitmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

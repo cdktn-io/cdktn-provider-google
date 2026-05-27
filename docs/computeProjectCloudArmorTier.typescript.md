@@ -4,7 +4,7 @@
 
 ### ComputeProjectCloudArmorTier <a name="ComputeProjectCloudArmorTier" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ public putTimeouts(value: ComputeProjectCloudArmorTierTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.resetId"></a>
 
 ```typescript
@@ -523,7 +530,7 @@ The construct id used in the generated config for the ComputeProjectCloudArmorTi
 
 The id of the existing ComputeProjectCloudArmorTier that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -555,10 +562,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeoutsOutputReference">ComputeProjectCloudArmorTierTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.cloudArmorTierInput">cloudArmorTierInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts">ComputeProjectCloudArmorTierTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.cloudArmorTier">cloudArmorTier</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.project">project</a></code> | <code>string</code> | *No description.* |
 
@@ -726,6 +735,16 @@ public readonly cloudArmorTierInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.idInput"></a>
 
 ```typescript
@@ -760,6 +779,16 @@ public readonly timeoutsInput: IResolvable | ComputeProjectCloudArmorTierTimeout
 
 ```typescript
 public readonly cloudArmorTier: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -828,8 +857,9 @@ const computeProjectCloudArmorTierConfig: computeProjectCloudArmorTier.ComputePr
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.cloudArmorTier">cloudArmorTier</a></code> | <code>string</code> | Managed protection tier to be set. Possible values: ["CA_STANDARD", "CA_ENTERPRISE_PAYGO", "CA_ENTERPRISE_ANNUAL"]. |
-| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#id ComputeProjectCloudArmorTier#id}. |
-| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#project ComputeProjectCloudArmorTier#project}. |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#id ComputeProjectCloudArmorTier#id}. |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#project ComputeProjectCloudArmorTier#project}. |
 | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts">ComputeProjectCloudArmorTierTimeouts</a></code> | timeouts block. |
 
 ---
@@ -914,7 +944,29 @@ public readonly cloudArmorTier: string;
 
 Managed protection tier to be set. Possible values: ["CA_STANDARD", "CA_ENTERPRISE_PAYGO", "CA_ENTERPRISE_ANNUAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#cloud_armor_tier ComputeProjectCloudArmorTier#cloud_armor_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#cloud_armor_tier ComputeProjectCloudArmorTier#cloud_armor_tier}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#deletion_policy ComputeProjectCloudArmorTier#deletion_policy}
 
 ---
 
@@ -926,7 +978,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#id ComputeProjectCloudArmorTier#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#id ComputeProjectCloudArmorTier#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +993,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#project ComputeProjectCloudArmorTier#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#project ComputeProjectCloudArmorTier#project}.
 
 ---
 
@@ -955,7 +1007,7 @@ public readonly timeouts: ComputeProjectCloudArmorTierTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#timeouts ComputeProjectCloudArmorTier#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#timeouts ComputeProjectCloudArmorTier#timeouts}
 
 ---
 
@@ -973,9 +1025,9 @@ const computeProjectCloudArmorTierTimeouts: computeProjectCloudArmorTier.Compute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#create ComputeProjectCloudArmorTier#create}. |
-| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#delete ComputeProjectCloudArmorTier#delete}. |
-| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#update ComputeProjectCloudArmorTier#update}. |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#create ComputeProjectCloudArmorTier#create}. |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#delete ComputeProjectCloudArmorTier#delete}. |
+| <code><a href="#@cdktn/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTierTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#update ComputeProjectCloudArmorTier#update}. |
 
 ---
 
@@ -987,7 +1039,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#create ComputeProjectCloudArmorTier#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#create ComputeProjectCloudArmorTier#create}.
 
 ---
 
@@ -999,7 +1051,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#delete ComputeProjectCloudArmorTier#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#delete ComputeProjectCloudArmorTier#delete}.
 
 ---
 
@@ -1011,7 +1063,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier#update ComputeProjectCloudArmorTier#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_project_cloud_armor_tier#update ComputeProjectCloudArmorTier#update}.
 
 ---
 

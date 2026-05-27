@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Job <a name="DataGoogleCloudRunV2Job" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer"></a>
 
@@ -40,9 +40,9 @@ dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job(
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the Job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the cloud run job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the cloud run job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
 
 ---
 
@@ -545,7 +545,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Job to
 
 The id of the existing DataGoogleCloudRunV2Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,6 +581,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.deleteTime">delete_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.deletionProtection">deletion_protection</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.effectiveAnnotations">effective_annotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
@@ -806,6 +807,16 @@ creator: str
 
 ```python
 delete_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1148,9 +1159,9 @@ dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.name">name</a></code> | <code>str</code> | Name of the Job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.location">location</a></code> | <code>str</code> | The location of the cloud run job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
 
 ---
 
@@ -1234,7 +1245,7 @@ name: str
 
 Name of the Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
 
 ---
 
@@ -1246,7 +1257,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1263,7 +1274,7 @@ location: str
 
 The location of the cloud run job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
 
 ---
 
@@ -1275,7 +1286,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
 
 ---
 

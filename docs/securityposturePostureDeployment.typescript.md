@@ -4,7 +4,7 @@
 
 ### SecurityposturePostureDeployment <a name="SecurityposturePostureDeployment" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ public putTimeouts(value: SecurityposturePostureDeploymentTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.resetDescription"></a>
 
 ```typescript
@@ -523,7 +530,7 @@ The construct id used in the generated config for the SecurityposturePostureDepl
 
 The id of the existing SecurityposturePostureDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -563,6 +570,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeoutsOutputReference">SecurityposturePostureDeploymentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
@@ -572,6 +580,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.postureRevisionIdInput">postureRevisionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.targetResourceInput">targetResourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts">SecurityposturePostureDeploymentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.location">location</a></code> | <code>string</code> | *No description.* |
@@ -825,6 +834,16 @@ public readonly updateTime: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.descriptionInput"></a>
 
 ```typescript
@@ -912,6 +931,16 @@ public readonly timeoutsInput: IResolvable | SecurityposturePostureDeploymentTim
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts">SecurityposturePostureDeploymentTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1042,8 +1071,9 @@ const securityposturePostureDeploymentConfig: securityposturePostureDeployment.S
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.postureId">postureId</a></code> | <code>string</code> | Relative name of the posture which needs to be deployed. It should be in the format:   organizations/{organization_id}/locations/{location}/postures/{posture_id}. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.postureRevisionId">postureRevisionId</a></code> | <code>string</code> | Revision_id the posture which needs to be deployed. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.targetResource">targetResource</a></code> | <code>string</code> | The resource on which the posture should be deployed. This can be in one of the following formats: projects/{project_number}, folders/{folder_number}, organizations/{organization_id}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.description">description</a></code> | <code>string</code> | Description of the posture deployment. |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts">SecurityposturePostureDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1128,7 +1158,7 @@ public readonly location: string;
 
 The location of the resource, eg. global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#location SecurityposturePostureDeployment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#location SecurityposturePostureDeployment#location}
 
 ---
 
@@ -1142,7 +1172,7 @@ public readonly parent: string;
 
 The parent of the resource, an organization. Format should be 'organizations/{organization_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#parent SecurityposturePostureDeployment#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#parent SecurityposturePostureDeployment#parent}
 
 ---
 
@@ -1156,7 +1186,7 @@ public readonly postureDeploymentId: string;
 
 ID of the posture deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#posture_deployment_id SecurityposturePostureDeployment#posture_deployment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#posture_deployment_id SecurityposturePostureDeployment#posture_deployment_id}
 
 ---
 
@@ -1170,7 +1200,7 @@ public readonly postureId: string;
 
 Relative name of the posture which needs to be deployed. It should be in the format:   organizations/{organization_id}/locations/{location}/postures/{posture_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#posture_id SecurityposturePostureDeployment#posture_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#posture_id SecurityposturePostureDeployment#posture_id}
 
 ---
 
@@ -1184,7 +1214,7 @@ public readonly postureRevisionId: string;
 
 Revision_id the posture which needs to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#posture_revision_id SecurityposturePostureDeployment#posture_revision_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#posture_revision_id SecurityposturePostureDeployment#posture_revision_id}
 
 ---
 
@@ -1198,7 +1228,29 @@ public readonly targetResource: string;
 
 The resource on which the posture should be deployed. This can be in one of the following formats: projects/{project_number}, folders/{folder_number}, organizations/{organization_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#target_resource SecurityposturePostureDeployment#target_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#target_resource SecurityposturePostureDeployment#target_resource}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#deletion_policy SecurityposturePostureDeployment#deletion_policy}
 
 ---
 
@@ -1212,7 +1264,7 @@ public readonly description: string;
 
 Description of the posture deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#description SecurityposturePostureDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#description SecurityposturePostureDeployment#description}
 
 ---
 
@@ -1224,7 +1276,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1241,7 +1293,7 @@ public readonly timeouts: SecurityposturePostureDeploymentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#timeouts SecurityposturePostureDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#timeouts SecurityposturePostureDeployment#timeouts}
 
 ---
 
@@ -1259,9 +1311,9 @@ const securityposturePostureDeploymentTimeouts: securityposturePostureDeployment
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}. |
 
 ---
 
@@ -1273,7 +1325,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}.
 
 ---
 
@@ -1285,7 +1337,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}.
 
 ---
 
@@ -1297,7 +1349,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}.
 
 ---
 

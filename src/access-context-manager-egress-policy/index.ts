@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface AccessContextManagerEgressPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#deletion_policy AccessContextManagerEgressPolicy#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The name of the Service Perimeter to add this resource to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy#egress_policy_name AccessContextManagerEgressPolicy#egress_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#egress_policy_name AccessContextManagerEgressPolicy#egress_policy_name}
   */
   readonly egressPolicyName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy#id AccessContextManagerEgressPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#id AccessContextManagerEgressPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,23 +40,23 @@ export interface AccessContextManagerEgressPolicyConfig extends cdktn.TerraformM
   /**
   * A GCP resource that is inside of the service perimeter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy#resource AccessContextManagerEgressPolicy#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#resource AccessContextManagerEgressPolicy#resource}
   */
   readonly resource: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy#timeouts AccessContextManagerEgressPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#timeouts AccessContextManagerEgressPolicy#timeouts}
   */
   readonly timeouts?: AccessContextManagerEgressPolicyTimeouts;
 }
 export interface AccessContextManagerEgressPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy#create AccessContextManagerEgressPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#create AccessContextManagerEgressPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy#delete AccessContextManagerEgressPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#delete AccessContextManagerEgressPolicy#delete}
   */
   readonly delete?: string;
 }
@@ -167,7 +179,7 @@ export class AccessContextManagerEgressPolicyTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy}
 */
 export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
 
@@ -183,7 +195,7 @@ export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccessContextManagerEgressPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessContextManagerEgressPolicy to import
-  * @param importFromId The id of the existing AccessContextManagerEgressPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessContextManagerEgressPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessContextManagerEgressPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -195,7 +207,7 @@ export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +218,7 @@ export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_access_context_manager_egress_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -217,6 +229,7 @@ export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._egressPolicyName = config.egressPolicyName;
     this._id = config.id;
     this._resource = config.resource;
@@ -230,6 +243,22 @@ export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
   // access_policy_id - computed: true, optional: false, required: false
   public get accessPolicyId() {
     return this.getStringAttribute('access_policy_id');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // egress_policy_name - computed: false, optional: false, required: true
@@ -296,6 +325,7 @@ export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       egress_policy_name: cdktn.stringToTerraform(this._egressPolicyName),
       id: cdktn.stringToTerraform(this._id),
       resource: cdktn.stringToTerraform(this._resource),
@@ -305,6 +335,12 @@ export class AccessContextManagerEgressPolicy extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       egress_policy_name: {
         value: cdktn.stringToHclTerraform(this._egressPolicyName),
         isBlock: false,

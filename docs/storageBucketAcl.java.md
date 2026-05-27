@@ -4,7 +4,7 @@
 
 ### StorageBucketAcl <a name="StorageBucketAcl" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl google_storage_bucket_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl google_storage_bucket_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer"></a>
 
@@ -21,6 +21,7 @@ StorageBucketAcl.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .bucket(java.lang.String)
 //  .defaultAcl(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .predefinedAcl(java.lang.String)
 //  .roleEntity(java.util.List<java.lang.String>)
@@ -40,7 +41,8 @@ StorageBucketAcl.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | The name of the bucket it applies to. |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.defaultAcl">defaultAcl</a></code> | <code>java.lang.String</code> | Configure this ACL to be the default ACL. |
-| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.predefinedAcl">predefinedAcl</a></code> | <code>java.lang.String</code> | The canned GCS ACL to apply. Must be set if role_entity is not. |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.roleEntity">roleEntity</a></code> | <code>java.util.List<java.lang.String></code> | List of role/entity pairs in the form ROLE:entity. |
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the bucket it applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#bucket StorageBucketAcl#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#bucket StorageBucketAcl#bucket}
 
 ---
 
@@ -122,7 +124,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Configure this ACL to be the default ACL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#default_acl StorageBucketAcl#default_acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#default_acl StorageBucketAcl#default_acl}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#deletion_policy StorageBucketAcl#deletion_policy}
 
 ---
 
@@ -130,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The canned GCS ACL to apply. Must be set if role_entity is not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#predefined_acl StorageBucketAcl#predefined_acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#predefined_acl StorageBucketAcl#predefined_acl}
 
 ---
 
@@ -155,7 +174,7 @@ List of role/entity pairs in the form ROLE:entity.
 
 See GCS Bucket ACL documentation  for more details. Must be set if predefined_acl is not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#role_entity StorageBucketAcl#role_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#role_entity StorageBucketAcl#role_entity}
 
 ---
 
@@ -188,6 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.resetDefaultAcl">resetDefaultAcl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.resetPredefinedAcl">resetPredefinedAcl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.resetRoleEntity">resetRoleEntity</a></code> | *No description.* |
@@ -511,6 +531,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetDefaultAcl()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.resetId"></a>
 
 ```java
@@ -632,7 +658,7 @@ The construct id used in the generated config for the StorageBucketAcl to import
 
 The id of the existing StorageBucketAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -664,11 +690,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.bucketInput">bucketInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.defaultAclInput">defaultAclInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.predefinedAclInput">predefinedAclInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.roleEntityInput">roleEntityInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.bucket">bucket</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.defaultAcl">defaultAcl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.predefinedAcl">predefinedAcl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.roleEntity">roleEntity</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -837,6 +865,16 @@ public java.lang.String getDefaultAclInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.idInput"></a>
 
 ```java
@@ -881,6 +919,16 @@ public java.lang.String getBucket();
 
 ```java
 public java.lang.String getDefaultAcl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAcl.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -954,6 +1002,7 @@ StorageBucketAclConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .bucket(java.lang.String)
 //  .defaultAcl(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .predefinedAcl(java.lang.String)
 //  .roleEntity(java.util.List<java.lang.String>)
@@ -973,7 +1022,8 @@ StorageBucketAclConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | The name of the bucket it applies to. |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.defaultAcl">defaultAcl</a></code> | <code>java.lang.String</code> | Configure this ACL to be the default ACL. |
-| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.predefinedAcl">predefinedAcl</a></code> | <code>java.lang.String</code> | The canned GCS ACL to apply. Must be set if role_entity is not. |
 | <code><a href="#@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.roleEntity">roleEntity</a></code> | <code>java.util.List<java.lang.String></code> | List of role/entity pairs in the form ROLE:entity. |
 
@@ -1059,7 +1109,7 @@ public java.lang.String getBucket();
 
 The name of the bucket it applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#bucket StorageBucketAcl#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#bucket StorageBucketAcl#bucket}
 
 ---
 
@@ -1073,7 +1123,28 @@ public java.lang.String getDefaultAcl();
 
 Configure this ACL to be the default ACL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#default_acl StorageBucketAcl#default_acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#default_acl StorageBucketAcl#default_acl}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.storageBucketAcl.StorageBucketAclConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#deletion_policy StorageBucketAcl#deletion_policy}
 
 ---
 
@@ -1085,7 +1156,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#id StorageBucketAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1102,7 +1173,7 @@ public java.lang.String getPredefinedAcl();
 
 The canned GCS ACL to apply. Must be set if role_entity is not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#predefined_acl StorageBucketAcl#predefined_acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#predefined_acl StorageBucketAcl#predefined_acl}
 
 ---
 
@@ -1118,7 +1189,7 @@ List of role/entity pairs in the form ROLE:entity.
 
 See GCS Bucket ACL documentation  for more details. Must be set if predefined_acl is not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_acl#role_entity StorageBucketAcl#role_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_acl#role_entity StorageBucketAcl#role_entity}
 
 ---
 

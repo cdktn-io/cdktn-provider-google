@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface HealthcareConsentStoreConfig extends cdktn.TerraformMetaArgumen
   * Identifies the dataset addressed by this request. Must be in the format
   * 'projects/{project}/locations/{location}/datasets/{dataset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#dataset HealthcareConsentStore#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#dataset HealthcareConsentStore#dataset}
   */
   readonly dataset: string;
   /**
@@ -24,17 +24,29 @@ export interface HealthcareConsentStoreConfig extends cdktn.TerraformMetaArgumen
   * 
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#default_consent_ttl HealthcareConsentStore#default_consent_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#default_consent_ttl HealthcareConsentStore#default_consent_ttl}
   */
   readonly defaultConsentTtl?: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#deletion_policy HealthcareConsentStore#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * If true, [consents.patch] [google.cloud.healthcare.v1.consent.UpdateConsent] creates the consent if it does not already exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#enable_consent_create_on_update HealthcareConsentStore#enable_consent_create_on_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#enable_consent_create_on_update HealthcareConsentStore#enable_consent_create_on_update}
   */
   readonly enableConsentCreateOnUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#id HealthcareConsentStore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#id HealthcareConsentStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,34 +70,34 @@ export interface HealthcareConsentStoreConfig extends cdktn.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#labels HealthcareConsentStore#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#labels HealthcareConsentStore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of this ConsentStore, for example:
   * "consent1"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#name HealthcareConsentStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#name HealthcareConsentStore#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#timeouts HealthcareConsentStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#timeouts HealthcareConsentStore#timeouts}
   */
   readonly timeouts?: HealthcareConsentStoreTimeouts;
 }
 export interface HealthcareConsentStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#create HealthcareConsentStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#create HealthcareConsentStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#delete HealthcareConsentStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#delete HealthcareConsentStore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#update HealthcareConsentStore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#update HealthcareConsentStore#update}
   */
   readonly update?: string;
 }
@@ -237,7 +249,7 @@ export class HealthcareConsentStoreTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store google_healthcare_consent_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store google_healthcare_consent_store}
 */
 export class HealthcareConsentStore extends cdktn.TerraformResource {
 
@@ -253,7 +265,7 @@ export class HealthcareConsentStore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a HealthcareConsentStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HealthcareConsentStore to import
-  * @param importFromId The id of the existing HealthcareConsentStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HealthcareConsentStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HealthcareConsentStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -265,7 +277,7 @@ export class HealthcareConsentStore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store google_healthcare_consent_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_consent_store google_healthcare_consent_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +288,7 @@ export class HealthcareConsentStore extends cdktn.TerraformResource {
       terraformResourceType: 'google_healthcare_consent_store',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -289,6 +301,7 @@ export class HealthcareConsentStore extends cdktn.TerraformResource {
     });
     this._dataset = config.dataset;
     this._defaultConsentTtl = config.defaultConsentTtl;
+    this._deletionPolicy = config.deletionPolicy;
     this._enableConsentCreateOnUpdate = config.enableConsentCreateOnUpdate;
     this._id = config.id;
     this._labels = config.labels;
@@ -327,6 +340,22 @@ export class HealthcareConsentStore extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultConsentTtlInput() {
     return this._defaultConsentTtl;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // effective_labels - computed: true, optional: false, required: false
@@ -426,6 +455,7 @@ export class HealthcareConsentStore extends cdktn.TerraformResource {
     return {
       dataset: cdktn.stringToTerraform(this._dataset),
       default_consent_ttl: cdktn.stringToTerraform(this._defaultConsentTtl),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       enable_consent_create_on_update: cdktn.booleanToTerraform(this._enableConsentCreateOnUpdate),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
@@ -444,6 +474,12 @@ export class HealthcareConsentStore extends cdktn.TerraformResource {
       },
       default_consent_ttl: {
         value: cdktn.stringToHclTerraform(this._defaultConsentTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

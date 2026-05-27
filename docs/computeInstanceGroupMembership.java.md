@@ -4,7 +4,7 @@
 
 ### ComputeInstanceGroupMembership <a name="ComputeInstanceGroupMembership" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer"></a>
 
@@ -21,6 +21,7 @@ ComputeInstanceGroupMembership.Builder.create(Construct scope, java.lang.String 
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .instance(java.lang.String)
     .instanceGroup(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(ComputeInstanceGroupMembershipTimeouts)
@@ -41,8 +42,9 @@ ComputeInstanceGroupMembership.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.instance">instance</a></code> | <code>java.lang.String</code> | An instance being added to the InstanceGroup. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.instanceGroup">instanceGroup</a></code> | <code>java.lang.String</code> | Represents an Instance Group resource name that the instance belongs to. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts">ComputeInstanceGroupMembershipTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | A reference to the zone where the instance group resides. |
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 An instance being added to the InstanceGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
 
 ---
 
@@ -124,7 +126,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Represents an Instance Group resource name that the instance belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#deletion_policy ComputeInstanceGroupMembership#deletion_policy}
 
 ---
 
@@ -132,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}.
 
 ---
 
@@ -153,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
 
 ---
 
@@ -163,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A reference to the zone where the instance group resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
 
 ---
 
@@ -196,6 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -526,6 +546,12 @@ public void putTimeouts(ComputeInstanceGroupMembershipTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.resetId"></a>
 
 ```java
@@ -653,7 +679,7 @@ The construct id used in the generated config for the ComputeInstanceGroupMember
 
 The id of the existing ComputeInstanceGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -684,12 +710,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeoutsOutputReference">ComputeInstanceGroupMembershipTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.instanceGroupInput">instanceGroupInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.instanceInput">instanceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts">ComputeInstanceGroupMembershipTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.instance">instance</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.instanceGroup">instanceGroup</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -850,6 +878,16 @@ public ComputeInstanceGroupMembershipTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.idInput"></a>
 
 ```java
@@ -904,6 +942,16 @@ public IResolvable|ComputeInstanceGroupMembershipTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getZoneInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -997,6 +1045,7 @@ ComputeInstanceGroupMembershipConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .instance(java.lang.String)
     .instanceGroup(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(ComputeInstanceGroupMembershipTimeouts)
@@ -1017,8 +1066,9 @@ ComputeInstanceGroupMembershipConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.instance">instance</a></code> | <code>java.lang.String</code> | An instance being added to the InstanceGroup. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.instanceGroup">instanceGroup</a></code> | <code>java.lang.String</code> | Represents an Instance Group resource name that the instance belongs to. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts">ComputeInstanceGroupMembershipTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | A reference to the zone where the instance group resides. |
 
@@ -1104,7 +1154,7 @@ public java.lang.String getInstance();
 
 An instance being added to the InstanceGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
 
 ---
 
@@ -1118,7 +1168,28 @@ public java.lang.String getInstanceGroup();
 
 Represents an Instance Group resource name that the instance belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#deletion_policy ComputeInstanceGroupMembership#deletion_policy}
 
 ---
 
@@ -1130,7 +1201,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,7 +1216,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}.
 
 ---
 
@@ -1159,7 +1230,7 @@ public ComputeInstanceGroupMembershipTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
 
 ---
 
@@ -1173,7 +1244,7 @@ public java.lang.String getZone();
 
 A reference to the zone where the instance group resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
 
 ---
 
@@ -1194,8 +1265,8 @@ ComputeInstanceGroupMembershipTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}. |
 
 ---
 
@@ -1207,7 +1278,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}.
 
 ---
 
@@ -1219,7 +1290,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DialogflowCxIntent <a name="DialogflowCxIntent" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.putParameters">PutParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.putTrainingPhrases">PutTrainingPhrases</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.resetIsDefaultNegativeIntent">ResetIsDefaultNegativeIntent</a></code> | *No description.* |
@@ -437,6 +438,12 @@ private void PutTrainingPhrases(IResolvable|DialogflowCxIntentTrainingPhrases[] 
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.resetDescription"></a>
 
 ```csharp
@@ -612,7 +619,7 @@ The construct id used in the generated config for the DialogflowCxIntent to impo
 
 The id of the existing DialogflowCxIntent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -648,6 +655,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference">DialogflowCxIntentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.trainingPhrases">TrainingPhrases</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList">DialogflowCxIntentTrainingPhrasesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -661,6 +669,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.priorityInput">PriorityInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.trainingPhrasesInput">TrainingPhrasesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -876,6 +885,16 @@ public DialogflowCxIntentTrainingPhrasesList TrainingPhrases { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.descriptionInput"></a>
 
 ```csharp
@@ -1003,6 +1022,16 @@ public IResolvable|DialogflowCxIntentTrainingPhrases[] TrainingPhrasesInput { ge
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>[]
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1142,6 +1171,7 @@ new DialogflowCxIntentConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string DisplayName,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     bool|IResolvable IsDefaultNegativeIntent = null,
@@ -1169,8 +1199,9 @@ new DialogflowCxIntentConfig {
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The human-readable name of the intent, unique within the agent. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.description">Description</a></code> | <code>string</code> | Human readable description for better understanding an intent like its scope, content, result etc. Maximum character limit: 140 characters. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isDefaultNegativeIntent">IsDefaultNegativeIntent</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#negative) for an agent. When you create an agent, a Default Negative Intent is created automatically. The Default Negative Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isDefaultWelcomeIntent">IsDefaultWelcomeIntent</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isFallback">IsFallback</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Indicates whether this is a fallback intent. |
@@ -1264,7 +1295,28 @@ public string DisplayName { get; set; }
 
 The human-readable name of the intent, unique within the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#display_name DialogflowCxIntent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#display_name DialogflowCxIntent#display_name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#deletion_policy DialogflowCxIntent#deletion_policy}
 
 ---
 
@@ -1278,7 +1330,7 @@ public string Description { get; set; }
 
 Human readable description for better understanding an intent like its scope, content, result etc. Maximum character limit: 140 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#description DialogflowCxIntent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#description DialogflowCxIntent#description}
 
 ---
 
@@ -1290,7 +1342,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1309,7 +1361,7 @@ Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/
 
 ~> Avoid having multiple 'google_dialogflow_cx_intent' resources linked to the same agent with 'is_default_negative_intent = true' because they will compete to control a single Default Negative Intent resource in GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#is_default_negative_intent DialogflowCxIntent#is_default_negative_intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#is_default_negative_intent DialogflowCxIntent#is_default_negative_intent}
 
 ---
 
@@ -1325,7 +1377,7 @@ Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/c
 
 ~> Avoid having multiple 'google_dialogflow_cx_intent' resources linked to the same agent with 'is_default_welcome_intent = true' because they will compete to control a single Default Welcome Intent resource in GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#is_default_welcome_intent DialogflowCxIntent#is_default_welcome_intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#is_default_welcome_intent DialogflowCxIntent#is_default_welcome_intent}
 
 ---
 
@@ -1343,7 +1395,7 @@ Currently only default fallback intent is allowed in the agent, which is added u
 Adding training phrases to fallback intent is useful in the case of requests that are mistakenly matched, since training phrases assigned to fallback intents act as negative examples that triggers no-match event.
 To manage the fallback intent, set 'is_default_negative_intent = true'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#is_fallback DialogflowCxIntent#is_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#is_fallback DialogflowCxIntent#is_fallback}
 
 ---
 
@@ -1364,7 +1416,7 @@ An object containing a list of "key": value pairs. Example: { "name": "wrench", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#labels DialogflowCxIntent#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#labels DialogflowCxIntent#labels}
 
 ---
 
@@ -1378,7 +1430,7 @@ public string LanguageCode { get; set; }
 
 The language of the following fields in intent: Intent.training_phrases.parts.text If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#language_code DialogflowCxIntent#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#language_code DialogflowCxIntent#language_code}
 
 ---
 
@@ -1392,7 +1444,7 @@ public IResolvable|DialogflowCxIntentParameters[] Parameters { get; set; }
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#parameters DialogflowCxIntent#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#parameters DialogflowCxIntent#parameters}
 
 ---
 
@@ -1406,7 +1458,7 @@ public string Parent { get; set; }
 
 The agent to create an intent for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#parent DialogflowCxIntent#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#parent DialogflowCxIntent#parent}
 
 ---
 
@@ -1424,7 +1476,7 @@ Higher numbers represent higher priorities.
 If the supplied value is unspecified or 0, the service translates the value to 500,000, which corresponds to the Normal priority in the console.
 If the supplied value is negative, the intent is ignored in runtime detect intent requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#priority DialogflowCxIntent#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#priority DialogflowCxIntent#priority}
 
 ---
 
@@ -1438,7 +1490,7 @@ public DialogflowCxIntentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#timeouts DialogflowCxIntent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#timeouts DialogflowCxIntent#timeouts}
 
 ---
 
@@ -1452,7 +1504,7 @@ public IResolvable|DialogflowCxIntentTrainingPhrases[] TrainingPhrases { get; se
 
 training_phrases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#training_phrases DialogflowCxIntent#training_phrases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#training_phrases DialogflowCxIntent#training_phrases}
 
 ---
 
@@ -1494,7 +1546,7 @@ The entity type of the parameter.
 
 Format: projects/-/locations/-/agents/-/entityTypes/<System Entity Type ID> for system entity types (for example, projects/-/locations/-/agents/-/entityTypes/sys.date), or projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/entityTypes/<Entity Type ID> for developer entity types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#entity_type DialogflowCxIntent#entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#entity_type DialogflowCxIntent#entity_type}
 
 ---
 
@@ -1508,7 +1560,7 @@ public string Id { get; set; }
 
 The unique identifier of the parameter. This field is used by training phrases to annotate their parts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1525,7 +1577,7 @@ public bool|IResolvable IsList { get; set; }
 
 Indicates whether the parameter represents a list of values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#is_list DialogflowCxIntent#is_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#is_list DialogflowCxIntent#is_list}
 
 ---
 
@@ -1542,7 +1594,7 @@ Indicates whether the parameter content should be redacted in log.
 If redaction is enabled, the parameter content will be replaced by parameter name during logging.
 Note: the parameter content is subject to redaction if either parameter level redaction or entity type level redaction is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#redact DialogflowCxIntent#redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#redact DialogflowCxIntent#redact}
 
 ---
 
@@ -1564,9 +1616,9 @@ new DialogflowCxIntentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#create DialogflowCxIntent#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#delete DialogflowCxIntent#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#update DialogflowCxIntent#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#create DialogflowCxIntent#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#delete DialogflowCxIntent#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#update DialogflowCxIntent#update}. |
 
 ---
 
@@ -1578,7 +1630,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#create DialogflowCxIntent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#create DialogflowCxIntent#create}.
 
 ---
 
@@ -1590,7 +1642,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#delete DialogflowCxIntent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#delete DialogflowCxIntent#delete}.
 
 ---
 
@@ -1602,7 +1654,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#update DialogflowCxIntent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#update DialogflowCxIntent#update}.
 
 ---
 
@@ -1638,7 +1690,7 @@ public IResolvable|DialogflowCxIntentTrainingPhrasesParts[] Parts { get; set; }
 
 parts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#parts DialogflowCxIntent#parts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#parts DialogflowCxIntent#parts}
 
 ---
 
@@ -1652,7 +1704,7 @@ public double RepeatCount { get; set; }
 
 Indicates how many times this example was added to the intent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#repeat_count DialogflowCxIntent#repeat_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#repeat_count DialogflowCxIntent#repeat_count}
 
 ---
 
@@ -1688,7 +1740,7 @@ public string Text { get; set; }
 
 The text for this part.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#text DialogflowCxIntent#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#text DialogflowCxIntent#text}
 
 ---
 
@@ -1704,7 +1756,7 @@ The parameter used to annotate this part of the training phrase.
 
 This field is required for annotated parts of the training phrase.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#parameter_id DialogflowCxIntent#parameter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_intent#parameter_id DialogflowCxIntent#parameter_id}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#app CesDeployment#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#app CesDeployment#app}
   */
   readonly app: string;
   /**
@@ -23,17 +23,29 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   * Format:
   * projects/{project}/locations/{location}/apps/{app}/versions/{version}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#app_version CesDeployment#app_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#app_version CesDeployment#app_version}
   */
   readonly appVersion: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#deletion_policy CesDeployment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Display name of the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#display_name CesDeployment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#display_name CesDeployment#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#id CesDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#id CesDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,23 +54,23 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#location CesDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#location CesDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#project CesDeployment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#project CesDeployment#project}
   */
   readonly project?: string;
   /**
   * channel_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
   */
   readonly channelProfile: CesDeploymentChannelProfile;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
   */
   readonly timeouts?: CesDeploymentTimeouts;
 }
@@ -70,7 +82,7 @@ export interface CesDeploymentChannelProfilePersonaProperty {
   * CONCISE
   * CHATTY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#persona CesDeployment#persona}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#persona CesDeployment#persona}
   */
   readonly persona?: string;
 }
@@ -152,34 +164,232 @@ export class CesDeploymentChannelProfilePersonaPropertyOutputReference extends c
     return this._persona;
   }
 }
+export interface CesDeploymentChannelProfileWebWidgetConfigSecuritySettings {
+  /**
+  * The origins that are allowed to host the web widget. An origin is defined by RFC 6454. If empty, all origins are allowed. A maximum of 100 origins is allowed. Example: "https://example.com"
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#allowed_origins CesDeployment#allowed_origins}
+  */
+  readonly allowedOrigins?: string[];
+  /**
+  * Indicates whether origin check for the web widget is enabled. If true, the web widget will check the origin of the website that loads the web widget and only allow it to be loaded in the same origin or any of the allowed origins.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#enable_origin_check CesDeployment#enable_origin_check}
+  */
+  readonly enableOriginCheck?: boolean | cdktn.IResolvable;
+  /**
+  * Indicates whether public access to the web widget is enabled. If true, the web widget will be publicly accessible. If false, the web widget must be integrated with your own authentication and authorization system to return valid credentials for accessing the CES agent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#enable_public_access CesDeployment#enable_public_access}
+  */
+  readonly enablePublicAccess?: boolean | cdktn.IResolvable;
+  /**
+  * Indicates whether reCAPTCHA verification for the web widget is enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#enable_recaptcha CesDeployment#enable_recaptcha}
+  */
+  readonly enableRecaptcha?: boolean | cdktn.IResolvable;
+}
+
+export function cesDeploymentChannelProfileWebWidgetConfigSecuritySettingsToTerraform(struct?: CesDeploymentChannelProfileWebWidgetConfigSecuritySettingsOutputReference | CesDeploymentChannelProfileWebWidgetConfigSecuritySettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    enable_origin_check: cdktn.booleanToTerraform(struct!.enableOriginCheck),
+    enable_public_access: cdktn.booleanToTerraform(struct!.enablePublicAccess),
+    enable_recaptcha: cdktn.booleanToTerraform(struct!.enableRecaptcha),
+  }
+}
+
+
+export function cesDeploymentChannelProfileWebWidgetConfigSecuritySettingsToHclTerraform(struct?: CesDeploymentChannelProfileWebWidgetConfigSecuritySettingsOutputReference | CesDeploymentChannelProfileWebWidgetConfigSecuritySettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_origins: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enable_origin_check: {
+      value: cdktn.booleanToHclTerraform(struct!.enableOriginCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_public_access: {
+      value: cdktn.booleanToHclTerraform(struct!.enablePublicAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_recaptcha: {
+      value: cdktn.booleanToHclTerraform(struct!.enableRecaptcha),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesDeploymentChannelProfileWebWidgetConfigSecuritySettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesDeploymentChannelProfileWebWidgetConfigSecuritySettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedOrigins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedOrigins = this._allowedOrigins;
+    }
+    if (this._enableOriginCheck !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableOriginCheck = this._enableOriginCheck;
+    }
+    if (this._enablePublicAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enablePublicAccess = this._enablePublicAccess;
+    }
+    if (this._enableRecaptcha !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableRecaptcha = this._enableRecaptcha;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesDeploymentChannelProfileWebWidgetConfigSecuritySettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedOrigins = undefined;
+      this._enableOriginCheck = undefined;
+      this._enablePublicAccess = undefined;
+      this._enableRecaptcha = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedOrigins = value.allowedOrigins;
+      this._enableOriginCheck = value.enableOriginCheck;
+      this._enablePublicAccess = value.enablePublicAccess;
+      this._enableRecaptcha = value.enableRecaptcha;
+    }
+  }
+
+  // allowed_origins - computed: false, optional: true, required: false
+  private _allowedOrigins?: string[]; 
+  public get allowedOrigins() {
+    return this.getListAttribute('allowed_origins');
+  }
+  public set allowedOrigins(value: string[]) {
+    this._allowedOrigins = value;
+  }
+  public resetAllowedOrigins() {
+    this._allowedOrigins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedOriginsInput() {
+    return this._allowedOrigins;
+  }
+
+  // enable_origin_check - computed: false, optional: true, required: false
+  private _enableOriginCheck?: boolean | cdktn.IResolvable; 
+  public get enableOriginCheck() {
+    return this.getBooleanAttribute('enable_origin_check');
+  }
+  public set enableOriginCheck(value: boolean | cdktn.IResolvable) {
+    this._enableOriginCheck = value;
+  }
+  public resetEnableOriginCheck() {
+    this._enableOriginCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableOriginCheckInput() {
+    return this._enableOriginCheck;
+  }
+
+  // enable_public_access - computed: false, optional: true, required: false
+  private _enablePublicAccess?: boolean | cdktn.IResolvable; 
+  public get enablePublicAccess() {
+    return this.getBooleanAttribute('enable_public_access');
+  }
+  public set enablePublicAccess(value: boolean | cdktn.IResolvable) {
+    this._enablePublicAccess = value;
+  }
+  public resetEnablePublicAccess() {
+    this._enablePublicAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enablePublicAccessInput() {
+    return this._enablePublicAccess;
+  }
+
+  // enable_recaptcha - computed: false, optional: true, required: false
+  private _enableRecaptcha?: boolean | cdktn.IResolvable; 
+  public get enableRecaptcha() {
+    return this.getBooleanAttribute('enable_recaptcha');
+  }
+  public set enableRecaptcha(value: boolean | cdktn.IResolvable) {
+    this._enableRecaptcha = value;
+  }
+  public resetEnableRecaptcha() {
+    this._enableRecaptcha = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableRecaptchaInput() {
+    return this._enableRecaptcha;
+  }
+}
 export interface CesDeploymentChannelProfileWebWidgetConfig {
   /**
   * The modality of the web widget.
   * Possible values:
-  * UNKNOWN_MODALITY
+  * MODALITY_UNSPECIFIED
   * CHAT_AND_VOICE
   * VOICE_ONLY
   * CHAT_ONLY
+  * CHAT_VOICE_AND_VIDEO
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#modality CesDeployment#modality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#modality CesDeployment#modality}
   */
   readonly modality?: string;
   /**
   * The theme of the web widget.
   * Possible values:
-  * UNKNOWN_THEME
+  * THEME_UNSPECIFIED
   * LIGHT
   * DARK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#theme CesDeployment#theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#theme CesDeployment#theme}
   */
   readonly theme?: string;
   /**
   * The title of the web widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
   */
   readonly webWidgetTitle?: string;
+  /**
+  * security_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#security_settings CesDeployment#security_settings}
+  */
+  readonly securitySettings?: CesDeploymentChannelProfileWebWidgetConfigSecuritySettings;
 }
 
 export function cesDeploymentChannelProfileWebWidgetConfigToTerraform(struct?: CesDeploymentChannelProfileWebWidgetConfigOutputReference | CesDeploymentChannelProfileWebWidgetConfig): any {
@@ -191,6 +401,7 @@ export function cesDeploymentChannelProfileWebWidgetConfigToTerraform(struct?: C
     modality: cdktn.stringToTerraform(struct!.modality),
     theme: cdktn.stringToTerraform(struct!.theme),
     web_widget_title: cdktn.stringToTerraform(struct!.webWidgetTitle),
+    security_settings: cesDeploymentChannelProfileWebWidgetConfigSecuritySettingsToTerraform(struct!.securitySettings),
   }
 }
 
@@ -218,6 +429,12 @@ export function cesDeploymentChannelProfileWebWidgetConfigToHclTerraform(struct?
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    security_settings: {
+      value: cesDeploymentChannelProfileWebWidgetConfigSecuritySettingsToHclTerraform(struct!.securitySettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesDeploymentChannelProfileWebWidgetConfigSecuritySettingsList",
     },
   };
 
@@ -251,6 +468,10 @@ export class CesDeploymentChannelProfileWebWidgetConfigOutputReference extends c
       hasAnyValues = true;
       internalValueResult.webWidgetTitle = this._webWidgetTitle;
     }
+    if (this._securitySettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securitySettings = this._securitySettings?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -260,12 +481,14 @@ export class CesDeploymentChannelProfileWebWidgetConfigOutputReference extends c
       this._modality = undefined;
       this._theme = undefined;
       this._webWidgetTitle = undefined;
+      this._securitySettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._modality = value.modality;
       this._theme = value.theme;
       this._webWidgetTitle = value.webWidgetTitle;
+      this._securitySettings.internalValue = value.securitySettings;
     }
   }
 
@@ -316,6 +539,22 @@ export class CesDeploymentChannelProfileWebWidgetConfigOutputReference extends c
   public get webWidgetTitleInput() {
     return this._webWidgetTitle;
   }
+
+  // security_settings - computed: false, optional: true, required: false
+  private _securitySettings = new CesDeploymentChannelProfileWebWidgetConfigSecuritySettingsOutputReference(this, "security_settings");
+  public get securitySettings() {
+    return this._securitySettings;
+  }
+  public putSecuritySettings(value: CesDeploymentChannelProfileWebWidgetConfigSecuritySettings) {
+    this._securitySettings.internalValue = value;
+  }
+  public resetSecuritySettings() {
+    this._securitySettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securitySettingsInput() {
+    return this._securitySettings.internalValue;
+  }
 }
 export interface CesDeploymentChannelProfile {
   /**
@@ -327,8 +566,10 @@ export interface CesDeploymentChannelProfile {
   * TWILIO
   * GOOGLE_TELEPHONY_PLATFORM
   * CONTACT_CENTER_AS_A_SERVICE
+  * FIVE9
+  * CONTACT_CENTER_INTEGRATION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
   */
   readonly channelType?: string;
   /**
@@ -337,31 +578,31 @@ export interface CesDeploymentChannelProfile {
   * - **false**: The agent retains automatic control over when the user can
   * interrupt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
   */
   readonly disableBargeInControl?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable DTMF (dual-tone multi-frequency).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
   */
   readonly disableDtmf?: boolean | cdktn.IResolvable;
   /**
   * The unique identifier of the channel profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
   */
   readonly profileId?: string;
   /**
   * persona_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
   */
   readonly personaProperty?: CesDeploymentChannelProfilePersonaProperty;
   /**
   * web_widget_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
   */
   readonly webWidgetConfig?: CesDeploymentChannelProfileWebWidgetConfig;
 }
@@ -590,15 +831,15 @@ export class CesDeploymentChannelProfileOutputReference extends cdktn.ComplexObj
 }
 export interface CesDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#create CesDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#create CesDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#delete CesDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#delete CesDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#update CesDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#update CesDeployment#update}
   */
   readonly update?: string;
 }
@@ -750,7 +991,7 @@ export class CesDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment google_ces_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment google_ces_deployment}
 */
 export class CesDeployment extends cdktn.TerraformResource {
 
@@ -766,7 +1007,7 @@ export class CesDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesDeployment to import
-  * @param importFromId The id of the existing CesDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -778,7 +1019,7 @@ export class CesDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment google_ces_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment google_ces_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -789,7 +1030,7 @@ export class CesDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -802,6 +1043,7 @@ export class CesDeployment extends cdktn.TerraformResource {
     });
     this._app = config.app;
     this._appVersion = config.appVersion;
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._id = config.id;
     this._location = config.location;
@@ -843,6 +1085,22 @@ export class CesDeployment extends cdktn.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // display_name - computed: false, optional: false, required: true
@@ -955,6 +1213,7 @@ export class CesDeployment extends cdktn.TerraformResource {
     return {
       app: cdktn.stringToTerraform(this._app),
       app_version: cdktn.stringToTerraform(this._appVersion),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
@@ -974,6 +1233,12 @@ export class CesDeployment extends cdktn.TerraformResource {
       },
       app_version: {
         value: cdktn.stringToHclTerraform(this._appVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

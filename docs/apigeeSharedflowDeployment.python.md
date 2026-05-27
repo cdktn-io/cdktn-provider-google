@@ -4,7 +4,7 @@
 
 ### ApigeeSharedflowDeployment <a name="ApigeeSharedflowDeployment" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer"></a>
 
@@ -25,6 +25,7 @@ apigeeSharedflowDeployment.ApigeeSharedflowDeployment(
   org_id: str,
   revision: str,
   sharedflow_id: str,
+  deletion_policy: str = None,
   id: str = None,
   service_account: str = None,
   timeouts: ApigeeSharedflowDeploymentTimeouts = None
@@ -46,7 +47,8 @@ apigeeSharedflowDeployment.ApigeeSharedflowDeployment(
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization associated with the Apigee instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.revision">revision</a></code> | <code>str</code> | Revision of the Sharedflow to be deployed. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.sharedflowId">sharedflow_id</a></code> | <code>str</code> | Id of the Sharedflow to be deployed. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.serviceAccount">service_account</a></code> | <code>str</code> | The service account represents the identity of the deployed proxy, and determines what permissions it has. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts">ApigeeSharedflowDeploymentTimeouts</a></code> | timeouts block. |
 
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The resource ID of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#environment ApigeeSharedflowDeployment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#environment ApigeeSharedflowDeployment#environment}
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#org_id ApigeeSharedflowDeployment#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#org_id ApigeeSharedflowDeployment#org_id}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Revision of the Sharedflow to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#revision ApigeeSharedflowDeployment#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#revision ApigeeSharedflowDeployment#revision}
 
 ---
 
@@ -148,7 +150,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Id of the Sharedflow to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#sharedflow_id ApigeeSharedflowDeployment#sharedflow_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#sharedflow_id ApigeeSharedflowDeployment#sharedflow_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#deletion_policy ApigeeSharedflowDeployment#deletion_policy}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +190,7 @@ The service account represents the identity of the deployed proxy, and determine
 
 The format must be {ACCOUNT_ID}@{PROJECT}.iam.gserviceaccount.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#service_account ApigeeSharedflowDeployment#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#service_account ApigeeSharedflowDeployment#service_account}
 
 ---
 
@@ -181,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#timeouts ApigeeSharedflowDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#timeouts ApigeeSharedflowDeployment#timeouts}
 
 ---
 
@@ -214,6 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.resetServiceAccount">reset_service_account</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -582,7 +602,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}.
 
 ---
 
@@ -590,7 +610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}.
 
 ---
 
@@ -598,9 +618,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.resetId"></a>
 
@@ -734,7 +760,7 @@ The construct id used in the generated config for the ApigeeSharedflowDeployment
 
 The id of the existing ApigeeSharedflowDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,6 +791,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeoutsOutputReference">ApigeeSharedflowDeploymentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.orgIdInput">org_id_input</a></code> | <code>str</code> | *No description.* |
@@ -772,6 +799,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.serviceAccountInput">service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.sharedflowIdInput">sharedflow_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts">ApigeeSharedflowDeploymentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.orgId">org_id</a></code> | <code>str</code> | *No description.* |
@@ -933,6 +961,16 @@ timeouts: ApigeeSharedflowDeploymentTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `environment_input`<sup>Optional</sup> <a name="environment_input" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.environmentInput"></a>
 
 ```python
@@ -1000,6 +1038,16 @@ timeouts_input: IResolvable | ApigeeSharedflowDeploymentTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts">ApigeeSharedflowDeploymentTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1102,6 +1150,7 @@ apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig(
   org_id: str,
   revision: str,
   sharedflow_id: str,
+  deletion_policy: str = None,
   id: str = None,
   service_account: str = None,
   timeouts: ApigeeSharedflowDeploymentTimeouts = None
@@ -1123,7 +1172,8 @@ apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig(
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization associated with the Apigee instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.revision">revision</a></code> | <code>str</code> | Revision of the Sharedflow to be deployed. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.sharedflowId">sharedflow_id</a></code> | <code>str</code> | Id of the Sharedflow to be deployed. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.serviceAccount">service_account</a></code> | <code>str</code> | The service account represents the identity of the deployed proxy, and determines what permissions it has. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts">ApigeeSharedflowDeploymentTimeouts</a></code> | timeouts block. |
 
@@ -1209,7 +1259,7 @@ environment: str
 
 The resource ID of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#environment ApigeeSharedflowDeployment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#environment ApigeeSharedflowDeployment#environment}
 
 ---
 
@@ -1223,7 +1273,7 @@ org_id: str
 
 The Apigee Organization associated with the Apigee instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#org_id ApigeeSharedflowDeployment#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#org_id ApigeeSharedflowDeployment#org_id}
 
 ---
 
@@ -1237,7 +1287,7 @@ revision: str
 
 Revision of the Sharedflow to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#revision ApigeeSharedflowDeployment#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#revision ApigeeSharedflowDeployment#revision}
 
 ---
 
@@ -1251,7 +1301,28 @@ sharedflow_id: str
 
 Id of the Sharedflow to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#sharedflow_id ApigeeSharedflowDeployment#sharedflow_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#sharedflow_id ApigeeSharedflowDeployment#sharedflow_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#deletion_policy ApigeeSharedflowDeployment#deletion_policy}
 
 ---
 
@@ -1263,7 +1334,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#id ApigeeSharedflowDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1282,7 +1353,7 @@ The service account represents the identity of the deployed proxy, and determine
 
 The format must be {ACCOUNT_ID}@{PROJECT}.iam.gserviceaccount.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#service_account ApigeeSharedflowDeployment#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#service_account ApigeeSharedflowDeployment#service_account}
 
 ---
 
@@ -1296,7 +1367,7 @@ timeouts: ApigeeSharedflowDeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#timeouts ApigeeSharedflowDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#timeouts ApigeeSharedflowDeployment#timeouts}
 
 ---
 
@@ -1318,9 +1389,9 @@ apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}. |
 
 ---
 
@@ -1332,7 +1403,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#create ApigeeSharedflowDeployment#create}.
 
 ---
 
@@ -1344,7 +1415,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#delete ApigeeSharedflowDeployment#delete}.
 
 ---
 
@@ -1356,7 +1427,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow_deployment#update ApigeeSharedflowDeployment#update}.
 
 ---
 

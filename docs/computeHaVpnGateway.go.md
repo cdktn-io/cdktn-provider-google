@@ -4,7 +4,7 @@
 
 ### ComputeHaVpnGateway <a name="ComputeHaVpnGateway" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.putParams">PutParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.putVpnInterfaces">PutVpnInterfaces</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.resetGatewayIpVersion">ResetGatewayIpVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.resetId">ResetId</a></code> | *No description.* |
@@ -435,6 +436,12 @@ func PutVpnInterfaces(value interface{})
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.resetDescription"></a>
 
 ```go
@@ -598,7 +605,7 @@ The construct id used in the generated config for the ComputeHaVpnGateway to imp
 
 The id of the existing ComputeHaVpnGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -635,6 +642,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference">ComputeHaVpnGatewayTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.vpnInterfaces">VpnInterfaces</a></code> | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfacesList">ComputeHaVpnGatewayVpnInterfacesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.gatewayIpVersionInput">GatewayIpVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -647,6 +655,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.stackTypeInput">StackTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.vpnInterfacesInput">VpnInterfacesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.gatewayIpVersion">GatewayIpVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -871,6 +880,16 @@ func VpnInterfaces() ComputeHaVpnGatewayVpnInterfacesList
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.descriptionInput"></a>
 
 ```go
@@ -988,6 +1007,16 @@ func VpnInterfacesInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1118,6 +1147,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computehavpngate
 	Provisioners: *[]interface{},
 	Name: *string,
 	Network: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	GatewayIpVersion: *string,
 	Id: *string,
@@ -1144,12 +1174,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computehavpngate
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.network">Network</a></code> | <code>*string</code> | The network this VPN gateway is accepting traffic for. |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.gatewayIpVersion">GatewayIpVersion</a></code> | <code>*string</code> | The IP family of the gateway IPs for the HA-VPN gateway interfaces. |
-| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#id ComputeHaVpnGateway#id}. |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#id ComputeHaVpnGateway#id}. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels for this resource. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayParams">ComputeHaVpnGatewayParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#project ComputeHaVpnGateway#project}. |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#project ComputeHaVpnGateway#project}. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.region">Region</a></code> | <code>*string</code> | The region this gateway should sit in. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.stackType">StackType</a></code> | <code>*string</code> | The stack type for this VPN gateway to identify the IP protocols that are enabled. |
 | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts">ComputeHaVpnGatewayTimeouts</a></code> | timeouts block. |
@@ -1245,7 +1276,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#name ComputeHaVpnGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#name ComputeHaVpnGateway#name}
 
 ---
 
@@ -1259,7 +1290,28 @@ Network *string
 
 The network this VPN gateway is accepting traffic for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#network ComputeHaVpnGateway#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#network ComputeHaVpnGateway#network}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#deletion_policy ComputeHaVpnGateway#deletion_policy}
 
 ---
 
@@ -1273,7 +1325,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#description ComputeHaVpnGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#description ComputeHaVpnGateway#description}
 
 ---
 
@@ -1289,7 +1341,7 @@ The IP family of the gateway IPs for the HA-VPN gateway interfaces.
 
 If not specified, IPV4 will be used. Default value: "IPV4" Possible values: ["IPV4", "IPV6"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#gateway_ip_version ComputeHaVpnGateway#gateway_ip_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#gateway_ip_version ComputeHaVpnGateway#gateway_ip_version}
 
 ---
 
@@ -1301,7 +1353,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#id ComputeHaVpnGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#id ComputeHaVpnGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1324,7 +1376,7 @@ Each label key/value pair must comply with RFC1035. Label values may be empty.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#labels ComputeHaVpnGateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#labels ComputeHaVpnGateway#labels}
 
 ---
 
@@ -1338,7 +1390,7 @@ Params ComputeHaVpnGatewayParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#params ComputeHaVpnGateway#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#params ComputeHaVpnGateway#params}
 
 ---
 
@@ -1350,7 +1402,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#project ComputeHaVpnGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#project ComputeHaVpnGateway#project}.
 
 ---
 
@@ -1364,7 +1416,7 @@ Region *string
 
 The region this gateway should sit in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#region ComputeHaVpnGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#region ComputeHaVpnGateway#region}
 
 ---
 
@@ -1380,7 +1432,7 @@ The stack type for this VPN gateway to identify the IP protocols that are enable
 
 If not specified, IPV4_ONLY will be used. Default value: "IPV4_ONLY" Possible values: ["IPV4_ONLY", "IPV4_IPV6", "IPV6_ONLY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#stack_type ComputeHaVpnGateway#stack_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#stack_type ComputeHaVpnGateway#stack_type}
 
 ---
 
@@ -1394,7 +1446,7 @@ Timeouts ComputeHaVpnGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#timeouts ComputeHaVpnGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#timeouts ComputeHaVpnGateway#timeouts}
 
 ---
 
@@ -1408,7 +1460,7 @@ VpnInterfaces interface{}
 
 vpn_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#vpn_interfaces ComputeHaVpnGateway#vpn_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#vpn_interfaces ComputeHaVpnGateway#vpn_interfaces}
 
 ---
 
@@ -1446,7 +1498,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#resource_manager_tags ComputeHaVpnGateway#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#resource_manager_tags ComputeHaVpnGateway#resource_manager_tags}
 
 ---
 
@@ -1468,9 +1520,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computehavpngate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#create ComputeHaVpnGateway#create}. |
-| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#delete ComputeHaVpnGateway#delete}. |
-| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#update ComputeHaVpnGateway#update}. |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#create ComputeHaVpnGateway#create}. |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#delete ComputeHaVpnGateway#delete}. |
+| <code><a href="#@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#update ComputeHaVpnGateway#update}. |
 
 ---
 
@@ -1482,7 +1534,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#create ComputeHaVpnGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#create ComputeHaVpnGateway#create}.
 
 ---
 
@@ -1494,7 +1546,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#delete ComputeHaVpnGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#delete ComputeHaVpnGateway#delete}.
 
 ---
 
@@ -1506,7 +1558,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#update ComputeHaVpnGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#update ComputeHaVpnGateway#update}.
 
 ---
 
@@ -1542,7 +1594,7 @@ Id *f64
 
 The numeric ID of this VPN gateway interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#id ComputeHaVpnGateway#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#id ComputeHaVpnGateway#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1567,7 +1619,7 @@ specified interconnect attachment resource.
 
 Not currently available publicly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ha_vpn_gateway#interconnect_attachment ComputeHaVpnGateway#interconnect_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_ha_vpn_gateway#interconnect_attachment ComputeHaVpnGateway#interconnect_attachment}
 
 ---
 

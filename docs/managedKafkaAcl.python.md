@@ -4,7 +4,7 @@
 
 ### ManagedKafkaAcl <a name="ManagedKafkaAcl" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl google_managed_kafka_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl google_managed_kafka_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer"></a>
 
@@ -25,6 +25,7 @@ managedKafkaAcl.ManagedKafkaAcl(
   acl_id: str,
   cluster: str,
   location: str,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: ManagedKafkaAclTimeouts = None
@@ -46,8 +47,9 @@ managedKafkaAcl.ManagedKafkaAcl(
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclId">acl_id</a></code> | <code>str</code> | The ID to use for the acl, which will become the final component of the acl's name. |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | The cluster name. |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.location">location</a></code> | <code>str</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
-| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 acl_entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#acl_entries ManagedKafkaAcl#acl_entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#acl_entries ManagedKafkaAcl#acl_entries}
 
 ---
 
@@ -134,7 +136,7 @@ For acls on a single resource within the cluster: 'topic/{resource_name}' 'consu
 For acls on all resources that match a prefix: 'topicPrefixed/{resource_name}' 'consumerGroupPrefixed/{resource_name}' 'transactionalIdPrefixed/{resource_name}'
 For acls on all resources of a given type (i.e. the wildcard literal '*''): 'allTopics' (represents 'topic/*') 'allConsumerGroups' (represents 'consumerGroup/*') 'allTransactionalIds' (represents 'transactionalId/*').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#acl_id ManagedKafkaAcl#acl_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#acl_id ManagedKafkaAcl#acl_id}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#cluster ManagedKafkaAcl#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#cluster ManagedKafkaAcl#cluster}
 
 ---
 
@@ -154,7 +156,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#location ManagedKafkaAcl#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#location ManagedKafkaAcl#location}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#deletion_policy ManagedKafkaAcl#deletion_policy}
 
 ---
 
@@ -162,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +192,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}.
 
 ---
 
@@ -183,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#timeouts ManagedKafkaAcl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#timeouts ManagedKafkaAcl#timeouts}
 
 ---
 
@@ -217,6 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putAclEntries">put_acl_entries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -599,7 +619,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}.
 
 ---
 
@@ -607,7 +627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}.
 
 ---
 
@@ -615,9 +635,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetId"></a>
 
@@ -751,7 +777,7 @@ The construct id used in the generated config for the ManagedKafkaAcl to import.
 
 The id of the existing ManagedKafkaAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,12 +817,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntriesInput">acl_entries_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclIdInput">acl_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclId">acl_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -1045,6 +1073,16 @@ cluster_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.idInput"></a>
 
 ```python
@@ -1099,6 +1137,16 @@ acl_id: str
 
 ```python
 cluster: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1196,7 +1244,7 @@ WRITE, CREATE, DELETE, ALTER, DESCRIBE, CLUSTER_ACTION, DESCRIBE_CONFIGS,
 ALTER_CONFIGS, and IDEMPOTENT_WRITE. See https://kafka.apache.org/documentation/#operations_resources_and_protocols
 for valid combinations of resource_type and operation for different Kafka API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#operation ManagedKafkaAcl#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#operation ManagedKafkaAcl#operation}
 
 ---
 
@@ -1212,7 +1260,7 @@ The principal.
 
 Specified as Google Cloud account, with the Kafka StandardAuthorizer prefix User:". For example: "User:test-kafka-client@test-project.iam.gserviceaccount.com". Can be the wildcard "User:*" to refer to all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#principal ManagedKafkaAcl#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#principal ManagedKafkaAcl#principal}
 
 ---
 
@@ -1226,7 +1274,7 @@ host: str
 
 The host. Must be set to "*" for Managed Service for Apache Kafka.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#host ManagedKafkaAcl#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#host ManagedKafkaAcl#host}
 
 ---
 
@@ -1240,7 +1288,7 @@ permission_type: str
 
 The permission type. Accepted values are (case insensitive): ALLOW, DENY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#permission_type ManagedKafkaAcl#permission_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#permission_type ManagedKafkaAcl#permission_type}
 
 ---
 
@@ -1263,6 +1311,7 @@ managedKafkaAcl.ManagedKafkaAclConfig(
   acl_id: str,
   cluster: str,
   location: str,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: ManagedKafkaAclTimeouts = None
@@ -1284,8 +1333,9 @@ managedKafkaAcl.ManagedKafkaAclConfig(
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclId">acl_id</a></code> | <code>str</code> | The ID to use for the acl, which will become the final component of the acl's name. |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.cluster">cluster</a></code> | <code>str</code> | The cluster name. |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.location">location</a></code> | <code>str</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
-| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1370,7 +1420,7 @@ acl_entries: IResolvable | typing.List[ManagedKafkaAclAclEntries]
 
 acl_entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#acl_entries ManagedKafkaAcl#acl_entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#acl_entries ManagedKafkaAcl#acl_entries}
 
 ---
 
@@ -1390,7 +1440,7 @@ For acls on a single resource within the cluster: 'topic/{resource_name}' 'consu
 For acls on all resources that match a prefix: 'topicPrefixed/{resource_name}' 'consumerGroupPrefixed/{resource_name}' 'transactionalIdPrefixed/{resource_name}'
 For acls on all resources of a given type (i.e. the wildcard literal '*''): 'allTopics' (represents 'topic/*') 'allConsumerGroups' (represents 'consumerGroup/*') 'allTransactionalIds' (represents 'transactionalId/*').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#acl_id ManagedKafkaAcl#acl_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#acl_id ManagedKafkaAcl#acl_id}
 
 ---
 
@@ -1404,7 +1454,7 @@ cluster: str
 
 The cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#cluster ManagedKafkaAcl#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#cluster ManagedKafkaAcl#cluster}
 
 ---
 
@@ -1418,7 +1468,28 @@ location: str
 
 ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#location ManagedKafkaAcl#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#location ManagedKafkaAcl#location}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#deletion_policy ManagedKafkaAcl#deletion_policy}
 
 ---
 
@@ -1430,7 +1501,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1445,7 +1516,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}.
 
 ---
 
@@ -1459,7 +1530,7 @@ timeouts: ManagedKafkaAclTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#timeouts ManagedKafkaAcl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#timeouts ManagedKafkaAcl#timeouts}
 
 ---
 
@@ -1481,9 +1552,9 @@ managedKafkaAcl.ManagedKafkaAclTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}. |
 
 ---
 
@@ -1495,7 +1566,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}.
 
 ---
 
@@ -1507,7 +1578,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}.
 
 ---
 
@@ -1519,7 +1590,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}.
 
 ---
 

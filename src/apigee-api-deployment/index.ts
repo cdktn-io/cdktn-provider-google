@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,55 @@ import * as cdktn from 'cdktn';
 
 export interface ApigeeApiDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#deletion_policy ApigeeApiDeployment#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The Apigee Environment associated with the Apigee API deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#environment ApigeeApiDeployment#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#environment ApigeeApiDeployment#environment}
   */
   readonly environment: string;
   /**
   * The Apigee Organization associated with the Apigee API deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#org_id ApigeeApiDeployment#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#org_id ApigeeApiDeployment#org_id}
   */
   readonly orgId: string;
   /**
   * The Apigee API associated with the Apigee API deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#proxy_id ApigeeApiDeployment#proxy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#proxy_id ApigeeApiDeployment#proxy_id}
   */
   readonly proxyId: string;
   /**
   * The revision of the API proxy to be deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#revision ApigeeApiDeployment#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#revision ApigeeApiDeployment#revision}
   */
   readonly revision: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#timeouts ApigeeApiDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#timeouts ApigeeApiDeployment#timeouts}
   */
   readonly timeouts?: ApigeeApiDeploymentTimeouts;
 }
 export interface ApigeeApiDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#create ApigeeApiDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#create ApigeeApiDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#delete ApigeeApiDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#delete ApigeeApiDeployment#delete}
   */
   readonly delete?: string;
 }
@@ -172,7 +184,7 @@ export class ApigeeApiDeploymentTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment google_apigee_api_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment google_apigee_api_deployment}
 */
 export class ApigeeApiDeployment extends cdktn.TerraformResource {
 
@@ -188,7 +200,7 @@ export class ApigeeApiDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeApiDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeApiDeployment to import
-  * @param importFromId The id of the existing ApigeeApiDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeApiDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeApiDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -200,7 +212,7 @@ export class ApigeeApiDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_deployment google_apigee_api_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_api_deployment google_apigee_api_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -211,7 +223,7 @@ export class ApigeeApiDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_api_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -222,6 +234,7 @@ export class ApigeeApiDeployment extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._environment = config.environment;
     this._orgId = config.orgId;
     this._proxyId = config.proxyId;
@@ -232,6 +245,22 @@ export class ApigeeApiDeployment extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // environment - computed: false, optional: false, required: true
   private _environment?: string; 
@@ -312,6 +341,7 @@ export class ApigeeApiDeployment extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       environment: cdktn.stringToTerraform(this._environment),
       org_id: cdktn.stringToTerraform(this._orgId),
       proxy_id: cdktn.stringToTerraform(this._proxyId),
@@ -322,6 +352,12 @@ export class ApigeeApiDeployment extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       environment: {
         value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,

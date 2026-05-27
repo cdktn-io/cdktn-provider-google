@@ -4,7 +4,7 @@
 
 ### IamWorkloadIdentityPoolNamespace <a name="IamWorkloadIdentityPoolNamespace" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer"></a>
 
@@ -21,6 +21,7 @@ IamWorkloadIdentityPoolNamespace.Builder.create(Construct scope, java.lang.Strin
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .workloadIdentityPoolId(java.lang.String)
     .workloadIdentityPoolNamespaceId(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .disabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
@@ -42,10 +43,11 @@ IamWorkloadIdentityPoolNamespace.Builder.create(Construct scope, java.lang.Strin
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.workloadIdentityPoolId">workloadIdentityPoolId</a></code> | <code>java.lang.String</code> | The ID to use for the pool, which becomes the final component of the resource name. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.workloadIdentityPoolNamespaceId">workloadIdentityPoolNamespaceId</a></code> | <code>java.lang.String</code> | The ID to use for the namespace. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the namespace. Cannot exceed 256 characters. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the namespace is disabled. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts">IamWorkloadIdentityPoolNamespaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +122,7 @@ This
 value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_id}
 
 ---
 
@@ -139,7 +141,24 @@ This value must:
 
 The prefix 'gcp-' will be reserved for future uses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_namespace_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_namespace_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_namespace_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#deletion_policy IamWorkloadIdentityPoolNamespace#deletion_policy}
 
 ---
 
@@ -149,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of the namespace. Cannot exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#description IamWorkloadIdentityPoolNamespace#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#description IamWorkloadIdentityPoolNamespace#description}
 
 ---
 
@@ -163,7 +182,7 @@ If disabled, credentials may no longer be issued for
 identities within this namespace, however existing credentials will still be accepted until
 they expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#disabled IamWorkloadIdentityPoolNamespace#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#disabled IamWorkloadIdentityPoolNamespace#disabled}
 
 ---
 
@@ -171,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -182,7 +201,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}.
 
 ---
 
@@ -192,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#timeouts IamWorkloadIdentityPoolNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#timeouts IamWorkloadIdentityPoolNamespace#timeouts}
 
 ---
 
@@ -225,6 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.resetDisabled">resetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.resetId">resetId</a></code> | *No description.* |
@@ -556,6 +576,12 @@ public void putTimeouts(IamWorkloadIdentityPoolNamespaceTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.resetDescription"></a>
 
 ```java
@@ -689,7 +715,7 @@ The construct id used in the generated config for the IamWorkloadIdentityPoolNam
 
 The id of the existing IamWorkloadIdentityPoolNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,6 +749,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.ownerService">ownerService</a></code> | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceOwnerServiceList">IamWorkloadIdentityPoolNamespaceOwnerServiceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference">IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -730,6 +757,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts">IamWorkloadIdentityPoolNamespaceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.workloadIdentityPoolIdInput">workloadIdentityPoolIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.workloadIdentityPoolNamespaceIdInput">workloadIdentityPoolNamespaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -921,6 +949,16 @@ public IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.descriptionInput"></a>
 
 ```java
@@ -985,6 +1023,16 @@ public java.lang.String getWorkloadIdentityPoolIdInput();
 
 ```java
 public java.lang.String getWorkloadIdentityPoolNamespaceIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1088,6 +1136,7 @@ IamWorkloadIdentityPoolNamespaceConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .workloadIdentityPoolId(java.lang.String)
     .workloadIdentityPoolNamespaceId(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .disabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
@@ -1109,10 +1158,11 @@ IamWorkloadIdentityPoolNamespaceConfig.builder()
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.workloadIdentityPoolId">workloadIdentityPoolId</a></code> | <code>java.lang.String</code> | The ID to use for the pool, which becomes the final component of the resource name. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.workloadIdentityPoolNamespaceId">workloadIdentityPoolNamespaceId</a></code> | <code>java.lang.String</code> | The ID to use for the namespace. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the namespace. Cannot exceed 256 characters. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the namespace is disabled. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts">IamWorkloadIdentityPoolNamespaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1201,7 +1251,7 @@ This
 value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_id}
 
 ---
 
@@ -1224,7 +1274,28 @@ This value must:
 
 The prefix 'gcp-' will be reserved for future uses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_namespace_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#workload_identity_pool_namespace_id IamWorkloadIdentityPoolNamespace#workload_identity_pool_namespace_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#deletion_policy IamWorkloadIdentityPoolNamespace#deletion_policy}
 
 ---
 
@@ -1238,7 +1309,7 @@ public java.lang.String getDescription();
 
 A description of the namespace. Cannot exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#description IamWorkloadIdentityPoolNamespace#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#description IamWorkloadIdentityPoolNamespace#description}
 
 ---
 
@@ -1256,7 +1327,7 @@ If disabled, credentials may no longer be issued for
 identities within this namespace, however existing credentials will still be accepted until
 they expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#disabled IamWorkloadIdentityPoolNamespace#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#disabled IamWorkloadIdentityPoolNamespace#disabled}
 
 ---
 
@@ -1268,7 +1339,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#id IamWorkloadIdentityPoolNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1283,7 +1354,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#project IamWorkloadIdentityPoolNamespace#project}.
 
 ---
 
@@ -1297,7 +1368,7 @@ public IamWorkloadIdentityPoolNamespaceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#timeouts IamWorkloadIdentityPoolNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#timeouts IamWorkloadIdentityPoolNamespace#timeouts}
 
 ---
 
@@ -1331,9 +1402,9 @@ IamWorkloadIdentityPoolNamespaceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#create IamWorkloadIdentityPoolNamespace#create}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#delete IamWorkloadIdentityPoolNamespace#delete}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#update IamWorkloadIdentityPoolNamespace#update}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#create IamWorkloadIdentityPoolNamespace#create}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#delete IamWorkloadIdentityPoolNamespace#delete}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#update IamWorkloadIdentityPoolNamespace#update}. |
 
 ---
 
@@ -1345,7 +1416,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#create IamWorkloadIdentityPoolNamespace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#create IamWorkloadIdentityPoolNamespace#create}.
 
 ---
 
@@ -1357,7 +1428,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#delete IamWorkloadIdentityPoolNamespace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#delete IamWorkloadIdentityPoolNamespace#delete}.
 
 ---
 
@@ -1369,7 +1440,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool_namespace#update IamWorkloadIdentityPoolNamespace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_workload_identity_pool_namespace#update IamWorkloadIdentityPoolNamespace#update}.
 
 ---
 

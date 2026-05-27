@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface GkeHubNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#id GkeHubNamespace#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#deletion_policy GkeHubNamespace#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#id GkeHubNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +38,7 @@ export interface GkeHubNamespaceConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#labels GkeHubNamespace#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#labels GkeHubNamespace#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -36,35 +48,35 @@ export interface GkeHubNamespaceConfig extends cdktn.TerraformMetaArguments {
   * resource) take precedence over Namespace-level labels if they share
   * a key. Keys and values must be Kubernetes-conformant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#namespace_labels GkeHubNamespace#namespace_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#namespace_labels GkeHubNamespace#namespace_labels}
   */
   readonly namespaceLabels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#project GkeHubNamespace#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#project GkeHubNamespace#project}
   */
   readonly project?: string;
   /**
   * The name of the Scope instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#scope GkeHubNamespace#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#scope GkeHubNamespace#scope}
   */
   readonly scope: string;
   /**
   * Id of the scope
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#scope_id GkeHubNamespace#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#scope_id GkeHubNamespace#scope_id}
   */
   readonly scopeId: string;
   /**
   * The client-provided identifier of the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#scope_namespace_id GkeHubNamespace#scope_namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#scope_namespace_id GkeHubNamespace#scope_namespace_id}
   */
   readonly scopeNamespaceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#timeouts GkeHubNamespace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#timeouts GkeHubNamespace#timeouts}
   */
   readonly timeouts?: GkeHubNamespaceTimeouts;
 }
@@ -133,7 +145,7 @@ export class GkeHubNamespaceStateList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -145,15 +157,15 @@ export class GkeHubNamespaceStateList extends cdktn.ComplexList {
 }
 export interface GkeHubNamespaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#create GkeHubNamespace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#create GkeHubNamespace#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#delete GkeHubNamespace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#delete GkeHubNamespace#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#update GkeHubNamespace#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#update GkeHubNamespace#update}
   */
   readonly update?: string;
 }
@@ -305,7 +317,7 @@ export class GkeHubNamespaceTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace google_gke_hub_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace google_gke_hub_namespace}
 */
 export class GkeHubNamespace extends cdktn.TerraformResource {
 
@@ -321,7 +333,7 @@ export class GkeHubNamespace extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GkeHubNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeHubNamespace to import
-  * @param importFromId The id of the existing GkeHubNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GkeHubNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeHubNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -333,7 +345,7 @@ export class GkeHubNamespace extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +356,7 @@ export class GkeHubNamespace extends cdktn.TerraformResource {
       terraformResourceType: 'google_gke_hub_namespace',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -355,6 +367,7 @@ export class GkeHubNamespace extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._labels = config.labels;
     this._namespaceLabels = config.namespaceLabels;
@@ -377,6 +390,22 @@ export class GkeHubNamespace extends cdktn.TerraformResource {
   // delete_time - computed: true, optional: false, required: false
   public get deleteTime() {
     return this.getStringAttribute('delete_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // effective_labels - computed: true, optional: false, required: false
@@ -537,6 +566,7 @@ export class GkeHubNamespace extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       namespace_labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._namespaceLabels),
@@ -550,6 +580,12 @@ export class GkeHubNamespace extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,

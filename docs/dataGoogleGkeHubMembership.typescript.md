@@ -4,7 +4,7 @@
 
 ### DataGoogleGkeHubMembership <a name="DataGoogleGkeHubMembership" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership google_gke_hub_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership google_gke_hub_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleGkeHubMembership
 
 The id of the existing DataGoogleGkeHubMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -430,6 +430,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.authority">authority</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipAuthorityList">DataGoogleGkeHubMembershipAuthorityList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.endpoint">endpoint</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointList">DataGoogleGkeHubMembershipEndpointList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.labels">labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
@@ -575,6 +576,16 @@ public readonly authority: DataGoogleGkeHubMembershipAuthorityList;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipAuthorityList">DataGoogleGkeHubMembershipAuthorityList</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -762,8 +773,8 @@ const dataGoogleGkeHubMembershipConfig: dataGoogleGkeHubMembership.DataGoogleGke
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.property.location">location</a></code> | <code>string</code> | Location of the membership. The default value is 'global'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.property.membershipId">membershipId</a></code> | <code>string</code> | The client-provided identifier of the membership. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership#id DataGoogleGkeHubMembership#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership#project DataGoogleGkeHubMembership#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership#id DataGoogleGkeHubMembership#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership#project DataGoogleGkeHubMembership#project}. |
 
 ---
 
@@ -847,7 +858,7 @@ public readonly location: string;
 
 Location of the membership. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership#location DataGoogleGkeHubMembership#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership#location DataGoogleGkeHubMembership#location}
 
 ---
 
@@ -861,7 +872,7 @@ public readonly membershipId: string;
 
 The client-provided identifier of the membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership#membership_id DataGoogleGkeHubMembership#membership_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership#membership_id DataGoogleGkeHubMembership#membership_id}
 
 ---
 
@@ -873,7 +884,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership#id DataGoogleGkeHubMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership#id DataGoogleGkeHubMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -888,7 +899,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gke_hub_membership#project DataGoogleGkeHubMembership#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/gke_hub_membership#project DataGoogleGkeHubMembership#project}.
 
 ---
 

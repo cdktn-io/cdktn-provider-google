@@ -4,7 +4,7 @@
 
 ### ApigeeNatAddress <a name="ApigeeNatAddress" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address google_apigee_nat_address}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address google_apigee_nat_address}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer"></a>
 
@@ -24,6 +24,7 @@ apigeeNatAddress.ApigeeNatAddress(
   instance_id: str,
   name: str,
   activate: bool | IResolvable = None,
+  deletion_policy: str = None,
   id: str = None,
   timeouts: ApigeeNatAddressTimeouts = None
 )
@@ -43,7 +44,8 @@ apigeeNatAddress.ApigeeNatAddress(
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.name">name</a></code> | <code>str</code> | Resource ID of the NAT address. |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.activate">activate</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag that specifies whether the reserved NAT address should be activate. |
-| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts">ApigeeNatAddressTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#instance_id ApigeeNatAddress#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#instance_id ApigeeNatAddress#instance_id}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID of the NAT address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#name ApigeeNatAddress#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#name ApigeeNatAddress#name}
 
 ---
 
@@ -134,7 +136,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag that specifies whether the reserved NAT address should be activate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#activate ApigeeNatAddress#activate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#activate ApigeeNatAddress#activate}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#deletion_policy ApigeeNatAddress#deletion_policy}
 
 ---
 
@@ -142,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +174,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#timeouts ApigeeNatAddress#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#timeouts ApigeeNatAddress#timeouts}
 
 ---
 
@@ -189,6 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.resetActivate">reset_activate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -556,7 +576,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#create ApigeeNatAddress#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#create ApigeeNatAddress#create}.
 
 ---
 
@@ -564,7 +584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#delete ApigeeNatAddress#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#delete ApigeeNatAddress#delete}.
 
 ---
 
@@ -572,7 +592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#update ApigeeNatAddress#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#update ApigeeNatAddress#update}.
 
 ---
 
@@ -580,6 +600,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_activate() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.resetId"></a>
@@ -708,7 +734,7 @@ The construct id used in the generated config for the ApigeeNatAddress to import
 
 The id of the existing ApigeeNatAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -742,11 +768,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeoutsOutputReference">ApigeeNatAddressTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.activateInput">activate_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.instanceIdInput">instance_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts">ApigeeNatAddressTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.activate">activate</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.instanceId">instance_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -935,6 +963,16 @@ activate_input: bool | IResolvable
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.idInput"></a>
 
 ```python
@@ -982,6 +1020,16 @@ activate: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddress.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1053,6 +1101,7 @@ apigeeNatAddress.ApigeeNatAddressConfig(
   instance_id: str,
   name: str,
   activate: bool | IResolvable = None,
+  deletion_policy: str = None,
   id: str = None,
   timeouts: ApigeeNatAddressTimeouts = None
 )
@@ -1072,7 +1121,8 @@ apigeeNatAddress.ApigeeNatAddressConfig(
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.instanceId">instance_id</a></code> | <code>str</code> | The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.name">name</a></code> | <code>str</code> | Resource ID of the NAT address. |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.activate">activate</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag that specifies whether the reserved NAT address should be activate. |
-| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts">ApigeeNatAddressTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1157,7 +1207,7 @@ instance_id: str
 
 The Apigee instance associated with the Apigee environment, in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#instance_id ApigeeNatAddress#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#instance_id ApigeeNatAddress#instance_id}
 
 ---
 
@@ -1171,7 +1221,7 @@ name: str
 
 Resource ID of the NAT address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#name ApigeeNatAddress#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#name ApigeeNatAddress#name}
 
 ---
 
@@ -1185,7 +1235,28 @@ activate: bool | IResolvable
 
 Flag that specifies whether the reserved NAT address should be activate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#activate ApigeeNatAddress#activate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#activate ApigeeNatAddress#activate}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#deletion_policy ApigeeNatAddress#deletion_policy}
 
 ---
 
@@ -1197,7 +1268,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1214,7 +1285,7 @@ timeouts: ApigeeNatAddressTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#timeouts ApigeeNatAddress#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#timeouts ApigeeNatAddress#timeouts}
 
 ---
 
@@ -1236,9 +1307,9 @@ apigeeNatAddress.ApigeeNatAddressTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#create ApigeeNatAddress#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#delete ApigeeNatAddress#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#update ApigeeNatAddress#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#create ApigeeNatAddress#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#delete ApigeeNatAddress#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#update ApigeeNatAddress#update}. |
 
 ---
 
@@ -1250,7 +1321,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#create ApigeeNatAddress#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#create ApigeeNatAddress#create}.
 
 ---
 
@@ -1262,7 +1333,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#delete ApigeeNatAddress#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#delete ApigeeNatAddress#delete}.
 
 ---
 
@@ -1274,7 +1345,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_nat_address#update ApigeeNatAddress#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_nat_address#update ApigeeNatAddress#update}.
 
 ---
 

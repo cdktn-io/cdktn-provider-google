@@ -4,7 +4,7 @@
 
 ### SccV2FolderNotificationConfig <a name="SccV2FolderNotificationConfig" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config google_scc_v2_folder_notification_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config google_scc_v2_folder_notification_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.putStreamingConfig">PutStreamingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.resetLocation">ResetLocation</a></code> | *No description.* |
@@ -416,6 +417,12 @@ private void PutTimeouts(SccV2FolderNotificationConfigTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.resetDescription"></a>
 
 ```csharp
@@ -543,7 +550,7 @@ The construct id used in the generated config for the SccV2FolderNotificationCon
 
 The id of the existing SccV2FolderNotificationConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,6 +585,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.streamingConfig">StreamingConfig</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigStreamingConfigOutputReference">SccV2FolderNotificationConfigStreamingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeoutsOutputReference">SccV2FolderNotificationConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.configIdInput">ConfigIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.folderInput">FolderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -586,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.streamingConfigInput">StreamingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigStreamingConfig">SccV2FolderNotificationConfigStreamingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts">SccV2FolderNotificationConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.configId">ConfigId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.folder">Folder</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -786,6 +795,16 @@ public string ConfigIdInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.descriptionInput"></a>
 
 ```csharp
@@ -860,6 +879,16 @@ public IResolvable|SccV2FolderNotificationConfigTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string ConfigId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -955,6 +984,7 @@ new SccV2FolderNotificationConfigConfig {
     string Folder,
     string PubsubTopic,
     SccV2FolderNotificationConfigStreamingConfig StreamingConfig,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     string Location = null,
@@ -977,8 +1007,9 @@ new SccV2FolderNotificationConfigConfig {
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.folder">Folder</a></code> | <code>string</code> | Numerical ID of the parent folder. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.pubsubTopic">PubsubTopic</a></code> | <code>string</code> | The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]". |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.streamingConfig">StreamingConfig</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigStreamingConfig">SccV2FolderNotificationConfigStreamingConfig</a></code> | streaming_config block. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.description">Description</a></code> | <code>string</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#id SccV2FolderNotificationConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#id SccV2FolderNotificationConfig#id}. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.location">Location</a></code> | <code>string</code> | Location ID of the parent organization. If not provided, 'global' will be used as the default location. |
 | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts">SccV2FolderNotificationConfigTimeouts</a></code> | timeouts block. |
 
@@ -1064,7 +1095,7 @@ public string ConfigId { get; set; }
 
 This must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#config_id SccV2FolderNotificationConfig#config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#config_id SccV2FolderNotificationConfig#config_id}
 
 ---
 
@@ -1078,7 +1109,7 @@ public string Folder { get; set; }
 
 Numerical ID of the parent folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#folder SccV2FolderNotificationConfig#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#folder SccV2FolderNotificationConfig#folder}
 
 ---
 
@@ -1092,7 +1123,7 @@ public string PubsubTopic { get; set; }
 
 The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#pubsub_topic SccV2FolderNotificationConfig#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#pubsub_topic SccV2FolderNotificationConfig#pubsub_topic}
 
 ---
 
@@ -1106,7 +1137,28 @@ public SccV2FolderNotificationConfigStreamingConfig StreamingConfig { get; set; 
 
 streaming_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#streaming_config SccV2FolderNotificationConfig#streaming_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#streaming_config SccV2FolderNotificationConfig#streaming_config}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#deletion_policy SccV2FolderNotificationConfig#deletion_policy}
 
 ---
 
@@ -1120,7 +1172,7 @@ public string Description { get; set; }
 
 The description of the notification config (max of 1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#description SccV2FolderNotificationConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#description SccV2FolderNotificationConfig#description}
 
 ---
 
@@ -1132,7 +1184,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#id SccV2FolderNotificationConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#id SccV2FolderNotificationConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1149,7 +1201,7 @@ public string Location { get; set; }
 
 Location ID of the parent organization. If not provided, 'global' will be used as the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#location SccV2FolderNotificationConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#location SccV2FolderNotificationConfig#location}
 
 ---
 
@@ -1163,7 +1215,7 @@ public SccV2FolderNotificationConfigTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#timeouts SccV2FolderNotificationConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#timeouts SccV2FolderNotificationConfig#timeouts}
 
 ---
 
@@ -1222,7 +1274,7 @@ See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#filter SccV2FolderNotificationConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#filter SccV2FolderNotificationConfig#filter}
 
 ---
 
@@ -1244,9 +1296,9 @@ new SccV2FolderNotificationConfigTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#create SccV2FolderNotificationConfig#create}. |
-| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#delete SccV2FolderNotificationConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#update SccV2FolderNotificationConfig#update}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#create SccV2FolderNotificationConfig#create}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#delete SccV2FolderNotificationConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#update SccV2FolderNotificationConfig#update}. |
 
 ---
 
@@ -1258,7 +1310,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#create SccV2FolderNotificationConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#create SccV2FolderNotificationConfig#create}.
 
 ---
 
@@ -1270,7 +1322,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#delete SccV2FolderNotificationConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#delete SccV2FolderNotificationConfig#delete}.
 
 ---
 
@@ -1282,7 +1334,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config#update SccV2FolderNotificationConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_v2_folder_notification_config#update SccV2FolderNotificationConfig#update}.
 
 ---
 

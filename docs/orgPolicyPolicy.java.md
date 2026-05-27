@@ -4,7 +4,7 @@
 
 ### OrgPolicyPolicy <a name="OrgPolicyPolicy" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy google_org_policy_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy google_org_policy_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer"></a>
 
@@ -21,6 +21,7 @@ OrgPolicyPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .parent(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .dryRunSpec(OrgPolicyPolicyDryRunSpec)
 //  .id(java.lang.String)
 //  .spec(OrgPolicyPolicySpec)
@@ -41,8 +42,9 @@ OrgPolicyPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Immutable. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | The parent of the resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.dryRunSpec">dryRunSpec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec">OrgPolicyPolicyDryRunSpec</a></code> | dry_run_spec block. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec">OrgPolicyPolicySpec</a></code> | spec block. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +118,7 @@ Immutable.
 
 The resource name of the Policy. Must be one of the following forms, where constraint_name is the name of the constraint which this Policy configures: * 'projects/{project_number}/policies/{constraint_name}' * 'folders/{folder_id}/policies/{constraint_name}' * 'organizations/{organization_id}/policies/{constraint_name}' For example, "projects/123/policies/compute.disableSerialPortAccess". Note: 'projects/{project_id}/policies/{constraint_name}' is also an acceptable name for API requests, but responses will return the name using the equivalent project number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#name OrgPolicyPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#name OrgPolicyPolicy#name}
 
 ---
 
@@ -126,7 +128,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#parent OrgPolicyPolicy#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#parent OrgPolicyPolicy#parent}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#deletion_policy OrgPolicyPolicy#deletion_policy}
 
 ---
 
@@ -136,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dry_run_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#dry_run_spec OrgPolicyPolicy#dry_run_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#dry_run_spec OrgPolicyPolicy#dry_run_spec}
 
 ---
 
@@ -144,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#spec OrgPolicyPolicy#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#spec OrgPolicyPolicy#spec}
 
 ---
 
@@ -167,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#timeouts OrgPolicyPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#timeouts OrgPolicyPolicy#timeouts}
 
 ---
 
@@ -202,6 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.putDryRunSpec">putDryRunSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.putSpec">putSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.resetDryRunSpec">resetDryRunSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.resetSpec">resetSpec</a></code> | *No description.* |
@@ -556,6 +576,12 @@ public void putTimeouts(OrgPolicyPolicyTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDryRunSpec` <a name="resetDryRunSpec" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.resetDryRunSpec"></a>
 
 ```java
@@ -683,7 +709,7 @@ The construct id used in the generated config for the OrgPolicyPolicy to import.
 
 The id of the existing OrgPolicyPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -717,12 +743,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference">OrgPolicyPolicySpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference">OrgPolicyPolicyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.dryRunSpecInput">dryRunSpecInput</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec">OrgPolicyPolicyDryRunSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.parentInput">parentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.specInput">specInput</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec">OrgPolicyPolicySpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -911,6 +939,16 @@ public OrgPolicyPolicyTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `dryRunSpecInput`<sup>Optional</sup> <a name="dryRunSpecInput" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.dryRunSpecInput"></a>
 
 ```java
@@ -968,6 +1006,16 @@ public IResolvable|OrgPolicyPolicyTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1038,6 +1086,7 @@ OrgPolicyPolicyConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .parent(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .dryRunSpec(OrgPolicyPolicyDryRunSpec)
 //  .id(java.lang.String)
 //  .spec(OrgPolicyPolicySpec)
@@ -1058,8 +1107,9 @@ OrgPolicyPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Immutable. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | The parent of the resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.dryRunSpec">dryRunSpec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec">OrgPolicyPolicyDryRunSpec</a></code> | dry_run_spec block. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec">OrgPolicyPolicySpec</a></code> | spec block. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1147,7 +1197,7 @@ Immutable.
 
 The resource name of the Policy. Must be one of the following forms, where constraint_name is the name of the constraint which this Policy configures: * 'projects/{project_number}/policies/{constraint_name}' * 'folders/{folder_id}/policies/{constraint_name}' * 'organizations/{organization_id}/policies/{constraint_name}' For example, "projects/123/policies/compute.disableSerialPortAccess". Note: 'projects/{project_id}/policies/{constraint_name}' is also an acceptable name for API requests, but responses will return the name using the equivalent project number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#name OrgPolicyPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#name OrgPolicyPolicy#name}
 
 ---
 
@@ -1161,7 +1211,28 @@ public java.lang.String getParent();
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#parent OrgPolicyPolicy#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#parent OrgPolicyPolicy#parent}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#deletion_policy OrgPolicyPolicy#deletion_policy}
 
 ---
 
@@ -1175,7 +1246,7 @@ public OrgPolicyPolicyDryRunSpec getDryRunSpec();
 
 dry_run_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#dry_run_spec OrgPolicyPolicy#dry_run_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#dry_run_spec OrgPolicyPolicy#dry_run_spec}
 
 ---
 
@@ -1187,7 +1258,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1204,7 +1275,7 @@ public OrgPolicyPolicySpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#spec OrgPolicyPolicy#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#spec OrgPolicyPolicy#spec}
 
 ---
 
@@ -1218,7 +1289,7 @@ public OrgPolicyPolicyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#timeouts OrgPolicyPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#timeouts OrgPolicyPolicy#timeouts}
 
 ---
 
@@ -1258,7 +1329,7 @@ Determines the inheritance behavior for this policy.
 
 If 'inherit_from_parent' is true, policy rules set higher up in the hierarchy (up to the closest root) are inherited and present in the effective policy. If it is false, then no rules are inherited, and this policy becomes the new root for evaluation. This field can be set only for policies which configure list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#inherit_from_parent OrgPolicyPolicy#inherit_from_parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#inherit_from_parent OrgPolicyPolicy#inherit_from_parent}
 
 ---
 
@@ -1274,7 +1345,7 @@ Ignores policies set above this resource and restores the 'constraint_default' e
 
 This field can be set in policies for either list or boolean constraints. If set, 'rules' must be empty and 'inherit_from_parent' must be set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#reset OrgPolicyPolicy#reset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#reset OrgPolicyPolicy#reset}
 
 ---
 
@@ -1288,7 +1359,7 @@ public IResolvable|java.util.List<OrgPolicyPolicyDryRunSpecRules> getRules();
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#rules OrgPolicyPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#rules OrgPolicyPolicy#rules}
 
 ---
 
@@ -1334,7 +1405,7 @@ Setting this to '"TRUE"' means that all values are allowed.
 
 This field can be set only in Policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
 
 ---
 
@@ -1348,7 +1419,7 @@ public OrgPolicyPolicyDryRunSpecRulesCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
 
 ---
 
@@ -1364,7 +1435,7 @@ Setting this to '"TRUE"' means that all values are denied.
 
 This field can be set only in Policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
 
 ---
 
@@ -1380,7 +1451,7 @@ If '"TRUE"', then the 'Policy' is enforced.
 
 If '"FALSE"', then any configuration is acceptable. This field can be set only in Policies for boolean constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
 
 ---
 
@@ -1396,7 +1467,7 @@ Optional.
 
 Required for Managed Constraints if parameters defined in constraints. Pass parameter values when policy enforcement is enabled. Ensure that parameter value types match those defined in the constraint definition. For example: { "allowedLocations" : ["us-east1", "us-west1"], "allowAll" : true }
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#parameters OrgPolicyPolicy#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#parameters OrgPolicyPolicy#parameters}
 
 ---
 
@@ -1410,7 +1481,7 @@ public OrgPolicyPolicyDryRunSpecRulesValues getValues();
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
 
 ---
 
@@ -1452,7 +1523,7 @@ Optional.
 
 Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#description OrgPolicyPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#description OrgPolicyPolicy#description}
 
 ---
 
@@ -1466,7 +1537,7 @@ public java.lang.String getExpression();
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#expression OrgPolicyPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#expression OrgPolicyPolicy#expression}
 
 ---
 
@@ -1482,7 +1553,7 @@ Optional.
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#location OrgPolicyPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#location OrgPolicyPolicy#location}
 
 ---
 
@@ -1498,7 +1569,7 @@ Optional.
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#title OrgPolicyPolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#title OrgPolicyPolicy#title}
 
 ---
 
@@ -1534,7 +1605,7 @@ public java.util.List<java.lang.String> getAllowedValues();
 
 List of values allowed at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#allowed_values OrgPolicyPolicy#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#allowed_values OrgPolicyPolicy#allowed_values}
 
 ---
 
@@ -1548,7 +1619,7 @@ public java.util.List<java.lang.String> getDeniedValues();
 
 List of values denied at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#denied_values OrgPolicyPolicy#denied_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#denied_values OrgPolicyPolicy#denied_values}
 
 ---
 
@@ -1588,7 +1659,7 @@ Determines the inheritance behavior for this 'Policy'.
 
 If 'inherit_from_parent' is true, PolicyRules set higher up in the hierarchy (up to the closest root) are inherited and present in the effective policy. If it is false, then no rules are inherited, and this Policy becomes the new root for evaluation. This field can be set only for Policies which configure list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#inherit_from_parent OrgPolicyPolicy#inherit_from_parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#inherit_from_parent OrgPolicyPolicy#inherit_from_parent}
 
 ---
 
@@ -1604,7 +1675,7 @@ Ignores policies set above this resource and restores the 'constraint_default' e
 
 This field can be set in policies for either list or boolean constraints. If set, 'rules' must be empty and 'inherit_from_parent' must be set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#reset OrgPolicyPolicy#reset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#reset OrgPolicyPolicy#reset}
 
 ---
 
@@ -1618,7 +1689,7 @@ public IResolvable|java.util.List<OrgPolicyPolicySpecRules> getRules();
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#rules OrgPolicyPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#rules OrgPolicyPolicy#rules}
 
 ---
 
@@ -1664,7 +1735,7 @@ Setting this to '"TRUE"' means that all values are allowed.
 
 This field can be set only in Policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
 
 ---
 
@@ -1678,7 +1749,7 @@ public OrgPolicyPolicySpecRulesCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
 
 ---
 
@@ -1694,7 +1765,7 @@ Setting this to '"TRUE"' means that all values are denied.
 
 This field can be set only in Policies for list constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
 
 ---
 
@@ -1710,7 +1781,7 @@ If '"TRUE"', then the 'Policy' is enforced.
 
 If '"FALSE"', then any configuration is acceptable. This field can be set only in Policies for boolean constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
 
 ---
 
@@ -1726,7 +1797,7 @@ Optional.
 
 Required for Managed Constraints if parameters defined in constraints. Pass parameter values when policy enforcement is enabled. Ensure that parameter value types match those defined in the constraint definition. For example: { "allowedLocations" : ["us-east1", "us-west1"], "allowAll" : true }
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#parameters OrgPolicyPolicy#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#parameters OrgPolicyPolicy#parameters}
 
 ---
 
@@ -1740,7 +1811,7 @@ public OrgPolicyPolicySpecRulesValues getValues();
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
 
 ---
 
@@ -1782,7 +1853,7 @@ Optional.
 
 Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#description OrgPolicyPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#description OrgPolicyPolicy#description}
 
 ---
 
@@ -1796,7 +1867,7 @@ public java.lang.String getExpression();
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#expression OrgPolicyPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#expression OrgPolicyPolicy#expression}
 
 ---
 
@@ -1812,7 +1883,7 @@ Optional.
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#location OrgPolicyPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#location OrgPolicyPolicy#location}
 
 ---
 
@@ -1828,7 +1899,7 @@ Optional.
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#title OrgPolicyPolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#title OrgPolicyPolicy#title}
 
 ---
 
@@ -1864,7 +1935,7 @@ public java.util.List<java.lang.String> getAllowedValues();
 
 List of values allowed at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#allowed_values OrgPolicyPolicy#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#allowed_values OrgPolicyPolicy#allowed_values}
 
 ---
 
@@ -1878,7 +1949,7 @@ public java.util.List<java.lang.String> getDeniedValues();
 
 List of values denied at this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#denied_values OrgPolicyPolicy#denied_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#denied_values OrgPolicyPolicy#denied_values}
 
 ---
 
@@ -1900,9 +1971,9 @@ OrgPolicyPolicyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#create OrgPolicyPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#delete OrgPolicyPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#update OrgPolicyPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#create OrgPolicyPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#delete OrgPolicyPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#update OrgPolicyPolicy#update}. |
 
 ---
 
@@ -1914,7 +1985,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#create OrgPolicyPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#create OrgPolicyPolicy#create}.
 
 ---
 
@@ -1926,7 +1997,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#delete OrgPolicyPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#delete OrgPolicyPolicy#delete}.
 
 ---
 
@@ -1938,7 +2009,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy#update OrgPolicyPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/org_policy_policy#update OrgPolicyPolicy#update}.
 
 ---
 

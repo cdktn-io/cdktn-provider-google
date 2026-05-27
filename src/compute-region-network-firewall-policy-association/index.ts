@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,29 @@ export interface ComputeRegionNetworkFirewallPolicyAssociationConfig extends cdk
   /**
   * The target that the firewall policy is attached to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#attachment_target ComputeRegionNetworkFirewallPolicyAssociation#attachment_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#attachment_target ComputeRegionNetworkFirewallPolicyAssociation#attachment_target}
   */
   readonly attachmentTarget: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#deletion_policy ComputeRegionNetworkFirewallPolicyAssociation#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The firewall policy of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#firewall_policy ComputeRegionNetworkFirewallPolicyAssociation#firewall_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#firewall_policy ComputeRegionNetworkFirewallPolicyAssociation#firewall_policy}
   */
   readonly firewallPolicy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#id ComputeRegionNetworkFirewallPolicyAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#id ComputeRegionNetworkFirewallPolicyAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,33 +46,33 @@ export interface ComputeRegionNetworkFirewallPolicyAssociationConfig extends cdk
   /**
   * The name for an association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#name ComputeRegionNetworkFirewallPolicyAssociation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#name ComputeRegionNetworkFirewallPolicyAssociation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#project ComputeRegionNetworkFirewallPolicyAssociation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#project ComputeRegionNetworkFirewallPolicyAssociation#project}
   */
   readonly project?: string;
   /**
   * The location of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#region ComputeRegionNetworkFirewallPolicyAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#region ComputeRegionNetworkFirewallPolicyAssociation#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#timeouts ComputeRegionNetworkFirewallPolicyAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#timeouts ComputeRegionNetworkFirewallPolicyAssociation#timeouts}
   */
   readonly timeouts?: ComputeRegionNetworkFirewallPolicyAssociationTimeouts;
 }
 export interface ComputeRegionNetworkFirewallPolicyAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#create ComputeRegionNetworkFirewallPolicyAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#create ComputeRegionNetworkFirewallPolicyAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#delete ComputeRegionNetworkFirewallPolicyAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#delete ComputeRegionNetworkFirewallPolicyAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -183,7 +195,7 @@ export class ComputeRegionNetworkFirewallPolicyAssociationTimeoutsOutputReferenc
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association}
 */
 export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.TerraformResource {
 
@@ -199,7 +211,7 @@ export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.Terrafo
   * Generates CDKTN code for importing a ComputeRegionNetworkFirewallPolicyAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionNetworkFirewallPolicyAssociation to import
-  * @param importFromId The id of the existing ComputeRegionNetworkFirewallPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeRegionNetworkFirewallPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionNetworkFirewallPolicyAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -211,7 +223,7 @@ export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.Terrafo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,7 +234,7 @@ export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.Terrafo
       terraformResourceType: 'google_compute_region_network_firewall_policy_association',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -234,6 +246,7 @@ export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.Terrafo
       forEach: config.forEach
     });
     this._attachmentTarget = config.attachmentTarget;
+    this._deletionPolicy = config.deletionPolicy;
     this._firewallPolicy = config.firewallPolicy;
     this._id = config.id;
     this._name = config.name;
@@ -257,6 +270,22 @@ export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.Terrafo
   // Temporarily expose input value. Use with caution.
   public get attachmentTargetInput() {
     return this._attachmentTarget;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // firewall_policy - computed: false, optional: false, required: true
@@ -361,6 +390,7 @@ export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.Terrafo
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       attachment_target: cdktn.stringToTerraform(this._attachmentTarget),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       firewall_policy: cdktn.stringToTerraform(this._firewallPolicy),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -374,6 +404,12 @@ export class ComputeRegionNetworkFirewallPolicyAssociation extends cdktn.Terrafo
     const attrs = {
       attachment_target: {
         value: cdktn.stringToHclTerraform(this._attachmentTarget),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

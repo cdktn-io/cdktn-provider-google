@@ -4,7 +4,7 @@
 
 ### AccessContextManagerIngressPolicy <a name="AccessContextManagerIngressPolicy" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy google_access_context_manager_ingress_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy google_access_context_manager_ingress_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -401,6 +402,12 @@ func PutTimeouts(value AccessContextManagerIngressPolicyTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.resetId"></a>
 
 ```go
@@ -516,7 +523,7 @@ The construct id used in the generated config for the AccessContextManagerIngres
 
 The id of the existing AccessContextManagerIngressPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -548,10 +555,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.accessPolicyId">AccessPolicyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeoutsOutputReference">AccessContextManagerIngressPolicyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.ingressPolicyNameInput">IngressPolicyNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.resourceInput">ResourceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.ingressPolicyName">IngressPolicyName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.resource">Resource</a></code> | <code>*string</code> | *No description.* |
@@ -720,6 +729,16 @@ func Timeouts() AccessContextManagerIngressPolicyTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.idInput"></a>
 
 ```go
@@ -757,6 +776,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -827,6 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextman
 	Provisioners: *[]interface{},
 	IngressPolicyName: *string,
 	Resource: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts,
 }
@@ -845,7 +875,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextman
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.ingressPolicyName">IngressPolicyName</a></code> | <code>*string</code> | The name of the Service Perimeter to add this resource to. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.resource">Resource</a></code> | <code>*string</code> | A GCP resource that is inside of the service perimeter. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#id AccessContextManagerIngressPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#id AccessContextManagerIngressPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts">AccessContextManagerIngressPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -930,7 +961,7 @@ IngressPolicyName *string
 
 The name of the Service Perimeter to add this resource to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#ingress_policy_name AccessContextManagerIngressPolicy#ingress_policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#ingress_policy_name AccessContextManagerIngressPolicy#ingress_policy_name}
 
 ---
 
@@ -944,7 +975,28 @@ Resource *string
 
 A GCP resource that is inside of the service perimeter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#resource AccessContextManagerIngressPolicy#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#resource AccessContextManagerIngressPolicy#resource}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#deletion_policy AccessContextManagerIngressPolicy#deletion_policy}
 
 ---
 
@@ -956,7 +1008,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#id AccessContextManagerIngressPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#id AccessContextManagerIngressPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +1025,7 @@ Timeouts AccessContextManagerIngressPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#timeouts AccessContextManagerIngressPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#timeouts AccessContextManagerIngressPolicy#timeouts}
 
 ---
 
@@ -994,8 +1046,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextman
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#create AccessContextManagerIngressPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#delete AccessContextManagerIngressPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#create AccessContextManagerIngressPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#delete AccessContextManagerIngressPolicy#delete}. |
 
 ---
 
@@ -1007,7 +1059,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#create AccessContextManagerIngressPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#create AccessContextManagerIngressPolicy#create}.
 
 ---
 
@@ -1019,7 +1071,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_ingress_policy#delete AccessContextManagerIngressPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/access_context_manager_ingress_policy#delete AccessContextManagerIngressPolicy#delete}.
 
 ---
 

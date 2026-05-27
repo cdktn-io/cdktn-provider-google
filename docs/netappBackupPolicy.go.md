@@ -4,7 +4,7 @@
 
 ### NetappBackupPolicy <a name="NetappBackupPolicy" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy google_netapp_backup_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy google_netapp_backup_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.resetId">ResetId</a></code> | *No description.* |
@@ -405,6 +406,12 @@ func PutTimeouts(value NetappBackupPolicyTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.resetDescription"></a>
 
 ```go
@@ -544,7 +551,7 @@ The construct id used in the generated config for the NetappBackupPolicy to impo
 
 The id of the existing NetappBackupPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,6 +588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference">NetappBackupPolicyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupLimitInput">DailyBackupLimitInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -592,6 +600,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupLimitInput">WeeklyBackupLimitInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupLimit">DailyBackupLimit</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -816,6 +825,16 @@ func DailyBackupLimitInput() *f64
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.descriptionInput"></a>
 
 ```go
@@ -923,6 +942,16 @@ func DailyBackupLimit() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1056,6 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappbackuppoli
 	MonthlyBackupLimit: *f64,
 	Name: *string,
 	WeeklyBackupLimit: *f64,
+	DeletionPolicy: *string,
 	Description: *string,
 	Enabled: interface{},
 	Id: *string,
@@ -1081,11 +1111,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappbackuppoli
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.monthlyBackupLimit">MonthlyBackupLimit</a></code> | <code>*f64</code> | Number of monthly backups to keep. |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.name">Name</a></code> | <code>*string</code> | The name of the backup policy. Needs to be unique per location. |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.weeklyBackupLimit">WeeklyBackupLimit</a></code> | <code>*f64</code> | Number of weekly backups to keep. |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | If enabled, make backups automatically according to the schedules. |
-| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#project NetappBackupPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#project NetappBackupPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts">NetappBackupPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1170,7 +1201,7 @@ DailyBackupLimit *f64
 
 Number of daily backups to keep. Note that the minimum daily backup limit is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#daily_backup_limit NetappBackupPolicy#daily_backup_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#daily_backup_limit NetappBackupPolicy#daily_backup_limit}
 
 ---
 
@@ -1184,7 +1215,7 @@ Location *string
 
 Name of the region for the policy to apply to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#location NetappBackupPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#location NetappBackupPolicy#location}
 
 ---
 
@@ -1200,7 +1231,7 @@ Number of monthly backups to keep.
 
 Note that the sum of daily, weekly and monthly backups should be greater than 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#monthly_backup_limit NetappBackupPolicy#monthly_backup_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#monthly_backup_limit NetappBackupPolicy#monthly_backup_limit}
 
 ---
 
@@ -1214,7 +1245,7 @@ Name *string
 
 The name of the backup policy. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#name NetappBackupPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#name NetappBackupPolicy#name}
 
 ---
 
@@ -1230,7 +1261,28 @@ Number of weekly backups to keep.
 
 Note that the sum of daily, weekly and monthly backups should be greater than 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#weekly_backup_limit NetappBackupPolicy#weekly_backup_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#weekly_backup_limit NetappBackupPolicy#weekly_backup_limit}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#deletion_policy NetappBackupPolicy#deletion_policy}
 
 ---
 
@@ -1244,7 +1296,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#description NetappBackupPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#description NetappBackupPolicy#description}
 
 ---
 
@@ -1260,7 +1312,7 @@ If enabled, make backups automatically according to the schedules.
 
 This will be applied to all volumes that have this policy attached and enforced on volume level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#enabled NetappBackupPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#enabled NetappBackupPolicy#enabled}
 
 ---
 
@@ -1272,7 +1324,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1344,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#labels NetappBackupPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#labels NetappBackupPolicy#labels}
 
 ---
 
@@ -1304,7 +1356,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#project NetappBackupPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#project NetappBackupPolicy#project}.
 
 ---
 
@@ -1318,7 +1370,7 @@ Timeouts NetappBackupPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#timeouts NetappBackupPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#timeouts NetappBackupPolicy#timeouts}
 
 ---
 
@@ -1340,9 +1392,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappbackuppoli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}. |
 
 ---
 
@@ -1354,7 +1406,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}.
 
 ---
 
@@ -1366,7 +1418,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}.
 
 ---
 
@@ -1378,7 +1430,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### MonitoringCustomService <a name="MonitoringCustomService" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service google_monitoring_custom_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service google_monitoring_custom_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.putTelemetry">PutTelemetry</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.resetProject">ResetProject</a></code> | *No description.* |
@@ -419,6 +420,12 @@ private void PutTimeouts(MonitoringCustomServiceTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.resetDisplayName"></a>
 
 ```csharp
@@ -564,7 +571,7 @@ The construct id used in the generated config for the MonitoringCustomService to
 
 The id of the existing MonitoringCustomService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -597,6 +604,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.telemetry">Telemetry</a></code> | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTelemetryOutputReference">MonitoringCustomServiceTelemetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeoutsOutputReference">MonitoringCustomServiceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
@@ -604,6 +612,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.telemetryInput">TelemetryInput</a></code> | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTelemetry">MonitoringCustomServiceTelemetry</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts">MonitoringCustomServiceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.userLabelsInput">UserLabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.project">Project</a></code> | <code>string</code> | *No description.* |
@@ -784,6 +793,16 @@ public MonitoringCustomServiceTimeoutsOutputReference Timeouts { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.displayNameInput"></a>
 
 ```csharp
@@ -851,6 +870,16 @@ public System.Collections.Generic.IDictionary<string, string> UserLabelsInput { 
 ```
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -939,6 +968,7 @@ new MonitoringCustomServiceConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string DeletionPolicy = null,
     string DisplayName = null,
     string Id = null,
     string Project = null,
@@ -960,9 +990,10 @@ new MonitoringCustomServiceConfig {
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Name used for UI elements listing this Service. |
-| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#id MonitoringCustomService#id}. |
-| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#project MonitoringCustomService#project}. |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#id MonitoringCustomService#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#project MonitoringCustomService#project}. |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | An optional service ID to use. If not given, the server will generate a service ID. |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.telemetry">Telemetry</a></code> | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTelemetry">MonitoringCustomServiceTelemetry</a></code> | telemetry block. |
 | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts">MonitoringCustomServiceTimeouts</a></code> | timeouts block. |
@@ -1040,6 +1071,27 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#deletion_policy MonitoringCustomService#deletion_policy}
+
+---
+
 ##### `DisplayName`<sup>Optional</sup> <a name="DisplayName" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.property.displayName"></a>
 
 ```csharp
@@ -1050,7 +1102,7 @@ public string DisplayName { get; set; }
 
 Name used for UI elements listing this Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#display_name MonitoringCustomService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#display_name MonitoringCustomService#display_name}
 
 ---
 
@@ -1062,7 +1114,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#id MonitoringCustomService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#id MonitoringCustomService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1077,7 +1129,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#project MonitoringCustomService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#project MonitoringCustomService#project}.
 
 ---
 
@@ -1091,7 +1143,7 @@ public string ServiceId { get; set; }
 
 An optional service ID to use. If not given, the server will generate a service ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#service_id MonitoringCustomService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#service_id MonitoringCustomService#service_id}
 
 ---
 
@@ -1105,7 +1157,7 @@ public MonitoringCustomServiceTelemetry Telemetry { get; set; }
 
 telemetry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#telemetry MonitoringCustomService#telemetry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#telemetry MonitoringCustomService#telemetry}
 
 ---
 
@@ -1119,7 +1171,7 @@ public MonitoringCustomServiceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#timeouts MonitoringCustomService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#timeouts MonitoringCustomService#timeouts}
 
 ---
 
@@ -1140,7 +1192,7 @@ length of 63 characters, and must be less than 128 bytes in size. Up to 64
 label entries may be stored. For labels which do not have a semantic value,
 the empty string may be supplied for the label value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#user_labels MonitoringCustomService#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#user_labels MonitoringCustomService#user_labels}
 
 ---
 
@@ -1174,7 +1226,7 @@ public string ResourceName { get; set; }
 
 The full name of the resource that defines this service. Formatted as described in https://cloud.google.com/apis/design/resource_names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#resource_name MonitoringCustomService#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#resource_name MonitoringCustomService#resource_name}
 
 ---
 
@@ -1196,9 +1248,9 @@ new MonitoringCustomServiceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#create MonitoringCustomService#create}. |
-| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#delete MonitoringCustomService#delete}. |
-| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#update MonitoringCustomService#update}. |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#create MonitoringCustomService#create}. |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#delete MonitoringCustomService#delete}. |
+| <code><a href="#@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#update MonitoringCustomService#update}. |
 
 ---
 
@@ -1210,7 +1262,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#create MonitoringCustomService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#create MonitoringCustomService#create}.
 
 ---
 
@@ -1222,7 +1274,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#delete MonitoringCustomService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#delete MonitoringCustomService#delete}.
 
 ---
 
@@ -1234,7 +1286,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_custom_service#update MonitoringCustomService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_custom_service#update MonitoringCustomService#update}.
 
 ---
 

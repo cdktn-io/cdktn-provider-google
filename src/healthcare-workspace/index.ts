@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,23 @@ export interface HealthcareWorkspaceConfig extends cdktn.TerraformMetaArguments 
   * Identifies the dataset addressed by this request. Must be in the format
   * 'projects/{project}/locations/{location}/datasets/{dataset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#dataset HealthcareWorkspace#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#dataset HealthcareWorkspace#dataset}
   */
   readonly dataset: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#deletion_policy HealthcareWorkspace#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -33,25 +45,25 @@ export interface HealthcareWorkspaceConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#labels HealthcareWorkspace#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#labels HealthcareWorkspace#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the workspace, in the format 'projects/{projectId}/locations/{location}/datasets/{datasetId}/dataMapperWorkspaces/{workspaceId}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}
   */
   readonly name: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#settings HealthcareWorkspace#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#settings HealthcareWorkspace#settings}
   */
   readonly settings: HealthcareWorkspaceSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#timeouts HealthcareWorkspace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#timeouts HealthcareWorkspace#timeouts}
   */
   readonly timeouts?: HealthcareWorkspaceTimeouts;
 }
@@ -59,7 +71,7 @@ export interface HealthcareWorkspaceSettings {
   /**
   * Project IDs for data projects hosted in a workspace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#data_project_ids HealthcareWorkspace#data_project_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#data_project_ids HealthcareWorkspace#data_project_ids}
   */
   readonly dataProjectIds: string[];
 }
@@ -140,15 +152,15 @@ export class HealthcareWorkspaceSettingsOutputReference extends cdktn.ComplexObj
 }
 export interface HealthcareWorkspaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}
   */
   readonly update?: string;
 }
@@ -300,7 +312,7 @@ export class HealthcareWorkspaceTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace google_healthcare_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace google_healthcare_workspace}
 */
 export class HealthcareWorkspace extends cdktn.TerraformResource {
 
@@ -316,7 +328,7 @@ export class HealthcareWorkspace extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a HealthcareWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HealthcareWorkspace to import
-  * @param importFromId The id of the existing HealthcareWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HealthcareWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HealthcareWorkspace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -328,7 +340,7 @@ export class HealthcareWorkspace extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_workspace google_healthcare_workspace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_workspace google_healthcare_workspace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +351,7 @@ export class HealthcareWorkspace extends cdktn.TerraformResource {
       terraformResourceType: 'google_healthcare_workspace',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -351,6 +363,7 @@ export class HealthcareWorkspace extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._dataset = config.dataset;
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
@@ -373,6 +386,22 @@ export class HealthcareWorkspace extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get datasetInput() {
     return this._dataset;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // effective_labels - computed: true, optional: false, required: false
@@ -468,6 +497,7 @@ export class HealthcareWorkspace extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dataset: cdktn.stringToTerraform(this._dataset),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       name: cdktn.stringToTerraform(this._name),
@@ -480,6 +510,12 @@ export class HealthcareWorkspace extends cdktn.TerraformResource {
     const attrs = {
       dataset: {
         value: cdktn.stringToHclTerraform(this._dataset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### DialogflowCxGenerator <a name="DialogflowCxGenerator" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator google_dialogflow_cx_generator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator google_dialogflow_cx_generator}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer"></a>
 
@@ -21,6 +21,7 @@ DialogflowCxGenerator.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .displayName(java.lang.String)
     .promptText(DialogflowCxGeneratorPromptText)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .languageCode(java.lang.String)
 //  .llmModelSettings(DialogflowCxGeneratorLlmModelSettings)
@@ -44,7 +45,8 @@ DialogflowCxGenerator.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The human-readable name of the generator, unique within the agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.promptText">promptText</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorPromptText">DialogflowCxGeneratorPromptText</a></code> | prompt_text block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.languageCode">languageCode</a></code> | <code>java.lang.String</code> | The language to create generators for the following fields: * Generator.prompt_text.text If not specified, the agent's default language is used. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.llmModelSettings">llmModelSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorLlmModelSettings">DialogflowCxGeneratorLlmModelSettings</a></code> | llm_model_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.modelParameter">modelParameter</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorModelParameter">DialogflowCxGeneratorModelParameter</a></code> | model_parameter block. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The human-readable name of the generator, unique within the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#display_name DialogflowCxGenerator#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#display_name DialogflowCxGenerator#display_name}
 
 ---
 
@@ -130,7 +132,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 prompt_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#prompt_text DialogflowCxGenerator#prompt_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#prompt_text DialogflowCxGenerator#prompt_text}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#deletion_policy DialogflowCxGenerator#deletion_policy}
 
 ---
 
@@ -138,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +170,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The language to create generators for the following fields: * Generator.prompt_text.text If not specified, the agent's default language is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#language_code DialogflowCxGenerator#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#language_code DialogflowCxGenerator#language_code}
 
 ---
 
@@ -161,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 llm_model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#llm_model_settings DialogflowCxGenerator#llm_model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#llm_model_settings DialogflowCxGenerator#llm_model_settings}
 
 ---
 
@@ -171,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#model_parameter DialogflowCxGenerator#model_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#model_parameter DialogflowCxGenerator#model_parameter}
 
 ---
 
@@ -181,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The agent to create a Generator for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#parent DialogflowCxGenerator#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#parent DialogflowCxGenerator#parent}
 
 ---
 
@@ -191,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 placeholders block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#placeholders DialogflowCxGenerator#placeholders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#placeholders DialogflowCxGenerator#placeholders}
 
 ---
 
@@ -201,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#timeouts DialogflowCxGenerator#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#timeouts DialogflowCxGenerator#timeouts}
 
 ---
 
@@ -238,6 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.putPlaceholders">putPlaceholders</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.putPromptText">putPromptText</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.resetLanguageCode">resetLanguageCode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.resetLlmModelSettings">resetLlmModelSettings</a></code> | *No description.* |
@@ -619,6 +639,12 @@ public void putTimeouts(DialogflowCxGeneratorTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.resetId"></a>
 
 ```java
@@ -764,7 +790,7 @@ The construct id used in the generated config for the DialogflowCxGenerator to i
 
 The id of the existing DialogflowCxGenerator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,6 +826,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.placeholders">placeholders</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorPlaceholdersList">DialogflowCxGeneratorPlaceholdersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.promptText">promptText</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorPromptTextOutputReference">DialogflowCxGeneratorPromptTextOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeoutsOutputReference">DialogflowCxGeneratorTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.languageCodeInput">languageCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -809,6 +836,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.placeholdersInput">placeholdersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorPlaceholders">DialogflowCxGeneratorPlaceholders</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.promptTextInput">promptTextInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorPromptText">DialogflowCxGeneratorPromptText</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeouts">DialogflowCxGeneratorTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.languageCode">languageCode</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1018,6 +1046,16 @@ public DialogflowCxGeneratorTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.displayNameInput"></a>
 
 ```java
@@ -1108,6 +1146,16 @@ public IResolvable|DialogflowCxGeneratorTimeouts getTimeoutsInput();
 
 ---
 
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGenerator.property.displayName"></a>
 
 ```java
@@ -1185,6 +1233,7 @@ DialogflowCxGeneratorConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .displayName(java.lang.String)
     .promptText(DialogflowCxGeneratorPromptText)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .languageCode(java.lang.String)
 //  .llmModelSettings(DialogflowCxGeneratorLlmModelSettings)
@@ -1208,7 +1257,8 @@ DialogflowCxGeneratorConfig.builder()
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The human-readable name of the generator, unique within the agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.promptText">promptText</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorPromptText">DialogflowCxGeneratorPromptText</a></code> | prompt_text block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.languageCode">languageCode</a></code> | <code>java.lang.String</code> | The language to create generators for the following fields: * Generator.prompt_text.text If not specified, the agent's default language is used. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.llmModelSettings">llmModelSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorLlmModelSettings">DialogflowCxGeneratorLlmModelSettings</a></code> | llm_model_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.modelParameter">modelParameter</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorModelParameter">DialogflowCxGeneratorModelParameter</a></code> | model_parameter block. |
@@ -1298,7 +1348,7 @@ public java.lang.String getDisplayName();
 
 The human-readable name of the generator, unique within the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#display_name DialogflowCxGenerator#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#display_name DialogflowCxGenerator#display_name}
 
 ---
 
@@ -1312,7 +1362,28 @@ public DialogflowCxGeneratorPromptText getPromptText();
 
 prompt_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#prompt_text DialogflowCxGenerator#prompt_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#prompt_text DialogflowCxGenerator#prompt_text}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#deletion_policy DialogflowCxGenerator#deletion_policy}
 
 ---
 
@@ -1324,7 +1395,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1341,7 +1412,7 @@ public java.lang.String getLanguageCode();
 
 The language to create generators for the following fields: * Generator.prompt_text.text If not specified, the agent's default language is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#language_code DialogflowCxGenerator#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#language_code DialogflowCxGenerator#language_code}
 
 ---
 
@@ -1355,7 +1426,7 @@ public DialogflowCxGeneratorLlmModelSettings getLlmModelSettings();
 
 llm_model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#llm_model_settings DialogflowCxGenerator#llm_model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#llm_model_settings DialogflowCxGenerator#llm_model_settings}
 
 ---
 
@@ -1369,7 +1440,7 @@ public DialogflowCxGeneratorModelParameter getModelParameter();
 
 model_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#model_parameter DialogflowCxGenerator#model_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#model_parameter DialogflowCxGenerator#model_parameter}
 
 ---
 
@@ -1383,7 +1454,7 @@ public java.lang.String getParent();
 
 The agent to create a Generator for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#parent DialogflowCxGenerator#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#parent DialogflowCxGenerator#parent}
 
 ---
 
@@ -1397,7 +1468,7 @@ public IResolvable|java.util.List<DialogflowCxGeneratorPlaceholders> getPlacehol
 
 placeholders block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#placeholders DialogflowCxGenerator#placeholders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#placeholders DialogflowCxGenerator#placeholders}
 
 ---
 
@@ -1411,7 +1482,7 @@ public DialogflowCxGeneratorTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#timeouts DialogflowCxGenerator#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#timeouts DialogflowCxGenerator#timeouts}
 
 ---
 
@@ -1447,7 +1518,7 @@ public java.lang.String getModel();
 
 The selected LLM model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#model DialogflowCxGenerator#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#model DialogflowCxGenerator#model}
 
 ---
 
@@ -1461,7 +1532,7 @@ public java.lang.String getPromptText();
 
 The custom prompt to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#prompt_text DialogflowCxGenerator#prompt_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#prompt_text DialogflowCxGenerator#prompt_text}
 
 ---
 
@@ -1501,7 +1572,7 @@ public java.lang.Number getMaxDecodeSteps();
 
 The maximum number of tokens to generate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#max_decode_steps DialogflowCxGenerator#max_decode_steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#max_decode_steps DialogflowCxGenerator#max_decode_steps}
 
 ---
 
@@ -1518,7 +1589,7 @@ The temperature used for sampling.
 Temperature sampling occurs after both topP and topK have been applied.
 Valid range: [0.0, 1.0] Low temperature = less random. High temperature = more random.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#temperature DialogflowCxGenerator#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#temperature DialogflowCxGenerator#temperature}
 
 ---
 
@@ -1534,7 +1605,7 @@ If set, the sampling process in each step is limited to the topK tokens with hig
 
 Valid range: [1, 40] or 1000+. Small topK = less random. Large topK = more random.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#top_k DialogflowCxGenerator#top_k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#top_k DialogflowCxGenerator#top_k}
 
 ---
 
@@ -1551,7 +1622,7 @@ If set, only the tokens comprising the top topP probability mass are considered.
 If both topP and topK are set, topP will be used for further refining candidates selected with topK.
 Valid range: (0.0, 1.0]. Small topP = less random. Large topP = more random.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#top_p DialogflowCxGenerator#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#top_p DialogflowCxGenerator#top_p}
 
 ---
 
@@ -1587,7 +1658,7 @@ public java.lang.String getId();
 
 Unique ID used to map custom placeholder to parameters in fulfillment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#id DialogflowCxGenerator#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1604,7 +1675,7 @@ public java.lang.String getName();
 
 Custom placeholder value in the prompt text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#name DialogflowCxGenerator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#name DialogflowCxGenerator#name}
 
 ---
 
@@ -1638,7 +1709,7 @@ public java.lang.String getText();
 
 Text input which can be used for prompt or banned phrases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#text DialogflowCxGenerator#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#text DialogflowCxGenerator#text}
 
 ---
 
@@ -1660,9 +1731,9 @@ DialogflowCxGeneratorTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#create DialogflowCxGenerator#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#delete DialogflowCxGenerator#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#update DialogflowCxGenerator#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#create DialogflowCxGenerator#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#delete DialogflowCxGenerator#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxGenerator.DialogflowCxGeneratorTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#update DialogflowCxGenerator#update}. |
 
 ---
 
@@ -1674,7 +1745,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#create DialogflowCxGenerator#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#create DialogflowCxGenerator#create}.
 
 ---
 
@@ -1686,7 +1757,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#delete DialogflowCxGenerator#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#delete DialogflowCxGenerator#delete}.
 
 ---
 
@@ -1698,7 +1769,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generator#update DialogflowCxGenerator#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_cx_generator#update DialogflowCxGenerator#update}.
 
 ---
 

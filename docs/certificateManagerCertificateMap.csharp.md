@@ -4,7 +4,7 @@
 
 ### CertificateManagerCertificateMap <a name="CertificateManagerCertificateMap" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -404,6 +405,12 @@ private void PutTimeouts(CertificateManagerCertificateMapTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.resetDescription"></a>
 
 ```csharp
@@ -537,7 +544,7 @@ The construct id used in the generated config for the CertificateManagerCertific
 
 The id of the existing CertificateManagerCertificateMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -573,12 +580,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeoutsOutputReference">CertificateManagerCertificateMapTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts">CertificateManagerCertificateMapTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -789,6 +798,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.descriptionInput"></a>
 
 ```csharp
@@ -846,6 +865,16 @@ public IResolvable|CertificateManagerCertificateMapTimeouts TimeoutsInput { get;
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts">CertificateManagerCertificateMapTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -935,6 +964,7 @@ new CertificateManagerCertificateMapConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -955,10 +985,11 @@ new CertificateManagerCertificateMapConfig {
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.name">Name</a></code> | <code>string</code> | A user-defined name of the Certificate Map. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.description">Description</a></code> | <code>string</code> | A human-readable description of the resource. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#id CertificateManagerCertificateMap#id}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#id CertificateManagerCertificateMap#id}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Set of labels associated with a Certificate Map resource. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#project CertificateManagerCertificateMap#project}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#project CertificateManagerCertificateMap#project}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts">CertificateManagerCertificateMapTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1046,9 +1077,30 @@ A user-defined name of the Certificate Map.
 Certificate Map names must be unique
 globally and match the pattern 'projects/* /locations/* /certificateMaps/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#name CertificateManagerCertificateMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#name CertificateManagerCertificateMap#name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#deletion_policy CertificateManagerCertificateMap#deletion_policy}
 
 ---
 
@@ -1062,7 +1114,7 @@ public string Description { get; set; }
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#description CertificateManagerCertificateMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#description CertificateManagerCertificateMap#description}
 
 ---
 
@@ -1074,7 +1126,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#id CertificateManagerCertificateMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#id CertificateManagerCertificateMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1146,7 @@ Set of labels associated with a Certificate Map resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#labels CertificateManagerCertificateMap#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#labels CertificateManagerCertificateMap#labels}
 
 ---
 
@@ -1106,7 +1158,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#project CertificateManagerCertificateMap#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#project CertificateManagerCertificateMap#project}.
 
 ---
 
@@ -1120,7 +1172,7 @@ public CertificateManagerCertificateMapTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#timeouts CertificateManagerCertificateMap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#timeouts CertificateManagerCertificateMap#timeouts}
 
 ---
 
@@ -1168,9 +1220,9 @@ new CertificateManagerCertificateMapTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#create CertificateManagerCertificateMap#create}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#delete CertificateManagerCertificateMap#delete}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#update CertificateManagerCertificateMap#update}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#create CertificateManagerCertificateMap#create}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#delete CertificateManagerCertificateMap#delete}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#update CertificateManagerCertificateMap#update}. |
 
 ---
 
@@ -1182,7 +1234,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#create CertificateManagerCertificateMap#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#create CertificateManagerCertificateMap#create}.
 
 ---
 
@@ -1194,7 +1246,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#delete CertificateManagerCertificateMap#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#delete CertificateManagerCertificateMap#delete}.
 
 ---
 
@@ -1206,7 +1258,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_certificate_map#update CertificateManagerCertificateMap#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/certificate_manager_certificate_map#update CertificateManagerCertificateMap#update}.
 
 ---
 

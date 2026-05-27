@@ -4,7 +4,7 @@
 
 ### HealthcarePipelineJob <a name="HealthcarePipelineJob" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job google_healthcare_pipeline_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.putReconciliationPipelineJob">putReconciliationPipelineJob</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.resetBackfillPipelineJob">resetBackfillPipelineJob</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.resetDisableLineage">resetDisableLineage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.resetLabels">resetLabels</a></code> | *No description.* |
@@ -451,6 +452,12 @@ public putTimeouts(value: HealthcarePipelineJobTimeouts): void
 public resetBackfillPipelineJob(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDisableLineage` <a name="resetDisableLineage" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.resetDisableLineage"></a>
 
 ```typescript
@@ -590,7 +597,7 @@ The construct id used in the generated config for the HealthcarePipelineJob to i
 
 The id of the existing HealthcarePipelineJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -629,6 +636,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeoutsOutputReference">HealthcarePipelineJobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.backfillPipelineJobInput">backfillPipelineJobInput</a></code> | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobBackfillPipelineJob">HealthcarePipelineJobBackfillPipelineJob</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.datasetInput">datasetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.disableLineageInput">disableLineageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -638,6 +646,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.reconciliationPipelineJobInput">reconciliationPipelineJobInput</a></code> | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJob">HealthcarePipelineJobReconciliationPipelineJob</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeouts">HealthcarePipelineJobTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.dataset">dataset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.disableLineage">disableLineage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -878,6 +887,16 @@ public readonly datasetInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `disableLineageInput`<sup>Optional</sup> <a name="disableLineageInput" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.disableLineageInput"></a>
 
 ```typescript
@@ -962,6 +981,16 @@ public readonly timeoutsInput: IResolvable | HealthcarePipelineJobTimeouts;
 
 ```typescript
 public readonly dataset: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJob.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -1066,7 +1095,7 @@ public readonly mappingPipelineJob: string;
 
 Specifies the mapping pipeline job to backfill, the name format should follow: projects/{projectId}/locations/{locationId}/datasets/{datasetId}/pipelineJobs/{pipelineJobId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#mapping_pipeline_job HealthcarePipelineJob#mapping_pipeline_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#mapping_pipeline_job HealthcarePipelineJob#mapping_pipeline_job}
 
 ---
 
@@ -1095,8 +1124,9 @@ const healthcarePipelineJobConfig: healthcarePipelineJob.HealthcarePipelineJobCo
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.location">location</a></code> | <code>string</code> | Location where the Pipeline Job is to run. |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the pipeline job. This field is user-assigned. |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.backfillPipelineJob">backfillPipelineJob</a></code> | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobBackfillPipelineJob">HealthcarePipelineJobBackfillPipelineJob</a></code> | backfill_pipeline_job block. |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.disableLineage">disableLineage</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, disables writing lineage for the pipeline. |
-| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#id HealthcarePipelineJob#id}. |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#id HealthcarePipelineJob#id}. |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-supplied key-value pairs used to organize Pipeline Jobs. |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.mappingPipelineJob">mappingPipelineJob</a></code> | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobMappingPipelineJob">HealthcarePipelineJobMappingPipelineJob</a></code> | mapping_pipeline_job block. |
 | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.reconciliationPipelineJob">reconciliationPipelineJob</a></code> | <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJob">HealthcarePipelineJobReconciliationPipelineJob</a></code> | reconciliation_pipeline_job block. |
@@ -1184,7 +1214,7 @@ public readonly dataset: string;
 
 Healthcare Dataset under which the Pipeline Job is to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#dataset HealthcarePipelineJob#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#dataset HealthcarePipelineJob#dataset}
 
 ---
 
@@ -1198,7 +1228,7 @@ public readonly location: string;
 
 Location where the Pipeline Job is to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#location HealthcarePipelineJob#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#location HealthcarePipelineJob#location}
 
 ---
 
@@ -1212,7 +1242,7 @@ public readonly name: string;
 
 Specifies the name of the pipeline job. This field is user-assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#name HealthcarePipelineJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#name HealthcarePipelineJob#name}
 
 ---
 
@@ -1226,7 +1256,29 @@ public readonly backfillPipelineJob: HealthcarePipelineJobBackfillPipelineJob;
 
 backfill_pipeline_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#backfill_pipeline_job HealthcarePipelineJob#backfill_pipeline_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#backfill_pipeline_job HealthcarePipelineJob#backfill_pipeline_job}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#deletion_policy HealthcarePipelineJob#deletion_policy}
 
 ---
 
@@ -1240,7 +1292,7 @@ public readonly disableLineage: boolean | IResolvable;
 
 If true, disables writing lineage for the pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#disable_lineage HealthcarePipelineJob#disable_lineage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#disable_lineage HealthcarePipelineJob#disable_lineage}
 
 ---
 
@@ -1252,7 +1304,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#id HealthcarePipelineJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#id HealthcarePipelineJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1283,7 +1335,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#labels HealthcarePipelineJob#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#labels HealthcarePipelineJob#labels}
 
 ---
 
@@ -1297,7 +1349,7 @@ public readonly mappingPipelineJob: HealthcarePipelineJobMappingPipelineJob;
 
 mapping_pipeline_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#mapping_pipeline_job HealthcarePipelineJob#mapping_pipeline_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#mapping_pipeline_job HealthcarePipelineJob#mapping_pipeline_job}
 
 ---
 
@@ -1311,7 +1363,7 @@ public readonly reconciliationPipelineJob: HealthcarePipelineJobReconciliationPi
 
 reconciliation_pipeline_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#reconciliation_pipeline_job HealthcarePipelineJob#reconciliation_pipeline_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#reconciliation_pipeline_job HealthcarePipelineJob#reconciliation_pipeline_job}
 
 ---
 
@@ -1325,7 +1377,7 @@ public readonly timeouts: HealthcarePipelineJobTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#timeouts HealthcarePipelineJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#timeouts HealthcarePipelineJob#timeouts}
 
 ---
 
@@ -1360,7 +1412,7 @@ public readonly mappingConfig: HealthcarePipelineJobMappingPipelineJobMappingCon
 
 mapping_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#mapping_config HealthcarePipelineJob#mapping_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#mapping_config HealthcarePipelineJob#mapping_config}
 
 ---
 
@@ -1383,7 +1435,7 @@ destination store. The destination store must set
 to true. The destination store must use FHIR version R4.
 Format: project/{projectID}/locations/{locationID}/datasets/{datasetName}/fhirStores/{fhirStoreID}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#fhir_store_destination HealthcarePipelineJob#fhir_store_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#fhir_store_destination HealthcarePipelineJob#fhir_store_destination}
 
 ---
 
@@ -1397,7 +1449,7 @@ public readonly fhirStreamingSource: HealthcarePipelineJobMappingPipelineJobFhir
 
 fhir_streaming_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#fhir_streaming_source HealthcarePipelineJob#fhir_streaming_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#fhir_streaming_source HealthcarePipelineJob#fhir_streaming_source}
 
 ---
 
@@ -1415,7 +1467,7 @@ A reconciliation
 pipeline must exist in this dataset before a mapping pipeline
 with a reconciliation destination can be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#reconciliation_destination HealthcarePipelineJob#reconciliation_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#reconciliation_destination HealthcarePipelineJob#reconciliation_destination}
 
 ---
 
@@ -1448,7 +1500,7 @@ public readonly fhirStore: string;
 
 The path to the FHIR store in the format projects/{projectId}/locations/{locationId}/datasets/{datasetId}/fhirStores/{fhirStoreId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#fhir_store HealthcarePipelineJob#fhir_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#fhir_store HealthcarePipelineJob#fhir_store}
 
 ---
 
@@ -1462,7 +1514,7 @@ public readonly description: string;
 
 Describes the streaming FHIR data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#description HealthcarePipelineJob#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#description HealthcarePipelineJob#description}
 
 ---
 
@@ -1495,7 +1547,7 @@ public readonly description: string;
 
 Describes the mapping configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#description HealthcarePipelineJob#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#description HealthcarePipelineJob#description}
 
 ---
 
@@ -1509,7 +1561,7 @@ public readonly whistleConfigSource: HealthcarePipelineJobMappingPipelineJobMapp
 
 whistle_config_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#whistle_config_source HealthcarePipelineJob#whistle_config_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#whistle_config_source HealthcarePipelineJob#whistle_config_source}
 
 ---
 
@@ -1542,7 +1594,7 @@ public readonly importUriPrefix: string;
 
 Directory path where all the Whistle files are located. Example: gs://{bucket-id}/{path/to/import-root/dir}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#import_uri_prefix HealthcarePipelineJob#import_uri_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#import_uri_prefix HealthcarePipelineJob#import_uri_prefix}
 
 ---
 
@@ -1556,7 +1608,7 @@ public readonly uri: string;
 
 Main configuration file which has the entrypoint or the root function. Example: gs://{bucket-id}/{path/to/import-root/dir}/entrypoint-file-name.wstl.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#uri HealthcarePipelineJob#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#uri HealthcarePipelineJob#uri}
 
 ---
 
@@ -1592,7 +1644,7 @@ Specifies the top level directory of the matching configs used in all mapping pi
 
 Example: gs://{bucket-id}/{path/to/matching/configs}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#matching_uri_prefix HealthcarePipelineJob#matching_uri_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#matching_uri_prefix HealthcarePipelineJob#matching_uri_prefix}
 
 ---
 
@@ -1606,7 +1658,7 @@ public readonly mergeConfig: HealthcarePipelineJobReconciliationPipelineJobMerge
 
 merge_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#merge_config HealthcarePipelineJob#merge_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#merge_config HealthcarePipelineJob#merge_config}
 
 ---
 
@@ -1620,7 +1672,7 @@ public readonly fhirStoreDestination: string;
 
 The harmonized FHIR store to write harmonized FHIR resources to, in the format of: project/{projectID}/locations/{locationID}/datasets/{datasetName}/fhirStores/{id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#fhir_store_destination HealthcarePipelineJob#fhir_store_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#fhir_store_destination HealthcarePipelineJob#fhir_store_destination}
 
 ---
 
@@ -1653,7 +1705,7 @@ public readonly whistleConfigSource: HealthcarePipelineJobReconciliationPipeline
 
 whistle_config_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#whistle_config_source HealthcarePipelineJob#whistle_config_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#whistle_config_source HealthcarePipelineJob#whistle_config_source}
 
 ---
 
@@ -1667,7 +1719,7 @@ public readonly description: string;
 
 Describes the mapping configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#description HealthcarePipelineJob#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#description HealthcarePipelineJob#description}
 
 ---
 
@@ -1700,7 +1752,7 @@ public readonly importUriPrefix: string;
 
 Directory path where all the Whistle files are located. Example: gs://{bucket-id}/{path/to/import-root/dir}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#import_uri_prefix HealthcarePipelineJob#import_uri_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#import_uri_prefix HealthcarePipelineJob#import_uri_prefix}
 
 ---
 
@@ -1714,7 +1766,7 @@ public readonly uri: string;
 
 Main configuration file which has the entrypoint or the root function. Example: gs://{bucket-id}/{path/to/import-root/dir}/entrypoint-file-name.wstl.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#uri HealthcarePipelineJob#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#uri HealthcarePipelineJob#uri}
 
 ---
 
@@ -1732,9 +1784,9 @@ const healthcarePipelineJobTimeouts: healthcarePipelineJob.HealthcarePipelineJob
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#create HealthcarePipelineJob#create}. |
-| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#delete HealthcarePipelineJob#delete}. |
-| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#update HealthcarePipelineJob#update}. |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#create HealthcarePipelineJob#create}. |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#delete HealthcarePipelineJob#delete}. |
+| <code><a href="#@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#update HealthcarePipelineJob#update}. |
 
 ---
 
@@ -1746,7 +1798,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#create HealthcarePipelineJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#create HealthcarePipelineJob#create}.
 
 ---
 
@@ -1758,7 +1810,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#delete HealthcarePipelineJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#delete HealthcarePipelineJob#delete}.
 
 ---
 
@@ -1770,7 +1822,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_pipeline_job#update HealthcarePipelineJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_pipeline_job#update HealthcarePipelineJob#update}.
 
 ---
 

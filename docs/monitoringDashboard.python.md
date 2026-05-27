@@ -4,7 +4,7 @@
 
 ### MonitoringDashboard <a name="MonitoringDashboard" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard google_monitoring_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard google_monitoring_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer"></a>
 
@@ -22,6 +22,7 @@ monitoringDashboard.MonitoringDashboard(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   dashboard_json: str,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: MonitoringDashboardTimeouts = None
@@ -40,7 +41,8 @@ monitoringDashboard.MonitoringDashboard(
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.dashboardJson">dashboard_json</a></code> | <code>str</code> | The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards. |
-| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}. |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts">MonitoringDashboardTimeouts</a></code> | timeouts block. |
 
@@ -112,7 +114,24 @@ Must be unique amongst siblings in the same scope
 
 The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#dashboard_json MonitoringDashboard#dashboard_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#dashboard_json MonitoringDashboard#dashboard_json}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#deletion_policy MonitoringDashboard#deletion_policy}
 
 ---
 
@@ -120,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +154,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#project MonitoringDashboard#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#project MonitoringDashboard#project}
 
 ---
 
@@ -145,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#timeouts MonitoringDashboard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#timeouts MonitoringDashboard#timeouts}
 
 ---
 
@@ -178,6 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -546,7 +566,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#create MonitoringDashboard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#create MonitoringDashboard#create}.
 
 ---
 
@@ -554,7 +574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#delete MonitoringDashboard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#delete MonitoringDashboard#delete}.
 
 ---
 
@@ -562,9 +582,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#update MonitoringDashboard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#update MonitoringDashboard#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.resetId"></a>
 
@@ -698,7 +724,7 @@ The construct id used in the generated config for the MonitoringDashboard to imp
 
 The id of the existing MonitoringDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,10 +756,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeoutsOutputReference">MonitoringDashboardTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.dashboardJsonInput">dashboard_json_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts">MonitoringDashboardTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.dashboardJson">dashboard_json</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.project">project</a></code> | <code>str</code> | *No description.* |
 
@@ -901,6 +929,16 @@ dashboard_json_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.idInput"></a>
 
 ```python
@@ -935,6 +973,16 @@ timeouts_input: IResolvable | MonitoringDashboardTimeouts
 
 ```python
 dashboard_json: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -997,6 +1045,7 @@ monitoringDashboard.MonitoringDashboardConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   dashboard_json: str,
+  deletion_policy: str = None,
   id: str = None,
   project: str = None,
   timeouts: MonitoringDashboardTimeouts = None
@@ -1015,7 +1064,8 @@ monitoringDashboard.MonitoringDashboardConfig(
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.dashboardJson">dashboard_json</a></code> | <code>str</code> | The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards. |
-| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}. |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts">MonitoringDashboardTimeouts</a></code> | timeouts block. |
 
@@ -1101,7 +1151,28 @@ dashboard_json: str
 
 The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#dashboard_json MonitoringDashboard#dashboard_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#dashboard_json MonitoringDashboard#dashboard_json}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#deletion_policy MonitoringDashboard#deletion_policy}
 
 ---
 
@@ -1113,7 +1184,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#id MonitoringDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1203,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#project MonitoringDashboard#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#project MonitoringDashboard#project}
 
 ---
 
@@ -1146,7 +1217,7 @@ timeouts: MonitoringDashboardTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#timeouts MonitoringDashboard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#timeouts MonitoringDashboard#timeouts}
 
 ---
 
@@ -1168,9 +1239,9 @@ monitoringDashboard.MonitoringDashboardTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#create MonitoringDashboard#create}. |
-| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#delete MonitoringDashboard#delete}. |
-| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#update MonitoringDashboard#update}. |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#create MonitoringDashboard#create}. |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#delete MonitoringDashboard#delete}. |
+| <code><a href="#@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#update MonitoringDashboard#update}. |
 
 ---
 
@@ -1182,7 +1253,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#create MonitoringDashboard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#create MonitoringDashboard#create}.
 
 ---
 
@@ -1194,7 +1265,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#delete MonitoringDashboard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#delete MonitoringDashboard#delete}.
 
 ---
 
@@ -1206,7 +1277,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_dashboard#update MonitoringDashboard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/monitoring_dashboard#update MonitoringDashboard#update}.
 
 ---
 

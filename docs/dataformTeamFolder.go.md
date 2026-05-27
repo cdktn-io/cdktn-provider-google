@@ -4,7 +4,7 @@
 
 ### DataformTeamFolder <a name="DataformTeamFolder" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder google_dataform_team_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder google_dataform_team_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -402,6 +403,12 @@ func PutTimeouts(value DataformTeamFolderTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.resetId"></a>
 
 ```go
@@ -523,7 +530,7 @@ The construct id used in the generated config for the DataformTeamFolder to impo
 
 The id of the existing DataformTeamFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -556,11 +563,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.teamfolderId">TeamfolderId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeoutsOutputReference">DataformTeamFolderTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.project">Project</a></code> | <code>*string</code> | *No description.* |
@@ -740,6 +749,16 @@ func Timeouts() DataformTeamFolderTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.displayNameInput"></a>
 
 ```go
@@ -787,6 +806,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -867,6 +896,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataformteamfold
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Region: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataformTeamFolder.DataformTeamFolderTimeouts,
@@ -886,8 +916,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataformteamfold
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Required. The TeamFolder's user-friendly name. |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.region">Region</a></code> | <code>*string</code> | A reference to the region. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}. |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts">DataformTeamFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -972,7 +1003,7 @@ DisplayName *string
 
 Required. The TeamFolder's user-friendly name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#display_name DataformTeamFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#display_name DataformTeamFolder#display_name}
 
 ---
 
@@ -986,7 +1017,28 @@ Region *string
 
 A reference to the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#region DataformTeamFolder#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#region DataformTeamFolder#region}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#deletion_policy DataformTeamFolder#deletion_policy}
 
 ---
 
@@ -998,7 +1050,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1013,7 +1065,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}.
 
 ---
 
@@ -1027,7 +1079,7 @@ Timeouts DataformTeamFolderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#timeouts DataformTeamFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#timeouts DataformTeamFolder#timeouts}
 
 ---
 
@@ -1049,9 +1101,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataformteamfold
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}. |
 
 ---
 
@@ -1063,7 +1115,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}.
 
 ---
 
@@ -1075,7 +1127,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}.
 
 ---
 
@@ -1087,7 +1139,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}.
 
 ---
 

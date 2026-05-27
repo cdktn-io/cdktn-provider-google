@@ -4,7 +4,7 @@
 
 ### ApigeeSpace <a name="ApigeeSpace" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space google_apigee_space}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space google_apigee_space}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer"></a>
 
@@ -22,6 +22,7 @@ ApigeeSpace.Builder.create(Construct scope, java.lang.String id)
     .displayName(java.lang.String)
     .orgId(java.lang.String)
     .spaceId(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .timeouts(ApigeeSpaceTimeouts)
     .build();
@@ -41,7 +42,8 @@ ApigeeSpace.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the Space. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.orgId">orgId</a></code> | <code>java.lang.String</code> | The Apigee Organization associated with the Apigee Space, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.spaceId">spaceId</a></code> | <code>java.lang.String</code> | Space ID of the Apigee Space. |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#id ApigeeSpace#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#id ApigeeSpace#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts">ApigeeSpaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The display name of the Space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#display_name ApigeeSpace#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#display_name ApigeeSpace#display_name}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee Space, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#org_id ApigeeSpace#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#org_id ApigeeSpace#org_id}
 
 ---
 
@@ -132,7 +134,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Space ID of the Apigee Space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#space_id ApigeeSpace#space_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#space_id ApigeeSpace#space_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#deletion_policy ApigeeSpace#deletion_policy}
 
 ---
 
@@ -140,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#id ApigeeSpace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#id ApigeeSpace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +172,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#timeouts ApigeeSpace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#timeouts ApigeeSpace#timeouts}
 
 ---
 
@@ -186,6 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -514,6 +534,12 @@ public void putTimeouts(ApigeeSpaceTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.resetId"></a>
 
 ```java
@@ -629,7 +655,7 @@ The construct id used in the generated config for the ApigeeSpace to import.
 
 The id of the existing ApigeeSpace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,11 +689,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeoutsOutputReference">ApigeeSpaceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.orgIdInput">orgIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.spaceIdInput">spaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts">ApigeeSpaceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.orgId">orgId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -857,6 +885,16 @@ public java.lang.String getUpdateTime();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.displayNameInput"></a>
 
 ```java
@@ -904,6 +942,16 @@ public IResolvable|ApigeeSpaceTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts">ApigeeSpaceTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -985,6 +1033,7 @@ ApigeeSpaceConfig.builder()
     .displayName(java.lang.String)
     .orgId(java.lang.String)
     .spaceId(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .timeouts(ApigeeSpaceTimeouts)
     .build();
@@ -1004,7 +1053,8 @@ ApigeeSpaceConfig.builder()
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the Space. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.orgId">orgId</a></code> | <code>java.lang.String</code> | The Apigee Organization associated with the Apigee Space, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.spaceId">spaceId</a></code> | <code>java.lang.String</code> | Space ID of the Apigee Space. |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#id ApigeeSpace#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#id ApigeeSpace#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts">ApigeeSpaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1089,7 +1139,7 @@ public java.lang.String getDisplayName();
 
 The display name of the Space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#display_name ApigeeSpace#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#display_name ApigeeSpace#display_name}
 
 ---
 
@@ -1103,7 +1153,7 @@ public java.lang.String getOrgId();
 
 The Apigee Organization associated with the Apigee Space, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#org_id ApigeeSpace#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#org_id ApigeeSpace#org_id}
 
 ---
 
@@ -1117,7 +1167,28 @@ public java.lang.String getSpaceId();
 
 Space ID of the Apigee Space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#space_id ApigeeSpace#space_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#space_id ApigeeSpace#space_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#deletion_policy ApigeeSpace#deletion_policy}
 
 ---
 
@@ -1129,7 +1200,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#id ApigeeSpace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#id ApigeeSpace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1146,7 +1217,7 @@ public ApigeeSpaceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#timeouts ApigeeSpace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#timeouts ApigeeSpace#timeouts}
 
 ---
 
@@ -1168,9 +1239,9 @@ ApigeeSpaceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#create ApigeeSpace#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#delete ApigeeSpace#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#update ApigeeSpace#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#create ApigeeSpace#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#delete ApigeeSpace#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#update ApigeeSpace#update}. |
 
 ---
 
@@ -1182,7 +1253,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#create ApigeeSpace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#create ApigeeSpace#create}.
 
 ---
 
@@ -1194,7 +1265,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#delete ApigeeSpace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#delete ApigeeSpace#delete}.
 
 ---
 
@@ -1206,7 +1277,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_space#update ApigeeSpace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_space#update ApigeeSpace#update}.
 
 ---
 

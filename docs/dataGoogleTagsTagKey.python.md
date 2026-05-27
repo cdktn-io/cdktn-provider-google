@@ -4,7 +4,7 @@
 
 ### DataGoogleTagsTagKey <a name="DataGoogleTagsTagKey" id="@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key google_tags_tag_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key google_tags_tag_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataGoogleTagsTagKey.DataGoogleTagsTagKey(
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer.parameter.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer.parameter.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
 
 ---
 
@@ -497,7 +497,7 @@ The construct id used in the generated config for the DataGoogleTagsTagKey to im
 
 The id of the existing DataGoogleTagsTagKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,8 +822,8 @@ dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}. |
 
 ---
 
@@ -905,7 +905,7 @@ parent: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}.
 
 ---
 
@@ -917,7 +917,7 @@ short_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
 
 ---
 

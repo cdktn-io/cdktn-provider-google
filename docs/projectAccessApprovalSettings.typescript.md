@@ -4,7 +4,7 @@
 
 ### ProjectAccessApprovalSettings <a name="ProjectAccessApprovalSettings" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings google_project_access_approval_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings google_project_access_approval_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.putEnrolledServices">putEnrolledServices</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.resetActiveKeyVersion">resetActiveKeyVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.resetNotificationEmails">resetNotificationEmails</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.resetProject">resetProject</a></code> | *No description.* |
@@ -423,6 +424,12 @@ public putTimeouts(value: ProjectAccessApprovalSettingsTimeouts): void
 public resetActiveKeyVersion(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.resetId"></a>
 
 ```typescript
@@ -550,7 +557,7 @@ The construct id used in the generated config for the ProjectAccessApprovalSetti
 
 The id of the existing ProjectAccessApprovalSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeoutsOutputReference">ProjectAccessApprovalSettingsTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.activeKeyVersionInput">activeKeyVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.enrolledServicesInput">enrolledServicesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServices">ProjectAccessApprovalSettingsEnrolledServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.notificationEmailsInput">notificationEmailsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -594,6 +602,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts">ProjectAccessApprovalSettingsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.activeKeyVersion">activeKeyVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.notificationEmails">notificationEmails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -813,6 +822,16 @@ public readonly activeKeyVersionInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `enrolledServicesInput`<sup>Optional</sup> <a name="enrolledServicesInput" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.enrolledServicesInput"></a>
 
 ```typescript
@@ -877,6 +896,16 @@ public readonly timeoutsInput: IResolvable | ProjectAccessApprovalSettingsTimeou
 
 ```typescript
 public readonly activeKeyVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -967,7 +996,8 @@ const projectAccessApprovalSettingsConfig: projectAccessApprovalSettings.Project
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.enrolledServices">enrolledServices</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServices">ProjectAccessApprovalSettingsEnrolledServices</a>[]</code> | enrolled_services block. |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.projectId">projectId</a></code> | <code>string</code> | ID of the project of the access approval settings. |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.activeKeyVersion">activeKeyVersion</a></code> | <code>string</code> | The asymmetric crypto key version to use for signing approval requests. |
-| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#id ProjectAccessApprovalSettings#id}. |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#id ProjectAccessApprovalSettings#id}. |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.notificationEmails">notificationEmails</a></code> | <code>string[]</code> | A list of email addresses to which notifications relating to approval requests should be sent. |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.project">project</a></code> | <code>string</code> | Project id. |
 | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts">ProjectAccessApprovalSettingsTimeouts</a></code> | timeouts block. |
@@ -1054,7 +1084,7 @@ public readonly enrolledServices: IResolvable | ProjectAccessApprovalSettingsEnr
 
 enrolled_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#enrolled_services ProjectAccessApprovalSettings#enrolled_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#enrolled_services ProjectAccessApprovalSettings#enrolled_services}
 
 ---
 
@@ -1068,7 +1098,7 @@ public readonly projectId: string;
 
 ID of the project of the access approval settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#project_id ProjectAccessApprovalSettings#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#project_id ProjectAccessApprovalSettings#project_id}
 
 ---
 
@@ -1085,7 +1115,29 @@ The asymmetric crypto key version to use for signing approval requests.
 Empty active_key_version indicates that a Google-managed key should be used for signing.
 This property will be ignored if set by an ancestor of the resource, and new non-empty values may not be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#active_key_version ProjectAccessApprovalSettings#active_key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#active_key_version ProjectAccessApprovalSettings#active_key_version}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#deletion_policy ProjectAccessApprovalSettings#deletion_policy}
 
 ---
 
@@ -1097,7 +1149,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#id ProjectAccessApprovalSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#id ProjectAccessApprovalSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1169,7 @@ A list of email addresses to which notifications relating to approval requests s
 Notifications relating to a resource will be sent to all emails in the settings of ancestor
 resources of that resource. A maximum of 50 email addresses are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#notification_emails ProjectAccessApprovalSettings#notification_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#notification_emails ProjectAccessApprovalSettings#notification_emails}
 
 ---
 
@@ -1131,7 +1183,7 @@ public readonly project: string;
 
 Project id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#project ProjectAccessApprovalSettings#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#project ProjectAccessApprovalSettings#project}
 
 ---
 
@@ -1145,7 +1197,7 @@ public readonly timeouts: ProjectAccessApprovalSettingsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#timeouts ProjectAccessApprovalSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#timeouts ProjectAccessApprovalSettings#timeouts}
 
 ---
 
@@ -1190,7 +1242,7 @@ Allowed values are listed (case-sensitive):
   pubsub.googleapis.com
   storage.googleapis.com
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#cloud_product ProjectAccessApprovalSettings#cloud_product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#cloud_product ProjectAccessApprovalSettings#cloud_product}
 
 ---
 
@@ -1204,7 +1256,7 @@ public readonly enrollmentLevel: string;
 
 The enrollment level of the service. Default value: "BLOCK_ALL" Possible values: ["BLOCK_ALL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#enrollment_level ProjectAccessApprovalSettings#enrollment_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#enrollment_level ProjectAccessApprovalSettings#enrollment_level}
 
 ---
 
@@ -1222,9 +1274,9 @@ const projectAccessApprovalSettingsTimeouts: projectAccessApprovalSettings.Proje
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#create ProjectAccessApprovalSettings#create}. |
-| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#delete ProjectAccessApprovalSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#update ProjectAccessApprovalSettings#update}. |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#create ProjectAccessApprovalSettings#create}. |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#delete ProjectAccessApprovalSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#update ProjectAccessApprovalSettings#update}. |
 
 ---
 
@@ -1236,7 +1288,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#create ProjectAccessApprovalSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#create ProjectAccessApprovalSettings#create}.
 
 ---
 
@@ -1248,7 +1300,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#delete ProjectAccessApprovalSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#delete ProjectAccessApprovalSettings#delete}.
 
 ---
 
@@ -1260,7 +1312,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings#update ProjectAccessApprovalSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_access_approval_settings#update ProjectAccessApprovalSettings#update}.
 
 ---
 

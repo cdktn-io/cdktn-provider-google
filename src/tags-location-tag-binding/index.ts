@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface TagsLocationTagBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#id TagsLocationTagBinding#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#deletion_policy TagsLocationTagBinding#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#id TagsLocationTagBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,35 +35,35 @@ export interface TagsLocationTagBindingConfig extends cdktn.TerraformMetaArgumen
   * The geographic location where the transfer config should reside.
   * Examples: US, EU, asia-northeast1. The default value is US.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#location TagsLocationTagBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#location TagsLocationTagBinding#location}
   */
   readonly location?: string;
   /**
   * The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#parent TagsLocationTagBinding#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#parent TagsLocationTagBinding#parent}
   */
   readonly parent: string;
   /**
   * The TagValue of the TagBinding. Must be either in id format 'tagValues/{tag-value-id}', or namespaced format '{parent-id}/{tag-key-short-name}/{tag-value-short-name}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#tag_value TagsLocationTagBinding#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#tag_value TagsLocationTagBinding#tag_value}
   */
   readonly tagValue: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#timeouts TagsLocationTagBinding#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#timeouts TagsLocationTagBinding#timeouts}
   */
   readonly timeouts?: TagsLocationTagBindingTimeouts;
 }
 export interface TagsLocationTagBindingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#create TagsLocationTagBinding#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#create TagsLocationTagBinding#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#delete TagsLocationTagBinding#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#delete TagsLocationTagBinding#delete}
   */
   readonly delete?: string;
 }
@@ -174,7 +186,7 @@ export class TagsLocationTagBindingTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding}
 */
 export class TagsLocationTagBinding extends cdktn.TerraformResource {
 
@@ -190,7 +202,7 @@ export class TagsLocationTagBinding extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TagsLocationTagBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagsLocationTagBinding to import
-  * @param importFromId The id of the existing TagsLocationTagBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagsLocationTagBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagsLocationTagBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -202,7 +214,7 @@ export class TagsLocationTagBinding extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -213,7 +225,7 @@ export class TagsLocationTagBinding extends cdktn.TerraformResource {
       terraformResourceType: 'google_tags_location_tag_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -224,6 +236,7 @@ export class TagsLocationTagBinding extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._location = config.location;
     this._parent = config.parent;
@@ -234,6 +247,22 @@ export class TagsLocationTagBinding extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -320,6 +349,7 @@ export class TagsLocationTagBinding extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       parent: cdktn.stringToTerraform(this._parent),
@@ -330,6 +360,12 @@ export class TagsLocationTagBinding extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,

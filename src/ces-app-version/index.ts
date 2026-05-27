@@ -9,15 +9,15 @@ import { CesAppVersionSnapshotList,
 CesAppVersionTimeouts, 
 cesAppVersionTimeoutsToTerraform, 
 cesAppVersionTimeoutsToHclTerraform, 
-CesAppVersionTimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+CesAppVersionTimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CesAppVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#app CesAppVersion#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#app CesAppVersion#app}
   */
   readonly app: string;
   /**
@@ -25,23 +25,35 @@ export interface CesAppVersionConfig extends cdktn.TerraformMetaArguments {
   * of the app version's resource name. If not provided, a unique ID will be
   * automatically assigned for the app version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
   */
   readonly appVersionId: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#deletion_policy CesAppVersion#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The description of the app version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#description CesAppVersion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#description CesAppVersion#description}
   */
   readonly description?: string;
   /**
   * The display name of the app version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#id CesAppVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#id CesAppVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,23 +62,23 @@ export interface CesAppVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#location CesAppVersion#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#location CesAppVersion#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#project CesAppVersion#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#project CesAppVersion#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
   */
   readonly timeouts?: CesAppVersionTimeouts;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version google_ces_app_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version google_ces_app_version}
 */
 export class CesAppVersion extends cdktn.TerraformResource {
 
@@ -82,7 +94,7 @@ export class CesAppVersion extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesAppVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesAppVersion to import
-  * @param importFromId The id of the existing CesAppVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesAppVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesAppVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -94,7 +106,7 @@ export class CesAppVersion extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version google_ces_app_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version google_ces_app_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -105,7 +117,7 @@ export class CesAppVersion extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_app_version',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -118,6 +130,7 @@ export class CesAppVersion extends cdktn.TerraformResource {
     });
     this._app = config.app;
     this._appVersionId = config.appVersionId;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._displayName = config.displayName;
     this._id = config.id;
@@ -164,6 +177,22 @@ export class CesAppVersion extends cdktn.TerraformResource {
   // creator - computed: true, optional: false, required: false
   public get creator() {
     return this.getStringAttribute('creator');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -283,6 +312,7 @@ export class CesAppVersion extends cdktn.TerraformResource {
     return {
       app: cdktn.stringToTerraform(this._app),
       app_version_id: cdktn.stringToTerraform(this._appVersionId),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
@@ -302,6 +332,12 @@ export class CesAppVersion extends cdktn.TerraformResource {
       },
       app_version_id: {
         value: cdktn.stringToHclTerraform(this._appVersionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

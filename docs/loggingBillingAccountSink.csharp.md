@@ -4,7 +4,7 @@
 
 ### LoggingBillingAccountSink <a name="LoggingBillingAccountSink" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.putBigqueryOptions">PutBigqueryOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.putExclusions">PutExclusions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.resetBigqueryOptions">ResetBigqueryOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.resetDisabled">ResetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.resetExclusions">ResetExclusions</a></code> | *No description.* |
@@ -424,6 +425,12 @@ private void PutExclusions(IResolvable|LoggingBillingAccountSinkExclusions[] Val
 private void ResetBigqueryOptions()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.resetDescription"></a>
 
 ```csharp
@@ -557,7 +564,7 @@ The construct id used in the generated config for the LoggingBillingAccountSink 
 
 The id of the existing LoggingBillingAccountSink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -592,6 +599,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.writerIdentity">WriterIdentity</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.bigqueryOptionsInput">BigqueryOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptions">LoggingBillingAccountSinkBigqueryOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.billingAccountInput">BillingAccountInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.destinationInput">DestinationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.disabledInput">DisabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -600,6 +608,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.billingAccount">BillingAccount</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.destination">Destination</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.disabled">Disabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -801,6 +810,16 @@ public string BillingAccountInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.descriptionInput"></a>
 
 ```csharp
@@ -875,6 +894,16 @@ public string NameInput { get; }
 
 ```csharp
 public string BillingAccount { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -993,7 +1022,7 @@ Whether to use BigQuery's partition tables.
 
 By default, Logging creates dated tables based on the log entries' timestamps, e.g. syslog_20170523. With partitioned tables the date suffix is no longer present and special query syntax has to be used instead. In both cases, tables are sharded based on UTC timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#use_partitioned_tables LoggingBillingAccountSink#use_partitioned_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#use_partitioned_tables LoggingBillingAccountSink#use_partitioned_tables}
 
 ---
 
@@ -1016,6 +1045,7 @@ new LoggingBillingAccountSinkConfig {
     string Destination,
     string Name,
     LoggingBillingAccountSinkBigqueryOptions BigqueryOptions = null,
+    string DeletionPolicy = null,
     string Description = null,
     bool|IResolvable Disabled = null,
     IResolvable|LoggingBillingAccountSinkExclusions[] Exclusions = null,
@@ -1039,11 +1069,12 @@ new LoggingBillingAccountSinkConfig {
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.destination">Destination</a></code> | <code>string</code> | The destination of the sink (or, in other words, where logs are written to). |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.name">Name</a></code> | <code>string</code> | The name of the logging sink. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.bigqueryOptions">BigqueryOptions</a></code> | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptions">LoggingBillingAccountSinkBigqueryOptions</a></code> | bigquery_options block. |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.description">Description</a></code> | <code>string</code> | A description of this sink. The maximum length of the description is 8000 characters. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.disabled">Disabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If set to True, then this sink is disabled and it does not export any log entries. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.exclusions">Exclusions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusions">LoggingBillingAccountSinkExclusions</a>[]</code> | exclusions block. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.filter">Filter</a></code> | <code>string</code> | The filter to apply when exporting logs. Only log entries that match the filter are exported. |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}. |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}. |
 
 ---
 
@@ -1127,7 +1158,7 @@ public string BillingAccount { get; set; }
 
 The billing account exported to the sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#billing_account LoggingBillingAccountSink#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#billing_account LoggingBillingAccountSink#billing_account}
 
 ---
 
@@ -1143,7 +1174,7 @@ The destination of the sink (or, in other words, where logs are written to).
 
 Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#destination LoggingBillingAccountSink#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#destination LoggingBillingAccountSink#destination}
 
 ---
 
@@ -1157,7 +1188,7 @@ public string Name { get; set; }
 
 The name of the logging sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
 
 ---
 
@@ -1171,7 +1202,28 @@ public LoggingBillingAccountSinkBigqueryOptions BigqueryOptions { get; set; }
 
 bigquery_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#bigquery_options LoggingBillingAccountSink#bigquery_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#bigquery_options LoggingBillingAccountSink#bigquery_options}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#deletion_policy LoggingBillingAccountSink#deletion_policy}
 
 ---
 
@@ -1185,7 +1237,7 @@ public string Description { get; set; }
 
 A description of this sink. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
 
 ---
 
@@ -1199,7 +1251,7 @@ public bool|IResolvable Disabled { get; set; }
 
 If set to True, then this sink is disabled and it does not export any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
 
 ---
 
@@ -1213,7 +1265,7 @@ public IResolvable|LoggingBillingAccountSinkExclusions[] Exclusions { get; set; 
 
 exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
 
 ---
 
@@ -1227,7 +1279,7 @@ public string Filter { get; set; }
 
 The filter to apply when exporting logs. Only log entries that match the filter are exported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
 
 ---
 
@@ -1239,7 +1291,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1336,7 @@ An advanced logs filter that matches the log entries to be excluded.
 
 By using the sample function, you can exclude less than 100% of the matching log entries
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
 
 ---
 
@@ -1300,7 +1352,7 @@ A client-assigned identifier, such as "load-balancer-exclusion".
 
 Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods. First character has to be alphanumeric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
 
 ---
 
@@ -1314,7 +1366,7 @@ public string Description { get; set; }
 
 A description of this exclusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
 
 ---
 
@@ -1328,7 +1380,7 @@ public bool|IResolvable Disabled { get; set; }
 
 If set to True, then this exclusion is disabled and it does not exclude any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
 
 ---
 

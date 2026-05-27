@@ -4,7 +4,7 @@
 
 ### IapClient <a name="IapClient" id="@cdktn/provider-google.iapClient.IapClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client google_iap_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client google_iap_client}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapClient.IapClient.Initializer"></a>
 
@@ -23,6 +23,7 @@ iapClient.IapClient(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   brand: str,
   display_name: str,
+  deletion_policy: str = None,
   id: str = None,
   timeouts: IapClientTimeouts = None
 )
@@ -41,7 +42,8 @@ iapClient.IapClient(
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.brand">brand</a></code> | <code>str</code> | Identifier of the brand to which this client is attached to. The format is 'projects/{project_number}/brands/{brand_id}'. |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Human-friendly name given to the OAuth client. |
-| <code><a href="#@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#id IapClient#id}. |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#id IapClient#id}. |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iapClient.IapClientTimeouts">IapClientTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier of the brand to which this client is attached to. The format is 'projects/{project_number}/brands/{brand_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#brand IapClient#brand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#brand IapClient#brand}
 
 ---
 
@@ -122,7 +124,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-friendly name given to the OAuth client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#display_name IapClient#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#display_name IapClient#display_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.iapClient.IapClient.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#deletion_policy IapClient#deletion_policy}
 
 ---
 
@@ -130,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#id IapClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#id IapClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#timeouts IapClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#timeouts IapClient#timeouts}
 
 ---
 
@@ -176,6 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClient.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -542,7 +562,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#create IapClient#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#create IapClient#create}.
 
 ---
 
@@ -550,9 +570,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#delete IapClient#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#delete IapClient#delete}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.iapClient.IapClient.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.iapClient.IapClient.resetId"></a>
 
@@ -680,7 +706,7 @@ The construct id used in the generated config for the IapClient to import.
 
 The id of the existing IapClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -714,10 +740,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.secret">secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iapClient.IapClientTimeoutsOutputReference">IapClientTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.brandInput">brand_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.iapClient.IapClientTimeouts">IapClientTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.brand">brand</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClient.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -905,6 +933,16 @@ brand_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.iapClient.IapClient.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-google.iapClient.IapClient.property.displayNameInput"></a>
 
 ```python
@@ -939,6 +977,16 @@ timeouts_input: IResolvable | IapClientTimeouts
 
 ```python
 brand: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.iapClient.IapClient.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1002,6 +1050,7 @@ iapClient.IapClientConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   brand: str,
   display_name: str,
+  deletion_policy: str = None,
   id: str = None,
   timeouts: IapClientTimeouts = None
 )
@@ -1020,7 +1069,8 @@ iapClient.IapClientConfig(
 | <code><a href="#@cdktn/provider-google.iapClient.IapClientConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClientConfig.property.brand">brand</a></code> | <code>str</code> | Identifier of the brand to which this client is attached to. The format is 'projects/{project_number}/brands/{brand_id}'. |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClientConfig.property.displayName">display_name</a></code> | <code>str</code> | Human-friendly name given to the OAuth client. |
-| <code><a href="#@cdktn/provider-google.iapClient.IapClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#id IapClient#id}. |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClientConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#id IapClient#id}. |
 | <code><a href="#@cdktn/provider-google.iapClient.IapClientConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iapClient.IapClientTimeouts">IapClientTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1105,7 +1155,7 @@ brand: str
 
 Identifier of the brand to which this client is attached to. The format is 'projects/{project_number}/brands/{brand_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#brand IapClient#brand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#brand IapClient#brand}
 
 ---
 
@@ -1119,7 +1169,28 @@ display_name: str
 
 Human-friendly name given to the OAuth client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#display_name IapClient#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#display_name IapClient#display_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.iapClient.IapClientConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#deletion_policy IapClient#deletion_policy}
 
 ---
 
@@ -1131,7 +1202,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#id IapClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#id IapClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1148,7 +1219,7 @@ timeouts: IapClientTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#timeouts IapClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#timeouts IapClient#timeouts}
 
 ---
 
@@ -1169,8 +1240,8 @@ iapClient.IapClientTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapClient.IapClientTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#create IapClient#create}. |
-| <code><a href="#@cdktn/provider-google.iapClient.IapClientTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#delete IapClient#delete}. |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClientTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#create IapClient#create}. |
+| <code><a href="#@cdktn/provider-google.iapClient.IapClientTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#delete IapClient#delete}. |
 
 ---
 
@@ -1182,7 +1253,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#create IapClient#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#create IapClient#create}.
 
 ---
 
@@ -1194,7 +1265,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_client#delete IapClient#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iap_client#delete IapClient#delete}.
 
 ---
 

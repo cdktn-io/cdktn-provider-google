@@ -4,7 +4,7 @@
 
 ### HealthcareDicomStore <a name="HealthcareDicomStore" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.putNotificationConfig">putNotificationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.resetNotificationConfig">resetNotificationConfig</a></code> | *No description.* |
@@ -416,6 +417,12 @@ public putTimeouts(value: HealthcareDicomStoreTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.resetId"></a>
 
 ```typescript
@@ -543,7 +550,7 @@ The construct id used in the generated config for the HealthcareDicomStore to im
 
 The id of the existing HealthcareDicomStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -579,12 +586,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference">HealthcareDicomStoreTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.datasetInput">datasetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.notificationConfigInput">notificationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfig">HealthcareDicomStoreNotificationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts">HealthcareDicomStoreTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.dataset">dataset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -793,6 +802,16 @@ public readonly datasetInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.idInput"></a>
 
 ```typescript
@@ -847,6 +866,16 @@ public readonly timeoutsInput: IResolvable | HealthcareDicomStoreTimeouts;
 
 ```typescript
 public readonly dataset: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStore.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -926,7 +955,8 @@ const healthcareDicomStoreConfig: healthcareDicomStore.HealthcareDicomStoreConfi
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.dataset">dataset</a></code> | <code>string</code> | Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'. |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.name">name</a></code> | <code>string</code> | The resource name for the DicomStore. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#id HealthcareDicomStore#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#id HealthcareDicomStore#id}. |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-supplied key-value pairs used to organize DICOM stores. |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfig">HealthcareDicomStoreNotificationConfig</a></code> | notification_config block. |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts">HealthcareDicomStoreTimeouts</a></code> | timeouts block. |
@@ -1013,7 +1043,7 @@ public readonly dataset: string;
 
 Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#dataset HealthcareDicomStore#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#dataset HealthcareDicomStore#dataset}
 
 ---
 
@@ -1029,7 +1059,29 @@ The resource name for the DicomStore.
 
 ** Changing this property may recreate the Dicom store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#name HealthcareDicomStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#name HealthcareDicomStore#name}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#deletion_policy HealthcareDicomStore#deletion_policy}
 
 ---
 
@@ -1041,7 +1093,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#id HealthcareDicomStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#id HealthcareDicomStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1073,7 +1125,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#labels HealthcareDicomStore#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#labels HealthcareDicomStore#labels}
 
 ---
 
@@ -1087,7 +1139,7 @@ public readonly notificationConfig: HealthcareDicomStoreNotificationConfig;
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#notification_config HealthcareDicomStore#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#notification_config HealthcareDicomStore#notification_config}
 
 ---
 
@@ -1101,7 +1153,7 @@ public readonly timeouts: HealthcareDicomStoreTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#timeouts HealthcareDicomStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#timeouts HealthcareDicomStore#timeouts}
 
 ---
 
@@ -1141,7 +1193,7 @@ was published. Notifications are only sent if the topic is non-empty. Topic name
 project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
 Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#pubsub_topic HealthcareDicomStore#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#pubsub_topic HealthcareDicomStore#pubsub_topic}
 
 ---
 
@@ -1155,7 +1207,7 @@ public readonly sendForBulkImport: boolean | IResolvable;
 
 Indicates whether or not to send Pub/Sub notifications on bulk import. Only supported for DICOM imports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#send_for_bulk_import HealthcareDicomStore#send_for_bulk_import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#send_for_bulk_import HealthcareDicomStore#send_for_bulk_import}
 
 ---
 
@@ -1173,9 +1225,9 @@ const healthcareDicomStoreTimeouts: healthcareDicomStore.HealthcareDicomStoreTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#create HealthcareDicomStore#create}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#delete HealthcareDicomStore#delete}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#update HealthcareDicomStore#update}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#create HealthcareDicomStore#create}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#delete HealthcareDicomStore#delete}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#update HealthcareDicomStore#update}. |
 
 ---
 
@@ -1187,7 +1239,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#create HealthcareDicomStore#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#create HealthcareDicomStore#create}.
 
 ---
 
@@ -1199,7 +1251,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#delete HealthcareDicomStore#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#delete HealthcareDicomStore#delete}.
 
 ---
 
@@ -1211,7 +1263,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store#update HealthcareDicomStore#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store#update HealthcareDicomStore#update}.
 
 ---
 

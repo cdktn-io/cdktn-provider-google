@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCloudfunctions2FunctionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function#id DataGoogleCloudfunctions2Function#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function#id DataGoogleCloudfunctions2Function#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,20 +22,20 @@ export interface DataGoogleCloudfunctions2FunctionConfig extends cdktn.Terraform
   /**
   * The location of this cloud function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function#location DataGoogleCloudfunctions2Function#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function#location DataGoogleCloudfunctions2Function#location}
   */
   readonly location: string;
   /**
   * A user-defined name of the function. Function names must
   * be unique globally and match pattern 'projects/* /locations/* /functions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function#name DataGoogleCloudfunctions2Function#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function#name DataGoogleCloudfunctions2Function#name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function#project DataGoogleCloudfunctions2Function#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function#project DataGoogleCloudfunctions2Function#project}
   */
   readonly project?: string;
 }
@@ -99,7 +99,7 @@ export class DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyLi
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -174,7 +174,7 @@ export class DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyLis
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -279,7 +279,7 @@ export class DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceList ex
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -364,7 +364,7 @@ export class DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceList
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -446,7 +446,7 @@ export class DataGoogleCloudfunctions2FunctionBuildConfigSourceList extends cdkt
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -570,7 +570,7 @@ export class DataGoogleCloudfunctions2FunctionBuildConfigList extends cdktn.Comp
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -655,7 +655,7 @@ export class DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList exten
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -761,7 +761,7 @@ export class DataGoogleCloudfunctions2FunctionEventTriggerList extends cdktn.Com
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -846,7 +846,7 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInter
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -936,7 +936,7 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVari
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1016,7 +1016,7 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1107,7 +1107,7 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList ext
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1281,7 +1281,7 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigList extends cdktn.Co
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1293,7 +1293,7 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigList extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function}
 */
 export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource {
 
@@ -1309,7 +1309,7 @@ export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataGoogleCloudfunctions2Function resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudfunctions2Function to import
-  * @param importFromId The id of the existing DataGoogleCloudfunctions2Function that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudfunctions2Function that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudfunctions2Function to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1321,7 +1321,7 @@ export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1332,7 +1332,7 @@ export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource
       terraformResourceType: 'google_cloudfunctions2_function',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1357,6 +1357,11 @@ export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource
   private _buildConfig = new DataGoogleCloudfunctions2FunctionBuildConfigList(this, "build_config", false);
   public get buildConfig() {
     return this._buildConfig;
+  }
+
+  // deletion_policy - computed: true, optional: false, required: false
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
   }
 
   // description - computed: true, optional: false, required: false

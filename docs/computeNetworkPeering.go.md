@@ -4,7 +4,7 @@
 
 ### ComputeNetworkPeering <a name="ComputeNetworkPeering" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering google_compute_network_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering google_compute_network_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.resetExportCustomRoutes">ResetExportCustomRoutes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.resetExportSubnetRoutesWithPublicIp">ResetExportSubnetRoutesWithPublicIp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.resetId">ResetId</a></code> | *No description.* |
@@ -407,6 +408,12 @@ func PutTimeouts(value ComputeNetworkPeeringTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetExportCustomRoutes` <a name="ResetExportCustomRoutes" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.resetExportCustomRoutes"></a>
 
 ```go
@@ -558,7 +565,7 @@ The construct id used in the generated config for the ComputeNetworkPeering to i
 
 The id of the existing ComputeNetworkPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -591,6 +598,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.stateDetails">StateDetails</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeoutsOutputReference">ComputeNetworkPeeringTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.exportCustomRoutesInput">ExportCustomRoutesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.exportSubnetRoutesWithPublicIpInput">ExportSubnetRoutesWithPublicIpInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -602,6 +610,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.stackTypeInput">StackTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.updateStrategyInput">UpdateStrategyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.exportCustomRoutes">ExportCustomRoutes</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.exportSubnetRoutesWithPublicIp">ExportSubnetRoutesWithPublicIp</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -787,6 +796,16 @@ func Timeouts() ComputeNetworkPeeringTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ExportCustomRoutesInput`<sup>Optional</sup> <a name="ExportCustomRoutesInput" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.exportCustomRoutesInput"></a>
 
 ```go
@@ -891,6 +910,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func UpdateStrategyInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -1035,6 +1064,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkpe
 	Name: *string,
 	Network: *string,
 	PeerNetwork: *string,
+	DeletionPolicy: *string,
 	ExportCustomRoutes: interface{},
 	ExportSubnetRoutesWithPublicIp: interface{},
 	Id: *string,
@@ -1060,11 +1090,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkpe
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.name">Name</a></code> | <code>*string</code> | Name of the peering. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.network">Network</a></code> | <code>*string</code> | The primary network of the peering. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.peerNetwork">PeerNetwork</a></code> | <code>*string</code> | The peer network in the peering. The peer network may belong to a different project. |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.exportCustomRoutes">ExportCustomRoutes</a></code> | <code>interface{}</code> | Whether to export the custom routes to the peer network. Defaults to false. |
-| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.exportSubnetRoutesWithPublicIp">ExportSubnetRoutesWithPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#export_subnet_routes_with_public_ip ComputeNetworkPeering#export_subnet_routes_with_public_ip}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#id ComputeNetworkPeering#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.exportSubnetRoutesWithPublicIp">ExportSubnetRoutesWithPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#export_subnet_routes_with_public_ip ComputeNetworkPeering#export_subnet_routes_with_public_ip}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#id ComputeNetworkPeering#id}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.importCustomRoutes">ImportCustomRoutes</a></code> | <code>interface{}</code> | Whether to export the custom routes from the peer network. Defaults to false. |
-| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.importSubnetRoutesWithPublicIp">ImportSubnetRoutesWithPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#import_subnet_routes_with_public_ip ComputeNetworkPeering#import_subnet_routes_with_public_ip}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.importSubnetRoutesWithPublicIp">ImportSubnetRoutesWithPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#import_subnet_routes_with_public_ip ComputeNetworkPeering#import_subnet_routes_with_public_ip}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.stackType">StackType</a></code> | <code>*string</code> | Which IP version(s) of traffic and routes are allowed to be imported or exported between peer networks. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts">ComputeNetworkPeeringTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.updateStrategy">UpdateStrategy</a></code> | <code>*string</code> | The update strategy determines the semantics for updates and deletes to the peering connection configuration. |
@@ -1151,7 +1182,7 @@ Name *string
 
 Name of the peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#name ComputeNetworkPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#name ComputeNetworkPeering#name}
 
 ---
 
@@ -1165,7 +1196,7 @@ Network *string
 
 The primary network of the peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#network ComputeNetworkPeering#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#network ComputeNetworkPeering#network}
 
 ---
 
@@ -1179,7 +1210,28 @@ PeerNetwork *string
 
 The peer network in the peering. The peer network may belong to a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#peer_network ComputeNetworkPeering#peer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#peer_network ComputeNetworkPeering#peer_network}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#deletion_policy ComputeNetworkPeering#deletion_policy}
 
 ---
 
@@ -1193,7 +1245,7 @@ ExportCustomRoutes interface{}
 
 Whether to export the custom routes to the peer network. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#export_custom_routes ComputeNetworkPeering#export_custom_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#export_custom_routes ComputeNetworkPeering#export_custom_routes}
 
 ---
 
@@ -1205,7 +1257,7 @@ ExportSubnetRoutesWithPublicIp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#export_subnet_routes_with_public_ip ComputeNetworkPeering#export_subnet_routes_with_public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#export_subnet_routes_with_public_ip ComputeNetworkPeering#export_subnet_routes_with_public_ip}.
 
 ---
 
@@ -1217,7 +1269,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#id ComputeNetworkPeering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#id ComputeNetworkPeering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1234,7 +1286,7 @@ ImportCustomRoutes interface{}
 
 Whether to export the custom routes from the peer network. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#import_custom_routes ComputeNetworkPeering#import_custom_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#import_custom_routes ComputeNetworkPeering#import_custom_routes}
 
 ---
 
@@ -1246,7 +1298,7 @@ ImportSubnetRoutesWithPublicIp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#import_subnet_routes_with_public_ip ComputeNetworkPeering#import_subnet_routes_with_public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#import_subnet_routes_with_public_ip ComputeNetworkPeering#import_subnet_routes_with_public_ip}.
 
 ---
 
@@ -1262,7 +1314,7 @@ Which IP version(s) of traffic and routes are allowed to be imported or exported
 
 The default value is IPV4_ONLY. Possible values: ["IPV4_ONLY", "IPV4_IPV6"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#stack_type ComputeNetworkPeering#stack_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#stack_type ComputeNetworkPeering#stack_type}
 
 ---
 
@@ -1276,7 +1328,7 @@ Timeouts ComputeNetworkPeeringTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#timeouts ComputeNetworkPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#timeouts ComputeNetworkPeering#timeouts}
 
 ---
 
@@ -1292,7 +1344,7 @@ The update strategy determines the semantics for updates and deletes to the peer
 
 The default value is INDEPENDENT. Possible values: ["INDEPENDENT", "CONSENSUS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#update_strategy ComputeNetworkPeering#update_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#update_strategy ComputeNetworkPeering#update_strategy}
 
 ---
 
@@ -1314,9 +1366,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkpe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#create ComputeNetworkPeering#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#delete ComputeNetworkPeering#delete}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#update ComputeNetworkPeering#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#create ComputeNetworkPeering#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#delete ComputeNetworkPeering#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#update ComputeNetworkPeering#update}. |
 
 ---
 
@@ -1328,7 +1380,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#create ComputeNetworkPeering#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#create ComputeNetworkPeering#create}.
 
 ---
 
@@ -1340,7 +1392,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#delete ComputeNetworkPeering#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#delete ComputeNetworkPeering#delete}.
 
 ---
 
@@ -1352,7 +1404,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering#update ComputeNetworkPeering#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_network_peering#update ComputeNetworkPeering#update}.
 
 ---
 

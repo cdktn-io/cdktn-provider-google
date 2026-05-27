@@ -4,7 +4,7 @@
 
 ### NetworkServicesTlsRoute <a name="NetworkServicesTlsRoute" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route google_network_services_tls_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route google_network_services_tls_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.putRules">putRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetGateways">resetGateways</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetId">resetId</a></code> | *No description.* |
@@ -420,6 +421,12 @@ public putTimeouts(value: NetworkServicesTlsRouteTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetDescription"></a>
 
 ```typescript
@@ -571,7 +578,7 @@ The construct id used in the generated config for the NetworkServicesTlsRoute to
 
 The id of the existing NetworkServicesTlsRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -606,6 +613,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeoutsOutputReference">NetworkServicesTlsRouteTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.gatewaysInput">gatewaysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -616,6 +624,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.rulesInput">rulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRules">NetworkServicesTlsRouteRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.targetProxiesInput">targetProxiesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts">NetworkServicesTlsRouteTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.gateways">gateways</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -819,6 +828,16 @@ public readonly updateTime: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.descriptionInput"></a>
 
 ```typescript
@@ -916,6 +935,16 @@ public readonly timeoutsInput: IResolvable | NetworkServicesTlsRouteTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts">NetworkServicesTlsRouteTimeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1042,12 +1071,13 @@ const networkServicesTlsRouteConfig: networkServicesTlsRoute.NetworkServicesTlsR
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.name">name</a></code> | <code>string</code> | Name of the TlsRoute resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRules">NetworkServicesTlsRouteRules</a>[]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.description">description</a></code> | <code>string</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.gateways">gateways</a></code> | <code>string[]</code> | Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.location">location</a></code> | <code>string</code> | Location (region) of the TLS Route. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.meshes">meshes</a></code> | <code>string[]</code> | Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.targetProxies">targetProxies</a></code> | <code>string[]</code> | TargetProxies defines a list of target proxies this TlsRoute is attached to, as one of the routing rules to route the requests served by the load balancer. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts">NetworkServicesTlsRouteTimeouts</a></code> | timeouts block. |
 
@@ -1133,7 +1163,7 @@ public readonly name: string;
 
 Name of the TlsRoute resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
 
 ---
 
@@ -1147,7 +1177,29 @@ public readonly rules: IResolvable | NetworkServicesTlsRouteRules[];
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#deletion_policy NetworkServicesTlsRoute#deletion_policy}
 
 ---
 
@@ -1161,7 +1213,7 @@ public readonly description: string;
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
 
 ---
 
@@ -1177,7 +1229,7 @@ Gateways defines a list of gateways this TlsRoute is attached to, as one of the 
 
 Each gateway reference should match the pattern: projects/* /locations/* /gateways/<gateway_name>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1191,7 +1243,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1208,7 +1260,7 @@ public readonly location: string;
 
 Location (region) of the TLS Route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#location NetworkServicesTlsRoute#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#location NetworkServicesTlsRoute#location}
 
 ---
 
@@ -1225,7 +1277,7 @@ Meshes defines a list of meshes this TlsRoute is attached to, as one of the rout
 Each mesh reference should match the pattern: projects/* /locations/* /meshes/<mesh_name>
 The attached Mesh should be of a type SIDECAR
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1239,7 +1291,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}.
 
 ---
 
@@ -1255,7 +1307,7 @@ TargetProxies defines a list of target proxies this TlsRoute is attached to, as 
 
 Each target proxy reference should match the pattern: projects/* /locations/global/targetTcpProxies/<target_tcp_proxy_name>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#target_proxies NetworkServicesTlsRoute#target_proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#target_proxies NetworkServicesTlsRoute#target_proxies}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1271,7 +1323,7 @@ public readonly timeouts: NetworkServicesTlsRouteTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
 
 ---
 
@@ -1304,7 +1356,7 @@ public readonly action: NetworkServicesTlsRouteRulesAction;
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#action NetworkServicesTlsRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#action NetworkServicesTlsRoute#action}
 
 ---
 
@@ -1318,7 +1370,7 @@ public readonly matches: IResolvable | NetworkServicesTlsRouteRulesMatches[];
 
 matches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#matches NetworkServicesTlsRoute#matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#matches NetworkServicesTlsRoute#matches}
 
 ---
 
@@ -1350,7 +1402,7 @@ public readonly destinations: IResolvable | NetworkServicesTlsRouteRulesActionDe
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
 
 ---
 
@@ -1383,7 +1435,7 @@ public readonly serviceName: string;
 
 The URL of a BackendService to route traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#service_name NetworkServicesTlsRoute#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#service_name NetworkServicesTlsRoute#service_name}
 
 ---
 
@@ -1397,7 +1449,7 @@ public readonly weight: number;
 
 Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#weight NetworkServicesTlsRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#weight NetworkServicesTlsRoute#weight}
 
 ---
 
@@ -1432,7 +1484,7 @@ ALPN (Application-Layer Protocol Negotiation) to match against.
 
 Examples: "http/1.1", "h2". At least one of sniHost and alpn is required. Up to 5 alpns across all matches can be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#alpn NetworkServicesTlsRoute#alpn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#alpn NetworkServicesTlsRoute#alpn}
 
 ---
 
@@ -1449,7 +1501,7 @@ SNI (server name indicator) to match against.
 SNI will be matched against all wildcard domains, i.e. www.example.com will be first matched against www.example.com, then *.example.com, then *.com.
 Partial wildcards are not supported, and values like *w.example.com are invalid. At least one of sniHost and alpn is required. Up to 5 sni hosts across all matches can be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#sni_host NetworkServicesTlsRoute#sni_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#sni_host NetworkServicesTlsRoute#sni_host}
 
 ---
 
@@ -1467,9 +1519,9 @@ const networkServicesTlsRouteTimeouts: networkServicesTlsRoute.NetworkServicesTl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}. |
 
 ---
 
@@ -1481,7 +1533,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}.
 
 ---
 
@@ -1493,7 +1545,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}.
 
 ---
 
@@ -1505,7 +1557,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}.
 
 ---
 

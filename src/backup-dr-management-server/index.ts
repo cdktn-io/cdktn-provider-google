@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface BackupDrManagementServerConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#id BackupDrManagementServer#id}
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#deletion_policy BackupDrManagementServer#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#id BackupDrManagementServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,35 +34,35 @@ export interface BackupDrManagementServerConfig extends cdktn.TerraformMetaArgum
   /**
   * The location for the management server (management console)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#location BackupDrManagementServer#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#location BackupDrManagementServer#location}
   */
   readonly location: string;
   /**
   * The name of management server (management console)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#name BackupDrManagementServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#name BackupDrManagementServer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#project BackupDrManagementServer#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#project BackupDrManagementServer#project}
   */
   readonly project?: string;
   /**
   * The type of management server (management console). Default value: "BACKUP_RESTORE" Possible values: ["BACKUP_RESTORE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#type BackupDrManagementServer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#type BackupDrManagementServer#type}
   */
   readonly type?: string;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#networks BackupDrManagementServer#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#networks BackupDrManagementServer#networks}
   */
   readonly networks?: BackupDrManagementServerNetworks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#timeouts BackupDrManagementServer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#timeouts BackupDrManagementServer#timeouts}
   */
   readonly timeouts?: BackupDrManagementServerTimeouts;
 }
@@ -124,7 +136,7 @@ export class BackupDrManagementServerManagementUriList extends cdktn.ComplexList
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -138,13 +150,13 @@ export interface BackupDrManagementServerNetworks {
   /**
   * Network with format 'projects/{{project_id}}/global/networks/{{network_id}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#network BackupDrManagementServer#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#network BackupDrManagementServer#network}
   */
   readonly network: string;
   /**
   * Type of Network peeringMode Default value: "PRIVATE_SERVICE_ACCESS" Possible values: ["PRIVATE_SERVICE_ACCESS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#peering_mode BackupDrManagementServer#peering_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#peering_mode BackupDrManagementServer#peering_mode}
   */
   readonly peeringMode?: string;
 }
@@ -274,7 +286,7 @@ export class BackupDrManagementServerNetworksList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -286,11 +298,11 @@ export class BackupDrManagementServerNetworksList extends cdktn.ComplexList {
 }
 export interface BackupDrManagementServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#create BackupDrManagementServer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#create BackupDrManagementServer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#delete BackupDrManagementServer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#delete BackupDrManagementServer#delete}
   */
   readonly delete?: string;
 }
@@ -413,7 +425,7 @@ export class BackupDrManagementServerTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server google_backup_dr_management_server}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server google_backup_dr_management_server}
 */
 export class BackupDrManagementServer extends cdktn.TerraformResource {
 
@@ -429,7 +441,7 @@ export class BackupDrManagementServer extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BackupDrManagementServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupDrManagementServer to import
-  * @param importFromId The id of the existing BackupDrManagementServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupDrManagementServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupDrManagementServer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -441,7 +453,7 @@ export class BackupDrManagementServer extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_management_server google_backup_dr_management_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/backup_dr_management_server google_backup_dr_management_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -452,7 +464,7 @@ export class BackupDrManagementServer extends cdktn.TerraformResource {
       terraformResourceType: 'google_backup_dr_management_server',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -463,6 +475,7 @@ export class BackupDrManagementServer extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._location = config.location;
     this._name = config.name;
@@ -475,6 +488,22 @@ export class BackupDrManagementServer extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -599,6 +628,7 @@ export class BackupDrManagementServer extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
@@ -611,6 +641,12 @@ export class BackupDrManagementServer extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,

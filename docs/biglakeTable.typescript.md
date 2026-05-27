@@ -4,7 +4,7 @@
 
 ### BiglakeTable <a name="BiglakeTable" id="@cdktn/provider-google.biglakeTable.BiglakeTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table google_biglake_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table google_biglake_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.putHiveOptions">putHiveOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetDatabase">resetDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetHiveOptions">resetHiveOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -423,6 +424,12 @@ public putTimeouts(value: BiglakeTableTimeouts): void
 public resetDatabase(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetHiveOptions` <a name="resetHiveOptions" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetHiveOptions"></a>
 
 ```typescript
@@ -550,7 +557,7 @@ The construct id used in the generated config for the BiglakeTable to import.
 
 The id of the existing BiglakeTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -588,12 +595,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference">BiglakeTableTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.hiveOptionsInput">hiveOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.type">type</a></code> | <code>string</code> | *No description.* |
@@ -822,6 +831,16 @@ public readonly databaseInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `hiveOptionsInput`<sup>Optional</sup> <a name="hiveOptionsInput" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.hiveOptionsInput"></a>
 
 ```typescript
@@ -876,6 +895,16 @@ public readonly typeInput: string;
 
 ```typescript
 public readonly database: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -955,8 +984,9 @@ const biglakeTableConfig: biglakeTable.BiglakeTableConfig = { ... }
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.name">name</a></code> | <code>string</code> | Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.database">database</a></code> | <code>string</code> | The id of the parent database. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.hiveOptions">hiveOptions</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | hive_options block. |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#id BiglakeTable#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#id BiglakeTable#id}. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.type">type</a></code> | <code>string</code> | The database type. Possible values: ["HIVE"]. |
 
@@ -1042,7 +1072,7 @@ public readonly name: string;
 
 Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#name BiglakeTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#name BiglakeTable#name}
 
 ---
 
@@ -1056,7 +1086,29 @@ public readonly database: string;
 
 The id of the parent database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#database BiglakeTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#database BiglakeTable#database}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#deletion_policy BiglakeTable#deletion_policy}
 
 ---
 
@@ -1070,7 +1122,7 @@ public readonly hiveOptions: BiglakeTableHiveOptions;
 
 hive_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
 
 ---
 
@@ -1082,7 +1134,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#id BiglakeTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#id BiglakeTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1099,7 +1151,7 @@ public readonly timeouts: BiglakeTableTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
 
 ---
 
@@ -1113,7 +1165,7 @@ public readonly type: string;
 
 The database type. Possible values: ["HIVE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#type BiglakeTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#type BiglakeTable#type}
 
 ---
 
@@ -1151,7 +1203,7 @@ An object containing a
 list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
 
 ---
 
@@ -1165,7 +1217,7 @@ public readonly storageDescriptor: BiglakeTableHiveOptionsStorageDescriptor;
 
 storage_descriptor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
 
 ---
 
@@ -1179,7 +1231,7 @@ public readonly tableType: string;
 
 Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
 
 ---
 
@@ -1213,7 +1265,7 @@ public readonly inputFormat: string;
 
 The fully qualified Java class name of the input format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
 
 ---
 
@@ -1227,7 +1279,7 @@ public readonly locationUri: string;
 
 Cloud Storage folder URI where the table data is stored, starting with "gs://".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
 
 ---
 
@@ -1241,7 +1293,7 @@ public readonly outputFormat: string;
 
 The fully qualified Java class name of the output format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
 
 ---
 
@@ -1259,9 +1311,9 @@ const biglakeTableTimeouts: biglakeTable.BiglakeTableTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#create BiglakeTable#create}. |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#delete BiglakeTable#delete}. |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#update BiglakeTable#update}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#create BiglakeTable#create}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#delete BiglakeTable#delete}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#update BiglakeTable#update}. |
 
 ---
 
@@ -1273,7 +1325,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#create BiglakeTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#create BiglakeTable#create}.
 
 ---
 
@@ -1285,7 +1337,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#delete BiglakeTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#delete BiglakeTable#delete}.
 
 ---
 
@@ -1297,7 +1349,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_table#update BiglakeTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/biglake_table#update BiglakeTable#update}.
 
 ---
 

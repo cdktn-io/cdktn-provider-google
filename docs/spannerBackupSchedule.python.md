@@ -4,7 +4,7 @@
 
 ### SpannerBackupSchedule <a name="SpannerBackupSchedule" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule google_spanner_backup_schedule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule google_spanner_backup_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer"></a>
 
@@ -24,6 +24,7 @@ spannerBackupSchedule.SpannerBackupSchedule(
   database: str,
   instance: str,
   retention_duration: str,
+  deletion_policy: str = None,
   encryption_config: SpannerBackupScheduleEncryptionConfig = None,
   full_backup_spec: SpannerBackupScheduleFullBackupSpec = None,
   id: str = None,
@@ -49,12 +50,13 @@ spannerBackupSchedule.SpannerBackupSchedule(
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.database">database</a></code> | <code>str</code> | The database to create the backup schedule on. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.instance">instance</a></code> | <code>str</code> | The instance to create the database on. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.retentionDuration">retention_duration</a></code> | <code>str</code> | At what relative time in the future, compared to its creation time, the backup should be deleted, e.g. keep backups for 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: '3.5s'. You can set this to a value up to 366 days. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleEncryptionConfig">SpannerBackupScheduleEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.fullBackupSpec">full_backup_spec</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleFullBackupSpec">SpannerBackupScheduleFullBackupSpec</a></code> | full_backup_spec block. |
-| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.incrementalBackupSpec">incremental_backup_spec</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleIncrementalBackupSpec">SpannerBackupScheduleIncrementalBackupSpec</a></code> | incremental_backup_spec block. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.name">name</a></code> | <code>str</code> | A unique identifier for the backup schedule, which cannot be changed after the backup schedule is created. |
-| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpec">SpannerBackupScheduleSpec</a></code> | spec block. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts">SpannerBackupScheduleTimeouts</a></code> | timeouts block. |
 
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The database to create the backup schedule on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#database SpannerBackupSchedule#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#database SpannerBackupSchedule#database}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The instance to create the database on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#instance SpannerBackupSchedule#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#instance SpannerBackupSchedule#instance}
 
 ---
 
@@ -146,7 +148,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 At what relative time in the future, compared to its creation time, the backup should be deleted, e.g. keep backups for 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: '3.5s'. You can set this to a value up to 366 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#retention_duration SpannerBackupSchedule#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#retention_duration SpannerBackupSchedule#retention_duration}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#deletion_policy SpannerBackupSchedule#deletion_policy}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#encryption_config SpannerBackupSchedule#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#encryption_config SpannerBackupSchedule#encryption_config}
 
 ---
 
@@ -166,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 full_backup_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#full_backup_spec SpannerBackupSchedule#full_backup_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#full_backup_spec SpannerBackupSchedule#full_backup_spec}
 
 ---
 
@@ -174,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -187,7 +206,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 incremental_backup_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#incremental_backup_spec SpannerBackupSchedule#incremental_backup_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#incremental_backup_spec SpannerBackupSchedule#incremental_backup_spec}
 
 ---
 
@@ -199,7 +218,7 @@ A unique identifier for the backup schedule, which cannot be changed after the b
 
 Values are of the form [a-z][-a-z0-9]*[a-z0-9].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#name SpannerBackupSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#name SpannerBackupSchedule#name}
 
 ---
 
@@ -207,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}.
 
 ---
 
@@ -217,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#spec SpannerBackupSchedule#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#spec SpannerBackupSchedule#spec}
 
 ---
 
@@ -227,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#timeouts SpannerBackupSchedule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#timeouts SpannerBackupSchedule#timeouts}
 
 ---
 
@@ -264,6 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.putIncrementalBackupSpec">put_incremental_backup_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.putSpec">put_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.resetEncryptionConfig">reset_encryption_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.resetFullBackupSpec">reset_full_backup_spec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.resetId">reset_id</a></code> | *No description.* |
@@ -642,7 +662,7 @@ The encryption type of backups created by the backup schedule.
 Possible values are USE_DATABASE_ENCRYPTION, GOOGLE_DEFAULT_ENCRYPTION, or CUSTOMER_MANAGED_ENCRYPTION.
 If you use CUSTOMER_MANAGED_ENCRYPTION, you must specify a kmsKeyName or kmsKeyNames. Possible values: ["USE_DATABASE_ENCRYPTION", "GOOGLE_DEFAULT_ENCRYPTION", "CUSTOMER_MANAGED_ENCRYPTION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#encryption_type SpannerBackupSchedule#encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#encryption_type SpannerBackupSchedule#encryption_type}
 
 ---
 
@@ -652,7 +672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the Cloud KMS key to use for encryption. Format: 'projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{cryptoKey}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#kms_key_name SpannerBackupSchedule#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#kms_key_name SpannerBackupSchedule#kms_key_name}
 
 ---
 
@@ -665,7 +685,7 @@ Fully qualified name of the KMS keys to use to encrypt this database.
 The keys must exist
 in the same locations as the Spanner Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#kms_key_names SpannerBackupSchedule#kms_key_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#kms_key_names SpannerBackupSchedule#kms_key_names}
 
 ---
 
@@ -695,7 +715,7 @@ def put_spec(
 
 cron_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#cron_spec SpannerBackupSchedule#cron_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#cron_spec SpannerBackupSchedule#cron_spec}
 
 ---
 
@@ -713,7 +733,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#create SpannerBackupSchedule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#create SpannerBackupSchedule#create}.
 
 ---
 
@@ -721,7 +741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#delete SpannerBackupSchedule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#delete SpannerBackupSchedule#delete}.
 
 ---
 
@@ -729,9 +749,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#update SpannerBackupSchedule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#update SpannerBackupSchedule#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_encryption_config` <a name="reset_encryption_config" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.resetEncryptionConfig"></a>
 
@@ -895,7 +921,7 @@ The construct id used in the generated config for the SpannerBackupSchedule to i
 
 The id of the existing SpannerBackupSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,6 +957,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpecOutputReference">SpannerBackupScheduleSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeoutsOutputReference">SpannerBackupScheduleTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.encryptionConfigInput">encryption_config_input</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleEncryptionConfig">SpannerBackupScheduleEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.fullBackupSpecInput">full_backup_spec_input</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleFullBackupSpec">SpannerBackupScheduleFullBackupSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -942,6 +969,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.specInput">spec_input</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpec">SpannerBackupScheduleSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts">SpannerBackupScheduleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.instance">instance</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1152,6 +1180,16 @@ database_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `encryption_config_input`<sup>Optional</sup> <a name="encryption_config_input" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.encryptionConfigInput"></a>
 
 ```python
@@ -1262,6 +1300,16 @@ database: str
 
 ---
 
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupSchedule.property.id"></a>
 
 ```python
@@ -1350,6 +1398,7 @@ spannerBackupSchedule.SpannerBackupScheduleConfig(
   database: str,
   instance: str,
   retention_duration: str,
+  deletion_policy: str = None,
   encryption_config: SpannerBackupScheduleEncryptionConfig = None,
   full_backup_spec: SpannerBackupScheduleFullBackupSpec = None,
   id: str = None,
@@ -1375,12 +1424,13 @@ spannerBackupSchedule.SpannerBackupScheduleConfig(
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.database">database</a></code> | <code>str</code> | The database to create the backup schedule on. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.instance">instance</a></code> | <code>str</code> | The instance to create the database on. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.retentionDuration">retention_duration</a></code> | <code>str</code> | At what relative time in the future, compared to its creation time, the backup should be deleted, e.g. keep backups for 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: '3.5s'. You can set this to a value up to 366 days. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleEncryptionConfig">SpannerBackupScheduleEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.fullBackupSpec">full_backup_spec</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleFullBackupSpec">SpannerBackupScheduleFullBackupSpec</a></code> | full_backup_spec block. |
-| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.incrementalBackupSpec">incremental_backup_spec</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleIncrementalBackupSpec">SpannerBackupScheduleIncrementalBackupSpec</a></code> | incremental_backup_spec block. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.name">name</a></code> | <code>str</code> | A unique identifier for the backup schedule, which cannot be changed after the backup schedule is created. |
-| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpec">SpannerBackupScheduleSpec</a></code> | spec block. |
 | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts">SpannerBackupScheduleTimeouts</a></code> | timeouts block. |
 
@@ -1466,7 +1516,7 @@ database: str
 
 The database to create the backup schedule on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#database SpannerBackupSchedule#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#database SpannerBackupSchedule#database}
 
 ---
 
@@ -1480,7 +1530,7 @@ instance: str
 
 The instance to create the database on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#instance SpannerBackupSchedule#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#instance SpannerBackupSchedule#instance}
 
 ---
 
@@ -1494,7 +1544,28 @@ retention_duration: str
 
 At what relative time in the future, compared to its creation time, the backup should be deleted, e.g. keep backups for 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: '3.5s'. You can set this to a value up to 366 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#retention_duration SpannerBackupSchedule#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#retention_duration SpannerBackupSchedule#retention_duration}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#deletion_policy SpannerBackupSchedule#deletion_policy}
 
 ---
 
@@ -1508,7 +1579,7 @@ encryption_config: SpannerBackupScheduleEncryptionConfig
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#encryption_config SpannerBackupSchedule#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#encryption_config SpannerBackupSchedule#encryption_config}
 
 ---
 
@@ -1522,7 +1593,7 @@ full_backup_spec: SpannerBackupScheduleFullBackupSpec
 
 full_backup_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#full_backup_spec SpannerBackupSchedule#full_backup_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#full_backup_spec SpannerBackupSchedule#full_backup_spec}
 
 ---
 
@@ -1534,7 +1605,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#id SpannerBackupSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1551,7 +1622,7 @@ incremental_backup_spec: SpannerBackupScheduleIncrementalBackupSpec
 
 incremental_backup_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#incremental_backup_spec SpannerBackupSchedule#incremental_backup_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#incremental_backup_spec SpannerBackupSchedule#incremental_backup_spec}
 
 ---
 
@@ -1567,7 +1638,7 @@ A unique identifier for the backup schedule, which cannot be changed after the b
 
 Values are of the form [a-z][-a-z0-9]*[a-z0-9].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#name SpannerBackupSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#name SpannerBackupSchedule#name}
 
 ---
 
@@ -1579,7 +1650,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#project SpannerBackupSchedule#project}.
 
 ---
 
@@ -1593,7 +1664,7 @@ spec: SpannerBackupScheduleSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#spec SpannerBackupSchedule#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#spec SpannerBackupSchedule#spec}
 
 ---
 
@@ -1607,7 +1678,7 @@ timeouts: SpannerBackupScheduleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#timeouts SpannerBackupSchedule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#timeouts SpannerBackupSchedule#timeouts}
 
 ---
 
@@ -1648,7 +1719,7 @@ The encryption type of backups created by the backup schedule.
 Possible values are USE_DATABASE_ENCRYPTION, GOOGLE_DEFAULT_ENCRYPTION, or CUSTOMER_MANAGED_ENCRYPTION.
 If you use CUSTOMER_MANAGED_ENCRYPTION, you must specify a kmsKeyName or kmsKeyNames. Possible values: ["USE_DATABASE_ENCRYPTION", "GOOGLE_DEFAULT_ENCRYPTION", "CUSTOMER_MANAGED_ENCRYPTION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#encryption_type SpannerBackupSchedule#encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#encryption_type SpannerBackupSchedule#encryption_type}
 
 ---
 
@@ -1662,7 +1733,7 @@ kms_key_name: str
 
 The resource name of the Cloud KMS key to use for encryption. Format: 'projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{cryptoKey}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#kms_key_name SpannerBackupSchedule#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#kms_key_name SpannerBackupSchedule#kms_key_name}
 
 ---
 
@@ -1679,7 +1750,7 @@ Fully qualified name of the KMS keys to use to encrypt this database.
 The keys must exist
 in the same locations as the Spanner Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#kms_key_names SpannerBackupSchedule#kms_key_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#kms_key_names SpannerBackupSchedule#kms_key_names}
 
 ---
 
@@ -1735,7 +1806,7 @@ cron_spec: SpannerBackupScheduleSpecCronSpec
 
 cron_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#cron_spec SpannerBackupSchedule#cron_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#cron_spec SpannerBackupSchedule#cron_spec}
 
 ---
 
@@ -1781,7 +1852,7 @@ database at the version time. Allowed frequencies are 12 hour, 1 day,
 0 2 * * 0    : once a week every Sunday at 2 past midnight in UTC.
 0 2 8 * *    : once a month on 8th day at 2 past midnight in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#text SpannerBackupSchedule#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#text SpannerBackupSchedule#text}
 
 ---
 
@@ -1803,9 +1874,9 @@ spannerBackupSchedule.SpannerBackupScheduleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#create SpannerBackupSchedule#create}. |
-| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#delete SpannerBackupSchedule#delete}. |
-| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#update SpannerBackupSchedule#update}. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#create SpannerBackupSchedule#create}. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#delete SpannerBackupSchedule#delete}. |
+| <code><a href="#@cdktn/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#update SpannerBackupSchedule#update}. |
 
 ---
 
@@ -1817,7 +1888,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#create SpannerBackupSchedule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#create SpannerBackupSchedule#create}.
 
 ---
 
@@ -1829,7 +1900,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#delete SpannerBackupSchedule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#delete SpannerBackupSchedule#delete}.
 
 ---
 
@@ -1841,7 +1912,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#update SpannerBackupSchedule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#update SpannerBackupSchedule#update}.
 
 ---
 
@@ -3308,7 +3379,7 @@ database at the version time. Allowed frequencies are 12 hour, 1 day,
 0 2 * * 0    : once a week every Sunday at 2 past midnight in UTC.
 0 2 8 * *    : once a month on 8th day at 2 past midnight in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule#text SpannerBackupSchedule#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/spanner_backup_schedule#text SpannerBackupSchedule#text}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComposerUserWorkloadsSecret <a name="ComposerUserWorkloadsSecret" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret google_composer_user_workloads_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer"></a>
 
@@ -22,6 +22,7 @@ ComposerUserWorkloadsSecret.Builder.create(Construct scope, java.lang.String id)
     .environment(java.lang.String)
     .name(java.lang.String)
 //  .data(java.util.Map<java.lang.String, java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
@@ -43,7 +44,8 @@ ComposerUserWorkloadsSecret.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.environment">environment</a></code> | <code>java.lang.String</code> | Name of the environment. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the secret. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.data">data</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of the secret data. |
-| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}. |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The location or Compute Engine region for the environment. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts">ComposerUserWorkloadsSecretTimeouts</a></code> | timeouts block. |
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#environment ComposerUserWorkloadsSecret#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#environment ComposerUserWorkloadsSecret#environment}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#name ComposerUserWorkloadsSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#name ComposerUserWorkloadsSecret#name}
 
 ---
 
@@ -136,7 +138,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of the secret data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#data ComposerUserWorkloadsSecret#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#data ComposerUserWorkloadsSecret#data}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#deletion_policy ComposerUserWorkloadsSecret#deletion_policy}
 
 ---
 
@@ -144,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +178,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#project ComposerUserWorkloadsSecret#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#project ComposerUserWorkloadsSecret#project}
 
 ---
 
@@ -169,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location or Compute Engine region for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#region ComposerUserWorkloadsSecret#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#region ComposerUserWorkloadsSecret#region}
 
 ---
 
@@ -179,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#timeouts ComposerUserWorkloadsSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#timeouts ComposerUserWorkloadsSecret#timeouts}
 
 ---
 
@@ -213,6 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.resetData">resetData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.resetRegion">resetRegion</a></code> | *No description.* |
@@ -549,6 +569,12 @@ public void putTimeouts(ComposerUserWorkloadsSecretTimeouts value)
 public void resetData()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.resetId"></a>
 
 ```java
@@ -676,7 +702,7 @@ The construct id used in the generated config for the ComposerUserWorkloadsSecre
 
 The id of the existing ComposerUserWorkloadsSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,6 +734,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeoutsOutputReference">ComposerUserWorkloadsSecretTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.dataInput">dataInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.environmentInput">environmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -715,6 +742,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts">ComposerUserWorkloadsSecretTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.data">data</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.environment">environment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -885,6 +913,16 @@ public java.util.Map<java.lang.String, java.lang.String> getDataInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `environmentInput`<sup>Optional</sup> <a name="environmentInput" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.environmentInput"></a>
 
 ```java
@@ -952,6 +990,16 @@ public java.util.Map<java.lang.String, java.lang.String> getData();
 ```
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1043,6 +1091,7 @@ ComposerUserWorkloadsSecretConfig.builder()
     .environment(java.lang.String)
     .name(java.lang.String)
 //  .data(java.util.Map<java.lang.String, java.lang.String>)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
@@ -1064,7 +1113,8 @@ ComposerUserWorkloadsSecretConfig.builder()
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.environment">environment</a></code> | <code>java.lang.String</code> | Name of the environment. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the secret. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.data">data</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of the secret data. |
-| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}. |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.region">region</a></code> | <code>java.lang.String</code> | The location or Compute Engine region for the environment. |
 | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts">ComposerUserWorkloadsSecretTimeouts</a></code> | timeouts block. |
@@ -1151,7 +1201,7 @@ public java.lang.String getEnvironment();
 
 Name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#environment ComposerUserWorkloadsSecret#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#environment ComposerUserWorkloadsSecret#environment}
 
 ---
 
@@ -1165,7 +1215,7 @@ public java.lang.String getName();
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#name ComposerUserWorkloadsSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#name ComposerUserWorkloadsSecret#name}
 
 ---
 
@@ -1179,7 +1229,28 @@ public java.util.Map<java.lang.String, java.lang.String> getData();
 
 A map of the secret data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#data ComposerUserWorkloadsSecret#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#data ComposerUserWorkloadsSecret#data}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#deletion_policy ComposerUserWorkloadsSecret#deletion_policy}
 
 ---
 
@@ -1191,7 +1262,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#id ComposerUserWorkloadsSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1210,7 +1281,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#project ComposerUserWorkloadsSecret#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#project ComposerUserWorkloadsSecret#project}
 
 ---
 
@@ -1224,7 +1295,7 @@ public java.lang.String getRegion();
 
 The location or Compute Engine region for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#region ComposerUserWorkloadsSecret#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#region ComposerUserWorkloadsSecret#region}
 
 ---
 
@@ -1238,7 +1309,7 @@ public ComposerUserWorkloadsSecretTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#timeouts ComposerUserWorkloadsSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#timeouts ComposerUserWorkloadsSecret#timeouts}
 
 ---
 
@@ -1260,9 +1331,9 @@ ComposerUserWorkloadsSecretTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#create ComposerUserWorkloadsSecret#create}. |
-| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#delete ComposerUserWorkloadsSecret#delete}. |
-| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#update ComposerUserWorkloadsSecret#update}. |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#create ComposerUserWorkloadsSecret#create}. |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#delete ComposerUserWorkloadsSecret#delete}. |
+| <code><a href="#@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#update ComposerUserWorkloadsSecret#update}. |
 
 ---
 
@@ -1274,7 +1345,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#create ComposerUserWorkloadsSecret#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#create ComposerUserWorkloadsSecret#create}.
 
 ---
 
@@ -1286,7 +1357,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#delete ComposerUserWorkloadsSecret#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#delete ComposerUserWorkloadsSecret#delete}.
 
 ---
 
@@ -1298,7 +1369,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/composer_user_workloads_secret#update ComposerUserWorkloadsSecret#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/composer_user_workloads_secret#update ComposerUserWorkloadsSecret#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComputeNodeGroup <a name="ComputeNodeGroup" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group google_compute_node_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group google_compute_node_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.putShareSettings">putShareSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.resetAutoscalingPolicy">resetAutoscalingPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.resetInitialSize">resetInitialSize</a></code> | *No description.* |
@@ -454,6 +455,12 @@ public putTimeouts(value: ComputeNodeGroupTimeouts): void
 public resetAutoscalingPolicy(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.resetDescription"></a>
 
 ```typescript
@@ -611,7 +618,7 @@ The construct id used in the generated config for the ComputeNodeGroup to import
 
 The id of the existing ComputeNodeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,6 +656,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeoutsOutputReference">ComputeNodeGroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.autoscalingPolicyInput">autoscalingPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicy">ComputeNodeGroupAutoscalingPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.initialSizeInput">initialSizeInput</a></code> | <code>number</code> | *No description.* |
@@ -660,6 +668,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.shareSettingsInput">shareSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettings">ComputeNodeGroupShareSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts">ComputeNodeGroupTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.initialSize">initialSize</a></code> | <code>number</code> | *No description.* |
@@ -893,6 +902,16 @@ public readonly autoscalingPolicyInput: ComputeNodeGroupAutoscalingPolicy;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.descriptionInput"></a>
 
 ```typescript
@@ -997,6 +1016,16 @@ public readonly timeoutsInput: IResolvable | ComputeNodeGroupTimeouts;
 
 ```typescript
 public readonly zoneInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -1136,7 +1165,7 @@ Maximum size of the node group.
 Set to a value less than or equal
 to 100 and greater than or equal to min-nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#max_nodes ComputeNodeGroup#max_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#max_nodes ComputeNodeGroup#max_nodes}
 
 ---
 
@@ -1150,7 +1179,7 @@ public readonly minNodes: number;
 
 Minimum size of the node group. Must be less than or equal to max-nodes. The default value is 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#min_nodes ComputeNodeGroup#min_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#min_nodes ComputeNodeGroup#min_nodes}
 
 ---
 
@@ -1171,7 +1200,7 @@ Set to one of the following:
   You must use this mode if your node groups are configured to
   restart their hosted VMs on minimal servers. Possible values: ["OFF", "ON", "ONLY_SCALE_OUT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#mode ComputeNodeGroup#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#mode ComputeNodeGroup#mode}
 
 ---
 
@@ -1199,12 +1228,13 @@ const computeNodeGroupConfig: computeNodeGroup.ComputeNodeGroupConfig = { ... }
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.nodeTemplate">nodeTemplate</a></code> | <code>string</code> | The URL of the node template to which this node group belongs. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.autoscalingPolicy">autoscalingPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicy">ComputeNodeGroupAutoscalingPolicy</a></code> | autoscaling_policy block. |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.description">description</a></code> | <code>string</code> | An optional textual description of the resource. |
-| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}. |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.initialSize">initialSize</a></code> | <code>number</code> | The initial number of nodes in the node group. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.maintenancePolicy">maintenancePolicy</a></code> | <code>string</code> | Specifies how to handle instances when a node in the group undergoes maintenance. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupMaintenanceWindow">ComputeNodeGroupMaintenanceWindow</a></code> | maintenance_window block. |
-| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#project ComputeNodeGroup#project}. |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#project ComputeNodeGroup#project}. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.shareSettings">shareSettings</a></code> | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettings">ComputeNodeGroupShareSettings</a></code> | share_settings block. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts">ComputeNodeGroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.zone">zone</a></code> | <code>string</code> | Zone where this node group is located. |
@@ -1291,7 +1321,7 @@ public readonly name: string;
 
 Name of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#name ComputeNodeGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#name ComputeNodeGroup#name}
 
 ---
 
@@ -1305,7 +1335,7 @@ public readonly nodeTemplate: string;
 
 The URL of the node template to which this node group belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#node_template ComputeNodeGroup#node_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#node_template ComputeNodeGroup#node_template}
 
 ---
 
@@ -1319,7 +1349,29 @@ public readonly autoscalingPolicy: ComputeNodeGroupAutoscalingPolicy;
 
 autoscaling_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#autoscaling_policy ComputeNodeGroup#autoscaling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#autoscaling_policy ComputeNodeGroup#autoscaling_policy}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#deletion_policy ComputeNodeGroup#deletion_policy}
 
 ---
 
@@ -1333,7 +1385,7 @@ public readonly description: string;
 
 An optional textual description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#description ComputeNodeGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#description ComputeNodeGroup#description}
 
 ---
 
@@ -1345,7 +1397,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1364,7 +1416,7 @@ The initial number of nodes in the node group.
 
 One of 'initial_size' or 'autoscaling_policy' must be configured on resource creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#initial_size ComputeNodeGroup#initial_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#initial_size ComputeNodeGroup#initial_size}
 
 ---
 
@@ -1380,7 +1432,7 @@ Specifies how to handle instances when a node in the group undergoes maintenance
 
 Set to one of: DEFAULT, RESTART_IN_PLACE, or MIGRATE_WITHIN_NODE_GROUP. The default value is DEFAULT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#maintenance_policy ComputeNodeGroup#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#maintenance_policy ComputeNodeGroup#maintenance_policy}
 
 ---
 
@@ -1394,7 +1446,7 @@ public readonly maintenanceWindow: ComputeNodeGroupMaintenanceWindow;
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#maintenance_window ComputeNodeGroup#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#maintenance_window ComputeNodeGroup#maintenance_window}
 
 ---
 
@@ -1406,7 +1458,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#project ComputeNodeGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#project ComputeNodeGroup#project}.
 
 ---
 
@@ -1420,7 +1472,7 @@ public readonly shareSettings: ComputeNodeGroupShareSettings;
 
 share_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#share_settings ComputeNodeGroup#share_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#share_settings ComputeNodeGroup#share_settings}
 
 ---
 
@@ -1434,7 +1486,7 @@ public readonly timeouts: ComputeNodeGroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#timeouts ComputeNodeGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#timeouts ComputeNodeGroup#timeouts}
 
 ---
 
@@ -1448,7 +1500,7 @@ public readonly zone: string;
 
 Zone where this node group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#zone ComputeNodeGroup#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#zone ComputeNodeGroup#zone}
 
 ---
 
@@ -1480,7 +1532,7 @@ public readonly startTime: string;
 
 instances.start time of the window. This must be in UTC format that resolves to one of 00:00, 04:00, 08:00, 12:00, 16:00, or 20:00. For example, both 13:00-5 and 08:00 are valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#start_time ComputeNodeGroup#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#start_time ComputeNodeGroup#start_time}
 
 ---
 
@@ -1513,7 +1565,7 @@ public readonly shareType: string;
 
 Node group sharing type. Possible values: ["ORGANIZATION", "SPECIFIC_PROJECTS", "LOCAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#share_type ComputeNodeGroup#share_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#share_type ComputeNodeGroup#share_type}
 
 ---
 
@@ -1527,7 +1579,7 @@ public readonly projectMap: IResolvable | ComputeNodeGroupShareSettingsProjectMa
 
 project_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#project_map ComputeNodeGroup#project_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#project_map ComputeNodeGroup#project_map}
 
 ---
 
@@ -1545,7 +1597,7 @@ const computeNodeGroupShareSettingsProjectMap: computeNodeGroup.ComputeNodeGroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMap.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}. |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMap.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}. |
 | <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMap.property.projectId">projectId</a></code> | <code>string</code> | The project id/number should be the same as the key of this project config in the project map. |
 
 ---
@@ -1558,7 +1610,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#id ComputeNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1575,7 +1627,7 @@ public readonly projectId: string;
 
 The project id/number should be the same as the key of this project config in the project map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#project_id ComputeNodeGroup#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#project_id ComputeNodeGroup#project_id}
 
 ---
 
@@ -1593,9 +1645,9 @@ const computeNodeGroupTimeouts: computeNodeGroup.ComputeNodeGroupTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#create ComputeNodeGroup#create}. |
-| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#delete ComputeNodeGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#update ComputeNodeGroup#update}. |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#create ComputeNodeGroup#create}. |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#delete ComputeNodeGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#update ComputeNodeGroup#update}. |
 
 ---
 
@@ -1607,7 +1659,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#create ComputeNodeGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#create ComputeNodeGroup#create}.
 
 ---
 
@@ -1619,7 +1671,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#delete ComputeNodeGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#delete ComputeNodeGroup#delete}.
 
 ---
 
@@ -1631,7 +1683,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group#update ComputeNodeGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_node_group#update ComputeNodeGroup#update}.
 
 ---
 

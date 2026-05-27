@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type
+// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataplexAspectTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * The aspect type id of the aspect type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#aspect_type_id DataplexAspectType#aspect_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#aspect_type_id DataplexAspectType#aspect_type_id}
   */
   readonly aspectTypeId?: string;
   /**
@@ -24,23 +24,35 @@ export interface DataplexAspectTypeConfig extends cdktn.TerraformMetaArguments {
   * while 'METADATA_AND_DATA' indicates data derived content.
   * <br><br> Possible values: ["DATA_CLASSIFICATION_UNSPECIFIED", "METADATA_AND_DATA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#data_classification DataplexAspectType#data_classification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#data_classification DataplexAspectType#data_classification}
   */
   readonly dataClassification?: string;
   /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#deletion_policy DataplexAspectType#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * Description of the AspectType.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#description DataplexAspectType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#description DataplexAspectType#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#display_name DataplexAspectType#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#display_name DataplexAspectType#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#id DataplexAspectType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#id DataplexAspectType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,43 +65,43 @@ export interface DataplexAspectTypeConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#labels DataplexAspectType#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#labels DataplexAspectType#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where aspect type will be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#location DataplexAspectType#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#location DataplexAspectType#location}
   */
   readonly location?: string;
   /**
   * MetadataTemplate of the Aspect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#metadata_template DataplexAspectType#metadata_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#metadata_template DataplexAspectType#metadata_template}
   */
   readonly metadataTemplate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#project DataplexAspectType#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#project DataplexAspectType#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#timeouts DataplexAspectType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#timeouts DataplexAspectType#timeouts}
   */
   readonly timeouts?: DataplexAspectTypeTimeouts;
 }
 export interface DataplexAspectTypeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#create DataplexAspectType#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#create DataplexAspectType#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#delete DataplexAspectType#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#delete DataplexAspectType#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#update DataplexAspectType#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#update DataplexAspectType#update}
   */
   readonly update?: string;
 }
@@ -241,7 +253,7 @@ export class DataplexAspectTypeTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type google_dataplex_aspect_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type google_dataplex_aspect_type}
 */
 export class DataplexAspectType extends cdktn.TerraformResource {
 
@@ -257,7 +269,7 @@ export class DataplexAspectType extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexAspectType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexAspectType to import
-  * @param importFromId The id of the existing DataplexAspectType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexAspectType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexAspectType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -269,7 +281,7 @@ export class DataplexAspectType extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_aspect_type google_dataplex_aspect_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_aspect_type google_dataplex_aspect_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,7 +292,7 @@ export class DataplexAspectType extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_aspect_type',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.32.0',
+        providerVersion: '7.33.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -293,6 +305,7 @@ export class DataplexAspectType extends cdktn.TerraformResource {
     });
     this._aspectTypeId = config.aspectTypeId;
     this._dataClassification = config.dataClassification;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._displayName = config.displayName;
     this._id = config.id;
@@ -342,6 +355,22 @@ export class DataplexAspectType extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dataClassificationInput() {
     return this._dataClassification;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -512,6 +541,7 @@ export class DataplexAspectType extends cdktn.TerraformResource {
     return {
       aspect_type_id: cdktn.stringToTerraform(this._aspectTypeId),
       data_classification: cdktn.stringToTerraform(this._dataClassification),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
@@ -533,6 +563,12 @@ export class DataplexAspectType extends cdktn.TerraformResource {
       },
       data_classification: {
         value: cdktn.stringToHclTerraform(this._dataClassification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

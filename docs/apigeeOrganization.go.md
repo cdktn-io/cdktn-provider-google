@@ -4,7 +4,7 @@
 
 ### ApigeeOrganization <a name="ApigeeOrganization" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization google_apigee_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization google_apigee_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer"></a>
 
@@ -82,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetAuthorizedNetwork">ResetAuthorizedNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetBillingType">ResetBillingType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetControlPlaneEncryptionKeyName">ResetControlPlaneEncryptionKeyName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetDisableVpcPeering">ResetDisableVpcPeering</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
@@ -463,6 +464,12 @@ func ResetBillingType()
 func ResetControlPlaneEncryptionKeyName()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.resetDescription"></a>
 
 ```go
@@ -620,7 +627,7 @@ The construct id used in the generated config for the ApigeeOrganization to impo
 
 The id of the existing ApigeeOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,6 +669,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.authorizedNetworkInput">AuthorizedNetworkInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.billingTypeInput">BillingTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.controlPlaneEncryptionKeyNameInput">ControlPlaneEncryptionKeyNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.disableVpcPeeringInput">DisableVpcPeeringInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
@@ -678,6 +686,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.authorizedNetwork">AuthorizedNetwork</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.billingType">BillingType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.controlPlaneEncryptionKeyName">ControlPlaneEncryptionKeyName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.disableVpcPeering">DisableVpcPeering</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
@@ -951,6 +960,16 @@ func ControlPlaneEncryptionKeyNameInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.descriptionInput"></a>
 
 ```go
@@ -1111,6 +1130,16 @@ func ControlPlaneEncryptionKeyName() *string
 
 ---
 
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.description"></a>
 
 ```go
@@ -1233,6 +1262,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeorganizati
 	AuthorizedNetwork: *string,
 	BillingType: *string,
 	ControlPlaneEncryptionKeyName: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	DisableVpcPeering: interface{},
 	DisplayName: *string,
@@ -1263,10 +1293,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeorganizati
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.authorizedNetwork">AuthorizedNetwork</a></code> | <code>*string</code> | Compute Engine network used for Service Networking to be peered with Apigee runtime instances. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.billingType">BillingType</a></code> | <code>*string</code> | Billing type of the Apigee organization. See [Apigee pricing](https://cloud.google.com/apigee/pricing). |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.controlPlaneEncryptionKeyName">ControlPlaneEncryptionKeyName</a></code> | <code>*string</code> | Cloud KMS key name used for encrypting control plane data that is stored in a multi region. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.description">Description</a></code> | <code>*string</code> | Description of the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.disableVpcPeering">DisableVpcPeering</a></code> | <code>interface{}</code> | Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the Apigee organization. |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#id ApigeeOrganization#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#id ApigeeOrganization#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.properties">Properties</a></code> | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationProperties">ApigeeOrganizationProperties</a></code> | properties block. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.retention">Retention</a></code> | <code>*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.runtimeDatabaseEncryptionKeyName">RuntimeDatabaseEncryptionKeyName</a></code> | <code>*string</code> | Cloud KMS key name used for encrypting the data that is stored and replicated across runtime instances. |
@@ -1355,7 +1386,7 @@ ProjectId *string
 
 The project ID associated with the Apigee organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#project_id ApigeeOrganization#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#project_id ApigeeOrganization#project_id}
 
 ---
 
@@ -1369,7 +1400,7 @@ AnalyticsRegion *string
 
 Primary GCP region for analytics data storage. For valid values, see [Create an Apigee organization](https://cloud.google.com/apigee/docs/api-platform/get-started/create-org).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#analytics_region ApigeeOrganization#analytics_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#analytics_region ApigeeOrganization#analytics_region}
 
 ---
 
@@ -1383,7 +1414,7 @@ ApiConsumerDataEncryptionKeyName *string
 
 Cloud KMS key name used for encrypting API consumer data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#api_consumer_data_encryption_key_name ApigeeOrganization#api_consumer_data_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#api_consumer_data_encryption_key_name ApigeeOrganization#api_consumer_data_encryption_key_name}
 
 ---
 
@@ -1400,7 +1431,7 @@ This field is needed only for customers using non-default data residency regions
 Apigee stores some control plane data only in single region.
 This field determines which single region Apigee should use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#api_consumer_data_location ApigeeOrganization#api_consumer_data_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#api_consumer_data_location ApigeeOrganization#api_consumer_data_location}
 
 ---
 
@@ -1417,7 +1448,7 @@ Compute Engine network used for Service Networking to be peered with Apigee runt
 See [Getting started with the Service Networking API](https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started).
 Valid only when 'RuntimeType' is set to CLOUD. The value can be updated only when there are no runtime instances. For example: "default".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#authorized_network ApigeeOrganization#authorized_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#authorized_network ApigeeOrganization#authorized_network}
 
 ---
 
@@ -1431,7 +1462,7 @@ BillingType *string
 
 Billing type of the Apigee organization. See [Apigee pricing](https://cloud.google.com/apigee/pricing).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#billing_type ApigeeOrganization#billing_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#billing_type ApigeeOrganization#billing_type}
 
 ---
 
@@ -1447,7 +1478,28 @@ Cloud KMS key name used for encrypting control plane data that is stored in a mu
 
 Only used for the data residency region "US" or "EU".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#control_plane_encryption_key_name ApigeeOrganization#control_plane_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#control_plane_encryption_key_name ApigeeOrganization#control_plane_encryption_key_name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#deletion_policy ApigeeOrganization#deletion_policy}
 
 ---
 
@@ -1461,7 +1513,7 @@ Description *string
 
 Description of the Apigee organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#description ApigeeOrganization#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#description ApigeeOrganization#description}
 
 ---
 
@@ -1480,7 +1532,7 @@ on the consumer project is not provided, in which case the flag should be set to
 Valid only when 'RuntimeType' is set to CLOUD. The value must be set before the creation
 of any Apigee runtime instance and can be updated only when there are no runtime instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#disable_vpc_peering ApigeeOrganization#disable_vpc_peering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#disable_vpc_peering ApigeeOrganization#disable_vpc_peering}
 
 ---
 
@@ -1494,7 +1546,7 @@ DisplayName *string
 
 The display name of the Apigee organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#display_name ApigeeOrganization#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#display_name ApigeeOrganization#display_name}
 
 ---
 
@@ -1506,7 +1558,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#id ApigeeOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#id ApigeeOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1523,7 +1575,7 @@ Properties ApigeeOrganizationProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#properties ApigeeOrganization#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#properties ApigeeOrganization#properties}
 
 ---
 
@@ -1542,7 +1594,7 @@ is not EVALUATION). It controls how long Organization data will be retained afte
 operation completes. During this period, the Organization may be restored to its last known state.
 After this period, the Organization will no longer be able to be restored. Default value: "DELETION_RETENTION_UNSPECIFIED" Possible values: ["DELETION_RETENTION_UNSPECIFIED", "MINIMUM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#retention ApigeeOrganization#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#retention ApigeeOrganization#retention}
 
 ---
 
@@ -1560,7 +1612,7 @@ Update is not allowed after the organization is created.
 If not specified, a Google-Managed encryption key will be used.
 Valid only when 'RuntimeType' is CLOUD. For example: 'projects/foo/locations/us/keyRings/bar/cryptoKeys/baz'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#runtime_database_encryption_key_name ApigeeOrganization#runtime_database_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#runtime_database_encryption_key_name ApigeeOrganization#runtime_database_encryption_key_name}
 
 ---
 
@@ -1574,7 +1626,7 @@ RuntimeType *string
 
 Runtime type of the Apigee organization based on the Apigee subscription purchased. Default value: "CLOUD" Possible values: ["CLOUD", "HYBRID"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#runtime_type ApigeeOrganization#runtime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#runtime_type ApigeeOrganization#runtime_type}
 
 ---
 
@@ -1588,7 +1640,7 @@ Timeouts ApigeeOrganizationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#timeouts ApigeeOrganization#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#timeouts ApigeeOrganization#timeouts}
 
 ---
 
@@ -1622,7 +1674,7 @@ Property interface{}
 
 property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#property ApigeeOrganization#property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#property ApigeeOrganization#property}
 
 ---
 
@@ -1658,7 +1710,7 @@ Name *string
 
 Name of the property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#name ApigeeOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#name ApigeeOrganization#name}
 
 ---
 
@@ -1672,7 +1724,7 @@ Value *string
 
 Value of the property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#value ApigeeOrganization#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#value ApigeeOrganization#value}
 
 ---
 
@@ -1694,9 +1746,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeorganizati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#create ApigeeOrganization#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#delete ApigeeOrganization#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#update ApigeeOrganization#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#create ApigeeOrganization#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#delete ApigeeOrganization#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#update ApigeeOrganization#update}. |
 
 ---
 
@@ -1708,7 +1760,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#create ApigeeOrganization#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#create ApigeeOrganization#create}.
 
 ---
 
@@ -1720,7 +1772,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#delete ApigeeOrganization#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#delete ApigeeOrganization#delete}.
 
 ---
 
@@ -1732,7 +1784,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization#update ApigeeOrganization#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_organization#update ApigeeOrganization#update}.
 
 ---
 

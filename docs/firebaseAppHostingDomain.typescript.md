@@ -4,7 +4,7 @@
 
 ### FirebaseAppHostingDomain <a name="FirebaseAppHostingDomain" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain google_firebase_app_hosting_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain google_firebase_app_hosting_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.putServe">putServe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.resetServe">resetServe</a></code> | *No description.* |
@@ -416,6 +417,12 @@ public putTimeouts(value: FirebaseAppHostingDomainTimeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.resetId"></a>
 
 ```typescript
@@ -543,7 +550,7 @@ The construct id used in the generated config for the FirebaseAppHostingDomain t
 
 The id of the existing FirebaseAppHostingDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -584,6 +591,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.domainIdInput">domainIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
@@ -591,6 +599,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.serveInput">serveInput</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainServe">FirebaseAppHostingDomainServe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts">FirebaseAppHostingDomainTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.backend">backend</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.domainId">domainId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.location">location</a></code> | <code>string</code> | *No description.* |
@@ -850,6 +859,16 @@ public readonly backendInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `domainIdInput`<sup>Optional</sup> <a name="domainIdInput" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.domainIdInput"></a>
 
 ```typescript
@@ -914,6 +933,16 @@ public readonly timeoutsInput: IResolvable | FirebaseAppHostingDomainTimeouts;
 
 ```typescript
 public readonly backend: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomain.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -1004,8 +1033,9 @@ const firebaseAppHostingDomainConfig: firebaseAppHostingDomain.FirebaseAppHostin
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.backend">backend</a></code> | <code>string</code> | The ID of the Backend that this Domain is associated with. |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.domainId">domainId</a></code> | <code>string</code> | Id of the domain to create. Must be a valid domain name, such as "foo.com". |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.location">location</a></code> | <code>string</code> | The location of the Backend that this Domain is associated with. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#id FirebaseAppHostingDomain#id}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#project FirebaseAppHostingDomain#project}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#id FirebaseAppHostingDomain#id}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#project FirebaseAppHostingDomain#project}. |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.serve">serve</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainServe">FirebaseAppHostingDomainServe</a></code> | serve block. |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts">FirebaseAppHostingDomainTimeouts</a></code> | timeouts block. |
 
@@ -1091,7 +1121,7 @@ public readonly backend: string;
 
 The ID of the Backend that this Domain is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#backend FirebaseAppHostingDomain#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#backend FirebaseAppHostingDomain#backend}
 
 ---
 
@@ -1105,7 +1135,7 @@ public readonly domainId: string;
 
 Id of the domain to create. Must be a valid domain name, such as "foo.com".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#domain_id FirebaseAppHostingDomain#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#domain_id FirebaseAppHostingDomain#domain_id}
 
 ---
 
@@ -1119,7 +1149,29 @@ public readonly location: string;
 
 The location of the Backend that this Domain is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#location FirebaseAppHostingDomain#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#location FirebaseAppHostingDomain#location}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#deletion_policy FirebaseAppHostingDomain#deletion_policy}
 
 ---
 
@@ -1131,7 +1183,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#id FirebaseAppHostingDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#id FirebaseAppHostingDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1146,7 +1198,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#project FirebaseAppHostingDomain#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#project FirebaseAppHostingDomain#project}.
 
 ---
 
@@ -1160,7 +1212,7 @@ public readonly serve: FirebaseAppHostingDomainServe;
 
 serve block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#serve FirebaseAppHostingDomain#serve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#serve FirebaseAppHostingDomain#serve}
 
 ---
 
@@ -1174,7 +1226,7 @@ public readonly timeouts: FirebaseAppHostingDomainTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#timeouts FirebaseAppHostingDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#timeouts FirebaseAppHostingDomain#timeouts}
 
 ---
 
@@ -1305,7 +1357,7 @@ public readonly redirect: FirebaseAppHostingDomainServeRedirect;
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#redirect FirebaseAppHostingDomain#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#redirect FirebaseAppHostingDomain#redirect}
 
 ---
 
@@ -1342,7 +1394,7 @@ This URI will be
 prepended to the original request path. URI without a scheme are
 assumed to be HTTPS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#uri FirebaseAppHostingDomain#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#uri FirebaseAppHostingDomain#uri}
 
 ---
 
@@ -1359,7 +1411,7 @@ The status code to use in a redirect response.
 Must be a valid HTTP 3XX
 status code. Defaults to 302 if not present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#status FirebaseAppHostingDomain#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#status FirebaseAppHostingDomain#status}
 
 ---
 
@@ -1377,9 +1429,9 @@ const firebaseAppHostingDomainTimeouts: firebaseAppHostingDomain.FirebaseAppHost
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#create FirebaseAppHostingDomain#create}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#delete FirebaseAppHostingDomain#delete}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#update FirebaseAppHostingDomain#update}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#create FirebaseAppHostingDomain#create}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#delete FirebaseAppHostingDomain#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#update FirebaseAppHostingDomain#update}. |
 
 ---
 
@@ -1391,7 +1443,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#create FirebaseAppHostingDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#create FirebaseAppHostingDomain#create}.
 
 ---
 
@@ -1403,7 +1455,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#delete FirebaseAppHostingDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#delete FirebaseAppHostingDomain#delete}.
 
 ---
 
@@ -1415,7 +1467,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_domain#update FirebaseAppHostingDomain#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_hosting_domain#update FirebaseAppHostingDomain#update}.
 
 ---
 

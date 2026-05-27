@@ -4,7 +4,7 @@
 
 ### ComputeTargetTcpProxy <a name="ComputeTargetTcpProxy" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy google_compute_target_tcp_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.resetBackendService">resetBackendService</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.resetProject">resetProject</a></code> | *No description.* |
@@ -412,6 +413,12 @@ public putTimeouts(value: ComputeTargetTcpProxyTimeouts): void
 public resetBackendService(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.resetDescription"></a>
 
 ```typescript
@@ -551,7 +558,7 @@ The construct id used in the generated config for the ComputeTargetTcpProxy to i
 
 The id of the existing ComputeTargetTcpProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -586,6 +593,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference">ComputeTargetTcpProxyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.backendServiceInput">backendServiceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -594,6 +602,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.proxyHeaderInput">proxyHeaderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts">ComputeTargetTcpProxyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.backendService">backendService</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -795,6 +804,16 @@ public readonly backendServiceInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.descriptionInput"></a>
 
 ```typescript
@@ -869,6 +888,16 @@ public readonly timeoutsInput: IResolvable | ComputeTargetTcpProxyTimeouts;
 
 ```typescript
 public readonly backendService: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -978,9 +1007,10 @@ const computeTargetTcpProxyConfig: computeTargetTcpProxy.ComputeTargetTcpProxyCo
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.backendService">backendService</a></code> | <code>string</code> | A reference to the BackendService resource. This field is optional when the loadBalancingScheme (available in beta) is set to INTERNAL_MANAGED. |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#id ComputeTargetTcpProxy#id}. |
-| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#project ComputeTargetTcpProxy#project}. |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#id ComputeTargetTcpProxy#id}. |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#project ComputeTargetTcpProxy#project}. |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.proxyBind">proxyBind</a></code> | <code>boolean \| cdktn.IResolvable</code> | This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED. |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.proxyHeader">proxyHeader</a></code> | <code>string</code> | Specifies the type of proxy header to append before sending data to the backend. |
 | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts">ComputeTargetTcpProxyTimeouts</a></code> | timeouts block. |
@@ -1075,7 +1105,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#name ComputeTargetTcpProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#name ComputeTargetTcpProxy#name}
 
 ---
 
@@ -1089,7 +1119,29 @@ public readonly backendService: string;
 
 A reference to the BackendService resource. This field is optional when the loadBalancingScheme (available in beta) is set to INTERNAL_MANAGED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#backend_service ComputeTargetTcpProxy#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#backend_service ComputeTargetTcpProxy#backend_service}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#deletion_policy ComputeTargetTcpProxy#deletion_policy}
 
 ---
 
@@ -1103,7 +1155,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#description ComputeTargetTcpProxy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#description ComputeTargetTcpProxy#description}
 
 ---
 
@@ -1115,7 +1167,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#id ComputeTargetTcpProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#id ComputeTargetTcpProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1130,7 +1182,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#project ComputeTargetTcpProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#project ComputeTargetTcpProxy#project}.
 
 ---
 
@@ -1144,7 +1196,7 @@ public readonly proxyBind: boolean | IResolvable;
 
 This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#proxy_bind ComputeTargetTcpProxy#proxy_bind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#proxy_bind ComputeTargetTcpProxy#proxy_bind}
 
 ---
 
@@ -1160,7 +1212,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#proxy_header ComputeTargetTcpProxy#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#proxy_header ComputeTargetTcpProxy#proxy_header}
 
 ---
 
@@ -1174,7 +1226,7 @@ public readonly timeouts: ComputeTargetTcpProxyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#timeouts ComputeTargetTcpProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#timeouts ComputeTargetTcpProxy#timeouts}
 
 ---
 
@@ -1192,9 +1244,9 @@ const computeTargetTcpProxyTimeouts: computeTargetTcpProxy.ComputeTargetTcpProxy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#create ComputeTargetTcpProxy#create}. |
-| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#delete ComputeTargetTcpProxy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#update ComputeTargetTcpProxy#update}. |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#create ComputeTargetTcpProxy#create}. |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#delete ComputeTargetTcpProxy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#update ComputeTargetTcpProxy#update}. |
 
 ---
 
@@ -1206,7 +1258,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#create ComputeTargetTcpProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#create ComputeTargetTcpProxy#create}.
 
 ---
 
@@ -1218,7 +1270,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#delete ComputeTargetTcpProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#delete ComputeTargetTcpProxy#delete}.
 
 ---
 
@@ -1230,7 +1282,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#update ComputeTargetTcpProxy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_target_tcp_proxy#update ComputeTargetTcpProxy#update}.
 
 ---
 

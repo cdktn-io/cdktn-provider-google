@@ -4,7 +4,7 @@
 
 ### AppEngineDomainMapping <a name="AppEngineDomainMapping" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer"></a>
 
@@ -22,6 +22,7 @@ appEngineDomainMapping.AppEngineDomainMapping(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   domain_name: str,
+  deletion_policy: str = None,
   id: str = None,
   override_strategy: str = None,
   project: str = None,
@@ -42,9 +43,10 @@ appEngineDomainMapping.AppEngineDomainMapping(
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Relative name of the domain serving the application. Example: example.com. |
-| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}. |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.overrideStrategy">override_strategy</a></code> | <code>str</code> | Whether the domain creation should override any existing mappings for this domain. |
-| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}. |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.sslSettings">ssl_settings</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingSslSettings">AppEngineDomainMappingSslSettings</a></code> | ssl_settings block. |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts">AppEngineDomainMappingTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +118,24 @@ Must be unique amongst siblings in the same scope
 
 Relative name of the domain serving the application. Example: example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#domain_name AppEngineDomainMapping#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#domain_name AppEngineDomainMapping#domain_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#deletion_policy AppEngineDomainMapping#deletion_policy}
 
 ---
 
@@ -124,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +158,7 @@ Whether the domain creation should override any existing mappings for this domai
 
 By default, overrides are rejected. Default value: "STRICT" Possible values: ["STRICT", "OVERRIDE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#override_strategy AppEngineDomainMapping#override_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#override_strategy AppEngineDomainMapping#override_strategy}
 
 ---
 
@@ -147,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}.
 
 ---
 
@@ -157,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ssl_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#ssl_settings AppEngineDomainMapping#ssl_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#ssl_settings AppEngineDomainMapping#ssl_settings}
 
 ---
 
@@ -167,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#timeouts AppEngineDomainMapping#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#timeouts AppEngineDomainMapping#timeouts}
 
 ---
 
@@ -201,6 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.putSslSettings">put_ssl_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.resetOverrideStrategy">reset_override_strategy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.resetProject">reset_project</a></code> | *No description.* |
@@ -575,7 +595,7 @@ SSL management type for this domain.
 If 'AUTOMATIC', a managed certificate is automatically provisioned.
 If 'MANUAL', 'certificateId' must be manually specified in order to configure SSL for this domain. Possible values: ["AUTOMATIC", "MANUAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#ssl_management_type AppEngineDomainMapping#ssl_management_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#ssl_management_type AppEngineDomainMapping#ssl_management_type}
 
 ---
 
@@ -592,7 +612,7 @@ or to configure SSL manually, specify 'SslManagementType.MANUAL' on a 'CREATE' o
 authorized to administer the 'AuthorizedCertificate' resource to manually map it to a DomainMapping resource.
 Example: 12345.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#certificate_id AppEngineDomainMapping#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#certificate_id AppEngineDomainMapping#certificate_id}
 
 ---
 
@@ -610,7 +630,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#create AppEngineDomainMapping#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#create AppEngineDomainMapping#create}.
 
 ---
 
@@ -618,7 +638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#delete AppEngineDomainMapping#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#delete AppEngineDomainMapping#delete}.
 
 ---
 
@@ -626,9 +646,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#update AppEngineDomainMapping#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#update AppEngineDomainMapping#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.resetId"></a>
 
@@ -774,7 +800,7 @@ The construct id used in the generated config for the AppEngineDomainMapping to 
 
 The id of the existing AppEngineDomainMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,12 +834,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.resourceRecords">resource_records</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingResourceRecordsList">AppEngineDomainMappingResourceRecordsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.sslSettings">ssl_settings</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingSslSettingsOutputReference">AppEngineDomainMappingSslSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeoutsOutputReference">AppEngineDomainMappingTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.domainNameInput">domain_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.overrideStrategyInput">override_strategy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.sslSettingsInput">ssl_settings_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingSslSettings">AppEngineDomainMappingSslSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts">AppEngineDomainMappingTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.domainName">domain_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.overrideStrategy">override_strategy</a></code> | <code>str</code> | *No description.* |
@@ -1003,6 +1031,16 @@ timeouts: AppEngineDomainMappingTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `domain_name_input`<sup>Optional</sup> <a name="domain_name_input" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.domainNameInput"></a>
 
 ```python
@@ -1060,6 +1098,16 @@ timeouts_input: IResolvable | AppEngineDomainMappingTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts">AppEngineDomainMappingTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMapping.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1139,6 +1187,7 @@ appEngineDomainMapping.AppEngineDomainMappingConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   domain_name: str,
+  deletion_policy: str = None,
   id: str = None,
   override_strategy: str = None,
   project: str = None,
@@ -1159,9 +1208,10 @@ appEngineDomainMapping.AppEngineDomainMappingConfig(
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.domainName">domain_name</a></code> | <code>str</code> | Relative name of the domain serving the application. Example: example.com. |
-| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}. |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.overrideStrategy">override_strategy</a></code> | <code>str</code> | Whether the domain creation should override any existing mappings for this domain. |
-| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}. |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.sslSettings">ssl_settings</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingSslSettings">AppEngineDomainMappingSslSettings</a></code> | ssl_settings block. |
 | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts">AppEngineDomainMappingTimeouts</a></code> | timeouts block. |
 
@@ -1247,7 +1297,28 @@ domain_name: str
 
 Relative name of the domain serving the application. Example: example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#domain_name AppEngineDomainMapping#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#domain_name AppEngineDomainMapping#domain_name}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#deletion_policy AppEngineDomainMapping#deletion_policy}
 
 ---
 
@@ -1259,7 +1330,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#id AppEngineDomainMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1278,7 +1349,7 @@ Whether the domain creation should override any existing mappings for this domai
 
 By default, overrides are rejected. Default value: "STRICT" Possible values: ["STRICT", "OVERRIDE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#override_strategy AppEngineDomainMapping#override_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#override_strategy AppEngineDomainMapping#override_strategy}
 
 ---
 
@@ -1290,7 +1361,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#project AppEngineDomainMapping#project}.
 
 ---
 
@@ -1304,7 +1375,7 @@ ssl_settings: AppEngineDomainMappingSslSettings
 
 ssl_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#ssl_settings AppEngineDomainMapping#ssl_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#ssl_settings AppEngineDomainMapping#ssl_settings}
 
 ---
 
@@ -1318,7 +1389,7 @@ timeouts: AppEngineDomainMappingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#timeouts AppEngineDomainMapping#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#timeouts AppEngineDomainMapping#timeouts}
 
 ---
 
@@ -1368,7 +1439,7 @@ SSL management type for this domain.
 If 'AUTOMATIC', a managed certificate is automatically provisioned.
 If 'MANUAL', 'certificateId' must be manually specified in order to configure SSL for this domain. Possible values: ["AUTOMATIC", "MANUAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#ssl_management_type AppEngineDomainMapping#ssl_management_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#ssl_management_type AppEngineDomainMapping#ssl_management_type}
 
 ---
 
@@ -1389,7 +1460,7 @@ or to configure SSL manually, specify 'SslManagementType.MANUAL' on a 'CREATE' o
 authorized to administer the 'AuthorizedCertificate' resource to manually map it to a DomainMapping resource.
 Example: 12345.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#certificate_id AppEngineDomainMapping#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#certificate_id AppEngineDomainMapping#certificate_id}
 
 ---
 
@@ -1411,9 +1482,9 @@ appEngineDomainMapping.AppEngineDomainMappingTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#create AppEngineDomainMapping#create}. |
-| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#delete AppEngineDomainMapping#delete}. |
-| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#update AppEngineDomainMapping#update}. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#create AppEngineDomainMapping#create}. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#delete AppEngineDomainMapping#delete}. |
+| <code><a href="#@cdktn/provider-google.appEngineDomainMapping.AppEngineDomainMappingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#update AppEngineDomainMapping#update}. |
 
 ---
 
@@ -1425,7 +1496,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#create AppEngineDomainMapping#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#create AppEngineDomainMapping#create}.
 
 ---
 
@@ -1437,7 +1508,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#delete AppEngineDomainMapping#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#delete AppEngineDomainMapping#delete}.
 
 ---
 
@@ -1449,7 +1520,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_domain_mapping#update AppEngineDomainMapping#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/app_engine_domain_mapping#update AppEngineDomainMapping#update}.
 
 ---
 

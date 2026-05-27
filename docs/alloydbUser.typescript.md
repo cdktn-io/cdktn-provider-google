@@ -4,7 +4,7 @@
 
 ### AlloydbUser <a name="AlloydbUser" id="@cdktn/provider-google.alloydbUser.AlloydbUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user google_alloydb_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user google_alloydb_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbUser.AlloydbUser.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.resetDatabaseRoles">resetDatabaseRoles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.resetPassword">resetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.resetPasswordWo">resetPasswordWo</a></code> | *No description.* |
@@ -411,6 +412,12 @@ public putTimeouts(value: AlloydbUserTimeouts): void
 public resetDatabaseRoles(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.alloydbUser.AlloydbUser.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.alloydbUser.AlloydbUser.resetId"></a>
 
 ```typescript
@@ -544,7 +551,7 @@ The construct id used in the generated config for the AlloydbUser to import.
 
 The id of the existing AlloydbUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,6 +585,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserTimeoutsOutputReference">AlloydbUserTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.clusterInput">clusterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.databaseRolesInput">databaseRolesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.passwordWoInput">passwordWoInput</a></code> | <code>string</code> | *No description.* |
@@ -587,6 +595,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.userTypeInput">userTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.cluster">cluster</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.databaseRoles">databaseRoles</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.password">password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUser.property.passwordWo">passwordWo</a></code> | <code>string</code> | *No description.* |
@@ -778,6 +787,16 @@ public readonly databaseRolesInput: string[];
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.alloydbUser.AlloydbUser.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.alloydbUser.AlloydbUser.property.idInput"></a>
 
 ```typescript
@@ -865,6 +884,16 @@ public readonly databaseRoles: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.alloydbUser.AlloydbUser.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -973,7 +1002,8 @@ const alloydbUserConfig: alloydbUser.AlloydbUserConfig = { ... }
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.userId">userId</a></code> | <code>string</code> | The database role name of the user. |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.userType">userType</a></code> | <code>string</code> | The type of this user. Possible values: ["ALLOYDB_BUILT_IN", "ALLOYDB_IAM_USER"]. |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.databaseRoles">databaseRoles</a></code> | <code>string[]</code> | List of database roles this database user has. |
-| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#id AlloydbUser#id}. |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#id AlloydbUser#id}. |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.password">password</a></code> | <code>string</code> | Password for this database user. |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.passwordWo">passwordWo</a></code> | <code>string</code> | Password for this database user. |
 | <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.passwordWoVersion">passwordWoVersion</a></code> | <code>string</code> | Triggers update of 'password_wo' write-only. |
@@ -1061,7 +1091,7 @@ public readonly cluster: string;
 
 Identifies the alloydb cluster. Must be in the format 'projects/{project}/locations/{location}/clusters/{cluster_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#cluster AlloydbUser#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#cluster AlloydbUser#cluster}
 
 ---
 
@@ -1075,7 +1105,7 @@ public readonly userId: string;
 
 The database role name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#user_id AlloydbUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#user_id AlloydbUser#user_id}
 
 ---
 
@@ -1089,7 +1119,7 @@ public readonly userType: string;
 
 The type of this user. Possible values: ["ALLOYDB_BUILT_IN", "ALLOYDB_IAM_USER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#user_type AlloydbUser#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#user_type AlloydbUser#user_type}
 
 ---
 
@@ -1103,7 +1133,29 @@ public readonly databaseRoles: string[];
 
 List of database roles this database user has.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#database_roles AlloydbUser#database_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#database_roles AlloydbUser#database_roles}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.alloydbUser.AlloydbUserConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#deletion_policy AlloydbUser#deletion_policy}
 
 ---
 
@@ -1115,7 +1167,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#id AlloydbUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#id AlloydbUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1184,7 @@ public readonly password: string;
 
 Password for this database user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#password AlloydbUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#password AlloydbUser#password}
 
 ---
 
@@ -1146,7 +1198,7 @@ public readonly passwordWo: string;
 
 Password for this database user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#password_wo AlloydbUser#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#password_wo AlloydbUser#password_wo}
 
 ---
 
@@ -1162,7 +1214,7 @@ Triggers update of 'password_wo' write-only.
 
 Increment this value when an update to 'password_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#password_wo_version AlloydbUser#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#password_wo_version AlloydbUser#password_wo_version}
 
 ---
 
@@ -1176,7 +1228,7 @@ public readonly timeouts: AlloydbUserTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#timeouts AlloydbUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#timeouts AlloydbUser#timeouts}
 
 ---
 
@@ -1194,9 +1246,9 @@ const alloydbUserTimeouts: alloydbUser.AlloydbUserTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#create AlloydbUser#create}. |
-| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#delete AlloydbUser#delete}. |
-| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#update AlloydbUser#update}. |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#create AlloydbUser#create}. |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#delete AlloydbUser#delete}. |
+| <code><a href="#@cdktn/provider-google.alloydbUser.AlloydbUserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#update AlloydbUser#update}. |
 
 ---
 
@@ -1208,7 +1260,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#create AlloydbUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#create AlloydbUser#create}.
 
 ---
 
@@ -1220,7 +1272,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#delete AlloydbUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#delete AlloydbUser#delete}.
 
 ---
 
@@ -1232,7 +1284,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user#update AlloydbUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/alloydb_user#update AlloydbUser#update}.
 
 ---
 
