@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer
+// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,23 +21,23 @@ export interface ApigeeDeveloperConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#deletion_policy ApigeeDeveloper#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#deletion_policy ApigeeDeveloper#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Email address of the developer. This value is used to uniquely identify the developer in Apigee hybrid. Note that the email address has to be in lowercase only..
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#email ApigeeDeveloper#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#email ApigeeDeveloper#email}
   */
   readonly email: string;
   /**
   * First name of the developer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#first_name ApigeeDeveloper#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#first_name ApigeeDeveloper#first_name}
   */
   readonly firstName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,32 +46,32 @@ export interface ApigeeDeveloperConfig extends cdktn.TerraformMetaArguments {
   /**
   * Last name of the developer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#last_name ApigeeDeveloper#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#last_name ApigeeDeveloper#last_name}
   */
   readonly lastName: string;
   /**
   * The Apigee Organization associated with the Apigee instance,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#org_id ApigeeDeveloper#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#org_id ApigeeDeveloper#org_id}
   */
   readonly orgId: string;
   /**
   * User name of the developer. Not used by Apigee hybrid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#user_name ApigeeDeveloper#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#user_name ApigeeDeveloper#user_name}
   */
   readonly userName: string;
   /**
   * attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#attributes ApigeeDeveloper#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#attributes ApigeeDeveloper#attributes}
   */
   readonly attributes?: ApigeeDeveloperAttributes[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#timeouts ApigeeDeveloper#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#timeouts ApigeeDeveloper#timeouts}
   */
   readonly timeouts?: ApigeeDeveloperTimeouts;
 }
@@ -79,13 +79,13 @@ export interface ApigeeDeveloperAttributes {
   /**
   * Key of the attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#name ApigeeDeveloper#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#name ApigeeDeveloper#name}
   */
   readonly name?: string;
   /**
   * Value of the attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#value ApigeeDeveloper#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#value ApigeeDeveloper#value}
   */
   readonly value?: string;
 }
@@ -230,15 +230,15 @@ export class ApigeeDeveloperAttributesList extends cdktn.ComplexList {
 }
 export interface ApigeeDeveloperTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}
   */
   readonly update?: string;
 }
@@ -390,7 +390,7 @@ export class ApigeeDeveloperTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer google_apigee_developer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer google_apigee_developer}
 */
 export class ApigeeDeveloper extends cdktn.TerraformResource {
 
@@ -406,7 +406,7 @@ export class ApigeeDeveloper extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeDeveloper resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeDeveloper to import
-  * @param importFromId The id of the existing ApigeeDeveloper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeDeveloper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeDeveloper to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -418,7 +418,7 @@ export class ApigeeDeveloper extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_developer google_apigee_developer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_developer google_apigee_developer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -429,7 +429,7 @@ export class ApigeeDeveloper extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_developer',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.33.0',
+        providerVersion: '7.34.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

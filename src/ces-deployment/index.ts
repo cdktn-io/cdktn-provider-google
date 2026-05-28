@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment
+// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#app CesDeployment#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#app CesDeployment#app}
   */
   readonly app: string;
   /**
@@ -23,7 +23,7 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   * Format:
   * projects/{project}/locations/{location}/apps/{app}/versions/{version}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#app_version CesDeployment#app_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#app_version CesDeployment#app_version}
   */
   readonly appVersion: string;
   /**
@@ -35,17 +35,17 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#deletion_policy CesDeployment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#deletion_policy CesDeployment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Display name of the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#display_name CesDeployment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#display_name CesDeployment#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#id CesDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#id CesDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,23 +54,23 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#location CesDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#location CesDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#project CesDeployment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#project CesDeployment#project}
   */
   readonly project?: string;
   /**
   * channel_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
   */
   readonly channelProfile: CesDeploymentChannelProfile;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
   */
   readonly timeouts?: CesDeploymentTimeouts;
 }
@@ -82,7 +82,7 @@ export interface CesDeploymentChannelProfilePersonaProperty {
   * CONCISE
   * CHATTY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#persona CesDeployment#persona}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#persona CesDeployment#persona}
   */
   readonly persona?: string;
 }
@@ -168,25 +168,25 @@ export interface CesDeploymentChannelProfileWebWidgetConfigSecuritySettings {
   /**
   * The origins that are allowed to host the web widget. An origin is defined by RFC 6454. If empty, all origins are allowed. A maximum of 100 origins is allowed. Example: "https://example.com"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#allowed_origins CesDeployment#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#allowed_origins CesDeployment#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * Indicates whether origin check for the web widget is enabled. If true, the web widget will check the origin of the website that loads the web widget and only allow it to be loaded in the same origin or any of the allowed origins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#enable_origin_check CesDeployment#enable_origin_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#enable_origin_check CesDeployment#enable_origin_check}
   */
   readonly enableOriginCheck?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether public access to the web widget is enabled. If true, the web widget will be publicly accessible. If false, the web widget must be integrated with your own authentication and authorization system to return valid credentials for accessing the CES agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#enable_public_access CesDeployment#enable_public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#enable_public_access CesDeployment#enable_public_access}
   */
   readonly enablePublicAccess?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether reCAPTCHA verification for the web widget is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#enable_recaptcha CesDeployment#enable_recaptcha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#enable_recaptcha CesDeployment#enable_recaptcha}
   */
   readonly enableRecaptcha?: boolean | cdktn.IResolvable;
 }
@@ -365,7 +365,7 @@ export interface CesDeploymentChannelProfileWebWidgetConfig {
   * CHAT_ONLY
   * CHAT_VOICE_AND_VIDEO
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#modality CesDeployment#modality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#modality CesDeployment#modality}
   */
   readonly modality?: string;
   /**
@@ -375,19 +375,19 @@ export interface CesDeploymentChannelProfileWebWidgetConfig {
   * LIGHT
   * DARK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#theme CesDeployment#theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#theme CesDeployment#theme}
   */
   readonly theme?: string;
   /**
   * The title of the web widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
   */
   readonly webWidgetTitle?: string;
   /**
   * security_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#security_settings CesDeployment#security_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#security_settings CesDeployment#security_settings}
   */
   readonly securitySettings?: CesDeploymentChannelProfileWebWidgetConfigSecuritySettings;
 }
@@ -569,7 +569,7 @@ export interface CesDeploymentChannelProfile {
   * FIVE9
   * CONTACT_CENTER_INTEGRATION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
   */
   readonly channelType?: string;
   /**
@@ -578,31 +578,31 @@ export interface CesDeploymentChannelProfile {
   * - **false**: The agent retains automatic control over when the user can
   * interrupt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
   */
   readonly disableBargeInControl?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable DTMF (dual-tone multi-frequency).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
   */
   readonly disableDtmf?: boolean | cdktn.IResolvable;
   /**
   * The unique identifier of the channel profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
   */
   readonly profileId?: string;
   /**
   * persona_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
   */
   readonly personaProperty?: CesDeploymentChannelProfilePersonaProperty;
   /**
   * web_widget_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
   */
   readonly webWidgetConfig?: CesDeploymentChannelProfileWebWidgetConfig;
 }
@@ -831,15 +831,15 @@ export class CesDeploymentChannelProfileOutputReference extends cdktn.ComplexObj
 }
 export interface CesDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#create CesDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#create CesDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#delete CesDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#delete CesDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#update CesDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#update CesDeployment#update}
   */
   readonly update?: string;
 }
@@ -991,7 +991,7 @@ export class CesDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment google_ces_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment google_ces_deployment}
 */
 export class CesDeployment extends cdktn.TerraformResource {
 
@@ -1007,7 +1007,7 @@ export class CesDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesDeployment to import
-  * @param importFromId The id of the existing CesDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1019,7 +1019,7 @@ export class CesDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_deployment google_ces_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_deployment google_ces_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1030,7 +1030,7 @@ export class CesDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.33.0',
+        providerVersion: '7.34.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

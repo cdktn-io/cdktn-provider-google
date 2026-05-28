@@ -5562,6 +5562,11 @@ export class CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference ext
   public get defaultSettings() {
     return this._defaultSettings;
   }
+
+  // fail_open - computed: true, optional: false, required: false
+  public get failOpen() {
+    return this.getBooleanAttribute('fail_open');
+  }
 }
 
 export class CesAppVersionSnapshotGuardrailsLlmPromptSecurityList extends cdktn.ComplexList {

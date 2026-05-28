@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network
+// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,32 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeNetworkConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}
   */
   readonly networkProfile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}
   */
   readonly project?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#self_link DataGoogleComputeNetwork#self_link}
+  */
+  readonly selfLink?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network google_compute_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network google_compute_network}
 */
 export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
 
@@ -50,7 +54,7 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeNetwork resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeNetwork to import
-  * @param importFromId The id of the existing DataGoogleComputeNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -62,18 +66,18 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network google_compute_network} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network google_compute_network} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataGoogleComputeNetworkConfig
+  * @param options DataGoogleComputeNetworkConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataGoogleComputeNetworkConfig) {
+  public constructor(scope: Construct, id: string, config: DataGoogleComputeNetworkConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'google_compute_network',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.33.0',
+        providerVersion: '7.34.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -88,6 +92,7 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
     this._name = config.name;
     this._networkProfile = config.networkProfile;
     this._project = config.project;
+    this._selfLink = config.selfLink;
   }
 
   // ==========
@@ -125,13 +130,16 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
     return this.getStringAttribute('internal_ipv6_range');
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -164,7 +172,7 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
     return this.getStringAttribute('numeric_id');
   }
 
-  // project - computed: false, optional: true, required: false
+  // project - computed: true, optional: true, required: false
   private _project?: string; 
   public get project() {
     return this.getStringAttribute('project');
@@ -180,9 +188,20 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
     return this._project;
   }
 
-  // self_link - computed: true, optional: false, required: false
+  // self_link - computed: true, optional: true, required: false
+  private _selfLink?: string; 
   public get selfLink() {
     return this.getStringAttribute('self_link');
+  }
+  public set selfLink(value: string) {
+    this._selfLink = value;
+  }
+  public resetSelfLink() {
+    this._selfLink = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfLinkInput() {
+    return this._selfLink;
   }
 
   // subnetworks_self_links - computed: true, optional: false, required: false
@@ -200,6 +219,7 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
       name: cdktn.stringToTerraform(this._name),
       network_profile: cdktn.stringToTerraform(this._networkProfile),
       project: cdktn.stringToTerraform(this._project),
+      self_link: cdktn.stringToTerraform(this._selfLink),
     };
   }
 
@@ -225,6 +245,12 @@ export class DataGoogleComputeNetwork extends cdktn.TerraformDataSource {
       },
       project: {
         value: cdktn.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      self_link: {
+        value: cdktn.stringToHclTerraform(this._selfLink),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
