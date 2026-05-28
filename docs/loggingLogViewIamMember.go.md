@@ -4,7 +4,7 @@
 
 ### LoggingLogViewIamMember <a name="LoggingLogViewIamMember" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member google_logging_log_view_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member google_logging_log_view_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the LoggingLogViewIamMember to
 
 The id of the existing LoggingLogViewIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,9 +923,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewia
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#expression LoggingLogViewIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#title LoggingLogViewIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#description LoggingLogViewIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#expression LoggingLogViewIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#title LoggingLogViewIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#description LoggingLogViewIamMember#description}. |
 
 ---
 
@@ -937,7 +937,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#expression LoggingLogViewIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#expression LoggingLogViewIamMember#expression}.
 
 ---
 
@@ -949,7 +949,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#title LoggingLogViewIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#title LoggingLogViewIamMember#title}.
 
 ---
 
@@ -961,7 +961,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#description LoggingLogViewIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#description LoggingLogViewIamMember#description}.
 
 ---
 
@@ -1002,14 +1002,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewia
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#bucket LoggingLogViewIamMember#bucket}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#member LoggingLogViewIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#name LoggingLogViewIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#parent LoggingLogViewIamMember#parent}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#role LoggingLogViewIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#bucket LoggingLogViewIamMember#bucket}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#member LoggingLogViewIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#name LoggingLogViewIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#parent LoggingLogViewIamMember#parent}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#role LoggingLogViewIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition">LoggingLogViewIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#id LoggingLogViewIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#location LoggingLogViewIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#id LoggingLogViewIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#location LoggingLogViewIamMember#location}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#bucket LoggingLogViewIamMember#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#bucket LoggingLogViewIamMember#bucket}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#member LoggingLogViewIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#member LoggingLogViewIamMember#member}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#name LoggingLogViewIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#name LoggingLogViewIamMember#name}.
 
 ---
 
@@ -1127,7 +1127,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#parent LoggingLogViewIamMember#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#parent LoggingLogViewIamMember#parent}.
 
 ---
 
@@ -1139,7 +1139,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#role LoggingLogViewIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#role LoggingLogViewIamMember#role}.
 
 ---
 
@@ -1153,7 +1153,7 @@ Condition LoggingLogViewIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#condition LoggingLogViewIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#condition LoggingLogViewIamMember#condition}
 
 ---
 
@@ -1165,7 +1165,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#id LoggingLogViewIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#id LoggingLogViewIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1180,7 +1180,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/logging_log_view_iam_member#location LoggingLogViewIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/logging_log_view_iam_member#location LoggingLogViewIamMember#location}.
 
 ---
 

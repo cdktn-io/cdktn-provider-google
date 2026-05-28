@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeRegionSslPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,23 +28,23 @@ export interface DataGoogleComputeRegionSslPolicyConfig extends cdktn.TerraformM
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#name DataGoogleComputeRegionSslPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#name DataGoogleComputeRegionSslPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}
   */
   readonly project?: string;
   /**
   * The region where the regional SSL policy resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#region DataGoogleComputeRegionSslPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#region DataGoogleComputeRegionSslPolicy#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy google_compute_region_ssl_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy google_compute_region_ssl_policy}
 */
 export class DataGoogleComputeRegionSslPolicy extends cdktn.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataGoogleComputeRegionSslPolicy extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataGoogleComputeRegionSslPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeRegionSslPolicy to import
-  * @param importFromId The id of the existing DataGoogleComputeRegionSslPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeRegionSslPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeRegionSslPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -72,7 +72,7 @@ export class DataGoogleComputeRegionSslPolicy extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy google_compute_region_ssl_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy google_compute_region_ssl_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class DataGoogleComputeRegionSslPolicy extends cdktn.TerraformDataSource 
       terraformResourceType: 'google_compute_region_ssl_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.33.0',
+        providerVersion: '7.34.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -166,6 +166,11 @@ export class DataGoogleComputeRegionSslPolicy extends cdktn.TerraformDataSource 
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // post_quantum_key_exchange - computed: true, optional: false, required: false
+  public get postQuantumKeyExchange() {
+    return this.getStringAttribute('post_quantum_key_exchange');
   }
 
   // profile - computed: true, optional: false, required: false

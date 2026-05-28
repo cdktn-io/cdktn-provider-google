@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * User-managed service account to set on Dataproc when Cloud Data Fusion creates Dataproc to run data processing pipelines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#dataproc_service_account DataFusionInstance#dataproc_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#dataproc_service_account DataFusionInstance#dataproc_service_account}
   */
   readonly dataprocServiceAccount?: string;
   /**
@@ -27,41 +27,41 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#deletion_policy DataFusionInstance#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#deletion_policy DataFusionInstance#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#description DataFusionInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#description DataFusionInstance#description}
   */
   readonly description?: string;
   /**
   * Display name for an instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#display_name DataFusionInstance#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#display_name DataFusionInstance#display_name}
   */
   readonly displayName?: string;
   /**
   * Option to enable granular role-based access control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
   */
   readonly enableRbac?: boolean | cdktn.IResolvable;
   /**
   * Option to enable Stackdriver Logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}
   */
   readonly enableStackdriverLogging?: boolean | cdktn.IResolvable;
   /**
   * Option to enable Stackdriver Monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#enable_stackdriver_monitoring DataFusionInstance#enable_stackdriver_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#enable_stackdriver_monitoring DataFusionInstance#enable_stackdriver_monitoring}
   */
   readonly enableStackdriverMonitoring?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#id DataFusionInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#id DataFusionInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -75,25 +75,25 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#labels DataFusionInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#labels DataFusionInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The ID of the instance or a fully qualified identifier for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#name DataFusionInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#name DataFusionInstance#name}
   */
   readonly name: string;
   /**
   * Map of additional options used to configure the behavior of Data Fusion instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#options DataFusionInstance#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#options DataFusionInstance#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * Current patch revision of the Data Fusion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#patch_revision DataFusionInstance#patch_revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#patch_revision DataFusionInstance#patch_revision}
   */
   readonly patchRevision?: string;
   /**
@@ -101,17 +101,17 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * true, all Data Fusion nodes will have private IP addresses and will not be
   * able to access the public internet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#private_instance DataFusionInstance#private_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#private_instance DataFusionInstance#private_instance}
   */
   readonly privateInstance?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#project DataFusionInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#project DataFusionInstance#project}
   */
   readonly project?: string;
   /**
   * The region of the Data Fusion instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#region DataFusionInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#region DataFusionInstance#region}
   */
   readonly region?: string;
   /**
@@ -120,7 +120,7 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
   * The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#tags DataFusionInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#tags DataFusionInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
@@ -135,63 +135,154 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * with restrictive capabilities. This is to help enterprises design and develop their data ingestion and integration
   * pipelines at low cost. Possible values: ["BASIC", "ENTERPRISE", "DEVELOPER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#type DataFusionInstance#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#type DataFusionInstance#type}
   */
   readonly type: string;
   /**
   * Current version of the Data Fusion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#version DataFusionInstance#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#version DataFusionInstance#version}
   */
   readonly version?: string;
   /**
   * Name of the zone in which the Data Fusion instance will be created. Only DEVELOPER instances use this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#zone DataFusionInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#zone DataFusionInstance#zone}
   */
   readonly zone?: string;
   /**
   * accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#accelerators DataFusionInstance#accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#accelerators DataFusionInstance#accelerators}
   */
   readonly accelerators?: DataFusionInstanceAccelerators[] | cdktn.IResolvable;
   /**
   * crypto_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#crypto_key_config DataFusionInstance#crypto_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#crypto_key_config DataFusionInstance#crypto_key_config}
   */
   readonly cryptoKeyConfig?: DataFusionInstanceCryptoKeyConfig;
   /**
   * event_publish_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#event_publish_config DataFusionInstance#event_publish_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#event_publish_config DataFusionInstance#event_publish_config}
   */
   readonly eventPublishConfig?: DataFusionInstanceEventPublishConfig;
   /**
+  * maintenance_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#maintenance_policy DataFusionInstance#maintenance_policy}
+  */
+  readonly maintenancePolicy?: DataFusionInstanceMaintenancePolicy;
+  /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#network_config DataFusionInstance#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#network_config DataFusionInstance#network_config}
   */
   readonly networkConfig?: DataFusionInstanceNetworkConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#timeouts DataFusionInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#timeouts DataFusionInstance#timeouts}
   */
   readonly timeouts?: DataFusionInstanceTimeouts;
+}
+export interface DataFusionInstanceMaintenanceEvents {
+}
+
+export function dataFusionInstanceMaintenanceEventsToTerraform(struct?: DataFusionInstanceMaintenanceEvents): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataFusionInstanceMaintenanceEventsToHclTerraform(struct?: DataFusionInstanceMaintenanceEvents): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataFusionInstanceMaintenanceEventsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataFusionInstanceMaintenanceEvents | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataFusionInstanceMaintenanceEvents | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // end_time - computed: true, optional: false, required: false
+  public get endTime() {
+    return this.getStringAttribute('end_time');
+  }
+
+  // start_time - computed: true, optional: false, required: false
+  public get startTime() {
+    return this.getStringAttribute('start_time');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+}
+
+export class DataFusionInstanceMaintenanceEventsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataFusionInstanceMaintenanceEventsOutputReference {
+    return new DataFusionInstanceMaintenanceEventsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataFusionInstanceAccelerators {
   /**
   * The type of an accelator for a CDF instance. Possible values: ["CDC", "HEALTHCARE", "CCAI_INSIGHTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#accelerator_type DataFusionInstance#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#accelerator_type DataFusionInstance#accelerator_type}
   */
   readonly acceleratorType: string;
   /**
   * The type of an accelator for a CDF instance. Possible values: ["ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#state DataFusionInstance#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#state DataFusionInstance#state}
   */
   readonly state: string;
 }
@@ -332,7 +423,7 @@ export interface DataFusionInstanceCryptoKeyConfig {
   /**
   * The name of the key which is used to encrypt/decrypt customer data. For key in Cloud KMS, the key should be in the format of projects/* /locations/* /keyRings/* /cryptoKeys/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#key_reference DataFusionInstance#key_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#key_reference DataFusionInstance#key_reference}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -417,13 +508,13 @@ export interface DataFusionInstanceEventPublishConfig {
   /**
   * Option to enable Event Publishing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#enabled DataFusionInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#enabled DataFusionInstance#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The resource name of the Pub/Sub topic. Format: projects/{projectId}/topics/{topic_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#topic DataFusionInstance#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#topic DataFusionInstance#topic}
   */
   readonly topic: string;
 }
@@ -528,13 +619,412 @@ export class DataFusionInstanceEventPublishConfigOutputReference extends cdktn.C
     return this._topic;
   }
 }
+export interface DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow {
+  /**
+  * The end time of the time window provided in RFC 3339 format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#end_time DataFusionInstance#end_time}
+  */
+  readonly endTime: string;
+  /**
+  * The start time of the time window provided in RFC 3339 format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#start_time DataFusionInstance#start_time}
+  */
+  readonly startTime: string;
+}
+
+export function dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowToTerraform(struct?: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference | DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
+  }
+}
+
+
+export function dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowToHclTerraform(struct?: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference | DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_time: {
+      value: cdktn.stringToHclTerraform(struct!.endTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: cdktn.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endTime = this._endTime;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endTime = undefined;
+      this._startTime = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endTime = value.endTime;
+      this._startTime = value.startTime;
+    }
+  }
+
+  // end_time - computed: false, optional: false, required: true
+  private _endTime?: string; 
+  public get endTime() {
+    return this.getStringAttribute('end_time');
+  }
+  public set endTime(value: string) {
+    this._endTime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endTimeInput() {
+    return this._endTime;
+  }
+
+  // start_time - computed: false, optional: false, required: true
+  private _startTime?: string; 
+  public get startTime() {
+    return this.getStringAttribute('start_time');
+  }
+  public set startTime(value: string) {
+    this._startTime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+}
+export interface DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow {
+  /**
+  * An RRULE with format RFC-5545 for how this window reccurs. They go on for the span of time between the start and end time. The only supported FREQ value is "WEEKLY". To have something repeat every weekday, use: "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#recurrence DataFusionInstance#recurrence}
+  */
+  readonly recurrence: string;
+  /**
+  * window block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#window DataFusionInstance#window}
+  */
+  readonly window: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow;
+}
+
+export function dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowToTerraform(struct?: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference | DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    recurrence: cdktn.stringToTerraform(struct!.recurrence),
+    window: dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowToTerraform(struct!.window),
+  }
+}
+
+
+export function dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowToHclTerraform(struct?: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference | DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    recurrence: {
+      value: cdktn.stringToHclTerraform(struct!.recurrence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    window: {
+      value: dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowToHclTerraform(struct!.window),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._recurrence !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recurrence = this._recurrence;
+    }
+    if (this._window?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.window = this._window?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._recurrence = undefined;
+      this._window.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._recurrence = value.recurrence;
+      this._window.internalValue = value.window;
+    }
+  }
+
+  // recurrence - computed: false, optional: false, required: true
+  private _recurrence?: string; 
+  public get recurrence() {
+    return this.getStringAttribute('recurrence');
+  }
+  public set recurrence(value: string) {
+    this._recurrence = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recurrenceInput() {
+    return this._recurrence;
+  }
+
+  // window - computed: false, optional: false, required: true
+  private _window = new DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference(this, "window");
+  public get window() {
+    return this._window;
+  }
+  public putWindow(value: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow) {
+    this._window.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get windowInput() {
+    return this._window.internalValue;
+  }
+}
+export interface DataFusionInstanceMaintenancePolicyMaintenanceWindow {
+  /**
+  * recurring_time_window block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#recurring_time_window DataFusionInstance#recurring_time_window}
+  */
+  readonly recurringTimeWindow: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow;
+}
+
+export function dataFusionInstanceMaintenancePolicyMaintenanceWindowToTerraform(struct?: DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference | DataFusionInstanceMaintenancePolicyMaintenanceWindow): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    recurring_time_window: dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowToTerraform(struct!.recurringTimeWindow),
+  }
+}
+
+
+export function dataFusionInstanceMaintenancePolicyMaintenanceWindowToHclTerraform(struct?: DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference | DataFusionInstanceMaintenancePolicyMaintenanceWindow): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    recurring_time_window: {
+      value: dataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowToHclTerraform(struct!.recurringTimeWindow),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataFusionInstanceMaintenancePolicyMaintenanceWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._recurringTimeWindow?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recurringTimeWindow = this._recurringTimeWindow?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataFusionInstanceMaintenancePolicyMaintenanceWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._recurringTimeWindow.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._recurringTimeWindow.internalValue = value.recurringTimeWindow;
+    }
+  }
+
+  // recurring_time_window - computed: false, optional: false, required: true
+  private _recurringTimeWindow = new DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference(this, "recurring_time_window");
+  public get recurringTimeWindow() {
+    return this._recurringTimeWindow;
+  }
+  public putRecurringTimeWindow(value: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow) {
+    this._recurringTimeWindow.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recurringTimeWindowInput() {
+    return this._recurringTimeWindow.internalValue;
+  }
+}
+export interface DataFusionInstanceMaintenancePolicy {
+  /**
+  * maintenance_window block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#maintenance_window DataFusionInstance#maintenance_window}
+  */
+  readonly maintenanceWindow?: DataFusionInstanceMaintenancePolicyMaintenanceWindow;
+}
+
+export function dataFusionInstanceMaintenancePolicyToTerraform(struct?: DataFusionInstanceMaintenancePolicyOutputReference | DataFusionInstanceMaintenancePolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    maintenance_window: dataFusionInstanceMaintenancePolicyMaintenanceWindowToTerraform(struct!.maintenanceWindow),
+  }
+}
+
+
+export function dataFusionInstanceMaintenancePolicyToHclTerraform(struct?: DataFusionInstanceMaintenancePolicyOutputReference | DataFusionInstanceMaintenancePolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maintenance_window: {
+      value: dataFusionInstanceMaintenancePolicyMaintenanceWindowToHclTerraform(struct!.maintenanceWindow),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataFusionInstanceMaintenancePolicyMaintenanceWindowList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataFusionInstanceMaintenancePolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataFusionInstanceMaintenancePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maintenanceWindow?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maintenanceWindow = this._maintenanceWindow?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataFusionInstanceMaintenancePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maintenanceWindow.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maintenanceWindow.internalValue = value.maintenanceWindow;
+    }
+  }
+
+  // maintenance_window - computed: false, optional: true, required: false
+  private _maintenanceWindow = new DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference(this, "maintenance_window");
+  public get maintenanceWindow() {
+    return this._maintenanceWindow;
+  }
+  public putMaintenanceWindow(value: DataFusionInstanceMaintenancePolicyMaintenanceWindow) {
+    this._maintenanceWindow.internalValue = value;
+  }
+  public resetMaintenanceWindow() {
+    this._maintenanceWindow.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceWindowInput() {
+    return this._maintenanceWindow.internalValue;
+  }
+}
 export interface DataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
   /**
   * Optional. The reference to the network attachment used to establish private connectivity.
   * It will be of the form projects/{project-id}/regions/{region}/networkAttachments/{network-attachment-id}.
   * This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
   */
   readonly networkAttachment?: string;
   /**
@@ -543,7 +1033,7 @@ export interface DataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
   * This range can be used for other purposes in the consumer VPC as long as there is no requirement for CDF to reach destinations using these addresses.
   * If this value is not provided, the server chooses a non RFC 1918 address range. The format of this field is governed by RFC 4632.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
   */
   readonly unreachableCidrBlock?: string;
 }
@@ -665,14 +1155,14 @@ export interface DataFusionInstanceNetworkConfig {
   * the corresponding tenant project from a predefined list of available connection modes.
   * If this field is unspecified for a private instance, VPC peering is used. Possible values: ["VPC_PEERING", "PRIVATE_SERVICE_CONNECT_INTERFACES"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#connection_type DataFusionInstance#connection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#connection_type DataFusionInstance#connection_type}
   */
   readonly connectionType?: string;
   /**
   * The IP range in CIDR notation to use for the managed Data Fusion instance
   * nodes. This range must not overlap with any other ranges used in the Data Fusion instance network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#ip_allocation DataFusionInstance#ip_allocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#ip_allocation DataFusionInstance#ip_allocation}
   */
   readonly ipAllocation?: string;
   /**
@@ -680,13 +1170,13 @@ export interface DataFusionInstanceNetworkConfig {
   * will be peered for executing pipelines. In case of shared VPC where the network resides in another host
   * project the network should specified in the form of projects/{host-project-id}/global/networks/{network}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#network DataFusionInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#network DataFusionInstance#network}
   */
   readonly network?: string;
   /**
   * private_service_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#private_service_connect_config DataFusionInstance#private_service_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#private_service_connect_config DataFusionInstance#private_service_connect_config}
   */
   readonly privateServiceConnectConfig?: DataFusionInstanceNetworkConfigPrivateServiceConnectConfig;
 }
@@ -857,15 +1347,15 @@ export class DataFusionInstanceNetworkConfigOutputReference extends cdktn.Comple
 }
 export interface DataFusionInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#create DataFusionInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#create DataFusionInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#update DataFusionInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#update DataFusionInstance#update}
   */
   readonly update?: string;
 }
@@ -1017,7 +1507,7 @@ export class DataFusionInstanceTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance google_data_fusion_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance google_data_fusion_instance}
 */
 export class DataFusionInstance extends cdktn.TerraformResource {
 
@@ -1033,7 +1523,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataFusionInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFusionInstance to import
-  * @param importFromId The id of the existing DataFusionInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataFusionInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFusionInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1045,7 +1535,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1056,7 +1546,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
       terraformResourceType: 'google_data_fusion_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.33.0',
+        providerVersion: '7.34.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1089,6 +1579,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
     this._accelerators.internalValue = config.accelerators;
     this._cryptoKeyConfig.internalValue = config.cryptoKeyConfig;
     this._eventPublishConfig.internalValue = config.eventPublishConfig;
+    this._maintenancePolicy.internalValue = config.maintenancePolicy;
     this._networkConfig.internalValue = config.networkConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1260,6 +1751,12 @@ export class DataFusionInstance extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get labelsInput() {
     return this._labels;
+  }
+
+  // maintenance_events - computed: true, optional: false, required: false
+  private _maintenanceEvents = new DataFusionInstanceMaintenanceEventsList(this, "maintenance_events", false);
+  public get maintenanceEvents() {
+    return this._maintenanceEvents;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1500,6 +1997,22 @@ export class DataFusionInstance extends cdktn.TerraformResource {
     return this._eventPublishConfig.internalValue;
   }
 
+  // maintenance_policy - computed: false, optional: true, required: false
+  private _maintenancePolicy = new DataFusionInstanceMaintenancePolicyOutputReference(this, "maintenance_policy");
+  public get maintenancePolicy() {
+    return this._maintenancePolicy;
+  }
+  public putMaintenancePolicy(value: DataFusionInstanceMaintenancePolicy) {
+    this._maintenancePolicy.internalValue = value;
+  }
+  public resetMaintenancePolicy() {
+    this._maintenancePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenancePolicyInput() {
+    return this._maintenancePolicy.internalValue;
+  }
+
   // network_config - computed: false, optional: true, required: false
   private _networkConfig = new DataFusionInstanceNetworkConfigOutputReference(this, "network_config");
   public get networkConfig() {
@@ -1560,6 +2073,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
       accelerators: cdktn.listMapper(dataFusionInstanceAcceleratorsToTerraform, true)(this._accelerators.internalValue),
       crypto_key_config: dataFusionInstanceCryptoKeyConfigToTerraform(this._cryptoKeyConfig.internalValue),
       event_publish_config: dataFusionInstanceEventPublishConfigToTerraform(this._eventPublishConfig.internalValue),
+      maintenance_policy: dataFusionInstanceMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
       network_config: dataFusionInstanceNetworkConfigToTerraform(this._networkConfig.internalValue),
       timeouts: dataFusionInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1698,6 +2212,12 @@ export class DataFusionInstance extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "DataFusionInstanceEventPublishConfigList",
+      },
+      maintenance_policy: {
+        value: dataFusionInstanceMaintenancePolicyToHclTerraform(this._maintenancePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataFusionInstanceMaintenancePolicyList",
       },
       network_config: {
         value: dataFusionInstanceNetworkConfigToHclTerraform(this._networkConfig.internalValue),

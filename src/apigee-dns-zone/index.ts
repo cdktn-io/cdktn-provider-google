@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone
+// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,29 +21,29 @@ export interface ApigeeDnsZoneConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#deletion_policy ApigeeDnsZone#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#deletion_policy ApigeeDnsZone#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description for the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#description ApigeeDnsZone#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#description ApigeeDnsZone#description}
   */
   readonly description: string;
   /**
   * ID of the dns zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#dns_zone_id ApigeeDnsZone#dns_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#dns_zone_id ApigeeDnsZone#dns_zone_id}
   */
   readonly dnsZoneId: string;
   /**
   * Doamin for the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#domain ApigeeDnsZone#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#domain ApigeeDnsZone#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#id ApigeeDnsZone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#id ApigeeDnsZone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,19 +53,19 @@ export interface ApigeeDnsZoneConfig extends cdktn.TerraformMetaArguments {
   * The Apigee Organization associated with the Apigee instance,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#org_id ApigeeDnsZone#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#org_id ApigeeDnsZone#org_id}
   */
   readonly orgId: string;
   /**
   * peering_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#peering_config ApigeeDnsZone#peering_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#peering_config ApigeeDnsZone#peering_config}
   */
   readonly peeringConfig: ApigeeDnsZonePeeringConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#timeouts ApigeeDnsZone#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#timeouts ApigeeDnsZone#timeouts}
   */
   readonly timeouts?: ApigeeDnsZoneTimeouts;
 }
@@ -73,13 +73,13 @@ export interface ApigeeDnsZonePeeringConfig {
   /**
   * The name of the producer VPC network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#target_network_id ApigeeDnsZone#target_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#target_network_id ApigeeDnsZone#target_network_id}
   */
   readonly targetNetworkId: string;
   /**
   * The ID of the project that contains the producer VPC network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#target_project_id ApigeeDnsZone#target_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#target_project_id ApigeeDnsZone#target_project_id}
   */
   readonly targetProjectId: string;
 }
@@ -186,11 +186,11 @@ export class ApigeeDnsZonePeeringConfigOutputReference extends cdktn.ComplexObje
 }
 export interface ApigeeDnsZoneTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#create ApigeeDnsZone#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#create ApigeeDnsZone#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#delete ApigeeDnsZone#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#delete ApigeeDnsZone#delete}
   */
   readonly delete?: string;
 }
@@ -313,7 +313,7 @@ export class ApigeeDnsZoneTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone google_apigee_dns_zone}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone google_apigee_dns_zone}
 */
 export class ApigeeDnsZone extends cdktn.TerraformResource {
 
@@ -329,7 +329,7 @@ export class ApigeeDnsZone extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeDnsZone resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeDnsZone to import
-  * @param importFromId The id of the existing ApigeeDnsZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeDnsZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeDnsZone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -341,7 +341,7 @@ export class ApigeeDnsZone extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_dns_zone google_apigee_dns_zone} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/apigee_dns_zone google_apigee_dns_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -352,7 +352,7 @@ export class ApigeeDnsZone extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_dns_zone',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.33.0',
+        providerVersion: '7.34.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

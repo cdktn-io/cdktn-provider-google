@@ -1690,6 +1690,11 @@ export class DataGoogleContainerClusterNodeConfigOutputReference extends cdktn.C
     return this._gcfsConfig;
   }
 
+  // gpudirect_strategy - computed: true, optional: false, required: false
+  public get gpudirectStrategy() {
+    return this.getStringAttribute('gpudirect_strategy');
+  }
+
   // guest_accelerator - computed: true, optional: false, required: false
   private _guestAccelerator = new DataGoogleContainerClusterNodeConfigGuestAcceleratorList(this, "guest_accelerator", false);
   public get guestAccelerator() {
@@ -6751,6 +6756,11 @@ export class DataGoogleContainerClusterNodePoolNodeConfigOutputReference extends
   private _gcfsConfig = new DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList(this, "gcfs_config", false);
   public get gcfsConfig() {
     return this._gcfsConfig;
+  }
+
+  // gpudirect_strategy - computed: true, optional: false, required: false
+  public get gpudirectStrategy() {
+    return this.getStringAttribute('gpudirect_strategy');
   }
 
   // guest_accelerator - computed: true, optional: false, required: false
