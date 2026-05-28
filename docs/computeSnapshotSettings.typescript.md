@@ -4,7 +4,7 @@
 
 ### ComputeSnapshotSettings <a name="ComputeSnapshotSettings" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the ComputeSnapshotSettings to
 
 The id of the existing ComputeSnapshotSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -841,8 +841,8 @@ const computeSnapshotSettingsConfig: computeSnapshotSettings.ComputeSnapshotSett
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.storageLocation">storageLocation</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocation">ComputeSnapshotSettingsStorageLocation</a></code> | storage_location block. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts">ComputeSnapshotSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -927,7 +927,7 @@ public readonly storageLocation: ComputeSnapshotSettingsStorageLocation;
 
 storage_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
 
 ---
 
@@ -939,7 +939,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -954,7 +954,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
 
 ---
 
@@ -968,7 +968,7 @@ public readonly timeouts: ComputeSnapshotSettingsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly policy: string;
 
 The chosen location policy Possible values: ["NEAREST_MULTI_REGION", "LOCAL_REGION", "SPECIFIC_LOCATIONS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly locations: IResolvable | ComputeSnapshotSettingsStorageLocationL
 
 locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
 
 ---
 
@@ -1033,7 +1033,7 @@ const computeSnapshotSettingsStorageLocationLocations: computeSnapshotSettings.C
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.name">name</a></code> | <code>string</code> | Name of the location. |
 
 ---
@@ -1046,7 +1046,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}.
 
 ---
 
@@ -1063,7 +1063,7 @@ Name of the location.
 It should be one of the Cloud Storage buckets.
 Only one location can be specified. (should match location)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
 
 ---
 
@@ -1081,9 +1081,9 @@ const computeSnapshotSettingsTimeouts: computeSnapshotSettings.ComputeSnapshotSe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}. |
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}.
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}.
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}.
 
 ---
 

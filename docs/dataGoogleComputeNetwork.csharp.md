@@ -4,14 +4,14 @@
 
 ### DataGoogleComputeNetwork <a name="DataGoogleComputeNetwork" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network google_compute_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network google_compute_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Google;
 
-new DataGoogleComputeNetwork(Construct Scope, string Id, DataGoogleComputeNetworkConfig Config);
+new DataGoogleComputeNetwork(Construct Scope, string Id, DataGoogleComputeNetworkConfig Config = null);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.Initializer.parameter.config"></a>
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig">DataGoogleComputeNetworkConfig</a>
 
@@ -69,8 +69,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetNetworkProfile">ResetNetworkProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetSelfLink">ResetSelfLink</a></code> | *No description.* |
 
 ---
 
@@ -293,6 +295,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetName` <a name="ResetName" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetName"></a>
+
+```csharp
+private void ResetName()
+```
+
 ##### `ResetNetworkProfile` <a name="ResetNetworkProfile" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetNetworkProfile"></a>
 
 ```csharp
@@ -303,6 +311,12 @@ private void ResetNetworkProfile()
 
 ```csharp
 private void ResetProject()
+```
+
+##### `ResetSelfLink` <a name="ResetSelfLink" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetSelfLink"></a>
+
+```csharp
+private void ResetSelfLink()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -408,7 +422,7 @@ The construct id used in the generated config for the DataGoogleComputeNetwork t
 
 The id of the existing DataGoogleComputeNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -441,16 +455,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.internalIpv6Range">InternalIpv6Range</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.networkId">NetworkId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.numericId">NumericId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.subnetworksSelfLinks">SubnetworksSelfLinks</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.networkProfileInput">NetworkProfileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLinkInput">SelfLinkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.networkProfile">NetworkProfile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.project">Project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -626,16 +641,6 @@ public string NumericId { get; }
 
 ---
 
-##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLink"></a>
-
-```csharp
-public string SelfLink { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `SubnetworksSelfLinks`<sup>Required</sup> <a name="SubnetworksSelfLinks" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.subnetworksSelfLinks"></a>
 
 ```csharp
@@ -686,6 +691,16 @@ public string ProjectInput { get; }
 
 ---
 
+##### `SelfLinkInput`<sup>Optional</sup> <a name="SelfLinkInput" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLinkInput"></a>
+
+```csharp
+public string SelfLinkInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.id"></a>
 
 ```csharp
@@ -720,6 +735,16 @@ public string NetworkProfile { get; }
 
 ```csharp
 public string Project { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLink"></a>
+
+```csharp
+public string SelfLink { get; }
 ```
 
 - *Type:* string
@@ -761,10 +786,11 @@ new DataGoogleComputeNetworkConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    string Name,
     string Id = null,
+    string Name = null,
     string NetworkProfile = null,
-    string Project = null
+    string Project = null,
+    string SelfLink = null
 };
 ```
 
@@ -779,10 +805,11 @@ new DataGoogleComputeNetworkConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.networkProfile">NetworkProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.networkProfile">NetworkProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.selfLink">SelfLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#self_link DataGoogleComputeNetwork#self_link}. |
 
 ---
 
@@ -856,18 +883,6 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name"></a>
-
-```csharp
-public string Name { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}.
-
----
-
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.id"></a>
 
 ```csharp
@@ -876,10 +891,22 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}.
 
 ---
 
@@ -891,7 +918,7 @@ public string NetworkProfile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}.
 
 ---
 
@@ -903,7 +930,19 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}.
+
+---
+
+##### `SelfLink`<sup>Optional</sup> <a name="SelfLink" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.selfLink"></a>
+
+```csharp
+public string SelfLink { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_network#self_link DataGoogleComputeNetwork#self_link}.
 
 ---
 

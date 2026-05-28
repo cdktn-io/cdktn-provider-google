@@ -4,7 +4,7 @@
 
 ### ComputeSnapshotSettings <a name="ComputeSnapshotSettings" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer"></a>
 
@@ -38,8 +38,8 @@ ComputeSnapshotSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.storageLocation">storageLocation</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocation">ComputeSnapshotSettingsStorageLocation</a></code> | storage_location block. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts">ComputeSnapshotSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 storage_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
 
 ---
 
@@ -635,7 +635,7 @@ The construct id used in the generated config for the ComputeSnapshotSettings to
 
 The id of the existing ComputeSnapshotSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,8 +952,8 @@ ComputeSnapshotSettingsConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.storageLocation">storageLocation</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocation">ComputeSnapshotSettingsStorageLocation</a></code> | storage_location block. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts">ComputeSnapshotSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1038,7 +1038,7 @@ public ComputeSnapshotSettingsStorageLocation getStorageLocation();
 
 storage_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
 
 ---
 
@@ -1050,7 +1050,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1065,7 +1065,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public ComputeSnapshotSettingsTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
 
 ---
 
@@ -1115,7 +1115,7 @@ public java.lang.String getPolicy();
 
 The chosen location policy Possible values: ["NEAREST_MULTI_REGION", "LOCAL_REGION", "SPECIFIC_LOCATIONS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
 
 ---
 
@@ -1129,7 +1129,7 @@ public IResolvable|java.util.List<ComputeSnapshotSettingsStorageLocationLocation
 
 locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
 
 ---
 
@@ -1150,7 +1150,7 @@ ComputeSnapshotSettingsStorageLocationLocations.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.name">name</a></code> | <code>java.lang.String</code> | Name of the location. |
 
 ---
@@ -1163,7 +1163,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Name of the location.
 It should be one of the Cloud Storage buckets.
 Only one location can be specified. (should match location)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
 
 ---
 
@@ -1202,9 +1202,9 @@ ComputeSnapshotSettingsTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}. |
 
 ---
 
@@ -1216,7 +1216,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}.
 
 ---
 
@@ -1228,7 +1228,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}.
 
 ---
 
@@ -1240,7 +1240,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}.
 
 ---
 

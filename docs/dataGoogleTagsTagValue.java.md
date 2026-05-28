@@ -4,7 +4,7 @@
 
 ### DataGoogleTagsTagValue <a name="DataGoogleTagsTagValue" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value google_tags_tag_value}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value google_tags_tag_value}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer"></a>
 
@@ -35,8 +35,8 @@ DataGoogleTagsTagValue.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.shortName">shortName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.shortName">shortName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}.
 
 ---
 
@@ -457,7 +457,7 @@ The construct id used in the generated config for the DataGoogleTagsTagValue to 
 
 The id of the existing DataGoogleTagsTagValue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,8 +771,8 @@ DataGoogleTagsTagValueConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName">shortName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName">shortName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
 
 ---
 
@@ -854,7 +854,7 @@ public java.lang.String getParent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}.
 
 ---
 
@@ -866,7 +866,7 @@ public java.lang.String getShortName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}.
 
 ---
 

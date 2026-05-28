@@ -4,7 +4,7 @@
 
 ### ComputeRegionSslPolicy <a name="ComputeRegionSslPolicy" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer"></a>
 
@@ -25,6 +25,7 @@ ComputeRegionSslPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .minTlsVersion(java.lang.String)
+//  .postQuantumKeyExchange(java.lang.String)
 //  .profile(java.lang.String)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
@@ -47,10 +48,11 @@ ComputeRegionSslPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.customFeatures">customFeatures</a></code> | <code>java.util.List<java.lang.String></code> | A list of features enabled when the selected profile is CUSTOM. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.minTlsVersion">minTlsVersion</a></code> | <code>java.lang.String</code> | The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.postQuantumKeyExchange">postQuantumKeyExchange</a></code> | <code>java.lang.String</code> | One of 'DEFAULT', 'ENABLED', or 'DEFERRED'. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.profile">profile</a></code> | <code>java.lang.String</code> | Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region where the regional SSL policy resides. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts">ComputeRegionSslPolicyTimeouts</a></code> | timeouts block. |
 
@@ -130,7 +132,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#name ComputeRegionSslPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#name ComputeRegionSslPolicy#name}
 
 ---
 
@@ -149,7 +151,7 @@ for which ciphers are available to use. **Note**: this argument
 *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#custom_features ComputeRegionSslPolicy#custom_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#custom_features ComputeRegionSslPolicy#custom_features}
 
 ---
 
@@ -166,7 +168,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#deletion_policy ComputeRegionSslPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#deletion_policy ComputeRegionSslPolicy#deletion_policy}
 
 ---
 
@@ -176,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#description ComputeRegionSslPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#description ComputeRegionSslPolicy#description}
 
 ---
 
@@ -184,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -200,7 +202,27 @@ The minimum version of SSL protocol that can be used by the clients to establish
 When set to
 'TLS_1_3', the profile field must be set to 'RESTRICTED'. Default value: "TLS_1_0" Possible values: ["TLS_1_0", "TLS_1_1", "TLS_1_2", "TLS_1_3"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#min_tls_version ComputeRegionSslPolicy#min_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#min_tls_version ComputeRegionSslPolicy#min_tls_version}
+
+---
+
+##### `postQuantumKeyExchange`<sup>Optional</sup> <a name="postQuantumKeyExchange" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer.parameter.postQuantumKeyExchange"></a>
+
+- *Type:* java.lang.String
+
+One of 'DEFAULT', 'ENABLED', or 'DEFERRED'.
+
+Controls whether the load balancer negotiates
+X25519MLKEM768 key exchange when clients advertise support for it.
+When set to 'DEFAULT', or if no SSL Policy is attached to
+the target proxy, the load balancer disallows X25519MLKEM768 key
+exchange before October 2026, and allows it afterward. When set to
+'ENABLED', the load balancer allows X25519MLKEM768 key
+exchange. When set to 'DEFERRED', the load balancer
+disallows X25519MLKEM768 key exchange until October 2027, and allows
+it afterward. Possible values: ["DEFAULT", "ENABLED", "DEFERRED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#post_quantum_key_exchange ComputeRegionSslPolicy#post_quantum_key_exchange}
 
 ---
 
@@ -220,7 +242,7 @@ for information on what cipher suites each profile provides. If
 If set to 'FIPS_202205', 'minTlsVersion' must also be set to
 'TLS_1_2'. Default value: "COMPATIBLE" Possible values: ["COMPATIBLE", "MODERN", "RESTRICTED", "CUSTOM", "FIPS_202205"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#profile ComputeRegionSslPolicy#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#profile ComputeRegionSslPolicy#profile}
 
 ---
 
@@ -228,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}.
 
 ---
 
@@ -238,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region where the regional SSL policy resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#region ComputeRegionSslPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#region ComputeRegionSslPolicy#region}
 
 ---
 
@@ -248,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#timeouts ComputeRegionSslPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#timeouts ComputeRegionSslPolicy#timeouts}
 
 ---
 
@@ -286,6 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetMinTlsVersion">resetMinTlsVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetPostQuantumKeyExchange">resetPostQuantumKeyExchange</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetProfile">resetProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetRegion">resetRegion</a></code> | *No description.* |
@@ -646,6 +669,12 @@ public void resetId()
 public void resetMinTlsVersion()
 ```
 
+##### `resetPostQuantumKeyExchange` <a name="resetPostQuantumKeyExchange" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetPostQuantumKeyExchange"></a>
+
+```java
+public void resetPostQuantumKeyExchange()
+```
+
 ##### `resetProfile` <a name="resetProfile" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.resetProfile"></a>
 
 ```java
@@ -773,7 +802,7 @@ The construct id used in the generated config for the ComputeRegionSslPolicy to 
 
 The id of the existing ComputeRegionSslPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,6 +843,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.minTlsVersionInput">minTlsVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.postQuantumKeyExchangeInput">postQuantumKeyExchangeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.profileInput">profileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -824,6 +854,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.minTlsVersion">minTlsVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.postQuantumKeyExchange">postQuantumKeyExchange</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.profile">profile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1082,6 +1113,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `postQuantumKeyExchangeInput`<sup>Optional</sup> <a name="postQuantumKeyExchangeInput" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.postQuantumKeyExchangeInput"></a>
+
+```java
+public java.lang.String getPostQuantumKeyExchangeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `profileInput`<sup>Optional</sup> <a name="profileInput" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.profileInput"></a>
 
 ```java
@@ -1182,6 +1223,16 @@ public java.lang.String getName();
 
 ---
 
+##### `postQuantumKeyExchange`<sup>Required</sup> <a name="postQuantumKeyExchange" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.postQuantumKeyExchange"></a>
+
+```java
+public java.lang.String getPostQuantumKeyExchange();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `profile`<sup>Required</sup> <a name="profile" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.property.profile"></a>
 
 ```java
@@ -1253,6 +1304,7 @@ ComputeRegionSslPolicyConfig.builder()
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .minTlsVersion(java.lang.String)
+//  .postQuantumKeyExchange(java.lang.String)
 //  .profile(java.lang.String)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
@@ -1275,10 +1327,11 @@ ComputeRegionSslPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.customFeatures">customFeatures</a></code> | <code>java.util.List<java.lang.String></code> | A list of features enabled when the selected profile is CUSTOM. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.minTlsVersion">minTlsVersion</a></code> | <code>java.lang.String</code> | The minimum version of SSL protocol that can be used by the clients to establish a connection with the load balancer. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.postQuantumKeyExchange">postQuantumKeyExchange</a></code> | <code>java.lang.String</code> | One of 'DEFAULT', 'ENABLED', or 'DEFERRED'. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.profile">profile</a></code> | <code>java.lang.String</code> | Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region where the regional SSL policy resides. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts">ComputeRegionSslPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1372,7 +1425,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#name ComputeRegionSslPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#name ComputeRegionSslPolicy#name}
 
 ---
 
@@ -1395,7 +1448,7 @@ for which ciphers are available to use. **Note**: this argument
 *must* be present when using the 'CUSTOM' profile. This argument
 *must not* be present when using any other profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#custom_features ComputeRegionSslPolicy#custom_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#custom_features ComputeRegionSslPolicy#custom_features}
 
 ---
 
@@ -1416,7 +1469,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#deletion_policy ComputeRegionSslPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#deletion_policy ComputeRegionSslPolicy#deletion_policy}
 
 ---
 
@@ -1430,7 +1483,7 @@ public java.lang.String getDescription();
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#description ComputeRegionSslPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#description ComputeRegionSslPolicy#description}
 
 ---
 
@@ -1442,7 +1495,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#id ComputeRegionSslPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1462,7 +1515,31 @@ The minimum version of SSL protocol that can be used by the clients to establish
 When set to
 'TLS_1_3', the profile field must be set to 'RESTRICTED'. Default value: "TLS_1_0" Possible values: ["TLS_1_0", "TLS_1_1", "TLS_1_2", "TLS_1_3"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#min_tls_version ComputeRegionSslPolicy#min_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#min_tls_version ComputeRegionSslPolicy#min_tls_version}
+
+---
+
+##### `postQuantumKeyExchange`<sup>Optional</sup> <a name="postQuantumKeyExchange" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.property.postQuantumKeyExchange"></a>
+
+```java
+public java.lang.String getPostQuantumKeyExchange();
+```
+
+- *Type:* java.lang.String
+
+One of 'DEFAULT', 'ENABLED', or 'DEFERRED'.
+
+Controls whether the load balancer negotiates
+X25519MLKEM768 key exchange when clients advertise support for it.
+When set to 'DEFAULT', or if no SSL Policy is attached to
+the target proxy, the load balancer disallows X25519MLKEM768 key
+exchange before October 2026, and allows it afterward. When set to
+'ENABLED', the load balancer allows X25519MLKEM768 key
+exchange. When set to 'DEFERRED', the load balancer
+disallows X25519MLKEM768 key exchange until October 2027, and allows
+it afterward. Possible values: ["DEFAULT", "ENABLED", "DEFERRED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#post_quantum_key_exchange ComputeRegionSslPolicy#post_quantum_key_exchange}
 
 ---
 
@@ -1486,7 +1563,7 @@ for information on what cipher suites each profile provides. If
 If set to 'FIPS_202205', 'minTlsVersion' must also be set to
 'TLS_1_2'. Default value: "COMPATIBLE" Possible values: ["COMPATIBLE", "MODERN", "RESTRICTED", "CUSTOM", "FIPS_202205"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#profile ComputeRegionSslPolicy#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#profile ComputeRegionSslPolicy#profile}
 
 ---
 
@@ -1498,7 +1575,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#project ComputeRegionSslPolicy#project}.
 
 ---
 
@@ -1512,7 +1589,7 @@ public java.lang.String getRegion();
 
 The region where the regional SSL policy resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#region ComputeRegionSslPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#region ComputeRegionSslPolicy#region}
 
 ---
 
@@ -1526,7 +1603,7 @@ public ComputeRegionSslPolicyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#timeouts ComputeRegionSslPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#timeouts ComputeRegionSslPolicy#timeouts}
 
 ---
 
@@ -1548,9 +1625,9 @@ ComputeRegionSslPolicyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#create ComputeRegionSslPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#delete ComputeRegionSslPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#update ComputeRegionSslPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#create ComputeRegionSslPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#delete ComputeRegionSslPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#update ComputeRegionSslPolicy#update}. |
 
 ---
 
@@ -1562,7 +1639,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#create ComputeRegionSslPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#create ComputeRegionSslPolicy#create}.
 
 ---
 
@@ -1574,7 +1651,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#delete ComputeRegionSslPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#delete ComputeRegionSslPolicy#delete}.
 
 ---
 
@@ -1586,7 +1663,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_ssl_policy#update ComputeRegionSslPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_region_ssl_policy#update ComputeRegionSslPolicy#update}.
 
 ---
 

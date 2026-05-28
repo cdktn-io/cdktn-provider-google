@@ -4,7 +4,7 @@
 
 ### StorageBucketAccessControl <a name="StorageBucketAccessControl" id="@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control google_storage_bucket_access_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control google_storage_bucket_access_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControl.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the StorageBucketAccessControl
 
 The id of the existing StorageBucketAccessControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketacc
 | <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig.property.bucket">Bucket</a></code> | <code>*string</code> | The name of the bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig.property.entity">Entity</a></code> | <code>*string</code> | The entity holding the permission, in one of the following forms:   user-userId   user-email   group-groupId   group-email   domain-domain   project-team-projectId   allUsers   allAuthenticatedUsers Examples:   The user liz@example.com would be user-liz@example.com.   The group example@googlegroups.com would be   group-example@googlegroups.com.   To refer to all members of the Google Apps for Business domain   example.com, the entity would be domain-example.com. |
 | <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#id StorageBucketAccessControl#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#id StorageBucketAccessControl#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig.property.role">Role</a></code> | <code>*string</code> | The access permission for the entity. Possible values: ["OWNER", "READER", "WRITER"]. |
 | <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts">StorageBucketAccessControlTimeouts</a></code> | timeouts block. |
 
@@ -1003,7 +1003,7 @@ Bucket *string
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#bucket StorageBucketAccessControl#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#bucket StorageBucketAccessControl#bucket}
 
 ---
 
@@ -1017,7 +1017,7 @@ Entity *string
 
 The entity holding the permission, in one of the following forms:   user-userId   user-email   group-groupId   group-email   domain-domain   project-team-projectId   allUsers   allAuthenticatedUsers Examples:   The user liz@example.com would be user-liz@example.com.   The group example@googlegroups.com would be   group-example@googlegroups.com.   To refer to all members of the Google Apps for Business domain   example.com, the entity would be domain-example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#entity StorageBucketAccessControl#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#entity StorageBucketAccessControl#entity}
 
 ---
 
@@ -1038,7 +1038,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#deletion_policy StorageBucketAccessControl#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#deletion_policy StorageBucketAccessControl#deletion_policy}
 
 ---
 
@@ -1050,7 +1050,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#id StorageBucketAccessControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#id StorageBucketAccessControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1067,7 +1067,7 @@ Role *string
 
 The access permission for the entity. Possible values: ["OWNER", "READER", "WRITER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#role StorageBucketAccessControl#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#role StorageBucketAccessControl#role}
 
 ---
 
@@ -1081,7 +1081,7 @@ Timeouts StorageBucketAccessControlTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#timeouts StorageBucketAccessControl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#timeouts StorageBucketAccessControl#timeouts}
 
 ---
 
@@ -1103,9 +1103,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketacc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#create StorageBucketAccessControl#create}. |
-| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#delete StorageBucketAccessControl#delete}. |
-| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#update StorageBucketAccessControl#update}. |
+| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#create StorageBucketAccessControl#create}. |
+| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#delete StorageBucketAccessControl#delete}. |
+| <code><a href="#@cdktn/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#update StorageBucketAccessControl#update}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#create StorageBucketAccessControl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#create StorageBucketAccessControl#create}.
 
 ---
 
@@ -1129,7 +1129,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#delete StorageBucketAccessControl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#delete StorageBucketAccessControl#delete}.
 
 ---
 
@@ -1141,7 +1141,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/storage_bucket_access_control#update StorageBucketAccessControl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/storage_bucket_access_control#update StorageBucketAccessControl#update}.
 
 ---
 

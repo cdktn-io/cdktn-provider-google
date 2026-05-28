@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeRegionSslPolicy <a name="DataGoogleComputeRegionSslPolicy" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy google_compute_region_ssl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy google_compute_region_ssl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeRegionSsl
 
 The id of the existing DataGoogleComputeRegionSslPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -443,6 +443,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.enabledFeatures">enabledFeatures</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.fingerprint">fingerprint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.minTlsVersion">minTlsVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.postQuantumKeyExchange">postQuantumKeyExchange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.profile">profile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -648,6 +649,16 @@ public readonly minTlsVersion: string;
 
 ---
 
+##### `postQuantumKeyExchange`<sup>Required</sup> <a name="postQuantumKeyExchange" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.postQuantumKeyExchange"></a>
+
+```typescript
+public readonly postQuantumKeyExchange: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `profile`<sup>Required</sup> <a name="profile" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.property.profile"></a>
 
 ```typescript
@@ -790,8 +801,8 @@ const dataGoogleComputeRegionSslPolicyConfig: dataGoogleComputeRegionSslPolicy.D
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.property.region">region</a></code> | <code>string</code> | The region where the regional SSL policy resides. |
 
 ---
@@ -884,7 +895,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#name DataGoogleComputeRegionSslPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#name DataGoogleComputeRegionSslPolicy#name}
 
 ---
 
@@ -896,7 +907,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -911,7 +922,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}.
 
 ---
 
@@ -925,7 +936,7 @@ public readonly region: string;
 
 The region where the regional SSL policy resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/data-sources/compute_region_ssl_policy#region DataGoogleComputeRegionSslPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/compute_region_ssl_policy#region DataGoogleComputeRegionSslPolicy#region}
 
 ---
 

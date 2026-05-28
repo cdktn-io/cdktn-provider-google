@@ -4,7 +4,7 @@
 
 ### CesAppVersion <a name="CesAppVersion" id="@cdktn/provider-google.cesAppVersion.CesAppVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version google_ces_app_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version google_ces_app_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the CesAppVersion to import.
 
 The id of the existing CesAppVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1036,8 +1036,8 @@ new CesAppVersionConfig {
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.description">Description</a></code> | <code>string</code> | The description of the app version. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The display name of the app version. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#id CesAppVersion#id}. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#project CesAppVersion#project}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#id CesAppVersion#id}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#project CesAppVersion#project}. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts">CesAppVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1122,7 +1122,7 @@ public string App { get; set; }
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#app CesAppVersion#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#app CesAppVersion#app}
 
 ---
 
@@ -1139,7 +1139,7 @@ The ID to use for the app version, which will become the final component of the 
 If not provided, a unique ID will be
 automatically assigned for the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
 
 ---
 
@@ -1153,7 +1153,7 @@ public string Location { get; set; }
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#location CesAppVersion#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#location CesAppVersion#location}
 
 ---
 
@@ -1174,7 +1174,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#deletion_policy CesAppVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#deletion_policy CesAppVersion#deletion_policy}
 
 ---
 
@@ -1188,7 +1188,7 @@ public string Description { get; set; }
 
 The description of the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#description CesAppVersion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#description CesAppVersion#description}
 
 ---
 
@@ -1202,7 +1202,7 @@ public string DisplayName { get; set; }
 
 The display name of the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
 
 ---
 
@@ -1214,7 +1214,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#id CesAppVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#id CesAppVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1229,7 +1229,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#project CesAppVersion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#project CesAppVersion#project}.
 
 ---
 
@@ -1243,7 +1243,7 @@ public CesAppVersionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
 
 ---
 
@@ -2694,8 +2694,8 @@ new CesAppVersionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#create CesAppVersion#create}. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#delete CesAppVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#create CesAppVersion#create}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#delete CesAppVersion#delete}. |
 
 ---
 
@@ -2707,7 +2707,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#create CesAppVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#create CesAppVersion#create}.
 
 ---
 
@@ -2719,7 +2719,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/ces_app_version#delete CesAppVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/ces_app_version#delete CesAppVersion#delete}.
 
 ---
 
@@ -31465,6 +31465,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference.property.customPolicy">CustomPolicy</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList">CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference.property.defaultSettings">DefaultSettings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList">CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference.property.failOpen">FailOpen</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurity">CesAppVersionSnapshotGuardrailsLlmPromptSecurity</a></code> | *No description.* |
 
 ---
@@ -31510,6 +31511,16 @@ public CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList Defau
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList">CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList</a>
+
+---
+
+##### `FailOpen`<sup>Required</sup> <a name="FailOpen" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference.property.failOpen"></a>
+
+```csharp
+public IResolvable FailOpen { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable
 
 ---
 

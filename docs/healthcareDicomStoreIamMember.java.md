@@ -4,7 +4,7 @@
 
 ### HealthcareDicomStoreIamMember <a name="HealthcareDicomStoreIamMember" id="@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer"></a>
 
@@ -38,11 +38,11 @@ HealthcareDicomStoreIamMember.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.dicomStoreId">dicomStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.dicomStoreId">dicomStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition">HealthcareDicomStoreIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#condition HealthcareDicomStoreIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#condition HealthcareDicomStoreIamMember#condition}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -623,7 +623,7 @@ The construct id used in the generated config for the HealthcareDicomStoreIamMem
 
 The id of the existing HealthcareDicomStoreIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,9 +957,9 @@ HealthcareDicomStoreIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#expression HealthcareDicomStoreIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#title HealthcareDicomStoreIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#description HealthcareDicomStoreIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#expression HealthcareDicomStoreIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#title HealthcareDicomStoreIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#description HealthcareDicomStoreIamMember#description}. |
 
 ---
 
@@ -971,7 +971,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#expression HealthcareDicomStoreIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#expression HealthcareDicomStoreIamMember#expression}.
 
 ---
 
@@ -983,7 +983,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#title HealthcareDicomStoreIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#title HealthcareDicomStoreIamMember#title}.
 
 ---
 
@@ -995,7 +995,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#description HealthcareDicomStoreIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#description HealthcareDicomStoreIamMember#description}.
 
 ---
 
@@ -1033,11 +1033,11 @@ HealthcareDicomStoreIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.dicomStoreId">dicomStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.dicomStoreId">dicomStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberCondition">HealthcareDicomStoreIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}. |
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getDicomStoreId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#dicom_store_id HealthcareDicomStoreIamMember#dicom_store_id}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#member HealthcareDicomStoreIamMember#member}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#role HealthcareDicomStoreIamMember#role}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public HealthcareDicomStoreIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#condition HealthcareDicomStoreIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#condition HealthcareDicomStoreIamMember#condition}
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/healthcare_dicom_store_iam_member#id HealthcareDicomStoreIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
