@@ -2,16 +2,16 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### MigrationCenterReportConfig <a name="MigrationCenterReportConfig" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig"></a>
+### MigrationCenterReportConfigA <a name="MigrationCenterReportConfigA" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config google_migration_center_report_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config google_migration_center_report_config}.
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer"></a>
 
 ```java
-import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfig;
+import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfigA;
 
-MigrationCenterReportConfig.Builder.create(Construct scope, java.lang.String id)
+MigrationCenterReportConfigA.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
 //  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
@@ -33,28 +33,28 @@ MigrationCenterReportConfig.Builder.create(Construct scope, java.lang.String id)
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.connection">connection</a></code> | <code>io.cdktn.cdktn.SSHProvisionerConnection\|io.cdktn.cdktn.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|io.cdktn.cdktn.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<io.cdktn.cdktn.ITerraformDependable></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.groupPreferencesetAssignments">groupPreferencesetAssignments</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>></code> | group_preferenceset_assignments block. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.reportConfigId">reportConfigId</a></code> | <code>java.lang.String</code> | User specified ID for the report config. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Free-text description. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | User-friendly display name. Maximum length is 63 characters. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfig#id}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfig#project}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.connection">connection</a></code> | <code>io.cdktn.cdktn.SSHProvisionerConnection\|io.cdktn.cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|io.cdktn.cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<io.cdktn.cdktn.ITerraformDependable></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.groupPreferencesetAssignments">groupPreferencesetAssignments</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>></code> | group_preferenceset_assignments block. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.reportConfigId">reportConfigId</a></code> | <code>java.lang.String</code> | User specified ID for the report config. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Free-text description. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | User-friendly display name. Maximum length is 63 characters. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfigA#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfigA#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.scope"></a>
 
 - *Type:* software.constructs.Construct
 
@@ -62,7 +62,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
 
@@ -72,69 +72,69 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.connection"></a>
 
 - *Type:* io.cdktn.cdktn.SSHProvisionerConnection|io.cdktn.cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.count"></a>
 
 - *Type:* java.lang.Number|io.cdktn.cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.dependsOn"></a>
 
 - *Type:* java.util.List<io.cdktn.cdktn.ITerraformDependable>
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.forEach"></a>
 
 - *Type:* io.cdktn.cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.lifecycle"></a>
 
 - *Type:* io.cdktn.cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.provider"></a>
 
 - *Type:* io.cdktn.cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.provisioners"></a>
 
 - *Type:* java.util.List<io.cdktn.cdktn.FileProvisioner|io.cdktn.cdktn.LocalExecProvisioner|io.cdktn.cdktn.RemoteExecProvisioner>
 
 ---
 
-##### `groupPreferencesetAssignments`<sup>Required</sup> <a name="groupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.groupPreferencesetAssignments"></a>
+##### `groupPreferencesetAssignments`<sup>Required</sup> <a name="groupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.groupPreferencesetAssignments"></a>
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>>
 
 group_preferenceset_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#group_preferenceset_assignments MigrationCenterReportConfig#group_preferenceset_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#group_preferenceset_assignments MigrationCenterReportConfigA#group_preferenceset_assignments}
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.location"></a>
 
 - *Type:* java.lang.String
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#location MigrationCenterReportConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#location MigrationCenterReportConfigA#location}
 
 ---
 
-##### `reportConfigId`<sup>Required</sup> <a name="reportConfigId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.reportConfigId"></a>
+##### `reportConfigId`<sup>Required</sup> <a name="reportConfigId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.reportConfigId"></a>
 
 - *Type:* java.lang.String
 
@@ -146,11 +146,11 @@ conform with RFC-1034, is restricted to lower-cased letters, and has a
 maximum length of 63 characters. The ID must match the regular expression:
 [a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#report_config_id MigrationCenterReportConfig#report_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#report_config_id MigrationCenterReportConfigA#report_config_id}
 
 ---
 
-##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.deletionPolicy"></a>
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.deletionPolicy"></a>
 
 - *Type:* java.lang.String
 
@@ -163,56 +163,56 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#deletion_policy MigrationCenterReportConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#deletion_policy MigrationCenterReportConfigA#deletion_policy}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.description"></a>
 
 - *Type:* java.lang.String
 
 Free-text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#description MigrationCenterReportConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#description MigrationCenterReportConfigA#description}
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.displayName"></a>
+##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.displayName"></a>
 
 - *Type:* java.lang.String
 
 User-friendly display name. Maximum length is 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#display_name MigrationCenterReportConfig#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#display_name MigrationCenterReportConfigA#display_name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.project"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfigA#project}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer.parameter.timeouts"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#timeouts MigrationCenterReportConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#timeouts MigrationCenterReportConfigA#timeouts}
 
 ---
 
@@ -220,42 +220,42 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.with">with</a></code> | Applies one or more mixins to this construct. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.putGroupPreferencesetAssignments">putGroupPreferencesetAssignments</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetDisplayName">resetDisplayName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetProject">resetProject</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.with">with</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.putGroupPreferencesetAssignments">putGroupPreferencesetAssignments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetDisplayName">resetDisplayName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toString"></a>
 
 ```java
 public java.lang.String toString()
@@ -263,7 +263,7 @@ public java.lang.String toString()
 
 Returns a string representation of this construct.
 
-##### `with` <a name="with" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.with"></a>
+##### `with` <a name="with" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.with"></a>
 
 ```java
 public IConstruct with(IMixin... mixins)
@@ -276,7 +276,7 @@ start of the call, so constructs added by a mixin will not be visited.
 Use multiple `with()` calls if subsequent mixins should apply to added
 constructs.
 
-###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.with.parameter.mixins"></a>
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.with.parameter.mixins"></a>
 
 - *Type:* software.constructs.IMixin...
 
@@ -284,25 +284,25 @@ The mixins to apply.
 
 ---
 
-##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.addOverride"></a>
 
 ```java
 public void addOverride(java.lang.String path, java.lang.Object value)
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.addOverride.parameter.path"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.addOverride.parameter.value"></a>
 
 - *Type:* java.lang.Object
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.overrideLogicalId"></a>
 
 ```java
 public void overrideLogicalId(java.lang.String newLogicalId)
@@ -310,7 +310,7 @@ public void overrideLogicalId(java.lang.String newLogicalId)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* java.lang.String
 
@@ -318,7 +318,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetOverrideLogicalId"></a>
 
 ```java
 public void resetOverrideLogicalId()
@@ -326,19 +326,19 @@ public void resetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toHclTerraform"></a>
 
 ```java
 public java.lang.Object toHclTerraform()
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toMetadata"></a>
 
 ```java
 public java.lang.Object toMetadata()
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.toTerraform"></a>
 
 ```java
 public java.lang.Object toTerraform()
@@ -346,7 +346,7 @@ public java.lang.Object toTerraform()
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.addMoveTarget"></a>
 
 ```java
 public void addMoveTarget(java.lang.String moveTarget)
@@ -354,7 +354,7 @@ public void addMoveTarget(java.lang.String moveTarget)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* java.lang.String
 
@@ -362,152 +362,152 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getAnyMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getBooleanAttribute"></a>
 
 ```java
 public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getBooleanMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberAttribute"></a>
 
 ```java
 public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getStringAttribute"></a>
 
 ```java
 public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getStringMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.hasResourceMove"></a>
 
 ```java
 public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.importFrom"></a>
 
 ```java
 public void importFrom(java.lang.String id)
 public void importFrom(java.lang.String id, TerraformProvider provider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.importFrom.parameter.id"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.importFrom.parameter.provider"></a>
 
 - *Type:* io.cdktn.cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.interpolationForAttribute"></a>
 
 ```java
 public IResolvable interpolationForAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveFromId"></a>
 
 ```java
 public void moveFromId(java.lang.String id)
@@ -517,7 +517,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveFromId.parameter.id"></a>
 
 - *Type:* java.lang.String
 
@@ -525,7 +525,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveTo"></a>
 
 ```java
 public void moveTo(java.lang.String moveTarget)
@@ -534,7 +534,7 @@ public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Numbe
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveTo.parameter.moveTarget"></a>
 
 - *Type:* java.lang.String
 
@@ -542,7 +542,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveTo.parameter.index"></a>
 
 - *Type:* java.lang.String|java.lang.Number
 
@@ -550,7 +550,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveToId"></a>
 
 ```java
 public void moveToId(java.lang.String id)
@@ -558,7 +558,7 @@ public void moveToId(java.lang.String id)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.moveToId.parameter.id"></a>
 
 - *Type:* java.lang.String
 
@@ -566,61 +566,61 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putGroupPreferencesetAssignments` <a name="putGroupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.putGroupPreferencesetAssignments"></a>
+##### `putGroupPreferencesetAssignments` <a name="putGroupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.putGroupPreferencesetAssignments"></a>
 
 ```java
 public void putGroupPreferencesetAssignments(IResolvable|java.util.List<MigrationCenterReportConfigGroupPreferencesetAssignments> value)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.putGroupPreferencesetAssignments.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.putGroupPreferencesetAssignments.parameter.value"></a>
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>>
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.putTimeouts"></a>
 
 ```java
 public void putTimeouts(MigrationCenterReportConfigTimeouts value)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.putTimeouts.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a>
 
 ---
 
-##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetDeletionPolicy"></a>
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetDeletionPolicy"></a>
 
 ```java
 public void resetDeletionPolicy()
 ```
 
-##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetDescription"></a>
 
 ```java
 public void resetDescription()
 ```
 
-##### `resetDisplayName` <a name="resetDisplayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetDisplayName"></a>
+##### `resetDisplayName` <a name="resetDisplayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetDisplayName"></a>
 
 ```java
 public void resetDisplayName()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetId"></a>
 
 ```java
 public void resetId()
 ```
 
-##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetProject"></a>
+##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetProject"></a>
 
 ```java
 public void resetProject()
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.resetTimeouts"></a>
 
 ```java
 public void resetTimeouts()
@@ -630,19 +630,19 @@ public void resetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a MigrationCenterReportConfig resource upon running "cdktn plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a MigrationCenterReportConfigA resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isConstruct"></a>
 
 ```java
-import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfig;
+import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfigA;
 
-MigrationCenterReportConfig.isConstruct(java.lang.Object x)
+MigrationCenterReportConfigA.isConstruct(java.lang.Object x)
 ```
 
 Checks if `x` is a construct.
@@ -661,7 +661,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isConstruct.parameter.x"></a>
 
 - *Type:* java.lang.Object
 
@@ -669,45 +669,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformElement"></a>
 
 ```java
-import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfig;
+import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfigA;
 
-MigrationCenterReportConfig.isTerraformElement(java.lang.Object x)
+MigrationCenterReportConfigA.isTerraformElement(java.lang.Object x)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformElement.parameter.x"></a>
 
 - *Type:* java.lang.Object
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformResource"></a>
 
 ```java
-import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfig;
+import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfigA;
 
-MigrationCenterReportConfig.isTerraformResource(java.lang.Object x)
+MigrationCenterReportConfigA.isTerraformResource(java.lang.Object x)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformResource.parameter.x"></a>
 
 - *Type:* java.lang.Object
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.generateConfigForImport"></a>
 
 ```java
-import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfig;
+import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfigA;
 
-MigrationCenterReportConfig.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),MigrationCenterReportConfig.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+MigrationCenterReportConfigA.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),MigrationCenterReportConfigA.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
 ```
 
-Generates CDKTN code for importing a MigrationCenterReportConfig resource upon running "cdktn plan <stack-name>".
+Generates CDKTN code for importing a MigrationCenterReportConfigA resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* software.constructs.Construct
 
@@ -715,29 +715,29 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* java.lang.String
 
-The construct id used in the generated config for the MigrationCenterReportConfig to import.
+The construct id used in the generated config for the MigrationCenterReportConfigA to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* java.lang.String
 
-The id of the existing MigrationCenterReportConfig that should be imported.
+The id of the existing MigrationCenterReportConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* io.cdktn.cdktn.TerraformProvider
 
-? Optional instance of the provider where the MigrationCenterReportConfig to import is found.
+? Optional instance of the provider where the MigrationCenterReportConfigA to import is found.
 
 ---
 
@@ -745,45 +745,45 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.node">node</a></code> | <code>software.constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.cdktfStack">cdktfStack</a></code> | <code>io.cdktn.cdktn.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>io.cdktn.cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.connection">connection</a></code> | <code>io.cdktn.cdktn.SSHProvisionerConnection\|io.cdktn.cdktn.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.count">count</a></code> | <code>java.lang.Number\|io.cdktn.cdktn.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.groupPreferencesetAssignments">groupPreferencesetAssignments</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignmentsList">MigrationCenterReportConfigGroupPreferencesetAssignmentsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeoutsOutputReference">MigrationCenterReportConfigTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.groupPreferencesetAssignmentsInput">groupPreferencesetAssignmentsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.reportConfigIdInput">reportConfigIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.reportConfigId">reportConfigId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.node">node</a></code> | <code>software.constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.cdktfStack">cdktfStack</a></code> | <code>io.cdktn.cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>io.cdktn.cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.connection">connection</a></code> | <code>io.cdktn.cdktn.SSHProvisionerConnection\|io.cdktn.cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.count">count</a></code> | <code>java.lang.Number\|io.cdktn.cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.groupPreferencesetAssignments">groupPreferencesetAssignments</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignmentsList">MigrationCenterReportConfigGroupPreferencesetAssignmentsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeoutsOutputReference">MigrationCenterReportConfigTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.groupPreferencesetAssignmentsInput">groupPreferencesetAssignmentsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.reportConfigIdInput">reportConfigIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.reportConfigId">reportConfigId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.node"></a>
 
 ```java
 public Node getNode();
@@ -795,7 +795,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.cdktfStack"></a>
 
 ```java
 public TerraformStack getCdktfStack();
@@ -805,7 +805,7 @@ public TerraformStack getCdktfStack();
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.fqn"></a>
 
 ```java
 public java.lang.String getFqn();
@@ -815,7 +815,7 @@ public java.lang.String getFqn();
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.friendlyUniqueId"></a>
 
 ```java
 public java.lang.String getFriendlyUniqueId();
@@ -825,7 +825,7 @@ public java.lang.String getFriendlyUniqueId();
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.terraformMetaArguments"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Object> getTerraformMetaArguments();
@@ -835,7 +835,7 @@ public java.util.Map<java.lang.String, java.lang.Object> getTerraformMetaArgumen
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.terraformResourceType"></a>
 
 ```java
 public java.lang.String getTerraformResourceType();
@@ -845,7 +845,7 @@ public java.lang.String getTerraformResourceType();
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.terraformGeneratorMetadata"></a>
 
 ```java
 public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
@@ -855,7 +855,7 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.connection"></a>
 
 ```java
 public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
@@ -865,7 +865,7 @@ public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.count"></a>
 
 ```java
 public java.lang.Number|TerraformCount getCount();
@@ -875,7 +875,7 @@ public java.lang.Number|TerraformCount getCount();
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.dependsOn"></a>
 
 ```java
 public java.util.List<java.lang.String> getDependsOn();
@@ -885,7 +885,7 @@ public java.util.List<java.lang.String> getDependsOn();
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.forEach"></a>
 
 ```java
 public ITerraformIterator getForEach();
@@ -895,7 +895,7 @@ public ITerraformIterator getForEach();
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.lifecycle"></a>
 
 ```java
 public TerraformResourceLifecycle getLifecycle();
@@ -905,7 +905,7 @@ public TerraformResourceLifecycle getLifecycle();
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.provider"></a>
 
 ```java
 public TerraformProvider getProvider();
@@ -915,7 +915,7 @@ public TerraformProvider getProvider();
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.provisioners"></a>
 
 ```java
 public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
@@ -925,7 +925,7 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.createTime"></a>
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.createTime"></a>
 
 ```java
 public java.lang.String getCreateTime();
@@ -935,7 +935,7 @@ public java.lang.String getCreateTime();
 
 ---
 
-##### `groupPreferencesetAssignments`<sup>Required</sup> <a name="groupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.groupPreferencesetAssignments"></a>
+##### `groupPreferencesetAssignments`<sup>Required</sup> <a name="groupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.groupPreferencesetAssignments"></a>
 
 ```java
 public MigrationCenterReportConfigGroupPreferencesetAssignmentsList getGroupPreferencesetAssignments();
@@ -945,7 +945,7 @@ public MigrationCenterReportConfigGroupPreferencesetAssignmentsList getGroupPref
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.name"></a>
 
 ```java
 public java.lang.String getName();
@@ -955,7 +955,7 @@ public java.lang.String getName();
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.timeouts"></a>
 
 ```java
 public MigrationCenterReportConfigTimeoutsOutputReference getTimeouts();
@@ -965,7 +965,7 @@ public MigrationCenterReportConfigTimeoutsOutputReference getTimeouts();
 
 ---
 
-##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.updateTime"></a>
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.updateTime"></a>
 
 ```java
 public java.lang.String getUpdateTime();
@@ -975,7 +975,7 @@ public java.lang.String getUpdateTime();
 
 ---
 
-##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.deletionPolicyInput"></a>
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.deletionPolicyInput"></a>
 
 ```java
 public java.lang.String getDeletionPolicyInput();
@@ -985,7 +985,7 @@ public java.lang.String getDeletionPolicyInput();
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.descriptionInput"></a>
 
 ```java
 public java.lang.String getDescriptionInput();
@@ -995,7 +995,7 @@ public java.lang.String getDescriptionInput();
 
 ---
 
-##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.displayNameInput"></a>
+##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.displayNameInput"></a>
 
 ```java
 public java.lang.String getDisplayNameInput();
@@ -1005,7 +1005,7 @@ public java.lang.String getDisplayNameInput();
 
 ---
 
-##### `groupPreferencesetAssignmentsInput`<sup>Optional</sup> <a name="groupPreferencesetAssignmentsInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.groupPreferencesetAssignmentsInput"></a>
+##### `groupPreferencesetAssignmentsInput`<sup>Optional</sup> <a name="groupPreferencesetAssignmentsInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.groupPreferencesetAssignmentsInput"></a>
 
 ```java
 public IResolvable|java.util.List<MigrationCenterReportConfigGroupPreferencesetAssignments> getGroupPreferencesetAssignmentsInput();
@@ -1015,7 +1015,7 @@ public IResolvable|java.util.List<MigrationCenterReportConfigGroupPreferencesetA
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.idInput"></a>
 
 ```java
 public java.lang.String getIdInput();
@@ -1025,7 +1025,7 @@ public java.lang.String getIdInput();
 
 ---
 
-##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.locationInput"></a>
+##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.locationInput"></a>
 
 ```java
 public java.lang.String getLocationInput();
@@ -1035,7 +1035,7 @@ public java.lang.String getLocationInput();
 
 ---
 
-##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.projectInput"></a>
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.projectInput"></a>
 
 ```java
 public java.lang.String getProjectInput();
@@ -1045,7 +1045,7 @@ public java.lang.String getProjectInput();
 
 ---
 
-##### `reportConfigIdInput`<sup>Optional</sup> <a name="reportConfigIdInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.reportConfigIdInput"></a>
+##### `reportConfigIdInput`<sup>Optional</sup> <a name="reportConfigIdInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.reportConfigIdInput"></a>
 
 ```java
 public java.lang.String getReportConfigIdInput();
@@ -1055,7 +1055,7 @@ public java.lang.String getReportConfigIdInput();
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.timeoutsInput"></a>
 
 ```java
 public IResolvable|MigrationCenterReportConfigTimeouts getTimeoutsInput();
@@ -1065,7 +1065,7 @@ public IResolvable|MigrationCenterReportConfigTimeouts getTimeoutsInput();
 
 ---
 
-##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.deletionPolicy"></a>
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.deletionPolicy"></a>
 
 ```java
 public java.lang.String getDeletionPolicy();
@@ -1075,7 +1075,7 @@ public java.lang.String getDeletionPolicy();
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.description"></a>
 
 ```java
 public java.lang.String getDescription();
@@ -1085,7 +1085,7 @@ public java.lang.String getDescription();
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.displayName"></a>
 
 ```java
 public java.lang.String getDisplayName();
@@ -1095,7 +1095,7 @@ public java.lang.String getDisplayName();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.id"></a>
 
 ```java
 public java.lang.String getId();
@@ -1105,7 +1105,7 @@ public java.lang.String getId();
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.location"></a>
 
 ```java
 public java.lang.String getLocation();
@@ -1115,7 +1115,7 @@ public java.lang.String getLocation();
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.project"></a>
 
 ```java
 public java.lang.String getProject();
@@ -1125,7 +1125,7 @@ public java.lang.String getProject();
 
 ---
 
-##### `reportConfigId`<sup>Required</sup> <a name="reportConfigId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.reportConfigId"></a>
+##### `reportConfigId`<sup>Required</sup> <a name="reportConfigId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.reportConfigId"></a>
 
 ```java
 public java.lang.String getReportConfigId();
@@ -1139,11 +1139,11 @@ public java.lang.String getReportConfigId();
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.tfResourceType">tfResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.tfResourceType">tfResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfig.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.property.tfResourceType"></a>
 
 ```java
 public java.lang.String getTfResourceType();
@@ -1155,14 +1155,14 @@ public java.lang.String getTfResourceType();
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### MigrationCenterReportConfigConfig <a name="MigrationCenterReportConfigConfig" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig"></a>
+### MigrationCenterReportConfigAConfig <a name="MigrationCenterReportConfigAConfig" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.Initializer"></a>
 
 ```java
-import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfigConfig;
+import io.cdktn.providers.google.migration_center_report_config.MigrationCenterReportConfigAConfig;
 
-MigrationCenterReportConfigConfig.builder()
+MigrationCenterReportConfigAConfig.builder()
 //  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
 //  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
@@ -1186,26 +1186,26 @@ MigrationCenterReportConfigConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.connection">connection</a></code> | <code>io.cdktn.cdktn.SSHProvisionerConnection\|io.cdktn.cdktn.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.count">count</a></code> | <code>java.lang.Number\|io.cdktn.cdktn.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<io.cdktn.cdktn.ITerraformDependable></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.groupPreferencesetAssignments">groupPreferencesetAssignments</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>></code> | group_preferenceset_assignments block. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.reportConfigId">reportConfigId</a></code> | <code>java.lang.String</code> | User specified ID for the report config. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.description">description</a></code> | <code>java.lang.String</code> | Free-text description. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | User-friendly display name. Maximum length is 63 characters. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfig#id}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfig#project}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.connection">connection</a></code> | <code>io.cdktn.cdktn.SSHProvisionerConnection\|io.cdktn.cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.count">count</a></code> | <code>java.lang.Number\|io.cdktn.cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<io.cdktn.cdktn.ITerraformDependable></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.groupPreferencesetAssignments">groupPreferencesetAssignments</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments">MigrationCenterReportConfigGroupPreferencesetAssignments</a>></code> | group_preferenceset_assignments block. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.reportConfigId">reportConfigId</a></code> | <code>java.lang.String</code> | User specified ID for the report config. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.description">description</a></code> | <code>java.lang.String</code> | Free-text description. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | User-friendly display name. Maximum length is 63 characters. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfigA#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfigA#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts">MigrationCenterReportConfigTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.connection"></a>
 
 ```java
 public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
@@ -1215,7 +1215,7 @@ public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.count"></a>
 
 ```java
 public java.lang.Number|TerraformCount getCount();
@@ -1225,7 +1225,7 @@ public java.lang.Number|TerraformCount getCount();
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.dependsOn"></a>
 
 ```java
 public java.util.List<ITerraformDependable> getDependsOn();
@@ -1235,7 +1235,7 @@ public java.util.List<ITerraformDependable> getDependsOn();
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.forEach"></a>
 
 ```java
 public ITerraformIterator getForEach();
@@ -1245,7 +1245,7 @@ public ITerraformIterator getForEach();
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.lifecycle"></a>
 
 ```java
 public TerraformResourceLifecycle getLifecycle();
@@ -1255,7 +1255,7 @@ public TerraformResourceLifecycle getLifecycle();
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.provider"></a>
 
 ```java
 public TerraformProvider getProvider();
@@ -1265,7 +1265,7 @@ public TerraformProvider getProvider();
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.provisioners"></a>
 
 ```java
 public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
@@ -1275,7 +1275,7 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `groupPreferencesetAssignments`<sup>Required</sup> <a name="groupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.groupPreferencesetAssignments"></a>
+##### `groupPreferencesetAssignments`<sup>Required</sup> <a name="groupPreferencesetAssignments" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.groupPreferencesetAssignments"></a>
 
 ```java
 public IResolvable|java.util.List<MigrationCenterReportConfigGroupPreferencesetAssignments> getGroupPreferencesetAssignments();
@@ -1285,11 +1285,11 @@ public IResolvable|java.util.List<MigrationCenterReportConfigGroupPreferencesetA
 
 group_preferenceset_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#group_preferenceset_assignments MigrationCenterReportConfig#group_preferenceset_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#group_preferenceset_assignments MigrationCenterReportConfigA#group_preferenceset_assignments}
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.location"></a>
 
 ```java
 public java.lang.String getLocation();
@@ -1299,11 +1299,11 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#location MigrationCenterReportConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#location MigrationCenterReportConfigA#location}
 
 ---
 
-##### `reportConfigId`<sup>Required</sup> <a name="reportConfigId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.reportConfigId"></a>
+##### `reportConfigId`<sup>Required</sup> <a name="reportConfigId" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.reportConfigId"></a>
 
 ```java
 public java.lang.String getReportConfigId();
@@ -1319,11 +1319,11 @@ conform with RFC-1034, is restricted to lower-cased letters, and has a
 maximum length of 63 characters. The ID must match the regular expression:
 [a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#report_config_id MigrationCenterReportConfig#report_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#report_config_id MigrationCenterReportConfigA#report_config_id}
 
 ---
 
-##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.deletionPolicy"></a>
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.deletionPolicy"></a>
 
 ```java
 public java.lang.String getDeletionPolicy();
@@ -1340,11 +1340,11 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#deletion_policy MigrationCenterReportConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#deletion_policy MigrationCenterReportConfigA#deletion_policy}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.description"></a>
 
 ```java
 public java.lang.String getDescription();
@@ -1354,11 +1354,11 @@ public java.lang.String getDescription();
 
 Free-text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#description MigrationCenterReportConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#description MigrationCenterReportConfigA#description}
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.displayName"></a>
+##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.displayName"></a>
 
 ```java
 public java.lang.String getDisplayName();
@@ -1368,11 +1368,11 @@ public java.lang.String getDisplayName();
 
 User-friendly display name. Maximum length is 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#display_name MigrationCenterReportConfig#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#display_name MigrationCenterReportConfigA#display_name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.id"></a>
 
 ```java
 public java.lang.String getId();
@@ -1380,14 +1380,14 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.project"></a>
 
 ```java
 public java.lang.String getProject();
@@ -1395,11 +1395,11 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfigA#project}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.property.timeouts"></a>
 
 ```java
 public MigrationCenterReportConfigTimeouts getTimeouts();
@@ -1409,7 +1409,7 @@ public MigrationCenterReportConfigTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#timeouts MigrationCenterReportConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#timeouts MigrationCenterReportConfigA#timeouts}
 
 ---
 
@@ -1445,7 +1445,7 @@ public java.lang.String getGroup();
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#group MigrationCenterReportConfig#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#group MigrationCenterReportConfigA#group}
 
 ---
 
@@ -1459,7 +1459,7 @@ public java.lang.String getPreferenceSet();
 
 Name of the Preference Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#preference_set MigrationCenterReportConfig#preference_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#preference_set MigrationCenterReportConfigA#preference_set}
 
 ---
 
@@ -1480,8 +1480,8 @@ MigrationCenterReportConfigTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#create MigrationCenterReportConfig#create}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#delete MigrationCenterReportConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#create MigrationCenterReportConfigA#create}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#delete MigrationCenterReportConfigA#delete}. |
 
 ---
 
@@ -1493,7 +1493,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#create MigrationCenterReportConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#create MigrationCenterReportConfigA#create}.
 
 ---
 
@@ -1505,7 +1505,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/migration_center_report_config#delete MigrationCenterReportConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report_config#delete MigrationCenterReportConfigA#delete}.
 
 ---
 

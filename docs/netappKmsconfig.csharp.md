@@ -4,7 +4,7 @@
 
 ### NetappKmsconfig <a name="NetappKmsconfig" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig google_netapp_kmsconfig}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfig.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the NetappKmsconfig to import.
 
 The id of the existing NetappKmsconfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1024,9 +1024,9 @@ new NetappKmsconfigConfig {
 | <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.name">Name</a></code> | <code>string</code> | Name of the CMEK policy. |
 | <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.description">Description</a></code> | <code>string</code> | Description for the CMEK policy. |
-| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#id NetappKmsconfig#id}. |
+| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#id NetappKmsconfig#id}. |
 | <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#project NetappKmsconfig#project}. |
+| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#project NetappKmsconfig#project}. |
 | <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts">NetappKmsconfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1111,7 +1111,7 @@ public string CryptoKeyName { get; set; }
 
 Resource name of the KMS key to use. Only regional keys are supported. Format: 'projects/{{project}}/locations/{{location}}/keyRings/{{key_ring}}/cryptoKeys/{{key}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#crypto_key_name NetappKmsconfig#crypto_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#crypto_key_name NetappKmsconfig#crypto_key_name}
 
 ---
 
@@ -1125,7 +1125,7 @@ public string Location { get; set; }
 
 Name of the policy location. CMEK policies apply to the whole region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#location NetappKmsconfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#location NetappKmsconfig#location}
 
 ---
 
@@ -1139,7 +1139,7 @@ public string Name { get; set; }
 
 Name of the CMEK policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#name NetappKmsconfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#name NetappKmsconfig#name}
 
 ---
 
@@ -1160,7 +1160,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#deletion_policy NetappKmsconfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#deletion_policy NetappKmsconfig#deletion_policy}
 
 ---
 
@@ -1174,7 +1174,7 @@ public string Description { get; set; }
 
 Description for the CMEK policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#description NetappKmsconfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#description NetappKmsconfig#description}
 
 ---
 
@@ -1186,7 +1186,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#id NetappKmsconfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#id NetappKmsconfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1206,7 +1206,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#labels NetappKmsconfig#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#labels NetappKmsconfig#labels}
 
 ---
 
@@ -1218,7 +1218,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#project NetappKmsconfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#project NetappKmsconfig#project}.
 
 ---
 
@@ -1232,7 +1232,7 @@ public NetappKmsconfigTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#timeouts NetappKmsconfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#timeouts NetappKmsconfig#timeouts}
 
 ---
 
@@ -1254,9 +1254,9 @@ new NetappKmsconfigTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#create NetappKmsconfig#create}. |
-| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#delete NetappKmsconfig#delete}. |
-| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#update NetappKmsconfig#update}. |
+| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#create NetappKmsconfig#create}. |
+| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#delete NetappKmsconfig#delete}. |
+| <code><a href="#@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#update NetappKmsconfig#update}. |
 
 ---
 
@@ -1268,7 +1268,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#create NetappKmsconfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#create NetappKmsconfig#create}.
 
 ---
 
@@ -1280,7 +1280,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#delete NetappKmsconfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#delete NetappKmsconfig#delete}.
 
 ---
 
@@ -1292,7 +1292,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_kmsconfig#update NetappKmsconfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_kmsconfig#update NetappKmsconfig#update}.
 
 ---
 

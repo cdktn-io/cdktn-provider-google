@@ -4,7 +4,7 @@
 
 ### SecretManagerSecretIamMember <a name="SecretManagerSecretIamMember" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member google_secret_manager_secret_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member google_secret_manager_secret_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer"></a>
 
@@ -39,12 +39,12 @@ SecretManagerSecretIamMember.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.secretId">secretId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.secretId">secretId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition">SecretManagerSecretIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#condition SecretManagerSecretIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#condition SecretManagerSecretIamMember#condition}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}.
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the SecretManagerSecretIamMemb
 
 The id of the existing SecretManagerSecretIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,9 +996,9 @@ SecretManagerSecretIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#expression SecretManagerSecretIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#title SecretManagerSecretIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#description SecretManagerSecretIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#expression SecretManagerSecretIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#title SecretManagerSecretIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#description SecretManagerSecretIamMember#description}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#expression SecretManagerSecretIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#expression SecretManagerSecretIamMember#expression}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#title SecretManagerSecretIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#title SecretManagerSecretIamMember#title}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#description SecretManagerSecretIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#description SecretManagerSecretIamMember#description}.
 
 ---
 
@@ -1073,12 +1073,12 @@ SecretManagerSecretIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.secretId">secretId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.secretId">secretId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition">SecretManagerSecretIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}. |
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#member SecretManagerSecretIamMember#member}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#role SecretManagerSecretIamMember#role}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.String getSecretId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#secret_id SecretManagerSecretIamMember#secret_id}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public SecretManagerSecretIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#condition SecretManagerSecretIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#condition SecretManagerSecretIamMember#condition}
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#id SecretManagerSecretIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1225,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secret_manager_secret_iam_member#project SecretManagerSecretIamMember#project}.
 
 ---
 

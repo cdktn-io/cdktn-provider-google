@@ -4,7 +4,7 @@
 
 ### IapTunnelDestGroupIamMember <a name="IapTunnelDestGroupIamMember" id="@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMember.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the IapTunnelDestGroupIamMembe
 
 The id of the existing IapTunnelDestGroupIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#expression IapTunnelDestGroupIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#title IapTunnelDestGroupIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#description IapTunnelDestGroupIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#expression IapTunnelDestGroupIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#title IapTunnelDestGroupIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#description IapTunnelDestGroupIamMember#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#expression IapTunnelDestGroupIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#expression IapTunnelDestGroupIamMember#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#title IapTunnelDestGroupIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#title IapTunnelDestGroupIamMember#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#description IapTunnelDestGroupIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#description IapTunnelDestGroupIamMember#description}.
 
 ---
 
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgro
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.destGroup">DestGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#dest_group IapTunnelDestGroupIamMember#dest_group}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#member IapTunnelDestGroupIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#role IapTunnelDestGroupIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.destGroup">DestGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#dest_group IapTunnelDestGroupIamMember#dest_group}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#member IapTunnelDestGroupIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#role IapTunnelDestGroupIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberCondition">IapTunnelDestGroupIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#id IapTunnelDestGroupIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#project IapTunnelDestGroupIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#region IapTunnelDestGroupIamMember#region}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#id IapTunnelDestGroupIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#project IapTunnelDestGroupIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamMember.IapTunnelDestGroupIamMemberConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#region IapTunnelDestGroupIamMember#region}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ DestGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#dest_group IapTunnelDestGroupIamMember#dest_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#dest_group IapTunnelDestGroupIamMember#dest_group}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#member IapTunnelDestGroupIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#member IapTunnelDestGroupIamMember#member}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#role IapTunnelDestGroupIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#role IapTunnelDestGroupIamMember#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition IapTunnelDestGroupIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#condition IapTunnelDestGroupIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#condition IapTunnelDestGroupIamMember#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#id IapTunnelDestGroupIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#id IapTunnelDestGroupIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#project IapTunnelDestGroupIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#project IapTunnelDestGroupIamMember#project}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/iap_tunnel_dest_group_iam_member#region IapTunnelDestGroupIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_tunnel_dest_group_iam_member#region IapTunnelDestGroupIamMember#region}.
 
 ---
 

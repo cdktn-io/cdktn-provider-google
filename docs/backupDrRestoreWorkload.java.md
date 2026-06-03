@@ -4,7 +4,7 @@
 
 ### BackupDrRestoreWorkload <a name="BackupDrRestoreWorkload" id="@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload google_backup_dr_restore_workload}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload google_backup_dr_restore_workload}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer"></a>
 
@@ -60,7 +60,7 @@ BackupDrRestoreWorkload.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.diskRestoreProperties">diskRestoreProperties</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestoreProperties">BackupDrRestoreWorkloadDiskRestoreProperties</a></code> | disk_restore_properties block. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.diskTargetEnvironment">diskTargetEnvironment</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskTargetEnvironment">BackupDrRestoreWorkloadDiskTargetEnvironment</a></code> | disk_target_environment block. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The resource name of the backup instance. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.regionDiskTargetEnvironment">regionDiskTargetEnvironment</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadRegionDiskTargetEnvironment">BackupDrRestoreWorkloadRegionDiskTargetEnvironment</a></code> | region_disk_target_environment block. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkload.Initializer.parameter.requestId">requestId</a></code> | <code>java.lang.String</code> | Optional. |
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 Required. The ID of the backup to restore from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#backup_id BackupDrRestoreWorkload#backup_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#backup_id BackupDrRestoreWorkload#backup_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. The ID of the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#backup_vault_id BackupDrRestoreWorkload#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#backup_vault_id BackupDrRestoreWorkload#backup_vault_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. The ID of the data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#data_source_id BackupDrRestoreWorkload#data_source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#data_source_id BackupDrRestoreWorkload#data_source_id}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. The location for the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#location BackupDrRestoreWorkload#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#location BackupDrRestoreWorkload#location}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. A field mask used to clear server-side default values during restore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#clear_overrides_field_mask BackupDrRestoreWorkload#clear_overrides_field_mask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#clear_overrides_field_mask BackupDrRestoreWorkload#clear_overrides_field_mask}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 compute_instance_restore_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#compute_instance_restore_properties BackupDrRestoreWorkload#compute_instance_restore_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#compute_instance_restore_properties BackupDrRestoreWorkload#compute_instance_restore_properties}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 compute_instance_target_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#compute_instance_target_environment BackupDrRestoreWorkload#compute_instance_target_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#compute_instance_target_environment BackupDrRestoreWorkload#compute_instance_target_environment}
 
 ---
 
@@ -207,7 +207,7 @@ Optional.
 If true (default), running terraform destroy will delete the live resource in GCP.
 If false, only the restore record is removed from the state, leaving the resource active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#delete_restored_instance BackupDrRestoreWorkload#delete_restored_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#delete_restored_instance BackupDrRestoreWorkload#delete_restored_instance}
 
 ---
 
@@ -224,7 +224,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#deletion_policy BackupDrRestoreWorkload#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#deletion_policy BackupDrRestoreWorkload#deletion_policy}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 disk_restore_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_restore_properties BackupDrRestoreWorkload#disk_restore_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_restore_properties BackupDrRestoreWorkload#disk_restore_properties}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 disk_target_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_target_environment BackupDrRestoreWorkload#disk_target_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_target_environment BackupDrRestoreWorkload#disk_target_environment}
 
 ---
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -265,7 +265,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The resource name of the backup instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 region_disk_target_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#region_disk_target_environment BackupDrRestoreWorkload#region_disk_target_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#region_disk_target_environment BackupDrRestoreWorkload#region_disk_target_environment}
 
 ---
 
@@ -289,7 +289,7 @@ An optional request ID to identify requests. Specify a unique request ID
 so that if you must retry your request, the server will know to ignore
 the request if it has already been completed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#request_id BackupDrRestoreWorkload#request_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#request_id BackupDrRestoreWorkload#request_id}
 
 ---
 
@@ -299,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#timeouts BackupDrRestoreWorkload#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#timeouts BackupDrRestoreWorkload#timeouts}
 
 ---
 
@@ -910,7 +910,7 @@ The construct id used in the generated config for the BackupDrRestoreWorkload to
 
 The id of the existing BackupDrRestoreWorkload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1548,7 +1548,7 @@ public java.lang.String getName();
 
 Required. Name of the compute instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
 
 ---
 
@@ -1562,7 +1562,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFea
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#advanced_machine_features BackupDrRestoreWorkload#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#advanced_machine_features BackupDrRestoreWorkload#advanced_machine_features}
 
 ---
 
@@ -1576,7 +1576,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity
 
 allocation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#allocation_affinity BackupDrRestoreWorkload#allocation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#allocation_affinity BackupDrRestoreWorkload#allocation_affinity}
 
 ---
 
@@ -1590,7 +1590,7 @@ public java.lang.Boolean|IResolvable getCanIpForward();
 
 Optional. Allows this instance to send and receive packets with non-matching destination or source IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#can_ip_forward BackupDrRestoreWorkload#can_ip_forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#can_ip_forward BackupDrRestoreWorkload#can_ip_forward}
 
 ---
 
@@ -1604,7 +1604,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesConfidentialInstan
 
 confidential_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#confidential_instance_config BackupDrRestoreWorkload#confidential_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#confidential_instance_config BackupDrRestoreWorkload#confidential_instance_config}
 
 ---
 
@@ -1618,7 +1618,7 @@ public java.lang.Boolean|IResolvable getDeletionProtection();
 
 Optional. Whether the resource should be protected against deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#deletion_protection BackupDrRestoreWorkload#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#deletion_protection BackupDrRestoreWorkload#deletion_protection}
 
 ---
 
@@ -1632,7 +1632,7 @@ public java.lang.String getDescription();
 
 Optional. An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#description BackupDrRestoreWorkload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#description BackupDrRestoreWorkload#description}
 
 ---
 
@@ -1646,7 +1646,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disks BackupDrRestoreWorkload#disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disks BackupDrRestoreWorkload#disks}
 
 ---
 
@@ -1660,7 +1660,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisplayDevice getD
 
 display_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#display_device BackupDrRestoreWorkload#display_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#display_device BackupDrRestoreWorkload#display_device}
 
 ---
 
@@ -1674,7 +1674,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 guest_accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#guest_accelerators BackupDrRestoreWorkload#guest_accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#guest_accelerators BackupDrRestoreWorkload#guest_accelerators}
 
 ---
 
@@ -1688,7 +1688,7 @@ public java.lang.String getHostname();
 
 Optional. Specifies the hostname of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#hostname BackupDrRestoreWorkload#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#hostname BackupDrRestoreWorkload#hostname}
 
 ---
 
@@ -1702,7 +1702,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryption
 
 instance_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#instance_encryption_key BackupDrRestoreWorkload#instance_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#instance_encryption_key BackupDrRestoreWorkload#instance_encryption_key}
 
 ---
 
@@ -1716,7 +1716,7 @@ public java.lang.String getKeyRevocationActionType();
 
 Optional. KeyRevocationActionType of the instance. Possible values: ["KEY_REVOCATION_ACTION_TYPE_UNSPECIFIED", "NONE", "STOP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key_revocation_action_type BackupDrRestoreWorkload#key_revocation_action_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key_revocation_action_type BackupDrRestoreWorkload#key_revocation_action_type}
 
 ---
 
@@ -1730,7 +1730,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#labels BackupDrRestoreWorkload#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#labels BackupDrRestoreWorkload#labels}
 
 ---
 
@@ -1744,7 +1744,7 @@ public java.lang.String getMachineType();
 
 Optional. Full or partial URL of the machine type resource to use for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#machine_type BackupDrRestoreWorkload#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#machine_type BackupDrRestoreWorkload#machine_type}
 
 ---
 
@@ -1758,7 +1758,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadata getMetada
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#metadata BackupDrRestoreWorkload#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#metadata BackupDrRestoreWorkload#metadata}
 
 ---
 
@@ -1772,7 +1772,7 @@ public java.lang.String getMinCpuPlatform();
 
 Optional. Minimum CPU platform to use for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#min_cpu_platform BackupDrRestoreWorkload#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#min_cpu_platform BackupDrRestoreWorkload#min_cpu_platform}
 
 ---
 
@@ -1786,7 +1786,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#network_interfaces BackupDrRestoreWorkload#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#network_interfaces BackupDrRestoreWorkload#network_interfaces}
 
 ---
 
@@ -1800,7 +1800,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkPerformance
 
 network_performance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#network_performance_config BackupDrRestoreWorkload#network_performance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#network_performance_config BackupDrRestoreWorkload#network_performance_config}
 
 ---
 
@@ -1814,7 +1814,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParams getParams()
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#params BackupDrRestoreWorkload#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#params BackupDrRestoreWorkload#params}
 
 ---
 
@@ -1828,7 +1828,7 @@ public java.lang.String getPrivateIpv6GoogleAccess();
 
 Optional. The private IPv6 google access type for the VM. Possible values: ["INSTANCE_PRIVATE_IPV6_GOOGLE_ACCESS_UNSPECIFIED", "INHERIT_FROM_SUBNETWORK", "ENABLE_OUTBOUND_VM_ACCESS_TO_GOOGLE", "ENABLE_BIDIRECTIONAL_ACCESS_TO_GOOGLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#private_ipv6_google_access BackupDrRestoreWorkload#private_ipv6_google_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#private_ipv6_google_access BackupDrRestoreWorkload#private_ipv6_google_access}
 
 ---
 
@@ -1842,7 +1842,7 @@ public java.util.List<java.lang.String> getResourcePolicies();
 
 Optional. Resource policies applied to this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#resource_policies BackupDrRestoreWorkload#resource_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#resource_policies BackupDrRestoreWorkload#resource_policies}
 
 ---
 
@@ -1856,7 +1856,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling getSche
 
 scheduling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#scheduling BackupDrRestoreWorkload#scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#scheduling BackupDrRestoreWorkload#scheduling}
 
 ---
 
@@ -1870,7 +1870,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 service_accounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#service_accounts BackupDrRestoreWorkload#service_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#service_accounts BackupDrRestoreWorkload#service_accounts}
 
 ---
 
@@ -1884,7 +1884,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceCo
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#shielded_instance_config BackupDrRestoreWorkload#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#shielded_instance_config BackupDrRestoreWorkload#shielded_instance_config}
 
 ---
 
@@ -1898,7 +1898,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesTags getTags();
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#tags BackupDrRestoreWorkload#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#tags BackupDrRestoreWorkload#tags}
 
 ---
 
@@ -1938,7 +1938,7 @@ public java.lang.Boolean|IResolvable getEnableNestedVirtualization();
 
 Optional. Whether to enable nested virtualization or not (default is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_nested_virtualization BackupDrRestoreWorkload#enable_nested_virtualization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_nested_virtualization BackupDrRestoreWorkload#enable_nested_virtualization}
 
 ---
 
@@ -1952,7 +1952,7 @@ public java.lang.Boolean|IResolvable getEnableUefiNetworking();
 
 Optional. Whether to enable UEFI networking for instance creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_uefi_networking BackupDrRestoreWorkload#enable_uefi_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_uefi_networking BackupDrRestoreWorkload#enable_uefi_networking}
 
 ---
 
@@ -1966,7 +1966,7 @@ public java.lang.Number getThreadsPerCore();
 
 Optional. The number of threads per physical core.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#threads_per_core BackupDrRestoreWorkload#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#threads_per_core BackupDrRestoreWorkload#threads_per_core}
 
 ---
 
@@ -1980,7 +1980,7 @@ public java.lang.Number getVisibleCoreCount();
 
 Optional. The number of physical cores to expose to an instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#visible_core_count BackupDrRestoreWorkload#visible_core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#visible_core_count BackupDrRestoreWorkload#visible_core_count}
 
 ---
 
@@ -2003,8 +2003,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity.builde
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity.property.consumeAllocationType">consumeAllocationType</a></code> | <code>java.lang.String</code> | Possible values: ["TYPE_UNSPECIFIED", "NO_RESERVATION", "ANY_RESERVATION", "SPECIFIC_RESERVATION"]. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}. |
 
 ---
 
@@ -2018,7 +2018,7 @@ public java.lang.String getConsumeAllocationType();
 
 Possible values: ["TYPE_UNSPECIFIED", "NO_RESERVATION", "ANY_RESERVATION", "SPECIFIC_RESERVATION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#consume_allocation_type BackupDrRestoreWorkload#consume_allocation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#consume_allocation_type BackupDrRestoreWorkload#consume_allocation_type}
 
 ---
 
@@ -2030,7 +2030,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
 
 ---
 
@@ -2042,7 +2042,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}.
 
 ---
 
@@ -2076,7 +2076,7 @@ public java.lang.Boolean|IResolvable getEnableConfidentialCompute();
 
 Optional. Defines whether the instance should have confidential compute enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_confidential_compute BackupDrRestoreWorkload#enable_confidential_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_confidential_compute BackupDrRestoreWorkload#enable_confidential_compute}
 
 ---
 
@@ -2140,7 +2140,7 @@ public java.lang.Boolean|IResolvable getAutoDelete();
 
 Optional. Specifies whether the disk will be auto-deleted when the instance is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#auto_delete BackupDrRestoreWorkload#auto_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#auto_delete BackupDrRestoreWorkload#auto_delete}
 
 ---
 
@@ -2154,7 +2154,7 @@ public java.lang.Boolean|IResolvable getBoot();
 
 Optional. Indicates that this is a boot disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#boot BackupDrRestoreWorkload#boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#boot BackupDrRestoreWorkload#boot}
 
 ---
 
@@ -2168,7 +2168,7 @@ public java.lang.String getDeviceName();
 
 Optional. This is used as an identifier for the disks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#device_name BackupDrRestoreWorkload#device_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#device_name BackupDrRestoreWorkload#device_name}
 
 ---
 
@@ -2182,7 +2182,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisksDiskEncryptio
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_encryption_key BackupDrRestoreWorkload#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_encryption_key BackupDrRestoreWorkload#disk_encryption_key}
 
 ---
 
@@ -2196,7 +2196,7 @@ public java.lang.String getDiskInterface();
 
 Optional. Specifies the disk interface to use for attaching this disk. Possible values: ["DISK_INTERFACE_UNSPECIFIED", "SCSI", "NVME", "NVDIMM", "ISCSI"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_interface BackupDrRestoreWorkload#disk_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_interface BackupDrRestoreWorkload#disk_interface}
 
 ---
 
@@ -2210,7 +2210,7 @@ public java.lang.Number getDiskSizeGb();
 
 Optional. The size of the disk in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_size_gb BackupDrRestoreWorkload#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_size_gb BackupDrRestoreWorkload#disk_size_gb}
 
 ---
 
@@ -2224,7 +2224,7 @@ public java.lang.String getDiskType();
 
 Output only. The URI of the disk type resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_type BackupDrRestoreWorkload#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_type BackupDrRestoreWorkload#disk_type}
 
 ---
 
@@ -2238,7 +2238,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 guest_os_feature block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#guest_os_feature BackupDrRestoreWorkload#guest_os_feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#guest_os_feature BackupDrRestoreWorkload#guest_os_feature}
 
 ---
 
@@ -2252,7 +2252,7 @@ public java.lang.Number getIndex();
 
 Optional. A zero-based index to this disk, where 0 is reserved for the boot disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#index BackupDrRestoreWorkload#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#index BackupDrRestoreWorkload#index}
 
 ---
 
@@ -2266,7 +2266,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisksInitializePar
 
 initialize_params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#initialize_params BackupDrRestoreWorkload#initialize_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#initialize_params BackupDrRestoreWorkload#initialize_params}
 
 ---
 
@@ -2280,7 +2280,7 @@ public java.lang.String getKind();
 
 Optional. Type of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kind BackupDrRestoreWorkload#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kind BackupDrRestoreWorkload#kind}
 
 ---
 
@@ -2294,7 +2294,7 @@ public java.util.List<java.lang.String> getLicense();
 
 Optional. Any valid publicly visible licenses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#license BackupDrRestoreWorkload#license}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#license BackupDrRestoreWorkload#license}
 
 ---
 
@@ -2308,7 +2308,7 @@ public java.lang.String getMode();
 
 Optional. The mode in which to attach this disk. Possible values: ["DISK_MODE_UNSPECIFIED", "READ_WRITE", "READ_ONLY", "LOCKED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#mode BackupDrRestoreWorkload#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#mode BackupDrRestoreWorkload#mode}
 
 ---
 
@@ -2322,7 +2322,7 @@ public java.lang.String getSavedState();
 
 Optional. Specifies the saved state of the disk. Possible values: ["DISK_SAVED_STATE_UNSPECIFIED", "PRESERVED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#saved_state BackupDrRestoreWorkload#saved_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#saved_state BackupDrRestoreWorkload#saved_state}
 
 ---
 
@@ -2336,7 +2336,7 @@ public java.lang.String getSource();
 
 Optional. Specifies a valid partial or full URL to an existing Persistent Disk resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#source BackupDrRestoreWorkload#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#source BackupDrRestoreWorkload#source}
 
 ---
 
@@ -2350,7 +2350,7 @@ public java.lang.String getType();
 
 Optional. Specifies the type of the disk. Possible values: ["DISK_TYPE_UNSPECIFIED", "SCRATCH", "PERSISTENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 
 ---
 
@@ -2390,7 +2390,7 @@ public java.lang.String getKmsKeyName();
 
 Optional. The name of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}
 
 ---
 
@@ -2404,7 +2404,7 @@ public java.lang.String getKmsKeyServiceAccount();
 
 Optional. The service account being used for the encryption request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}
 
 ---
 
@@ -2418,7 +2418,7 @@ public java.lang.String getRawKey();
 
 Optional. Specifies a 256-bit customer-supplied encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}
 
 ---
 
@@ -2432,7 +2432,7 @@ public java.lang.String getRsaEncryptedKey();
 
 Optional. RSA-wrapped 2048-bit customer-supplied encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}
 
 ---
 
@@ -2468,7 +2468,7 @@ Optional.
 
 The ID of a supported feature. Possible values: ["FEATURE_TYPE_UNSPECIFIED", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "MULTI_IP_SUBNET", "UEFI_COMPATIBLE", "SECURE_BOOT", "GVNIC", "SEV_CAPABLE", "BARE_METAL_LINUX_COMPATIBLE", "SUSPEND_RESUME_COMPATIBLE", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "TDX_CAPABLE", "IDPF", "SEV_LIVE_MIGRATABLE_V2"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 
 ---
 
@@ -2504,7 +2504,7 @@ public java.lang.String getDiskName();
 
 Optional. Specifies the disk name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_name BackupDrRestoreWorkload#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_name BackupDrRestoreWorkload#disk_name}
 
 ---
 
@@ -2518,7 +2518,7 @@ public java.util.List<java.lang.String> getReplicaZones();
 
 Optional. URL of the zone where the disk should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#replica_zones BackupDrRestoreWorkload#replica_zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#replica_zones BackupDrRestoreWorkload#replica_zones}
 
 ---
 
@@ -2552,7 +2552,7 @@ public java.lang.Boolean|IResolvable getEnableDisplay();
 
 Optional. Enables display for the Compute Engine VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_display BackupDrRestoreWorkload#enable_display}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_display BackupDrRestoreWorkload#enable_display}
 
 ---
 
@@ -2588,7 +2588,7 @@ public java.lang.Number getAcceleratorCount();
 
 Optional. The number of the guest accelerator cards exposed to this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#accelerator_count BackupDrRestoreWorkload#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#accelerator_count BackupDrRestoreWorkload#accelerator_count}
 
 ---
 
@@ -2602,7 +2602,7 @@ public java.lang.String getAcceleratorType();
 
 Optional. Full or partial URL of the accelerator type resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#accelerator_type BackupDrRestoreWorkload#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#accelerator_type BackupDrRestoreWorkload#accelerator_type}
 
 ---
 
@@ -2625,10 +2625,10 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.kmsKeyServiceAccount">kmsKeyServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.rawKey">rawKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.rsaEncryptedKey">rsaEncryptedKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.kmsKeyServiceAccount">kmsKeyServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.rawKey">rawKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey.property.rsaEncryptedKey">rsaEncryptedKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}. |
 
 ---
 
@@ -2640,7 +2640,7 @@ public java.lang.String getKmsKeyName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}.
 
 ---
 
@@ -2652,7 +2652,7 @@ public java.lang.String getKmsKeyServiceAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}.
 
 ---
 
@@ -2664,7 +2664,7 @@ public java.lang.String getRawKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}.
 
 ---
 
@@ -2676,7 +2676,7 @@ public java.lang.String getRsaEncryptedKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}.
 
 ---
 
@@ -2697,8 +2697,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesLabels.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesLabels.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesLabels.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesLabels.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesLabels.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
 
 ---
 
@@ -2710,7 +2710,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
 
 ---
 
@@ -2722,7 +2722,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
 
 ---
 
@@ -2756,7 +2756,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#items BackupDrRestoreWorkload#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#items BackupDrRestoreWorkload#items}
 
 ---
 
@@ -2777,8 +2777,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataItems.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataItems.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataItems.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataItems.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataItems.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
 
 ---
 
@@ -2790,7 +2790,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
 
 ---
 
@@ -2802,7 +2802,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
 
 ---
 
@@ -2842,9 +2842,9 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.builder
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.ipv6AccessType">ipv6AccessType</a></code> | <code>java.lang.String</code> | Possible values: ["UNSPECIFIED_IPV6_ACCESS_TYPE", "INTERNAL", "EXTERNAL"]. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.ipv6Address">ipv6Address</a></code> | <code>java.lang.String</code> | Optional. An IPv6 internal network address for this network interface. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.network">network</a></code> | <code>java.lang.String</code> | Optional. URL of the VPC network resource for this instance. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.networkAttachment">networkAttachment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#network_attachment BackupDrRestoreWorkload#network_attachment}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.networkAttachment">networkAttachment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#network_attachment BackupDrRestoreWorkload#network_attachment}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.nicType">nicType</a></code> | <code>java.lang.String</code> | Possible values: ["NIC_TYPE_UNSPECIFIED", "VIRTIO_NET", "GVNIC"]. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.queueCount">queueCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#queue_count BackupDrRestoreWorkload#queue_count}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.queueCount">queueCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#queue_count BackupDrRestoreWorkload#queue_count}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.stackType">stackType</a></code> | <code>java.lang.String</code> | Possible values: ["STACK_TYPE_UNSPECIFIED", "IPV4_ONLY", "IPV4_IPV6"]. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces.property.subnetwork">subnetwork</a></code> | <code>java.lang.String</code> | Optional. The URL of the Subnetwork resource for this instance. |
 
@@ -2860,7 +2860,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 access_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#access_configs BackupDrRestoreWorkload#access_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#access_configs BackupDrRestoreWorkload#access_configs}
 
 ---
 
@@ -2874,7 +2874,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 alias_ip_ranges block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#alias_ip_ranges BackupDrRestoreWorkload#alias_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#alias_ip_ranges BackupDrRestoreWorkload#alias_ip_ranges}
 
 ---
 
@@ -2888,7 +2888,7 @@ public java.lang.Number getInternalIpv6PrefixLength();
 
 Optional. The prefix length of the primary internal IPv6 range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#internal_ipv6_prefix_length BackupDrRestoreWorkload#internal_ipv6_prefix_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#internal_ipv6_prefix_length BackupDrRestoreWorkload#internal_ipv6_prefix_length}
 
 ---
 
@@ -2902,7 +2902,7 @@ public java.lang.String getIpAddress();
 
 Optional. An IPv4 internal IP address to assign to the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#ip_address BackupDrRestoreWorkload#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#ip_address BackupDrRestoreWorkload#ip_address}
 
 ---
 
@@ -2916,7 +2916,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 ipv6_access_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#ipv6_access_configs BackupDrRestoreWorkload#ipv6_access_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#ipv6_access_configs BackupDrRestoreWorkload#ipv6_access_configs}
 
 ---
 
@@ -2930,7 +2930,7 @@ public java.lang.String getIpv6AccessType();
 
 Possible values: ["UNSPECIFIED_IPV6_ACCESS_TYPE", "INTERNAL", "EXTERNAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#ipv6_access_type BackupDrRestoreWorkload#ipv6_access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#ipv6_access_type BackupDrRestoreWorkload#ipv6_access_type}
 
 ---
 
@@ -2944,7 +2944,7 @@ public java.lang.String getIpv6Address();
 
 Optional. An IPv6 internal network address for this network interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#ipv6_address BackupDrRestoreWorkload#ipv6_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#ipv6_address BackupDrRestoreWorkload#ipv6_address}
 
 ---
 
@@ -2958,7 +2958,7 @@ public java.lang.String getNetwork();
 
 Optional. URL of the VPC network resource for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#network BackupDrRestoreWorkload#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#network BackupDrRestoreWorkload#network}
 
 ---
 
@@ -2970,7 +2970,7 @@ public java.lang.String getNetworkAttachment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#network_attachment BackupDrRestoreWorkload#network_attachment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#network_attachment BackupDrRestoreWorkload#network_attachment}.
 
 ---
 
@@ -2984,7 +2984,7 @@ public java.lang.String getNicType();
 
 Possible values: ["NIC_TYPE_UNSPECIFIED", "VIRTIO_NET", "GVNIC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#nic_type BackupDrRestoreWorkload#nic_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#nic_type BackupDrRestoreWorkload#nic_type}
 
 ---
 
@@ -2996,7 +2996,7 @@ public java.lang.Number getQueueCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#queue_count BackupDrRestoreWorkload#queue_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#queue_count BackupDrRestoreWorkload#queue_count}.
 
 ---
 
@@ -3010,7 +3010,7 @@ public java.lang.String getStackType();
 
 Possible values: ["STACK_TYPE_UNSPECIFIED", "IPV4_ONLY", "IPV4_IPV6"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#stack_type BackupDrRestoreWorkload#stack_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#stack_type BackupDrRestoreWorkload#stack_type}
 
 ---
 
@@ -3024,7 +3024,7 @@ public java.lang.String getSubnetwork();
 
 Optional. The URL of the Subnetwork resource for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#subnetwork BackupDrRestoreWorkload#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#subnetwork BackupDrRestoreWorkload#subnetwork}
 
 ---
 
@@ -3051,13 +3051,13 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.externalIp">externalIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.externalIpv6">externalIpv6</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.externalIpv6PrefixLength">externalIpv6PrefixLength</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.externalIp">externalIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.externalIpv6">externalIpv6</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.externalIpv6PrefixLength">externalIpv6PrefixLength</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.name">name</a></code> | <code>java.lang.String</code> | Optional. The name of this access configuration. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.networkTier">networkTier</a></code> | <code>java.lang.String</code> | Possible values: ["NETWORK_TIER_UNSPECIFIED", "PREMIUM", "STANDARD"]. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.publicPtrDomainName">publicPtrDomainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.setPublicPtr">setPublicPtr</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.publicPtrDomainName">publicPtrDomainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.setPublicPtr">setPublicPtr</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAccessConfigs.property.type">type</a></code> | <code>java.lang.String</code> | Optional. The type of configuration. Possible values: ["ACCESS_TYPE_UNSPECIFIED", "ONE_TO_ONE_NAT", "DIRECT_IPV6"]. |
 
 ---
@@ -3070,7 +3070,7 @@ public java.lang.String getExternalIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}.
 
 ---
 
@@ -3082,7 +3082,7 @@ public java.lang.String getExternalIpv6();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}.
 
 ---
 
@@ -3094,7 +3094,7 @@ public java.lang.Number getExternalIpv6PrefixLength();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}.
 
 ---
 
@@ -3108,7 +3108,7 @@ public java.lang.String getName();
 
 Optional. The name of this access configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
 
 ---
 
@@ -3122,7 +3122,7 @@ public java.lang.String getNetworkTier();
 
 Possible values: ["NETWORK_TIER_UNSPECIFIED", "PREMIUM", "STANDARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#network_tier BackupDrRestoreWorkload#network_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#network_tier BackupDrRestoreWorkload#network_tier}
 
 ---
 
@@ -3134,7 +3134,7 @@ public java.lang.String getPublicPtrDomainName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}.
 
 ---
 
@@ -3146,7 +3146,7 @@ public java.lang.Boolean|IResolvable getSetPublicPtr();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}.
 
 ---
 
@@ -3160,7 +3160,7 @@ public java.lang.String getType();
 
 Optional. The type of configuration. Possible values: ["ACCESS_TYPE_UNSPECIFIED", "ONE_TO_ONE_NAT", "DIRECT_IPV6"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 
 ---
 
@@ -3181,8 +3181,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAliasIpR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAliasIpRanges.property.ipCidrRange">ipCidrRange</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#ip_cidr_range BackupDrRestoreWorkload#ip_cidr_range}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAliasIpRanges.property.subnetworkRangeName">subnetworkRangeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#subnetwork_range_name BackupDrRestoreWorkload#subnetwork_range_name}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAliasIpRanges.property.ipCidrRange">ipCidrRange</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#ip_cidr_range BackupDrRestoreWorkload#ip_cidr_range}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesAliasIpRanges.property.subnetworkRangeName">subnetworkRangeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#subnetwork_range_name BackupDrRestoreWorkload#subnetwork_range_name}. |
 
 ---
 
@@ -3194,7 +3194,7 @@ public java.lang.String getIpCidrRange();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#ip_cidr_range BackupDrRestoreWorkload#ip_cidr_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#ip_cidr_range BackupDrRestoreWorkload#ip_cidr_range}.
 
 ---
 
@@ -3206,7 +3206,7 @@ public java.lang.String getSubnetworkRangeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#subnetwork_range_name BackupDrRestoreWorkload#subnetwork_range_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#subnetwork_range_name BackupDrRestoreWorkload#subnetwork_range_name}.
 
 ---
 
@@ -3233,13 +3233,13 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6Acce
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.externalIp">externalIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.externalIpv6">externalIpv6</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.externalIpv6PrefixLength">externalIpv6PrefixLength</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.externalIp">externalIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.externalIpv6">externalIpv6</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.externalIpv6PrefixLength">externalIpv6PrefixLength</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.name">name</a></code> | <code>java.lang.String</code> | Optional. The name of this access configuration. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.networkTier">networkTier</a></code> | <code>java.lang.String</code> | Possible values: ["NETWORK_TIER_UNSPECIFIED", "PREMIUM", "STANDARD"]. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.publicPtrDomainName">publicPtrDomainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.setPublicPtr">setPublicPtr</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.publicPtrDomainName">publicPtrDomainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.setPublicPtr">setPublicPtr</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs.property.type">type</a></code> | <code>java.lang.String</code> | Optional. The type of configuration. Possible values: ["ACCESS_TYPE_UNSPECIFIED", "ONE_TO_ONE_NAT", "DIRECT_IPV6"]. |
 
 ---
@@ -3252,7 +3252,7 @@ public java.lang.String getExternalIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}.
 
 ---
 
@@ -3264,7 +3264,7 @@ public java.lang.String getExternalIpv6();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6 BackupDrRestoreWorkload#external_ipv6}.
 
 ---
 
@@ -3276,7 +3276,7 @@ public java.lang.Number getExternalIpv6PrefixLength();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#external_ipv6_prefix_length BackupDrRestoreWorkload#external_ipv6_prefix_length}.
 
 ---
 
@@ -3290,7 +3290,7 @@ public java.lang.String getName();
 
 Optional. The name of this access configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
 
 ---
 
@@ -3304,7 +3304,7 @@ public java.lang.String getNetworkTier();
 
 Possible values: ["NETWORK_TIER_UNSPECIFIED", "PREMIUM", "STANDARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#network_tier BackupDrRestoreWorkload#network_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#network_tier BackupDrRestoreWorkload#network_tier}
 
 ---
 
@@ -3316,7 +3316,7 @@ public java.lang.String getPublicPtrDomainName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}.
 
 ---
 
@@ -3328,7 +3328,7 @@ public java.lang.Boolean|IResolvable getSetPublicPtr();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}.
 
 ---
 
@@ -3342,7 +3342,7 @@ public java.lang.String getType();
 
 Optional. The type of configuration. Possible values: ["ACCESS_TYPE_UNSPECIFIED", "ONE_TO_ONE_NAT", "DIRECT_IPV6"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 
 ---
 
@@ -3376,7 +3376,7 @@ public java.lang.String getTotalEgressBandwidthTier();
 
 Possible values: ["TIER_UNSPECIFIED", "DEFAULT", "TIER_1"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#total_egress_bandwidth_tier BackupDrRestoreWorkload#total_egress_bandwidth_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#total_egress_bandwidth_tier BackupDrRestoreWorkload#total_egress_bandwidth_tier}
 
 ---
 
@@ -3410,7 +3410,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 resource_manager_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#resource_manager_tags BackupDrRestoreWorkload#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#resource_manager_tags BackupDrRestoreWorkload#resource_manager_tags}
 
 ---
 
@@ -3431,8 +3431,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParamsResourceManagerTags
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParamsResourceManagerTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParamsResourceManagerTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParamsResourceManagerTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParamsResourceManagerTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
 
 ---
 
@@ -3444,7 +3444,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
 
 ---
 
@@ -3456,7 +3456,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
 
 ---
 
@@ -3485,16 +3485,16 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.automaticRestart">automaticRestart</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#automatic_restart BackupDrRestoreWorkload#automatic_restart}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.automaticRestart">automaticRestart</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#automatic_restart BackupDrRestoreWorkload#automatic_restart}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.instanceTerminationAction">instanceTerminationAction</a></code> | <code>java.lang.String</code> | Possible values: ["INSTANCE_TERMINATION_ACTION_UNSPECIFIED", "DELETE", "STOP"]. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.localSsdRecoveryTimeout">localSsdRecoveryTimeout</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryTimeout">BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryTimeout</a></code> | local_ssd_recovery_timeout block. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.maxRunDuration">maxRunDuration</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDuration">BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDuration</a></code> | max_run_duration block. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.minNodeCpus">minNodeCpus</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#min_node_cpus BackupDrRestoreWorkload#min_node_cpus}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.minNodeCpus">minNodeCpus</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#min_node_cpus BackupDrRestoreWorkload#min_node_cpus}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.nodeAffinities">nodeAffinities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities">BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities</a>></code> | node_affinities block. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.onHostMaintenance">onHostMaintenance</a></code> | <code>java.lang.String</code> | Possible values: ["ON_HOST_MAINTENANCE_UNSPECIFIED", "TERMINATE", "MIGRATE"]. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.preemptible">preemptible</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#preemptible BackupDrRestoreWorkload#preemptible}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.preemptible">preemptible</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#preemptible BackupDrRestoreWorkload#preemptible}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.provisioningModel">provisioningModel</a></code> | <code>java.lang.String</code> | Possible values: ["PROVISIONING_MODEL_UNSPECIFIED", "STANDARD", "SPOT"]. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.terminationTime">terminationTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#termination_time BackupDrRestoreWorkload#termination_time}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling.property.terminationTime">terminationTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#termination_time BackupDrRestoreWorkload#termination_time}. |
 
 ---
 
@@ -3506,7 +3506,7 @@ public java.lang.Boolean|IResolvable getAutomaticRestart();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#automatic_restart BackupDrRestoreWorkload#automatic_restart}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#automatic_restart BackupDrRestoreWorkload#automatic_restart}.
 
 ---
 
@@ -3520,7 +3520,7 @@ public java.lang.String getInstanceTerminationAction();
 
 Possible values: ["INSTANCE_TERMINATION_ACTION_UNSPECIFIED", "DELETE", "STOP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#instance_termination_action BackupDrRestoreWorkload#instance_termination_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#instance_termination_action BackupDrRestoreWorkload#instance_termination_action}
 
 ---
 
@@ -3534,7 +3534,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsd
 
 local_ssd_recovery_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#local_ssd_recovery_timeout BackupDrRestoreWorkload#local_ssd_recovery_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#local_ssd_recovery_timeout BackupDrRestoreWorkload#local_ssd_recovery_timeout}
 
 ---
 
@@ -3548,7 +3548,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDu
 
 max_run_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#max_run_duration BackupDrRestoreWorkload#max_run_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#max_run_duration BackupDrRestoreWorkload#max_run_duration}
 
 ---
 
@@ -3560,7 +3560,7 @@ public java.lang.Number getMinNodeCpus();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#min_node_cpus BackupDrRestoreWorkload#min_node_cpus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#min_node_cpus BackupDrRestoreWorkload#min_node_cpus}.
 
 ---
 
@@ -3574,7 +3574,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadComputeInstanceRestoreP
 
 node_affinities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#node_affinities BackupDrRestoreWorkload#node_affinities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#node_affinities BackupDrRestoreWorkload#node_affinities}
 
 ---
 
@@ -3588,7 +3588,7 @@ public java.lang.String getOnHostMaintenance();
 
 Possible values: ["ON_HOST_MAINTENANCE_UNSPECIFIED", "TERMINATE", "MIGRATE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#on_host_maintenance BackupDrRestoreWorkload#on_host_maintenance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#on_host_maintenance BackupDrRestoreWorkload#on_host_maintenance}
 
 ---
 
@@ -3600,7 +3600,7 @@ public java.lang.Boolean|IResolvable getPreemptible();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#preemptible BackupDrRestoreWorkload#preemptible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#preemptible BackupDrRestoreWorkload#preemptible}.
 
 ---
 
@@ -3614,7 +3614,7 @@ public java.lang.String getProvisioningModel();
 
 Possible values: ["PROVISIONING_MODEL_UNSPECIFIED", "STANDARD", "SPOT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#provisioning_model BackupDrRestoreWorkload#provisioning_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#provisioning_model BackupDrRestoreWorkload#provisioning_model}
 
 ---
 
@@ -3626,7 +3626,7 @@ public java.lang.String getTerminationTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#termination_time BackupDrRestoreWorkload#termination_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#termination_time BackupDrRestoreWorkload#termination_time}.
 
 ---
 
@@ -3647,8 +3647,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecover
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryTimeout.property.nanos">nanos</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryTimeout.property.seconds">seconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryTimeout.property.nanos">nanos</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryTimeout.property.seconds">seconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}. |
 
 ---
 
@@ -3660,7 +3660,7 @@ public java.lang.Number getNanos();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}.
 
 ---
 
@@ -3672,7 +3672,7 @@ public java.lang.Number getSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}.
 
 ---
 
@@ -3693,8 +3693,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDuration.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDuration.property.nanos">nanos</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDuration.property.seconds">seconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDuration.property.nanos">nanos</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDuration.property.seconds">seconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}. |
 
 ---
 
@@ -3706,7 +3706,7 @@ public java.lang.Number getNanos();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#nanos BackupDrRestoreWorkload#nanos}.
 
 ---
 
@@ -3718,7 +3718,7 @@ public java.lang.Number getSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#seconds BackupDrRestoreWorkload#seconds}.
 
 ---
 
@@ -3740,9 +3740,9 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities.property.operator">operator</a></code> | <code>java.lang.String</code> | Possible values: ["OPERATOR_UNSPECIFIED", "IN", "NOT_IN"]. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinities.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}. |
 
 ---
 
@@ -3754,7 +3754,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
 
 ---
 
@@ -3768,7 +3768,7 @@ public java.lang.String getOperator();
 
 Possible values: ["OPERATOR_UNSPECIFIED", "IN", "NOT_IN"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#operator BackupDrRestoreWorkload#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#operator BackupDrRestoreWorkload#operator}
 
 ---
 
@@ -3780,7 +3780,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#values BackupDrRestoreWorkload#values}.
 
 ---
 
@@ -3801,8 +3801,8 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesServiceAccounts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesServiceAccounts.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#email BackupDrRestoreWorkload#email}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesServiceAccounts.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#scopes BackupDrRestoreWorkload#scopes}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesServiceAccounts.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#email BackupDrRestoreWorkload#email}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesServiceAccounts.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#scopes BackupDrRestoreWorkload#scopes}. |
 
 ---
 
@@ -3814,7 +3814,7 @@ public java.lang.String getEmail();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#email BackupDrRestoreWorkload#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#email BackupDrRestoreWorkload#email}.
 
 ---
 
@@ -3826,7 +3826,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#scopes BackupDrRestoreWorkload#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#scopes BackupDrRestoreWorkload#scopes}.
 
 ---
 
@@ -3848,9 +3848,9 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_integrity_monitoring BackupDrRestoreWorkload#enable_integrity_monitoring}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_secure_boot BackupDrRestoreWorkload#enable_secure_boot}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig.property.enableVtpm">enableVtpm</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_vtpm BackupDrRestoreWorkload#enable_vtpm}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_integrity_monitoring BackupDrRestoreWorkload#enable_integrity_monitoring}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_secure_boot BackupDrRestoreWorkload#enable_secure_boot}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig.property.enableVtpm">enableVtpm</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_vtpm BackupDrRestoreWorkload#enable_vtpm}. |
 
 ---
 
@@ -3862,7 +3862,7 @@ public java.lang.Boolean|IResolvable getEnableIntegrityMonitoring();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_integrity_monitoring BackupDrRestoreWorkload#enable_integrity_monitoring}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_integrity_monitoring BackupDrRestoreWorkload#enable_integrity_monitoring}.
 
 ---
 
@@ -3874,7 +3874,7 @@ public java.lang.Boolean|IResolvable getEnableSecureBoot();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_secure_boot BackupDrRestoreWorkload#enable_secure_boot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_secure_boot BackupDrRestoreWorkload#enable_secure_boot}.
 
 ---
 
@@ -3886,7 +3886,7 @@ public java.lang.Boolean|IResolvable getEnableVtpm();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_vtpm BackupDrRestoreWorkload#enable_vtpm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_vtpm BackupDrRestoreWorkload#enable_vtpm}.
 
 ---
 
@@ -3906,7 +3906,7 @@ BackupDrRestoreWorkloadComputeInstanceRestorePropertiesTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesTags.property.items">items</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#items BackupDrRestoreWorkload#items}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesTags.property.items">items</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#items BackupDrRestoreWorkload#items}. |
 
 ---
 
@@ -3918,7 +3918,7 @@ public java.util.List<java.lang.String> getItems();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#items BackupDrRestoreWorkload#items}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#items BackupDrRestoreWorkload#items}.
 
 ---
 
@@ -3954,7 +3954,7 @@ public java.lang.String getProject();
 
 Required. Target project for the Compute Engine instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#project BackupDrRestoreWorkload#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#project BackupDrRestoreWorkload#project}
 
 ---
 
@@ -3968,7 +3968,7 @@ public java.lang.String getZone();
 
 Required. The zone of the Compute Engine instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#zone BackupDrRestoreWorkload#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#zone BackupDrRestoreWorkload#zone}
 
 ---
 
@@ -4028,7 +4028,7 @@ BackupDrRestoreWorkloadConfig.builder()
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.diskRestoreProperties">diskRestoreProperties</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestoreProperties">BackupDrRestoreWorkloadDiskRestoreProperties</a></code> | disk_restore_properties block. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.diskTargetEnvironment">diskTargetEnvironment</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskTargetEnvironment">BackupDrRestoreWorkloadDiskTargetEnvironment</a></code> | disk_target_environment block. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.name">name</a></code> | <code>java.lang.String</code> | The resource name of the backup instance. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.regionDiskTargetEnvironment">regionDiskTargetEnvironment</a></code> | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadRegionDiskTargetEnvironment">BackupDrRestoreWorkloadRegionDiskTargetEnvironment</a></code> | region_disk_target_environment block. |
 | <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadConfig.property.requestId">requestId</a></code> | <code>java.lang.String</code> | Optional. |
@@ -4116,7 +4116,7 @@ public java.lang.String getBackupId();
 
 Required. The ID of the backup to restore from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#backup_id BackupDrRestoreWorkload#backup_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#backup_id BackupDrRestoreWorkload#backup_id}
 
 ---
 
@@ -4130,7 +4130,7 @@ public java.lang.String getBackupVaultId();
 
 Required. The ID of the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#backup_vault_id BackupDrRestoreWorkload#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#backup_vault_id BackupDrRestoreWorkload#backup_vault_id}
 
 ---
 
@@ -4144,7 +4144,7 @@ public java.lang.String getDataSourceId();
 
 Required. The ID of the data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#data_source_id BackupDrRestoreWorkload#data_source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#data_source_id BackupDrRestoreWorkload#data_source_id}
 
 ---
 
@@ -4158,7 +4158,7 @@ public java.lang.String getLocation();
 
 Required. The location for the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#location BackupDrRestoreWorkload#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#location BackupDrRestoreWorkload#location}
 
 ---
 
@@ -4172,7 +4172,7 @@ public java.lang.String getClearOverridesFieldMask();
 
 Optional. A field mask used to clear server-side default values during restore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#clear_overrides_field_mask BackupDrRestoreWorkload#clear_overrides_field_mask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#clear_overrides_field_mask BackupDrRestoreWorkload#clear_overrides_field_mask}
 
 ---
 
@@ -4186,7 +4186,7 @@ public BackupDrRestoreWorkloadComputeInstanceRestoreProperties getComputeInstanc
 
 compute_instance_restore_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#compute_instance_restore_properties BackupDrRestoreWorkload#compute_instance_restore_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#compute_instance_restore_properties BackupDrRestoreWorkload#compute_instance_restore_properties}
 
 ---
 
@@ -4200,7 +4200,7 @@ public BackupDrRestoreWorkloadComputeInstanceTargetEnvironment getComputeInstanc
 
 compute_instance_target_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#compute_instance_target_environment BackupDrRestoreWorkload#compute_instance_target_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#compute_instance_target_environment BackupDrRestoreWorkload#compute_instance_target_environment}
 
 ---
 
@@ -4217,7 +4217,7 @@ Optional.
 If true (default), running terraform destroy will delete the live resource in GCP.
 If false, only the restore record is removed from the state, leaving the resource active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#delete_restored_instance BackupDrRestoreWorkload#delete_restored_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#delete_restored_instance BackupDrRestoreWorkload#delete_restored_instance}
 
 ---
 
@@ -4238,7 +4238,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#deletion_policy BackupDrRestoreWorkload#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#deletion_policy BackupDrRestoreWorkload#deletion_policy}
 
 ---
 
@@ -4252,7 +4252,7 @@ public BackupDrRestoreWorkloadDiskRestoreProperties getDiskRestoreProperties();
 
 disk_restore_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_restore_properties BackupDrRestoreWorkload#disk_restore_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_restore_properties BackupDrRestoreWorkload#disk_restore_properties}
 
 ---
 
@@ -4266,7 +4266,7 @@ public BackupDrRestoreWorkloadDiskTargetEnvironment getDiskTargetEnvironment();
 
 disk_target_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_target_environment BackupDrRestoreWorkload#disk_target_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_target_environment BackupDrRestoreWorkload#disk_target_environment}
 
 ---
 
@@ -4278,7 +4278,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#id BackupDrRestoreWorkload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4295,7 +4295,7 @@ public java.lang.String getName();
 
 The resource name of the backup instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
 
 ---
 
@@ -4309,7 +4309,7 @@ public BackupDrRestoreWorkloadRegionDiskTargetEnvironment getRegionDiskTargetEnv
 
 region_disk_target_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#region_disk_target_environment BackupDrRestoreWorkload#region_disk_target_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#region_disk_target_environment BackupDrRestoreWorkload#region_disk_target_environment}
 
 ---
 
@@ -4327,7 +4327,7 @@ An optional request ID to identify requests. Specify a unique request ID
 so that if you must retry your request, the server will know to ignore
 the request if it has already been completed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#request_id BackupDrRestoreWorkload#request_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#request_id BackupDrRestoreWorkload#request_id}
 
 ---
 
@@ -4341,7 +4341,7 @@ public BackupDrRestoreWorkloadTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#timeouts BackupDrRestoreWorkload#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#timeouts BackupDrRestoreWorkload#timeouts}
 
 ---
 
@@ -4407,7 +4407,7 @@ public java.lang.String getName();
 
 Required. Name of the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#name BackupDrRestoreWorkload#name}
 
 ---
 
@@ -4421,7 +4421,7 @@ public java.lang.Number getSizeGb();
 
 Required. The size of the disk in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#size_gb BackupDrRestoreWorkload#size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#size_gb BackupDrRestoreWorkload#size_gb}
 
 ---
 
@@ -4435,7 +4435,7 @@ public java.lang.String getType();
 
 Required. URL of the disk type resource describing which disk type to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 
 ---
 
@@ -4449,7 +4449,7 @@ public java.lang.String getAccessMode();
 
 Optional. The access mode of the disk. Possible values: ["READ_WRITE_SINGLE", "READ_WRITE_MANY", "READ_ONLY_MANY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#access_mode BackupDrRestoreWorkload#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#access_mode BackupDrRestoreWorkload#access_mode}
 
 ---
 
@@ -4463,7 +4463,7 @@ public java.lang.String getArchitecture();
 
 Optional. The architecture of the source disk. Possible values: ["ARCHITECTURE_UNSPECIFIED", "X86_64", "ARM64"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#architecture BackupDrRestoreWorkload#architecture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#architecture BackupDrRestoreWorkload#architecture}
 
 ---
 
@@ -4477,7 +4477,7 @@ public java.lang.String getDescription();
 
 Optional. An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#description BackupDrRestoreWorkload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#description BackupDrRestoreWorkload#description}
 
 ---
 
@@ -4491,7 +4491,7 @@ public BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey getDiskEncr
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#disk_encryption_key BackupDrRestoreWorkload#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#disk_encryption_key BackupDrRestoreWorkload#disk_encryption_key}
 
 ---
 
@@ -4505,7 +4505,7 @@ public java.lang.Boolean|IResolvable getEnableConfidentialCompute();
 
 Optional. Indicates whether this disk is using confidential compute mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#enable_confidential_compute BackupDrRestoreWorkload#enable_confidential_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#enable_confidential_compute BackupDrRestoreWorkload#enable_confidential_compute}
 
 ---
 
@@ -4519,7 +4519,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadDiskRestorePropertiesGu
 
 guest_os_feature block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#guest_os_feature BackupDrRestoreWorkload#guest_os_feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#guest_os_feature BackupDrRestoreWorkload#guest_os_feature}
 
 ---
 
@@ -4533,7 +4533,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadDiskRestorePropertiesLa
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#labels BackupDrRestoreWorkload#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#labels BackupDrRestoreWorkload#labels}
 
 ---
 
@@ -4547,7 +4547,7 @@ public java.util.List<java.lang.String> getLicenses();
 
 Optional. A list of publicly available licenses that are applicable to this backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#licenses BackupDrRestoreWorkload#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#licenses BackupDrRestoreWorkload#licenses}
 
 ---
 
@@ -4561,7 +4561,7 @@ public java.lang.Number getPhysicalBlockSizeBytes();
 
 Optional. Physical block size of the persistent disk, in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#physical_block_size_bytes BackupDrRestoreWorkload#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#physical_block_size_bytes BackupDrRestoreWorkload#physical_block_size_bytes}
 
 ---
 
@@ -4575,7 +4575,7 @@ public java.lang.Number getProvisionedIops();
 
 Optional. Indicates how many IOPS to provision for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#provisioned_iops BackupDrRestoreWorkload#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#provisioned_iops BackupDrRestoreWorkload#provisioned_iops}
 
 ---
 
@@ -4589,7 +4589,7 @@ public java.lang.Number getProvisionedThroughput();
 
 Optional. Indicates how much throughput to provision for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#provisioned_throughput BackupDrRestoreWorkload#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#provisioned_throughput BackupDrRestoreWorkload#provisioned_throughput}
 
 ---
 
@@ -4603,7 +4603,7 @@ public IResolvable|java.util.List<BackupDrRestoreWorkloadDiskRestorePropertiesRe
 
 resource_manager_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#resource_manager_tags BackupDrRestoreWorkload#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#resource_manager_tags BackupDrRestoreWorkload#resource_manager_tags}
 
 ---
 
@@ -4617,7 +4617,7 @@ public java.util.List<java.lang.String> getResourcePolicy();
 
 Optional. Resource policies applied to this disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#resource_policy BackupDrRestoreWorkload#resource_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#resource_policy BackupDrRestoreWorkload#resource_policy}
 
 ---
 
@@ -4631,7 +4631,7 @@ public java.lang.String getStoragePool();
 
 Optional. The storage pool in which the new disk is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#storage_pool BackupDrRestoreWorkload#storage_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#storage_pool BackupDrRestoreWorkload#storage_pool}
 
 ---
 
@@ -4654,10 +4654,10 @@ BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.kmsKeyServiceAccount">kmsKeyServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.rawKey">rawKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.rsaEncryptedKey">rsaEncryptedKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.kmsKeyServiceAccount">kmsKeyServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.rawKey">rawKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey.property.rsaEncryptedKey">rsaEncryptedKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}. |
 
 ---
 
@@ -4669,7 +4669,7 @@ public java.lang.String getKmsKeyName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_name BackupDrRestoreWorkload#kms_key_name}.
 
 ---
 
@@ -4681,7 +4681,7 @@ public java.lang.String getKmsKeyServiceAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#kms_key_service_account BackupDrRestoreWorkload#kms_key_service_account}.
 
 ---
 
@@ -4693,7 +4693,7 @@ public java.lang.String getRawKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#raw_key BackupDrRestoreWorkload#raw_key}.
 
 ---
 
@@ -4705,7 +4705,7 @@ public java.lang.String getRsaEncryptedKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#rsa_encrypted_key BackupDrRestoreWorkload#rsa_encrypted_key}.
 
 ---
 
@@ -4739,7 +4739,7 @@ public java.lang.String getType();
 
 Possible values: ["FEATURE_TYPE_UNSPECIFIED", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "MULTI_IP_SUBNET", "UEFI_COMPATIBLE", "SECURE_BOOT", "GVNIC", "SEV_CAPABLE", "BARE_METAL_LINUX_COMPATIBLE", "SUSPEND_RESUME_COMPATIBLE", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "TDX_CAPABLE", "IDPF", "SEV_LIVE_MIGRATABLE_V2"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 
 ---
 
@@ -4760,8 +4760,8 @@ BackupDrRestoreWorkloadDiskRestorePropertiesLabels.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesLabels.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesLabels.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesLabels.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesLabels.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
 
 ---
 
@@ -4773,7 +4773,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
 
 ---
 
@@ -4785,7 +4785,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
 
 ---
 
@@ -4806,8 +4806,8 @@ BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}. |
 
 ---
 
@@ -4819,7 +4819,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#key BackupDrRestoreWorkload#key}.
 
 ---
 
@@ -4831,7 +4831,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#value BackupDrRestoreWorkload#value}.
 
 ---
 
@@ -4867,7 +4867,7 @@ public java.lang.String getProject();
 
 Required. Target project for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#project BackupDrRestoreWorkload#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#project BackupDrRestoreWorkload#project}
 
 ---
 
@@ -4881,7 +4881,7 @@ public java.lang.String getZone();
 
 Required. Target zone for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#zone BackupDrRestoreWorkload#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#zone BackupDrRestoreWorkload#zone}
 
 ---
 
@@ -4919,7 +4919,7 @@ public java.lang.String getProject();
 
 Required. Target project for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#project BackupDrRestoreWorkload#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#project BackupDrRestoreWorkload#project}
 
 ---
 
@@ -4933,7 +4933,7 @@ public java.lang.String getRegion();
 
 Required. Target region for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#region BackupDrRestoreWorkload#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#region BackupDrRestoreWorkload#region}
 
 ---
 
@@ -4947,7 +4947,7 @@ public java.util.List<java.lang.String> getReplicaZones();
 
 Required. Target URLs of the replica zones for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#replica_zones BackupDrRestoreWorkload#replica_zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#replica_zones BackupDrRestoreWorkload#replica_zones}
 
 ---
 
@@ -4992,8 +4992,8 @@ BackupDrRestoreWorkloadTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#create BackupDrRestoreWorkload#create}. |
-| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#delete BackupDrRestoreWorkload#delete}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#create BackupDrRestoreWorkload#create}. |
+| <code><a href="#@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#delete BackupDrRestoreWorkload#delete}. |
 
 ---
 
@@ -5005,7 +5005,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#create BackupDrRestoreWorkload#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#create BackupDrRestoreWorkload#create}.
 
 ---
 
@@ -5017,7 +5017,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/backup_dr_restore_workload#delete BackupDrRestoreWorkload#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_restore_workload#delete BackupDrRestoreWorkload#delete}.
 
 ---
 

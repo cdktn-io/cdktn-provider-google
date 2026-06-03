@@ -4,7 +4,7 @@
 
 ### DataGoogleApphubApplication <a name="DataGoogleApphubApplication" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application google_apphub_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application google_apphub_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplication.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleApphubApplicatio
 
 The id of the existing DataGoogleApphubApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,8 +878,8 @@ new DataGoogleApphubApplicationConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.property.applicationId">ApplicationId</a></code> | <code>string</code> | Required. The Application identifier. |
 | <code><a href="#@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.property.location">Location</a></code> | <code>string</code> | Part of 'parent'. See documentation of 'projectsId'. |
-| <code><a href="#@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application#project DataGoogleApphubApplication#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application#id DataGoogleApphubApplication#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application#project DataGoogleApphubApplication#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application#id DataGoogleApphubApplication#id}. |
 
 ---
 
@@ -963,7 +963,7 @@ public string ApplicationId { get; set; }
 
 Required. The Application identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application#application_id DataGoogleApphubApplication#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application#application_id DataGoogleApphubApplication#application_id}
 
 ---
 
@@ -977,7 +977,7 @@ public string Location { get; set; }
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application#location DataGoogleApphubApplication#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application#location DataGoogleApphubApplication#location}
 
 ---
 
@@ -989,7 +989,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application#project DataGoogleApphubApplication#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application#project DataGoogleApphubApplication#project}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/apphub_application#id DataGoogleApphubApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/apphub_application#id DataGoogleApphubApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

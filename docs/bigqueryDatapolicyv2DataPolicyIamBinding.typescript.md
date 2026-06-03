@@ -4,7 +4,7 @@
 
 ### BigqueryDatapolicyv2DataPolicyIamBinding <a name="BigqueryDatapolicyv2DataPolicyIamBinding" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding google_bigquery_datapolicyv2_data_policy_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding google_bigquery_datapolicyv2_data_policy_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the BigqueryDatapolicyv2DataPo
 
 The id of the existing BigqueryDatapolicyv2DataPolicyIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const bigqueryDatapolicyv2DataPolicyIamBindingCondition: bigqueryDatapolicyv2Dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#expression BigqueryDatapolicyv2DataPolicyIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#title BigqueryDatapolicyv2DataPolicyIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#description BigqueryDatapolicyv2DataPolicyIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#expression BigqueryDatapolicyv2DataPolicyIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#title BigqueryDatapolicyv2DataPolicyIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#description BigqueryDatapolicyv2DataPolicyIamBinding#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#expression BigqueryDatapolicyv2DataPolicyIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#expression BigqueryDatapolicyv2DataPolicyIamBinding#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#title BigqueryDatapolicyv2DataPolicyIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#title BigqueryDatapolicyv2DataPolicyIamBinding#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#description BigqueryDatapolicyv2DataPolicyIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#description BigqueryDatapolicyv2DataPolicyIamBinding#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const bigqueryDatapolicyv2DataPolicyIamBindingConfig: bigqueryDatapolicyv2DataPo
 | <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.dataPolicyId">dataPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#data_policy_id BigqueryDatapolicyv2DataPolicyIamBinding#data_policy_id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#members BigqueryDatapolicyv2DataPolicyIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#role BigqueryDatapolicyv2DataPolicyIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.dataPolicyId">dataPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#data_policy_id BigqueryDatapolicyv2DataPolicyIamBinding#data_policy_id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#members BigqueryDatapolicyv2DataPolicyIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#role BigqueryDatapolicyv2DataPolicyIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition">BigqueryDatapolicyv2DataPolicyIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#id BigqueryDatapolicyv2DataPolicyIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#location BigqueryDatapolicyv2DataPolicyIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#project BigqueryDatapolicyv2DataPolicyIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#id BigqueryDatapolicyv2DataPolicyIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#location BigqueryDatapolicyv2DataPolicyIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#project BigqueryDatapolicyv2DataPolicyIamBinding#project}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly dataPolicyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#data_policy_id BigqueryDatapolicyv2DataPolicyIamBinding#data_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#data_policy_id BigqueryDatapolicyv2DataPolicyIamBinding#data_policy_id}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#members BigqueryDatapolicyv2DataPolicyIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#members BigqueryDatapolicyv2DataPolicyIamBinding#members}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#role BigqueryDatapolicyv2DataPolicyIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#role BigqueryDatapolicyv2DataPolicyIamBinding#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: BigqueryDatapolicyv2DataPolicyIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#condition BigqueryDatapolicyv2DataPolicyIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#condition BigqueryDatapolicyv2DataPolicyIamBinding#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#id BigqueryDatapolicyv2DataPolicyIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#id BigqueryDatapolicyv2DataPolicyIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#location BigqueryDatapolicyv2DataPolicyIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#location BigqueryDatapolicyv2DataPolicyIamBinding#location}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#project BigqueryDatapolicyv2DataPolicyIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigquery_datapolicyv2_data_policy_iam_binding#project BigqueryDatapolicyv2DataPolicyIamBinding#project}.
 
 ---
 
