@@ -1,3 +1,3 @@
 # `google_compute_disk`
 
-Refer to the Terraform Registry for docs: [`google_compute_disk`](https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/compute_disk).
+Refer to the Terraform Registry for docs: [`google_compute_disk`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_disk).

@@ -1,3 +1,3 @@
 # `google_billing_subaccount`
 
-Refer to the Terraform Registry for docs: [`google_billing_subaccount`](https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/billing_subaccount).
+Refer to the Terraform Registry for docs: [`google_billing_subaccount`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/billing_subaccount).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint
+// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface OrgPolicyCustomConstraintConfig extends cdktn.TerraformMetaArgu
   /**
   * The action to take if the condition is met. Possible values: ["ALLOW", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#action_type OrgPolicyCustomConstraint#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#action_type OrgPolicyCustomConstraint#action_type}
   */
   readonly actionType: string;
   /**
   * A CEL condition that refers to a supported service resource, for example 'resource.management.autoUpgrade == false'. For details about CEL usage, see [Common Expression Language](https://docs.cloud.google.com/resource-manager/docs/organization-policy/creating-managing-custom-constraints#common_expression_language).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#condition OrgPolicyCustomConstraint#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#condition OrgPolicyCustomConstraint#condition}
   */
   readonly condition: string;
   /**
@@ -33,23 +33,23 @@ export interface OrgPolicyCustomConstraintConfig extends cdktn.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#deletion_policy OrgPolicyCustomConstraint#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#deletion_policy OrgPolicyCustomConstraint#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A human-friendly description of the constraint to display as an error message when the policy is violated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#description OrgPolicyCustomConstraint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#description OrgPolicyCustomConstraint#description}
   */
   readonly description?: string;
   /**
   * A human-friendly name for the constraint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#display_name OrgPolicyCustomConstraint#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#display_name OrgPolicyCustomConstraint#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#id OrgPolicyCustomConstraint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#id OrgPolicyCustomConstraint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,45 +58,45 @@ export interface OrgPolicyCustomConstraintConfig extends cdktn.TerraformMetaArgu
   /**
   * A list of RESTful methods for which to enforce the constraint. Can be 'CREATE', 'UPDATE', or both. Not all Google Cloud services support both methods. To see supported methods for each service, find the service in [Supported services](https://docs.cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#method_types OrgPolicyCustomConstraint#method_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#method_types OrgPolicyCustomConstraint#method_types}
   */
   readonly methodTypes: string[];
   /**
   * Immutable. The name of the custom constraint. This is unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#name OrgPolicyCustomConstraint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#name OrgPolicyCustomConstraint#name}
   */
   readonly name: string;
   /**
   * The parent of the resource, an organization. Format should be 'organizations/{organization_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#parent OrgPolicyCustomConstraint#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#parent OrgPolicyCustomConstraint#parent}
   */
   readonly parent: string;
   /**
   * Immutable. The fully qualified name of the Google Cloud REST resource containing the object and field you want to restrict. For example, 'container.googleapis.com/NodePool'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#resource_types OrgPolicyCustomConstraint#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#resource_types OrgPolicyCustomConstraint#resource_types}
   */
   readonly resourceTypes: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#timeouts OrgPolicyCustomConstraint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#timeouts OrgPolicyCustomConstraint#timeouts}
   */
   readonly timeouts?: OrgPolicyCustomConstraintTimeouts;
 }
 export interface OrgPolicyCustomConstraintTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#create OrgPolicyCustomConstraint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#create OrgPolicyCustomConstraint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#delete OrgPolicyCustomConstraint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#delete OrgPolicyCustomConstraint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#update OrgPolicyCustomConstraint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#update OrgPolicyCustomConstraint#update}
   */
   readonly update?: string;
 }
@@ -248,7 +248,7 @@ export class OrgPolicyCustomConstraintTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint}
 */
 export class OrgPolicyCustomConstraint extends cdktn.TerraformResource {
 
@@ -264,7 +264,7 @@ export class OrgPolicyCustomConstraint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OrgPolicyCustomConstraint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrgPolicyCustomConstraint to import
-  * @param importFromId The id of the existing OrgPolicyCustomConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrgPolicyCustomConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrgPolicyCustomConstraint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -276,7 +276,7 @@ export class OrgPolicyCustomConstraint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -287,7 +287,7 @@ export class OrgPolicyCustomConstraint extends cdktn.TerraformResource {
       terraformResourceType: 'google_org_policy_custom_constraint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.34.0',
+        providerVersion: '7.35.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

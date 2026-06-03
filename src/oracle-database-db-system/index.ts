@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system
+// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface OracleDatabaseDbSystemConfig extends cdktn.TerraformMetaArgumen
   * 63 characters in length. The value must start with a letter and end with a
   * letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_system_id OracleDatabaseDbSystem#db_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_system_id OracleDatabaseDbSystem#db_system_id}
   */
   readonly dbSystemId: string;
   /**
@@ -30,20 +30,20 @@ export interface OracleDatabaseDbSystemConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#deletion_policy OracleDatabaseDbSystem#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#deletion_policy OracleDatabaseDbSystem#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#deletion_protection OracleDatabaseDbSystem#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#deletion_protection OracleDatabaseDbSystem#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * The display name for the System db. The name does not have to
   * be unique within your project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#display_name OracleDatabaseDbSystem#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#display_name OracleDatabaseDbSystem#display_name}
   */
   readonly displayName: string;
   /**
@@ -51,11 +51,11 @@ export interface OracleDatabaseDbSystemConfig extends cdktn.TerraformMetaArgumen
   * Example: us-east4-b-r2.
   * If not specified, the system will pick a zone based on availability.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#gcp_oracle_zone OracleDatabaseDbSystem#gcp_oracle_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#gcp_oracle_zone OracleDatabaseDbSystem#gcp_oracle_zone}
   */
   readonly gcpOracleZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#id OracleDatabaseDbSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#id OracleDatabaseDbSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -67,13 +67,13 @@ export interface OracleDatabaseDbSystemConfig extends cdktn.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#labels OracleDatabaseDbSystem#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#labels OracleDatabaseDbSystem#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#location OracleDatabaseDbSystem#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#location OracleDatabaseDbSystem#location}
   */
   readonly location: string;
   /**
@@ -82,7 +82,7 @@ export interface OracleDatabaseDbSystemConfig extends cdktn.TerraformMetaArgumen
   * It is optional but if specified, this should match the parent ODBNetwork of
   * the OdbSubnet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#odb_network OracleDatabaseDbSystem#odb_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#odb_network OracleDatabaseDbSystem#odb_network}
   */
   readonly odbNetwork?: string;
   /**
@@ -90,23 +90,23 @@ export interface OracleDatabaseDbSystemConfig extends cdktn.TerraformMetaArgumen
   * allocation. Format:
   * projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#odb_subnet OracleDatabaseDbSystem#odb_subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#odb_subnet OracleDatabaseDbSystem#odb_subnet}
   */
   readonly odbSubnet: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#project OracleDatabaseDbSystem#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#project OracleDatabaseDbSystem#project}
   */
   readonly project?: string;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#properties OracleDatabaseDbSystem#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#properties OracleDatabaseDbSystem#properties}
   */
   readonly properties?: OracleDatabaseDbSystemProperties;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#timeouts OracleDatabaseDbSystem#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#timeouts OracleDatabaseDbSystem#timeouts}
   */
   readonly timeouts?: OracleDatabaseDbSystemTimeouts;
 }
@@ -114,13 +114,13 @@ export interface OracleDatabaseDbSystemPropertiesDataCollectionOptions {
   /**
   * Indicates whether to enable data collection for diagnostics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#is_diagnostics_events_enabled OracleDatabaseDbSystem#is_diagnostics_events_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#is_diagnostics_events_enabled OracleDatabaseDbSystem#is_diagnostics_events_enabled}
   */
   readonly isDiagnosticsEventsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether to enable incident logs and trace collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#is_incident_logs_enabled OracleDatabaseDbSystem#is_incident_logs_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#is_incident_logs_enabled OracleDatabaseDbSystem#is_incident_logs_enabled}
   */
   readonly isIncidentLogsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -300,7 +300,7 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBacku
   * LOCAL
   * DBRS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#type OracleDatabaseDbSystem#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#type OracleDatabaseDbSystem#type}
   */
   readonly type?: string;
 }
@@ -418,7 +418,7 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBacku
   /**
   * If set to true, enables automatic backups on the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#auto_backup_enabled OracleDatabaseDbSystem#auto_backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#auto_backup_enabled OracleDatabaseDbSystem#auto_backup_enabled}
   */
   readonly autoBackupEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -431,7 +431,7 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBacku
   * SATURDAY
   * SUNDAY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#auto_full_backup_day OracleDatabaseDbSystem#auto_full_backup_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#auto_full_backup_day OracleDatabaseDbSystem#auto_full_backup_day}
   */
   readonly autoFullBackupDay?: string;
   /**
@@ -451,7 +451,7 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBacku
   * SLOT_ELEVEN
   * SLOT_TWELVE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#auto_full_backup_window OracleDatabaseDbSystem#auto_full_backup_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#auto_full_backup_window OracleDatabaseDbSystem#auto_full_backup_window}
   */
   readonly autoFullBackupWindow?: string;
   /**
@@ -472,7 +472,7 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBacku
   * SLOT_ELEVEN
   * SLOT_TWELVE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#auto_incremental_backup_window OracleDatabaseDbSystem#auto_incremental_backup_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#auto_incremental_backup_window OracleDatabaseDbSystem#auto_incremental_backup_window}
   */
   readonly autoIncrementalBackupWindow?: string;
   /**
@@ -481,7 +481,7 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBacku
   * DELETE_IMMEDIATELY
   * DELETE_AFTER_RETENTION_PERIOD
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#backup_deletion_policy OracleDatabaseDbSystem#backup_deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#backup_deletion_policy OracleDatabaseDbSystem#backup_deletion_policy}
   */
   readonly backupDeletionPolicy?: string;
   /**
@@ -489,13 +489,13 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBacku
   * automatically deleted. This value determines the earliest point in time to
   * which a database can be restored. Min: 1, Max: 60.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#retention_period_days OracleDatabaseDbSystem#retention_period_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#retention_period_days OracleDatabaseDbSystem#retention_period_days}
   */
   readonly retentionPeriodDays?: number;
   /**
   * backup_destination_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#backup_destination_details OracleDatabaseDbSystem#backup_destination_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#backup_destination_details OracleDatabaseDbSystem#backup_destination_details}
   */
   readonly backupDestinationDetails?: OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetails[] | cdktn.IResolvable;
 }
@@ -755,19 +755,19 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties {
   /**
   * The Oracle Database version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_version OracleDatabaseDbSystem#db_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_version OracleDatabaseDbSystem#db_version}
   */
   readonly dbVersion: string;
   /**
   * database_management_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#database_management_config OracleDatabaseDbSystem#database_management_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#database_management_config OracleDatabaseDbSystem#database_management_config}
   */
   readonly databaseManagementConfig?: OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig;
   /**
   * db_backup_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_backup_config OracleDatabaseDbSystem#db_backup_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_backup_config OracleDatabaseDbSystem#db_backup_config}
   */
   readonly dbBackupConfig?: OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig;
 }
@@ -913,25 +913,25 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabase {
   /**
   * The password for the default ADMIN user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#admin_password OracleDatabaseDbSystem#admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#admin_password OracleDatabaseDbSystem#admin_password}
   */
   readonly adminPassword: string;
   /**
   * The character set for the database. The default is AL32UTF8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#character_set OracleDatabaseDbSystem#character_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#character_set OracleDatabaseDbSystem#character_set}
   */
   readonly characterSet?: string;
   /**
   * The database ID of the Database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#database_id OracleDatabaseDbSystem#database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#database_id OracleDatabaseDbSystem#database_id}
   */
   readonly databaseId: string;
   /**
   * The name of the DbHome resource associated with the Database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_home_name OracleDatabaseDbSystem#db_home_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_home_name OracleDatabaseDbSystem#db_home_name}
   */
   readonly dbHomeName?: string;
   /**
@@ -939,49 +939,49 @@ export interface OracleDatabaseDbSystemPropertiesDbHomeDatabase {
   * contain a maximum of eight alphanumeric characters. Special characters are
   * not permitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_name OracleDatabaseDbSystem#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_name OracleDatabaseDbSystem#db_name}
   */
   readonly dbName?: string;
   /**
   * The DB_UNIQUE_NAME of the Oracle Database being backed up.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_unique_name OracleDatabaseDbSystem#db_unique_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_unique_name OracleDatabaseDbSystem#db_unique_name}
   */
   readonly dbUniqueName?: string;
   /**
   * The GCP Oracle zone where the Database is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#gcp_oracle_zone OracleDatabaseDbSystem#gcp_oracle_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#gcp_oracle_zone OracleDatabaseDbSystem#gcp_oracle_zone}
   */
   readonly gcpOracleZone?: string;
   /**
   * The national character set for the database. The default is AL16UTF16.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#ncharacter_set OracleDatabaseDbSystem#ncharacter_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#ncharacter_set OracleDatabaseDbSystem#ncharacter_set}
   */
   readonly ncharacterSet?: string;
   /**
   * The ID of the pluggable database associated with Database. The ID must be unique within the project and location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#pluggable_database_id OracleDatabaseDbSystem#pluggable_database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#pluggable_database_id OracleDatabaseDbSystem#pluggable_database_id}
   */
   readonly pluggableDatabaseId?: string;
   /**
   * The pluggable dataabse associated with the Database. The name must begin with an alphabetic character and can contain a maximum of thirty alphanumeric characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#pluggable_database_name OracleDatabaseDbSystem#pluggable_database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#pluggable_database_name OracleDatabaseDbSystem#pluggable_database_name}
   */
   readonly pluggableDatabaseName?: string;
   /**
   * The TDE wallet password for the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#tde_wallet_password OracleDatabaseDbSystem#tde_wallet_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#tde_wallet_password OracleDatabaseDbSystem#tde_wallet_password}
   */
   readonly tdeWalletPassword?: string;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#properties OracleDatabaseDbSystem#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#properties OracleDatabaseDbSystem#properties}
   */
   readonly properties?: OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties;
 }
@@ -1401,26 +1401,26 @@ export interface OracleDatabaseDbSystemPropertiesDbHome {
   * A valid Oracle Database version. For a list of supported versions, use the
   * ListDbVersions operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_version OracleDatabaseDbSystem#db_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_version OracleDatabaseDbSystem#db_version}
   */
   readonly dbVersion: string;
   /**
   * The display name for the Database Home. The name does not have to
   * be unique within your project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#display_name OracleDatabaseDbSystem#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#display_name OracleDatabaseDbSystem#display_name}
   */
   readonly displayName?: string;
   /**
   * Whether unified auditing is enabled for the Database Home.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#is_unified_auditing_enabled OracleDatabaseDbSystem#is_unified_auditing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#is_unified_auditing_enabled OracleDatabaseDbSystem#is_unified_auditing_enabled}
   */
   readonly isUnifiedAuditingEnabled?: boolean | cdktn.IResolvable;
   /**
   * database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#database OracleDatabaseDbSystem#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#database OracleDatabaseDbSystem#database}
   */
   readonly database: OracleDatabaseDbSystemPropertiesDbHomeDatabase;
 }
@@ -1590,7 +1590,7 @@ export interface OracleDatabaseDbSystemPropertiesDbSystemOptions {
   * ASM
   * LVM
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#storage_management OracleDatabaseDbSystem#storage_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#storage_management OracleDatabaseDbSystem#storage_management}
   */
   readonly storageManagement?: string;
 }
@@ -1676,7 +1676,7 @@ export interface OracleDatabaseDbSystemPropertiesTimeZone {
   /**
   * IANA Time Zone Database time zone. For example "America/New_York".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#id OracleDatabaseDbSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#id OracleDatabaseDbSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1765,7 +1765,7 @@ export interface OracleDatabaseDbSystemProperties {
   /**
   * The number of CPU cores to enable for the DbSystem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#compute_count OracleDatabaseDbSystem#compute_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#compute_count OracleDatabaseDbSystem#compute_count}
   */
   readonly computeCount: number;
   /**
@@ -1774,13 +1774,13 @@ export interface OracleDatabaseDbSystemProperties {
   * ECPU
   * OCPU
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#compute_model OracleDatabaseDbSystem#compute_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#compute_model OracleDatabaseDbSystem#compute_model}
   */
   readonly computeModel?: string;
   /**
   * The data storage size in GB that is currently available to DbSystems.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#data_storage_size_gb OracleDatabaseDbSystem#data_storage_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#data_storage_size_gb OracleDatabaseDbSystem#data_storage_size_gb}
   */
   readonly dataStorageSizeGb?: number;
   /**
@@ -1790,25 +1790,25 @@ export interface OracleDatabaseDbSystemProperties {
   * ENTERPRISE_EDITION
   * ENTERPRISE_EDITION_HIGH_PERFORMANCE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#database_edition OracleDatabaseDbSystem#database_edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#database_edition OracleDatabaseDbSystem#database_edition}
   */
   readonly databaseEdition: string;
   /**
   * The host domain name of the DbSystem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#domain OracleDatabaseDbSystem#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#domain OracleDatabaseDbSystem#domain}
   */
   readonly domain?: string;
   /**
   * Prefix for DB System host names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#hostname_prefix OracleDatabaseDbSystem#hostname_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#hostname_prefix OracleDatabaseDbSystem#hostname_prefix}
   */
   readonly hostnamePrefix?: string;
   /**
   * The initial data storage size in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#initial_data_storage_size_gb OracleDatabaseDbSystem#initial_data_storage_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#initial_data_storage_size_gb OracleDatabaseDbSystem#initial_data_storage_size_gb}
   */
   readonly initialDataStorageSizeGb: number;
   /**
@@ -1817,67 +1817,67 @@ export interface OracleDatabaseDbSystemProperties {
   * LICENSE_INCLUDED
   * BRING_YOUR_OWN_LICENSE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#license_model OracleDatabaseDbSystem#license_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#license_model OracleDatabaseDbSystem#license_model}
   */
   readonly licenseModel: string;
   /**
   * The memory size in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#memory_size_gb OracleDatabaseDbSystem#memory_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#memory_size_gb OracleDatabaseDbSystem#memory_size_gb}
   */
   readonly memorySizeGb?: number;
   /**
   * The number of nodes in the DbSystem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#node_count OracleDatabaseDbSystem#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#node_count OracleDatabaseDbSystem#node_count}
   */
   readonly nodeCount?: number;
   /**
   * The private IP address of the DbSystem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#private_ip OracleDatabaseDbSystem#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#private_ip OracleDatabaseDbSystem#private_ip}
   */
   readonly privateIp?: string;
   /**
   * The reco/redo storage size in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#reco_storage_size_gb OracleDatabaseDbSystem#reco_storage_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#reco_storage_size_gb OracleDatabaseDbSystem#reco_storage_size_gb}
   */
   readonly recoStorageSizeGb?: number;
   /**
   * Shape of DB System.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#shape OracleDatabaseDbSystem#shape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#shape OracleDatabaseDbSystem#shape}
   */
   readonly shape: string;
   /**
   * SSH public keys to be stored with the DbSystem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#ssh_public_keys OracleDatabaseDbSystem#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#ssh_public_keys OracleDatabaseDbSystem#ssh_public_keys}
   */
   readonly sshPublicKeys: string[];
   /**
   * data_collection_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#data_collection_options OracleDatabaseDbSystem#data_collection_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#data_collection_options OracleDatabaseDbSystem#data_collection_options}
   */
   readonly dataCollectionOptions?: OracleDatabaseDbSystemPropertiesDataCollectionOptions;
   /**
   * db_home block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_home OracleDatabaseDbSystem#db_home}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_home OracleDatabaseDbSystem#db_home}
   */
   readonly dbHome?: OracleDatabaseDbSystemPropertiesDbHome;
   /**
   * db_system_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#db_system_options OracleDatabaseDbSystem#db_system_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#db_system_options OracleDatabaseDbSystem#db_system_options}
   */
   readonly dbSystemOptions?: OracleDatabaseDbSystemPropertiesDbSystemOptions;
   /**
   * time_zone block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#time_zone OracleDatabaseDbSystem#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#time_zone OracleDatabaseDbSystem#time_zone}
   */
   readonly timeZone?: OracleDatabaseDbSystemPropertiesTimeZone;
 }
@@ -2451,15 +2451,15 @@ export class OracleDatabaseDbSystemPropertiesOutputReference extends cdktn.Compl
 }
 export interface OracleDatabaseDbSystemTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#create OracleDatabaseDbSystem#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#create OracleDatabaseDbSystem#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#delete OracleDatabaseDbSystem#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#delete OracleDatabaseDbSystem#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#update OracleDatabaseDbSystem#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#update OracleDatabaseDbSystem#update}
   */
   readonly update?: string;
 }
@@ -2611,7 +2611,7 @@ export class OracleDatabaseDbSystemTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system google_oracle_database_db_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system google_oracle_database_db_system}
 */
 export class OracleDatabaseDbSystem extends cdktn.TerraformResource {
 
@@ -2627,7 +2627,7 @@ export class OracleDatabaseDbSystem extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OracleDatabaseDbSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OracleDatabaseDbSystem to import
-  * @param importFromId The id of the existing OracleDatabaseDbSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OracleDatabaseDbSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OracleDatabaseDbSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2639,7 +2639,7 @@ export class OracleDatabaseDbSystem extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/oracle_database_db_system google_oracle_database_db_system} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_db_system google_oracle_database_db_system} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2650,7 +2650,7 @@ export class OracleDatabaseDbSystem extends cdktn.TerraformResource {
       terraformResourceType: 'google_oracle_database_db_system',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.34.0',
+        providerVersion: '7.35.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

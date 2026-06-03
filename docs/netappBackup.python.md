@@ -4,7 +4,7 @@
 
 ### NetappBackup <a name="NetappBackup" id="@cdktn/provider-google.netappBackup.NetappBackup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup google_netapp_backup}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup google_netapp_backup}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackup.NetappBackup.Initializer"></a>
 
@@ -28,6 +28,7 @@ netappBackup.NetappBackup(
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
+  ontap_source: NetappBackupOntapSource = None,
   project: str = None,
   source_snapshot: str = None,
   source_volume: str = None,
@@ -51,9 +52,10 @@ netappBackup.NetappBackup(
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.vaultName">vault_name</a></code> | <code>str</code> | Name of the backup vault to store the backup in. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#id NetappBackup#id}. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#id NetappBackup#id}. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#project NetappBackup#project}. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.ontapSource">ontap_source</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a></code> | ontap_source block. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#project NetappBackup#project}. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.sourceSnapshot">source_snapshot</a></code> | <code>str</code> | If specified, backup will be created from the given snapshot. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.sourceVolume">source_volume</a></code> | <code>str</code> | ID of volumes this backup belongs to. Format: 'projects/{{projects_id}}/locations/{{location}}/volumes/{{name}}''. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts">NetappBackupTimeouts</a></code> | timeouts block. |
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Location of the backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#location NetappBackup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#location NetappBackup#location}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the backup. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#name NetappBackup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#name NetappBackup#name}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the backup vault to store the backup in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
 
 ---
 
@@ -163,7 +165,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
 
 ---
 
@@ -173,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#description NetappBackup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#description NetappBackup#description}
 
 ---
 
@@ -181,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#id NetappBackup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#id NetappBackup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +199,17 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#labels NetappBackup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#labels NetappBackup#labels}
+
+---
+
+##### `ontap_source`<sup>Optional</sup> <a name="ontap_source" id="@cdktn/provider-google.netappBackup.NetappBackup.Initializer.parameter.ontapSource"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a>
+
+ontap_source block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#ontap_source NetappBackup#ontap_source}
 
 ---
 
@@ -205,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#project NetappBackup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#project NetappBackup#project}.
 
 ---
 
@@ -219,7 +231,7 @@ If not specified,
 there will be a new snapshot taken to initiate the backup creation.
 Format: 'projects/{{projectId}}/locations/{{location}}/volumes/{{volumename}}/snapshots/{{snapshotname}}''
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
 
 ---
 
@@ -229,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of volumes this backup belongs to. Format: 'projects/{{projects_id}}/locations/{{location}}/volumes/{{name}}''.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
 
 ---
 
@@ -239,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
 
 ---
 
@@ -271,11 +283,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.putOntapSource">put_ontap_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetLabels">reset_labels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetOntapSource">reset_ontap_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetSourceSnapshot">reset_source_snapshot</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.resetSourceVolume">reset_source_volume</a></code> | *No description.* |
@@ -631,6 +645,46 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_ontap_source` <a name="put_ontap_source" id="@cdktn/provider-google.netappBackup.NetappBackup.putOntapSource"></a>
+
+```python
+def put_ontap_source(
+  storage_pool: str,
+  volume_uuid: str,
+  snapshot_uuid: str = None
+) -> None
+```
+
+###### `storage_pool`<sup>Required</sup> <a name="storage_pool" id="@cdktn/provider-google.netappBackup.NetappBackup.putOntapSource.parameter.storagePool"></a>
+
+- *Type:* str
+
+Name of the storage pool. This must be specified for creating backups for ONTAP mode volumes. Format: 'projects/{{project}}/locations/{{location}}/storagePools/{{storage_pool_id}}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#storage_pool NetappBackup#storage_pool}
+
+---
+
+###### `volume_uuid`<sup>Required</sup> <a name="volume_uuid" id="@cdktn/provider-google.netappBackup.NetappBackup.putOntapSource.parameter.volumeUuid"></a>
+
+- *Type:* str
+
+The UUID of the ONTAP source volume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#volume_uuid NetappBackup#volume_uuid}
+
+---
+
+###### `snapshot_uuid`<sup>Optional</sup> <a name="snapshot_uuid" id="@cdktn/provider-google.netappBackup.NetappBackup.putOntapSource.parameter.snapshotUuid"></a>
+
+- *Type:* str
+
+The UUID of the ONTAP source snapshot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#snapshot_uuid NetappBackup#snapshot_uuid}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.netappBackup.NetappBackup.putTimeouts"></a>
 
 ```python
@@ -645,7 +699,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#create NetappBackup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#create NetappBackup#create}.
 
 ---
 
@@ -653,7 +707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#delete NetappBackup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#delete NetappBackup#delete}.
 
 ---
 
@@ -661,7 +715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#update NetappBackup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#update NetappBackup#update}.
 
 ---
 
@@ -687,6 +741,12 @@ def reset_id() -> None
 
 ```python
 def reset_labels() -> None
+```
+
+##### `reset_ontap_source` <a name="reset_ontap_source" id="@cdktn/provider-google.netappBackup.NetappBackup.resetOntapSource"></a>
+
+```python
+def reset_ontap_source() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.netappBackup.NetappBackup.resetProject"></a>
@@ -827,7 +887,7 @@ The construct id used in the generated config for the NetappBackup to import.
 
 The id of the existing NetappBackup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,6 +922,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.chainStorageBytes">chain_storage_bytes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.ontapSource">ontap_source</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference">NetappBackupOntapSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeoutsOutputReference">NetappBackupTimeoutsOutputReference</a></code> | *No description.* |
@@ -873,6 +934,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.ontapSourceInput">ontap_source_input</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.sourceSnapshotInput">source_snapshot_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackup.property.sourceVolumeInput">source_volume_input</a></code> | <code>str</code> | *No description.* |
@@ -1083,6 +1145,16 @@ effective_labels: StringMap
 
 ---
 
+##### `ontap_source`<sup>Required</sup> <a name="ontap_source" id="@cdktn/provider-google.netappBackup.NetappBackup.property.ontapSource"></a>
+
+```python
+ontap_source: NetappBackupOntapSourceOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference">NetappBackupOntapSourceOutputReference</a>
+
+---
+
 ##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.netappBackup.NetappBackup.property.state"></a>
 
 ```python
@@ -1190,6 +1262,16 @@ name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `ontap_source_input`<sup>Optional</sup> <a name="ontap_source_input" id="@cdktn/provider-google.netappBackup.NetappBackup.property.ontapSourceInput"></a>
+
+```python
+ontap_source_input: NetappBackupOntapSource
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a>
 
 ---
 
@@ -1385,6 +1467,7 @@ netappBackup.NetappBackupConfig(
   description: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
+  ontap_source: NetappBackupOntapSource = None,
   project: str = None,
   source_snapshot: str = None,
   source_volume: str = None,
@@ -1408,9 +1491,10 @@ netappBackup.NetappBackupConfig(
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.vaultName">vault_name</a></code> | <code>str</code> | Name of the backup vault to store the backup in. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.description">description</a></code> | <code>str</code> | A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#id NetappBackup#id}. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#id NetappBackup#id}. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#project NetappBackup#project}. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.ontapSource">ontap_source</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a></code> | ontap_source block. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#project NetappBackup#project}. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.sourceSnapshot">source_snapshot</a></code> | <code>str</code> | If specified, backup will be created from the given snapshot. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.sourceVolume">source_volume</a></code> | <code>str</code> | ID of volumes this backup belongs to. Format: 'projects/{{projects_id}}/locations/{{location}}/volumes/{{name}}''. |
 | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts">NetappBackupTimeouts</a></code> | timeouts block. |
@@ -1497,7 +1581,7 @@ location: str
 
 Location of the backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#location NetappBackup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#location NetappBackup#location}
 
 ---
 
@@ -1511,7 +1595,7 @@ name: str
 
 The resource name of the backup. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#name NetappBackup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#name NetappBackup#name}
 
 ---
 
@@ -1525,7 +1609,7 @@ vault_name: str
 
 Name of the backup vault to store the backup in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
 
 ---
 
@@ -1546,7 +1630,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
 
 ---
 
@@ -1560,7 +1644,7 @@ description: str
 
 A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#description NetappBackup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#description NetappBackup#description}
 
 ---
 
@@ -1572,7 +1656,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#id NetappBackup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#id NetappBackup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1592,7 +1676,21 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#labels NetappBackup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#labels NetappBackup#labels}
+
+---
+
+##### `ontap_source`<sup>Optional</sup> <a name="ontap_source" id="@cdktn/provider-google.netappBackup.NetappBackupConfig.property.ontapSource"></a>
+
+```python
+ontap_source: NetappBackupOntapSource
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a>
+
+ontap_source block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#ontap_source NetappBackup#ontap_source}
 
 ---
 
@@ -1604,7 +1702,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#project NetappBackup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#project NetappBackup#project}.
 
 ---
 
@@ -1622,7 +1720,7 @@ If not specified,
 there will be a new snapshot taken to initiate the backup creation.
 Format: 'projects/{{projectId}}/locations/{{location}}/volumes/{{volumename}}/snapshots/{{snapshotname}}''
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
 
 ---
 
@@ -1636,7 +1734,7 @@ source_volume: str
 
 ID of volumes this backup belongs to. Format: 'projects/{{projects_id}}/locations/{{location}}/volumes/{{name}}''.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
 
 ---
 
@@ -1650,7 +1748,73 @@ timeouts: NetappBackupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
+
+---
+
+### NetappBackupOntapSource <a name="NetappBackupOntapSource" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSource.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_backup
+
+netappBackup.NetappBackupOntapSource(
+  storage_pool: str,
+  volume_uuid: str,
+  snapshot_uuid: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource.property.storagePool">storage_pool</a></code> | <code>str</code> | Name of the storage pool. This must be specified for creating backups for ONTAP mode volumes. Format: 'projects/{{project}}/locations/{{location}}/storagePools/{{storage_pool_id}}'. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource.property.volumeUuid">volume_uuid</a></code> | <code>str</code> | The UUID of the ONTAP source volume. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource.property.snapshotUuid">snapshot_uuid</a></code> | <code>str</code> | The UUID of the ONTAP source snapshot. |
+
+---
+
+##### `storage_pool`<sup>Required</sup> <a name="storage_pool" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSource.property.storagePool"></a>
+
+```python
+storage_pool: str
+```
+
+- *Type:* str
+
+Name of the storage pool. This must be specified for creating backups for ONTAP mode volumes. Format: 'projects/{{project}}/locations/{{location}}/storagePools/{{storage_pool_id}}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#storage_pool NetappBackup#storage_pool}
+
+---
+
+##### `volume_uuid`<sup>Required</sup> <a name="volume_uuid" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSource.property.volumeUuid"></a>
+
+```python
+volume_uuid: str
+```
+
+- *Type:* str
+
+The UUID of the ONTAP source volume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#volume_uuid NetappBackup#volume_uuid}
+
+---
+
+##### `snapshot_uuid`<sup>Optional</sup> <a name="snapshot_uuid" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSource.property.snapshotUuid"></a>
+
+```python
+snapshot_uuid: str
+```
+
+- *Type:* str
+
+The UUID of the ONTAP source snapshot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#snapshot_uuid NetappBackup#snapshot_uuid}
 
 ---
 
@@ -1672,9 +1836,9 @@ netappBackup.NetappBackupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#create NetappBackup#create}. |
-| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#delete NetappBackup#delete}. |
-| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#update NetappBackup#update}. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#create NetappBackup#create}. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#delete NetappBackup#delete}. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#update NetappBackup#update}. |
 
 ---
 
@@ -1686,7 +1850,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#create NetappBackup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#create NetappBackup#create}.
 
 ---
 
@@ -1698,7 +1862,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#delete NetappBackup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#delete NetappBackup#delete}.
 
 ---
 
@@ -1710,11 +1874,358 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#update NetappBackup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#update NetappBackup#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NetappBackupOntapSourceOutputReference <a name="NetappBackupOntapSourceOutputReference" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_backup
+
+netappBackup.NetappBackupOntapSourceOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.resetSnapshotUuid">reset_snapshot_uuid</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_snapshot_uuid` <a name="reset_snapshot_uuid" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.resetSnapshotUuid"></a>
+
+```python
+def reset_snapshot_uuid() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.snapshotUuidInput">snapshot_uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.storagePoolInput">storage_pool_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.volumeUuidInput">volume_uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.snapshotUuid">snapshot_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.storagePool">storage_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.volumeUuid">volume_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `snapshot_uuid_input`<sup>Optional</sup> <a name="snapshot_uuid_input" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.snapshotUuidInput"></a>
+
+```python
+snapshot_uuid_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `storage_pool_input`<sup>Optional</sup> <a name="storage_pool_input" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.storagePoolInput"></a>
+
+```python
+storage_pool_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `volume_uuid_input`<sup>Optional</sup> <a name="volume_uuid_input" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.volumeUuidInput"></a>
+
+```python
+volume_uuid_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `snapshot_uuid`<sup>Required</sup> <a name="snapshot_uuid" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.snapshotUuid"></a>
+
+```python
+snapshot_uuid: str
+```
+
+- *Type:* str
+
+---
+
+##### `storage_pool`<sup>Required</sup> <a name="storage_pool" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.storagePool"></a>
+
+```python
+storage_pool: str
+```
+
+- *Type:* str
+
+---
+
+##### `volume_uuid`<sup>Required</sup> <a name="volume_uuid" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.volumeUuid"></a>
+
+```python
+volume_uuid: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappBackup.NetappBackupOntapSourceOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NetappBackupOntapSource
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappBackup.NetappBackupOntapSource">NetappBackupOntapSource</a>
+
+---
+
 
 ### NetappBackupTimeoutsOutputReference <a name="NetappBackupTimeoutsOutputReference" id="@cdktn/provider-google.netappBackup.NetappBackupTimeoutsOutputReference"></a>
 

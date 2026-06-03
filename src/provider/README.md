@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`google`](https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs).
+Refer to the Terraform Registry for docs: [`google`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs).

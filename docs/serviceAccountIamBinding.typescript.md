@@ -4,7 +4,7 @@
 
 ### ServiceAccountIamBinding <a name="ServiceAccountIamBinding" id="@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding google_service_account_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding google_service_account_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ServiceAccountIamBinding t
 
 The id of the existing ServiceAccountIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,9 +846,9 @@ const serviceAccountIamBindingCondition: serviceAccountIamBinding.ServiceAccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#expression ServiceAccountIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#title ServiceAccountIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#description ServiceAccountIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#expression ServiceAccountIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#title ServiceAccountIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#description ServiceAccountIamBinding#description}. |
 
 ---
 
@@ -860,7 +860,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#expression ServiceAccountIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#expression ServiceAccountIamBinding#expression}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#title ServiceAccountIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#title ServiceAccountIamBinding#title}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#description ServiceAccountIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#description ServiceAccountIamBinding#description}.
 
 ---
 
@@ -909,11 +909,11 @@ const serviceAccountIamBindingConfig: serviceAccountIamBinding.ServiceAccountIam
 | <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#members ServiceAccountIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#role ServiceAccountIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.serviceAccountId">serviceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#service_account_id ServiceAccountIamBinding#service_account_id}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#members ServiceAccountIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#role ServiceAccountIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.serviceAccountId">serviceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#service_account_id ServiceAccountIamBinding#service_account_id}. |
 | <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition">ServiceAccountIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#id ServiceAccountIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#id ServiceAccountIamBinding#id}. |
 
 ---
 
@@ -995,7 +995,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#members ServiceAccountIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#members ServiceAccountIamBinding#members}.
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#role ServiceAccountIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#role ServiceAccountIamBinding#role}.
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly serviceAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#service_account_id ServiceAccountIamBinding#service_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#service_account_id ServiceAccountIamBinding#service_account_id}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly condition: ServiceAccountIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#condition ServiceAccountIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#condition ServiceAccountIamBinding#condition}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_account_iam_binding#id ServiceAccountIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_account_iam_binding#id ServiceAccountIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder
+// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,50 +21,50 @@ export interface DataformTeamFolderConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#deletion_policy DataformTeamFolder#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#deletion_policy DataformTeamFolder#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Required. The TeamFolder's user-friendly name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#display_name DataformTeamFolder#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#display_name DataformTeamFolder#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}
   */
   readonly project?: string;
   /**
   * A reference to the region
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#region DataformTeamFolder#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#region DataformTeamFolder#region}
   */
   readonly region: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#timeouts DataformTeamFolder#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#timeouts DataformTeamFolder#timeouts}
   */
   readonly timeouts?: DataformTeamFolderTimeouts;
 }
 export interface DataformTeamFolderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}
   */
   readonly update?: string;
 }
@@ -216,7 +216,7 @@ export class DataformTeamFolderTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder google_dataform_team_folder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder google_dataform_team_folder}
 */
 export class DataformTeamFolder extends cdktn.TerraformResource {
 
@@ -232,7 +232,7 @@ export class DataformTeamFolder extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataformTeamFolder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataformTeamFolder to import
-  * @param importFromId The id of the existing DataformTeamFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataformTeamFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataformTeamFolder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -244,7 +244,7 @@ export class DataformTeamFolder extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/dataform_team_folder google_dataform_team_folder} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataform_team_folder google_dataform_team_folder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +255,7 @@ export class DataformTeamFolder extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataform_team_folder',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.34.0',
+        providerVersion: '7.35.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

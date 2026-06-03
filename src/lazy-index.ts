@@ -512,6 +512,8 @@ Object.defineProperty(exports, 'dataplexAsset', { get: function () { return requ
 Object.defineProperty(exports, 'dataplexAssetIamBinding', { get: function () { return require('./dataplex-asset-iam-binding'); } });
 Object.defineProperty(exports, 'dataplexAssetIamMember', { get: function () { return require('./dataplex-asset-iam-member'); } });
 Object.defineProperty(exports, 'dataplexAssetIamPolicy', { get: function () { return require('./dataplex-asset-iam-policy'); } });
+Object.defineProperty(exports, 'dataplexDataProduct', { get: function () { return require('./dataplex-data-product'); } });
+Object.defineProperty(exports, 'dataplexDataProductDataAsset', { get: function () { return require('./dataplex-data-product-data-asset'); } });
 Object.defineProperty(exports, 'dataplexDatascan', { get: function () { return require('./dataplex-datascan'); } });
 Object.defineProperty(exports, 'dataplexDatascanIamBinding', { get: function () { return require('./dataplex-datascan-iam-binding'); } });
 Object.defineProperty(exports, 'dataplexDatascanIamMember', { get: function () { return require('./dataplex-datascan-iam-member'); } });
@@ -893,8 +895,10 @@ Object.defineProperty(exports, 'memcacheInstance', { get: function () { return r
 Object.defineProperty(exports, 'memorystoreInstance', { get: function () { return require('./memorystore-instance'); } });
 Object.defineProperty(exports, 'memorystoreInstanceDesiredUserCreatedEndpoints', { get: function () { return require('./memorystore-instance-desired-user-created-endpoints'); } });
 Object.defineProperty(exports, 'migrationCenterAssetsExportJob', { get: function () { return require('./migration-center-assets-export-job'); } });
+Object.defineProperty(exports, 'migrationCenterDiscoveryClient', { get: function () { return require('./migration-center-discovery-client'); } });
 Object.defineProperty(exports, 'migrationCenterGroup', { get: function () { return require('./migration-center-group'); } });
 Object.defineProperty(exports, 'migrationCenterPreferenceSet', { get: function () { return require('./migration-center-preference-set'); } });
+Object.defineProperty(exports, 'migrationCenterReport', { get: function () { return require('./migration-center-report'); } });
 Object.defineProperty(exports, 'migrationCenterReportConfig', { get: function () { return require('./migration-center-report-config'); } });
 Object.defineProperty(exports, 'migrationCenterSettings', { get: function () { return require('./migration-center-settings'); } });
 Object.defineProperty(exports, 'migrationCenterSource', { get: function () { return require('./migration-center-source'); } });
@@ -1005,6 +1009,9 @@ Object.defineProperty(exports, 'oracleDatabaseCloudVmCluster', { get: function (
 Object.defineProperty(exports, 'oracleDatabaseDbSystem', { get: function () { return require('./oracle-database-db-system'); } });
 Object.defineProperty(exports, 'oracleDatabaseExadbVmCluster', { get: function () { return require('./oracle-database-exadb-vm-cluster'); } });
 Object.defineProperty(exports, 'oracleDatabaseExascaleDbStorageVault', { get: function () { return require('./oracle-database-exascale-db-storage-vault'); } });
+Object.defineProperty(exports, 'oracleDatabaseGoldengateConnection', { get: function () { return require('./oracle-database-goldengate-connection'); } });
+Object.defineProperty(exports, 'oracleDatabaseGoldengateConnectionAssignment', { get: function () { return require('./oracle-database-goldengate-connection-assignment'); } });
+Object.defineProperty(exports, 'oracleDatabaseGoldengateDeployment', { get: function () { return require('./oracle-database-goldengate-deployment'); } });
 Object.defineProperty(exports, 'oracleDatabaseOdbNetwork', { get: function () { return require('./oracle-database-odb-network'); } });
 Object.defineProperty(exports, 'oracleDatabaseOdbSubnet', { get: function () { return require('./oracle-database-odb-subnet'); } });
 Object.defineProperty(exports, 'orgPolicyCustomConstraint', { get: function () { return require('./org-policy-custom-constraint'); } });
@@ -1566,6 +1573,7 @@ Object.defineProperty(exports, 'dataGoogleOracleDatabaseCloudVmCluster', { get: 
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseCloudVmClusters', { get: function () { return require('./data-google-oracle-database-cloud-vm-clusters'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseDbNodes', { get: function () { return require('./data-google-oracle-database-db-nodes'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseDbServers', { get: function () { return require('./data-google-oracle-database-db-servers'); } });
+Object.defineProperty(exports, 'dataGoogleOracleDatabaseGoldengateConnectionTypes', { get: function () { return require('./data-google-oracle-database-goldengate-connection-types'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseGoldengateDeploymentEnvironments', { get: function () { return require('./data-google-oracle-database-goldengate-deployment-environments'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseOdbNetwork', { get: function () { return require('./data-google-oracle-database-odb-network'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseOdbSubnet', { get: function () { return require('./data-google-oracle-database-odb-subnet'); } });

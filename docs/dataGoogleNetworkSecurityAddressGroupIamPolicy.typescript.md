@@ -4,7 +4,7 @@
 
 ### DataGoogleNetworkSecurityAddressGroupIamPolicy <a name="DataGoogleNetworkSecurityAddressGroupIamPolicy" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleNetworkSecurityA
 
 The id of the existing DataGoogleNetworkSecurityAddressGroupIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,10 +712,10 @@ const dataGoogleNetworkSecurityAddressGroupIamPolicyConfig: dataGoogleNetworkSec
 | <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#name DataGoogleNetworkSecurityAddressGroupIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#id DataGoogleNetworkSecurityAddressGroupIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#location DataGoogleNetworkSecurityAddressGroupIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#project DataGoogleNetworkSecurityAddressGroupIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#name DataGoogleNetworkSecurityAddressGroupIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#id DataGoogleNetworkSecurityAddressGroupIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#location DataGoogleNetworkSecurityAddressGroupIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#project DataGoogleNetworkSecurityAddressGroupIamPolicy#project}. |
 
 ---
 
@@ -797,7 +797,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#name DataGoogleNetworkSecurityAddressGroupIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#name DataGoogleNetworkSecurityAddressGroupIamPolicy#name}.
 
 ---
 
@@ -809,7 +809,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#id DataGoogleNetworkSecurityAddressGroupIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#id DataGoogleNetworkSecurityAddressGroupIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -824,7 +824,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#location DataGoogleNetworkSecurityAddressGroupIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#location DataGoogleNetworkSecurityAddressGroupIamPolicy#location}.
 
 ---
 
@@ -836,7 +836,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/network_security_address_group_iam_policy#project DataGoogleNetworkSecurityAddressGroupIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/network_security_address_group_iam_policy#project DataGoogleNetworkSecurityAddressGroupIamPolicy#project}.
 
 ---
 
