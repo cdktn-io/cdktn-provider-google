@@ -1,3 +1,3 @@
 # `google_biglake_iceberg_namespace_iam_member`
 
-Refer to the Terraform Registry for docs: [`google_biglake_iceberg_namespace_iam_member`](https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/biglake_iceberg_namespace_iam_member).
+Refer to the Terraform Registry for docs: [`google_biglake_iceberg_namespace_iam_member`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup
+// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface NetappBackupConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#description NetappBackup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#description NetappBackup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#id NetappBackup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#id NetappBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,23 +44,23 @@ export interface NetappBackupConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#labels NetappBackup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#labels NetappBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location of the backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#location NetappBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#location NetappBackup#location}
   */
   readonly location: string;
   /**
   * The resource name of the backup. Needs to be unique per location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#name NetappBackup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#name NetappBackup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#project NetappBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#project NetappBackup#project}
   */
   readonly project?: string;
   /**
@@ -68,39 +68,196 @@ export interface NetappBackupConfig extends cdktn.TerraformMetaArguments {
   * there will be a new snapshot taken to initiate the backup creation.
   * Format: 'projects/{{projectId}}/locations/{{location}}/volumes/{{volumename}}/snapshots/{{snapshotname}}''
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
   */
   readonly sourceSnapshot?: string;
   /**
   * ID of volumes this backup belongs to. Format: 'projects/{{projects_id}}/locations/{{location}}/volumes/{{name}}''
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
   */
   readonly sourceVolume?: string;
   /**
   * Name of the backup vault to store the backup in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
   */
   readonly vaultName: string;
   /**
+  * ontap_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#ontap_source NetappBackup#ontap_source}
+  */
+  readonly ontapSource?: NetappBackupOntapSource;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
   */
   readonly timeouts?: NetappBackupTimeouts;
 }
+export interface NetappBackupOntapSource {
+  /**
+  * The UUID of the ONTAP source snapshot.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#snapshot_uuid NetappBackup#snapshot_uuid}
+  */
+  readonly snapshotUuid?: string;
+  /**
+  * Name of the storage pool. This must be specified for creating backups for ONTAP mode volumes.
+  * Format: 'projects/{{project}}/locations/{{location}}/storagePools/{{storage_pool_id}}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#storage_pool NetappBackup#storage_pool}
+  */
+  readonly storagePool: string;
+  /**
+  * The UUID of the ONTAP source volume.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#volume_uuid NetappBackup#volume_uuid}
+  */
+  readonly volumeUuid: string;
+}
+
+export function netappBackupOntapSourceToTerraform(struct?: NetappBackupOntapSourceOutputReference | NetappBackupOntapSource): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    snapshot_uuid: cdktn.stringToTerraform(struct!.snapshotUuid),
+    storage_pool: cdktn.stringToTerraform(struct!.storagePool),
+    volume_uuid: cdktn.stringToTerraform(struct!.volumeUuid),
+  }
+}
+
+
+export function netappBackupOntapSourceToHclTerraform(struct?: NetappBackupOntapSourceOutputReference | NetappBackupOntapSource): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    snapshot_uuid: {
+      value: cdktn.stringToHclTerraform(struct!.snapshotUuid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_pool: {
+      value: cdktn.stringToHclTerraform(struct!.storagePool),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    volume_uuid: {
+      value: cdktn.stringToHclTerraform(struct!.volumeUuid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetappBackupOntapSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetappBackupOntapSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._snapshotUuid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snapshotUuid = this._snapshotUuid;
+    }
+    if (this._storagePool !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storagePool = this._storagePool;
+    }
+    if (this._volumeUuid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeUuid = this._volumeUuid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetappBackupOntapSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._snapshotUuid = undefined;
+      this._storagePool = undefined;
+      this._volumeUuid = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._snapshotUuid = value.snapshotUuid;
+      this._storagePool = value.storagePool;
+      this._volumeUuid = value.volumeUuid;
+    }
+  }
+
+  // snapshot_uuid - computed: true, optional: true, required: false
+  private _snapshotUuid?: string; 
+  public get snapshotUuid() {
+    return this.getStringAttribute('snapshot_uuid');
+  }
+  public set snapshotUuid(value: string) {
+    this._snapshotUuid = value;
+  }
+  public resetSnapshotUuid() {
+    this._snapshotUuid = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotUuidInput() {
+    return this._snapshotUuid;
+  }
+
+  // storage_pool - computed: false, optional: false, required: true
+  private _storagePool?: string; 
+  public get storagePool() {
+    return this.getStringAttribute('storage_pool');
+  }
+  public set storagePool(value: string) {
+    this._storagePool = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storagePoolInput() {
+    return this._storagePool;
+  }
+
+  // volume_uuid - computed: false, optional: false, required: true
+  private _volumeUuid?: string; 
+  public get volumeUuid() {
+    return this.getStringAttribute('volume_uuid');
+  }
+  public set volumeUuid(value: string) {
+    this._volumeUuid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeUuidInput() {
+    return this._volumeUuid;
+  }
+}
 export interface NetappBackupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#create NetappBackup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#create NetappBackup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#delete NetappBackup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#delete NetappBackup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#update NetappBackup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#update NetappBackup#update}
   */
   readonly update?: string;
 }
@@ -252,7 +409,7 @@ export class NetappBackupTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup google_netapp_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup google_netapp_backup}
 */
 export class NetappBackup extends cdktn.TerraformResource {
 
@@ -268,7 +425,7 @@ export class NetappBackup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetappBackup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappBackup to import
-  * @param importFromId The id of the existing NetappBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappBackup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -280,7 +437,7 @@ export class NetappBackup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/netapp_backup google_netapp_backup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_backup google_netapp_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -291,7 +448,7 @@ export class NetappBackup extends cdktn.TerraformResource {
       terraformResourceType: 'google_netapp_backup',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.34.0',
+        providerVersion: '7.35.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -312,6 +469,7 @@ export class NetappBackup extends cdktn.TerraformResource {
     this._sourceSnapshot = config.sourceSnapshot;
     this._sourceVolume = config.sourceVolume;
     this._vaultName = config.vaultName;
+    this._ontapSource.internalValue = config.ontapSource;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -517,6 +675,22 @@ export class NetappBackup extends cdktn.TerraformResource {
     return this.getStringAttribute('volume_usage_bytes');
   }
 
+  // ontap_source - computed: false, optional: true, required: false
+  private _ontapSource = new NetappBackupOntapSourceOutputReference(this, "ontap_source");
+  public get ontapSource() {
+    return this._ontapSource;
+  }
+  public putOntapSource(value: NetappBackupOntapSource) {
+    this._ontapSource.internalValue = value;
+  }
+  public resetOntapSource() {
+    this._ontapSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ontapSourceInput() {
+    return this._ontapSource.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new NetappBackupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -549,6 +723,7 @@ export class NetappBackup extends cdktn.TerraformResource {
       source_snapshot: cdktn.stringToTerraform(this._sourceSnapshot),
       source_volume: cdktn.stringToTerraform(this._sourceVolume),
       vault_name: cdktn.stringToTerraform(this._vaultName),
+      ontap_source: netappBackupOntapSourceToTerraform(this._ontapSource.internalValue),
       timeouts: netappBackupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -614,6 +789,12 @@ export class NetappBackup extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ontap_source: {
+        value: netappBackupOntapSourceToHclTerraform(this._ontapSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetappBackupOntapSourceList",
       },
       timeouts: {
         value: netappBackupTimeoutsToHclTerraform(this._timeouts.internalValue),

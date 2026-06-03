@@ -1,3 +1,3 @@
 # `google_firebase_app_hosting_domain`
 
-Refer to the Terraform Registry for docs: [`google_firebase_app_hosting_domain`](https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/firebase_app_hosting_domain).
+Refer to the Terraform Registry for docs: [`google_firebase_app_hosting_domain`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktn from 'cdktn';
 
 export interface WorkstationsWorkstationConfigIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#id WorkstationsWorkstationConfigIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#id WorkstationsWorkstationConfigIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#location WorkstationsWorkstationConfigIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#location WorkstationsWorkstationConfigIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#members WorkstationsWorkstationConfigIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#members WorkstationsWorkstationConfigIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#project WorkstationsWorkstationConfigIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#project WorkstationsWorkstationConfigIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#role WorkstationsWorkstationConfigIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#role WorkstationsWorkstationConfigIamBinding#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#workstation_cluster_id WorkstationsWorkstationConfigIamBinding#workstation_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#workstation_cluster_id WorkstationsWorkstationConfigIamBinding#workstation_cluster_id}
   */
   readonly workstationClusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#workstation_config_id WorkstationsWorkstationConfigIamBinding#workstation_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#workstation_config_id WorkstationsWorkstationConfigIamBinding#workstation_config_id}
   */
   readonly workstationConfigId: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#condition WorkstationsWorkstationConfigIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#condition WorkstationsWorkstationConfigIamBinding#condition}
   */
   readonly condition?: WorkstationsWorkstationConfigIamBindingCondition;
 }
 export interface WorkstationsWorkstationConfigIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#description WorkstationsWorkstationConfigIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#description WorkstationsWorkstationConfigIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#expression WorkstationsWorkstationConfigIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#expression WorkstationsWorkstationConfigIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#title WorkstationsWorkstationConfigIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#title WorkstationsWorkstationConfigIamBinding#title}
   */
   readonly title: string;
 }
@@ -196,7 +196,7 @@ export class WorkstationsWorkstationConfigIamBindingConditionOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding}
 */
 export class WorkstationsWorkstationConfigIamBinding extends cdktn.TerraformResource {
 
@@ -212,7 +212,7 @@ export class WorkstationsWorkstationConfigIamBinding extends cdktn.TerraformReso
   * Generates CDKTN code for importing a WorkstationsWorkstationConfigIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkstationsWorkstationConfigIamBinding to import
-  * @param importFromId The id of the existing WorkstationsWorkstationConfigIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkstationsWorkstationConfigIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkstationsWorkstationConfigIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -224,7 +224,7 @@ export class WorkstationsWorkstationConfigIamBinding extends cdktn.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/workstations_workstation_config_iam_binding google_workstations_workstation_config_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +235,7 @@ export class WorkstationsWorkstationConfigIamBinding extends cdktn.TerraformReso
       terraformResourceType: 'google_workstations_workstation_config_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.34.0',
+        providerVersion: '7.35.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection
+// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface ServiceNetworkingConnectionConfig extends cdktn.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#deletion_policy ServiceNetworkingConnection#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#deletion_policy ServiceNetworkingConnection#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#id ServiceNetworkingConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#id ServiceNetworkingConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,45 +34,45 @@ export interface ServiceNetworkingConnectionConfig extends cdktn.TerraformMetaAr
   /**
   * Name of VPC network connected with service producers using VPC peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#network ServiceNetworkingConnection#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#network ServiceNetworkingConnection#network}
   */
   readonly network: string;
   /**
   * Named IP address range(s) of PEERING type reserved for this service provider. Note that invoking this method with a different range when connection is already established will not reallocate already provisioned service producer subnetworks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#reserved_peering_ranges ServiceNetworkingConnection#reserved_peering_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#reserved_peering_ranges ServiceNetworkingConnection#reserved_peering_ranges}
   */
   readonly reservedPeeringRanges: string[];
   /**
   * Provider peering service that is managing peering connectivity for a service provider organization. For Google services that support this functionality it is 'servicenetworking.googleapis.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#service ServiceNetworkingConnection#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#service ServiceNetworkingConnection#service}
   */
   readonly service: string;
   /**
   * When set to true, enforce an update of the reserved peering ranges on the existing service networking connection in case of a new connection creation failure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#update_on_creation_fail ServiceNetworkingConnection#update_on_creation_fail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#update_on_creation_fail ServiceNetworkingConnection#update_on_creation_fail}
   */
   readonly updateOnCreationFail?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#timeouts ServiceNetworkingConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#timeouts ServiceNetworkingConnection#timeouts}
   */
   readonly timeouts?: ServiceNetworkingConnectionTimeouts;
 }
 export interface ServiceNetworkingConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#create ServiceNetworkingConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#create ServiceNetworkingConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#delete ServiceNetworkingConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#delete ServiceNetworkingConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#update ServiceNetworkingConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#update ServiceNetworkingConnection#update}
   */
   readonly update?: string;
 }
@@ -224,7 +224,7 @@ export class ServiceNetworkingConnectionTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection google_service_networking_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection google_service_networking_connection}
 */
 export class ServiceNetworkingConnection extends cdktn.TerraformResource {
 
@@ -240,7 +240,7 @@ export class ServiceNetworkingConnection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceNetworkingConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceNetworkingConnection to import
-  * @param importFromId The id of the existing ServiceNetworkingConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceNetworkingConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceNetworkingConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -252,7 +252,7 @@ export class ServiceNetworkingConnection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/resources/service_networking_connection google_service_networking_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_networking_connection google_service_networking_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,7 +263,7 @@ export class ServiceNetworkingConnection extends cdktn.TerraformResource {
       terraformResourceType: 'google_service_networking_connection',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.34.0',
+        providerVersion: '7.35.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

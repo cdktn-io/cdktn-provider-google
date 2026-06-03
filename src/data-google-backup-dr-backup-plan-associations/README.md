@@ -1,3 +1,3 @@
 # `data_google_backup_dr_backup_plan_associations`
 
-Refer to the Terraform Registry for docs: [`data_google_backup_dr_backup_plan_associations`](https://registry.terraform.io/providers/hashicorp/google/7.34.0/docs/data-sources/backup_dr_backup_plan_associations).
+Refer to the Terraform Registry for docs: [`data_google_backup_dr_backup_plan_associations`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_backup_plan_associations).
