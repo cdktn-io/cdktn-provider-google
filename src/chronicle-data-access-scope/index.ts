@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -22,7 +22,7 @@ export interface ChronicleDataAccessScopeConfig extends cdktn.TerraformMetaArgum
   * to see all data except data labeled with A and data labeled with B and data
   * with labels A and B.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
   */
   readonly allowAll?: boolean | cdktn.IResolvable;
   /**
@@ -30,7 +30,7 @@ export interface ChronicleDataAccessScopeConfig extends cdktn.TerraformMetaArgum
   * of the scope resource.
   * Needs to be compliant with https://google.aip.dev/122
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#data_access_scope_id ChronicleDataAccessScope#data_access_scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#data_access_scope_id ChronicleDataAccessScope#data_access_scope_id}
   */
   readonly dataAccessScopeId: string;
   /**
@@ -42,17 +42,17 @@ export interface ChronicleDataAccessScopeConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#deletion_policy ChronicleDataAccessScope#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#deletion_policy ChronicleDataAccessScope#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. A description of the data access scope for a human reader.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#description ChronicleDataAccessScope#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#description ChronicleDataAccessScope#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -61,35 +61,35 @@ export interface ChronicleDataAccessScopeConfig extends cdktn.TerraformMetaArgum
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#instance ChronicleDataAccessScope#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#instance ChronicleDataAccessScope#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#location ChronicleDataAccessScope#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#location ChronicleDataAccessScope#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}
   */
   readonly project?: string;
   /**
   * allowed_data_access_labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
   */
   readonly allowedDataAccessLabels?: ChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktn.IResolvable;
   /**
   * denied_data_access_labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
   */
   readonly deniedDataAccessLabels?: ChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#timeouts ChronicleDataAccessScope#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#timeouts ChronicleDataAccessScope#timeouts}
   */
   readonly timeouts?: ChronicleDataAccessScopeTimeouts;
 }
@@ -97,7 +97,7 @@ export interface ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel {
   /**
   * Required. The key of the ingestion label. Always required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
   */
   readonly ingestionLabelKey: string;
   /**
@@ -105,7 +105,7 @@ export interface ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel {
   * with no provided value and some key provided would match
   * against the given key and ANY value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
   */
   readonly ingestionLabelValue?: string;
 }
@@ -113,7 +113,7 @@ export interface ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel {
 export function chronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelToTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ingestion_label_key: cdktn.stringToTerraform(struct!.ingestionLabelKey),
@@ -125,7 +125,7 @@ export function chronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelToT
 export function chronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelToHclTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ingestion_label_key: {
@@ -218,25 +218,25 @@ export interface ChronicleDataAccessScopeAllowedDataAccessLabels {
   * The asset namespace configured in the forwarder
   * of the customer's events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
   */
   readonly assetNamespace?: string;
   /**
   * The name of the data access label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
   */
   readonly dataAccessLabel?: string;
   /**
   * The name of the log type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
   */
   readonly logType?: string;
   /**
   * ingestion_label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
   */
   readonly ingestionLabel?: ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel;
 }
@@ -244,7 +244,7 @@ export interface ChronicleDataAccessScopeAllowedDataAccessLabels {
 export function chronicleDataAccessScopeAllowedDataAccessLabelsToTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     asset_namespace: cdktn.stringToTerraform(struct!.assetNamespace),
@@ -258,7 +258,7 @@ export function chronicleDataAccessScopeAllowedDataAccessLabelsToTerraform(struc
 export function chronicleDataAccessScopeAllowedDataAccessLabelsToHclTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     asset_namespace: {
@@ -446,7 +446,7 @@ export interface ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel {
   /**
   * Required. The key of the ingestion label. Always required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#ingestion_label_key ChronicleDataAccessScope#ingestion_label_key}
   */
   readonly ingestionLabelKey: string;
   /**
@@ -454,7 +454,7 @@ export interface ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel {
   * with no provided value and some key provided would match
   * against the given key and ANY value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#ingestion_label_value ChronicleDataAccessScope#ingestion_label_value}
   */
   readonly ingestionLabelValue?: string;
 }
@@ -462,7 +462,7 @@ export interface ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel {
 export function chronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelToTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ingestion_label_key: cdktn.stringToTerraform(struct!.ingestionLabelKey),
@@ -474,7 +474,7 @@ export function chronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelToTe
 export function chronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelToHclTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ingestion_label_key: {
@@ -567,25 +567,25 @@ export interface ChronicleDataAccessScopeDeniedDataAccessLabels {
   * The asset namespace configured in the forwarder
   * of the customer's events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#asset_namespace ChronicleDataAccessScope#asset_namespace}
   */
   readonly assetNamespace?: string;
   /**
   * The name of the data access label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#data_access_label ChronicleDataAccessScope#data_access_label}
   */
   readonly dataAccessLabel?: string;
   /**
   * The name of the log type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#log_type ChronicleDataAccessScope#log_type}
   */
   readonly logType?: string;
   /**
   * ingestion_label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#ingestion_label ChronicleDataAccessScope#ingestion_label}
   */
   readonly ingestionLabel?: ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel;
 }
@@ -593,7 +593,7 @@ export interface ChronicleDataAccessScopeDeniedDataAccessLabels {
 export function chronicleDataAccessScopeDeniedDataAccessLabelsToTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     asset_namespace: cdktn.stringToTerraform(struct!.assetNamespace),
@@ -607,7 +607,7 @@ export function chronicleDataAccessScopeDeniedDataAccessLabelsToTerraform(struct
 export function chronicleDataAccessScopeDeniedDataAccessLabelsToHclTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     asset_namespace: {
@@ -793,15 +793,15 @@ export class ChronicleDataAccessScopeDeniedDataAccessLabelsList extends cdktn.Co
 }
 export interface ChronicleDataAccessScopeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#create ChronicleDataAccessScope#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#create ChronicleDataAccessScope#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#delete ChronicleDataAccessScope#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#delete ChronicleDataAccessScope#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#update ChronicleDataAccessScope#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#update ChronicleDataAccessScope#update}
   */
   readonly update?: string;
 }
@@ -809,7 +809,7 @@ export interface ChronicleDataAccessScopeTimeouts {
 export function chronicleDataAccessScopeTimeoutsToTerraform(struct?: ChronicleDataAccessScopeTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -822,7 +822,7 @@ export function chronicleDataAccessScopeTimeoutsToTerraform(struct?: ChronicleDa
 export function chronicleDataAccessScopeTimeoutsToHclTerraform(struct?: ChronicleDataAccessScopeTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -953,7 +953,7 @@ export class ChronicleDataAccessScopeTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope}
 */
 export class ChronicleDataAccessScope extends cdktn.TerraformResource {
 
@@ -969,7 +969,7 @@ export class ChronicleDataAccessScope extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleDataAccessScope resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleDataAccessScope to import
-  * @param importFromId The id of the existing ChronicleDataAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleDataAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleDataAccessScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -981,7 +981,7 @@ export class ChronicleDataAccessScope extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -992,7 +992,7 @@ export class ChronicleDataAccessScope extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_data_access_scope',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

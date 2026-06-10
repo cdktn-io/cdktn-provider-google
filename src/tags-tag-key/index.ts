@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface TagsTagKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Regular expression constraint for dynamic tag values, follows RE2 syntax. If present, it implicitly allows dynamic values (constrained by the regex).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#allowed_values_regex TagsTagKey#allowed_values_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#allowed_values_regex TagsTagKey#allowed_values_regex}
   */
   readonly allowedValuesRegex?: string;
   /**
@@ -27,17 +27,17 @@ export interface TagsTagKeyConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#deletion_policy TagsTagKey#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#deletion_policy TagsTagKey#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-assigned description of the TagKey. Must not exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#description TagsTagKey#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#description TagsTagKey#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#id TagsTagKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#id TagsTagKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,7 +46,7 @@ export interface TagsTagKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
   */
   readonly parent: string;
   /**
@@ -54,7 +54,7 @@ export interface TagsTagKeyConfig extends cdktn.TerraformMetaArguments {
   * 
   * A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL", "DATA_GOVERNANCE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
   */
   readonly purpose?: string;
   /**
@@ -62,7 +62,7 @@ export interface TagsTagKeyConfig extends cdktn.TerraformMetaArguments {
   * 
   * Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
   */
   readonly purposeData?: { [key: string]: string };
   /**
@@ -70,27 +70,27 @@ export interface TagsTagKeyConfig extends cdktn.TerraformMetaArguments {
   * 
   * The short name can have a maximum length of 256 characters. The permitted character set for the shortName includes all UTF-8 encoded Unicode characters except single quotes ('), double quotes ("), backslashes (\\), and forward slashes (/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
   */
   readonly shortName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
   */
   readonly timeouts?: TagsTagKeyTimeouts;
 }
 export interface TagsTagKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#create TagsTagKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#create TagsTagKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#update TagsTagKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#update TagsTagKey#update}
   */
   readonly update?: string;
 }
@@ -98,7 +98,7 @@ export interface TagsTagKeyTimeouts {
 export function tagsTagKeyTimeoutsToTerraform(struct?: TagsTagKeyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -111,7 +111,7 @@ export function tagsTagKeyTimeoutsToTerraform(struct?: TagsTagKeyTimeouts | cdkt
 export function tagsTagKeyTimeoutsToHclTerraform(struct?: TagsTagKeyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -242,7 +242,7 @@ export class TagsTagKeyTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key google_tags_tag_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key google_tags_tag_key}
 */
 export class TagsTagKey extends cdktn.TerraformResource {
 
@@ -258,7 +258,7 @@ export class TagsTagKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TagsTagKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagsTagKey to import
-  * @param importFromId The id of the existing TagsTagKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagsTagKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagsTagKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -270,7 +270,7 @@ export class TagsTagKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/tags_tag_key google_tags_tag_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/tags_tag_key google_tags_tag_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -281,7 +281,7 @@ export class TagsTagKey extends cdktn.TerraformResource {
       terraformResourceType: 'google_tags_tag_key',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

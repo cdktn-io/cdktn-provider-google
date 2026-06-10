@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface PrivatecaCertificateConfig extends cdktn.TerraformMetaArguments
   * argument 'pool' should be set to 'projects/my-project/locations/us-central1/caPools/my-pool', argument 'certificate_authority'
   * should be set to 'my-ca'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#certificate_authority PrivatecaCertificate#certificate_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#certificate_authority PrivatecaCertificate#certificate_authority}
   */
   readonly certificateAuthority?: string;
   /**
@@ -28,7 +28,7 @@ export interface PrivatecaCertificateConfig extends cdktn.TerraformMetaArguments
   * omitted, no template will be used. This template must be in the same location
   * as the Certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#certificate_template PrivatecaCertificate#certificate_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#certificate_template PrivatecaCertificate#certificate_template}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -42,11 +42,11 @@ export interface PrivatecaCertificateConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#deletion_policy PrivatecaCertificate#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#deletion_policy PrivatecaCertificate#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#id PrivatecaCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#id PrivatecaCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -59,7 +59,7 @@ export interface PrivatecaCertificateConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#labels PrivatecaCertificate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#labels PrivatecaCertificate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -67,48 +67,48 @@ export interface PrivatecaCertificateConfig extends cdktn.TerraformMetaArguments
   * "notAfterTime" fields inside an X.509 certificate. A duration in seconds with up to nine
   * fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#lifetime PrivatecaCertificate#lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#lifetime PrivatecaCertificate#lifetime}
   */
   readonly lifetime?: string;
   /**
   * Location of the Certificate. A full list of valid locations can be found by
   * running 'gcloud privateca locations list'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#location PrivatecaCertificate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#location PrivatecaCertificate#location}
   */
   readonly location: string;
   /**
   * The name for this Certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#name PrivatecaCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#name PrivatecaCertificate#name}
   */
   readonly name: string;
   /**
   * Immutable. A pem-encoded X.509 certificate signing request (CSR).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#pem_csr PrivatecaCertificate#pem_csr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#pem_csr PrivatecaCertificate#pem_csr}
   */
   readonly pemCsr?: string;
   /**
   * The name of the CaPool this Certificate belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#pool PrivatecaCertificate#pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#pool PrivatecaCertificate#pool}
   */
   readonly pool: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#project PrivatecaCertificate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#project PrivatecaCertificate#project}
   */
   readonly project?: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#config PrivatecaCertificate#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#config PrivatecaCertificate#config}
   */
   readonly config?: PrivatecaCertificateConfigA;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#timeouts PrivatecaCertificate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#timeouts PrivatecaCertificate#timeouts}
   */
   readonly timeouts?: PrivatecaCertificateTimeouts;
 }
@@ -118,7 +118,7 @@ export interface PrivatecaCertificateCertificateDescriptionAuthorityKeyId {
 export function privatecaCertificateCertificateDescriptionAuthorityKeyIdToTerraform(struct?: PrivatecaCertificateCertificateDescriptionAuthorityKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -128,7 +128,7 @@ export function privatecaCertificateCertificateDescriptionAuthorityKeyIdToTerraf
 export function privatecaCertificateCertificateDescriptionAuthorityKeyIdToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionAuthorityKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -193,7 +193,7 @@ export interface PrivatecaCertificateCertificateDescriptionCertFingerprint {
 export function privatecaCertificateCertificateDescriptionCertFingerprintToTerraform(struct?: PrivatecaCertificateCertificateDescriptionCertFingerprint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -203,7 +203,7 @@ export function privatecaCertificateCertificateDescriptionCertFingerprintToTerra
 export function privatecaCertificateCertificateDescriptionCertFingerprintToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionCertFingerprint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -268,7 +268,7 @@ export interface PrivatecaCertificateCertificateDescriptionPublicKey {
 export function privatecaCertificateCertificateDescriptionPublicKeyToTerraform(struct?: PrivatecaCertificateCertificateDescriptionPublicKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -278,7 +278,7 @@ export function privatecaCertificateCertificateDescriptionPublicKeyToTerraform(s
 export function privatecaCertificateCertificateDescriptionPublicKeyToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionPublicKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -348,7 +348,7 @@ export interface PrivatecaCertificateCertificateDescriptionSubjectDescriptionSub
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectToTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -358,7 +358,7 @@ export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubj
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -458,7 +458,7 @@ export interface PrivatecaCertificateCertificateDescriptionSubjectDescriptionSub
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdToTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -468,7 +468,7 @@ export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubj
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -533,7 +533,7 @@ export interface PrivatecaCertificateCertificateDescriptionSubjectDescriptionSub
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansToTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSans): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -543,7 +543,7 @@ export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubj
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSans): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -619,7 +619,7 @@ export interface PrivatecaCertificateCertificateDescriptionSubjectDescriptionSub
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameToTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltName): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -629,7 +629,7 @@ export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubj
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltName): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -715,7 +715,7 @@ export interface PrivatecaCertificateCertificateDescriptionSubjectDescription {
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionToTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescription): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -725,7 +725,7 @@ export function privatecaCertificateCertificateDescriptionSubjectDescriptionToTe
 export function privatecaCertificateCertificateDescriptionSubjectDescriptionToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectDescription): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -817,7 +817,7 @@ export interface PrivatecaCertificateCertificateDescriptionSubjectKeyId {
 export function privatecaCertificateCertificateDescriptionSubjectKeyIdToTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -827,7 +827,7 @@ export function privatecaCertificateCertificateDescriptionSubjectKeyIdToTerrafor
 export function privatecaCertificateCertificateDescriptionSubjectKeyIdToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionSubjectKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -892,7 +892,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionAdditi
 export function privatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -902,7 +902,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionAdditio
 export function privatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -967,7 +967,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionAdditi
 export function privatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -977,7 +977,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionAdditio
 export function privatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1053,7 +1053,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionCaOpti
 export function privatecaCertificateCertificateDescriptionX509DescriptionCaOptionsToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1063,7 +1063,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionCaOptio
 export function privatecaCertificateCertificateDescriptionX509DescriptionCaOptionsToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1133,7 +1133,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsa
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1143,7 +1143,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsag
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1248,7 +1248,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsa
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1258,7 +1258,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsag
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1348,7 +1348,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsa
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1358,7 +1358,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsag
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1423,7 +1423,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsa
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1433,7 +1433,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsag
 export function privatecaCertificateCertificateDescriptionX509DescriptionKeyUsageToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1511,7 +1511,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionNameCo
 export function privatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1521,7 +1521,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionNameCon
 export function privatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1626,7 +1626,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509DescriptionPolicy
 export function privatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1636,7 +1636,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionPolicyI
 export function privatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1701,7 +1701,7 @@ export interface PrivatecaCertificateCertificateDescriptionX509Description {
 export function privatecaCertificateCertificateDescriptionX509DescriptionToTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509Description): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1711,7 +1711,7 @@ export function privatecaCertificateCertificateDescriptionX509DescriptionToTerra
 export function privatecaCertificateCertificateDescriptionX509DescriptionToHclTerraform(struct?: PrivatecaCertificateCertificateDescriptionX509Description): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1806,7 +1806,7 @@ export interface PrivatecaCertificateCertificateDescription {
 export function privatecaCertificateCertificateDescriptionToTerraform(struct?: PrivatecaCertificateCertificateDescription): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1816,7 +1816,7 @@ export function privatecaCertificateCertificateDescriptionToTerraform(struct?: P
 export function privatecaCertificateCertificateDescriptionToHclTerraform(struct?: PrivatecaCertificateCertificateDescription): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1922,7 +1922,7 @@ export interface PrivatecaCertificateRevocationDetails {
 export function privatecaCertificateRevocationDetailsToTerraform(struct?: PrivatecaCertificateRevocationDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1932,7 +1932,7 @@ export function privatecaCertificateRevocationDetailsToTerraform(struct?: Privat
 export function privatecaCertificateRevocationDetailsToHclTerraform(struct?: PrivatecaCertificateRevocationDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2000,13 +2000,13 @@ export interface PrivatecaCertificateConfigPublicKey {
   /**
   * The format of the public key. Currently, only PEM format is supported. Possible values: ["KEY_TYPE_UNSPECIFIED", "PEM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#format PrivatecaCertificate#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#format PrivatecaCertificate#format}
   */
   readonly format: string;
   /**
   * Required. A public key. When this is specified in a request, the padding and encoding can be any of the options described by the respective 'KeyType' value. When this is generated by the service, it will always be an RFC 5280 SubjectPublicKeyInfo structure containing an algorithm identifier and a key. A base64-encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#key PrivatecaCertificate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#key PrivatecaCertificate#key}
   */
   readonly key?: string;
 }
@@ -2014,7 +2014,7 @@ export interface PrivatecaCertificateConfigPublicKey {
 export function privatecaCertificateConfigPublicKeyToTerraform(struct?: PrivatecaCertificateConfigPublicKeyOutputReference | PrivatecaCertificateConfigPublicKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     format: cdktn.stringToTerraform(struct!.format),
@@ -2026,7 +2026,7 @@ export function privatecaCertificateConfigPublicKeyToTerraform(struct?: Privatec
 export function privatecaCertificateConfigPublicKeyToHclTerraform(struct?: PrivatecaCertificateConfigPublicKeyOutputReference | PrivatecaCertificateConfigPublicKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     format: {
@@ -2118,49 +2118,49 @@ export interface PrivatecaCertificateConfigSubjectConfigSubject {
   /**
   * The common name of the distinguished name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#common_name PrivatecaCertificate#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#common_name PrivatecaCertificate#common_name}
   */
   readonly commonName: string;
   /**
   * The country code of the subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#country_code PrivatecaCertificate#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#country_code PrivatecaCertificate#country_code}
   */
   readonly countryCode?: string;
   /**
   * The locality or city of the subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#locality PrivatecaCertificate#locality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#locality PrivatecaCertificate#locality}
   */
   readonly locality?: string;
   /**
   * The organization of the subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#organization PrivatecaCertificate#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#organization PrivatecaCertificate#organization}
   */
   readonly organization: string;
   /**
   * The organizational unit of the subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#organizational_unit PrivatecaCertificate#organizational_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#organizational_unit PrivatecaCertificate#organizational_unit}
   */
   readonly organizationalUnit?: string;
   /**
   * The postal code of the subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#postal_code PrivatecaCertificate#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#postal_code PrivatecaCertificate#postal_code}
   */
   readonly postalCode?: string;
   /**
   * The province, territory, or regional state of the subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#province PrivatecaCertificate#province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#province PrivatecaCertificate#province}
   */
   readonly province?: string;
   /**
   * The street address of the subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#street_address PrivatecaCertificate#street_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#street_address PrivatecaCertificate#street_address}
   */
   readonly streetAddress?: string;
 }
@@ -2168,7 +2168,7 @@ export interface PrivatecaCertificateConfigSubjectConfigSubject {
 export function privatecaCertificateConfigSubjectConfigSubjectToTerraform(struct?: PrivatecaCertificateConfigSubjectConfigSubjectOutputReference | PrivatecaCertificateConfigSubjectConfigSubject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     common_name: cdktn.stringToTerraform(struct!.commonName),
@@ -2186,7 +2186,7 @@ export function privatecaCertificateConfigSubjectConfigSubjectToTerraform(struct
 export function privatecaCertificateConfigSubjectConfigSubjectToHclTerraform(struct?: PrivatecaCertificateConfigSubjectConfigSubjectOutputReference | PrivatecaCertificateConfigSubjectConfigSubject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     common_name: {
@@ -2443,25 +2443,25 @@ export interface PrivatecaCertificateConfigSubjectConfigSubjectAltName {
   /**
   * Contains only valid, fully-qualified host names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#dns_names PrivatecaCertificate#dns_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#dns_names PrivatecaCertificate#dns_names}
   */
   readonly dnsNames?: string[];
   /**
   * Contains only valid RFC 2822 E-mail addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#email_addresses PrivatecaCertificate#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#email_addresses PrivatecaCertificate#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
   * Contains only valid 32-bit IPv4 addresses or RFC 4291 IPv6 addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#ip_addresses PrivatecaCertificate#ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#ip_addresses PrivatecaCertificate#ip_addresses}
   */
   readonly ipAddresses?: string[];
   /**
   * Contains only valid RFC 3986 URIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#uris PrivatecaCertificate#uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#uris PrivatecaCertificate#uris}
   */
   readonly uris?: string[];
 }
@@ -2469,7 +2469,7 @@ export interface PrivatecaCertificateConfigSubjectConfigSubjectAltName {
 export function privatecaCertificateConfigSubjectConfigSubjectAltNameToTerraform(struct?: PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference | PrivatecaCertificateConfigSubjectConfigSubjectAltName): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dns_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsNames),
@@ -2483,7 +2483,7 @@ export function privatecaCertificateConfigSubjectConfigSubjectAltNameToTerraform
 export function privatecaCertificateConfigSubjectConfigSubjectAltNameToHclTerraform(struct?: PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference | PrivatecaCertificateConfigSubjectConfigSubjectAltName): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dns_names: {
@@ -2634,13 +2634,13 @@ export interface PrivatecaCertificateConfigSubjectConfig {
   /**
   * subject block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#subject PrivatecaCertificate#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#subject PrivatecaCertificate#subject}
   */
   readonly subject: PrivatecaCertificateConfigSubjectConfigSubject;
   /**
   * subject_alt_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#subject_alt_name PrivatecaCertificate#subject_alt_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#subject_alt_name PrivatecaCertificate#subject_alt_name}
   */
   readonly subjectAltName?: PrivatecaCertificateConfigSubjectConfigSubjectAltName;
 }
@@ -2648,7 +2648,7 @@ export interface PrivatecaCertificateConfigSubjectConfig {
 export function privatecaCertificateConfigSubjectConfigToTerraform(struct?: PrivatecaCertificateConfigSubjectConfigOutputReference | PrivatecaCertificateConfigSubjectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     subject: privatecaCertificateConfigSubjectConfigSubjectToTerraform(struct!.subject),
@@ -2660,7 +2660,7 @@ export function privatecaCertificateConfigSubjectConfigToTerraform(struct?: Priv
 export function privatecaCertificateConfigSubjectConfigToHclTerraform(struct?: PrivatecaCertificateConfigSubjectConfigOutputReference | PrivatecaCertificateConfigSubjectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     subject: {
@@ -2752,7 +2752,7 @@ export interface PrivatecaCertificateConfigSubjectKeyId {
   /**
   * The value of the KeyId in lowercase hexadecimal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#key_id PrivatecaCertificate#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#key_id PrivatecaCertificate#key_id}
   */
   readonly keyId?: string;
 }
@@ -2760,7 +2760,7 @@ export interface PrivatecaCertificateConfigSubjectKeyId {
 export function privatecaCertificateConfigSubjectKeyIdToTerraform(struct?: PrivatecaCertificateConfigSubjectKeyIdOutputReference | PrivatecaCertificateConfigSubjectKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key_id: cdktn.stringToTerraform(struct!.keyId),
@@ -2771,7 +2771,7 @@ export function privatecaCertificateConfigSubjectKeyIdToTerraform(struct?: Priva
 export function privatecaCertificateConfigSubjectKeyIdToHclTerraform(struct?: PrivatecaCertificateConfigSubjectKeyIdOutputReference | PrivatecaCertificateConfigSubjectKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key_id: {
@@ -2838,7 +2838,7 @@ export interface PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectI
   /**
   * An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#object_id_path PrivatecaCertificate#object_id_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#object_id_path PrivatecaCertificate#object_id_path}
   */
   readonly objectIdPath: number[];
 }
@@ -2846,7 +2846,7 @@ export interface PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectI
 export function privatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdToTerraform(struct?: PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference | PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     object_id_path: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.objectIdPath),
@@ -2857,7 +2857,7 @@ export function privatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId
 export function privatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference | PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     object_id_path: {
@@ -2922,19 +2922,19 @@ export interface PrivatecaCertificateConfigX509ConfigAdditionalExtensions {
   * Indicates whether or not this extension is critical (i.e., if the client does not know how to
   * handle this extension, the client should consider this to be an error).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#critical PrivatecaCertificate#critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#critical PrivatecaCertificate#critical}
   */
   readonly critical: boolean | cdktn.IResolvable;
   /**
   * The value of this X.509 extension. A base64-encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#value PrivatecaCertificate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#value PrivatecaCertificate#value}
   */
   readonly value: string;
   /**
   * object_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#object_id PrivatecaCertificate#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#object_id PrivatecaCertificate#object_id}
   */
   readonly objectId: PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId;
 }
@@ -2942,7 +2942,7 @@ export interface PrivatecaCertificateConfigX509ConfigAdditionalExtensions {
 export function privatecaCertificateConfigX509ConfigAdditionalExtensionsToTerraform(struct?: PrivatecaCertificateConfigX509ConfigAdditionalExtensions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     critical: cdktn.booleanToTerraform(struct!.critical),
@@ -2955,7 +2955,7 @@ export function privatecaCertificateConfigX509ConfigAdditionalExtensionsToTerraf
 export function privatecaCertificateConfigX509ConfigAdditionalExtensionsToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigAdditionalExtensions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     critical: {
@@ -3101,21 +3101,21 @@ export interface PrivatecaCertificateConfigX509ConfigCaOptions {
   /**
   * When true, the "CA" in Basic Constraints extension will be set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#is_ca PrivatecaCertificate#is_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#is_ca PrivatecaCertificate#is_ca}
   */
   readonly isCa?: boolean | cdktn.IResolvable;
   /**
   * Refers to the "path length constraint" in Basic Constraints extension. For a CA certificate, this value describes the depth of
   * subordinate CA certificates that are allowed. If this value is less than 0, the request will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#max_issuer_path_length PrivatecaCertificate#max_issuer_path_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#max_issuer_path_length PrivatecaCertificate#max_issuer_path_length}
   */
   readonly maxIssuerPathLength?: number;
   /**
   * When true, the "CA" in Basic Constraints extension will be set to false.
   * If both 'is_ca' and 'non_ca' are unset, the extension will be omitted from the CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#non_ca PrivatecaCertificate#non_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#non_ca PrivatecaCertificate#non_ca}
   */
   readonly nonCa?: boolean | cdktn.IResolvable;
   /**
@@ -3123,7 +3123,7 @@ export interface PrivatecaCertificateConfigX509ConfigCaOptions {
   * if both 'max_issuer_path_length' and 'zero_max_issuer_path_length' are unset,
   * the max path length will be omitted from the CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#zero_max_issuer_path_length PrivatecaCertificate#zero_max_issuer_path_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#zero_max_issuer_path_length PrivatecaCertificate#zero_max_issuer_path_length}
   */
   readonly zeroMaxIssuerPathLength?: boolean | cdktn.IResolvable;
 }
@@ -3131,7 +3131,7 @@ export interface PrivatecaCertificateConfigX509ConfigCaOptions {
 export function privatecaCertificateConfigX509ConfigCaOptionsToTerraform(struct?: PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference | PrivatecaCertificateConfigX509ConfigCaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_ca: cdktn.booleanToTerraform(struct!.isCa),
@@ -3145,7 +3145,7 @@ export function privatecaCertificateConfigX509ConfigCaOptionsToTerraform(struct?
 export function privatecaCertificateConfigX509ConfigCaOptionsToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference | PrivatecaCertificateConfigX509ConfigCaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_ca: {
@@ -3296,55 +3296,55 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage {
   /**
   * The key may be used to sign certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#cert_sign PrivatecaCertificate#cert_sign}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#cert_sign PrivatecaCertificate#cert_sign}
   */
   readonly certSign?: boolean | cdktn.IResolvable;
   /**
   * The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#content_commitment PrivatecaCertificate#content_commitment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#content_commitment PrivatecaCertificate#content_commitment}
   */
   readonly contentCommitment?: boolean | cdktn.IResolvable;
   /**
   * The key may be used sign certificate revocation lists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#crl_sign PrivatecaCertificate#crl_sign}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#crl_sign PrivatecaCertificate#crl_sign}
   */
   readonly crlSign?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to encipher data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#data_encipherment PrivatecaCertificate#data_encipherment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#data_encipherment PrivatecaCertificate#data_encipherment}
   */
   readonly dataEncipherment?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to decipher only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#decipher_only PrivatecaCertificate#decipher_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#decipher_only PrivatecaCertificate#decipher_only}
   */
   readonly decipherOnly?: boolean | cdktn.IResolvable;
   /**
   * The key may be used for digital signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#digital_signature PrivatecaCertificate#digital_signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#digital_signature PrivatecaCertificate#digital_signature}
   */
   readonly digitalSignature?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to encipher only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#encipher_only PrivatecaCertificate#encipher_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#encipher_only PrivatecaCertificate#encipher_only}
   */
   readonly encipherOnly?: boolean | cdktn.IResolvable;
   /**
   * The key may be used in a key agreement protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#key_agreement PrivatecaCertificate#key_agreement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#key_agreement PrivatecaCertificate#key_agreement}
   */
   readonly keyAgreement?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to encipher other keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#key_encipherment PrivatecaCertificate#key_encipherment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#key_encipherment PrivatecaCertificate#key_encipherment}
   */
   readonly keyEncipherment?: boolean | cdktn.IResolvable;
 }
@@ -3352,7 +3352,7 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage {
 export function privatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageToTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference | PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cert_sign: cdktn.booleanToTerraform(struct!.certSign),
@@ -3371,7 +3371,7 @@ export function privatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageToTerraf
 export function privatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference | PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cert_sign: {
@@ -3662,37 +3662,37 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage {
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW client authentication", though regularly used for non-WWW TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#client_auth PrivatecaCertificate#client_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#client_auth PrivatecaCertificate#client_auth}
   */
   readonly clientAuth?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#code_signing PrivatecaCertificate#code_signing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#code_signing PrivatecaCertificate#code_signing}
   */
   readonly codeSigning?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#email_protection PrivatecaCertificate#email_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#email_protection PrivatecaCertificate#email_protection}
   */
   readonly emailProtection?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#ocsp_signing PrivatecaCertificate#ocsp_signing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#ocsp_signing PrivatecaCertificate#ocsp_signing}
   */
   readonly ocspSigning?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#server_auth PrivatecaCertificate#server_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#server_auth PrivatecaCertificate#server_auth}
   */
   readonly serverAuth?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#time_stamping PrivatecaCertificate#time_stamping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#time_stamping PrivatecaCertificate#time_stamping}
   */
   readonly timeStamping?: boolean | cdktn.IResolvable;
 }
@@ -3700,7 +3700,7 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage {
 export function privatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageToTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference | PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_auth: cdktn.booleanToTerraform(struct!.clientAuth),
@@ -3716,7 +3716,7 @@ export function privatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageToTe
 export function privatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference | PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_auth: {
@@ -3923,7 +3923,7 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyU
   /**
   * An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#object_id_path PrivatecaCertificate#object_id_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#object_id_path PrivatecaCertificate#object_id_path}
   */
   readonly objectIdPath: number[];
 }
@@ -3931,7 +3931,7 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyU
 export function privatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesToTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     object_id_path: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.objectIdPath),
@@ -3942,7 +3942,7 @@ export function privatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUs
 export function privatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     object_id_path: {
@@ -4038,19 +4038,19 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsage {
   /**
   * base_key_usage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#base_key_usage PrivatecaCertificate#base_key_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#base_key_usage PrivatecaCertificate#base_key_usage}
   */
   readonly baseKeyUsage: PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage;
   /**
   * extended_key_usage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#extended_key_usage PrivatecaCertificate#extended_key_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#extended_key_usage PrivatecaCertificate#extended_key_usage}
   */
   readonly extendedKeyUsage: PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage;
   /**
   * unknown_extended_key_usages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#unknown_extended_key_usages PrivatecaCertificate#unknown_extended_key_usages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#unknown_extended_key_usages PrivatecaCertificate#unknown_extended_key_usages}
   */
   readonly unknownExtendedKeyUsages?: PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages[] | cdktn.IResolvable;
 }
@@ -4058,7 +4058,7 @@ export interface PrivatecaCertificateConfigX509ConfigKeyUsage {
 export function privatecaCertificateConfigX509ConfigKeyUsageToTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference | PrivatecaCertificateConfigX509ConfigKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base_key_usage: privatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageToTerraform(struct!.baseKeyUsage),
@@ -4071,7 +4071,7 @@ export function privatecaCertificateConfigX509ConfigKeyUsageToTerraform(struct?:
 export function privatecaCertificateConfigX509ConfigKeyUsageToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference | PrivatecaCertificateConfigX509ConfigKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base_key_usage: {
@@ -4188,7 +4188,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   /**
   * Indicates whether or not the name constraints are marked critical.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#critical PrivatecaCertificate#critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#critical PrivatecaCertificate#critical}
   */
   readonly critical: boolean | cdktn.IResolvable;
   /**
@@ -4198,7 +4198,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * For example, 'example.com', 'www.example.com', 'www.sub.example.com'
   * would satisfy 'example.com' while 'example1.com' does not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#excluded_dns_names PrivatecaCertificate#excluded_dns_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#excluded_dns_names PrivatecaCertificate#excluded_dns_names}
   */
   readonly excludedDnsNames?: string[];
   /**
@@ -4207,7 +4207,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * a domain with a leading period (e.g. '.example.com') to indicate
   * all email addresses in that domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#excluded_email_addresses PrivatecaCertificate#excluded_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#excluded_email_addresses PrivatecaCertificate#excluded_email_addresses}
   */
   readonly excludedEmailAddresses?: string[];
   /**
@@ -4216,7 +4216,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
   * addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#excluded_ip_ranges PrivatecaCertificate#excluded_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#excluded_ip_ranges PrivatecaCertificate#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: string[];
   /**
@@ -4224,7 +4224,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * The value can be a hostname or a domain with a
   * leading period (like '.example.com')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#excluded_uris PrivatecaCertificate#excluded_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#excluded_uris PrivatecaCertificate#excluded_uris}
   */
   readonly excludedUris?: string[];
   /**
@@ -4234,7 +4234,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * For example, 'example.com', 'www.example.com', 'www.sub.example.com'
   * would satisfy 'example.com' while 'example1.com' does not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#permitted_dns_names PrivatecaCertificate#permitted_dns_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#permitted_dns_names PrivatecaCertificate#permitted_dns_names}
   */
   readonly permittedDnsNames?: string[];
   /**
@@ -4243,7 +4243,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * a domain with a leading period (e.g. '.example.com') to indicate
   * all email addresses in that domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#permitted_email_addresses PrivatecaCertificate#permitted_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#permitted_email_addresses PrivatecaCertificate#permitted_email_addresses}
   */
   readonly permittedEmailAddresses?: string[];
   /**
@@ -4252,7 +4252,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
   * addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#permitted_ip_ranges PrivatecaCertificate#permitted_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#permitted_ip_ranges PrivatecaCertificate#permitted_ip_ranges}
   */
   readonly permittedIpRanges?: string[];
   /**
@@ -4260,7 +4260,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
   * The value can be a hostname or a domain with a
   * leading period (like '.example.com')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#permitted_uris PrivatecaCertificate#permitted_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#permitted_uris PrivatecaCertificate#permitted_uris}
   */
   readonly permittedUris?: string[];
 }
@@ -4268,7 +4268,7 @@ export interface PrivatecaCertificateConfigX509ConfigNameConstraints {
 export function privatecaCertificateConfigX509ConfigNameConstraintsToTerraform(struct?: PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference | PrivatecaCertificateConfigX509ConfigNameConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     critical: cdktn.booleanToTerraform(struct!.critical),
@@ -4287,7 +4287,7 @@ export function privatecaCertificateConfigX509ConfigNameConstraintsToTerraform(s
 export function privatecaCertificateConfigX509ConfigNameConstraintsToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference | PrivatecaCertificateConfigX509ConfigNameConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     critical: {
@@ -4575,7 +4575,7 @@ export interface PrivatecaCertificateConfigX509ConfigPolicyIds {
   /**
   * An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#object_id_path PrivatecaCertificate#object_id_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#object_id_path PrivatecaCertificate#object_id_path}
   */
   readonly objectIdPath: number[];
 }
@@ -4583,7 +4583,7 @@ export interface PrivatecaCertificateConfigX509ConfigPolicyIds {
 export function privatecaCertificateConfigX509ConfigPolicyIdsToTerraform(struct?: PrivatecaCertificateConfigX509ConfigPolicyIds | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     object_id_path: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.objectIdPath),
@@ -4594,7 +4594,7 @@ export function privatecaCertificateConfigX509ConfigPolicyIdsToTerraform(struct?
 export function privatecaCertificateConfigX509ConfigPolicyIdsToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigPolicyIds | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     object_id_path: {
@@ -4691,37 +4691,37 @@ export interface PrivatecaCertificateConfigX509Config {
   * Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the
   * "Authority Information Access" extension in the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#aia_ocsp_servers PrivatecaCertificate#aia_ocsp_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#aia_ocsp_servers PrivatecaCertificate#aia_ocsp_servers}
   */
   readonly aiaOcspServers?: string[];
   /**
   * additional_extensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#additional_extensions PrivatecaCertificate#additional_extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#additional_extensions PrivatecaCertificate#additional_extensions}
   */
   readonly additionalExtensions?: PrivatecaCertificateConfigX509ConfigAdditionalExtensions[] | cdktn.IResolvable;
   /**
   * ca_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#ca_options PrivatecaCertificate#ca_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#ca_options PrivatecaCertificate#ca_options}
   */
   readonly caOptions?: PrivatecaCertificateConfigX509ConfigCaOptions;
   /**
   * key_usage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#key_usage PrivatecaCertificate#key_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#key_usage PrivatecaCertificate#key_usage}
   */
   readonly keyUsage: PrivatecaCertificateConfigX509ConfigKeyUsage;
   /**
   * name_constraints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#name_constraints PrivatecaCertificate#name_constraints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#name_constraints PrivatecaCertificate#name_constraints}
   */
   readonly nameConstraints?: PrivatecaCertificateConfigX509ConfigNameConstraints;
   /**
   * policy_ids block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#policy_ids PrivatecaCertificate#policy_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#policy_ids PrivatecaCertificate#policy_ids}
   */
   readonly policyIds?: PrivatecaCertificateConfigX509ConfigPolicyIds[] | cdktn.IResolvable;
 }
@@ -4729,7 +4729,7 @@ export interface PrivatecaCertificateConfigX509Config {
 export function privatecaCertificateConfigX509ConfigToTerraform(struct?: PrivatecaCertificateConfigX509ConfigOutputReference | PrivatecaCertificateConfigX509Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aia_ocsp_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.aiaOcspServers),
@@ -4745,7 +4745,7 @@ export function privatecaCertificateConfigX509ConfigToTerraform(struct?: Private
 export function privatecaCertificateConfigX509ConfigToHclTerraform(struct?: PrivatecaCertificateConfigX509ConfigOutputReference | PrivatecaCertificateConfigX509Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aia_ocsp_servers: {
@@ -4949,25 +4949,25 @@ export interface PrivatecaCertificateConfigA {
   /**
   * public_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#public_key PrivatecaCertificate#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#public_key PrivatecaCertificate#public_key}
   */
   readonly publicKey: PrivatecaCertificateConfigPublicKey;
   /**
   * subject_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#subject_config PrivatecaCertificate#subject_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#subject_config PrivatecaCertificate#subject_config}
   */
   readonly subjectConfig: PrivatecaCertificateConfigSubjectConfig;
   /**
   * subject_key_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#subject_key_id PrivatecaCertificate#subject_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#subject_key_id PrivatecaCertificate#subject_key_id}
   */
   readonly subjectKeyId?: PrivatecaCertificateConfigSubjectKeyId;
   /**
   * x509_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#x509_config PrivatecaCertificate#x509_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#x509_config PrivatecaCertificate#x509_config}
   */
   readonly x509Config: PrivatecaCertificateConfigX509Config;
 }
@@ -4975,7 +4975,7 @@ export interface PrivatecaCertificateConfigA {
 export function privatecaCertificateConfigAToTerraform(struct?: PrivatecaCertificateConfigAOutputReference | PrivatecaCertificateConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     public_key: privatecaCertificateConfigPublicKeyToTerraform(struct!.publicKey),
@@ -4989,7 +4989,7 @@ export function privatecaCertificateConfigAToTerraform(struct?: PrivatecaCertifi
 export function privatecaCertificateConfigAToHclTerraform(struct?: PrivatecaCertificateConfigAOutputReference | PrivatecaCertificateConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     public_key: {
@@ -5129,15 +5129,15 @@ export class PrivatecaCertificateConfigAOutputReference extends cdktn.ComplexObj
 }
 export interface PrivatecaCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#create PrivatecaCertificate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#create PrivatecaCertificate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#delete PrivatecaCertificate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#delete PrivatecaCertificate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#update PrivatecaCertificate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#update PrivatecaCertificate#update}
   */
   readonly update?: string;
 }
@@ -5145,7 +5145,7 @@ export interface PrivatecaCertificateTimeouts {
 export function privatecaCertificateTimeoutsToTerraform(struct?: PrivatecaCertificateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -5158,7 +5158,7 @@ export function privatecaCertificateTimeoutsToTerraform(struct?: PrivatecaCertif
 export function privatecaCertificateTimeoutsToHclTerraform(struct?: PrivatecaCertificateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -5289,7 +5289,7 @@ export class PrivatecaCertificateTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate google_privateca_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate google_privateca_certificate}
 */
 export class PrivatecaCertificate extends cdktn.TerraformResource {
 
@@ -5305,7 +5305,7 @@ export class PrivatecaCertificate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PrivatecaCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivatecaCertificate to import
-  * @param importFromId The id of the existing PrivatecaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrivatecaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivatecaCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5317,7 +5317,7 @@ export class PrivatecaCertificate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/privateca_certificate google_privateca_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/privateca_certificate google_privateca_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5328,7 +5328,7 @@ export class PrivatecaCertificate extends cdktn.TerraformResource {
       terraformResourceType: 'google_privateca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

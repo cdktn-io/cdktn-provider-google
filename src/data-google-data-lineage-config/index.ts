@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/data_lineage_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/data_lineage_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleDataLineageConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,14 +22,14 @@ export interface DataGoogleDataLineageConfigConfig extends cdktn.TerraformMetaAr
   /**
   * The region of the data lineage configuration for integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/data_lineage_config#location DataGoogleDataLineageConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/data_lineage_config#location DataGoogleDataLineageConfig#location}
   */
   readonly location: string;
   /**
   * Parent scope for the config.
   * Format: projects/{project-id|project-number} or folders/{folder-number} or organizations/{organization-number}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/data_lineage_config#parent DataGoogleDataLineageConfig#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/data_lineage_config#parent DataGoogleDataLineageConfig#parent}
   */
   readonly parent: string;
 }
@@ -39,7 +39,7 @@ export interface DataGoogleDataLineageConfigIngestionRuleIntegrationSelector {
 export function dataGoogleDataLineageConfigIngestionRuleIntegrationSelectorToTerraform(struct?: DataGoogleDataLineageConfigIngestionRuleIntegrationSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -49,7 +49,7 @@ export function dataGoogleDataLineageConfigIngestionRuleIntegrationSelectorToTer
 export function dataGoogleDataLineageConfigIngestionRuleIntegrationSelectorToHclTerraform(struct?: DataGoogleDataLineageConfigIngestionRuleIntegrationSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -114,7 +114,7 @@ export interface DataGoogleDataLineageConfigIngestionRuleLineageEnablement {
 export function dataGoogleDataLineageConfigIngestionRuleLineageEnablementToTerraform(struct?: DataGoogleDataLineageConfigIngestionRuleLineageEnablement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -124,7 +124,7 @@ export function dataGoogleDataLineageConfigIngestionRuleLineageEnablementToTerra
 export function dataGoogleDataLineageConfigIngestionRuleLineageEnablementToHclTerraform(struct?: DataGoogleDataLineageConfigIngestionRuleLineageEnablement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -189,7 +189,7 @@ export interface DataGoogleDataLineageConfigIngestionRule {
 export function dataGoogleDataLineageConfigIngestionRuleToTerraform(struct?: DataGoogleDataLineageConfigIngestionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -199,7 +199,7 @@ export function dataGoogleDataLineageConfigIngestionRuleToTerraform(struct?: Dat
 export function dataGoogleDataLineageConfigIngestionRuleToHclTerraform(struct?: DataGoogleDataLineageConfigIngestionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -271,7 +271,7 @@ export interface DataGoogleDataLineageConfigIngestion {
 export function dataGoogleDataLineageConfigIngestionToTerraform(struct?: DataGoogleDataLineageConfigIngestion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -281,7 +281,7 @@ export function dataGoogleDataLineageConfigIngestionToTerraform(struct?: DataGoo
 export function dataGoogleDataLineageConfigIngestionToHclTerraform(struct?: DataGoogleDataLineageConfigIngestion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -343,7 +343,7 @@ export class DataGoogleDataLineageConfigIngestionList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/data_lineage_config google_data_lineage_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/data_lineage_config google_data_lineage_config}
 */
 export class DataGoogleDataLineageConfig extends cdktn.TerraformDataSource {
 
@@ -359,7 +359,7 @@ export class DataGoogleDataLineageConfig extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleDataLineageConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleDataLineageConfig to import
-  * @param importFromId The id of the existing DataGoogleDataLineageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/data_lineage_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleDataLineageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/data_lineage_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleDataLineageConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -371,7 +371,7 @@ export class DataGoogleDataLineageConfig extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/data_lineage_config google_data_lineage_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/data_lineage_config google_data_lineage_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -382,7 +382,7 @@ export class DataGoogleDataLineageConfig extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_data_lineage_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

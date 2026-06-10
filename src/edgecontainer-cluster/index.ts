@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface EdgecontainerClusterConfig extends cdktn.TerraformMetaArguments
   * specified explicitly for a node pool in this cluster. If unspecified, the
   * Kubernetes default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#default_max_pods_per_node EdgecontainerCluster#default_max_pods_per_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#default_max_pods_per_node EdgecontainerCluster#default_max_pods_per_node}
   */
   readonly defaultMaxPodsPerNode?: number;
   /**
@@ -29,17 +29,17 @@ export interface EdgecontainerClusterConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#deletion_policy EdgecontainerCluster#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#deletion_policy EdgecontainerCluster#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Address pools for cluster data plane external load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#external_load_balancer_ipv4_address_pools EdgecontainerCluster#external_load_balancer_ipv4_address_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#external_load_balancer_ipv4_address_pools EdgecontainerCluster#external_load_balancer_ipv4_address_pools}
   */
   readonly externalLoadBalancerIpv4AddressPools?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#id EdgecontainerCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#id EdgecontainerCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -51,83 +51,83 @@ export interface EdgecontainerClusterConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#labels EdgecontainerCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#labels EdgecontainerCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#location EdgecontainerCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#location EdgecontainerCluster#location}
   */
   readonly location: string;
   /**
   * The GDCE cluster name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#name EdgecontainerCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#name EdgecontainerCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#project EdgecontainerCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#project EdgecontainerCluster#project}
   */
   readonly project?: string;
   /**
   * The release channel a cluster is subscribed to. Possible values: ["RELEASE_CHANNEL_UNSPECIFIED", "NONE", "REGULAR"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#release_channel EdgecontainerCluster#release_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#release_channel EdgecontainerCluster#release_channel}
   */
   readonly releaseChannel?: string;
   /**
   * The target cluster version. For example: "1.5.0".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#target_version EdgecontainerCluster#target_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#target_version EdgecontainerCluster#target_version}
   */
   readonly targetVersion?: string;
   /**
   * authorization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#authorization EdgecontainerCluster#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#authorization EdgecontainerCluster#authorization}
   */
   readonly authorization: EdgecontainerClusterAuthorization;
   /**
   * control_plane block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#control_plane EdgecontainerCluster#control_plane}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#control_plane EdgecontainerCluster#control_plane}
   */
   readonly controlPlane?: EdgecontainerClusterControlPlane;
   /**
   * control_plane_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#control_plane_encryption EdgecontainerCluster#control_plane_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#control_plane_encryption EdgecontainerCluster#control_plane_encryption}
   */
   readonly controlPlaneEncryption?: EdgecontainerClusterControlPlaneEncryption;
   /**
   * fleet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#fleet EdgecontainerCluster#fleet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#fleet EdgecontainerCluster#fleet}
   */
   readonly fleet: EdgecontainerClusterFleet;
   /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#maintenance_policy EdgecontainerCluster#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#maintenance_policy EdgecontainerCluster#maintenance_policy}
   */
   readonly maintenancePolicy?: EdgecontainerClusterMaintenancePolicy;
   /**
   * networking block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#networking EdgecontainerCluster#networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#networking EdgecontainerCluster#networking}
   */
   readonly networking: EdgecontainerClusterNetworking;
   /**
   * system_addons_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#system_addons_config EdgecontainerCluster#system_addons_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#system_addons_config EdgecontainerCluster#system_addons_config}
   */
   readonly systemAddonsConfig?: EdgecontainerClusterSystemAddonsConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#timeouts EdgecontainerCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#timeouts EdgecontainerCluster#timeouts}
   */
   readonly timeouts?: EdgecontainerClusterTimeouts;
 }
@@ -137,7 +137,7 @@ export interface EdgecontainerClusterMaintenanceEvents {
 export function edgecontainerClusterMaintenanceEventsToTerraform(struct?: EdgecontainerClusterMaintenanceEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -147,7 +147,7 @@ export function edgecontainerClusterMaintenanceEventsToTerraform(struct?: Edgeco
 export function edgecontainerClusterMaintenanceEventsToHclTerraform(struct?: EdgecontainerClusterMaintenanceEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -255,7 +255,7 @@ export interface EdgecontainerClusterAuthorizationAdminUsers {
   /**
   * An active Google username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#username EdgecontainerCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#username EdgecontainerCluster#username}
   */
   readonly username: string;
 }
@@ -263,7 +263,7 @@ export interface EdgecontainerClusterAuthorizationAdminUsers {
 export function edgecontainerClusterAuthorizationAdminUsersToTerraform(struct?: EdgecontainerClusterAuthorizationAdminUsersOutputReference | EdgecontainerClusterAuthorizationAdminUsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     username: cdktn.stringToTerraform(struct!.username),
@@ -274,7 +274,7 @@ export function edgecontainerClusterAuthorizationAdminUsersToTerraform(struct?: 
 export function edgecontainerClusterAuthorizationAdminUsersToHclTerraform(struct?: EdgecontainerClusterAuthorizationAdminUsersOutputReference | EdgecontainerClusterAuthorizationAdminUsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     username: {
@@ -338,7 +338,7 @@ export interface EdgecontainerClusterAuthorization {
   /**
   * admin_users block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#admin_users EdgecontainerCluster#admin_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#admin_users EdgecontainerCluster#admin_users}
   */
   readonly adminUsers: EdgecontainerClusterAuthorizationAdminUsers;
 }
@@ -346,7 +346,7 @@ export interface EdgecontainerClusterAuthorization {
 export function edgecontainerClusterAuthorizationToTerraform(struct?: EdgecontainerClusterAuthorizationOutputReference | EdgecontainerClusterAuthorization): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     admin_users: edgecontainerClusterAuthorizationAdminUsersToTerraform(struct!.adminUsers),
@@ -357,7 +357,7 @@ export function edgecontainerClusterAuthorizationToTerraform(struct?: Edgecontai
 export function edgecontainerClusterAuthorizationToHclTerraform(struct?: EdgecontainerClusterAuthorizationOutputReference | EdgecontainerClusterAuthorization): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     admin_users: {
@@ -423,27 +423,27 @@ export interface EdgecontainerClusterControlPlaneLocal {
   * plane nodes. The filtering language accepts strings like "name=<name>",
   * and is documented here: [AIP-160](https://google.aip.dev/160).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#machine_filter EdgecontainerCluster#machine_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#machine_filter EdgecontainerCluster#machine_filter}
   */
   readonly machineFilter?: string;
   /**
   * The number of nodes to serve as replicas of the Control Plane.
   * Only 1 and 3 are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#node_count EdgecontainerCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#node_count EdgecontainerCluster#node_count}
   */
   readonly nodeCount?: number;
   /**
   * Name of the Google Distributed Cloud Edge zones where this node pool
   * will be created. For example: 'us-central1-edge-customer-a'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#node_location EdgecontainerCluster#node_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#node_location EdgecontainerCluster#node_location}
   */
   readonly nodeLocation?: string;
   /**
   * Policy configuration about how user applications are deployed. Possible values: ["SHARED_DEPLOYMENT_POLICY_UNSPECIFIED", "ALLOWED", "DISALLOWED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#shared_deployment_policy EdgecontainerCluster#shared_deployment_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#shared_deployment_policy EdgecontainerCluster#shared_deployment_policy}
   */
   readonly sharedDeploymentPolicy?: string;
 }
@@ -451,7 +451,7 @@ export interface EdgecontainerClusterControlPlaneLocal {
 export function edgecontainerClusterControlPlaneLocalToTerraform(struct?: EdgecontainerClusterControlPlaneLocalOutputReference | EdgecontainerClusterControlPlaneLocal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     machine_filter: cdktn.stringToTerraform(struct!.machineFilter),
@@ -465,7 +465,7 @@ export function edgecontainerClusterControlPlaneLocalToTerraform(struct?: Edgeco
 export function edgecontainerClusterControlPlaneLocalToHclTerraform(struct?: EdgecontainerClusterControlPlaneLocalOutputReference | EdgecontainerClusterControlPlaneLocal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     machine_filter: {
@@ -617,7 +617,7 @@ export interface EdgecontainerClusterControlPlaneRemote {
   * Name of the Google Distributed Cloud Edge zones where this node pool
   * will be created. For example: 'us-central1-edge-customer-a'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#node_location EdgecontainerCluster#node_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#node_location EdgecontainerCluster#node_location}
   */
   readonly nodeLocation?: string;
 }
@@ -625,7 +625,7 @@ export interface EdgecontainerClusterControlPlaneRemote {
 export function edgecontainerClusterControlPlaneRemoteToTerraform(struct?: EdgecontainerClusterControlPlaneRemoteOutputReference | EdgecontainerClusterControlPlaneRemote): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     node_location: cdktn.stringToTerraform(struct!.nodeLocation),
@@ -636,7 +636,7 @@ export function edgecontainerClusterControlPlaneRemoteToTerraform(struct?: Edgec
 export function edgecontainerClusterControlPlaneRemoteToHclTerraform(struct?: EdgecontainerClusterControlPlaneRemoteOutputReference | EdgecontainerClusterControlPlaneRemote): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     node_location: {
@@ -703,13 +703,13 @@ export interface EdgecontainerClusterControlPlane {
   /**
   * local block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#local EdgecontainerCluster#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#local EdgecontainerCluster#local}
   */
   readonly local?: EdgecontainerClusterControlPlaneLocal;
   /**
   * remote block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#remote EdgecontainerCluster#remote}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#remote EdgecontainerCluster#remote}
   */
   readonly remote?: EdgecontainerClusterControlPlaneRemote;
 }
@@ -717,7 +717,7 @@ export interface EdgecontainerClusterControlPlane {
 export function edgecontainerClusterControlPlaneToTerraform(struct?: EdgecontainerClusterControlPlaneOutputReference | EdgecontainerClusterControlPlane): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     local: edgecontainerClusterControlPlaneLocalToTerraform(struct!.local),
@@ -729,7 +729,7 @@ export function edgecontainerClusterControlPlaneToTerraform(struct?: Edgecontain
 export function edgecontainerClusterControlPlaneToHclTerraform(struct?: EdgecontainerClusterControlPlaneOutputReference | EdgecontainerClusterControlPlane): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     local: {
@@ -826,7 +826,7 @@ export interface EdgecontainerClusterControlPlaneEncryptionKmsStatus {
 export function edgecontainerClusterControlPlaneEncryptionKmsStatusToTerraform(struct?: EdgecontainerClusterControlPlaneEncryptionKmsStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -836,7 +836,7 @@ export function edgecontainerClusterControlPlaneEncryptionKmsStatusToTerraform(s
 export function edgecontainerClusterControlPlaneEncryptionKmsStatusToHclTerraform(struct?: EdgecontainerClusterControlPlaneEncryptionKmsStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -907,7 +907,7 @@ export interface EdgecontainerClusterControlPlaneEncryption {
   * to use for protecting control plane disks. If not specified, a
   * Google-managed key will be used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#kms_key EdgecontainerCluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#kms_key EdgecontainerCluster#kms_key}
   */
   readonly kmsKey?: string;
 }
@@ -915,7 +915,7 @@ export interface EdgecontainerClusterControlPlaneEncryption {
 export function edgecontainerClusterControlPlaneEncryptionToTerraform(struct?: EdgecontainerClusterControlPlaneEncryptionOutputReference | EdgecontainerClusterControlPlaneEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     kms_key: cdktn.stringToTerraform(struct!.kmsKey),
@@ -926,7 +926,7 @@ export function edgecontainerClusterControlPlaneEncryptionToTerraform(struct?: E
 export function edgecontainerClusterControlPlaneEncryptionToHclTerraform(struct?: EdgecontainerClusterControlPlaneEncryptionOutputReference | EdgecontainerClusterControlPlaneEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     kms_key: {
@@ -1011,7 +1011,7 @@ export interface EdgecontainerClusterFleet {
   * Project names are formatted as
   * 'projects/<project-number>'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#project EdgecontainerCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#project EdgecontainerCluster#project}
   */
   readonly project: string;
 }
@@ -1019,7 +1019,7 @@ export interface EdgecontainerClusterFleet {
 export function edgecontainerClusterFleetToTerraform(struct?: EdgecontainerClusterFleetOutputReference | EdgecontainerClusterFleet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     project: cdktn.stringToTerraform(struct!.project),
@@ -1030,7 +1030,7 @@ export function edgecontainerClusterFleetToTerraform(struct?: EdgecontainerClust
 export function edgecontainerClusterFleetToHclTerraform(struct?: EdgecontainerClusterFleetOutputReference | EdgecontainerClusterFleet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     project: {
@@ -1100,13 +1100,13 @@ export interface EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindo
   * The time that the window ends. The end time must take place after the
   * start time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#end_time EdgecontainerCluster#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#end_time EdgecontainerCluster#end_time}
   */
   readonly endTime?: string;
   /**
   * The time that the window first starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#start_time EdgecontainerCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#start_time EdgecontainerCluster#start_time}
   */
   readonly startTime?: string;
 }
@@ -1114,7 +1114,7 @@ export interface EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindo
 export function edgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowToTerraform(struct?: EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference | EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end_time: cdktn.stringToTerraform(struct!.endTime),
@@ -1126,7 +1126,7 @@ export function edgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow
 export function edgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowToHclTerraform(struct?: EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference | EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end_time: {
@@ -1221,7 +1221,7 @@ export interface EdgecontainerClusterMaintenancePolicyMaintenanceExclusions {
   /**
   * A unique (per cluster) id for the window.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#id EdgecontainerCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#id EdgecontainerCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1230,7 +1230,7 @@ export interface EdgecontainerClusterMaintenancePolicyMaintenanceExclusions {
   /**
   * window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#window EdgecontainerCluster#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#window EdgecontainerCluster#window}
   */
   readonly window?: EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow;
 }
@@ -1238,7 +1238,7 @@ export interface EdgecontainerClusterMaintenancePolicyMaintenanceExclusions {
 export function edgecontainerClusterMaintenancePolicyMaintenanceExclusionsToTerraform(struct?: EdgecontainerClusterMaintenancePolicyMaintenanceExclusions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -1250,7 +1250,7 @@ export function edgecontainerClusterMaintenancePolicyMaintenanceExclusionsToTerr
 export function edgecontainerClusterMaintenancePolicyMaintenanceExclusionsToHclTerraform(struct?: EdgecontainerClusterMaintenancePolicyMaintenanceExclusions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -1378,13 +1378,13 @@ export interface EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindo
   * The time that the window ends. The end time must take place after the
   * start time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#end_time EdgecontainerCluster#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#end_time EdgecontainerCluster#end_time}
   */
   readonly endTime?: string;
   /**
   * The time that the window first starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#start_time EdgecontainerCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#start_time EdgecontainerCluster#start_time}
   */
   readonly startTime?: string;
 }
@@ -1392,7 +1392,7 @@ export interface EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindo
 export function edgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowToTerraform(struct?: EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowOutputReference | EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end_time: cdktn.stringToTerraform(struct!.endTime),
@@ -1404,7 +1404,7 @@ export function edgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow
 export function edgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowToHclTerraform(struct?: EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowOutputReference | EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end_time: {
@@ -1501,13 +1501,13 @@ export interface EdgecontainerClusterMaintenancePolicyWindowRecurringWindow {
   * this window recurs. They go on for the span of time between the start and
   * end time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#recurrence EdgecontainerCluster#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#recurrence EdgecontainerCluster#recurrence}
   */
   readonly recurrence?: string;
   /**
   * window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#window EdgecontainerCluster#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#window EdgecontainerCluster#window}
   */
   readonly window?: EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow;
 }
@@ -1515,7 +1515,7 @@ export interface EdgecontainerClusterMaintenancePolicyWindowRecurringWindow {
 export function edgecontainerClusterMaintenancePolicyWindowRecurringWindowToTerraform(struct?: EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference | EdgecontainerClusterMaintenancePolicyWindowRecurringWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     recurrence: cdktn.stringToTerraform(struct!.recurrence),
@@ -1527,7 +1527,7 @@ export function edgecontainerClusterMaintenancePolicyWindowRecurringWindowToTerr
 export function edgecontainerClusterMaintenancePolicyWindowRecurringWindowToHclTerraform(struct?: EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference | EdgecontainerClusterMaintenancePolicyWindowRecurringWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     recurrence: {
@@ -1622,7 +1622,7 @@ export interface EdgecontainerClusterMaintenancePolicyWindow {
   /**
   * recurring_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#recurring_window EdgecontainerCluster#recurring_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#recurring_window EdgecontainerCluster#recurring_window}
   */
   readonly recurringWindow: EdgecontainerClusterMaintenancePolicyWindowRecurringWindow;
 }
@@ -1630,7 +1630,7 @@ export interface EdgecontainerClusterMaintenancePolicyWindow {
 export function edgecontainerClusterMaintenancePolicyWindowToTerraform(struct?: EdgecontainerClusterMaintenancePolicyWindowOutputReference | EdgecontainerClusterMaintenancePolicyWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     recurring_window: edgecontainerClusterMaintenancePolicyWindowRecurringWindowToTerraform(struct!.recurringWindow),
@@ -1641,7 +1641,7 @@ export function edgecontainerClusterMaintenancePolicyWindowToTerraform(struct?: 
 export function edgecontainerClusterMaintenancePolicyWindowToHclTerraform(struct?: EdgecontainerClusterMaintenancePolicyWindowOutputReference | EdgecontainerClusterMaintenancePolicyWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     recurring_window: {
@@ -1705,13 +1705,13 @@ export interface EdgecontainerClusterMaintenancePolicy {
   /**
   * maintenance_exclusions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#maintenance_exclusions EdgecontainerCluster#maintenance_exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#maintenance_exclusions EdgecontainerCluster#maintenance_exclusions}
   */
   readonly maintenanceExclusions?: EdgecontainerClusterMaintenancePolicyMaintenanceExclusions[] | cdktn.IResolvable;
   /**
   * window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#window EdgecontainerCluster#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#window EdgecontainerCluster#window}
   */
   readonly window: EdgecontainerClusterMaintenancePolicyWindow;
 }
@@ -1719,7 +1719,7 @@ export interface EdgecontainerClusterMaintenancePolicy {
 export function edgecontainerClusterMaintenancePolicyToTerraform(struct?: EdgecontainerClusterMaintenancePolicyOutputReference | EdgecontainerClusterMaintenancePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     maintenance_exclusions: cdktn.listMapper(edgecontainerClusterMaintenancePolicyMaintenanceExclusionsToTerraform, true)(struct!.maintenanceExclusions),
@@ -1731,7 +1731,7 @@ export function edgecontainerClusterMaintenancePolicyToTerraform(struct?: Edgeco
 export function edgecontainerClusterMaintenancePolicyToHclTerraform(struct?: EdgecontainerClusterMaintenancePolicyOutputReference | EdgecontainerClusterMaintenancePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     maintenance_exclusions: {
@@ -1825,7 +1825,7 @@ export interface EdgecontainerClusterNetworking {
   * blocks. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#cluster_ipv4_cidr_blocks EdgecontainerCluster#cluster_ipv4_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#cluster_ipv4_cidr_blocks EdgecontainerCluster#cluster_ipv4_cidr_blocks}
   */
   readonly clusterIpv4CidrBlocks: string[];
   /**
@@ -1834,7 +1834,7 @@ export interface EdgecontainerClusterNetworking {
   * address. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#cluster_ipv6_cidr_blocks EdgecontainerCluster#cluster_ipv6_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#cluster_ipv6_cidr_blocks EdgecontainerCluster#cluster_ipv6_cidr_blocks}
   */
   readonly clusterIpv6CidrBlocks?: string[];
   /**
@@ -1842,7 +1842,7 @@ export interface EdgecontainerClusterNetworking {
   * blocks. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#services_ipv4_cidr_blocks EdgecontainerCluster#services_ipv4_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#services_ipv4_cidr_blocks EdgecontainerCluster#services_ipv4_cidr_blocks}
   */
   readonly servicesIpv4CidrBlocks: string[];
   /**
@@ -1851,7 +1851,7 @@ export interface EdgecontainerClusterNetworking {
   * address. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#services_ipv6_cidr_blocks EdgecontainerCluster#services_ipv6_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#services_ipv6_cidr_blocks EdgecontainerCluster#services_ipv6_cidr_blocks}
   */
   readonly servicesIpv6CidrBlocks?: string[];
 }
@@ -1859,7 +1859,7 @@ export interface EdgecontainerClusterNetworking {
 export function edgecontainerClusterNetworkingToTerraform(struct?: EdgecontainerClusterNetworkingOutputReference | EdgecontainerClusterNetworking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cluster_ipv4_cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusterIpv4CidrBlocks),
@@ -1873,7 +1873,7 @@ export function edgecontainerClusterNetworkingToTerraform(struct?: Edgecontainer
 export function edgecontainerClusterNetworkingToHclTerraform(struct?: EdgecontainerClusterNetworkingOutputReference | EdgecontainerClusterNetworking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cluster_ipv4_cidr_blocks: {
@@ -2023,13 +2023,13 @@ export interface EdgecontainerClusterSystemAddonsConfigIngress {
   /**
   * Whether Ingress is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#disabled EdgecontainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#disabled EdgecontainerCluster#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Ingress VIP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#ipv4_vip EdgecontainerCluster#ipv4_vip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#ipv4_vip EdgecontainerCluster#ipv4_vip}
   */
   readonly ipv4Vip?: string;
 }
@@ -2037,7 +2037,7 @@ export interface EdgecontainerClusterSystemAddonsConfigIngress {
 export function edgecontainerClusterSystemAddonsConfigIngressToTerraform(struct?: EdgecontainerClusterSystemAddonsConfigIngressOutputReference | EdgecontainerClusterSystemAddonsConfigIngress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disabled: cdktn.booleanToTerraform(struct!.disabled),
@@ -2049,7 +2049,7 @@ export function edgecontainerClusterSystemAddonsConfigIngressToTerraform(struct?
 export function edgecontainerClusterSystemAddonsConfigIngressToHclTerraform(struct?: EdgecontainerClusterSystemAddonsConfigIngressOutputReference | EdgecontainerClusterSystemAddonsConfigIngress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disabled: {
@@ -2144,7 +2144,7 @@ export interface EdgecontainerClusterSystemAddonsConfig {
   /**
   * ingress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#ingress EdgecontainerCluster#ingress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#ingress EdgecontainerCluster#ingress}
   */
   readonly ingress?: EdgecontainerClusterSystemAddonsConfigIngress;
 }
@@ -2152,7 +2152,7 @@ export interface EdgecontainerClusterSystemAddonsConfig {
 export function edgecontainerClusterSystemAddonsConfigToTerraform(struct?: EdgecontainerClusterSystemAddonsConfigOutputReference | EdgecontainerClusterSystemAddonsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ingress: edgecontainerClusterSystemAddonsConfigIngressToTerraform(struct!.ingress),
@@ -2163,7 +2163,7 @@ export function edgecontainerClusterSystemAddonsConfigToTerraform(struct?: Edgec
 export function edgecontainerClusterSystemAddonsConfigToHclTerraform(struct?: EdgecontainerClusterSystemAddonsConfigOutputReference | EdgecontainerClusterSystemAddonsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ingress: {
@@ -2228,15 +2228,15 @@ export class EdgecontainerClusterSystemAddonsConfigOutputReference extends cdktn
 }
 export interface EdgecontainerClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#create EdgecontainerCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#create EdgecontainerCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#delete EdgecontainerCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#delete EdgecontainerCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#update EdgecontainerCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#update EdgecontainerCluster#update}
   */
   readonly update?: string;
 }
@@ -2244,7 +2244,7 @@ export interface EdgecontainerClusterTimeouts {
 export function edgecontainerClusterTimeoutsToTerraform(struct?: EdgecontainerClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2257,7 +2257,7 @@ export function edgecontainerClusterTimeoutsToTerraform(struct?: EdgecontainerCl
 export function edgecontainerClusterTimeoutsToHclTerraform(struct?: EdgecontainerClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2388,7 +2388,7 @@ export class EdgecontainerClusterTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster google_edgecontainer_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster google_edgecontainer_cluster}
 */
 export class EdgecontainerCluster extends cdktn.TerraformResource {
 
@@ -2404,7 +2404,7 @@ export class EdgecontainerCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EdgecontainerCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EdgecontainerCluster to import
-  * @param importFromId The id of the existing EdgecontainerCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EdgecontainerCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EdgecontainerCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2416,7 +2416,7 @@ export class EdgecontainerCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/edgecontainer_cluster google_edgecontainer_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/edgecontainer_cluster google_edgecontainer_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2427,7 +2427,7 @@ export class EdgecontainerCluster extends cdktn.TerraformResource {
       terraformResourceType: 'google_edgecontainer_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

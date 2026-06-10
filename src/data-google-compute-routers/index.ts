@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_routers
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_routers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeRoutersConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_routers#id DataGoogleComputeRouters#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_routers#id DataGoogleComputeRouters#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_routers#project DataGoogleComputeRouters#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_routers#project DataGoogleComputeRouters#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_routers#region DataGoogleComputeRouters#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_routers#region DataGoogleComputeRouters#region}
   */
   readonly region?: string;
 }
@@ -34,7 +34,7 @@ export interface DataGoogleComputeRoutersRoutersBgpAdvertisedIpRanges {
 export function dataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesToTerraform(struct?: DataGoogleComputeRoutersRoutersBgpAdvertisedIpRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -44,7 +44,7 @@ export function dataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesToTerraform(
 export function dataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesToHclTerraform(struct?: DataGoogleComputeRoutersRoutersBgpAdvertisedIpRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -114,7 +114,7 @@ export interface DataGoogleComputeRoutersRoutersBgp {
 export function dataGoogleComputeRoutersRoutersBgpToTerraform(struct?: DataGoogleComputeRoutersRoutersBgp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -124,7 +124,7 @@ export function dataGoogleComputeRoutersRoutersBgpToTerraform(struct?: DataGoogl
 export function dataGoogleComputeRoutersRoutersBgpToHclTerraform(struct?: DataGoogleComputeRoutersRoutersBgp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -210,7 +210,7 @@ export interface DataGoogleComputeRoutersRoutersBgpPeers {
 export function dataGoogleComputeRoutersRoutersBgpPeersToTerraform(struct?: DataGoogleComputeRoutersRoutersBgpPeers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -220,7 +220,7 @@ export function dataGoogleComputeRoutersRoutersBgpPeersToTerraform(struct?: Data
 export function dataGoogleComputeRoutersRoutersBgpPeersToHclTerraform(struct?: DataGoogleComputeRoutersRoutersBgpPeers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -330,7 +330,7 @@ export interface DataGoogleComputeRoutersRoutersInterfaces {
 export function dataGoogleComputeRoutersRoutersInterfacesToTerraform(struct?: DataGoogleComputeRoutersRoutersInterfaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -340,7 +340,7 @@ export function dataGoogleComputeRoutersRoutersInterfacesToTerraform(struct?: Da
 export function dataGoogleComputeRoutersRoutersInterfacesToHclTerraform(struct?: DataGoogleComputeRoutersRoutersInterfaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -435,7 +435,7 @@ export interface DataGoogleComputeRoutersRoutersMd5AuthenticationKeys {
 export function dataGoogleComputeRoutersRoutersMd5AuthenticationKeysToTerraform(struct?: DataGoogleComputeRoutersRoutersMd5AuthenticationKeys): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -445,7 +445,7 @@ export function dataGoogleComputeRoutersRoutersMd5AuthenticationKeysToTerraform(
 export function dataGoogleComputeRoutersRoutersMd5AuthenticationKeysToHclTerraform(struct?: DataGoogleComputeRoutersRoutersMd5AuthenticationKeys): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -515,7 +515,7 @@ export interface DataGoogleComputeRoutersRoutersNats {
 export function dataGoogleComputeRoutersRoutersNatsToTerraform(struct?: DataGoogleComputeRoutersRoutersNats): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -525,7 +525,7 @@ export function dataGoogleComputeRoutersRoutersNatsToTerraform(struct?: DataGoog
 export function dataGoogleComputeRoutersRoutersNatsToHclTerraform(struct?: DataGoogleComputeRoutersRoutersNats): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -635,7 +635,7 @@ export interface DataGoogleComputeRoutersRouters {
 export function dataGoogleComputeRoutersRoutersToTerraform(struct?: DataGoogleComputeRoutersRouters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -645,7 +645,7 @@ export function dataGoogleComputeRoutersRoutersToTerraform(struct?: DataGoogleCo
 export function dataGoogleComputeRoutersRoutersToHclTerraform(struct?: DataGoogleComputeRoutersRouters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -761,7 +761,7 @@ export class DataGoogleComputeRoutersRoutersList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_routers google_compute_routers}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_routers google_compute_routers}
 */
 export class DataGoogleComputeRouters extends cdktn.TerraformDataSource {
 
@@ -777,7 +777,7 @@ export class DataGoogleComputeRouters extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeRouters resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeRouters to import
-  * @param importFromId The id of the existing DataGoogleComputeRouters that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_routers#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeRouters that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_routers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeRouters to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -789,7 +789,7 @@ export class DataGoogleComputeRouters extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_routers google_compute_routers} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_routers google_compute_routers} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -800,7 +800,7 @@ export class DataGoogleComputeRouters extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_routers',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

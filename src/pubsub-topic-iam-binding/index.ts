@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktn from 'cdktn';
 
 export interface PubsubTopicIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#id PubsubTopicIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#id PubsubTopicIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#members PubsubTopicIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#members PubsubTopicIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#project PubsubTopicIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#project PubsubTopicIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#role PubsubTopicIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#role PubsubTopicIamBinding#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#topic PubsubTopicIamBinding#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#topic PubsubTopicIamBinding#topic}
   */
   readonly topic: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#condition PubsubTopicIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#condition PubsubTopicIamBinding#condition}
   */
   readonly condition?: PubsubTopicIamBindingCondition;
 }
 export interface PubsubTopicIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#description PubsubTopicIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#description PubsubTopicIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#expression PubsubTopicIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#expression PubsubTopicIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#title PubsubTopicIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#title PubsubTopicIamBinding#title}
   */
   readonly title: string;
 }
@@ -60,7 +60,7 @@ export interface PubsubTopicIamBindingCondition {
 export function pubsubTopicIamBindingConditionToTerraform(struct?: PubsubTopicIamBindingConditionOutputReference | PubsubTopicIamBindingCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -73,7 +73,7 @@ export function pubsubTopicIamBindingConditionToTerraform(struct?: PubsubTopicIa
 export function pubsubTopicIamBindingConditionToHclTerraform(struct?: PubsubTopicIamBindingConditionOutputReference | PubsubTopicIamBindingCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -188,7 +188,7 @@ export class PubsubTopicIamBindingConditionOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding}
 */
 export class PubsubTopicIamBinding extends cdktn.TerraformResource {
 
@@ -204,7 +204,7 @@ export class PubsubTopicIamBinding extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PubsubTopicIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PubsubTopicIamBinding to import
-  * @param importFromId The id of the existing PubsubTopicIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PubsubTopicIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PubsubTopicIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -216,7 +216,7 @@ export class PubsubTopicIamBinding extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class PubsubTopicIamBinding extends cdktn.TerraformResource {
       terraformResourceType: 'google_pubsub_topic_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,11 +17,11 @@ export interface DataGooglePrivilegedAccessManagerEntitlementConfig extends cdkt
   * This value should be 4-63 characters, and valid characters are "[a-z]", "[0-9]", and "-". The first character should be from [a-z].
   * This value should be unique among all other Entitlements under the specified 'parent'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement#entitlement_id DataGooglePrivilegedAccessManagerEntitlement#entitlement_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement#entitlement_id DataGooglePrivilegedAccessManagerEntitlement#entitlement_id}
   */
   readonly entitlementId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement#id DataGooglePrivilegedAccessManagerEntitlement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement#id DataGooglePrivilegedAccessManagerEntitlement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,13 @@ export interface DataGooglePrivilegedAccessManagerEntitlementConfig extends cdkt
   /**
   * The region of the Entitlement resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement#location DataGooglePrivilegedAccessManagerEntitlement#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement#location DataGooglePrivilegedAccessManagerEntitlement#location}
   */
   readonly location?: string;
   /**
   * Format: projects/{project-id|project-number} or organizations/{organization-number} or folders/{folder-number}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement#parent DataGooglePrivilegedAccessManagerEntitlement#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement#parent DataGooglePrivilegedAccessManagerEntitlement#parent}
   */
   readonly parent?: string;
 }
@@ -46,7 +46,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificat
 export function dataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -56,7 +56,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementAdditionalNotificati
 export function dataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -126,7 +126,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowMan
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -136,7 +136,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -201,7 +201,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowMan
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -211,7 +211,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -287,7 +287,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowMan
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -297,7 +297,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -368,7 +368,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflow {
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -378,7 +378,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowToTe
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -444,7 +444,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementEligibleUsers {
 export function dataGooglePrivilegedAccessManagerEntitlementEligibleUsersToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementEligibleUsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -454,7 +454,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementEligibleUsersToTerra
 export function dataGooglePrivilegedAccessManagerEntitlementEligibleUsersToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementEligibleUsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -519,7 +519,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcp
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -529,7 +529,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpI
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -599,7 +599,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcp
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -609,7 +609,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpI
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -685,7 +685,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccess {
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -695,7 +695,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessToTe
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -761,7 +761,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementRequesterJustificat
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -771,7 +771,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -831,7 +831,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementRequesterJustificat
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -841,7 +841,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -901,7 +901,7 @@ export interface DataGooglePrivilegedAccessManagerEntitlementRequesterJustificat
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -911,7 +911,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -979,7 +979,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement}
 */
 export class DataGooglePrivilegedAccessManagerEntitlement extends cdktn.TerraformDataSource {
 
@@ -995,7 +995,7 @@ export class DataGooglePrivilegedAccessManagerEntitlement extends cdktn.Terrafor
   * Generates CDKTN code for importing a DataGooglePrivilegedAccessManagerEntitlement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePrivilegedAccessManagerEntitlement to import
-  * @param importFromId The id of the existing DataGooglePrivilegedAccessManagerEntitlement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGooglePrivilegedAccessManagerEntitlement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePrivilegedAccessManagerEntitlement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1007,7 +1007,7 @@ export class DataGooglePrivilegedAccessManagerEntitlement extends cdktn.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1018,7 +1018,7 @@ export class DataGooglePrivilegedAccessManagerEntitlement extends cdktn.Terrafor
       terraformResourceType: 'google_privileged_access_manager_entitlement',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

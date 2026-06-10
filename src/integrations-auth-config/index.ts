@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,19 +21,19 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#deletion_policy IntegrationsAuthConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#deletion_policy IntegrationsAuthConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the auth config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#description IntegrationsAuthConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#description IntegrationsAuthConfig#description}
   */
   readonly description?: string;
   /**
   * The name of the auth config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#display_name IntegrationsAuthConfig#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#display_name IntegrationsAuthConfig#display_name}
   */
   readonly displayName: string;
   /**
@@ -41,11 +41,11 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   * 
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#expiry_notification_duration IntegrationsAuthConfig#expiry_notification_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#expiry_notification_duration IntegrationsAuthConfig#expiry_notification_duration}
   */
   readonly expiryNotificationDuration?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#id IntegrationsAuthConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#id IntegrationsAuthConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,7 +54,7 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   /**
   * Location in which client needs to be provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#location IntegrationsAuthConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#location IntegrationsAuthConfig#location}
   */
   readonly location: string;
   /**
@@ -62,35 +62,35 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   * 
   * A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#override_valid_time IntegrationsAuthConfig#override_valid_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#override_valid_time IntegrationsAuthConfig#override_valid_time}
   */
   readonly overrideValidTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#project IntegrationsAuthConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#project IntegrationsAuthConfig#project}
   */
   readonly project?: string;
   /**
   * The visibility of the auth config. Possible values: ["PRIVATE", "CLIENT_VISIBLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#visibility IntegrationsAuthConfig#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#visibility IntegrationsAuthConfig#visibility}
   */
   readonly visibility?: string;
   /**
   * client_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#client_certificate IntegrationsAuthConfig#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#client_certificate IntegrationsAuthConfig#client_certificate}
   */
   readonly clientCertificate?: IntegrationsAuthConfigClientCertificate;
   /**
   * decrypted_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#decrypted_credential IntegrationsAuthConfig#decrypted_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#decrypted_credential IntegrationsAuthConfig#decrypted_credential}
   */
   readonly decryptedCredential?: IntegrationsAuthConfigDecryptedCredential;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#timeouts IntegrationsAuthConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#timeouts IntegrationsAuthConfig#timeouts}
   */
   readonly timeouts?: IntegrationsAuthConfigTimeouts;
 }
@@ -98,20 +98,20 @@ export interface IntegrationsAuthConfigClientCertificate {
   /**
   * The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#encrypted_private_key IntegrationsAuthConfig#encrypted_private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#encrypted_private_key IntegrationsAuthConfig#encrypted_private_key}
   */
   readonly encryptedPrivateKey: string;
   /**
   * 'passphrase' should be left unset if private key is not encrypted.
   * Note that 'passphrase' is not the password for web server, but an extra layer of security to protected private key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#passphrase IntegrationsAuthConfig#passphrase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#passphrase IntegrationsAuthConfig#passphrase}
   */
   readonly passphrase?: string;
   /**
   * The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#ssl_certificate IntegrationsAuthConfig#ssl_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#ssl_certificate IntegrationsAuthConfig#ssl_certificate}
   */
   readonly sslCertificate: string;
 }
@@ -119,7 +119,7 @@ export interface IntegrationsAuthConfigClientCertificate {
 export function integrationsAuthConfigClientCertificateToTerraform(struct?: IntegrationsAuthConfigClientCertificateOutputReference | IntegrationsAuthConfigClientCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encrypted_private_key: cdktn.stringToTerraform(struct!.encryptedPrivateKey),
@@ -132,7 +132,7 @@ export function integrationsAuthConfigClientCertificateToTerraform(struct?: Inte
 export function integrationsAuthConfigClientCertificateToHclTerraform(struct?: IntegrationsAuthConfigClientCertificateOutputReference | IntegrationsAuthConfigClientCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encrypted_private_key: {
@@ -249,13 +249,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialAuthToken {
   /**
   * The token for the auth type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#token IntegrationsAuthConfig#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#token IntegrationsAuthConfig#token}
   */
   readonly token?: string;
   /**
   * Authentication type, e.g. "Basic", "Bearer", etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#type IntegrationsAuthConfig#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#type IntegrationsAuthConfig#type}
   */
   readonly type?: string;
 }
@@ -263,7 +263,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialAuthToken {
 export function integrationsAuthConfigDecryptedCredentialAuthTokenToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference | IntegrationsAuthConfigDecryptedCredentialAuthToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     token: cdktn.stringToTerraform(struct!.token),
@@ -275,7 +275,7 @@ export function integrationsAuthConfigDecryptedCredentialAuthTokenToTerraform(st
 export function integrationsAuthConfigDecryptedCredentialAuthTokenToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference | IntegrationsAuthConfigDecryptedCredentialAuthToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     token: {
@@ -370,19 +370,19 @@ export interface IntegrationsAuthConfigDecryptedCredentialJwt {
   /**
   * Identifies which algorithm is used to generate the signature.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#jwt_header IntegrationsAuthConfig#jwt_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#jwt_header IntegrationsAuthConfig#jwt_header}
   */
   readonly jwtHeader?: string;
   /**
   * Contains a set of claims. The JWT specification defines seven Registered Claim Names which are the standard fields commonly included in tokens. Custom claims are usually also included, depending on the purpose of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#jwt_payload IntegrationsAuthConfig#jwt_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#jwt_payload IntegrationsAuthConfig#jwt_payload}
   */
   readonly jwtPayload?: string;
   /**
   * User's pre-shared secret to sign the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#secret IntegrationsAuthConfig#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#secret IntegrationsAuthConfig#secret}
   */
   readonly secret?: string;
 }
@@ -390,7 +390,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialJwt {
 export function integrationsAuthConfigDecryptedCredentialJwtToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialJwtOutputReference | IntegrationsAuthConfigDecryptedCredentialJwt): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     jwt_header: cdktn.stringToTerraform(struct!.jwtHeader),
@@ -403,7 +403,7 @@ export function integrationsAuthConfigDecryptedCredentialJwtToTerraform(struct?:
 export function integrationsAuthConfigDecryptedCredentialJwtToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialJwtOutputReference | IntegrationsAuthConfigDecryptedCredentialJwt): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     jwt_header: {
@@ -531,31 +531,31 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * The auth url endpoint to send the auth code request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#auth_endpoint IntegrationsAuthConfig#auth_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#auth_endpoint IntegrationsAuthConfig#auth_endpoint}
   */
   readonly authEndpoint?: string;
   /**
   * The client's id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
   */
   readonly clientId?: string;
   /**
   * The client's secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * A space-delimited list of requested scope permissions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
   */
   readonly scope?: string;
   /**
   * The token url endpoint to send the token request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
   */
   readonly tokenEndpoint?: string;
 }
@@ -563,7 +563,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
 export function integrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auth_endpoint: cdktn.stringToTerraform(struct!.authEndpoint),
@@ -578,7 +578,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode
 export function integrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auth_endpoint: {
@@ -757,7 +757,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * String.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -765,7 +765,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     string_value: cdktn.stringToTerraform(struct!.stringValue),
@@ -776,7 +776,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentials
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     string_value: {
@@ -843,7 +843,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue;
 }
@@ -851,7 +851,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     literal_value: integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueToTerraform(struct!.literalValue),
@@ -862,7 +862,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentials
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     literal_value: {
@@ -929,7 +929,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * String.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -937,7 +937,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     string_value: cdktn.stringToTerraform(struct!.stringValue),
@@ -948,7 +948,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentials
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     string_value: {
@@ -1015,7 +1015,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue;
 }
@@ -1023,7 +1023,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     literal_value: integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueToTerraform(struct!.literalValue),
@@ -1034,7 +1034,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentials
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     literal_value: {
@@ -1101,13 +1101,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
   */
   readonly key?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
   */
   readonly value?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue;
 }
@@ -1115,7 +1115,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyToTerraform(struct!.key),
@@ -1127,7 +1127,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentials
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1254,7 +1254,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
   */
   readonly entries?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntries[] | cdktn.IResolvable;
 }
@@ -1262,7 +1262,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entries: cdktn.listMapper(integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesToTerraform, true)(struct!.entries),
@@ -1273,7 +1273,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentials
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entries: {
@@ -1340,37 +1340,37 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * The client's ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
   */
   readonly clientId?: string;
   /**
   * The client's secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Represent how to pass parameters to fetch access token Possible values: ["REQUEST_TYPE_UNSPECIFIED", "REQUEST_BODY", "QUERY_PARAMETERS", "ENCODED_HEADER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#request_type IntegrationsAuthConfig#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#request_type IntegrationsAuthConfig#request_type}
   */
   readonly requestType?: string;
   /**
   * A space-delimited list of requested scope permissions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
   */
   readonly scope?: string;
   /**
   * The token endpoint is used by the client to obtain an access token by presenting its authorization grant or refresh token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
   */
   readonly tokenEndpoint?: string;
   /**
   * token_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#token_params IntegrationsAuthConfig#token_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#token_params IntegrationsAuthConfig#token_params}
   */
   readonly tokenParams?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams;
 }
@@ -1378,7 +1378,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -1394,7 +1394,7 @@ export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentials
 export function integrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsOutputReference | IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -1601,13 +1601,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialOidcToken {
   /**
   * Audience to be used when generating OIDC token. The audience claim identifies the recipients that the JWT is intended for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#audience IntegrationsAuthConfig#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#audience IntegrationsAuthConfig#audience}
   */
   readonly audience?: string;
   /**
   * The service account email to be used as the identity for the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#service_account_email IntegrationsAuthConfig#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#service_account_email IntegrationsAuthConfig#service_account_email}
   */
   readonly serviceAccountEmail?: string;
 }
@@ -1615,7 +1615,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOidcToken {
 export function integrationsAuthConfigDecryptedCredentialOidcTokenToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReference | IntegrationsAuthConfigDecryptedCredentialOidcToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audience: cdktn.stringToTerraform(struct!.audience),
@@ -1627,7 +1627,7 @@ export function integrationsAuthConfigDecryptedCredentialOidcTokenToTerraform(st
 export function integrationsAuthConfigDecryptedCredentialOidcTokenToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReference | IntegrationsAuthConfigDecryptedCredentialOidcToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audience: {
@@ -1732,13 +1732,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialServiceAccountCredenti
   /**
   * A space-delimited list of requested scope permissions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
   */
   readonly scope?: string;
   /**
   * Name of the service account that has the permission to make the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#service_account IntegrationsAuthConfig#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#service_account IntegrationsAuthConfig#service_account}
   */
   readonly serviceAccount?: string;
 }
@@ -1746,7 +1746,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialServiceAccountCredenti
 export function integrationsAuthConfigDecryptedCredentialServiceAccountCredentialsToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentialsOutputReference | IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope: cdktn.stringToTerraform(struct!.scope),
@@ -1758,7 +1758,7 @@ export function integrationsAuthConfigDecryptedCredentialServiceAccountCredentia
 export function integrationsAuthConfigDecryptedCredentialServiceAccountCredentialsToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentialsOutputReference | IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope: {
@@ -1853,13 +1853,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword {
   /**
   * Password to be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#password IntegrationsAuthConfig#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#password IntegrationsAuthConfig#password}
   */
   readonly password?: string;
   /**
   * Username to be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#username IntegrationsAuthConfig#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#username IntegrationsAuthConfig#username}
   */
   readonly username?: string;
 }
@@ -1867,7 +1867,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword {
 export function integrationsAuthConfigDecryptedCredentialUsernameAndPasswordToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialUsernameAndPasswordOutputReference | IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -1879,7 +1879,7 @@ export function integrationsAuthConfigDecryptedCredentialUsernameAndPasswordToTe
 export function integrationsAuthConfigDecryptedCredentialUsernameAndPasswordToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialUsernameAndPasswordOutputReference | IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -1974,49 +1974,49 @@ export interface IntegrationsAuthConfigDecryptedCredential {
   /**
   * Credential type associated with auth configs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#credential_type IntegrationsAuthConfig#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#credential_type IntegrationsAuthConfig#credential_type}
   */
   readonly credentialType: string;
   /**
   * auth_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#auth_token IntegrationsAuthConfig#auth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#auth_token IntegrationsAuthConfig#auth_token}
   */
   readonly authToken?: IntegrationsAuthConfigDecryptedCredentialAuthToken;
   /**
   * jwt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#jwt IntegrationsAuthConfig#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#jwt IntegrationsAuthConfig#jwt}
   */
   readonly jwt?: IntegrationsAuthConfigDecryptedCredentialJwt;
   /**
   * oauth2_authorization_code block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#oauth2_authorization_code IntegrationsAuthConfig#oauth2_authorization_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#oauth2_authorization_code IntegrationsAuthConfig#oauth2_authorization_code}
   */
   readonly oauth2AuthorizationCode?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode;
   /**
   * oauth2_client_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#oauth2_client_credentials IntegrationsAuthConfig#oauth2_client_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#oauth2_client_credentials IntegrationsAuthConfig#oauth2_client_credentials}
   */
   readonly oauth2ClientCredentials?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials;
   /**
   * oidc_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#oidc_token IntegrationsAuthConfig#oidc_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#oidc_token IntegrationsAuthConfig#oidc_token}
   */
   readonly oidcToken?: IntegrationsAuthConfigDecryptedCredentialOidcToken;
   /**
   * service_account_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#service_account_credentials IntegrationsAuthConfig#service_account_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#service_account_credentials IntegrationsAuthConfig#service_account_credentials}
   */
   readonly serviceAccountCredentials?: IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials;
   /**
   * username_and_password block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#username_and_password IntegrationsAuthConfig#username_and_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#username_and_password IntegrationsAuthConfig#username_and_password}
   */
   readonly usernameAndPassword?: IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword;
 }
@@ -2024,7 +2024,7 @@ export interface IntegrationsAuthConfigDecryptedCredential {
 export function integrationsAuthConfigDecryptedCredentialToTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOutputReference | IntegrationsAuthConfigDecryptedCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     credential_type: cdktn.stringToTerraform(struct!.credentialType),
@@ -2042,7 +2042,7 @@ export function integrationsAuthConfigDecryptedCredentialToTerraform(struct?: In
 export function integrationsAuthConfigDecryptedCredentialToHclTerraform(struct?: IntegrationsAuthConfigDecryptedCredentialOutputReference | IntegrationsAuthConfigDecryptedCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     credential_type: {
@@ -2300,15 +2300,15 @@ export class IntegrationsAuthConfigDecryptedCredentialOutputReference extends cd
 }
 export interface IntegrationsAuthConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#create IntegrationsAuthConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#create IntegrationsAuthConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#delete IntegrationsAuthConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#delete IntegrationsAuthConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#update IntegrationsAuthConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#update IntegrationsAuthConfig#update}
   */
   readonly update?: string;
 }
@@ -2316,7 +2316,7 @@ export interface IntegrationsAuthConfigTimeouts {
 export function integrationsAuthConfigTimeoutsToTerraform(struct?: IntegrationsAuthConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2329,7 +2329,7 @@ export function integrationsAuthConfigTimeoutsToTerraform(struct?: IntegrationsA
 export function integrationsAuthConfigTimeoutsToHclTerraform(struct?: IntegrationsAuthConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2460,7 +2460,7 @@ export class IntegrationsAuthConfigTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config google_integrations_auth_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config google_integrations_auth_config}
 */
 export class IntegrationsAuthConfig extends cdktn.TerraformResource {
 
@@ -2476,7 +2476,7 @@ export class IntegrationsAuthConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntegrationsAuthConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationsAuthConfig to import
-  * @param importFromId The id of the existing IntegrationsAuthConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationsAuthConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationsAuthConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2488,7 +2488,7 @@ export class IntegrationsAuthConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2499,7 +2499,7 @@ export class IntegrationsAuthConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_integrations_auth_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

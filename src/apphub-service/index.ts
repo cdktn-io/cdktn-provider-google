@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface ApphubServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#application_id ApphubService#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#application_id ApphubService#application_id}
   */
   readonly applicationId: string;
   /**
@@ -27,29 +27,29 @@ export interface ApphubServiceConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#deletion_policy ApphubService#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#deletion_policy ApphubService#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-defined description of a Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#description ApphubService#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#description ApphubService#description}
   */
   readonly description?: string;
   /**
   * Immutable. The resource name of the original discovered service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#discovered_service ApphubService#discovered_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#discovered_service ApphubService#discovered_service}
   */
   readonly discoveredService: string;
   /**
   * User-defined name for the Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#display_name ApphubService#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#id ApphubService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#id ApphubService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,29 +58,29 @@ export interface ApphubServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#location ApphubService#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#location ApphubService#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#project ApphubService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#project ApphubService#project}
   */
   readonly project?: string;
   /**
   * The Service identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#service_id ApphubService#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#service_id ApphubService#service_id}
   */
   readonly serviceId: string;
   /**
   * attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#attributes ApphubService#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#attributes ApphubService#attributes}
   */
   readonly attributes?: ApphubServiceAttributes;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#timeouts ApphubService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#timeouts ApphubService#timeouts}
   */
   readonly timeouts?: ApphubServiceTimeouts;
 }
@@ -90,7 +90,7 @@ export interface ApphubServiceServicePropertiesExtendedMetadataValue {
 export function apphubServiceServicePropertiesExtendedMetadataValueToTerraform(struct?: ApphubServiceServicePropertiesExtendedMetadataValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -100,7 +100,7 @@ export function apphubServiceServicePropertiesExtendedMetadataValueToTerraform(s
 export function apphubServiceServicePropertiesExtendedMetadataValueToHclTerraform(struct?: ApphubServiceServicePropertiesExtendedMetadataValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -170,7 +170,7 @@ export interface ApphubServiceServicePropertiesExtendedMetadata {
 export function apphubServiceServicePropertiesExtendedMetadataToTerraform(struct?: ApphubServiceServicePropertiesExtendedMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -180,7 +180,7 @@ export function apphubServiceServicePropertiesExtendedMetadataToTerraform(struct
 export function apphubServiceServicePropertiesExtendedMetadataToHclTerraform(struct?: ApphubServiceServicePropertiesExtendedMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -251,7 +251,7 @@ export interface ApphubServiceServicePropertiesFunctionalType {
 export function apphubServiceServicePropertiesFunctionalTypeToTerraform(struct?: ApphubServiceServicePropertiesFunctionalType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -261,7 +261,7 @@ export function apphubServiceServicePropertiesFunctionalTypeToTerraform(struct?:
 export function apphubServiceServicePropertiesFunctionalTypeToHclTerraform(struct?: ApphubServiceServicePropertiesFunctionalType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -326,7 +326,7 @@ export interface ApphubServiceServicePropertiesIdentity {
 export function apphubServiceServicePropertiesIdentityToTerraform(struct?: ApphubServiceServicePropertiesIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -336,7 +336,7 @@ export function apphubServiceServicePropertiesIdentityToTerraform(struct?: Apphu
 export function apphubServiceServicePropertiesIdentityToHclTerraform(struct?: ApphubServiceServicePropertiesIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -401,7 +401,7 @@ export interface ApphubServiceServicePropertiesRegistrationType {
 export function apphubServiceServicePropertiesRegistrationTypeToTerraform(struct?: ApphubServiceServicePropertiesRegistrationType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -411,7 +411,7 @@ export function apphubServiceServicePropertiesRegistrationTypeToTerraform(struct
 export function apphubServiceServicePropertiesRegistrationTypeToHclTerraform(struct?: ApphubServiceServicePropertiesRegistrationType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -476,7 +476,7 @@ export interface ApphubServiceServiceProperties {
 export function apphubServiceServicePropertiesToTerraform(struct?: ApphubServiceServiceProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -486,7 +486,7 @@ export function apphubServiceServicePropertiesToTerraform(struct?: ApphubService
 export function apphubServiceServicePropertiesToHclTerraform(struct?: ApphubServiceServiceProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -585,7 +585,7 @@ export interface ApphubServiceServiceReference {
 export function apphubServiceServiceReferenceToTerraform(struct?: ApphubServiceServiceReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -595,7 +595,7 @@ export function apphubServiceServiceReferenceToTerraform(struct?: ApphubServiceS
 export function apphubServiceServiceReferenceToHclTerraform(struct?: ApphubServiceServiceReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -658,13 +658,13 @@ export interface ApphubServiceAttributesBusinessOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#display_name ApphubService#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#email ApphubService#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#email ApphubService#email}
   */
   readonly email: string;
 }
@@ -672,7 +672,7 @@ export interface ApphubServiceAttributesBusinessOwners {
 export function apphubServiceAttributesBusinessOwnersToTerraform(struct?: ApphubServiceAttributesBusinessOwners | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_name: cdktn.stringToTerraform(struct!.displayName),
@@ -684,7 +684,7 @@ export function apphubServiceAttributesBusinessOwnersToTerraform(struct?: Apphub
 export function apphubServiceAttributesBusinessOwnersToHclTerraform(struct?: ApphubServiceAttributesBusinessOwners | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_name: {
@@ -808,7 +808,7 @@ export interface ApphubServiceAttributesCriticality {
   /**
   * Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#type ApphubService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#type ApphubService#type}
   */
   readonly type: string;
 }
@@ -816,7 +816,7 @@ export interface ApphubServiceAttributesCriticality {
 export function apphubServiceAttributesCriticalityToTerraform(struct?: ApphubServiceAttributesCriticalityOutputReference | ApphubServiceAttributesCriticality): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -827,7 +827,7 @@ export function apphubServiceAttributesCriticalityToTerraform(struct?: ApphubSer
 export function apphubServiceAttributesCriticalityToHclTerraform(struct?: ApphubServiceAttributesCriticalityOutputReference | ApphubServiceAttributesCriticality): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -891,13 +891,13 @@ export interface ApphubServiceAttributesDeveloperOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#display_name ApphubService#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#email ApphubService#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#email ApphubService#email}
   */
   readonly email: string;
 }
@@ -905,7 +905,7 @@ export interface ApphubServiceAttributesDeveloperOwners {
 export function apphubServiceAttributesDeveloperOwnersToTerraform(struct?: ApphubServiceAttributesDeveloperOwners | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_name: cdktn.stringToTerraform(struct!.displayName),
@@ -917,7 +917,7 @@ export function apphubServiceAttributesDeveloperOwnersToTerraform(struct?: Apphu
 export function apphubServiceAttributesDeveloperOwnersToHclTerraform(struct?: ApphubServiceAttributesDeveloperOwners | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_name: {
@@ -1041,7 +1041,7 @@ export interface ApphubServiceAttributesEnvironment {
   /**
   * Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#type ApphubService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#type ApphubService#type}
   */
   readonly type: string;
 }
@@ -1049,7 +1049,7 @@ export interface ApphubServiceAttributesEnvironment {
 export function apphubServiceAttributesEnvironmentToTerraform(struct?: ApphubServiceAttributesEnvironmentOutputReference | ApphubServiceAttributesEnvironment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -1060,7 +1060,7 @@ export function apphubServiceAttributesEnvironmentToTerraform(struct?: ApphubSer
 export function apphubServiceAttributesEnvironmentToHclTerraform(struct?: ApphubServiceAttributesEnvironmentOutputReference | ApphubServiceAttributesEnvironment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -1124,13 +1124,13 @@ export interface ApphubServiceAttributesOperatorOwners {
   /**
   * Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#display_name ApphubService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#display_name ApphubService#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#email ApphubService#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#email ApphubService#email}
   */
   readonly email: string;
 }
@@ -1138,7 +1138,7 @@ export interface ApphubServiceAttributesOperatorOwners {
 export function apphubServiceAttributesOperatorOwnersToTerraform(struct?: ApphubServiceAttributesOperatorOwners | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_name: cdktn.stringToTerraform(struct!.displayName),
@@ -1150,7 +1150,7 @@ export function apphubServiceAttributesOperatorOwnersToTerraform(struct?: Apphub
 export function apphubServiceAttributesOperatorOwnersToHclTerraform(struct?: ApphubServiceAttributesOperatorOwners | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_name: {
@@ -1274,31 +1274,31 @@ export interface ApphubServiceAttributes {
   /**
   * business_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#business_owners ApphubService#business_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#business_owners ApphubService#business_owners}
   */
   readonly businessOwners?: ApphubServiceAttributesBusinessOwners[] | cdktn.IResolvable;
   /**
   * criticality block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#criticality ApphubService#criticality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#criticality ApphubService#criticality}
   */
   readonly criticality?: ApphubServiceAttributesCriticality;
   /**
   * developer_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#developer_owners ApphubService#developer_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#developer_owners ApphubService#developer_owners}
   */
   readonly developerOwners?: ApphubServiceAttributesDeveloperOwners[] | cdktn.IResolvable;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#environment ApphubService#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#environment ApphubService#environment}
   */
   readonly environment?: ApphubServiceAttributesEnvironment;
   /**
   * operator_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#operator_owners ApphubService#operator_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#operator_owners ApphubService#operator_owners}
   */
   readonly operatorOwners?: ApphubServiceAttributesOperatorOwners[] | cdktn.IResolvable;
 }
@@ -1306,7 +1306,7 @@ export interface ApphubServiceAttributes {
 export function apphubServiceAttributesToTerraform(struct?: ApphubServiceAttributesOutputReference | ApphubServiceAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     business_owners: cdktn.listMapper(apphubServiceAttributesBusinessOwnersToTerraform, true)(struct!.businessOwners),
@@ -1321,7 +1321,7 @@ export function apphubServiceAttributesToTerraform(struct?: ApphubServiceAttribu
 export function apphubServiceAttributesToHclTerraform(struct?: ApphubServiceAttributesOutputReference | ApphubServiceAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     business_owners: {
@@ -1498,15 +1498,15 @@ export class ApphubServiceAttributesOutputReference extends cdktn.ComplexObject 
 }
 export interface ApphubServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#create ApphubService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#create ApphubService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#delete ApphubService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#delete ApphubService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#update ApphubService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#update ApphubService#update}
   */
   readonly update?: string;
 }
@@ -1514,7 +1514,7 @@ export interface ApphubServiceTimeouts {
 export function apphubServiceTimeoutsToTerraform(struct?: ApphubServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1527,7 +1527,7 @@ export function apphubServiceTimeoutsToTerraform(struct?: ApphubServiceTimeouts 
 export function apphubServiceTimeoutsToHclTerraform(struct?: ApphubServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1658,7 +1658,7 @@ export class ApphubServiceTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service google_apphub_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service google_apphub_service}
 */
 export class ApphubService extends cdktn.TerraformResource {
 
@@ -1674,7 +1674,7 @@ export class ApphubService extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApphubService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApphubService to import
-  * @param importFromId The id of the existing ApphubService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApphubService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApphubService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1686,7 +1686,7 @@ export class ApphubService extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apphub_service google_apphub_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apphub_service google_apphub_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1697,7 +1697,7 @@ export class ApphubService extends cdktn.TerraformResource {
       terraformResourceType: 'google_apphub_service',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

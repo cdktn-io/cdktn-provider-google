@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface Cloudbuildv2ConnectionConfig extends cdktn.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#annotations Cloudbuildv2Connection#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#annotations Cloudbuildv2Connection#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
@@ -30,17 +30,17 @@ export interface Cloudbuildv2ConnectionConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#deletion_policy Cloudbuildv2Connection#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#deletion_policy Cloudbuildv2Connection#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * If disabled is set to true, functionality is disabled for this connection. Repository based API methods and webhooks processing for repositories in this connection will be disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#disabled Cloudbuildv2Connection#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#disabled Cloudbuildv2Connection#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#id Cloudbuildv2Connection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#id Cloudbuildv2Connection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,53 +49,53 @@ export interface Cloudbuildv2ConnectionConfig extends cdktn.TerraformMetaArgumen
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#location Cloudbuildv2Connection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#location Cloudbuildv2Connection#location}
   */
   readonly location: string;
   /**
   * Immutable. The resource name of the connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#name Cloudbuildv2Connection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#name Cloudbuildv2Connection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#project Cloudbuildv2Connection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#project Cloudbuildv2Connection#project}
   */
   readonly project?: string;
   /**
   * bitbucket_cloud_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#bitbucket_cloud_config Cloudbuildv2Connection#bitbucket_cloud_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#bitbucket_cloud_config Cloudbuildv2Connection#bitbucket_cloud_config}
   */
   readonly bitbucketCloudConfig?: Cloudbuildv2ConnectionBitbucketCloudConfig;
   /**
   * bitbucket_data_center_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#bitbucket_data_center_config Cloudbuildv2Connection#bitbucket_data_center_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#bitbucket_data_center_config Cloudbuildv2Connection#bitbucket_data_center_config}
   */
   readonly bitbucketDataCenterConfig?: Cloudbuildv2ConnectionBitbucketDataCenterConfig;
   /**
   * github_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#github_config Cloudbuildv2Connection#github_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#github_config Cloudbuildv2Connection#github_config}
   */
   readonly githubConfig?: Cloudbuildv2ConnectionGithubConfig;
   /**
   * github_enterprise_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#github_enterprise_config Cloudbuildv2Connection#github_enterprise_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#github_enterprise_config Cloudbuildv2Connection#github_enterprise_config}
   */
   readonly githubEnterpriseConfig?: Cloudbuildv2ConnectionGithubEnterpriseConfig;
   /**
   * gitlab_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#gitlab_config Cloudbuildv2Connection#gitlab_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#gitlab_config Cloudbuildv2Connection#gitlab_config}
   */
   readonly gitlabConfig?: Cloudbuildv2ConnectionGitlabConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#timeouts Cloudbuildv2Connection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#timeouts Cloudbuildv2Connection#timeouts}
   */
   readonly timeouts?: Cloudbuildv2ConnectionTimeouts;
 }
@@ -105,7 +105,7 @@ export interface Cloudbuildv2ConnectionInstallationState {
 export function cloudbuildv2ConnectionInstallationStateToTerraform(struct?: Cloudbuildv2ConnectionInstallationState): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -115,7 +115,7 @@ export function cloudbuildv2ConnectionInstallationStateToTerraform(struct?: Clou
 export function cloudbuildv2ConnectionInstallationStateToHclTerraform(struct?: Cloudbuildv2ConnectionInstallationState): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -188,7 +188,7 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential 
   /**
   * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -198,7 +198,7 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential 
 export function cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
@@ -209,7 +209,7 @@ export function cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialTo
 export function cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_token_secret_version: {
@@ -278,7 +278,7 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredent
   /**
   * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -288,7 +288,7 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredent
 export function cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
@@ -299,7 +299,7 @@ export function cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredenti
 export function cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_token_secret_version: {
@@ -368,7 +368,7 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfig {
   /**
   * Required. Immutable. SecretManager resource containing the webhook secret used to verify webhook events, formatted as 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -376,19 +376,19 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfig {
   /**
   * The Bitbucket Cloud Workspace ID to be connected to Google Cloud Platform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#workspace Cloudbuildv2Connection#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#workspace Cloudbuildv2Connection#workspace}
   */
   readonly workspace: string;
   /**
   * authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
   */
   readonly authorizerCredential: Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential;
   /**
   * read_authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#read_authorizer_credential Cloudbuildv2Connection#read_authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#read_authorizer_credential Cloudbuildv2Connection#read_authorizer_credential}
   */
   readonly readAuthorizerCredential: Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential;
 }
@@ -396,7 +396,7 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfig {
 export function cloudbuildv2ConnectionBitbucketCloudConfigToTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     webhook_secret_secret_version: cdktn.stringToTerraform(struct!.webhookSecretSecretVersion),
@@ -410,7 +410,7 @@ export function cloudbuildv2ConnectionBitbucketCloudConfigToTerraform(struct?: C
 export function cloudbuildv2ConnectionBitbucketCloudConfigToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     webhook_secret_secret_version: {
@@ -549,7 +549,7 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCreden
   /**
   * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -559,7 +559,7 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCreden
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
@@ -570,7 +570,7 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredent
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_token_secret_version: {
@@ -639,7 +639,7 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCr
   /**
   * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -649,7 +649,7 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCr
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
@@ -660,7 +660,7 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCre
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_token_secret_version: {
@@ -729,7 +729,7 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectory
   /**
   * Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#service Cloudbuildv2Connection#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#service Cloudbuildv2Connection#service}
   */
   readonly service: string;
 }
@@ -737,7 +737,7 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectory
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service: cdktn.stringToTerraform(struct!.service),
@@ -748,7 +748,7 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryC
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service: {
@@ -812,19 +812,19 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfig {
   /**
   * The URI of the Bitbucket Data Center host this connection is for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#host_uri Cloudbuildv2Connection#host_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#host_uri Cloudbuildv2Connection#host_uri}
   */
   readonly hostUri: string;
   /**
   * SSL certificate to use for requests to the Bitbucket Data Center.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#ssl_ca Cloudbuildv2Connection#ssl_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#ssl_ca Cloudbuildv2Connection#ssl_ca}
   */
   readonly sslCa?: string;
   /**
   * Required. Immutable. SecretManager resource containing the webhook secret used to verify webhook events, formatted as 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -832,19 +832,19 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfig {
   /**
   * authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
   */
   readonly authorizerCredential: Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential;
   /**
   * read_authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#read_authorizer_credential Cloudbuildv2Connection#read_authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#read_authorizer_credential Cloudbuildv2Connection#read_authorizer_credential}
   */
   readonly readAuthorizerCredential: Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential;
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#service_directory_config Cloudbuildv2Connection#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#service_directory_config Cloudbuildv2Connection#service_directory_config}
   */
   readonly serviceDirectoryConfig?: Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig;
 }
@@ -852,7 +852,7 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfig {
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_uri: cdktn.stringToTerraform(struct!.hostUri),
@@ -868,7 +868,7 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigToTerraform(struc
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_uri: {
@@ -1068,7 +1068,7 @@ export interface Cloudbuildv2ConnectionGithubConfigAuthorizerCredential {
   /**
   * A SecretManager resource containing the OAuth token that authorizes the Cloud Build connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#oauth_token_secret_version Cloudbuildv2Connection#oauth_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#oauth_token_secret_version Cloudbuildv2Connection#oauth_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1078,7 +1078,7 @@ export interface Cloudbuildv2ConnectionGithubConfigAuthorizerCredential {
 export function cloudbuildv2ConnectionGithubConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGithubConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     oauth_token_secret_version: cdktn.stringToTerraform(struct!.oauthTokenSecretVersion),
@@ -1089,7 +1089,7 @@ export function cloudbuildv2ConnectionGithubConfigAuthorizerCredentialToTerrafor
 export function cloudbuildv2ConnectionGithubConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGithubConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     oauth_token_secret_version: {
@@ -1161,13 +1161,13 @@ export interface Cloudbuildv2ConnectionGithubConfig {
   /**
   * GitHub App installation id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#app_installation_id Cloudbuildv2Connection#app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#app_installation_id Cloudbuildv2Connection#app_installation_id}
   */
   readonly appInstallationId?: number;
   /**
   * authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
   */
   readonly authorizerCredential?: Cloudbuildv2ConnectionGithubConfigAuthorizerCredential;
 }
@@ -1175,7 +1175,7 @@ export interface Cloudbuildv2ConnectionGithubConfig {
 export function cloudbuildv2ConnectionGithubConfigToTerraform(struct?: Cloudbuildv2ConnectionGithubConfigOutputReference | Cloudbuildv2ConnectionGithubConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_installation_id: cdktn.numberToTerraform(struct!.appInstallationId),
@@ -1187,7 +1187,7 @@ export function cloudbuildv2ConnectionGithubConfigToTerraform(struct?: Cloudbuil
 export function cloudbuildv2ConnectionGithubConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGithubConfigOutputReference | Cloudbuildv2ConnectionGithubConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_installation_id: {
@@ -1282,7 +1282,7 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryCon
   /**
   * Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#service Cloudbuildv2Connection#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#service Cloudbuildv2Connection#service}
   */
   readonly service: string;
 }
@@ -1290,7 +1290,7 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryCon
 export function cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigToTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service: cdktn.stringToTerraform(struct!.service),
@@ -1301,7 +1301,7 @@ export function cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConf
 export function cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service: {
@@ -1365,31 +1365,31 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfig {
   /**
   * Id of the GitHub App created from the manifest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#app_id Cloudbuildv2Connection#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#app_id Cloudbuildv2Connection#app_id}
   */
   readonly appId?: number;
   /**
   * ID of the installation of the GitHub App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#app_installation_id Cloudbuildv2Connection#app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#app_installation_id Cloudbuildv2Connection#app_installation_id}
   */
   readonly appInstallationId?: number;
   /**
   * The URL-friendly name of the GitHub App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#app_slug Cloudbuildv2Connection#app_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#app_slug Cloudbuildv2Connection#app_slug}
   */
   readonly appSlug?: string;
   /**
   * Required. The URI of the GitHub Enterprise host this connection is for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#host_uri Cloudbuildv2Connection#host_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#host_uri Cloudbuildv2Connection#host_uri}
   */
   readonly hostUri: string;
   /**
   * SecretManager resource containing the private key of the GitHub App, formatted as 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#private_key_secret_version Cloudbuildv2Connection#private_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#private_key_secret_version Cloudbuildv2Connection#private_key_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1397,13 +1397,13 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfig {
   /**
   * SSL certificate to use for requests to GitHub Enterprise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#ssl_ca Cloudbuildv2Connection#ssl_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#ssl_ca Cloudbuildv2Connection#ssl_ca}
   */
   readonly sslCa?: string;
   /**
   * SecretManager resource containing the webhook secret of the GitHub App, formatted as 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1411,7 +1411,7 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfig {
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#service_directory_config Cloudbuildv2Connection#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#service_directory_config Cloudbuildv2Connection#service_directory_config}
   */
   readonly serviceDirectoryConfig?: Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig;
 }
@@ -1419,7 +1419,7 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfig {
 export function cloudbuildv2ConnectionGithubEnterpriseConfigToTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_id: cdktn.numberToTerraform(struct!.appId),
@@ -1437,7 +1437,7 @@ export function cloudbuildv2ConnectionGithubEnterpriseConfigToTerraform(struct?:
 export function cloudbuildv2ConnectionGithubEnterpriseConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_id: {
@@ -1697,7 +1697,7 @@ export interface Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential {
   /**
   * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1707,7 +1707,7 @@ export interface Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential {
 export function cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
@@ -1718,7 +1718,7 @@ export function cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToTerrafor
 export function cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_token_secret_version: {
@@ -1787,7 +1787,7 @@ export interface Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential {
   /**
   * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#user_token_secret_version Cloudbuildv2Connection#user_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1797,7 +1797,7 @@ export interface Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential {
 export function cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
@@ -1808,7 +1808,7 @@ export function cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToTerr
 export function cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_token_secret_version: {
@@ -1877,7 +1877,7 @@ export interface Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig {
   /**
   * Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#service Cloudbuildv2Connection#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#service Cloudbuildv2Connection#service}
   */
   readonly service: string;
 }
@@ -1885,7 +1885,7 @@ export interface Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig {
 export function cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service: cdktn.stringToTerraform(struct!.service),
@@ -1896,7 +1896,7 @@ export function cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToTerraf
 export function cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service: {
@@ -1960,19 +1960,19 @@ export interface Cloudbuildv2ConnectionGitlabConfig {
   /**
   * The URI of the GitLab Enterprise host this connection is for. If not specified, the default value is https://gitlab.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#host_uri Cloudbuildv2Connection#host_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#host_uri Cloudbuildv2Connection#host_uri}
   */
   readonly hostUri?: string;
   /**
   * SSL certificate to use for requests to GitLab Enterprise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#ssl_ca Cloudbuildv2Connection#ssl_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#ssl_ca Cloudbuildv2Connection#ssl_ca}
   */
   readonly sslCa?: string;
   /**
   * Required. Immutable. SecretManager resource containing the webhook secret of a GitLab Enterprise project, formatted as 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#webhook_secret_secret_version Cloudbuildv2Connection#webhook_secret_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1980,19 +1980,19 @@ export interface Cloudbuildv2ConnectionGitlabConfig {
   /**
   * authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#authorizer_credential Cloudbuildv2Connection#authorizer_credential}
   */
   readonly authorizerCredential: Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential;
   /**
   * read_authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#read_authorizer_credential Cloudbuildv2Connection#read_authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#read_authorizer_credential Cloudbuildv2Connection#read_authorizer_credential}
   */
   readonly readAuthorizerCredential: Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential;
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#service_directory_config Cloudbuildv2Connection#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#service_directory_config Cloudbuildv2Connection#service_directory_config}
   */
   readonly serviceDirectoryConfig?: Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig;
 }
@@ -2000,7 +2000,7 @@ export interface Cloudbuildv2ConnectionGitlabConfig {
 export function cloudbuildv2ConnectionGitlabConfigToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigOutputReference | Cloudbuildv2ConnectionGitlabConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_uri: cdktn.stringToTerraform(struct!.hostUri),
@@ -2016,7 +2016,7 @@ export function cloudbuildv2ConnectionGitlabConfigToTerraform(struct?: Cloudbuil
 export function cloudbuildv2ConnectionGitlabConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigOutputReference | Cloudbuildv2ConnectionGitlabConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_uri: {
@@ -2217,15 +2217,15 @@ export class Cloudbuildv2ConnectionGitlabConfigOutputReference extends cdktn.Com
 }
 export interface Cloudbuildv2ConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#create Cloudbuildv2Connection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#create Cloudbuildv2Connection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#delete Cloudbuildv2Connection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#delete Cloudbuildv2Connection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#update Cloudbuildv2Connection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#update Cloudbuildv2Connection#update}
   */
   readonly update?: string;
 }
@@ -2233,7 +2233,7 @@ export interface Cloudbuildv2ConnectionTimeouts {
 export function cloudbuildv2ConnectionTimeoutsToTerraform(struct?: Cloudbuildv2ConnectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2246,7 +2246,7 @@ export function cloudbuildv2ConnectionTimeoutsToTerraform(struct?: Cloudbuildv2C
 export function cloudbuildv2ConnectionTimeoutsToHclTerraform(struct?: Cloudbuildv2ConnectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2377,7 +2377,7 @@ export class Cloudbuildv2ConnectionTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}
 */
 export class Cloudbuildv2Connection extends cdktn.TerraformResource {
 
@@ -2393,7 +2393,7 @@ export class Cloudbuildv2Connection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Cloudbuildv2Connection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Cloudbuildv2Connection to import
-  * @param importFromId The id of the existing Cloudbuildv2Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Cloudbuildv2Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Cloudbuildv2Connection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2405,7 +2405,7 @@ export class Cloudbuildv2Connection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2416,7 +2416,7 @@ export class Cloudbuildv2Connection extends cdktn.TerraformResource {
       terraformResourceType: 'google_cloudbuildv2_connection',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

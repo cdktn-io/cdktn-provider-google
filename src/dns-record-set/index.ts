@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface DnsRecordSetConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#deletion_policy DnsRecordSet#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#deletion_policy DnsRecordSet#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#id DnsRecordSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#id DnsRecordSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +34,43 @@ export interface DnsRecordSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the zone in which this record set will reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#managed_zone DnsRecordSet#managed_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#managed_zone DnsRecordSet#managed_zone}
   */
   readonly managedZone: string;
   /**
   * The DNS name this record set will apply to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#name DnsRecordSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#name DnsRecordSet#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#project DnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#project DnsRecordSet#project}
   */
   readonly project?: string;
   /**
   * The string data for the records in this record set whose meaning depends on the DNS type. For TXT record, if the string data contains spaces, add surrounding \" if you don't want your string to get split on spaces. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add \"\" inside the Terraform configuration string (e.g. "first255characters\"\"morecharacters").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * The time-to-live of this record set (seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ttl DnsRecordSet#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ttl DnsRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
   * The DNS record set type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#type DnsRecordSet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#type DnsRecordSet#type}
   */
   readonly type: string;
   /**
   * routing_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#routing_policy DnsRecordSet#routing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#routing_policy DnsRecordSet#routing_policy}
   */
   readonly routingPolicy?: DnsRecordSetRoutingPolicy;
 }
@@ -78,43 +78,43 @@ export interface DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBal
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#port DnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#port DnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#project DnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#project DnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#region DnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#region DnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -122,7 +122,7 @@ export interface DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBal
 export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_address: cdktn.stringToTerraform(struct!.ipAddress),
@@ -139,7 +139,7 @@ export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBala
 export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_address: {
@@ -391,13 +391,13 @@ export interface DnsRecordSetRoutingPolicyGeoHealthCheckedTargets {
   /**
   * The Internet IP addresses to be health checked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
   */
   readonly externalEndpoints?: string[];
   /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
   readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable;
 }
@@ -405,7 +405,7 @@ export interface DnsRecordSetRoutingPolicyGeoHealthCheckedTargets {
 export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyGeoHealthCheckedTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
@@ -417,7 +417,7 @@ export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(stru
 export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyGeoHealthCheckedTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     external_endpoints: {
@@ -512,17 +512,17 @@ export interface DnsRecordSetRoutingPolicyGeo {
   /**
   * The location name defined in Google Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#location DnsRecordSet#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#location DnsRecordSet#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * health_checked_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#health_checked_targets DnsRecordSet#health_checked_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#health_checked_targets DnsRecordSet#health_checked_targets}
   */
   readonly healthCheckedTargets?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargets;
 }
@@ -530,7 +530,7 @@ export interface DnsRecordSetRoutingPolicyGeo {
 export function dnsRecordSetRoutingPolicyGeoToTerraform(struct?: DnsRecordSetRoutingPolicyGeo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     location: cdktn.stringToTerraform(struct!.location),
@@ -543,7 +543,7 @@ export function dnsRecordSetRoutingPolicyGeoToTerraform(struct?: DnsRecordSetRou
 export function dnsRecordSetRoutingPolicyGeoToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     location: {
@@ -695,43 +695,43 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTar
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#port DnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#port DnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#project DnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#project DnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#region DnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#region DnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -739,7 +739,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTar
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_address: cdktn.stringToTerraform(struct!.ipAddress),
@@ -756,7 +756,7 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTarg
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_address: {
@@ -1008,13 +1008,13 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTar
   /**
   * The Internet IP addresses to be health checked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
   */
   readonly externalEndpoints?: string[];
   /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
   readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable;
 }
@@ -1022,7 +1022,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTar
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
@@ -1034,7 +1034,7 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTarg
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     external_endpoints: {
@@ -1129,17 +1129,17 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo {
   /**
   * The location name defined in Google Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#location DnsRecordSet#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#location DnsRecordSet#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * health_checked_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#health_checked_targets DnsRecordSet#health_checked_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#health_checked_targets DnsRecordSet#health_checked_targets}
   */
   readonly healthCheckedTargets?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets;
 }
@@ -1147,7 +1147,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo {
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     location: cdktn.stringToTerraform(struct!.location),
@@ -1160,7 +1160,7 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform(struc
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     location: {
@@ -1312,43 +1312,43 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalanc
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#port DnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#port DnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#project DnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#project DnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#region DnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#region DnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -1356,7 +1356,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalanc
 export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_address: cdktn.stringToTerraform(struct!.ipAddress),
@@ -1373,7 +1373,7 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalance
 export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_address: {
@@ -1625,13 +1625,13 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupPrimary {
   /**
   * The Internet IP addresses to be health checked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
   */
   readonly externalEndpoints?: string[];
   /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
   readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktn.IResolvable;
 }
@@ -1639,7 +1639,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupPrimary {
 export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupPrimary): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
@@ -1651,7 +1651,7 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct?
 export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupPrimary): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     external_endpoints: {
@@ -1746,25 +1746,25 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackup {
   /**
   * Specifies whether to enable fencing for backup geo queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#enable_geo_fencing_for_backups DnsRecordSet#enable_geo_fencing_for_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#enable_geo_fencing_for_backups DnsRecordSet#enable_geo_fencing_for_backups}
   */
   readonly enableGeoFencingForBackups?: boolean | cdktn.IResolvable;
   /**
   * Specifies the percentage of traffic to send to the backup targets even when the primary targets are healthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#trickle_ratio DnsRecordSet#trickle_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#trickle_ratio DnsRecordSet#trickle_ratio}
   */
   readonly trickleRatio?: number;
   /**
   * backup_geo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#backup_geo DnsRecordSet#backup_geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#backup_geo DnsRecordSet#backup_geo}
   */
   readonly backupGeo: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktn.IResolvable;
   /**
   * primary block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#primary DnsRecordSet#primary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#primary DnsRecordSet#primary}
   */
   readonly primary: DnsRecordSetRoutingPolicyPrimaryBackupPrimary;
 }
@@ -1772,7 +1772,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackup {
 export function dnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupOutputReference | DnsRecordSetRoutingPolicyPrimaryBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_geo_fencing_for_backups: cdktn.booleanToTerraform(struct!.enableGeoFencingForBackups),
@@ -1786,7 +1786,7 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct?: DnsRe
 export function dnsRecordSetRoutingPolicyPrimaryBackupToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupOutputReference | DnsRecordSetRoutingPolicyPrimaryBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_geo_fencing_for_backups: {
@@ -1931,43 +1931,43 @@ export interface DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBal
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_address DnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#ip_protocol DnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#load_balancer_type DnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#network_url DnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#port DnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#port DnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#project DnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#project DnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#region DnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#region DnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -1975,7 +1975,7 @@ export interface DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBal
 export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_address: cdktn.stringToTerraform(struct!.ipAddress),
@@ -1992,7 +1992,7 @@ export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBala
 export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_address: {
@@ -2244,13 +2244,13 @@ export interface DnsRecordSetRoutingPolicyWrrHealthCheckedTargets {
   /**
   * The Internet IP addresses to be health checked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#external_endpoints DnsRecordSet#external_endpoints}
   */
   readonly externalEndpoints?: string[];
   /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
   readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable;
 }
@@ -2258,7 +2258,7 @@ export interface DnsRecordSetRoutingPolicyWrrHealthCheckedTargets {
 export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyWrrHealthCheckedTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
@@ -2270,7 +2270,7 @@ export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(stru
 export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyWrrHealthCheckedTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     external_endpoints: {
@@ -2363,19 +2363,19 @@ export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference ext
 }
 export interface DnsRecordSetRoutingPolicyWrr {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * The ratio of traffic routed to the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#weight DnsRecordSet#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#weight DnsRecordSet#weight}
   */
   readonly weight: number;
   /**
   * health_checked_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#health_checked_targets DnsRecordSet#health_checked_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#health_checked_targets DnsRecordSet#health_checked_targets}
   */
   readonly healthCheckedTargets?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargets;
 }
@@ -2383,7 +2383,7 @@ export interface DnsRecordSetRoutingPolicyWrr {
 export function dnsRecordSetRoutingPolicyWrrToTerraform(struct?: DnsRecordSetRoutingPolicyWrr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rrdatas: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rrdatas),
@@ -2396,7 +2396,7 @@ export function dnsRecordSetRoutingPolicyWrrToTerraform(struct?: DnsRecordSetRou
 export function dnsRecordSetRoutingPolicyWrrToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rrdatas: {
@@ -2548,31 +2548,31 @@ export interface DnsRecordSetRoutingPolicy {
   /**
   * Specifies whether to enable fencing for geo queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#enable_geo_fencing DnsRecordSet#enable_geo_fencing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#enable_geo_fencing DnsRecordSet#enable_geo_fencing}
   */
   readonly enableGeoFencing?: boolean | cdktn.IResolvable;
   /**
   * Specifies the health check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#health_check DnsRecordSet#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#health_check DnsRecordSet#health_check}
   */
   readonly healthCheck?: string;
   /**
   * geo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#geo DnsRecordSet#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#geo DnsRecordSet#geo}
   */
   readonly geo?: DnsRecordSetRoutingPolicyGeo[] | cdktn.IResolvable;
   /**
   * primary_backup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#primary_backup DnsRecordSet#primary_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#primary_backup DnsRecordSet#primary_backup}
   */
   readonly primaryBackup?: DnsRecordSetRoutingPolicyPrimaryBackup;
   /**
   * wrr block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#wrr DnsRecordSet#wrr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#wrr DnsRecordSet#wrr}
   */
   readonly wrr?: DnsRecordSetRoutingPolicyWrr[] | cdktn.IResolvable;
 }
@@ -2580,7 +2580,7 @@ export interface DnsRecordSetRoutingPolicy {
 export function dnsRecordSetRoutingPolicyToTerraform(struct?: DnsRecordSetRoutingPolicyOutputReference | DnsRecordSetRoutingPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_geo_fencing: cdktn.booleanToTerraform(struct!.enableGeoFencing),
@@ -2595,7 +2595,7 @@ export function dnsRecordSetRoutingPolicyToTerraform(struct?: DnsRecordSetRoutin
 export function dnsRecordSetRoutingPolicyToHclTerraform(struct?: DnsRecordSetRoutingPolicyOutputReference | DnsRecordSetRoutingPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_geo_fencing: {
@@ -2772,7 +2772,7 @@ export class DnsRecordSetRoutingPolicyOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set google_dns_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set google_dns_record_set}
 */
 export class DnsRecordSet extends cdktn.TerraformResource {
 
@@ -2788,7 +2788,7 @@ export class DnsRecordSet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DnsRecordSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsRecordSet to import
-  * @param importFromId The id of the existing DnsRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsRecordSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2800,7 +2800,7 @@ export class DnsRecordSet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_record_set google_dns_record_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_record_set google_dns_record_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2811,7 +2811,7 @@ export class DnsRecordSet extends cdktn.TerraformResource {
       terraformResourceType: 'google_dns_record_set',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_bucket_object
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_bucket_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGoogleStorageBucketObjectConfig extends cdktn.TerraformMeta
   /**
   * The name of the containing bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_bucket_object#bucket DataGoogleStorageBucketObject#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_bucket_object#bucket DataGoogleStorageBucketObject#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_bucket_object#id DataGoogleStorageBucketObject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_bucket_object#id DataGoogleStorageBucketObject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataGoogleStorageBucketObjectConfig extends cdktn.TerraformMeta
   /**
   * The name of the object. If you're interpolating the name of this object, see output_name instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_bucket_object#name DataGoogleStorageBucketObject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_bucket_object#name DataGoogleStorageBucketObject#name}
   */
   readonly name?: string;
 }
@@ -38,7 +38,7 @@ export interface DataGoogleStorageBucketObjectContextsCustom {
 export function dataGoogleStorageBucketObjectContextsCustomToTerraform(struct?: DataGoogleStorageBucketObjectContextsCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -48,7 +48,7 @@ export function dataGoogleStorageBucketObjectContextsCustomToTerraform(struct?: 
 export function dataGoogleStorageBucketObjectContextsCustomToHclTerraform(struct?: DataGoogleStorageBucketObjectContextsCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -128,7 +128,7 @@ export interface DataGoogleStorageBucketObjectContexts {
 export function dataGoogleStorageBucketObjectContextsToTerraform(struct?: DataGoogleStorageBucketObjectContexts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -138,7 +138,7 @@ export function dataGoogleStorageBucketObjectContextsToTerraform(struct?: DataGo
 export function dataGoogleStorageBucketObjectContextsToHclTerraform(struct?: DataGoogleStorageBucketObjectContexts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -204,7 +204,7 @@ export interface DataGoogleStorageBucketObjectCustomerEncryption {
 export function dataGoogleStorageBucketObjectCustomerEncryptionToTerraform(struct?: DataGoogleStorageBucketObjectCustomerEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -214,7 +214,7 @@ export function dataGoogleStorageBucketObjectCustomerEncryptionToTerraform(struc
 export function dataGoogleStorageBucketObjectCustomerEncryptionToHclTerraform(struct?: DataGoogleStorageBucketObjectCustomerEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -284,7 +284,7 @@ export interface DataGoogleStorageBucketObjectRetention {
 export function dataGoogleStorageBucketObjectRetentionToTerraform(struct?: DataGoogleStorageBucketObjectRetention): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -294,7 +294,7 @@ export function dataGoogleStorageBucketObjectRetentionToTerraform(struct?: DataG
 export function dataGoogleStorageBucketObjectRetentionToHclTerraform(struct?: DataGoogleStorageBucketObjectRetention): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -360,7 +360,7 @@ export class DataGoogleStorageBucketObjectRetentionList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_bucket_object google_storage_bucket_object}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_bucket_object google_storage_bucket_object}
 */
 export class DataGoogleStorageBucketObject extends cdktn.TerraformDataSource {
 
@@ -376,7 +376,7 @@ export class DataGoogleStorageBucketObject extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleStorageBucketObject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleStorageBucketObject to import
-  * @param importFromId The id of the existing DataGoogleStorageBucketObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_bucket_object#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleStorageBucketObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_bucket_object#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleStorageBucketObject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -388,7 +388,7 @@ export class DataGoogleStorageBucketObject extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -399,7 +399,7 @@ export class DataGoogleStorageBucketObject extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_storage_bucket_object',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

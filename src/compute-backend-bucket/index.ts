@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ComputeBackendBucketConfig extends cdktn.TerraformMetaArguments
   /**
   * Cloud Storage bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#bucket_name ComputeBackendBucket#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#bucket_name ComputeBackendBucket#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Compress text responses using Brotli or gzip compression, based on the client's Accept-Encoding header. Possible values: ["AUTOMATIC", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#compression_mode ComputeBackendBucket#compression_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#compression_mode ComputeBackendBucket#compression_mode}
   */
   readonly compressionMode?: string;
   /**
   * Headers that the HTTP/S load balancer should add to proxied responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#custom_response_headers ComputeBackendBucket#custom_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#custom_response_headers ComputeBackendBucket#custom_response_headers}
   */
   readonly customResponseHeaders?: string[];
   /**
@@ -39,31 +39,31 @@ export interface ComputeBackendBucketConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#deletion_policy ComputeBackendBucket#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#deletion_policy ComputeBackendBucket#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional textual description of the resource; provided by the
   * client when the resource is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#description ComputeBackendBucket#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#description ComputeBackendBucket#description}
   */
   readonly description?: string;
   /**
   * The security policy associated with this backend bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#edge_security_policy ComputeBackendBucket#edge_security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#edge_security_policy ComputeBackendBucket#edge_security_policy}
   */
   readonly edgeSecurityPolicy?: string;
   /**
   * If true, enable Cloud CDN for this BackendBucket.
   * Note: This cannot be set to true when loadBalancingScheme is set to INTERNAL_MANAGED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#enable_cdn ComputeBackendBucket#enable_cdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#enable_cdn ComputeBackendBucket#enable_cdn}
   */
   readonly enableCdn?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#id ComputeBackendBucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#id ComputeBackendBucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -74,7 +74,7 @@ export interface ComputeBackendBucketConfig extends cdktn.TerraformMetaArguments
   * If loadBalancingScheme is not specified, the backend bucket can be used by classic global external load balancers, or global application external load balancers, or both.
   * Important: CDN cannot be enabled (enableCdn cannot be set to true) when loadBalancingScheme is set to INTERNAL_MANAGED. Possible values: ["INTERNAL_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#load_balancing_scheme ComputeBackendBucket#load_balancing_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#load_balancing_scheme ComputeBackendBucket#load_balancing_scheme}
   */
   readonly loadBalancingScheme?: string;
   /**
@@ -86,29 +86,29 @@ export interface ComputeBackendBucketConfig extends cdktn.TerraformMetaArguments
   * characters must be a dash, lowercase letter, or digit, except the
   * last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#name ComputeBackendBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#name ComputeBackendBucket#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#project ComputeBackendBucket#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#project ComputeBackendBucket#project}
   */
   readonly project?: string;
   /**
   * cdn_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#cdn_policy ComputeBackendBucket#cdn_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#cdn_policy ComputeBackendBucket#cdn_policy}
   */
   readonly cdnPolicy?: ComputeBackendBucketCdnPolicy;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#params ComputeBackendBucket#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#params ComputeBackendBucket#params}
   */
   readonly params?: ComputeBackendBucketParams;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#timeouts ComputeBackendBucket#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#timeouts ComputeBackendBucket#timeouts}
   */
   readonly timeouts?: ComputeBackendBucketTimeouts;
 }
@@ -116,7 +116,7 @@ export interface ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders {
   /**
   * The header field name to match on when bypassing cache. Values are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#header_name ComputeBackendBucket#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#header_name ComputeBackendBucket#header_name}
   */
   readonly headerName?: string;
 }
@@ -124,7 +124,7 @@ export interface ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders {
 export function computeBackendBucketCdnPolicyBypassCacheOnRequestHeadersToTerraform(struct?: ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     header_name: cdktn.stringToTerraform(struct!.headerName),
@@ -135,7 +135,7 @@ export function computeBackendBucketCdnPolicyBypassCacheOnRequestHeadersToTerraf
 export function computeBackendBucketCdnPolicyBypassCacheOnRequestHeadersToHclTerraform(struct?: ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     header_name: {
@@ -235,7 +235,7 @@ export interface ComputeBackendBucketCdnPolicyCacheKeyPolicy {
   * Allows HTTP request headers (by name) to be used in the
   * cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#include_http_headers ComputeBackendBucket#include_http_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#include_http_headers ComputeBackendBucket#include_http_headers}
   */
   readonly includeHttpHeaders?: string[];
   /**
@@ -243,7 +243,7 @@ export interface ComputeBackendBucketCdnPolicyCacheKeyPolicy {
   * Default parameters are always included. '&' and '=' will
   * be percent encoded and not treated as delimiters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#query_string_whitelist ComputeBackendBucket#query_string_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#query_string_whitelist ComputeBackendBucket#query_string_whitelist}
   */
   readonly queryStringWhitelist?: string[];
 }
@@ -251,7 +251,7 @@ export interface ComputeBackendBucketCdnPolicyCacheKeyPolicy {
 export function computeBackendBucketCdnPolicyCacheKeyPolicyToTerraform(struct?: ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference | ComputeBackendBucketCdnPolicyCacheKeyPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_http_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeHttpHeaders),
@@ -263,7 +263,7 @@ export function computeBackendBucketCdnPolicyCacheKeyPolicyToTerraform(struct?: 
 export function computeBackendBucketCdnPolicyCacheKeyPolicyToHclTerraform(struct?: ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference | ComputeBackendBucketCdnPolicyCacheKeyPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_http_headers: {
@@ -359,14 +359,14 @@ export interface ComputeBackendBucketCdnPolicyNegativeCachingPolicy {
   * The HTTP status code to define a TTL against. Only HTTP status codes 300, 301, 308, 404, 405, 410, 421, 451 and 501
   * can be specified as values, and you cannot specify a status code more than once.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#code ComputeBackendBucket#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#code ComputeBackendBucket#code}
   */
   readonly code?: number;
   /**
   * The TTL (in seconds) for which to cache responses with the corresponding status code. The maximum allowed value is 1800s
   * (30 minutes), noting that infrequently accessed objects may be evicted from the cache before the defined TTL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#ttl ComputeBackendBucket#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#ttl ComputeBackendBucket#ttl}
   */
   readonly ttl?: number;
 }
@@ -374,7 +374,7 @@ export interface ComputeBackendBucketCdnPolicyNegativeCachingPolicy {
 export function computeBackendBucketCdnPolicyNegativeCachingPolicyToTerraform(struct?: ComputeBackendBucketCdnPolicyNegativeCachingPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     code: cdktn.numberToTerraform(struct!.code),
@@ -386,7 +386,7 @@ export function computeBackendBucketCdnPolicyNegativeCachingPolicyToTerraform(st
 export function computeBackendBucketCdnPolicyNegativeCachingPolicyToHclTerraform(struct?: ComputeBackendBucketCdnPolicyNegativeCachingPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     code: {
@@ -514,14 +514,14 @@ export interface ComputeBackendBucketCdnPolicy {
   * Specifies the cache setting for all responses from this backend.
   * The possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL and CACHE_ALL_STATIC Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#cache_mode ComputeBackendBucket#cache_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#cache_mode ComputeBackendBucket#cache_mode}
   */
   readonly cacheMode?: string;
   /**
   * Specifies the maximum allowed TTL for cached content served by this origin. When the
   * 'cache_mode' is set to "USE_ORIGIN_HEADERS", you must omit this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#client_ttl ComputeBackendBucket#client_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#client_ttl ComputeBackendBucket#client_ttl}
   */
   readonly clientTtl?: number;
   /**
@@ -529,32 +529,32 @@ export interface ComputeBackendBucketCdnPolicy {
   * that do not have an existing valid TTL (max-age or s-max-age). When the 'cache_mode'
   * is set to "USE_ORIGIN_HEADERS", you must omit this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#default_ttl ComputeBackendBucket#default_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#default_ttl ComputeBackendBucket#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
   * Specifies the maximum allowed TTL for cached content served by this origin. When the
   * 'cache_mode' is set to "USE_ORIGIN_HEADERS", you must omit this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#max_ttl ComputeBackendBucket#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#max_ttl ComputeBackendBucket#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#negative_caching ComputeBackendBucket#negative_caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#negative_caching ComputeBackendBucket#negative_caching}
   */
   readonly negativeCaching?: boolean | cdktn.IResolvable;
   /**
   * If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#request_coalescing ComputeBackendBucket#request_coalescing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#request_coalescing ComputeBackendBucket#request_coalescing}
   */
   readonly requestCoalescing?: boolean | cdktn.IResolvable;
   /**
   * Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#serve_while_stale ComputeBackendBucket#serve_while_stale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#serve_while_stale ComputeBackendBucket#serve_while_stale}
   */
   readonly serveWhileStale?: number;
   /**
@@ -567,25 +567,25 @@ export interface ComputeBackendBucketCdnPolicy {
   * max-age=[TTL]" header, regardless of any existing Cache-Control
   * header. The actual headers served in responses will not be altered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#signed_url_cache_max_age_sec ComputeBackendBucket#signed_url_cache_max_age_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#signed_url_cache_max_age_sec ComputeBackendBucket#signed_url_cache_max_age_sec}
   */
   readonly signedUrlCacheMaxAgeSec?: number;
   /**
   * bypass_cache_on_request_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#bypass_cache_on_request_headers ComputeBackendBucket#bypass_cache_on_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#bypass_cache_on_request_headers ComputeBackendBucket#bypass_cache_on_request_headers}
   */
   readonly bypassCacheOnRequestHeaders?: ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders[] | cdktn.IResolvable;
   /**
   * cache_key_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#cache_key_policy ComputeBackendBucket#cache_key_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#cache_key_policy ComputeBackendBucket#cache_key_policy}
   */
   readonly cacheKeyPolicy?: ComputeBackendBucketCdnPolicyCacheKeyPolicy;
   /**
   * negative_caching_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#negative_caching_policy ComputeBackendBucket#negative_caching_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#negative_caching_policy ComputeBackendBucket#negative_caching_policy}
   */
   readonly negativeCachingPolicy?: ComputeBackendBucketCdnPolicyNegativeCachingPolicy[] | cdktn.IResolvable;
 }
@@ -593,7 +593,7 @@ export interface ComputeBackendBucketCdnPolicy {
 export function computeBackendBucketCdnPolicyToTerraform(struct?: ComputeBackendBucketCdnPolicyOutputReference | ComputeBackendBucketCdnPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cache_mode: cdktn.stringToTerraform(struct!.cacheMode),
@@ -614,7 +614,7 @@ export function computeBackendBucketCdnPolicyToTerraform(struct?: ComputeBackend
 export function computeBackendBucketCdnPolicyToHclTerraform(struct?: ComputeBackendBucketCdnPolicyOutputReference | ComputeBackendBucketCdnPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cache_mode: {
@@ -963,7 +963,7 @@ export interface ComputeBackendBucketParams {
   * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
   * and values are in the format tagValues/456.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#resource_manager_tags ComputeBackendBucket#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#resource_manager_tags ComputeBackendBucket#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -971,7 +971,7 @@ export interface ComputeBackendBucketParams {
 export function computeBackendBucketParamsToTerraform(struct?: ComputeBackendBucketParamsOutputReference | ComputeBackendBucketParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource_manager_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.resourceManagerTags),
@@ -982,7 +982,7 @@ export function computeBackendBucketParamsToTerraform(struct?: ComputeBackendBuc
 export function computeBackendBucketParamsToHclTerraform(struct?: ComputeBackendBucketParamsOutputReference | ComputeBackendBucketParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource_manager_tags: {
@@ -1047,15 +1047,15 @@ export class ComputeBackendBucketParamsOutputReference extends cdktn.ComplexObje
 }
 export interface ComputeBackendBucketTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#create ComputeBackendBucket#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#create ComputeBackendBucket#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#delete ComputeBackendBucket#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#delete ComputeBackendBucket#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#update ComputeBackendBucket#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#update ComputeBackendBucket#update}
   */
   readonly update?: string;
 }
@@ -1063,7 +1063,7 @@ export interface ComputeBackendBucketTimeouts {
 export function computeBackendBucketTimeoutsToTerraform(struct?: ComputeBackendBucketTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1076,7 +1076,7 @@ export function computeBackendBucketTimeoutsToTerraform(struct?: ComputeBackendB
 export function computeBackendBucketTimeoutsToHclTerraform(struct?: ComputeBackendBucketTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1207,7 +1207,7 @@ export class ComputeBackendBucketTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket google_compute_backend_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket google_compute_backend_bucket}
 */
 export class ComputeBackendBucket extends cdktn.TerraformResource {
 
@@ -1223,7 +1223,7 @@ export class ComputeBackendBucket extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeBackendBucket resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeBackendBucket to import
-  * @param importFromId The id of the existing ComputeBackendBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeBackendBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeBackendBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1235,7 +1235,7 @@ export class ComputeBackendBucket extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_backend_bucket google_compute_backend_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_backend_bucket google_compute_backend_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1246,7 +1246,7 @@ export class ComputeBackendBucket extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_backend_bucket',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

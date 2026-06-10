@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleLustreInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance#id DataGoogleLustreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance#id DataGoogleLustreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,17 +27,17 @@ export interface DataGoogleLustreInstanceConfig extends cdktn.TerraformMetaArgum
   * * Must be between 1-63 characters.
   * * Must end with a number or a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance#instance_id DataGoogleLustreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance#instance_id DataGoogleLustreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance#project DataGoogleLustreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance#project DataGoogleLustreInstance#project}
   */
   readonly project?: string;
   /**
   * Zone of Lustre instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance#zone DataGoogleLustreInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance#zone DataGoogleLustreInstance#zone}
   */
   readonly zone?: string;
 }
@@ -47,7 +47,7 @@ export interface DataGoogleLustreInstanceAccessRulesOptionsAccessRules {
 export function dataGoogleLustreInstanceAccessRulesOptionsAccessRulesToTerraform(struct?: DataGoogleLustreInstanceAccessRulesOptionsAccessRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -57,7 +57,7 @@ export function dataGoogleLustreInstanceAccessRulesOptionsAccessRulesToTerraform
 export function dataGoogleLustreInstanceAccessRulesOptionsAccessRulesToHclTerraform(struct?: DataGoogleLustreInstanceAccessRulesOptionsAccessRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -132,7 +132,7 @@ export interface DataGoogleLustreInstanceAccessRulesOptions {
 export function dataGoogleLustreInstanceAccessRulesOptionsToTerraform(struct?: DataGoogleLustreInstanceAccessRulesOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -142,7 +142,7 @@ export function dataGoogleLustreInstanceAccessRulesOptionsToTerraform(struct?: D
 export function dataGoogleLustreInstanceAccessRulesOptionsToHclTerraform(struct?: DataGoogleLustreInstanceAccessRulesOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -223,7 +223,7 @@ export interface DataGoogleLustreInstanceDynamicTierOptions {
 export function dataGoogleLustreInstanceDynamicTierOptionsToTerraform(struct?: DataGoogleLustreInstanceDynamicTierOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -233,7 +233,7 @@ export function dataGoogleLustreInstanceDynamicTierOptionsToTerraform(struct?: D
 export function dataGoogleLustreInstanceDynamicTierOptionsToHclTerraform(struct?: DataGoogleLustreInstanceDynamicTierOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -298,7 +298,7 @@ export interface DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWi
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateToTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -308,7 +308,7 @@ export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWin
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateToHclTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -383,7 +383,7 @@ export interface DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWi
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateToTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -393,7 +393,7 @@ export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWin
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateToHclTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -468,7 +468,7 @@ export interface DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWi
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeToTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -478,7 +478,7 @@ export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWin
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeToHclTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -558,7 +558,7 @@ export interface DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWi
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowToTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -568,7 +568,7 @@ export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWin
 export function dataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowToHclTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -646,7 +646,7 @@ export interface DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindo
 export function dataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeToTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -656,7 +656,7 @@ export function dataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindow
 export function dataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeToHclTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -736,7 +736,7 @@ export interface DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindo
 export function dataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsToTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -746,7 +746,7 @@ export function dataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindow
 export function dataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsToHclTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -817,7 +817,7 @@ export interface DataGoogleLustreInstanceMaintenancePolicy {
 export function dataGoogleLustreInstanceMaintenancePolicyToTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -827,7 +827,7 @@ export function dataGoogleLustreInstanceMaintenancePolicyToTerraform(struct?: Da
 export function dataGoogleLustreInstanceMaintenancePolicyToHclTerraform(struct?: DataGoogleLustreInstanceMaintenancePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -899,7 +899,7 @@ export interface DataGoogleLustreInstanceUpcomingMaintenanceSchedule {
 export function dataGoogleLustreInstanceUpcomingMaintenanceScheduleToTerraform(struct?: DataGoogleLustreInstanceUpcomingMaintenanceSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -909,7 +909,7 @@ export function dataGoogleLustreInstanceUpcomingMaintenanceScheduleToTerraform(s
 export function dataGoogleLustreInstanceUpcomingMaintenanceScheduleToHclTerraform(struct?: DataGoogleLustreInstanceUpcomingMaintenanceSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -975,7 +975,7 @@ export class DataGoogleLustreInstanceUpcomingMaintenanceScheduleList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance google_lustre_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance google_lustre_instance}
 */
 export class DataGoogleLustreInstance extends cdktn.TerraformDataSource {
 
@@ -991,7 +991,7 @@ export class DataGoogleLustreInstance extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleLustreInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleLustreInstance to import
-  * @param importFromId The id of the existing DataGoogleLustreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleLustreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleLustreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1003,7 +1003,7 @@ export class DataGoogleLustreInstance extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1014,7 +1014,7 @@ export class DataGoogleLustreInstance extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_lustre_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

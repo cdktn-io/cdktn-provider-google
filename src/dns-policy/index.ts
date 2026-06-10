@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,13 +21,13 @@ export interface DnsPolicyConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#deletion_policy DnsPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#deletion_policy DnsPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A textual description field. Defaults to 'Managed by Terraform'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#description DnsPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#description DnsPolicy#description}
   */
   readonly description?: string;
   /**
@@ -36,18 +36,18 @@ export interface DnsPolicyConfig extends cdktn.TerraformMetaArguments {
   * virtual IP address will be allocated from each of the sub-networks
   * that are bound to this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#enable_inbound_forwarding DnsPolicy#enable_inbound_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#enable_inbound_forwarding DnsPolicy#enable_inbound_forwarding}
   */
   readonly enableInboundForwarding?: boolean | cdktn.IResolvable;
   /**
   * Controls whether logging is enabled for the networks bound to this policy.
   * Defaults to no logging if not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#enable_logging DnsPolicy#enable_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#enable_logging DnsPolicy#enable_logging}
   */
   readonly enableLogging?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#id DnsPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#id DnsPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,35 +56,35 @@ export interface DnsPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * User assigned name for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#name DnsPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#name DnsPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#project DnsPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#project DnsPolicy#project}
   */
   readonly project?: string;
   /**
   * alternative_name_server_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#alternative_name_server_config DnsPolicy#alternative_name_server_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#alternative_name_server_config DnsPolicy#alternative_name_server_config}
   */
   readonly alternativeNameServerConfig?: DnsPolicyAlternativeNameServerConfig;
   /**
   * dns64_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#dns64_config DnsPolicy#dns64_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#dns64_config DnsPolicy#dns64_config}
   */
   readonly dns64Config?: DnsPolicyDns64Config;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#networks DnsPolicy#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#networks DnsPolicy#networks}
   */
   readonly networks?: DnsPolicyNetworks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#timeouts DnsPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#timeouts DnsPolicy#timeouts}
   */
   readonly timeouts?: DnsPolicyTimeouts;
 }
@@ -94,13 +94,13 @@ export interface DnsPolicyAlternativeNameServerConfigTargetNameServers {
   * decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
   * to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#forwarding_path DnsPolicy#forwarding_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#forwarding_path DnsPolicy#forwarding_path}
   */
   readonly forwardingPath?: string;
   /**
   * IPv4 address to forward to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#ipv4_address DnsPolicy#ipv4_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#ipv4_address DnsPolicy#ipv4_address}
   */
   readonly ipv4Address: string;
 }
@@ -108,7 +108,7 @@ export interface DnsPolicyAlternativeNameServerConfigTargetNameServers {
 export function dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform(struct?: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     forwarding_path: cdktn.stringToTerraform(struct!.forwardingPath),
@@ -120,7 +120,7 @@ export function dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform
 export function dnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform(struct?: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     forwarding_path: {
@@ -244,7 +244,7 @@ export interface DnsPolicyAlternativeNameServerConfig {
   /**
   * target_name_servers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#target_name_servers DnsPolicy#target_name_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#target_name_servers DnsPolicy#target_name_servers}
   */
   readonly targetNameServers: DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktn.IResolvable;
 }
@@ -252,7 +252,7 @@ export interface DnsPolicyAlternativeNameServerConfig {
 export function dnsPolicyAlternativeNameServerConfigToTerraform(struct?: DnsPolicyAlternativeNameServerConfigOutputReference | DnsPolicyAlternativeNameServerConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target_name_servers: cdktn.listMapper(dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform, true)(struct!.targetNameServers),
@@ -263,7 +263,7 @@ export function dnsPolicyAlternativeNameServerConfigToTerraform(struct?: DnsPoli
 export function dnsPolicyAlternativeNameServerConfigToHclTerraform(struct?: DnsPolicyAlternativeNameServerConfigOutputReference | DnsPolicyAlternativeNameServerConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target_name_servers: {
@@ -327,7 +327,7 @@ export interface DnsPolicyDns64ConfigScope {
   /**
   * Controls whether DNS64 is enabled globally at the network level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#all_queries DnsPolicy#all_queries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#all_queries DnsPolicy#all_queries}
   */
   readonly allQueries?: boolean | cdktn.IResolvable;
 }
@@ -335,7 +335,7 @@ export interface DnsPolicyDns64ConfigScope {
 export function dnsPolicyDns64ConfigScopeToTerraform(struct?: DnsPolicyDns64ConfigScopeOutputReference | DnsPolicyDns64ConfigScope): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_queries: cdktn.booleanToTerraform(struct!.allQueries),
@@ -346,7 +346,7 @@ export function dnsPolicyDns64ConfigScopeToTerraform(struct?: DnsPolicyDns64Conf
 export function dnsPolicyDns64ConfigScopeToHclTerraform(struct?: DnsPolicyDns64ConfigScopeOutputReference | DnsPolicyDns64ConfigScope): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_queries: {
@@ -413,7 +413,7 @@ export interface DnsPolicyDns64Config {
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#scope DnsPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#scope DnsPolicy#scope}
   */
   readonly scope: DnsPolicyDns64ConfigScope;
 }
@@ -421,7 +421,7 @@ export interface DnsPolicyDns64Config {
 export function dnsPolicyDns64ConfigToTerraform(struct?: DnsPolicyDns64ConfigOutputReference | DnsPolicyDns64Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope: dnsPolicyDns64ConfigScopeToTerraform(struct!.scope),
@@ -432,7 +432,7 @@ export function dnsPolicyDns64ConfigToTerraform(struct?: DnsPolicyDns64ConfigOut
 export function dnsPolicyDns64ConfigToHclTerraform(struct?: DnsPolicyDns64ConfigOutputReference | DnsPolicyDns64Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope: {
@@ -498,7 +498,7 @@ export interface DnsPolicyNetworks {
   * This should be formatted like 'projects/{project}/global/networks/{network}' or
   * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#network_url DnsPolicy#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#network_url DnsPolicy#network_url}
   */
   readonly networkUrl: string;
 }
@@ -506,7 +506,7 @@ export interface DnsPolicyNetworks {
 export function dnsPolicyNetworksToTerraform(struct?: DnsPolicyNetworks | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     network_url: cdktn.stringToTerraform(struct!.networkUrl),
@@ -517,7 +517,7 @@ export function dnsPolicyNetworksToTerraform(struct?: DnsPolicyNetworks | cdktn.
 export function dnsPolicyNetworksToHclTerraform(struct?: DnsPolicyNetworks | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     network_url: {
@@ -611,15 +611,15 @@ export class DnsPolicyNetworksList extends cdktn.ComplexList {
 }
 export interface DnsPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#create DnsPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#create DnsPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#delete DnsPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#delete DnsPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#update DnsPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#update DnsPolicy#update}
   */
   readonly update?: string;
 }
@@ -627,7 +627,7 @@ export interface DnsPolicyTimeouts {
 export function dnsPolicyTimeoutsToTerraform(struct?: DnsPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -640,7 +640,7 @@ export function dnsPolicyTimeoutsToTerraform(struct?: DnsPolicyTimeouts | cdktn.
 export function dnsPolicyTimeoutsToHclTerraform(struct?: DnsPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -771,7 +771,7 @@ export class DnsPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy google_dns_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy google_dns_policy}
 */
 export class DnsPolicy extends cdktn.TerraformResource {
 
@@ -787,7 +787,7 @@ export class DnsPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DnsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsPolicy to import
-  * @param importFromId The id of the existing DnsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -799,7 +799,7 @@ export class DnsPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dns_policy google_dns_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dns_policy google_dns_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -810,7 +810,7 @@ export class DnsPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_dns_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

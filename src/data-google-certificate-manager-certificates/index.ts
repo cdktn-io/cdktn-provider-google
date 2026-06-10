@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/certificate_manager_certificates
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/certificate_manager_certificates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCertificateManagerCertificatesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/certificate_manager_certificates#filter DataGoogleCertificateManagerCertificates#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/certificate_manager_certificates#filter DataGoogleCertificateManagerCertificates#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/certificate_manager_certificates#id DataGoogleCertificateManagerCertificates#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/certificate_manager_certificates#id DataGoogleCertificateManagerCertificates#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/certificate_manager_certificates#region DataGoogleCertificateManagerCertificates#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/certificate_manager_certificates#region DataGoogleCertificateManagerCertificates#region}
   */
   readonly region?: string;
 }
@@ -34,7 +34,7 @@ export interface DataGoogleCertificateManagerCertificatesCertificatesManagedAuth
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -44,7 +44,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedAutho
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -124,7 +124,7 @@ export interface DataGoogleCertificateManagerCertificatesCertificatesManagedProv
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -134,7 +134,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedProvi
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -204,7 +204,7 @@ export interface DataGoogleCertificateManagerCertificatesCertificatesManaged {
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManaged): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -214,7 +214,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedToTer
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManaged): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -306,7 +306,7 @@ export interface DataGoogleCertificateManagerCertificatesCertificates {
 export function dataGoogleCertificateManagerCertificatesCertificatesToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -316,7 +316,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesToTerraform(
 export function dataGoogleCertificateManagerCertificatesCertificatesToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -431,7 +431,7 @@ export class DataGoogleCertificateManagerCertificatesCertificatesList extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates}
 */
 export class DataGoogleCertificateManagerCertificates extends cdktn.TerraformDataSource {
 
@@ -447,7 +447,7 @@ export class DataGoogleCertificateManagerCertificates extends cdktn.TerraformDat
   * Generates CDKTN code for importing a DataGoogleCertificateManagerCertificates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCertificateManagerCertificates to import
-  * @param importFromId The id of the existing DataGoogleCertificateManagerCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/certificate_manager_certificates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCertificateManagerCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/certificate_manager_certificates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCertificateManagerCertificates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -459,7 +459,7 @@ export class DataGoogleCertificateManagerCertificates extends cdktn.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -470,7 +470,7 @@ export class DataGoogleCertificateManagerCertificates extends cdktn.TerraformDat
       terraformResourceType: 'google_certificate_manager_certificates',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

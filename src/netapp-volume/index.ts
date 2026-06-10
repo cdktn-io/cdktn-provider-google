@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface NetappVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Capacity of the volume (in GiB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#capacity_gib NetappVolume#capacity_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#capacity_gib NetappVolume#capacity_gib}
   */
   readonly capacityGib: string;
   /**
   * This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/netapp_volume.html.markdown for specifics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#deletion_policy NetappVolume#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#deletion_policy NetappVolume#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#description NetappVolume#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#description NetappVolume#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#id NetappVolume#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#id NetappVolume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,7 +40,7 @@ export interface NetappVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
   */
   readonly kerberosEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -50,151 +50,151 @@ export interface NetappVolumeConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#labels NetappVolume#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Optional. Flag indicating if the volume will be a large capacity volume or a regular volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#large_capacity NetappVolume#large_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#large_capacity NetappVolume#large_capacity}
   */
   readonly largeCapacity?: boolean | cdktn.IResolvable;
   /**
   * Name of the pool location. Usually a region name, expect for some STANDARD service level pools which require a zone name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#location NetappVolume#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#location NetappVolume#location}
   */
   readonly location: string;
   /**
   * Optional. Flag indicating if the volume will have an IP address per node for volumes supporting multiple IP endpoints.
   * Only the volume with largeCapacity will be allowed to have multiple endpoints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#multiple_endpoints NetappVolume#multiple_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#multiple_endpoints NetappVolume#multiple_endpoints}
   */
   readonly multipleEndpoints?: boolean | cdktn.IResolvable;
   /**
   * The name of the volume. Needs to be unique per location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#name NetappVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#name NetappVolume#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#project NetappVolume#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#project NetappVolume#project}
   */
   readonly project?: string;
   /**
   * The protocol of the volume. Allowed combinations are '['NFSV3']', '['NFSV4']', '['SMB']', '['NFSV3', 'NFSV4']', '['SMB', 'NFSV3']' and '['SMB', 'NFSV4']'. Possible values: ["NFSV3", "NFSV4", "SMB", "ISCSI"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}
   */
   readonly protocols: string[];
   /**
   * List of actions that are restricted on this volume. Possible values: ["DELETE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#restricted_actions NetappVolume#restricted_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#restricted_actions NetappVolume#restricted_actions}
   */
   readonly restrictedActions?: string[];
   /**
   * Security Style of the Volume. Use UNIX to use UNIX or NFSV4 ACLs for file permissions.
   * Use NTFS to use NTFS ACLs for file permissions. Can only be set for volumes which use SMB together with NFS as protocol. Possible values: ["NTFS", "UNIX"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}
   */
   readonly securityStyle?: string;
   /**
   * Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#share_name NetappVolume#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#share_name NetappVolume#share_name}
   */
   readonly shareName?: string;
   /**
   * Settings for volumes with SMB access. Possible values: ["ENCRYPT_DATA", "BROWSABLE", "CHANGE_NOTIFY", "NON_BROWSABLE", "OPLOCKS", "SHOW_SNAPSHOT", "SHOW_PREVIOUS_VERSIONS", "ACCESS_BASED_ENUMERATION", "CONTINUOUSLY_AVAILABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#smb_settings NetappVolume#smb_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#smb_settings NetappVolume#smb_settings}
   */
   readonly smbSettings?: string[];
   /**
   * If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#snapshot_directory NetappVolume#snapshot_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#snapshot_directory NetappVolume#snapshot_directory}
   */
   readonly snapshotDirectory?: boolean | cdktn.IResolvable;
   /**
   * Name of the storage pool to create the volume in. Pool needs enough spare capacity to accommodate the volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#storage_pool NetappVolume#storage_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#storage_pool NetappVolume#storage_pool}
   */
   readonly storagePool: string;
   /**
   * Optional. Custom Performance Total Throughput of the pool (in MiB/s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#throughput_mibps NetappVolume#throughput_mibps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#throughput_mibps NetappVolume#throughput_mibps}
   */
   readonly throughputMibps?: number;
   /**
   * Unix permission the mount point will be created with. Default is 0770. Applicable for UNIX security style volumes only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#unix_permissions NetappVolume#unix_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#unix_permissions NetappVolume#unix_permissions}
   */
   readonly unixPermissions?: string;
   /**
   * backup_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#backup_config NetappVolume#backup_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#backup_config NetappVolume#backup_config}
   */
   readonly backupConfig?: NetappVolumeBackupConfig;
   /**
   * block_devices block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#block_devices NetappVolume#block_devices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#block_devices NetappVolume#block_devices}
   */
   readonly blockDevices?: NetappVolumeBlockDevices[] | cdktn.IResolvable;
   /**
   * cache_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#cache_parameters NetappVolume#cache_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#cache_parameters NetappVolume#cache_parameters}
   */
   readonly cacheParameters?: NetappVolumeCacheParameters;
   /**
   * export_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#export_policy NetappVolume#export_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#export_policy NetappVolume#export_policy}
   */
   readonly exportPolicy?: NetappVolumeExportPolicy;
   /**
   * hybrid_replication_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#hybrid_replication_parameters NetappVolume#hybrid_replication_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#hybrid_replication_parameters NetappVolume#hybrid_replication_parameters}
   */
   readonly hybridReplicationParameters?: NetappVolumeHybridReplicationParameters;
   /**
   * large_capacity_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#large_capacity_config NetappVolume#large_capacity_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#large_capacity_config NetappVolume#large_capacity_config}
   */
   readonly largeCapacityConfig?: NetappVolumeLargeCapacityConfig;
   /**
   * restore_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#restore_parameters NetappVolume#restore_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#restore_parameters NetappVolume#restore_parameters}
   */
   readonly restoreParameters?: NetappVolumeRestoreParameters;
   /**
   * snapshot_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#snapshot_policy NetappVolume#snapshot_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#snapshot_policy NetappVolume#snapshot_policy}
   */
   readonly snapshotPolicy?: NetappVolumeSnapshotPolicy;
   /**
   * tiering_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}
   */
   readonly tieringPolicy?: NetappVolumeTieringPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
   */
   readonly timeouts?: NetappVolumeTimeouts;
 }
@@ -204,7 +204,7 @@ export interface NetappVolumeMountOptions {
 export function netappVolumeMountOptionsToTerraform(struct?: NetappVolumeMountOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -214,7 +214,7 @@ export function netappVolumeMountOptionsToTerraform(struct?: NetappVolumeMountOp
 export function netappVolumeMountOptionsToHclTerraform(struct?: NetappVolumeMountOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -297,20 +297,20 @@ export interface NetappVolumeBackupConfig {
   /**
   * Specify a single backup policy ID for scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupPolicies/{{backupPolicyName}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#backup_policies NetappVolume#backup_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#backup_policies NetappVolume#backup_policies}
   */
   readonly backupPolicies?: string[];
   /**
   * ID of the backup vault to use. A backup vault is reqired to create manual or scheduled backups.
   * Format: 'projects/{{projectId}}/locations/{{location}}/backupVaults/{{backupVaultName}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#backup_vault NetappVolume#backup_vault}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#backup_vault NetappVolume#backup_vault}
   */
   readonly backupVault?: string;
   /**
   * When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#scheduled_backup_enabled NetappVolume#scheduled_backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#scheduled_backup_enabled NetappVolume#scheduled_backup_enabled}
   */
   readonly scheduledBackupEnabled?: boolean | cdktn.IResolvable;
 }
@@ -318,7 +318,7 @@ export interface NetappVolumeBackupConfig {
 export function netappVolumeBackupConfigToTerraform(struct?: NetappVolumeBackupConfigOutputReference | NetappVolumeBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backup_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.backupPolicies),
@@ -331,7 +331,7 @@ export function netappVolumeBackupConfigToTerraform(struct?: NetappVolumeBackupC
 export function netappVolumeBackupConfigToHclTerraform(struct?: NetappVolumeBackupConfigOutputReference | NetappVolumeBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backup_policies: {
@@ -457,7 +457,7 @@ export interface NetappVolumeBlockDevices {
   * 'projects/{project_id}/locations/{location}/hostGroups/{host_group_id}'
   * This field can be updated after the block device is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#host_groups NetappVolume#host_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#host_groups NetappVolume#host_groups}
   */
   readonly hostGroups?: string[];
   /**
@@ -469,14 +469,14 @@ export interface NetappVolumeBlockDevices {
   *     and the following special characters: "-", "_", "}", "{", ".".
   * *   Spaces are not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#name NetappVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#name NetappVolume#name}
   */
   readonly name?: string;
   /**
   * The OS type of the volume.
   * This field can't be changed after the block device is created. Possible values: ["LINUX", "WINDOWS", "ESXI"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#os_type NetappVolume#os_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#os_type NetappVolume#os_type}
   */
   readonly osType: string;
 }
@@ -484,7 +484,7 @@ export interface NetappVolumeBlockDevices {
 export function netappVolumeBlockDevicesToTerraform(struct?: NetappVolumeBlockDevices | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hostGroups),
@@ -497,7 +497,7 @@ export function netappVolumeBlockDevicesToTerraform(struct?: NetappVolumeBlockDe
 export function netappVolumeBlockDevicesToHclTerraform(struct?: NetappVolumeBlockDevices | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_groups: {
@@ -659,7 +659,7 @@ export interface NetappVolumeCacheParametersCacheConfig {
   /**
   * Optional. Flag indicating whether a CIFS change notification is enabled for the FlexCache volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#cifs_change_notify_enabled NetappVolume#cifs_change_notify_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#cifs_change_notify_enabled NetappVolume#cifs_change_notify_enabled}
   */
   readonly cifsChangeNotifyEnabled?: boolean | cdktn.IResolvable;
 }
@@ -667,7 +667,7 @@ export interface NetappVolumeCacheParametersCacheConfig {
 export function netappVolumeCacheParametersCacheConfigToTerraform(struct?: NetappVolumeCacheParametersCacheConfigOutputReference | NetappVolumeCacheParametersCacheConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cifs_change_notify_enabled: cdktn.booleanToTerraform(struct!.cifsChangeNotifyEnabled),
@@ -678,7 +678,7 @@ export function netappVolumeCacheParametersCacheConfigToTerraform(struct?: Netap
 export function netappVolumeCacheParametersCacheConfigToHclTerraform(struct?: NetappVolumeCacheParametersCacheConfigOutputReference | NetappVolumeCacheParametersCacheConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cifs_change_notify_enabled: {
@@ -745,43 +745,43 @@ export interface NetappVolumeCacheParameters {
   /**
   * Optional. Field indicating whether cache volume as global file lock enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#enable_global_file_lock NetappVolume#enable_global_file_lock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#enable_global_file_lock NetappVolume#enable_global_file_lock}
   */
   readonly enableGlobalFileLock?: boolean | cdktn.IResolvable;
   /**
   * Required. Name of the origin volume's ONTAP cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
   */
   readonly peerClusterName?: string;
   /**
   * Required. List of IC LIF addresses of the origin volume's ONTAP cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
   */
   readonly peerIpAddresses?: string[];
   /**
   * Required. Name of the origin volume's SVM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
   */
   readonly peerSvmName?: string;
   /**
   * Required. Name of the origin volume for the cache volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
   */
   readonly peerVolumeName?: string;
   /**
   * Optional. Expiration time for the peering command to be executed on user's ONTAP. A timestamp in RFC3339 UTC "Zulu" format. Examples: "2023-06-22T09:13:01.617Z".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peering_command_expiry_time NetappVolume#peering_command_expiry_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peering_command_expiry_time NetappVolume#peering_command_expiry_time}
   */
   readonly peeringCommandExpiryTime?: string;
   /**
   * cache_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#cache_config NetappVolume#cache_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#cache_config NetappVolume#cache_config}
   */
   readonly cacheConfig?: NetappVolumeCacheParametersCacheConfig;
 }
@@ -789,7 +789,7 @@ export interface NetappVolumeCacheParameters {
 export function netappVolumeCacheParametersToTerraform(struct?: NetappVolumeCacheParametersOutputReference | NetappVolumeCacheParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_global_file_lock: cdktn.booleanToTerraform(struct!.enableGlobalFileLock),
@@ -806,7 +806,7 @@ export function netappVolumeCacheParametersToTerraform(struct?: NetappVolumeCach
 export function netappVolumeCacheParametersToHclTerraform(struct?: NetappVolumeCacheParametersOutputReference | NetappVolumeCacheParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_global_file_lock: {
@@ -1061,81 +1061,81 @@ export interface NetappVolumeExportPolicyRules {
   /**
   * Defines the access type for clients matching the 'allowedClients' specification. Possible values: ["READ_ONLY", "READ_WRITE", "READ_NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#access_type NetappVolume#access_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#access_type NetappVolume#access_type}
   */
   readonly accessType?: string;
   /**
   * Defines the client ingress specification (allowed clients) as a comma separated list with IPv4 CIDRs or IPv4 host addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}
   */
   readonly allowedClients?: string;
   /**
   * An integer representing the anonymous user ID. Range is 0 to 4294967295. Required when 'squash_mode' is 'ALL_SQUASH'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#anon_uid NetappVolume#anon_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#anon_uid NetappVolume#anon_uid}
   */
   readonly anonUid?: number;
   /**
   * If enabled, the root user (UID = 0) of the specified clients doesn't get mapped to nobody (UID = 65534). This is also known as no_root_squash.
   * Use either squash_mode or has_root_access, but never both at the same time. These parameters are mutually exclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#has_root_access NetappVolume#has_root_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#has_root_access NetappVolume#has_root_access}
   */
   readonly hasRootAccess?: string;
   /**
   * If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. It enables nfs clients to mount using 'authentication' kerberos security mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#kerberos5_read_only NetappVolume#kerberos5_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#kerberos5_read_only NetappVolume#kerberos5_read_only}
   */
   readonly kerberos5ReadOnly?: boolean | cdktn.IResolvable;
   /**
   * If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. It enables nfs clients to mount using 'authentication' kerberos security mode. The 'kerberos5ReadOnly' value is ignored if this is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#kerberos5_read_write NetappVolume#kerberos5_read_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#kerberos5_read_write NetappVolume#kerberos5_read_write}
   */
   readonly kerberos5ReadWrite?: boolean | cdktn.IResolvable;
   /**
   * If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. It enables nfs clients to mount using 'integrity' kerberos security mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#kerberos5i_read_only NetappVolume#kerberos5i_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#kerberos5i_read_only NetappVolume#kerberos5i_read_only}
   */
   readonly kerberos5IReadOnly?: boolean | cdktn.IResolvable;
   /**
   * If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. It enables nfs clients to mount using 'integrity' kerberos security mode. The 'kerberos5iReadOnly' value is ignored if this is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#kerberos5i_read_write NetappVolume#kerberos5i_read_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#kerberos5i_read_write NetappVolume#kerberos5i_read_write}
   */
   readonly kerberos5IReadWrite?: boolean | cdktn.IResolvable;
   /**
   * If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. It enables nfs clients to mount using 'privacy' kerberos security mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#kerberos5p_read_only NetappVolume#kerberos5p_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#kerberos5p_read_only NetappVolume#kerberos5p_read_only}
   */
   readonly kerberos5PReadOnly?: boolean | cdktn.IResolvable;
   /**
   * If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. It enables nfs clients to mount using 'privacy' kerberos security mode. The 'kerberos5pReadOnly' value is ignored if this is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#kerberos5p_read_write NetappVolume#kerberos5p_read_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#kerberos5p_read_write NetappVolume#kerberos5p_read_write}
   */
   readonly kerberos5PReadWrite?: boolean | cdktn.IResolvable;
   /**
   * Enable to apply the export rule to NFSV3 clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#nfsv3 NetappVolume#nfsv3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#nfsv3 NetappVolume#nfsv3}
   */
   readonly nfsv3?: boolean | cdktn.IResolvable;
   /**
   * Enable to apply the export rule to NFSV4.1 clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#nfsv4 NetappVolume#nfsv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#nfsv4 NetappVolume#nfsv4}
   */
   readonly nfsv4?: boolean | cdktn.IResolvable;
   /**
   * SquashMode defines how remote user privileges are restricted when accessing an NFS export. It controls how the user identities (like root) are mapped to anonymous users to limit access and enforce security.
   * Use either squash_mode or has_root_access, but never both at the same time. These parameters are mutually exclusive. Possible values: ["SQUASH_MODE_UNSPECIFIED", "NO_ROOT_SQUASH", "ROOT_SQUASH", "ALL_SQUASH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#squash_mode NetappVolume#squash_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#squash_mode NetappVolume#squash_mode}
   */
   readonly squashMode?: string;
 }
@@ -1143,7 +1143,7 @@ export interface NetappVolumeExportPolicyRules {
 export function netappVolumeExportPolicyRulesToTerraform(struct?: NetappVolumeExportPolicyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_type: cdktn.stringToTerraform(struct!.accessType),
@@ -1166,7 +1166,7 @@ export function netappVolumeExportPolicyRulesToTerraform(struct?: NetappVolumeEx
 export function netappVolumeExportPolicyRulesToHclTerraform(struct?: NetappVolumeExportPolicyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_type: {
@@ -1601,7 +1601,7 @@ export interface NetappVolumeExportPolicy {
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#rules NetappVolume#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#rules NetappVolume#rules}
   */
   readonly rules: NetappVolumeExportPolicyRules[] | cdktn.IResolvable;
 }
@@ -1609,7 +1609,7 @@ export interface NetappVolumeExportPolicy {
 export function netappVolumeExportPolicyToTerraform(struct?: NetappVolumeExportPolicyOutputReference | NetappVolumeExportPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rules: cdktn.listMapper(netappVolumeExportPolicyRulesToTerraform, true)(struct!.rules),
@@ -1620,7 +1620,7 @@ export function netappVolumeExportPolicyToTerraform(struct?: NetappVolumeExportP
 export function netappVolumeExportPolicyToHclTerraform(struct?: NetappVolumeExportPolicyOutputReference | NetappVolumeExportPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rules: {
@@ -1685,13 +1685,13 @@ export interface NetappVolumeHybridReplicationParameters {
   * Optional. Name of source cluster location associated with the replication. This is a free-form field
   * for display purposes only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#cluster_location NetappVolume#cluster_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#cluster_location NetappVolume#cluster_location}
   */
   readonly clusterLocation?: string;
   /**
   * Optional. Description of the replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#description NetappVolume#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#description NetappVolume#description}
   */
   readonly description?: string;
   /**
@@ -1700,56 +1700,56 @@ export interface NetappVolumeHybridReplicationParameters {
   * Other values are read-only. 'REVERSE_ONPREM_REPLICATION' is used to represent an external
   * replication which got reversed. Default is 'MIGRATION'. Possible values: ["MIGRATION", "CONTINUOUS_REPLICATION", "ONPREM_REPLICATION", "REVERSE_ONPREM_REPLICATION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#hybrid_replication_type NetappVolume#hybrid_replication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#hybrid_replication_type NetappVolume#hybrid_replication_type}
   */
   readonly hybridReplicationType?: string;
   /**
   * Optional. Labels to be added to the replication as the key value pairs.
   * An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#labels NetappVolume#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Optional. If the source is a FlexGroup volume, this field needs to match the number of constituents in the FlexGroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#large_volume_constituent_count NetappVolume#large_volume_constituent_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#large_volume_constituent_count NetappVolume#large_volume_constituent_count}
   */
   readonly largeVolumeConstituentCount?: number;
   /**
   * Required. Name of the ONTAP source cluster to be peered with NetApp Volumes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
   */
   readonly peerClusterName?: string;
   /**
   * Required. List of all intercluster LIF IP addresses of the ONTAP source cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
   */
   readonly peerIpAddresses?: string[];
   /**
   * Required. Name of the ONTAP source vserver SVM to be peered with NetApp Volumes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
   */
   readonly peerSvmName?: string;
   /**
   * Required. Name of the ONTAP source volume to be replicated to NetApp Volumes destination volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
   */
   readonly peerVolumeName?: string;
   /**
   * Required. Desired name for the replication of this volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#replication NetappVolume#replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#replication NetappVolume#replication}
   */
   readonly replication?: string;
   /**
   * Optional. Replication Schedule for the replication created. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#replication_schedule NetappVolume#replication_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#replication_schedule NetappVolume#replication_schedule}
   */
   readonly replicationSchedule?: string;
 }
@@ -1757,7 +1757,7 @@ export interface NetappVolumeHybridReplicationParameters {
 export function netappVolumeHybridReplicationParametersToTerraform(struct?: NetappVolumeHybridReplicationParametersOutputReference | NetappVolumeHybridReplicationParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cluster_location: cdktn.stringToTerraform(struct!.clusterLocation),
@@ -1778,7 +1778,7 @@ export function netappVolumeHybridReplicationParametersToTerraform(struct?: Neta
 export function netappVolumeHybridReplicationParametersToHclTerraform(struct?: NetappVolumeHybridReplicationParametersOutputReference | NetappVolumeHybridReplicationParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cluster_location: {
@@ -2126,7 +2126,7 @@ export interface NetappVolumeLargeCapacityConfig {
   * The number of internal constituents (e.g., FlexVols) for this large volume.
   * The minimum number of constituents is 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#constituent_count NetappVolume#constituent_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#constituent_count NetappVolume#constituent_count}
   */
   readonly constituentCount?: number;
 }
@@ -2134,7 +2134,7 @@ export interface NetappVolumeLargeCapacityConfig {
 export function netappVolumeLargeCapacityConfigToTerraform(struct?: NetappVolumeLargeCapacityConfigOutputReference | NetappVolumeLargeCapacityConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     constituent_count: cdktn.numberToTerraform(struct!.constituentCount),
@@ -2145,7 +2145,7 @@ export function netappVolumeLargeCapacityConfigToTerraform(struct?: NetappVolume
 export function netappVolumeLargeCapacityConfigToHclTerraform(struct?: NetappVolumeLargeCapacityConfigOutputReference | NetappVolumeLargeCapacityConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     constituent_count: {
@@ -2214,7 +2214,7 @@ export interface NetappVolumeRestoreParameters {
   * 'source_snapshot' and 'source_backup' cannot be used simultaneously.
   * Format: 'projects/{{project}}/locations/{{location}}/backupVaults/{{backupVaultId}}/backups/{{backup}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#source_backup NetappVolume#source_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#source_backup NetappVolume#source_backup}
   */
   readonly sourceBackup?: string;
   /**
@@ -2222,7 +2222,7 @@ export interface NetappVolumeRestoreParameters {
   * 'source_snapshot' and 'source_backup' cannot be used simultaneously.
   * Format: 'projects/{{project}}/locations/{{location}}/volumes/{{volume}}/snapshots/{{snapshot}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#source_snapshot NetappVolume#source_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#source_snapshot NetappVolume#source_snapshot}
   */
   readonly sourceSnapshot?: string;
 }
@@ -2230,7 +2230,7 @@ export interface NetappVolumeRestoreParameters {
 export function netappVolumeRestoreParametersToTerraform(struct?: NetappVolumeRestoreParametersOutputReference | NetappVolumeRestoreParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source_backup: cdktn.stringToTerraform(struct!.sourceBackup),
@@ -2242,7 +2242,7 @@ export function netappVolumeRestoreParametersToTerraform(struct?: NetappVolumeRe
 export function netappVolumeRestoreParametersToHclTerraform(struct?: NetappVolumeRestoreParametersOutputReference | NetappVolumeRestoreParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source_backup: {
@@ -2337,19 +2337,19 @@ export interface NetappVolumeSnapshotPolicyDailySchedule {
   /**
   * Set the hour to create the snapshot (0-23), defaults to midnight (0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#hour NetappVolume#hour}
   */
   readonly hour?: number;
   /**
   * Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#minute NetappVolume#minute}
   */
   readonly minute?: number;
   /**
   * The maximum number of snapshots to keep for the daily schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
   */
   readonly snapshotsToKeep: number;
 }
@@ -2357,7 +2357,7 @@ export interface NetappVolumeSnapshotPolicyDailySchedule {
 export function netappVolumeSnapshotPolicyDailyScheduleToTerraform(struct?: NetappVolumeSnapshotPolicyDailyScheduleOutputReference | NetappVolumeSnapshotPolicyDailySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hour: cdktn.numberToTerraform(struct!.hour),
@@ -2370,7 +2370,7 @@ export function netappVolumeSnapshotPolicyDailyScheduleToTerraform(struct?: Neta
 export function netappVolumeSnapshotPolicyDailyScheduleToHclTerraform(struct?: NetappVolumeSnapshotPolicyDailyScheduleOutputReference | NetappVolumeSnapshotPolicyDailySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hour: {
@@ -2490,13 +2490,13 @@ export interface NetappVolumeSnapshotPolicyHourlySchedule {
   /**
   * Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#minute NetappVolume#minute}
   */
   readonly minute?: number;
   /**
   * The maximum number of snapshots to keep for the hourly schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
   */
   readonly snapshotsToKeep: number;
 }
@@ -2504,7 +2504,7 @@ export interface NetappVolumeSnapshotPolicyHourlySchedule {
 export function netappVolumeSnapshotPolicyHourlyScheduleToTerraform(struct?: NetappVolumeSnapshotPolicyHourlyScheduleOutputReference | NetappVolumeSnapshotPolicyHourlySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minute: cdktn.numberToTerraform(struct!.minute),
@@ -2516,7 +2516,7 @@ export function netappVolumeSnapshotPolicyHourlyScheduleToTerraform(struct?: Net
 export function netappVolumeSnapshotPolicyHourlyScheduleToHclTerraform(struct?: NetappVolumeSnapshotPolicyHourlyScheduleOutputReference | NetappVolumeSnapshotPolicyHourlySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minute: {
@@ -2608,25 +2608,25 @@ export interface NetappVolumeSnapshotPolicyMonthlySchedule {
   /**
   * Set the day or days of the month to make a snapshot (1-31). Accepts a comma separated number of days. Defaults to '1'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#days_of_month NetappVolume#days_of_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#days_of_month NetappVolume#days_of_month}
   */
   readonly daysOfMonth?: string;
   /**
   * Set the hour to create the snapshot (0-23), defaults to midnight (0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#hour NetappVolume#hour}
   */
   readonly hour?: number;
   /**
   * Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#minute NetappVolume#minute}
   */
   readonly minute?: number;
   /**
   * The maximum number of snapshots to keep for the monthly schedule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
   */
   readonly snapshotsToKeep: number;
 }
@@ -2634,7 +2634,7 @@ export interface NetappVolumeSnapshotPolicyMonthlySchedule {
 export function netappVolumeSnapshotPolicyMonthlyScheduleToTerraform(struct?: NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference | NetappVolumeSnapshotPolicyMonthlySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     days_of_month: cdktn.stringToTerraform(struct!.daysOfMonth),
@@ -2648,7 +2648,7 @@ export function netappVolumeSnapshotPolicyMonthlyScheduleToTerraform(struct?: Ne
 export function netappVolumeSnapshotPolicyMonthlyScheduleToHclTerraform(struct?: NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference | NetappVolumeSnapshotPolicyMonthlySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     days_of_month: {
@@ -2796,25 +2796,25 @@ export interface NetappVolumeSnapshotPolicyWeeklySchedule {
   /**
   * Set the day or days of the week to make a snapshot. Accepts a comma separated days of the week. Defaults to 'Sunday'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#day NetappVolume#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#day NetappVolume#day}
   */
   readonly day?: string;
   /**
   * Set the hour to create the snapshot (0-23), defaults to midnight (0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#hour NetappVolume#hour}
   */
   readonly hour?: number;
   /**
   * Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#minute NetappVolume#minute}
   */
   readonly minute?: number;
   /**
   * The maximum number of snapshots to keep for the weekly schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
   */
   readonly snapshotsToKeep: number;
 }
@@ -2822,7 +2822,7 @@ export interface NetappVolumeSnapshotPolicyWeeklySchedule {
 export function netappVolumeSnapshotPolicyWeeklyScheduleToTerraform(struct?: NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference | NetappVolumeSnapshotPolicyWeeklySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     day: cdktn.stringToTerraform(struct!.day),
@@ -2836,7 +2836,7 @@ export function netappVolumeSnapshotPolicyWeeklyScheduleToTerraform(struct?: Net
 export function netappVolumeSnapshotPolicyWeeklyScheduleToHclTerraform(struct?: NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference | NetappVolumeSnapshotPolicyWeeklySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     day: {
@@ -2985,31 +2985,31 @@ export interface NetappVolumeSnapshotPolicy {
   * Enables automated snapshot creation according to defined schedule. Default is false.
   * To disable automatic snapshot creation you have to remove the whole snapshot_policy block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#enabled NetappVolume#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#enabled NetappVolume#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * daily_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#daily_schedule NetappVolume#daily_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#daily_schedule NetappVolume#daily_schedule}
   */
   readonly dailySchedule?: NetappVolumeSnapshotPolicyDailySchedule;
   /**
   * hourly_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#hourly_schedule NetappVolume#hourly_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#hourly_schedule NetappVolume#hourly_schedule}
   */
   readonly hourlySchedule?: NetappVolumeSnapshotPolicyHourlySchedule;
   /**
   * monthly_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#monthly_schedule NetappVolume#monthly_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#monthly_schedule NetappVolume#monthly_schedule}
   */
   readonly monthlySchedule?: NetappVolumeSnapshotPolicyMonthlySchedule;
   /**
   * weekly_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#weekly_schedule NetappVolume#weekly_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#weekly_schedule NetappVolume#weekly_schedule}
   */
   readonly weeklySchedule?: NetappVolumeSnapshotPolicyWeeklySchedule;
 }
@@ -3017,7 +3017,7 @@ export interface NetappVolumeSnapshotPolicy {
 export function netappVolumeSnapshotPolicyToTerraform(struct?: NetappVolumeSnapshotPolicyOutputReference | NetappVolumeSnapshotPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -3032,7 +3032,7 @@ export function netappVolumeSnapshotPolicyToTerraform(struct?: NetappVolumeSnaps
 export function netappVolumeSnapshotPolicyToHclTerraform(struct?: NetappVolumeSnapshotPolicyOutputReference | NetappVolumeSnapshotPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -3212,20 +3212,20 @@ export interface NetappVolumeTieringPolicy {
   * Optional. Time in days to mark the volume's data block as cold and make it eligible for tiering, can be range from 2-183.
   * Default is 31.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#cooling_threshold_days NetappVolume#cooling_threshold_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#cooling_threshold_days NetappVolume#cooling_threshold_days}
   */
   readonly coolingThresholdDays?: number;
   /**
   * Optional. Flag indicating that the hot tier bypass mode is enabled. Default is false.
   * Only applicable to Flex service level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#hot_tier_bypass_mode_enabled NetappVolume#hot_tier_bypass_mode_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#hot_tier_bypass_mode_enabled NetappVolume#hot_tier_bypass_mode_enabled}
   */
   readonly hotTierBypassModeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Optional. Flag indicating if the volume has tiering policy enable/pause. Default is PAUSED. Default value: "PAUSED" Possible values: ["ENABLED", "PAUSED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#tier_action NetappVolume#tier_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#tier_action NetappVolume#tier_action}
   */
   readonly tierAction?: string;
 }
@@ -3233,7 +3233,7 @@ export interface NetappVolumeTieringPolicy {
 export function netappVolumeTieringPolicyToTerraform(struct?: NetappVolumeTieringPolicyOutputReference | NetappVolumeTieringPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cooling_threshold_days: cdktn.numberToTerraform(struct!.coolingThresholdDays),
@@ -3246,7 +3246,7 @@ export function netappVolumeTieringPolicyToTerraform(struct?: NetappVolumeTierin
 export function netappVolumeTieringPolicyToHclTerraform(struct?: NetappVolumeTieringPolicyOutputReference | NetappVolumeTieringPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cooling_threshold_days: {
@@ -3367,15 +3367,15 @@ export class NetappVolumeTieringPolicyOutputReference extends cdktn.ComplexObjec
 }
 export interface NetappVolumeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#create NetappVolume#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#create NetappVolume#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#delete NetappVolume#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#delete NetappVolume#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#update NetappVolume#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#update NetappVolume#update}
   */
   readonly update?: string;
 }
@@ -3383,7 +3383,7 @@ export interface NetappVolumeTimeouts {
 export function netappVolumeTimeoutsToTerraform(struct?: NetappVolumeTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -3396,7 +3396,7 @@ export function netappVolumeTimeoutsToTerraform(struct?: NetappVolumeTimeouts | 
 export function netappVolumeTimeoutsToHclTerraform(struct?: NetappVolumeTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -3527,7 +3527,7 @@ export class NetappVolumeTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume google_netapp_volume}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume google_netapp_volume}
 */
 export class NetappVolume extends cdktn.TerraformResource {
 
@@ -3543,7 +3543,7 @@ export class NetappVolume extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetappVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappVolume to import
-  * @param importFromId The id of the existing NetappVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappVolume to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3555,7 +3555,7 @@ export class NetappVolume extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/netapp_volume google_netapp_volume} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/netapp_volume google_netapp_volume} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3566,7 +3566,7 @@ export class NetappVolume extends cdktn.TerraformResource {
       terraformResourceType: 'google_netapp_volume',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

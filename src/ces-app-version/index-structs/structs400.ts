@@ -17,7 +17,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOau
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -27,7 +27,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOaut
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -112,7 +112,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationSer
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -122,7 +122,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServ
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -187,7 +187,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationSer
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -197,7 +197,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServ
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -257,7 +257,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthentication {
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -267,7 +267,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationToTe
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -357,7 +357,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConf
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -367,7 +367,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfi
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -432,7 +432,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCerts {
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCerts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -442,7 +442,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsToTer
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCerts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -512,7 +512,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfig {
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -522,7 +522,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigToTerraform(
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -588,7 +588,7 @@ export interface CesAppVersionSnapshotToolsetsOpenApiToolset {
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -598,7 +598,7 @@ export function cesAppVersionSnapshotToolsetsOpenApiToolsetToTerraform(struct?: 
 export function cesAppVersionSnapshotToolsetsOpenApiToolsetToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -691,7 +691,7 @@ export interface CesAppVersionSnapshotToolsets {
 export function cesAppVersionSnapshotToolsetsToTerraform(struct?: CesAppVersionSnapshotToolsets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -701,7 +701,7 @@ export function cesAppVersionSnapshotToolsetsToTerraform(struct?: CesAppVersionS
 export function cesAppVersionSnapshotToolsetsToHclTerraform(struct?: CesAppVersionSnapshotToolsets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -802,7 +802,7 @@ export interface CesAppVersionSnapshot {
 export function cesAppVersionSnapshotToTerraform(struct?: CesAppVersionSnapshot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -812,7 +812,7 @@ export function cesAppVersionSnapshotToTerraform(struct?: CesAppVersionSnapshot)
 export function cesAppVersionSnapshotToHclTerraform(struct?: CesAppVersionSnapshot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -904,11 +904,11 @@ export class CesAppVersionSnapshotList extends cdktn.ComplexList {
 }
 export interface CesAppVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_app_version#create CesAppVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_app_version#create CesAppVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_app_version#delete CesAppVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_app_version#delete CesAppVersion#delete}
   */
   readonly delete?: string;
 }
@@ -916,7 +916,7 @@ export interface CesAppVersionTimeouts {
 export function cesAppVersionTimeoutsToTerraform(struct?: CesAppVersionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -928,7 +928,7 @@ export function cesAppVersionTimeoutsToTerraform(struct?: CesAppVersionTimeouts 
 export function cesAppVersionTimeoutsToHclTerraform(struct?: CesAppVersionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

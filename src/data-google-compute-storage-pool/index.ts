@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_storage_pool
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface DataGoogleComputeStoragePoolConfig extends cdktn.TerraformMetaA
   * and all following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_storage_pool#name DataGoogleComputeStoragePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool#name DataGoogleComputeStoragePool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}
   */
   readonly project?: string;
   /**
   * A reference to the zone where the storage pool resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_storage_pool#zone DataGoogleComputeStoragePool#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool#zone DataGoogleComputeStoragePool#zone}
   */
   readonly zone: string;
 }
@@ -41,7 +41,7 @@ export interface DataGoogleComputeStoragePoolParams {
 export function dataGoogleComputeStoragePoolParamsToTerraform(struct?: DataGoogleComputeStoragePoolParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -51,7 +51,7 @@ export function dataGoogleComputeStoragePoolParamsToTerraform(struct?: DataGoogl
 export function dataGoogleComputeStoragePoolParamsToHclTerraform(struct?: DataGoogleComputeStoragePoolParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -117,7 +117,7 @@ export interface DataGoogleComputeStoragePoolResourceStatus {
 export function dataGoogleComputeStoragePoolResourceStatusToTerraform(struct?: DataGoogleComputeStoragePoolResourceStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -127,7 +127,7 @@ export function dataGoogleComputeStoragePoolResourceStatusToTerraform(struct?: D
 export function dataGoogleComputeStoragePoolResourceStatusToHclTerraform(struct?: DataGoogleComputeStoragePoolResourceStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -237,7 +237,7 @@ export interface DataGoogleComputeStoragePoolStatus {
 export function dataGoogleComputeStoragePoolStatusToTerraform(struct?: DataGoogleComputeStoragePoolStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -247,7 +247,7 @@ export function dataGoogleComputeStoragePoolStatusToTerraform(struct?: DataGoogl
 export function dataGoogleComputeStoragePoolStatusToHclTerraform(struct?: DataGoogleComputeStoragePoolStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -353,7 +353,7 @@ export class DataGoogleComputeStoragePoolStatusList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_storage_pool google_compute_storage_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool google_compute_storage_pool}
 */
 export class DataGoogleComputeStoragePool extends cdktn.TerraformDataSource {
 
@@ -369,7 +369,7 @@ export class DataGoogleComputeStoragePool extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeStoragePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeStoragePool to import
-  * @param importFromId The id of the existing DataGoogleComputeStoragePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeStoragePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeStoragePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -381,7 +381,7 @@ export class DataGoogleComputeStoragePool extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_storage_pool google_compute_storage_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool google_compute_storage_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -392,7 +392,7 @@ export class DataGoogleComputeStoragePool extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_storage_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

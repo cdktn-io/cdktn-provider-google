@@ -1,3 +1,3 @@
 # `google_dataplex_aspect_type`
 
-Refer to the Terraform Registry for docs: [`google_dataplex_aspect_type`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_aspect_type).
+Refer to the Terraform Registry for docs: [`google_dataplex_aspect_type`](https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_aspect_type).

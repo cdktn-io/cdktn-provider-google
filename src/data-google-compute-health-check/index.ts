@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_health_check
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_health_check
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeHealthCheckConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_health_check#id DataGoogleComputeHealthCheck#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_health_check#id DataGoogleComputeHealthCheck#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,11 +28,11 @@ export interface DataGoogleComputeHealthCheckConfig extends cdktn.TerraformMetaA
   * characters must be a dash, lowercase letter, or digit, except the
   * last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_health_check#name DataGoogleComputeHealthCheck#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_health_check#name DataGoogleComputeHealthCheck#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_health_check#project DataGoogleComputeHealthCheck#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_health_check#project DataGoogleComputeHealthCheck#project}
   */
   readonly project?: string;
 }
@@ -42,7 +42,7 @@ export interface DataGoogleComputeHealthCheckGrpcHealthCheck {
 export function dataGoogleComputeHealthCheckGrpcHealthCheckToTerraform(struct?: DataGoogleComputeHealthCheckGrpcHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -52,7 +52,7 @@ export function dataGoogleComputeHealthCheckGrpcHealthCheckToTerraform(struct?: 
 export function dataGoogleComputeHealthCheckGrpcHealthCheckToHclTerraform(struct?: DataGoogleComputeHealthCheckGrpcHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -132,7 +132,7 @@ export interface DataGoogleComputeHealthCheckGrpcTlsHealthCheck {
 export function dataGoogleComputeHealthCheckGrpcTlsHealthCheckToTerraform(struct?: DataGoogleComputeHealthCheckGrpcTlsHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -142,7 +142,7 @@ export function dataGoogleComputeHealthCheckGrpcTlsHealthCheckToTerraform(struct
 export function dataGoogleComputeHealthCheckGrpcTlsHealthCheckToHclTerraform(struct?: DataGoogleComputeHealthCheckGrpcTlsHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -217,7 +217,7 @@ export interface DataGoogleComputeHealthCheckHttp2HealthCheck {
 export function dataGoogleComputeHealthCheckHttp2HealthCheckToTerraform(struct?: DataGoogleComputeHealthCheckHttp2HealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -227,7 +227,7 @@ export function dataGoogleComputeHealthCheckHttp2HealthCheckToTerraform(struct?:
 export function dataGoogleComputeHealthCheckHttp2HealthCheckToHclTerraform(struct?: DataGoogleComputeHealthCheckHttp2HealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -322,7 +322,7 @@ export interface DataGoogleComputeHealthCheckHttpHealthCheck {
 export function dataGoogleComputeHealthCheckHttpHealthCheckToTerraform(struct?: DataGoogleComputeHealthCheckHttpHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -332,7 +332,7 @@ export function dataGoogleComputeHealthCheckHttpHealthCheckToTerraform(struct?: 
 export function dataGoogleComputeHealthCheckHttpHealthCheckToHclTerraform(struct?: DataGoogleComputeHealthCheckHttpHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -427,7 +427,7 @@ export interface DataGoogleComputeHealthCheckHttpsHealthCheck {
 export function dataGoogleComputeHealthCheckHttpsHealthCheckToTerraform(struct?: DataGoogleComputeHealthCheckHttpsHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -437,7 +437,7 @@ export function dataGoogleComputeHealthCheckHttpsHealthCheckToTerraform(struct?:
 export function dataGoogleComputeHealthCheckHttpsHealthCheckToHclTerraform(struct?: DataGoogleComputeHealthCheckHttpsHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -532,7 +532,7 @@ export interface DataGoogleComputeHealthCheckLogConfig {
 export function dataGoogleComputeHealthCheckLogConfigToTerraform(struct?: DataGoogleComputeHealthCheckLogConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -542,7 +542,7 @@ export function dataGoogleComputeHealthCheckLogConfigToTerraform(struct?: DataGo
 export function dataGoogleComputeHealthCheckLogConfigToHclTerraform(struct?: DataGoogleComputeHealthCheckLogConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -607,7 +607,7 @@ export interface DataGoogleComputeHealthCheckSslHealthCheck {
 export function dataGoogleComputeHealthCheckSslHealthCheckToTerraform(struct?: DataGoogleComputeHealthCheckSslHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -617,7 +617,7 @@ export function dataGoogleComputeHealthCheckSslHealthCheckToTerraform(struct?: D
 export function dataGoogleComputeHealthCheckSslHealthCheckToHclTerraform(struct?: DataGoogleComputeHealthCheckSslHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -707,7 +707,7 @@ export interface DataGoogleComputeHealthCheckTcpHealthCheck {
 export function dataGoogleComputeHealthCheckTcpHealthCheckToTerraform(struct?: DataGoogleComputeHealthCheckTcpHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -717,7 +717,7 @@ export function dataGoogleComputeHealthCheckTcpHealthCheckToTerraform(struct?: D
 export function dataGoogleComputeHealthCheckTcpHealthCheckToHclTerraform(struct?: DataGoogleComputeHealthCheckTcpHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -803,7 +803,7 @@ export class DataGoogleComputeHealthCheckTcpHealthCheckList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_health_check google_compute_health_check}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_health_check google_compute_health_check}
 */
 export class DataGoogleComputeHealthCheck extends cdktn.TerraformDataSource {
 
@@ -819,7 +819,7 @@ export class DataGoogleComputeHealthCheck extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeHealthCheck resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeHealthCheck to import
-  * @param importFromId The id of the existing DataGoogleComputeHealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_health_check#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeHealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_health_check#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeHealthCheck to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -831,7 +831,7 @@ export class DataGoogleComputeHealthCheck extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_health_check google_compute_health_check} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_health_check google_compute_health_check} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -842,7 +842,7 @@ export class DataGoogleComputeHealthCheck extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_health_check',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

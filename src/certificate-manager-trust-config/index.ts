@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface CertificateManagerTrustConfigConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#deletion_policy CertificateManagerTrustConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#deletion_policy CertificateManagerTrustConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * One or more paragraphs of text description of a trust config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#description CertificateManagerTrustConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#description CertificateManagerTrustConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#id CertificateManagerTrustConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#id CertificateManagerTrustConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,41 +43,41 @@ export interface CertificateManagerTrustConfigConfig extends cdktn.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#labels CertificateManagerTrustConfig#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#labels CertificateManagerTrustConfig#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The trust config location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#location CertificateManagerTrustConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#location CertificateManagerTrustConfig#location}
   */
   readonly location: string;
   /**
   * A user-defined name of the trust config. Trust config names must be unique globally.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#name CertificateManagerTrustConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#name CertificateManagerTrustConfig#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#project CertificateManagerTrustConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#project CertificateManagerTrustConfig#project}
   */
   readonly project?: string;
   /**
   * allowlisted_certificates block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#allowlisted_certificates CertificateManagerTrustConfig#allowlisted_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#allowlisted_certificates CertificateManagerTrustConfig#allowlisted_certificates}
   */
   readonly allowlistedCertificates?: CertificateManagerTrustConfigAllowlistedCertificates[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#timeouts CertificateManagerTrustConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#timeouts CertificateManagerTrustConfig#timeouts}
   */
   readonly timeouts?: CertificateManagerTrustConfigTimeouts;
   /**
   * trust_stores block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#trust_stores CertificateManagerTrustConfig#trust_stores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#trust_stores CertificateManagerTrustConfig#trust_stores}
   */
   readonly trustStores?: CertificateManagerTrustConfigTrustStores[] | cdktn.IResolvable;
 }
@@ -85,7 +85,7 @@ export interface CertificateManagerTrustConfigAllowlistedCertificates {
   /**
   * PEM certificate that is allowlisted. The certificate can be up to 5k bytes, and must be a parseable X.509 certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
   */
   readonly pemCertificate: string;
 }
@@ -93,7 +93,7 @@ export interface CertificateManagerTrustConfigAllowlistedCertificates {
 export function certificateManagerTrustConfigAllowlistedCertificatesToTerraform(struct?: CertificateManagerTrustConfigAllowlistedCertificates | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pem_certificate: cdktn.stringToTerraform(struct!.pemCertificate),
@@ -104,7 +104,7 @@ export function certificateManagerTrustConfigAllowlistedCertificatesToTerraform(
 export function certificateManagerTrustConfigAllowlistedCertificatesToHclTerraform(struct?: CertificateManagerTrustConfigAllowlistedCertificates | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pem_certificate: {
@@ -198,15 +198,15 @@ export class CertificateManagerTrustConfigAllowlistedCertificatesList extends cd
 }
 export interface CertificateManagerTrustConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#create CertificateManagerTrustConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#create CertificateManagerTrustConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#delete CertificateManagerTrustConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#delete CertificateManagerTrustConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#update CertificateManagerTrustConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#update CertificateManagerTrustConfig#update}
   */
   readonly update?: string;
 }
@@ -214,7 +214,7 @@ export interface CertificateManagerTrustConfigTimeouts {
 export function certificateManagerTrustConfigTimeoutsToTerraform(struct?: CertificateManagerTrustConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -227,7 +227,7 @@ export function certificateManagerTrustConfigTimeoutsToTerraform(struct?: Certif
 export function certificateManagerTrustConfigTimeoutsToHclTerraform(struct?: CertificateManagerTrustConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -361,7 +361,7 @@ export interface CertificateManagerTrustConfigTrustStoresIntermediateCas {
   * PEM intermediate certificate used for building up paths for validation.
   * Each certificate provided in PEM format may occupy up to 5kB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
   */
   readonly pemCertificate?: string;
 }
@@ -369,7 +369,7 @@ export interface CertificateManagerTrustConfigTrustStoresIntermediateCas {
 export function certificateManagerTrustConfigTrustStoresIntermediateCasToTerraform(struct?: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pem_certificate: cdktn.stringToTerraform(struct!.pemCertificate),
@@ -380,7 +380,7 @@ export function certificateManagerTrustConfigTrustStoresIntermediateCasToTerrafo
 export function certificateManagerTrustConfigTrustStoresIntermediateCasToHclTerraform(struct?: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pem_certificate: {
@@ -480,7 +480,7 @@ export interface CertificateManagerTrustConfigTrustStoresTrustAnchors {
   * PEM root certificate of the PKI used for validation.
   * Each certificate provided in PEM format may occupy up to 5kB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
   */
   readonly pemCertificate?: string;
 }
@@ -488,7 +488,7 @@ export interface CertificateManagerTrustConfigTrustStoresTrustAnchors {
 export function certificateManagerTrustConfigTrustStoresTrustAnchorsToTerraform(struct?: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pem_certificate: cdktn.stringToTerraform(struct!.pemCertificate),
@@ -499,7 +499,7 @@ export function certificateManagerTrustConfigTrustStoresTrustAnchorsToTerraform(
 export function certificateManagerTrustConfigTrustStoresTrustAnchorsToHclTerraform(struct?: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pem_certificate: {
@@ -598,13 +598,13 @@ export interface CertificateManagerTrustConfigTrustStores {
   /**
   * intermediate_cas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#intermediate_cas CertificateManagerTrustConfig#intermediate_cas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#intermediate_cas CertificateManagerTrustConfig#intermediate_cas}
   */
   readonly intermediateCas?: CertificateManagerTrustConfigTrustStoresIntermediateCas[] | cdktn.IResolvable;
   /**
   * trust_anchors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#trust_anchors CertificateManagerTrustConfig#trust_anchors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#trust_anchors CertificateManagerTrustConfig#trust_anchors}
   */
   readonly trustAnchors?: CertificateManagerTrustConfigTrustStoresTrustAnchors[] | cdktn.IResolvable;
 }
@@ -612,7 +612,7 @@ export interface CertificateManagerTrustConfigTrustStores {
 export function certificateManagerTrustConfigTrustStoresToTerraform(struct?: CertificateManagerTrustConfigTrustStores | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     intermediate_cas: cdktn.listMapper(certificateManagerTrustConfigTrustStoresIntermediateCasToTerraform, true)(struct!.intermediateCas),
@@ -624,7 +624,7 @@ export function certificateManagerTrustConfigTrustStoresToTerraform(struct?: Cer
 export function certificateManagerTrustConfigTrustStoresToHclTerraform(struct?: CertificateManagerTrustConfigTrustStores | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     intermediate_cas: {
@@ -749,7 +749,7 @@ export class CertificateManagerTrustConfigTrustStoresList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config}
 */
 export class CertificateManagerTrustConfig extends cdktn.TerraformResource {
 
@@ -765,7 +765,7 @@ export class CertificateManagerTrustConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CertificateManagerTrustConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertificateManagerTrustConfig to import
-  * @param importFromId The id of the existing CertificateManagerTrustConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CertificateManagerTrustConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertificateManagerTrustConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -777,7 +777,7 @@ export class CertificateManagerTrustConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -788,7 +788,7 @@ export class CertificateManagerTrustConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_certificate_manager_trust_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_identity_group_memberships
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_identity_group_memberships
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGoogleCloudIdentityGroupMembershipsConfig extends cdktn.Ter
   /**
   * The name of the Group to get memberships from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_identity_group_memberships#group DataGoogleCloudIdentityGroupMemberships#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_identity_group_memberships#group DataGoogleCloudIdentityGroupMemberships#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_identity_group_memberships#id DataGoogleCloudIdentityGroupMemberships#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_identity_group_memberships#id DataGoogleCloudIdentityGroupMemberships#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,7 +32,7 @@ export interface DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemb
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyToTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMembe
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyToHclTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -112,7 +112,7 @@ export interface DataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDe
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetailToTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetail): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -122,7 +122,7 @@ export function dataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDet
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetailToHclTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetail): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -187,7 +187,7 @@ export interface DataGoogleCloudIdentityGroupMembershipsMembershipsRoles {
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsRolesToTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMembershipsRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -197,7 +197,7 @@ export function dataGoogleCloudIdentityGroupMembershipsMembershipsRolesToTerrafo
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsRolesToHclTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMembershipsRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -268,7 +268,7 @@ export interface DataGoogleCloudIdentityGroupMembershipsMemberships {
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsToTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMemberships): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -278,7 +278,7 @@ export function dataGoogleCloudIdentityGroupMembershipsMembershipsToTerraform(st
 export function dataGoogleCloudIdentityGroupMembershipsMembershipsToHclTerraform(struct?: DataGoogleCloudIdentityGroupMembershipsMemberships): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -381,7 +381,7 @@ export class DataGoogleCloudIdentityGroupMembershipsMembershipsList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships}
 */
 export class DataGoogleCloudIdentityGroupMemberships extends cdktn.TerraformDataSource {
 
@@ -397,7 +397,7 @@ export class DataGoogleCloudIdentityGroupMemberships extends cdktn.TerraformData
   * Generates CDKTN code for importing a DataGoogleCloudIdentityGroupMemberships resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudIdentityGroupMemberships to import
-  * @param importFromId The id of the existing DataGoogleCloudIdentityGroupMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_identity_group_memberships#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudIdentityGroupMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_identity_group_memberships#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudIdentityGroupMemberships to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -409,7 +409,7 @@ export class DataGoogleCloudIdentityGroupMemberships extends cdktn.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -420,7 +420,7 @@ export class DataGoogleCloudIdentityGroupMemberships extends cdktn.TerraformData
       terraformResourceType: 'google_cloud_identity_group_memberships',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

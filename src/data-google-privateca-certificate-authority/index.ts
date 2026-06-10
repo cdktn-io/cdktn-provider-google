@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGooglePrivatecaCertificateAuthorityConfig extends cdktn.Ter
   /**
   * The user provided Resource ID for this Certificate Authority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority#certificate_authority_id DataGooglePrivatecaCertificateAuthority#certificate_authority_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority#certificate_authority_id DataGooglePrivatecaCertificateAuthority#certificate_authority_id}
   */
   readonly certificateAuthorityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority#id DataGooglePrivatecaCertificateAuthority#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority#id DataGooglePrivatecaCertificateAuthority#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,17 +29,17 @@ export interface DataGooglePrivatecaCertificateAuthorityConfig extends cdktn.Ter
   * Location of the CertificateAuthority. A full list of valid locations can be found by
   * running 'gcloud privateca locations list'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority#location DataGooglePrivatecaCertificateAuthority#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority#location DataGooglePrivatecaCertificateAuthority#location}
   */
   readonly location?: string;
   /**
   * The name of the CaPool this Certificate Authority belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority#pool DataGooglePrivatecaCertificateAuthority#pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority#pool DataGooglePrivatecaCertificateAuthority#pool}
   */
   readonly pool?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority#project DataGooglePrivatecaCertificateAuthority#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority#project DataGooglePrivatecaCertificateAuthority#project}
   */
   readonly project?: string;
 }
@@ -49,7 +49,7 @@ export interface DataGooglePrivatecaCertificateAuthorityAccessUrls {
 export function dataGooglePrivatecaCertificateAuthorityAccessUrlsToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityAccessUrls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -59,7 +59,7 @@ export function dataGooglePrivatecaCertificateAuthorityAccessUrlsToTerraform(str
 export function dataGooglePrivatecaCertificateAuthorityAccessUrlsToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityAccessUrls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -129,7 +129,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubje
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -139,7 +139,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjec
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -239,7 +239,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubje
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltName): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -249,7 +249,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjec
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltName): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -329,7 +329,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigSubjectConfig {
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -339,7 +339,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigToTerr
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectConfigToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -411,7 +411,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyId {
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -421,7 +421,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdToTerra
 export function dataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -486,7 +486,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigAddition
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsObjectIdToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsObjectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -496,7 +496,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditiona
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsObjectIdToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsObjectId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -561,7 +561,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigAddition
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -571,7 +571,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditiona
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -647,7 +647,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOption
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptionsToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -657,7 +657,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptions
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptionsToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -737,7 +737,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsageToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -747,7 +747,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageB
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsageToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -852,7 +852,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageExtendedKeyUsageToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageExtendedKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -862,7 +862,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageE
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageExtendedKeyUsageToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageExtendedKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -952,7 +952,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -962,7 +962,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageU
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1027,7 +1027,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1037,7 +1037,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageT
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1115,7 +1115,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameCons
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1125,7 +1125,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConst
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1230,7 +1230,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyId
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyIds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1240,7 +1240,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyIds
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyIds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1305,7 +1305,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigX509Config {
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1315,7 +1315,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigToTerrafo
 export function dataGooglePrivatecaCertificateAuthorityConfigX509ConfigToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigX509Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1410,7 +1410,7 @@ export interface DataGooglePrivatecaCertificateAuthorityConfigA {
 export function dataGooglePrivatecaCertificateAuthorityConfigAToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1420,7 +1420,7 @@ export function dataGooglePrivatecaCertificateAuthorityConfigAToTerraform(struct
 export function dataGooglePrivatecaCertificateAuthorityConfigAToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1498,7 +1498,7 @@ export interface DataGooglePrivatecaCertificateAuthorityKeySpec {
 export function dataGooglePrivatecaCertificateAuthorityKeySpecToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityKeySpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1508,7 +1508,7 @@ export function dataGooglePrivatecaCertificateAuthorityKeySpecToTerraform(struct
 export function dataGooglePrivatecaCertificateAuthorityKeySpecToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityKeySpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1578,7 +1578,7 @@ export interface DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssu
 export function dataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainToTerraform(struct?: DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChain): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1588,7 +1588,7 @@ export function dataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssue
 export function dataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChain): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1653,7 +1653,7 @@ export interface DataGooglePrivatecaCertificateAuthoritySubordinateConfig {
 export function dataGooglePrivatecaCertificateAuthoritySubordinateConfigToTerraform(struct?: DataGooglePrivatecaCertificateAuthoritySubordinateConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1663,7 +1663,7 @@ export function dataGooglePrivatecaCertificateAuthoritySubordinateConfigToTerraf
 export function dataGooglePrivatecaCertificateAuthoritySubordinateConfigToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthoritySubordinateConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1734,7 +1734,7 @@ export interface DataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrls {
 export function dataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrlsToTerraform(struct?: DataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1744,7 +1744,7 @@ export function dataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrlsToTe
 export function dataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrlsToHclTerraform(struct?: DataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1810,7 +1810,7 @@ export class DataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrlsList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority}
 */
 export class DataGooglePrivatecaCertificateAuthority extends cdktn.TerraformDataSource {
 
@@ -1826,7 +1826,7 @@ export class DataGooglePrivatecaCertificateAuthority extends cdktn.TerraformData
   * Generates CDKTN code for importing a DataGooglePrivatecaCertificateAuthority resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePrivatecaCertificateAuthority to import
-  * @param importFromId The id of the existing DataGooglePrivatecaCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGooglePrivatecaCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePrivatecaCertificateAuthority to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1838,7 +1838,7 @@ export class DataGooglePrivatecaCertificateAuthority extends cdktn.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1849,7 +1849,7 @@ export class DataGooglePrivatecaCertificateAuthority extends cdktn.TerraformData
       terraformResourceType: 'google_privateca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface DialogflowCxTestCaseConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#deletion_policy DialogflowCxTestCase#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#deletion_policy DialogflowCxTestCase#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The human-readable name of the test case, unique within the agent. Limit of 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#display_name DialogflowCxTestCase#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#display_name DialogflowCxTestCase#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#id DialogflowCxTestCase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,39 +40,39 @@ export interface DialogflowCxTestCaseConfig extends cdktn.TerraformMetaArguments
   /**
   * Additional freeform notes about the test case. Limit of 400 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#notes DialogflowCxTestCase#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#notes DialogflowCxTestCase#notes}
   */
   readonly notes?: string;
   /**
   * The agent to create the test case for.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#parent DialogflowCxTestCase#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#parent DialogflowCxTestCase#parent}
   */
   readonly parent?: string;
   /**
   * Tags are short descriptions that users may apply to test cases for organizational and filtering purposes.
   * Each tag should start with "#" and has a limit of 30 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#tags DialogflowCxTestCase#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#tags DialogflowCxTestCase#tags}
   */
   readonly tags?: string[];
   /**
   * test_case_conversation_turns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#test_case_conversation_turns DialogflowCxTestCase#test_case_conversation_turns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#test_case_conversation_turns DialogflowCxTestCase#test_case_conversation_turns}
   */
   readonly testCaseConversationTurns?: DialogflowCxTestCaseTestCaseConversationTurns[] | cdktn.IResolvable;
   /**
   * test_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#test_config DialogflowCxTestCase#test_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#test_config DialogflowCxTestCase#test_config}
   */
   readonly testConfig?: DialogflowCxTestCaseTestConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#timeouts DialogflowCxTestCase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#timeouts DialogflowCxTestCase#timeouts}
   */
   readonly timeouts?: DialogflowCxTestCaseTimeouts;
 }
@@ -82,7 +82,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInp
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -92,7 +92,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInpu
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -162,7 +162,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInp
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEvent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -172,7 +172,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInpu
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEvent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -237,7 +237,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInp
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -247,7 +247,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInpu
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -312,7 +312,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInp
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -322,7 +322,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInpu
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -405,7 +405,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsUserInput {
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -415,7 +415,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputToTe
 export function dialogflowCxTestCaseLastTestResultConversationTurnsUserInputToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsUserInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -496,7 +496,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgent
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -506,7 +506,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentO
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -576,7 +576,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgent
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferences): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -586,7 +586,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentO
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferences): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -656,7 +656,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgent
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -666,7 +666,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentO
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -741,7 +741,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgent
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponses): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -751,7 +751,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentO
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponses): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -816,7 +816,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgent
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -826,7 +826,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentO
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -896,7 +896,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgent
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -906,7 +906,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentO
 export function dialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1001,7 +1001,7 @@ export interface DialogflowCxTestCaseLastTestResultConversationTurns {
 export function dialogflowCxTestCaseLastTestResultConversationTurnsToTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1011,7 +1011,7 @@ export function dialogflowCxTestCaseLastTestResultConversationTurnsToTerraform(s
 export function dialogflowCxTestCaseLastTestResultConversationTurnsToHclTerraform(struct?: DialogflowCxTestCaseLastTestResultConversationTurns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1083,7 +1083,7 @@ export interface DialogflowCxTestCaseLastTestResult {
 export function dialogflowCxTestCaseLastTestResultToTerraform(struct?: DialogflowCxTestCaseLastTestResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1093,7 +1093,7 @@ export function dialogflowCxTestCaseLastTestResultToTerraform(struct?: Dialogflo
 export function dialogflowCxTestCaseLastTestResultToHclTerraform(struct?: DialogflowCxTestCaseLastTestResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1177,13 +1177,13 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf
   /**
   * The dtmf digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
   */
   readonly digits?: string;
   /**
   * The finish digit (if any).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
   */
   readonly finishDigit?: string;
 }
@@ -1191,7 +1191,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     digits: cdktn.stringToTerraform(struct!.digits),
@@ -1203,7 +1203,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfT
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     digits: {
@@ -1298,7 +1298,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEven
   /**
   * Name of the event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
   */
   readonly event: string;
 }
@@ -1306,7 +1306,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEven
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event: cdktn.stringToTerraform(struct!.event),
@@ -1317,7 +1317,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event: {
@@ -1381,7 +1381,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText
   /**
   * The natural language text to be processed. Text length must not exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
   */
   readonly text: string;
 }
@@ -1389,7 +1389,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.stringToTerraform(struct!.text),
@@ -1400,7 +1400,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextT
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -1465,25 +1465,25 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput {
   * The language of the input. See [Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language) for a list of the currently supported language codes.
   * Note that queries in the same session do not necessarily need to specify the same language.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#language_code DialogflowCxTestCase#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#language_code DialogflowCxTestCase#language_code}
   */
   readonly languageCode?: string;
   /**
   * dtmf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#dtmf DialogflowCxTestCase#dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#dtmf DialogflowCxTestCase#dtmf}
   */
   readonly dtmf?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf;
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#event DialogflowCxTestCase#event}
   */
   readonly event?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
   */
   readonly text?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText;
 }
@@ -1491,7 +1491,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput {
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     language_code: cdktn.stringToTerraform(struct!.languageCode),
@@ -1505,7 +1505,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputToTer
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputInputToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     language_code: {
@@ -1656,25 +1656,25 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInput {
   /**
   * Whether sentiment analysis is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#enable_sentiment_analysis DialogflowCxTestCase#enable_sentiment_analysis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#enable_sentiment_analysis DialogflowCxTestCase#enable_sentiment_analysis}
   */
   readonly enableSentimentAnalysis?: boolean | cdktn.IResolvable;
   /**
   * Parameters that need to be injected into the conversation during intent detection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#injected_parameters DialogflowCxTestCase#injected_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#injected_parameters DialogflowCxTestCase#injected_parameters}
   */
   readonly injectedParameters?: string;
   /**
   * If webhooks should be allowed to trigger in response to the user utterance. Often if parameters are injected, webhooks should not be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#is_webhook_enabled DialogflowCxTestCase#is_webhook_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#is_webhook_enabled DialogflowCxTestCase#is_webhook_enabled}
   */
   readonly isWebhookEnabled?: boolean | cdktn.IResolvable;
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#input DialogflowCxTestCase#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#input DialogflowCxTestCase#input}
   */
   readonly input?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput;
 }
@@ -1682,7 +1682,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsUserInput {
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_sentiment_analysis: cdktn.booleanToTerraform(struct!.enableSentimentAnalysis),
@@ -1696,7 +1696,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputToTerrafor
 export function dialogflowCxTestCaseTestCaseConversationTurnsUserInputToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsUserInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_sentiment_analysis: {
@@ -1848,7 +1848,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   * The unique identifier of the page.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
   */
   readonly name?: string;
 }
@@ -1856,7 +1856,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1867,7 +1867,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputC
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1939,7 +1939,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#text DialogflowCxTestCase#text}
   */
   readonly text?: string[];
 }
@@ -1947,7 +1947,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
@@ -1958,7 +1958,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputT
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -2058,7 +2058,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   * The unique identifier of the intent.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#name DialogflowCxTestCase#name}
   */
   readonly name?: string;
 }
@@ -2066,7 +2066,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2077,7 +2077,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputT
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2149,25 +2149,25 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
   /**
   * The session parameters available to the bot at this point.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#session_parameters DialogflowCxTestCase#session_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#session_parameters DialogflowCxTestCase#session_parameters}
   */
   readonly sessionParameters?: string;
   /**
   * current_page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#current_page DialogflowCxTestCase#current_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#current_page DialogflowCxTestCase#current_page}
   */
   readonly currentPage?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage;
   /**
   * text_responses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#text_responses DialogflowCxTestCase#text_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#text_responses DialogflowCxTestCase#text_responses}
   */
   readonly textResponses?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses[] | cdktn.IResolvable;
   /**
   * triggered_intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#triggered_intent DialogflowCxTestCase#triggered_intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#triggered_intent DialogflowCxTestCase#triggered_intent}
   */
   readonly triggeredIntent?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent;
 }
@@ -2175,7 +2175,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     session_parameters: cdktn.stringToTerraform(struct!.sessionParameters),
@@ -2189,7 +2189,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputT
 export function dialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference | DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     session_parameters: {
@@ -2340,13 +2340,13 @@ export interface DialogflowCxTestCaseTestCaseConversationTurns {
   /**
   * user_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#user_input DialogflowCxTestCase#user_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#user_input DialogflowCxTestCase#user_input}
   */
   readonly userInput?: DialogflowCxTestCaseTestCaseConversationTurnsUserInput;
   /**
   * virtual_agent_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#virtual_agent_output DialogflowCxTestCase#virtual_agent_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#virtual_agent_output DialogflowCxTestCase#virtual_agent_output}
   */
   readonly virtualAgentOutput?: DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput;
 }
@@ -2354,7 +2354,7 @@ export interface DialogflowCxTestCaseTestCaseConversationTurns {
 export function dialogflowCxTestCaseTestCaseConversationTurnsToTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_input: dialogflowCxTestCaseTestCaseConversationTurnsUserInputToTerraform(struct!.userInput),
@@ -2366,7 +2366,7 @@ export function dialogflowCxTestCaseTestCaseConversationTurnsToTerraform(struct?
 export function dialogflowCxTestCaseTestCaseConversationTurnsToHclTerraform(struct?: DialogflowCxTestCaseTestCaseConversationTurns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_input: {
@@ -2495,7 +2495,7 @@ export interface DialogflowCxTestCaseTestConfig {
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#flow DialogflowCxTestCase#flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#flow DialogflowCxTestCase#flow}
   */
   readonly flow?: string;
   /**
@@ -2503,13 +2503,13 @@ export interface DialogflowCxTestCaseTestConfig {
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#page DialogflowCxTestCase#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#page DialogflowCxTestCase#page}
   */
   readonly page?: string;
   /**
   * Session parameters to be compared when calculating differences.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#tracking_parameters DialogflowCxTestCase#tracking_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#tracking_parameters DialogflowCxTestCase#tracking_parameters}
   */
   readonly trackingParameters?: string[];
 }
@@ -2517,7 +2517,7 @@ export interface DialogflowCxTestCaseTestConfig {
 export function dialogflowCxTestCaseTestConfigToTerraform(struct?: DialogflowCxTestCaseTestConfigOutputReference | DialogflowCxTestCaseTestConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     flow: cdktn.stringToTerraform(struct!.flow),
@@ -2530,7 +2530,7 @@ export function dialogflowCxTestCaseTestConfigToTerraform(struct?: DialogflowCxT
 export function dialogflowCxTestCaseTestConfigToHclTerraform(struct?: DialogflowCxTestCaseTestConfigOutputReference | DialogflowCxTestCaseTestConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     flow: {
@@ -2651,15 +2651,15 @@ export class DialogflowCxTestCaseTestConfigOutputReference extends cdktn.Complex
 }
 export interface DialogflowCxTestCaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#create DialogflowCxTestCase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#delete DialogflowCxTestCase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#update DialogflowCxTestCase#update}
   */
   readonly update?: string;
 }
@@ -2667,7 +2667,7 @@ export interface DialogflowCxTestCaseTimeouts {
 export function dialogflowCxTestCaseTimeoutsToTerraform(struct?: DialogflowCxTestCaseTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2680,7 +2680,7 @@ export function dialogflowCxTestCaseTimeoutsToTerraform(struct?: DialogflowCxTes
 export function dialogflowCxTestCaseTimeoutsToHclTerraform(struct?: DialogflowCxTestCaseTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2811,7 +2811,7 @@ export class DialogflowCxTestCaseTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}
 */
 export class DialogflowCxTestCase extends cdktn.TerraformResource {
 
@@ -2827,7 +2827,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowCxTestCase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxTestCase to import
-  * @param importFromId The id of the existing DialogflowCxTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowCxTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxTestCase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2839,7 +2839,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2850,7 +2850,7 @@ export class DialogflowCxTestCase extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_test_case',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

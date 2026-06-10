@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface SecurityposturePostureConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#deletion_policy SecurityposturePosture#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#deletion_policy SecurityposturePosture#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the posture.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#id SecurityposturePosture#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#id SecurityposturePosture#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,38 +40,38 @@ export interface SecurityposturePostureConfig extends cdktn.TerraformMetaArgumen
   /**
   * Location of the resource, eg: global.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
   */
   readonly location: string;
   /**
   * The parent of the resource, an organization. Format should be 'organizations/{organization_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#parent SecurityposturePosture#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#parent SecurityposturePosture#parent}
   */
   readonly parent: string;
   /**
   * Id of the posture. It is an immutable field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#posture_id SecurityposturePosture#posture_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#posture_id SecurityposturePosture#posture_id}
   */
   readonly postureId: string;
   /**
   * State of the posture. Update to state field should not be triggered along with
   * with other field updates. Possible values: ["DEPRECATED", "DRAFT", "ACTIVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#state SecurityposturePosture#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#state SecurityposturePosture#state}
   */
   readonly state: string;
   /**
   * policy_sets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#policy_sets SecurityposturePosture#policy_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#policy_sets SecurityposturePosture#policy_sets}
   */
   readonly policySets: SecurityposturePosturePolicySets[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#timeouts SecurityposturePosture#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#timeouts SecurityposturePosture#timeouts}
   */
   readonly timeouts?: SecurityposturePostureTimeouts;
 }
@@ -79,13 +79,13 @@ export interface SecurityposturePosturePolicySetsPoliciesComplianceStandards {
   /**
   * Mapping of security controls for the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#control SecurityposturePosture#control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#control SecurityposturePosture#control}
   */
   readonly control?: string;
   /**
   * Mapping of compliance standards for the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#standard SecurityposturePosture#standard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#standard SecurityposturePosture#standard}
   */
   readonly standard?: string;
 }
@@ -93,7 +93,7 @@ export interface SecurityposturePosturePolicySetsPoliciesComplianceStandards {
 export function securityposturePosturePolicySetsPoliciesComplianceStandardsToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesComplianceStandards | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     control: cdktn.stringToTerraform(struct!.control),
@@ -105,7 +105,7 @@ export function securityposturePosturePolicySetsPoliciesComplianceStandardsToTer
 export function securityposturePosturePolicySetsPoliciesComplianceStandardsToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesComplianceStandards | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     control: {
@@ -232,25 +232,25 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * Description of the expression
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a file name and a position in the file
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
   */
   readonly title?: string;
 }
@@ -258,7 +258,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -272,7 +272,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -420,13 +420,13 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * List of values allowed at this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#allowed_values SecurityposturePosture#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#allowed_values SecurityposturePosture#allowed_values}
   */
   readonly allowedValues?: string[];
   /**
   * List of values denied at this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#denied_values SecurityposturePosture#denied_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#denied_values SecurityposturePosture#denied_values}
   */
   readonly deniedValues?: string[];
 }
@@ -434,7 +434,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedValues),
@@ -446,7 +446,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_values: {
@@ -541,32 +541,32 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * Setting this to true means that all values are allowed. This field can be set only in policies for list constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#allow_all SecurityposturePosture#allow_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#allow_all SecurityposturePosture#allow_all}
   */
   readonly allowAll?: boolean | cdktn.IResolvable;
   /**
   * Setting this to true means that all values are denied. This field can be set only in policies for list constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#deny_all SecurityposturePosture#deny_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#deny_all SecurityposturePosture#deny_all}
   */
   readonly denyAll?: boolean | cdktn.IResolvable;
   /**
   * If 'true', then the policy is enforced. If 'false', then any configuration is acceptable.
   * This field can be set only in policies for boolean constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#enforce SecurityposturePosture#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#enforce SecurityposturePosture#enforce}
   */
   readonly enforce?: boolean | cdktn.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#condition SecurityposturePosture#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#condition SecurityposturePosture#condition}
   */
   readonly condition?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition;
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#values SecurityposturePosture#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#values SecurityposturePosture#values}
   */
   readonly values?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues;
 }
@@ -574,7 +574,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_all: cdktn.booleanToTerraform(struct!.allowAll),
@@ -589,7 +589,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_all: {
@@ -800,13 +800,13 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * Organization policy canned constraint Id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#canned_constraint_id SecurityposturePosture#canned_constraint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#canned_constraint_id SecurityposturePosture#canned_constraint_id}
   */
   readonly cannedConstraintId: string;
   /**
   * policy_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#policy_rules SecurityposturePosture#policy_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#policy_rules SecurityposturePosture#policy_rules}
   */
   readonly policyRules: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRules[] | cdktn.IResolvable;
 }
@@ -814,7 +814,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canned_constraint_id: cdktn.stringToTerraform(struct!.cannedConstraintId),
@@ -826,7 +826,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canned_constraint_id: {
@@ -915,43 +915,43 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * The action to take if the condition is met. Possible values: ["ALLOW", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#action_type SecurityposturePosture#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#action_type SecurityposturePosture#action_type}
   */
   readonly actionType: string;
   /**
   * A CEL condition that refers to a supported service resource, for example 'resource.management.autoUpgrade == false'. For details about CEL usage, see [Common Expression Language](https://docs.cloud.google.com/resource-manager/docs/organization-policy/creating-managing-custom-constraints#common_expression_language).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#condition SecurityposturePosture#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#condition SecurityposturePosture#condition}
   */
   readonly condition: string;
   /**
   * A human-friendly description of the constraint to display as an error message when the policy is violated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * A human-friendly name for the constraint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#display_name SecurityposturePosture#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#display_name SecurityposturePosture#display_name}
   */
   readonly displayName?: string;
   /**
   * A list of RESTful methods for which to enforce the constraint. Can be 'CREATE', 'UPDATE', or both. Not all Google Cloud services support both methods. To see supported methods for each service, find the service in [Supported services](https://docs.cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#method_types SecurityposturePosture#method_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#method_types SecurityposturePosture#method_types}
   */
   readonly methodTypes: string[];
   /**
   * Immutable. The name of the custom constraint. This is unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#name SecurityposturePosture#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#name SecurityposturePosture#name}
   */
   readonly name: string;
   /**
   * Immutable. The fully qualified name of the Google Cloud REST resource containing the object and field you want to restrict. For example, 'container.googleapis.com/NodePool'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#resource_types SecurityposturePosture#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#resource_types SecurityposturePosture#resource_types}
   */
   readonly resourceTypes: string[];
 }
@@ -959,7 +959,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_type: cdktn.stringToTerraform(struct!.actionType),
@@ -976,7 +976,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_type: {
@@ -1196,25 +1196,25 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * Description of the expression
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a file name and a position in the file
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
   */
   readonly title?: string;
 }
@@ -1222,7 +1222,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1236,7 +1236,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1384,13 +1384,13 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * List of values allowed at this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#allowed_values SecurityposturePosture#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#allowed_values SecurityposturePosture#allowed_values}
   */
   readonly allowedValues?: string[];
   /**
   * List of values denied at this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#denied_values SecurityposturePosture#denied_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#denied_values SecurityposturePosture#denied_values}
   */
   readonly deniedValues?: string[];
 }
@@ -1398,7 +1398,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedValues),
@@ -1410,7 +1410,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_values: {
@@ -1505,32 +1505,32 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * Setting this to true means that all values are allowed. This field can be set only in policies for list constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#allow_all SecurityposturePosture#allow_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#allow_all SecurityposturePosture#allow_all}
   */
   readonly allowAll?: boolean | cdktn.IResolvable;
   /**
   * Setting this to true means that all values are denied. This field can be set only in policies for list constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#deny_all SecurityposturePosture#deny_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#deny_all SecurityposturePosture#deny_all}
   */
   readonly denyAll?: boolean | cdktn.IResolvable;
   /**
   * If 'true', then the policy is enforced. If 'false', then any configuration is acceptable.
   * This field can be set only in policies for boolean constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#enforce SecurityposturePosture#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#enforce SecurityposturePosture#enforce}
   */
   readonly enforce?: boolean | cdktn.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#condition SecurityposturePosture#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#condition SecurityposturePosture#condition}
   */
   readonly condition?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition;
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#values SecurityposturePosture#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#values SecurityposturePosture#values}
   */
   readonly values?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues;
 }
@@ -1538,7 +1538,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_all: cdktn.booleanToTerraform(struct!.allowAll),
@@ -1553,7 +1553,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_all: {
@@ -1764,13 +1764,13 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
   /**
   * custom_constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#custom_constraint SecurityposturePosture#custom_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#custom_constraint SecurityposturePosture#custom_constraint}
   */
   readonly customConstraint?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint;
   /**
   * policy_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#policy_rules SecurityposturePosture#policy_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#policy_rules SecurityposturePosture#policy_rules}
   */
   readonly policyRules: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRules[] | cdktn.IResolvable;
 }
@@ -1778,7 +1778,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCons
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_constraint: securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintToTerraform(struct!.customConstraint),
@@ -1790,7 +1790,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 export function securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_constraint: {
@@ -1882,25 +1882,25 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   /**
   * Description of the expression
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a file name and a position in the file
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
   */
   readonly title?: string;
 }
@@ -1908,7 +1908,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1922,7 +1922,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -2070,13 +2070,13 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   /**
   * Name of the property for the custom output.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#name SecurityposturePosture#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#name SecurityposturePosture#name}
   */
   readonly name: string;
   /**
   * value_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#value_expression SecurityposturePosture#value_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#value_expression SecurityposturePosture#value_expression}
   */
   readonly valueExpression?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression;
 }
@@ -2084,7 +2084,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputProperties | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2096,7 +2096,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputProperties | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2220,7 +2220,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#properties SecurityposturePosture#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#properties SecurityposturePosture#properties}
   */
   readonly properties?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputProperties[] | cdktn.IResolvable;
 }
@@ -2228,7 +2228,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     properties: cdktn.listMapper(securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesToTerraform, true)(struct!.properties),
@@ -2239,7 +2239,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     properties: {
@@ -2306,25 +2306,25 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   /**
   * Description of the expression
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#expression SecurityposturePosture#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a file name and a position in the file
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#title SecurityposturePosture#title}
   */
   readonly title?: string;
 }
@@ -2332,7 +2332,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -2346,7 +2346,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -2494,7 +2494,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   /**
   * The resource types to run the detector on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#resource_types SecurityposturePosture#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#resource_types SecurityposturePosture#resource_types}
   */
   readonly resourceTypes: string[];
 }
@@ -2502,7 +2502,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
@@ -2513,7 +2513,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource_types: {
@@ -2578,38 +2578,38 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   * Text that describes the vulnerability or misconfiguration that the custom
   * module detects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * An explanation of the recommended steps that security teams can take to
   * resolve the detected issue
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#recommendation SecurityposturePosture#recommendation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#recommendation SecurityposturePosture#recommendation}
   */
   readonly recommendation?: string;
   /**
   * The severity to assign to findings generated by the module. Possible values: ["SEVERITY_UNSPECIFIED", "CRITICAL", "HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#severity SecurityposturePosture#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#severity SecurityposturePosture#severity}
   */
   readonly severity: string;
   /**
   * custom_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#custom_output SecurityposturePosture#custom_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#custom_output SecurityposturePosture#custom_output}
   */
   readonly customOutput?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#predicate SecurityposturePosture#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#predicate SecurityposturePosture#predicate}
   */
   readonly predicate: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate;
   /**
   * resource_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#resource_selector SecurityposturePosture#resource_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#resource_selector SecurityposturePosture#resource_selector}
   */
   readonly resourceSelector: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector;
 }
@@ -2617,7 +2617,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -2633,7 +2633,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -2833,19 +2833,19 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   * display name becomes the finding category for all findings that are
   * returned by this custom module.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#display_name SecurityposturePosture#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#display_name SecurityposturePosture#display_name}
   */
   readonly displayName?: string;
   /**
   * The state of enablement for the module at its level of the resource hierarchy. Possible values: ["ENABLEMENT_STATE_UNSPECIFIED", "ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#module_enablement_state SecurityposturePosture#module_enablement_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#module_enablement_state SecurityposturePosture#module_enablement_state}
   */
   readonly moduleEnablementState?: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#config SecurityposturePosture#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#config SecurityposturePosture#config}
   */
   readonly config: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig;
 }
@@ -2853,7 +2853,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_name: cdktn.stringToTerraform(struct!.displayName),
@@ -2866,7 +2866,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_name: {
@@ -2991,13 +2991,13 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
   /**
   * The state of enablement for the module at its level of the resource hierarchy. Possible values: ["ENABLEMENT_STATE_UNSPECIFIED", "ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#module_enablement_state SecurityposturePosture#module_enablement_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#module_enablement_state SecurityposturePosture#module_enablement_state}
   */
   readonly moduleEnablementState?: string;
   /**
   * The name of the module eg: BIGQUERY_TABLE_CMEK_DISABLED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#module_name SecurityposturePosture#module_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#module_name SecurityposturePosture#module_name}
   */
   readonly moduleName: string;
 }
@@ -3005,7 +3005,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealt
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     module_enablement_state: cdktn.stringToTerraform(struct!.moduleEnablementState),
@@ -3017,7 +3017,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealth
 export function securityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference | SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     module_enablement_state: {
@@ -3109,25 +3109,25 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraint {
   /**
   * org_policy_constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#org_policy_constraint SecurityposturePosture#org_policy_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#org_policy_constraint SecurityposturePosture#org_policy_constraint}
   */
   readonly orgPolicyConstraint?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint;
   /**
   * org_policy_constraint_custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#org_policy_constraint_custom SecurityposturePosture#org_policy_constraint_custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#org_policy_constraint_custom SecurityposturePosture#org_policy_constraint_custom}
   */
   readonly orgPolicyConstraintCustom?: SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom;
   /**
   * security_health_analytics_custom_module block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#security_health_analytics_custom_module SecurityposturePosture#security_health_analytics_custom_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#security_health_analytics_custom_module SecurityposturePosture#security_health_analytics_custom_module}
   */
   readonly securityHealthAnalyticsCustomModule?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule;
   /**
   * security_health_analytics_module block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#security_health_analytics_module SecurityposturePosture#security_health_analytics_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#security_health_analytics_module SecurityposturePosture#security_health_analytics_module}
   */
   readonly securityHealthAnalyticsModule?: SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule;
 }
@@ -3135,7 +3135,7 @@ export interface SecurityposturePosturePolicySetsPoliciesConstraint {
 export function securityposturePosturePolicySetsPoliciesConstraintToTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOutputReference | SecurityposturePosturePolicySetsPoliciesConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     org_policy_constraint: securityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintToTerraform(struct!.orgPolicyConstraint),
@@ -3149,7 +3149,7 @@ export function securityposturePosturePolicySetsPoliciesConstraintToTerraform(st
 export function securityposturePosturePolicySetsPoliciesConstraintToHclTerraform(struct?: SecurityposturePosturePolicySetsPoliciesConstraintOutputReference | SecurityposturePosturePolicySetsPoliciesConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     org_policy_constraint: {
@@ -3300,25 +3300,25 @@ export interface SecurityposturePosturePolicySetsPolicies {
   /**
   * Description of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * ID of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#policy_id SecurityposturePosture#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#policy_id SecurityposturePosture#policy_id}
   */
   readonly policyId: string;
   /**
   * compliance_standards block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#compliance_standards SecurityposturePosture#compliance_standards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#compliance_standards SecurityposturePosture#compliance_standards}
   */
   readonly complianceStandards?: SecurityposturePosturePolicySetsPoliciesComplianceStandards[] | cdktn.IResolvable;
   /**
   * constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#constraint SecurityposturePosture#constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#constraint SecurityposturePosture#constraint}
   */
   readonly constraint: SecurityposturePosturePolicySetsPoliciesConstraint;
 }
@@ -3326,7 +3326,7 @@ export interface SecurityposturePosturePolicySetsPolicies {
 export function securityposturePosturePolicySetsPoliciesToTerraform(struct?: SecurityposturePosturePolicySetsPolicies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -3340,7 +3340,7 @@ export function securityposturePosturePolicySetsPoliciesToTerraform(struct?: Sec
 export function securityposturePosturePolicySetsPoliciesToHclTerraform(struct?: SecurityposturePosturePolicySetsPolicies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -3517,19 +3517,19 @@ export interface SecurityposturePosturePolicySets {
   /**
   * Description of the policy set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
   */
   readonly description?: string;
   /**
   * ID of the policy set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#policy_set_id SecurityposturePosture#policy_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#policy_set_id SecurityposturePosture#policy_set_id}
   */
   readonly policySetId: string;
   /**
   * policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#policies SecurityposturePosture#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#policies SecurityposturePosture#policies}
   */
   readonly policies: SecurityposturePosturePolicySetsPolicies[] | cdktn.IResolvable;
 }
@@ -3537,7 +3537,7 @@ export interface SecurityposturePosturePolicySets {
 export function securityposturePosturePolicySetsToTerraform(struct?: SecurityposturePosturePolicySets | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -3550,7 +3550,7 @@ export function securityposturePosturePolicySetsToTerraform(struct?: Securitypos
 export function securityposturePosturePolicySetsToHclTerraform(struct?: SecurityposturePosturePolicySets | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -3697,15 +3697,15 @@ export class SecurityposturePosturePolicySetsList extends cdktn.ComplexList {
 }
 export interface SecurityposturePostureTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#create SecurityposturePosture#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#create SecurityposturePosture#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#delete SecurityposturePosture#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#delete SecurityposturePosture#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#update SecurityposturePosture#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#update SecurityposturePosture#update}
   */
   readonly update?: string;
 }
@@ -3713,7 +3713,7 @@ export interface SecurityposturePostureTimeouts {
 export function securityposturePostureTimeoutsToTerraform(struct?: SecurityposturePostureTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -3726,7 +3726,7 @@ export function securityposturePostureTimeoutsToTerraform(struct?: Securitypostu
 export function securityposturePostureTimeoutsToHclTerraform(struct?: SecurityposturePostureTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -3857,7 +3857,7 @@ export class SecurityposturePostureTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture google_securityposture_posture}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture google_securityposture_posture}
 */
 export class SecurityposturePosture extends cdktn.TerraformResource {
 
@@ -3873,7 +3873,7 @@ export class SecurityposturePosture extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityposturePosture resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityposturePosture to import
-  * @param importFromId The id of the existing SecurityposturePosture that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityposturePosture that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityposturePosture to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3885,7 +3885,7 @@ export class SecurityposturePosture extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/securityposture_posture google_securityposture_posture} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/securityposture_posture google_securityposture_posture} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3896,7 +3896,7 @@ export class SecurityposturePosture extends cdktn.TerraformResource {
       terraformResourceType: 'google_securityposture_posture',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

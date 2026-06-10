@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface FirebaseAppHostingDomainConfig extends cdktn.TerraformMetaArgum
   /**
   * The ID of the Backend that this Domain is associated with
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#backend FirebaseAppHostingDomain#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#backend FirebaseAppHostingDomain#backend}
   */
   readonly backend: string;
   /**
@@ -27,18 +27,18 @@ export interface FirebaseAppHostingDomainConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#deletion_policy FirebaseAppHostingDomain#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#deletion_policy FirebaseAppHostingDomain#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Id of the domain to create.
   * Must be a valid domain name, such as "foo.com"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#domain_id FirebaseAppHostingDomain#domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#domain_id FirebaseAppHostingDomain#domain_id}
   */
   readonly domainId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#id FirebaseAppHostingDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#id FirebaseAppHostingDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,23 +47,23 @@ export interface FirebaseAppHostingDomainConfig extends cdktn.TerraformMetaArgum
   /**
   * The location of the Backend that this Domain is associated with
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#location FirebaseAppHostingDomain#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#location FirebaseAppHostingDomain#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#project FirebaseAppHostingDomain#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#project FirebaseAppHostingDomain#project}
   */
   readonly project?: string;
   /**
   * serve block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#serve FirebaseAppHostingDomain#serve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#serve FirebaseAppHostingDomain#serve}
   */
   readonly serve?: FirebaseAppHostingDomainServe;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#timeouts FirebaseAppHostingDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#timeouts FirebaseAppHostingDomain#timeouts}
   */
   readonly timeouts?: FirebaseAppHostingDomainTimeouts;
 }
@@ -73,7 +73,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusIssues {
 export function firebaseAppHostingDomainCustomDomainStatusIssuesToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusIssues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -83,7 +83,7 @@ export function firebaseAppHostingDomainCustomDomainStatusIssuesToTerraform(stru
 export function firebaseAppHostingDomainCustomDomainStatusIssuesToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusIssues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -158,7 +158,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDes
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredCheckErrorToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredCheckError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -168,7 +168,7 @@ export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesi
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredCheckErrorToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredCheckError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -243,7 +243,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDes
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredRecordsToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredRecords): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -253,7 +253,7 @@ export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesi
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredRecordsToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredRecords): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -338,7 +338,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDes
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesired): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -348,7 +348,7 @@ export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesi
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesired): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -425,7 +425,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDis
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredCheckErrorToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredCheckError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -435,7 +435,7 @@ export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDisc
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredCheckErrorToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredCheckError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -510,7 +510,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDis
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredRecordsToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredRecords): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -520,7 +520,7 @@ export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDisc
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredRecordsToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredRecords): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -605,7 +605,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDis
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscovered): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -615,7 +615,7 @@ export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDisc
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscoveredToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDiscovered): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -692,7 +692,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdates {
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -702,7 +702,7 @@ export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesToTe
 export function firebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -784,7 +784,7 @@ export interface FirebaseAppHostingDomainCustomDomainStatus {
 export function firebaseAppHostingDomainCustomDomainStatusToTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -794,7 +794,7 @@ export function firebaseAppHostingDomainCustomDomainStatusToTerraform(struct?: F
 export function firebaseAppHostingDomainCustomDomainStatusToHclTerraform(struct?: FirebaseAppHostingDomainCustomDomainStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -880,7 +880,7 @@ export interface FirebaseAppHostingDomainServeRedirect {
   * The status code to use in a redirect response. Must be a valid HTTP 3XX
   * status code. Defaults to 302 if not present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#status FirebaseAppHostingDomain#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#status FirebaseAppHostingDomain#status}
   */
   readonly status?: string;
   /**
@@ -888,7 +888,7 @@ export interface FirebaseAppHostingDomainServeRedirect {
   * prepended to the original request path. URI without a scheme are
   * assumed to be HTTPS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#uri FirebaseAppHostingDomain#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#uri FirebaseAppHostingDomain#uri}
   */
   readonly uri: string;
 }
@@ -896,7 +896,7 @@ export interface FirebaseAppHostingDomainServeRedirect {
 export function firebaseAppHostingDomainServeRedirectToTerraform(struct?: FirebaseAppHostingDomainServeRedirectOutputReference | FirebaseAppHostingDomainServeRedirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     status: cdktn.stringToTerraform(struct!.status),
@@ -908,7 +908,7 @@ export function firebaseAppHostingDomainServeRedirectToTerraform(struct?: Fireba
 export function firebaseAppHostingDomainServeRedirectToHclTerraform(struct?: FirebaseAppHostingDomainServeRedirectOutputReference | FirebaseAppHostingDomainServeRedirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     status: {
@@ -1000,7 +1000,7 @@ export interface FirebaseAppHostingDomainServe {
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#redirect FirebaseAppHostingDomain#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#redirect FirebaseAppHostingDomain#redirect}
   */
   readonly redirect?: FirebaseAppHostingDomainServeRedirect;
 }
@@ -1008,7 +1008,7 @@ export interface FirebaseAppHostingDomainServe {
 export function firebaseAppHostingDomainServeToTerraform(struct?: FirebaseAppHostingDomainServeOutputReference | FirebaseAppHostingDomainServe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     redirect: firebaseAppHostingDomainServeRedirectToTerraform(struct!.redirect),
@@ -1019,7 +1019,7 @@ export function firebaseAppHostingDomainServeToTerraform(struct?: FirebaseAppHos
 export function firebaseAppHostingDomainServeToHclTerraform(struct?: FirebaseAppHostingDomainServeOutputReference | FirebaseAppHostingDomainServe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     redirect: {
@@ -1084,15 +1084,15 @@ export class FirebaseAppHostingDomainServeOutputReference extends cdktn.ComplexO
 }
 export interface FirebaseAppHostingDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#create FirebaseAppHostingDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#create FirebaseAppHostingDomain#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#delete FirebaseAppHostingDomain#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#delete FirebaseAppHostingDomain#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#update FirebaseAppHostingDomain#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#update FirebaseAppHostingDomain#update}
   */
   readonly update?: string;
 }
@@ -1100,7 +1100,7 @@ export interface FirebaseAppHostingDomainTimeouts {
 export function firebaseAppHostingDomainTimeoutsToTerraform(struct?: FirebaseAppHostingDomainTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1113,7 +1113,7 @@ export function firebaseAppHostingDomainTimeoutsToTerraform(struct?: FirebaseApp
 export function firebaseAppHostingDomainTimeoutsToHclTerraform(struct?: FirebaseAppHostingDomainTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1244,7 +1244,7 @@ export class FirebaseAppHostingDomainTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain google_firebase_app_hosting_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain google_firebase_app_hosting_domain}
 */
 export class FirebaseAppHostingDomain extends cdktn.TerraformResource {
 
@@ -1260,7 +1260,7 @@ export class FirebaseAppHostingDomain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FirebaseAppHostingDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirebaseAppHostingDomain to import
-  * @param importFromId The id of the existing FirebaseAppHostingDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FirebaseAppHostingDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirebaseAppHostingDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1272,7 +1272,7 @@ export class FirebaseAppHostingDomain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_domain google_firebase_app_hosting_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_domain google_firebase_app_hosting_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1283,7 +1283,7 @@ export class FirebaseAppHostingDomain extends cdktn.TerraformResource {
       terraformResourceType: 'google_firebase_app_hosting_domain',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

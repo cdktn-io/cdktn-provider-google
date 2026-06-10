@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface MonitoringAlertPolicyConfig extends cdktn.TerraformMetaArgument
   * How to combine the results of multiple conditions to
   * determine if an incident should be opened. Possible values: ["AND", "OR", "AND_WITH_MATCHING_RESOURCE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#combiner MonitoringAlertPolicy#combiner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#combiner MonitoringAlertPolicy#combiner}
   */
   readonly combiner: string;
   /**
@@ -28,7 +28,7 @@ export interface MonitoringAlertPolicyConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#deletion_policy MonitoringAlertPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#deletion_policy MonitoringAlertPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -37,17 +37,17 @@ export interface MonitoringAlertPolicyConfig extends cdktn.TerraformMetaArgument
   * the same display name for multiple policies in the same project. The
   * name is limited to 512 Unicode characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
   */
   readonly displayName: string;
   /**
   * Whether or not the policy is enabled. The default is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#enabled MonitoringAlertPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#enabled MonitoringAlertPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#id MonitoringAlertPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#id MonitoringAlertPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -62,11 +62,11 @@ export interface MonitoringAlertPolicyConfig extends cdktn.TerraformMetaArgument
   * entries in this field is
   * 'projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID]'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#notification_channels MonitoringAlertPolicy#notification_channels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#notification_channels MonitoringAlertPolicy#notification_channels}
   */
   readonly notificationChannels?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#project MonitoringAlertPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#project MonitoringAlertPolicy#project}
   */
   readonly project?: string;
   /**
@@ -74,7 +74,7 @@ export interface MonitoringAlertPolicyConfig extends cdktn.TerraformMetaArgument
   * by that policy are. The severity level will be displayed on the Incident
   * detail page and in notifications. Possible values: ["CRITICAL", "ERROR", "WARNING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#severity MonitoringAlertPolicy#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#severity MonitoringAlertPolicy#severity}
   */
   readonly severity?: string;
   /**
@@ -84,31 +84,31 @@ export interface MonitoringAlertPolicyConfig extends cdktn.TerraformMetaArgument
   * can contain only lowercase letters, numerals, underscores, and dashes. Keys
   * must begin with a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#user_labels MonitoringAlertPolicy#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#user_labels MonitoringAlertPolicy#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * alert_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#alert_strategy MonitoringAlertPolicy#alert_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#alert_strategy MonitoringAlertPolicy#alert_strategy}
   */
   readonly alertStrategy?: MonitoringAlertPolicyAlertStrategy;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#conditions MonitoringAlertPolicy#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#conditions MonitoringAlertPolicy#conditions}
   */
   readonly conditions: MonitoringAlertPolicyConditions[] | cdktn.IResolvable;
   /**
   * documentation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#documentation MonitoringAlertPolicy#documentation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#documentation MonitoringAlertPolicy#documentation}
   */
   readonly documentation?: MonitoringAlertPolicyDocumentation;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#timeouts MonitoringAlertPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#timeouts MonitoringAlertPolicy#timeouts}
   */
   readonly timeouts?: MonitoringAlertPolicyTimeouts;
 }
@@ -118,7 +118,7 @@ export interface MonitoringAlertPolicyCreationRecord {
 export function monitoringAlertPolicyCreationRecordToTerraform(struct?: MonitoringAlertPolicyCreationRecord): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -128,7 +128,7 @@ export function monitoringAlertPolicyCreationRecordToTerraform(struct?: Monitori
 export function monitoringAlertPolicyCreationRecordToHclTerraform(struct?: MonitoringAlertPolicyCreationRecord): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -199,13 +199,13 @@ export interface MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy {
   * referenced in the notification_channels field of this AlertPolicy. The format is
   * 'projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#notification_channel_names MonitoringAlertPolicy#notification_channel_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#notification_channel_names MonitoringAlertPolicy#notification_channel_names}
   */
   readonly notificationChannelNames?: string[];
   /**
   * The frequency at which to send reminder notifications for open incidents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#renotify_interval MonitoringAlertPolicy#renotify_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#renotify_interval MonitoringAlertPolicy#renotify_interval}
   */
   readonly renotifyInterval?: string;
 }
@@ -213,7 +213,7 @@ export interface MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy {
 export function monitoringAlertPolicyAlertStrategyNotificationChannelStrategyToTerraform(struct?: MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     notification_channel_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notificationChannelNames),
@@ -225,7 +225,7 @@ export function monitoringAlertPolicyAlertStrategyNotificationChannelStrategyToT
 export function monitoringAlertPolicyAlertStrategyNotificationChannelStrategyToHclTerraform(struct?: MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     notification_channel_names: {
@@ -353,7 +353,7 @@ export interface MonitoringAlertPolicyAlertStrategyNotificationRateLimit {
   * Not more than one notification per period.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example "60.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#period MonitoringAlertPolicy#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#period MonitoringAlertPolicy#period}
   */
   readonly period?: string;
 }
@@ -361,7 +361,7 @@ export interface MonitoringAlertPolicyAlertStrategyNotificationRateLimit {
 export function monitoringAlertPolicyAlertStrategyNotificationRateLimitToTerraform(struct?: MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference | MonitoringAlertPolicyAlertStrategyNotificationRateLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     period: cdktn.stringToTerraform(struct!.period),
@@ -372,7 +372,7 @@ export function monitoringAlertPolicyAlertStrategyNotificationRateLimitToTerrafo
 export function monitoringAlertPolicyAlertStrategyNotificationRateLimitToHclTerraform(struct?: MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference | MonitoringAlertPolicyAlertStrategyNotificationRateLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     period: {
@@ -439,25 +439,25 @@ export interface MonitoringAlertPolicyAlertStrategy {
   /**
   * If an alert policy that was active has no data for this long, any open incidents will close.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#auto_close MonitoringAlertPolicy#auto_close}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#auto_close MonitoringAlertPolicy#auto_close}
   */
   readonly autoClose?: string;
   /**
   * Control when notifications will be sent out. Possible values: ["NOTIFICATION_PROMPT_UNSPECIFIED", "OPENED", "CLOSED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#notification_prompts MonitoringAlertPolicy#notification_prompts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#notification_prompts MonitoringAlertPolicy#notification_prompts}
   */
   readonly notificationPrompts?: string[];
   /**
   * notification_channel_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#notification_channel_strategy MonitoringAlertPolicy#notification_channel_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#notification_channel_strategy MonitoringAlertPolicy#notification_channel_strategy}
   */
   readonly notificationChannelStrategy?: MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy[] | cdktn.IResolvable;
   /**
   * notification_rate_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#notification_rate_limit MonitoringAlertPolicy#notification_rate_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#notification_rate_limit MonitoringAlertPolicy#notification_rate_limit}
   */
   readonly notificationRateLimit?: MonitoringAlertPolicyAlertStrategyNotificationRateLimit;
 }
@@ -465,7 +465,7 @@ export interface MonitoringAlertPolicyAlertStrategy {
 export function monitoringAlertPolicyAlertStrategyToTerraform(struct?: MonitoringAlertPolicyAlertStrategyOutputReference | MonitoringAlertPolicyAlertStrategy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auto_close: cdktn.stringToTerraform(struct!.autoClose),
@@ -479,7 +479,7 @@ export function monitoringAlertPolicyAlertStrategyToTerraform(struct?: Monitorin
 export function monitoringAlertPolicyAlertStrategyToHclTerraform(struct?: MonitoringAlertPolicyAlertStrategyOutputReference | MonitoringAlertPolicyAlertStrategy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auto_close: {
@@ -643,7 +643,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentAggregations {
   * this field must be defined;
   * otherwise an error is returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#alignment_period MonitoringAlertPolicy#alignment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#alignment_period MonitoringAlertPolicy#alignment_period}
   */
   readonly alignmentPeriod?: string;
   /**
@@ -665,7 +665,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentAggregations {
   * specified; otherwise, an error is
   * returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#cross_series_reducer MonitoringAlertPolicy#cross_series_reducer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#cross_series_reducer MonitoringAlertPolicy#cross_series_reducer}
   */
   readonly crossSeriesReducer?: string;
   /**
@@ -695,7 +695,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentAggregations {
   * is not defined, this field is
   * ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#group_by_fields MonitoringAlertPolicy#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#group_by_fields MonitoringAlertPolicy#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
@@ -717,7 +717,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentAggregations {
   * specified; otherwise, an error is
   * returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#per_series_aligner MonitoringAlertPolicy#per_series_aligner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#per_series_aligner MonitoringAlertPolicy#per_series_aligner}
   */
   readonly perSeriesAligner?: string;
 }
@@ -725,7 +725,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentAggregations {
 export function monitoringAlertPolicyConditionsConditionAbsentAggregationsToTerraform(struct?: MonitoringAlertPolicyConditionsConditionAbsentAggregations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alignment_period: cdktn.stringToTerraform(struct!.alignmentPeriod),
@@ -739,7 +739,7 @@ export function monitoringAlertPolicyConditionsConditionAbsentAggregationsToTerr
 export function monitoringAlertPolicyConditionsConditionAbsentAggregationsToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionAbsentAggregations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alignment_period: {
@@ -924,7 +924,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentTrigger {
   * that must fail the predicate for the
   * condition to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#count MonitoringAlertPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#count MonitoringAlertPolicy#count}
   */
   readonly count?: number;
   /**
@@ -932,7 +932,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentTrigger {
   * must fail the predicate for the
   * condition to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#percent MonitoringAlertPolicy#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#percent MonitoringAlertPolicy#percent}
   */
   readonly percent?: number;
 }
@@ -940,7 +940,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsentTrigger {
 export function monitoringAlertPolicyConditionsConditionAbsentTriggerToTerraform(struct?: MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference | MonitoringAlertPolicyConditionsConditionAbsentTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -952,7 +952,7 @@ export function monitoringAlertPolicyConditionsConditionAbsentTriggerToTerraform
 export function monitoringAlertPolicyConditionsConditionAbsentTriggerToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference | MonitoringAlertPolicyConditionsConditionAbsentTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -1051,7 +1051,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsent {
   * multiple of a minute--e.g. 60s, 120s, or 300s
   * --are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
   */
   readonly duration: string;
   /**
@@ -1068,19 +1068,19 @@ export interface MonitoringAlertPolicyConditionsConditionAbsent {
   * field may not exceed 2048 Unicode characters
   * in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#filter MonitoringAlertPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#filter MonitoringAlertPolicy#filter}
   */
   readonly filter?: string;
   /**
   * aggregations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#aggregations MonitoringAlertPolicy#aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#aggregations MonitoringAlertPolicy#aggregations}
   */
   readonly aggregations?: MonitoringAlertPolicyConditionsConditionAbsentAggregations[] | cdktn.IResolvable;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
   */
   readonly trigger?: MonitoringAlertPolicyConditionsConditionAbsentTrigger;
 }
@@ -1088,7 +1088,7 @@ export interface MonitoringAlertPolicyConditionsConditionAbsent {
 export function monitoringAlertPolicyConditionsConditionAbsentToTerraform(struct?: MonitoringAlertPolicyConditionsConditionAbsentOutputReference | MonitoringAlertPolicyConditionsConditionAbsent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.stringToTerraform(struct!.duration),
@@ -1102,7 +1102,7 @@ export function monitoringAlertPolicyConditionsConditionAbsentToTerraform(struct
 export function monitoringAlertPolicyConditionsConditionAbsentToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionAbsentOutputReference | MonitoringAlertPolicyConditionsConditionAbsent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -1250,7 +1250,7 @@ export interface MonitoringAlertPolicyConditionsConditionMatchedLog {
   /**
   * A logs-based filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#filter MonitoringAlertPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#filter MonitoringAlertPolicy#filter}
   */
   readonly filter: string;
   /**
@@ -1262,7 +1262,7 @@ export interface MonitoringAlertPolicyConditionsConditionMatchedLog {
   * Label keys and corresponding values can be used in notifications
   * generated by this condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#label_extractors MonitoringAlertPolicy#label_extractors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#label_extractors MonitoringAlertPolicy#label_extractors}
   */
   readonly labelExtractors?: { [key: string]: string };
 }
@@ -1270,7 +1270,7 @@ export interface MonitoringAlertPolicyConditionsConditionMatchedLog {
 export function monitoringAlertPolicyConditionsConditionMatchedLogToTerraform(struct?: MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference | MonitoringAlertPolicyConditionsConditionMatchedLog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter: cdktn.stringToTerraform(struct!.filter),
@@ -1282,7 +1282,7 @@ export function monitoringAlertPolicyConditionsConditionMatchedLogToTerraform(st
 export function monitoringAlertPolicyConditionsConditionMatchedLogToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference | MonitoringAlertPolicyConditionsConditionMatchedLog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter: {
@@ -1376,7 +1376,7 @@ export interface MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
   * that must fail the predicate for the
   * condition to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#count MonitoringAlertPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#count MonitoringAlertPolicy#count}
   */
   readonly count?: number;
   /**
@@ -1384,7 +1384,7 @@ export interface MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
   * must fail the predicate for the
   * condition to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#percent MonitoringAlertPolicy#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#percent MonitoringAlertPolicy#percent}
   */
   readonly percent?: number;
 }
@@ -1392,7 +1392,7 @@ export interface MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
 export function monitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerToTerraform(struct?: MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference | MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -1404,7 +1404,7 @@ export function monitoringAlertPolicyConditionsConditionMonitoringQueryLanguageT
 export function monitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference | MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -1513,7 +1513,7 @@ export interface MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
   * that unhealthy states are detected and
   * alerted on quickly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
   */
   readonly duration: string;
   /**
@@ -1521,19 +1521,19 @@ export interface MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
   * metric-threshold conditions are evaluated when
   * data stops arriving. Possible values: ["EVALUATION_MISSING_DATA_INACTIVE", "EVALUATION_MISSING_DATA_ACTIVE", "EVALUATION_MISSING_DATA_NO_OP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#evaluation_missing_data MonitoringAlertPolicy#evaluation_missing_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#evaluation_missing_data MonitoringAlertPolicy#evaluation_missing_data}
   */
   readonly evaluationMissingData?: string;
   /**
   * Monitoring Query Language query that outputs a boolean stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
   */
   readonly query: string;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
   */
   readonly trigger?: MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger;
 }
@@ -1541,7 +1541,7 @@ export interface MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
 export function monitoringAlertPolicyConditionsConditionMonitoringQueryLanguageToTerraform(struct?: MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference | MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.stringToTerraform(struct!.duration),
@@ -1555,7 +1555,7 @@ export function monitoringAlertPolicyConditionsConditionMonitoringQueryLanguageT
 export function monitoringAlertPolicyConditionsConditionMonitoringQueryLanguageToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference | MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -1710,7 +1710,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
   * This field is optional. If this field is not empty, then it must be a
   * valid Prometheus label name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#alert_rule MonitoringAlertPolicy#alert_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#alert_rule MonitoringAlertPolicy#alert_rule}
   */
   readonly alertRule?: string;
   /**
@@ -1723,7 +1723,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
   * Users with the 'monitoring.alertPolicyViewer' role are able to see the
   * name of the non-existent metric in the alerting policy condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#disable_metric_validation MonitoringAlertPolicy#disable_metric_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#disable_metric_validation MonitoringAlertPolicy#disable_metric_validation}
   */
   readonly disableMetricValidation?: boolean | cdktn.IResolvable;
   /**
@@ -1732,7 +1732,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
   * evaluated to be "true" for long enough are considered pending. The
   * default value is zero. Must be zero or positive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
   */
   readonly duration?: string;
   /**
@@ -1742,7 +1742,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
   * alerting rule, then this value should be taken from the enclosing
   * rule group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#evaluation_interval MonitoringAlertPolicy#evaluation_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#evaluation_interval MonitoringAlertPolicy#evaluation_interval}
   */
   readonly evaluationInterval?: string;
   /**
@@ -1755,7 +1755,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
   * internal use. "labels" may be empty. This field is intended to be used
   * for organizing and identifying the AlertPolicy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#labels MonitoringAlertPolicy#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#labels MonitoringAlertPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -1763,7 +1763,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
   * expression is evaluated at the current time, and all resultant time
   * series become pending/firing alerts. This field must not be empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
   */
   readonly query: string;
   /**
@@ -1776,7 +1776,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
   * relevant AlertPolicies in case the definition of the rule group changes
   * in the future. This field is optional.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#rule_group MonitoringAlertPolicy#rule_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#rule_group MonitoringAlertPolicy#rule_group}
   */
   readonly ruleGroup?: string;
 }
@@ -1784,7 +1784,7 @@ export interface MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
 export function monitoringAlertPolicyConditionsConditionPrometheusQueryLanguageToTerraform(struct?: MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference | MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alert_rule: cdktn.stringToTerraform(struct!.alertRule),
@@ -1801,7 +1801,7 @@ export function monitoringAlertPolicyConditionsConditionPrometheusQueryLanguageT
 export function monitoringAlertPolicyConditionsConditionPrometheusQueryLanguageToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference | MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alert_rule: {
@@ -2034,7 +2034,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlBooleanTest {
   * The name of the column containing the boolean value. If the value in a row is
   * NULL, that row is ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#column MonitoringAlertPolicy#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#column MonitoringAlertPolicy#column}
   */
   readonly column: string;
 }
@@ -2042,7 +2042,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlBooleanTest {
 export function monitoringAlertPolicyConditionsConditionSqlBooleanTestToTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference | MonitoringAlertPolicyConditionsConditionSqlBooleanTest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column: cdktn.stringToTerraform(struct!.column),
@@ -2053,7 +2053,7 @@ export function monitoringAlertPolicyConditionsConditionSqlBooleanTestToTerrafor
 export function monitoringAlertPolicyConditionsConditionSqlBooleanTestToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference | MonitoringAlertPolicyConditionsConditionSqlBooleanTest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column: {
@@ -2120,21 +2120,21 @@ export interface MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime {
   * choose to allow the value "24:00:00" for scenarios like business
   * closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#hours MonitoringAlertPolicy#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#hours MonitoringAlertPolicy#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of an hour. Must be greater than or equal to 0 and
   * less than or equal to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#minutes MonitoringAlertPolicy#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#minutes MonitoringAlertPolicy#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds, in nanoseconds. Must be greater than or
   * equal to 0 and less than or equal to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#nanos MonitoringAlertPolicy#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#nanos MonitoringAlertPolicy#nanos}
   */
   readonly nanos?: number;
   /**
@@ -2142,7 +2142,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime {
   * typically must be less than or equal to 59. An API may allow the
   * value 60 if it allows leap-seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#seconds MonitoringAlertPolicy#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#seconds MonitoringAlertPolicy#seconds}
   */
   readonly seconds?: number;
 }
@@ -2150,7 +2150,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime {
 export function monitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeToTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference | MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hours: cdktn.numberToTerraform(struct!.hours),
@@ -2164,7 +2164,7 @@ export function monitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeToT
 export function monitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference | MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hours: {
@@ -2316,13 +2316,13 @@ export interface MonitoringAlertPolicyConditionsConditionSqlDaily {
   * The number of days between runs. Must be greater than or equal
   * to 1 day and less than or equal to 30 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#periodicity MonitoringAlertPolicy#periodicity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#periodicity MonitoringAlertPolicy#periodicity}
   */
   readonly periodicity: number;
   /**
   * execution_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#execution_time MonitoringAlertPolicy#execution_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#execution_time MonitoringAlertPolicy#execution_time}
   */
   readonly executionTime?: MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime;
 }
@@ -2330,7 +2330,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlDaily {
 export function monitoringAlertPolicyConditionsConditionSqlDailyToTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference | MonitoringAlertPolicyConditionsConditionSqlDaily): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     periodicity: cdktn.numberToTerraform(struct!.periodicity),
@@ -2342,7 +2342,7 @@ export function monitoringAlertPolicyConditionsConditionSqlDailyToTerraform(stru
 export function monitoringAlertPolicyConditionsConditionSqlDailyToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference | MonitoringAlertPolicyConditionsConditionSqlDaily): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     periodicity: {
@@ -2436,14 +2436,14 @@ export interface MonitoringAlertPolicyConditionsConditionSqlHourly {
   * Must be greater than or equal to 0 minutes and less than or equal to
   * 59 minutes.  If left unspecified, then an arbitrary offset is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#minute_offset MonitoringAlertPolicy#minute_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#minute_offset MonitoringAlertPolicy#minute_offset}
   */
   readonly minuteOffset?: number;
   /**
   * Number of hours between runs. The interval must be greater than or
   * equal to 1 hour and less than or equal to 48 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#periodicity MonitoringAlertPolicy#periodicity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#periodicity MonitoringAlertPolicy#periodicity}
   */
   readonly periodicity: number;
 }
@@ -2451,7 +2451,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlHourly {
 export function monitoringAlertPolicyConditionsConditionSqlHourlyToTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference | MonitoringAlertPolicyConditionsConditionSqlHourly): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minute_offset: cdktn.numberToTerraform(struct!.minuteOffset),
@@ -2463,7 +2463,7 @@ export function monitoringAlertPolicyConditionsConditionSqlHourlyToTerraform(str
 export function monitoringAlertPolicyConditionsConditionSqlHourlyToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference | MonitoringAlertPolicyConditionsConditionSqlHourly): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minute_offset: {
@@ -2556,7 +2556,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlMinutes {
   * Number of minutes between runs. The interval must be greater than or
   * equal to 5 minutes and less than or equal to 1440 minutes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#periodicity MonitoringAlertPolicy#periodicity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#periodicity MonitoringAlertPolicy#periodicity}
   */
   readonly periodicity: number;
 }
@@ -2564,7 +2564,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlMinutes {
 export function monitoringAlertPolicyConditionsConditionSqlMinutesToTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference | MonitoringAlertPolicyConditionsConditionSqlMinutes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     periodicity: cdktn.numberToTerraform(struct!.periodicity),
@@ -2575,7 +2575,7 @@ export function monitoringAlertPolicyConditionsConditionSqlMinutesToTerraform(st
 export function monitoringAlertPolicyConditionsConditionSqlMinutesToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference | MonitoringAlertPolicyConditionsConditionSqlMinutes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     periodicity: {
@@ -2637,22 +2637,28 @@ export class MonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference e
 }
 export interface MonitoringAlertPolicyConditionsConditionSqlRowCountTest {
   /**
-  * The comparison to apply between the time
-  * series (indicated by filter and aggregation)
-  * and the threshold (indicated by
-  * threshold_value). The comparison is applied
-  * on each time series, with the time series on
-  * the left-hand side and the threshold on the
-  * right-hand side. Only COMPARISON_LT and
-  * COMPARISON_GT are supported currently. Possible values: ["COMPARISON_GT", "COMPARISON_GE", "COMPARISON_LT", "COMPARISON_LE", "COMPARISON_EQ", "COMPARISON_NE"]
+  * The comparison to apply between the time series
+  * (indicated by filter and aggregation) and the
+  * threshold (indicated by threshold_value). The
+  * comparison is applied on each time series, with
+  * the time series on the left-hand side and the
+  * threshold on the right-hand side.
+  * 
+  * The Cloud Monitoring API only supports
+  * 'COMPARISON_LT' and 'COMPARISON_GT' for SQL
+  * row-count thresholds; the other values are kept
+  * in the schema for backward compatibility with
+  * imported state but will be rejected by the API.
+  * See
+  * https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold. Possible values: ["COMPARISON_GT", "COMPARISON_GE", "COMPARISON_LT", "COMPARISON_LE", "COMPARISON_EQ", "COMPARISON_NE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#comparison MonitoringAlertPolicy#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#comparison MonitoringAlertPolicy#comparison}
   */
   readonly comparison: string;
   /**
   * The value against which to compare the row count.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#threshold MonitoringAlertPolicy#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#threshold MonitoringAlertPolicy#threshold}
   */
   readonly threshold: number;
 }
@@ -2660,7 +2666,7 @@ export interface MonitoringAlertPolicyConditionsConditionSqlRowCountTest {
 export function monitoringAlertPolicyConditionsConditionSqlRowCountTestToTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference | MonitoringAlertPolicyConditionsConditionSqlRowCountTest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -2672,7 +2678,7 @@ export function monitoringAlertPolicyConditionsConditionSqlRowCountTestToTerrafo
 export function monitoringAlertPolicyConditionsConditionSqlRowCountTestToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference | MonitoringAlertPolicyConditionsConditionSqlRowCountTest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -2765,37 +2771,37 @@ export interface MonitoringAlertPolicyConditionsConditionSql {
   * to filter the input so that the query receives all rows received
   * since the last time the query was run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
   */
   readonly query: string;
   /**
   * boolean_test block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#boolean_test MonitoringAlertPolicy#boolean_test}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#boolean_test MonitoringAlertPolicy#boolean_test}
   */
   readonly booleanTest?: MonitoringAlertPolicyConditionsConditionSqlBooleanTest;
   /**
   * daily block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#daily MonitoringAlertPolicy#daily}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#daily MonitoringAlertPolicy#daily}
   */
   readonly daily?: MonitoringAlertPolicyConditionsConditionSqlDaily;
   /**
   * hourly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#hourly MonitoringAlertPolicy#hourly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#hourly MonitoringAlertPolicy#hourly}
   */
   readonly hourly?: MonitoringAlertPolicyConditionsConditionSqlHourly;
   /**
   * minutes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#minutes MonitoringAlertPolicy#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#minutes MonitoringAlertPolicy#minutes}
   */
   readonly minutes?: MonitoringAlertPolicyConditionsConditionSqlMinutes;
   /**
   * row_count_test block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#row_count_test MonitoringAlertPolicy#row_count_test}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#row_count_test MonitoringAlertPolicy#row_count_test}
   */
   readonly rowCountTest?: MonitoringAlertPolicyConditionsConditionSqlRowCountTest;
 }
@@ -2803,7 +2809,7 @@ export interface MonitoringAlertPolicyConditionsConditionSql {
 export function monitoringAlertPolicyConditionsConditionSqlToTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlOutputReference | MonitoringAlertPolicyConditionsConditionSql): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -2819,7 +2825,7 @@ export function monitoringAlertPolicyConditionsConditionSqlToTerraform(struct?: 
 export function monitoringAlertPolicyConditionsConditionSqlToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionSqlOutputReference | MonitoringAlertPolicyConditionsConditionSql): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -3036,7 +3042,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdAggregations {
   * this field must be defined;
   * otherwise an error is returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#alignment_period MonitoringAlertPolicy#alignment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#alignment_period MonitoringAlertPolicy#alignment_period}
   */
   readonly alignmentPeriod?: string;
   /**
@@ -3058,7 +3064,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdAggregations {
   * specified; otherwise, an error is
   * returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#cross_series_reducer MonitoringAlertPolicy#cross_series_reducer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#cross_series_reducer MonitoringAlertPolicy#cross_series_reducer}
   */
   readonly crossSeriesReducer?: string;
   /**
@@ -3088,7 +3094,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdAggregations {
   * is not defined, this field is
   * ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#group_by_fields MonitoringAlertPolicy#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#group_by_fields MonitoringAlertPolicy#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
@@ -3110,7 +3116,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdAggregations {
   * specified; otherwise, an error is
   * returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#per_series_aligner MonitoringAlertPolicy#per_series_aligner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#per_series_aligner MonitoringAlertPolicy#per_series_aligner}
   */
   readonly perSeriesAligner?: string;
 }
@@ -3118,7 +3124,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdAggregations {
 export function monitoringAlertPolicyConditionsConditionThresholdAggregationsToTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdAggregations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alignment_period: cdktn.stringToTerraform(struct!.alignmentPeriod),
@@ -3132,7 +3138,7 @@ export function monitoringAlertPolicyConditionsConditionThresholdAggregationsToT
 export function monitoringAlertPolicyConditionsConditionThresholdAggregationsToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdAggregations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alignment_period: {
@@ -3328,7 +3334,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdDenominatorAgg
   * this field must be defined;
   * otherwise an error is returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#alignment_period MonitoringAlertPolicy#alignment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#alignment_period MonitoringAlertPolicy#alignment_period}
   */
   readonly alignmentPeriod?: string;
   /**
@@ -3350,7 +3356,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdDenominatorAgg
   * specified; otherwise, an error is
   * returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#cross_series_reducer MonitoringAlertPolicy#cross_series_reducer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#cross_series_reducer MonitoringAlertPolicy#cross_series_reducer}
   */
   readonly crossSeriesReducer?: string;
   /**
@@ -3380,7 +3386,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdDenominatorAgg
   * is not defined, this field is
   * ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#group_by_fields MonitoringAlertPolicy#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#group_by_fields MonitoringAlertPolicy#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
@@ -3402,7 +3408,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdDenominatorAgg
   * specified; otherwise, an error is
   * returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#per_series_aligner MonitoringAlertPolicy#per_series_aligner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#per_series_aligner MonitoringAlertPolicy#per_series_aligner}
   */
   readonly perSeriesAligner?: string;
 }
@@ -3410,7 +3416,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdDenominatorAgg
 export function monitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsToTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alignment_period: cdktn.stringToTerraform(struct!.alignmentPeriod),
@@ -3424,7 +3430,7 @@ export function monitoringAlertPolicyConditionsConditionThresholdDenominatorAggr
 export function monitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alignment_period: {
@@ -3612,7 +3618,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdForecastOption
   * forecasts made for the Configured 'duration',
   * then the timeseries is considered to be failing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#forecast_horizon MonitoringAlertPolicy#forecast_horizon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#forecast_horizon MonitoringAlertPolicy#forecast_horizon}
   */
   readonly forecastHorizon: string;
 }
@@ -3620,7 +3626,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdForecastOption
 export function monitoringAlertPolicyConditionsConditionThresholdForecastOptionsToTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference | MonitoringAlertPolicyConditionsConditionThresholdForecastOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     forecast_horizon: cdktn.stringToTerraform(struct!.forecastHorizon),
@@ -3631,7 +3637,7 @@ export function monitoringAlertPolicyConditionsConditionThresholdForecastOptions
 export function monitoringAlertPolicyConditionsConditionThresholdForecastOptionsToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference | MonitoringAlertPolicyConditionsConditionThresholdForecastOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     forecast_horizon: {
@@ -3697,7 +3703,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdTrigger {
   * that must fail the predicate for the
   * condition to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#count MonitoringAlertPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#count MonitoringAlertPolicy#count}
   */
   readonly count?: number;
   /**
@@ -3705,7 +3711,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdTrigger {
   * must fail the predicate for the
   * condition to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#percent MonitoringAlertPolicy#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#percent MonitoringAlertPolicy#percent}
   */
   readonly percent?: number;
 }
@@ -3713,7 +3719,7 @@ export interface MonitoringAlertPolicyConditionsConditionThresholdTrigger {
 export function monitoringAlertPolicyConditionsConditionThresholdTriggerToTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference | MonitoringAlertPolicyConditionsConditionThresholdTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -3725,7 +3731,7 @@ export function monitoringAlertPolicyConditionsConditionThresholdTriggerToTerraf
 export function monitoringAlertPolicyConditionsConditionThresholdTriggerToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference | MonitoringAlertPolicyConditionsConditionThresholdTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -3818,16 +3824,21 @@ export class MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputRefer
 }
 export interface MonitoringAlertPolicyConditionsConditionThreshold {
   /**
-  * The comparison to apply between the time
-  * series (indicated by filter and aggregation)
-  * and the threshold (indicated by
-  * threshold_value). The comparison is applied
-  * on each time series, with the time series on
-  * the left-hand side and the threshold on the
-  * right-hand side. Only COMPARISON_LT and
-  * COMPARISON_GT are supported currently. Possible values: ["COMPARISON_GT", "COMPARISON_GE", "COMPARISON_LT", "COMPARISON_LE", "COMPARISON_EQ", "COMPARISON_NE"]
+  * The comparison to apply between the time series
+  * (indicated by filter and aggregation) and the threshold
+  * (indicated by threshold_value). The comparison is
+  * applied on each time series, with the time series on
+  * the left-hand side and the threshold on the right-hand
+  * side.
+  * 
+  * The Cloud Monitoring API only supports 'COMPARISON_LT'
+  * and 'COMPARISON_GT' for metric-threshold conditions; the
+  * other values are kept in the schema for backward
+  * compatibility with imported state but will be rejected
+  * by the API. See
+  * https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold. Possible values: ["COMPARISON_GT", "COMPARISON_GE", "COMPARISON_LT", "COMPARISON_LE", "COMPARISON_EQ", "COMPARISON_NE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#comparison MonitoringAlertPolicy#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#comparison MonitoringAlertPolicy#comparison}
   */
   readonly comparison: string;
   /**
@@ -3847,7 +3858,7 @@ export interface MonitoringAlertPolicyConditionsConditionThreshold {
   * field may not exceed 2048 Unicode characters
   * in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#denominator_filter MonitoringAlertPolicy#denominator_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#denominator_filter MonitoringAlertPolicy#denominator_filter}
   */
   readonly denominatorFilter?: string;
   /**
@@ -3867,7 +3878,7 @@ export interface MonitoringAlertPolicyConditionsConditionThreshold {
   * that unhealthy states are detected and
   * alerted on quickly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
   */
   readonly duration: string;
   /**
@@ -3875,7 +3886,7 @@ export interface MonitoringAlertPolicyConditionsConditionThreshold {
   * metric-threshold conditions are evaluated when
   * data stops arriving. Possible values: ["EVALUATION_MISSING_DATA_INACTIVE", "EVALUATION_MISSING_DATA_ACTIVE", "EVALUATION_MISSING_DATA_NO_OP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#evaluation_missing_data MonitoringAlertPolicy#evaluation_missing_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#evaluation_missing_data MonitoringAlertPolicy#evaluation_missing_data}
   */
   readonly evaluationMissingData?: string;
   /**
@@ -3892,38 +3903,38 @@ export interface MonitoringAlertPolicyConditionsConditionThreshold {
   * field may not exceed 2048 Unicode characters
   * in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#filter MonitoringAlertPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#filter MonitoringAlertPolicy#filter}
   */
   readonly filter?: string;
   /**
   * A value against which to compare the time
   * series.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#threshold_value MonitoringAlertPolicy#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#threshold_value MonitoringAlertPolicy#threshold_value}
   */
   readonly thresholdValue?: number;
   /**
   * aggregations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#aggregations MonitoringAlertPolicy#aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#aggregations MonitoringAlertPolicy#aggregations}
   */
   readonly aggregations?: MonitoringAlertPolicyConditionsConditionThresholdAggregations[] | cdktn.IResolvable;
   /**
   * denominator_aggregations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#denominator_aggregations MonitoringAlertPolicy#denominator_aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#denominator_aggregations MonitoringAlertPolicy#denominator_aggregations}
   */
   readonly denominatorAggregations?: MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations[] | cdktn.IResolvable;
   /**
   * forecast_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#forecast_options MonitoringAlertPolicy#forecast_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#forecast_options MonitoringAlertPolicy#forecast_options}
   */
   readonly forecastOptions?: MonitoringAlertPolicyConditionsConditionThresholdForecastOptions;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
   */
   readonly trigger?: MonitoringAlertPolicyConditionsConditionThresholdTrigger;
 }
@@ -3931,7 +3942,7 @@ export interface MonitoringAlertPolicyConditionsConditionThreshold {
 export function monitoringAlertPolicyConditionsConditionThresholdToTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdOutputReference | MonitoringAlertPolicyConditionsConditionThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -3951,7 +3962,7 @@ export function monitoringAlertPolicyConditionsConditionThresholdToTerraform(str
 export function monitoringAlertPolicyConditionsConditionThresholdToHclTerraform(struct?: MonitoringAlertPolicyConditionsConditionThresholdOutputReference | MonitoringAlertPolicyConditionsConditionThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -4268,43 +4279,43 @@ export interface MonitoringAlertPolicyConditions {
   * display name for multiple conditions in the same
   * policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
   */
   readonly displayName: string;
   /**
   * condition_absent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#condition_absent MonitoringAlertPolicy#condition_absent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#condition_absent MonitoringAlertPolicy#condition_absent}
   */
   readonly conditionAbsent?: MonitoringAlertPolicyConditionsConditionAbsent;
   /**
   * condition_matched_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#condition_matched_log MonitoringAlertPolicy#condition_matched_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#condition_matched_log MonitoringAlertPolicy#condition_matched_log}
   */
   readonly conditionMatchedLog?: MonitoringAlertPolicyConditionsConditionMatchedLog;
   /**
   * condition_monitoring_query_language block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#condition_monitoring_query_language MonitoringAlertPolicy#condition_monitoring_query_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#condition_monitoring_query_language MonitoringAlertPolicy#condition_monitoring_query_language}
   */
   readonly conditionMonitoringQueryLanguage?: MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage;
   /**
   * condition_prometheus_query_language block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#condition_prometheus_query_language MonitoringAlertPolicy#condition_prometheus_query_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#condition_prometheus_query_language MonitoringAlertPolicy#condition_prometheus_query_language}
   */
   readonly conditionPrometheusQueryLanguage?: MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage;
   /**
   * condition_sql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#condition_sql MonitoringAlertPolicy#condition_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#condition_sql MonitoringAlertPolicy#condition_sql}
   */
   readonly conditionSql?: MonitoringAlertPolicyConditionsConditionSql;
   /**
   * condition_threshold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#condition_threshold MonitoringAlertPolicy#condition_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#condition_threshold MonitoringAlertPolicy#condition_threshold}
   */
   readonly conditionThreshold?: MonitoringAlertPolicyConditionsConditionThreshold;
 }
@@ -4312,7 +4323,7 @@ export interface MonitoringAlertPolicyConditions {
 export function monitoringAlertPolicyConditionsToTerraform(struct?: MonitoringAlertPolicyConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_name: cdktn.stringToTerraform(struct!.displayName),
@@ -4329,7 +4340,7 @@ export function monitoringAlertPolicyConditionsToTerraform(struct?: MonitoringAl
 export function monitoringAlertPolicyConditionsToHclTerraform(struct?: MonitoringAlertPolicyConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_name: {
@@ -4598,13 +4609,13 @@ export interface MonitoringAlertPolicyDocumentationLinks {
   /**
   * A short display name for the link. The display name must not be empty or exceed 63 characters. Example: "playbook".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
   */
   readonly displayName?: string;
   /**
   * The url of a webpage. A url can be templatized by using variables in the path or the query parameters. The total length of a URL should not exceed 2083 characters before and after variable expansion. Example: "https://my_domain.com/playbook?name=${resource.name}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#url MonitoringAlertPolicy#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#url MonitoringAlertPolicy#url}
   */
   readonly url?: string;
 }
@@ -4612,7 +4623,7 @@ export interface MonitoringAlertPolicyDocumentationLinks {
 export function monitoringAlertPolicyDocumentationLinksToTerraform(struct?: MonitoringAlertPolicyDocumentationLinks | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_name: cdktn.stringToTerraform(struct!.displayName),
@@ -4624,7 +4635,7 @@ export function monitoringAlertPolicyDocumentationLinksToTerraform(struct?: Moni
 export function monitoringAlertPolicyDocumentationLinksToHclTerraform(struct?: MonitoringAlertPolicyDocumentationLinks | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_name: {
@@ -4754,14 +4765,14 @@ export interface MonitoringAlertPolicyDocumentation {
   * exceed more than 10,240 bytes when encoded in UTF-8 format,
   * whichever is smaller.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#content MonitoringAlertPolicy#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#content MonitoringAlertPolicy#content}
   */
   readonly content?: string;
   /**
   * The format of the content field. Presently, only the value
   * "text/markdown" is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#mime_type MonitoringAlertPolicy#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#mime_type MonitoringAlertPolicy#mime_type}
   */
   readonly mimeType?: string;
   /**
@@ -4770,13 +4781,13 @@ export interface MonitoringAlertPolicyDocumentation {
   * of the subject line after variable expansion will be truncated to 255 bytes
   * or shorter at the latest UTF-8 character boundary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#subject MonitoringAlertPolicy#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#subject MonitoringAlertPolicy#subject}
   */
   readonly subject?: string;
   /**
   * links block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#links MonitoringAlertPolicy#links}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#links MonitoringAlertPolicy#links}
   */
   readonly links?: MonitoringAlertPolicyDocumentationLinks[] | cdktn.IResolvable;
 }
@@ -4784,7 +4795,7 @@ export interface MonitoringAlertPolicyDocumentation {
 export function monitoringAlertPolicyDocumentationToTerraform(struct?: MonitoringAlertPolicyDocumentationOutputReference | MonitoringAlertPolicyDocumentation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -4798,7 +4809,7 @@ export function monitoringAlertPolicyDocumentationToTerraform(struct?: Monitorin
 export function monitoringAlertPolicyDocumentationToHclTerraform(struct?: MonitoringAlertPolicyDocumentationOutputReference | MonitoringAlertPolicyDocumentation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -4947,15 +4958,15 @@ export class MonitoringAlertPolicyDocumentationOutputReference extends cdktn.Com
 }
 export interface MonitoringAlertPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#create MonitoringAlertPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#create MonitoringAlertPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#delete MonitoringAlertPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#delete MonitoringAlertPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#update MonitoringAlertPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#update MonitoringAlertPolicy#update}
   */
   readonly update?: string;
 }
@@ -4963,7 +4974,7 @@ export interface MonitoringAlertPolicyTimeouts {
 export function monitoringAlertPolicyTimeoutsToTerraform(struct?: MonitoringAlertPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -4976,7 +4987,7 @@ export function monitoringAlertPolicyTimeoutsToTerraform(struct?: MonitoringAler
 export function monitoringAlertPolicyTimeoutsToHclTerraform(struct?: MonitoringAlertPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -5107,7 +5118,7 @@ export class MonitoringAlertPolicyTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}
 */
 export class MonitoringAlertPolicy extends cdktn.TerraformResource {
 
@@ -5123,7 +5134,7 @@ export class MonitoringAlertPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitoringAlertPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitoringAlertPolicy to import
-  * @param importFromId The id of the existing MonitoringAlertPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitoringAlertPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitoringAlertPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5135,7 +5146,7 @@ export class MonitoringAlertPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5146,7 +5157,7 @@ export class MonitoringAlertPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_monitoring_alert_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface BeyondcorpAppConnectorConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#deletion_policy BeyondcorpAppConnector#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#deletion_policy BeyondcorpAppConnector#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An arbitrary user-provided name for the AppConnector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#display_name BeyondcorpAppConnector#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#display_name BeyondcorpAppConnector#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#id BeyondcorpAppConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#id BeyondcorpAppConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,35 +44,35 @@ export interface BeyondcorpAppConnectorConfig extends cdktn.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#labels BeyondcorpAppConnector#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#labels BeyondcorpAppConnector#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * ID of the AppConnector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#name BeyondcorpAppConnector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#name BeyondcorpAppConnector#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#project BeyondcorpAppConnector#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#project BeyondcorpAppConnector#project}
   */
   readonly project?: string;
   /**
   * The region of the AppConnector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#region BeyondcorpAppConnector#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#region BeyondcorpAppConnector#region}
   */
   readonly region?: string;
   /**
   * principal_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#principal_info BeyondcorpAppConnector#principal_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#principal_info BeyondcorpAppConnector#principal_info}
   */
   readonly principalInfo: BeyondcorpAppConnectorPrincipalInfo;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#timeouts BeyondcorpAppConnector#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#timeouts BeyondcorpAppConnector#timeouts}
   */
   readonly timeouts?: BeyondcorpAppConnectorTimeouts;
 }
@@ -80,7 +80,7 @@ export interface BeyondcorpAppConnectorPrincipalInfoServiceAccount {
   /**
   * Email address of the service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#email BeyondcorpAppConnector#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#email BeyondcorpAppConnector#email}
   */
   readonly email: string;
 }
@@ -88,7 +88,7 @@ export interface BeyondcorpAppConnectorPrincipalInfoServiceAccount {
 export function beyondcorpAppConnectorPrincipalInfoServiceAccountToTerraform(struct?: BeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference | BeyondcorpAppConnectorPrincipalInfoServiceAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     email: cdktn.stringToTerraform(struct!.email),
@@ -99,7 +99,7 @@ export function beyondcorpAppConnectorPrincipalInfoServiceAccountToTerraform(str
 export function beyondcorpAppConnectorPrincipalInfoServiceAccountToHclTerraform(struct?: BeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference | BeyondcorpAppConnectorPrincipalInfoServiceAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     email: {
@@ -163,7 +163,7 @@ export interface BeyondcorpAppConnectorPrincipalInfo {
   /**
   * service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#service_account BeyondcorpAppConnector#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#service_account BeyondcorpAppConnector#service_account}
   */
   readonly serviceAccount: BeyondcorpAppConnectorPrincipalInfoServiceAccount;
 }
@@ -171,7 +171,7 @@ export interface BeyondcorpAppConnectorPrincipalInfo {
 export function beyondcorpAppConnectorPrincipalInfoToTerraform(struct?: BeyondcorpAppConnectorPrincipalInfoOutputReference | BeyondcorpAppConnectorPrincipalInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service_account: beyondcorpAppConnectorPrincipalInfoServiceAccountToTerraform(struct!.serviceAccount),
@@ -182,7 +182,7 @@ export function beyondcorpAppConnectorPrincipalInfoToTerraform(struct?: Beyondco
 export function beyondcorpAppConnectorPrincipalInfoToHclTerraform(struct?: BeyondcorpAppConnectorPrincipalInfoOutputReference | BeyondcorpAppConnectorPrincipalInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service_account: {
@@ -244,15 +244,15 @@ export class BeyondcorpAppConnectorPrincipalInfoOutputReference extends cdktn.Co
 }
 export interface BeyondcorpAppConnectorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#create BeyondcorpAppConnector#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#create BeyondcorpAppConnector#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#delete BeyondcorpAppConnector#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#delete BeyondcorpAppConnector#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#update BeyondcorpAppConnector#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#update BeyondcorpAppConnector#update}
   */
   readonly update?: string;
 }
@@ -260,7 +260,7 @@ export interface BeyondcorpAppConnectorTimeouts {
 export function beyondcorpAppConnectorTimeoutsToTerraform(struct?: BeyondcorpAppConnectorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -273,7 +273,7 @@ export function beyondcorpAppConnectorTimeoutsToTerraform(struct?: BeyondcorpApp
 export function beyondcorpAppConnectorTimeoutsToHclTerraform(struct?: BeyondcorpAppConnectorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -404,7 +404,7 @@ export class BeyondcorpAppConnectorTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector google_beyondcorp_app_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector google_beyondcorp_app_connector}
 */
 export class BeyondcorpAppConnector extends cdktn.TerraformResource {
 
@@ -420,7 +420,7 @@ export class BeyondcorpAppConnector extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BeyondcorpAppConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BeyondcorpAppConnector to import
-  * @param importFromId The id of the existing BeyondcorpAppConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BeyondcorpAppConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BeyondcorpAppConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -432,7 +432,7 @@ export class BeyondcorpAppConnector extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_app_connector google_beyondcorp_app_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_app_connector google_beyondcorp_app_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -443,7 +443,7 @@ export class BeyondcorpAppConnector extends cdktn.TerraformResource {
       terraformResourceType: 'google_beyondcorp_app_connector',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

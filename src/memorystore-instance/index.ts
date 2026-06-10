@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   *  AUTH_DISABLED
   * IAM_AUTH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#authorization_mode MemorystoreInstance#authorization_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#authorization_mode MemorystoreInstance#authorization_mode}
   */
   readonly authorizationMode?: string;
   /**
@@ -29,29 +29,29 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#deletion_policy MemorystoreInstance#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#deletion_policy MemorystoreInstance#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. If set to true deletion of the instance will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#deletion_protection_enabled MemorystoreInstance#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#deletion_protection_enabled MemorystoreInstance#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Optional. User-provided engine configurations for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#engine_configs MemorystoreInstance#engine_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#engine_configs MemorystoreInstance#engine_configs}
   */
   readonly engineConfigs?: { [key: string]: string };
   /**
   * Optional. Engine version of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#engine_version MemorystoreInstance#engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#engine_version MemorystoreInstance#engine_version}
   */
   readonly engineVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#id MemorystoreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#id MemorystoreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -69,13 +69,13 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   * * Must not end with a hyphen
   * * Must be unique within a location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#instance_id MemorystoreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#instance_id MemorystoreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
   * The KMS key used to encrypt the at-rest data of the cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#kms_key MemorystoreInstance#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#kms_key MemorystoreInstance#kms_key}
   */
   readonly kmsKey?: string;
   /**
@@ -84,20 +84,20 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#labels MemorystoreInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#labels MemorystoreInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. See documentation for resource type 'memorystore.googleapis.com/CertificateAuthority'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#location MemorystoreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#location MemorystoreInstance#location}
   */
   readonly location: string;
   /**
   * This field can be used to trigger self service update to indicate the desired maintenance version. The input to this field can be determined by the available_maintenance_versions field.
   * *Note*: This field can only be specified when updating an existing cluster to a newer version. Downgrades are currently not supported!
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#maintenance_version MemorystoreInstance#maintenance_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#maintenance_version MemorystoreInstance#maintenance_version}
   */
   readonly maintenanceVersion?: string;
   /**
@@ -106,7 +106,7 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   *  CLUSTER
   *  CLUSTER_DISABLED Possible values: ["CLUSTER", "CLUSTER_DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#mode MemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#mode MemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
@@ -123,24 +123,24 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   * STANDARD_LARGE
   * HIGHMEM_2XLARGE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#node_type MemorystoreInstance#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#node_type MemorystoreInstance#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#project MemorystoreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#project MemorystoreInstance#project}
   */
   readonly project?: string;
   /**
   * Optional. Number of replica nodes per shard. If omitted the default is 0 replicas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#replica_count MemorystoreInstance#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#replica_count MemorystoreInstance#replica_count}
   */
   readonly replicaCount?: number;
   /**
   * The serverCaMode for the TLS enabled Memorystore instance.
   * If not provided, GOOGLE_MANAGED_PER_INSTANCE_CA will be used as default Possible values: ["GOOGLE_MANAGED_PER_INSTANCE_CA", "GOOGLE_MANAGED_SHARED_CA", "CUSTOMER_MANAGED_CAS_CA", "SERVER_CA_MODE_UNSPECIFIED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#server_ca_mode MemorystoreInstance#server_ca_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#server_ca_mode MemorystoreInstance#server_ca_mode}
   */
   readonly serverCaMode?: string;
   /**
@@ -148,13 +148,13 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   * as the server_ca_mode.
   * Format: projects/{project}/locations/{region}/caPools/{caPoolId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#server_ca_pool MemorystoreInstance#server_ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#server_ca_pool MemorystoreInstance#server_ca_pool}
   */
   readonly serverCaPool?: string;
   /**
   * Required. Number of shards for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#shard_count MemorystoreInstance#shard_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#shard_count MemorystoreInstance#shard_count}
   */
   readonly shardCount: number;
   /**
@@ -163,67 +163,67 @@ export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments 
   *  TRANSIT_ENCRYPTION_DISABLED
   * SERVER_AUTHENTICATION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#transit_encryption_mode MemorystoreInstance#transit_encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#transit_encryption_mode MemorystoreInstance#transit_encryption_mode}
   */
   readonly transitEncryptionMode?: string;
   /**
   * automated_backup_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#automated_backup_config MemorystoreInstance#automated_backup_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#automated_backup_config MemorystoreInstance#automated_backup_config}
   */
   readonly automatedBackupConfig?: MemorystoreInstanceAutomatedBackupConfig;
   /**
   * cross_instance_replication_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#cross_instance_replication_config MemorystoreInstance#cross_instance_replication_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#cross_instance_replication_config MemorystoreInstance#cross_instance_replication_config}
   */
   readonly crossInstanceReplicationConfig?: MemorystoreInstanceCrossInstanceReplicationConfig;
   /**
   * desired_auto_created_endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#desired_auto_created_endpoints MemorystoreInstance#desired_auto_created_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#desired_auto_created_endpoints MemorystoreInstance#desired_auto_created_endpoints}
   */
   readonly desiredAutoCreatedEndpoints?: MemorystoreInstanceDesiredAutoCreatedEndpoints[] | cdktn.IResolvable;
   /**
   * desired_psc_auto_connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#desired_psc_auto_connections MemorystoreInstance#desired_psc_auto_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#desired_psc_auto_connections MemorystoreInstance#desired_psc_auto_connections}
   */
   readonly desiredPscAutoConnections?: MemorystoreInstanceDesiredPscAutoConnections[] | cdktn.IResolvable;
   /**
   * gcs_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#gcs_source MemorystoreInstance#gcs_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#gcs_source MemorystoreInstance#gcs_source}
   */
   readonly gcsSource?: MemorystoreInstanceGcsSource;
   /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#maintenance_policy MemorystoreInstance#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#maintenance_policy MemorystoreInstance#maintenance_policy}
   */
   readonly maintenancePolicy?: MemorystoreInstanceMaintenancePolicy;
   /**
   * managed_backup_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#managed_backup_source MemorystoreInstance#managed_backup_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#managed_backup_source MemorystoreInstance#managed_backup_source}
   */
   readonly managedBackupSource?: MemorystoreInstanceManagedBackupSource;
   /**
   * persistence_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#persistence_config MemorystoreInstance#persistence_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#persistence_config MemorystoreInstance#persistence_config}
   */
   readonly persistenceConfig?: MemorystoreInstancePersistenceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#timeouts MemorystoreInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#timeouts MemorystoreInstance#timeouts}
   */
   readonly timeouts?: MemorystoreInstanceTimeouts;
   /**
   * zone_distribution_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#zone_distribution_config MemorystoreInstance#zone_distribution_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#zone_distribution_config MemorystoreInstance#zone_distribution_config}
   */
   readonly zoneDistributionConfig?: MemorystoreInstanceZoneDistributionConfig;
 }
@@ -233,7 +233,7 @@ export interface MemorystoreInstanceDiscoveryEndpoints {
 export function memorystoreInstanceDiscoveryEndpointsToTerraform(struct?: MemorystoreInstanceDiscoveryEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -243,7 +243,7 @@ export function memorystoreInstanceDiscoveryEndpointsToTerraform(struct?: Memory
 export function memorystoreInstanceDiscoveryEndpointsToHclTerraform(struct?: MemorystoreInstanceDiscoveryEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -318,7 +318,7 @@ export interface MemorystoreInstanceEndpointsConnectionsPscAutoConnection {
 export function memorystoreInstanceEndpointsConnectionsPscAutoConnectionToTerraform(struct?: MemorystoreInstanceEndpointsConnectionsPscAutoConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -328,7 +328,7 @@ export function memorystoreInstanceEndpointsConnectionsPscAutoConnectionToTerraf
 export function memorystoreInstanceEndpointsConnectionsPscAutoConnectionToHclTerraform(struct?: MemorystoreInstanceEndpointsConnectionsPscAutoConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -428,7 +428,7 @@ export interface MemorystoreInstanceEndpointsConnections {
 export function memorystoreInstanceEndpointsConnectionsToTerraform(struct?: MemorystoreInstanceEndpointsConnections): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -438,7 +438,7 @@ export function memorystoreInstanceEndpointsConnectionsToTerraform(struct?: Memo
 export function memorystoreInstanceEndpointsConnectionsToHclTerraform(struct?: MemorystoreInstanceEndpointsConnections): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -504,7 +504,7 @@ export interface MemorystoreInstanceEndpoints {
 export function memorystoreInstanceEndpointsToTerraform(struct?: MemorystoreInstanceEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -514,7 +514,7 @@ export function memorystoreInstanceEndpointsToTerraform(struct?: MemorystoreInst
 export function memorystoreInstanceEndpointsToHclTerraform(struct?: MemorystoreInstanceEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -580,7 +580,7 @@ export interface MemorystoreInstanceMaintenanceSchedule {
 export function memorystoreInstanceMaintenanceScheduleToTerraform(struct?: MemorystoreInstanceMaintenanceSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -590,7 +590,7 @@ export function memorystoreInstanceMaintenanceScheduleToTerraform(struct?: Memor
 export function memorystoreInstanceMaintenanceScheduleToHclTerraform(struct?: MemorystoreInstanceMaintenanceSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -665,7 +665,7 @@ export interface MemorystoreInstanceManagedServerCaCaCerts {
 export function memorystoreInstanceManagedServerCaCaCertsToTerraform(struct?: MemorystoreInstanceManagedServerCaCaCerts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -675,7 +675,7 @@ export function memorystoreInstanceManagedServerCaCaCertsToTerraform(struct?: Me
 export function memorystoreInstanceManagedServerCaCaCertsToHclTerraform(struct?: MemorystoreInstanceManagedServerCaCaCerts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -740,7 +740,7 @@ export interface MemorystoreInstanceManagedServerCa {
 export function memorystoreInstanceManagedServerCaToTerraform(struct?: MemorystoreInstanceManagedServerCa): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -750,7 +750,7 @@ export function memorystoreInstanceManagedServerCaToTerraform(struct?: Memorysto
 export function memorystoreInstanceManagedServerCaToHclTerraform(struct?: MemorystoreInstanceManagedServerCa): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -816,7 +816,7 @@ export interface MemorystoreInstanceNodeConfig {
 export function memorystoreInstanceNodeConfigToTerraform(struct?: MemorystoreInstanceNodeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -826,7 +826,7 @@ export function memorystoreInstanceNodeConfigToTerraform(struct?: MemorystoreIns
 export function memorystoreInstanceNodeConfigToHclTerraform(struct?: MemorystoreInstanceNodeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -891,7 +891,7 @@ export interface MemorystoreInstancePscAttachmentDetails {
 export function memorystoreInstancePscAttachmentDetailsToTerraform(struct?: MemorystoreInstancePscAttachmentDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -901,7 +901,7 @@ export function memorystoreInstancePscAttachmentDetailsToTerraform(struct?: Memo
 export function memorystoreInstancePscAttachmentDetailsToHclTerraform(struct?: MemorystoreInstancePscAttachmentDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -971,7 +971,7 @@ export interface MemorystoreInstancePscAutoConnections {
 export function memorystoreInstancePscAutoConnectionsToTerraform(struct?: MemorystoreInstancePscAutoConnections): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -981,7 +981,7 @@ export function memorystoreInstancePscAutoConnectionsToTerraform(struct?: Memory
 export function memorystoreInstancePscAutoConnectionsToHclTerraform(struct?: MemorystoreInstancePscAutoConnections): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1086,7 +1086,7 @@ export interface MemorystoreInstanceStateInfoUpdateInfo {
 export function memorystoreInstanceStateInfoUpdateInfoToTerraform(struct?: MemorystoreInstanceStateInfoUpdateInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1096,7 +1096,7 @@ export function memorystoreInstanceStateInfoUpdateInfoToTerraform(struct?: Memor
 export function memorystoreInstanceStateInfoUpdateInfoToHclTerraform(struct?: MemorystoreInstanceStateInfoUpdateInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1176,7 +1176,7 @@ export interface MemorystoreInstanceStateInfo {
 export function memorystoreInstanceStateInfoToTerraform(struct?: MemorystoreInstanceStateInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1186,7 +1186,7 @@ export function memorystoreInstanceStateInfoToTerraform(struct?: MemorystoreInst
 export function memorystoreInstanceStateInfoToHclTerraform(struct?: MemorystoreInstanceStateInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1251,7 +1251,7 @@ export interface MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleS
   * Hours of a day in 24 hour format. Must be greater than or equal to 0 and typically must be less than or equal to 23.
   * An API may choose to allow the value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#hours MemorystoreInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#hours MemorystoreInstance#hours}
   */
   readonly hours: number;
 }
@@ -1259,7 +1259,7 @@ export interface MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleS
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeToTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hours: cdktn.numberToTerraform(struct!.hours),
@@ -1270,7 +1270,7 @@ export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleSt
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeToHclTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hours: {
@@ -1334,7 +1334,7 @@ export interface MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule 
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#start_time MemorystoreInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#start_time MemorystoreInstance#start_time}
   */
   readonly startTime: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime;
 }
@@ -1342,7 +1342,7 @@ export interface MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule 
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleToTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     start_time: memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeToTerraform(struct!.startTime),
@@ -1353,7 +1353,7 @@ export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleTo
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleToHclTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     start_time: {
@@ -1419,13 +1419,13 @@ export interface MemorystoreInstanceAutomatedBackupConfig {
   * The value should be between 1 day and 365 days. If not specified, the default value is 35 days.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s". The default_value is "3024000s"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#retention MemorystoreInstance#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#retention MemorystoreInstance#retention}
   */
   readonly retention: string;
   /**
   * fixed_frequency_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#fixed_frequency_schedule MemorystoreInstance#fixed_frequency_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#fixed_frequency_schedule MemorystoreInstance#fixed_frequency_schedule}
   */
   readonly fixedFrequencySchedule: MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule;
 }
@@ -1433,7 +1433,7 @@ export interface MemorystoreInstanceAutomatedBackupConfig {
 export function memorystoreInstanceAutomatedBackupConfigToTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigOutputReference | MemorystoreInstanceAutomatedBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     retention: cdktn.stringToTerraform(struct!.retention),
@@ -1445,7 +1445,7 @@ export function memorystoreInstanceAutomatedBackupConfigToTerraform(struct?: Mem
 export function memorystoreInstanceAutomatedBackupConfigToHclTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigOutputReference | MemorystoreInstanceAutomatedBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     retention: {
@@ -1536,7 +1536,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrim
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1546,7 +1546,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipPrima
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1616,7 +1616,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigMembershipSeco
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1626,7 +1626,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipSecon
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1696,7 +1696,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigMembership {
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembership): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1706,7 +1706,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipToTer
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembership): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1776,7 +1776,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanc
   /**
   * The full resource path of the primary instance in the format: projects/{project}/locations/{region}/instances/{instance-id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#instance MemorystoreInstance#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#instance MemorystoreInstance#instance}
   */
   readonly instance?: string;
 }
@@ -1784,7 +1784,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanc
 export function memorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference | MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance: cdktn.stringToTerraform(struct!.instance),
@@ -1795,7 +1795,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance
 export function memorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference | MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance: {
@@ -1867,7 +1867,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInsta
   /**
   * The full resource path of the Nth instance in the format: projects/{project}/locations/{region}/instance/{instance-id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#instance MemorystoreInstance#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#instance MemorystoreInstance#instance}
   */
   readonly instance?: string;
 }
@@ -1875,7 +1875,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInsta
 export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance: cdktn.stringToTerraform(struct!.instance),
@@ -1886,7 +1886,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstan
 export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance: {
@@ -1994,19 +1994,19 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfig {
   * 3. 'PRIMARY': This instance serves as the replication source for secondary instance that are replicating from it. Any data written to it is automatically replicated to its secondary clusters. It allows both reads and writes.
   * 4. 'SECONDARY': This instance replicates data from the primary instance. It allows only reads. Possible values: ["INSTANCE_ROLE_UNSPECIFIED", "NONE", "PRIMARY", "SECONDARY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#instance_role MemorystoreInstance#instance_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#instance_role MemorystoreInstance#instance_role}
   */
   readonly instanceRole?: string;
   /**
   * primary_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#primary_instance MemorystoreInstance#primary_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#primary_instance MemorystoreInstance#primary_instance}
   */
   readonly primaryInstance?: MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance;
   /**
   * secondary_instances block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#secondary_instances MemorystoreInstance#secondary_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#secondary_instances MemorystoreInstance#secondary_instances}
   */
   readonly secondaryInstances?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktn.IResolvable;
 }
@@ -2014,7 +2014,7 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfig {
 export function memorystoreInstanceCrossInstanceReplicationConfigToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigOutputReference | MemorystoreInstanceCrossInstanceReplicationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance_role: cdktn.stringToTerraform(struct!.instanceRole),
@@ -2027,7 +2027,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigToTerraform(str
 export function memorystoreInstanceCrossInstanceReplicationConfigToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigOutputReference | MemorystoreInstanceCrossInstanceReplicationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance_role: {
@@ -2162,13 +2162,13 @@ export interface MemorystoreInstanceDesiredAutoCreatedEndpoints {
   * Required. The consumer network where the IP address resides, in the form of
   * projects/{project_id}/global/networks/{network_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#network MemorystoreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#network MemorystoreInstance#network}
   */
   readonly network: string;
   /**
   * Required. The consumer project_id where the forwarding rule is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#project_id MemorystoreInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#project_id MemorystoreInstance#project_id}
   */
   readonly projectId: string;
 }
@@ -2176,7 +2176,7 @@ export interface MemorystoreInstanceDesiredAutoCreatedEndpoints {
 export function memorystoreInstanceDesiredAutoCreatedEndpointsToTerraform(struct?: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     network: cdktn.stringToTerraform(struct!.network),
@@ -2188,7 +2188,7 @@ export function memorystoreInstanceDesiredAutoCreatedEndpointsToTerraform(struct
 export function memorystoreInstanceDesiredAutoCreatedEndpointsToHclTerraform(struct?: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     network: {
@@ -2310,13 +2310,13 @@ export interface MemorystoreInstanceDesiredPscAutoConnections {
   * Required. The consumer network where the IP address resides, in the form of
   * projects/{project_id}/global/networks/{network_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#network MemorystoreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#network MemorystoreInstance#network}
   */
   readonly network: string;
   /**
   * Required. The consumer project_id where the forwarding rule is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#project_id MemorystoreInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#project_id MemorystoreInstance#project_id}
   */
   readonly projectId: string;
 }
@@ -2324,7 +2324,7 @@ export interface MemorystoreInstanceDesiredPscAutoConnections {
 export function memorystoreInstanceDesiredPscAutoConnectionsToTerraform(struct?: MemorystoreInstanceDesiredPscAutoConnections | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     network: cdktn.stringToTerraform(struct!.network),
@@ -2336,7 +2336,7 @@ export function memorystoreInstanceDesiredPscAutoConnectionsToTerraform(struct?:
 export function memorystoreInstanceDesiredPscAutoConnectionsToHclTerraform(struct?: MemorystoreInstanceDesiredPscAutoConnections | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     network: {
@@ -2458,7 +2458,7 @@ export interface MemorystoreInstanceGcsSource {
   * URIs of the GCS objects to import.
   * Example: gs://bucket1/object1, gs://bucket2/folder2/object2
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#uris MemorystoreInstance#uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#uris MemorystoreInstance#uris}
   */
   readonly uris: string[];
 }
@@ -2466,7 +2466,7 @@ export interface MemorystoreInstanceGcsSource {
 export function memorystoreInstanceGcsSourceToTerraform(struct?: MemorystoreInstanceGcsSourceOutputReference | MemorystoreInstanceGcsSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.uris),
@@ -2477,7 +2477,7 @@ export function memorystoreInstanceGcsSourceToTerraform(struct?: MemorystoreInst
 export function memorystoreInstanceGcsSourceToHclTerraform(struct?: MemorystoreInstanceGcsSourceOutputReference | MemorystoreInstanceGcsSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     uris: {
@@ -2542,26 +2542,26 @@ export interface MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStar
   * Hours of day in 24 hour format. Should be from 0 to 23.
   * An API may choose to allow the value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#hours MemorystoreInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#hours MemorystoreInstance#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Must be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#minutes MemorystoreInstance#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#minutes MemorystoreInstance#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#nanos MemorystoreInstance#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#nanos MemorystoreInstance#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59.
   * An API may allow the value 60 if it allows leap-seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#seconds MemorystoreInstance#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#seconds MemorystoreInstance#seconds}
   */
   readonly seconds?: number;
 }
@@ -2569,7 +2569,7 @@ export interface MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStar
 export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeToTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference | MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hours: cdktn.numberToTerraform(struct!.hours),
@@ -2583,7 +2583,7 @@ export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStart
 export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeToHclTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference | MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hours: {
@@ -2743,13 +2743,13 @@ export interface MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow {
   * - SATURDAY: Saturday
   * - SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#day MemorystoreInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#day MemorystoreInstance#day}
   */
   readonly day: string;
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#start_time MemorystoreInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#start_time MemorystoreInstance#start_time}
   */
   readonly startTime: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime;
 }
@@ -2757,7 +2757,7 @@ export interface MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow {
 export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     day: cdktn.stringToTerraform(struct!.day),
@@ -2769,7 +2769,7 @@ export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToTer
 export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     day: {
@@ -2895,7 +2895,7 @@ export interface MemorystoreInstanceMaintenancePolicy {
   /**
   * weekly_maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#weekly_maintenance_window MemorystoreInstance#weekly_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#weekly_maintenance_window MemorystoreInstance#weekly_maintenance_window}
   */
   readonly weeklyMaintenanceWindow?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktn.IResolvable;
 }
@@ -2903,7 +2903,7 @@ export interface MemorystoreInstanceMaintenancePolicy {
 export function memorystoreInstanceMaintenancePolicyToTerraform(struct?: MemorystoreInstanceMaintenancePolicyOutputReference | MemorystoreInstanceMaintenancePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     weekly_maintenance_window: cdktn.listMapper(memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform, true)(struct!.weeklyMaintenanceWindow),
@@ -2914,7 +2914,7 @@ export function memorystoreInstanceMaintenancePolicyToTerraform(struct?: Memorys
 export function memorystoreInstanceMaintenancePolicyToHclTerraform(struct?: MemorystoreInstanceMaintenancePolicyOutputReference | MemorystoreInstanceMaintenancePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     weekly_maintenance_window: {
@@ -2991,7 +2991,7 @@ export interface MemorystoreInstanceManagedBackupSource {
   /**
   * Example: 'projects/{project}/locations/{location}/backupCollections/{collection}/backups/{backup}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#backup MemorystoreInstance#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#backup MemorystoreInstance#backup}
   */
   readonly backup: string;
 }
@@ -2999,7 +2999,7 @@ export interface MemorystoreInstanceManagedBackupSource {
 export function memorystoreInstanceManagedBackupSourceToTerraform(struct?: MemorystoreInstanceManagedBackupSourceOutputReference | MemorystoreInstanceManagedBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backup: cdktn.stringToTerraform(struct!.backup),
@@ -3010,7 +3010,7 @@ export function memorystoreInstanceManagedBackupSourceToTerraform(struct?: Memor
 export function memorystoreInstanceManagedBackupSourceToHclTerraform(struct?: MemorystoreInstanceManagedBackupSourceOutputReference | MemorystoreInstanceManagedBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backup: {
@@ -3078,7 +3078,7 @@ export interface MemorystoreInstancePersistenceConfigAofConfig {
   * EVERY_SEC
   * ALWAYS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#append_fsync MemorystoreInstance#append_fsync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#append_fsync MemorystoreInstance#append_fsync}
   */
   readonly appendFsync?: string;
 }
@@ -3086,7 +3086,7 @@ export interface MemorystoreInstancePersistenceConfigAofConfig {
 export function memorystoreInstancePersistenceConfigAofConfigToTerraform(struct?: MemorystoreInstancePersistenceConfigAofConfigOutputReference | MemorystoreInstancePersistenceConfigAofConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     append_fsync: cdktn.stringToTerraform(struct!.appendFsync),
@@ -3097,7 +3097,7 @@ export function memorystoreInstancePersistenceConfigAofConfigToTerraform(struct?
 export function memorystoreInstancePersistenceConfigAofConfigToHclTerraform(struct?: MemorystoreInstancePersistenceConfigAofConfigOutputReference | MemorystoreInstancePersistenceConfigAofConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     append_fsync: {
@@ -3169,7 +3169,7 @@ export interface MemorystoreInstancePersistenceConfigRdbConfig {
   * TWELVE_HOURS
   * TWENTY_FOUR_HOURS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#rdb_snapshot_period MemorystoreInstance#rdb_snapshot_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#rdb_snapshot_period MemorystoreInstance#rdb_snapshot_period}
   */
   readonly rdbSnapshotPeriod?: string;
   /**
@@ -3177,7 +3177,7 @@ export interface MemorystoreInstancePersistenceConfigRdbConfig {
   * snapshots will be aligned. If not provided, the current time will be
   * used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#rdb_snapshot_start_time MemorystoreInstance#rdb_snapshot_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#rdb_snapshot_start_time MemorystoreInstance#rdb_snapshot_start_time}
   */
   readonly rdbSnapshotStartTime?: string;
 }
@@ -3185,7 +3185,7 @@ export interface MemorystoreInstancePersistenceConfigRdbConfig {
 export function memorystoreInstancePersistenceConfigRdbConfigToTerraform(struct?: MemorystoreInstancePersistenceConfigRdbConfigOutputReference | MemorystoreInstancePersistenceConfigRdbConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rdb_snapshot_period: cdktn.stringToTerraform(struct!.rdbSnapshotPeriod),
@@ -3197,7 +3197,7 @@ export function memorystoreInstancePersistenceConfigRdbConfigToTerraform(struct?
 export function memorystoreInstancePersistenceConfigRdbConfigToHclTerraform(struct?: MemorystoreInstancePersistenceConfigRdbConfigOutputReference | MemorystoreInstancePersistenceConfigRdbConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rdb_snapshot_period: {
@@ -3296,19 +3296,19 @@ export interface MemorystoreInstancePersistenceConfig {
   * RDB
   * AOF Possible values: ["DISABLED", "RDB", "AOF"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#mode MemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#mode MemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
   * aof_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#aof_config MemorystoreInstance#aof_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#aof_config MemorystoreInstance#aof_config}
   */
   readonly aofConfig?: MemorystoreInstancePersistenceConfigAofConfig;
   /**
   * rdb_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#rdb_config MemorystoreInstance#rdb_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#rdb_config MemorystoreInstance#rdb_config}
   */
   readonly rdbConfig?: MemorystoreInstancePersistenceConfigRdbConfig;
 }
@@ -3316,7 +3316,7 @@ export interface MemorystoreInstancePersistenceConfig {
 export function memorystoreInstancePersistenceConfigToTerraform(struct?: MemorystoreInstancePersistenceConfigOutputReference | MemorystoreInstancePersistenceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -3329,7 +3329,7 @@ export function memorystoreInstancePersistenceConfigToTerraform(struct?: Memorys
 export function memorystoreInstancePersistenceConfigToHclTerraform(struct?: MemorystoreInstancePersistenceConfigOutputReference | MemorystoreInstancePersistenceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -3450,15 +3450,15 @@ export class MemorystoreInstancePersistenceConfigOutputReference extends cdktn.C
 }
 export interface MemorystoreInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#create MemorystoreInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#create MemorystoreInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#delete MemorystoreInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#delete MemorystoreInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#update MemorystoreInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#update MemorystoreInstance#update}
   */
   readonly update?: string;
 }
@@ -3466,7 +3466,7 @@ export interface MemorystoreInstanceTimeouts {
 export function memorystoreInstanceTimeoutsToTerraform(struct?: MemorystoreInstanceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -3479,7 +3479,7 @@ export function memorystoreInstanceTimeoutsToTerraform(struct?: MemorystoreInsta
 export function memorystoreInstanceTimeoutsToHclTerraform(struct?: MemorystoreInstanceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -3615,14 +3615,14 @@ export interface MemorystoreInstanceZoneDistributionConfig {
   *  MULTI_ZONE
   * SINGLE_ZONE Possible values: ["MULTI_ZONE", "SINGLE_ZONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#mode MemorystoreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#mode MemorystoreInstance#mode}
   */
   readonly mode?: string;
   /**
   * Optional. Defines zone where all resources will be allocated with SINGLE_ZONE mode.
   * Ignored for MULTI_ZONE mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#zone MemorystoreInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#zone MemorystoreInstance#zone}
   */
   readonly zone?: string;
 }
@@ -3630,7 +3630,7 @@ export interface MemorystoreInstanceZoneDistributionConfig {
 export function memorystoreInstanceZoneDistributionConfigToTerraform(struct?: MemorystoreInstanceZoneDistributionConfigOutputReference | MemorystoreInstanceZoneDistributionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -3642,7 +3642,7 @@ export function memorystoreInstanceZoneDistributionConfigToTerraform(struct?: Me
 export function memorystoreInstanceZoneDistributionConfigToHclTerraform(struct?: MemorystoreInstanceZoneDistributionConfigOutputReference | MemorystoreInstanceZoneDistributionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -3735,7 +3735,7 @@ export class MemorystoreInstanceZoneDistributionConfigOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance google_memorystore_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance google_memorystore_instance}
 */
 export class MemorystoreInstance extends cdktn.TerraformResource {
 
@@ -3751,7 +3751,7 @@ export class MemorystoreInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MemorystoreInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MemorystoreInstance to import
-  * @param importFromId The id of the existing MemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MemorystoreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3763,7 +3763,7 @@ export class MemorystoreInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/memorystore_instance google_memorystore_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/memorystore_instance google_memorystore_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3774,7 +3774,7 @@ export class MemorystoreInstance extends cdktn.TerraformResource {
       terraformResourceType: 'google_memorystore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

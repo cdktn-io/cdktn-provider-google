@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface StorageBatchOperationsJobConfig extends cdktn.TerraformMetaArgu
   /**
   * If set to 'true', the storage batch operation job will not be deleted and new job will be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
   */
   readonly deleteProtection?: boolean | cdktn.IResolvable;
   /**
@@ -27,17 +27,17 @@ export interface StorageBatchOperationsJobConfig extends cdktn.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,47 +46,47 @@ export interface StorageBatchOperationsJobConfig extends cdktn.TerraformMetaArgu
   /**
   * The ID of the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
   */
   readonly jobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}
   */
   readonly project?: string;
   /**
   * bucket_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
   */
   readonly bucketList?: StorageBatchOperationsJobBucketListStruct;
   /**
   * delete_object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
   */
   readonly deleteObject?: StorageBatchOperationsJobDeleteObject;
   /**
   * put_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
   */
   readonly putMetadata?: StorageBatchOperationsJobPutMetadata;
   /**
   * put_object_hold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
   */
   readonly putObjectHold?: StorageBatchOperationsJobPutObjectHold;
   /**
   * rewrite_object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
   */
   readonly rewriteObject?: StorageBatchOperationsJobRewriteObject;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
   */
   readonly timeouts?: StorageBatchOperationsJobTimeouts;
 }
@@ -94,7 +94,7 @@ export interface StorageBatchOperationsJobBucketListBucketsManifest {
   /**
   * Specifies objects in a manifest file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#manifest_location StorageBatchOperationsJob#manifest_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#manifest_location StorageBatchOperationsJob#manifest_location}
   */
   readonly manifestLocation?: string;
 }
@@ -102,7 +102,7 @@ export interface StorageBatchOperationsJobBucketListBucketsManifest {
 export function storageBatchOperationsJobBucketListBucketsManifestToTerraform(struct?: StorageBatchOperationsJobBucketListBucketsManifestOutputReference | StorageBatchOperationsJobBucketListBucketsManifest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     manifest_location: cdktn.stringToTerraform(struct!.manifestLocation),
@@ -113,7 +113,7 @@ export function storageBatchOperationsJobBucketListBucketsManifestToTerraform(st
 export function storageBatchOperationsJobBucketListBucketsManifestToHclTerraform(struct?: StorageBatchOperationsJobBucketListBucketsManifestOutputReference | StorageBatchOperationsJobBucketListBucketsManifest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     manifest_location: {
@@ -178,7 +178,7 @@ export class StorageBatchOperationsJobBucketListBucketsManifestOutputReference e
 }
 export interface StorageBatchOperationsJobBucketListBucketsPrefixListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}
   */
   readonly includedObjectPrefixes?: string[];
 }
@@ -186,7 +186,7 @@ export interface StorageBatchOperationsJobBucketListBucketsPrefixListStruct {
 export function storageBatchOperationsJobBucketListBucketsPrefixListStructToTerraform(struct?: StorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference | StorageBatchOperationsJobBucketListBucketsPrefixListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     included_object_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedObjectPrefixes),
@@ -197,7 +197,7 @@ export function storageBatchOperationsJobBucketListBucketsPrefixListStructToTerr
 export function storageBatchOperationsJobBucketListBucketsPrefixListStructToHclTerraform(struct?: StorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference | StorageBatchOperationsJobBucketListBucketsPrefixListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     included_object_prefixes: {
@@ -264,19 +264,19 @@ export interface StorageBatchOperationsJobBucketListBuckets {
   /**
   * Bucket name for the objects to be transformed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#bucket StorageBatchOperationsJob#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#bucket StorageBatchOperationsJob#bucket}
   */
   readonly bucket: string;
   /**
   * manifest block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#manifest StorageBatchOperationsJob#manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#manifest StorageBatchOperationsJob#manifest}
   */
   readonly manifest?: StorageBatchOperationsJobBucketListBucketsManifest;
   /**
   * prefix_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#prefix_list StorageBatchOperationsJob#prefix_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#prefix_list StorageBatchOperationsJob#prefix_list}
   */
   readonly prefixList?: StorageBatchOperationsJobBucketListBucketsPrefixListStruct;
 }
@@ -284,7 +284,7 @@ export interface StorageBatchOperationsJobBucketListBuckets {
 export function storageBatchOperationsJobBucketListBucketsToTerraform(struct?: StorageBatchOperationsJobBucketListBucketsOutputReference | StorageBatchOperationsJobBucketListBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket: cdktn.stringToTerraform(struct!.bucket),
@@ -297,7 +297,7 @@ export function storageBatchOperationsJobBucketListBucketsToTerraform(struct?: S
 export function storageBatchOperationsJobBucketListBucketsToHclTerraform(struct?: StorageBatchOperationsJobBucketListBucketsOutputReference | StorageBatchOperationsJobBucketListBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket: {
@@ -417,7 +417,7 @@ export interface StorageBatchOperationsJobBucketListStruct {
   /**
   * buckets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#buckets StorageBatchOperationsJob#buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#buckets StorageBatchOperationsJob#buckets}
   */
   readonly buckets: StorageBatchOperationsJobBucketListBuckets;
 }
@@ -425,7 +425,7 @@ export interface StorageBatchOperationsJobBucketListStruct {
 export function storageBatchOperationsJobBucketListStructToTerraform(struct?: StorageBatchOperationsJobBucketListStructOutputReference | StorageBatchOperationsJobBucketListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     buckets: storageBatchOperationsJobBucketListBucketsToTerraform(struct!.buckets),
@@ -436,7 +436,7 @@ export function storageBatchOperationsJobBucketListStructToTerraform(struct?: St
 export function storageBatchOperationsJobBucketListStructToHclTerraform(struct?: StorageBatchOperationsJobBucketListStructOutputReference | StorageBatchOperationsJobBucketListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     buckets: {
@@ -500,7 +500,7 @@ export interface StorageBatchOperationsJobDeleteObject {
   /**
   * enable flag to permanently delete object and all object versions if versioning is enabled on bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#permanent_object_deletion_enabled StorageBatchOperationsJob#permanent_object_deletion_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#permanent_object_deletion_enabled StorageBatchOperationsJob#permanent_object_deletion_enabled}
   */
   readonly permanentObjectDeletionEnabled: boolean | cdktn.IResolvable;
 }
@@ -508,7 +508,7 @@ export interface StorageBatchOperationsJobDeleteObject {
 export function storageBatchOperationsJobDeleteObjectToTerraform(struct?: StorageBatchOperationsJobDeleteObjectOutputReference | StorageBatchOperationsJobDeleteObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     permanent_object_deletion_enabled: cdktn.booleanToTerraform(struct!.permanentObjectDeletionEnabled),
@@ -519,7 +519,7 @@ export function storageBatchOperationsJobDeleteObjectToTerraform(struct?: Storag
 export function storageBatchOperationsJobDeleteObjectToHclTerraform(struct?: StorageBatchOperationsJobDeleteObjectOutputReference | StorageBatchOperationsJobDeleteObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     permanent_object_deletion_enabled: {
@@ -583,43 +583,43 @@ export interface StorageBatchOperationsJobPutMetadata {
   /**
   * Cache-Control directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#cache_control StorageBatchOperationsJob#cache_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#cache_control StorageBatchOperationsJob#cache_control}
   */
   readonly cacheControl?: string;
   /**
   * Content-Disposition of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#content_disposition StorageBatchOperationsJob#content_disposition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#content_disposition StorageBatchOperationsJob#content_disposition}
   */
   readonly contentDisposition?: string;
   /**
   * Content Encoding of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#content_encoding StorageBatchOperationsJob#content_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#content_encoding StorageBatchOperationsJob#content_encoding}
   */
   readonly contentEncoding?: string;
   /**
   * Content-Language of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#content_language StorageBatchOperationsJob#content_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#content_language StorageBatchOperationsJob#content_language}
   */
   readonly contentLanguage?: string;
   /**
   * Content-Type of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#content_type StorageBatchOperationsJob#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#content_type StorageBatchOperationsJob#content_type}
   */
   readonly contentType?: string;
   /**
   * User-provided metadata, in key/value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#custom_metadata StorageBatchOperationsJob#custom_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#custom_metadata StorageBatchOperationsJob#custom_metadata}
   */
   readonly customMetadata?: { [key: string]: string };
   /**
   * Updates the objects fixed custom time metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#custom_time StorageBatchOperationsJob#custom_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#custom_time StorageBatchOperationsJob#custom_time}
   */
   readonly customTime?: string;
 }
@@ -627,7 +627,7 @@ export interface StorageBatchOperationsJobPutMetadata {
 export function storageBatchOperationsJobPutMetadataToTerraform(struct?: StorageBatchOperationsJobPutMetadataOutputReference | StorageBatchOperationsJobPutMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cache_control: cdktn.stringToTerraform(struct!.cacheControl),
@@ -644,7 +644,7 @@ export function storageBatchOperationsJobPutMetadataToTerraform(struct?: Storage
 export function storageBatchOperationsJobPutMetadataToHclTerraform(struct?: StorageBatchOperationsJobPutMetadataOutputReference | StorageBatchOperationsJobPutMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cache_control: {
@@ -879,13 +879,13 @@ export interface StorageBatchOperationsJobPutObjectHold {
   /**
   * set/unset to update event based hold for objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#event_based_hold StorageBatchOperationsJob#event_based_hold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#event_based_hold StorageBatchOperationsJob#event_based_hold}
   */
   readonly eventBasedHold?: string;
   /**
   * set/unset to update temporary based hold for objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#temporary_hold StorageBatchOperationsJob#temporary_hold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#temporary_hold StorageBatchOperationsJob#temporary_hold}
   */
   readonly temporaryHold?: string;
 }
@@ -893,7 +893,7 @@ export interface StorageBatchOperationsJobPutObjectHold {
 export function storageBatchOperationsJobPutObjectHoldToTerraform(struct?: StorageBatchOperationsJobPutObjectHoldOutputReference | StorageBatchOperationsJobPutObjectHold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event_based_hold: cdktn.stringToTerraform(struct!.eventBasedHold),
@@ -905,7 +905,7 @@ export function storageBatchOperationsJobPutObjectHoldToTerraform(struct?: Stora
 export function storageBatchOperationsJobPutObjectHoldToHclTerraform(struct?: StorageBatchOperationsJobPutObjectHoldOutputReference | StorageBatchOperationsJobPutObjectHold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event_based_hold: {
@@ -1000,7 +1000,7 @@ export interface StorageBatchOperationsJobRewriteObject {
   /**
   * valid kms key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#kms_key StorageBatchOperationsJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#kms_key StorageBatchOperationsJob#kms_key}
   */
   readonly kmsKey: string;
 }
@@ -1008,7 +1008,7 @@ export interface StorageBatchOperationsJobRewriteObject {
 export function storageBatchOperationsJobRewriteObjectToTerraform(struct?: StorageBatchOperationsJobRewriteObjectOutputReference | StorageBatchOperationsJobRewriteObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     kms_key: cdktn.stringToTerraform(struct!.kmsKey),
@@ -1019,7 +1019,7 @@ export function storageBatchOperationsJobRewriteObjectToTerraform(struct?: Stora
 export function storageBatchOperationsJobRewriteObjectToHclTerraform(struct?: StorageBatchOperationsJobRewriteObjectOutputReference | StorageBatchOperationsJobRewriteObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     kms_key: {
@@ -1081,15 +1081,15 @@ export class StorageBatchOperationsJobRewriteObjectOutputReference extends cdktn
 }
 export interface StorageBatchOperationsJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}
   */
   readonly update?: string;
 }
@@ -1097,7 +1097,7 @@ export interface StorageBatchOperationsJobTimeouts {
 export function storageBatchOperationsJobTimeoutsToTerraform(struct?: StorageBatchOperationsJobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1110,7 +1110,7 @@ export function storageBatchOperationsJobTimeoutsToTerraform(struct?: StorageBat
 export function storageBatchOperationsJobTimeoutsToHclTerraform(struct?: StorageBatchOperationsJobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1241,7 +1241,7 @@ export class StorageBatchOperationsJobTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job}
 */
 export class StorageBatchOperationsJob extends cdktn.TerraformResource {
 
@@ -1257,7 +1257,7 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageBatchOperationsJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageBatchOperationsJob to import
-  * @param importFromId The id of the existing StorageBatchOperationsJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageBatchOperationsJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageBatchOperationsJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1269,7 +1269,7 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1280,7 +1280,7 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_batch_operations_job',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

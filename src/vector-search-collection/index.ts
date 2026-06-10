@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,7 +19,7 @@ export interface VectorSearchCollectionConfig extends cdktn.TerraformMetaArgumen
   * Specifically, it must be 1-63 characters long and match the regular
   * expression '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#collection_id VectorSearchCollection#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#collection_id VectorSearchCollection#collection_id}
   */
   readonly collectionId: string;
   /**
@@ -27,7 +27,7 @@ export interface VectorSearchCollectionConfig extends cdktn.TerraformMetaArgumen
   * Field names must contain only alphanumeric characters,
   * underscores, and hyphens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#data_schema VectorSearchCollection#data_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#data_schema VectorSearchCollection#data_schema}
   */
   readonly dataSchema?: string;
   /**
@@ -39,23 +39,23 @@ export interface VectorSearchCollectionConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#deletion_policy VectorSearchCollection#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#deletion_policy VectorSearchCollection#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-specified description of the collection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#description VectorSearchCollection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#description VectorSearchCollection#description}
   */
   readonly description?: string;
   /**
   * User-specified display name of the collection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#display_name VectorSearchCollection#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#display_name VectorSearchCollection#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#id VectorSearchCollection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#id VectorSearchCollection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -67,35 +67,35 @@ export interface VectorSearchCollectionConfig extends cdktn.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#labels VectorSearchCollection#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#labels VectorSearchCollection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#location VectorSearchCollection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#location VectorSearchCollection#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#project VectorSearchCollection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#project VectorSearchCollection#project}
   */
   readonly project?: string;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#encryption_spec VectorSearchCollection#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#encryption_spec VectorSearchCollection#encryption_spec}
   */
   readonly encryptionSpec?: VectorSearchCollectionEncryptionSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#timeouts VectorSearchCollection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#timeouts VectorSearchCollection#timeouts}
   */
   readonly timeouts?: VectorSearchCollectionTimeouts;
   /**
   * vector_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#vector_schema VectorSearchCollection#vector_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#vector_schema VectorSearchCollection#vector_schema}
   */
   readonly vectorSchema?: VectorSearchCollectionVectorSchema[] | cdktn.IResolvable;
 }
@@ -107,7 +107,7 @@ export interface VectorSearchCollectionEncryptionSpec {
   * the format
   * 'projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#crypto_key_name VectorSearchCollection#crypto_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#crypto_key_name VectorSearchCollection#crypto_key_name}
   */
   readonly cryptoKeyName: string;
 }
@@ -115,7 +115,7 @@ export interface VectorSearchCollectionEncryptionSpec {
 export function vectorSearchCollectionEncryptionSpecToTerraform(struct?: VectorSearchCollectionEncryptionSpecOutputReference | VectorSearchCollectionEncryptionSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     crypto_key_name: cdktn.stringToTerraform(struct!.cryptoKeyName),
@@ -126,7 +126,7 @@ export function vectorSearchCollectionEncryptionSpecToTerraform(struct?: VectorS
 export function vectorSearchCollectionEncryptionSpecToHclTerraform(struct?: VectorSearchCollectionEncryptionSpecOutputReference | VectorSearchCollectionEncryptionSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     crypto_key_name: {
@@ -188,15 +188,15 @@ export class VectorSearchCollectionEncryptionSpecOutputReference extends cdktn.C
 }
 export interface VectorSearchCollectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#create VectorSearchCollection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#create VectorSearchCollection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#delete VectorSearchCollection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#delete VectorSearchCollection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#update VectorSearchCollection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#update VectorSearchCollection#update}
   */
   readonly update?: string;
 }
@@ -204,7 +204,7 @@ export interface VectorSearchCollectionTimeouts {
 export function vectorSearchCollectionTimeoutsToTerraform(struct?: VectorSearchCollectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -217,7 +217,7 @@ export function vectorSearchCollectionTimeoutsToTerraform(struct?: VectorSearchC
 export function vectorSearchCollectionTimeoutsToHclTerraform(struct?: VectorSearchCollectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -352,7 +352,7 @@ export interface VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingCon
   * https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#embeddings-models
   * for the list of supported models.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#model_id VectorSearchCollection#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#model_id VectorSearchCollection#model_id}
   */
   readonly modelId: string;
   /**
@@ -366,7 +366,7 @@ export interface VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingCon
   * FACT_VERIFICATION
   * CODE_RETRIEVAL_QUERY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#task_type VectorSearchCollection#task_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#task_type VectorSearchCollection#task_type}
   */
   readonly taskType: string;
   /**
@@ -374,7 +374,7 @@ export interface VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingCon
   * contain one or more references to fields in the DataObject, e.g.:
   * "Movie Title: {title} ---- Movie Plot: {plot}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#text_template VectorSearchCollection#text_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#text_template VectorSearchCollection#text_template}
   */
   readonly textTemplate: string;
 }
@@ -382,7 +382,7 @@ export interface VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingCon
 export function vectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigToTerraform(struct?: VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference | VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     model_id: cdktn.stringToTerraform(struct!.modelId),
@@ -395,7 +395,7 @@ export function vectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConf
 export function vectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigToHclTerraform(struct?: VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference | VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     model_id: {
@@ -509,13 +509,13 @@ export interface VectorSearchCollectionVectorSchemaDenseVector {
   /**
   * Dimensionality of the vector field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#dimensions VectorSearchCollection#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#dimensions VectorSearchCollection#dimensions}
   */
   readonly dimensions?: number;
   /**
   * vertex_embedding_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#vertex_embedding_config VectorSearchCollection#vertex_embedding_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#vertex_embedding_config VectorSearchCollection#vertex_embedding_config}
   */
   readonly vertexEmbeddingConfig?: VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig;
 }
@@ -523,7 +523,7 @@ export interface VectorSearchCollectionVectorSchemaDenseVector {
 export function vectorSearchCollectionVectorSchemaDenseVectorToTerraform(struct?: VectorSearchCollectionVectorSchemaDenseVectorOutputReference | VectorSearchCollectionVectorSchemaDenseVector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dimensions: cdktn.numberToTerraform(struct!.dimensions),
@@ -535,7 +535,7 @@ export function vectorSearchCollectionVectorSchemaDenseVectorToTerraform(struct?
 export function vectorSearchCollectionVectorSchemaDenseVectorToHclTerraform(struct?: VectorSearchCollectionVectorSchemaDenseVectorOutputReference | VectorSearchCollectionVectorSchemaDenseVector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dimensions: {
@@ -632,7 +632,7 @@ export interface VectorSearchCollectionVectorSchemaSparseVector {
 export function vectorSearchCollectionVectorSchemaSparseVectorToTerraform(struct?: VectorSearchCollectionVectorSchemaSparseVectorOutputReference | VectorSearchCollectionVectorSchemaSparseVector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -642,7 +642,7 @@ export function vectorSearchCollectionVectorSchemaSparseVectorToTerraform(struct
 export function vectorSearchCollectionVectorSchemaSparseVectorToHclTerraform(struct?: VectorSearchCollectionVectorSchemaSparseVectorOutputReference | VectorSearchCollectionVectorSchemaSparseVector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -677,19 +677,19 @@ export class VectorSearchCollectionVectorSchemaSparseVectorOutputReference exten
 }
 export interface VectorSearchCollectionVectorSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#field_name VectorSearchCollection#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#field_name VectorSearchCollection#field_name}
   */
   readonly fieldName: string;
   /**
   * dense_vector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#dense_vector VectorSearchCollection#dense_vector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#dense_vector VectorSearchCollection#dense_vector}
   */
   readonly denseVector?: VectorSearchCollectionVectorSchemaDenseVector;
   /**
   * sparse_vector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#sparse_vector VectorSearchCollection#sparse_vector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#sparse_vector VectorSearchCollection#sparse_vector}
   */
   readonly sparseVector?: VectorSearchCollectionVectorSchemaSparseVector;
 }
@@ -697,7 +697,7 @@ export interface VectorSearchCollectionVectorSchema {
 export function vectorSearchCollectionVectorSchemaToTerraform(struct?: VectorSearchCollectionVectorSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field_name: cdktn.stringToTerraform(struct!.fieldName),
@@ -710,7 +710,7 @@ export function vectorSearchCollectionVectorSchemaToTerraform(struct?: VectorSea
 export function vectorSearchCollectionVectorSchemaToHclTerraform(struct?: VectorSearchCollectionVectorSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field_name: {
@@ -860,7 +860,7 @@ export class VectorSearchCollectionVectorSchemaList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection google_vector_search_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection google_vector_search_collection}
 */
 export class VectorSearchCollection extends cdktn.TerraformResource {
 
@@ -876,7 +876,7 @@ export class VectorSearchCollection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VectorSearchCollection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchCollection to import
-  * @param importFromId The id of the existing VectorSearchCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -888,7 +888,7 @@ export class VectorSearchCollection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vector_search_collection google_vector_search_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vector_search_collection google_vector_search_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -899,7 +899,7 @@ export class VectorSearchCollection extends cdktn.TerraformResource {
       terraformResourceType: 'google_vector_search_collection',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

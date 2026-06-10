@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface BigtableTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Duration to retain change stream data for the table. Set to 0 to disable. Must be between 1 and 7 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#change_stream_retention BigtableTable#change_stream_retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#change_stream_retention BigtableTable#change_stream_retention}
   */
   readonly changeStreamRetention?: string;
   /**
@@ -27,17 +27,17 @@ export interface BigtableTableConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#deletion_policy BigtableTable#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#deletion_policy BigtableTable#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#deletion_protection BigtableTable#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#deletion_protection BigtableTable#deletion_protection}
   */
   readonly deletionProtection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#id BigtableTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#id BigtableTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,19 +46,19 @@ export interface BigtableTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the Bigtable instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#instance_name BigtableTable#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#instance_name BigtableTable#instance_name}
   */
   readonly instanceName: string;
   /**
   * The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#name BigtableTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#name BigtableTable#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#project BigtableTable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#project BigtableTable#project}
   */
   readonly project?: string;
   /**
@@ -69,31 +69,31 @@ export interface BigtableTableConfig extends cdktn.TerraformMetaArguments {
   * 					The schema must be a valid JSON encoded string representing a Type's struct protobuf message. Note that for bytes sequence (like delimited_bytes.delimiter)
   * 					the delimiter must be base64 encoded. For example, if you want to set a delimiter to a single byte character "#", it should be set to "Iw==", which is the base64 encoding of the byte sequence "#".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#row_key_schema BigtableTable#row_key_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#row_key_schema BigtableTable#row_key_schema}
   */
   readonly rowKeySchema?: string;
   /**
   * A list of predefined keys to split the table on. !> Warning: Modifying the split_keys of an existing table will cause Terraform to delete/recreate the entire google_bigtable_table resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#split_keys BigtableTable#split_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#split_keys BigtableTable#split_keys}
   */
   readonly splitKeys?: string[];
   /**
   * automated_backup_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#automated_backup_policy BigtableTable#automated_backup_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#automated_backup_policy BigtableTable#automated_backup_policy}
   */
   readonly automatedBackupPolicy?: BigtableTableAutomatedBackupPolicy;
   /**
   * column_family block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#column_family BigtableTable#column_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#column_family BigtableTable#column_family}
   */
   readonly columnFamily?: BigtableTableColumnFamily[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#timeouts BigtableTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#timeouts BigtableTable#timeouts}
   */
   readonly timeouts?: BigtableTableTimeouts;
 }
@@ -101,13 +101,19 @@ export interface BigtableTableAutomatedBackupPolicy {
   /**
   * How frequently automated backups should occur.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#frequency BigtableTable#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#frequency BigtableTable#frequency}
   */
   readonly frequency?: string;
   /**
+  * A list of Cloud Bigtable zones where automated backups are allowed to be created. If empty, automated backups will be created in all zones of the instance. Locations are in the format projects/{project}/locations/{zone}. This field can only be set for tables in Enterprise Plus instances.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#locations BigtableTable#locations}
+  */
+  readonly locations?: string[];
+  /**
   * How long the automated backups should be retained.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#retention_period BigtableTable#retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#retention_period BigtableTable#retention_period}
   */
   readonly retentionPeriod?: string;
 }
@@ -115,10 +121,11 @@ export interface BigtableTableAutomatedBackupPolicy {
 export function bigtableTableAutomatedBackupPolicyToTerraform(struct?: BigtableTableAutomatedBackupPolicyOutputReference | BigtableTableAutomatedBackupPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     frequency: cdktn.stringToTerraform(struct!.frequency),
+    locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.locations),
     retention_period: cdktn.stringToTerraform(struct!.retentionPeriod),
   }
 }
@@ -127,7 +134,7 @@ export function bigtableTableAutomatedBackupPolicyToTerraform(struct?: BigtableT
 export function bigtableTableAutomatedBackupPolicyToHclTerraform(struct?: BigtableTableAutomatedBackupPolicyOutputReference | BigtableTableAutomatedBackupPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     frequency: {
@@ -135,6 +142,12 @@ export function bigtableTableAutomatedBackupPolicyToHclTerraform(struct?: Bigtab
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    locations: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.locations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
     retention_period: {
       value: cdktn.stringToHclTerraform(struct!.retentionPeriod),
@@ -166,6 +179,10 @@ export class BigtableTableAutomatedBackupPolicyOutputReference extends cdktn.Com
       hasAnyValues = true;
       internalValueResult.frequency = this._frequency;
     }
+    if (this._locations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.locations = this._locations;
+    }
     if (this._retentionPeriod !== undefined) {
       hasAnyValues = true;
       internalValueResult.retentionPeriod = this._retentionPeriod;
@@ -177,11 +194,13 @@ export class BigtableTableAutomatedBackupPolicyOutputReference extends cdktn.Com
     if (value === undefined) {
       this.isEmptyObject = false;
       this._frequency = undefined;
+      this._locations = undefined;
       this._retentionPeriod = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._frequency = value.frequency;
+      this._locations = value.locations;
       this._retentionPeriod = value.retentionPeriod;
     }
   }
@@ -200,6 +219,22 @@ export class BigtableTableAutomatedBackupPolicyOutputReference extends cdktn.Com
   // Temporarily expose input value. Use with caution.
   public get frequencyInput() {
     return this._frequency;
+  }
+
+  // locations - computed: true, optional: true, required: false
+  private _locations?: string[]; 
+  public get locations() {
+    return this.getListAttribute('locations');
+  }
+  public set locations(value: string[]) {
+    this._locations = value;
+  }
+  public resetLocations() {
+    this._locations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationsInput() {
+    return this._locations;
   }
 
   // retention_period - computed: true, optional: true, required: false
@@ -222,13 +257,13 @@ export interface BigtableTableColumnFamily {
   /**
   * The name of the column family.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#family BigtableTable#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#family BigtableTable#family}
   */
   readonly family: string;
   /**
   * The type of the column family.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#type BigtableTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#type BigtableTable#type}
   */
   readonly type?: string;
 }
@@ -236,7 +271,7 @@ export interface BigtableTableColumnFamily {
 export function bigtableTableColumnFamilyToTerraform(struct?: BigtableTableColumnFamily | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     family: cdktn.stringToTerraform(struct!.family),
@@ -248,7 +283,7 @@ export function bigtableTableColumnFamilyToTerraform(struct?: BigtableTableColum
 export function bigtableTableColumnFamilyToHclTerraform(struct?: BigtableTableColumnFamily | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     family: {
@@ -370,11 +405,11 @@ export class BigtableTableColumnFamilyList extends cdktn.ComplexList {
 }
 export interface BigtableTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#create BigtableTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#create BigtableTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#update BigtableTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#update BigtableTable#update}
   */
   readonly update?: string;
 }
@@ -382,7 +417,7 @@ export interface BigtableTableTimeouts {
 export function bigtableTableTimeoutsToTerraform(struct?: BigtableTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -394,7 +429,7 @@ export function bigtableTableTimeoutsToTerraform(struct?: BigtableTableTimeouts 
 export function bigtableTableTimeoutsToHclTerraform(struct?: BigtableTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -497,7 +532,7 @@ export class BigtableTableTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table google_bigtable_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table google_bigtable_table}
 */
 export class BigtableTable extends cdktn.TerraformResource {
 
@@ -513,7 +548,7 @@ export class BigtableTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BigtableTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigtableTable to import
-  * @param importFromId The id of the existing BigtableTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BigtableTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigtableTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -525,7 +560,7 @@ export class BigtableTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/bigtable_table google_bigtable_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigtable_table google_bigtable_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -536,7 +571,7 @@ export class BigtableTable extends cdktn.TerraformResource {
       terraformResourceType: 'google_bigtable_table',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

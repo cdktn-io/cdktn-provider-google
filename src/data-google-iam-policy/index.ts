@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +22,23 @@ export interface DataGoogleIamPolicyConfig extends cdktn.TerraformMetaArguments 
   /**
   * audit_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
   */
   readonly auditConfig?: DataGoogleIamPolicyAuditConfig[] | cdktn.IResolvable;
   /**
   * binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
   */
   readonly binding?: DataGoogleIamPolicyBinding[] | cdktn.IResolvable;
 }
 export interface DataGoogleIamPolicyAuditConfigAuditLogConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}
   */
   readonly exemptedMembers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#log_type DataGoogleIamPolicy#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#log_type DataGoogleIamPolicy#log_type}
   */
   readonly logType: string;
 }
@@ -46,7 +46,7 @@ export interface DataGoogleIamPolicyAuditConfigAuditLogConfigs {
 export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToTerraform(struct?: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exempted_members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exemptedMembers),
@@ -58,7 +58,7 @@ export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToTerraform(struct?
 export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToHclTerraform(struct?: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exempted_members: {
@@ -180,13 +180,13 @@ export class DataGoogleIamPolicyAuditConfigAuditLogConfigsList extends cdktn.Com
 }
 export interface DataGoogleIamPolicyAuditConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#service DataGoogleIamPolicy#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#service DataGoogleIamPolicy#service}
   */
   readonly service: string;
   /**
   * audit_log_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#audit_log_configs DataGoogleIamPolicy#audit_log_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#audit_log_configs DataGoogleIamPolicy#audit_log_configs}
   */
   readonly auditLogConfigs: DataGoogleIamPolicyAuditConfigAuditLogConfigs[] | cdktn.IResolvable;
 }
@@ -194,7 +194,7 @@ export interface DataGoogleIamPolicyAuditConfig {
 export function dataGoogleIamPolicyAuditConfigToTerraform(struct?: DataGoogleIamPolicyAuditConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service: cdktn.stringToTerraform(struct!.service),
@@ -206,7 +206,7 @@ export function dataGoogleIamPolicyAuditConfigToTerraform(struct?: DataGoogleIam
 export function dataGoogleIamPolicyAuditConfigToHclTerraform(struct?: DataGoogleIamPolicyAuditConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service: {
@@ -325,15 +325,15 @@ export class DataGoogleIamPolicyAuditConfigList extends cdktn.ComplexList {
 }
 export interface DataGoogleIamPolicyBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}
   */
   readonly title: string;
 }
@@ -341,7 +341,7 @@ export interface DataGoogleIamPolicyBindingCondition {
 export function dataGoogleIamPolicyBindingConditionToTerraform(struct?: DataGoogleIamPolicyBindingConditionOutputReference | DataGoogleIamPolicyBindingCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -354,7 +354,7 @@ export function dataGoogleIamPolicyBindingConditionToTerraform(struct?: DataGoog
 export function dataGoogleIamPolicyBindingConditionToHclTerraform(struct?: DataGoogleIamPolicyBindingConditionOutputReference | DataGoogleIamPolicyBindingCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -469,17 +469,17 @@ export class DataGoogleIamPolicyBindingConditionOutputReference extends cdktn.Co
 }
 export interface DataGoogleIamPolicyBinding {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#members DataGoogleIamPolicy#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#members DataGoogleIamPolicy#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#role DataGoogleIamPolicy#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#role DataGoogleIamPolicy#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#condition DataGoogleIamPolicy#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#condition DataGoogleIamPolicy#condition}
   */
   readonly condition?: DataGoogleIamPolicyBindingCondition;
 }
@@ -487,7 +487,7 @@ export interface DataGoogleIamPolicyBinding {
 export function dataGoogleIamPolicyBindingToTerraform(struct?: DataGoogleIamPolicyBinding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.members),
@@ -500,7 +500,7 @@ export function dataGoogleIamPolicyBindingToTerraform(struct?: DataGoogleIamPoli
 export function dataGoogleIamPolicyBindingToHclTerraform(struct?: DataGoogleIamPolicyBinding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     members: {
@@ -647,7 +647,7 @@ export class DataGoogleIamPolicyBindingList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy google_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy google_iam_policy}
 */
 export class DataGoogleIamPolicy extends cdktn.TerraformDataSource {
 
@@ -663,7 +663,7 @@ export class DataGoogleIamPolicy extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIamPolicy to import
-  * @param importFromId The id of the existing DataGoogleIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -675,7 +675,7 @@ export class DataGoogleIamPolicy extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_policy google_iam_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_policy google_iam_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -686,7 +686,7 @@ export class DataGoogleIamPolicy extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
