@@ -4,7 +4,7 @@
 
 ### OracleDatabaseGoldengateConnection <a name="OracleDatabaseGoldengateConnection" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection google_oracle_database_goldengate_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection google_oracle_database_goldengate_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnection.Initializer"></a>
 
@@ -578,7 +578,7 @@ The construct id used in the generated config for the OracleDatabaseGoldengateCo
 
 The id of the existing OracleDatabaseGoldengateConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1130,11 +1130,11 @@ const oracleDatabaseGoldengateConnectionConfig: oracleDatabaseGoldengateConnecti
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not to allow Terraform to destroy the instance. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.gcpOracleZone">gcpOracleZone</a></code> | <code>string</code> | The GCP Oracle zone where Oracle GoldengateConnection is hosted. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#id OracleDatabaseGoldengateConnection#id}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#id OracleDatabaseGoldengateConnection#id}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | The labels or tags associated with the GoldengateConnection. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.odbNetwork">odbNetwork</a></code> | <code>string</code> | The name of the OdbNetwork associated with the GoldengateConnection. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.odbSubnet">odbSubnet</a></code> | <code>string</code> | The name of the OdbSubnet associated with the GoldengateConnection for IP allocation. Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#project OracleDatabaseGoldengateConnection#project}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#project OracleDatabaseGoldengateConnection#project}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts">OracleDatabaseGoldengateConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1224,7 +1224,7 @@ restricted to (^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$) and must be a maximum of
 63 characters in length. The value must start with a letter and end with a
 letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#goldengate_connection_id OracleDatabaseGoldengateConnection#goldengate_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#goldengate_connection_id OracleDatabaseGoldengateConnection#goldengate_connection_id}
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#location OracleDatabaseGoldengateConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#location OracleDatabaseGoldengateConnection#location}
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly properties: OracleDatabaseGoldengateConnectionProperties;
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#properties OracleDatabaseGoldengateConnection#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#properties OracleDatabaseGoldengateConnection#properties}
 
 ---
 
@@ -1274,7 +1274,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#deletion_policy OracleDatabaseGoldengateConnection#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#deletion_policy OracleDatabaseGoldengateConnection#deletion_policy}
 
 ---
 
@@ -1290,7 +1290,7 @@ Whether or not to allow Terraform to destroy the instance.
 
 Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#deletion_protection OracleDatabaseGoldengateConnection#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#deletion_protection OracleDatabaseGoldengateConnection#deletion_protection}
 
 ---
 
@@ -1307,7 +1307,7 @@ The GCP Oracle zone where Oracle GoldengateConnection is hosted.
 Example: us-east4-b-r2.
 If not specified, the system will pick a zone based on availability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#gcp_oracle_zone OracleDatabaseGoldengateConnection#gcp_oracle_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#gcp_oracle_zone OracleDatabaseGoldengateConnection#gcp_oracle_zone}
 
 ---
 
@@ -1319,7 +1319,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#id OracleDatabaseGoldengateConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#id OracleDatabaseGoldengateConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1339,7 +1339,7 @@ The labels or tags associated with the GoldengateConnection.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#labels OracleDatabaseGoldengateConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#labels OracleDatabaseGoldengateConnection#labels}
 
 ---
 
@@ -1358,7 +1358,7 @@ projects/{project}/locations/{location}/odbNetworks/{odb_network}.
 It is optional but if specified, this should match the parent ODBNetwork
 of the OdbSubnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#odb_network OracleDatabaseGoldengateConnection#odb_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#odb_network OracleDatabaseGoldengateConnection#odb_network}
 
 ---
 
@@ -1372,7 +1372,7 @@ public readonly odbSubnet: string;
 
 The name of the OdbSubnet associated with the GoldengateConnection for IP allocation. Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#odb_subnet OracleDatabaseGoldengateConnection#odb_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#odb_subnet OracleDatabaseGoldengateConnection#odb_subnet}
 
 ---
 
@@ -1384,7 +1384,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#project OracleDatabaseGoldengateConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#project OracleDatabaseGoldengateConnection#project}.
 
 ---
 
@@ -1398,7 +1398,7 @@ public readonly timeouts: OracleDatabaseGoldengateConnectionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#timeouts OracleDatabaseGoldengateConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#timeouts OracleDatabaseGoldengateConnection#timeouts}
 
 ---
 
@@ -1462,7 +1462,7 @@ public readonly connectionType: string;
 
 The connection type. Possible values: GOLDENGATE KAFKA KAFKA_SCHEMA_REGISTRY MYSQL JAVA_MESSAGE_SERVICE MICROSOFT_SQLSERVER OCI_OBJECT_STORAGE ORACLE AZURE_DATA_LAKE_STORAGE POSTGRESQL AZURE_SYNAPSE_ANALYTICS SNOWFLAKE AMAZON_S3 HDFS ORACLE_AI_DATA_PLATFORM ORACLE_NOSQL MONGODB AMAZON_KINESIS AMAZON_REDSHIFT DB2 REDIS ELASTICSEARCH GENERIC GOOGLE_CLOUD_STORAGE GOOGLE_BIGQUERY DATABRICKS GOOGLE_PUBSUB MICROSOFT_FABRIC ICEBERG.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_type OracleDatabaseGoldengateConnection#connection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_type OracleDatabaseGoldengateConnection#connection_type}
 
 ---
 
@@ -1476,7 +1476,7 @@ public readonly displayName: string;
 
 An object's Display Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#display_name OracleDatabaseGoldengateConnection#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#display_name OracleDatabaseGoldengateConnection#display_name}
 
 ---
 
@@ -1490,7 +1490,7 @@ public readonly amazonKinesisConnectionProperties: OracleDatabaseGoldengateConne
 
 amazon_kinesis_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#amazon_kinesis_connection_properties OracleDatabaseGoldengateConnection#amazon_kinesis_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#amazon_kinesis_connection_properties OracleDatabaseGoldengateConnection#amazon_kinesis_connection_properties}
 
 ---
 
@@ -1504,7 +1504,7 @@ public readonly amazonRedshiftConnectionProperties: OracleDatabaseGoldengateConn
 
 amazon_redshift_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#amazon_redshift_connection_properties OracleDatabaseGoldengateConnection#amazon_redshift_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#amazon_redshift_connection_properties OracleDatabaseGoldengateConnection#amazon_redshift_connection_properties}
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly amazonS3ConnectionProperties: OracleDatabaseGoldengateConnection
 
 amazon_s3_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#amazon_s3_connection_properties OracleDatabaseGoldengateConnection#amazon_s3_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#amazon_s3_connection_properties OracleDatabaseGoldengateConnection#amazon_s3_connection_properties}
 
 ---
 
@@ -1532,7 +1532,7 @@ public readonly azureDataLakeStorageConnectionProperties: OracleDatabaseGoldenga
 
 azure_data_lake_storage_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#azure_data_lake_storage_connection_properties OracleDatabaseGoldengateConnection#azure_data_lake_storage_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#azure_data_lake_storage_connection_properties OracleDatabaseGoldengateConnection#azure_data_lake_storage_connection_properties}
 
 ---
 
@@ -1546,7 +1546,7 @@ public readonly azureSynapseAnalyticsConnectionProperties: OracleDatabaseGoldeng
 
 azure_synapse_analytics_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#azure_synapse_analytics_connection_properties OracleDatabaseGoldengateConnection#azure_synapse_analytics_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#azure_synapse_analytics_connection_properties OracleDatabaseGoldengateConnection#azure_synapse_analytics_connection_properties}
 
 ---
 
@@ -1560,7 +1560,7 @@ public readonly databricksConnectionProperties: OracleDatabaseGoldengateConnecti
 
 databricks_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#databricks_connection_properties OracleDatabaseGoldengateConnection#databricks_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#databricks_connection_properties OracleDatabaseGoldengateConnection#databricks_connection_properties}
 
 ---
 
@@ -1574,7 +1574,7 @@ public readonly db2ConnectionProperties: OracleDatabaseGoldengateConnectionPrope
 
 db2_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#db2_connection_properties OracleDatabaseGoldengateConnection#db2_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#db2_connection_properties OracleDatabaseGoldengateConnection#db2_connection_properties}
 
 ---
 
@@ -1588,7 +1588,7 @@ public readonly description: string;
 
 Metadata about this specific object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#description OracleDatabaseGoldengateConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#description OracleDatabaseGoldengateConnection#description}
 
 ---
 
@@ -1602,7 +1602,7 @@ public readonly elasticsearchConnectionProperties: OracleDatabaseGoldengateConne
 
 elasticsearch_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#elasticsearch_connection_properties OracleDatabaseGoldengateConnection#elasticsearch_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#elasticsearch_connection_properties OracleDatabaseGoldengateConnection#elasticsearch_connection_properties}
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly genericConnectionProperties: OracleDatabaseGoldengateConnectionP
 
 generic_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#generic_connection_properties OracleDatabaseGoldengateConnection#generic_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#generic_connection_properties OracleDatabaseGoldengateConnection#generic_connection_properties}
 
 ---
 
@@ -1630,7 +1630,7 @@ public readonly goldengateConnectionProperties: OracleDatabaseGoldengateConnecti
 
 goldengate_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#goldengate_connection_properties OracleDatabaseGoldengateConnection#goldengate_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#goldengate_connection_properties OracleDatabaseGoldengateConnection#goldengate_connection_properties}
 
 ---
 
@@ -1644,7 +1644,7 @@ public readonly googleBigQueryConnectionProperties: OracleDatabaseGoldengateConn
 
 google_big_query_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#google_big_query_connection_properties OracleDatabaseGoldengateConnection#google_big_query_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#google_big_query_connection_properties OracleDatabaseGoldengateConnection#google_big_query_connection_properties}
 
 ---
 
@@ -1658,7 +1658,7 @@ public readonly googleCloudStorageConnectionProperties: OracleDatabaseGoldengate
 
 google_cloud_storage_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#google_cloud_storage_connection_properties OracleDatabaseGoldengateConnection#google_cloud_storage_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#google_cloud_storage_connection_properties OracleDatabaseGoldengateConnection#google_cloud_storage_connection_properties}
 
 ---
 
@@ -1672,7 +1672,7 @@ public readonly googlePubsubConnectionProperties: OracleDatabaseGoldengateConnec
 
 google_pubsub_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#google_pubsub_connection_properties OracleDatabaseGoldengateConnection#google_pubsub_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#google_pubsub_connection_properties OracleDatabaseGoldengateConnection#google_pubsub_connection_properties}
 
 ---
 
@@ -1686,7 +1686,7 @@ public readonly hdfsConnectionProperties: OracleDatabaseGoldengateConnectionProp
 
 hdfs_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#hdfs_connection_properties OracleDatabaseGoldengateConnection#hdfs_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#hdfs_connection_properties OracleDatabaseGoldengateConnection#hdfs_connection_properties}
 
 ---
 
@@ -1700,7 +1700,7 @@ public readonly icebergConnectionProperties: OracleDatabaseGoldengateConnectionP
 
 iceberg_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#iceberg_connection_properties OracleDatabaseGoldengateConnection#iceberg_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#iceberg_connection_properties OracleDatabaseGoldengateConnection#iceberg_connection_properties}
 
 ---
 
@@ -1714,7 +1714,7 @@ public readonly javaMessageServiceConnectionProperties: OracleDatabaseGoldengate
 
 java_message_service_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#java_message_service_connection_properties OracleDatabaseGoldengateConnection#java_message_service_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#java_message_service_connection_properties OracleDatabaseGoldengateConnection#java_message_service_connection_properties}
 
 ---
 
@@ -1728,7 +1728,7 @@ public readonly kafkaConnectionProperties: OracleDatabaseGoldengateConnectionPro
 
 kafka_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#kafka_connection_properties OracleDatabaseGoldengateConnection#kafka_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#kafka_connection_properties OracleDatabaseGoldengateConnection#kafka_connection_properties}
 
 ---
 
@@ -1742,7 +1742,7 @@ public readonly kafkaSchemaRegistryConnectionProperties: OracleDatabaseGoldengat
 
 kafka_schema_registry_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#kafka_schema_registry_connection_properties OracleDatabaseGoldengateConnection#kafka_schema_registry_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#kafka_schema_registry_connection_properties OracleDatabaseGoldengateConnection#kafka_schema_registry_connection_properties}
 
 ---
 
@@ -1756,7 +1756,7 @@ public readonly microsoftFabricConnectionProperties: OracleDatabaseGoldengateCon
 
 microsoft_fabric_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#microsoft_fabric_connection_properties OracleDatabaseGoldengateConnection#microsoft_fabric_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#microsoft_fabric_connection_properties OracleDatabaseGoldengateConnection#microsoft_fabric_connection_properties}
 
 ---
 
@@ -1770,7 +1770,7 @@ public readonly microsoftSqlserverConnectionProperties: OracleDatabaseGoldengate
 
 microsoft_sqlserver_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#microsoft_sqlserver_connection_properties OracleDatabaseGoldengateConnection#microsoft_sqlserver_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#microsoft_sqlserver_connection_properties OracleDatabaseGoldengateConnection#microsoft_sqlserver_connection_properties}
 
 ---
 
@@ -1784,7 +1784,7 @@ public readonly mongodbConnectionProperties: OracleDatabaseGoldengateConnectionP
 
 mongodb_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#mongodb_connection_properties OracleDatabaseGoldengateConnection#mongodb_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#mongodb_connection_properties OracleDatabaseGoldengateConnection#mongodb_connection_properties}
 
 ---
 
@@ -1798,7 +1798,7 @@ public readonly mysqlConnectionProperties: OracleDatabaseGoldengateConnectionPro
 
 mysql_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#mysql_connection_properties OracleDatabaseGoldengateConnection#mysql_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#mysql_connection_properties OracleDatabaseGoldengateConnection#mysql_connection_properties}
 
 ---
 
@@ -1812,7 +1812,7 @@ public readonly ociObjectStorageConnectionProperties: OracleDatabaseGoldengateCo
 
 oci_object_storage_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#oci_object_storage_connection_properties OracleDatabaseGoldengateConnection#oci_object_storage_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#oci_object_storage_connection_properties OracleDatabaseGoldengateConnection#oci_object_storage_connection_properties}
 
 ---
 
@@ -1826,7 +1826,7 @@ public readonly oracleAiDataPlatformConnectionProperties: OracleDatabaseGoldenga
 
 oracle_ai_data_platform_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#oracle_ai_data_platform_connection_properties OracleDatabaseGoldengateConnection#oracle_ai_data_platform_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#oracle_ai_data_platform_connection_properties OracleDatabaseGoldengateConnection#oracle_ai_data_platform_connection_properties}
 
 ---
 
@@ -1840,7 +1840,7 @@ public readonly oracleConnectionProperties: OracleDatabaseGoldengateConnectionPr
 
 oracle_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#oracle_connection_properties OracleDatabaseGoldengateConnection#oracle_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#oracle_connection_properties OracleDatabaseGoldengateConnection#oracle_connection_properties}
 
 ---
 
@@ -1854,7 +1854,7 @@ public readonly oracleNosqlConnectionProperties: OracleDatabaseGoldengateConnect
 
 oracle_nosql_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#oracle_nosql_connection_properties OracleDatabaseGoldengateConnection#oracle_nosql_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#oracle_nosql_connection_properties OracleDatabaseGoldengateConnection#oracle_nosql_connection_properties}
 
 ---
 
@@ -1868,7 +1868,7 @@ public readonly postgresqlConnectionProperties: OracleDatabaseGoldengateConnecti
 
 postgresql_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#postgresql_connection_properties OracleDatabaseGoldengateConnection#postgresql_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#postgresql_connection_properties OracleDatabaseGoldengateConnection#postgresql_connection_properties}
 
 ---
 
@@ -1882,7 +1882,7 @@ public readonly redisConnectionProperties: OracleDatabaseGoldengateConnectionPro
 
 redis_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#redis_connection_properties OracleDatabaseGoldengateConnection#redis_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#redis_connection_properties OracleDatabaseGoldengateConnection#redis_connection_properties}
 
 ---
 
@@ -1896,7 +1896,7 @@ public readonly routingMethod: string;
 
 The routing method for the GoldengateConnection. Possible values: SHARED_DEPLOYMENT_ENDPOINT DEDICATED_ENDPOINT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#routing_method OracleDatabaseGoldengateConnection#routing_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#routing_method OracleDatabaseGoldengateConnection#routing_method}
 
 ---
 
@@ -1910,7 +1910,7 @@ public readonly snowflakeConnectionProperties: OracleDatabaseGoldengateConnectio
 
 snowflake_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#snowflake_connection_properties OracleDatabaseGoldengateConnection#snowflake_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#snowflake_connection_properties OracleDatabaseGoldengateConnection#snowflake_connection_properties}
 
 ---
 
@@ -1946,7 +1946,7 @@ public readonly accessKeyId: string;
 
 Access key ID to access the Amazon Kinesis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#access_key_id OracleDatabaseGoldengateConnection#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#access_key_id OracleDatabaseGoldengateConnection#access_key_id}
 
 ---
 
@@ -1960,7 +1960,7 @@ public readonly awsRegion: string;
 
 The name of the AWS region. If not provided, Goldengate will default to 'us-west-1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#aws_region OracleDatabaseGoldengateConnection#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#aws_region OracleDatabaseGoldengateConnection#aws_region}
 
 ---
 
@@ -1974,7 +1974,7 @@ public readonly endpoint: string;
 
 The endpoint URL of the Amazon Kinesis service. e.g.: 'https://kinesis.us-east-1.amazonaws.com' If not provided, Goldengate will default to 'https://kinesis..amazonaws.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
 
 ---
 
@@ -1988,7 +1988,7 @@ public readonly secretAccessKeySecret: string;
 
 Secret access key to access the Amazon Kinesis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#secret_access_key_secret OracleDatabaseGoldengateConnection#secret_access_key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#secret_access_key_secret OracleDatabaseGoldengateConnection#secret_access_key_secret}
 
 ---
 
@@ -2002,7 +2002,7 @@ public readonly technologyType: string;
 
 The technology type of AmazonKinesisConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2038,7 +2038,7 @@ public readonly connectionUrl: string;
 
 Connection URL. e.g.: 'jdbc:redshift://aws-redshift-instance.aaaaaaaaaaaa.us-east-2.redshift.amazonaws.com:5439/mydb'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
 
 ---
 
@@ -2052,7 +2052,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses for Amazon Redshift connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -2070,7 +2070,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses for Amazon Redshift connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -2084,7 +2084,7 @@ public readonly technologyType: string;
 
 The technology type of AmazonRedshiftConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2098,7 +2098,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect the associated system of the given technology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -2134,7 +2134,7 @@ public readonly accessKeyId: string;
 
 Access key ID to access the Amazon S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#access_key_id OracleDatabaseGoldengateConnection#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#access_key_id OracleDatabaseGoldengateConnection#access_key_id}
 
 ---
 
@@ -2148,7 +2148,7 @@ public readonly endpoint: string;
 
 The Amazon Endpoint for S3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
 
 ---
 
@@ -2162,7 +2162,7 @@ public readonly region: string;
 
 The name of the AWS region where the bucket is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
 
 ---
 
@@ -2176,7 +2176,7 @@ public readonly secretAccessKeySecret: string;
 
 Secret access key to access the Amazon S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#secret_access_key_secret OracleDatabaseGoldengateConnection#secret_access_key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#secret_access_key_secret OracleDatabaseGoldengateConnection#secret_access_key_secret}
 
 ---
 
@@ -2190,7 +2190,7 @@ public readonly technologyType: string;
 
 The technology type of AmazonS3Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2231,7 +2231,7 @@ public readonly account: string;
 
 Sets the Azure storage account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#account OracleDatabaseGoldengateConnection#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#account OracleDatabaseGoldengateConnection#account}
 
 ---
 
@@ -2245,7 +2245,7 @@ public readonly accountKeySecret: string;
 
 Azure storage account key. This property is required when 'authentication_type' is set to 'SHARED_KEY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#account_key_secret OracleDatabaseGoldengateConnection#account_key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#account_key_secret OracleDatabaseGoldengateConnection#account_key_secret}
 
 ---
 
@@ -2259,7 +2259,7 @@ public readonly authenticationType: string;
 
 Authentication mechanism to access Azure Data Lake Storage. Possible values: SHARED_KEY SHARED_ACCESS_SIGNATURE AZURE_ACTIVE_DIRECTORY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
 
 ---
 
@@ -2273,7 +2273,7 @@ public readonly azureAuthorityHost: string;
 
 The endpoint used for authentication with Microsoft Entra ID (formerly Azure Active Directory). Default value: https://login.microsoftonline.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#azure_authority_host OracleDatabaseGoldengateConnection#azure_authority_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#azure_authority_host OracleDatabaseGoldengateConnection#azure_authority_host}
 
 ---
 
@@ -2287,7 +2287,7 @@ public readonly azureTenantId: string;
 
 Azure tenant ID of the application. This property is required when 'authentication_type' is set to 'AZURE_ACTIVE_DIRECTORY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#azure_tenant_id OracleDatabaseGoldengateConnection#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#azure_tenant_id OracleDatabaseGoldengateConnection#azure_tenant_id}
 
 ---
 
@@ -2301,7 +2301,7 @@ public readonly clientId: string;
 
 Azure client ID of the application. This property is required when 'authentication_type' is set to 'AZURE_ACTIVE_DIRECTORY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
 
 ---
 
@@ -2315,7 +2315,7 @@ public readonly clientSecret: string;
 
 Azure client secret (aka application password) for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
 
 ---
 
@@ -2329,7 +2329,7 @@ public readonly endpoint: string;
 
 Azure Storage service endpoint. e.g: https://test.blob.core.windows.net.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
 
 ---
 
@@ -2343,7 +2343,7 @@ public readonly sasTokenSecret: string;
 
 Credential that uses a shared access signature (SAS) to authenticate to an Azure Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#sas_token_secret OracleDatabaseGoldengateConnection#sas_token_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#sas_token_secret OracleDatabaseGoldengateConnection#sas_token_secret}
 
 ---
 
@@ -2357,7 +2357,7 @@ public readonly technologyType: string;
 
 The technology type of AzureDataLakeStorageConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2393,7 +2393,7 @@ public readonly connectionString: string;
 
 JDBC connection string. e.g.: 'jdbc:sqlserver://.sql.azuresynapse.net:1433;database=;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.sql.azuresynapse.net;loginTimeout=300;'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_string OracleDatabaseGoldengateConnection#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_string OracleDatabaseGoldengateConnection#connection_string}
 
 ---
 
@@ -2407,7 +2407,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses for Azure Synapse Analytics connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -2426,7 +2426,7 @@ the password Oracle Goldengate uses for Azure Synapse Analytics
 connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -2440,7 +2440,7 @@ public readonly technologyType: string;
 
 The technology type of AzureSynapseAnalyticsConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2454,7 +2454,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect the associated system of the given technology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -2493,7 +2493,7 @@ public readonly authenticationType: string;
 
 Authentication type for Databricks. Possible values: PERSONAL_ACCESS_TOKEN OAUTH_M2M.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
 
 ---
 
@@ -2507,7 +2507,7 @@ public readonly clientId: string;
 
 OAuth client id, only applicable for authentication_type == OAUTH_M2M.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
 
 ---
 
@@ -2521,7 +2521,7 @@ public readonly clientSecret: string;
 
 OAuth client secret, only applicable for authentication_type == OAUTH_M2M.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
 
 ---
 
@@ -2535,7 +2535,7 @@ public readonly connectionUrl: string;
 
 Connection URL. e.g.: 'jdbc:databricks://adb-33934.4.azuredatabricks.net:443/default;transportMode=http;ssl=1;httpPath=sql/protocolv1/o/3393########44/0##3-7-hlrb'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
 
 ---
 
@@ -2549,7 +2549,7 @@ public readonly password: string;
 
 Input only. The password used to connect to Databricks in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -2567,7 +2567,7 @@ The resource name of a secret version in Secret Manager which contains
 the password used to connect to Databricks.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -2581,7 +2581,7 @@ public readonly storageCredential: string;
 
 External storage credential name to access files on object storage such as ADLS Gen2, S3 or Cloud Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#storage_credential OracleDatabaseGoldengateConnection#storage_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#storage_credential OracleDatabaseGoldengateConnection#storage_credential}
 
 ---
 
@@ -2595,7 +2595,7 @@ public readonly technologyType: string;
 
 The technology type of DatabricksConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2638,7 +2638,7 @@ public readonly additionalAttributes: IResolvable | OracleDatabaseGoldengateConn
 
 additional_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
 
 ---
 
@@ -2652,7 +2652,7 @@ public readonly database: string;
 
 The name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
 
 ---
 
@@ -2666,7 +2666,7 @@ public readonly host: string;
 
 The name or address of a host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
 
 ---
 
@@ -2680,7 +2680,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses for Db2 connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -2698,7 +2698,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses for Db2 connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -2712,7 +2712,7 @@ public readonly port: number;
 
 The port of an endpoint usually specified for a connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
 
 ---
 
@@ -2726,7 +2726,7 @@ public readonly securityProtocol: string;
 
 Security protocol for the DB2 database. Possible values: PLAIN TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -2740,7 +2740,7 @@ public readonly sslClientKeystashFile: string;
 
 The keystash file which contains the encrypted password to the key database file. Not supported for IBM Db2 for i.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_client_keystash_file OracleDatabaseGoldengateConnection#ssl_client_keystash_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_client_keystash_file OracleDatabaseGoldengateConnection#ssl_client_keystash_file}
 
 ---
 
@@ -2756,7 +2756,7 @@ The keystore file created at the client containing the server certificate / CA r
 
 Not supported for IBM Db2 for i.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_client_keystoredb_file OracleDatabaseGoldengateConnection#ssl_client_keystoredb_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_client_keystoredb_file OracleDatabaseGoldengateConnection#ssl_client_keystoredb_file}
 
 ---
 
@@ -2770,7 +2770,7 @@ public readonly sslServerCertificateFile: string;
 
 The file which contains the self-signed server certificate / Certificate Authority (CA) certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_server_certificate_file OracleDatabaseGoldengateConnection#ssl_server_certificate_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_server_certificate_file OracleDatabaseGoldengateConnection#ssl_server_certificate_file}
 
 ---
 
@@ -2784,7 +2784,7 @@ public readonly technologyType: string;
 
 The technology type of Db2Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2798,7 +2798,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect to the DB2 database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -2831,7 +2831,7 @@ public readonly key: string;
 
 The name of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
 
 ---
 
@@ -2845,7 +2845,7 @@ public readonly value: string;
 
 The value of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
 
 ---
 
@@ -2884,7 +2884,7 @@ public readonly authenticationType: string;
 
 Authentication type for Elasticsearch. Possible values: NONE BASIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
 
 ---
 
@@ -2898,7 +2898,7 @@ public readonly fingerprint: string;
 
 Fingerprint required by TLS security protocol. Eg.: '6152b2dfbff200f973c5074a5b91d06ab3b472c07c09a1ea57bb7fd406cdce9c'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#fingerprint OracleDatabaseGoldengateConnection#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#fingerprint OracleDatabaseGoldengateConnection#fingerprint}
 
 ---
 
@@ -2912,7 +2912,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses for Elastic Search connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -2930,7 +2930,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses for Elastic Search connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -2944,7 +2944,7 @@ public readonly securityProtocol: string;
 
 Security protocol for Elasticsearch. Possible values: PLAIN TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -2962,7 +2962,7 @@ If port is not specified, it
 defaults to 9200. Example:
 "server1.example.com:4000,server2.example.com:4000"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#servers OracleDatabaseGoldengateConnection#servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#servers OracleDatabaseGoldengateConnection#servers}
 
 ---
 
@@ -2976,7 +2976,7 @@ public readonly technologyType: string;
 
 The technology type of ElasticsearchConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -2990,7 +2990,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect the associated system of the given technology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -3023,7 +3023,7 @@ public readonly host: string;
 
 The host of the GenericConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
 
 ---
 
@@ -3037,7 +3037,7 @@ public readonly technologyType: string;
 
 The technology type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -3075,7 +3075,7 @@ public readonly goldengateDeploymentId: string;
 
 The name of the GoldengateDeployment associated with the GoldengateConnection. Format: projects/{project}/locations/{location}/goldengateDeployments/{goldengate_deployment}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#goldengate_deployment_id OracleDatabaseGoldengateConnection#goldengate_deployment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#goldengate_deployment_id OracleDatabaseGoldengateConnection#goldengate_deployment_id}
 
 ---
 
@@ -3089,7 +3089,7 @@ public readonly host: string;
 
 The host of the GoldengateConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
 
 ---
 
@@ -3103,7 +3103,7 @@ public readonly password: string;
 
 Input only. The password used to connect to the Oracle Goldengate in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -3121,7 +3121,7 @@ The resource name of a secret version in Secret Manager which contains
 the password used to connect to the Oracle Goldengate.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -3135,7 +3135,7 @@ public readonly port: number;
 
 The port of the GoldengateConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
 
 ---
 
@@ -3149,7 +3149,7 @@ public readonly technologyType: string;
 
 The technology type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -3163,7 +3163,7 @@ public readonly username: string;
 
 The username credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -3196,7 +3196,7 @@ public readonly serviceAccountKeyFile: string;
 
 The service account key file Cloud Storage containing the credentials required to use Google BigQuery.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
 
 ---
 
@@ -3210,7 +3210,7 @@ public readonly technologyType: string;
 
 The technology type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -3243,7 +3243,7 @@ public readonly serviceAccountKeyFile: string;
 
 The service account key Cloud Storage file containing the credentials required to use Google Cloud Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
 
 ---
 
@@ -3257,7 +3257,7 @@ public readonly technologyType: string;
 
 The technology type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -3290,7 +3290,7 @@ public readonly serviceAccountKeyFile: string;
 
 The content of the service account key file containing the credentials required to use Google Pub/Sub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
 
 ---
 
@@ -3304,7 +3304,7 @@ public readonly technologyType: string;
 
 The technology type of GooglePubsubConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -3337,7 +3337,7 @@ public readonly coreSiteXml: string;
 
 The content of the Hadoop Distributed File System configuration file (core-site.xml).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#core_site_xml OracleDatabaseGoldengateConnection#core_site_xml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#core_site_xml OracleDatabaseGoldengateConnection#core_site_xml}
 
 ---
 
@@ -3351,7 +3351,7 @@ public readonly technologyType: string;
 
 The technology type of HdfsConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -3385,7 +3385,7 @@ public readonly catalog: OracleDatabaseGoldengateConnectionPropertiesIcebergConn
 
 catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#catalog OracleDatabaseGoldengateConnection#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#catalog OracleDatabaseGoldengateConnection#catalog}
 
 ---
 
@@ -3399,7 +3399,7 @@ public readonly storage: OracleDatabaseGoldengateConnectionPropertiesIcebergConn
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#storage OracleDatabaseGoldengateConnection#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#storage OracleDatabaseGoldengateConnection#storage}
 
 ---
 
@@ -3413,7 +3413,7 @@ public readonly technologyType: string;
 
 The technology type of Iceberg connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -3449,7 +3449,7 @@ public readonly catalogType: string;
 
 The type of Iceberg catalog. Possible values: GLUE HADOOP NESSIE POLARIS REST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#catalog_type OracleDatabaseGoldengateConnection#catalog_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#catalog_type OracleDatabaseGoldengateConnection#catalog_type}
 
 ---
 
@@ -3463,7 +3463,7 @@ public readonly glueIcebergCatalog: OracleDatabaseGoldengateConnectionProperties
 
 glue_iceberg_catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#glue_iceberg_catalog OracleDatabaseGoldengateConnection#glue_iceberg_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#glue_iceberg_catalog OracleDatabaseGoldengateConnection#glue_iceberg_catalog}
 
 ---
 
@@ -3477,7 +3477,7 @@ public readonly nessieIcebergCatalog: OracleDatabaseGoldengateConnectionProperti
 
 nessie_iceberg_catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#nessie_iceberg_catalog OracleDatabaseGoldengateConnection#nessie_iceberg_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#nessie_iceberg_catalog OracleDatabaseGoldengateConnection#nessie_iceberg_catalog}
 
 ---
 
@@ -3491,7 +3491,7 @@ public readonly polarisIcebergCatalog: OracleDatabaseGoldengateConnectionPropert
 
 polaris_iceberg_catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#polaris_iceberg_catalog OracleDatabaseGoldengateConnection#polaris_iceberg_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#polaris_iceberg_catalog OracleDatabaseGoldengateConnection#polaris_iceberg_catalog}
 
 ---
 
@@ -3505,7 +3505,7 @@ public readonly restIcebergCatalog: OracleDatabaseGoldengateConnectionProperties
 
 rest_iceberg_catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#rest_iceberg_catalog OracleDatabaseGoldengateConnection#rest_iceberg_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#rest_iceberg_catalog OracleDatabaseGoldengateConnection#rest_iceberg_catalog}
 
 ---
 
@@ -3537,7 +3537,7 @@ public readonly glueId: string;
 
 The catalog ID of Glue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#glue_id OracleDatabaseGoldengateConnection#glue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#glue_id OracleDatabaseGoldengateConnection#glue_id}
 
 ---
 
@@ -3570,7 +3570,7 @@ public readonly branch: string;
 
 The Nessie branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#branch OracleDatabaseGoldengateConnection#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#branch OracleDatabaseGoldengateConnection#branch}
 
 ---
 
@@ -3584,7 +3584,7 @@ public readonly uri: string;
 
 The Nessie uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#uri OracleDatabaseGoldengateConnection#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#uri OracleDatabaseGoldengateConnection#uri}
 
 ---
 
@@ -3620,7 +3620,7 @@ public readonly clientId: string;
 
 The Polaris client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
 
 ---
 
@@ -3634,7 +3634,7 @@ public readonly polarisCatalog: string;
 
 The catalog name within Polaris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#polaris_catalog OracleDatabaseGoldengateConnection#polaris_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#polaris_catalog OracleDatabaseGoldengateConnection#polaris_catalog}
 
 ---
 
@@ -3648,7 +3648,7 @@ public readonly principalRole: string;
 
 The Polaris principal role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#principal_role OracleDatabaseGoldengateConnection#principal_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#principal_role OracleDatabaseGoldengateConnection#principal_role}
 
 ---
 
@@ -3662,7 +3662,7 @@ public readonly uri: string;
 
 The Polaris uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#uri OracleDatabaseGoldengateConnection#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#uri OracleDatabaseGoldengateConnection#uri}
 
 ---
 
@@ -3676,7 +3676,7 @@ public readonly clientSecret: string;
 
 The Polaris client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
 
 ---
 
@@ -3709,7 +3709,7 @@ public readonly uri: string;
 
 The REST uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#uri OracleDatabaseGoldengateConnection#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#uri OracleDatabaseGoldengateConnection#uri}
 
 ---
 
@@ -3723,7 +3723,7 @@ public readonly properties: string;
 
 The content of the configuration file containing additional properties for the REST catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#properties OracleDatabaseGoldengateConnection#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#properties OracleDatabaseGoldengateConnection#properties}
 
 ---
 
@@ -3758,7 +3758,7 @@ public readonly storageType: string;
 
 The type of Iceberg storage. Possible values: AMAZON_S3 GOOGLE_CLOUD_STORAGE AZURE_DATA_LAKE_STORAGE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#storage_type OracleDatabaseGoldengateConnection#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#storage_type OracleDatabaseGoldengateConnection#storage_type}
 
 ---
 
@@ -3772,7 +3772,7 @@ public readonly amazonS3IcebergStorage: OracleDatabaseGoldengateConnectionProper
 
 amazon_s3_iceberg_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#amazon_s3_iceberg_storage OracleDatabaseGoldengateConnection#amazon_s3_iceberg_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#amazon_s3_iceberg_storage OracleDatabaseGoldengateConnection#amazon_s3_iceberg_storage}
 
 ---
 
@@ -3786,7 +3786,7 @@ public readonly azureDataLakeStorageIcebergStorage: OracleDatabaseGoldengateConn
 
 azure_data_lake_storage_iceberg_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#azure_data_lake_storage_iceberg_storage OracleDatabaseGoldengateConnection#azure_data_lake_storage_iceberg_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#azure_data_lake_storage_iceberg_storage OracleDatabaseGoldengateConnection#azure_data_lake_storage_iceberg_storage}
 
 ---
 
@@ -3800,7 +3800,7 @@ public readonly googleCloudStorageIcebergStorage: OracleDatabaseGoldengateConnec
 
 google_cloud_storage_iceberg_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#google_cloud_storage_iceberg_storage OracleDatabaseGoldengateConnection#google_cloud_storage_iceberg_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#google_cloud_storage_iceberg_storage OracleDatabaseGoldengateConnection#google_cloud_storage_iceberg_storage}
 
 ---
 
@@ -3837,7 +3837,7 @@ public readonly accessKeyId: string;
 
 The access key ID of Amazon S3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#access_key_id OracleDatabaseGoldengateConnection#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#access_key_id OracleDatabaseGoldengateConnection#access_key_id}
 
 ---
 
@@ -3851,7 +3851,7 @@ public readonly bucket: string;
 
 The bucket of Amazon S3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#bucket OracleDatabaseGoldengateConnection#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#bucket OracleDatabaseGoldengateConnection#bucket}
 
 ---
 
@@ -3865,7 +3865,7 @@ public readonly region: string;
 
 The region of Amazon S3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
 
 ---
 
@@ -3879,7 +3879,7 @@ public readonly schemeType: string;
 
 The scheme type of Amazon S3. Possible values: S3 S3A.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#scheme_type OracleDatabaseGoldengateConnection#scheme_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#scheme_type OracleDatabaseGoldengateConnection#scheme_type}
 
 ---
 
@@ -3893,7 +3893,7 @@ public readonly endpoint: string;
 
 The endpoint of Amazon S3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
 
 ---
 
@@ -3907,7 +3907,7 @@ public readonly secretAccessKeySecret: string;
 
 The secret access key of Amazon S3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#secret_access_key_secret OracleDatabaseGoldengateConnection#secret_access_key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#secret_access_key_secret OracleDatabaseGoldengateConnection#secret_access_key_secret}
 
 ---
 
@@ -3942,7 +3942,7 @@ public readonly azureAccount: string;
 
 The account of Azure Data Lake Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#azure_account OracleDatabaseGoldengateConnection#azure_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#azure_account OracleDatabaseGoldengateConnection#azure_account}
 
 ---
 
@@ -3956,7 +3956,7 @@ public readonly container: string;
 
 The container of Azure Data Lake Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#container OracleDatabaseGoldengateConnection#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#container OracleDatabaseGoldengateConnection#container}
 
 ---
 
@@ -3970,7 +3970,7 @@ public readonly accountKeySecret: string;
 
 The account key of Azure Data Lake Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#account_key_secret OracleDatabaseGoldengateConnection#account_key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#account_key_secret OracleDatabaseGoldengateConnection#account_key_secret}
 
 ---
 
@@ -3984,7 +3984,7 @@ public readonly endpoint: string;
 
 The endpoint of Azure Data Lake Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
 
 ---
 
@@ -4018,7 +4018,7 @@ public readonly bucket: string;
 
 The bucket of Google Cloud Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#bucket OracleDatabaseGoldengateConnection#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#bucket OracleDatabaseGoldengateConnection#bucket}
 
 ---
 
@@ -4032,7 +4032,7 @@ public readonly projectId: string;
 
 The project ID of Google Cloud Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#project_id OracleDatabaseGoldengateConnection#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#project_id OracleDatabaseGoldengateConnection#project_id}
 
 ---
 
@@ -4046,7 +4046,7 @@ public readonly serviceAccountKeyFile: string;
 
 The service account key file of Google Cloud Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#service_account_key_file OracleDatabaseGoldengateConnection#service_account_key_file}
 
 ---
 
@@ -4099,7 +4099,7 @@ public readonly authenticationType: string;
 
 Authentication type for Java Message Service. Possible values: NONE BASIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
 
 ---
 
@@ -4113,7 +4113,7 @@ public readonly connectionFactory: string;
 
 The Java class implementing javax.jms.ConnectionFactory interface supplied by the JMS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_factory OracleDatabaseGoldengateConnection#connection_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_factory OracleDatabaseGoldengateConnection#connection_factory}
 
 ---
 
@@ -4127,7 +4127,7 @@ public readonly connectionUrl: string;
 
 Connection URL of the Java Message Service, specifying the protocol, host, and port. e.g.: 'mq://myjms.host.domain:7676'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
 
 ---
 
@@ -4141,7 +4141,7 @@ public readonly jndiConnectionFactory: string;
 
 The Connection Factory can be looked up using this name. e.g.: 'ConnectionFactory'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#jndi_connection_factory OracleDatabaseGoldengateConnection#jndi_connection_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#jndi_connection_factory OracleDatabaseGoldengateConnection#jndi_connection_factory}
 
 ---
 
@@ -4155,7 +4155,7 @@ public readonly jndiInitialContextFactory: string;
 
 The implementation of javax.naming.spi.InitialContextFactory interface used to obtain initial naming context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#jndi_initial_context_factory OracleDatabaseGoldengateConnection#jndi_initial_context_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#jndi_initial_context_factory OracleDatabaseGoldengateConnection#jndi_initial_context_factory}
 
 ---
 
@@ -4169,7 +4169,7 @@ public readonly jndiProviderUrl: string;
 
 The URL that Java Message Service will use to contact the JNDI provider. e.g.: 'tcp://myjms.host.domain:61616?jms.prefetchPolicy.all=1000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#jndi_provider_url OracleDatabaseGoldengateConnection#jndi_provider_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#jndi_provider_url OracleDatabaseGoldengateConnection#jndi_provider_url}
 
 ---
 
@@ -4183,7 +4183,7 @@ public readonly jndiSecurityCredentialsSecret: string;
 
 The password associated to the principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#jndi_security_credentials_secret OracleDatabaseGoldengateConnection#jndi_security_credentials_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#jndi_security_credentials_secret OracleDatabaseGoldengateConnection#jndi_security_credentials_secret}
 
 ---
 
@@ -4197,7 +4197,7 @@ public readonly jndiSecurityPrincipal: string;
 
 Specifies the identity of the principal (user) to be authenticated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#jndi_security_principal OracleDatabaseGoldengateConnection#jndi_security_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#jndi_security_principal OracleDatabaseGoldengateConnection#jndi_security_principal}
 
 ---
 
@@ -4211,7 +4211,7 @@ public readonly keyStoreFile: string;
 
 The content of the KeyStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
 
 ---
 
@@ -4225,7 +4225,7 @@ public readonly keyStorePassword: string;
 
 Input only. The KeyStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
 
 ---
 
@@ -4239,7 +4239,7 @@ public readonly keyStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the KeyStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
 
 ---
 
@@ -4253,7 +4253,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses to connect the Java Message Service in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -4272,7 +4272,7 @@ the password Oracle Goldengate uses to connect the associated Java
 Message Service.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -4286,7 +4286,7 @@ public readonly securityProtocol: string;
 
 Security protocol for Java Message Service. Possible values: PLAIN TLS MTLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -4300,7 +4300,7 @@ public readonly sslKeyPassword: string;
 
 Input only. The password for the cert inside of the KeyStore in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password OracleDatabaseGoldengateConnection#ssl_key_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password OracleDatabaseGoldengateConnection#ssl_key_password}
 
 ---
 
@@ -4318,7 +4318,7 @@ The resource name of a secret version in Secret Manager which contains
 the password for the cert inside of the KeyStore.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password_secret_version OracleDatabaseGoldengateConnection#ssl_key_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password_secret_version OracleDatabaseGoldengateConnection#ssl_key_password_secret_version}
 
 ---
 
@@ -4332,7 +4332,7 @@ public readonly technologyType: string;
 
 The technology type of JavaMessageServiceConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -4346,7 +4346,7 @@ public readonly trustStoreFile: string;
 
 The content of the TrustStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
 
 ---
 
@@ -4360,7 +4360,7 @@ public readonly trustStorePassword: string;
 
 Input only. The TrustStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
 
 ---
 
@@ -4374,7 +4374,7 @@ public readonly trustStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the TrustStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
 
 ---
 
@@ -4388,7 +4388,7 @@ public readonly useJndi: boolean | IResolvable;
 
 If set to true, Java Naming and Directory Interface (JNDI) properties should be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#use_jndi OracleDatabaseGoldengateConnection#use_jndi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#use_jndi OracleDatabaseGoldengateConnection#use_jndi}
 
 ---
 
@@ -4402,7 +4402,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect to the Java Message Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -4452,7 +4452,7 @@ public readonly bootstrapServers: IResolvable | OracleDatabaseGoldengateConnecti
 
 bootstrap_servers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#bootstrap_servers OracleDatabaseGoldengateConnection#bootstrap_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#bootstrap_servers OracleDatabaseGoldengateConnection#bootstrap_servers}
 
 ---
 
@@ -4466,7 +4466,7 @@ public readonly clusterId: string;
 
 The OCID of the Kafka cluster being referenced from OCI Streaming with Apache Kafka.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#cluster_id OracleDatabaseGoldengateConnection#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#cluster_id OracleDatabaseGoldengateConnection#cluster_id}
 
 ---
 
@@ -4480,7 +4480,7 @@ public readonly consumerPropertiesFile: string;
 
 The content of the consumer.properties file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#consumer_properties_file OracleDatabaseGoldengateConnection#consumer_properties_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#consumer_properties_file OracleDatabaseGoldengateConnection#consumer_properties_file}
 
 ---
 
@@ -4494,7 +4494,7 @@ public readonly keyStoreFile: string;
 
 The content of the KeyStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
 
 ---
 
@@ -4508,7 +4508,7 @@ public readonly keyStorePassword: string;
 
 Input only. The KeyStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
 
 ---
 
@@ -4522,7 +4522,7 @@ public readonly keyStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the KeyStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
 
 ---
 
@@ -4536,7 +4536,7 @@ public readonly password: string;
 
 Input only. The password for Kafka basic/SASL auth in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -4554,7 +4554,7 @@ The resource name of a secret version in Secret Manager which contains
 the password for Kafka basic/SASL auth.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -4568,7 +4568,7 @@ public readonly producerPropertiesFile: string;
 
 The content of the producer.properties file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#producer_properties_file OracleDatabaseGoldengateConnection#producer_properties_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#producer_properties_file OracleDatabaseGoldengateConnection#producer_properties_file}
 
 ---
 
@@ -4582,7 +4582,7 @@ public readonly securityProtocol: string;
 
 Security Type for Kafka. Possible values: SSL SASL_SSL PLAINTEXT SASL_PLAINTEXT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -4596,7 +4596,7 @@ public readonly sslKeyPassword: string;
 
 Input only. The password for the cert inside of the KeyStore in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password OracleDatabaseGoldengateConnection#ssl_key_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password OracleDatabaseGoldengateConnection#ssl_key_password}
 
 ---
 
@@ -4614,7 +4614,7 @@ The resource name of a secret version in Secret Manager which contains
 the password for the cert inside of the KeyStore.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password_secret_version OracleDatabaseGoldengateConnection#ssl_key_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password_secret_version OracleDatabaseGoldengateConnection#ssl_key_password_secret_version}
 
 ---
 
@@ -4628,7 +4628,7 @@ public readonly streamPoolId: string;
 
 The OCID of the stream pool being referenced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#stream_pool_id OracleDatabaseGoldengateConnection#stream_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#stream_pool_id OracleDatabaseGoldengateConnection#stream_pool_id}
 
 ---
 
@@ -4642,7 +4642,7 @@ public readonly technologyType: string;
 
 The technology type of KafkaConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -4656,7 +4656,7 @@ public readonly trustStoreFile: string;
 
 The content of the TrustStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
 
 ---
 
@@ -4670,7 +4670,7 @@ public readonly trustStorePassword: string;
 
 Input only. The TrustStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
 
 ---
 
@@ -4684,7 +4684,7 @@ public readonly trustStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the TrustStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
 
 ---
 
@@ -4698,7 +4698,7 @@ public readonly useResourcePrincipal: boolean | IResolvable;
 
 Specifies that the user intends to authenticate to the instance using a resource principal. Applicable only for OCI Streaming connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
 
 ---
 
@@ -4712,7 +4712,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect the associated system of the given technology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -4746,7 +4746,7 @@ public readonly host: string;
 
 The name or address of a host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
 
 ---
 
@@ -4760,7 +4760,7 @@ public readonly port: number;
 
 The port of an endpoint usually specified for a connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
 
 ---
 
@@ -4774,7 +4774,7 @@ public readonly privateIpAddress: string;
 
 The private IP address of the connection's endpoint in the customer's VCN, typically a database endpoint or a big data endpoint (e.g. Kafka bootstrap server). In case the privateIp is provided, the subnetId must also be provided. In case the privateIp (and the subnetId) is not provided it is assumed the datasource is publicly accessible. In case the connection is accessible only privately, the lack of privateIp will result in not being able to access the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_ip_address OracleDatabaseGoldengateConnection#private_ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_ip_address OracleDatabaseGoldengateConnection#private_ip_address}
 
 ---
 
@@ -4819,7 +4819,7 @@ public readonly authenticationType: string;
 
 Used authentication mechanism to access Schema Registry. Possible values: NONE BASIC MUTUAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
 
 ---
 
@@ -4833,7 +4833,7 @@ public readonly keyStoreFile: string;
 
 The content of the KeyStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
 
 ---
 
@@ -4847,7 +4847,7 @@ public readonly keyStorePassword: string;
 
 Input only. The KeyStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
 
 ---
 
@@ -4861,7 +4861,7 @@ public readonly keyStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the KeyStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
 
 ---
 
@@ -4875,7 +4875,7 @@ public readonly password: string;
 
 Input only. The password to access Schema Registry in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -4893,7 +4893,7 @@ The resource name of a secret version in Secret Manager which contains
 the password to access Schema Registry using basic authentication.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -4907,7 +4907,7 @@ public readonly sslKeyPassword: string;
 
 Input only. The password for the cert inside the KeyStore in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password OracleDatabaseGoldengateConnection#ssl_key_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password OracleDatabaseGoldengateConnection#ssl_key_password}
 
 ---
 
@@ -4925,7 +4925,7 @@ The resource name of a secret version in Secret Manager which contains
 the password for the cert inside the KeyStore.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password_secret_version OracleDatabaseGoldengateConnection#ssl_key_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_password_secret_version OracleDatabaseGoldengateConnection#ssl_key_password_secret_version}
 
 ---
 
@@ -4939,7 +4939,7 @@ public readonly technologyType: string;
 
 The technology type of KafkaSchemaRegistryConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -4953,7 +4953,7 @@ public readonly trustStoreFile: string;
 
 The content of the TrustStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
 
 ---
 
@@ -4967,7 +4967,7 @@ public readonly trustStorePassword: string;
 
 Input only. The TrustStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
 
 ---
 
@@ -4981,7 +4981,7 @@ public readonly trustStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the TrustStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
 
 ---
 
@@ -4995,7 +4995,7 @@ public readonly url: string;
 
 Kafka Schema Registry URL. e.g.: 'https://server1.us.oracle.com:8081'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#url OracleDatabaseGoldengateConnection#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#url OracleDatabaseGoldengateConnection#url}
 
 ---
 
@@ -5009,7 +5009,7 @@ public readonly username: string;
 
 The username to access Schema Registry using basic authentication. This value is injected into 'schema.registry.basic.auth.user.info=user:password' configuration property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -5045,7 +5045,7 @@ public readonly clientId: string;
 
 Azure client ID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_id OracleDatabaseGoldengateConnection#client_id}
 
 ---
 
@@ -5059,7 +5059,7 @@ public readonly clientSecret: string;
 
 Client secret associated with the client id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#client_secret OracleDatabaseGoldengateConnection#client_secret}
 
 ---
 
@@ -5073,7 +5073,7 @@ public readonly endpoint: string;
 
 Optional Microsoft Fabric service endpoint. Default value: https://onelake.dfs.fabric.microsoft.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#endpoint OracleDatabaseGoldengateConnection#endpoint}
 
 ---
 
@@ -5087,7 +5087,7 @@ public readonly technologyType: string;
 
 The technology type of MicrosoftFabricConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -5101,7 +5101,7 @@ public readonly tenantId: string;
 
 Azure tenant ID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tenant_id OracleDatabaseGoldengateConnection#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tenant_id OracleDatabaseGoldengateConnection#tenant_id}
 
 ---
 
@@ -5143,7 +5143,7 @@ public readonly additionalAttributes: IResolvable | OracleDatabaseGoldengateConn
 
 additional_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
 
 ---
 
@@ -5157,7 +5157,7 @@ public readonly database: string;
 
 The name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
 
 ---
 
@@ -5171,7 +5171,7 @@ public readonly host: string;
 
 The name or address of a host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
 
 ---
 
@@ -5185,7 +5185,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses for Microsoft SQL Server connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -5204,7 +5204,7 @@ the password Oracle Goldengate uses for Microsoft SQL Server
 connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -5218,7 +5218,7 @@ public readonly port: number;
 
 The port of an endpoint usually specified for a connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
 
 ---
 
@@ -5232,7 +5232,7 @@ public readonly securityProtocol: string;
 
 Security Type for Microsoft SQL Server. Possible values: PLAIN TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -5246,7 +5246,7 @@ public readonly serverCertificateValidationRequired: boolean | IResolvable;
 
 If set to true, the driver validates the certificate that is sent by the database server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#server_certificate_validation_required OracleDatabaseGoldengateConnection#server_certificate_validation_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#server_certificate_validation_required OracleDatabaseGoldengateConnection#server_certificate_validation_required}
 
 ---
 
@@ -5260,7 +5260,7 @@ public readonly sslCaFile: string;
 
 Database Certificate - The content of a .pem or .crt file containing the server public key (for 1-way SSL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_ca_file OracleDatabaseGoldengateConnection#ssl_ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_ca_file OracleDatabaseGoldengateConnection#ssl_ca_file}
 
 ---
 
@@ -5274,7 +5274,7 @@ public readonly technologyType: string;
 
 The technology type of MicrosoftSqlserverConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -5288,7 +5288,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect to the Microsoft SQL Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -5321,7 +5321,7 @@ public readonly key: string;
 
 The name of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
 
 ---
 
@@ -5335,7 +5335,7 @@ public readonly value: string;
 
 The value of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
 
 ---
 
@@ -5377,7 +5377,7 @@ public readonly connectionString: string;
 
 MongoDB connection string. e.g.: 'mongodb://mongodb0.example.com:27017/recordsrecords'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_string OracleDatabaseGoldengateConnection#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_string OracleDatabaseGoldengateConnection#connection_string}
 
 ---
 
@@ -5391,7 +5391,7 @@ public readonly databaseId: string;
 
 The OCID of the Oracle Autonomous Json Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#database_id OracleDatabaseGoldengateConnection#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#database_id OracleDatabaseGoldengateConnection#database_id}
 
 ---
 
@@ -5405,7 +5405,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses to connect the Mongodb connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -5423,7 +5423,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses to connect the Mongodb connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -5437,7 +5437,7 @@ public readonly securityProtocol: string;
 
 Security Type for MongoDB. Possible values: PLAIN TLS MTLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -5451,7 +5451,7 @@ public readonly technologyType: string;
 
 The technology type of MongodbConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -5465,7 +5465,7 @@ public readonly tlsCaFile: string;
 
 Database Certificate - The content of a .pem file, containing the server public key (for 1 and 2-way SSL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tls_ca_file OracleDatabaseGoldengateConnection#tls_ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tls_ca_file OracleDatabaseGoldengateConnection#tls_ca_file}
 
 ---
 
@@ -5479,7 +5479,7 @@ public readonly tlsCertificateKeyFile: string;
 
 Client Certificate - The content of a .pem file, containing the client public key (for 2-way SSL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tls_certificate_key_file OracleDatabaseGoldengateConnection#tls_certificate_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tls_certificate_key_file OracleDatabaseGoldengateConnection#tls_certificate_key_file}
 
 ---
 
@@ -5493,7 +5493,7 @@ public readonly tlsCertificateKeyFilePassword: string;
 
 Input only. The Client Certificate key file password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tls_certificate_key_file_password OracleDatabaseGoldengateConnection#tls_certificate_key_file_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tls_certificate_key_file_password OracleDatabaseGoldengateConnection#tls_certificate_key_file_password}
 
 ---
 
@@ -5511,7 +5511,7 @@ The resource name of a secret version in Secret Manager which contains
 the Client Certificate key file password in Secret Manager.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tls_certificate_key_file_password_secret_version OracleDatabaseGoldengateConnection#tls_certificate_key_file_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tls_certificate_key_file_password_secret_version OracleDatabaseGoldengateConnection#tls_certificate_key_file_password_secret_version}
 
 ---
 
@@ -5525,7 +5525,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -5571,7 +5571,7 @@ public readonly additionalAttributes: IResolvable | OracleDatabaseGoldengateConn
 
 additional_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
 
 ---
 
@@ -5585,7 +5585,7 @@ public readonly database: string;
 
 The name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
 
 ---
 
@@ -5599,7 +5599,7 @@ public readonly dbSystemId: string;
 
 The OCID of the database system being referenced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#db_system_id OracleDatabaseGoldengateConnection#db_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#db_system_id OracleDatabaseGoldengateConnection#db_system_id}
 
 ---
 
@@ -5613,7 +5613,7 @@ public readonly host: string;
 
 The name or address of a host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
 
 ---
 
@@ -5627,7 +5627,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses to connect to MySQL in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -5645,7 +5645,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses to connect to MySQL.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -5659,7 +5659,7 @@ public readonly port: number;
 
 The port of an endpoint usually specified for a connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
 
 ---
 
@@ -5673,7 +5673,7 @@ public readonly securityProtocol: string;
 
 Security Type for MySQL. Possible values: PLAIN TLS MTLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -5687,7 +5687,7 @@ public readonly sslCaFile: string;
 
 Database Certificate - The content of a .pem or .crt file containing the server public key (for 1 and 2-way SSL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_ca_file OracleDatabaseGoldengateConnection#ssl_ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_ca_file OracleDatabaseGoldengateConnection#ssl_ca_file}
 
 ---
 
@@ -5701,7 +5701,7 @@ public readonly sslCertFile: string;
 
 Client Certificate - The content of a .pem or .crt file containing the client public key (for 2-way SSL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_cert_file OracleDatabaseGoldengateConnection#ssl_cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_cert_file OracleDatabaseGoldengateConnection#ssl_cert_file}
 
 ---
 
@@ -5715,7 +5715,7 @@ public readonly sslCrlFile: string;
 
 The list of certificates revoked by the trusted certificate authorities (Trusted CA).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_crl_file OracleDatabaseGoldengateConnection#ssl_crl_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_crl_file OracleDatabaseGoldengateConnection#ssl_crl_file}
 
 ---
 
@@ -5729,7 +5729,7 @@ public readonly sslKeyFile: string;
 
 Client Key - The content of a .pem or .crt file containing the client private key (for 2-way SSL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_file OracleDatabaseGoldengateConnection#ssl_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_file OracleDatabaseGoldengateConnection#ssl_key_file}
 
 ---
 
@@ -5743,7 +5743,7 @@ public readonly sslMode: string;
 
 SSL modes for MySQL. Possible values: DISABLED PREFERRED REQUIRED VERIFY_CA VERIFY_IDENTITY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_mode OracleDatabaseGoldengateConnection#ssl_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_mode OracleDatabaseGoldengateConnection#ssl_mode}
 
 ---
 
@@ -5757,7 +5757,7 @@ public readonly technologyType: string;
 
 The technology type of MysqlConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -5771,7 +5771,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect the associated system of the given technology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -5804,7 +5804,7 @@ public readonly key: string;
 
 The name of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
 
 ---
 
@@ -5818,7 +5818,7 @@ public readonly value: string;
 
 The value of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
 
 ---
 
@@ -5857,7 +5857,7 @@ public readonly privateKeyFile: string;
 
 The content of the private key file (PEM file) corresponding to the API key of the fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
 
 ---
 
@@ -5871,7 +5871,7 @@ public readonly privateKeyPassphraseSecret: string;
 
 The passphrase of the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
 
 ---
 
@@ -5885,7 +5885,7 @@ public readonly publicKeyFingerprint: string;
 
 The fingerprint of the API Key of the user specified by the userId.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#public_key_fingerprint OracleDatabaseGoldengateConnection#public_key_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#public_key_fingerprint OracleDatabaseGoldengateConnection#public_key_fingerprint}
 
 ---
 
@@ -5902,7 +5902,7 @@ The name of the region of OCI Object Storage.
 e.g.: us-ashburn-1
 If the region is not provided, backend will default to the default region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
 
 ---
 
@@ -5916,7 +5916,7 @@ public readonly technologyType: string;
 
 The technology type of OciObjectStorageConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -5930,7 +5930,7 @@ public readonly tenancyId: string;
 
 The OCID of the related OCI tenancy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tenancy_id OracleDatabaseGoldengateConnection#tenancy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tenancy_id OracleDatabaseGoldengateConnection#tenancy_id}
 
 ---
 
@@ -5944,7 +5944,7 @@ public readonly useResourcePrincipal: boolean | IResolvable;
 
 Specifies that the user intends to authenticate to the instance using a resource principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
 
 ---
 
@@ -5960,7 +5960,7 @@ The OCID of the OCI user who will access the Object Storage.
 
 The user must have write access to the bucket they want to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#user_id OracleDatabaseGoldengateConnection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#user_id OracleDatabaseGoldengateConnection#user_id}
 
 ---
 
@@ -6000,7 +6000,7 @@ public readonly connectionUrl: string;
 
 Connection URL. It must start with 'jdbc:spark://'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
 
 ---
 
@@ -6014,7 +6014,7 @@ public readonly privateKeyFile: string;
 
 The content of the private key file (PEM file) corresponding to the API key of the fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
 
 ---
 
@@ -6028,7 +6028,7 @@ public readonly privateKeyPassphraseSecret: string;
 
 The passphrase of the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
 
 ---
 
@@ -6042,7 +6042,7 @@ public readonly publicKeyFingerprint: string;
 
 The fingerprint of the API Key of the user specified by the user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#public_key_fingerprint OracleDatabaseGoldengateConnection#public_key_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#public_key_fingerprint OracleDatabaseGoldengateConnection#public_key_fingerprint}
 
 ---
 
@@ -6056,7 +6056,7 @@ public readonly region: string;
 
 The name of the region. e.g.: us-ashburn-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
 
 ---
 
@@ -6070,7 +6070,7 @@ public readonly technologyType: string;
 
 The technology type of OracleAiDataPlatformConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -6084,7 +6084,7 @@ public readonly tenancyId: string;
 
 The OCID of the related OCI tenancy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tenancy_id OracleDatabaseGoldengateConnection#tenancy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tenancy_id OracleDatabaseGoldengateConnection#tenancy_id}
 
 ---
 
@@ -6098,7 +6098,7 @@ public readonly useResourcePrincipal: boolean | IResolvable;
 
 Specifies that the user intends to authenticate to the instance using a resource principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
 
 ---
 
@@ -6112,7 +6112,7 @@ public readonly userId: string;
 
 The OCID of the OCI user who will access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#user_id OracleDatabaseGoldengateConnection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#user_id OracleDatabaseGoldengateConnection#user_id}
 
 ---
 
@@ -6152,7 +6152,7 @@ public readonly authenticationMode: string;
 
 Authentication mode. Possible values: TLS MTLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_mode OracleDatabaseGoldengateConnection#authentication_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_mode OracleDatabaseGoldengateConnection#authentication_mode}
 
 ---
 
@@ -6166,7 +6166,7 @@ public readonly connectionString: string;
 
 Connect descriptor or Easy Connect Naming method used to connect to a database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_string OracleDatabaseGoldengateConnection#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_string OracleDatabaseGoldengateConnection#connection_string}
 
 ---
 
@@ -6180,7 +6180,7 @@ public readonly gcpOracleDatabaseId: string;
 
 Database instance id of database in Oracle Database @ Google Cloud. If gcp_oracle_database_id is provided, connection_string must be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#gcp_oracle_database_id OracleDatabaseGoldengateConnection#gcp_oracle_database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#gcp_oracle_database_id OracleDatabaseGoldengateConnection#gcp_oracle_database_id}
 
 ---
 
@@ -6194,7 +6194,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -6208,7 +6208,7 @@ public readonly passwordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the password Oracle Goldengate uses. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -6222,7 +6222,7 @@ public readonly sessionMode: string;
 
 The mode of the database connection session to be established by the data client. Possible values: DIRECT REDIRECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#session_mode OracleDatabaseGoldengateConnection#session_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#session_mode OracleDatabaseGoldengateConnection#session_mode}
 
 ---
 
@@ -6236,7 +6236,7 @@ public readonly technologyType: string;
 
 The technology type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -6250,7 +6250,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -6264,7 +6264,7 @@ public readonly walletFile: string;
 
 The wallet contents Oracle Goldengate uses to make connections to a database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#wallet_file OracleDatabaseGoldengateConnection#wallet_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#wallet_file OracleDatabaseGoldengateConnection#wallet_file}
 
 ---
 
@@ -6303,7 +6303,7 @@ public readonly privateKeyFile: string;
 
 The content of the private key file (PEM file) corresponding to the API key of the fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
 
 ---
 
@@ -6317,7 +6317,7 @@ public readonly privateKeyPassphraseSecret: string;
 
 The passphrase of the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
 
 ---
 
@@ -6331,7 +6331,7 @@ public readonly publicKeyFingerprint: string;
 
 The fingerprint of the API Key of the user specified by the userId.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#public_key_fingerprint OracleDatabaseGoldengateConnection#public_key_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#public_key_fingerprint OracleDatabaseGoldengateConnection#public_key_fingerprint}
 
 ---
 
@@ -6345,7 +6345,7 @@ public readonly region: string;
 
 The name of the region. e.g.: us-ashburn-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#region OracleDatabaseGoldengateConnection#region}
 
 ---
 
@@ -6359,7 +6359,7 @@ public readonly technologyType: string;
 
 The technology type of OracleNosqlConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -6373,7 +6373,7 @@ public readonly tenancyId: string;
 
 The OCID of the OCI tenancy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#tenancy_id OracleDatabaseGoldengateConnection#tenancy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#tenancy_id OracleDatabaseGoldengateConnection#tenancy_id}
 
 ---
 
@@ -6387,7 +6387,7 @@ public readonly useResourcePrincipal: boolean | IResolvable;
 
 Specifies that the user intends to authenticate to the instance using a resource principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#use_resource_principal OracleDatabaseGoldengateConnection#use_resource_principal}
 
 ---
 
@@ -6401,7 +6401,7 @@ public readonly userId: string;
 
 The OCID of the OCI user who will access the Oracle NoSQL database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#user_id OracleDatabaseGoldengateConnection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#user_id OracleDatabaseGoldengateConnection#user_id}
 
 ---
 
@@ -6447,7 +6447,7 @@ public readonly additionalAttributes: IResolvable | OracleDatabaseGoldengateConn
 
 additional_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#additional_attributes OracleDatabaseGoldengateConnection#additional_attributes}
 
 ---
 
@@ -6461,7 +6461,7 @@ public readonly database: string;
 
 The name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#database OracleDatabaseGoldengateConnection#database}
 
 ---
 
@@ -6475,7 +6475,7 @@ public readonly dbSystemId: string;
 
 The OCID of the database system being referenced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#db_system_id OracleDatabaseGoldengateConnection#db_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#db_system_id OracleDatabaseGoldengateConnection#db_system_id}
 
 ---
 
@@ -6489,7 +6489,7 @@ public readonly host: string;
 
 The name or address of a host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#host OracleDatabaseGoldengateConnection#host}
 
 ---
 
@@ -6503,7 +6503,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses for PostgreSQL connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -6521,7 +6521,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses for PostgreSQL connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -6535,7 +6535,7 @@ public readonly port: number;
 
 The port of an endpoint usually specified for a connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#port OracleDatabaseGoldengateConnection#port}
 
 ---
 
@@ -6549,7 +6549,7 @@ public readonly securityProtocol: string;
 
 Security protocol for PostgreSQL. Possible values: PLAIN TLS MTLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -6563,7 +6563,7 @@ public readonly sslCaFile: string;
 
 The certificate of the trusted certificate authorities (Trusted CA) for PostgreSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_ca_file OracleDatabaseGoldengateConnection#ssl_ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_ca_file OracleDatabaseGoldengateConnection#ssl_ca_file}
 
 ---
 
@@ -6577,7 +6577,7 @@ public readonly sslCertFile: string;
 
 The certificate of the PostgreSQL server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_cert_file OracleDatabaseGoldengateConnection#ssl_cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_cert_file OracleDatabaseGoldengateConnection#ssl_cert_file}
 
 ---
 
@@ -6591,7 +6591,7 @@ public readonly sslCrlFile: string;
 
 The list of certificates revoked by the trusted certificate authorities (Trusted CA).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_crl_file OracleDatabaseGoldengateConnection#ssl_crl_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_crl_file OracleDatabaseGoldengateConnection#ssl_crl_file}
 
 ---
 
@@ -6605,7 +6605,7 @@ public readonly sslKeyFile: string;
 
 The private key of the PostgreSQL server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_key_file OracleDatabaseGoldengateConnection#ssl_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_key_file OracleDatabaseGoldengateConnection#ssl_key_file}
 
 ---
 
@@ -6619,7 +6619,7 @@ public readonly sslMode: string;
 
 SSL modes for PostgreSQL. Possible values: PREFER REQUIRE VERIFY_CA VERIFY_FULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#ssl_mode OracleDatabaseGoldengateConnection#ssl_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#ssl_mode OracleDatabaseGoldengateConnection#ssl_mode}
 
 ---
 
@@ -6633,7 +6633,7 @@ public readonly technologyType: string;
 
 The technology type of PostgresqlConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -6647,7 +6647,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect the associated system of the given technology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -6680,7 +6680,7 @@ public readonly key: string;
 
 The name of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key OracleDatabaseGoldengateConnection#key}
 
 ---
 
@@ -6694,7 +6694,7 @@ public readonly value: string;
 
 The value of the property entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#value OracleDatabaseGoldengateConnection#value}
 
 ---
 
@@ -6739,7 +6739,7 @@ public readonly authenticationType: string;
 
 Authentication type for Redis. Possible values: NONE BASIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
 
 ---
 
@@ -6753,7 +6753,7 @@ public readonly keyStoreFile: string;
 
 The content of the KeyStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_file OracleDatabaseGoldengateConnection#key_store_file}
 
 ---
 
@@ -6767,7 +6767,7 @@ public readonly keyStorePassword: string;
 
 Input only. The KeyStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password OracleDatabaseGoldengateConnection#key_store_password}
 
 ---
 
@@ -6781,7 +6781,7 @@ public readonly keyStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the KeyStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#key_store_password_secret_version OracleDatabaseGoldengateConnection#key_store_password_secret_version}
 
 ---
 
@@ -6795,7 +6795,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses for Redis connection in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -6813,7 +6813,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses for Redis connection.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -6827,7 +6827,7 @@ public readonly redisClusterId: string;
 
 The OCID of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#redis_cluster_id OracleDatabaseGoldengateConnection#redis_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#redis_cluster_id OracleDatabaseGoldengateConnection#redis_cluster_id}
 
 ---
 
@@ -6841,7 +6841,7 @@ public readonly securityProtocol: string;
 
 Security protocol for Redis. Possible values: PLAIN TLS MTLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#security_protocol OracleDatabaseGoldengateConnection#security_protocol}
 
 ---
 
@@ -6858,7 +6858,7 @@ Comma separated list of Redis server addresses, specified as host:port entries, 
 If port is not specified, it defaults
 to 6379. Example: "server1.example.com:6379,server2.example.com:6379"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#servers OracleDatabaseGoldengateConnection#servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#servers OracleDatabaseGoldengateConnection#servers}
 
 ---
 
@@ -6872,7 +6872,7 @@ public readonly technologyType: string;
 
 The technology type of RedisConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -6886,7 +6886,7 @@ public readonly trustStoreFile: string;
 
 The content of the TrustStore file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_file OracleDatabaseGoldengateConnection#trust_store_file}
 
 ---
 
@@ -6900,7 +6900,7 @@ public readonly trustStorePassword: string;
 
 Input only. The TrustStore password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password OracleDatabaseGoldengateConnection#trust_store_password}
 
 ---
 
@@ -6914,7 +6914,7 @@ public readonly trustStorePasswordSecretVersion: string;
 
 Input only. The resource name of a secret version in Secret Manager which contains the TrustStore password. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#trust_store_password_secret_version OracleDatabaseGoldengateConnection#trust_store_password_secret_version}
 
 ---
 
@@ -6928,7 +6928,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect the associated system of the given technology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -6967,7 +6967,7 @@ public readonly authenticationType: string;
 
 Used authentication mechanism to access Snowflake. Possible values: BASIC KEY_PAIR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#authentication_type OracleDatabaseGoldengateConnection#authentication_type}
 
 ---
 
@@ -6981,7 +6981,7 @@ public readonly connectionUrl: string;
 
 JDBC connection URL. e.g.: 'jdbc:snowflake://.snowflakecomputing.com/?warehouse=&db='.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#connection_url OracleDatabaseGoldengateConnection#connection_url}
 
 ---
 
@@ -6995,7 +6995,7 @@ public readonly password: string;
 
 Input only. The password Oracle Goldengate uses to connect to Snowflake platform in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password OracleDatabaseGoldengateConnection#password}
 
 ---
 
@@ -7013,7 +7013,7 @@ The resource name of a secret version in Secret Manager which contains
 the password Oracle Goldengate uses to connect to Snowflake platform.
 Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#password_secret_version OracleDatabaseGoldengateConnection#password_secret_version}
 
 ---
 
@@ -7027,7 +7027,7 @@ public readonly privateKeyFile: string;
 
 The content of private key file in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_file OracleDatabaseGoldengateConnection#private_key_file}
 
 ---
 
@@ -7041,7 +7041,7 @@ public readonly privateKeyPassphraseSecret: string;
 
 Password if the private key file is encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#private_key_passphrase_secret OracleDatabaseGoldengateConnection#private_key_passphrase_secret}
 
 ---
 
@@ -7055,7 +7055,7 @@ public readonly technologyType: string;
 
 The technology type of SnowflakeConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#technology_type OracleDatabaseGoldengateConnection#technology_type}
 
 ---
 
@@ -7069,7 +7069,7 @@ public readonly username: string;
 
 The username Oracle Goldengate uses to connect to Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#username OracleDatabaseGoldengateConnection#username}
 
 ---
 
@@ -7087,9 +7087,9 @@ const oracleDatabaseGoldengateConnectionTimeouts: oracleDatabaseGoldengateConnec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#create OracleDatabaseGoldengateConnection#create}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#delete OracleDatabaseGoldengateConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#update OracleDatabaseGoldengateConnection#update}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#create OracleDatabaseGoldengateConnection#create}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#delete OracleDatabaseGoldengateConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#update OracleDatabaseGoldengateConnection#update}. |
 
 ---
 
@@ -7101,7 +7101,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#create OracleDatabaseGoldengateConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#create OracleDatabaseGoldengateConnection#create}.
 
 ---
 
@@ -7113,7 +7113,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#delete OracleDatabaseGoldengateConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#delete OracleDatabaseGoldengateConnection#delete}.
 
 ---
 
@@ -7125,7 +7125,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/oracle_database_goldengate_connection#update OracleDatabaseGoldengateConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/oracle_database_goldengate_connection#update OracleDatabaseGoldengateConnection#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### FirebaseAppHostingTraffic <a name="FirebaseAppHostingTraffic" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic google_firebase_app_hosting_traffic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic google_firebase_app_hosting_traffic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the FirebaseAppHostingTraffic 
 
 The id of the existing FirebaseAppHostingTraffic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1027,8 +1027,8 @@ new FirebaseAppHostingTrafficConfig {
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.backend">Backend</a></code> | <code>string</code> | Id of the backend that this Traffic config applies to. |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.location">Location</a></code> | <code>string</code> | The location the Backend that this Traffic config applies to. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#id FirebaseAppHostingTraffic#id}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#project FirebaseAppHostingTraffic#project}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#id FirebaseAppHostingTraffic#id}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#project FirebaseAppHostingTraffic#project}. |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.rolloutPolicy">RolloutPolicy</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicy">FirebaseAppHostingTrafficRolloutPolicy</a></code> | rollout_policy block. |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.target">Target</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTarget">FirebaseAppHostingTrafficTarget</a></code> | target block. |
 | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts">FirebaseAppHostingTrafficTimeouts</a></code> | timeouts block. |
@@ -1115,7 +1115,7 @@ public string Backend { get; set; }
 
 Id of the backend that this Traffic config applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#backend FirebaseAppHostingTraffic#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#backend FirebaseAppHostingTraffic#backend}
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Location { get; set; }
 
 The location the Backend that this Traffic config applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#location FirebaseAppHostingTraffic#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#location FirebaseAppHostingTraffic#location}
 
 ---
 
@@ -1141,7 +1141,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#id FirebaseAppHostingTraffic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#id FirebaseAppHostingTraffic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1156,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#project FirebaseAppHostingTraffic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#project FirebaseAppHostingTraffic#project}.
 
 ---
 
@@ -1170,7 +1170,7 @@ public FirebaseAppHostingTrafficRolloutPolicy RolloutPolicy { get; set; }
 
 rollout_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#rollout_policy FirebaseAppHostingTraffic#rollout_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#rollout_policy FirebaseAppHostingTraffic#rollout_policy}
 
 ---
 
@@ -1184,7 +1184,7 @@ public FirebaseAppHostingTrafficTarget Target { get; set; }
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#target FirebaseAppHostingTraffic#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#target FirebaseAppHostingTraffic#target}
 
 ---
 
@@ -1198,7 +1198,7 @@ public FirebaseAppHostingTrafficTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#timeouts FirebaseAppHostingTraffic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#timeouts FirebaseAppHostingTraffic#timeouts}
 
 ---
 
@@ -1262,7 +1262,7 @@ Specifies a branch that triggers a new build to be started with this policy.
 
 If not set, no automatic rollouts will happen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#codebase_branch FirebaseAppHostingTraffic#codebase_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#codebase_branch FirebaseAppHostingTraffic#codebase_branch}
 
 ---
 
@@ -1276,7 +1276,7 @@ public bool|IResolvable Disabled { get; set; }
 
 A flag that, if true, prevents rollouts from being created via this RolloutPolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#disabled FirebaseAppHostingTraffic#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#disabled FirebaseAppHostingTraffic#disabled}
 
 ---
 
@@ -1310,7 +1310,7 @@ public IResolvable|FirebaseAppHostingTrafficTargetSplits[] Splits { get; set; }
 
 splits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#splits FirebaseAppHostingTraffic#splits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#splits FirebaseAppHostingTraffic#splits}
 
 ---
 
@@ -1346,7 +1346,7 @@ public string BuildAttribute { get; set; }
 
 The build that traffic is being routed to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#build FirebaseAppHostingTraffic#build}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#build FirebaseAppHostingTraffic#build}
 
 ---
 
@@ -1360,7 +1360,7 @@ public double Percent { get; set; }
 
 The percentage of traffic to send to the build. Currently must be 100 or 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#percent FirebaseAppHostingTraffic#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#percent FirebaseAppHostingTraffic#percent}
 
 ---
 
@@ -1382,9 +1382,9 @@ new FirebaseAppHostingTrafficTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#create FirebaseAppHostingTraffic#create}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#delete FirebaseAppHostingTraffic#delete}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#update FirebaseAppHostingTraffic#update}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#create FirebaseAppHostingTraffic#create}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#delete FirebaseAppHostingTraffic#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#update FirebaseAppHostingTraffic#update}. |
 
 ---
 
@@ -1396,7 +1396,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#create FirebaseAppHostingTraffic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#create FirebaseAppHostingTraffic#create}.
 
 ---
 
@@ -1408,7 +1408,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#delete FirebaseAppHostingTraffic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#delete FirebaseAppHostingTraffic#delete}.
 
 ---
 
@@ -1420,7 +1420,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/firebase_app_hosting_traffic#update FirebaseAppHostingTraffic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/firebase_app_hosting_traffic#update FirebaseAppHostingTraffic#update}.
 
 ---
 

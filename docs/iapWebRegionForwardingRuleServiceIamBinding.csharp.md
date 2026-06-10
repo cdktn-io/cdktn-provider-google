@@ -4,7 +4,7 @@
 
 ### IapWebRegionForwardingRuleServiceIamBinding <a name="IapWebRegionForwardingRuleServiceIamBinding" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding google_iap_web_region_forwarding_rule_service_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding google_iap_web_region_forwarding_rule_service_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the IapWebRegionForwardingRule
 
 The id of the existing IapWebRegionForwardingRuleServiceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ new IapWebRegionForwardingRuleServiceIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#expression IapWebRegionForwardingRuleServiceIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#title IapWebRegionForwardingRuleServiceIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#description IapWebRegionForwardingRuleServiceIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#expression IapWebRegionForwardingRuleServiceIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#title IapWebRegionForwardingRuleServiceIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#description IapWebRegionForwardingRuleServiceIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#expression IapWebRegionForwardingRuleServiceIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#expression IapWebRegionForwardingRuleServiceIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#title IapWebRegionForwardingRuleServiceIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#title IapWebRegionForwardingRuleServiceIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#description IapWebRegionForwardingRuleServiceIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#description IapWebRegionForwardingRuleServiceIamBinding#description}.
 
 ---
 
@@ -986,13 +986,13 @@ new IapWebRegionForwardingRuleServiceIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.forwardingRuleRegionServiceName">ForwardingRuleRegionServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#forwarding_rule_region_service_name IapWebRegionForwardingRuleServiceIamBinding#forwarding_rule_region_service_name}. |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#members IapWebRegionForwardingRuleServiceIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#role IapWebRegionForwardingRuleServiceIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.forwardingRuleRegionServiceName">ForwardingRuleRegionServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#forwarding_rule_region_service_name IapWebRegionForwardingRuleServiceIamBinding#forwarding_rule_region_service_name}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#members IapWebRegionForwardingRuleServiceIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#role IapWebRegionForwardingRuleServiceIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition">IapWebRegionForwardingRuleServiceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#id IapWebRegionForwardingRuleServiceIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#project IapWebRegionForwardingRuleServiceIamBinding#project}. |
-| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#region IapWebRegionForwardingRuleServiceIamBinding#region}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#id IapWebRegionForwardingRuleServiceIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#project IapWebRegionForwardingRuleServiceIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#region IapWebRegionForwardingRuleServiceIamBinding#region}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ public string ForwardingRuleRegionServiceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#forwarding_rule_region_service_name IapWebRegionForwardingRuleServiceIamBinding#forwarding_rule_region_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#forwarding_rule_region_service_name IapWebRegionForwardingRuleServiceIamBinding#forwarding_rule_region_service_name}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#members IapWebRegionForwardingRuleServiceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#members IapWebRegionForwardingRuleServiceIamBinding#members}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#role IapWebRegionForwardingRuleServiceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#role IapWebRegionForwardingRuleServiceIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public IapWebRegionForwardingRuleServiceIamBindingCondition Condition { get; set
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#condition IapWebRegionForwardingRuleServiceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#condition IapWebRegionForwardingRuleServiceIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#id IapWebRegionForwardingRuleServiceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#id IapWebRegionForwardingRuleServiceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#project IapWebRegionForwardingRuleServiceIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#project IapWebRegionForwardingRuleServiceIamBinding#project}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#region IapWebRegionForwardingRuleServiceIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_web_region_forwarding_rule_service_iam_binding#region IapWebRegionForwardingRuleServiceIamBinding#region}.
 
 ---
 

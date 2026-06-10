@@ -4,7 +4,7 @@
 
 ### DataplexGlossaryCategory <a name="DataplexGlossaryCategory" id="@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer"></a>
 
@@ -53,9 +53,9 @@ dataplexGlossaryCategory.DataplexGlossaryCategory(
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.description">description</a></code> | <code>str</code> | The user-mutable description of the GlossaryCategory. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User friendly display name of the GlossaryCategory. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.glossaryId">glossary_id</a></code> | <code>str</code> | The glossary id for creation. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the GlossaryCategory. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategory.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts">DataplexGlossaryCategoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The location where the glossary category should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#location DataplexGlossaryCategory#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#location DataplexGlossaryCategory#location}
 
 ---
 
@@ -138,7 +138,7 @@ The immediate parent of the GlossaryCategory in the resource-hierarchy.
 
 It can either be a Glossary or a Category. Format: projects/{projectId}/locations/{locationId}/glossaries/{glossaryId} OR projects/{projectId}/locations/{locationId}/glossaries/{glossaryId}/categories/{categoryId}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#parent DataplexGlossaryCategory#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#parent DataplexGlossaryCategory#parent}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The category id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#category_id DataplexGlossaryCategory#category_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#category_id DataplexGlossaryCategory#category_id}
 
 ---
 
@@ -165,7 +165,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#deletion_policy DataplexGlossaryCategory#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#deletion_policy DataplexGlossaryCategory#deletion_policy}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user-mutable description of the GlossaryCategory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#description DataplexGlossaryCategory#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#description DataplexGlossaryCategory#description}
 
 ---
 
@@ -187,7 +187,7 @@ User friendly display name of the GlossaryCategory.
 
 This is user-mutable. This will be same as the categoryId, if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#display_name DataplexGlossaryCategory#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#display_name DataplexGlossaryCategory#display_name}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The glossary id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#glossary_id DataplexGlossaryCategory#glossary_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#glossary_id DataplexGlossaryCategory#glossary_id}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -221,7 +221,7 @@ User-defined labels for the GlossaryCategory.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#labels DataplexGlossaryCategory#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#labels DataplexGlossaryCategory#labels}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}.
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#timeouts DataplexGlossaryCategory#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#timeouts DataplexGlossaryCategory#timeouts}
 
 ---
 
@@ -646,7 +646,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#create DataplexGlossaryCategory#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#create DataplexGlossaryCategory#create}.
 
 ---
 
@@ -654,7 +654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#delete DataplexGlossaryCategory#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#delete DataplexGlossaryCategory#delete}.
 
 ---
 
@@ -662,7 +662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#update DataplexGlossaryCategory#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#update DataplexGlossaryCategory#update}.
 
 ---
 
@@ -834,7 +834,7 @@ The construct id used in the generated config for the DataplexGlossaryCategory t
 
 The id of the existing DataplexGlossaryCategory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1384,9 +1384,9 @@ dataplexGlossaryCategory.DataplexGlossaryCategoryConfig(
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.description">description</a></code> | <code>str</code> | The user-mutable description of the GlossaryCategory. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.displayName">display_name</a></code> | <code>str</code> | User friendly display name of the GlossaryCategory. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.glossaryId">glossary_id</a></code> | <code>str</code> | The glossary id for creation. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the GlossaryCategory. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts">DataplexGlossaryCategoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1471,7 +1471,7 @@ location: str
 
 The location where the glossary category should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#location DataplexGlossaryCategory#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#location DataplexGlossaryCategory#location}
 
 ---
 
@@ -1487,7 +1487,7 @@ The immediate parent of the GlossaryCategory in the resource-hierarchy.
 
 It can either be a Glossary or a Category. Format: projects/{projectId}/locations/{locationId}/glossaries/{glossaryId} OR projects/{projectId}/locations/{locationId}/glossaries/{glossaryId}/categories/{categoryId}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#parent DataplexGlossaryCategory#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#parent DataplexGlossaryCategory#parent}
 
 ---
 
@@ -1501,7 +1501,7 @@ category_id: str
 
 The category id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#category_id DataplexGlossaryCategory#category_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#category_id DataplexGlossaryCategory#category_id}
 
 ---
 
@@ -1522,7 +1522,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#deletion_policy DataplexGlossaryCategory#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#deletion_policy DataplexGlossaryCategory#deletion_policy}
 
 ---
 
@@ -1536,7 +1536,7 @@ description: str
 
 The user-mutable description of the GlossaryCategory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#description DataplexGlossaryCategory#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#description DataplexGlossaryCategory#description}
 
 ---
 
@@ -1552,7 +1552,7 @@ User friendly display name of the GlossaryCategory.
 
 This is user-mutable. This will be same as the categoryId, if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#display_name DataplexGlossaryCategory#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#display_name DataplexGlossaryCategory#display_name}
 
 ---
 
@@ -1566,7 +1566,7 @@ glossary_id: str
 
 The glossary id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#glossary_id DataplexGlossaryCategory#glossary_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#glossary_id DataplexGlossaryCategory#glossary_id}
 
 ---
 
@@ -1578,7 +1578,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#id DataplexGlossaryCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1598,7 +1598,7 @@ User-defined labels for the GlossaryCategory.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#labels DataplexGlossaryCategory#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#labels DataplexGlossaryCategory#labels}
 
 ---
 
@@ -1610,7 +1610,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#project DataplexGlossaryCategory#project}.
 
 ---
 
@@ -1624,7 +1624,7 @@ timeouts: DataplexGlossaryCategoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#timeouts DataplexGlossaryCategory#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#timeouts DataplexGlossaryCategory#timeouts}
 
 ---
 
@@ -1646,9 +1646,9 @@ dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#create DataplexGlossaryCategory#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#delete DataplexGlossaryCategory#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#update DataplexGlossaryCategory#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#create DataplexGlossaryCategory#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#delete DataplexGlossaryCategory#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryCategory.DataplexGlossaryCategoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#update DataplexGlossaryCategory#update}. |
 
 ---
 
@@ -1660,7 +1660,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#create DataplexGlossaryCategory#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#create DataplexGlossaryCategory#create}.
 
 ---
 
@@ -1672,7 +1672,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#delete DataplexGlossaryCategory#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#delete DataplexGlossaryCategory#delete}.
 
 ---
 
@@ -1684,7 +1684,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_category#update DataplexGlossaryCategory#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_category#update DataplexGlossaryCategory#update}.
 
 ---
 

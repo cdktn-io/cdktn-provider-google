@@ -4,7 +4,7 @@
 
 ### DataGoogleVertexAiIndex <a name="DataGoogleVertexAiIndex" id="@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index google_vertex_ai_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index google_vertex_ai_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleVertexAiIndex to
 
 The id of the existing DataGoogleVertexAiIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,8 +862,8 @@ new DataGoogleVertexAiIndexConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.property.name">Name</a></code> | <code>string</code> | The resource name of the Index. |
 | <code><a href="#@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.property.region">Region</a></code> | <code>string</code> | The region of the index. eg us-central1. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#id DataGoogleVertexAiIndex#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#project DataGoogleVertexAiIndex#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#id DataGoogleVertexAiIndex#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#project DataGoogleVertexAiIndex#project}. |
 
 ---
 
@@ -947,7 +947,7 @@ public string Name { get; set; }
 
 The resource name of the Index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#name DataGoogleVertexAiIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#name DataGoogleVertexAiIndex#name}
 
 ---
 
@@ -961,7 +961,7 @@ public string Region { get; set; }
 
 The region of the index. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#region DataGoogleVertexAiIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#region DataGoogleVertexAiIndex#region}
 
 ---
 
@@ -973,7 +973,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#id DataGoogleVertexAiIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#id DataGoogleVertexAiIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#project DataGoogleVertexAiIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#project DataGoogleVertexAiIndex#project}.
 
 ---
 

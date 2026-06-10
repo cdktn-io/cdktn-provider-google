@@ -4,7 +4,7 @@
 
 ### ServiceDirectoryServiceIamBinding <a name="ServiceDirectoryServiceIamBinding" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding google_service_directory_service_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding google_service_directory_service_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ServiceDirectoryServiceIam
 
 The id of the existing ServiceDirectoryServiceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,9 +846,9 @@ const serviceDirectoryServiceIamBindingCondition: serviceDirectoryServiceIamBind
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#expression ServiceDirectoryServiceIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#title ServiceDirectoryServiceIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#description ServiceDirectoryServiceIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#expression ServiceDirectoryServiceIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#title ServiceDirectoryServiceIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#description ServiceDirectoryServiceIamBinding#description}. |
 
 ---
 
@@ -860,7 +860,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#expression ServiceDirectoryServiceIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#expression ServiceDirectoryServiceIamBinding#expression}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#title ServiceDirectoryServiceIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#title ServiceDirectoryServiceIamBinding#title}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#description ServiceDirectoryServiceIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#description ServiceDirectoryServiceIamBinding#description}.
 
 ---
 
@@ -909,11 +909,11 @@ const serviceDirectoryServiceIamBindingConfig: serviceDirectoryServiceIamBinding
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#members ServiceDirectoryServiceIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#name ServiceDirectoryServiceIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#role ServiceDirectoryServiceIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#members ServiceDirectoryServiceIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#name ServiceDirectoryServiceIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#role ServiceDirectoryServiceIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition">ServiceDirectoryServiceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#id ServiceDirectoryServiceIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#id ServiceDirectoryServiceIamBinding#id}. |
 
 ---
 
@@ -995,7 +995,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#members ServiceDirectoryServiceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#members ServiceDirectoryServiceIamBinding#members}.
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#name ServiceDirectoryServiceIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#name ServiceDirectoryServiceIamBinding#name}.
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#role ServiceDirectoryServiceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#role ServiceDirectoryServiceIamBinding#role}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly condition: ServiceDirectoryServiceIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#condition ServiceDirectoryServiceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#condition ServiceDirectoryServiceIamBinding#condition}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_service_iam_binding#id ServiceDirectoryServiceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_service_iam_binding#id ServiceDirectoryServiceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

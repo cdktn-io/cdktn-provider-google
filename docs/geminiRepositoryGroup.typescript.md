@@ -4,7 +4,7 @@
 
 ### GeminiRepositoryGroup <a name="GeminiRepositoryGroup" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group google_gemini_repository_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group google_gemini_repository_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.Initializer"></a>
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the GeminiRepositoryGroup to i
 
 The id of the existing GeminiRepositoryGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1024,9 +1024,9 @@ const geminiRepositoryGroupConfig: geminiRepositoryGroup.GeminiRepositoryGroupCo
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.repositories">repositories</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupRepositories">GeminiRepositoryGroupRepositories</a>[]</code> | repositories block. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.repositoryGroupId">repositoryGroupId</a></code> | <code>string</code> | Required. Id of the Repository Group. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Optional. Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}. |
 | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts">GeminiRepositoryGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1111,7 +1111,7 @@ public readonly codeRepositoryIndex: string;
 
 Required. Id of the Code Repository Index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#code_repository_index GeminiRepositoryGroup#code_repository_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#code_repository_index GeminiRepositoryGroup#code_repository_index}
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly location: string;
 
 The location of the Code Repository Index, for example 'us-central1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#location GeminiRepositoryGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#location GeminiRepositoryGroup#location}
 
 ---
 
@@ -1139,7 +1139,7 @@ public readonly repositories: IResolvable | GeminiRepositoryGroupRepositories[];
 
 repositories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#repositories GeminiRepositoryGroup#repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#repositories GeminiRepositoryGroup#repositories}
 
 ---
 
@@ -1153,7 +1153,7 @@ public readonly repositoryGroupId: string;
 
 Required. Id of the Repository Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#repository_group_id GeminiRepositoryGroup#repository_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#repository_group_id GeminiRepositoryGroup#repository_group_id}
 
 ---
 
@@ -1175,7 +1175,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#deletion_policy GeminiRepositoryGroup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#deletion_policy GeminiRepositoryGroup#deletion_policy}
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#id GeminiRepositoryGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1207,7 @@ Optional. Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#labels GeminiRepositoryGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#labels GeminiRepositoryGroup#labels}
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#project GeminiRepositoryGroup#project}.
 
 ---
 
@@ -1233,7 +1233,7 @@ public readonly timeouts: GeminiRepositoryGroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#timeouts GeminiRepositoryGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#timeouts GeminiRepositoryGroup#timeouts}
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly branchPattern: string;
 
 Required. The Git branch pattern used for indexing in RE2 syntax. See https://github.com/google/re2/wiki/syntax for syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#branch_pattern GeminiRepositoryGroup#branch_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#branch_pattern GeminiRepositoryGroup#branch_pattern}
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly resource: string;
 
 Required. The DeveloperConnect repository full resource name, relative resource name or resource URL to be indexed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#resource GeminiRepositoryGroup#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#resource GeminiRepositoryGroup#resource}
 
 ---
 
@@ -1298,9 +1298,9 @@ const geminiRepositoryGroupTimeouts: geminiRepositoryGroup.GeminiRepositoryGroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}. |
 
 ---
 
@@ -1312,7 +1312,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#create GeminiRepositoryGroup#create}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#delete GeminiRepositoryGroup#delete}.
 
 ---
 
@@ -1336,7 +1336,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/gemini_repository_group#update GeminiRepositoryGroup#update}.
 
 ---
 

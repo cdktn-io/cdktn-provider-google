@@ -4,7 +4,7 @@
 
 ### DataGoogleDatastreamStaticIps <a name="DataGoogleDatastreamStaticIps" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips google_datastream_static_ips}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips google_datastream_static_ips}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer"></a>
 
@@ -36,9 +36,9 @@ DataGoogleDatastreamStaticIps.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}.
 
 ---
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataGoogleDatastreamStatic
 
 The id of the existing DataGoogleDatastreamStaticIps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,9 +766,9 @@ DataGoogleDatastreamStaticIpsConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}. |
 
 ---
 
@@ -850,7 +850,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}.
 
 ---
 
@@ -862,7 +862,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -877,7 +877,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}.
 
 ---
 

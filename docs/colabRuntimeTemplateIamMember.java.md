@@ -4,7 +4,7 @@
 
 ### ColabRuntimeTemplateIamMember <a name="ColabRuntimeTemplateIamMember" id="@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member google_colab_runtime_template_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member google_colab_runtime_template_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer"></a>
 
@@ -40,13 +40,13 @@ ColabRuntimeTemplateIamMember.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.runtimeTemplate">runtimeTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.runtimeTemplate">runtimeTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}. |
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition">ColabRuntimeTemplateIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#condition ColabRuntimeTemplateIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#condition ColabRuntimeTemplateIamMember#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}.
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the ColabRuntimeTemplateIamMem
 
 The id of the existing ColabRuntimeTemplateIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,9 +1035,9 @@ ColabRuntimeTemplateIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#expression ColabRuntimeTemplateIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#title ColabRuntimeTemplateIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#description ColabRuntimeTemplateIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#expression ColabRuntimeTemplateIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#title ColabRuntimeTemplateIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#description ColabRuntimeTemplateIamMember#description}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#expression ColabRuntimeTemplateIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#expression ColabRuntimeTemplateIamMember#expression}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#title ColabRuntimeTemplateIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#title ColabRuntimeTemplateIamMember#title}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#description ColabRuntimeTemplateIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#description ColabRuntimeTemplateIamMember#description}.
 
 ---
 
@@ -1113,13 +1113,13 @@ ColabRuntimeTemplateIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.runtimeTemplate">runtimeTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.runtimeTemplate">runtimeTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}. |
 | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberCondition">ColabRuntimeTemplateIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.colabRuntimeTemplateIamMember.ColabRuntimeTemplateIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#member ColabRuntimeTemplateIamMember#member}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#role ColabRuntimeTemplateIamMember#role}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public java.lang.String getRuntimeTemplate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#runtime_template ColabRuntimeTemplateIamMember#runtime_template}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public ColabRuntimeTemplateIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#condition ColabRuntimeTemplateIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#condition ColabRuntimeTemplateIamMember#condition}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#id ColabRuntimeTemplateIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#location ColabRuntimeTemplateIamMember#location}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/colab_runtime_template_iam_member#project ColabRuntimeTemplateIamMember#project}.
 
 ---
 

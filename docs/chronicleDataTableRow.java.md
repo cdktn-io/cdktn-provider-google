@@ -4,7 +4,7 @@
 
 ### ChronicleDataTableRow <a name="ChronicleDataTableRow" id="@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row google_chronicle_data_table_row}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row google_chronicle_data_table_row}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer"></a>
 
@@ -47,8 +47,8 @@ ChronicleDataTableRow.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The GCP location of the Chronicle instance. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.values">values</a></code> | <code>java.util.List<java.lang.String></code> | All column values for a single row. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.rowTimeToLive">rowTimeToLive</a></code> | <code>java.lang.String</code> | User-provided TTL of the data table row. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRow.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts">ChronicleDataTableRowTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the parent DataTable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#data_table_id ChronicleDataTableRow#data_table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#data_table_id ChronicleDataTableRow#data_table_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Chronicle instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#instance ChronicleDataTableRow#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#instance ChronicleDataTableRow#instance}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The GCP location of the Chronicle instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#location ChronicleDataTableRow#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#location ChronicleDataTableRow#location}
 
 ---
 
@@ -153,7 +153,7 @@ All column values for a single row.
 The values should be in the same order
 as the columns of the data tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#values ChronicleDataTableRow#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#values ChronicleDataTableRow#values}
 
 ---
 
@@ -170,7 +170,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#deletion_policy ChronicleDataTableRow#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#deletion_policy ChronicleDataTableRow#deletion_policy}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-provided TTL of the data table row.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#row_time_to_live ChronicleDataTableRow#row_time_to_live}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#row_time_to_live ChronicleDataTableRow#row_time_to_live}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#timeouts ChronicleDataTableRow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#timeouts ChronicleDataTableRow#timeouts}
 
 ---
 
@@ -706,7 +706,7 @@ The construct id used in the generated config for the ChronicleDataTableRow to i
 
 The id of the existing ChronicleDataTableRow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1186,8 +1186,8 @@ ChronicleDataTableRowConfig.builder()
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.location">location</a></code> | <code>java.lang.String</code> | The GCP location of the Chronicle instance. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | All column values for a single row. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.rowTimeToLive">rowTimeToLive</a></code> | <code>java.lang.String</code> | User-provided TTL of the data table row. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts">ChronicleDataTableRowTimeouts</a></code> | timeouts block. |
 
@@ -1273,7 +1273,7 @@ public java.lang.String getDataTableId();
 
 The ID of the parent DataTable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#data_table_id ChronicleDataTableRow#data_table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#data_table_id ChronicleDataTableRow#data_table_id}
 
 ---
 
@@ -1287,7 +1287,7 @@ public java.lang.String getInstance();
 
 The Chronicle instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#instance ChronicleDataTableRow#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#instance ChronicleDataTableRow#instance}
 
 ---
 
@@ -1301,7 +1301,7 @@ public java.lang.String getLocation();
 
 The GCP location of the Chronicle instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#location ChronicleDataTableRow#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#location ChronicleDataTableRow#location}
 
 ---
 
@@ -1318,7 +1318,7 @@ All column values for a single row.
 The values should be in the same order
 as the columns of the data tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#values ChronicleDataTableRow#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#values ChronicleDataTableRow#values}
 
 ---
 
@@ -1339,7 +1339,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#deletion_policy ChronicleDataTableRow#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#deletion_policy ChronicleDataTableRow#deletion_policy}
 
 ---
 
@@ -1351,7 +1351,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#id ChronicleDataTableRow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1366,7 +1366,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#project ChronicleDataTableRow#project}.
 
 ---
 
@@ -1380,7 +1380,7 @@ public java.lang.String getRowTimeToLive();
 
 User-provided TTL of the data table row.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#row_time_to_live ChronicleDataTableRow#row_time_to_live}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#row_time_to_live ChronicleDataTableRow#row_time_to_live}
 
 ---
 
@@ -1394,7 +1394,7 @@ public ChronicleDataTableRowTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#timeouts ChronicleDataTableRow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#timeouts ChronicleDataTableRow#timeouts}
 
 ---
 
@@ -1416,9 +1416,9 @@ ChronicleDataTableRowTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#create ChronicleDataTableRow#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#delete ChronicleDataTableRow#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#update ChronicleDataTableRow#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#create ChronicleDataTableRow#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#delete ChronicleDataTableRow#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTableRow.ChronicleDataTableRowTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#update ChronicleDataTableRow#update}. |
 
 ---
 
@@ -1430,7 +1430,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#create ChronicleDataTableRow#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#create ChronicleDataTableRow#create}.
 
 ---
 
@@ -1442,7 +1442,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#delete ChronicleDataTableRow#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#delete ChronicleDataTableRow#delete}.
 
 ---
 
@@ -1454,7 +1454,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/chronicle_data_table_row#update ChronicleDataTableRow#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/chronicle_data_table_row#update ChronicleDataTableRow#update}.
 
 ---
 
