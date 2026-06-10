@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ApikeysKeyConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#deletion_policy ApikeysKey#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#deletion_policy ApikeysKey#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human-readable display name of this API key. Modifiable by user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#id ApikeysKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#id ApikeysKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +40,31 @@ export interface ApikeysKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource name of the key. The name must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. In another word, the name must match the regular expression: `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#name ApikeysKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#name ApikeysKey#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#project ApikeysKey#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#project ApikeysKey#project}
   */
   readonly project?: string;
   /**
   * The email of the service account the key is bound to. If this field is specified, the key is a service account bound key and auth enabled. See [Documentation](https://cloud.google.com/docs/authentication/api-keys?#api-keys-bound-sa) for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
   */
   readonly serviceAccountEmail?: string;
   /**
   * restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
   */
   readonly restrictions?: ApikeysKeyRestrictions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
   */
   readonly timeouts?: ApikeysKeyTimeouts;
 }
@@ -72,13 +72,13 @@ export interface ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications
   /**
   * The package name of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#package_name ApikeysKey#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#package_name ApikeysKey#package_name}
   */
   readonly packageName: string;
   /**
   * The SHA1 fingerprint of the application. For example, both sha1 formats are acceptable : DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:AF:D8:07:09 or DA39A3EE5E6B4B0D3255BFEF95601890AFD80709. Output format is the latter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#sha1_fingerprint ApikeysKey#sha1_fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#sha1_fingerprint ApikeysKey#sha1_fingerprint}
   */
   readonly sha1Fingerprint: string;
 }
@@ -86,7 +86,7 @@ export interface ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications
 export function apikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsToTerraform(struct?: ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package_name: cdktn.stringToTerraform(struct!.packageName),
@@ -98,7 +98,7 @@ export function apikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsT
 export function apikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsToHclTerraform(struct?: ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package_name: {
@@ -219,7 +219,7 @@ export interface ApikeysKeyRestrictionsAndroidKeyRestrictions {
   /**
   * allowed_applications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#allowed_applications ApikeysKey#allowed_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#allowed_applications ApikeysKey#allowed_applications}
   */
   readonly allowedApplications: ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications[] | cdktn.IResolvable;
 }
@@ -227,7 +227,7 @@ export interface ApikeysKeyRestrictionsAndroidKeyRestrictions {
 export function apikeysKeyRestrictionsAndroidKeyRestrictionsToTerraform(struct?: ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference | ApikeysKeyRestrictionsAndroidKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_applications: cdktn.listMapper(apikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsToTerraform, true)(struct!.allowedApplications),
@@ -238,7 +238,7 @@ export function apikeysKeyRestrictionsAndroidKeyRestrictionsToTerraform(struct?:
 export function apikeysKeyRestrictionsAndroidKeyRestrictionsToHclTerraform(struct?: ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference | ApikeysKeyRestrictionsAndroidKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_applications: {
@@ -302,13 +302,13 @@ export interface ApikeysKeyRestrictionsApiTargets {
   /**
   * Optional. List of one or more methods that can be called. If empty, all methods for the service are allowed. A wildcard (*) can be used as the last symbol. Valid examples: `google.cloud.translate.v2.TranslateService.GetSupportedLanguage` `TranslateText` `Get*` `translate.googleapis.com.Get*`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#methods ApikeysKey#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#methods ApikeysKey#methods}
   */
   readonly methods?: string[];
   /**
   * The service for this restriction. It should be the canonical service name, for example: `translate.googleapis.com`. You can use `gcloud services list` to get a list of services that are enabled in the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#service ApikeysKey#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#service ApikeysKey#service}
   */
   readonly service: string;
 }
@@ -316,7 +316,7 @@ export interface ApikeysKeyRestrictionsApiTargets {
 export function apikeysKeyRestrictionsApiTargetsToTerraform(struct?: ApikeysKeyRestrictionsApiTargets | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.methods),
@@ -328,7 +328,7 @@ export function apikeysKeyRestrictionsApiTargetsToTerraform(struct?: ApikeysKeyR
 export function apikeysKeyRestrictionsApiTargetsToHclTerraform(struct?: ApikeysKeyRestrictionsApiTargets | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     methods: {
@@ -452,7 +452,7 @@ export interface ApikeysKeyRestrictionsBrowserKeyRestrictions {
   /**
   * A list of regular expressions for the referrer URLs that are allowed to make API calls with this key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#allowed_referrers ApikeysKey#allowed_referrers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#allowed_referrers ApikeysKey#allowed_referrers}
   */
   readonly allowedReferrers: string[];
 }
@@ -460,7 +460,7 @@ export interface ApikeysKeyRestrictionsBrowserKeyRestrictions {
 export function apikeysKeyRestrictionsBrowserKeyRestrictionsToTerraform(struct?: ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference | ApikeysKeyRestrictionsBrowserKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_referrers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedReferrers),
@@ -471,7 +471,7 @@ export function apikeysKeyRestrictionsBrowserKeyRestrictionsToTerraform(struct?:
 export function apikeysKeyRestrictionsBrowserKeyRestrictionsToHclTerraform(struct?: ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference | ApikeysKeyRestrictionsBrowserKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_referrers: {
@@ -535,7 +535,7 @@ export interface ApikeysKeyRestrictionsIosKeyRestrictions {
   /**
   * A list of bundle IDs that are allowed when making API calls with this key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#allowed_bundle_ids ApikeysKey#allowed_bundle_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#allowed_bundle_ids ApikeysKey#allowed_bundle_ids}
   */
   readonly allowedBundleIds: string[];
 }
@@ -543,7 +543,7 @@ export interface ApikeysKeyRestrictionsIosKeyRestrictions {
 export function apikeysKeyRestrictionsIosKeyRestrictionsToTerraform(struct?: ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference | ApikeysKeyRestrictionsIosKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_bundle_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedBundleIds),
@@ -554,7 +554,7 @@ export function apikeysKeyRestrictionsIosKeyRestrictionsToTerraform(struct?: Api
 export function apikeysKeyRestrictionsIosKeyRestrictionsToHclTerraform(struct?: ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference | ApikeysKeyRestrictionsIosKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_bundle_ids: {
@@ -618,7 +618,7 @@ export interface ApikeysKeyRestrictionsServerKeyRestrictions {
   /**
   * A list of the caller IP addresses that are allowed to make API calls with this key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#allowed_ips ApikeysKey#allowed_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#allowed_ips ApikeysKey#allowed_ips}
   */
   readonly allowedIps: string[];
 }
@@ -626,7 +626,7 @@ export interface ApikeysKeyRestrictionsServerKeyRestrictions {
 export function apikeysKeyRestrictionsServerKeyRestrictionsToTerraform(struct?: ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference | ApikeysKeyRestrictionsServerKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedIps),
@@ -637,7 +637,7 @@ export function apikeysKeyRestrictionsServerKeyRestrictionsToTerraform(struct?: 
 export function apikeysKeyRestrictionsServerKeyRestrictionsToHclTerraform(struct?: ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference | ApikeysKeyRestrictionsServerKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_ips: {
@@ -701,31 +701,31 @@ export interface ApikeysKeyRestrictions {
   /**
   * android_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#android_key_restrictions ApikeysKey#android_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#android_key_restrictions ApikeysKey#android_key_restrictions}
   */
   readonly androidKeyRestrictions?: ApikeysKeyRestrictionsAndroidKeyRestrictions;
   /**
   * api_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#api_targets ApikeysKey#api_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#api_targets ApikeysKey#api_targets}
   */
   readonly apiTargets?: ApikeysKeyRestrictionsApiTargets[] | cdktn.IResolvable;
   /**
   * browser_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#browser_key_restrictions ApikeysKey#browser_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#browser_key_restrictions ApikeysKey#browser_key_restrictions}
   */
   readonly browserKeyRestrictions?: ApikeysKeyRestrictionsBrowserKeyRestrictions;
   /**
   * ios_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#ios_key_restrictions ApikeysKey#ios_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#ios_key_restrictions ApikeysKey#ios_key_restrictions}
   */
   readonly iosKeyRestrictions?: ApikeysKeyRestrictionsIosKeyRestrictions;
   /**
   * server_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#server_key_restrictions ApikeysKey#server_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#server_key_restrictions ApikeysKey#server_key_restrictions}
   */
   readonly serverKeyRestrictions?: ApikeysKeyRestrictionsServerKeyRestrictions;
 }
@@ -733,7 +733,7 @@ export interface ApikeysKeyRestrictions {
 export function apikeysKeyRestrictionsToTerraform(struct?: ApikeysKeyRestrictionsOutputReference | ApikeysKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     android_key_restrictions: apikeysKeyRestrictionsAndroidKeyRestrictionsToTerraform(struct!.androidKeyRestrictions),
@@ -748,7 +748,7 @@ export function apikeysKeyRestrictionsToTerraform(struct?: ApikeysKeyRestriction
 export function apikeysKeyRestrictionsToHclTerraform(struct?: ApikeysKeyRestrictionsOutputReference | ApikeysKeyRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     android_key_restrictions: {
@@ -925,15 +925,15 @@ export class ApikeysKeyRestrictionsOutputReference extends cdktn.ComplexObject {
 }
 export interface ApikeysKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#create ApikeysKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#create ApikeysKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#delete ApikeysKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#delete ApikeysKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#update ApikeysKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#update ApikeysKey#update}
   */
   readonly update?: string;
 }
@@ -941,7 +941,7 @@ export interface ApikeysKeyTimeouts {
 export function apikeysKeyTimeoutsToTerraform(struct?: ApikeysKeyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -954,7 +954,7 @@ export function apikeysKeyTimeoutsToTerraform(struct?: ApikeysKeyTimeouts | cdkt
 export function apikeysKeyTimeoutsToHclTerraform(struct?: ApikeysKeyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1085,7 +1085,7 @@ export class ApikeysKeyTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key google_apikeys_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key google_apikeys_key}
 */
 export class ApikeysKey extends cdktn.TerraformResource {
 
@@ -1101,7 +1101,7 @@ export class ApikeysKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApikeysKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApikeysKey to import
-  * @param importFromId The id of the existing ApikeysKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApikeysKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApikeysKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1113,7 +1113,7 @@ export class ApikeysKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apikeys_key google_apikeys_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apikeys_key google_apikeys_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1124,7 +1124,7 @@ export class ApikeysKey extends cdktn.TerraformResource {
       terraformResourceType: 'google_apikeys_key',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

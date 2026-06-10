@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,26 +21,26 @@ export interface NetworkServicesTlsRouteConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#deletion_policy NetworkServicesTlsRoute#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#deletion_policy NetworkServicesTlsRoute#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
   */
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway.
   * Each gateway reference should match the pattern: projects/* /locations/* /gateways/<gateway_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly gateways?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,7 +49,7 @@ export interface NetworkServicesTlsRouteConfig extends cdktn.TerraformMetaArgume
   /**
   * Location (region) of the TLS Route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#location NetworkServicesTlsRoute#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#location NetworkServicesTlsRoute#location}
   */
   readonly location?: string;
   /**
@@ -57,7 +57,7 @@ export interface NetworkServicesTlsRouteConfig extends cdktn.TerraformMetaArgume
   * Each mesh reference should match the pattern: projects/* /locations/* /meshes/<mesh_name>
   * The attached Mesh should be of a type SIDECAR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -65,18 +65,18 @@ export interface NetworkServicesTlsRouteConfig extends cdktn.TerraformMetaArgume
   /**
   * Name of the TlsRoute resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}
   */
   readonly project?: string;
   /**
   * TargetProxies defines a list of target proxies this TlsRoute is attached to, as one of the routing rules to route the requests served by the load balancer.
   * Each target proxy reference should match the pattern: projects/* /locations/global/targetTcpProxies/<target_tcp_proxy_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#target_proxies NetworkServicesTlsRoute#target_proxies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#target_proxies NetworkServicesTlsRoute#target_proxies}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -84,13 +84,13 @@ export interface NetworkServicesTlsRouteConfig extends cdktn.TerraformMetaArgume
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
   */
   readonly rules: NetworkServicesTlsRouteRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
   */
   readonly timeouts?: NetworkServicesTlsRouteTimeouts;
 }
@@ -98,13 +98,13 @@ export interface NetworkServicesTlsRouteRulesActionDestinations {
   /**
   * The URL of a BackendService to route traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#service_name NetworkServicesTlsRoute#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#service_name NetworkServicesTlsRoute#service_name}
   */
   readonly serviceName?: string;
   /**
   * Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#weight NetworkServicesTlsRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#weight NetworkServicesTlsRoute#weight}
   */
   readonly weight?: number;
 }
@@ -112,7 +112,7 @@ export interface NetworkServicesTlsRouteRulesActionDestinations {
 export function networkServicesTlsRouteRulesActionDestinationsToTerraform(struct?: NetworkServicesTlsRouteRulesActionDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service_name: cdktn.stringToTerraform(struct!.serviceName),
@@ -124,7 +124,7 @@ export function networkServicesTlsRouteRulesActionDestinationsToTerraform(struct
 export function networkServicesTlsRouteRulesActionDestinationsToHclTerraform(struct?: NetworkServicesTlsRouteRulesActionDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service_name: {
@@ -251,7 +251,7 @@ export interface NetworkServicesTlsRouteRulesAction {
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
   */
   readonly destinations?: NetworkServicesTlsRouteRulesActionDestinations[] | cdktn.IResolvable;
 }
@@ -259,7 +259,7 @@ export interface NetworkServicesTlsRouteRulesAction {
 export function networkServicesTlsRouteRulesActionToTerraform(struct?: NetworkServicesTlsRouteRulesActionOutputReference | NetworkServicesTlsRouteRulesAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destinations: cdktn.listMapper(networkServicesTlsRouteRulesActionDestinationsToTerraform, true)(struct!.destinations),
@@ -270,7 +270,7 @@ export function networkServicesTlsRouteRulesActionToTerraform(struct?: NetworkSe
 export function networkServicesTlsRouteRulesActionToHclTerraform(struct?: NetworkServicesTlsRouteRulesActionOutputReference | NetworkServicesTlsRouteRulesAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destinations: {
@@ -337,14 +337,14 @@ export interface NetworkServicesTlsRouteRulesMatches {
   /**
   * ALPN (Application-Layer Protocol Negotiation) to match against. Examples: "http/1.1", "h2". At least one of sniHost and alpn is required. Up to 5 alpns across all matches can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#alpn NetworkServicesTlsRoute#alpn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#alpn NetworkServicesTlsRoute#alpn}
   */
   readonly alpn?: string[];
   /**
   * SNI (server name indicator) to match against. SNI will be matched against all wildcard domains, i.e. www.example.com will be first matched against www.example.com, then *.example.com, then *.com.
   * Partial wildcards are not supported, and values like *w.example.com are invalid. At least one of sniHost and alpn is required. Up to 5 sni hosts across all matches can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#sni_host NetworkServicesTlsRoute#sni_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#sni_host NetworkServicesTlsRoute#sni_host}
   */
   readonly sniHost?: string[];
 }
@@ -352,7 +352,7 @@ export interface NetworkServicesTlsRouteRulesMatches {
 export function networkServicesTlsRouteRulesMatchesToTerraform(struct?: NetworkServicesTlsRouteRulesMatches | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alpn: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alpn),
@@ -364,7 +364,7 @@ export function networkServicesTlsRouteRulesMatchesToTerraform(struct?: NetworkS
 export function networkServicesTlsRouteRulesMatchesToHclTerraform(struct?: NetworkServicesTlsRouteRulesMatches | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alpn: {
@@ -491,13 +491,13 @@ export interface NetworkServicesTlsRouteRules {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#action NetworkServicesTlsRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#action NetworkServicesTlsRoute#action}
   */
   readonly action: NetworkServicesTlsRouteRulesAction;
   /**
   * matches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#matches NetworkServicesTlsRoute#matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#matches NetworkServicesTlsRoute#matches}
   */
   readonly matches: NetworkServicesTlsRouteRulesMatches[] | cdktn.IResolvable;
 }
@@ -505,7 +505,7 @@ export interface NetworkServicesTlsRouteRules {
 export function networkServicesTlsRouteRulesToTerraform(struct?: NetworkServicesTlsRouteRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: networkServicesTlsRouteRulesActionToTerraform(struct!.action),
@@ -517,7 +517,7 @@ export function networkServicesTlsRouteRulesToTerraform(struct?: NetworkServices
 export function networkServicesTlsRouteRulesToHclTerraform(struct?: NetworkServicesTlsRouteRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -636,15 +636,15 @@ export class NetworkServicesTlsRouteRulesList extends cdktn.ComplexList {
 }
 export interface NetworkServicesTlsRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}
   */
   readonly update?: string;
 }
@@ -652,7 +652,7 @@ export interface NetworkServicesTlsRouteTimeouts {
 export function networkServicesTlsRouteTimeoutsToTerraform(struct?: NetworkServicesTlsRouteTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -665,7 +665,7 @@ export function networkServicesTlsRouteTimeoutsToTerraform(struct?: NetworkServi
 export function networkServicesTlsRouteTimeoutsToHclTerraform(struct?: NetworkServicesTlsRouteTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -796,7 +796,7 @@ export class NetworkServicesTlsRouteTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route google_network_services_tls_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route google_network_services_tls_route}
 */
 export class NetworkServicesTlsRoute extends cdktn.TerraformResource {
 
@@ -812,7 +812,7 @@ export class NetworkServicesTlsRoute extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesTlsRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesTlsRoute to import
-  * @param importFromId The id of the existing NetworkServicesTlsRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesTlsRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesTlsRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -824,7 +824,7 @@ export class NetworkServicesTlsRoute extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_tls_route google_network_services_tls_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_tls_route google_network_services_tls_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -835,7 +835,7 @@ export class NetworkServicesTlsRoute extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_tls_route',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

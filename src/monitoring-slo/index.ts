@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface MonitoringSloConfig extends cdktn.TerraformMetaArguments {
   * A calendar period, semantically "since the start of the current
   * <calendarPeriod>". Possible values: ["DAY", "WEEK", "FORTNIGHT", "MONTH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#calendar_period MonitoringSlo#calendar_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#calendar_period MonitoringSlo#calendar_period}
   */
   readonly calendarPeriod?: string;
   /**
@@ -28,50 +28,50 @@ export interface MonitoringSloConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#deletion_policy MonitoringSlo#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#deletion_policy MonitoringSlo#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Name used for UI elements listing this SLO.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#display_name MonitoringSlo#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#display_name MonitoringSlo#display_name}
   */
   readonly displayName?: string;
   /**
   * The fraction of service that must be good in order for this objective
   * to be met. 0 < goal <= 0.999
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#goal MonitoringSlo#goal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#goal MonitoringSlo#goal}
   */
   readonly goal: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#id MonitoringSlo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#id MonitoringSlo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#project MonitoringSlo#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#project MonitoringSlo#project}
   */
   readonly project?: string;
   /**
   * A rolling time period, semantically "in the past X days".
   * Must be between 1 to 30 days, inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#rolling_period_days MonitoringSlo#rolling_period_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#rolling_period_days MonitoringSlo#rolling_period_days}
   */
   readonly rollingPeriodDays?: number;
   /**
   * ID of the service to which this SLO belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#service MonitoringSlo#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#service MonitoringSlo#service}
   */
   readonly service: string;
   /**
   * The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#slo_id MonitoringSlo#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#slo_id MonitoringSlo#slo_id}
   */
   readonly sloId?: string;
   /**
@@ -81,31 +81,31 @@ export interface MonitoringSloConfig extends cdktn.TerraformMetaArguments {
   * can contain only lowercase letters, numerals, underscores, and dashes. Keys
   * must begin with a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#user_labels MonitoringSlo#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#user_labels MonitoringSlo#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * basic_sli block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#basic_sli MonitoringSlo#basic_sli}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#basic_sli MonitoringSlo#basic_sli}
   */
   readonly basicSli?: MonitoringSloBasicSli;
   /**
   * request_based_sli block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#request_based_sli MonitoringSlo#request_based_sli}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#request_based_sli MonitoringSlo#request_based_sli}
   */
   readonly requestBasedSli?: MonitoringSloRequestBasedSli;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#timeouts MonitoringSlo#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#timeouts MonitoringSlo#timeouts}
   */
   readonly timeouts?: MonitoringSloTimeouts;
   /**
   * windows_based_sli block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#windows_based_sli MonitoringSlo#windows_based_sli}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#windows_based_sli MonitoringSlo#windows_based_sli}
   */
   readonly windowsBasedSli?: MonitoringSloWindowsBasedSli;
 }
@@ -113,7 +113,7 @@ export interface MonitoringSloBasicSliAvailability {
   /**
   * Whether an availability SLI is enabled or not. Must be set to true. Defaults to 'true'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#enabled MonitoringSlo#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#enabled MonitoringSlo#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -121,7 +121,7 @@ export interface MonitoringSloBasicSliAvailability {
 export function monitoringSloBasicSliAvailabilityToTerraform(struct?: MonitoringSloBasicSliAvailabilityOutputReference | MonitoringSloBasicSliAvailability): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -132,7 +132,7 @@ export function monitoringSloBasicSliAvailabilityToTerraform(struct?: Monitoring
 export function monitoringSloBasicSliAvailabilityToHclTerraform(struct?: MonitoringSloBasicSliAvailabilityOutputReference | MonitoringSloBasicSliAvailability): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -201,7 +201,7 @@ export interface MonitoringSloBasicSliLatency {
   * Good service is defined to be the count of requests made to
   * this service that return in no more than threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#threshold MonitoringSlo#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#threshold MonitoringSlo#threshold}
   */
   readonly threshold: string;
 }
@@ -209,7 +209,7 @@ export interface MonitoringSloBasicSliLatency {
 export function monitoringSloBasicSliLatencyToTerraform(struct?: MonitoringSloBasicSliLatencyOutputReference | MonitoringSloBasicSliLatency): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     threshold: cdktn.stringToTerraform(struct!.threshold),
@@ -220,7 +220,7 @@ export function monitoringSloBasicSliLatencyToTerraform(struct?: MonitoringSloBa
 export function monitoringSloBasicSliLatencyToHclTerraform(struct?: MonitoringSloBasicSliLatencyOutputReference | MonitoringSloBasicSliLatency): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     threshold: {
@@ -289,7 +289,7 @@ export interface MonitoringSloBasicSli {
   * that don't support breaking down by location, setting this
   * field will result in an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#location MonitoringSlo#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#location MonitoringSlo#location}
   */
   readonly location?: string[];
   /**
@@ -300,7 +300,7 @@ export interface MonitoringSloBasicSli {
   * breaking down by method, setting this field will result in an
   * error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#method MonitoringSlo#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#method MonitoringSlo#method}
   */
   readonly method?: string[];
   /**
@@ -311,19 +311,19 @@ export interface MonitoringSloBasicSli {
   * that don't support breaking down by version, setting this
   * field will result in an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#version MonitoringSlo#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#version MonitoringSlo#version}
   */
   readonly version?: string[];
   /**
   * availability block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#availability MonitoringSlo#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#availability MonitoringSlo#availability}
   */
   readonly availability?: MonitoringSloBasicSliAvailability;
   /**
   * latency block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#latency MonitoringSlo#latency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#latency MonitoringSlo#latency}
   */
   readonly latency?: MonitoringSloBasicSliLatency;
 }
@@ -331,7 +331,7 @@ export interface MonitoringSloBasicSli {
 export function monitoringSloBasicSliToTerraform(struct?: MonitoringSloBasicSliOutputReference | MonitoringSloBasicSli): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     location: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.location),
@@ -346,7 +346,7 @@ export function monitoringSloBasicSliToTerraform(struct?: MonitoringSloBasicSliO
 export function monitoringSloBasicSliToHclTerraform(struct?: MonitoringSloBasicSliOutputReference | MonitoringSloBasicSli): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     location: {
@@ -526,14 +526,14 @@ export interface MonitoringSloRequestBasedSliDistributionCutRange {
   * max value for the range (inclusive). If not given,
   * will be set to 0
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
   */
   readonly max?: number;
   /**
   * Min value for the range (inclusive). If not given,
   * will be set to 0
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -541,7 +541,7 @@ export interface MonitoringSloRequestBasedSliDistributionCutRange {
 export function monitoringSloRequestBasedSliDistributionCutRangeToTerraform(struct?: MonitoringSloRequestBasedSliDistributionCutRangeOutputReference | MonitoringSloRequestBasedSliDistributionCutRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max: cdktn.numberToTerraform(struct!.max),
@@ -553,7 +553,7 @@ export function monitoringSloRequestBasedSliDistributionCutRangeToTerraform(stru
 export function monitoringSloRequestBasedSliDistributionCutRangeToHclTerraform(struct?: MonitoringSloRequestBasedSliDistributionCutRangeOutputReference | MonitoringSloRequestBasedSliDistributionCutRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max: {
@@ -652,13 +652,13 @@ export interface MonitoringSloRequestBasedSliDistributionCut {
   * Must have ValueType = DISTRIBUTION and
   * MetricKind = DELTA or MetricKind = CUMULATIVE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#distribution_filter MonitoringSlo#distribution_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#distribution_filter MonitoringSlo#distribution_filter}
   */
   readonly distributionFilter: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
   */
   readonly range: MonitoringSloRequestBasedSliDistributionCutRange;
 }
@@ -666,7 +666,7 @@ export interface MonitoringSloRequestBasedSliDistributionCut {
 export function monitoringSloRequestBasedSliDistributionCutToTerraform(struct?: MonitoringSloRequestBasedSliDistributionCutOutputReference | MonitoringSloRequestBasedSliDistributionCut): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     distribution_filter: cdktn.stringToTerraform(struct!.distributionFilter),
@@ -678,7 +678,7 @@ export function monitoringSloRequestBasedSliDistributionCutToTerraform(struct?: 
 export function monitoringSloRequestBasedSliDistributionCutToHclTerraform(struct?: MonitoringSloRequestBasedSliDistributionCutOutputReference | MonitoringSloRequestBasedSliDistributionCut): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     distribution_filter: {
@@ -776,7 +776,7 @@ export interface MonitoringSloRequestBasedSliGoodTotalRatio {
   * Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
   * must be set (good + bad = total is assumed).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#bad_service_filter MonitoringSlo#bad_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#bad_service_filter MonitoringSlo#bad_service_filter}
   */
   readonly badServiceFilter?: string;
   /**
@@ -788,7 +788,7 @@ export interface MonitoringSloRequestBasedSliGoodTotalRatio {
   * Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
   * must be set (good + bad = total is assumed).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#good_service_filter MonitoringSlo#good_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#good_service_filter MonitoringSlo#good_service_filter}
   */
   readonly goodServiceFilter?: string;
   /**
@@ -801,7 +801,7 @@ export interface MonitoringSloRequestBasedSliGoodTotalRatio {
   * Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
   * must be set (good + bad = total is assumed).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#total_service_filter MonitoringSlo#total_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#total_service_filter MonitoringSlo#total_service_filter}
   */
   readonly totalServiceFilter?: string;
 }
@@ -809,7 +809,7 @@ export interface MonitoringSloRequestBasedSliGoodTotalRatio {
 export function monitoringSloRequestBasedSliGoodTotalRatioToTerraform(struct?: MonitoringSloRequestBasedSliGoodTotalRatioOutputReference | MonitoringSloRequestBasedSliGoodTotalRatio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bad_service_filter: cdktn.stringToTerraform(struct!.badServiceFilter),
@@ -822,7 +822,7 @@ export function monitoringSloRequestBasedSliGoodTotalRatioToTerraform(struct?: M
 export function monitoringSloRequestBasedSliGoodTotalRatioToHclTerraform(struct?: MonitoringSloRequestBasedSliGoodTotalRatioOutputReference | MonitoringSloRequestBasedSliGoodTotalRatio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bad_service_filter: {
@@ -945,13 +945,13 @@ export interface MonitoringSloRequestBasedSli {
   /**
   * distribution_cut block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#distribution_cut MonitoringSlo#distribution_cut}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#distribution_cut MonitoringSlo#distribution_cut}
   */
   readonly distributionCut?: MonitoringSloRequestBasedSliDistributionCut;
   /**
   * good_total_ratio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#good_total_ratio MonitoringSlo#good_total_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#good_total_ratio MonitoringSlo#good_total_ratio}
   */
   readonly goodTotalRatio?: MonitoringSloRequestBasedSliGoodTotalRatio;
 }
@@ -959,7 +959,7 @@ export interface MonitoringSloRequestBasedSli {
 export function monitoringSloRequestBasedSliToTerraform(struct?: MonitoringSloRequestBasedSliOutputReference | MonitoringSloRequestBasedSli): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     distribution_cut: monitoringSloRequestBasedSliDistributionCutToTerraform(struct!.distributionCut),
@@ -971,7 +971,7 @@ export function monitoringSloRequestBasedSliToTerraform(struct?: MonitoringSloRe
 export function monitoringSloRequestBasedSliToHclTerraform(struct?: MonitoringSloRequestBasedSliOutputReference | MonitoringSloRequestBasedSli): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     distribution_cut: {
@@ -1064,15 +1064,15 @@ export class MonitoringSloRequestBasedSliOutputReference extends cdktn.ComplexOb
 }
 export interface MonitoringSloTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#create MonitoringSlo#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#create MonitoringSlo#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#delete MonitoringSlo#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#delete MonitoringSlo#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#update MonitoringSlo#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#update MonitoringSlo#update}
   */
   readonly update?: string;
 }
@@ -1080,7 +1080,7 @@ export interface MonitoringSloTimeouts {
 export function monitoringSloTimeoutsToTerraform(struct?: MonitoringSloTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1093,7 +1093,7 @@ export function monitoringSloTimeoutsToTerraform(struct?: MonitoringSloTimeouts 
 export function monitoringSloTimeoutsToHclTerraform(struct?: MonitoringSloTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1226,7 +1226,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
   /**
   * Whether an availability SLI is enabled or not. Must be set to 'true. Defaults to 'true'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#enabled MonitoringSlo#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#enabled MonitoringSlo#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1234,7 +1234,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1245,7 +1245,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerfo
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1314,7 +1314,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
   * Good service is defined to be the count of requests made to
   * this service that return in no more than threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#threshold MonitoringSlo#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#threshold MonitoringSlo#threshold}
   */
   readonly threshold: string;
 }
@@ -1322,7 +1322,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     threshold: cdktn.stringToTerraform(struct!.threshold),
@@ -1333,7 +1333,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerfo
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     threshold: {
@@ -1402,7 +1402,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
   * that don't support breaking down by location, setting this
   * field will result in an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#location MonitoringSlo#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#location MonitoringSlo#location}
   */
   readonly location?: string[];
   /**
@@ -1413,7 +1413,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
   * breaking down by method, setting this field will result in an
   * error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#method MonitoringSlo#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#method MonitoringSlo#method}
   */
   readonly method?: string[];
   /**
@@ -1424,19 +1424,19 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
   * that don't support breaking down by version, setting this
   * field will result in an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#version MonitoringSlo#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#version MonitoringSlo#version}
   */
   readonly version?: string[];
   /**
   * availability block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#availability MonitoringSlo#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#availability MonitoringSlo#availability}
   */
   readonly availability?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability;
   /**
   * latency block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#latency MonitoringSlo#latency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#latency MonitoringSlo#latency}
   */
   readonly latency?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency;
 }
@@ -1444,7 +1444,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerf
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     location: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.location),
@@ -1459,7 +1459,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerfo
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     location: {
@@ -1639,14 +1639,14 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceD
   * max value for the range (inclusive). If not given,
   * will be set to 0
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
   */
   readonly max?: number;
   /**
   * Min value for the range (inclusive). If not given,
   * will be set to 0
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -1654,7 +1654,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceD
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max: cdktn.numberToTerraform(struct!.max),
@@ -1666,7 +1666,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDi
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max: {
@@ -1765,13 +1765,13 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceD
   * Must have ValueType = DISTRIBUTION and
   * MetricKind = DELTA or MetricKind = CUMULATIVE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#distribution_filter MonitoringSlo#distribution_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#distribution_filter MonitoringSlo#distribution_filter}
   */
   readonly distributionFilter: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
   */
   readonly range: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange;
 }
@@ -1779,7 +1779,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceD
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     distribution_filter: cdktn.stringToTerraform(struct!.distributionFilter),
@@ -1791,7 +1791,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDi
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     distribution_filter: {
@@ -1888,7 +1888,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceG
   * Must have ValueType = DOUBLE or ValueType = INT64 and
   * must have MetricKind = DELTA or MetricKind = CUMULATIVE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#bad_service_filter MonitoringSlo#bad_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#bad_service_filter MonitoringSlo#bad_service_filter}
   */
   readonly badServiceFilter?: string;
   /**
@@ -1900,7 +1900,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceG
   * Must have ValueType = DOUBLE or ValueType = INT64 and
   * must have MetricKind = DELTA or MetricKind = CUMULATIVE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#good_service_filter MonitoringSlo#good_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#good_service_filter MonitoringSlo#good_service_filter}
   */
   readonly goodServiceFilter?: string;
   /**
@@ -1912,7 +1912,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceG
   * Must have ValueType = DOUBLE or ValueType = INT64 and
   * must have MetricKind = DELTA or MetricKind = CUMULATIVE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#total_service_filter MonitoringSlo#total_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#total_service_filter MonitoringSlo#total_service_filter}
   */
   readonly totalServiceFilter?: string;
 }
@@ -1920,7 +1920,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceG
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bad_service_filter: cdktn.stringToTerraform(struct!.badServiceFilter),
@@ -1933,7 +1933,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGo
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bad_service_filter: {
@@ -2056,13 +2056,13 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance 
   /**
   * distribution_cut block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#distribution_cut MonitoringSlo#distribution_cut}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#distribution_cut MonitoringSlo#distribution_cut}
   */
   readonly distributionCut?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut;
   /**
   * good_total_ratio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#good_total_ratio MonitoringSlo#good_total_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#good_total_ratio MonitoringSlo#good_total_ratio}
   */
   readonly goodTotalRatio?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio;
 }
@@ -2070,7 +2070,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance 
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     distribution_cut: monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutToTerraform(struct!.distributionCut),
@@ -2082,7 +2082,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceTo
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     distribution_cut: {
@@ -2178,19 +2178,19 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThreshold {
   * If window performance >= threshold, the window is counted
   * as good.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#threshold MonitoringSlo#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#threshold MonitoringSlo#threshold}
   */
   readonly threshold?: number;
   /**
   * basic_sli_performance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#basic_sli_performance MonitoringSlo#basic_sli_performance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#basic_sli_performance MonitoringSlo#basic_sli_performance}
   */
   readonly basicSliPerformance?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance;
   /**
   * performance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#performance MonitoringSlo#performance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#performance MonitoringSlo#performance}
   */
   readonly performance?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance;
 }
@@ -2198,7 +2198,7 @@ export interface MonitoringSloWindowsBasedSliGoodTotalRatioThreshold {
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdToTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     threshold: cdktn.numberToTerraform(struct!.threshold),
@@ -2211,7 +2211,7 @@ export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdToTerraform(s
 export function monitoringSloWindowsBasedSliGoodTotalRatioThresholdToHclTerraform(struct?: MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference | MonitoringSloWindowsBasedSliGoodTotalRatioThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     threshold: {
@@ -2336,7 +2336,7 @@ export interface MonitoringSloWindowsBasedSliMetricMeanInRangeRange {
   * will be set to "infinity", defining an open range
   * ">= range.min"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
   */
   readonly max?: number;
   /**
@@ -2344,7 +2344,7 @@ export interface MonitoringSloWindowsBasedSliMetricMeanInRangeRange {
   * will be set to "-infinity", defining an open range
   * "< range.max"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -2352,7 +2352,7 @@ export interface MonitoringSloWindowsBasedSliMetricMeanInRangeRange {
 export function monitoringSloWindowsBasedSliMetricMeanInRangeRangeToTerraform(struct?: MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference | MonitoringSloWindowsBasedSliMetricMeanInRangeRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max: cdktn.numberToTerraform(struct!.max),
@@ -2364,7 +2364,7 @@ export function monitoringSloWindowsBasedSliMetricMeanInRangeRangeToTerraform(st
 export function monitoringSloWindowsBasedSliMetricMeanInRangeRangeToHclTerraform(struct?: MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference | MonitoringSloWindowsBasedSliMetricMeanInRangeRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max: {
@@ -2464,13 +2464,13 @@ export interface MonitoringSloWindowsBasedSliMetricMeanInRange {
   * should satisfy 'range.min <= X <= range.max'
   * under good service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#time_series MonitoringSlo#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#time_series MonitoringSlo#time_series}
   */
   readonly timeSeries: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
   */
   readonly range: MonitoringSloWindowsBasedSliMetricMeanInRangeRange;
 }
@@ -2478,7 +2478,7 @@ export interface MonitoringSloWindowsBasedSliMetricMeanInRange {
 export function monitoringSloWindowsBasedSliMetricMeanInRangeToTerraform(struct?: MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference | MonitoringSloWindowsBasedSliMetricMeanInRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     time_series: cdktn.stringToTerraform(struct!.timeSeries),
@@ -2490,7 +2490,7 @@ export function monitoringSloWindowsBasedSliMetricMeanInRangeToTerraform(struct?
 export function monitoringSloWindowsBasedSliMetricMeanInRangeToHclTerraform(struct?: MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference | MonitoringSloWindowsBasedSliMetricMeanInRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     time_series: {
@@ -2581,7 +2581,7 @@ export interface MonitoringSloWindowsBasedSliMetricSumInRangeRange {
   * will be set to "infinity", defining an open range
   * ">= range.min"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#max MonitoringSlo#max}
   */
   readonly max?: number;
   /**
@@ -2589,7 +2589,7 @@ export interface MonitoringSloWindowsBasedSliMetricSumInRangeRange {
   * will be set to "-infinity", defining an open range
   * "< range.max"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#min MonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -2597,7 +2597,7 @@ export interface MonitoringSloWindowsBasedSliMetricSumInRangeRange {
 export function monitoringSloWindowsBasedSliMetricSumInRangeRangeToTerraform(struct?: MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference | MonitoringSloWindowsBasedSliMetricSumInRangeRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max: cdktn.numberToTerraform(struct!.max),
@@ -2609,7 +2609,7 @@ export function monitoringSloWindowsBasedSliMetricSumInRangeRangeToTerraform(str
 export function monitoringSloWindowsBasedSliMetricSumInRangeRangeToHclTerraform(struct?: MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference | MonitoringSloWindowsBasedSliMetricSumInRangeRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max: {
@@ -2711,13 +2711,13 @@ export interface MonitoringSloWindowsBasedSliMetricSumInRange {
   * Summed value 'X' should satisfy
   * 'range.min <= X <= range.max' for a good window.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#time_series MonitoringSlo#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#time_series MonitoringSlo#time_series}
   */
   readonly timeSeries: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
   */
   readonly range: MonitoringSloWindowsBasedSliMetricSumInRangeRange;
 }
@@ -2725,7 +2725,7 @@ export interface MonitoringSloWindowsBasedSliMetricSumInRange {
 export function monitoringSloWindowsBasedSliMetricSumInRangeToTerraform(struct?: MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference | MonitoringSloWindowsBasedSliMetricSumInRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     time_series: cdktn.stringToTerraform(struct!.timeSeries),
@@ -2737,7 +2737,7 @@ export function monitoringSloWindowsBasedSliMetricSumInRangeToTerraform(struct?:
 export function monitoringSloWindowsBasedSliMetricSumInRangeToHclTerraform(struct?: MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference | MonitoringSloWindowsBasedSliMetricSumInRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     time_series: {
@@ -2830,7 +2830,7 @@ export interface MonitoringSloWindowsBasedSli {
   * 'good_total_ratio_threshold', 'metric_mean_in_range',
   * 'metric_sum_in_range' must be set for 'windows_based_sli'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#good_bad_metric_filter MonitoringSlo#good_bad_metric_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#good_bad_metric_filter MonitoringSlo#good_bad_metric_filter}
   */
   readonly goodBadMetricFilter?: string;
   /**
@@ -2838,25 +2838,25 @@ export interface MonitoringSloWindowsBasedSli {
   * duration string "{X}s" representing X seconds. Must be an
   * integer fraction of a day and at least 60s.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#window_period MonitoringSlo#window_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#window_period MonitoringSlo#window_period}
   */
   readonly windowPeriod?: string;
   /**
   * good_total_ratio_threshold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#good_total_ratio_threshold MonitoringSlo#good_total_ratio_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#good_total_ratio_threshold MonitoringSlo#good_total_ratio_threshold}
   */
   readonly goodTotalRatioThreshold?: MonitoringSloWindowsBasedSliGoodTotalRatioThreshold;
   /**
   * metric_mean_in_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#metric_mean_in_range MonitoringSlo#metric_mean_in_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#metric_mean_in_range MonitoringSlo#metric_mean_in_range}
   */
   readonly metricMeanInRange?: MonitoringSloWindowsBasedSliMetricMeanInRange;
   /**
   * metric_sum_in_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#metric_sum_in_range MonitoringSlo#metric_sum_in_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#metric_sum_in_range MonitoringSlo#metric_sum_in_range}
   */
   readonly metricSumInRange?: MonitoringSloWindowsBasedSliMetricSumInRange;
 }
@@ -2864,7 +2864,7 @@ export interface MonitoringSloWindowsBasedSli {
 export function monitoringSloWindowsBasedSliToTerraform(struct?: MonitoringSloWindowsBasedSliOutputReference | MonitoringSloWindowsBasedSli): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     good_bad_metric_filter: cdktn.stringToTerraform(struct!.goodBadMetricFilter),
@@ -2879,7 +2879,7 @@ export function monitoringSloWindowsBasedSliToTerraform(struct?: MonitoringSloWi
 export function monitoringSloWindowsBasedSliToHclTerraform(struct?: MonitoringSloWindowsBasedSliOutputReference | MonitoringSloWindowsBasedSli): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     good_bad_metric_filter: {
@@ -3056,7 +3056,7 @@ export class MonitoringSloWindowsBasedSliOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo google_monitoring_slo}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo google_monitoring_slo}
 */
 export class MonitoringSlo extends cdktn.TerraformResource {
 
@@ -3072,7 +3072,7 @@ export class MonitoringSlo extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitoringSlo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitoringSlo to import
-  * @param importFromId The id of the existing MonitoringSlo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitoringSlo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitoringSlo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3084,7 +3084,7 @@ export class MonitoringSlo extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/monitoring_slo google_monitoring_slo} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/monitoring_slo google_monitoring_slo} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3095,7 +3095,7 @@ export class MonitoringSlo extends cdktn.TerraformResource {
       terraformResourceType: 'google_monitoring_slo',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

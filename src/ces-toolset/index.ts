@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#app CesToolset#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#app CesToolset#app}
   */
   readonly app: string;
   /**
@@ -27,19 +27,19 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#description CesToolset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#description CesToolset#description}
   */
   readonly description?: string;
   /**
   * The display name of the toolset. Must be unique within the same app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
   */
   readonly displayName?: string;
   /**
@@ -47,11 +47,11 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   * SYNCHRONOUS
   * ASYNCHRONOUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
   */
   readonly executionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#id CesToolset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#id CesToolset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,11 +60,11 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#location CesToolset#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#location CesToolset#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#project CesToolset#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#project CesToolset#project}
   */
   readonly project?: string;
   /**
@@ -72,25 +72,25 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   * the toolset's resource name. If not provided, a unique ID will be
   * automatically assigned for the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
   */
   readonly toolsetId: string;
   /**
   * mcp_toolset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
   */
   readonly mcpToolset?: CesToolsetMcpToolset;
   /**
   * open_api_toolset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
   */
   readonly openApiToolset?: CesToolsetOpenApiToolset;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
   */
   readonly timeouts?: CesToolsetTimeouts;
 }
@@ -102,14 +102,14 @@ export interface CesToolsetMcpToolsetApiAuthenticationApiKeyConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
   */
   readonly apiKeySecretVersion: string;
   /**
   * The parameter name or the header name of the API key.
   * E.g., If the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would be the parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
   */
   readonly keyName: string;
   /**
@@ -118,7 +118,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationApiKeyConfig {
   * Possible values:
   * HEADER
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
   */
   readonly requestLocation: string;
 }
@@ -126,7 +126,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationApiKeyConfig {
 export function cesToolsetMcpToolsetApiAuthenticationApiKeyConfigToTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationApiKeyConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationApiKeyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_key_secret_version: cdktn.stringToTerraform(struct!.apiKeySecretVersion),
@@ -139,7 +139,7 @@ export function cesToolsetMcpToolsetApiAuthenticationApiKeyConfigToTerraform(str
 export function cesToolsetMcpToolsetApiAuthenticationApiKeyConfigToHclTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationApiKeyConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationApiKeyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_key_secret_version: {
@@ -251,7 +251,7 @@ export class CesToolsetMcpToolsetApiAuthenticationApiKeyConfigOutputReference ex
 }
 export interface CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#token CesToolset#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#token CesToolset#token}
   */
   readonly token?: string;
 }
@@ -259,7 +259,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig {
 export function cesToolsetMcpToolsetApiAuthenticationBearerTokenConfigToTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationBearerTokenConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     token: cdktn.stringToTerraform(struct!.token),
@@ -270,7 +270,7 @@ export function cesToolsetMcpToolsetApiAuthenticationBearerTokenConfigToTerrafor
 export function cesToolsetMcpToolsetApiAuthenticationBearerTokenConfigToHclTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationBearerTokenConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     token: {
@@ -337,7 +337,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationOauthConfig {
   /**
   * The client ID from the OAuth provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
   */
   readonly clientId: string;
   /**
@@ -349,7 +349,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationOauthConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
   */
   readonly clientSecretVersion: string;
   /**
@@ -357,19 +357,19 @@ export interface CesToolsetMcpToolsetApiAuthenticationOauthConfig {
   * Possible values:
   * CLIENT_CREDENTIAL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
   */
   readonly oauthGrantType: string;
   /**
   * The OAuth scopes to grant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
   * The token endpoint in the OAuth provider to exchange for an access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
   */
   readonly tokenEndpoint: string;
 }
@@ -377,7 +377,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationOauthConfig {
 export function cesToolsetMcpToolsetApiAuthenticationOauthConfigToTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationOauthConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationOauthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -392,7 +392,7 @@ export function cesToolsetMcpToolsetApiAuthenticationOauthConfigToTerraform(stru
 export function cesToolsetMcpToolsetApiAuthenticationOauthConfigToHclTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationOauthConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationOauthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -560,7 +560,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig {
   * The OAuth scopes to grant. If not specified, the default scope
   * 'https://www.googleapis.com/auth/cloud-platform' is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
@@ -573,7 +573,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig {
   * CES service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -581,7 +581,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig {
 export function cesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfigToTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
@@ -593,7 +593,7 @@ export function cesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfigToT
 export function cesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfigToHclTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scopes: {
@@ -687,7 +687,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthCon
 export function cesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfigToTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -697,7 +697,7 @@ export function cesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConf
 export function cesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfigToHclTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference | CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -734,31 +734,31 @@ export interface CesToolsetMcpToolsetApiAuthentication {
   /**
   * api_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
   */
   readonly apiKeyConfig?: CesToolsetMcpToolsetApiAuthenticationApiKeyConfig;
   /**
   * bearer_token_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
   */
   readonly bearerTokenConfig?: CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig;
   /**
   * oauth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
   */
   readonly oauthConfig?: CesToolsetMcpToolsetApiAuthenticationOauthConfig;
   /**
   * service_account_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
   */
   readonly serviceAccountAuthConfig?: CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig;
   /**
   * service_agent_id_token_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
   */
   readonly serviceAgentIdTokenAuthConfig?: CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfig;
 }
@@ -766,7 +766,7 @@ export interface CesToolsetMcpToolsetApiAuthentication {
 export function cesToolsetMcpToolsetApiAuthenticationToTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationOutputReference | CesToolsetMcpToolsetApiAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_key_config: cesToolsetMcpToolsetApiAuthenticationApiKeyConfigToTerraform(struct!.apiKeyConfig),
@@ -781,7 +781,7 @@ export function cesToolsetMcpToolsetApiAuthenticationToTerraform(struct?: CesToo
 export function cesToolsetMcpToolsetApiAuthenticationToHclTerraform(struct?: CesToolsetMcpToolsetApiAuthenticationOutputReference | CesToolsetMcpToolsetApiAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_key_config: {
@@ -965,7 +965,7 @@ export interface CesToolsetMcpToolsetServiceDirectoryConfig {
   * Location of the service directory must be the same as the location of the
   * app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service CesToolset#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service CesToolset#service}
   */
   readonly service: string;
 }
@@ -973,7 +973,7 @@ export interface CesToolsetMcpToolsetServiceDirectoryConfig {
 export function cesToolsetMcpToolsetServiceDirectoryConfigToTerraform(struct?: CesToolsetMcpToolsetServiceDirectoryConfigOutputReference | CesToolsetMcpToolsetServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service: cdktn.stringToTerraform(struct!.service),
@@ -984,7 +984,7 @@ export function cesToolsetMcpToolsetServiceDirectoryConfigToTerraform(struct?: C
 export function cesToolsetMcpToolsetServiceDirectoryConfigToHclTerraform(struct?: CesToolsetMcpToolsetServiceDirectoryConfigOutputReference | CesToolsetMcpToolsetServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service: {
@@ -1057,14 +1057,14 @@ export interface CesToolsetMcpToolsetTlsConfigCaCerts {
   * -out example.com.crt \
   * -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#cert CesToolset#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#cert CesToolset#cert}
   */
   readonly cert: string;
   /**
   * The name of the allowed custom CA certificates. This
   * can be used to disambiguate the custom CA certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
   */
   readonly displayName: string;
 }
@@ -1072,7 +1072,7 @@ export interface CesToolsetMcpToolsetTlsConfigCaCerts {
 export function cesToolsetMcpToolsetTlsConfigCaCertsToTerraform(struct?: CesToolsetMcpToolsetTlsConfigCaCerts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cert: cdktn.stringToTerraform(struct!.cert),
@@ -1084,7 +1084,7 @@ export function cesToolsetMcpToolsetTlsConfigCaCertsToTerraform(struct?: CesTool
 export function cesToolsetMcpToolsetTlsConfigCaCertsToHclTerraform(struct?: CesToolsetMcpToolsetTlsConfigCaCerts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cert: {
@@ -1205,7 +1205,7 @@ export interface CesToolsetMcpToolsetTlsConfig {
   /**
   * ca_certs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
   */
   readonly caCerts: CesToolsetMcpToolsetTlsConfigCaCerts[] | cdktn.IResolvable;
 }
@@ -1213,7 +1213,7 @@ export interface CesToolsetMcpToolsetTlsConfig {
 export function cesToolsetMcpToolsetTlsConfigToTerraform(struct?: CesToolsetMcpToolsetTlsConfigOutputReference | CesToolsetMcpToolsetTlsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ca_certs: cdktn.listMapper(cesToolsetMcpToolsetTlsConfigCaCertsToTerraform, true)(struct!.caCerts),
@@ -1224,7 +1224,7 @@ export function cesToolsetMcpToolsetTlsConfigToTerraform(struct?: CesToolsetMcpT
 export function cesToolsetMcpToolsetTlsConfigToHclTerraform(struct?: CesToolsetMcpToolsetTlsConfigOutputReference | CesToolsetMcpToolsetTlsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ca_certs: {
@@ -1292,7 +1292,7 @@ export interface CesToolsetMcpToolset {
   * https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/tool/open-api#openapi-injection
   * for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#custom_headers CesToolset#custom_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#custom_headers CesToolset#custom_headers}
   */
   readonly customHeaders?: { [key: string]: string };
   /**
@@ -1302,25 +1302,25 @@ export interface CesToolsetMcpToolset {
   * https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http
   * for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#server_address CesToolset#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#server_address CesToolset#server_address}
   */
   readonly serverAddress: string;
   /**
   * api_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
   */
   readonly apiAuthentication?: CesToolsetMcpToolsetApiAuthentication;
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
   */
   readonly serviceDirectoryConfig?: CesToolsetMcpToolsetServiceDirectoryConfig;
   /**
   * tls_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
   */
   readonly tlsConfig?: CesToolsetMcpToolsetTlsConfig;
 }
@@ -1328,7 +1328,7 @@ export interface CesToolsetMcpToolset {
 export function cesToolsetMcpToolsetToTerraform(struct?: CesToolsetMcpToolsetOutputReference | CesToolsetMcpToolset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customHeaders),
@@ -1343,7 +1343,7 @@ export function cesToolsetMcpToolsetToTerraform(struct?: CesToolsetMcpToolsetOut
 export function cesToolsetMcpToolsetToHclTerraform(struct?: CesToolsetMcpToolsetOutputReference | CesToolsetMcpToolset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_headers: {
@@ -1523,14 +1523,14 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
   */
   readonly apiKeySecretVersion: string;
   /**
   * The parameter name or the header name of the API key.
   * E.g., If the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would be the parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
   */
   readonly keyName: string;
   /**
@@ -1539,7 +1539,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig {
   * HEADER
   * QUERY_STRING
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
   */
   readonly requestLocation: string;
 }
@@ -1547,7 +1547,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig {
 export function cesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigToTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_key_secret_version: cdktn.stringToTerraform(struct!.apiKeySecretVersion),
@@ -1560,7 +1560,7 @@ export function cesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigToTerraform
 export function cesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigToHclTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_key_secret_version: {
@@ -1672,7 +1672,7 @@ export class CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputReferenc
 }
 export interface CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#token CesToolset#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#token CesToolset#token}
   */
   readonly token?: string;
 }
@@ -1680,7 +1680,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig {
 export function cesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigToTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     token: cdktn.stringToTerraform(struct!.token),
@@ -1691,7 +1691,7 @@ export function cesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigToTerr
 export function cesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigToHclTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     token: {
@@ -1758,7 +1758,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationOauthConfig {
   /**
   * The client ID from the OAuth provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
   */
   readonly clientId: string;
   /**
@@ -1770,7 +1770,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationOauthConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
   */
   readonly clientSecretVersion: string;
   /**
@@ -1778,19 +1778,19 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationOauthConfig {
   * Possible values:
   * CLIENT_CREDENTIAL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
   */
   readonly oauthGrantType: string;
   /**
   * The OAuth scopes to grant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
   * The token endpoint in the OAuth provider to exchange for an access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
   */
   readonly tokenEndpoint: string;
 }
@@ -1798,7 +1798,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationOauthConfig {
 export function cesToolsetOpenApiToolsetApiAuthenticationOauthConfigToTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationOauthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -1813,7 +1813,7 @@ export function cesToolsetOpenApiToolsetApiAuthenticationOauthConfigToTerraform(
 export function cesToolsetOpenApiToolsetApiAuthenticationOauthConfigToHclTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationOauthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -1981,7 +1981,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConf
   * The OAuth scopes to grant. If not specified, the default scope
   * 'https://www.googleapis.com/auth/cloud-platform' is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
@@ -1994,7 +1994,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConf
   * CES service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -2002,7 +2002,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConf
 export function cesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfigToTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
@@ -2014,7 +2014,7 @@ export function cesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfi
 export function cesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfigToHclTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scopes: {
@@ -2108,7 +2108,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAut
 export function cesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigToTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2118,7 +2118,7 @@ export function cesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuth
 export function cesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigToHclTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference | CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2155,31 +2155,31 @@ export interface CesToolsetOpenApiToolsetApiAuthentication {
   /**
   * api_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
   */
   readonly apiKeyConfig?: CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig;
   /**
   * bearer_token_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
   */
   readonly bearerTokenConfig?: CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig;
   /**
   * oauth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
   */
   readonly oauthConfig?: CesToolsetOpenApiToolsetApiAuthenticationOauthConfig;
   /**
   * service_account_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
   */
   readonly serviceAccountAuthConfig?: CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfig;
   /**
   * service_agent_id_token_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
   */
   readonly serviceAgentIdTokenAuthConfig?: CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig;
 }
@@ -2187,7 +2187,7 @@ export interface CesToolsetOpenApiToolsetApiAuthentication {
 export function cesToolsetOpenApiToolsetApiAuthenticationToTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationOutputReference | CesToolsetOpenApiToolsetApiAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_key_config: cesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigToTerraform(struct!.apiKeyConfig),
@@ -2202,7 +2202,7 @@ export function cesToolsetOpenApiToolsetApiAuthenticationToTerraform(struct?: Ce
 export function cesToolsetOpenApiToolsetApiAuthenticationToHclTerraform(struct?: CesToolsetOpenApiToolsetApiAuthenticationOutputReference | CesToolsetOpenApiToolsetApiAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_key_config: {
@@ -2386,7 +2386,7 @@ export interface CesToolsetOpenApiToolsetServiceDirectoryConfig {
   * Location of the service directory must be the same as the location of the
   * app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service CesToolset#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service CesToolset#service}
   */
   readonly service: string;
 }
@@ -2394,7 +2394,7 @@ export interface CesToolsetOpenApiToolsetServiceDirectoryConfig {
 export function cesToolsetOpenApiToolsetServiceDirectoryConfigToTerraform(struct?: CesToolsetOpenApiToolsetServiceDirectoryConfigOutputReference | CesToolsetOpenApiToolsetServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service: cdktn.stringToTerraform(struct!.service),
@@ -2405,7 +2405,7 @@ export function cesToolsetOpenApiToolsetServiceDirectoryConfigToTerraform(struct
 export function cesToolsetOpenApiToolsetServiceDirectoryConfigToHclTerraform(struct?: CesToolsetOpenApiToolsetServiceDirectoryConfigOutputReference | CesToolsetOpenApiToolsetServiceDirectoryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service: {
@@ -2478,14 +2478,14 @@ export interface CesToolsetOpenApiToolsetTlsConfigCaCerts {
   * -out example.com.crt \
   * -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#cert CesToolset#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#cert CesToolset#cert}
   */
   readonly cert: string;
   /**
   * The name of the allowed custom CA certificates. This
   * can be used to disambiguate the custom CA certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
   */
   readonly displayName: string;
 }
@@ -2493,7 +2493,7 @@ export interface CesToolsetOpenApiToolsetTlsConfigCaCerts {
 export function cesToolsetOpenApiToolsetTlsConfigCaCertsToTerraform(struct?: CesToolsetOpenApiToolsetTlsConfigCaCerts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cert: cdktn.stringToTerraform(struct!.cert),
@@ -2505,7 +2505,7 @@ export function cesToolsetOpenApiToolsetTlsConfigCaCertsToTerraform(struct?: Ces
 export function cesToolsetOpenApiToolsetTlsConfigCaCertsToHclTerraform(struct?: CesToolsetOpenApiToolsetTlsConfigCaCerts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cert: {
@@ -2626,7 +2626,7 @@ export interface CesToolsetOpenApiToolsetTlsConfig {
   /**
   * ca_certs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
   */
   readonly caCerts: CesToolsetOpenApiToolsetTlsConfigCaCerts[] | cdktn.IResolvable;
 }
@@ -2634,7 +2634,7 @@ export interface CesToolsetOpenApiToolsetTlsConfig {
 export function cesToolsetOpenApiToolsetTlsConfigToTerraform(struct?: CesToolsetOpenApiToolsetTlsConfigOutputReference | CesToolsetOpenApiToolsetTlsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ca_certs: cdktn.listMapper(cesToolsetOpenApiToolsetTlsConfigCaCertsToTerraform, true)(struct!.caCerts),
@@ -2645,7 +2645,7 @@ export function cesToolsetOpenApiToolsetTlsConfigToTerraform(struct?: CesToolset
 export function cesToolsetOpenApiToolsetTlsConfigToHclTerraform(struct?: CesToolsetOpenApiToolsetTlsConfigOutputReference | CesToolsetOpenApiToolsetTlsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ca_certs: {
@@ -2710,31 +2710,31 @@ export interface CesToolsetOpenApiToolset {
   * If true, the agent will ignore unknown fields in the API response for all
   * operations defined in the OpenAPI schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#ignore_unknown_fields CesToolset#ignore_unknown_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#ignore_unknown_fields CesToolset#ignore_unknown_fields}
   */
   readonly ignoreUnknownFields?: boolean | cdktn.IResolvable;
   /**
   * The OpenAPI schema of the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#open_api_schema CesToolset#open_api_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#open_api_schema CesToolset#open_api_schema}
   */
   readonly openApiSchema: string;
   /**
   * api_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
   */
   readonly apiAuthentication?: CesToolsetOpenApiToolsetApiAuthentication;
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
   */
   readonly serviceDirectoryConfig?: CesToolsetOpenApiToolsetServiceDirectoryConfig;
   /**
   * tls_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
   */
   readonly tlsConfig?: CesToolsetOpenApiToolsetTlsConfig;
 }
@@ -2742,7 +2742,7 @@ export interface CesToolsetOpenApiToolset {
 export function cesToolsetOpenApiToolsetToTerraform(struct?: CesToolsetOpenApiToolsetOutputReference | CesToolsetOpenApiToolset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ignore_unknown_fields: cdktn.booleanToTerraform(struct!.ignoreUnknownFields),
@@ -2757,7 +2757,7 @@ export function cesToolsetOpenApiToolsetToTerraform(struct?: CesToolsetOpenApiTo
 export function cesToolsetOpenApiToolsetToHclTerraform(struct?: CesToolsetOpenApiToolsetOutputReference | CesToolsetOpenApiToolset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ignore_unknown_fields: {
@@ -2936,15 +2936,15 @@ export class CesToolsetOpenApiToolsetOutputReference extends cdktn.ComplexObject
 }
 export interface CesToolsetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#create CesToolset#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#create CesToolset#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#delete CesToolset#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#delete CesToolset#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#update CesToolset#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#update CesToolset#update}
   */
   readonly update?: string;
 }
@@ -2952,7 +2952,7 @@ export interface CesToolsetTimeouts {
 export function cesToolsetTimeoutsToTerraform(struct?: CesToolsetTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2965,7 +2965,7 @@ export function cesToolsetTimeoutsToTerraform(struct?: CesToolsetTimeouts | cdkt
 export function cesToolsetTimeoutsToHclTerraform(struct?: CesToolsetTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -3096,7 +3096,7 @@ export class CesToolsetTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset google_ces_toolset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset google_ces_toolset}
 */
 export class CesToolset extends cdktn.TerraformResource {
 
@@ -3112,7 +3112,7 @@ export class CesToolset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesToolset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesToolset to import
-  * @param importFromId The id of the existing CesToolset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesToolset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesToolset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3124,7 +3124,7 @@ export class CesToolset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_toolset google_ces_toolset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_toolset google_ces_toolset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3135,7 +3135,7 @@ export class CesToolset extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_toolset',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

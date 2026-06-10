@@ -4,7 +4,7 @@
 
 ### BiglakeIcebergNamespaceIamMember <a name="BiglakeIcebergNamespaceIamMember" id="@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member google_biglake_iceberg_namespace_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member google_biglake_iceberg_namespace_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the BiglakeIcebergNamespaceIam
 
 The id of the existing BiglakeIcebergNamespaceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,9 +897,9 @@ const biglakeIcebergNamespaceIamMemberCondition: biglakeIcebergNamespaceIamMembe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#expression BiglakeIcebergNamespaceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#title BiglakeIcebergNamespaceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#description BiglakeIcebergNamespaceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#expression BiglakeIcebergNamespaceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#title BiglakeIcebergNamespaceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#description BiglakeIcebergNamespaceIamMember#description}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#expression BiglakeIcebergNamespaceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#expression BiglakeIcebergNamespaceIamMember#expression}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#title BiglakeIcebergNamespaceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#title BiglakeIcebergNamespaceIamMember#title}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#description BiglakeIcebergNamespaceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#description BiglakeIcebergNamespaceIamMember#description}.
 
 ---
 
@@ -960,13 +960,13 @@ const biglakeIcebergNamespaceIamMemberConfig: biglakeIcebergNamespaceIamMember.B
 | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#catalog BiglakeIcebergNamespaceIamMember#catalog}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#member BiglakeIcebergNamespaceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.namespaceId">namespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#namespace_id BiglakeIcebergNamespaceIamMember#namespace_id}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#role BiglakeIcebergNamespaceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#catalog BiglakeIcebergNamespaceIamMember#catalog}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#member BiglakeIcebergNamespaceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.namespaceId">namespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#namespace_id BiglakeIcebergNamespaceIamMember#namespace_id}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#role BiglakeIcebergNamespaceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberCondition">BiglakeIcebergNamespaceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#id BiglakeIcebergNamespaceIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#project BiglakeIcebergNamespaceIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#id BiglakeIcebergNamespaceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamMember.BiglakeIcebergNamespaceIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#project BiglakeIcebergNamespaceIamMember#project}. |
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly catalog: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#catalog BiglakeIcebergNamespaceIamMember#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#catalog BiglakeIcebergNamespaceIamMember#catalog}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#member BiglakeIcebergNamespaceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#member BiglakeIcebergNamespaceIamMember#member}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly namespaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#namespace_id BiglakeIcebergNamespaceIamMember#namespace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#namespace_id BiglakeIcebergNamespaceIamMember#namespace_id}.
 
 ---
 
@@ -1084,7 +1084,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#role BiglakeIcebergNamespaceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#role BiglakeIcebergNamespaceIamMember#role}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly condition: BiglakeIcebergNamespaceIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#condition BiglakeIcebergNamespaceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#condition BiglakeIcebergNamespaceIamMember#condition}
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#id BiglakeIcebergNamespaceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#id BiglakeIcebergNamespaceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1125,7 +1125,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/biglake_iceberg_namespace_iam_member#project BiglakeIcebergNamespaceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/biglake_iceberg_namespace_iam_member#project BiglakeIcebergNamespaceIamMember#project}.
 
 ---
 

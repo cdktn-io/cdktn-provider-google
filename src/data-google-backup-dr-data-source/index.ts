@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleBackupDrDataSourceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source#backup_vault_id DataGoogleBackupDrDataSource#backup_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source#backup_vault_id DataGoogleBackupDrDataSource#backup_vault_id}
   */
   readonly backupVaultId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source#data_source_id DataGoogleBackupDrDataSource#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source#data_source_id DataGoogleBackupDrDataSource#data_source_id}
   */
   readonly dataSourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source#id DataGoogleBackupDrDataSource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source#id DataGoogleBackupDrDataSource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source#location DataGoogleBackupDrDataSource#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source#location DataGoogleBackupDrDataSource#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source#project DataGoogleBackupDrDataSource#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source#project DataGoogleBackupDrDataSource#project}
   */
   readonly project?: string;
 }
@@ -42,7 +42,7 @@ export interface DataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBack
 export function dataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBackupConfigToTerraform(struct?: DataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -52,7 +52,7 @@ export function dataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBacku
 export function dataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBackupConfigToHclTerraform(struct?: DataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -147,7 +147,7 @@ export interface DataGoogleBackupDrDataSourceBackupConfigInfoGcpBackupConfig {
 export function dataGoogleBackupDrDataSourceBackupConfigInfoGcpBackupConfigToTerraform(struct?: DataGoogleBackupDrDataSourceBackupConfigInfoGcpBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -157,7 +157,7 @@ export function dataGoogleBackupDrDataSourceBackupConfigInfoGcpBackupConfigToTer
 export function dataGoogleBackupDrDataSourceBackupConfigInfoGcpBackupConfigToHclTerraform(struct?: DataGoogleBackupDrDataSourceBackupConfigInfoGcpBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -237,7 +237,7 @@ export interface DataGoogleBackupDrDataSourceBackupConfigInfo {
 export function dataGoogleBackupDrDataSourceBackupConfigInfoToTerraform(struct?: DataGoogleBackupDrDataSourceBackupConfigInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -247,7 +247,7 @@ export function dataGoogleBackupDrDataSourceBackupConfigInfoToTerraform(struct?:
 export function dataGoogleBackupDrDataSourceBackupConfigInfoToHclTerraform(struct?: DataGoogleBackupDrDataSourceBackupConfigInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -335,7 +335,7 @@ export interface DataGoogleBackupDrDataSourceDataSourceBackupApplianceApplicatio
 export function dataGoogleBackupDrDataSourceDataSourceBackupApplianceApplicationToTerraform(struct?: DataGoogleBackupDrDataSourceDataSourceBackupApplianceApplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -345,7 +345,7 @@ export function dataGoogleBackupDrDataSourceDataSourceBackupApplianceApplication
 export function dataGoogleBackupDrDataSourceDataSourceBackupApplianceApplicationToHclTerraform(struct?: DataGoogleBackupDrDataSourceDataSourceBackupApplianceApplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -440,7 +440,7 @@ export interface DataGoogleBackupDrDataSourceDataSourceGcpResourceComputeInstanc
 export function dataGoogleBackupDrDataSourceDataSourceGcpResourceComputeInstanceDataSourcePropertiesToTerraform(struct?: DataGoogleBackupDrDataSourceDataSourceGcpResourceComputeInstanceDataSourceProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -450,7 +450,7 @@ export function dataGoogleBackupDrDataSourceDataSourceGcpResourceComputeInstance
 export function dataGoogleBackupDrDataSourceDataSourceGcpResourceComputeInstanceDataSourcePropertiesToHclTerraform(struct?: DataGoogleBackupDrDataSourceDataSourceGcpResourceComputeInstanceDataSourceProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -535,7 +535,7 @@ export interface DataGoogleBackupDrDataSourceDataSourceGcpResource {
 export function dataGoogleBackupDrDataSourceDataSourceGcpResourceToTerraform(struct?: DataGoogleBackupDrDataSourceDataSourceGcpResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -545,7 +545,7 @@ export function dataGoogleBackupDrDataSourceDataSourceGcpResourceToTerraform(str
 export function dataGoogleBackupDrDataSourceDataSourceGcpResourceToHclTerraform(struct?: DataGoogleBackupDrDataSourceDataSourceGcpResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -622,7 +622,7 @@ export class DataGoogleBackupDrDataSourceDataSourceGcpResourceList extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source google_backup_dr_data_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source google_backup_dr_data_source}
 */
 export class DataGoogleBackupDrDataSource extends cdktn.TerraformDataSource {
 
@@ -638,7 +638,7 @@ export class DataGoogleBackupDrDataSource extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleBackupDrDataSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBackupDrDataSource to import
-  * @param importFromId The id of the existing DataGoogleBackupDrDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleBackupDrDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBackupDrDataSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -650,7 +650,7 @@ export class DataGoogleBackupDrDataSource extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/backup_dr_data_source google_backup_dr_data_source} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/backup_dr_data_source google_backup_dr_data_source} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -661,7 +661,7 @@ export class DataGoogleBackupDrDataSource extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_backup_dr_data_source',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

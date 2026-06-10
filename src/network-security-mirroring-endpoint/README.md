@@ -1,3 +1,3 @@
 # `google_network_security_mirroring_endpoint`
 
-Refer to the Terraform Registry for docs: [`google_network_security_mirroring_endpoint`](https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_mirroring_endpoint).
+Refer to the Terraform Registry for docs: [`google_network_security_mirroring_endpoint`](https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_mirroring_endpoint).

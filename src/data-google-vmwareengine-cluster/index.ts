@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_cluster
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleVmwareengineClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGoogleVmwareengineClusterConfig extends cdktn.TerraformMeta
   /**
   * The ID of the Cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
   */
   readonly name: string;
   /**
@@ -30,7 +30,7 @@ export interface DataGoogleVmwareengineClusterConfig extends cdktn.TerraformMeta
   * Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
   * For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
   */
   readonly parent: string;
 }
@@ -40,7 +40,7 @@ export interface DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoli
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsToTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolic
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsToHclTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -120,7 +120,7 @@ export interface DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoli
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsToTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -130,7 +130,7 @@ export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolic
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsToHclTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -200,7 +200,7 @@ export interface DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoli
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsToTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -210,7 +210,7 @@ export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolic
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsToHclTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -280,7 +280,7 @@ export interface DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoli
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesToTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -290,7 +290,7 @@ export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolic
 export function dataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesToHclTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -383,7 +383,7 @@ export interface DataGoogleVmwareengineClusterAutoscalingSettings {
 export function dataGoogleVmwareengineClusterAutoscalingSettingsToTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -393,7 +393,7 @@ export function dataGoogleVmwareengineClusterAutoscalingSettingsToTerraform(stru
 export function dataGoogleVmwareengineClusterAutoscalingSettingsToHclTerraform(struct?: DataGoogleVmwareengineClusterAutoscalingSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -474,7 +474,7 @@ export interface DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwo
 export function dataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkToTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -484,7 +484,7 @@ export function dataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwor
 export function dataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkToHclTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -564,7 +564,7 @@ export interface DataGoogleVmwareengineClusterDatastoreMountConfig {
 export function dataGoogleVmwareengineClusterDatastoreMountConfigToTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -574,7 +574,7 @@ export function dataGoogleVmwareengineClusterDatastoreMountConfigToTerraform(str
 export function dataGoogleVmwareengineClusterDatastoreMountConfigToHclTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -670,7 +670,7 @@ export interface DataGoogleVmwareengineClusterNodeTypeConfigs {
 export function dataGoogleVmwareengineClusterNodeTypeConfigsToTerraform(struct?: DataGoogleVmwareengineClusterNodeTypeConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -680,7 +680,7 @@ export function dataGoogleVmwareengineClusterNodeTypeConfigsToTerraform(struct?:
 export function dataGoogleVmwareengineClusterNodeTypeConfigsToHclTerraform(struct?: DataGoogleVmwareengineClusterNodeTypeConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -751,7 +751,7 @@ export class DataGoogleVmwareengineClusterNodeTypeConfigsList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}
 */
 export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
 
@@ -767,7 +767,7 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleVmwareengineCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVmwareengineCluster to import
-  * @param importFromId The id of the existing DataGoogleVmwareengineCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleVmwareengineCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVmwareengineCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -779,7 +779,7 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -790,7 +790,7 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_vmwareengine_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

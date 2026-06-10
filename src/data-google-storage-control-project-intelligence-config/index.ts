@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_control_project_intelligence_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_control_project_intelligence_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleStorageControlProjectIntelligenceConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_control_project_intelligence_config#id DataGoogleStorageControlProjectIntelligenceConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_control_project_intelligence_config#id DataGoogleStorageControlProjectIntelligenceConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigConfig extends
   /**
   * Identifier of the GCP project. For GCP project, this field can be project name or project number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_control_project_intelligence_config#name DataGoogleStorageControlProjectIntelligenceConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_control_project_intelligence_config#name DataGoogleStorageControlProjectIntelligenceConfig#name}
   */
   readonly name: string;
 }
@@ -32,7 +32,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigEffectiveIntel
 export function dataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfigToTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataGoogleStorageControlProjectIntelligenceConfigEffectiveIntell
 export function dataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfigToHclTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -112,7 +112,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigFilterExcluded
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageBucketsToTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -122,7 +122,7 @@ export function dataGoogleStorageControlProjectIntelligenceConfigFilterExcludedC
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageBucketsToHclTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -187,7 +187,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigFilterExcluded
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsToTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -197,7 +197,7 @@ export function dataGoogleStorageControlProjectIntelligenceConfigFilterExcludedC
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsToHclTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -262,7 +262,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigFilterIncluded
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageBucketsToTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -272,7 +272,7 @@ export function dataGoogleStorageControlProjectIntelligenceConfigFilterIncludedC
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageBucketsToHclTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -337,7 +337,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigFilterIncluded
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsToTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -347,7 +347,7 @@ export function dataGoogleStorageControlProjectIntelligenceConfigFilterIncludedC
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsToHclTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -412,7 +412,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigFilter {
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterToTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -422,7 +422,7 @@ export function dataGoogleStorageControlProjectIntelligenceConfigFilterToTerrafo
 export function dataGoogleStorageControlProjectIntelligenceConfigFilterToHclTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -506,7 +506,7 @@ export interface DataGoogleStorageControlProjectIntelligenceConfigTrialConfig {
 export function dataGoogleStorageControlProjectIntelligenceConfigTrialConfigToTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigTrialConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -516,7 +516,7 @@ export function dataGoogleStorageControlProjectIntelligenceConfigTrialConfigToTe
 export function dataGoogleStorageControlProjectIntelligenceConfigTrialConfigToHclTerraform(struct?: DataGoogleStorageControlProjectIntelligenceConfigTrialConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -577,7 +577,7 @@ export class DataGoogleStorageControlProjectIntelligenceConfigTrialConfigList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}
 */
 export class DataGoogleStorageControlProjectIntelligenceConfig extends cdktn.TerraformDataSource {
 
@@ -593,7 +593,7 @@ export class DataGoogleStorageControlProjectIntelligenceConfig extends cdktn.Ter
   * Generates CDKTN code for importing a DataGoogleStorageControlProjectIntelligenceConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleStorageControlProjectIntelligenceConfig to import
-  * @param importFromId The id of the existing DataGoogleStorageControlProjectIntelligenceConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_control_project_intelligence_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleStorageControlProjectIntelligenceConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_control_project_intelligence_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleStorageControlProjectIntelligenceConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -605,7 +605,7 @@ export class DataGoogleStorageControlProjectIntelligenceConfig extends cdktn.Ter
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -616,7 +616,7 @@ export class DataGoogleStorageControlProjectIntelligenceConfig extends cdktn.Ter
       terraformResourceType: 'google_storage_control_project_intelligence_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

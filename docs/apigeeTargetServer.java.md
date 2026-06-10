@@ -4,7 +4,7 @@
 
 ### ApigeeTargetServer <a name="ApigeeTargetServer" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server google_apigee_target_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server google_apigee_target_server}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer"></a>
 
@@ -50,7 +50,7 @@ ApigeeTargetServer.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of this TargetServer. |
-| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enabling/disabling a TargetServer is useful when TargetServers are used in load balancing configurations, and one or more TargetServers need to taken out of rotation periodically. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"]. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer.parameter.sSlInfo">sSlInfo</a></code> | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfo">ApigeeTargetServerSSlInfo</a></code> | s_sl_info block. |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#env_id ApigeeTargetServer#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#env_id ApigeeTargetServer#env_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host name this target connects to. Value must be a valid hostname as described by RFC-1123.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#host ApigeeTargetServer#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#host ApigeeTargetServer#host}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource id of this reference. Values must match the regular expression [\w\s-.]+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#name ApigeeTargetServer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#name ApigeeTargetServer#name}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#port ApigeeTargetServer#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#port ApigeeTargetServer#port}
 
 ---
 
@@ -171,7 +171,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#deletion_policy ApigeeTargetServer#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#deletion_policy ApigeeTargetServer#deletion_policy}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A human-readable description of this TargetServer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#description ApigeeTargetServer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#description ApigeeTargetServer#description}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -204,7 +204,7 @@ Enabling/disabling a TargetServer is useful when TargetServers are used in load 
 
 Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#is_enabled ApigeeTargetServer#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#is_enabled ApigeeTargetServer#is_enabled}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#protocol ApigeeTargetServer#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#protocol ApigeeTargetServer#protocol}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 s_sl_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#s_sl_info ApigeeTargetServer#s_sl_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#s_sl_info ApigeeTargetServer#s_sl_info}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#timeouts ApigeeTargetServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#timeouts ApigeeTargetServer#timeouts}
 
 ---
 
@@ -758,7 +758,7 @@ The construct id used in the generated config for the ApigeeTargetServer to impo
 
 The id of the existing ApigeeTargetServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1241,7 +1241,7 @@ ApigeeTargetServerConfig.builder()
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.port">port</a></code> | <code>java.lang.Number</code> | The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of this TargetServer. |
-| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enabling/disabling a TargetServer is useful when TargetServers are used in load balancing configurations, and one or more TargetServers need to taken out of rotation periodically. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"]. |
 | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.property.sSlInfo">sSlInfo</a></code> | <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfo">ApigeeTargetServerSSlInfo</a></code> | s_sl_info block. |
@@ -1329,7 +1329,7 @@ public java.lang.String getEnvId();
 
 The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#env_id ApigeeTargetServer#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#env_id ApigeeTargetServer#env_id}
 
 ---
 
@@ -1343,7 +1343,7 @@ public java.lang.String getHost();
 
 The host name this target connects to. Value must be a valid hostname as described by RFC-1123.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#host ApigeeTargetServer#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#host ApigeeTargetServer#host}
 
 ---
 
@@ -1357,7 +1357,7 @@ public java.lang.String getName();
 
 The resource id of this reference. Values must match the regular expression [\w\s-.]+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#name ApigeeTargetServer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#name ApigeeTargetServer#name}
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.lang.Number getPort();
 
 The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#port ApigeeTargetServer#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#port ApigeeTargetServer#port}
 
 ---
 
@@ -1392,7 +1392,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#deletion_policy ApigeeTargetServer#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#deletion_policy ApigeeTargetServer#deletion_policy}
 
 ---
 
@@ -1406,7 +1406,7 @@ public java.lang.String getDescription();
 
 A human-readable description of this TargetServer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#description ApigeeTargetServer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#description ApigeeTargetServer#description}
 
 ---
 
@@ -1418,7 +1418,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#id ApigeeTargetServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1437,7 +1437,7 @@ Enabling/disabling a TargetServer is useful when TargetServers are used in load 
 
 Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#is_enabled ApigeeTargetServer#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#is_enabled ApigeeTargetServer#is_enabled}
 
 ---
 
@@ -1451,7 +1451,7 @@ public java.lang.String getProtocol();
 
 Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#protocol ApigeeTargetServer#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#protocol ApigeeTargetServer#protocol}
 
 ---
 
@@ -1465,7 +1465,7 @@ public ApigeeTargetServerSSlInfo getSSlInfo();
 
 s_sl_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#s_sl_info ApigeeTargetServer#s_sl_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#s_sl_info ApigeeTargetServer#s_sl_info}
 
 ---
 
@@ -1479,7 +1479,7 @@ public ApigeeTargetServerTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#timeouts ApigeeTargetServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#timeouts ApigeeTargetServer#timeouts}
 
 ---
 
@@ -1531,7 +1531,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Enables TLS. If false, neither one-way nor two-way TLS will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#enabled ApigeeTargetServer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#enabled ApigeeTargetServer#enabled}
 
 ---
 
@@ -1547,7 +1547,7 @@ The SSL/TLS cipher suites to be used.
 
 For programmable proxies, it must be one of the cipher suite names listed in: http://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#ciphersuites. For configurable proxies, it must follow the configuration specified in: https://commondatastorage.googleapis.com/chromium-boringssl-docs/ssl.h.html#Cipher-suite-configuration. This setting has no effect for configurable proxies when negotiating TLS 1.3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#ciphers ApigeeTargetServer#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#ciphers ApigeeTargetServer#ciphers}
 
 ---
 
@@ -1561,7 +1561,7 @@ public java.lang.Boolean|IResolvable getClientAuthEnabled();
 
 Enables two-way TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#client_auth_enabled ApigeeTargetServer#client_auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#client_auth_enabled ApigeeTargetServer#client_auth_enabled}
 
 ---
 
@@ -1575,7 +1575,7 @@ public ApigeeTargetServerSSlInfoCommonName getCommonName();
 
 common_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#common_name ApigeeTargetServer#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#common_name ApigeeTargetServer#common_name}
 
 ---
 
@@ -1589,7 +1589,7 @@ public java.lang.Boolean|IResolvable getEnforce();
 
 If true, TLS is strictly enforced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#enforce ApigeeTargetServer#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#enforce ApigeeTargetServer#enforce}
 
 ---
 
@@ -1605,7 +1605,7 @@ If true, Edge ignores TLS certificate errors.
 
 Valid when configuring TLS for target servers and target endpoints, and when configuring virtual hosts that use 2-way TLS. When used with a target endpoint/target server, if the backend system uses SNI and returns a cert with a subject Distinguished Name (DN) that does not match the hostname, there is no way to ignore the error and the connection fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#ignore_validation_errors ApigeeTargetServer#ignore_validation_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#ignore_validation_errors ApigeeTargetServer#ignore_validation_errors}
 
 ---
 
@@ -1619,7 +1619,7 @@ public java.lang.String getKeyAlias();
 
 Required if clientAuthEnabled is true. The resource ID for the alias containing the private key and cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#key_alias ApigeeTargetServer#key_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#key_alias ApigeeTargetServer#key_alias}
 
 ---
 
@@ -1633,7 +1633,7 @@ public java.lang.String getKeyStore();
 
 Required if clientAuthEnabled is true. The resource ID of the keystore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#key_store ApigeeTargetServer#key_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#key_store ApigeeTargetServer#key_store}
 
 ---
 
@@ -1647,7 +1647,7 @@ public java.util.List<java.lang.String> getProtocols();
 
 The TLS versioins to be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#protocols ApigeeTargetServer#protocols}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#protocols ApigeeTargetServer#protocols}
 
 ---
 
@@ -1661,7 +1661,7 @@ public java.lang.String getTrustStore();
 
 The resource ID of the truststore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#trust_store ApigeeTargetServer#trust_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#trust_store ApigeeTargetServer#trust_store}
 
 ---
 
@@ -1697,7 +1697,7 @@ public java.lang.String getValue();
 
 The TLS Common Name string of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#value ApigeeTargetServer#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#value ApigeeTargetServer#value}
 
 ---
 
@@ -1711,7 +1711,7 @@ public java.lang.Boolean|IResolvable getWildcardMatch();
 
 Indicates whether the cert should be matched against as a wildcard cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#wildcard_match ApigeeTargetServer#wildcard_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#wildcard_match ApigeeTargetServer#wildcard_match}
 
 ---
 
@@ -1733,9 +1733,9 @@ ApigeeTargetServerTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#create ApigeeTargetServer#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#delete ApigeeTargetServer#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#update ApigeeTargetServer#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#create ApigeeTargetServer#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#delete ApigeeTargetServer#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#update ApigeeTargetServer#update}. |
 
 ---
 
@@ -1747,7 +1747,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#create ApigeeTargetServer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#create ApigeeTargetServer#create}.
 
 ---
 
@@ -1759,7 +1759,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#delete ApigeeTargetServer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#delete ApigeeTargetServer#delete}.
 
 ---
 
@@ -1771,7 +1771,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_target_server#update ApigeeTargetServer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_target_server#update ApigeeTargetServer#update}.
 
 ---
 

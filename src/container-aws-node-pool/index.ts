@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,13 +18,13 @@ export interface ContainerAwsNodePoolConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field `effective_annotations` for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#annotations ContainerAwsNodePool#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#annotations ContainerAwsNodePool#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * The awsCluster for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#cluster ContainerAwsNodePool#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#cluster ContainerAwsNodePool#cluster}
   */
   readonly cluster: string;
   /**
@@ -36,11 +36,11 @@ export interface ContainerAwsNodePoolConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#deletion_policy ContainerAwsNodePool#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#deletion_policy ContainerAwsNodePool#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#id ContainerAwsNodePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#id ContainerAwsNodePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,73 +49,73 @@ export interface ContainerAwsNodePoolConfig extends cdktn.TerraformMetaArguments
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#location ContainerAwsNodePool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#location ContainerAwsNodePool#location}
   */
   readonly location: string;
   /**
   * The name of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#name ContainerAwsNodePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#name ContainerAwsNodePool#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#project ContainerAwsNodePool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#project ContainerAwsNodePool#project}
   */
   readonly project?: string;
   /**
   * The subnet where the node pool node run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#subnet_id ContainerAwsNodePool#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#subnet_id ContainerAwsNodePool#subnet_id}
   */
   readonly subnetId: string;
   /**
   * The Kubernetes version to run on this node pool (e.g. `1.19.10-gke.1000`). You can list all supported versions on a given Google Cloud region by calling GetAwsServerConfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#version ContainerAwsNodePool#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#version ContainerAwsNodePool#version}
   */
   readonly version: string;
   /**
   * autoscaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#autoscaling ContainerAwsNodePool#autoscaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#autoscaling ContainerAwsNodePool#autoscaling}
   */
   readonly autoscaling: ContainerAwsNodePoolAutoscaling;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#config ContainerAwsNodePool#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#config ContainerAwsNodePool#config}
   */
   readonly config: ContainerAwsNodePoolConfigA;
   /**
   * kubelet_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#kubelet_config ContainerAwsNodePool#kubelet_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#kubelet_config ContainerAwsNodePool#kubelet_config}
   */
   readonly kubeletConfig?: ContainerAwsNodePoolKubeletConfig;
   /**
   * management block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#management ContainerAwsNodePool#management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#management ContainerAwsNodePool#management}
   */
   readonly management?: ContainerAwsNodePoolManagement;
   /**
   * max_pods_constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#max_pods_constraint ContainerAwsNodePool#max_pods_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#max_pods_constraint ContainerAwsNodePool#max_pods_constraint}
   */
   readonly maxPodsConstraint: ContainerAwsNodePoolMaxPodsConstraint;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#timeouts ContainerAwsNodePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#timeouts ContainerAwsNodePool#timeouts}
   */
   readonly timeouts?: ContainerAwsNodePoolTimeouts;
   /**
   * update_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#update_settings ContainerAwsNodePool#update_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#update_settings ContainerAwsNodePool#update_settings}
   */
   readonly updateSettings?: ContainerAwsNodePoolUpdateSettings;
 }
@@ -123,13 +123,13 @@ export interface ContainerAwsNodePoolAutoscaling {
   /**
   * Maximum number of nodes in the NodePool. Must be >= min_node_count.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#max_node_count ContainerAwsNodePool#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#max_node_count ContainerAwsNodePool#max_node_count}
   */
   readonly maxNodeCount: number;
   /**
   * Minimum number of nodes in the NodePool. Must be >= 1 and <= max_node_count.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#min_node_count ContainerAwsNodePool#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#min_node_count ContainerAwsNodePool#min_node_count}
   */
   readonly minNodeCount: number;
 }
@@ -137,7 +137,7 @@ export interface ContainerAwsNodePoolAutoscaling {
 export function containerAwsNodePoolAutoscalingToTerraform(struct?: ContainerAwsNodePoolAutoscalingOutputReference | ContainerAwsNodePoolAutoscaling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_node_count: cdktn.numberToTerraform(struct!.maxNodeCount),
@@ -149,7 +149,7 @@ export function containerAwsNodePoolAutoscalingToTerraform(struct?: ContainerAws
 export function containerAwsNodePoolAutoscalingToHclTerraform(struct?: ContainerAwsNodePoolAutoscalingOutputReference | ContainerAwsNodePoolAutoscaling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_node_count: {
@@ -238,13 +238,13 @@ export interface ContainerAwsNodePoolConfigAutoscalingMetricsCollection {
   /**
   * The frequency at which EC2 Auto Scaling sends aggregated data to AWS CloudWatch. The only valid value is "1Minute".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#granularity ContainerAwsNodePool#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#granularity ContainerAwsNodePool#granularity}
   */
   readonly granularity: string;
   /**
   * The metrics to enable. For a list of valid metrics, see https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_EnableMetricsCollection.html. If you specify granularity and don't specify any metrics, all metrics are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#metrics ContainerAwsNodePool#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#metrics ContainerAwsNodePool#metrics}
   */
   readonly metrics?: string[];
 }
@@ -252,7 +252,7 @@ export interface ContainerAwsNodePoolConfigAutoscalingMetricsCollection {
 export function containerAwsNodePoolConfigAutoscalingMetricsCollectionToTerraform(struct?: ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference | ContainerAwsNodePoolConfigAutoscalingMetricsCollection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     granularity: cdktn.stringToTerraform(struct!.granularity),
@@ -264,7 +264,7 @@ export function containerAwsNodePoolConfigAutoscalingMetricsCollectionToTerrafor
 export function containerAwsNodePoolConfigAutoscalingMetricsCollectionToHclTerraform(struct?: ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference | ContainerAwsNodePoolConfigAutoscalingMetricsCollection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     granularity: {
@@ -356,7 +356,7 @@ export interface ContainerAwsNodePoolConfigConfigEncryption {
   /**
   * The ARN of the AWS KMS key used to encrypt node pool configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#kms_key_arn ContainerAwsNodePool#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#kms_key_arn ContainerAwsNodePool#kms_key_arn}
   */
   readonly kmsKeyArn: string;
 }
@@ -364,7 +364,7 @@ export interface ContainerAwsNodePoolConfigConfigEncryption {
 export function containerAwsNodePoolConfigConfigEncryptionToTerraform(struct?: ContainerAwsNodePoolConfigConfigEncryptionOutputReference | ContainerAwsNodePoolConfigConfigEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
@@ -375,7 +375,7 @@ export function containerAwsNodePoolConfigConfigEncryptionToTerraform(struct?: C
 export function containerAwsNodePoolConfigConfigEncryptionToHclTerraform(struct?: ContainerAwsNodePoolConfigConfigEncryptionOutputReference | ContainerAwsNodePoolConfigConfigEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     kms_key_arn: {
@@ -439,13 +439,13 @@ export interface ContainerAwsNodePoolConfigProxyConfig {
   /**
   * The ARN of the AWS Secret Manager secret that contains the HTTP(S) proxy configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#secret_arn ContainerAwsNodePool#secret_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#secret_arn ContainerAwsNodePool#secret_arn}
   */
   readonly secretArn: string;
   /**
   * The version string of the AWS Secret Manager secret that contains the HTTP(S) proxy configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#secret_version ContainerAwsNodePool#secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#secret_version ContainerAwsNodePool#secret_version}
   */
   readonly secretVersion: string;
 }
@@ -453,7 +453,7 @@ export interface ContainerAwsNodePoolConfigProxyConfig {
 export function containerAwsNodePoolConfigProxyConfigToTerraform(struct?: ContainerAwsNodePoolConfigProxyConfigOutputReference | ContainerAwsNodePoolConfigProxyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     secret_arn: cdktn.stringToTerraform(struct!.secretArn),
@@ -465,7 +465,7 @@ export function containerAwsNodePoolConfigProxyConfigToTerraform(struct?: Contai
 export function containerAwsNodePoolConfigProxyConfigToHclTerraform(struct?: ContainerAwsNodePoolConfigProxyConfigOutputReference | ContainerAwsNodePoolConfigProxyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     secret_arn: {
@@ -554,31 +554,31 @@ export interface ContainerAwsNodePoolConfigRootVolume {
   /**
   * Optional. The number of I/O operations per second (IOPS) to provision for GP3 volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#iops ContainerAwsNodePool#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#iops ContainerAwsNodePool#iops}
   */
   readonly iops?: number;
   /**
   * Optional. The Amazon Resource Name (ARN) of the Customer Managed Key (CMK) used to encrypt AWS EBS volumes. If not specified, the default Amazon managed key associated to the AWS region where this cluster runs will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#kms_key_arn ContainerAwsNodePool#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#kms_key_arn ContainerAwsNodePool#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
   * Optional. The size of the volume, in GiBs. When unspecified, a default value is provided. See the specific reference in the parent resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#size_gib ContainerAwsNodePool#size_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#size_gib ContainerAwsNodePool#size_gib}
   */
   readonly sizeGib?: number;
   /**
   * Optional. The throughput to provision for the volume, in MiB/s. Only valid if the volume type is GP3. If volume type is gp3 and throughput is not specified, the throughput will defaults to 125.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#throughput ContainerAwsNodePool#throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#throughput ContainerAwsNodePool#throughput}
   */
   readonly throughput?: number;
   /**
   * Optional. Type of the EBS volume. When unspecified, it defaults to GP2 volume. Possible values: VOLUME_TYPE_UNSPECIFIED, GP2, GP3
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#volume_type ContainerAwsNodePool#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#volume_type ContainerAwsNodePool#volume_type}
   */
   readonly volumeType?: string;
 }
@@ -586,7 +586,7 @@ export interface ContainerAwsNodePoolConfigRootVolume {
 export function containerAwsNodePoolConfigRootVolumeToTerraform(struct?: ContainerAwsNodePoolConfigRootVolumeOutputReference | ContainerAwsNodePoolConfigRootVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     iops: cdktn.numberToTerraform(struct!.iops),
@@ -601,7 +601,7 @@ export function containerAwsNodePoolConfigRootVolumeToTerraform(struct?: Contain
 export function containerAwsNodePoolConfigRootVolumeToHclTerraform(struct?: ContainerAwsNodePoolConfigRootVolumeOutputReference | ContainerAwsNodePoolConfigRootVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     iops: {
@@ -780,7 +780,7 @@ export interface ContainerAwsNodePoolConfigSshConfig {
   /**
   * The name of the EC2 key pair used to login into cluster machines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#ec2_key_pair ContainerAwsNodePool#ec2_key_pair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#ec2_key_pair ContainerAwsNodePool#ec2_key_pair}
   */
   readonly ec2KeyPair: string;
 }
@@ -788,7 +788,7 @@ export interface ContainerAwsNodePoolConfigSshConfig {
 export function containerAwsNodePoolConfigSshConfigToTerraform(struct?: ContainerAwsNodePoolConfigSshConfigOutputReference | ContainerAwsNodePoolConfigSshConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ec2_key_pair: cdktn.stringToTerraform(struct!.ec2KeyPair),
@@ -799,7 +799,7 @@ export function containerAwsNodePoolConfigSshConfigToTerraform(struct?: Containe
 export function containerAwsNodePoolConfigSshConfigToHclTerraform(struct?: ContainerAwsNodePoolConfigSshConfigOutputReference | ContainerAwsNodePoolConfigSshConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ec2_key_pair: {
@@ -863,19 +863,19 @@ export interface ContainerAwsNodePoolConfigTaints {
   /**
   * The taint effect. Possible values: EFFECT_UNSPECIFIED, NO_SCHEDULE, PREFER_NO_SCHEDULE, NO_EXECUTE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#effect ContainerAwsNodePool#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#effect ContainerAwsNodePool#effect}
   */
   readonly effect: string;
   /**
   * Key for the taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#key ContainerAwsNodePool#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#key ContainerAwsNodePool#key}
   */
   readonly key: string;
   /**
   * Value for the taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#value ContainerAwsNodePool#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#value ContainerAwsNodePool#value}
   */
   readonly value: string;
 }
@@ -883,7 +883,7 @@ export interface ContainerAwsNodePoolConfigTaints {
 export function containerAwsNodePoolConfigTaintsToTerraform(struct?: ContainerAwsNodePoolConfigTaints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     effect: cdktn.stringToTerraform(struct!.effect),
@@ -896,7 +896,7 @@ export function containerAwsNodePoolConfigTaintsToTerraform(struct?: ContainerAw
 export function containerAwsNodePoolConfigTaintsToHclTerraform(struct?: ContainerAwsNodePoolConfigTaints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     effect: {
@@ -1042,67 +1042,67 @@ export interface ContainerAwsNodePoolConfigA {
   /**
   * The name of the AWS IAM role assigned to nodes in the pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#iam_instance_profile ContainerAwsNodePool#iam_instance_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#iam_instance_profile ContainerAwsNodePool#iam_instance_profile}
   */
   readonly iamInstanceProfile: string;
   /**
   * Optional. The AWS instance type. When unspecified, it defaults to `m5.large`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#instance_type ContainerAwsNodePool#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#instance_type ContainerAwsNodePool#instance_type}
   */
   readonly instanceType?: string;
   /**
   * Optional. The initial labels assigned to nodes of this node pool. An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#labels ContainerAwsNodePool#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#labels ContainerAwsNodePool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Optional. The IDs of additional security groups to add to nodes in this pool. The manager will automatically create security groups with minimum rules needed for a functioning cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#security_group_ids ContainerAwsNodePool#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#security_group_ids ContainerAwsNodePool#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
   * Optional. Key/value metadata to assign to each underlying AWS resource. Specify at most 50 pairs containing alphanumerics, spaces, and symbols (.+-=_:@/). Keys can be up to 127 Unicode characters. Values can be up to 255 Unicode characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#tags ContainerAwsNodePool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#tags ContainerAwsNodePool#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * autoscaling_metrics_collection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#autoscaling_metrics_collection ContainerAwsNodePool#autoscaling_metrics_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#autoscaling_metrics_collection ContainerAwsNodePool#autoscaling_metrics_collection}
   */
   readonly autoscalingMetricsCollection?: ContainerAwsNodePoolConfigAutoscalingMetricsCollection;
   /**
   * config_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#config_encryption ContainerAwsNodePool#config_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#config_encryption ContainerAwsNodePool#config_encryption}
   */
   readonly configEncryption: ContainerAwsNodePoolConfigConfigEncryption;
   /**
   * proxy_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#proxy_config ContainerAwsNodePool#proxy_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#proxy_config ContainerAwsNodePool#proxy_config}
   */
   readonly proxyConfig?: ContainerAwsNodePoolConfigProxyConfig;
   /**
   * root_volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#root_volume ContainerAwsNodePool#root_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#root_volume ContainerAwsNodePool#root_volume}
   */
   readonly rootVolume?: ContainerAwsNodePoolConfigRootVolume;
   /**
   * ssh_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#ssh_config ContainerAwsNodePool#ssh_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#ssh_config ContainerAwsNodePool#ssh_config}
   */
   readonly sshConfig?: ContainerAwsNodePoolConfigSshConfig;
   /**
   * taints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#taints ContainerAwsNodePool#taints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#taints ContainerAwsNodePool#taints}
   */
   readonly taints?: ContainerAwsNodePoolConfigTaints[] | cdktn.IResolvable;
 }
@@ -1110,7 +1110,7 @@ export interface ContainerAwsNodePoolConfigA {
 export function containerAwsNodePoolConfigAToTerraform(struct?: ContainerAwsNodePoolConfigAOutputReference | ContainerAwsNodePoolConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     iam_instance_profile: cdktn.stringToTerraform(struct!.iamInstanceProfile),
@@ -1131,7 +1131,7 @@ export function containerAwsNodePoolConfigAToTerraform(struct?: ContainerAwsNode
 export function containerAwsNodePoolConfigAToHclTerraform(struct?: ContainerAwsNodePoolConfigAOutputReference | ContainerAwsNodePoolConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     iam_instance_profile: {
@@ -1472,25 +1472,25 @@ export interface ContainerAwsNodePoolKubeletConfig {
   /**
   * Whether or not to enable CPU CFS quota. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#cpu_cfs_quota ContainerAwsNodePool#cpu_cfs_quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#cpu_cfs_quota ContainerAwsNodePool#cpu_cfs_quota}
   */
   readonly cpuCfsQuota?: boolean | cdktn.IResolvable;
   /**
   * Optional. The CPU CFS quota period to use for the node. Defaults to "100ms".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#cpu_cfs_quota_period ContainerAwsNodePool#cpu_cfs_quota_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#cpu_cfs_quota_period ContainerAwsNodePool#cpu_cfs_quota_period}
   */
   readonly cpuCfsQuotaPeriod?: string;
   /**
   * The CpuManagerPolicy to use for the node. Defaults to "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#cpu_manager_policy ContainerAwsNodePool#cpu_manager_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#cpu_manager_policy ContainerAwsNodePool#cpu_manager_policy}
   */
   readonly cpuManagerPolicy?: string;
   /**
   * Optional. The maximum number of PIDs in each pod running on the node. The limit scales automatically based on underlying machine size if left unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#pod_pids_limit ContainerAwsNodePool#pod_pids_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#pod_pids_limit ContainerAwsNodePool#pod_pids_limit}
   */
   readonly podPidsLimit?: number;
 }
@@ -1498,7 +1498,7 @@ export interface ContainerAwsNodePoolKubeletConfig {
 export function containerAwsNodePoolKubeletConfigToTerraform(struct?: ContainerAwsNodePoolKubeletConfigOutputReference | ContainerAwsNodePoolKubeletConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cpu_cfs_quota: cdktn.booleanToTerraform(struct!.cpuCfsQuota),
@@ -1512,7 +1512,7 @@ export function containerAwsNodePoolKubeletConfigToTerraform(struct?: ContainerA
 export function containerAwsNodePoolKubeletConfigToHclTerraform(struct?: ContainerAwsNodePoolKubeletConfigOutputReference | ContainerAwsNodePoolKubeletConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cpu_cfs_quota: {
@@ -1663,7 +1663,7 @@ export interface ContainerAwsNodePoolManagement {
   /**
   * Optional. Whether or not the nodes will be automatically repaired.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#auto_repair ContainerAwsNodePool#auto_repair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#auto_repair ContainerAwsNodePool#auto_repair}
   */
   readonly autoRepair?: boolean | cdktn.IResolvable;
 }
@@ -1671,7 +1671,7 @@ export interface ContainerAwsNodePoolManagement {
 export function containerAwsNodePoolManagementToTerraform(struct?: ContainerAwsNodePoolManagementOutputReference | ContainerAwsNodePoolManagement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auto_repair: cdktn.booleanToTerraform(struct!.autoRepair),
@@ -1682,7 +1682,7 @@ export function containerAwsNodePoolManagementToTerraform(struct?: ContainerAwsN
 export function containerAwsNodePoolManagementToHclTerraform(struct?: ContainerAwsNodePoolManagementOutputReference | ContainerAwsNodePoolManagement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auto_repair: {
@@ -1749,7 +1749,7 @@ export interface ContainerAwsNodePoolMaxPodsConstraint {
   /**
   * The maximum number of pods to schedule on a single node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#max_pods_per_node ContainerAwsNodePool#max_pods_per_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#max_pods_per_node ContainerAwsNodePool#max_pods_per_node}
   */
   readonly maxPodsPerNode: number;
 }
@@ -1757,7 +1757,7 @@ export interface ContainerAwsNodePoolMaxPodsConstraint {
 export function containerAwsNodePoolMaxPodsConstraintToTerraform(struct?: ContainerAwsNodePoolMaxPodsConstraintOutputReference | ContainerAwsNodePoolMaxPodsConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_pods_per_node: cdktn.numberToTerraform(struct!.maxPodsPerNode),
@@ -1768,7 +1768,7 @@ export function containerAwsNodePoolMaxPodsConstraintToTerraform(struct?: Contai
 export function containerAwsNodePoolMaxPodsConstraintToHclTerraform(struct?: ContainerAwsNodePoolMaxPodsConstraintOutputReference | ContainerAwsNodePoolMaxPodsConstraint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_pods_per_node: {
@@ -1830,15 +1830,15 @@ export class ContainerAwsNodePoolMaxPodsConstraintOutputReference extends cdktn.
 }
 export interface ContainerAwsNodePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#create ContainerAwsNodePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#create ContainerAwsNodePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#delete ContainerAwsNodePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#delete ContainerAwsNodePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#update ContainerAwsNodePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#update ContainerAwsNodePool#update}
   */
   readonly update?: string;
 }
@@ -1846,7 +1846,7 @@ export interface ContainerAwsNodePoolTimeouts {
 export function containerAwsNodePoolTimeoutsToTerraform(struct?: ContainerAwsNodePoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1859,7 +1859,7 @@ export function containerAwsNodePoolTimeoutsToTerraform(struct?: ContainerAwsNod
 export function containerAwsNodePoolTimeoutsToHclTerraform(struct?: ContainerAwsNodePoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1992,13 +1992,13 @@ export interface ContainerAwsNodePoolUpdateSettingsSurgeSettings {
   /**
   * Optional. The maximum number of nodes that can be created beyond the current size of the node pool during the update process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#max_surge ContainerAwsNodePool#max_surge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#max_surge ContainerAwsNodePool#max_surge}
   */
   readonly maxSurge?: number;
   /**
   * Optional. The maximum number of nodes that can be simultaneously unavailable during the update process. A node is considered unavailable if its status is not Ready.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#max_unavailable ContainerAwsNodePool#max_unavailable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#max_unavailable ContainerAwsNodePool#max_unavailable}
   */
   readonly maxUnavailable?: number;
 }
@@ -2006,7 +2006,7 @@ export interface ContainerAwsNodePoolUpdateSettingsSurgeSettings {
 export function containerAwsNodePoolUpdateSettingsSurgeSettingsToTerraform(struct?: ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference | ContainerAwsNodePoolUpdateSettingsSurgeSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_surge: cdktn.numberToTerraform(struct!.maxSurge),
@@ -2018,7 +2018,7 @@ export function containerAwsNodePoolUpdateSettingsSurgeSettingsToTerraform(struc
 export function containerAwsNodePoolUpdateSettingsSurgeSettingsToHclTerraform(struct?: ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference | ContainerAwsNodePoolUpdateSettingsSurgeSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_surge: {
@@ -2113,7 +2113,7 @@ export interface ContainerAwsNodePoolUpdateSettings {
   /**
   * surge_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#surge_settings ContainerAwsNodePool#surge_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#surge_settings ContainerAwsNodePool#surge_settings}
   */
   readonly surgeSettings?: ContainerAwsNodePoolUpdateSettingsSurgeSettings;
 }
@@ -2121,7 +2121,7 @@ export interface ContainerAwsNodePoolUpdateSettings {
 export function containerAwsNodePoolUpdateSettingsToTerraform(struct?: ContainerAwsNodePoolUpdateSettingsOutputReference | ContainerAwsNodePoolUpdateSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     surge_settings: containerAwsNodePoolUpdateSettingsSurgeSettingsToTerraform(struct!.surgeSettings),
@@ -2132,7 +2132,7 @@ export function containerAwsNodePoolUpdateSettingsToTerraform(struct?: Container
 export function containerAwsNodePoolUpdateSettingsToHclTerraform(struct?: ContainerAwsNodePoolUpdateSettingsOutputReference | ContainerAwsNodePoolUpdateSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     surge_settings: {
@@ -2197,7 +2197,7 @@ export class ContainerAwsNodePoolUpdateSettingsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}
 */
 export class ContainerAwsNodePool extends cdktn.TerraformResource {
 
@@ -2213,7 +2213,7 @@ export class ContainerAwsNodePool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ContainerAwsNodePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAwsNodePool to import
-  * @param importFromId The id of the existing ContainerAwsNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContainerAwsNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAwsNodePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2225,7 +2225,7 @@ export class ContainerAwsNodePool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2236,7 +2236,7 @@ export class ContainerAwsNodePool extends cdktn.TerraformResource {
       terraformResourceType: 'google_container_aws_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

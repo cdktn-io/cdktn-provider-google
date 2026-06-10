@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCloudQuotasQuotaInfoConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info#id DataGoogleCloudQuotasQuotaInfo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info#id DataGoogleCloudQuotasQuotaInfo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info#parent DataGoogleCloudQuotasQuotaInfo#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info#parent DataGoogleCloudQuotasQuotaInfo#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info#quota_id DataGoogleCloudQuotasQuotaInfo#quota_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info#quota_id DataGoogleCloudQuotasQuotaInfo#quota_id}
   */
   readonly quotaId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info#service DataGoogleCloudQuotasQuotaInfo#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info#service DataGoogleCloudQuotasQuotaInfo#service}
   */
   readonly service: string;
 }
@@ -38,7 +38,7 @@ export interface DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetails {
 export function dataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsToTerraform(struct?: DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -48,7 +48,7 @@ export function dataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsToTerraform(
 export function dataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsToHclTerraform(struct?: DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -113,7 +113,7 @@ export interface DataGoogleCloudQuotasQuotaInfoDimensionsInfos {
 export function dataGoogleCloudQuotasQuotaInfoDimensionsInfosToTerraform(struct?: DataGoogleCloudQuotasQuotaInfoDimensionsInfos): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -123,7 +123,7 @@ export function dataGoogleCloudQuotasQuotaInfoDimensionsInfosToTerraform(struct?
 export function dataGoogleCloudQuotasQuotaInfoDimensionsInfosToHclTerraform(struct?: DataGoogleCloudQuotasQuotaInfoDimensionsInfos): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -200,7 +200,7 @@ export interface DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibility {
 export function dataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityToTerraform(struct?: DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -210,7 +210,7 @@ export function dataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityToTerrafor
 export function dataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityToHclTerraform(struct?: DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -276,7 +276,7 @@ export class DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info}
 */
 export class DataGoogleCloudQuotasQuotaInfo extends cdktn.TerraformDataSource {
 
@@ -292,7 +292,7 @@ export class DataGoogleCloudQuotasQuotaInfo extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleCloudQuotasQuotaInfo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudQuotasQuotaInfo to import
-  * @param importFromId The id of the existing DataGoogleCloudQuotasQuotaInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudQuotasQuotaInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudQuotasQuotaInfo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -304,7 +304,7 @@ export class DataGoogleCloudQuotasQuotaInfo extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -315,7 +315,7 @@ export class DataGoogleCloudQuotasQuotaInfo extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_cloud_quotas_quota_info',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

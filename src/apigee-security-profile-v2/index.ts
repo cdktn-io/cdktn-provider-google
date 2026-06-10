@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ApigeeSecurityProfileV2Config extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#deletion_policy ApigeeSecurityProfileV2#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#deletion_policy ApigeeSecurityProfileV2#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the security profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#description ApigeeSecurityProfileV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#description ApigeeSecurityProfileV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,37 +41,37 @@ export interface ApigeeSecurityProfileV2Config extends cdktn.TerraformMetaArgume
   * The Apigee Organization associated with the Apigee Security Profile V2,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#org_id ApigeeSecurityProfileV2#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#org_id ApigeeSecurityProfileV2#org_id}
   */
   readonly orgId: string;
   /**
   * Resource ID of the security profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#profile_id ApigeeSecurityProfileV2#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#profile_id ApigeeSecurityProfileV2#profile_id}
   */
   readonly profileId: string;
   /**
   * profile_assessment_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
   */
   readonly profileAssessmentConfigs: ApigeeSecurityProfileV2ProfileAssessmentConfigs[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#timeouts ApigeeSecurityProfileV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#timeouts ApigeeSecurityProfileV2#timeouts}
   */
   readonly timeouts?: ApigeeSecurityProfileV2Timeouts;
 }
 export interface ApigeeSecurityProfileV2ProfileAssessmentConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}
   */
   readonly assessment: string;
   /**
   * The weight of the assessment. Possible values: ["MINOR", "MODERATE", "MAJOR"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#weight ApigeeSecurityProfileV2#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#weight ApigeeSecurityProfileV2#weight}
   */
   readonly weight: string;
 }
@@ -79,7 +79,7 @@ export interface ApigeeSecurityProfileV2ProfileAssessmentConfigs {
 export function apigeeSecurityProfileV2ProfileAssessmentConfigsToTerraform(struct?: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     assessment: cdktn.stringToTerraform(struct!.assessment),
@@ -91,7 +91,7 @@ export function apigeeSecurityProfileV2ProfileAssessmentConfigsToTerraform(struc
 export function apigeeSecurityProfileV2ProfileAssessmentConfigsToHclTerraform(struct?: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     assessment: {
@@ -210,15 +210,15 @@ export class ApigeeSecurityProfileV2ProfileAssessmentConfigsList extends cdktn.C
 }
 export interface ApigeeSecurityProfileV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}
   */
   readonly update?: string;
 }
@@ -226,7 +226,7 @@ export interface ApigeeSecurityProfileV2Timeouts {
 export function apigeeSecurityProfileV2TimeoutsToTerraform(struct?: ApigeeSecurityProfileV2Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -239,7 +239,7 @@ export function apigeeSecurityProfileV2TimeoutsToTerraform(struct?: ApigeeSecuri
 export function apigeeSecurityProfileV2TimeoutsToHclTerraform(struct?: ApigeeSecurityProfileV2Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -370,7 +370,7 @@ export class ApigeeSecurityProfileV2TimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2}
 */
 export class ApigeeSecurityProfileV2 extends cdktn.TerraformResource {
 
@@ -386,7 +386,7 @@ export class ApigeeSecurityProfileV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeSecurityProfileV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeSecurityProfileV2 to import
-  * @param importFromId The id of the existing ApigeeSecurityProfileV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeSecurityProfileV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeSecurityProfileV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -398,7 +398,7 @@ export class ApigeeSecurityProfileV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -409,7 +409,7 @@ export class ApigeeSecurityProfileV2 extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_security_profile_v2',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

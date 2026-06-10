@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCloudfunctionsFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function#id DataGoogleCloudfunctionsFunction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function#id DataGoogleCloudfunctionsFunction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataGoogleCloudfunctionsFunctionConfig extends cdktn.TerraformM
   /**
   * A user-defined name of the function. Function names must be unique globally.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function#name DataGoogleCloudfunctionsFunction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function#name DataGoogleCloudfunctionsFunction#name}
   */
   readonly name: string;
   /**
   * Project of the function. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function#project DataGoogleCloudfunctionsFunction#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function#project DataGoogleCloudfunctionsFunction#project}
   */
   readonly project?: string;
   /**
   * Region of function. If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function#region DataGoogleCloudfunctionsFunction#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function#region DataGoogleCloudfunctionsFunction#region}
   */
   readonly region?: string;
 }
@@ -44,7 +44,7 @@ export interface DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicy {
 export function dataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyToTerraform(struct?: DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyToTerraform
 export function dataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -114,7 +114,7 @@ export interface DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicy {
 export function dataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyToTerraform(struct?: DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -124,7 +124,7 @@ export function dataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyToTerra
 export function dataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -189,7 +189,7 @@ export interface DataGoogleCloudfunctionsFunctionEventTrigger {
 export function dataGoogleCloudfunctionsFunctionEventTriggerToTerraform(struct?: DataGoogleCloudfunctionsFunctionEventTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -199,7 +199,7 @@ export function dataGoogleCloudfunctionsFunctionEventTriggerToTerraform(struct?:
 export function dataGoogleCloudfunctionsFunctionEventTriggerToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionEventTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -275,7 +275,7 @@ export interface DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicy {
 export function dataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyToTerraform(struct?: DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -285,7 +285,7 @@ export function dataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyToTerraform(
 export function dataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -350,7 +350,7 @@ export interface DataGoogleCloudfunctionsFunctionSecretEnvironmentVariables {
 export function dataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesToTerraform(struct?: DataGoogleCloudfunctionsFunctionSecretEnvironmentVariables): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -360,7 +360,7 @@ export function dataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesToTerr
 export function dataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionSecretEnvironmentVariables): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -440,7 +440,7 @@ export interface DataGoogleCloudfunctionsFunctionSecretVolumesVersions {
 export function dataGoogleCloudfunctionsFunctionSecretVolumesVersionsToTerraform(struct?: DataGoogleCloudfunctionsFunctionSecretVolumesVersions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -450,7 +450,7 @@ export function dataGoogleCloudfunctionsFunctionSecretVolumesVersionsToTerraform
 export function dataGoogleCloudfunctionsFunctionSecretVolumesVersionsToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionSecretVolumesVersions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -520,7 +520,7 @@ export interface DataGoogleCloudfunctionsFunctionSecretVolumes {
 export function dataGoogleCloudfunctionsFunctionSecretVolumesToTerraform(struct?: DataGoogleCloudfunctionsFunctionSecretVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -530,7 +530,7 @@ export function dataGoogleCloudfunctionsFunctionSecretVolumesToTerraform(struct?
 export function dataGoogleCloudfunctionsFunctionSecretVolumesToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionSecretVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -611,7 +611,7 @@ export interface DataGoogleCloudfunctionsFunctionSourceRepository {
 export function dataGoogleCloudfunctionsFunctionSourceRepositoryToTerraform(struct?: DataGoogleCloudfunctionsFunctionSourceRepository): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -621,7 +621,7 @@ export function dataGoogleCloudfunctionsFunctionSourceRepositoryToTerraform(stru
 export function dataGoogleCloudfunctionsFunctionSourceRepositoryToHclTerraform(struct?: DataGoogleCloudfunctionsFunctionSourceRepository): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -687,7 +687,7 @@ export class DataGoogleCloudfunctionsFunctionSourceRepositoryList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}
 */
 export class DataGoogleCloudfunctionsFunction extends cdktn.TerraformDataSource {
 
@@ -703,7 +703,7 @@ export class DataGoogleCloudfunctionsFunction extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataGoogleCloudfunctionsFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudfunctionsFunction to import
-  * @param importFromId The id of the existing DataGoogleCloudfunctionsFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudfunctionsFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudfunctionsFunction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -715,7 +715,7 @@ export class DataGoogleCloudfunctionsFunction extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -726,7 +726,7 @@ export class DataGoogleCloudfunctionsFunction extends cdktn.TerraformDataSource 
       terraformResourceType: 'google_cloudfunctions_function',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

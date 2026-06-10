@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   /**
   * The categories of the cloud control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#categories CloudSecurityComplianceCloudControl#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#categories CloudSecurityComplianceCloudControl#categories}
   */
   readonly categories?: string[];
   /**
@@ -23,7 +23,7 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   * This is the last segment of the CloudControl resource name.
   * Format: '^a-zA-Z{0,61}[a-zA-Z0-9]$'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#cloud_control_id CloudSecurityComplianceCloudControl#cloud_control_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#cloud_control_id CloudSecurityComplianceCloudControl#cloud_control_id}
   */
   readonly cloudControlId: string;
   /**
@@ -35,31 +35,31 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#deletion_policy CloudSecurityComplianceCloudControl#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#deletion_policy CloudSecurityComplianceCloudControl#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the cloud control. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The display name of the cloud control. The maximum length is 200
   * characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
   */
   readonly displayName?: string;
   /**
   * The finding_category of the cloud control. The maximum length is 255
   * characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#finding_category CloudSecurityComplianceCloudControl#finding_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#finding_category CloudSecurityComplianceCloudControl#finding_category}
   */
   readonly findingCategory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -68,20 +68,20 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. Currently, only "global" is supported as a location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#location CloudSecurityComplianceCloudControl#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#location CloudSecurityComplianceCloudControl#location}
   */
   readonly location: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#organization CloudSecurityComplianceCloudControl#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#organization CloudSecurityComplianceCloudControl#organization}
   */
   readonly organization: string;
   /**
   * The remediation steps for the findings generated by the cloud control. The
   * maximum length is 400 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#remediation_steps CloudSecurityComplianceCloudControl#remediation_steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#remediation_steps CloudSecurityComplianceCloudControl#remediation_steps}
   */
   readonly remediationSteps?: string;
   /**
@@ -91,31 +91,31 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   * MEDIUM
   * LOW
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#severity CloudSecurityComplianceCloudControl#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#severity CloudSecurityComplianceCloudControl#severity}
   */
   readonly severity?: string;
   /**
   * cloud providers supported
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#supported_cloud_providers CloudSecurityComplianceCloudControl#supported_cloud_providers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#supported_cloud_providers CloudSecurityComplianceCloudControl#supported_cloud_providers}
   */
   readonly supportedCloudProviders?: string[];
   /**
   * parameter_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#parameter_spec CloudSecurityComplianceCloudControl#parameter_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#parameter_spec CloudSecurityComplianceCloudControl#parameter_spec}
   */
   readonly parameterSpec?: CloudSecurityComplianceCloudControlParameterSpec[] | cdktn.IResolvable;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#rules CloudSecurityComplianceCloudControl#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#rules CloudSecurityComplianceCloudControl#rules}
   */
   readonly rules?: CloudSecurityComplianceCloudControlRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#timeouts CloudSecurityComplianceCloudControl#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#timeouts CloudSecurityComplianceCloudControl#timeouts}
   */
   readonly timeouts?: CloudSecurityComplianceCloudControlTimeouts;
 }
@@ -123,7 +123,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -131,7 +131,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -142,7 +142,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneo
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -206,25 +206,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue;
 }
@@ -232,7 +232,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -246,7 +246,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneo
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -397,13 +397,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue;
 }
@@ -411,7 +411,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -423,7 +423,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneo
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -518,7 +518,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueStr
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -526,7 +526,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueStr
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -537,7 +537,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueStri
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -601,31 +601,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValue {
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue;
 }
@@ -633,7 +633,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValue {
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -648,7 +648,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueToTe
 export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -827,7 +827,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -835,7 +835,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -846,7 +846,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -910,25 +910,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue;
 }
@@ -936,7 +936,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -950,7 +950,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -1101,13 +1101,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue;
 }
@@ -1115,7 +1115,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1127,7 +1127,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1222,7 +1222,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -1230,7 +1230,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -1241,7 +1241,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -1305,31 +1305,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue;
 }
@@ -1337,7 +1337,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -1352,7 +1352,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -1532,7 +1532,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   * Fully qualified proto attribute path (in dot notation).
   * Example: rules[0].cel_expression.resource_types_values
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -1540,7 +1540,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -1551,7 +1551,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -1618,7 +1618,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Fully qualified proto attribute path (e.g., dot notation)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -1626,7 +1626,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -1637,7 +1637,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -1704,13 +1704,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * attribute_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
   */
   readonly attributeSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule;
   /**
   * placeholder_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
   */
   readonly placeholderSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule;
 }
@@ -1718,7 +1718,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute_substitution_rule: cloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct!.attributeSubstitutionRule),
@@ -1730,7 +1730,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute_substitution_rule: {
@@ -1857,7 +1857,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -1865,7 +1865,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -1876,7 +1876,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -1940,25 +1940,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
 }
@@ -1966,7 +1966,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -1980,7 +1980,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -2131,13 +2131,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue;
 }
@@ -2145,7 +2145,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2157,7 +2157,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2252,7 +2252,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -2260,7 +2260,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -2271,7 +2271,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -2335,31 +2335,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue;
 }
@@ -2367,7 +2367,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -2382,7 +2382,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -2593,7 +2593,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues[] | cdktn.IResolvable;
 }
@@ -2601,7 +2601,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesToTerraform, true)(struct!.values),
@@ -2612,7 +2612,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -2676,13 +2676,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Maximum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
   */
   readonly max: string;
   /**
   * Minimum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
   */
   readonly min: string;
 }
@@ -2690,7 +2690,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max: cdktn.stringToTerraform(struct!.max),
@@ -2702,7 +2702,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max: {
@@ -2791,7 +2791,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Regex Pattern to match the value(s) of parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
   */
   readonly pattern: string;
 }
@@ -2799,7 +2799,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pattern: cdktn.stringToTerraform(struct!.pattern),
@@ -2810,7 +2810,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pattern: {
@@ -2874,19 +2874,19 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * allowed_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
   */
   readonly allowedValues?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues;
   /**
   * int_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
   */
   readonly intRange?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange;
   /**
   * regexp_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
   */
   readonly regexpPattern?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern;
 }
@@ -2894,7 +2894,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_values: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesToTerraform(struct!.allowedValues),
@@ -2907,7 +2907,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_values: {
@@ -3030,25 +3030,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParameters {
   /**
   * The description of the parameter. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The display name of the parameter. The maximum length is 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
   */
   readonly displayName?: string;
   /**
   * if the parameter is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
   */
   readonly isRequired: boolean | cdktn.IResolvable;
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name: string;
   /**
@@ -3060,25 +3060,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParameters {
   * NUMBER
   * ONEOF
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
   */
   readonly valueType: string;
   /**
   * default_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
   */
   readonly defaultValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue;
   /**
   * substitution_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
   */
   readonly substitutionRules?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules[] | cdktn.IResolvable;
   /**
   * validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
   */
   readonly validation?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidation;
 }
@@ -3086,7 +3086,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParameters {
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -3104,7 +3104,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersToT
 export function cloudSecurityComplianceCloudControlParameterSpecSubParametersToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -3391,7 +3391,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
   * Fully qualified proto attribute path (in dot notation).
   * Example: rules[0].cel_expression.resource_types_values
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -3399,7 +3399,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
 export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -3410,7 +3410,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRule
 export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -3477,7 +3477,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
   /**
   * Fully qualified proto attribute path (e.g., dot notation)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -3485,7 +3485,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
 export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute: cdktn.stringToTerraform(struct!.attribute),
@@ -3496,7 +3496,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRule
 export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute: {
@@ -3563,13 +3563,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
   /**
   * attribute_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
   */
   readonly attributeSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule;
   /**
   * placeholder_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
   */
   readonly placeholderSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule;
 }
@@ -3577,7 +3577,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
 export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute_substitution_rule: cloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct!.attributeSubstitutionRule),
@@ -3589,7 +3589,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRule
 export function cloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute_substitution_rule: {
@@ -3716,7 +3716,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -3724,7 +3724,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -3735,7 +3735,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -3799,25 +3799,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
 }
@@ -3825,7 +3825,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -3839,7 +3839,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -3990,13 +3990,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue;
 }
@@ -4004,7 +4004,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4016,7 +4016,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4111,7 +4111,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -4119,7 +4119,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -4130,7 +4130,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -4194,31 +4194,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue;
 }
@@ -4226,7 +4226,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -4241,7 +4241,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -4452,7 +4452,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues[] | cdktn.IResolvable;
 }
@@ -4460,7 +4460,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesToTerraform, true)(struct!.values),
@@ -4471,7 +4471,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -4535,13 +4535,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationIntRa
   /**
   * Maximum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
   */
   readonly max: string;
   /**
   * Minimum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
   */
   readonly min: string;
 }
@@ -4549,7 +4549,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationIntRa
 export function cloudSecurityComplianceCloudControlParameterSpecValidationIntRangeToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationIntRangeOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationIntRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max: cdktn.stringToTerraform(struct!.max),
@@ -4561,7 +4561,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationIntRan
 export function cloudSecurityComplianceCloudControlParameterSpecValidationIntRangeToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationIntRangeOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationIntRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max: {
@@ -4650,7 +4650,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationRegex
   /**
   * Regex Pattern to match the value(s) of parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
   */
   readonly pattern: string;
 }
@@ -4658,7 +4658,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationRegex
 export function cloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pattern: cdktn.stringToTerraform(struct!.pattern),
@@ -4669,7 +4669,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationRegexp
 export function cloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pattern: {
@@ -4733,19 +4733,19 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidation {
   /**
   * allowed_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
   */
   readonly allowedValues?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues;
   /**
   * int_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
   */
   readonly intRange?: CloudSecurityComplianceCloudControlParameterSpecValidationIntRange;
   /**
   * regexp_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
   */
   readonly regexpPattern?: CloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern;
 }
@@ -4753,7 +4753,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidation {
 export function cloudSecurityComplianceCloudControlParameterSpecValidationToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_values: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesToTerraform(struct!.allowedValues),
@@ -4766,7 +4766,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationToTerr
 export function cloudSecurityComplianceCloudControlParameterSpecValidationToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_values: {
@@ -4889,25 +4889,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpec {
   /**
   * The description of the parameter. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The display name of the parameter. The maximum length is 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
   */
   readonly displayName?: string;
   /**
   * if the parameter is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
   */
   readonly isRequired: boolean | cdktn.IResolvable;
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name: string;
   /**
@@ -4919,31 +4919,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpec {
   * NUMBER
   * ONEOF
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
   */
   readonly valueType: string;
   /**
   * default_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
   */
   readonly defaultValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValue;
   /**
   * sub_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
   */
   readonly subParameters?: CloudSecurityComplianceCloudControlParameterSpecSubParameters[] | cdktn.IResolvable;
   /**
   * substitution_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
   */
   readonly substitutionRules?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRules[] | cdktn.IResolvable;
   /**
   * validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
   */
   readonly validation?: CloudSecurityComplianceCloudControlParameterSpecValidation;
 }
@@ -4951,7 +4951,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpec {
 export function cloudSecurityComplianceCloudControlParameterSpecToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -4970,7 +4970,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecToTerraform(stru
 export function cloudSecurityComplianceCloudControlParameterSpecToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -5284,7 +5284,7 @@ export interface CloudSecurityComplianceCloudControlRulesCelExpressionResourceTy
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -5292,7 +5292,7 @@ export interface CloudSecurityComplianceCloudControlRulesCelExpressionResourceTy
 export function cloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesToTerraform(struct?: CloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesOutputReference | CloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -5303,7 +5303,7 @@ export function cloudSecurityComplianceCloudControlRulesCelExpressionResourceTyp
 export function cloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesToHclTerraform(struct?: CloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesOutputReference | CloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -5368,13 +5368,13 @@ export interface CloudSecurityComplianceCloudControlRulesCelExpression {
   * Logic expression in CEL language.
   * The max length of the condition is 1000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#expression CloudSecurityComplianceCloudControl#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#expression CloudSecurityComplianceCloudControl#expression}
   */
   readonly expression: string;
   /**
   * resource_types_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#resource_types_values CloudSecurityComplianceCloudControl#resource_types_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#resource_types_values CloudSecurityComplianceCloudControl#resource_types_values}
   */
   readonly resourceTypesValues?: CloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues;
 }
@@ -5382,7 +5382,7 @@ export interface CloudSecurityComplianceCloudControlRulesCelExpression {
 export function cloudSecurityComplianceCloudControlRulesCelExpressionToTerraform(struct?: CloudSecurityComplianceCloudControlRulesCelExpressionOutputReference | CloudSecurityComplianceCloudControlRulesCelExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -5394,7 +5394,7 @@ export function cloudSecurityComplianceCloudControlRulesCelExpressionToTerraform
 export function cloudSecurityComplianceCloudControlRulesCelExpressionToHclTerraform(struct?: CloudSecurityComplianceCloudControlRulesCelExpressionOutputReference | CloudSecurityComplianceCloudControlRulesCelExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -5486,19 +5486,19 @@ export interface CloudSecurityComplianceCloudControlRules {
   /**
   * Description of the Rule. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The functionality enabled by the Rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#rule_action_types CloudSecurityComplianceCloudControl#rule_action_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#rule_action_types CloudSecurityComplianceCloudControl#rule_action_types}
   */
   readonly ruleActionTypes: string[];
   /**
   * cel_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#cel_expression CloudSecurityComplianceCloudControl#cel_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#cel_expression CloudSecurityComplianceCloudControl#cel_expression}
   */
   readonly celExpression?: CloudSecurityComplianceCloudControlRulesCelExpression;
 }
@@ -5506,7 +5506,7 @@ export interface CloudSecurityComplianceCloudControlRules {
 export function cloudSecurityComplianceCloudControlRulesToTerraform(struct?: CloudSecurityComplianceCloudControlRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -5519,7 +5519,7 @@ export function cloudSecurityComplianceCloudControlRulesToTerraform(struct?: Clo
 export function cloudSecurityComplianceCloudControlRulesToHclTerraform(struct?: CloudSecurityComplianceCloudControlRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -5669,15 +5669,15 @@ export class CloudSecurityComplianceCloudControlRulesList extends cdktn.ComplexL
 }
 export interface CloudSecurityComplianceCloudControlTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}
   */
   readonly update?: string;
 }
@@ -5685,7 +5685,7 @@ export interface CloudSecurityComplianceCloudControlTimeouts {
 export function cloudSecurityComplianceCloudControlTimeoutsToTerraform(struct?: CloudSecurityComplianceCloudControlTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -5698,7 +5698,7 @@ export function cloudSecurityComplianceCloudControlTimeoutsToTerraform(struct?: 
 export function cloudSecurityComplianceCloudControlTimeoutsToHclTerraform(struct?: CloudSecurityComplianceCloudControlTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -5829,7 +5829,7 @@ export class CloudSecurityComplianceCloudControlTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control}
 */
 export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource {
 
@@ -5845,7 +5845,7 @@ export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource
   * Generates CDKTN code for importing a CloudSecurityComplianceCloudControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudSecurityComplianceCloudControl to import
-  * @param importFromId The id of the existing CloudSecurityComplianceCloudControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudSecurityComplianceCloudControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudSecurityComplianceCloudControl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5857,7 +5857,7 @@ export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5868,7 +5868,7 @@ export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource
       terraformResourceType: 'google_cloud_security_compliance_cloud_control',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

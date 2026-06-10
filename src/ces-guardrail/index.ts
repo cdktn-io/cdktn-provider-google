@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesGuardrailConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#app CesGuardrail#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#app CesGuardrail#app}
   */
   readonly app: string;
   /**
@@ -27,25 +27,25 @@ export interface CesGuardrailConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the guardrail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#description CesGuardrail#description}
   */
   readonly description?: string;
   /**
   * Display name of the guardrail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the guardrail is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
@@ -53,11 +53,11 @@ export interface CesGuardrailConfig extends cdktn.TerraformMetaArguments {
   * the guardrail's resource name. If not provided, a unique ID will be
   * automatically assigned for the guardrail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
   */
   readonly guardrailId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#id CesGuardrail#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#id CesGuardrail#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -66,53 +66,53 @@ export interface CesGuardrailConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#location CesGuardrail#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#location CesGuardrail#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#project CesGuardrail#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#project CesGuardrail#project}
   */
   readonly project?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#action CesGuardrail#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#action CesGuardrail#action}
   */
   readonly action?: CesGuardrailAction;
   /**
   * code_callback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
   */
   readonly codeCallback?: CesGuardrailCodeCallback;
   /**
   * content_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
   */
   readonly contentFilter?: CesGuardrailContentFilter;
   /**
   * llm_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
   */
   readonly llmPolicy?: CesGuardrailLlmPolicy;
   /**
   * llm_prompt_security block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
   */
   readonly llmPromptSecurity?: CesGuardrailLlmPromptSecurity;
   /**
   * model_safety block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
   */
   readonly modelSafety?: CesGuardrailModelSafety;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
   */
   readonly timeouts?: CesGuardrailTimeouts;
 }
@@ -120,7 +120,7 @@ export interface CesGuardrailActionGenerativeAnswer {
   /**
   * The prompt to use for the generative answer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
   */
   readonly prompt: string;
 }
@@ -128,7 +128,7 @@ export interface CesGuardrailActionGenerativeAnswer {
 export function cesGuardrailActionGenerativeAnswerToTerraform(struct?: CesGuardrailActionGenerativeAnswerOutputReference | CesGuardrailActionGenerativeAnswer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     prompt: cdktn.stringToTerraform(struct!.prompt),
@@ -139,7 +139,7 @@ export function cesGuardrailActionGenerativeAnswerToTerraform(struct?: CesGuardr
 export function cesGuardrailActionGenerativeAnswerToHclTerraform(struct?: CesGuardrailActionGenerativeAnswerOutputReference | CesGuardrailActionGenerativeAnswer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     prompt: {
@@ -204,13 +204,13 @@ export interface CesGuardrailActionRespondImmediatelyResponses {
   * Whether the response is disabled. Disabled responses are not used by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Text for the agent to respond with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#text CesGuardrail#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#text CesGuardrail#text}
   */
   readonly text: string;
 }
@@ -218,7 +218,7 @@ export interface CesGuardrailActionRespondImmediatelyResponses {
 export function cesGuardrailActionRespondImmediatelyResponsesToTerraform(struct?: CesGuardrailActionRespondImmediatelyResponses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disabled: cdktn.booleanToTerraform(struct!.disabled),
@@ -230,7 +230,7 @@ export function cesGuardrailActionRespondImmediatelyResponsesToTerraform(struct?
 export function cesGuardrailActionRespondImmediatelyResponsesToHclTerraform(struct?: CesGuardrailActionRespondImmediatelyResponses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disabled: {
@@ -354,7 +354,7 @@ export interface CesGuardrailActionRespondImmediately {
   /**
   * responses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#responses CesGuardrail#responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#responses CesGuardrail#responses}
   */
   readonly responses: CesGuardrailActionRespondImmediatelyResponses[] | cdktn.IResolvable;
 }
@@ -362,7 +362,7 @@ export interface CesGuardrailActionRespondImmediately {
 export function cesGuardrailActionRespondImmediatelyToTerraform(struct?: CesGuardrailActionRespondImmediatelyOutputReference | CesGuardrailActionRespondImmediately): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     responses: cdktn.listMapper(cesGuardrailActionRespondImmediatelyResponsesToTerraform, true)(struct!.responses),
@@ -373,7 +373,7 @@ export function cesGuardrailActionRespondImmediatelyToTerraform(struct?: CesGuar
 export function cesGuardrailActionRespondImmediatelyToHclTerraform(struct?: CesGuardrailActionRespondImmediatelyOutputReference | CesGuardrailActionRespondImmediately): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     responses: {
@@ -440,7 +440,7 @@ export interface CesGuardrailActionTransferAgent {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#agent CesGuardrail#agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#agent CesGuardrail#agent}
   */
   readonly agent: string;
 }
@@ -448,7 +448,7 @@ export interface CesGuardrailActionTransferAgent {
 export function cesGuardrailActionTransferAgentToTerraform(struct?: CesGuardrailActionTransferAgentOutputReference | CesGuardrailActionTransferAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     agent: cdktn.stringToTerraform(struct!.agent),
@@ -459,7 +459,7 @@ export function cesGuardrailActionTransferAgentToTerraform(struct?: CesGuardrail
 export function cesGuardrailActionTransferAgentToHclTerraform(struct?: CesGuardrailActionTransferAgentOutputReference | CesGuardrailActionTransferAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     agent: {
@@ -523,19 +523,19 @@ export interface CesGuardrailAction {
   /**
   * generative_answer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
   */
   readonly generativeAnswer?: CesGuardrailActionGenerativeAnswer;
   /**
   * respond_immediately block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
   */
   readonly respondImmediately?: CesGuardrailActionRespondImmediately;
   /**
   * transfer_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
   */
   readonly transferAgent?: CesGuardrailActionTransferAgent;
 }
@@ -543,7 +543,7 @@ export interface CesGuardrailAction {
 export function cesGuardrailActionToTerraform(struct?: CesGuardrailActionOutputReference | CesGuardrailAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     generative_answer: cesGuardrailActionGenerativeAnswerToTerraform(struct!.generativeAnswer),
@@ -556,7 +556,7 @@ export function cesGuardrailActionToTerraform(struct?: CesGuardrailActionOutputR
 export function cesGuardrailActionToHclTerraform(struct?: CesGuardrailActionOutputReference | CesGuardrailAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     generative_answer: {
@@ -679,20 +679,20 @@ export interface CesGuardrailCodeCallbackAfterAgentCallback {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#description CesGuardrail#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
   */
   readonly pythonCode: string;
 }
@@ -700,7 +700,7 @@ export interface CesGuardrailCodeCallbackAfterAgentCallback {
 export function cesGuardrailCodeCallbackAfterAgentCallbackToTerraform(struct?: CesGuardrailCodeCallbackAfterAgentCallbackOutputReference | CesGuardrailCodeCallbackAfterAgentCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -713,7 +713,7 @@ export function cesGuardrailCodeCallbackAfterAgentCallbackToTerraform(struct?: C
 export function cesGuardrailCodeCallbackAfterAgentCallbackToHclTerraform(struct?: CesGuardrailCodeCallbackAfterAgentCallbackOutputReference | CesGuardrailCodeCallbackAfterAgentCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -833,20 +833,20 @@ export interface CesGuardrailCodeCallbackAfterModelCallback {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#description CesGuardrail#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
   */
   readonly pythonCode: string;
 }
@@ -854,7 +854,7 @@ export interface CesGuardrailCodeCallbackAfterModelCallback {
 export function cesGuardrailCodeCallbackAfterModelCallbackToTerraform(struct?: CesGuardrailCodeCallbackAfterModelCallbackOutputReference | CesGuardrailCodeCallbackAfterModelCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -867,7 +867,7 @@ export function cesGuardrailCodeCallbackAfterModelCallbackToTerraform(struct?: C
 export function cesGuardrailCodeCallbackAfterModelCallbackToHclTerraform(struct?: CesGuardrailCodeCallbackAfterModelCallbackOutputReference | CesGuardrailCodeCallbackAfterModelCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -987,20 +987,20 @@ export interface CesGuardrailCodeCallbackBeforeAgentCallback {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#description CesGuardrail#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
   */
   readonly pythonCode: string;
 }
@@ -1008,7 +1008,7 @@ export interface CesGuardrailCodeCallbackBeforeAgentCallback {
 export function cesGuardrailCodeCallbackBeforeAgentCallbackToTerraform(struct?: CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference | CesGuardrailCodeCallbackBeforeAgentCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1021,7 +1021,7 @@ export function cesGuardrailCodeCallbackBeforeAgentCallbackToTerraform(struct?: 
 export function cesGuardrailCodeCallbackBeforeAgentCallbackToHclTerraform(struct?: CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference | CesGuardrailCodeCallbackBeforeAgentCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1141,20 +1141,20 @@ export interface CesGuardrailCodeCallbackBeforeModelCallback {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#description CesGuardrail#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
   */
   readonly pythonCode: string;
 }
@@ -1162,7 +1162,7 @@ export interface CesGuardrailCodeCallbackBeforeModelCallback {
 export function cesGuardrailCodeCallbackBeforeModelCallbackToTerraform(struct?: CesGuardrailCodeCallbackBeforeModelCallbackOutputReference | CesGuardrailCodeCallbackBeforeModelCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1175,7 +1175,7 @@ export function cesGuardrailCodeCallbackBeforeModelCallbackToTerraform(struct?: 
 export function cesGuardrailCodeCallbackBeforeModelCallbackToHclTerraform(struct?: CesGuardrailCodeCallbackBeforeModelCallbackOutputReference | CesGuardrailCodeCallbackBeforeModelCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1295,25 +1295,25 @@ export interface CesGuardrailCodeCallback {
   /**
   * after_agent_callback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
   */
   readonly afterAgentCallback?: CesGuardrailCodeCallbackAfterAgentCallback;
   /**
   * after_model_callback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
   */
   readonly afterModelCallback?: CesGuardrailCodeCallbackAfterModelCallback;
   /**
   * before_agent_callback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
   */
   readonly beforeAgentCallback?: CesGuardrailCodeCallbackBeforeAgentCallback;
   /**
   * before_model_callback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
   */
   readonly beforeModelCallback?: CesGuardrailCodeCallbackBeforeModelCallback;
 }
@@ -1321,7 +1321,7 @@ export interface CesGuardrailCodeCallback {
 export function cesGuardrailCodeCallbackToTerraform(struct?: CesGuardrailCodeCallbackOutputReference | CesGuardrailCodeCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     after_agent_callback: cesGuardrailCodeCallbackAfterAgentCallbackToTerraform(struct!.afterAgentCallback),
@@ -1335,7 +1335,7 @@ export function cesGuardrailCodeCallbackToTerraform(struct?: CesGuardrailCodeCal
 export function cesGuardrailCodeCallbackToHclTerraform(struct?: CesGuardrailCodeCallbackOutputReference | CesGuardrailCodeCallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     after_agent_callback: {
@@ -1486,25 +1486,25 @@ export interface CesGuardrailContentFilter {
   /**
   * List of banned phrases. Applies to both user inputs and agent responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
   */
   readonly bannedContents?: string[];
   /**
   * List of banned phrases. Applies only to agent responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
   */
   readonly bannedContentsInAgentResponse?: string[];
   /**
   * List of banned phrases. Applies only to user inputs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
   */
   readonly bannedContentsInUserInput?: string[];
   /**
   * If true, diacritics are ignored during matching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
   */
   readonly disregardDiacritics?: boolean | cdktn.IResolvable;
   /**
@@ -1514,7 +1514,7 @@ export interface CesGuardrailContentFilter {
   * WORD_BOUNDARY_STRING_MATCH
   * REGEXP_MATCH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
   */
   readonly matchType: string;
 }
@@ -1522,7 +1522,7 @@ export interface CesGuardrailContentFilter {
 export function cesGuardrailContentFilterToTerraform(struct?: CesGuardrailContentFilterOutputReference | CesGuardrailContentFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     banned_contents: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.bannedContents),
@@ -1537,7 +1537,7 @@ export function cesGuardrailContentFilterToTerraform(struct?: CesGuardrailConten
 export function cesGuardrailContentFilterToHclTerraform(struct?: CesGuardrailContentFilterOutputReference | CesGuardrailContentFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     banned_contents: {
@@ -1714,7 +1714,7 @@ export interface CesGuardrailLlmPolicyModelSettings {
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#model CesGuardrail#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#model CesGuardrail#model}
   */
   readonly model?: string;
   /**
@@ -1723,7 +1723,7 @@ export interface CesGuardrailLlmPolicyModelSettings {
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
   */
   readonly temperature?: number;
 }
@@ -1731,7 +1731,7 @@ export interface CesGuardrailLlmPolicyModelSettings {
 export function cesGuardrailLlmPolicyModelSettingsToTerraform(struct?: CesGuardrailLlmPolicyModelSettingsOutputReference | CesGuardrailLlmPolicyModelSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     model: cdktn.stringToTerraform(struct!.model),
@@ -1743,7 +1743,7 @@ export function cesGuardrailLlmPolicyModelSettingsToTerraform(struct?: CesGuardr
 export function cesGuardrailLlmPolicyModelSettingsToHclTerraform(struct?: CesGuardrailLlmPolicyModelSettingsOutputReference | CesGuardrailLlmPolicyModelSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     model: {
@@ -1840,14 +1840,14 @@ export interface CesGuardrailLlmPolicy {
   * Enabling this setting applies the policy check to all utterances,
   * including those that would normally be skipped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
   */
   readonly allowShortUtterance?: boolean | cdktn.IResolvable;
   /**
   * If an error occurs during the policy check, fail open and do not trigger
   * the guardrail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
@@ -1855,7 +1855,7 @@ export interface CesGuardrailLlmPolicy {
   * conversation.
   * When not set a default value of 10 will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
   */
   readonly maxConversationMessages?: number;
   /**
@@ -1868,19 +1868,19 @@ export interface CesGuardrailLlmPolicy {
   * AGENT_RESPONSE
   * USER_QUERY_AND_AGENT_RESPONSE Possible values: ["USER_QUERY", "AGENT_RESPONSE", "USER_QUERY_AND_AGENT_RESPONSE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
   */
   readonly policyScope: string;
   /**
   * Policy prompt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
   */
   readonly prompt: string;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
   */
   readonly modelSettings?: CesGuardrailLlmPolicyModelSettings;
 }
@@ -1888,7 +1888,7 @@ export interface CesGuardrailLlmPolicy {
 export function cesGuardrailLlmPolicyToTerraform(struct?: CesGuardrailLlmPolicyOutputReference | CesGuardrailLlmPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_short_utterance: cdktn.booleanToTerraform(struct!.allowShortUtterance),
@@ -1904,7 +1904,7 @@ export function cesGuardrailLlmPolicyToTerraform(struct?: CesGuardrailLlmPolicyO
 export function cesGuardrailLlmPolicyToHclTerraform(struct?: CesGuardrailLlmPolicyOutputReference | CesGuardrailLlmPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_short_utterance: {
@@ -2106,7 +2106,7 @@ export interface CesGuardrailLlmPromptSecurityCustomPolicyModelSettings {
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#model CesGuardrail#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#model CesGuardrail#model}
   */
   readonly model?: string;
   /**
@@ -2115,7 +2115,7 @@ export interface CesGuardrailLlmPromptSecurityCustomPolicyModelSettings {
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
   */
   readonly temperature?: number;
 }
@@ -2123,7 +2123,7 @@ export interface CesGuardrailLlmPromptSecurityCustomPolicyModelSettings {
 export function cesGuardrailLlmPromptSecurityCustomPolicyModelSettingsToTerraform(struct?: CesGuardrailLlmPromptSecurityCustomPolicyModelSettingsOutputReference | CesGuardrailLlmPromptSecurityCustomPolicyModelSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     model: cdktn.stringToTerraform(struct!.model),
@@ -2135,7 +2135,7 @@ export function cesGuardrailLlmPromptSecurityCustomPolicyModelSettingsToTerrafor
 export function cesGuardrailLlmPromptSecurityCustomPolicyModelSettingsToHclTerraform(struct?: CesGuardrailLlmPromptSecurityCustomPolicyModelSettingsOutputReference | CesGuardrailLlmPromptSecurityCustomPolicyModelSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     model: {
@@ -2232,14 +2232,14 @@ export interface CesGuardrailLlmPromptSecurityCustomPolicy {
   * Enabling this setting applies the policy check to all utterances,
   * including those that would normally be skipped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
   */
   readonly allowShortUtterance?: boolean | cdktn.IResolvable;
   /**
   * If an error occurs during the policy check, fail open and do not trigger
   * the guardrail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
@@ -2247,7 +2247,7 @@ export interface CesGuardrailLlmPromptSecurityCustomPolicy {
   * conversation.
   * When not set a default value of 10 will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
   */
   readonly maxConversationMessages?: number;
   /**
@@ -2260,19 +2260,19 @@ export interface CesGuardrailLlmPromptSecurityCustomPolicy {
   * AGENT_RESPONSE
   * USER_QUERY_AND_AGENT_RESPONSE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
   */
   readonly policyScope: string;
   /**
   * Policy prompt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
   */
   readonly prompt: string;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
   */
   readonly modelSettings?: CesGuardrailLlmPromptSecurityCustomPolicyModelSettings;
 }
@@ -2280,7 +2280,7 @@ export interface CesGuardrailLlmPromptSecurityCustomPolicy {
 export function cesGuardrailLlmPromptSecurityCustomPolicyToTerraform(struct?: CesGuardrailLlmPromptSecurityCustomPolicyOutputReference | CesGuardrailLlmPromptSecurityCustomPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_short_utterance: cdktn.booleanToTerraform(struct!.allowShortUtterance),
@@ -2296,7 +2296,7 @@ export function cesGuardrailLlmPromptSecurityCustomPolicyToTerraform(struct?: Ce
 export function cesGuardrailLlmPromptSecurityCustomPolicyToHclTerraform(struct?: CesGuardrailLlmPromptSecurityCustomPolicyOutputReference | CesGuardrailLlmPromptSecurityCustomPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_short_utterance: {
@@ -2499,7 +2499,7 @@ export interface CesGuardrailLlmPromptSecurityDefaultSettings {
 export function cesGuardrailLlmPromptSecurityDefaultSettingsToTerraform(struct?: CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference | CesGuardrailLlmPromptSecurityDefaultSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2509,7 +2509,7 @@ export function cesGuardrailLlmPromptSecurityDefaultSettingsToTerraform(struct?:
 export function cesGuardrailLlmPromptSecurityDefaultSettingsToHclTerraform(struct?: CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference | CesGuardrailLlmPromptSecurityDefaultSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2555,19 +2555,19 @@ export interface CesGuardrailLlmPromptSecurity {
   * Note: If a custom policy is provided, this field is ignored in favor of
   * the policy's 'failOpen' configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
   * custom_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
   */
   readonly customPolicy?: CesGuardrailLlmPromptSecurityCustomPolicy;
   /**
   * default_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
   */
   readonly defaultSettings?: CesGuardrailLlmPromptSecurityDefaultSettings;
 }
@@ -2575,7 +2575,7 @@ export interface CesGuardrailLlmPromptSecurity {
 export function cesGuardrailLlmPromptSecurityToTerraform(struct?: CesGuardrailLlmPromptSecurityOutputReference | CesGuardrailLlmPromptSecurity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fail_open: cdktn.booleanToTerraform(struct!.failOpen),
@@ -2588,7 +2588,7 @@ export function cesGuardrailLlmPromptSecurityToTerraform(struct?: CesGuardrailLl
 export function cesGuardrailLlmPromptSecurityToHclTerraform(struct?: CesGuardrailLlmPromptSecurityOutputReference | CesGuardrailLlmPromptSecurity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fail_open: {
@@ -2716,7 +2716,7 @@ export interface CesGuardrailModelSafetySafetySettings {
   * HARM_CATEGORY_HARASSMENT
   * HARM_CATEGORY_SEXUALLY_EXPLICIT Possible values: ["HARM_CATEGORY_HATE_SPEECH", "HARM_CATEGORY_DANGEROUS_CONTENT", "HARM_CATEGORY_HARASSMENT", "HARM_CATEGORY_SEXUALLY_EXPLICIT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#category CesGuardrail#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#category CesGuardrail#category}
   */
   readonly category: string;
   /**
@@ -2728,7 +2728,7 @@ export interface CesGuardrailModelSafetySafetySettings {
   * BLOCK_NONE
   * OFF Possible values: ["BLOCK_LOW_AND_ABOVE", "BLOCK_MEDIUM_AND_ABOVE", "BLOCK_ONLY_HIGH", "BLOCK_NONE", "OFF"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#threshold CesGuardrail#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#threshold CesGuardrail#threshold}
   */
   readonly threshold: string;
 }
@@ -2736,7 +2736,7 @@ export interface CesGuardrailModelSafetySafetySettings {
 export function cesGuardrailModelSafetySafetySettingsToTerraform(struct?: CesGuardrailModelSafetySafetySettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     category: cdktn.stringToTerraform(struct!.category),
@@ -2748,7 +2748,7 @@ export function cesGuardrailModelSafetySafetySettingsToTerraform(struct?: CesGua
 export function cesGuardrailModelSafetySafetySettingsToHclTerraform(struct?: CesGuardrailModelSafetySafetySettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     category: {
@@ -2869,7 +2869,7 @@ export interface CesGuardrailModelSafety {
   /**
   * safety_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
   */
   readonly safetySettings: CesGuardrailModelSafetySafetySettings[] | cdktn.IResolvable;
 }
@@ -2877,7 +2877,7 @@ export interface CesGuardrailModelSafety {
 export function cesGuardrailModelSafetyToTerraform(struct?: CesGuardrailModelSafetyOutputReference | CesGuardrailModelSafety): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     safety_settings: cdktn.listMapper(cesGuardrailModelSafetySafetySettingsToTerraform, true)(struct!.safetySettings),
@@ -2888,7 +2888,7 @@ export function cesGuardrailModelSafetyToTerraform(struct?: CesGuardrailModelSaf
 export function cesGuardrailModelSafetyToHclTerraform(struct?: CesGuardrailModelSafetyOutputReference | CesGuardrailModelSafety): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     safety_settings: {
@@ -2950,15 +2950,15 @@ export class CesGuardrailModelSafetyOutputReference extends cdktn.ComplexObject 
 }
 export interface CesGuardrailTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#create CesGuardrail#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#create CesGuardrail#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#update CesGuardrail#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#update CesGuardrail#update}
   */
   readonly update?: string;
 }
@@ -2966,7 +2966,7 @@ export interface CesGuardrailTimeouts {
 export function cesGuardrailTimeoutsToTerraform(struct?: CesGuardrailTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2979,7 +2979,7 @@ export function cesGuardrailTimeoutsToTerraform(struct?: CesGuardrailTimeouts | 
 export function cesGuardrailTimeoutsToHclTerraform(struct?: CesGuardrailTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -3110,7 +3110,7 @@ export class CesGuardrailTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail google_ces_guardrail}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail google_ces_guardrail}
 */
 export class CesGuardrail extends cdktn.TerraformResource {
 
@@ -3126,7 +3126,7 @@ export class CesGuardrail extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesGuardrail resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesGuardrail to import
-  * @param importFromId The id of the existing CesGuardrail that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesGuardrail that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesGuardrail to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3138,7 +3138,7 @@ export class CesGuardrail extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/ces_guardrail google_ces_guardrail} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/ces_guardrail google_ces_guardrail} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3149,7 +3149,7 @@ export class CesGuardrail extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_guardrail',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

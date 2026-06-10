@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeMachineTypesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types#filter DataGoogleComputeMachineTypes#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types#filter DataGoogleComputeMachineTypes#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types#id DataGoogleComputeMachineTypes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types#id DataGoogleComputeMachineTypes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,13 +26,13 @@ export interface DataGoogleComputeMachineTypesConfig extends cdktn.TerraformMeta
   /**
   * Project ID for this request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types#project DataGoogleComputeMachineTypes#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types#project DataGoogleComputeMachineTypes#project}
   */
   readonly project?: string;
   /**
   * The name of the zone for this request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types#zone DataGoogleComputeMachineTypes#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types#zone DataGoogleComputeMachineTypes#zone}
   */
   readonly zone?: string;
 }
@@ -42,7 +42,7 @@ export interface DataGoogleComputeMachineTypesMachineTypesAccelerators {
 export function dataGoogleComputeMachineTypesMachineTypesAcceleratorsToTerraform(struct?: DataGoogleComputeMachineTypesMachineTypesAccelerators): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -52,7 +52,7 @@ export function dataGoogleComputeMachineTypesMachineTypesAcceleratorsToTerraform
 export function dataGoogleComputeMachineTypesMachineTypesAcceleratorsToHclTerraform(struct?: DataGoogleComputeMachineTypesMachineTypesAccelerators): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -122,7 +122,7 @@ export interface DataGoogleComputeMachineTypesMachineTypesDeprecated {
 export function dataGoogleComputeMachineTypesMachineTypesDeprecatedToTerraform(struct?: DataGoogleComputeMachineTypesMachineTypesDeprecated): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -132,7 +132,7 @@ export function dataGoogleComputeMachineTypesMachineTypesDeprecatedToTerraform(s
 export function dataGoogleComputeMachineTypesMachineTypesDeprecatedToHclTerraform(struct?: DataGoogleComputeMachineTypesMachineTypesDeprecated): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -202,7 +202,7 @@ export interface DataGoogleComputeMachineTypesMachineTypes {
 export function dataGoogleComputeMachineTypesMachineTypesToTerraform(struct?: DataGoogleComputeMachineTypesMachineTypes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -212,7 +212,7 @@ export function dataGoogleComputeMachineTypesMachineTypesToTerraform(struct?: Da
 export function dataGoogleComputeMachineTypesMachineTypesToHclTerraform(struct?: DataGoogleComputeMachineTypesMachineTypes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -320,7 +320,7 @@ export class DataGoogleComputeMachineTypesMachineTypesList extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types google_compute_machine_types}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types google_compute_machine_types}
 */
 export class DataGoogleComputeMachineTypes extends cdktn.TerraformDataSource {
 
@@ -336,7 +336,7 @@ export class DataGoogleComputeMachineTypes extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeMachineTypes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeMachineTypes to import
-  * @param importFromId The id of the existing DataGoogleComputeMachineTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeMachineTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeMachineTypes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -348,7 +348,7 @@ export class DataGoogleComputeMachineTypes extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_machine_types google_compute_machine_types} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_machine_types google_compute_machine_types} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -359,7 +359,7 @@ export class DataGoogleComputeMachineTypes extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_machine_types',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

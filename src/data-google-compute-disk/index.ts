@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeDiskConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk#id DataGoogleComputeDisk#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk#id DataGoogleComputeDisk#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,17 +28,17 @@ export interface DataGoogleComputeDiskConfig extends cdktn.TerraformMetaArgument
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk#name DataGoogleComputeDisk#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk#name DataGoogleComputeDisk#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk#project DataGoogleComputeDisk#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk#project DataGoogleComputeDisk#project}
   */
   readonly project?: string;
   /**
   * A reference to the zone where the disk resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk#zone DataGoogleComputeDisk#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk#zone DataGoogleComputeDisk#zone}
   */
   readonly zone?: string;
 }
@@ -48,7 +48,7 @@ export interface DataGoogleComputeDiskAsyncPrimaryDisk {
 export function dataGoogleComputeDiskAsyncPrimaryDiskToTerraform(struct?: DataGoogleComputeDiskAsyncPrimaryDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -58,7 +58,7 @@ export function dataGoogleComputeDiskAsyncPrimaryDiskToTerraform(struct?: DataGo
 export function dataGoogleComputeDiskAsyncPrimaryDiskToHclTerraform(struct?: DataGoogleComputeDiskAsyncPrimaryDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -123,7 +123,7 @@ export interface DataGoogleComputeDiskDiskEncryptionKey {
 export function dataGoogleComputeDiskDiskEncryptionKeyToTerraform(struct?: DataGoogleComputeDiskDiskEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -133,7 +133,7 @@ export function dataGoogleComputeDiskDiskEncryptionKeyToTerraform(struct?: DataG
 export function dataGoogleComputeDiskDiskEncryptionKeyToHclTerraform(struct?: DataGoogleComputeDiskDiskEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -218,7 +218,7 @@ export interface DataGoogleComputeDiskGuestOsFeatures {
 export function dataGoogleComputeDiskGuestOsFeaturesToTerraform(struct?: DataGoogleComputeDiskGuestOsFeatures): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -228,7 +228,7 @@ export function dataGoogleComputeDiskGuestOsFeaturesToTerraform(struct?: DataGoo
 export function dataGoogleComputeDiskGuestOsFeaturesToHclTerraform(struct?: DataGoogleComputeDiskGuestOsFeatures): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -293,7 +293,7 @@ export interface DataGoogleComputeDiskParams {
 export function dataGoogleComputeDiskParamsToTerraform(struct?: DataGoogleComputeDiskParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -303,7 +303,7 @@ export function dataGoogleComputeDiskParamsToTerraform(struct?: DataGoogleComput
 export function dataGoogleComputeDiskParamsToHclTerraform(struct?: DataGoogleComputeDiskParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -369,7 +369,7 @@ export interface DataGoogleComputeDiskSourceImageEncryptionKey {
 export function dataGoogleComputeDiskSourceImageEncryptionKeyToTerraform(struct?: DataGoogleComputeDiskSourceImageEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -379,7 +379,7 @@ export function dataGoogleComputeDiskSourceImageEncryptionKeyToTerraform(struct?
 export function dataGoogleComputeDiskSourceImageEncryptionKeyToHclTerraform(struct?: DataGoogleComputeDiskSourceImageEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -459,7 +459,7 @@ export interface DataGoogleComputeDiskSourceSnapshotEncryptionKey {
 export function dataGoogleComputeDiskSourceSnapshotEncryptionKeyToTerraform(struct?: DataGoogleComputeDiskSourceSnapshotEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -469,7 +469,7 @@ export function dataGoogleComputeDiskSourceSnapshotEncryptionKeyToTerraform(stru
 export function dataGoogleComputeDiskSourceSnapshotEncryptionKeyToHclTerraform(struct?: DataGoogleComputeDiskSourceSnapshotEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -545,7 +545,7 @@ export class DataGoogleComputeDiskSourceSnapshotEncryptionKeyList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk google_compute_disk}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk google_compute_disk}
 */
 export class DataGoogleComputeDisk extends cdktn.TerraformDataSource {
 
@@ -561,7 +561,7 @@ export class DataGoogleComputeDisk extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeDisk to import
-  * @param importFromId The id of the existing DataGoogleComputeDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeDisk to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -573,7 +573,7 @@ export class DataGoogleComputeDisk extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_disk google_compute_disk} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_disk google_compute_disk} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -584,7 +584,7 @@ export class DataGoogleComputeDisk extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_disk',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

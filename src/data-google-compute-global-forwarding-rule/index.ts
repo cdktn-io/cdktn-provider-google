@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_global_forwarding_rule
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_global_forwarding_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeGlobalForwardingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_global_forwarding_rule#id DataGoogleComputeGlobalForwardingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_global_forwarding_rule#id DataGoogleComputeGlobalForwardingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,11 +34,11 @@ export interface DataGoogleComputeGlobalForwardingRuleConfig extends cdktn.Terra
   * APIs, the forwarding rule name must be a 1-20 characters string with
   * lowercase letters and numbers and must start with a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_global_forwarding_rule#name DataGoogleComputeGlobalForwardingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_global_forwarding_rule#name DataGoogleComputeGlobalForwardingRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_global_forwarding_rule#project DataGoogleComputeGlobalForwardingRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_global_forwarding_rule#project DataGoogleComputeGlobalForwardingRule#project}
   */
   readonly project?: string;
 }
@@ -48,7 +48,7 @@ export interface DataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabel
 export function dataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsToTerraform(struct?: DataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -58,7 +58,7 @@ export function dataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels
 export function dataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsToHclTerraform(struct?: DataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -128,7 +128,7 @@ export interface DataGoogleComputeGlobalForwardingRuleMetadataFilters {
 export function dataGoogleComputeGlobalForwardingRuleMetadataFiltersToTerraform(struct?: DataGoogleComputeGlobalForwardingRuleMetadataFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -138,7 +138,7 @@ export function dataGoogleComputeGlobalForwardingRuleMetadataFiltersToTerraform(
 export function dataGoogleComputeGlobalForwardingRuleMetadataFiltersToHclTerraform(struct?: DataGoogleComputeGlobalForwardingRuleMetadataFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -209,7 +209,7 @@ export interface DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrati
 export function dataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsToTerraform(struct?: DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -219,7 +219,7 @@ export function dataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistratio
 export function dataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsToHclTerraform(struct?: DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -285,7 +285,7 @@ export class DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule}
 */
 export class DataGoogleComputeGlobalForwardingRule extends cdktn.TerraformDataSource {
 
@@ -301,7 +301,7 @@ export class DataGoogleComputeGlobalForwardingRule extends cdktn.TerraformDataSo
   * Generates CDKTN code for importing a DataGoogleComputeGlobalForwardingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeGlobalForwardingRule to import
-  * @param importFromId The id of the existing DataGoogleComputeGlobalForwardingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_global_forwarding_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeGlobalForwardingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_global_forwarding_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeGlobalForwardingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -313,7 +313,7 @@ export class DataGoogleComputeGlobalForwardingRule extends cdktn.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -324,7 +324,7 @@ export class DataGoogleComputeGlobalForwardingRule extends cdktn.TerraformDataSo
       terraformResourceType: 'google_compute_global_forwarding_rule',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

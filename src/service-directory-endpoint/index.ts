@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface ServiceDirectoryEndpointConfig extends cdktn.TerraformMetaArgum
   /**
   * IPv4 or IPv6 address of the endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#address ServiceDirectoryEndpoint#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#address ServiceDirectoryEndpoint#address}
   */
   readonly address?: string;
   /**
@@ -27,18 +27,18 @@ export interface ServiceDirectoryEndpointConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#deletion_policy ServiceDirectoryEndpoint#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#deletion_policy ServiceDirectoryEndpoint#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
   * lowercase letters or the hyphen character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#endpoint_id ServiceDirectoryEndpoint#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#endpoint_id ServiceDirectoryEndpoint#endpoint_id}
   */
   readonly endpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#id ServiceDirectoryEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#id ServiceDirectoryEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,46 +50,46 @@ export interface ServiceDirectoryEndpointConfig extends cdktn.TerraformMetaArgum
   * up to 512 characters, spread across all key-value pairs.
   * Metadata that goes beyond any these limits will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#metadata ServiceDirectoryEndpoint#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#metadata ServiceDirectoryEndpoint#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * The URL to the network, such as projects/PROJECT_NUMBER/locations/global/networks/NETWORK_NAME.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#network ServiceDirectoryEndpoint#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#network ServiceDirectoryEndpoint#network}
   */
   readonly network?: string;
   /**
   * Port that the endpoint is running on, must be in the
   * range of [0, 65535]. If unspecified, the default is 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#port ServiceDirectoryEndpoint#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#port ServiceDirectoryEndpoint#port}
   */
   readonly port?: number;
   /**
   * The resource name of the service that this endpoint provides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#service ServiceDirectoryEndpoint#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#service ServiceDirectoryEndpoint#service}
   */
   readonly service: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#timeouts ServiceDirectoryEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#timeouts ServiceDirectoryEndpoint#timeouts}
   */
   readonly timeouts?: ServiceDirectoryEndpointTimeouts;
 }
 export interface ServiceDirectoryEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#create ServiceDirectoryEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#create ServiceDirectoryEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#delete ServiceDirectoryEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#delete ServiceDirectoryEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#update ServiceDirectoryEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#update ServiceDirectoryEndpoint#update}
   */
   readonly update?: string;
 }
@@ -97,7 +97,7 @@ export interface ServiceDirectoryEndpointTimeouts {
 export function serviceDirectoryEndpointTimeoutsToTerraform(struct?: ServiceDirectoryEndpointTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -110,7 +110,7 @@ export function serviceDirectoryEndpointTimeoutsToTerraform(struct?: ServiceDire
 export function serviceDirectoryEndpointTimeoutsToHclTerraform(struct?: ServiceDirectoryEndpointTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -241,7 +241,7 @@ export class ServiceDirectoryEndpointTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint google_service_directory_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint google_service_directory_endpoint}
 */
 export class ServiceDirectoryEndpoint extends cdktn.TerraformResource {
 
@@ -257,7 +257,7 @@ export class ServiceDirectoryEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceDirectoryEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceDirectoryEndpoint to import
-  * @param importFromId The id of the existing ServiceDirectoryEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceDirectoryEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceDirectoryEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -269,7 +269,7 @@ export class ServiceDirectoryEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/service_directory_endpoint google_service_directory_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_endpoint google_service_directory_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,7 +280,7 @@ export class ServiceDirectoryEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'google_service_directory_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

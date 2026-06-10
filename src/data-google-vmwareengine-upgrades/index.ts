@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_upgrades
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_upgrades
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleVmwareengineUpgradesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_upgrades#id DataGoogleVmwareengineUpgrades#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_upgrades#id DataGoogleVmwareengineUpgrades#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGoogleVmwareengineUpgradesConfig extends cdktn.TerraformMet
   /**
   * The resource name of the specific Upgrade to retrieve. If provided, the 'upgrades' list will contain only this upgrade.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_upgrades#name DataGoogleVmwareengineUpgrades#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_upgrades#name DataGoogleVmwareengineUpgrades#name}
   */
   readonly name?: string;
   /**
@@ -30,7 +30,7 @@ export interface DataGoogleVmwareengineUpgradesConfig extends cdktn.TerraformMet
   * Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
   * For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_upgrades#parent DataGoogleVmwareengineUpgrades#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_upgrades#parent DataGoogleVmwareengineUpgrades#parent}
   */
   readonly parent: string;
 }
@@ -40,7 +40,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesComponentUpgrades {
 export function dataGoogleVmwareengineUpgradesUpgradesComponentUpgradesToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesComponentUpgrades): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesComponentUpgradesToTerrafo
 export function dataGoogleVmwareengineUpgradesUpgradesComponentUpgradesToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesComponentUpgrades): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -120,7 +120,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisall
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsEndTimeToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsEndTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -130,7 +130,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallo
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsEndTimeToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsEndTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -200,7 +200,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisall
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsStartTimeToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -210,7 +210,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallo
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsStartTimeToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -280,7 +280,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisall
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervals): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -290,7 +290,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallo
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervalsToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsDisallowedIntervals): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -372,7 +372,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsResche
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsRescheduleDateRangeToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsRescheduleDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -382,7 +382,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsResched
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsRescheduleDateRangeToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsRescheduleDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -452,7 +452,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleConstraints {
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -462,7 +462,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsToTerra
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -544,7 +544,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindow {
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -554,7 +554,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowToTerraf
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -624,7 +624,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsStar
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsStartTimeToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -634,7 +634,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsStart
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsStartTimeToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -704,7 +704,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindows {
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -714,7 +714,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsToTer
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindowsToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesScheduleWeeklyWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -790,7 +790,7 @@ export interface DataGoogleVmwareengineUpgradesUpgradesSchedule {
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -800,7 +800,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesScheduleToTerraform(struct
 export function dataGoogleVmwareengineUpgradesUpgradesScheduleToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgradesSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -888,7 +888,7 @@ export interface DataGoogleVmwareengineUpgradesUpgrades {
 export function dataGoogleVmwareengineUpgradesUpgradesToTerraform(struct?: DataGoogleVmwareengineUpgradesUpgrades): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -898,7 +898,7 @@ export function dataGoogleVmwareengineUpgradesUpgradesToTerraform(struct?: DataG
 export function dataGoogleVmwareengineUpgradesUpgradesToHclTerraform(struct?: DataGoogleVmwareengineUpgradesUpgrades): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1006,7 +1006,7 @@ export class DataGoogleVmwareengineUpgradesUpgradesList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_upgrades google_vmwareengine_upgrades}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_upgrades google_vmwareengine_upgrades}
 */
 export class DataGoogleVmwareengineUpgrades extends cdktn.TerraformDataSource {
 
@@ -1022,7 +1022,7 @@ export class DataGoogleVmwareengineUpgrades extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleVmwareengineUpgrades resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVmwareengineUpgrades to import
-  * @param importFromId The id of the existing DataGoogleVmwareengineUpgrades that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_upgrades#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleVmwareengineUpgrades that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_upgrades#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVmwareengineUpgrades to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1034,7 +1034,7 @@ export class DataGoogleVmwareengineUpgrades extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vmwareengine_upgrades google_vmwareengine_upgrades} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vmwareengine_upgrades google_vmwareengine_upgrades} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1045,7 +1045,7 @@ export class DataGoogleVmwareengineUpgrades extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_vmwareengine_upgrades',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

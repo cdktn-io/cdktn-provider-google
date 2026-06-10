@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface DialogflowCxPageConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#deletion_policy DialogflowCxPage#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#deletion_policy DialogflowCxPage#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The human-readable name of the page, unique within the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#display_name DialogflowCxPage#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#display_name DialogflowCxPage#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#id DialogflowCxPage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#id DialogflowCxPage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,14 +52,14 @@ export interface DialogflowCxPageConfig extends cdktn.TerraformMetaArguments {
   * Page.transition_routes.trigger_fulfillment.conditional_cases
   * If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#language_code DialogflowCxPage#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#language_code DialogflowCxPage#language_code}
   */
   readonly languageCode?: string;
   /**
   * The flow to create a page for.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parent DialogflowCxPage#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parent DialogflowCxPage#parent}
   */
   readonly parent?: string;
   /**
@@ -68,49 +68,49 @@ export interface DialogflowCxPageConfig extends cdktn.TerraformMetaArguments {
   * If multiple transition route groups within a page contain the same intent, then the first group in the ordered list takes precedence.
   * Format:projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/transitionRouteGroups/<TransitionRouteGroup ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#transition_route_groups DialogflowCxPage#transition_route_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#transition_route_groups DialogflowCxPage#transition_route_groups}
   */
   readonly transitionRouteGroups?: string[];
   /**
   * advanced_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#advanced_settings DialogflowCxPage#advanced_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#advanced_settings DialogflowCxPage#advanced_settings}
   */
   readonly advancedSettings?: DialogflowCxPageAdvancedSettings;
   /**
   * entry_fulfillment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#entry_fulfillment DialogflowCxPage#entry_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#entry_fulfillment DialogflowCxPage#entry_fulfillment}
   */
   readonly entryFulfillment?: DialogflowCxPageEntryFulfillment;
   /**
   * event_handlers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#event_handlers DialogflowCxPage#event_handlers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#event_handlers DialogflowCxPage#event_handlers}
   */
   readonly eventHandlers?: DialogflowCxPageEventHandlers[] | cdktn.IResolvable;
   /**
   * form block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#form DialogflowCxPage#form}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#form DialogflowCxPage#form}
   */
   readonly form?: DialogflowCxPageForm;
   /**
   * knowledge_connector_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#knowledge_connector_settings DialogflowCxPage#knowledge_connector_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#knowledge_connector_settings DialogflowCxPage#knowledge_connector_settings}
   */
   readonly knowledgeConnectorSettings?: DialogflowCxPageKnowledgeConnectorSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#timeouts DialogflowCxPage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#timeouts DialogflowCxPage#timeouts}
   */
   readonly timeouts?: DialogflowCxPageTimeouts;
   /**
   * transition_routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#transition_routes DialogflowCxPage#transition_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#transition_routes DialogflowCxPage#transition_routes}
   */
   readonly transitionRoutes?: DialogflowCxPageTransitionRoutes[] | cdktn.IResolvable;
 }
@@ -118,19 +118,19 @@ export interface DialogflowCxPageAdvancedSettingsDtmfSettings {
   /**
   * If true, incoming audio is processed for DTMF (dual tone multi frequency) events. For example, if the caller presses a button on their telephone keypad and DTMF processing is enabled, Dialogflow will detect the event (e.g. a "3" was pressed) in the incoming audio and pass the event to the bot to drive business logic (e.g. when 3 is pressed, return the account balance).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The digit that terminates a DTMF digit sequence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#finish_digit DialogflowCxPage#finish_digit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#finish_digit DialogflowCxPage#finish_digit}
   */
   readonly finishDigit?: string;
   /**
   * Max length of DTMF digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#max_digits DialogflowCxPage#max_digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#max_digits DialogflowCxPage#max_digits}
   */
   readonly maxDigits?: number;
 }
@@ -138,7 +138,7 @@ export interface DialogflowCxPageAdvancedSettingsDtmfSettings {
 export function dialogflowCxPageAdvancedSettingsDtmfSettingsToTerraform(struct?: DialogflowCxPageAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxPageAdvancedSettingsDtmfSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -151,7 +151,7 @@ export function dialogflowCxPageAdvancedSettingsDtmfSettingsToTerraform(struct?:
 export function dialogflowCxPageAdvancedSettingsDtmfSettingsToHclTerraform(struct?: DialogflowCxPageAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxPageAdvancedSettingsDtmfSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -274,7 +274,7 @@ export interface DialogflowCxPageAdvancedSettings {
   /**
   * dtmf_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#dtmf_settings DialogflowCxPage#dtmf_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#dtmf_settings DialogflowCxPage#dtmf_settings}
   */
   readonly dtmfSettings?: DialogflowCxPageAdvancedSettingsDtmfSettings;
 }
@@ -282,7 +282,7 @@ export interface DialogflowCxPageAdvancedSettings {
 export function dialogflowCxPageAdvancedSettingsToTerraform(struct?: DialogflowCxPageAdvancedSettingsOutputReference | DialogflowCxPageAdvancedSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dtmf_settings: dialogflowCxPageAdvancedSettingsDtmfSettingsToTerraform(struct!.dtmfSettings),
@@ -293,7 +293,7 @@ export function dialogflowCxPageAdvancedSettingsToTerraform(struct?: DialogflowC
 export function dialogflowCxPageAdvancedSettingsToHclTerraform(struct?: DialogflowCxPageAdvancedSettingsOutputReference | DialogflowCxPageAdvancedSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dtmf_settings: {
@@ -361,7 +361,7 @@ export interface DialogflowCxPageEntryFulfillmentConditionalCases {
   * A JSON encoded list of cascading if-else conditions. Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
   * See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
   */
   readonly cases?: string;
 }
@@ -369,7 +369,7 @@ export interface DialogflowCxPageEntryFulfillmentConditionalCases {
 export function dialogflowCxPageEntryFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxPageEntryFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cases: cdktn.stringToTerraform(struct!.cases),
@@ -380,7 +380,7 @@ export function dialogflowCxPageEntryFulfillmentConditionalCasesToTerraform(stru
 export function dialogflowCxPageEntryFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cases: {
@@ -479,7 +479,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesConversationSuccess {
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -487,7 +487,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesConversationSuccess {
 export function dialogflowCxPageEntryFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageEntryFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -498,7 +498,7 @@ export function dialogflowCxPageEntryFulfillmentMessagesConversationSuccessToTer
 export function dialogflowCxPageEntryFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageEntryFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -565,7 +565,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff {
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -573,7 +573,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff {
 export function dialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -584,7 +584,7 @@ export function dialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffToTerraf
 export function dialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -651,13 +651,13 @@ export interface DialogflowCxPageEntryFulfillmentMessagesOutputAudioText {
   /**
   * The SSML text to be synthesized. For more information, see SSML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
   */
   readonly ssml?: string;
   /**
   * The raw text to be synthesized.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string;
 }
@@ -665,7 +665,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesOutputAudioText {
 export function dialogflowCxPageEntryFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageEntryFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ssml: cdktn.stringToTerraform(struct!.ssml),
@@ -677,7 +677,7 @@ export function dialogflowCxPageEntryFulfillmentMessagesOutputAudioTextToTerrafo
 export function dialogflowCxPageEntryFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageEntryFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ssml: {
@@ -777,7 +777,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesPlayAudio {
   /**
   * URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
   */
   readonly audioUri: string;
 }
@@ -785,7 +785,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesPlayAudio {
 export function dialogflowCxPageEntryFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageEntryFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audio_uri: cdktn.stringToTerraform(struct!.audioUri),
@@ -796,7 +796,7 @@ export function dialogflowCxPageEntryFulfillmentMessagesPlayAudioToTerraform(str
 export function dialogflowCxPageEntryFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageEntryFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audio_uri: {
@@ -865,7 +865,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCall {
   /**
   * Transfer the call to a phone number in E.164 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
   */
   readonly phoneNumber: string;
 }
@@ -873,7 +873,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCall {
 export function dialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
@@ -884,7 +884,7 @@ export function dialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCallToT
 export function dialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     phone_number: {
@@ -948,7 +948,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesText {
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string[];
 }
@@ -956,7 +956,7 @@ export interface DialogflowCxPageEntryFulfillmentMessagesText {
 export function dialogflowCxPageEntryFulfillmentMessagesTextToTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesTextOutputReference | DialogflowCxPageEntryFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
@@ -967,7 +967,7 @@ export function dialogflowCxPageEntryFulfillmentMessagesTextToTerraform(struct?:
 export function dialogflowCxPageEntryFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentMessagesTextOutputReference | DialogflowCxPageEntryFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -1039,49 +1039,49 @@ export interface DialogflowCxPageEntryFulfillmentMessages {
   /**
   * The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
   */
   readonly channel?: string;
   /**
   * A custom, platform-specific payload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
   */
   readonly payload?: string;
   /**
   * conversation_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
   */
   readonly conversationSuccess?: DialogflowCxPageEntryFulfillmentMessagesConversationSuccess;
   /**
   * live_agent_handoff block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
   */
   readonly liveAgentHandoff?: DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff;
   /**
   * output_audio_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
   */
   readonly outputAudioText?: DialogflowCxPageEntryFulfillmentMessagesOutputAudioText;
   /**
   * play_audio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
   */
   readonly playAudio?: DialogflowCxPageEntryFulfillmentMessagesPlayAudio;
   /**
   * telephony_transfer_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
   */
   readonly telephonyTransferCall?: DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCall;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: DialogflowCxPageEntryFulfillmentMessagesText;
 }
@@ -1089,7 +1089,7 @@ export interface DialogflowCxPageEntryFulfillmentMessages {
 export function dialogflowCxPageEntryFulfillmentMessagesToTerraform(struct?: DialogflowCxPageEntryFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel: cdktn.stringToTerraform(struct!.channel),
@@ -1107,7 +1107,7 @@ export function dialogflowCxPageEntryFulfillmentMessagesToTerraform(struct?: Dia
 export function dialogflowCxPageEntryFulfillmentMessagesToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel: {
@@ -1402,13 +1402,13 @@ export interface DialogflowCxPageEntryFulfillmentSetParameterActions {
   /**
   * Display name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
   */
   readonly parameter?: string;
   /**
   * The new JSON-encoded value of the parameter. A null value clears the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
   */
   readonly value?: string;
 }
@@ -1416,7 +1416,7 @@ export interface DialogflowCxPageEntryFulfillmentSetParameterActions {
 export function dialogflowCxPageEntryFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxPageEntryFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameter: cdktn.stringToTerraform(struct!.parameter),
@@ -1428,7 +1428,7 @@ export function dialogflowCxPageEntryFulfillmentSetParameterActionsToTerraform(s
 export function dialogflowCxPageEntryFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameter: {
@@ -1555,37 +1555,37 @@ export interface DialogflowCxPageEntryFulfillment {
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
   */
   readonly webhook?: string;
   /**
   * conditional_cases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
   */
   readonly conditionalCases?: DialogflowCxPageEntryFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
   */
   readonly messages?: DialogflowCxPageEntryFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
   */
   readonly setParameterActions?: DialogflowCxPageEntryFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
@@ -1593,7 +1593,7 @@ export interface DialogflowCxPageEntryFulfillment {
 export function dialogflowCxPageEntryFulfillmentToTerraform(struct?: DialogflowCxPageEntryFulfillmentOutputReference | DialogflowCxPageEntryFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
@@ -1609,7 +1609,7 @@ export function dialogflowCxPageEntryFulfillmentToTerraform(struct?: DialogflowC
 export function dialogflowCxPageEntryFulfillmentToHclTerraform(struct?: DialogflowCxPageEntryFulfillmentOutputReference | DialogflowCxPageEntryFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     return_partial_responses: {
@@ -1817,7 +1817,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCases
   * A JSON encoded list of cascading if-else conditions. Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
   * See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
   */
   readonly cases?: string;
 }
@@ -1825,7 +1825,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCases
 export function dialogflowCxPageEventHandlersTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cases: cdktn.stringToTerraform(struct!.cases),
@@ -1836,7 +1836,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentConditionalCasesT
 export function dialogflowCxPageEventHandlersTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cases: {
@@ -1935,7 +1935,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversa
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -1943,7 +1943,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversa
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -1954,7 +1954,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversat
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -2021,7 +2021,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgen
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -2029,7 +2029,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgen
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -2040,7 +2040,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgent
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -2107,13 +2107,13 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAu
   /**
   * The SSML text to be synthesized. For more information, see SSML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
   */
   readonly ssml?: string;
   /**
   * The raw text to be synthesized.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string;
 }
@@ -2121,7 +2121,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAu
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ssml: cdktn.stringToTerraform(struct!.ssml),
@@ -2133,7 +2133,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAud
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ssml: {
@@ -2233,7 +2233,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudi
   /**
   * URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
   */
   readonly audioUri: string;
 }
@@ -2241,7 +2241,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudi
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audio_uri: cdktn.stringToTerraform(struct!.audioUri),
@@ -2252,7 +2252,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudio
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audio_uri: {
@@ -2321,7 +2321,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephon
   /**
   * Transfer the call to a phone number in E.164 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
   */
   readonly phoneNumber: string;
 }
@@ -2329,7 +2329,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephon
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
@@ -2340,7 +2340,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephony
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     phone_number: {
@@ -2404,7 +2404,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText {
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string[];
 }
@@ -2412,7 +2412,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText {
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
@@ -2423,7 +2423,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextToTer
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -2495,49 +2495,49 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessages {
   /**
   * The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
   */
   readonly channel?: string;
   /**
   * A custom, platform-specific payload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
   */
   readonly payload?: string;
   /**
   * conversation_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
   */
   readonly conversationSuccess?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccess;
   /**
   * live_agent_handoff block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
   */
   readonly liveAgentHandoff?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff;
   /**
   * output_audio_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
   */
   readonly outputAudioText?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioText;
   /**
   * play_audio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
   */
   readonly playAudio?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudio;
   /**
   * telephony_transfer_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
   */
   readonly telephonyTransferCall?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText;
 }
@@ -2545,7 +2545,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentMessages {
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel: cdktn.stringToTerraform(struct!.channel),
@@ -2563,7 +2563,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesToTerrafo
 export function dialogflowCxPageEventHandlersTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel: {
@@ -2858,13 +2858,13 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActi
   /**
   * Display name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
   */
   readonly parameter?: string;
   /**
   * The new JSON-encoded value of the parameter. A null value clears the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
   */
   readonly value?: string;
 }
@@ -2872,7 +2872,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActi
 export function dialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameter: cdktn.stringToTerraform(struct!.parameter),
@@ -2884,7 +2884,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActio
 export function dialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameter: {
@@ -3011,37 +3011,37 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillment {
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
   */
   readonly webhook?: string;
   /**
   * conditional_cases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
   */
   readonly conditionalCases?: DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
   */
   readonly messages?: DialogflowCxPageEventHandlersTriggerFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
   */
   readonly setParameterActions?: DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
@@ -3049,7 +3049,7 @@ export interface DialogflowCxPageEventHandlersTriggerFulfillment {
 export function dialogflowCxPageEventHandlersTriggerFulfillmentToTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference | DialogflowCxPageEventHandlersTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
@@ -3065,7 +3065,7 @@ export function dialogflowCxPageEventHandlersTriggerFulfillmentToTerraform(struc
 export function dialogflowCxPageEventHandlersTriggerFulfillmentToHclTerraform(struct?: DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference | DialogflowCxPageEventHandlersTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     return_partial_responses: {
@@ -3272,27 +3272,27 @@ export interface DialogflowCxPageEventHandlers {
   /**
   * The name of the event to handle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#event DialogflowCxPage#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#event DialogflowCxPage#event}
   */
   readonly event?: string;
   /**
   * The target flow to transition to.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
   */
   readonly targetFlow?: string;
   /**
   * The target page to transition to.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
   */
   readonly targetPage?: string;
   /**
   * trigger_fulfillment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
   */
   readonly triggerFulfillment?: DialogflowCxPageEventHandlersTriggerFulfillment;
 }
@@ -3300,7 +3300,7 @@ export interface DialogflowCxPageEventHandlers {
 export function dialogflowCxPageEventHandlersToTerraform(struct?: DialogflowCxPageEventHandlers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event: cdktn.stringToTerraform(struct!.event),
@@ -3314,7 +3314,7 @@ export function dialogflowCxPageEventHandlersToTerraform(struct?: DialogflowCxPa
 export function dialogflowCxPageEventHandlersToHclTerraform(struct?: DialogflowCxPageEventHandlers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event: {
@@ -3502,19 +3502,19 @@ export interface DialogflowCxPageFormParametersAdvancedSettingsDtmfSettings {
   /**
   * If true, incoming audio is processed for DTMF (dual tone multi frequency) events. For example, if the caller presses a button on their telephone keypad and DTMF processing is enabled, Dialogflow will detect the event (e.g. a "3" was pressed) in the incoming audio and pass the event to the bot to drive business logic (e.g. when 3 is pressed, return the account balance).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The digit that terminates a DTMF digit sequence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#finish_digit DialogflowCxPage#finish_digit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#finish_digit DialogflowCxPage#finish_digit}
   */
   readonly finishDigit?: string;
   /**
   * Max length of DTMF digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#max_digits DialogflowCxPage#max_digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#max_digits DialogflowCxPage#max_digits}
   */
   readonly maxDigits?: number;
 }
@@ -3522,7 +3522,7 @@ export interface DialogflowCxPageFormParametersAdvancedSettingsDtmfSettings {
 export function dialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsToTerraform(struct?: DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxPageFormParametersAdvancedSettingsDtmfSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -3535,7 +3535,7 @@ export function dialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsToTerr
 export function dialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsToHclTerraform(struct?: DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxPageFormParametersAdvancedSettingsDtmfSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -3658,7 +3658,7 @@ export interface DialogflowCxPageFormParametersAdvancedSettings {
   /**
   * dtmf_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#dtmf_settings DialogflowCxPage#dtmf_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#dtmf_settings DialogflowCxPage#dtmf_settings}
   */
   readonly dtmfSettings?: DialogflowCxPageFormParametersAdvancedSettingsDtmfSettings;
 }
@@ -3666,7 +3666,7 @@ export interface DialogflowCxPageFormParametersAdvancedSettings {
 export function dialogflowCxPageFormParametersAdvancedSettingsToTerraform(struct?: DialogflowCxPageFormParametersAdvancedSettingsOutputReference | DialogflowCxPageFormParametersAdvancedSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dtmf_settings: dialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsToTerraform(struct!.dtmfSettings),
@@ -3677,7 +3677,7 @@ export function dialogflowCxPageFormParametersAdvancedSettingsToTerraform(struct
 export function dialogflowCxPageFormParametersAdvancedSettingsToHclTerraform(struct?: DialogflowCxPageFormParametersAdvancedSettingsOutputReference | DialogflowCxPageFormParametersAdvancedSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dtmf_settings: {
@@ -3745,7 +3745,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   * A JSON encoded list of cascading if-else conditions. Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
   * See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
   */
   readonly cases?: string;
 }
@@ -3753,7 +3753,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cases: cdktn.stringToTerraform(struct!.cases),
@@ -3764,7 +3764,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cases: {
@@ -3863,7 +3863,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -3871,7 +3871,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -3882,7 +3882,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -3949,7 +3949,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -3957,7 +3957,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -3968,7 +3968,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -4035,13 +4035,13 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * The SSML text to be synthesized. For more information, see SSML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
   */
   readonly ssml?: string;
   /**
   * The raw text to be synthesized.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string;
 }
@@ -4049,7 +4049,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ssml: cdktn.stringToTerraform(struct!.ssml),
@@ -4061,7 +4061,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ssml: {
@@ -4161,7 +4161,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
   */
   readonly audioUri: string;
 }
@@ -4169,7 +4169,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audio_uri: cdktn.stringToTerraform(struct!.audioUri),
@@ -4180,7 +4180,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audio_uri: {
@@ -4249,7 +4249,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * Transfer the call to a phone number in E.164 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
   */
   readonly phoneNumber: string;
 }
@@ -4257,7 +4257,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
@@ -4268,7 +4268,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     phone_number: {
@@ -4332,7 +4332,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string[];
 }
@@ -4340,7 +4340,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTextToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTextOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
@@ -4351,7 +4351,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTextOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -4423,49 +4423,49 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
   */
   readonly channel?: string;
   /**
   * A custom, platform-specific payload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
   */
   readonly payload?: string;
   /**
   * conversation_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
   */
   readonly conversationSuccess?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess;
   /**
   * live_agent_handoff block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
   */
   readonly liveAgentHandoff?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff;
   /**
   * output_audio_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
   */
   readonly outputAudioText?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText;
   /**
   * play_audio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
   */
   readonly playAudio?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio;
   /**
   * telephony_transfer_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
   */
   readonly telephonyTransferCall?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText;
 }
@@ -4473,7 +4473,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel: cdktn.stringToTerraform(struct!.channel),
@@ -4491,7 +4491,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel: {
@@ -4786,13 +4786,13 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * Display name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
   */
   readonly parameter?: string;
   /**
   * The new JSON-encoded value of the parameter. A null value clears the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
   */
   readonly value?: string;
 }
@@ -4800,7 +4800,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameter: cdktn.stringToTerraform(struct!.parameter),
@@ -4812,7 +4812,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameter: {
@@ -4939,37 +4939,37 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
   */
   readonly webhook?: string;
   /**
   * conditional_cases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
   */
   readonly conditionalCases?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
   */
   readonly messages?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
   */
   readonly setParameterActions?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
@@ -4977,7 +4977,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillm
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
@@ -4993,7 +4993,7 @@ export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 export function dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference | DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     return_partial_responses: {
@@ -5201,7 +5201,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   * A JSON encoded list of cascading if-else conditions. Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
   * See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
   */
   readonly cases?: string;
 }
@@ -5209,7 +5209,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cases: cdktn.stringToTerraform(struct!.cases),
@@ -5220,7 +5220,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cases: {
@@ -5319,7 +5319,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -5327,7 +5327,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -5338,7 +5338,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -5405,7 +5405,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -5413,7 +5413,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -5424,7 +5424,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -5491,13 +5491,13 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * The SSML text to be synthesized. For more information, see SSML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
   */
   readonly ssml?: string;
   /**
   * The raw text to be synthesized.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string;
 }
@@ -5505,7 +5505,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ssml: cdktn.stringToTerraform(struct!.ssml),
@@ -5517,7 +5517,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ssml: {
@@ -5617,7 +5617,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
   */
   readonly audioUri: string;
 }
@@ -5625,7 +5625,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audio_uri: cdktn.stringToTerraform(struct!.audioUri),
@@ -5636,7 +5636,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audio_uri: {
@@ -5705,7 +5705,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * Transfer the call to a phone number in E.164 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
   */
   readonly phoneNumber: string;
 }
@@ -5713,7 +5713,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
@@ -5724,7 +5724,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     phone_number: {
@@ -5788,7 +5788,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string[];
 }
@@ -5796,7 +5796,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTextToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
@@ -5807,7 +5807,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -5879,49 +5879,49 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
   */
   readonly channel?: string;
   /**
   * A custom, platform-specific payload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
   */
   readonly payload?: string;
   /**
   * conversation_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
   */
   readonly conversationSuccess?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccess;
   /**
   * live_agent_handoff block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
   */
   readonly liveAgentHandoff?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff;
   /**
   * output_audio_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
   */
   readonly outputAudioText?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioText;
   /**
   * play_audio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
   */
   readonly playAudio?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudio;
   /**
   * telephony_transfer_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
   */
   readonly telephonyTransferCall?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText;
 }
@@ -5929,7 +5929,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel: cdktn.stringToTerraform(struct!.channel),
@@ -5947,7 +5947,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel: {
@@ -6242,13 +6242,13 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * Display name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
   */
   readonly parameter?: string;
   /**
   * The new JSON-encoded value of the parameter. A null value clears the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
   */
   readonly value?: string;
 }
@@ -6256,7 +6256,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameter: cdktn.stringToTerraform(struct!.parameter),
@@ -6268,7 +6268,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameter: {
@@ -6395,37 +6395,37 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
   */
   readonly webhook?: string;
   /**
   * conditional_cases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
   */
   readonly conditionalCases?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
   */
   readonly messages?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
   */
   readonly setParameterActions?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
@@ -6433,7 +6433,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
@@ -6449,7 +6449,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference | DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     return_partial_responses: {
@@ -6656,27 +6656,27 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
   /**
   * The name of the event to handle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#event DialogflowCxPage#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#event DialogflowCxPage#event}
   */
   readonly event?: string;
   /**
   * The target flow to transition to.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
   */
   readonly targetFlow?: string;
   /**
   * The target page to transition to.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
   */
   readonly targetPage?: string;
   /**
   * trigger_fulfillment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
   */
   readonly triggerFulfillment?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment;
 }
@@ -6684,7 +6684,7 @@ export interface DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event: cdktn.stringToTerraform(struct!.event),
@@ -6698,7 +6698,7 @@ export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersT
 export function dialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event: {
@@ -6886,13 +6886,13 @@ export interface DialogflowCxPageFormParametersFillBehavior {
   /**
   * initial_prompt_fulfillment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#initial_prompt_fulfillment DialogflowCxPage#initial_prompt_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#initial_prompt_fulfillment DialogflowCxPage#initial_prompt_fulfillment}
   */
   readonly initialPromptFulfillment?: DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment;
   /**
   * reprompt_event_handlers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#reprompt_event_handlers DialogflowCxPage#reprompt_event_handlers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#reprompt_event_handlers DialogflowCxPage#reprompt_event_handlers}
   */
   readonly repromptEventHandlers?: DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlers[] | cdktn.IResolvable;
 }
@@ -6900,7 +6900,7 @@ export interface DialogflowCxPageFormParametersFillBehavior {
 export function dialogflowCxPageFormParametersFillBehaviorToTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorOutputReference | DialogflowCxPageFormParametersFillBehavior): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     initial_prompt_fulfillment: dialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentToTerraform(struct!.initialPromptFulfillment),
@@ -6912,7 +6912,7 @@ export function dialogflowCxPageFormParametersFillBehaviorToTerraform(struct?: D
 export function dialogflowCxPageFormParametersFillBehaviorToHclTerraform(struct?: DialogflowCxPageFormParametersFillBehaviorOutputReference | DialogflowCxPageFormParametersFillBehavior): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     initial_prompt_fulfillment: {
@@ -7007,52 +7007,52 @@ export interface DialogflowCxPageFormParameters {
   /**
   * The default value of an optional parameter. If the parameter is required, the default value will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#default_value DialogflowCxPage#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#default_value DialogflowCxPage#default_value}
   */
   readonly defaultValue?: string;
   /**
   * The human-readable name of the parameter, unique within the form.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#display_name DialogflowCxPage#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#display_name DialogflowCxPage#display_name}
   */
   readonly displayName?: string;
   /**
   * The entity type of the parameter.
   * Format: projects/-/locations/-/agents/-/entityTypes/<System Entity Type ID> for system entity types (for example, projects/-/locations/-/agents/-/entityTypes/sys.date), or projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/entityTypes/<Entity Type ID> for developer entity types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#entity_type DialogflowCxPage#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#entity_type DialogflowCxPage#entity_type}
   */
   readonly entityType?: string;
   /**
   * Indicates whether the parameter represents a list of values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#is_list DialogflowCxPage#is_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#is_list DialogflowCxPage#is_list}
   */
   readonly isList?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the parameter content should be redacted in log.
   * If redaction is enabled, the parameter content will be replaced by parameter name during logging. Note: the parameter content is subject to redaction if either parameter level redaction or entity type level redaction is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#redact DialogflowCxPage#redact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#redact DialogflowCxPage#redact}
   */
   readonly redact?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the parameter is required. Optional parameters will not trigger prompts; however, they are filled if the user specifies them.
   * Required parameters must be filled before form filling concludes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#required DialogflowCxPage#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#required DialogflowCxPage#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
   * advanced_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#advanced_settings DialogflowCxPage#advanced_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#advanced_settings DialogflowCxPage#advanced_settings}
   */
   readonly advancedSettings?: DialogflowCxPageFormParametersAdvancedSettings;
   /**
   * fill_behavior block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#fill_behavior DialogflowCxPage#fill_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#fill_behavior DialogflowCxPage#fill_behavior}
   */
   readonly fillBehavior?: DialogflowCxPageFormParametersFillBehavior;
 }
@@ -7060,7 +7060,7 @@ export interface DialogflowCxPageFormParameters {
 export function dialogflowCxPageFormParametersToTerraform(struct?: DialogflowCxPageFormParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_value: cdktn.stringToTerraform(struct!.defaultValue),
@@ -7078,7 +7078,7 @@ export function dialogflowCxPageFormParametersToTerraform(struct?: DialogflowCxP
 export function dialogflowCxPageFormParametersToHclTerraform(struct?: DialogflowCxPageFormParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_value: {
@@ -7373,7 +7373,7 @@ export interface DialogflowCxPageForm {
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parameters DialogflowCxPage#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parameters DialogflowCxPage#parameters}
   */
   readonly parameters?: DialogflowCxPageFormParameters[] | cdktn.IResolvable;
 }
@@ -7381,7 +7381,7 @@ export interface DialogflowCxPageForm {
 export function dialogflowCxPageFormToTerraform(struct?: DialogflowCxPageFormOutputReference | DialogflowCxPageForm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameters: cdktn.listMapper(dialogflowCxPageFormParametersToTerraform, true)(struct!.parameters),
@@ -7392,7 +7392,7 @@ export function dialogflowCxPageFormToTerraform(struct?: DialogflowCxPageFormOut
 export function dialogflowCxPageFormToHclTerraform(struct?: DialogflowCxPageFormOutputReference | DialogflowCxPageForm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameters: {
@@ -7459,7 +7459,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnections 
   /**
   * The full name of the referenced data store. Formats: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore} projects/{project}/locations/{location}/dataStores/{dataStore}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#data_store DialogflowCxPage#data_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#data_store DialogflowCxPage#data_store}
   */
   readonly dataStore?: string;
   /**
@@ -7468,7 +7468,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnections 
   * * UNSTRUCTURED: A data store that contains unstructured private data.
   * * STRUCTURED: A data store that contains structured data (for example FAQ). Possible values: ["PUBLIC_WEB", "UNSTRUCTURED", "STRUCTURED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#data_store_type DialogflowCxPage#data_store_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#data_store_type DialogflowCxPage#data_store_type}
   */
   readonly dataStoreType?: string;
   /**
@@ -7476,7 +7476,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnections 
   * * DOCUMENTS: Documents are processed as documents.
   * * CHUNKS: Documents are converted to chunks. Possible values: ["DOCUMENTS", "CHUNKS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#document_processing_mode DialogflowCxPage#document_processing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#document_processing_mode DialogflowCxPage#document_processing_mode}
   */
   readonly documentProcessingMode?: string;
 }
@@ -7484,7 +7484,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnections 
 export function dialogflowCxPageKnowledgeConnectorSettingsDataStoreConnectionsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnections | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_store: cdktn.stringToTerraform(struct!.dataStore),
@@ -7497,7 +7497,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsDataStoreConnectionsTo
 export function dialogflowCxPageKnowledgeConnectorSettingsDataStoreConnectionsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnections | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_store: {
@@ -7652,33 +7652,33 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
   /**
   * If true, incoming audio is processed for DTMF (dual tone multi frequtectency) events. For example, if the caller presses a button on their telephone keypad and DTMF processing is enabled, Dialogflow will de the event (e.g. a "3" was pressed) in the incoming audio and pass the event to the bot to drive business logic (e.g. when 3 is pressed, return the account balance).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Endpoint timeout setting for matching dtmf input to regex.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.500s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#endpointing_timeout_duration DialogflowCxPage#endpointing_timeout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#endpointing_timeout_duration DialogflowCxPage#endpointing_timeout_duration}
   */
   readonly endpointingTimeoutDuration?: string;
   /**
   * The digit that terminates a DTMF digit sequence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#finish_digit DialogflowCxPage#finish_digit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#finish_digit DialogflowCxPage#finish_digit}
   */
   readonly finishDigit?: string;
   /**
   * Interdigit timeout setting for matching dtmf input to regex.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.500s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#interdigit_timeout_duration DialogflowCxPage#interdigit_timeout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#interdigit_timeout_duration DialogflowCxPage#interdigit_timeout_duration}
   */
   readonly interdigitTimeoutDuration?: string;
   /**
   * Max length of DTMF digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#max_digits DialogflowCxPage#max_digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#max_digits DialogflowCxPage#max_digits}
   */
   readonly maxDigits?: number;
 }
@@ -7686,7 +7686,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -7701,7 +7701,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdva
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -7880,19 +7880,19 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
   /**
   * Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enable_consent_based_redaction DialogflowCxPage#enable_consent_based_redaction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enable_consent_based_redaction DialogflowCxPage#enable_consent_based_redaction}
   */
   readonly enableConsentBasedRedaction?: boolean | cdktn.IResolvable;
   /**
   * Enables DF Interaction logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enable_interaction_logging DialogflowCxPage#enable_interaction_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enable_interaction_logging DialogflowCxPage#enable_interaction_logging}
   */
   readonly enableInteractionLogging?: boolean | cdktn.IResolvable;
   /**
   * Enables Google Cloud Logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enable_stackdriver_logging DialogflowCxPage#enable_stackdriver_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enable_stackdriver_logging DialogflowCxPage#enable_stackdriver_logging}
   */
   readonly enableStackdriverLogging?: boolean | cdktn.IResolvable;
 }
@@ -7900,7 +7900,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_consent_based_redaction: cdktn.booleanToTerraform(struct!.enableConsentBasedRedaction),
@@ -7913,7 +7913,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdva
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_consent_based_redaction: {
@@ -8036,27 +8036,27 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
   /**
   * Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#endpointer_sensitivity DialogflowCxPage#endpointer_sensitivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#endpointer_sensitivity DialogflowCxPage#endpointer_sensitivity}
   */
   readonly endpointerSensitivity?: number;
   /**
   * Mapping from language to Speech-to-Text model. The mapped Speech-to-Text model will be selected for requests from its corresponding language. For more information, see [Speech models](https://cloud.google.com/dialogflow/cx/docs/concept/speech-models).
   * An object containing a list of **"key": value** pairs. Example: **{ "name": "wrench", "mass": "1.3kg", "count": "3" }**.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#models DialogflowCxPage#models}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#models DialogflowCxPage#models}
   */
   readonly models?: { [key: string]: string };
   /**
   * Timeout before detecting no speech.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.500s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#no_speech_timeout DialogflowCxPage#no_speech_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#no_speech_timeout DialogflowCxPage#no_speech_timeout}
   */
   readonly noSpeechTimeout?: string;
   /**
   * Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#use_timeout_based_endpointing DialogflowCxPage#use_timeout_based_endpointing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#use_timeout_based_endpointing DialogflowCxPage#use_timeout_based_endpointing}
   */
   readonly useTimeoutBasedEndpointing?: boolean | cdktn.IResolvable;
 }
@@ -8064,7 +8064,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpointer_sensitivity: cdktn.numberToTerraform(struct!.endpointerSensitivity),
@@ -8078,7 +8078,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdva
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpointer_sensitivity: {
@@ -8229,19 +8229,19 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
   /**
   * dtmf_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#dtmf_settings DialogflowCxPage#dtmf_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#dtmf_settings DialogflowCxPage#dtmf_settings}
   */
   readonly dtmfSettings?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings;
   /**
   * logging_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#logging_settings DialogflowCxPage#logging_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#logging_settings DialogflowCxPage#logging_settings}
   */
   readonly loggingSettings?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings;
   /**
   * speech_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#speech_settings DialogflowCxPage#speech_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#speech_settings DialogflowCxPage#speech_settings}
   */
   readonly speechSettings?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings;
 }
@@ -8249,7 +8249,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdv
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dtmf_settings: dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsToTerraform(struct!.dtmfSettings),
@@ -8262,7 +8262,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdva
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dtmf_settings: {
@@ -8386,7 +8386,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentCon
   * A JSON encoded list of cascading if-else conditions. Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
   * See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
   */
   readonly cases?: string;
 }
@@ -8394,7 +8394,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentCon
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cases: cdktn.stringToTerraform(struct!.cases),
@@ -8405,7 +8405,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentCond
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cases: {
@@ -8506,7 +8506,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteraction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -8516,7 +8516,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteraction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -8576,7 +8576,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -8586,7 +8586,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -8661,7 +8661,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -8671,7 +8671,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -8735,7 +8735,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -8743,7 +8743,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -8754,7 +8754,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -8823,7 +8823,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -8833,7 +8833,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -8870,7 +8870,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -8878,7 +8878,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -8889,7 +8889,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -8957,14 +8957,14 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
   * The SSML text to be synthesized. For more information, see SSML.
   * This field is part of a union field 'source': Only one of 'text' or 'ssml' may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
   */
   readonly ssml?: string;
   /**
   * The raw text to be synthesized.
   * This field is part of a union field 'source': Only one of 'text' or 'ssml' may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string;
 }
@@ -8972,7 +8972,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ssml: cdktn.stringToTerraform(struct!.ssml),
@@ -8984,7 +8984,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ssml: {
@@ -9084,7 +9084,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
   /**
   * URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
   */
   readonly audioUri: string;
 }
@@ -9092,7 +9092,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audio_uri: cdktn.stringToTerraform(struct!.audioUri),
@@ -9103,7 +9103,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audio_uri: {
@@ -9172,7 +9172,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
   /**
   * Transfer the call to a phone number in E.164 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
   */
   readonly phoneNumber: string;
 }
@@ -9180,7 +9180,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
@@ -9191,7 +9191,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     phone_number: {
@@ -9256,7 +9256,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
   * A collection of text response variants. If multiple variants are defined, only one text response variant is returned at runtime.
   * required: true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string[];
 }
@@ -9264,7 +9264,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
@@ -9275,7 +9275,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -9347,56 +9347,56 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
   /**
   * The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
   */
   readonly channel?: string;
   /**
   * Returns a response containing a custom, platform-specific payload.
   * This field is part of a union field 'message': Only one of 'text', 'payload', 'conversationSuccess', 'outputAudioText', 'liveAgentHandoff', 'endInteraction', 'playAudio', 'mixedAudio', 'telephonyTransferCall', or 'knowledgeInfoCard' may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
   */
   readonly payload?: string;
   /**
   * conversation_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
   */
   readonly conversationSuccess?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess;
   /**
   * knowledge_info_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#knowledge_info_card DialogflowCxPage#knowledge_info_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#knowledge_info_card DialogflowCxPage#knowledge_info_card}
   */
   readonly knowledgeInfoCard?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard;
   /**
   * live_agent_handoff block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
   */
   readonly liveAgentHandoff?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff;
   /**
   * output_audio_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
   */
   readonly outputAudioText?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText;
   /**
   * play_audio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
   */
   readonly playAudio?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio;
   /**
   * telephony_transfer_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
   */
   readonly telephonyTransferCall?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesText;
 }
@@ -9404,7 +9404,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMes
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel: cdktn.stringToTerraform(struct!.channel),
@@ -9423,7 +9423,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMess
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel: {
@@ -9758,13 +9758,13 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSet
   /**
   * Display name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
   */
   readonly parameter?: string;
   /**
   * The new JSON-encoded value of the parameter. A null value clears the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
   */
   readonly value?: string;
 }
@@ -9772,7 +9772,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSet
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameter: cdktn.stringToTerraform(struct!.parameter),
@@ -9784,7 +9784,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSetP
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameter: {
@@ -9911,49 +9911,49 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment {
   /**
   * If the flag is true, the agent will utilize LLM to generate a text response. If LLM generation fails, the defined responses in the fulfillment will be respected. This flag is only useful for fulfillments associated with no-match event handlers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enable_generative_fallback DialogflowCxPage#enable_generative_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enable_generative_fallback DialogflowCxPage#enable_generative_fallback}
   */
   readonly enableGenerativeFallback?: boolean | cdktn.IResolvable;
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
   */
   readonly webhook?: string;
   /**
   * advanced_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#advanced_settings DialogflowCxPage#advanced_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#advanced_settings DialogflowCxPage#advanced_settings}
   */
   readonly advancedSettings?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings;
   /**
   * conditional_cases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
   */
   readonly conditionalCases?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
   */
   readonly messages?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
   */
   readonly setParameterActions?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
@@ -9961,7 +9961,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment {
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_generative_fallback: cdktn.booleanToTerraform(struct!.enableGenerativeFallback),
@@ -9979,7 +9979,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentToTe
 export function dialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentOutputReference | DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_generative_fallback: {
@@ -10242,14 +10242,14 @@ export interface DialogflowCxPageKnowledgeConnectorSettings {
   /**
   * Whether Knowledge Connector is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The target flow to transition to. Format: projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/flows/<FlowID>.
   * This field is part of a union field 'target': Only one of 'targetPage' or 'targetFlow' may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
   */
   readonly targetFlow?: string;
   /**
@@ -10257,19 +10257,19 @@ export interface DialogflowCxPageKnowledgeConnectorSettings {
   * The page must be in the same host flow (the flow that owns this 'KnowledgeConnectorSettings').
   * This field is part of a union field 'target': Only one of 'targetPage' or 'targetFlow' may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
   */
   readonly targetPage?: string;
   /**
   * data_store_connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#data_store_connections DialogflowCxPage#data_store_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#data_store_connections DialogflowCxPage#data_store_connections}
   */
   readonly dataStoreConnections?: DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnections[] | cdktn.IResolvable;
   /**
   * trigger_fulfillment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
   */
   readonly triggerFulfillment?: DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment;
 }
@@ -10277,7 +10277,7 @@ export interface DialogflowCxPageKnowledgeConnectorSettings {
 export function dialogflowCxPageKnowledgeConnectorSettingsToTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -10292,7 +10292,7 @@ export function dialogflowCxPageKnowledgeConnectorSettingsToTerraform(struct?: D
 export function dialogflowCxPageKnowledgeConnectorSettingsToHclTerraform(struct?: DialogflowCxPageKnowledgeConnectorSettingsOutputReference | DialogflowCxPageKnowledgeConnectorSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -10469,15 +10469,15 @@ export class DialogflowCxPageKnowledgeConnectorSettingsOutputReference extends c
 }
 export interface DialogflowCxPageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#create DialogflowCxPage#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#create DialogflowCxPage#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#delete DialogflowCxPage#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#delete DialogflowCxPage#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#update DialogflowCxPage#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#update DialogflowCxPage#update}
   */
   readonly update?: string;
 }
@@ -10485,7 +10485,7 @@ export interface DialogflowCxPageTimeouts {
 export function dialogflowCxPageTimeoutsToTerraform(struct?: DialogflowCxPageTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -10498,7 +10498,7 @@ export function dialogflowCxPageTimeoutsToTerraform(struct?: DialogflowCxPageTim
 export function dialogflowCxPageTimeoutsToHclTerraform(struct?: DialogflowCxPageTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -10632,7 +10632,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCa
   * A JSON encoded list of cascading if-else conditions. Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
   * See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#cases DialogflowCxPage#cases}
   */
   readonly cases?: string;
 }
@@ -10640,7 +10640,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCa
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cases: cdktn.stringToTerraform(struct!.cases),
@@ -10651,7 +10651,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCas
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cases: {
@@ -10750,7 +10750,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConve
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -10758,7 +10758,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConve
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -10769,7 +10769,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConver
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -10836,7 +10836,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveA
   /**
   * Custom metadata. Dialogflow doesn't impose any structure on this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#metadata DialogflowCxPage#metadata}
   */
   readonly metadata?: string;
 }
@@ -10844,7 +10844,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveA
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: cdktn.stringToTerraform(struct!.metadata),
@@ -10855,7 +10855,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAg
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -10922,13 +10922,13 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutpu
   /**
   * The SSML text to be synthesized. For more information, see SSML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#ssml DialogflowCxPage#ssml}
   */
   readonly ssml?: string;
   /**
   * The raw text to be synthesized.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string;
 }
@@ -10936,7 +10936,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutpu
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ssml: cdktn.stringToTerraform(struct!.ssml),
@@ -10948,7 +10948,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutput
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ssml: {
@@ -11048,7 +11048,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayA
   /**
   * URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#audio_uri DialogflowCxPage#audio_uri}
   */
   readonly audioUri: string;
 }
@@ -11056,7 +11056,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayA
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audio_uri: cdktn.stringToTerraform(struct!.audioUri),
@@ -11067,7 +11067,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAu
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audio_uri: {
@@ -11136,7 +11136,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelep
   /**
   * Transfer the call to a phone number in E.164 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#phone_number DialogflowCxPage#phone_number}
   */
   readonly phoneNumber: string;
 }
@@ -11144,7 +11144,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelep
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
@@ -11155,7 +11155,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTeleph
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     phone_number: {
@@ -11219,7 +11219,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText 
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: string[];
 }
@@ -11227,7 +11227,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText 
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
@@ -11238,7 +11238,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextTo
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -11310,49 +11310,49 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages {
   /**
   * The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#channel DialogflowCxPage#channel}
   */
   readonly channel?: string;
   /**
   * A custom, platform-specific payload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#payload DialogflowCxPage#payload}
   */
   readonly payload?: string;
   /**
   * conversation_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conversation_success DialogflowCxPage#conversation_success}
   */
   readonly conversationSuccess?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess;
   /**
   * live_agent_handoff block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#live_agent_handoff DialogflowCxPage#live_agent_handoff}
   */
   readonly liveAgentHandoff?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff;
   /**
   * output_audio_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#output_audio_text DialogflowCxPage#output_audio_text}
   */
   readonly outputAudioText?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText;
   /**
   * play_audio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#play_audio DialogflowCxPage#play_audio}
   */
   readonly playAudio?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio;
   /**
   * telephony_transfer_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#telephony_transfer_call DialogflowCxPage#telephony_transfer_call}
   */
   readonly telephonyTransferCall?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
   */
   readonly text?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText;
 }
@@ -11360,7 +11360,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages {
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel: cdktn.stringToTerraform(struct!.channel),
@@ -11378,7 +11378,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesToTerr
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel: {
@@ -11673,13 +11673,13 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterA
   /**
   * Display name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#parameter DialogflowCxPage#parameter}
   */
   readonly parameter?: string;
   /**
   * The new JSON-encoded value of the parameter. A null value clears the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#value DialogflowCxPage#value}
   */
   readonly value?: string;
 }
@@ -11687,7 +11687,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterA
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameter: cdktn.stringToTerraform(struct!.parameter),
@@ -11699,7 +11699,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterAc
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameter: {
@@ -11826,37 +11826,37 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillment {
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#return_partial_responses DialogflowCxPage#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#tag DialogflowCxPage#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#webhook DialogflowCxPage#webhook}
   */
   readonly webhook?: string;
   /**
   * conditional_cases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#conditional_cases DialogflowCxPage#conditional_cases}
   */
   readonly conditionalCases?: DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#messages DialogflowCxPage#messages}
   */
   readonly messages?: DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#set_parameter_actions DialogflowCxPage#set_parameter_actions}
   */
   readonly setParameterActions?: DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
@@ -11864,7 +11864,7 @@ export interface DialogflowCxPageTransitionRoutesTriggerFulfillment {
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentToTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
@@ -11880,7 +11880,7 @@ export function dialogflowCxPageTransitionRoutesTriggerFulfillmentToTerraform(st
 export function dialogflowCxPageTransitionRoutesTriggerFulfillmentToHclTerraform(struct?: DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference | DialogflowCxPageTransitionRoutesTriggerFulfillment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     return_partial_responses: {
@@ -12088,34 +12088,34 @@ export interface DialogflowCxPageTransitionRoutes {
   * The condition to evaluate against form parameters or session parameters.
   * At least one of intent or condition must be specified. When both intent and condition are specified, the transition can only happen when both are fulfilled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#condition DialogflowCxPage#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#condition DialogflowCxPage#condition}
   */
   readonly condition?: string;
   /**
   * The unique identifier of an Intent.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>. Indicates that the transition can only happen when the given intent is matched. At least one of intent or condition must be specified. When both intent and condition are specified, the transition can only happen when both are fulfilled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#intent DialogflowCxPage#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#intent DialogflowCxPage#intent}
   */
   readonly intent?: string;
   /**
   * The target flow to transition to.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_flow DialogflowCxPage#target_flow}
   */
   readonly targetFlow?: string;
   /**
   * The target page to transition to.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#target_page DialogflowCxPage#target_page}
   */
   readonly targetPage?: string;
   /**
   * trigger_fulfillment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
   */
   readonly triggerFulfillment?: DialogflowCxPageTransitionRoutesTriggerFulfillment;
 }
@@ -12123,7 +12123,7 @@ export interface DialogflowCxPageTransitionRoutes {
 export function dialogflowCxPageTransitionRoutesToTerraform(struct?: DialogflowCxPageTransitionRoutes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: cdktn.stringToTerraform(struct!.condition),
@@ -12138,7 +12138,7 @@ export function dialogflowCxPageTransitionRoutesToTerraform(struct?: DialogflowC
 export function dialogflowCxPageTransitionRoutesToHclTerraform(struct?: DialogflowCxPageTransitionRoutes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -12352,7 +12352,7 @@ export class DialogflowCxPageTransitionRoutesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page}
 */
 export class DialogflowCxPage extends cdktn.TerraformResource {
 
@@ -12368,7 +12368,7 @@ export class DialogflowCxPage extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowCxPage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxPage to import
-  * @param importFromId The id of the existing DialogflowCxPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowCxPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxPage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -12380,7 +12380,7 @@ export class DialogflowCxPage extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -12391,7 +12391,7 @@ export class DialogflowCxPage extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_page',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,29 +21,29 @@ export interface DataplexGlossaryTermConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#deletion_policy DataplexGlossaryTerm#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#deletion_policy DataplexGlossaryTerm#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-mutable description of the GlossaryTerm.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#description DataplexGlossaryTerm#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#description DataplexGlossaryTerm#description}
   */
   readonly description?: string;
   /**
   * User friendly display name of the GlossaryTerm. This is user-mutable. This will be same as the termId, if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#display_name DataplexGlossaryTerm#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#display_name DataplexGlossaryTerm#display_name}
   */
   readonly displayName?: string;
   /**
   * The glossary id for creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#glossary_id DataplexGlossaryTerm#glossary_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#glossary_id DataplexGlossaryTerm#glossary_id}
   */
   readonly glossaryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,49 +56,49 @@ export interface DataplexGlossaryTermConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#labels DataplexGlossaryTerm#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#labels DataplexGlossaryTerm#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the glossary term should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#location DataplexGlossaryTerm#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#location DataplexGlossaryTerm#location}
   */
   readonly location: string;
   /**
   * The immediate parent of the GlossaryTerm in the resource-hierarchy. It can either be a Glossary or a Term. Format: projects/{projectId}/locations/{locationId}/glossaries/{glossaryId} OR projects/{projectId}/locations/{locationId}/glossaries/{glossaryId}/terms/{termId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#parent DataplexGlossaryTerm#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#parent DataplexGlossaryTerm#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}
   */
   readonly project?: string;
   /**
   * The term id for creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#term_id DataplexGlossaryTerm#term_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#term_id DataplexGlossaryTerm#term_id}
   */
   readonly termId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#timeouts DataplexGlossaryTerm#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#timeouts DataplexGlossaryTerm#timeouts}
   */
   readonly timeouts?: DataplexGlossaryTermTimeouts;
 }
 export interface DataplexGlossaryTermTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#create DataplexGlossaryTerm#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#create DataplexGlossaryTerm#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#delete DataplexGlossaryTerm#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#delete DataplexGlossaryTerm#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#update DataplexGlossaryTerm#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#update DataplexGlossaryTerm#update}
   */
   readonly update?: string;
 }
@@ -106,7 +106,7 @@ export interface DataplexGlossaryTermTimeouts {
 export function dataplexGlossaryTermTimeoutsToTerraform(struct?: DataplexGlossaryTermTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -119,7 +119,7 @@ export function dataplexGlossaryTermTimeoutsToTerraform(struct?: DataplexGlossar
 export function dataplexGlossaryTermTimeoutsToHclTerraform(struct?: DataplexGlossaryTermTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -250,7 +250,7 @@ export class DataplexGlossaryTermTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term google_dataplex_glossary_term}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term google_dataplex_glossary_term}
 */
 export class DataplexGlossaryTerm extends cdktn.TerraformResource {
 
@@ -266,7 +266,7 @@ export class DataplexGlossaryTerm extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexGlossaryTerm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexGlossaryTerm to import
-  * @param importFromId The id of the existing DataplexGlossaryTerm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexGlossaryTerm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexGlossaryTerm to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -278,7 +278,7 @@ export class DataplexGlossaryTerm extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_glossary_term google_dataplex_glossary_term} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_glossary_term google_dataplex_glossary_term} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -289,7 +289,7 @@ export class DataplexGlossaryTerm extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_glossary_term',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

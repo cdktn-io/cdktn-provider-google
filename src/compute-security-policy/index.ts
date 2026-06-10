@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ComputeSecurityPolicyConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#deletion_policy ComputeSecurityPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#deletion_policy ComputeSecurityPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this security policy. Max size is 2048.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#description ComputeSecurityPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#description ComputeSecurityPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#id ComputeSecurityPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#id ComputeSecurityPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,55 +44,55 @@ export interface ComputeSecurityPolicyConfig extends cdktn.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#labels ComputeSecurityPolicy#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#labels ComputeSecurityPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#name ComputeSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#name ComputeSecurityPolicy#name}
   */
   readonly name: string;
   /**
   * The project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#project ComputeSecurityPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#project ComputeSecurityPolicy#project}
   */
   readonly project?: string;
   /**
   * The type indicates the intended use of the security policy. CLOUD_ARMOR - Cloud Armor backend security policies can be configured to filter incoming HTTP requests targeting backend services. They filter requests before they hit the origin servers. CLOUD_ARMOR_EDGE - Cloud Armor edge security policies can be configured to filter incoming HTTP requests targeting backend services (including Cloud CDN-enabled) as well as backend buckets (Cloud Storage). They filter requests before the request is served from Google's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
   */
   readonly type?: string;
   /**
   * adaptive_protection_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#adaptive_protection_config ComputeSecurityPolicy#adaptive_protection_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#adaptive_protection_config ComputeSecurityPolicy#adaptive_protection_config}
   */
   readonly adaptiveProtectionConfig?: ComputeSecurityPolicyAdaptiveProtectionConfig;
   /**
   * advanced_options_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#advanced_options_config ComputeSecurityPolicy#advanced_options_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#advanced_options_config ComputeSecurityPolicy#advanced_options_config}
   */
   readonly advancedOptionsConfig?: ComputeSecurityPolicyAdvancedOptionsConfig;
   /**
   * recaptcha_options_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#recaptcha_options_config ComputeSecurityPolicy#recaptcha_options_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#recaptcha_options_config ComputeSecurityPolicy#recaptcha_options_config}
   */
   readonly recaptchaOptionsConfig?: ComputeSecurityPolicyRecaptchaOptionsConfig;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#rule ComputeSecurityPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#rule ComputeSecurityPolicy#rule}
   */
   readonly rule?: ComputeSecurityPolicyRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#timeouts ComputeSecurityPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#timeouts ComputeSecurityPolicy#timeouts}
   */
   readonly timeouts?: ComputeSecurityPolicyTimeouts;
 }
@@ -100,19 +100,19 @@ export interface ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseC
   /**
   * If enabled, traffic matching each unique value for the specified type constitutes a separate traffic unit. It can only be set to true if value is empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#enable_each_unique_value ComputeSecurityPolicy#enable_each_unique_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#enable_each_unique_value ComputeSecurityPolicy#enable_each_unique_value}
   */
   readonly enableEachUniqueValue?: boolean | cdktn.IResolvable;
   /**
   * Type of this configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
   */
   readonly type: string;
   /**
   * Requests that match this value constitute a granular traffic unit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
   */
   readonly value?: string;
 }
@@ -120,7 +120,7 @@ export interface ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseC
 export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsToTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_each_unique_value: cdktn.booleanToTerraform(struct!.enableEachUniqueValue),
@@ -133,7 +133,7 @@ export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseCo
 export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsToHclTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_each_unique_value: {
@@ -283,43 +283,43 @@ export class ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfi
 }
 export interface ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#auto_deploy_confidence_threshold ComputeSecurityPolicy#auto_deploy_confidence_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#auto_deploy_confidence_threshold ComputeSecurityPolicy#auto_deploy_confidence_threshold}
   */
   readonly autoDeployConfidenceThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#auto_deploy_expiration_sec ComputeSecurityPolicy#auto_deploy_expiration_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#auto_deploy_expiration_sec ComputeSecurityPolicy#auto_deploy_expiration_sec}
   */
   readonly autoDeployExpirationSec?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#auto_deploy_impacted_baseline_threshold ComputeSecurityPolicy#auto_deploy_impacted_baseline_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#auto_deploy_impacted_baseline_threshold ComputeSecurityPolicy#auto_deploy_impacted_baseline_threshold}
   */
   readonly autoDeployImpactedBaselineThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#auto_deploy_load_threshold ComputeSecurityPolicy#auto_deploy_load_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#auto_deploy_load_threshold ComputeSecurityPolicy#auto_deploy_load_threshold}
   */
   readonly autoDeployLoadThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#detection_absolute_qps ComputeSecurityPolicy#detection_absolute_qps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#detection_absolute_qps ComputeSecurityPolicy#detection_absolute_qps}
   */
   readonly detectionAbsoluteQps?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#detection_load_threshold ComputeSecurityPolicy#detection_load_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#detection_load_threshold ComputeSecurityPolicy#detection_load_threshold}
   */
   readonly detectionLoadThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#detection_relative_to_baseline_qps ComputeSecurityPolicy#detection_relative_to_baseline_qps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#detection_relative_to_baseline_qps ComputeSecurityPolicy#detection_relative_to_baseline_qps}
   */
   readonly detectionRelativeToBaselineQps?: number;
   /**
   * The name must be 1-63 characters long, and comply with RFC1035. The name must be unique within the security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#name ComputeSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#name ComputeSecurityPolicy#name}
   */
   readonly name: string;
   /**
   * traffic_granularity_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#traffic_granularity_configs ComputeSecurityPolicy#traffic_granularity_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#traffic_granularity_configs ComputeSecurityPolicy#traffic_granularity_configs}
   */
   readonly trafficGranularityConfigs?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs[] | cdktn.IResolvable;
 }
@@ -327,7 +327,7 @@ export interface ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseC
 export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsToTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auto_deploy_confidence_threshold: cdktn.numberToTerraform(struct!.autoDeployConfidenceThreshold),
@@ -346,7 +346,7 @@ export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseCo
 export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsToHclTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auto_deploy_confidence_threshold: {
@@ -666,19 +666,19 @@ export interface ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseC
   /**
   * If set to true, enables CAAP for L7 DDoS detection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#enable ComputeSecurityPolicy#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#enable ComputeSecurityPolicy#enable}
   */
   readonly enable?: boolean | cdktn.IResolvable;
   /**
   * Rule visibility. Supported values include: "STANDARD", "PREMIUM".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#rule_visibility ComputeSecurityPolicy#rule_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#rule_visibility ComputeSecurityPolicy#rule_visibility}
   */
   readonly ruleVisibility?: string;
   /**
   * threshold_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#threshold_configs ComputeSecurityPolicy#threshold_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#threshold_configs ComputeSecurityPolicy#threshold_configs}
   */
   readonly thresholdConfigs?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs[] | cdktn.IResolvable;
 }
@@ -686,7 +686,7 @@ export interface ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseC
 export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigToTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference | ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable: cdktn.booleanToTerraform(struct!.enable),
@@ -699,7 +699,7 @@ export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseCo
 export function computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigToHclTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference | ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable: {
@@ -822,7 +822,7 @@ export interface ComputeSecurityPolicyAdaptiveProtectionConfig {
   /**
   * layer_7_ddos_defense_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#layer_7_ddos_defense_config ComputeSecurityPolicy#layer_7_ddos_defense_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#layer_7_ddos_defense_config ComputeSecurityPolicy#layer_7_ddos_defense_config}
   */
   readonly layer7DdosDefenseConfig?: ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig;
 }
@@ -830,7 +830,7 @@ export interface ComputeSecurityPolicyAdaptiveProtectionConfig {
 export function computeSecurityPolicyAdaptiveProtectionConfigToTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference | ComputeSecurityPolicyAdaptiveProtectionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     layer_7_ddos_defense_config: computeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigToTerraform(struct!.layer7DdosDefenseConfig),
@@ -841,7 +841,7 @@ export function computeSecurityPolicyAdaptiveProtectionConfigToTerraform(struct?
 export function computeSecurityPolicyAdaptiveProtectionConfigToHclTerraform(struct?: ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference | ComputeSecurityPolicyAdaptiveProtectionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     layer_7_ddos_defense_config: {
@@ -908,7 +908,7 @@ export interface ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
   /**
   * A list of custom Content-Type header values to apply the JSON parsing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#content_types ComputeSecurityPolicy#content_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#content_types ComputeSecurityPolicy#content_types}
   */
   readonly contentTypes: string[];
 }
@@ -916,7 +916,7 @@ export interface ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
 export function computeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigToTerraform(struct?: ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference | ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.contentTypes),
@@ -927,7 +927,7 @@ export function computeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigToTerr
 export function computeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigToHclTerraform(struct?: ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference | ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content_types: {
@@ -991,31 +991,31 @@ export interface ComputeSecurityPolicyAdvancedOptionsConfig {
   /**
   * JSON body parsing. Supported values include: "DISABLED", "STANDARD".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#json_parsing ComputeSecurityPolicy#json_parsing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#json_parsing ComputeSecurityPolicy#json_parsing}
   */
   readonly jsonParsing?: string;
   /**
   * Logging level. Supported values include: "NORMAL", "VERBOSE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#log_level ComputeSecurityPolicy#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#log_level ComputeSecurityPolicy#log_level}
   */
   readonly logLevel?: string;
   /**
   * The maximum request size chosen by the customer with Waf enabled. Values supported are "8KB", "16KB, "32KB", "48KB" and "64KB". Values are case insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#request_body_inspection_size ComputeSecurityPolicy#request_body_inspection_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#request_body_inspection_size ComputeSecurityPolicy#request_body_inspection_size}
   */
   readonly requestBodyInspectionSize?: string;
   /**
   * An optional list of case-insensitive request header names to use for resolving the callers client IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#user_ip_request_headers ComputeSecurityPolicy#user_ip_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#user_ip_request_headers ComputeSecurityPolicy#user_ip_request_headers}
   */
   readonly userIpRequestHeaders?: string[];
   /**
   * json_custom_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#json_custom_config ComputeSecurityPolicy#json_custom_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#json_custom_config ComputeSecurityPolicy#json_custom_config}
   */
   readonly jsonCustomConfig?: ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig;
 }
@@ -1023,7 +1023,7 @@ export interface ComputeSecurityPolicyAdvancedOptionsConfig {
 export function computeSecurityPolicyAdvancedOptionsConfigToTerraform(struct?: ComputeSecurityPolicyAdvancedOptionsConfigOutputReference | ComputeSecurityPolicyAdvancedOptionsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     json_parsing: cdktn.stringToTerraform(struct!.jsonParsing),
@@ -1038,7 +1038,7 @@ export function computeSecurityPolicyAdvancedOptionsConfigToTerraform(struct?: C
 export function computeSecurityPolicyAdvancedOptionsConfigToHclTerraform(struct?: ComputeSecurityPolicyAdvancedOptionsConfigOutputReference | ComputeSecurityPolicyAdvancedOptionsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     json_parsing: {
@@ -1217,7 +1217,7 @@ export interface ComputeSecurityPolicyRecaptchaOptionsConfig {
   /**
   * A field to supply a reCAPTCHA site key to be used for all the rules using the redirect action with the type of GOOGLE_RECAPTCHA under the security policy. The specified site key needs to be created from the reCAPTCHA API. The user is responsible for the validity of the specified site key. If not specified, a Google-managed site key is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#redirect_site_key ComputeSecurityPolicy#redirect_site_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#redirect_site_key ComputeSecurityPolicy#redirect_site_key}
   */
   readonly redirectSiteKey: string;
 }
@@ -1225,7 +1225,7 @@ export interface ComputeSecurityPolicyRecaptchaOptionsConfig {
 export function computeSecurityPolicyRecaptchaOptionsConfigToTerraform(struct?: ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference | ComputeSecurityPolicyRecaptchaOptionsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     redirect_site_key: cdktn.stringToTerraform(struct!.redirectSiteKey),
@@ -1236,7 +1236,7 @@ export function computeSecurityPolicyRecaptchaOptionsConfigToTerraform(struct?: 
 export function computeSecurityPolicyRecaptchaOptionsConfigToHclTerraform(struct?: ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference | ComputeSecurityPolicyRecaptchaOptionsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     redirect_site_key: {
@@ -1300,13 +1300,13 @@ export interface ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds {
   /**
   * The name of the header to set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#header_name ComputeSecurityPolicy#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#header_name ComputeSecurityPolicy#header_name}
   */
   readonly headerName: string;
   /**
   * The value to set the named header to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#header_value ComputeSecurityPolicy#header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#header_value ComputeSecurityPolicy#header_value}
   */
   readonly headerValue?: string;
 }
@@ -1314,7 +1314,7 @@ export interface ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds {
 export function computeSecurityPolicyRuleHeaderActionRequestHeadersToAddsToTerraform(struct?: ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     header_name: cdktn.stringToTerraform(struct!.headerName),
@@ -1326,7 +1326,7 @@ export function computeSecurityPolicyRuleHeaderActionRequestHeadersToAddsToTerra
 export function computeSecurityPolicyRuleHeaderActionRequestHeadersToAddsToHclTerraform(struct?: ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     header_name: {
@@ -1450,7 +1450,7 @@ export interface ComputeSecurityPolicyRuleHeaderAction {
   /**
   * request_headers_to_adds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#request_headers_to_adds ComputeSecurityPolicy#request_headers_to_adds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#request_headers_to_adds ComputeSecurityPolicy#request_headers_to_adds}
   */
   readonly requestHeadersToAdds: ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds[] | cdktn.IResolvable;
 }
@@ -1458,7 +1458,7 @@ export interface ComputeSecurityPolicyRuleHeaderAction {
 export function computeSecurityPolicyRuleHeaderActionToTerraform(struct?: ComputeSecurityPolicyRuleHeaderActionOutputReference | ComputeSecurityPolicyRuleHeaderAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     request_headers_to_adds: cdktn.listMapper(computeSecurityPolicyRuleHeaderActionRequestHeadersToAddsToTerraform, true)(struct!.requestHeadersToAdds),
@@ -1469,7 +1469,7 @@ export function computeSecurityPolicyRuleHeaderActionToTerraform(struct?: Comput
 export function computeSecurityPolicyRuleHeaderActionToHclTerraform(struct?: ComputeSecurityPolicyRuleHeaderActionOutputReference | ComputeSecurityPolicyRuleHeaderAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     request_headers_to_adds: {
@@ -1533,7 +1533,7 @@ export interface ComputeSecurityPolicyRuleMatchConfig {
   /**
   * Set of IP addresses or ranges (IPV4 or IPV6) in CIDR notation to match against inbound traffic. There is a limit of 10 IP ranges per rule. A value of '*' matches all IPs (can be used to override the default behavior).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#src_ip_ranges ComputeSecurityPolicy#src_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#src_ip_ranges ComputeSecurityPolicy#src_ip_ranges}
   */
   readonly srcIpRanges: string[];
 }
@@ -1541,7 +1541,7 @@ export interface ComputeSecurityPolicyRuleMatchConfig {
 export function computeSecurityPolicyRuleMatchConfigToTerraform(struct?: ComputeSecurityPolicyRuleMatchConfigOutputReference | ComputeSecurityPolicyRuleMatchConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     src_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.srcIpRanges),
@@ -1552,7 +1552,7 @@ export function computeSecurityPolicyRuleMatchConfigToTerraform(struct?: Compute
 export function computeSecurityPolicyRuleMatchConfigToHclTerraform(struct?: ComputeSecurityPolicyRuleMatchConfigOutputReference | ComputeSecurityPolicyRuleMatchConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     src_ip_ranges: {
@@ -1616,7 +1616,7 @@ export interface ComputeSecurityPolicyRuleMatchExpr {
   /**
   * Textual representation of an expression in Common Expression Language syntax. The application context of the containing message determines which well-known feature set of CEL is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#expression ComputeSecurityPolicy#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#expression ComputeSecurityPolicy#expression}
   */
   readonly expression: string;
 }
@@ -1624,7 +1624,7 @@ export interface ComputeSecurityPolicyRuleMatchExpr {
 export function computeSecurityPolicyRuleMatchExprToTerraform(struct?: ComputeSecurityPolicyRuleMatchExprOutputReference | ComputeSecurityPolicyRuleMatchExpr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -1635,7 +1635,7 @@ export function computeSecurityPolicyRuleMatchExprToTerraform(struct?: ComputeSe
 export function computeSecurityPolicyRuleMatchExprToHclTerraform(struct?: ComputeSecurityPolicyRuleMatchExprOutputReference | ComputeSecurityPolicyRuleMatchExpr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -1699,13 +1699,13 @@ export interface ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions {
   /**
   * A list of site keys to be used during the validation of reCAPTCHA action-tokens. The provided site keys need to be created from reCAPTCHA API under the same project where the security policy is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#action_token_site_keys ComputeSecurityPolicy#action_token_site_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#action_token_site_keys ComputeSecurityPolicy#action_token_site_keys}
   */
   readonly actionTokenSiteKeys?: string[];
   /**
   * A list of site keys to be used during the validation of reCAPTCHA session-tokens. The provided site keys need to be created from reCAPTCHA API under the same project where the security policy is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#session_token_site_keys ComputeSecurityPolicy#session_token_site_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#session_token_site_keys ComputeSecurityPolicy#session_token_site_keys}
   */
   readonly sessionTokenSiteKeys?: string[];
 }
@@ -1713,7 +1713,7 @@ export interface ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions {
 export function computeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsToTerraform(struct?: ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsOutputReference | ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_token_site_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actionTokenSiteKeys),
@@ -1725,7 +1725,7 @@ export function computeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsToTerra
 export function computeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsToHclTerraform(struct?: ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsOutputReference | ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_token_site_keys: {
@@ -1820,7 +1820,7 @@ export interface ComputeSecurityPolicyRuleMatchExprOptions {
   /**
   * recaptcha_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#recaptcha_options ComputeSecurityPolicy#recaptcha_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#recaptcha_options ComputeSecurityPolicy#recaptcha_options}
   */
   readonly recaptchaOptions: ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions;
 }
@@ -1828,7 +1828,7 @@ export interface ComputeSecurityPolicyRuleMatchExprOptions {
 export function computeSecurityPolicyRuleMatchExprOptionsToTerraform(struct?: ComputeSecurityPolicyRuleMatchExprOptionsOutputReference | ComputeSecurityPolicyRuleMatchExprOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     recaptcha_options: computeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsToTerraform(struct!.recaptchaOptions),
@@ -1839,7 +1839,7 @@ export function computeSecurityPolicyRuleMatchExprOptionsToTerraform(struct?: Co
 export function computeSecurityPolicyRuleMatchExprOptionsToHclTerraform(struct?: ComputeSecurityPolicyRuleMatchExprOptionsOutputReference | ComputeSecurityPolicyRuleMatchExprOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     recaptcha_options: {
@@ -1903,25 +1903,25 @@ export interface ComputeSecurityPolicyRuleMatch {
   /**
   * Predefined rule expression. If this field is specified, config must also be specified. Available options:   SRC_IPS_V1: Must specify the corresponding src_ip_ranges field in config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#versioned_expr ComputeSecurityPolicy#versioned_expr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#versioned_expr ComputeSecurityPolicy#versioned_expr}
   */
   readonly versionedExpr?: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#config ComputeSecurityPolicy#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#config ComputeSecurityPolicy#config}
   */
   readonly config?: ComputeSecurityPolicyRuleMatchConfig;
   /**
   * expr block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#expr ComputeSecurityPolicy#expr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#expr ComputeSecurityPolicy#expr}
   */
   readonly expr?: ComputeSecurityPolicyRuleMatchExpr;
   /**
   * expr_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#expr_options ComputeSecurityPolicy#expr_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#expr_options ComputeSecurityPolicy#expr_options}
   */
   readonly exprOptions?: ComputeSecurityPolicyRuleMatchExprOptions;
 }
@@ -1929,7 +1929,7 @@ export interface ComputeSecurityPolicyRuleMatch {
 export function computeSecurityPolicyRuleMatchToTerraform(struct?: ComputeSecurityPolicyRuleMatchOutputReference | ComputeSecurityPolicyRuleMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     versioned_expr: cdktn.stringToTerraform(struct!.versionedExpr),
@@ -1943,7 +1943,7 @@ export function computeSecurityPolicyRuleMatchToTerraform(struct?: ComputeSecuri
 export function computeSecurityPolicyRuleMatchToHclTerraform(struct?: ComputeSecurityPolicyRuleMatchOutputReference | ComputeSecurityPolicyRuleMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     versioned_expr: {
@@ -2094,13 +2094,13 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
   /**
   * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
   */
   readonly operator: string;
   /**
   * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
   */
   readonly value?: string;
 }
@@ -2108,7 +2108,7 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -2120,7 +2120,7 @@ export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestC
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToHclTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -2244,13 +2244,13 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
   /**
   * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
   */
   readonly operator: string;
   /**
   * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
   */
   readonly value?: string;
 }
@@ -2258,7 +2258,7 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -2270,7 +2270,7 @@ export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestH
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToHclTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -2394,13 +2394,13 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
   /**
   * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
   */
   readonly operator: string;
   /**
   * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
   */
   readonly value?: string;
 }
@@ -2408,7 +2408,7 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -2420,7 +2420,7 @@ export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQ
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToHclTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -2544,13 +2544,13 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
   /**
   * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#operator ComputeSecurityPolicy#operator}
   */
   readonly operator: string;
   /**
   * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
   */
   readonly value?: string;
 }
@@ -2558,7 +2558,7 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequest
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -2570,7 +2570,7 @@ export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestU
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToHclTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -2694,37 +2694,37 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion {
   /**
   * A list of target rule IDs under the WAF rule set to apply the preconfigured WAF exclusion. If omitted, it refers to all the rule IDs under the WAF rule set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#target_rule_ids ComputeSecurityPolicy#target_rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#target_rule_ids ComputeSecurityPolicy#target_rule_ids}
   */
   readonly targetRuleIds?: string[];
   /**
   * Target WAF rule set to apply the preconfigured WAF exclusion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#target_rule_set ComputeSecurityPolicy#target_rule_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#target_rule_set ComputeSecurityPolicy#target_rule_set}
   */
   readonly targetRuleSet: string;
   /**
   * request_cookie block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#request_cookie ComputeSecurityPolicy#request_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#request_cookie ComputeSecurityPolicy#request_cookie}
   */
   readonly requestCookie?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktn.IResolvable;
   /**
   * request_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#request_header ComputeSecurityPolicy#request_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#request_header ComputeSecurityPolicy#request_header}
   */
   readonly requestHeader?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktn.IResolvable;
   /**
   * request_query_param block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#request_query_param ComputeSecurityPolicy#request_query_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#request_query_param ComputeSecurityPolicy#request_query_param}
   */
   readonly requestQueryParam?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktn.IResolvable;
   /**
   * request_uri block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#request_uri ComputeSecurityPolicy#request_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#request_uri ComputeSecurityPolicy#request_uri}
   */
   readonly requestUri?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktn.IResolvable;
 }
@@ -2732,7 +2732,7 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion {
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target_rule_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetRuleIds),
@@ -2748,7 +2748,7 @@ export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraf
 export function computeSecurityPolicyRulePreconfiguredWafConfigExclusionToHclTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target_rule_ids: {
@@ -2984,7 +2984,7 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfig {
   /**
   * exclusion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#exclusion ComputeSecurityPolicy#exclusion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#exclusion ComputeSecurityPolicy#exclusion}
   */
   readonly exclusion?: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktn.IResolvable;
 }
@@ -2992,7 +2992,7 @@ export interface ComputeSecurityPolicyRulePreconfiguredWafConfig {
 export function computeSecurityPolicyRulePreconfiguredWafConfigToTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference | ComputeSecurityPolicyRulePreconfiguredWafConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exclusion: cdktn.listMapper(computeSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform, true)(struct!.exclusion),
@@ -3003,7 +3003,7 @@ export function computeSecurityPolicyRulePreconfiguredWafConfigToTerraform(struc
 export function computeSecurityPolicyRulePreconfiguredWafConfigToHclTerraform(struct?: ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference | ComputeSecurityPolicyRulePreconfiguredWafConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exclusion: {
@@ -3070,13 +3070,13 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold {
   /**
   * Number of HTTP(S) requests for calculating the threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#count ComputeSecurityPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#count ComputeSecurityPolicy#count}
   */
   readonly count: number;
   /**
   * Interval over which the threshold is computed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#interval_sec ComputeSecurityPolicy#interval_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#interval_sec ComputeSecurityPolicy#interval_sec}
   */
   readonly intervalSec: number;
 }
@@ -3084,7 +3084,7 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold {
 export function computeSecurityPolicyRuleRateLimitOptionsBanThresholdToTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference | ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -3096,7 +3096,7 @@ export function computeSecurityPolicyRuleRateLimitOptionsBanThresholdToTerraform
 export function computeSecurityPolicyRuleRateLimitOptionsBanThresholdToHclTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference | ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -3185,13 +3185,13 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs {
   /**
   * Rate limit key name applicable only for the following key types: HTTP_HEADER -- Name of the HTTP header whose value is taken as the key value. HTTP_COOKIE -- Name of the HTTP cookie whose value is taken as the key value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#enforce_on_key_name ComputeSecurityPolicy#enforce_on_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#enforce_on_key_name ComputeSecurityPolicy#enforce_on_key_name}
   */
   readonly enforceOnKeyName?: string;
   /**
   * Determines the key to enforce the rate_limit_threshold on
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#enforce_on_key_type ComputeSecurityPolicy#enforce_on_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#enforce_on_key_type ComputeSecurityPolicy#enforce_on_key_type}
   */
   readonly enforceOnKeyType?: string;
 }
@@ -3199,7 +3199,7 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs {
 export function computeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enforce_on_key_name: cdktn.stringToTerraform(struct!.enforceOnKeyName),
@@ -3211,7 +3211,7 @@ export function computeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTe
 export function computeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToHclTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enforce_on_key_name: {
@@ -3338,13 +3338,13 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions 
   /**
   * Target for the redirect action. This is required if the type is EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#target ComputeSecurityPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#target ComputeSecurityPolicy#target}
   */
   readonly target?: string;
   /**
   * Type of the redirect action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
   */
   readonly type: string;
 }
@@ -3352,7 +3352,7 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions 
 export function computeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsToTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference | ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target: cdktn.stringToTerraform(struct!.target),
@@ -3364,7 +3364,7 @@ export function computeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsTo
 export function computeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsToHclTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference | ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target: {
@@ -3456,13 +3456,13 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold {
   /**
   * Number of HTTP(S) requests for calculating the threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#count ComputeSecurityPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#count ComputeSecurityPolicy#count}
   */
   readonly count: number;
   /**
   * Interval over which the threshold is computed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#interval_sec ComputeSecurityPolicy#interval_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#interval_sec ComputeSecurityPolicy#interval_sec}
   */
   readonly intervalSec: number;
 }
@@ -3470,7 +3470,7 @@ export interface ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold {
 export function computeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdToTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference | ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -3482,7 +3482,7 @@ export function computeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdToTer
 export function computeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdToHclTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference | ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -3571,55 +3571,55 @@ export interface ComputeSecurityPolicyRuleRateLimitOptions {
   /**
   * Can only be specified if the action for the rule is "rate_based_ban". If specified, determines the time (in seconds) the traffic will continue to be banned by the rate limit after the rate falls below the threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#ban_duration_sec ComputeSecurityPolicy#ban_duration_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#ban_duration_sec ComputeSecurityPolicy#ban_duration_sec}
   */
   readonly banDurationSec?: number;
   /**
   * Action to take for requests that are under the configured rate limit threshold. Valid option is "allow" only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#conform_action ComputeSecurityPolicy#conform_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#conform_action ComputeSecurityPolicy#conform_action}
   */
   readonly conformAction: string;
   /**
   * Determines the key to enforce the rateLimitThreshold on
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#enforce_on_key ComputeSecurityPolicy#enforce_on_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#enforce_on_key ComputeSecurityPolicy#enforce_on_key}
   */
   readonly enforceOnKey?: string;
   /**
   * Rate limit key name applicable only for the following key types: HTTP_HEADER -- Name of the HTTP header whose value is taken as the key value. HTTP_COOKIE -- Name of the HTTP cookie whose value is taken as the key value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#enforce_on_key_name ComputeSecurityPolicy#enforce_on_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#enforce_on_key_name ComputeSecurityPolicy#enforce_on_key_name}
   */
   readonly enforceOnKeyName?: string;
   /**
   * Action to take for requests that are above the configured rate limit threshold, to either deny with a specified HTTP response code, or redirect to a different endpoint. Valid options are "deny()" where valid values for status are 403, 404, 429, and 502, and "redirect" where the redirect parameters come from exceedRedirectOptions below.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#exceed_action ComputeSecurityPolicy#exceed_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#exceed_action ComputeSecurityPolicy#exceed_action}
   */
   readonly exceedAction: string;
   /**
   * ban_threshold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#ban_threshold ComputeSecurityPolicy#ban_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#ban_threshold ComputeSecurityPolicy#ban_threshold}
   */
   readonly banThreshold?: ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold;
   /**
   * enforce_on_key_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#enforce_on_key_configs ComputeSecurityPolicy#enforce_on_key_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#enforce_on_key_configs ComputeSecurityPolicy#enforce_on_key_configs}
   */
   readonly enforceOnKeyConfigs?: ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktn.IResolvable;
   /**
   * exceed_redirect_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#exceed_redirect_options ComputeSecurityPolicy#exceed_redirect_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#exceed_redirect_options ComputeSecurityPolicy#exceed_redirect_options}
   */
   readonly exceedRedirectOptions?: ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions;
   /**
   * rate_limit_threshold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#rate_limit_threshold ComputeSecurityPolicy#rate_limit_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#rate_limit_threshold ComputeSecurityPolicy#rate_limit_threshold}
   */
   readonly rateLimitThreshold: ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold;
 }
@@ -3627,7 +3627,7 @@ export interface ComputeSecurityPolicyRuleRateLimitOptions {
 export function computeSecurityPolicyRuleRateLimitOptionsToTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsOutputReference | ComputeSecurityPolicyRuleRateLimitOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ban_duration_sec: cdktn.numberToTerraform(struct!.banDurationSec),
@@ -3646,7 +3646,7 @@ export function computeSecurityPolicyRuleRateLimitOptionsToTerraform(struct?: Co
 export function computeSecurityPolicyRuleRateLimitOptionsToHclTerraform(struct?: ComputeSecurityPolicyRuleRateLimitOptionsOutputReference | ComputeSecurityPolicyRuleRateLimitOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ban_duration_sec: {
@@ -3928,13 +3928,13 @@ export interface ComputeSecurityPolicyRuleRedirectOptions {
   /**
   * Target for the redirect action. This is required if the type is EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#target ComputeSecurityPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#target ComputeSecurityPolicy#target}
   */
   readonly target?: string;
   /**
   * Type of the redirect action. Available options: EXTERNAL_302: Must specify the corresponding target field in config. GOOGLE_RECAPTCHA: Cannot specify target field in config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#type ComputeSecurityPolicy#type}
   */
   readonly type: string;
 }
@@ -3942,7 +3942,7 @@ export interface ComputeSecurityPolicyRuleRedirectOptions {
 export function computeSecurityPolicyRuleRedirectOptionsToTerraform(struct?: ComputeSecurityPolicyRuleRedirectOptionsOutputReference | ComputeSecurityPolicyRuleRedirectOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target: cdktn.stringToTerraform(struct!.target),
@@ -3954,7 +3954,7 @@ export function computeSecurityPolicyRuleRedirectOptionsToTerraform(struct?: Com
 export function computeSecurityPolicyRuleRedirectOptionsToHclTerraform(struct?: ComputeSecurityPolicyRuleRedirectOptionsOutputReference | ComputeSecurityPolicyRuleRedirectOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target: {
@@ -4046,55 +4046,55 @@ export interface ComputeSecurityPolicyRule {
   /**
   * Action to take when match matches the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#action ComputeSecurityPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#action ComputeSecurityPolicy#action}
   */
   readonly action: string;
   /**
   * An optional description of this rule. Max size is 64.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#description ComputeSecurityPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#description ComputeSecurityPolicy#description}
   */
   readonly description?: string;
   /**
   * When set to true, the action specified above is not enforced. Stackdriver logs for requests that trigger a preview action are annotated as such.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#preview ComputeSecurityPolicy#preview}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#preview ComputeSecurityPolicy#preview}
   */
   readonly preview?: boolean | cdktn.IResolvable;
   /**
   * An unique positive integer indicating the priority of evaluation for a rule. Rules are evaluated from highest priority (lowest numerically) to lowest priority (highest numerically) in order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#priority ComputeSecurityPolicy#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#priority ComputeSecurityPolicy#priority}
   */
   readonly priority: number;
   /**
   * header_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#header_action ComputeSecurityPolicy#header_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#header_action ComputeSecurityPolicy#header_action}
   */
   readonly headerAction?: ComputeSecurityPolicyRuleHeaderAction;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#match ComputeSecurityPolicy#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#match ComputeSecurityPolicy#match}
   */
   readonly match: ComputeSecurityPolicyRuleMatch;
   /**
   * preconfigured_waf_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#preconfigured_waf_config ComputeSecurityPolicy#preconfigured_waf_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#preconfigured_waf_config ComputeSecurityPolicy#preconfigured_waf_config}
   */
   readonly preconfiguredWafConfig?: ComputeSecurityPolicyRulePreconfiguredWafConfig;
   /**
   * rate_limit_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#rate_limit_options ComputeSecurityPolicy#rate_limit_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#rate_limit_options ComputeSecurityPolicy#rate_limit_options}
   */
   readonly rateLimitOptions?: ComputeSecurityPolicyRuleRateLimitOptions;
   /**
   * redirect_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#redirect_options ComputeSecurityPolicy#redirect_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#redirect_options ComputeSecurityPolicy#redirect_options}
   */
   readonly redirectOptions?: ComputeSecurityPolicyRuleRedirectOptions;
 }
@@ -4102,7 +4102,7 @@ export interface ComputeSecurityPolicyRule {
 export function computeSecurityPolicyRuleToTerraform(struct?: ComputeSecurityPolicyRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -4121,7 +4121,7 @@ export function computeSecurityPolicyRuleToTerraform(struct?: ComputeSecurityPol
 export function computeSecurityPolicyRuleToHclTerraform(struct?: ComputeSecurityPolicyRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -4433,15 +4433,15 @@ export class ComputeSecurityPolicyRuleList extends cdktn.ComplexList {
 }
 export interface ComputeSecurityPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#create ComputeSecurityPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#create ComputeSecurityPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#delete ComputeSecurityPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#delete ComputeSecurityPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#update ComputeSecurityPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#update ComputeSecurityPolicy#update}
   */
   readonly update?: string;
 }
@@ -4449,7 +4449,7 @@ export interface ComputeSecurityPolicyTimeouts {
 export function computeSecurityPolicyTimeoutsToTerraform(struct?: ComputeSecurityPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -4462,7 +4462,7 @@ export function computeSecurityPolicyTimeoutsToTerraform(struct?: ComputeSecurit
 export function computeSecurityPolicyTimeoutsToHclTerraform(struct?: ComputeSecurityPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -4593,7 +4593,7 @@ export class ComputeSecurityPolicyTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy google_compute_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy google_compute_security_policy}
 */
 export class ComputeSecurityPolicy extends cdktn.TerraformResource {
 
@@ -4609,7 +4609,7 @@ export class ComputeSecurityPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeSecurityPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSecurityPolicy to import
-  * @param importFromId The id of the existing ComputeSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSecurityPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4621,7 +4621,7 @@ export class ComputeSecurityPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_security_policy google_compute_security_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_security_policy google_compute_security_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4632,7 +4632,7 @@ export class ComputeSecurityPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

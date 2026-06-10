@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface SccNotificationConfigConfig extends cdktn.TerraformMetaArgument
   /**
   * This must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#config_id SccNotificationConfig#config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#config_id SccNotificationConfig#config_id}
   */
   readonly configId: string;
   /**
@@ -27,17 +27,17 @@ export interface SccNotificationConfigConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#deletion_policy SccNotificationConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#deletion_policy SccNotificationConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the notification config (max of 1024 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#description SccNotificationConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#description SccNotificationConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#id SccNotificationConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#id SccNotificationConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,26 +47,26 @@ export interface SccNotificationConfigConfig extends cdktn.TerraformMetaArgument
   * The organization whose Cloud Security Command Center the Notification
   * Config lives in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#organization SccNotificationConfig#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#organization SccNotificationConfig#organization}
   */
   readonly organization: string;
   /**
   * The Pub/Sub topic to send notifications to. Its format is
   * "projects/[project_id]/topics/[topic]".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#pubsub_topic SccNotificationConfig#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#pubsub_topic SccNotificationConfig#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * streaming_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#streaming_config SccNotificationConfig#streaming_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#streaming_config SccNotificationConfig#streaming_config}
   */
   readonly streamingConfig: SccNotificationConfigStreamingConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#timeouts SccNotificationConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#timeouts SccNotificationConfig#timeouts}
   */
   readonly timeouts?: SccNotificationConfigTimeouts;
 }
@@ -98,7 +98,7 @@ export interface SccNotificationConfigStreamingConfig {
   * [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
   * for information on how to write a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#filter SccNotificationConfig#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#filter SccNotificationConfig#filter}
   */
   readonly filter: string;
 }
@@ -106,7 +106,7 @@ export interface SccNotificationConfigStreamingConfig {
 export function sccNotificationConfigStreamingConfigToTerraform(struct?: SccNotificationConfigStreamingConfigOutputReference | SccNotificationConfigStreamingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter: cdktn.stringToTerraform(struct!.filter),
@@ -117,7 +117,7 @@ export function sccNotificationConfigStreamingConfigToTerraform(struct?: SccNoti
 export function sccNotificationConfigStreamingConfigToHclTerraform(struct?: SccNotificationConfigStreamingConfigOutputReference | SccNotificationConfigStreamingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter: {
@@ -179,15 +179,15 @@ export class SccNotificationConfigStreamingConfigOutputReference extends cdktn.C
 }
 export interface SccNotificationConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#create SccNotificationConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#create SccNotificationConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#delete SccNotificationConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#delete SccNotificationConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#update SccNotificationConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#update SccNotificationConfig#update}
   */
   readonly update?: string;
 }
@@ -195,7 +195,7 @@ export interface SccNotificationConfigTimeouts {
 export function sccNotificationConfigTimeoutsToTerraform(struct?: SccNotificationConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -208,7 +208,7 @@ export function sccNotificationConfigTimeoutsToTerraform(struct?: SccNotificatio
 export function sccNotificationConfigTimeoutsToHclTerraform(struct?: SccNotificationConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -339,7 +339,7 @@ export class SccNotificationConfigTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config google_scc_notification_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config google_scc_notification_config}
 */
 export class SccNotificationConfig extends cdktn.TerraformResource {
 
@@ -355,7 +355,7 @@ export class SccNotificationConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SccNotificationConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccNotificationConfig to import
-  * @param importFromId The id of the existing SccNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SccNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccNotificationConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -367,7 +367,7 @@ export class SccNotificationConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/scc_notification_config google_scc_notification_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/scc_notification_config google_scc_notification_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -378,7 +378,7 @@ export class SccNotificationConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_scc_notification_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

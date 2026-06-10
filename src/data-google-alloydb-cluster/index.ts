@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGoogleAlloydbClusterConfig extends cdktn.TerraformMetaArgum
   /**
   * The ID of the alloydb cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster#cluster_id DataGoogleAlloydbCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster#cluster_id DataGoogleAlloydbCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,11 +28,11 @@ export interface DataGoogleAlloydbClusterConfig extends cdktn.TerraformMetaArgum
   /**
   * The location where the alloydb cluster should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster#location DataGoogleAlloydbCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster#location DataGoogleAlloydbCluster#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}
   */
   readonly project?: string;
 }
@@ -42,7 +42,7 @@ export interface DataGoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig {
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigToTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -52,7 +52,7 @@ export function dataGoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigToT
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigToHclTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -117,7 +117,7 @@ export interface DataGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedReten
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionToTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -127,7 +127,7 @@ export function dataGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetent
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionToHclTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -192,7 +192,7 @@ export interface DataGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionToTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -202,7 +202,7 @@ export function dataGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionT
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionToHclTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -267,7 +267,7 @@ export interface DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStar
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesToTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -277,7 +277,7 @@ export function dataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStart
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesToHclTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -357,7 +357,7 @@ export interface DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule {
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleToTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -367,7 +367,7 @@ export function dataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleToTer
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleToHclTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -438,7 +438,7 @@ export interface DataGoogleAlloydbClusterAutomatedBackupPolicy {
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyToTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -448,7 +448,7 @@ export function dataGoogleAlloydbClusterAutomatedBackupPolicyToTerraform(struct?
 export function dataGoogleAlloydbClusterAutomatedBackupPolicyToHclTerraform(struct?: DataGoogleAlloydbClusterAutomatedBackupPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -553,7 +553,7 @@ export interface DataGoogleAlloydbClusterBackupSource {
 export function dataGoogleAlloydbClusterBackupSourceToTerraform(struct?: DataGoogleAlloydbClusterBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -563,7 +563,7 @@ export function dataGoogleAlloydbClusterBackupSourceToTerraform(struct?: DataGoo
 export function dataGoogleAlloydbClusterBackupSourceToHclTerraform(struct?: DataGoogleAlloydbClusterBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -628,7 +628,7 @@ export interface DataGoogleAlloydbClusterBackupdrBackupSource {
 export function dataGoogleAlloydbClusterBackupdrBackupSourceToTerraform(struct?: DataGoogleAlloydbClusterBackupdrBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -638,7 +638,7 @@ export function dataGoogleAlloydbClusterBackupdrBackupSourceToTerraform(struct?:
 export function dataGoogleAlloydbClusterBackupdrBackupSourceToHclTerraform(struct?: DataGoogleAlloydbClusterBackupdrBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -703,7 +703,7 @@ export interface DataGoogleAlloydbClusterContinuousBackupConfigEncryptionConfig 
 export function dataGoogleAlloydbClusterContinuousBackupConfigEncryptionConfigToTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupConfigEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -713,7 +713,7 @@ export function dataGoogleAlloydbClusterContinuousBackupConfigEncryptionConfigTo
 export function dataGoogleAlloydbClusterContinuousBackupConfigEncryptionConfigToHclTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupConfigEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -778,7 +778,7 @@ export interface DataGoogleAlloydbClusterContinuousBackupConfig {
 export function dataGoogleAlloydbClusterContinuousBackupConfigToTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -788,7 +788,7 @@ export function dataGoogleAlloydbClusterContinuousBackupConfigToTerraform(struct
 export function dataGoogleAlloydbClusterContinuousBackupConfigToHclTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -864,7 +864,7 @@ export interface DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfo {
 export function dataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoToTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -874,7 +874,7 @@ export function dataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoToTerr
 export function dataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoToHclTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -944,7 +944,7 @@ export interface DataGoogleAlloydbClusterContinuousBackupInfo {
 export function dataGoogleAlloydbClusterContinuousBackupInfoToTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -954,7 +954,7 @@ export function dataGoogleAlloydbClusterContinuousBackupInfoToTerraform(struct?:
 export function dataGoogleAlloydbClusterContinuousBackupInfoToHclTerraform(struct?: DataGoogleAlloydbClusterContinuousBackupInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1035,7 +1035,7 @@ export interface DataGoogleAlloydbClusterDataplexConfig {
 export function dataGoogleAlloydbClusterDataplexConfigToTerraform(struct?: DataGoogleAlloydbClusterDataplexConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1045,7 +1045,7 @@ export function dataGoogleAlloydbClusterDataplexConfigToTerraform(struct?: DataG
 export function dataGoogleAlloydbClusterDataplexConfigToHclTerraform(struct?: DataGoogleAlloydbClusterDataplexConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1110,7 +1110,7 @@ export interface DataGoogleAlloydbClusterEncryptionConfig {
 export function dataGoogleAlloydbClusterEncryptionConfigToTerraform(struct?: DataGoogleAlloydbClusterEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1120,7 +1120,7 @@ export function dataGoogleAlloydbClusterEncryptionConfigToTerraform(struct?: Dat
 export function dataGoogleAlloydbClusterEncryptionConfigToHclTerraform(struct?: DataGoogleAlloydbClusterEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1185,7 +1185,7 @@ export interface DataGoogleAlloydbClusterEncryptionInfo {
 export function dataGoogleAlloydbClusterEncryptionInfoToTerraform(struct?: DataGoogleAlloydbClusterEncryptionInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1195,7 +1195,7 @@ export function dataGoogleAlloydbClusterEncryptionInfoToTerraform(struct?: DataG
 export function dataGoogleAlloydbClusterEncryptionInfoToHclTerraform(struct?: DataGoogleAlloydbClusterEncryptionInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1265,7 +1265,7 @@ export interface DataGoogleAlloydbClusterInitialUser {
 export function dataGoogleAlloydbClusterInitialUserToTerraform(struct?: DataGoogleAlloydbClusterInitialUser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1275,7 +1275,7 @@ export function dataGoogleAlloydbClusterInitialUserToTerraform(struct?: DataGoog
 export function dataGoogleAlloydbClusterInitialUserToHclTerraform(struct?: DataGoogleAlloydbClusterInitialUser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1355,7 +1355,7 @@ export interface DataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindo
 export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeToTerraform(struct?: DataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1365,7 +1365,7 @@ export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindow
 export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeToHclTerraform(struct?: DataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1445,7 +1445,7 @@ export interface DataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindo
 export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsToTerraform(struct?: DataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1455,7 +1455,7 @@ export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindow
 export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsToHclTerraform(struct?: DataGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1526,7 +1526,7 @@ export interface DataGoogleAlloydbClusterMaintenanceUpdatePolicy {
 export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyToTerraform(struct?: DataGoogleAlloydbClusterMaintenanceUpdatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1536,7 +1536,7 @@ export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyToTerraform(struc
 export function dataGoogleAlloydbClusterMaintenanceUpdatePolicyToHclTerraform(struct?: DataGoogleAlloydbClusterMaintenanceUpdatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1602,7 +1602,7 @@ export interface DataGoogleAlloydbClusterMigrationSource {
 export function dataGoogleAlloydbClusterMigrationSourceToTerraform(struct?: DataGoogleAlloydbClusterMigrationSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1612,7 +1612,7 @@ export function dataGoogleAlloydbClusterMigrationSourceToTerraform(struct?: Data
 export function dataGoogleAlloydbClusterMigrationSourceToHclTerraform(struct?: DataGoogleAlloydbClusterMigrationSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1687,7 +1687,7 @@ export interface DataGoogleAlloydbClusterNetworkConfig {
 export function dataGoogleAlloydbClusterNetworkConfigToTerraform(struct?: DataGoogleAlloydbClusterNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1697,7 +1697,7 @@ export function dataGoogleAlloydbClusterNetworkConfigToTerraform(struct?: DataGo
 export function dataGoogleAlloydbClusterNetworkConfigToHclTerraform(struct?: DataGoogleAlloydbClusterNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1767,7 +1767,7 @@ export interface DataGoogleAlloydbClusterPscConfig {
 export function dataGoogleAlloydbClusterPscConfigToTerraform(struct?: DataGoogleAlloydbClusterPscConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1777,7 +1777,7 @@ export function dataGoogleAlloydbClusterPscConfigToTerraform(struct?: DataGoogle
 export function dataGoogleAlloydbClusterPscConfigToHclTerraform(struct?: DataGoogleAlloydbClusterPscConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1847,7 +1847,7 @@ export interface DataGoogleAlloydbClusterRestoreBackupSource {
 export function dataGoogleAlloydbClusterRestoreBackupSourceToTerraform(struct?: DataGoogleAlloydbClusterRestoreBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1857,7 +1857,7 @@ export function dataGoogleAlloydbClusterRestoreBackupSourceToTerraform(struct?: 
 export function dataGoogleAlloydbClusterRestoreBackupSourceToHclTerraform(struct?: DataGoogleAlloydbClusterRestoreBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1922,7 +1922,7 @@ export interface DataGoogleAlloydbClusterRestoreBackupdrBackupSource {
 export function dataGoogleAlloydbClusterRestoreBackupdrBackupSourceToTerraform(struct?: DataGoogleAlloydbClusterRestoreBackupdrBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1932,7 +1932,7 @@ export function dataGoogleAlloydbClusterRestoreBackupdrBackupSourceToTerraform(s
 export function dataGoogleAlloydbClusterRestoreBackupdrBackupSourceToHclTerraform(struct?: DataGoogleAlloydbClusterRestoreBackupdrBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1997,7 +1997,7 @@ export interface DataGoogleAlloydbClusterRestoreBackupdrPitrSource {
 export function dataGoogleAlloydbClusterRestoreBackupdrPitrSourceToTerraform(struct?: DataGoogleAlloydbClusterRestoreBackupdrPitrSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2007,7 +2007,7 @@ export function dataGoogleAlloydbClusterRestoreBackupdrPitrSourceToTerraform(str
 export function dataGoogleAlloydbClusterRestoreBackupdrPitrSourceToHclTerraform(struct?: DataGoogleAlloydbClusterRestoreBackupdrPitrSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2077,7 +2077,7 @@ export interface DataGoogleAlloydbClusterRestoreContinuousBackupSource {
 export function dataGoogleAlloydbClusterRestoreContinuousBackupSourceToTerraform(struct?: DataGoogleAlloydbClusterRestoreContinuousBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2087,7 +2087,7 @@ export function dataGoogleAlloydbClusterRestoreContinuousBackupSourceToTerraform
 export function dataGoogleAlloydbClusterRestoreContinuousBackupSourceToHclTerraform(struct?: DataGoogleAlloydbClusterRestoreContinuousBackupSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2157,7 +2157,7 @@ export interface DataGoogleAlloydbClusterSecondaryConfig {
 export function dataGoogleAlloydbClusterSecondaryConfigToTerraform(struct?: DataGoogleAlloydbClusterSecondaryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2167,7 +2167,7 @@ export function dataGoogleAlloydbClusterSecondaryConfigToTerraform(struct?: Data
 export function dataGoogleAlloydbClusterSecondaryConfigToHclTerraform(struct?: DataGoogleAlloydbClusterSecondaryConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2232,7 +2232,7 @@ export interface DataGoogleAlloydbClusterTrialMetadata {
 export function dataGoogleAlloydbClusterTrialMetadataToTerraform(struct?: DataGoogleAlloydbClusterTrialMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2242,7 +2242,7 @@ export function dataGoogleAlloydbClusterTrialMetadataToTerraform(struct?: DataGo
 export function dataGoogleAlloydbClusterTrialMetadataToHclTerraform(struct?: DataGoogleAlloydbClusterTrialMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2318,7 +2318,7 @@ export class DataGoogleAlloydbClusterTrialMetadataList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster google_alloydb_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster google_alloydb_cluster}
 */
 export class DataGoogleAlloydbCluster extends cdktn.TerraformDataSource {
 
@@ -2334,7 +2334,7 @@ export class DataGoogleAlloydbCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleAlloydbCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleAlloydbCluster to import
-  * @param importFromId The id of the existing DataGoogleAlloydbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleAlloydbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleAlloydbCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2346,7 +2346,7 @@ export class DataGoogleAlloydbCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/alloydb_cluster google_alloydb_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/alloydb_cluster google_alloydb_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2357,7 +2357,7 @@ export class DataGoogleAlloydbCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_alloydb_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

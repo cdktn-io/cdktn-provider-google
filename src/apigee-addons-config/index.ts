@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface ApigeeAddonsConfigConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#deletion_policy ApigeeAddonsConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#deletion_policy ApigeeAddonsConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#id ApigeeAddonsConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#id ApigeeAddonsConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface ApigeeAddonsConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name of the Apigee organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#org ApigeeAddonsConfig#org}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#org ApigeeAddonsConfig#org}
   */
   readonly org: string;
   /**
   * addons_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#addons_config ApigeeAddonsConfig#addons_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#addons_config ApigeeAddonsConfig#addons_config}
   */
   readonly addonsConfig?: ApigeeAddonsConfigAddonsConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#timeouts ApigeeAddonsConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#timeouts ApigeeAddonsConfig#timeouts}
   */
   readonly timeouts?: ApigeeAddonsConfigTimeouts;
 }
@@ -54,7 +54,7 @@ export interface ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig {
   /**
   * Flag that specifies whether the Advanced API Ops add-on is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -62,7 +62,7 @@ export interface ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig {
 export function apigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigToTerraform(struct?: ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference | ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -73,7 +73,7 @@ export function apigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigToTerraform(st
 export function apigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigToHclTerraform(struct?: ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference | ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -140,7 +140,7 @@ export interface ApigeeAddonsConfigAddonsConfigApiSecurityConfig {
   /**
   * Flag that specifies whether the API security add-on is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -148,7 +148,7 @@ export interface ApigeeAddonsConfigAddonsConfigApiSecurityConfig {
 export function apigeeAddonsConfigAddonsConfigApiSecurityConfigToTerraform(struct?: ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference | ApigeeAddonsConfigAddonsConfigApiSecurityConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -159,7 +159,7 @@ export function apigeeAddonsConfigAddonsConfigApiSecurityConfigToTerraform(struc
 export function apigeeAddonsConfigAddonsConfigApiSecurityConfigToHclTerraform(struct?: ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference | ApigeeAddonsConfigAddonsConfigApiSecurityConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -231,7 +231,7 @@ export interface ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig {
   /**
   * Flag that specifies whether the Connectors Platform add-on is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -239,7 +239,7 @@ export interface ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig {
 export function apigeeAddonsConfigAddonsConfigConnectorsPlatformConfigToTerraform(struct?: ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference | ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -250,7 +250,7 @@ export function apigeeAddonsConfigAddonsConfigConnectorsPlatformConfigToTerrafor
 export function apigeeAddonsConfigAddonsConfigConnectorsPlatformConfigToHclTerraform(struct?: ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference | ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -322,7 +322,7 @@ export interface ApigeeAddonsConfigAddonsConfigIntegrationConfig {
   /**
   * Flag that specifies whether the Integration add-on is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -330,7 +330,7 @@ export interface ApigeeAddonsConfigAddonsConfigIntegrationConfig {
 export function apigeeAddonsConfigAddonsConfigIntegrationConfigToTerraform(struct?: ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference | ApigeeAddonsConfigAddonsConfigIntegrationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -341,7 +341,7 @@ export function apigeeAddonsConfigAddonsConfigIntegrationConfigToTerraform(struc
 export function apigeeAddonsConfigAddonsConfigIntegrationConfigToHclTerraform(struct?: ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference | ApigeeAddonsConfigAddonsConfigIntegrationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -408,7 +408,7 @@ export interface ApigeeAddonsConfigAddonsConfigMonetizationConfig {
   /**
   * Flag that specifies whether the Monetization add-on is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -416,7 +416,7 @@ export interface ApigeeAddonsConfigAddonsConfigMonetizationConfig {
 export function apigeeAddonsConfigAddonsConfigMonetizationConfigToTerraform(struct?: ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference | ApigeeAddonsConfigAddonsConfigMonetizationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -427,7 +427,7 @@ export function apigeeAddonsConfigAddonsConfigMonetizationConfigToTerraform(stru
 export function apigeeAddonsConfigAddonsConfigMonetizationConfigToHclTerraform(struct?: ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference | ApigeeAddonsConfigAddonsConfigMonetizationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -494,31 +494,31 @@ export interface ApigeeAddonsConfigAddonsConfig {
   /**
   * advanced_api_ops_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#advanced_api_ops_config ApigeeAddonsConfig#advanced_api_ops_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#advanced_api_ops_config ApigeeAddonsConfig#advanced_api_ops_config}
   */
   readonly advancedApiOpsConfig?: ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig;
   /**
   * api_security_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#api_security_config ApigeeAddonsConfig#api_security_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#api_security_config ApigeeAddonsConfig#api_security_config}
   */
   readonly apiSecurityConfig?: ApigeeAddonsConfigAddonsConfigApiSecurityConfig;
   /**
   * connectors_platform_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#connectors_platform_config ApigeeAddonsConfig#connectors_platform_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#connectors_platform_config ApigeeAddonsConfig#connectors_platform_config}
   */
   readonly connectorsPlatformConfig?: ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig;
   /**
   * integration_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#integration_config ApigeeAddonsConfig#integration_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#integration_config ApigeeAddonsConfig#integration_config}
   */
   readonly integrationConfig?: ApigeeAddonsConfigAddonsConfigIntegrationConfig;
   /**
   * monetization_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#monetization_config ApigeeAddonsConfig#monetization_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#monetization_config ApigeeAddonsConfig#monetization_config}
   */
   readonly monetizationConfig?: ApigeeAddonsConfigAddonsConfigMonetizationConfig;
 }
@@ -526,7 +526,7 @@ export interface ApigeeAddonsConfigAddonsConfig {
 export function apigeeAddonsConfigAddonsConfigToTerraform(struct?: ApigeeAddonsConfigAddonsConfigOutputReference | ApigeeAddonsConfigAddonsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     advanced_api_ops_config: apigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigToTerraform(struct!.advancedApiOpsConfig),
@@ -541,7 +541,7 @@ export function apigeeAddonsConfigAddonsConfigToTerraform(struct?: ApigeeAddonsC
 export function apigeeAddonsConfigAddonsConfigToHclTerraform(struct?: ApigeeAddonsConfigAddonsConfigOutputReference | ApigeeAddonsConfigAddonsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     advanced_api_ops_config: {
@@ -718,15 +718,15 @@ export class ApigeeAddonsConfigAddonsConfigOutputReference extends cdktn.Complex
 }
 export interface ApigeeAddonsConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#create ApigeeAddonsConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#create ApigeeAddonsConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#delete ApigeeAddonsConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#delete ApigeeAddonsConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#update ApigeeAddonsConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#update ApigeeAddonsConfig#update}
   */
   readonly update?: string;
 }
@@ -734,7 +734,7 @@ export interface ApigeeAddonsConfigTimeouts {
 export function apigeeAddonsConfigTimeoutsToTerraform(struct?: ApigeeAddonsConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -747,7 +747,7 @@ export function apigeeAddonsConfigTimeoutsToTerraform(struct?: ApigeeAddonsConfi
 export function apigeeAddonsConfigTimeoutsToHclTerraform(struct?: ApigeeAddonsConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -878,7 +878,7 @@ export class ApigeeAddonsConfigTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config google_apigee_addons_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config google_apigee_addons_config}
 */
 export class ApigeeAddonsConfig extends cdktn.TerraformResource {
 
@@ -894,7 +894,7 @@ export class ApigeeAddonsConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeAddonsConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeAddonsConfig to import
-  * @param importFromId The id of the existing ApigeeAddonsConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeAddonsConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeAddonsConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -906,7 +906,7 @@ export class ApigeeAddonsConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/apigee_addons_config google_apigee_addons_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/apigee_addons_config google_apigee_addons_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -917,7 +917,7 @@ export class ApigeeAddonsConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_addons_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeRegionNetworkEndpointGroupConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group#id DataGoogleComputeRegionNetworkEndpointGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group#id DataGoogleComputeRegionNetworkEndpointGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,21 +28,21 @@ export interface DataGoogleComputeRegionNetworkEndpointGroupConfig extends cdktn
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group#name DataGoogleComputeRegionNetworkEndpointGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group#name DataGoogleComputeRegionNetworkEndpointGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group#project DataGoogleComputeRegionNetworkEndpointGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group#project DataGoogleComputeRegionNetworkEndpointGroup#project}
   */
   readonly project?: string;
   /**
   * A reference to the region where the regional NEGs reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group#region DataGoogleComputeRegionNetworkEndpointGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group#region DataGoogleComputeRegionNetworkEndpointGroup#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group#self_link DataGoogleComputeRegionNetworkEndpointGroup#self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group#self_link DataGoogleComputeRegionNetworkEndpointGroup#self_link}
   */
   readonly selfLink?: string;
 }
@@ -52,7 +52,7 @@ export interface DataGoogleComputeRegionNetworkEndpointGroupAppEngine {
 export function dataGoogleComputeRegionNetworkEndpointGroupAppEngineToTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupAppEngine): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -62,7 +62,7 @@ export function dataGoogleComputeRegionNetworkEndpointGroupAppEngineToTerraform(
 export function dataGoogleComputeRegionNetworkEndpointGroupAppEngineToHclTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupAppEngine): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -137,7 +137,7 @@ export interface DataGoogleComputeRegionNetworkEndpointGroupCloudFunction {
 export function dataGoogleComputeRegionNetworkEndpointGroupCloudFunctionToTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupCloudFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -147,7 +147,7 @@ export function dataGoogleComputeRegionNetworkEndpointGroupCloudFunctionToTerraf
 export function dataGoogleComputeRegionNetworkEndpointGroupCloudFunctionToHclTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupCloudFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -217,7 +217,7 @@ export interface DataGoogleComputeRegionNetworkEndpointGroupCloudRun {
 export function dataGoogleComputeRegionNetworkEndpointGroupCloudRunToTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupCloudRun): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -227,7 +227,7 @@ export function dataGoogleComputeRegionNetworkEndpointGroupCloudRunToTerraform(s
 export function dataGoogleComputeRegionNetworkEndpointGroupCloudRunToHclTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupCloudRun): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -302,7 +302,7 @@ export interface DataGoogleComputeRegionNetworkEndpointGroupPscData {
 export function dataGoogleComputeRegionNetworkEndpointGroupPscDataToTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupPscData): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -312,7 +312,7 @@ export function dataGoogleComputeRegionNetworkEndpointGroupPscDataToTerraform(st
 export function dataGoogleComputeRegionNetworkEndpointGroupPscDataToHclTerraform(struct?: DataGoogleComputeRegionNetworkEndpointGroupPscData): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -373,7 +373,7 @@ export class DataGoogleComputeRegionNetworkEndpointGroupPscDataList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}
 */
 export class DataGoogleComputeRegionNetworkEndpointGroup extends cdktn.TerraformDataSource {
 
@@ -389,7 +389,7 @@ export class DataGoogleComputeRegionNetworkEndpointGroup extends cdktn.Terraform
   * Generates CDKTN code for importing a DataGoogleComputeRegionNetworkEndpointGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeRegionNetworkEndpointGroup to import
-  * @param importFromId The id of the existing DataGoogleComputeRegionNetworkEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeRegionNetworkEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeRegionNetworkEndpointGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -401,7 +401,7 @@ export class DataGoogleComputeRegionNetworkEndpointGroup extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -412,7 +412,7 @@ export class DataGoogleComputeRegionNetworkEndpointGroup extends cdktn.Terraform
       terraformResourceType: 'google_compute_region_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

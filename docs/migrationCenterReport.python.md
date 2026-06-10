@@ -4,7 +4,7 @@
 
 ### MigrationCenterReport <a name="MigrationCenterReport" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report google_migration_center_report}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report google_migration_center_report}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer"></a>
 
@@ -51,8 +51,8 @@ migrationCenterReport.MigrationCenterReport(
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.description">description</a></code> | <code>str</code> | Free-text description. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User-friendly display name. Maximum length is 63 characters. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#id MigrationCenterReport#id}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#project MigrationCenterReport#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#id MigrationCenterReport#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#project MigrationCenterReport#project}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeouts">MigrationCenterReportTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer.parameter.type">type</a></code> | <code>str</code> | Report type. Possible values: TOTAL_COST_OF_OWNERSHIP. |
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#location MigrationCenterReport#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#location MigrationCenterReport#location}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#report_config MigrationCenterReport#report_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#report_config MigrationCenterReport#report_config}
 
 ---
 
@@ -150,7 +150,7 @@ conform with RFC-1034, is restricted to lower-cased letters, and has a
 maximum length of 63 characters. The id must match the regular expression:
 [a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#report_id MigrationCenterReport#report_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#report_id MigrationCenterReport#report_id}
 
 ---
 
@@ -167,7 +167,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#deletion_policy MigrationCenterReport#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#deletion_policy MigrationCenterReport#deletion_policy}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Free-text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#description MigrationCenterReport#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#description MigrationCenterReport#description}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-friendly display name. Maximum length is 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#display_name MigrationCenterReport#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#display_name MigrationCenterReport#display_name}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#id MigrationCenterReport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#id MigrationCenterReport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -206,7 +206,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#project MigrationCenterReport#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#project MigrationCenterReport#project}.
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#timeouts MigrationCenterReport#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#timeouts MigrationCenterReport#timeouts}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Report type. Possible values: TOTAL_COST_OF_OWNERSHIP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#type MigrationCenterReport#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#type MigrationCenterReport#type}
 
 ---
 
@@ -630,7 +630,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#create MigrationCenterReport#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#create MigrationCenterReport#create}.
 
 ---
 
@@ -638,7 +638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#delete MigrationCenterReport#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#delete MigrationCenterReport#delete}.
 
 ---
 
@@ -798,7 +798,7 @@ The construct id used in the generated config for the MigrationCenterReport to i
 
 The id of the existing MigrationCenterReport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1313,8 +1313,8 @@ migrationCenterReport.MigrationCenterReportConfig(
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.description">description</a></code> | <code>str</code> | Free-text description. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.displayName">display_name</a></code> | <code>str</code> | User-friendly display name. Maximum length is 63 characters. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#id MigrationCenterReport#id}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#project MigrationCenterReport#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#id MigrationCenterReport#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#project MigrationCenterReport#project}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeouts">MigrationCenterReportTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.property.type">type</a></code> | <code>str</code> | Report type. Possible values: TOTAL_COST_OF_OWNERSHIP. |
 
@@ -1400,7 +1400,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#location MigrationCenterReport#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#location MigrationCenterReport#location}
 
 ---
 
@@ -1414,7 +1414,7 @@ report_config: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#report_config MigrationCenterReport#report_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#report_config MigrationCenterReport#report_config}
 
 ---
 
@@ -1434,7 +1434,7 @@ conform with RFC-1034, is restricted to lower-cased letters, and has a
 maximum length of 63 characters. The id must match the regular expression:
 [a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#report_id MigrationCenterReport#report_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#report_id MigrationCenterReport#report_id}
 
 ---
 
@@ -1455,7 +1455,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#deletion_policy MigrationCenterReport#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#deletion_policy MigrationCenterReport#deletion_policy}
 
 ---
 
@@ -1469,7 +1469,7 @@ description: str
 
 Free-text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#description MigrationCenterReport#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#description MigrationCenterReport#description}
 
 ---
 
@@ -1483,7 +1483,7 @@ display_name: str
 
 User-friendly display name. Maximum length is 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#display_name MigrationCenterReport#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#display_name MigrationCenterReport#display_name}
 
 ---
 
@@ -1495,7 +1495,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#id MigrationCenterReport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#id MigrationCenterReport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1510,7 +1510,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#project MigrationCenterReport#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#project MigrationCenterReport#project}.
 
 ---
 
@@ -1524,7 +1524,7 @@ timeouts: MigrationCenterReportTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#timeouts MigrationCenterReport#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#timeouts MigrationCenterReport#timeouts}
 
 ---
 
@@ -1538,7 +1538,7 @@ type: str
 
 Report type. Possible values: TOTAL_COST_OF_OWNERSHIP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#type MigrationCenterReport#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#type MigrationCenterReport#type}
 
 ---
 
@@ -2131,8 +2131,8 @@ migrationCenterReport.MigrationCenterReportTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#create MigrationCenterReport#create}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#delete MigrationCenterReport#delete}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#create MigrationCenterReport#create}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#delete MigrationCenterReport#delete}. |
 
 ---
 
@@ -2144,7 +2144,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#create MigrationCenterReport#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#create MigrationCenterReport#create}.
 
 ---
 
@@ -2156,7 +2156,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/migration_center_report#delete MigrationCenterReport#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/migration_center_report#delete MigrationCenterReport#delete}.
 
 ---
 

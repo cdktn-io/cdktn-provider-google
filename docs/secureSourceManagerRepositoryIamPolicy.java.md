@@ -4,7 +4,7 @@
 
 ### SecureSourceManagerRepositoryIamPolicy <a name="SecureSourceManagerRepositoryIamPolicy" id="@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer"></a>
 
@@ -38,11 +38,11 @@ SecureSourceManagerRepositoryIamPolicy.Builder.create(Construct scope, java.lang
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.repositoryId">repositoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.repositoryId">repositoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}.
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the SecureSourceManagerReposit
 
 The id of the existing SecureSourceManagerRepositoryIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,11 +965,11 @@ SecureSourceManagerRepositoryIamPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.repositoryId">repositoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.repositoryId">repositoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepositoryIamPolicy.SecureSourceManagerRepositoryIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#policy_data SecureSourceManagerRepositoryIamPolicy#policy_data}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public java.lang.String getRepositoryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#repository_id SecureSourceManagerRepositoryIamPolicy#repository_id}.
 
 ---
 
@@ -1075,7 +1075,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#id SecureSourceManagerRepositoryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#location SecureSourceManagerRepositoryIamPolicy#location}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/secure_source_manager_repository_iam_policy#project SecureSourceManagerRepositoryIamPolicy#project}.
 
 ---
 

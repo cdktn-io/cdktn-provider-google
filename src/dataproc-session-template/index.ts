@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface DataprocSessionTemplateConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#deletion_policy DataprocSessionTemplate#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#deletion_policy DataprocSessionTemplate#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#id DataprocSessionTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#id DataprocSessionTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,54 +38,54 @@ export interface DataprocSessionTemplateConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#labels DataprocSessionTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#labels DataprocSessionTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location in which the session template will be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#location DataprocSessionTemplate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#location DataprocSessionTemplate#location}
   */
   readonly location?: string;
   /**
   * The resource name of the session template in the following format:
   * projects/{project}/locations/{location}/sessionTemplates/{template_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#name DataprocSessionTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#name DataprocSessionTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#project DataprocSessionTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#project DataprocSessionTemplate#project}
   */
   readonly project?: string;
   /**
   * environment_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#environment_config DataprocSessionTemplate#environment_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#environment_config DataprocSessionTemplate#environment_config}
   */
   readonly environmentConfig?: DataprocSessionTemplateEnvironmentConfig;
   /**
   * jupyter_session block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#jupyter_session DataprocSessionTemplate#jupyter_session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#jupyter_session DataprocSessionTemplate#jupyter_session}
   */
   readonly jupyterSession?: DataprocSessionTemplateJupyterSession;
   /**
   * runtime_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#runtime_config DataprocSessionTemplate#runtime_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#runtime_config DataprocSessionTemplate#runtime_config}
   */
   readonly runtimeConfig?: DataprocSessionTemplateRuntimeConfig;
   /**
   * spark_connect_session block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#spark_connect_session DataprocSessionTemplate#spark_connect_session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#spark_connect_session DataprocSessionTemplate#spark_connect_session}
   */
   readonly sparkConnectSession?: DataprocSessionTemplateSparkConnectSession;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#timeouts DataprocSessionTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#timeouts DataprocSessionTemplate#timeouts}
   */
   readonly timeouts?: DataprocSessionTemplateTimeouts;
 }
@@ -93,7 +93,7 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenti
   /**
   * Authentication type for the user workload running in containers. Possible values: ["SERVICE_ACCOUNT", "END_USER_CREDENTIALS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#user_workload_authentication_type DataprocSessionTemplate#user_workload_authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#user_workload_authentication_type DataprocSessionTemplate#user_workload_authentication_type}
   */
   readonly userWorkloadAuthenticationType?: string;
 }
@@ -101,7 +101,7 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenti
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_workload_authentication_type: cdktn.stringToTerraform(struct!.userWorkloadAuthenticationType),
@@ -112,7 +112,7 @@ export function dataprocSessionTemplateEnvironmentConfigExecutionConfigAuthentic
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_workload_authentication_type: {
@@ -183,25 +183,25 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfig {
   * are treated as OR conditions: the workload will be terminated when it has been idle for idleTtl or when ttl has
   * been exceeded, whichever occurs first.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#idle_ttl DataprocSessionTemplate#idle_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#idle_ttl DataprocSessionTemplate#idle_ttl}
   */
   readonly idleTtl?: string;
   /**
   * The Cloud KMS key to use for encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#kms_key DataprocSessionTemplate#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#kms_key DataprocSessionTemplate#kms_key}
   */
   readonly kmsKey?: string;
   /**
   * Tags used for network traffic control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#network_tags DataprocSessionTemplate#network_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#network_tags DataprocSessionTemplate#network_tags}
   */
   readonly networkTags?: string[];
   /**
   * Service account that used to execute workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#service_account DataprocSessionTemplate#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#service_account DataprocSessionTemplate#service_account}
   */
   readonly serviceAccount?: string;
   /**
@@ -211,13 +211,13 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfig {
   * and then create and manage project-level, per-location staging and temporary buckets.
   * This field requires a Cloud Storage bucket name, not a gs://... URI to a Cloud Storage bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#staging_bucket DataprocSessionTemplate#staging_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#staging_bucket DataprocSessionTemplate#staging_bucket}
   */
   readonly stagingBucket?: string;
   /**
   * Subnetwork configuration for workload execution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#subnetwork_uri DataprocSessionTemplate#subnetwork_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#subnetwork_uri DataprocSessionTemplate#subnetwork_uri}
   */
   readonly subnetworkUri?: string;
   /**
@@ -230,13 +230,13 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfig {
   * the conditions are treated as OR conditions: the workload will be terminated when it has been idle for idleTtl or
   * when ttl has been exceeded, whichever occurs first.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#ttl DataprocSessionTemplate#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#ttl DataprocSessionTemplate#ttl}
   */
   readonly ttl?: string;
   /**
   * authentication_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#authentication_config DataprocSessionTemplate#authentication_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#authentication_config DataprocSessionTemplate#authentication_config}
   */
   readonly authenticationConfig?: DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig;
 }
@@ -244,7 +244,7 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfig {
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     idle_ttl: cdktn.stringToTerraform(struct!.idleTtl),
@@ -262,7 +262,7 @@ export function dataprocSessionTemplateEnvironmentConfigExecutionConfigToTerrafo
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     idle_ttl: {
@@ -525,7 +525,7 @@ export interface DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkH
   /**
   * Resource name of an existing Dataproc Cluster to act as a Spark History Server for the workload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#dataproc_cluster DataprocSessionTemplate#dataproc_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#dataproc_cluster DataprocSessionTemplate#dataproc_cluster}
   */
   readonly dataprocCluster?: string;
 }
@@ -533,7 +533,7 @@ export interface DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkH
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dataproc_cluster: cdktn.stringToTerraform(struct!.dataprocCluster),
@@ -544,7 +544,7 @@ export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHi
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dataproc_cluster: {
@@ -611,13 +611,13 @@ export interface DataprocSessionTemplateEnvironmentConfigPeripheralsConfig {
   /**
   * Resource name of an existing Dataproc Metastore service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#metastore_service DataprocSessionTemplate#metastore_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#metastore_service DataprocSessionTemplate#metastore_service}
   */
   readonly metastoreService?: string;
   /**
   * spark_history_server_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#spark_history_server_config DataprocSessionTemplate#spark_history_server_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#spark_history_server_config DataprocSessionTemplate#spark_history_server_config}
   */
   readonly sparkHistoryServerConfig?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig;
 }
@@ -625,7 +625,7 @@ export interface DataprocSessionTemplateEnvironmentConfigPeripheralsConfig {
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metastore_service: cdktn.stringToTerraform(struct!.metastoreService),
@@ -637,7 +637,7 @@ export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigToTerra
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metastore_service: {
@@ -732,13 +732,13 @@ export interface DataprocSessionTemplateEnvironmentConfig {
   /**
   * execution_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#execution_config DataprocSessionTemplate#execution_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#execution_config DataprocSessionTemplate#execution_config}
   */
   readonly executionConfig?: DataprocSessionTemplateEnvironmentConfigExecutionConfig;
   /**
   * peripherals_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#peripherals_config DataprocSessionTemplate#peripherals_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#peripherals_config DataprocSessionTemplate#peripherals_config}
   */
   readonly peripheralsConfig?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfig;
 }
@@ -746,7 +746,7 @@ export interface DataprocSessionTemplateEnvironmentConfig {
 export function dataprocSessionTemplateEnvironmentConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigOutputReference | DataprocSessionTemplateEnvironmentConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     execution_config: dataprocSessionTemplateEnvironmentConfigExecutionConfigToTerraform(struct!.executionConfig),
@@ -758,7 +758,7 @@ export function dataprocSessionTemplateEnvironmentConfigToTerraform(struct?: Dat
 export function dataprocSessionTemplateEnvironmentConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigOutputReference | DataprocSessionTemplateEnvironmentConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     execution_config: {
@@ -853,13 +853,13 @@ export interface DataprocSessionTemplateJupyterSession {
   /**
   * Display name, shown in the Jupyter kernelspec card.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#display_name DataprocSessionTemplate#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#display_name DataprocSessionTemplate#display_name}
   */
   readonly displayName?: string;
   /**
   * Kernel to be used with Jupyter interactive session. Possible values: ["PYTHON", "SCALA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#kernel DataprocSessionTemplate#kernel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#kernel DataprocSessionTemplate#kernel}
   */
   readonly kernel?: string;
 }
@@ -867,7 +867,7 @@ export interface DataprocSessionTemplateJupyterSession {
 export function dataprocSessionTemplateJupyterSessionToTerraform(struct?: DataprocSessionTemplateJupyterSessionOutputReference | DataprocSessionTemplateJupyterSession): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_name: cdktn.stringToTerraform(struct!.displayName),
@@ -879,7 +879,7 @@ export function dataprocSessionTemplateJupyterSessionToTerraform(struct?: Datapr
 export function dataprocSessionTemplateJupyterSessionToHclTerraform(struct?: DataprocSessionTemplateJupyterSessionOutputReference | DataprocSessionTemplateJupyterSession): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_name: {
@@ -974,19 +974,19 @@ export interface DataprocSessionTemplateRuntimeConfig {
   /**
   * Optional custom container image for the job runtime environment. If not specified, a default container image will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#container_image DataprocSessionTemplate#container_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#container_image DataprocSessionTemplate#container_image}
   */
   readonly containerImage?: string;
   /**
   * A mapping of property names to values, which are used to configure workload execution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#properties DataprocSessionTemplate#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#properties DataprocSessionTemplate#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
   * Version of the session runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#version DataprocSessionTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#version DataprocSessionTemplate#version}
   */
   readonly version?: string;
 }
@@ -994,7 +994,7 @@ export interface DataprocSessionTemplateRuntimeConfig {
 export function dataprocSessionTemplateRuntimeConfigToTerraform(struct?: DataprocSessionTemplateRuntimeConfigOutputReference | DataprocSessionTemplateRuntimeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_image: cdktn.stringToTerraform(struct!.containerImage),
@@ -1007,7 +1007,7 @@ export function dataprocSessionTemplateRuntimeConfigToTerraform(struct?: Datapro
 export function dataprocSessionTemplateRuntimeConfigToHclTerraform(struct?: DataprocSessionTemplateRuntimeConfigOutputReference | DataprocSessionTemplateRuntimeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_image: {
@@ -1138,7 +1138,7 @@ export interface DataprocSessionTemplateSparkConnectSession {
 export function dataprocSessionTemplateSparkConnectSessionToTerraform(struct?: DataprocSessionTemplateSparkConnectSessionOutputReference | DataprocSessionTemplateSparkConnectSession): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1148,7 +1148,7 @@ export function dataprocSessionTemplateSparkConnectSessionToTerraform(struct?: D
 export function dataprocSessionTemplateSparkConnectSessionToHclTerraform(struct?: DataprocSessionTemplateSparkConnectSessionOutputReference | DataprocSessionTemplateSparkConnectSession): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1183,15 +1183,15 @@ export class DataprocSessionTemplateSparkConnectSessionOutputReference extends c
 }
 export interface DataprocSessionTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#create DataprocSessionTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#create DataprocSessionTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#delete DataprocSessionTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#delete DataprocSessionTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#update DataprocSessionTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#update DataprocSessionTemplate#update}
   */
   readonly update?: string;
 }
@@ -1199,7 +1199,7 @@ export interface DataprocSessionTemplateTimeouts {
 export function dataprocSessionTemplateTimeoutsToTerraform(struct?: DataprocSessionTemplateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1212,7 +1212,7 @@ export function dataprocSessionTemplateTimeoutsToTerraform(struct?: DataprocSess
 export function dataprocSessionTemplateTimeoutsToHclTerraform(struct?: DataprocSessionTemplateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1343,7 +1343,7 @@ export class DataprocSessionTemplateTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template google_dataproc_session_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template google_dataproc_session_template}
 */
 export class DataprocSessionTemplate extends cdktn.TerraformResource {
 
@@ -1359,7 +1359,7 @@ export class DataprocSessionTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataprocSessionTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataprocSessionTemplate to import
-  * @param importFromId The id of the existing DataprocSessionTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataprocSessionTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataprocSessionTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1371,7 +1371,7 @@ export class DataprocSessionTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataproc_session_template google_dataproc_session_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataproc_session_template google_dataproc_session_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1382,7 +1382,7 @@ export class DataprocSessionTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataproc_session_template',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataplexDatascanConfig extends cdktn.TerraformMetaArguments {
   /**
   * DataScan identifier. Must contain only lowercase letters, numbers and hyphens. Must start with a letter. Must end with a number or a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#data_scan_id DataplexDatascan#data_scan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#data_scan_id DataplexDatascan#data_scan_id}
   */
   readonly dataScanId: string;
   /**
@@ -27,23 +27,23 @@ export interface DataplexDatascanConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#deletion_policy DataplexDatascan#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#deletion_policy DataplexDatascan#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the scan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#display_name DataplexDatascan#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#display_name DataplexDatascan#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#id DataplexDatascan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#id DataplexDatascan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,65 +56,65 @@ export interface DataplexDatascanConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#labels DataplexDatascan#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#labels DataplexDatascan#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the data scan should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}
   */
   readonly project?: string;
   /**
   * data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#data DataplexDatascan#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#data DataplexDatascan#data}
   */
   readonly data: DataplexDatascanData;
   /**
   * data_discovery_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#data_discovery_spec DataplexDatascan#data_discovery_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#data_discovery_spec DataplexDatascan#data_discovery_spec}
   */
   readonly dataDiscoverySpec?: DataplexDatascanDataDiscoverySpec;
   /**
   * data_documentation_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#data_documentation_spec DataplexDatascan#data_documentation_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#data_documentation_spec DataplexDatascan#data_documentation_spec}
   */
   readonly dataDocumentationSpec?: DataplexDatascanDataDocumentationSpec;
   /**
   * data_profile_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#data_profile_spec DataplexDatascan#data_profile_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#data_profile_spec DataplexDatascan#data_profile_spec}
   */
   readonly dataProfileSpec?: DataplexDatascanDataProfileSpec;
   /**
   * data_quality_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#data_quality_spec DataplexDatascan#data_quality_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#data_quality_spec DataplexDatascan#data_quality_spec}
   */
   readonly dataQualitySpec?: DataplexDatascanDataQualitySpec;
   /**
   * execution_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#execution_identity DataplexDatascan#execution_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#execution_identity DataplexDatascan#execution_identity}
   */
   readonly executionIdentity?: DataplexDatascanExecutionIdentity;
   /**
   * execution_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#execution_spec DataplexDatascan#execution_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#execution_spec DataplexDatascan#execution_spec}
   */
   readonly executionSpec: DataplexDatascanExecutionSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#timeouts DataplexDatascan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#timeouts DataplexDatascan#timeouts}
   */
   readonly timeouts?: DataplexDatascanTimeouts;
 }
@@ -124,7 +124,7 @@ export interface DataplexDatascanExecutionStatus {
 export function dataplexDatascanExecutionStatusToTerraform(struct?: DataplexDatascanExecutionStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -134,7 +134,7 @@ export function dataplexDatascanExecutionStatusToTerraform(struct?: DataplexData
 export function dataplexDatascanExecutionStatusToHclTerraform(struct?: DataplexDatascanExecutionStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -202,14 +202,14 @@ export interface DataplexDatascanData {
   /**
   * The Dataplex entity that represents the data source(e.g. BigQuery table) for Datascan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#entity DataplexDatascan#entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#entity DataplexDatascan#entity}
   */
   readonly entity?: string;
   /**
   * The service-qualified full resource name of the cloud resource for a DataScan job to scan against. The field could be:
   * Cloud Storage bucket (//storage.googleapis.com/projects/PROJECT_ID/buckets/BUCKET_ID) for DataDiscoveryScan OR BigQuery table of type "TABLE" (/bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID) for DataProfileScan/DataQualityScan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#resource DataplexDatascan#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#resource DataplexDatascan#resource}
   */
   readonly resource?: string;
 }
@@ -217,7 +217,7 @@ export interface DataplexDatascanData {
 export function dataplexDatascanDataToTerraform(struct?: DataplexDatascanDataOutputReference | DataplexDatascanData): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity: cdktn.stringToTerraform(struct!.entity),
@@ -229,7 +229,7 @@ export function dataplexDatascanDataToTerraform(struct?: DataplexDatascanDataOut
 export function dataplexDatascanDataToHclTerraform(struct?: DataplexDatascanDataOutputReference | DataplexDatascanData): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity: {
@@ -324,25 +324,25 @@ export interface DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig {
   /**
   * The BigQuery connection used to create BigLake tables. Must be in the form 'projects/{projectId}/locations/{locationId}/connections/{connection_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#connection DataplexDatascan#connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#connection DataplexDatascan#connection}
   */
   readonly connection?: string;
   /**
   * The location of the BigQuery dataset to publish BigLake external or non-BigLake external tables to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
   */
   readonly location?: string;
   /**
   * The project of the BigQuery dataset to publish BigLake external or non-BigLake external tables to. If not specified, the project of the Cloud Storage bucket will be used. The format is "projects/{project_id_or_number}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}
   */
   readonly project?: string;
   /**
   * Determines whether to publish discovered tables as BigLake external tables or non-BigLake external tables. Possible values: ["TABLE_TYPE_UNSPECIFIED", "EXTERNAL", "BIGLAKE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#table_type DataplexDatascan#table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#table_type DataplexDatascan#table_type}
   */
   readonly tableType?: string;
 }
@@ -350,7 +350,7 @@ export interface DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig {
 export function dataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToTerraform(struct?: DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference | DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection: cdktn.stringToTerraform(struct!.connection),
@@ -364,7 +364,7 @@ export function dataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToTerra
 export function dataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToHclTerraform(struct?: DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference | DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection: {
@@ -515,31 +515,31 @@ export interface DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions {
   /**
   * The delimiter that is used to separate values. The default is ',' (comma).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#delimiter DataplexDatascan#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#delimiter DataplexDatascan#delimiter}
   */
   readonly delimiter?: string;
   /**
   * The character encoding of the data. The default is UTF-8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
   */
   readonly encoding?: string;
   /**
   * The number of rows to interpret as header rows that should be skipped when reading data rows.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#header_rows DataplexDatascan#header_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#header_rows DataplexDatascan#header_rows}
   */
   readonly headerRows?: number;
   /**
   * The character used to quote column values. Accepts '"' (double quotation mark) or ``` (single quotation mark). If unspecified, defaults to '"' (double quotation mark).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#quote DataplexDatascan#quote}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#quote DataplexDatascan#quote}
   */
   readonly quote?: string;
   /**
   * Whether to disable the inference of data types for CSV data. If true, all columns are registered as strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
   */
   readonly typeInferenceDisabled?: boolean | cdktn.IResolvable;
 }
@@ -547,7 +547,7 @@ export interface DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions {
 export function dataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsToTerraform(struct?: DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference | DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delimiter: cdktn.stringToTerraform(struct!.delimiter),
@@ -562,7 +562,7 @@ export function dataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsToTerraf
 export function dataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsToHclTerraform(struct?: DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference | DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delimiter: {
@@ -741,13 +741,13 @@ export interface DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions {
   /**
   * The character encoding of the data. The default is UTF-8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
   */
   readonly encoding?: string;
   /**
   * Whether to disable the inference of data types for JSON data. If true, all columns are registered as their primitive types (strings, number, or boolean).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
   */
   readonly typeInferenceDisabled?: boolean | cdktn.IResolvable;
 }
@@ -755,7 +755,7 @@ export interface DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions {
 export function dataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsToTerraform(struct?: DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference | DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encoding: cdktn.stringToTerraform(struct!.encoding),
@@ -767,7 +767,7 @@ export function dataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsToTerra
 export function dataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsToHclTerraform(struct?: DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference | DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encoding: {
@@ -862,25 +862,25 @@ export interface DataplexDatascanDataDiscoverySpecStorageConfig {
   /**
   * Defines the data to exclude during discovery. Provide a list of patterns that identify the data to exclude. For Cloud Storage bucket assets, these patterns are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these patterns are interpreted as patterns to match table names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#exclude_patterns DataplexDatascan#exclude_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#exclude_patterns DataplexDatascan#exclude_patterns}
   */
   readonly excludePatterns?: string[];
   /**
   * Defines the data to include during discovery when only a subset of the data should be considered. Provide a list of patterns that identify the data to include. For Cloud Storage bucket assets, these patterns are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these patterns are interpreted as patterns to match table names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#include_patterns DataplexDatascan#include_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#include_patterns DataplexDatascan#include_patterns}
   */
   readonly includePatterns?: string[];
   /**
   * csv_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#csv_options DataplexDatascan#csv_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#csv_options DataplexDatascan#csv_options}
   */
   readonly csvOptions?: DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions;
   /**
   * json_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#json_options DataplexDatascan#json_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#json_options DataplexDatascan#json_options}
   */
   readonly jsonOptions?: DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions;
 }
@@ -888,7 +888,7 @@ export interface DataplexDatascanDataDiscoverySpecStorageConfig {
 export function dataplexDatascanDataDiscoverySpecStorageConfigToTerraform(struct?: DataplexDatascanDataDiscoverySpecStorageConfigOutputReference | DataplexDatascanDataDiscoverySpecStorageConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exclude_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludePatterns),
@@ -902,7 +902,7 @@ export function dataplexDatascanDataDiscoverySpecStorageConfigToTerraform(struct
 export function dataplexDatascanDataDiscoverySpecStorageConfigToHclTerraform(struct?: DataplexDatascanDataDiscoverySpecStorageConfigOutputReference | DataplexDatascanDataDiscoverySpecStorageConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exclude_patterns: {
@@ -1053,13 +1053,13 @@ export interface DataplexDatascanDataDiscoverySpec {
   /**
   * bigquery_publishing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#bigquery_publishing_config DataplexDatascan#bigquery_publishing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#bigquery_publishing_config DataplexDatascan#bigquery_publishing_config}
   */
   readonly bigqueryPublishingConfig?: DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig;
   /**
   * storage_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#storage_config DataplexDatascan#storage_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#storage_config DataplexDatascan#storage_config}
   */
   readonly storageConfig?: DataplexDatascanDataDiscoverySpecStorageConfig;
 }
@@ -1067,7 +1067,7 @@ export interface DataplexDatascanDataDiscoverySpec {
 export function dataplexDatascanDataDiscoverySpecToTerraform(struct?: DataplexDatascanDataDiscoverySpecOutputReference | DataplexDatascanDataDiscoverySpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bigquery_publishing_config: dataplexDatascanDataDiscoverySpecBigqueryPublishingConfigToTerraform(struct!.bigqueryPublishingConfig),
@@ -1079,7 +1079,7 @@ export function dataplexDatascanDataDiscoverySpecToTerraform(struct?: DataplexDa
 export function dataplexDatascanDataDiscoverySpecToHclTerraform(struct?: DataplexDatascanDataDiscoverySpecOutputReference | DataplexDatascanDataDiscoverySpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bigquery_publishing_config: {
@@ -1176,7 +1176,7 @@ export interface DataplexDatascanDataDocumentationSpec {
 export function dataplexDatascanDataDocumentationSpecToTerraform(struct?: DataplexDatascanDataDocumentationSpecOutputReference | DataplexDatascanDataDocumentationSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1186,7 +1186,7 @@ export function dataplexDatascanDataDocumentationSpecToTerraform(struct?: Datapl
 export function dataplexDatascanDataDocumentationSpecToHclTerraform(struct?: DataplexDatascanDataDocumentationSpecOutputReference | DataplexDatascanDataDocumentationSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1225,7 +1225,7 @@ export interface DataplexDatascanDataProfileSpecExcludeFields {
   * Only top-level field names for nested fields are supported.
   * For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
   */
   readonly fieldNames?: string[];
 }
@@ -1233,7 +1233,7 @@ export interface DataplexDatascanDataProfileSpecExcludeFields {
 export function dataplexDatascanDataProfileSpecExcludeFieldsToTerraform(struct?: DataplexDatascanDataProfileSpecExcludeFieldsOutputReference | DataplexDatascanDataProfileSpecExcludeFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fieldNames),
@@ -1244,7 +1244,7 @@ export function dataplexDatascanDataProfileSpecExcludeFieldsToTerraform(struct?:
 export function dataplexDatascanDataProfileSpecExcludeFieldsToHclTerraform(struct?: DataplexDatascanDataProfileSpecExcludeFieldsOutputReference | DataplexDatascanDataProfileSpecExcludeFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field_names: {
@@ -1313,7 +1313,7 @@ export interface DataplexDatascanDataProfileSpecIncludeFields {
   * Only top-level field names for nested fields are supported.
   * For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
   */
   readonly fieldNames?: string[];
 }
@@ -1321,7 +1321,7 @@ export interface DataplexDatascanDataProfileSpecIncludeFields {
 export function dataplexDatascanDataProfileSpecIncludeFieldsToTerraform(struct?: DataplexDatascanDataProfileSpecIncludeFieldsOutputReference | DataplexDatascanDataProfileSpecIncludeFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fieldNames),
@@ -1332,7 +1332,7 @@ export function dataplexDatascanDataProfileSpecIncludeFieldsToTerraform(struct?:
 export function dataplexDatascanDataProfileSpecIncludeFieldsToHclTerraform(struct?: DataplexDatascanDataProfileSpecIncludeFieldsOutputReference | DataplexDatascanDataProfileSpecIncludeFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field_names: {
@@ -1400,7 +1400,7 @@ export interface DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport {
   * The BigQuery table to export DataProfileScan results to.
   * Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
   */
   readonly resultsTable?: string;
 }
@@ -1408,7 +1408,7 @@ export interface DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport {
 export function dataplexDatascanDataProfileSpecPostScanActionsBigqueryExportToTerraform(struct?: DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference | DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     results_table: cdktn.stringToTerraform(struct!.resultsTable),
@@ -1419,7 +1419,7 @@ export function dataplexDatascanDataProfileSpecPostScanActionsBigqueryExportToTe
 export function dataplexDatascanDataProfileSpecPostScanActionsBigqueryExportToHclTerraform(struct?: DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference | DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     results_table: {
@@ -1486,7 +1486,7 @@ export interface DataplexDatascanDataProfileSpecPostScanActions {
   /**
   * bigquery_export block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
   */
   readonly bigqueryExport?: DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport;
 }
@@ -1494,7 +1494,7 @@ export interface DataplexDatascanDataProfileSpecPostScanActions {
 export function dataplexDatascanDataProfileSpecPostScanActionsToTerraform(struct?: DataplexDatascanDataProfileSpecPostScanActionsOutputReference | DataplexDatascanDataProfileSpecPostScanActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bigquery_export: dataplexDatascanDataProfileSpecPostScanActionsBigqueryExportToTerraform(struct!.bigqueryExport),
@@ -1505,7 +1505,7 @@ export function dataplexDatascanDataProfileSpecPostScanActionsToTerraform(struct
 export function dataplexDatascanDataProfileSpecPostScanActionsToHclTerraform(struct?: DataplexDatascanDataProfileSpecPostScanActionsOutputReference | DataplexDatascanDataProfileSpecPostScanActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bigquery_export: {
@@ -1572,13 +1572,13 @@ export interface DataplexDatascanDataProfileSpec {
   /**
   * If set, the latest DataScan job result will be published to Dataplex Catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
   */
   readonly catalogPublishingEnabled?: boolean | cdktn.IResolvable;
   /**
   * A filter applied to all rows in a single DataScan job. The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
   */
   readonly rowFilter?: string;
   /**
@@ -1586,25 +1586,25 @@ export interface DataplexDatascanDataProfileSpec {
   * Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
   * Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
   */
   readonly samplingPercent?: number;
   /**
   * exclude_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#exclude_fields DataplexDatascan#exclude_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#exclude_fields DataplexDatascan#exclude_fields}
   */
   readonly excludeFields?: DataplexDatascanDataProfileSpecExcludeFields;
   /**
   * include_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#include_fields DataplexDatascan#include_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#include_fields DataplexDatascan#include_fields}
   */
   readonly includeFields?: DataplexDatascanDataProfileSpecIncludeFields;
   /**
   * post_scan_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
   */
   readonly postScanActions?: DataplexDatascanDataProfileSpecPostScanActions;
 }
@@ -1612,7 +1612,7 @@ export interface DataplexDatascanDataProfileSpec {
 export function dataplexDatascanDataProfileSpecToTerraform(struct?: DataplexDatascanDataProfileSpecOutputReference | DataplexDatascanDataProfileSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_publishing_enabled: cdktn.booleanToTerraform(struct!.catalogPublishingEnabled),
@@ -1628,7 +1628,7 @@ export function dataplexDatascanDataProfileSpecToTerraform(struct?: DataplexData
 export function dataplexDatascanDataProfileSpecToHclTerraform(struct?: DataplexDatascanDataProfileSpecOutputReference | DataplexDatascanDataProfileSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_publishing_enabled: {
@@ -1836,7 +1836,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport {
   * The BigQuery table to export DataQualityScan results to.
   * Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
   */
   readonly resultsTable?: string;
 }
@@ -1844,7 +1844,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport {
 export function dataplexDatascanDataQualitySpecPostScanActionsBigqueryExportToTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference | DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     results_table: cdktn.stringToTerraform(struct!.resultsTable),
@@ -1855,7 +1855,7 @@ export function dataplexDatascanDataQualitySpecPostScanActionsBigqueryExportToTe
 export function dataplexDatascanDataQualitySpecPostScanActionsBigqueryExportToHclTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference | DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     results_table: {
@@ -1924,7 +1924,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerToTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1934,7 +1934,7 @@ export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReport
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerToHclTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1973,7 +1973,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerToTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1983,7 +1983,7 @@ export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReport
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerToHclTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2020,7 +2020,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
   /**
   * The email recipients who will receive the DataQualityScan results report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#emails DataplexDatascan#emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#emails DataplexDatascan#emails}
   */
   readonly emails?: string[];
 }
@@ -2028,7 +2028,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsToTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     emails: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.emails),
@@ -2039,7 +2039,7 @@ export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReport
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsToHclTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     emails: {
@@ -2106,7 +2106,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
   /**
   * The score range is in [0,100].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#score_threshold DataplexDatascan#score_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#score_threshold DataplexDatascan#score_threshold}
   */
   readonly scoreThreshold?: number;
 }
@@ -2114,7 +2114,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerToTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     score_threshold: cdktn.numberToTerraform(struct!.scoreThreshold),
@@ -2125,7 +2125,7 @@ export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReport
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerToHclTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     score_threshold: {
@@ -2192,25 +2192,25 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
   /**
   * job_end_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#job_end_trigger DataplexDatascan#job_end_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#job_end_trigger DataplexDatascan#job_end_trigger}
   */
   readonly jobEndTrigger?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger;
   /**
   * job_failure_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#job_failure_trigger DataplexDatascan#job_failure_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#job_failure_trigger DataplexDatascan#job_failure_trigger}
   */
   readonly jobFailureTrigger?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger;
   /**
   * recipients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#recipients DataplexDatascan#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#recipients DataplexDatascan#recipients}
   */
   readonly recipients: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients;
   /**
   * score_threshold_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#score_threshold_trigger DataplexDatascan#score_threshold_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#score_threshold_trigger DataplexDatascan#score_threshold_trigger}
   */
   readonly scoreThresholdTrigger?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger;
 }
@@ -2218,7 +2218,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActionsNotificationRepor
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportToTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     job_end_trigger: dataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerToTerraform(struct!.jobEndTrigger),
@@ -2232,7 +2232,7 @@ export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReport
 export function dataplexDatascanDataQualitySpecPostScanActionsNotificationReportToHclTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference | DataplexDatascanDataQualitySpecPostScanActionsNotificationReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     job_end_trigger: {
@@ -2380,13 +2380,13 @@ export interface DataplexDatascanDataQualitySpecPostScanActions {
   /**
   * bigquery_export block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
   */
   readonly bigqueryExport?: DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport;
   /**
   * notification_report block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#notification_report DataplexDatascan#notification_report}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#notification_report DataplexDatascan#notification_report}
   */
   readonly notificationReport?: DataplexDatascanDataQualitySpecPostScanActionsNotificationReport;
 }
@@ -2394,7 +2394,7 @@ export interface DataplexDatascanDataQualitySpecPostScanActions {
 export function dataplexDatascanDataQualitySpecPostScanActionsToTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsOutputReference | DataplexDatascanDataQualitySpecPostScanActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bigquery_export: dataplexDatascanDataQualitySpecPostScanActionsBigqueryExportToTerraform(struct!.bigqueryExport),
@@ -2406,7 +2406,7 @@ export function dataplexDatascanDataQualitySpecPostScanActionsToTerraform(struct
 export function dataplexDatascanDataQualitySpecPostScanActionsToHclTerraform(struct?: DataplexDatascanDataQualitySpecPostScanActionsOutputReference | DataplexDatascanDataQualitySpecPostScanActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bigquery_export: {
@@ -2503,7 +2503,7 @@ export interface DataplexDatascanDataQualitySpecRulesNonNullExpectation {
 export function dataplexDatascanDataQualitySpecRulesNonNullExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference | DataplexDatascanDataQualitySpecRulesNonNullExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2513,7 +2513,7 @@ export function dataplexDatascanDataQualitySpecRulesNonNullExpectationToTerrafor
 export function dataplexDatascanDataQualitySpecRulesNonNullExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference | DataplexDatascanDataQualitySpecRulesNonNullExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2550,27 +2550,27 @@ export interface DataplexDatascanDataQualitySpecRulesRangeExpectation {
   /**
   * The maximum column value allowed for a row to pass this validation. At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
   */
   readonly maxValue?: string;
   /**
   * The minimum column value allowed for a row to pass this validation. At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
   */
   readonly minValue?: string;
   /**
   * Whether each value needs to be strictly lesser than ('<') the maximum, or if equality is allowed.
   * Only relevant if a maxValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
   */
   readonly strictMaxEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether each value needs to be strictly greater than ('>') the minimum, or if equality is allowed.
   * Only relevant if a minValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
   */
   readonly strictMinEnabled?: boolean | cdktn.IResolvable;
 }
@@ -2578,7 +2578,7 @@ export interface DataplexDatascanDataQualitySpecRulesRangeExpectation {
 export function dataplexDatascanDataQualitySpecRulesRangeExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference | DataplexDatascanDataQualitySpecRulesRangeExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_value: cdktn.stringToTerraform(struct!.maxValue),
@@ -2592,7 +2592,7 @@ export function dataplexDatascanDataQualitySpecRulesRangeExpectationToTerraform(
 export function dataplexDatascanDataQualitySpecRulesRangeExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference | DataplexDatascanDataQualitySpecRulesRangeExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_value: {
@@ -2743,7 +2743,7 @@ export interface DataplexDatascanDataQualitySpecRulesRegexExpectation {
   /**
   * A regular expression the column value is expected to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#regex DataplexDatascan#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#regex DataplexDatascan#regex}
   */
   readonly regex: string;
 }
@@ -2751,7 +2751,7 @@ export interface DataplexDatascanDataQualitySpecRulesRegexExpectation {
 export function dataplexDatascanDataQualitySpecRulesRegexExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference | DataplexDatascanDataQualitySpecRulesRegexExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     regex: cdktn.stringToTerraform(struct!.regex),
@@ -2762,7 +2762,7 @@ export function dataplexDatascanDataQualitySpecRulesRegexExpectationToTerraform(
 export function dataplexDatascanDataQualitySpecRulesRegexExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference | DataplexDatascanDataQualitySpecRulesRegexExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     regex: {
@@ -2826,7 +2826,7 @@ export interface DataplexDatascanDataQualitySpecRulesRowConditionExpectation {
   /**
   * The SQL expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
   */
   readonly sqlExpression: string;
 }
@@ -2834,7 +2834,7 @@ export interface DataplexDatascanDataQualitySpecRulesRowConditionExpectation {
 export function dataplexDatascanDataQualitySpecRulesRowConditionExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference | DataplexDatascanDataQualitySpecRulesRowConditionExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     sql_expression: cdktn.stringToTerraform(struct!.sqlExpression),
@@ -2845,7 +2845,7 @@ export function dataplexDatascanDataQualitySpecRulesRowConditionExpectationToTer
 export function dataplexDatascanDataQualitySpecRulesRowConditionExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference | DataplexDatascanDataQualitySpecRulesRowConditionExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     sql_expression: {
@@ -2909,7 +2909,7 @@ export interface DataplexDatascanDataQualitySpecRulesSetExpectation {
   /**
   * Expected values for the column value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
   */
   readonly values: string[];
 }
@@ -2917,7 +2917,7 @@ export interface DataplexDatascanDataQualitySpecRulesSetExpectation {
 export function dataplexDatascanDataQualitySpecRulesSetExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesSetExpectationOutputReference | DataplexDatascanDataQualitySpecRulesSetExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -2928,7 +2928,7 @@ export function dataplexDatascanDataQualitySpecRulesSetExpectationToTerraform(st
 export function dataplexDatascanDataQualitySpecRulesSetExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesSetExpectationOutputReference | DataplexDatascanDataQualitySpecRulesSetExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -2992,7 +2992,7 @@ export interface DataplexDatascanDataQualitySpecRulesSqlAssertion {
   /**
   * The SQL statement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#sql_statement DataplexDatascan#sql_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#sql_statement DataplexDatascan#sql_statement}
   */
   readonly sqlStatement: string;
 }
@@ -3000,7 +3000,7 @@ export interface DataplexDatascanDataQualitySpecRulesSqlAssertion {
 export function dataplexDatascanDataQualitySpecRulesSqlAssertionToTerraform(struct?: DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference | DataplexDatascanDataQualitySpecRulesSqlAssertion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     sql_statement: cdktn.stringToTerraform(struct!.sqlStatement),
@@ -3011,7 +3011,7 @@ export function dataplexDatascanDataQualitySpecRulesSqlAssertionToTerraform(stru
 export function dataplexDatascanDataQualitySpecRulesSqlAssertionToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference | DataplexDatascanDataQualitySpecRulesSqlAssertion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     sql_statement: {
@@ -3076,34 +3076,34 @@ export interface DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation {
   * The maximum column statistic value allowed for a row to pass this validation.
   * At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
   */
   readonly maxValue?: string;
   /**
   * The minimum column statistic value allowed for a row to pass this validation.
   * At least one of minValue and maxValue need to be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
   */
   readonly minValue?: string;
   /**
   * column statistics. Possible values: ["STATISTIC_UNDEFINED", "MEAN", "MIN", "MAX"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#statistic DataplexDatascan#statistic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#statistic DataplexDatascan#statistic}
   */
   readonly statistic: string;
   /**
   * Whether column statistic needs to be strictly lesser than ('<') the maximum, or if equality is allowed.
   * Only relevant if a maxValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
   */
   readonly strictMaxEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether column statistic needs to be strictly greater than ('>') the minimum, or if equality is allowed.
   * Only relevant if a minValue has been defined. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
   */
   readonly strictMinEnabled?: boolean | cdktn.IResolvable;
 }
@@ -3111,7 +3111,7 @@ export interface DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation {
 export function dataplexDatascanDataQualitySpecRulesStatisticRangeExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference | DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_value: cdktn.stringToTerraform(struct!.maxValue),
@@ -3126,7 +3126,7 @@ export function dataplexDatascanDataQualitySpecRulesStatisticRangeExpectationToT
 export function dataplexDatascanDataQualitySpecRulesStatisticRangeExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference | DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_value: {
@@ -3302,7 +3302,7 @@ export interface DataplexDatascanDataQualitySpecRulesTableConditionExpectation {
   /**
   * The SQL expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
   */
   readonly sqlExpression: string;
 }
@@ -3310,7 +3310,7 @@ export interface DataplexDatascanDataQualitySpecRulesTableConditionExpectation {
 export function dataplexDatascanDataQualitySpecRulesTableConditionExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference | DataplexDatascanDataQualitySpecRulesTableConditionExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     sql_expression: cdktn.stringToTerraform(struct!.sqlExpression),
@@ -3321,7 +3321,7 @@ export function dataplexDatascanDataQualitySpecRulesTableConditionExpectationToT
 export function dataplexDatascanDataQualitySpecRulesTableConditionExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference | DataplexDatascanDataQualitySpecRulesTableConditionExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     sql_expression: {
@@ -3383,13 +3383,13 @@ export class DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutput
 }
 export interface DataplexDatascanDataQualitySpecRulesTemplateReferenceValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
   */
   readonly name: string;
   /**
   * The string representation of the parameter value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#value DataplexDatascan#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#value DataplexDatascan#value}
   */
   readonly value: string;
 }
@@ -3397,7 +3397,7 @@ export interface DataplexDatascanDataQualitySpecRulesTemplateReferenceValues {
 export function dataplexDatascanDataQualitySpecRulesTemplateReferenceValuesToTerraform(struct?: DataplexDatascanDataQualitySpecRulesTemplateReferenceValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3409,7 +3409,7 @@ export function dataplexDatascanDataQualitySpecRulesTemplateReferenceValuesToTer
 export function dataplexDatascanDataQualitySpecRulesTemplateReferenceValuesToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesTemplateReferenceValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3530,13 +3530,13 @@ export interface DataplexDatascanDataQualitySpecRulesTemplateReference {
   /**
   * The resource name of the template entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
   */
   readonly name: string;
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
   */
   readonly values?: DataplexDatascanDataQualitySpecRulesTemplateReferenceValues[] | cdktn.IResolvable;
 }
@@ -3544,7 +3544,7 @@ export interface DataplexDatascanDataQualitySpecRulesTemplateReference {
 export function dataplexDatascanDataQualitySpecRulesTemplateReferenceToTerraform(struct?: DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference | DataplexDatascanDataQualitySpecRulesTemplateReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3556,7 +3556,7 @@ export function dataplexDatascanDataQualitySpecRulesTemplateReferenceToTerraform
 export function dataplexDatascanDataQualitySpecRulesTemplateReferenceToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference | DataplexDatascanDataQualitySpecRulesTemplateReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3650,7 +3650,7 @@ export interface DataplexDatascanDataQualitySpecRulesUniquenessExpectation {
 export function dataplexDatascanDataQualitySpecRulesUniquenessExpectationToTerraform(struct?: DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference | DataplexDatascanDataQualitySpecRulesUniquenessExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3660,7 +3660,7 @@ export function dataplexDatascanDataQualitySpecRulesUniquenessExpectationToTerra
 export function dataplexDatascanDataQualitySpecRulesUniquenessExpectationToHclTerraform(struct?: DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference | DataplexDatascanDataQualitySpecRulesUniquenessExpectation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3697,32 +3697,32 @@ export interface DataplexDatascanDataQualitySpecRules {
   /**
   * Map of attribute name and value linked to the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#attributes DataplexDatascan#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#attributes DataplexDatascan#attributes}
   */
   readonly attributes?: { [key: string]: string };
   /**
   * The unnested column which this rule is evaluated against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#column DataplexDatascan#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#column DataplexDatascan#column}
   */
   readonly column?: string;
   /**
   * Description of the rule.
   * The maximum length is 1,024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
   */
   readonly description?: string;
   /**
   * The dimension name a rule belongs to. Custom dimension name is supported with all uppercase letters and maximum length of 30 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#dimension DataplexDatascan#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#dimension DataplexDatascan#dimension}
   */
   readonly dimension: string;
   /**
   * Rows with null values will automatically fail a rule, unless ignoreNull is true. In that case, such null rows are trivially considered passing. Only applicable to ColumnMap rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#ignore_null DataplexDatascan#ignore_null}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#ignore_null DataplexDatascan#ignore_null}
   */
   readonly ignoreNull?: boolean | cdktn.IResolvable;
   /**
@@ -3732,79 +3732,79 @@ export interface DataplexDatascanDataQualitySpecRules {
   * Must start with a letter.
   * Must end with a number or a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
   */
   readonly name?: string;
   /**
   * Whether the Rule is active or suspended. Default = false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#suspended DataplexDatascan#suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#suspended DataplexDatascan#suspended}
   */
   readonly suspended?: boolean | cdktn.IResolvable;
   /**
   * The minimum ratio of passing_rows / total_rows required to pass this rule, with a range of [0.0, 1.0]. 0 indicates default value (i.e. 1.0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#threshold DataplexDatascan#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#threshold DataplexDatascan#threshold}
   */
   readonly threshold?: number;
   /**
   * non_null_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#non_null_expectation DataplexDatascan#non_null_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#non_null_expectation DataplexDatascan#non_null_expectation}
   */
   readonly nonNullExpectation?: DataplexDatascanDataQualitySpecRulesNonNullExpectation;
   /**
   * range_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#range_expectation DataplexDatascan#range_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#range_expectation DataplexDatascan#range_expectation}
   */
   readonly rangeExpectation?: DataplexDatascanDataQualitySpecRulesRangeExpectation;
   /**
   * regex_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#regex_expectation DataplexDatascan#regex_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#regex_expectation DataplexDatascan#regex_expectation}
   */
   readonly regexExpectation?: DataplexDatascanDataQualitySpecRulesRegexExpectation;
   /**
   * row_condition_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#row_condition_expectation DataplexDatascan#row_condition_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#row_condition_expectation DataplexDatascan#row_condition_expectation}
   */
   readonly rowConditionExpectation?: DataplexDatascanDataQualitySpecRulesRowConditionExpectation;
   /**
   * set_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#set_expectation DataplexDatascan#set_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#set_expectation DataplexDatascan#set_expectation}
   */
   readonly setExpectation?: DataplexDatascanDataQualitySpecRulesSetExpectation;
   /**
   * sql_assertion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#sql_assertion DataplexDatascan#sql_assertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#sql_assertion DataplexDatascan#sql_assertion}
   */
   readonly sqlAssertion?: DataplexDatascanDataQualitySpecRulesSqlAssertion;
   /**
   * statistic_range_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#statistic_range_expectation DataplexDatascan#statistic_range_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#statistic_range_expectation DataplexDatascan#statistic_range_expectation}
   */
   readonly statisticRangeExpectation?: DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation;
   /**
   * table_condition_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#table_condition_expectation DataplexDatascan#table_condition_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#table_condition_expectation DataplexDatascan#table_condition_expectation}
   */
   readonly tableConditionExpectation?: DataplexDatascanDataQualitySpecRulesTableConditionExpectation;
   /**
   * template_reference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#template_reference DataplexDatascan#template_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#template_reference DataplexDatascan#template_reference}
   */
   readonly templateReference?: DataplexDatascanDataQualitySpecRulesTemplateReference;
   /**
   * uniqueness_expectation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#uniqueness_expectation DataplexDatascan#uniqueness_expectation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#uniqueness_expectation DataplexDatascan#uniqueness_expectation}
   */
   readonly uniquenessExpectation?: DataplexDatascanDataQualitySpecRulesUniquenessExpectation;
 }
@@ -3812,7 +3812,7 @@ export interface DataplexDatascanDataQualitySpecRules {
 export function dataplexDatascanDataQualitySpecRulesToTerraform(struct?: DataplexDatascanDataQualitySpecRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attributes: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.attributes),
@@ -3840,7 +3840,7 @@ export function dataplexDatascanDataQualitySpecRulesToTerraform(struct?: Dataple
 export function dataplexDatascanDataQualitySpecRulesToHclTerraform(struct?: DataplexDatascanDataQualitySpecRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attributes: {
@@ -4412,25 +4412,25 @@ export interface DataplexDatascanDataQualitySpec {
   /**
   * If set, the latest DataScan job result will be published to Dataplex Catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
   */
   readonly catalogPublishingEnabled?: boolean | cdktn.IResolvable;
   /**
   * If set to true, the scan will retrieve rules defined in Data Catalog for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#enable_catalog_based_rules DataplexDatascan#enable_catalog_based_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#enable_catalog_based_rules DataplexDatascan#enable_catalog_based_rules}
   */
   readonly enableCatalogBasedRules?: boolean | cdktn.IResolvable;
   /**
   * A filter to selectively run a subset of rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#filter DataplexDatascan#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#filter DataplexDatascan#filter}
   */
   readonly filter?: string;
   /**
   * A filter applied to all rows in a single DataScan job. The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
   */
   readonly rowFilter?: string;
   /**
@@ -4438,19 +4438,19 @@ export interface DataplexDatascanDataQualitySpec {
   * Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
   * Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
   */
   readonly samplingPercent?: number;
   /**
   * post_scan_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
   */
   readonly postScanActions?: DataplexDatascanDataQualitySpecPostScanActions;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#rules DataplexDatascan#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#rules DataplexDatascan#rules}
   */
   readonly rules?: DataplexDatascanDataQualitySpecRules[] | cdktn.IResolvable;
 }
@@ -4458,7 +4458,7 @@ export interface DataplexDatascanDataQualitySpec {
 export function dataplexDatascanDataQualitySpecToTerraform(struct?: DataplexDatascanDataQualitySpecOutputReference | DataplexDatascanDataQualitySpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_publishing_enabled: cdktn.booleanToTerraform(struct!.catalogPublishingEnabled),
@@ -4475,7 +4475,7 @@ export function dataplexDatascanDataQualitySpecToTerraform(struct?: DataplexData
 export function dataplexDatascanDataQualitySpecToHclTerraform(struct?: DataplexDatascanDataQualitySpecOutputReference | DataplexDatascanDataQualitySpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_publishing_enabled: {
@@ -4712,7 +4712,7 @@ export interface DataplexDatascanExecutionIdentityDataplexServiceAgent {
 export function dataplexDatascanExecutionIdentityDataplexServiceAgentToTerraform(struct?: DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference | DataplexDatascanExecutionIdentityDataplexServiceAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4722,7 +4722,7 @@ export function dataplexDatascanExecutionIdentityDataplexServiceAgentToTerraform
 export function dataplexDatascanExecutionIdentityDataplexServiceAgentToHclTerraform(struct?: DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference | DataplexDatascanExecutionIdentityDataplexServiceAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4759,7 +4759,7 @@ export interface DataplexDatascanExecutionIdentityServiceAccount {
   /**
   * Service account email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#email DataplexDatascan#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#email DataplexDatascan#email}
   */
   readonly email: string;
 }
@@ -4767,7 +4767,7 @@ export interface DataplexDatascanExecutionIdentityServiceAccount {
 export function dataplexDatascanExecutionIdentityServiceAccountToTerraform(struct?: DataplexDatascanExecutionIdentityServiceAccountOutputReference | DataplexDatascanExecutionIdentityServiceAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     email: cdktn.stringToTerraform(struct!.email),
@@ -4778,7 +4778,7 @@ export function dataplexDatascanExecutionIdentityServiceAccountToTerraform(struc
 export function dataplexDatascanExecutionIdentityServiceAccountToHclTerraform(struct?: DataplexDatascanExecutionIdentityServiceAccountOutputReference | DataplexDatascanExecutionIdentityServiceAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     email: {
@@ -4844,7 +4844,7 @@ export interface DataplexDatascanExecutionIdentityUserCredential {
 export function dataplexDatascanExecutionIdentityUserCredentialToTerraform(struct?: DataplexDatascanExecutionIdentityUserCredentialOutputReference | DataplexDatascanExecutionIdentityUserCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4854,7 +4854,7 @@ export function dataplexDatascanExecutionIdentityUserCredentialToTerraform(struc
 export function dataplexDatascanExecutionIdentityUserCredentialToHclTerraform(struct?: DataplexDatascanExecutionIdentityUserCredentialOutputReference | DataplexDatascanExecutionIdentityUserCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4891,19 +4891,19 @@ export interface DataplexDatascanExecutionIdentity {
   /**
   * dataplex_service_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#dataplex_service_agent DataplexDatascan#dataplex_service_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#dataplex_service_agent DataplexDatascan#dataplex_service_agent}
   */
   readonly dataplexServiceAgent?: DataplexDatascanExecutionIdentityDataplexServiceAgent;
   /**
   * service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#service_account DataplexDatascan#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#service_account DataplexDatascan#service_account}
   */
   readonly serviceAccount?: DataplexDatascanExecutionIdentityServiceAccount;
   /**
   * user_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#user_credential DataplexDatascan#user_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#user_credential DataplexDatascan#user_credential}
   */
   readonly userCredential?: DataplexDatascanExecutionIdentityUserCredential;
 }
@@ -4911,7 +4911,7 @@ export interface DataplexDatascanExecutionIdentity {
 export function dataplexDatascanExecutionIdentityToTerraform(struct?: DataplexDatascanExecutionIdentityOutputReference | DataplexDatascanExecutionIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dataplex_service_agent: dataplexDatascanExecutionIdentityDataplexServiceAgentToTerraform(struct!.dataplexServiceAgent),
@@ -4924,7 +4924,7 @@ export function dataplexDatascanExecutionIdentityToTerraform(struct?: DataplexDa
 export function dataplexDatascanExecutionIdentityToHclTerraform(struct?: DataplexDatascanExecutionIdentityOutputReference | DataplexDatascanExecutionIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dataplex_service_agent: {
@@ -5049,7 +5049,7 @@ export interface DataplexDatascanExecutionSpecTriggerOnDemand {
 export function dataplexDatascanExecutionSpecTriggerOnDemandToTerraform(struct?: DataplexDatascanExecutionSpecTriggerOnDemandOutputReference | DataplexDatascanExecutionSpecTriggerOnDemand): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5059,7 +5059,7 @@ export function dataplexDatascanExecutionSpecTriggerOnDemandToTerraform(struct?:
 export function dataplexDatascanExecutionSpecTriggerOnDemandToHclTerraform(struct?: DataplexDatascanExecutionSpecTriggerOnDemandOutputReference | DataplexDatascanExecutionSpecTriggerOnDemand): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5096,7 +5096,7 @@ export interface DataplexDatascanExecutionSpecTriggerOneTime {
   /**
   * Time to live for the DataScan and its results after the one-time run completes. Accepts a string with a unit suffix 's' (e.g., '7200s'). Default is 24 hours. Ranges between 0 and 31536000 seconds (1 year).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#ttl_after_scan_completion DataplexDatascan#ttl_after_scan_completion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#ttl_after_scan_completion DataplexDatascan#ttl_after_scan_completion}
   */
   readonly ttlAfterScanCompletion?: string;
 }
@@ -5104,7 +5104,7 @@ export interface DataplexDatascanExecutionSpecTriggerOneTime {
 export function dataplexDatascanExecutionSpecTriggerOneTimeToTerraform(struct?: DataplexDatascanExecutionSpecTriggerOneTimeOutputReference | DataplexDatascanExecutionSpecTriggerOneTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ttl_after_scan_completion: cdktn.stringToTerraform(struct!.ttlAfterScanCompletion),
@@ -5115,7 +5115,7 @@ export function dataplexDatascanExecutionSpecTriggerOneTimeToTerraform(struct?: 
 export function dataplexDatascanExecutionSpecTriggerOneTimeToHclTerraform(struct?: DataplexDatascanExecutionSpecTriggerOneTimeOutputReference | DataplexDatascanExecutionSpecTriggerOneTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ttl_after_scan_completion: {
@@ -5182,7 +5182,7 @@ export interface DataplexDatascanExecutionSpecTriggerSchedule {
   /**
   * Cron schedule for running scans periodically. This field is required for Schedule scans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#cron DataplexDatascan#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#cron DataplexDatascan#cron}
   */
   readonly cron: string;
 }
@@ -5190,7 +5190,7 @@ export interface DataplexDatascanExecutionSpecTriggerSchedule {
 export function dataplexDatascanExecutionSpecTriggerScheduleToTerraform(struct?: DataplexDatascanExecutionSpecTriggerScheduleOutputReference | DataplexDatascanExecutionSpecTriggerSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cron: cdktn.stringToTerraform(struct!.cron),
@@ -5201,7 +5201,7 @@ export function dataplexDatascanExecutionSpecTriggerScheduleToTerraform(struct?:
 export function dataplexDatascanExecutionSpecTriggerScheduleToHclTerraform(struct?: DataplexDatascanExecutionSpecTriggerScheduleOutputReference | DataplexDatascanExecutionSpecTriggerSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cron: {
@@ -5265,19 +5265,19 @@ export interface DataplexDatascanExecutionSpecTrigger {
   /**
   * on_demand block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#on_demand DataplexDatascan#on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#on_demand DataplexDatascan#on_demand}
   */
   readonly onDemand?: DataplexDatascanExecutionSpecTriggerOnDemand;
   /**
   * one_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#one_time DataplexDatascan#one_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#one_time DataplexDatascan#one_time}
   */
   readonly oneTime?: DataplexDatascanExecutionSpecTriggerOneTime;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#schedule DataplexDatascan#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#schedule DataplexDatascan#schedule}
   */
   readonly schedule?: DataplexDatascanExecutionSpecTriggerSchedule;
 }
@@ -5285,7 +5285,7 @@ export interface DataplexDatascanExecutionSpecTrigger {
 export function dataplexDatascanExecutionSpecTriggerToTerraform(struct?: DataplexDatascanExecutionSpecTriggerOutputReference | DataplexDatascanExecutionSpecTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     on_demand: dataplexDatascanExecutionSpecTriggerOnDemandToTerraform(struct!.onDemand),
@@ -5298,7 +5298,7 @@ export function dataplexDatascanExecutionSpecTriggerToTerraform(struct?: Dataple
 export function dataplexDatascanExecutionSpecTriggerToHclTerraform(struct?: DataplexDatascanExecutionSpecTriggerOutputReference | DataplexDatascanExecutionSpecTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     on_demand: {
@@ -5421,13 +5421,13 @@ export interface DataplexDatascanExecutionSpec {
   /**
   * The unnested field (of type Date or Timestamp) that contains values which monotonically increase over time. If not specified, a data scan will run for all data in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#field DataplexDatascan#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#field DataplexDatascan#field}
   */
   readonly field?: string;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#trigger DataplexDatascan#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#trigger DataplexDatascan#trigger}
   */
   readonly trigger: DataplexDatascanExecutionSpecTrigger;
 }
@@ -5435,7 +5435,7 @@ export interface DataplexDatascanExecutionSpec {
 export function dataplexDatascanExecutionSpecToTerraform(struct?: DataplexDatascanExecutionSpecOutputReference | DataplexDatascanExecutionSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.stringToTerraform(struct!.field),
@@ -5447,7 +5447,7 @@ export function dataplexDatascanExecutionSpecToTerraform(struct?: DataplexDatasc
 export function dataplexDatascanExecutionSpecToHclTerraform(struct?: DataplexDatascanExecutionSpecOutputReference | DataplexDatascanExecutionSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -5537,15 +5537,15 @@ export class DataplexDatascanExecutionSpecOutputReference extends cdktn.ComplexO
 }
 export interface DataplexDatascanTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#create DataplexDatascan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#create DataplexDatascan#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#delete DataplexDatascan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#delete DataplexDatascan#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#update DataplexDatascan#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#update DataplexDatascan#update}
   */
   readonly update?: string;
 }
@@ -5553,7 +5553,7 @@ export interface DataplexDatascanTimeouts {
 export function dataplexDatascanTimeoutsToTerraform(struct?: DataplexDatascanTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -5566,7 +5566,7 @@ export function dataplexDatascanTimeoutsToTerraform(struct?: DataplexDatascanTim
 export function dataplexDatascanTimeoutsToHclTerraform(struct?: DataplexDatascanTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -5697,7 +5697,7 @@ export class DataplexDatascanTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan google_dataplex_datascan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan google_dataplex_datascan}
 */
 export class DataplexDatascan extends cdktn.TerraformResource {
 
@@ -5713,7 +5713,7 @@ export class DataplexDatascan extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexDatascan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexDatascan to import
-  * @param importFromId The id of the existing DataplexDatascan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexDatascan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexDatascan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5725,7 +5725,7 @@ export class DataplexDatascan extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5736,7 +5736,7 @@ export class DataplexDatascan extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_datascan',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

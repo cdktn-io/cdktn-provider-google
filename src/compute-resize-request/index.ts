@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ComputeResizeRequestConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#deletion_policy ComputeResizeRequest#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#deletion_policy ComputeResizeRequest#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resize-request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#description ComputeResizeRequest#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#description ComputeResizeRequest#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#id ComputeResizeRequest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#id ComputeResizeRequest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,41 +40,41 @@ export interface ComputeResizeRequestConfig extends cdktn.TerraformMetaArguments
   /**
   * The reference of the instance group manager this ResizeRequest is a part of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#instance_group_manager ComputeResizeRequest#instance_group_manager}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#instance_group_manager ComputeResizeRequest#instance_group_manager}
   */
   readonly instanceGroupManager: string;
   /**
   * The name of this resize request. The name must be 1-63 characters long, and comply with RFC1035.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#name ComputeResizeRequest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#name ComputeResizeRequest#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#project ComputeResizeRequest#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#project ComputeResizeRequest#project}
   */
   readonly project?: string;
   /**
   * The number of instances to be created by this resize request. The group's target size will be increased by this number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#resize_by ComputeResizeRequest#resize_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#resize_by ComputeResizeRequest#resize_by}
   */
   readonly resizeBy: number;
   /**
   * The reference of the compute zone scoping this request. If it is not provided, the provider zone is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#zone ComputeResizeRequest#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#zone ComputeResizeRequest#zone}
   */
   readonly zone?: string;
   /**
   * requested_run_duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#requested_run_duration ComputeResizeRequest#requested_run_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#requested_run_duration ComputeResizeRequest#requested_run_duration}
   */
   readonly requestedRunDuration?: ComputeResizeRequestRequestedRunDuration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#timeouts ComputeResizeRequest#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#timeouts ComputeResizeRequest#timeouts}
   */
   readonly timeouts?: ComputeResizeRequestTimeouts;
 }
@@ -84,7 +84,7 @@ export interface ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfo {
 export function computeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoToTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -94,7 +94,7 @@ export function computeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoToTerr
 export function computeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoToHclTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -170,7 +170,7 @@ export interface ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinks {
 export function computeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksToTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -180,7 +180,7 @@ export function computeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksToTerr
 export function computeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksToHclTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -250,7 +250,7 @@ export interface ComputeResizeRequestStatusErrorErrorsErrorDetailsHelp {
 export function computeResizeRequestStatusErrorErrorsErrorDetailsHelpToTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsHelp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -260,7 +260,7 @@ export function computeResizeRequestStatusErrorErrorsErrorDetailsHelpToTerraform
 export function computeResizeRequestStatusErrorErrorsErrorDetailsHelpToHclTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsHelp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -326,7 +326,7 @@ export interface ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessa
 export function computeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageToTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -336,7 +336,7 @@ export function computeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessag
 export function computeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageToHclTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -406,7 +406,7 @@ export interface ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo {
 export function computeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoToTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -416,7 +416,7 @@ export function computeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoToTerr
 export function computeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoToHclTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -507,7 +507,7 @@ export interface ComputeResizeRequestStatusErrorErrorsErrorDetails {
 export function computeResizeRequestStatusErrorErrorsErrorDetailsToTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -517,7 +517,7 @@ export function computeResizeRequestStatusErrorErrorsErrorDetailsToTerraform(str
 export function computeResizeRequestStatusErrorErrorsErrorDetailsToHclTerraform(struct?: ComputeResizeRequestStatusErrorErrorsErrorDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -601,7 +601,7 @@ export interface ComputeResizeRequestStatusErrorErrors {
 export function computeResizeRequestStatusErrorErrorsToTerraform(struct?: ComputeResizeRequestStatusErrorErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -611,7 +611,7 @@ export function computeResizeRequestStatusErrorErrorsToTerraform(struct?: Comput
 export function computeResizeRequestStatusErrorErrorsToHclTerraform(struct?: ComputeResizeRequestStatusErrorErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -692,7 +692,7 @@ export interface ComputeResizeRequestStatusError {
 export function computeResizeRequestStatusErrorToTerraform(struct?: ComputeResizeRequestStatusError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -702,7 +702,7 @@ export function computeResizeRequestStatusErrorToTerraform(struct?: ComputeResiz
 export function computeResizeRequestStatusErrorToHclTerraform(struct?: ComputeResizeRequestStatusError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -768,7 +768,7 @@ export interface ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErr
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoToTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -778,7 +778,7 @@ export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErro
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -854,7 +854,7 @@ export interface ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHel
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksToTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -864,7 +864,7 @@ export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -934,7 +934,7 @@ export interface ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHel
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpToTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -944,7 +944,7 @@ export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1010,7 +1010,7 @@ export interface ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLoc
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageToTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1020,7 +1020,7 @@ export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLoca
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1090,7 +1090,7 @@ export interface ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuo
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoToTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1100,7 +1100,7 @@ export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuot
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1191,7 +1191,7 @@ export interface ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetails {
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsToTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1201,7 +1201,7 @@ export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsToTe
 export function computeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1285,7 +1285,7 @@ export interface ComputeResizeRequestStatusLastAttemptErrorErrors {
 export function computeResizeRequestStatusLastAttemptErrorErrorsToTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1295,7 +1295,7 @@ export function computeResizeRequestStatusLastAttemptErrorErrorsToTerraform(stru
 export function computeResizeRequestStatusLastAttemptErrorErrorsToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptErrorErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1376,7 +1376,7 @@ export interface ComputeResizeRequestStatusLastAttemptError {
 export function computeResizeRequestStatusLastAttemptErrorToTerraform(struct?: ComputeResizeRequestStatusLastAttemptError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1386,7 +1386,7 @@ export function computeResizeRequestStatusLastAttemptErrorToTerraform(struct?: C
 export function computeResizeRequestStatusLastAttemptErrorToHclTerraform(struct?: ComputeResizeRequestStatusLastAttemptError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1452,7 +1452,7 @@ export interface ComputeResizeRequestStatusLastAttempt {
 export function computeResizeRequestStatusLastAttemptToTerraform(struct?: ComputeResizeRequestStatusLastAttempt): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1462,7 +1462,7 @@ export function computeResizeRequestStatusLastAttemptToTerraform(struct?: Comput
 export function computeResizeRequestStatusLastAttemptToHclTerraform(struct?: ComputeResizeRequestStatusLastAttempt): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1528,7 +1528,7 @@ export interface ComputeResizeRequestStatus {
 export function computeResizeRequestStatusToTerraform(struct?: ComputeResizeRequestStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1538,7 +1538,7 @@ export function computeResizeRequestStatusToTerraform(struct?: ComputeResizeRequ
 export function computeResizeRequestStatusToHclTerraform(struct?: ComputeResizeRequestStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1608,13 +1608,13 @@ export interface ComputeResizeRequestRequestedRunDuration {
   /**
   * Span of time that's a fraction of a second at nanosecond resolution. Durations less than one second are represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#nanos ComputeResizeRequest#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#nanos ComputeResizeRequest#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second. Must be from 600 to 604800 inclusive. Note: minimum and maximum allowed range for requestedRunDuration is 10 minutes (600 seconds) and 7 days(604800 seconds) correspondingly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#seconds ComputeResizeRequest#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#seconds ComputeResizeRequest#seconds}
   */
   readonly seconds: string;
 }
@@ -1622,7 +1622,7 @@ export interface ComputeResizeRequestRequestedRunDuration {
 export function computeResizeRequestRequestedRunDurationToTerraform(struct?: ComputeResizeRequestRequestedRunDurationOutputReference | ComputeResizeRequestRequestedRunDuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     nanos: cdktn.numberToTerraform(struct!.nanos),
@@ -1634,7 +1634,7 @@ export function computeResizeRequestRequestedRunDurationToTerraform(struct?: Com
 export function computeResizeRequestRequestedRunDurationToHclTerraform(struct?: ComputeResizeRequestRequestedRunDurationOutputReference | ComputeResizeRequestRequestedRunDuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     nanos: {
@@ -1724,11 +1724,11 @@ export class ComputeResizeRequestRequestedRunDurationOutputReference extends cdk
 }
 export interface ComputeResizeRequestTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}
   */
   readonly delete?: string;
 }
@@ -1736,7 +1736,7 @@ export interface ComputeResizeRequestTimeouts {
 export function computeResizeRequestTimeoutsToTerraform(struct?: ComputeResizeRequestTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1748,7 +1748,7 @@ export function computeResizeRequestTimeoutsToTerraform(struct?: ComputeResizeRe
 export function computeResizeRequestTimeoutsToHclTerraform(struct?: ComputeResizeRequestTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1851,7 +1851,7 @@ export class ComputeResizeRequestTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request google_compute_resize_request}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request google_compute_resize_request}
 */
 export class ComputeResizeRequest extends cdktn.TerraformResource {
 
@@ -1867,7 +1867,7 @@ export class ComputeResizeRequest extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeResizeRequest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeResizeRequest to import
-  * @param importFromId The id of the existing ComputeResizeRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeResizeRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeResizeRequest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1879,7 +1879,7 @@ export class ComputeResizeRequest extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_resize_request google_compute_resize_request} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_resize_request google_compute_resize_request} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1890,7 +1890,7 @@ export class ComputeResizeRequest extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_resize_request',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

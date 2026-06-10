@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,38 @@ export interface VertexAiCacheConfigConfig extends cdktn.TerraformMetaArguments 
   /**
   * If set to true, disables GenAI caching. Otherwise caching is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#disable_cache VertexAiCacheConfig#disable_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#disable_cache VertexAiCacheConfig#disable_cache}
   */
   readonly disableCache: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#timeouts VertexAiCacheConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#timeouts VertexAiCacheConfig#timeouts}
   */
   readonly timeouts?: VertexAiCacheConfigTimeouts;
 }
 export interface VertexAiCacheConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}
   */
   readonly update?: string;
 }
@@ -54,7 +54,7 @@ export interface VertexAiCacheConfigTimeouts {
 export function vertexAiCacheConfigTimeoutsToTerraform(struct?: VertexAiCacheConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -67,7 +67,7 @@ export function vertexAiCacheConfigTimeoutsToTerraform(struct?: VertexAiCacheCon
 export function vertexAiCacheConfigTimeoutsToHclTerraform(struct?: VertexAiCacheConfigTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -198,7 +198,7 @@ export class VertexAiCacheConfigTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config google_vertex_ai_cache_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config google_vertex_ai_cache_config}
 */
 export class VertexAiCacheConfig extends cdktn.TerraformResource {
 
@@ -214,7 +214,7 @@ export class VertexAiCacheConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiCacheConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiCacheConfig to import
-  * @param importFromId The id of the existing VertexAiCacheConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiCacheConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiCacheConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -226,7 +226,7 @@ export class VertexAiCacheConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_cache_config google_vertex_ai_cache_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_cache_config google_vertex_ai_cache_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -237,7 +237,7 @@ export class VertexAiCacheConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_cache_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

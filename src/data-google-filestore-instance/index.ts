@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleFilestoreInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance#id DataGoogleFilestoreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance#id DataGoogleFilestoreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +22,17 @@ export interface DataGoogleFilestoreInstanceConfig extends cdktn.TerraformMetaAr
   /**
   * The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance#location DataGoogleFilestoreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance#location DataGoogleFilestoreInstance#location}
   */
   readonly location?: string;
   /**
   * The resource name of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance#name DataGoogleFilestoreInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance#name DataGoogleFilestoreInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance#project DataGoogleFilestoreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance#project DataGoogleFilestoreInstance#project}
   */
   readonly project?: string;
 }
@@ -42,7 +42,7 @@ export interface DataGoogleFilestoreInstanceDirectoryServicesLdap {
 export function dataGoogleFilestoreInstanceDirectoryServicesLdapToTerraform(struct?: DataGoogleFilestoreInstanceDirectoryServicesLdap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -52,7 +52,7 @@ export function dataGoogleFilestoreInstanceDirectoryServicesLdapToTerraform(stru
 export function dataGoogleFilestoreInstanceDirectoryServicesLdapToHclTerraform(struct?: DataGoogleFilestoreInstanceDirectoryServicesLdap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -132,7 +132,7 @@ export interface DataGoogleFilestoreInstanceDirectoryServices {
 export function dataGoogleFilestoreInstanceDirectoryServicesToTerraform(struct?: DataGoogleFilestoreInstanceDirectoryServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -142,7 +142,7 @@ export function dataGoogleFilestoreInstanceDirectoryServicesToTerraform(struct?:
 export function dataGoogleFilestoreInstanceDirectoryServicesToHclTerraform(struct?: DataGoogleFilestoreInstanceDirectoryServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -208,7 +208,7 @@ export interface DataGoogleFilestoreInstanceEffectiveReplicationReplicas {
 export function dataGoogleFilestoreInstanceEffectiveReplicationReplicasToTerraform(struct?: DataGoogleFilestoreInstanceEffectiveReplicationReplicas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -218,7 +218,7 @@ export function dataGoogleFilestoreInstanceEffectiveReplicationReplicasToTerrafo
 export function dataGoogleFilestoreInstanceEffectiveReplicationReplicasToHclTerraform(struct?: DataGoogleFilestoreInstanceEffectiveReplicationReplicas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -298,7 +298,7 @@ export interface DataGoogleFilestoreInstanceEffectiveReplication {
 export function dataGoogleFilestoreInstanceEffectiveReplicationToTerraform(struct?: DataGoogleFilestoreInstanceEffectiveReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -308,7 +308,7 @@ export function dataGoogleFilestoreInstanceEffectiveReplicationToTerraform(struc
 export function dataGoogleFilestoreInstanceEffectiveReplicationToHclTerraform(struct?: DataGoogleFilestoreInstanceEffectiveReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -379,7 +379,7 @@ export interface DataGoogleFilestoreInstanceFileSharesNfsExportOptions {
 export function dataGoogleFilestoreInstanceFileSharesNfsExportOptionsToTerraform(struct?: DataGoogleFilestoreInstanceFileSharesNfsExportOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -389,7 +389,7 @@ export function dataGoogleFilestoreInstanceFileSharesNfsExportOptionsToTerraform
 export function dataGoogleFilestoreInstanceFileSharesNfsExportOptionsToHclTerraform(struct?: DataGoogleFilestoreInstanceFileSharesNfsExportOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -479,7 +479,7 @@ export interface DataGoogleFilestoreInstanceFileShares {
 export function dataGoogleFilestoreInstanceFileSharesToTerraform(struct?: DataGoogleFilestoreInstanceFileShares): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -489,7 +489,7 @@ export function dataGoogleFilestoreInstanceFileSharesToTerraform(struct?: DataGo
 export function dataGoogleFilestoreInstanceFileSharesToHclTerraform(struct?: DataGoogleFilestoreInstanceFileShares): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -575,7 +575,7 @@ export interface DataGoogleFilestoreInstanceInitialReplicationReplicas {
 export function dataGoogleFilestoreInstanceInitialReplicationReplicasToTerraform(struct?: DataGoogleFilestoreInstanceInitialReplicationReplicas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -585,7 +585,7 @@ export function dataGoogleFilestoreInstanceInitialReplicationReplicasToTerraform
 export function dataGoogleFilestoreInstanceInitialReplicationReplicasToHclTerraform(struct?: DataGoogleFilestoreInstanceInitialReplicationReplicas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -650,7 +650,7 @@ export interface DataGoogleFilestoreInstanceInitialReplication {
 export function dataGoogleFilestoreInstanceInitialReplicationToTerraform(struct?: DataGoogleFilestoreInstanceInitialReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -660,7 +660,7 @@ export function dataGoogleFilestoreInstanceInitialReplicationToTerraform(struct?
 export function dataGoogleFilestoreInstanceInitialReplicationToHclTerraform(struct?: DataGoogleFilestoreInstanceInitialReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -731,7 +731,7 @@ export interface DataGoogleFilestoreInstanceNetworksPscConfig {
 export function dataGoogleFilestoreInstanceNetworksPscConfigToTerraform(struct?: DataGoogleFilestoreInstanceNetworksPscConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -741,7 +741,7 @@ export function dataGoogleFilestoreInstanceNetworksPscConfigToTerraform(struct?:
 export function dataGoogleFilestoreInstanceNetworksPscConfigToHclTerraform(struct?: DataGoogleFilestoreInstanceNetworksPscConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -806,7 +806,7 @@ export interface DataGoogleFilestoreInstanceNetworks {
 export function dataGoogleFilestoreInstanceNetworksToTerraform(struct?: DataGoogleFilestoreInstanceNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -816,7 +816,7 @@ export function dataGoogleFilestoreInstanceNetworksToTerraform(struct?: DataGoog
 export function dataGoogleFilestoreInstanceNetworksToHclTerraform(struct?: DataGoogleFilestoreInstanceNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -907,7 +907,7 @@ export interface DataGoogleFilestoreInstancePerformanceConfigFixedIops {
 export function dataGoogleFilestoreInstancePerformanceConfigFixedIopsToTerraform(struct?: DataGoogleFilestoreInstancePerformanceConfigFixedIops): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -917,7 +917,7 @@ export function dataGoogleFilestoreInstancePerformanceConfigFixedIopsToTerraform
 export function dataGoogleFilestoreInstancePerformanceConfigFixedIopsToHclTerraform(struct?: DataGoogleFilestoreInstancePerformanceConfigFixedIops): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -982,7 +982,7 @@ export interface DataGoogleFilestoreInstancePerformanceConfigIopsPerTb {
 export function dataGoogleFilestoreInstancePerformanceConfigIopsPerTbToTerraform(struct?: DataGoogleFilestoreInstancePerformanceConfigIopsPerTb): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -992,7 +992,7 @@ export function dataGoogleFilestoreInstancePerformanceConfigIopsPerTbToTerraform
 export function dataGoogleFilestoreInstancePerformanceConfigIopsPerTbToHclTerraform(struct?: DataGoogleFilestoreInstancePerformanceConfigIopsPerTb): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1057,7 +1057,7 @@ export interface DataGoogleFilestoreInstancePerformanceConfig {
 export function dataGoogleFilestoreInstancePerformanceConfigToTerraform(struct?: DataGoogleFilestoreInstancePerformanceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1067,7 +1067,7 @@ export function dataGoogleFilestoreInstancePerformanceConfigToTerraform(struct?:
 export function dataGoogleFilestoreInstancePerformanceConfigToHclTerraform(struct?: DataGoogleFilestoreInstancePerformanceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1135,7 +1135,7 @@ export class DataGoogleFilestoreInstancePerformanceConfigList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance google_filestore_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance google_filestore_instance}
 */
 export class DataGoogleFilestoreInstance extends cdktn.TerraformDataSource {
 
@@ -1151,7 +1151,7 @@ export class DataGoogleFilestoreInstance extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleFilestoreInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleFilestoreInstance to import
-  * @param importFromId The id of the existing DataGoogleFilestoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleFilestoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleFilestoreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1163,7 +1163,7 @@ export class DataGoogleFilestoreInstance extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1174,7 +1174,7 @@ export class DataGoogleFilestoreInstance extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_filestore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

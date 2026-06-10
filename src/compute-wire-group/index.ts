@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface ComputeWireGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the wire group is administratively enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#admin_enabled ComputeWireGroup#admin_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#admin_enabled ComputeWireGroup#admin_enabled}
   */
   readonly adminEnabled?: boolean | cdktn.IResolvable;
   /**
   * Required cross site network to which wire group belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#cross_site_network ComputeWireGroup#cross_site_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#cross_site_network ComputeWireGroup#cross_site_network}
   */
   readonly crossSiteNetwork: string;
   /**
@@ -33,17 +33,17 @@ export interface ComputeWireGroupConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#deletion_policy ComputeWireGroup#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#deletion_policy ComputeWireGroup#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#description ComputeWireGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#description ComputeWireGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,29 +56,29 @@ export interface ComputeWireGroupConfig extends cdktn.TerraformMetaArguments {
   * character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#name ComputeWireGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#name ComputeWireGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}
   */
   readonly project?: string;
   /**
   * endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#endpoints ComputeWireGroup#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#endpoints ComputeWireGroup#endpoints}
   */
   readonly endpoints?: ComputeWireGroupEndpoints[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#timeouts ComputeWireGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#timeouts ComputeWireGroup#timeouts}
   */
   readonly timeouts?: ComputeWireGroupTimeouts;
   /**
   * wire_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#wire_properties ComputeWireGroup#wire_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#wire_properties ComputeWireGroup#wire_properties}
   */
   readonly wireProperties?: ComputeWireGroupWireProperties;
 }
@@ -88,7 +88,7 @@ export interface ComputeWireGroupTopologyEndpoints {
 export function computeWireGroupTopologyEndpointsToTerraform(struct?: ComputeWireGroupTopologyEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -98,7 +98,7 @@ export function computeWireGroupTopologyEndpointsToTerraform(struct?: ComputeWir
 export function computeWireGroupTopologyEndpointsToHclTerraform(struct?: ComputeWireGroupTopologyEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -168,7 +168,7 @@ export interface ComputeWireGroupTopology {
 export function computeWireGroupTopologyToTerraform(struct?: ComputeWireGroupTopology): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -178,7 +178,7 @@ export function computeWireGroupTopologyToTerraform(struct?: ComputeWireGroupTop
 export function computeWireGroupTopologyToHclTerraform(struct?: ComputeWireGroupTopology): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -244,7 +244,7 @@ export interface ComputeWireGroupWiresEndpoints {
 export function computeWireGroupWiresEndpointsToTerraform(struct?: ComputeWireGroupWiresEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -254,7 +254,7 @@ export function computeWireGroupWiresEndpointsToTerraform(struct?: ComputeWireGr
 export function computeWireGroupWiresEndpointsToHclTerraform(struct?: ComputeWireGroupWiresEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -324,7 +324,7 @@ export interface ComputeWireGroupWiresWireProperties {
 export function computeWireGroupWiresWirePropertiesToTerraform(struct?: ComputeWireGroupWiresWireProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -334,7 +334,7 @@ export function computeWireGroupWiresWirePropertiesToTerraform(struct?: ComputeW
 export function computeWireGroupWiresWirePropertiesToHclTerraform(struct?: ComputeWireGroupWiresWireProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -404,7 +404,7 @@ export interface ComputeWireGroupWires {
 export function computeWireGroupWiresToTerraform(struct?: ComputeWireGroupWires): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -414,7 +414,7 @@ export function computeWireGroupWiresToTerraform(struct?: ComputeWireGroupWires)
 export function computeWireGroupWiresToHclTerraform(struct?: ComputeWireGroupWires): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -492,17 +492,17 @@ export class ComputeWireGroupWiresList extends cdktn.ComplexList {
 }
 export interface ComputeWireGroupEndpointsInterconnects {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}
   */
   readonly interconnect?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}
   */
   readonly interconnectName: string;
   /**
   * VLAN tags for the interconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#vlan_tags ComputeWireGroup#vlan_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#vlan_tags ComputeWireGroup#vlan_tags}
   */
   readonly vlanTags?: number[];
 }
@@ -510,7 +510,7 @@ export interface ComputeWireGroupEndpointsInterconnects {
 export function computeWireGroupEndpointsInterconnectsToTerraform(struct?: ComputeWireGroupEndpointsInterconnects | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     interconnect: cdktn.stringToTerraform(struct!.interconnect),
@@ -523,7 +523,7 @@ export function computeWireGroupEndpointsInterconnectsToTerraform(struct?: Compu
 export function computeWireGroupEndpointsInterconnectsToHclTerraform(struct?: ComputeWireGroupEndpointsInterconnects | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     interconnect: {
@@ -673,13 +673,13 @@ export class ComputeWireGroupEndpointsInterconnectsList extends cdktn.ComplexLis
 }
 export interface ComputeWireGroupEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}
   */
   readonly endpoint: string;
   /**
   * interconnects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#interconnects ComputeWireGroup#interconnects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#interconnects ComputeWireGroup#interconnects}
   */
   readonly interconnects?: ComputeWireGroupEndpointsInterconnects[] | cdktn.IResolvable;
 }
@@ -687,7 +687,7 @@ export interface ComputeWireGroupEndpoints {
 export function computeWireGroupEndpointsToTerraform(struct?: ComputeWireGroupEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint: cdktn.stringToTerraform(struct!.endpoint),
@@ -699,7 +699,7 @@ export function computeWireGroupEndpointsToTerraform(struct?: ComputeWireGroupEn
 export function computeWireGroupEndpointsToHclTerraform(struct?: ComputeWireGroupEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint: {
@@ -821,15 +821,15 @@ export class ComputeWireGroupEndpointsList extends cdktn.ComplexList {
 }
 export interface ComputeWireGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}
   */
   readonly update?: string;
 }
@@ -837,7 +837,7 @@ export interface ComputeWireGroupTimeouts {
 export function computeWireGroupTimeoutsToTerraform(struct?: ComputeWireGroupTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -850,7 +850,7 @@ export function computeWireGroupTimeoutsToTerraform(struct?: ComputeWireGroupTim
 export function computeWireGroupTimeoutsToHclTerraform(struct?: ComputeWireGroupTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -986,13 +986,13 @@ export interface ComputeWireGroupWireProperties {
   * SHARED_WITH_WIRE_GROUP: this is the default behavior, which configures one unmetered bandwidth allocation for the wire group. The unmetered bandwidth is divided equally across each wire in the group, but dynamic
   * throttling reallocates unused unmetered bandwidth from unused or underused wires to other wires in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#bandwidth_allocation ComputeWireGroup#bandwidth_allocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#bandwidth_allocation ComputeWireGroup#bandwidth_allocation}
   */
   readonly bandwidthAllocation: string;
   /**
   * The unmetered bandwidth setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#bandwidth_unmetered ComputeWireGroup#bandwidth_unmetered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#bandwidth_unmetered ComputeWireGroup#bandwidth_unmetered}
   */
   readonly bandwidthUnmetered?: number;
   /**
@@ -1000,7 +1000,7 @@ export interface ComputeWireGroupWireProperties {
   * NONE: default.
   * DISABLE_PORT: set the port line protocol down when inline probes detect a fault. This setting is only permitted on port mode pseudowires.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#fault_response ComputeWireGroup#fault_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#fault_response ComputeWireGroup#fault_response}
   */
   readonly faultResponse?: string;
 }
@@ -1008,7 +1008,7 @@ export interface ComputeWireGroupWireProperties {
 export function computeWireGroupWirePropertiesToTerraform(struct?: ComputeWireGroupWirePropertiesOutputReference | ComputeWireGroupWireProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bandwidth_allocation: cdktn.stringToTerraform(struct!.bandwidthAllocation),
@@ -1021,7 +1021,7 @@ export function computeWireGroupWirePropertiesToTerraform(struct?: ComputeWireGr
 export function computeWireGroupWirePropertiesToHclTerraform(struct?: ComputeWireGroupWirePropertiesOutputReference | ComputeWireGroupWireProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bandwidth_allocation: {
@@ -1139,7 +1139,7 @@ export class ComputeWireGroupWirePropertiesOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group google_compute_wire_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group google_compute_wire_group}
 */
 export class ComputeWireGroup extends cdktn.TerraformResource {
 
@@ -1155,7 +1155,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeWireGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeWireGroup to import
-  * @param importFromId The id of the existing ComputeWireGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeWireGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeWireGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1167,7 +1167,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/compute_wire_group google_compute_wire_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_wire_group google_compute_wire_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1178,7 +1178,7 @@ export class ComputeWireGroup extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_wire_group',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

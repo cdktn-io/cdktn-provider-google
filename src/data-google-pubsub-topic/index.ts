@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/pubsub_topic
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGooglePubsubTopicConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,11 +22,11 @@ export interface DataGooglePubsubTopicConfig extends cdktn.TerraformMetaArgument
   /**
   * Name of the topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}
   */
   readonly project?: string;
 }
@@ -36,7 +36,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesis {
 export function dataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -46,7 +46,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisToTerr
 export function dataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -126,7 +126,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk {
 export function dataGooglePubsubTopicIngestionDataSourceSettingsAwsMskToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -136,7 +136,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsAwsMskToTerrafor
 export function dataGooglePubsubTopicIngestionDataSourceSettingsAwsMskToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsAwsMsk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -216,7 +216,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs 
 export function dataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -226,7 +226,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsTo
 export function dataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -321,7 +321,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvr
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -331,7 +331,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvro
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -391,7 +391,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePub
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -401,7 +401,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubs
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -461,7 +461,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTex
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -471,7 +471,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageText
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -536,7 +536,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorage {
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -546,7 +546,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageToTe
 export function dataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -639,7 +639,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud 
 export function dataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -649,7 +649,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudTo
 export function dataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsConfluentCloud): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -734,7 +734,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSet
 export function dataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -744,7 +744,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSett
 export function dataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -809,7 +809,7 @@ export interface DataGooglePubsubTopicIngestionDataSourceSettings {
 export function dataGooglePubsubTopicIngestionDataSourceSettingsToTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -819,7 +819,7 @@ export function dataGooglePubsubTopicIngestionDataSourceSettingsToTerraform(stru
 export function dataGooglePubsubTopicIngestionDataSourceSettingsToHclTerraform(struct?: DataGooglePubsubTopicIngestionDataSourceSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -915,7 +915,7 @@ export interface DataGooglePubsubTopicMessageStoragePolicy {
 export function dataGooglePubsubTopicMessageStoragePolicyToTerraform(struct?: DataGooglePubsubTopicMessageStoragePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -925,7 +925,7 @@ export function dataGooglePubsubTopicMessageStoragePolicyToTerraform(struct?: Da
 export function dataGooglePubsubTopicMessageStoragePolicyToHclTerraform(struct?: DataGooglePubsubTopicMessageStoragePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -995,7 +995,7 @@ export interface DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredIn
 export function dataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceToTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1005,7 +1005,7 @@ export function dataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInf
 export function dataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceToHclTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1071,7 +1071,7 @@ export interface DataGooglePubsubTopicMessageTransformsAiInference {
 export function dataGooglePubsubTopicMessageTransformsAiInferenceToTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1081,7 +1081,7 @@ export function dataGooglePubsubTopicMessageTransformsAiInferenceToTerraform(str
 export function dataGooglePubsubTopicMessageTransformsAiInferenceToHclTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1157,7 +1157,7 @@ export interface DataGooglePubsubTopicMessageTransformsJavascriptUdf {
 export function dataGooglePubsubTopicMessageTransformsJavascriptUdfToTerraform(struct?: DataGooglePubsubTopicMessageTransformsJavascriptUdf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1167,7 +1167,7 @@ export function dataGooglePubsubTopicMessageTransformsJavascriptUdfToTerraform(s
 export function dataGooglePubsubTopicMessageTransformsJavascriptUdfToHclTerraform(struct?: DataGooglePubsubTopicMessageTransformsJavascriptUdf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1237,7 +1237,7 @@ export interface DataGooglePubsubTopicMessageTransforms {
 export function dataGooglePubsubTopicMessageTransformsToTerraform(struct?: DataGooglePubsubTopicMessageTransforms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1247,7 +1247,7 @@ export function dataGooglePubsubTopicMessageTransformsToTerraform(struct?: DataG
 export function dataGooglePubsubTopicMessageTransformsToHclTerraform(struct?: DataGooglePubsubTopicMessageTransforms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1324,7 +1324,7 @@ export interface DataGooglePubsubTopicSchemaSettings {
 export function dataGooglePubsubTopicSchemaSettingsToTerraform(struct?: DataGooglePubsubTopicSchemaSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1334,7 +1334,7 @@ export function dataGooglePubsubTopicSchemaSettingsToTerraform(struct?: DataGoog
 export function dataGooglePubsubTopicSchemaSettingsToHclTerraform(struct?: DataGooglePubsubTopicSchemaSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1400,7 +1400,7 @@ export class DataGooglePubsubTopicSchemaSettingsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/pubsub_topic google_pubsub_topic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic google_pubsub_topic}
 */
 export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
 
@@ -1416,7 +1416,7 @@ export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGooglePubsubTopic resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePubsubTopic to import
-  * @param importFromId The id of the existing DataGooglePubsubTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGooglePubsubTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePubsubTopic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1428,7 +1428,7 @@ export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1439,7 +1439,7 @@ export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_pubsub_topic',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

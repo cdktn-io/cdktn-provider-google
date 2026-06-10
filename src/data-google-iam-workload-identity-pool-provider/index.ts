@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
   */
   readonly project?: string;
   /**
@@ -28,7 +28,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktn.T
   * value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
   */
   readonly workloadIdentityPoolId: string;
   /**
@@ -36,7 +36,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktn.T
   * value must be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
   */
   readonly workloadIdentityPoolProviderId: string;
 }
@@ -46,7 +46,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderAws {
 export function dataGoogleIamWorkloadIdentityPoolProviderAwsToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderAws): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -56,7 +56,7 @@ export function dataGoogleIamWorkloadIdentityPoolProviderAwsToTerraform(struct?:
 export function dataGoogleIamWorkloadIdentityPoolProviderAwsToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderAws): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -121,7 +121,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderOidc {
 export function dataGoogleIamWorkloadIdentityPoolProviderOidcToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderOidc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -131,7 +131,7 @@ export function dataGoogleIamWorkloadIdentityPoolProviderOidcToTerraform(struct?
 export function dataGoogleIamWorkloadIdentityPoolProviderOidcToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderOidc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -206,7 +206,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderSaml {
 export function dataGoogleIamWorkloadIdentityPoolProviderSamlToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderSaml): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -216,7 +216,7 @@ export function dataGoogleIamWorkloadIdentityPoolProviderSamlToTerraform(struct?
 export function dataGoogleIamWorkloadIdentityPoolProviderSamlToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderSaml): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -281,7 +281,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermed
 export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -291,7 +291,7 @@ export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermedi
 export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -356,7 +356,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnc
 export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -366,7 +366,7 @@ export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnch
 export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -431,7 +431,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore {
 export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -441,7 +441,7 @@ export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreToTerrafo
 export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -513,7 +513,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderX509 {
 export function dataGoogleIamWorkloadIdentityPoolProviderX509ToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -523,7 +523,7 @@ export function dataGoogleIamWorkloadIdentityPoolProviderX509ToTerraform(struct?
 export function dataGoogleIamWorkloadIdentityPoolProviderX509ToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -585,7 +585,7 @@ export class DataGoogleIamWorkloadIdentityPoolProviderX509List extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
 */
 export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDataSource {
 
@@ -601,7 +601,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataGoogleIamWorkloadIdentityPoolProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIamWorkloadIdentityPoolProvider to import
-  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIamWorkloadIdentityPoolProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -613,7 +613,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -624,7 +624,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDa
       terraformResourceType: 'google_iam_workload_identity_pool_provider',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

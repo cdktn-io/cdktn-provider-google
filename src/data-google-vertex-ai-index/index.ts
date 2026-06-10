@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleVertexAiIndexConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#id DataGoogleVertexAiIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#id DataGoogleVertexAiIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +22,17 @@ export interface DataGoogleVertexAiIndexConfig extends cdktn.TerraformMetaArgume
   /**
   * The resource name of the Index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#name DataGoogleVertexAiIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#name DataGoogleVertexAiIndex#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#project DataGoogleVertexAiIndex#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#project DataGoogleVertexAiIndex#project}
   */
   readonly project?: string;
   /**
   * The region of the index. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#region DataGoogleVertexAiIndex#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#region DataGoogleVertexAiIndex#region}
   */
   readonly region: string;
 }
@@ -42,7 +42,7 @@ export interface DataGoogleVertexAiIndexDeployedIndexes {
 export function dataGoogleVertexAiIndexDeployedIndexesToTerraform(struct?: DataGoogleVertexAiIndexDeployedIndexes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -52,7 +52,7 @@ export function dataGoogleVertexAiIndexDeployedIndexesToTerraform(struct?: DataG
 export function dataGoogleVertexAiIndexDeployedIndexesToHclTerraform(struct?: DataGoogleVertexAiIndexDeployedIndexes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -122,7 +122,7 @@ export interface DataGoogleVertexAiIndexEncryptionSpec {
 export function dataGoogleVertexAiIndexEncryptionSpecToTerraform(struct?: DataGoogleVertexAiIndexEncryptionSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -132,7 +132,7 @@ export function dataGoogleVertexAiIndexEncryptionSpecToTerraform(struct?: DataGo
 export function dataGoogleVertexAiIndexEncryptionSpecToHclTerraform(struct?: DataGoogleVertexAiIndexEncryptionSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -197,7 +197,7 @@ export interface DataGoogleVertexAiIndexIndexStats {
 export function dataGoogleVertexAiIndexIndexStatsToTerraform(struct?: DataGoogleVertexAiIndexIndexStats): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -207,7 +207,7 @@ export function dataGoogleVertexAiIndexIndexStatsToTerraform(struct?: DataGoogle
 export function dataGoogleVertexAiIndexIndexStatsToHclTerraform(struct?: DataGoogleVertexAiIndexIndexStats): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -277,7 +277,7 @@ export interface DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceC
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -287,7 +287,7 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceCo
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -347,7 +347,7 @@ export interface DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfi
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -357,7 +357,7 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -427,7 +427,7 @@ export interface DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig {
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -437,7 +437,7 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigToTerraform(
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -509,7 +509,7 @@ export interface DataGoogleVertexAiIndexMetadataConfig {
 export function dataGoogleVertexAiIndexMetadataConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -519,7 +519,7 @@ export function dataGoogleVertexAiIndexMetadataConfigToTerraform(struct?: DataGo
 export function dataGoogleVertexAiIndexMetadataConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -610,7 +610,7 @@ export interface DataGoogleVertexAiIndexMetadata {
 export function dataGoogleVertexAiIndexMetadataToTerraform(struct?: DataGoogleVertexAiIndexMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -620,7 +620,7 @@ export function dataGoogleVertexAiIndexMetadataToTerraform(struct?: DataGoogleVe
 export function dataGoogleVertexAiIndexMetadataToHclTerraform(struct?: DataGoogleVertexAiIndexMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -692,7 +692,7 @@ export class DataGoogleVertexAiIndexMetadataList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index google_vertex_ai_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index google_vertex_ai_index}
 */
 export class DataGoogleVertexAiIndex extends cdktn.TerraformDataSource {
 
@@ -708,7 +708,7 @@ export class DataGoogleVertexAiIndex extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleVertexAiIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVertexAiIndex to import
-  * @param importFromId The id of the existing DataGoogleVertexAiIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleVertexAiIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVertexAiIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -720,7 +720,7 @@ export class DataGoogleVertexAiIndex extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/vertex_ai_index google_vertex_ai_index} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/vertex_ai_index google_vertex_ai_index} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -731,7 +731,7 @@ export class DataGoogleVertexAiIndex extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_vertex_ai_index',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

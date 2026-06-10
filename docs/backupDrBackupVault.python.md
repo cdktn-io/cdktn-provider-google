@@ -4,7 +4,7 @@
 
 ### BackupDrBackupVault <a name="BackupDrBackupVault" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer"></a>
 
@@ -67,11 +67,11 @@ backupDrBackupVault.BackupDrBackupVault(
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceUpdate">force_update</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional. Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -144,7 +144,7 @@ Required.
 
 The default and minimum enforced retention for each backup within the backup vault. The enforced retention for each backup can be extended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. ID of the requesting object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The GCP location for the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
 
 ---
 
@@ -176,7 +176,7 @@ Access restriction for the backup vault.
 
 Default value is 'WITHIN_ORGANIZATION' if not provided during creation. Default value: "WITHIN_ORGANIZATION" Possible values: ["ACCESS_RESTRICTION_UNSPECIFIED", "WITHIN_PROJECT", "WITHIN_ORGANIZATION", "UNRESTRICTED", "WITHIN_ORG_BUT_UNRESTRICTED_FOR_BA"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
 
 ---
 
@@ -199,7 +199,7 @@ Optional. User annotations. See https://google.aip.dev/128#annotations Stores sm
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
 
 ---
 
@@ -211,7 +211,7 @@ How a backup's enforced retention end time is inherited.
 
 Default value is 'INHERIT_VAULT_RETENTION' if not provided during creation. Possible values: ["BACKUP_RETENTION_INHERITANCE_UNSPECIFIED", "INHERIT_VAULT_RETENTION", "MATCH_BACKUP_EXPIRE_TIME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
 
 ---
 
@@ -228,7 +228,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#deletion_policy BackupDrBackupVault#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#deletion_policy BackupDrBackupVault#deletion_policy}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The description of the BackupVault instance (2048 characters or less).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Time after which the BackupVault resource is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
 
 ---
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
 
 ---
 
@@ -270,7 +270,7 @@ If set, the following restrictions against deletion of the backup vault instance
 
 * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
 
 ---
 
@@ -285,7 +285,7 @@ the restriction against conflicting retention periods. This conflict may occur w
 expiration schedule defined by the associated backup plan is shorter than the minimum
 retention set by the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
 
 ---
 
@@ -293,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -306,7 +306,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
 
 ---
 
@@ -316,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
 
 ---
 
@@ -329,7 +329,7 @@ Optional. Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
 
 ---
 
@@ -764,7 +764,7 @@ The Resource name of the Cloud KMS key to be used to encrypt new backups.
 
 The key must be in the same location as the backup vault. The key must be a Cloud KMS CryptoKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#kms_key_name BackupDrBackupVault#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#kms_key_name BackupDrBackupVault#kms_key_name}
 
 ---
 
@@ -782,7 +782,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}.
 
 ---
 
@@ -790,7 +790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}.
 
 ---
 
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}.
 
 ---
 
@@ -1012,7 +1012,7 @@ The construct id used in the generated config for the BackupDrBackupVault to imp
 
 The id of the existing BackupDrBackupVault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1829,11 +1829,11 @@ backupDrBackupVault.BackupDrBackupVaultConfig(
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceUpdate">force_update</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional. Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1920,7 +1920,7 @@ Required.
 
 The default and minimum enforced retention for each backup within the backup vault. The enforced retention for each backup can be extended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
 
 ---
 
@@ -1934,7 +1934,7 @@ backup_vault_id: str
 
 Required. ID of the requesting object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
 
 ---
 
@@ -1948,7 +1948,7 @@ location: str
 
 The GCP location for the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
 
 ---
 
@@ -1964,7 +1964,7 @@ Access restriction for the backup vault.
 
 Default value is 'WITHIN_ORGANIZATION' if not provided during creation. Default value: "WITHIN_ORGANIZATION" Possible values: ["ACCESS_RESTRICTION_UNSPECIFIED", "WITHIN_PROJECT", "WITHIN_ORGANIZATION", "UNRESTRICTED", "WITHIN_ORG_BUT_UNRESTRICTED_FOR_BA"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
 
 ---
 
@@ -1978,7 +1978,7 @@ allow_missing: bool | IResolvable
 
 Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
 
 ---
 
@@ -1995,7 +1995,7 @@ Optional. User annotations. See https://google.aip.dev/128#annotations Stores sm
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
 
 ---
 
@@ -2011,7 +2011,7 @@ How a backup's enforced retention end time is inherited.
 
 Default value is 'INHERIT_VAULT_RETENTION' if not provided during creation. Possible values: ["BACKUP_RETENTION_INHERITANCE_UNSPECIFIED", "INHERIT_VAULT_RETENTION", "MATCH_BACKUP_EXPIRE_TIME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
 
 ---
 
@@ -2032,7 +2032,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#deletion_policy BackupDrBackupVault#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#deletion_policy BackupDrBackupVault#deletion_policy}
 
 ---
 
@@ -2046,7 +2046,7 @@ description: str
 
 Optional. The description of the BackupVault instance (2048 characters or less).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
 
 ---
 
@@ -2060,7 +2060,7 @@ effective_time: str
 
 Optional. Time after which the BackupVault resource is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
 
 ---
 
@@ -2074,7 +2074,7 @@ encryption_config: BackupDrBackupVaultEncryptionConfig
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
 
 ---
 
@@ -2090,7 +2090,7 @@ If set, the following restrictions against deletion of the backup vault instance
 
 * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
 
 ---
 
@@ -2109,7 +2109,7 @@ the restriction against conflicting retention periods. This conflict may occur w
 expiration schedule defined by the associated backup plan is shorter than the minimum
 retention set by the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
 
 ---
 
@@ -2121,7 +2121,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2138,7 +2138,7 @@ ignore_backup_plan_references: bool | IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
 
 ---
 
@@ -2152,7 +2152,7 @@ ignore_inactive_datasources: bool | IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
 
 ---
 
@@ -2169,7 +2169,7 @@ Optional. Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
 
 ---
 
@@ -2181,7 +2181,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
 
 ---
 
@@ -2195,7 +2195,7 @@ timeouts: BackupDrBackupVaultTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
 
 ---
 
@@ -2231,7 +2231,7 @@ The Resource name of the Cloud KMS key to be used to encrypt new backups.
 
 The key must be in the same location as the backup vault. The key must be a Cloud KMS CryptoKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#kms_key_name BackupDrBackupVault#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#kms_key_name BackupDrBackupVault#kms_key_name}
 
 ---
 
@@ -2253,9 +2253,9 @@ backupDrBackupVault.BackupDrBackupVaultTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}. |
 
 ---
 
@@ -2267,7 +2267,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}.
 
 ---
 
@@ -2279,7 +2279,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}.
 
 ---
 
@@ -2291,7 +2291,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}.
 
 ---
 

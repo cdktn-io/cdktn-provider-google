@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/beyondcorp_security_gateway
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/beyondcorp_security_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleBeyondcorpSecurityGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/beyondcorp_security_gateway#id DataGoogleBeyondcorpSecurityGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/beyondcorp_security_gateway#id DataGoogleBeyondcorpSecurityGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/beyondcorp_security_gateway#project DataGoogleBeyondcorpSecurityGateway#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/beyondcorp_security_gateway#project DataGoogleBeyondcorpSecurityGateway#project}
   */
   readonly project?: string;
   /**
@@ -29,7 +29,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayConfig extends cdktn.Terrafo
   * * Must contain between 4-63 characters from '/a-z-/'.
   * * Must end with a number or letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/beyondcorp_security_gateway#security_gateway_id DataGoogleBeyondcorpSecurityGateway#security_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/beyondcorp_security_gateway#security_gateway_id DataGoogleBeyondcorpSecurityGateway#security_gateway_id}
   */
   readonly securityGatewayId: string;
 }
@@ -39,7 +39,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayHubsInternetGateway {
 export function dataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayHubsInternetGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -49,7 +49,7 @@ export function dataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayToTerrafor
 export function dataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayHubsInternetGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -114,7 +114,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayHubs {
 export function dataGoogleBeyondcorpSecurityGatewayHubsToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayHubs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -124,7 +124,7 @@ export function dataGoogleBeyondcorpSecurityGatewayHubsToTerraform(struct?: Data
 export function dataGoogleBeyondcorpSecurityGatewayHubsToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayHubs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -195,7 +195,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayLogging {
 export function dataGoogleBeyondcorpSecurityGatewayLoggingToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -205,7 +205,7 @@ export function dataGoogleBeyondcorpSecurityGatewayLoggingToTerraform(struct?: D
 export function dataGoogleBeyondcorpSecurityGatewayLoggingToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -265,7 +265,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextua
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -275,7 +275,7 @@ export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextual
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -340,7 +340,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextua
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -350,7 +350,7 @@ export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextual
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -415,7 +415,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextua
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -425,7 +425,7 @@ export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextual
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -490,7 +490,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextua
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -500,7 +500,7 @@ export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextual
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -583,7 +583,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfig {
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -593,7 +593,7 @@ export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigToTerrafor
 export function dataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -680,7 +680,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayRe
 export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -690,7 +690,7 @@ export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayRes
 export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -755,7 +755,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGateway {
 export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -765,7 +765,7 @@ export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayToT
 export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryApiGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -831,7 +831,7 @@ export interface DataGoogleBeyondcorpSecurityGatewayServiceDiscovery {
 export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryToTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayServiceDiscovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -841,7 +841,7 @@ export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryToTerraform(s
 export function dataGoogleBeyondcorpSecurityGatewayServiceDiscoveryToHclTerraform(struct?: DataGoogleBeyondcorpSecurityGatewayServiceDiscovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -903,7 +903,7 @@ export class DataGoogleBeyondcorpSecurityGatewayServiceDiscoveryList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/beyondcorp_security_gateway google_beyondcorp_security_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/beyondcorp_security_gateway google_beyondcorp_security_gateway}
 */
 export class DataGoogleBeyondcorpSecurityGateway extends cdktn.TerraformDataSource {
 
@@ -919,7 +919,7 @@ export class DataGoogleBeyondcorpSecurityGateway extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataGoogleBeyondcorpSecurityGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBeyondcorpSecurityGateway to import
-  * @param importFromId The id of the existing DataGoogleBeyondcorpSecurityGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/beyondcorp_security_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleBeyondcorpSecurityGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/beyondcorp_security_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBeyondcorpSecurityGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -931,7 +931,7 @@ export class DataGoogleBeyondcorpSecurityGateway extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -942,7 +942,7 @@ export class DataGoogleBeyondcorpSecurityGateway extends cdktn.TerraformDataSour
       terraformResourceType: 'google_beyondcorp_security_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

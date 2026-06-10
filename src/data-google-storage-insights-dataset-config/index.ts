@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGoogleStorageInsightsDatasetConfigConfig extends cdktn.Terr
   /**
   * The user-defined ID of the DatasetConfig
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config#dataset_config_id DataGoogleStorageInsightsDatasetConfig#dataset_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config#dataset_config_id DataGoogleStorageInsightsDatasetConfig#dataset_config_id}
   */
   readonly datasetConfigId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config#id DataGoogleStorageInsightsDatasetConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config#id DataGoogleStorageInsightsDatasetConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,11 +28,11 @@ export interface DataGoogleStorageInsightsDatasetConfigConfig extends cdktn.Terr
   /**
   * The location of the DatasetConfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config#location DataGoogleStorageInsightsDatasetConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config#location DataGoogleStorageInsightsDatasetConfig#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config#project DataGoogleStorageInsightsDatasetConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config#project DataGoogleStorageInsightsDatasetConfig#project}
   */
   readonly project?: string;
 }
@@ -42,7 +42,7 @@ export interface DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucket
 export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -52,7 +52,7 @@ export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBuckets
 export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -122,7 +122,7 @@ export interface DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucket
 export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -132,7 +132,7 @@ export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBuckets
 export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -198,7 +198,7 @@ export interface DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageLocati
 export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageLocationsToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -208,7 +208,7 @@ export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageLocatio
 export function dataGoogleStorageInsightsDatasetConfigExcludeCloudStorageLocationsToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -273,7 +273,7 @@ export interface DataGoogleStorageInsightsDatasetConfigIdentity {
 export function dataGoogleStorageInsightsDatasetConfigIdentityToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -283,7 +283,7 @@ export function dataGoogleStorageInsightsDatasetConfigIdentityToTerraform(struct
 export function dataGoogleStorageInsightsDatasetConfigIdentityToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -353,7 +353,7 @@ export interface DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucket
 export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -363,7 +363,7 @@ export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBuckets
 export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -433,7 +433,7 @@ export interface DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucket
 export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucketsToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -443,7 +443,7 @@ export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBuckets
 export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBucketsToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageBuckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -509,7 +509,7 @@ export interface DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageLocati
 export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageLocationsToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -519,7 +519,7 @@ export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageLocatio
 export function dataGoogleStorageInsightsDatasetConfigIncludeCloudStorageLocationsToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigIncludeCloudStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -584,7 +584,7 @@ export interface DataGoogleStorageInsightsDatasetConfigLink {
 export function dataGoogleStorageInsightsDatasetConfigLinkToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -594,7 +594,7 @@ export function dataGoogleStorageInsightsDatasetConfigLinkToTerraform(struct?: D
 export function dataGoogleStorageInsightsDatasetConfigLinkToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -664,7 +664,7 @@ export interface DataGoogleStorageInsightsDatasetConfigSourceFolders {
 export function dataGoogleStorageInsightsDatasetConfigSourceFoldersToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigSourceFolders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -674,7 +674,7 @@ export function dataGoogleStorageInsightsDatasetConfigSourceFoldersToTerraform(s
 export function dataGoogleStorageInsightsDatasetConfigSourceFoldersToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigSourceFolders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -739,7 +739,7 @@ export interface DataGoogleStorageInsightsDatasetConfigSourceProjects {
 export function dataGoogleStorageInsightsDatasetConfigSourceProjectsToTerraform(struct?: DataGoogleStorageInsightsDatasetConfigSourceProjects): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -749,7 +749,7 @@ export function dataGoogleStorageInsightsDatasetConfigSourceProjectsToTerraform(
 export function dataGoogleStorageInsightsDatasetConfigSourceProjectsToHclTerraform(struct?: DataGoogleStorageInsightsDatasetConfigSourceProjects): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -810,7 +810,7 @@ export class DataGoogleStorageInsightsDatasetConfigSourceProjectsList extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config google_storage_insights_dataset_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config google_storage_insights_dataset_config}
 */
 export class DataGoogleStorageInsightsDatasetConfig extends cdktn.TerraformDataSource {
 
@@ -826,7 +826,7 @@ export class DataGoogleStorageInsightsDatasetConfig extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataGoogleStorageInsightsDatasetConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleStorageInsightsDatasetConfig to import
-  * @param importFromId The id of the existing DataGoogleStorageInsightsDatasetConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleStorageInsightsDatasetConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleStorageInsightsDatasetConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -838,7 +838,7 @@ export class DataGoogleStorageInsightsDatasetConfig extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/storage_insights_dataset_config google_storage_insights_dataset_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/storage_insights_dataset_config google_storage_insights_dataset_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -849,7 +849,7 @@ export class DataGoogleStorageInsightsDatasetConfig extends cdktn.TerraformDataS
       terraformResourceType: 'google_storage_insights_dataset_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface ModelArmorTemplateConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#deletion_policy ModelArmorTemplate#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#deletion_policy ModelArmorTemplate#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#id ModelArmorTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#id ModelArmorTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,17 +37,17 @@ export interface ModelArmorTemplateConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#labels ModelArmorTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#labels ModelArmorTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#location ModelArmorTemplate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#location ModelArmorTemplate#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#project ModelArmorTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#project ModelArmorTemplate#project}
   */
   readonly project?: string;
   /**
@@ -55,25 +55,25 @@ export interface ModelArmorTemplateConfig extends cdktn.TerraformMetaArguments {
   * If auto-generating Id server-side, remove this field and
   * template_id from the method_signature of Create RPC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#template_id ModelArmorTemplate#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#template_id ModelArmorTemplate#template_id}
   */
   readonly templateId: string;
   /**
   * filter_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#filter_config ModelArmorTemplate#filter_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#filter_config ModelArmorTemplate#filter_config}
   */
   readonly filterConfig: ModelArmorTemplateFilterConfig;
   /**
   * template_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#template_metadata ModelArmorTemplate#template_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#template_metadata ModelArmorTemplate#template_metadata}
   */
   readonly templateMetadata?: ModelArmorTemplateTemplateMetadata;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#timeouts ModelArmorTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#timeouts ModelArmorTemplate#timeouts}
   */
   readonly timeouts?: ModelArmorTemplateTimeouts;
 }
@@ -84,7 +84,7 @@ export interface ModelArmorTemplateFilterConfigMaliciousUriFilterSettings {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -92,7 +92,7 @@ export interface ModelArmorTemplateFilterConfigMaliciousUriFilterSettings {
 export function modelArmorTemplateFilterConfigMaliciousUriFilterSettingsToTerraform(struct?: ModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference | ModelArmorTemplateFilterConfigMaliciousUriFilterSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_enforcement: cdktn.stringToTerraform(struct!.filterEnforcement),
@@ -103,7 +103,7 @@ export function modelArmorTemplateFilterConfigMaliciousUriFilterSettingsToTerraf
 export function modelArmorTemplateFilterConfigMaliciousUriFilterSettingsToHclTerraform(struct?: ModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference | ModelArmorTemplateFilterConfigMaliciousUriFilterSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter_enforcement: {
@@ -173,7 +173,7 @@ export interface ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings {
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -183,7 +183,7 @@ export interface ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -191,7 +191,7 @@ export interface ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings {
 export function modelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsToTerraform(struct?: ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference | ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     confidence_level: cdktn.stringToTerraform(struct!.confidenceLevel),
@@ -203,7 +203,7 @@ export function modelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsToTerr
 export function modelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsToHclTerraform(struct?: ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference | ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     confidence_level: {
@@ -301,7 +301,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettingsRaiFilters {
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -311,7 +311,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettingsRaiFilters {
   * HARASSMENT
   * DANGEROUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#filter_type ModelArmorTemplate#filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#filter_type ModelArmorTemplate#filter_type}
   */
   readonly filterType: string;
 }
@@ -319,7 +319,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettingsRaiFilters {
 export function modelArmorTemplateFilterConfigRaiSettingsRaiFiltersToTerraform(struct?: ModelArmorTemplateFilterConfigRaiSettingsRaiFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     confidence_level: cdktn.stringToTerraform(struct!.confidenceLevel),
@@ -331,7 +331,7 @@ export function modelArmorTemplateFilterConfigRaiSettingsRaiFiltersToTerraform(s
 export function modelArmorTemplateFilterConfigRaiSettingsRaiFiltersToHclTerraform(struct?: ModelArmorTemplateFilterConfigRaiSettingsRaiFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     confidence_level: {
@@ -455,7 +455,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettings {
   /**
   * rai_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#rai_filters ModelArmorTemplate#rai_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#rai_filters ModelArmorTemplate#rai_filters}
   */
   readonly raiFilters: ModelArmorTemplateFilterConfigRaiSettingsRaiFilters[] | cdktn.IResolvable;
 }
@@ -463,7 +463,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettings {
 export function modelArmorTemplateFilterConfigRaiSettingsToTerraform(struct?: ModelArmorTemplateFilterConfigRaiSettingsOutputReference | ModelArmorTemplateFilterConfigRaiSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rai_filters: cdktn.listMapper(modelArmorTemplateFilterConfigRaiSettingsRaiFiltersToTerraform, true)(struct!.raiFilters),
@@ -474,7 +474,7 @@ export function modelArmorTemplateFilterConfigRaiSettingsToTerraform(struct?: Mo
 export function modelArmorTemplateFilterConfigRaiSettingsToHclTerraform(struct?: ModelArmorTemplateFilterConfigRaiSettingsOutputReference | ModelArmorTemplateFilterConfigRaiSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rai_filters: {
@@ -545,7 +545,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig {
   * e.g.
   * 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#deidentify_template ModelArmorTemplate#deidentify_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#deidentify_template ModelArmorTemplate#deidentify_template}
   */
   readonly deidentifyTemplate?: string;
   /**
@@ -557,7 +557,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig {
   * e.g:-
   * 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#inspect_template ModelArmorTemplate#inspect_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#inspect_template ModelArmorTemplate#inspect_template}
   */
   readonly inspectTemplate?: string;
 }
@@ -565,7 +565,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig {
 export function modelArmorTemplateFilterConfigSdpSettingsAdvancedConfigToTerraform(struct?: ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference | ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     deidentify_template: cdktn.stringToTerraform(struct!.deidentifyTemplate),
@@ -577,7 +577,7 @@ export function modelArmorTemplateFilterConfigSdpSettingsAdvancedConfigToTerrafo
 export function modelArmorTemplateFilterConfigSdpSettingsAdvancedConfigToHclTerraform(struct?: ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference | ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     deidentify_template: {
@@ -676,7 +676,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsBasicConfig {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -684,7 +684,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsBasicConfig {
 export function modelArmorTemplateFilterConfigSdpSettingsBasicConfigToTerraform(struct?: ModelArmorTemplateFilterConfigSdpSettingsBasicConfigOutputReference | ModelArmorTemplateFilterConfigSdpSettingsBasicConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_enforcement: cdktn.stringToTerraform(struct!.filterEnforcement),
@@ -695,7 +695,7 @@ export function modelArmorTemplateFilterConfigSdpSettingsBasicConfigToTerraform(
 export function modelArmorTemplateFilterConfigSdpSettingsBasicConfigToHclTerraform(struct?: ModelArmorTemplateFilterConfigSdpSettingsBasicConfigOutputReference | ModelArmorTemplateFilterConfigSdpSettingsBasicConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter_enforcement: {
@@ -762,13 +762,13 @@ export interface ModelArmorTemplateFilterConfigSdpSettings {
   /**
   * advanced_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#advanced_config ModelArmorTemplate#advanced_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#advanced_config ModelArmorTemplate#advanced_config}
   */
   readonly advancedConfig?: ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig;
   /**
   * basic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#basic_config ModelArmorTemplate#basic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#basic_config ModelArmorTemplate#basic_config}
   */
   readonly basicConfig?: ModelArmorTemplateFilterConfigSdpSettingsBasicConfig;
 }
@@ -776,7 +776,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettings {
 export function modelArmorTemplateFilterConfigSdpSettingsToTerraform(struct?: ModelArmorTemplateFilterConfigSdpSettingsOutputReference | ModelArmorTemplateFilterConfigSdpSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     advanced_config: modelArmorTemplateFilterConfigSdpSettingsAdvancedConfigToTerraform(struct!.advancedConfig),
@@ -788,7 +788,7 @@ export function modelArmorTemplateFilterConfigSdpSettingsToTerraform(struct?: Mo
 export function modelArmorTemplateFilterConfigSdpSettingsToHclTerraform(struct?: ModelArmorTemplateFilterConfigSdpSettingsOutputReference | ModelArmorTemplateFilterConfigSdpSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     advanced_config: {
@@ -883,25 +883,25 @@ export interface ModelArmorTemplateFilterConfig {
   /**
   * malicious_uri_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#malicious_uri_filter_settings ModelArmorTemplate#malicious_uri_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#malicious_uri_filter_settings ModelArmorTemplate#malicious_uri_filter_settings}
   */
   readonly maliciousUriFilterSettings?: ModelArmorTemplateFilterConfigMaliciousUriFilterSettings;
   /**
   * pi_and_jailbreak_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#pi_and_jailbreak_filter_settings ModelArmorTemplate#pi_and_jailbreak_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#pi_and_jailbreak_filter_settings ModelArmorTemplate#pi_and_jailbreak_filter_settings}
   */
   readonly piAndJailbreakFilterSettings?: ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings;
   /**
   * rai_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#rai_settings ModelArmorTemplate#rai_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#rai_settings ModelArmorTemplate#rai_settings}
   */
   readonly raiSettings?: ModelArmorTemplateFilterConfigRaiSettings;
   /**
   * sdp_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#sdp_settings ModelArmorTemplate#sdp_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#sdp_settings ModelArmorTemplate#sdp_settings}
   */
   readonly sdpSettings?: ModelArmorTemplateFilterConfigSdpSettings;
 }
@@ -909,7 +909,7 @@ export interface ModelArmorTemplateFilterConfig {
 export function modelArmorTemplateFilterConfigToTerraform(struct?: ModelArmorTemplateFilterConfigOutputReference | ModelArmorTemplateFilterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     malicious_uri_filter_settings: modelArmorTemplateFilterConfigMaliciousUriFilterSettingsToTerraform(struct!.maliciousUriFilterSettings),
@@ -923,7 +923,7 @@ export function modelArmorTemplateFilterConfigToTerraform(struct?: ModelArmorTem
 export function modelArmorTemplateFilterConfigToHclTerraform(struct?: ModelArmorTemplateFilterConfigOutputReference | ModelArmorTemplateFilterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     malicious_uri_filter_settings: {
@@ -1074,7 +1074,7 @@ export interface ModelArmorTemplateTemplateMetadataMultiLanguageDetection {
   /**
   * If true, multi language detection will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#enable_multi_language_detection ModelArmorTemplate#enable_multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#enable_multi_language_detection ModelArmorTemplate#enable_multi_language_detection}
   */
   readonly enableMultiLanguageDetection: boolean | cdktn.IResolvable;
 }
@@ -1082,7 +1082,7 @@ export interface ModelArmorTemplateTemplateMetadataMultiLanguageDetection {
 export function modelArmorTemplateTemplateMetadataMultiLanguageDetectionToTerraform(struct?: ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference | ModelArmorTemplateTemplateMetadataMultiLanguageDetection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_multi_language_detection: cdktn.booleanToTerraform(struct!.enableMultiLanguageDetection),
@@ -1093,7 +1093,7 @@ export function modelArmorTemplateTemplateMetadataMultiLanguageDetectionToTerraf
 export function modelArmorTemplateTemplateMetadataMultiLanguageDetectionToHclTerraform(struct?: ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference | ModelArmorTemplateTemplateMetadataMultiLanguageDetection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_multi_language_detection: {
@@ -1158,28 +1158,28 @@ export interface ModelArmorTemplateTemplateMetadata {
   * Indicates the custom error code set by the user to be returned to the end
   * user if the LLM response trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#custom_llm_response_safety_error_code ModelArmorTemplate#custom_llm_response_safety_error_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#custom_llm_response_safety_error_code ModelArmorTemplate#custom_llm_response_safety_error_code}
   */
   readonly customLlmResponseSafetyErrorCode?: number;
   /**
   * Indicates the custom error message set by the user to be returned to the
   * end user if the LLM response trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#custom_llm_response_safety_error_message ModelArmorTemplate#custom_llm_response_safety_error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#custom_llm_response_safety_error_message ModelArmorTemplate#custom_llm_response_safety_error_message}
   */
   readonly customLlmResponseSafetyErrorMessage?: string;
   /**
   * Indicates the custom error code set by the user to be returned to the end
   * user by the service extension if the prompt trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#custom_prompt_safety_error_code ModelArmorTemplate#custom_prompt_safety_error_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#custom_prompt_safety_error_code ModelArmorTemplate#custom_prompt_safety_error_code}
   */
   readonly customPromptSafetyErrorCode?: number;
   /**
   * Indicates the custom error message set by the user to be returned to the
   * end user if the prompt trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#custom_prompt_safety_error_message ModelArmorTemplate#custom_prompt_safety_error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#custom_prompt_safety_error_message ModelArmorTemplate#custom_prompt_safety_error_message}
   */
   readonly customPromptSafetyErrorMessage?: string;
   /**
@@ -1187,31 +1187,31 @@ export interface ModelArmorTemplateTemplateMetadata {
   * INSPECT_ONLY
   * INSPECT_AND_BLOCK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#enforcement_type ModelArmorTemplate#enforcement_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#enforcement_type ModelArmorTemplate#enforcement_type}
   */
   readonly enforcementType?: string;
   /**
   * If true, partial detector failures should be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#ignore_partial_invocation_failures ModelArmorTemplate#ignore_partial_invocation_failures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#ignore_partial_invocation_failures ModelArmorTemplate#ignore_partial_invocation_failures}
   */
   readonly ignorePartialInvocationFailures?: boolean | cdktn.IResolvable;
   /**
   * If true, log sanitize operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#log_sanitize_operations ModelArmorTemplate#log_sanitize_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#log_sanitize_operations ModelArmorTemplate#log_sanitize_operations}
   */
   readonly logSanitizeOperations?: boolean | cdktn.IResolvable;
   /**
   * If true, log template crud operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#log_template_operations ModelArmorTemplate#log_template_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#log_template_operations ModelArmorTemplate#log_template_operations}
   */
   readonly logTemplateOperations?: boolean | cdktn.IResolvable;
   /**
   * multi_language_detection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#multi_language_detection ModelArmorTemplate#multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#multi_language_detection ModelArmorTemplate#multi_language_detection}
   */
   readonly multiLanguageDetection?: ModelArmorTemplateTemplateMetadataMultiLanguageDetection;
 }
@@ -1219,7 +1219,7 @@ export interface ModelArmorTemplateTemplateMetadata {
 export function modelArmorTemplateTemplateMetadataToTerraform(struct?: ModelArmorTemplateTemplateMetadataOutputReference | ModelArmorTemplateTemplateMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_llm_response_safety_error_code: cdktn.numberToTerraform(struct!.customLlmResponseSafetyErrorCode),
@@ -1238,7 +1238,7 @@ export function modelArmorTemplateTemplateMetadataToTerraform(struct?: ModelArmo
 export function modelArmorTemplateTemplateMetadataToHclTerraform(struct?: ModelArmorTemplateTemplateMetadataOutputReference | ModelArmorTemplateTemplateMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_llm_response_safety_error_code: {
@@ -1527,15 +1527,15 @@ export class ModelArmorTemplateTemplateMetadataOutputReference extends cdktn.Com
 }
 export interface ModelArmorTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#create ModelArmorTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#create ModelArmorTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#delete ModelArmorTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#delete ModelArmorTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#update ModelArmorTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#update ModelArmorTemplate#update}
   */
   readonly update?: string;
 }
@@ -1543,7 +1543,7 @@ export interface ModelArmorTemplateTimeouts {
 export function modelArmorTemplateTimeoutsToTerraform(struct?: ModelArmorTemplateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1556,7 +1556,7 @@ export function modelArmorTemplateTimeoutsToTerraform(struct?: ModelArmorTemplat
 export function modelArmorTemplateTimeoutsToHclTerraform(struct?: ModelArmorTemplateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1687,7 +1687,7 @@ export class ModelArmorTemplateTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template google_model_armor_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template google_model_armor_template}
 */
 export class ModelArmorTemplate extends cdktn.TerraformResource {
 
@@ -1703,7 +1703,7 @@ export class ModelArmorTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ModelArmorTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelArmorTemplate to import
-  * @param importFromId The id of the existing ModelArmorTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ModelArmorTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelArmorTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1715,7 +1715,7 @@ export class ModelArmorTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/model_armor_template google_model_armor_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/model_armor_template google_model_armor_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1726,7 +1726,7 @@ export class ModelArmorTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'google_model_armor_template',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

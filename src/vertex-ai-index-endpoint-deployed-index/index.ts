@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,13 +21,13 @@ export interface VertexAiIndexEndpointDeployedIndexConfig extends cdktn.Terrafor
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deletion_policy VertexAiIndexEndpointDeployedIndex#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deletion_policy VertexAiIndexEndpointDeployedIndex#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user specified ID of the DeployedIndex. The ID can be up to 128 characters long and must start with a letter and only contain letters, numbers, and underscores. The ID must be unique within the project it is created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deployed_index_id VertexAiIndexEndpointDeployedIndex#deployed_index_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deployed_index_id VertexAiIndexEndpointDeployedIndex#deployed_index_id}
   */
   readonly deployedIndexId: string;
   /**
@@ -35,23 +35,23 @@ export interface VertexAiIndexEndpointDeployedIndexConfig extends cdktn.Terrafor
   * Creating deployment_groups with reserved_ip_ranges is a recommended practice when the peered network has multiple peering ranges. This creates your deployments from predictable IP spaces for easier traffic administration. Also, one deployment_group (except 'default') can only be used with the same reserved_ip_ranges which means if the deployment_group has been used with reserved_ip_ranges: [a, b, c], using it with [a, b] or [d, e] is disallowed. [See the official documentation here](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/projects.locations.indexEndpoints#DeployedIndex.FIELDS.deployment_group).
   * Note: we only support up to 5 deployment groups (not including 'default').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deployment_group VertexAiIndexEndpointDeployedIndex#deployment_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deployment_group VertexAiIndexEndpointDeployedIndex#deployment_group}
   */
   readonly deploymentGroup?: string;
   /**
   * The display name of the Index. The name can be up to 128 characters long and can consist of any UTF-8 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#display_name VertexAiIndexEndpointDeployedIndex#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#display_name VertexAiIndexEndpointDeployedIndex#display_name}
   */
   readonly displayName?: string;
   /**
   * If true, private endpoint's access logs are sent to Cloud Logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#enable_access_logging VertexAiIndexEndpointDeployedIndex#enable_access_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#enable_access_logging VertexAiIndexEndpointDeployedIndex#enable_access_logging}
   */
   readonly enableAccessLogging?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#id VertexAiIndexEndpointDeployedIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#id VertexAiIndexEndpointDeployedIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,20 +60,20 @@ export interface VertexAiIndexEndpointDeployedIndexConfig extends cdktn.Terrafor
   /**
   * The name of the Index this is the deployment of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#index VertexAiIndexEndpointDeployedIndex#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#index VertexAiIndexEndpointDeployedIndex#index}
   */
   readonly index: string;
   /**
   * Identifies the index endpoint. Must be in the format
   * 'projects/{{project}}/locations/{{region}}/indexEndpoints/{{indexEndpoint}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#index_endpoint VertexAiIndexEndpointDeployedIndex#index_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#index_endpoint VertexAiIndexEndpointDeployedIndex#index_endpoint}
   */
   readonly indexEndpoint: string;
   /**
   * The region of the index endpoint deployment. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#region VertexAiIndexEndpointDeployedIndex#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#region VertexAiIndexEndpointDeployedIndex#region}
   */
   readonly region?: string;
   /**
@@ -84,31 +84,31 @@ export interface VertexAiIndexEndpointDeployedIndexConfig extends cdktn.Terrafor
   * 
   * For more information about subnets and network IP ranges, please see https://cloud.google.com/vpc/docs/subnets#manually_created_subnet_ip_ranges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#reserved_ip_ranges VertexAiIndexEndpointDeployedIndex#reserved_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#reserved_ip_ranges VertexAiIndexEndpointDeployedIndex#reserved_ip_ranges}
   */
   readonly reservedIpRanges?: string[];
   /**
   * automatic_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#automatic_resources VertexAiIndexEndpointDeployedIndex#automatic_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#automatic_resources VertexAiIndexEndpointDeployedIndex#automatic_resources}
   */
   readonly automaticResources?: VertexAiIndexEndpointDeployedIndexAutomaticResources;
   /**
   * dedicated_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#dedicated_resources VertexAiIndexEndpointDeployedIndex#dedicated_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#dedicated_resources VertexAiIndexEndpointDeployedIndex#dedicated_resources}
   */
   readonly dedicatedResources?: VertexAiIndexEndpointDeployedIndexDedicatedResources;
   /**
   * deployed_index_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deployed_index_auth_config VertexAiIndexEndpointDeployedIndex#deployed_index_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#deployed_index_auth_config VertexAiIndexEndpointDeployedIndex#deployed_index_auth_config}
   */
   readonly deployedIndexAuthConfig?: VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#timeouts VertexAiIndexEndpointDeployedIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#timeouts VertexAiIndexEndpointDeployedIndex#timeouts}
   */
   readonly timeouts?: VertexAiIndexEndpointDeployedIndexTimeouts;
 }
@@ -118,7 +118,7 @@ export interface VertexAiIndexEndpointDeployedIndexPrivateEndpointsPscAutomatedE
 export function vertexAiIndexEndpointDeployedIndexPrivateEndpointsPscAutomatedEndpointsToTerraform(struct?: VertexAiIndexEndpointDeployedIndexPrivateEndpointsPscAutomatedEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -128,7 +128,7 @@ export function vertexAiIndexEndpointDeployedIndexPrivateEndpointsPscAutomatedEn
 export function vertexAiIndexEndpointDeployedIndexPrivateEndpointsPscAutomatedEndpointsToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexPrivateEndpointsPscAutomatedEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -203,7 +203,7 @@ export interface VertexAiIndexEndpointDeployedIndexPrivateEndpoints {
 export function vertexAiIndexEndpointDeployedIndexPrivateEndpointsToTerraform(struct?: VertexAiIndexEndpointDeployedIndexPrivateEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -213,7 +213,7 @@ export function vertexAiIndexEndpointDeployedIndexPrivateEndpointsToTerraform(st
 export function vertexAiIndexEndpointDeployedIndexPrivateEndpointsToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexPrivateEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -289,7 +289,7 @@ export interface VertexAiIndexEndpointDeployedIndexAutomaticResources {
   * 
   * The maximum number of replicas this DeployedModel may be deployed on when the traffic against it increases. If the requested value is too large, the deployment will error, but if deployment succeeds then the ability to scale the model to that many replicas is guaranteed (barring service outages). If traffic against the DeployedModel increases beyond what its replicas at maximum may handle, a portion of the traffic will be dropped. If this value is not provided, a no upper bound for scaling under heavy traffic will be assume, though Vertex AI may be unable to scale beyond certain replica number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#max_replica_count VertexAiIndexEndpointDeployedIndex#max_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#max_replica_count VertexAiIndexEndpointDeployedIndex#max_replica_count}
   */
   readonly maxReplicaCount?: number;
   /**
@@ -297,7 +297,7 @@ export interface VertexAiIndexEndpointDeployedIndexAutomaticResources {
   * 
   * If traffic against it increases, it may dynamically be deployed onto more replicas up to [maxReplicaCount](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/AutomaticResources#FIELDS.max_replica_count), and as traffic decreases, some of these extra replicas may be freed. If the requested value is too large, the deployment will error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#min_replica_count VertexAiIndexEndpointDeployedIndex#min_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#min_replica_count VertexAiIndexEndpointDeployedIndex#min_replica_count}
   */
   readonly minReplicaCount?: number;
 }
@@ -305,7 +305,7 @@ export interface VertexAiIndexEndpointDeployedIndexAutomaticResources {
 export function vertexAiIndexEndpointDeployedIndexAutomaticResourcesToTerraform(struct?: VertexAiIndexEndpointDeployedIndexAutomaticResourcesOutputReference | VertexAiIndexEndpointDeployedIndexAutomaticResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_replica_count: cdktn.numberToTerraform(struct!.maxReplicaCount),
@@ -317,7 +317,7 @@ export function vertexAiIndexEndpointDeployedIndexAutomaticResourcesToTerraform(
 export function vertexAiIndexEndpointDeployedIndexAutomaticResourcesToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexAutomaticResourcesOutputReference | VertexAiIndexEndpointDeployedIndexAutomaticResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_replica_count: {
@@ -418,7 +418,7 @@ export interface VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpec
   * 
   * For [DeployedModel](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/projects.locations.endpoints#DeployedModel) this field is optional, and the default value is n1-standard-2. For [BatchPredictionJob](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/projects.locations.batchPredictionJobs#BatchPredictionJob) or as part of [WorkerPoolSpec](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/CustomJobSpec#WorkerPoolSpec) this field is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#machine_type VertexAiIndexEndpointDeployedIndex#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#machine_type VertexAiIndexEndpointDeployedIndex#machine_type}
   */
   readonly machineType?: string;
 }
@@ -426,7 +426,7 @@ export interface VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpec
 export function vertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpecToTerraform(struct?: VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpecOutputReference | VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     machine_type: cdktn.stringToTerraform(struct!.machineType),
@@ -437,7 +437,7 @@ export function vertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpecT
 export function vertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpecToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpecOutputReference | VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     machine_type: {
@@ -504,19 +504,19 @@ export interface VertexAiIndexEndpointDeployedIndexDedicatedResources {
   /**
   * The maximum number of replicas this DeployedModel may be deployed on when the traffic against it increases. If maxReplicaCount is not set, the default value is minReplicaCount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#max_replica_count VertexAiIndexEndpointDeployedIndex#max_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#max_replica_count VertexAiIndexEndpointDeployedIndex#max_replica_count}
   */
   readonly maxReplicaCount?: number;
   /**
   * The minimum number of machine replicas this DeployedModel will be always deployed on. This value must be greater than or equal to 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#min_replica_count VertexAiIndexEndpointDeployedIndex#min_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#min_replica_count VertexAiIndexEndpointDeployedIndex#min_replica_count}
   */
   readonly minReplicaCount: number;
   /**
   * machine_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#machine_spec VertexAiIndexEndpointDeployedIndex#machine_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#machine_spec VertexAiIndexEndpointDeployedIndex#machine_spec}
   */
   readonly machineSpec: VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpec;
 }
@@ -524,7 +524,7 @@ export interface VertexAiIndexEndpointDeployedIndexDedicatedResources {
 export function vertexAiIndexEndpointDeployedIndexDedicatedResourcesToTerraform(struct?: VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference | VertexAiIndexEndpointDeployedIndexDedicatedResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_replica_count: cdktn.numberToTerraform(struct!.maxReplicaCount),
@@ -537,7 +537,7 @@ export function vertexAiIndexEndpointDeployedIndexDedicatedResourcesToTerraform(
 export function vertexAiIndexEndpointDeployedIndexDedicatedResourcesToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference | VertexAiIndexEndpointDeployedIndexDedicatedResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_replica_count: {
@@ -654,13 +654,13 @@ export interface VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthPr
   /**
   * A list of allowed JWT issuers. Each entry must be a valid Google service account, in the following format: service-account-name@project-id.iam.gserviceaccount.com
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#allowed_issuers VertexAiIndexEndpointDeployedIndex#allowed_issuers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#allowed_issuers VertexAiIndexEndpointDeployedIndex#allowed_issuers}
   */
   readonly allowedIssuers?: string[];
   /**
   * The list of JWT audiences. that are allowed to access. A JWT containing any of these audiences will be accepted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#audiences VertexAiIndexEndpointDeployedIndex#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#audiences VertexAiIndexEndpointDeployedIndex#audiences}
   */
   readonly audiences?: string[];
 }
@@ -668,7 +668,7 @@ export interface VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthPr
 export function vertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderToTerraform(struct?: VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference | VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProvider): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_issuers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedIssuers),
@@ -680,7 +680,7 @@ export function vertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthPro
 export function vertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference | VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProvider): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_issuers: {
@@ -775,7 +775,7 @@ export interface VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfig {
   /**
   * auth_provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#auth_provider VertexAiIndexEndpointDeployedIndex#auth_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#auth_provider VertexAiIndexEndpointDeployedIndex#auth_provider}
   */
   readonly authProvider?: VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProvider;
 }
@@ -783,7 +783,7 @@ export interface VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfig {
 export function vertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigToTerraform(struct?: VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigOutputReference | VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auth_provider: vertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderToTerraform(struct!.authProvider),
@@ -794,7 +794,7 @@ export function vertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigToTerra
 export function vertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigOutputReference | VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auth_provider: {
@@ -859,15 +859,15 @@ export class VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigOutputRefe
 }
 export interface VertexAiIndexEndpointDeployedIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#create VertexAiIndexEndpointDeployedIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#create VertexAiIndexEndpointDeployedIndex#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#delete VertexAiIndexEndpointDeployedIndex#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#delete VertexAiIndexEndpointDeployedIndex#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#update VertexAiIndexEndpointDeployedIndex#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#update VertexAiIndexEndpointDeployedIndex#update}
   */
   readonly update?: string;
 }
@@ -875,7 +875,7 @@ export interface VertexAiIndexEndpointDeployedIndexTimeouts {
 export function vertexAiIndexEndpointDeployedIndexTimeoutsToTerraform(struct?: VertexAiIndexEndpointDeployedIndexTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -888,7 +888,7 @@ export function vertexAiIndexEndpointDeployedIndexTimeoutsToTerraform(struct?: V
 export function vertexAiIndexEndpointDeployedIndexTimeoutsToHclTerraform(struct?: VertexAiIndexEndpointDeployedIndexTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1019,7 +1019,7 @@ export class VertexAiIndexEndpointDeployedIndexTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}
 */
 export class VertexAiIndexEndpointDeployedIndex extends cdktn.TerraformResource {
 
@@ -1035,7 +1035,7 @@ export class VertexAiIndexEndpointDeployedIndex extends cdktn.TerraformResource 
   * Generates CDKTN code for importing a VertexAiIndexEndpointDeployedIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiIndexEndpointDeployedIndex to import
-  * @param importFromId The id of the existing VertexAiIndexEndpointDeployedIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiIndexEndpointDeployedIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiIndexEndpointDeployedIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1047,7 +1047,7 @@ export class VertexAiIndexEndpointDeployedIndex extends cdktn.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1058,7 +1058,7 @@ export class VertexAiIndexEndpointDeployedIndex extends cdktn.TerraformResource 
       terraformResourceType: 'google_vertex_ai_index_endpoint_deployed_index',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1229,7 +1229,7 @@ export class VertexAiIndexEndpointDeployedIndex extends cdktn.TerraformResource 
     return this._privateEndpoints;
   }
 
-  // region - computed: false, optional: true, required: false
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');

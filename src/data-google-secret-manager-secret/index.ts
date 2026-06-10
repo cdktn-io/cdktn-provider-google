@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/secret_manager_secret
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/secret_manager_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleSecretManagerSecretConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/secret_manager_secret#id DataGoogleSecretManagerSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/secret_manager_secret#id DataGoogleSecretManagerSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/secret_manager_secret#project DataGoogleSecretManagerSecret#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/secret_manager_secret#project DataGoogleSecretManagerSecret#project}
   */
   readonly project?: string;
   /**
   * This must be unique within the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/secret_manager_secret#secret_id DataGoogleSecretManagerSecret#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/secret_manager_secret#secret_id DataGoogleSecretManagerSecret#secret_id}
   */
   readonly secretId: string;
 }
@@ -36,7 +36,7 @@ export interface DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncr
 export function dataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionToTerraform(struct?: DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -46,7 +46,7 @@ export function dataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncry
 export function dataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionToHclTerraform(struct?: DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -111,7 +111,7 @@ export interface DataGoogleSecretManagerSecretReplicationAuto {
 export function dataGoogleSecretManagerSecretReplicationAutoToTerraform(struct?: DataGoogleSecretManagerSecretReplicationAuto): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -121,7 +121,7 @@ export function dataGoogleSecretManagerSecretReplicationAutoToTerraform(struct?:
 export function dataGoogleSecretManagerSecretReplicationAutoToHclTerraform(struct?: DataGoogleSecretManagerSecretReplicationAuto): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -187,7 +187,7 @@ export interface DataGoogleSecretManagerSecretReplicationUserManagedReplicasCust
 export function dataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionToTerraform(struct?: DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -197,7 +197,7 @@ export function dataGoogleSecretManagerSecretReplicationUserManagedReplicasCusto
 export function dataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionToHclTerraform(struct?: DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -262,7 +262,7 @@ export interface DataGoogleSecretManagerSecretReplicationUserManagedReplicas {
 export function dataGoogleSecretManagerSecretReplicationUserManagedReplicasToTerraform(struct?: DataGoogleSecretManagerSecretReplicationUserManagedReplicas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -272,7 +272,7 @@ export function dataGoogleSecretManagerSecretReplicationUserManagedReplicasToTer
 export function dataGoogleSecretManagerSecretReplicationUserManagedReplicasToHclTerraform(struct?: DataGoogleSecretManagerSecretReplicationUserManagedReplicas): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -343,7 +343,7 @@ export interface DataGoogleSecretManagerSecretReplicationUserManaged {
 export function dataGoogleSecretManagerSecretReplicationUserManagedToTerraform(struct?: DataGoogleSecretManagerSecretReplicationUserManaged): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -353,7 +353,7 @@ export function dataGoogleSecretManagerSecretReplicationUserManagedToTerraform(s
 export function dataGoogleSecretManagerSecretReplicationUserManagedToHclTerraform(struct?: DataGoogleSecretManagerSecretReplicationUserManaged): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -419,7 +419,7 @@ export interface DataGoogleSecretManagerSecretReplication {
 export function dataGoogleSecretManagerSecretReplicationToTerraform(struct?: DataGoogleSecretManagerSecretReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -429,7 +429,7 @@ export function dataGoogleSecretManagerSecretReplicationToTerraform(struct?: Dat
 export function dataGoogleSecretManagerSecretReplicationToHclTerraform(struct?: DataGoogleSecretManagerSecretReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -501,7 +501,7 @@ export interface DataGoogleSecretManagerSecretRotation {
 export function dataGoogleSecretManagerSecretRotationToTerraform(struct?: DataGoogleSecretManagerSecretRotation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -511,7 +511,7 @@ export function dataGoogleSecretManagerSecretRotationToTerraform(struct?: DataGo
 export function dataGoogleSecretManagerSecretRotationToHclTerraform(struct?: DataGoogleSecretManagerSecretRotation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -581,7 +581,7 @@ export interface DataGoogleSecretManagerSecretTopics {
 export function dataGoogleSecretManagerSecretTopicsToTerraform(struct?: DataGoogleSecretManagerSecretTopics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -591,7 +591,7 @@ export function dataGoogleSecretManagerSecretTopicsToTerraform(struct?: DataGoog
 export function dataGoogleSecretManagerSecretTopicsToHclTerraform(struct?: DataGoogleSecretManagerSecretTopics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -652,7 +652,7 @@ export class DataGoogleSecretManagerSecretTopicsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/secret_manager_secret google_secret_manager_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/secret_manager_secret google_secret_manager_secret}
 */
 export class DataGoogleSecretManagerSecret extends cdktn.TerraformDataSource {
 
@@ -668,7 +668,7 @@ export class DataGoogleSecretManagerSecret extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleSecretManagerSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSecretManagerSecret to import
-  * @param importFromId The id of the existing DataGoogleSecretManagerSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/secret_manager_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleSecretManagerSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/secret_manager_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSecretManagerSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -680,7 +680,7 @@ export class DataGoogleSecretManagerSecret extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/secret_manager_secret google_secret_manager_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/secret_manager_secret google_secret_manager_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -691,7 +691,7 @@ export class DataGoogleSecretManagerSecret extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_secret_manager_secret',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface EventarcPipelineConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#annotations EventarcPipeline#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#annotations EventarcPipeline#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
@@ -27,7 +27,7 @@ export interface EventarcPipelineConfig extends cdktn.TerraformMetaArguments {
   * will be used to encrypt messages. It must match the pattern
   * "projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#crypto_key_name EventarcPipeline#crypto_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#crypto_key_name EventarcPipeline#crypto_key_name}
   */
   readonly cryptoKeyName?: string;
   /**
@@ -39,17 +39,17 @@ export interface EventarcPipelineConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#deletion_policy EventarcPipeline#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#deletion_policy EventarcPipeline#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Display name of resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#display_name EventarcPipeline#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#display_name EventarcPipeline#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#id EventarcPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#id EventarcPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,60 +63,60 @@ export interface EventarcPipelineConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#labels EventarcPipeline#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#labels EventarcPipeline#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#location EventarcPipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#location EventarcPipeline#location}
   */
   readonly location: string;
   /**
   * The user-provided ID to be assigned to the Pipeline. It should match the
   * format '^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#pipeline_id EventarcPipeline#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#pipeline_id EventarcPipeline#pipeline_id}
   */
   readonly pipelineId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#project EventarcPipeline#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#project EventarcPipeline#project}
   */
   readonly project?: string;
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#destinations EventarcPipeline#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#destinations EventarcPipeline#destinations}
   */
   readonly destinations: EventarcPipelineDestinations[] | cdktn.IResolvable;
   /**
   * input_payload_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#input_payload_format EventarcPipeline#input_payload_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#input_payload_format EventarcPipeline#input_payload_format}
   */
   readonly inputPayloadFormat?: EventarcPipelineInputPayloadFormat;
   /**
   * logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#logging_config EventarcPipeline#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#logging_config EventarcPipeline#logging_config}
   */
   readonly loggingConfig?: EventarcPipelineLoggingConfig;
   /**
   * mediations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#mediations EventarcPipeline#mediations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#mediations EventarcPipeline#mediations}
   */
   readonly mediations?: EventarcPipelineMediations[] | cdktn.IResolvable;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#retry_policy EventarcPipeline#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#retry_policy EventarcPipeline#retry_policy}
   */
   readonly retryPolicy?: EventarcPipelineRetryPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#timeouts EventarcPipeline#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#timeouts EventarcPipeline#timeouts}
   */
   readonly timeouts?: EventarcPipelineTimeouts;
 }
@@ -126,7 +126,7 @@ export interface EventarcPipelineDestinationsAuthenticationConfigGoogleOidc {
   * identifies the recipient that the JWT is intended for. If
   * unspecified, the destination URI will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#audience EventarcPipeline#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#audience EventarcPipeline#audience}
   */
   readonly audience?: string;
   /**
@@ -138,7 +138,7 @@ export interface EventarcPipelineDestinationsAuthenticationConfigGoogleOidc {
   * roles/roles/iam.serviceAccountTokenCreator role to allow the
   * Pipeline to create OpenID tokens for authenticated requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#service_account EventarcPipeline#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#service_account EventarcPipeline#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -146,7 +146,7 @@ export interface EventarcPipelineDestinationsAuthenticationConfigGoogleOidc {
 export function eventarcPipelineDestinationsAuthenticationConfigGoogleOidcToTerraform(struct?: EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference | EventarcPipelineDestinationsAuthenticationConfigGoogleOidc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audience: cdktn.stringToTerraform(struct!.audience),
@@ -158,7 +158,7 @@ export function eventarcPipelineDestinationsAuthenticationConfigGoogleOidcToTerr
 export function eventarcPipelineDestinationsAuthenticationConfigGoogleOidcToHclTerraform(struct?: EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference | EventarcPipelineDestinationsAuthenticationConfigGoogleOidc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audience: {
@@ -252,7 +252,7 @@ export interface EventarcPipelineDestinationsAuthenticationConfigOauthToken {
   * specified, "https://www.googleapis.com/auth/cloud-platform" will be
   * used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#scope EventarcPipeline#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#scope EventarcPipeline#scope}
   */
   readonly scope?: string;
   /**
@@ -265,7 +265,7 @@ export interface EventarcPipelineDestinationsAuthenticationConfigOauthToken {
   * roles/roles/iam.serviceAccountTokenCreator role to allow Pipeline
   * to create OAuth2 tokens for authenticated requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#service_account EventarcPipeline#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#service_account EventarcPipeline#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -273,7 +273,7 @@ export interface EventarcPipelineDestinationsAuthenticationConfigOauthToken {
 export function eventarcPipelineDestinationsAuthenticationConfigOauthTokenToTerraform(struct?: EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference | EventarcPipelineDestinationsAuthenticationConfigOauthToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope: cdktn.stringToTerraform(struct!.scope),
@@ -285,7 +285,7 @@ export function eventarcPipelineDestinationsAuthenticationConfigOauthTokenToTerr
 export function eventarcPipelineDestinationsAuthenticationConfigOauthTokenToHclTerraform(struct?: EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference | EventarcPipelineDestinationsAuthenticationConfigOauthToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope: {
@@ -377,13 +377,13 @@ export interface EventarcPipelineDestinationsAuthenticationConfig {
   /**
   * google_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#google_oidc EventarcPipeline#google_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#google_oidc EventarcPipeline#google_oidc}
   */
   readonly googleOidc?: EventarcPipelineDestinationsAuthenticationConfigGoogleOidc;
   /**
   * oauth_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#oauth_token EventarcPipeline#oauth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#oauth_token EventarcPipeline#oauth_token}
   */
   readonly oauthToken?: EventarcPipelineDestinationsAuthenticationConfigOauthToken;
 }
@@ -391,7 +391,7 @@ export interface EventarcPipelineDestinationsAuthenticationConfig {
 export function eventarcPipelineDestinationsAuthenticationConfigToTerraform(struct?: EventarcPipelineDestinationsAuthenticationConfigOutputReference | EventarcPipelineDestinationsAuthenticationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     google_oidc: eventarcPipelineDestinationsAuthenticationConfigGoogleOidcToTerraform(struct!.googleOidc),
@@ -403,7 +403,7 @@ export function eventarcPipelineDestinationsAuthenticationConfigToTerraform(stru
 export function eventarcPipelineDestinationsAuthenticationConfigToHclTerraform(struct?: EventarcPipelineDestinationsAuthenticationConfigOutputReference | EventarcPipelineDestinationsAuthenticationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     google_oidc: {
@@ -663,7 +663,7 @@ export interface EventarcPipelineDestinationsHttpEndpoint {
   * standard CloudEvent format. If it doesn't then the outgoing message
   * request may fail with a persistent error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#message_binding_template EventarcPipeline#message_binding_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#message_binding_template EventarcPipeline#message_binding_template}
   */
   readonly messageBindingTemplate?: string;
   /**
@@ -673,7 +673,7 @@ export interface EventarcPipelineDestinationsHttpEndpoint {
   * Examples: 'https://svc.us-central1.p.local:8080/route'.
   * Only the HTTPS protocol is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#uri EventarcPipeline#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#uri EventarcPipeline#uri}
   */
   readonly uri: string;
 }
@@ -681,7 +681,7 @@ export interface EventarcPipelineDestinationsHttpEndpoint {
 export function eventarcPipelineDestinationsHttpEndpointToTerraform(struct?: EventarcPipelineDestinationsHttpEndpointOutputReference | EventarcPipelineDestinationsHttpEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     message_binding_template: cdktn.stringToTerraform(struct!.messageBindingTemplate),
@@ -693,7 +693,7 @@ export function eventarcPipelineDestinationsHttpEndpointToTerraform(struct?: Eve
 export function eventarcPipelineDestinationsHttpEndpointToHclTerraform(struct?: EventarcPipelineDestinationsHttpEndpointOutputReference | EventarcPipelineDestinationsHttpEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     message_binding_template: {
@@ -791,7 +791,7 @@ export interface EventarcPipelineDestinationsNetworkConfig {
   * Required for HTTP endpoint destinations. Must not be specified for
   * Workflows, MessageBus, or Topic destinations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#network_attachment EventarcPipeline#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#network_attachment EventarcPipeline#network_attachment}
   */
   readonly networkAttachment?: string;
 }
@@ -799,7 +799,7 @@ export interface EventarcPipelineDestinationsNetworkConfig {
 export function eventarcPipelineDestinationsNetworkConfigToTerraform(struct?: EventarcPipelineDestinationsNetworkConfigOutputReference | EventarcPipelineDestinationsNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     network_attachment: cdktn.stringToTerraform(struct!.networkAttachment),
@@ -810,7 +810,7 @@ export function eventarcPipelineDestinationsNetworkConfigToTerraform(struct?: Ev
 export function eventarcPipelineDestinationsNetworkConfigToHclTerraform(struct?: EventarcPipelineDestinationsNetworkConfigOutputReference | EventarcPipelineDestinationsNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     network_attachment: {
@@ -877,7 +877,7 @@ export interface EventarcPipelineDestinationsOutputPayloadFormatAvro {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -885,7 +885,7 @@ export interface EventarcPipelineDestinationsOutputPayloadFormatAvro {
 export function eventarcPipelineDestinationsOutputPayloadFormatAvroToTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatAvroOutputReference | EventarcPipelineDestinationsOutputPayloadFormatAvro): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     schema_definition: cdktn.stringToTerraform(struct!.schemaDefinition),
@@ -896,7 +896,7 @@ export function eventarcPipelineDestinationsOutputPayloadFormatAvroToTerraform(s
 export function eventarcPipelineDestinationsOutputPayloadFormatAvroToHclTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatAvroOutputReference | EventarcPipelineDestinationsOutputPayloadFormatAvro): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     schema_definition: {
@@ -965,7 +965,7 @@ export interface EventarcPipelineDestinationsOutputPayloadFormatJson {
 export function eventarcPipelineDestinationsOutputPayloadFormatJsonToTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatJsonOutputReference | EventarcPipelineDestinationsOutputPayloadFormatJson): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -975,7 +975,7 @@ export function eventarcPipelineDestinationsOutputPayloadFormatJsonToTerraform(s
 export function eventarcPipelineDestinationsOutputPayloadFormatJsonToHclTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatJsonOutputReference | EventarcPipelineDestinationsOutputPayloadFormatJson): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1012,7 +1012,7 @@ export interface EventarcPipelineDestinationsOutputPayloadFormatProtobuf {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -1020,7 +1020,7 @@ export interface EventarcPipelineDestinationsOutputPayloadFormatProtobuf {
 export function eventarcPipelineDestinationsOutputPayloadFormatProtobufToTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference | EventarcPipelineDestinationsOutputPayloadFormatProtobuf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     schema_definition: cdktn.stringToTerraform(struct!.schemaDefinition),
@@ -1031,7 +1031,7 @@ export function eventarcPipelineDestinationsOutputPayloadFormatProtobufToTerrafo
 export function eventarcPipelineDestinationsOutputPayloadFormatProtobufToHclTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference | EventarcPipelineDestinationsOutputPayloadFormatProtobuf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     schema_definition: {
@@ -1098,19 +1098,19 @@ export interface EventarcPipelineDestinationsOutputPayloadFormat {
   /**
   * avro block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#avro EventarcPipeline#avro}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#avro EventarcPipeline#avro}
   */
   readonly avro?: EventarcPipelineDestinationsOutputPayloadFormatAvro;
   /**
   * json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#json EventarcPipeline#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#json EventarcPipeline#json}
   */
   readonly json?: EventarcPipelineDestinationsOutputPayloadFormatJson;
   /**
   * protobuf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#protobuf EventarcPipeline#protobuf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#protobuf EventarcPipeline#protobuf}
   */
   readonly protobuf?: EventarcPipelineDestinationsOutputPayloadFormatProtobuf;
 }
@@ -1118,7 +1118,7 @@ export interface EventarcPipelineDestinationsOutputPayloadFormat {
 export function eventarcPipelineDestinationsOutputPayloadFormatToTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatOutputReference | EventarcPipelineDestinationsOutputPayloadFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     avro: eventarcPipelineDestinationsOutputPayloadFormatAvroToTerraform(struct!.avro),
@@ -1131,7 +1131,7 @@ export function eventarcPipelineDestinationsOutputPayloadFormatToTerraform(struc
 export function eventarcPipelineDestinationsOutputPayloadFormatToHclTerraform(struct?: EventarcPipelineDestinationsOutputPayloadFormatOutputReference | EventarcPipelineDestinationsOutputPayloadFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     avro: {
@@ -1257,7 +1257,7 @@ export interface EventarcPipelineDestinations {
   * the Pipeline. Format:
   * 'projects/{project}/locations/{location}/messageBuses/{message_bus}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#message_bus EventarcPipeline#message_bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#message_bus EventarcPipeline#message_bus}
   */
   readonly messageBus?: string;
   /**
@@ -1265,7 +1265,7 @@ export interface EventarcPipelineDestinations {
   * published. Format:
   * 'projects/{project}/locations/{location}/topics/{topic}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#topic EventarcPipeline#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#topic EventarcPipeline#topic}
   */
   readonly topic?: string;
   /**
@@ -1274,31 +1274,31 @@ export interface EventarcPipelineDestinations {
   * project as the Pipeline. Format:
   * 'projects/{project}/locations/{location}/workflows/{workflow}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#workflow EventarcPipeline#workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#workflow EventarcPipeline#workflow}
   */
   readonly workflow?: string;
   /**
   * authentication_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#authentication_config EventarcPipeline#authentication_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#authentication_config EventarcPipeline#authentication_config}
   */
   readonly authenticationConfig?: EventarcPipelineDestinationsAuthenticationConfig;
   /**
   * http_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#http_endpoint EventarcPipeline#http_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#http_endpoint EventarcPipeline#http_endpoint}
   */
   readonly httpEndpoint?: EventarcPipelineDestinationsHttpEndpoint;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#network_config EventarcPipeline#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#network_config EventarcPipeline#network_config}
   */
   readonly networkConfig?: EventarcPipelineDestinationsNetworkConfig;
   /**
   * output_payload_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#output_payload_format EventarcPipeline#output_payload_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#output_payload_format EventarcPipeline#output_payload_format}
   */
   readonly outputPayloadFormat?: EventarcPipelineDestinationsOutputPayloadFormat;
 }
@@ -1306,7 +1306,7 @@ export interface EventarcPipelineDestinations {
 export function eventarcPipelineDestinationsToTerraform(struct?: EventarcPipelineDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     message_bus: cdktn.stringToTerraform(struct!.messageBus),
@@ -1323,7 +1323,7 @@ export function eventarcPipelineDestinationsToTerraform(struct?: EventarcPipelin
 export function eventarcPipelineDestinationsToHclTerraform(struct?: EventarcPipelineDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     message_bus: {
@@ -1590,7 +1590,7 @@ export interface EventarcPipelineInputPayloadFormatAvro {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -1598,7 +1598,7 @@ export interface EventarcPipelineInputPayloadFormatAvro {
 export function eventarcPipelineInputPayloadFormatAvroToTerraform(struct?: EventarcPipelineInputPayloadFormatAvroOutputReference | EventarcPipelineInputPayloadFormatAvro): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     schema_definition: cdktn.stringToTerraform(struct!.schemaDefinition),
@@ -1609,7 +1609,7 @@ export function eventarcPipelineInputPayloadFormatAvroToTerraform(struct?: Event
 export function eventarcPipelineInputPayloadFormatAvroToHclTerraform(struct?: EventarcPipelineInputPayloadFormatAvroOutputReference | EventarcPipelineInputPayloadFormatAvro): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     schema_definition: {
@@ -1678,7 +1678,7 @@ export interface EventarcPipelineInputPayloadFormatJson {
 export function eventarcPipelineInputPayloadFormatJsonToTerraform(struct?: EventarcPipelineInputPayloadFormatJsonOutputReference | EventarcPipelineInputPayloadFormatJson): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1688,7 +1688,7 @@ export function eventarcPipelineInputPayloadFormatJsonToTerraform(struct?: Event
 export function eventarcPipelineInputPayloadFormatJsonToHclTerraform(struct?: EventarcPipelineInputPayloadFormatJsonOutputReference | EventarcPipelineInputPayloadFormatJson): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1725,7 +1725,7 @@ export interface EventarcPipelineInputPayloadFormatProtobuf {
   /**
   * The entire schema definition is stored in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#schema_definition EventarcPipeline#schema_definition}
   */
   readonly schemaDefinition?: string;
 }
@@ -1733,7 +1733,7 @@ export interface EventarcPipelineInputPayloadFormatProtobuf {
 export function eventarcPipelineInputPayloadFormatProtobufToTerraform(struct?: EventarcPipelineInputPayloadFormatProtobufOutputReference | EventarcPipelineInputPayloadFormatProtobuf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     schema_definition: cdktn.stringToTerraform(struct!.schemaDefinition),
@@ -1744,7 +1744,7 @@ export function eventarcPipelineInputPayloadFormatProtobufToTerraform(struct?: E
 export function eventarcPipelineInputPayloadFormatProtobufToHclTerraform(struct?: EventarcPipelineInputPayloadFormatProtobufOutputReference | EventarcPipelineInputPayloadFormatProtobuf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     schema_definition: {
@@ -1811,19 +1811,19 @@ export interface EventarcPipelineInputPayloadFormat {
   /**
   * avro block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#avro EventarcPipeline#avro}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#avro EventarcPipeline#avro}
   */
   readonly avro?: EventarcPipelineInputPayloadFormatAvro;
   /**
   * json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#json EventarcPipeline#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#json EventarcPipeline#json}
   */
   readonly json?: EventarcPipelineInputPayloadFormatJson;
   /**
   * protobuf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#protobuf EventarcPipeline#protobuf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#protobuf EventarcPipeline#protobuf}
   */
   readonly protobuf?: EventarcPipelineInputPayloadFormatProtobuf;
 }
@@ -1831,7 +1831,7 @@ export interface EventarcPipelineInputPayloadFormat {
 export function eventarcPipelineInputPayloadFormatToTerraform(struct?: EventarcPipelineInputPayloadFormatOutputReference | EventarcPipelineInputPayloadFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     avro: eventarcPipelineInputPayloadFormatAvroToTerraform(struct!.avro),
@@ -1844,7 +1844,7 @@ export function eventarcPipelineInputPayloadFormatToTerraform(struct?: EventarcP
 export function eventarcPipelineInputPayloadFormatToHclTerraform(struct?: EventarcPipelineInputPayloadFormatOutputReference | EventarcPipelineInputPayloadFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     avro: {
@@ -1968,7 +1968,7 @@ export interface EventarcPipelineLoggingConfig {
   * The minimum severity of logs that will be sent to Stackdriver/Platform
   * Telemetry. Logs at severitiy ≥ this value will be sent, unless it is NONE. Possible values: ["NONE", "DEBUG", "INFO", "NOTICE", "WARNING", "ERROR", "CRITICAL", "ALERT", "EMERGENCY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#log_severity EventarcPipeline#log_severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#log_severity EventarcPipeline#log_severity}
   */
   readonly logSeverity?: string;
 }
@@ -1976,7 +1976,7 @@ export interface EventarcPipelineLoggingConfig {
 export function eventarcPipelineLoggingConfigToTerraform(struct?: EventarcPipelineLoggingConfigOutputReference | EventarcPipelineLoggingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_severity: cdktn.stringToTerraform(struct!.logSeverity),
@@ -1987,7 +1987,7 @@ export function eventarcPipelineLoggingConfigToTerraform(struct?: EventarcPipeli
 export function eventarcPipelineLoggingConfigToHclTerraform(struct?: EventarcPipelineLoggingConfigOutputReference | EventarcPipelineLoggingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_severity: {
@@ -2129,7 +2129,7 @@ export interface EventarcPipelineMediationsTransformation {
   * representation of the CloudEvent. To convert that data to a JSON
   * string it can be chained with the toJsonString function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#transformation_template EventarcPipeline#transformation_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#transformation_template EventarcPipeline#transformation_template}
   */
   readonly transformationTemplate?: string;
 }
@@ -2137,7 +2137,7 @@ export interface EventarcPipelineMediationsTransformation {
 export function eventarcPipelineMediationsTransformationToTerraform(struct?: EventarcPipelineMediationsTransformationOutputReference | EventarcPipelineMediationsTransformation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     transformation_template: cdktn.stringToTerraform(struct!.transformationTemplate),
@@ -2148,7 +2148,7 @@ export function eventarcPipelineMediationsTransformationToTerraform(struct?: Eve
 export function eventarcPipelineMediationsTransformationToHclTerraform(struct?: EventarcPipelineMediationsTransformationOutputReference | EventarcPipelineMediationsTransformation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     transformation_template: {
@@ -2215,7 +2215,7 @@ export interface EventarcPipelineMediations {
   /**
   * transformation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#transformation EventarcPipeline#transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#transformation EventarcPipeline#transformation}
   */
   readonly transformation?: EventarcPipelineMediationsTransformation;
 }
@@ -2223,7 +2223,7 @@ export interface EventarcPipelineMediations {
 export function eventarcPipelineMediationsToTerraform(struct?: EventarcPipelineMediations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     transformation: eventarcPipelineMediationsTransformationToTerraform(struct!.transformation),
@@ -2234,7 +2234,7 @@ export function eventarcPipelineMediationsToTerraform(struct?: EventarcPipelineM
 export function eventarcPipelineMediationsToHclTerraform(struct?: EventarcPipelineMediations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     transformation: {
@@ -2335,7 +2335,7 @@ export interface EventarcPipelineRetryPolicy {
   * be between 1 and 100.
   * The default value for this field is 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#max_attempts EventarcPipeline#max_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#max_attempts EventarcPipeline#max_attempts}
   */
   readonly maxAttempts?: number;
   /**
@@ -2343,7 +2343,7 @@ export interface EventarcPipelineRetryPolicy {
   * must be between 1 and 600.
   * The default value for this field is 60.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#max_retry_delay EventarcPipeline#max_retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#max_retry_delay EventarcPipeline#max_retry_delay}
   */
   readonly maxRetryDelay?: string;
   /**
@@ -2351,7 +2351,7 @@ export interface EventarcPipelineRetryPolicy {
   * must be between 1 and 600.
   * The default value for this field is 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#min_retry_delay EventarcPipeline#min_retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#min_retry_delay EventarcPipeline#min_retry_delay}
   */
   readonly minRetryDelay?: string;
 }
@@ -2359,7 +2359,7 @@ export interface EventarcPipelineRetryPolicy {
 export function eventarcPipelineRetryPolicyToTerraform(struct?: EventarcPipelineRetryPolicyOutputReference | EventarcPipelineRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_attempts: cdktn.numberToTerraform(struct!.maxAttempts),
@@ -2372,7 +2372,7 @@ export function eventarcPipelineRetryPolicyToTerraform(struct?: EventarcPipeline
 export function eventarcPipelineRetryPolicyToHclTerraform(struct?: EventarcPipelineRetryPolicyOutputReference | EventarcPipelineRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_attempts: {
@@ -2493,15 +2493,15 @@ export class EventarcPipelineRetryPolicyOutputReference extends cdktn.ComplexObj
 }
 export interface EventarcPipelineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#create EventarcPipeline#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#create EventarcPipeline#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#delete EventarcPipeline#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#delete EventarcPipeline#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#update EventarcPipeline#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#update EventarcPipeline#update}
   */
   readonly update?: string;
 }
@@ -2509,7 +2509,7 @@ export interface EventarcPipelineTimeouts {
 export function eventarcPipelineTimeoutsToTerraform(struct?: EventarcPipelineTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2522,7 +2522,7 @@ export function eventarcPipelineTimeoutsToTerraform(struct?: EventarcPipelineTim
 export function eventarcPipelineTimeoutsToHclTerraform(struct?: EventarcPipelineTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2653,7 +2653,7 @@ export class EventarcPipelineTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline google_eventarc_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline google_eventarc_pipeline}
 */
 export class EventarcPipeline extends cdktn.TerraformResource {
 
@@ -2669,7 +2669,7 @@ export class EventarcPipeline extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventarcPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventarcPipeline to import
-  * @param importFromId The id of the existing EventarcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventarcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventarcPipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2681,7 +2681,7 @@ export class EventarcPipeline extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/eventarc_pipeline google_eventarc_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_pipeline google_eventarc_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2692,7 +2692,7 @@ export class EventarcPipeline extends cdktn.TerraformResource {
       terraformResourceType: 'google_eventarc_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

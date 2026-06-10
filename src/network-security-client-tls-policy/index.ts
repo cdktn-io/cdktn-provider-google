@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface NetworkSecurityClientTlsPolicyConfig extends cdktn.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#deletion_policy NetworkSecurityClientTlsPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#deletion_policy NetworkSecurityClientTlsPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#description NetworkSecurityClientTlsPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#description NetworkSecurityClientTlsPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#id NetworkSecurityClientTlsPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#id NetworkSecurityClientTlsPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,48 +43,48 @@ export interface NetworkSecurityClientTlsPolicyConfig extends cdktn.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#labels NetworkSecurityClientTlsPolicy#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#labels NetworkSecurityClientTlsPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the client tls policy.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#location NetworkSecurityClientTlsPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#location NetworkSecurityClientTlsPolicy#location}
   */
   readonly location?: string;
   /**
   * Name of the ClientTlsPolicy resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#name NetworkSecurityClientTlsPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#name NetworkSecurityClientTlsPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#project NetworkSecurityClientTlsPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#project NetworkSecurityClientTlsPolicy#project}
   */
   readonly project?: string;
   /**
   * Server Name Indication string to present to the server during TLS handshake. E.g: "secure.example.com".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#sni NetworkSecurityClientTlsPolicy#sni}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#sni NetworkSecurityClientTlsPolicy#sni}
   */
   readonly sni?: string;
   /**
   * client_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#client_certificate NetworkSecurityClientTlsPolicy#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#client_certificate NetworkSecurityClientTlsPolicy#client_certificate}
   */
   readonly clientCertificate?: NetworkSecurityClientTlsPolicyClientCertificate;
   /**
   * server_validation_ca block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#server_validation_ca NetworkSecurityClientTlsPolicy#server_validation_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#server_validation_ca NetworkSecurityClientTlsPolicy#server_validation_ca}
   */
   readonly serverValidationCa?: NetworkSecurityClientTlsPolicyServerValidationCa[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#timeouts NetworkSecurityClientTlsPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#timeouts NetworkSecurityClientTlsPolicy#timeouts}
   */
   readonly timeouts?: NetworkSecurityClientTlsPolicyTimeouts;
 }
@@ -92,7 +92,7 @@ export interface NetworkSecurityClientTlsPolicyClientCertificateCertificateProvi
   /**
   * Plugin instance name, used to locate and load CertificateProvider instance configuration. Set to "google_cloud_private_spiffe" to use Certificate Authority Service certificate provider instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#plugin_instance NetworkSecurityClientTlsPolicy#plugin_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#plugin_instance NetworkSecurityClientTlsPolicy#plugin_instance}
   */
   readonly pluginInstance: string;
 }
@@ -100,7 +100,7 @@ export interface NetworkSecurityClientTlsPolicyClientCertificateCertificateProvi
 export function networkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceToTerraform(struct?: NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceOutputReference | NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     plugin_instance: cdktn.stringToTerraform(struct!.pluginInstance),
@@ -111,7 +111,7 @@ export function networkSecurityClientTlsPolicyClientCertificateCertificateProvid
 export function networkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceToHclTerraform(struct?: NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceOutputReference | NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     plugin_instance: {
@@ -175,7 +175,7 @@ export interface NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint {
   /**
   * The target URI of the gRPC endpoint. Only UDS path is supported, and should start with "unix:".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#target_uri NetworkSecurityClientTlsPolicy#target_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#target_uri NetworkSecurityClientTlsPolicy#target_uri}
   */
   readonly targetUri: string;
 }
@@ -183,7 +183,7 @@ export interface NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint {
 export function networkSecurityClientTlsPolicyClientCertificateGrpcEndpointToTerraform(struct?: NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpointOutputReference | NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target_uri: cdktn.stringToTerraform(struct!.targetUri),
@@ -194,7 +194,7 @@ export function networkSecurityClientTlsPolicyClientCertificateGrpcEndpointToTer
 export function networkSecurityClientTlsPolicyClientCertificateGrpcEndpointToHclTerraform(struct?: NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpointOutputReference | NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target_uri: {
@@ -258,13 +258,13 @@ export interface NetworkSecurityClientTlsPolicyClientCertificate {
   /**
   * certificate_provider_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#certificate_provider_instance NetworkSecurityClientTlsPolicy#certificate_provider_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#certificate_provider_instance NetworkSecurityClientTlsPolicy#certificate_provider_instance}
   */
   readonly certificateProviderInstance?: NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance;
   /**
   * grpc_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#grpc_endpoint NetworkSecurityClientTlsPolicy#grpc_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#grpc_endpoint NetworkSecurityClientTlsPolicy#grpc_endpoint}
   */
   readonly grpcEndpoint?: NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint;
 }
@@ -272,7 +272,7 @@ export interface NetworkSecurityClientTlsPolicyClientCertificate {
 export function networkSecurityClientTlsPolicyClientCertificateToTerraform(struct?: NetworkSecurityClientTlsPolicyClientCertificateOutputReference | NetworkSecurityClientTlsPolicyClientCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     certificate_provider_instance: networkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceToTerraform(struct!.certificateProviderInstance),
@@ -284,7 +284,7 @@ export function networkSecurityClientTlsPolicyClientCertificateToTerraform(struc
 export function networkSecurityClientTlsPolicyClientCertificateToHclTerraform(struct?: NetworkSecurityClientTlsPolicyClientCertificateOutputReference | NetworkSecurityClientTlsPolicyClientCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     certificate_provider_instance: {
@@ -379,7 +379,7 @@ export interface NetworkSecurityClientTlsPolicyServerValidationCaCertificateProv
   /**
   * Plugin instance name, used to locate and load CertificateProvider instance configuration. Set to "google_cloud_private_spiffe" to use Certificate Authority Service certificate provider instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#plugin_instance NetworkSecurityClientTlsPolicy#plugin_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#plugin_instance NetworkSecurityClientTlsPolicy#plugin_instance}
   */
   readonly pluginInstance: string;
 }
@@ -387,7 +387,7 @@ export interface NetworkSecurityClientTlsPolicyServerValidationCaCertificateProv
 export function networkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceToTerraform(struct?: NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference | NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     plugin_instance: cdktn.stringToTerraform(struct!.pluginInstance),
@@ -398,7 +398,7 @@ export function networkSecurityClientTlsPolicyServerValidationCaCertificateProvi
 export function networkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceToHclTerraform(struct?: NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference | NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     plugin_instance: {
@@ -462,7 +462,7 @@ export interface NetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint {
   /**
   * The target URI of the gRPC endpoint. Only UDS path is supported, and should start with "unix:".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#target_uri NetworkSecurityClientTlsPolicy#target_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#target_uri NetworkSecurityClientTlsPolicy#target_uri}
   */
   readonly targetUri: string;
 }
@@ -470,7 +470,7 @@ export interface NetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint {
 export function networkSecurityClientTlsPolicyServerValidationCaGrpcEndpointToTerraform(struct?: NetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpointOutputReference | NetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target_uri: cdktn.stringToTerraform(struct!.targetUri),
@@ -481,7 +481,7 @@ export function networkSecurityClientTlsPolicyServerValidationCaGrpcEndpointToTe
 export function networkSecurityClientTlsPolicyServerValidationCaGrpcEndpointToHclTerraform(struct?: NetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpointOutputReference | NetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target_uri: {
@@ -545,13 +545,13 @@ export interface NetworkSecurityClientTlsPolicyServerValidationCa {
   /**
   * certificate_provider_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#certificate_provider_instance NetworkSecurityClientTlsPolicy#certificate_provider_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#certificate_provider_instance NetworkSecurityClientTlsPolicy#certificate_provider_instance}
   */
   readonly certificateProviderInstance?: NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance;
   /**
   * grpc_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#grpc_endpoint NetworkSecurityClientTlsPolicy#grpc_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#grpc_endpoint NetworkSecurityClientTlsPolicy#grpc_endpoint}
   */
   readonly grpcEndpoint?: NetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint;
 }
@@ -559,7 +559,7 @@ export interface NetworkSecurityClientTlsPolicyServerValidationCa {
 export function networkSecurityClientTlsPolicyServerValidationCaToTerraform(struct?: NetworkSecurityClientTlsPolicyServerValidationCa | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     certificate_provider_instance: networkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceToTerraform(struct!.certificateProviderInstance),
@@ -571,7 +571,7 @@ export function networkSecurityClientTlsPolicyServerValidationCaToTerraform(stru
 export function networkSecurityClientTlsPolicyServerValidationCaToHclTerraform(struct?: NetworkSecurityClientTlsPolicyServerValidationCa | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     certificate_provider_instance: {
@@ -696,15 +696,15 @@ export class NetworkSecurityClientTlsPolicyServerValidationCaList extends cdktn.
 }
 export interface NetworkSecurityClientTlsPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#create NetworkSecurityClientTlsPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#create NetworkSecurityClientTlsPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#delete NetworkSecurityClientTlsPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#delete NetworkSecurityClientTlsPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#update NetworkSecurityClientTlsPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#update NetworkSecurityClientTlsPolicy#update}
   */
   readonly update?: string;
 }
@@ -712,7 +712,7 @@ export interface NetworkSecurityClientTlsPolicyTimeouts {
 export function networkSecurityClientTlsPolicyTimeoutsToTerraform(struct?: NetworkSecurityClientTlsPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -725,7 +725,7 @@ export function networkSecurityClientTlsPolicyTimeoutsToTerraform(struct?: Netwo
 export function networkSecurityClientTlsPolicyTimeoutsToHclTerraform(struct?: NetworkSecurityClientTlsPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -856,7 +856,7 @@ export class NetworkSecurityClientTlsPolicyTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy}
 */
 export class NetworkSecurityClientTlsPolicy extends cdktn.TerraformResource {
 
@@ -872,7 +872,7 @@ export class NetworkSecurityClientTlsPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityClientTlsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityClientTlsPolicy to import
-  * @param importFromId The id of the existing NetworkSecurityClientTlsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityClientTlsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityClientTlsPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -884,7 +884,7 @@ export class NetworkSecurityClientTlsPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -895,7 +895,7 @@ export class NetworkSecurityClientTlsPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_client_tls_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

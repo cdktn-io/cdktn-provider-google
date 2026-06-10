@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,18 +21,18 @@ export interface VertexAiEndpointWithModelGardenDeploymentConfig extends cdktn.T
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#deletion_policy VertexAiEndpointWithModelGardenDeployment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#deletion_policy VertexAiEndpointWithModelGardenDeployment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The Hugging Face model to deploy.
   * Format: Hugging Face model ID like 'google/gemma-2-2b-it'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#hugging_face_model_id VertexAiEndpointWithModelGardenDeployment#hugging_face_model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#hugging_face_model_id VertexAiEndpointWithModelGardenDeployment#hugging_face_model_id}
   */
   readonly huggingFaceModelId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#id VertexAiEndpointWithModelGardenDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#id VertexAiEndpointWithModelGardenDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,11 +41,11 @@ export interface VertexAiEndpointWithModelGardenDeploymentConfig extends cdktn.T
   /**
   * Resource ID segment making up resource 'location'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#location VertexAiEndpointWithModelGardenDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#location VertexAiEndpointWithModelGardenDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#project VertexAiEndpointWithModelGardenDeployment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#project VertexAiEndpointWithModelGardenDeployment#project}
   */
   readonly project?: string;
   /**
@@ -54,31 +54,31 @@ export interface VertexAiEndpointWithModelGardenDeploymentConfig extends cdktn.T
   * 'publishers/{publisher}/models/{publisher_model}@{version_id}', or
   * 'publishers/hf-{hugging-face-author}/models/{hugging-face-model-name}@001'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#publisher_model_name VertexAiEndpointWithModelGardenDeployment#publisher_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#publisher_model_name VertexAiEndpointWithModelGardenDeployment#publisher_model_name}
   */
   readonly publisherModelName?: string;
   /**
   * deploy_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#deploy_config VertexAiEndpointWithModelGardenDeployment#deploy_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#deploy_config VertexAiEndpointWithModelGardenDeployment#deploy_config}
   */
   readonly deployConfig?: VertexAiEndpointWithModelGardenDeploymentDeployConfig;
   /**
   * endpoint_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#endpoint_config VertexAiEndpointWithModelGardenDeployment#endpoint_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#endpoint_config VertexAiEndpointWithModelGardenDeployment#endpoint_config}
   */
   readonly endpointConfig?: VertexAiEndpointWithModelGardenDeploymentEndpointConfig;
   /**
   * model_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#model_config VertexAiEndpointWithModelGardenDeployment#model_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#model_config VertexAiEndpointWithModelGardenDeployment#model_config}
   */
   readonly modelConfig?: VertexAiEndpointWithModelGardenDeploymentModelConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeouts VertexAiEndpointWithModelGardenDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeouts VertexAiEndpointWithModelGardenDeployment#timeouts}
   */
   readonly timeouts?: VertexAiEndpointWithModelGardenDeploymentTimeouts;
 }
@@ -91,7 +91,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * * 'aiplatform.googleapis.com/prediction/online/accelerator/duty_cycle'
   * * 'aiplatform.googleapis.com/prediction/online/cpu/utilization'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#metric_name VertexAiEndpointWithModelGardenDeployment#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#metric_name VertexAiEndpointWithModelGardenDeployment#metric_name}
   */
   readonly metricName: string;
   /**
@@ -100,7 +100,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * percentage, the machine replicas change. The default value is 60
   * (representing 60%) if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#target VertexAiEndpointWithModelGardenDeployment#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#target VertexAiEndpointWithModelGardenDeployment#target}
   */
   readonly target?: number;
 }
@@ -108,7 +108,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metric_name: cdktn.stringToTerraform(struct!.metricName),
@@ -120,7 +120,7 @@ export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedRe
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metric_name: {
@@ -246,7 +246,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * SPECIFIC_RESERVATION by name, use 'compute.googleapis.com/reservation-name'
   * as the key and specify the name of your reservation as its value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#key VertexAiEndpointWithModelGardenDeployment#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#key VertexAiEndpointWithModelGardenDeployment#key}
   */
   readonly key?: string;
   /**
@@ -257,14 +257,14 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * ANY_RESERVATION
   * SPECIFIC_RESERVATION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#reservation_affinity_type VertexAiEndpointWithModelGardenDeployment#reservation_affinity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#reservation_affinity_type VertexAiEndpointWithModelGardenDeployment#reservation_affinity_type}
   */
   readonly reservationAffinityType: string;
   /**
   * Corresponds to the label values of a reservation resource. This must be the
   * full resource name of the reservation or reservation block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#values VertexAiEndpointWithModelGardenDeployment#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#values VertexAiEndpointWithModelGardenDeployment#values}
   */
   readonly values?: string[];
 }
@@ -272,7 +272,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -285,7 +285,7 @@ export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedRe
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -405,7 +405,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   /**
   * The number of accelerators to attach to the machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#accelerator_count VertexAiEndpointWithModelGardenDeployment#accelerator_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#accelerator_count VertexAiEndpointWithModelGardenDeployment#accelerator_count}
   */
   readonly acceleratorCount?: number;
   /**
@@ -428,7 +428,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * TPU_V4_POD
   * TPU_V5_LITEPOD
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#accelerator_type VertexAiEndpointWithModelGardenDeployment#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#accelerator_type VertexAiEndpointWithModelGardenDeployment#accelerator_type}
   */
   readonly acceleratorType?: string;
   /**
@@ -444,26 +444,26 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * value is 'n1-standard-2'. For BatchPredictionJob or as part of
   * WorkerPoolSpec this field is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#machine_type VertexAiEndpointWithModelGardenDeployment#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#machine_type VertexAiEndpointWithModelGardenDeployment#machine_type}
   */
   readonly machineType?: string;
   /**
   * The number of nodes per replica for multihost GPU deployments.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#multihost_gpu_node_count VertexAiEndpointWithModelGardenDeployment#multihost_gpu_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#multihost_gpu_node_count VertexAiEndpointWithModelGardenDeployment#multihost_gpu_node_count}
   */
   readonly multihostGpuNodeCount?: number;
   /**
   * The topology of the TPUs. Corresponds to the TPU topologies available from
   * GKE. (Example: tpu_topology: "2x2x1").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tpu_topology VertexAiEndpointWithModelGardenDeployment#tpu_topology}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tpu_topology VertexAiEndpointWithModelGardenDeployment#tpu_topology}
   */
   readonly tpuTopology?: string;
   /**
   * reservation_affinity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#reservation_affinity VertexAiEndpointWithModelGardenDeployment#reservation_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#reservation_affinity VertexAiEndpointWithModelGardenDeployment#reservation_affinity}
   */
   readonly reservationAffinity?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinity;
 }
@@ -471,7 +471,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     accelerator_count: cdktn.numberToTerraform(struct!.acceleratorCount),
@@ -487,7 +487,7 @@ export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedRe
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     accelerator_count: {
@@ -705,7 +705,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * number of cores in the selected machine type) and (max_replica_count *
   * number of GPUs per replica in the selected machine type).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#max_replica_count VertexAiEndpointWithModelGardenDeployment#max_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#max_replica_count VertexAiEndpointWithModelGardenDeployment#max_replica_count}
   */
   readonly maxReplicaCount?: number;
   /**
@@ -715,7 +715,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * If traffic increases, it may dynamically be deployed onto more replicas,
   * and as traffic decreases, some of these extra replicas may be freed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#min_replica_count VertexAiEndpointWithModelGardenDeployment#min_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#min_replica_count VertexAiEndpointWithModelGardenDeployment#min_replica_count}
   */
   readonly minReplicaCount: number;
   /**
@@ -726,26 +726,26 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
   * the replicas will be retried. If not set, the default
   * required_replica_count will be min_replica_count.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#required_replica_count VertexAiEndpointWithModelGardenDeployment#required_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#required_replica_count VertexAiEndpointWithModelGardenDeployment#required_replica_count}
   */
   readonly requiredReplicaCount?: number;
   /**
   * If true, schedule the deployment workload on [spot
   * VMs](https://cloud.google.com/kubernetes-engine/docs/concepts/spot-vms).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#spot VertexAiEndpointWithModelGardenDeployment#spot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#spot VertexAiEndpointWithModelGardenDeployment#spot}
   */
   readonly spot?: boolean | cdktn.IResolvable;
   /**
   * autoscaling_metric_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#autoscaling_metric_specs VertexAiEndpointWithModelGardenDeployment#autoscaling_metric_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#autoscaling_metric_specs VertexAiEndpointWithModelGardenDeployment#autoscaling_metric_specs}
   */
   readonly autoscalingMetricSpecs?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecs[] | cdktn.IResolvable;
   /**
   * machine_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#machine_spec VertexAiEndpointWithModelGardenDeployment#machine_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#machine_spec VertexAiEndpointWithModelGardenDeployment#machine_spec}
   */
   readonly machineSpec: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec;
 }
@@ -753,7 +753,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedR
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_replica_count: cdktn.numberToTerraform(struct!.maxReplicaCount),
@@ -769,7 +769,7 @@ export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedRe
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_replica_count: {
@@ -970,20 +970,20 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfig {
   /**
   * If true, enable the QMT fast tryout feature for this model if possible.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#fast_tryout_enabled VertexAiEndpointWithModelGardenDeployment#fast_tryout_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#fast_tryout_enabled VertexAiEndpointWithModelGardenDeployment#fast_tryout_enabled}
   */
   readonly fastTryoutEnabled?: boolean | cdktn.IResolvable;
   /**
   * System labels for Model Garden deployments.
   * These labels are managed by Google and for tracking purposes only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#system_labels VertexAiEndpointWithModelGardenDeployment#system_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#system_labels VertexAiEndpointWithModelGardenDeployment#system_labels}
   */
   readonly systemLabels?: { [key: string]: string };
   /**
   * dedicated_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#dedicated_resources VertexAiEndpointWithModelGardenDeployment#dedicated_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#dedicated_resources VertexAiEndpointWithModelGardenDeployment#dedicated_resources}
   */
   readonly dedicatedResources?: VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources;
 }
@@ -991,7 +991,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentDeployConfig {
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fast_tryout_enabled: cdktn.booleanToTerraform(struct!.fastTryoutEnabled),
@@ -1004,7 +1004,7 @@ export function vertexAiEndpointWithModelGardenDeploymentDeployConfigToTerraform
 export function vertexAiEndpointWithModelGardenDeploymentDeployConfigToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentDeployConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fast_tryout_enabled: {
@@ -1128,13 +1128,13 @@ export interface VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateS
   * Required. The full name of the Google Compute Engine network.
   * Format: projects/{project}/global/networks/{network}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#network VertexAiEndpointWithModelGardenDeployment#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#network VertexAiEndpointWithModelGardenDeployment#network}
   */
   readonly network: string;
   /**
   * Required. Project id used to create forwarding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#project_id VertexAiEndpointWithModelGardenDeployment#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#project_id VertexAiEndpointWithModelGardenDeployment#project_id}
   */
   readonly projectId: string;
 }
@@ -1142,7 +1142,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateS
 export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigsToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigsOutputReference | VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     network: cdktn.stringToTerraform(struct!.network),
@@ -1154,7 +1154,7 @@ export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateSe
 export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigsToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigsOutputReference | VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     network: {
@@ -1263,19 +1263,19 @@ export interface VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateS
   /**
   * Required. If true, expose the IndexEndpoint via private service connect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#enable_private_service_connect VertexAiEndpointWithModelGardenDeployment#enable_private_service_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#enable_private_service_connect VertexAiEndpointWithModelGardenDeployment#enable_private_service_connect}
   */
   readonly enablePrivateServiceConnect: boolean | cdktn.IResolvable;
   /**
   * A list of Projects from which the forwarding rule will target the service attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#project_allowlist VertexAiEndpointWithModelGardenDeployment#project_allowlist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#project_allowlist VertexAiEndpointWithModelGardenDeployment#project_allowlist}
   */
   readonly projectAllowlist?: string[];
   /**
   * psc_automation_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#psc_automation_configs VertexAiEndpointWithModelGardenDeployment#psc_automation_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#psc_automation_configs VertexAiEndpointWithModelGardenDeployment#psc_automation_configs}
   */
   readonly pscAutomationConfigs?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigs;
 }
@@ -1283,7 +1283,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateS
 export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_private_service_connect: cdktn.booleanToTerraform(struct!.enablePrivateServiceConnect),
@@ -1296,7 +1296,7 @@ export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateSe
 export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_private_service_connect: {
@@ -1426,20 +1426,20 @@ export interface VertexAiEndpointWithModelGardenDeploymentEndpointConfig {
   * you won't be able to send request to the shared DNS
   * {region}-aiplatform.googleapis.com. The limitations will be removed soon.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#dedicated_endpoint_enabled VertexAiEndpointWithModelGardenDeployment#dedicated_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#dedicated_endpoint_enabled VertexAiEndpointWithModelGardenDeployment#dedicated_endpoint_enabled}
   */
   readonly dedicatedEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
   * The user-specified display name of the endpoint. If not set, a
   * default name will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#endpoint_display_name VertexAiEndpointWithModelGardenDeployment#endpoint_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#endpoint_display_name VertexAiEndpointWithModelGardenDeployment#endpoint_display_name}
   */
   readonly endpointDisplayName?: string;
   /**
   * private_service_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#private_service_connect_config VertexAiEndpointWithModelGardenDeployment#private_service_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#private_service_connect_config VertexAiEndpointWithModelGardenDeployment#private_service_connect_config}
   */
   readonly privateServiceConnectConfig?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfig;
 }
@@ -1447,7 +1447,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentEndpointConfig {
 export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentEndpointConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dedicated_endpoint_enabled: cdktn.booleanToTerraform(struct!.dedicatedEndpointEnabled),
@@ -1460,7 +1460,7 @@ export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigToTerrafo
 export function vertexAiEndpointWithModelGardenDeploymentEndpointConfigToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentEndpointConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dedicated_endpoint_enabled: {
@@ -1583,7 +1583,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   /**
   * Name of the environment variable. Must be a valid C identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
   */
   readonly name: string;
   /**
@@ -1595,7 +1595,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * references will never be expanded, regardless of whether the variable
   * exists or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
   */
   readonly value: string;
 }
@@ -1603,7 +1603,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnv | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1615,7 +1615,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnv | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1737,7 +1737,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * The number of the port to expose on the pod's IP address.
   * Must be a valid port number, between 1 and 65535 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#container_port VertexAiEndpointWithModelGardenDeployment#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#container_port VertexAiEndpointWithModelGardenDeployment#container_port}
   */
   readonly containerPort?: number;
 }
@@ -1745,7 +1745,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPorts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_port: cdktn.numberToTerraform(struct!.containerPort),
@@ -1756,7 +1756,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPorts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_port: {
@@ -1860,7 +1860,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * need to explicitly call out to that shell. Exit status of 0 is treated as
   * live/healthy and non-zero is unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
   */
   readonly command?: string[];
 }
@@ -1868,7 +1868,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
@@ -1879,7 +1879,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     command: {
@@ -1946,7 +1946,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   /**
   * Port number of the gRPC service. Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
   /**
@@ -1956,7 +1956,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * If this is not specified, the default behavior is defined by gRPC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#service VertexAiEndpointWithModelGardenDeployment#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#service VertexAiEndpointWithModelGardenDeployment#service}
   */
   readonly service?: string;
 }
@@ -1964,7 +1964,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -1976,7 +1976,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -2073,13 +2073,13 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * This will be canonicalized upon output, so case-variant names will be
   * understood as the same header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
   */
   readonly name?: string;
   /**
   * The header field value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
   */
   readonly value?: string;
 }
@@ -2087,7 +2087,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2099,7 +2099,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2227,33 +2227,33 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * Host name to connect to, defaults to the model serving container's IP.
   * You probably want to set "Host" in httpHeaders instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
   */
   readonly host?: string;
   /**
   * Path to access on the HTTP server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#path VertexAiEndpointWithModelGardenDeployment#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#path VertexAiEndpointWithModelGardenDeployment#path}
   */
   readonly path?: string;
   /**
   * Number of the port to access on the container.
   * Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
   /**
   * Scheme to use for connecting to the host.
   * Defaults to HTTP. Acceptable values are "HTTP" or "HTTPS".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#scheme VertexAiEndpointWithModelGardenDeployment#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#scheme VertexAiEndpointWithModelGardenDeployment#scheme}
   */
   readonly scheme?: string;
   /**
   * http_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_headers VertexAiEndpointWithModelGardenDeployment#http_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_headers VertexAiEndpointWithModelGardenDeployment#http_headers}
   */
   readonly httpHeaders?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeaders[] | cdktn.IResolvable;
 }
@@ -2261,7 +2261,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -2276,7 +2276,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -2456,14 +2456,14 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * Optional: Host name to connect to, defaults to the model serving
   * container's IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
   */
   readonly host?: string;
   /**
   * Number of the port to access on the container.
   * Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
 }
@@ -2471,7 +2471,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -2483,7 +2483,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -2581,7 +2581,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'failureThreshold'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#failure_threshold VertexAiEndpointWithModelGardenDeployment#failure_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#failure_threshold VertexAiEndpointWithModelGardenDeployment#failure_threshold}
   */
   readonly failureThreshold?: number;
   /**
@@ -2590,7 +2590,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'initialDelaySeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#initial_delay_seconds VertexAiEndpointWithModelGardenDeployment#initial_delay_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#initial_delay_seconds VertexAiEndpointWithModelGardenDeployment#initial_delay_seconds}
   */
   readonly initialDelaySeconds?: number;
   /**
@@ -2599,7 +2599,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'periodSeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#period_seconds VertexAiEndpointWithModelGardenDeployment#period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#period_seconds VertexAiEndpointWithModelGardenDeployment#period_seconds}
   */
   readonly periodSeconds?: number;
   /**
@@ -2608,7 +2608,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'successThreshold'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#success_threshold VertexAiEndpointWithModelGardenDeployment#success_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#success_threshold VertexAiEndpointWithModelGardenDeployment#success_threshold}
   */
   readonly successThreshold?: number;
   /**
@@ -2617,31 +2617,31 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'timeoutSeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeout_seconds VertexAiEndpointWithModelGardenDeployment#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeout_seconds VertexAiEndpointWithModelGardenDeployment#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * exec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#exec VertexAiEndpointWithModelGardenDeployment#exec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#exec VertexAiEndpointWithModelGardenDeployment#exec}
   */
   readonly exec?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec;
   /**
   * grpc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc VertexAiEndpointWithModelGardenDeployment#grpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc VertexAiEndpointWithModelGardenDeployment#grpc}
   */
   readonly grpc?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc;
   /**
   * http_get block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_get VertexAiEndpointWithModelGardenDeployment#http_get}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_get VertexAiEndpointWithModelGardenDeployment#http_get}
   */
   readonly httpGet?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGet;
   /**
   * tcp_socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tcp_socket VertexAiEndpointWithModelGardenDeployment#tcp_socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tcp_socket VertexAiEndpointWithModelGardenDeployment#tcp_socket}
   */
   readonly tcpSocket?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocket;
 }
@@ -2649,7 +2649,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
@@ -2668,7 +2668,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     failure_threshold: {
@@ -2964,7 +2964,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * need to explicitly call out to that shell. Exit status of 0 is treated as
   * live/healthy and non-zero is unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
   */
   readonly command?: string[];
 }
@@ -2972,7 +2972,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
@@ -2983,7 +2983,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     command: {
@@ -3050,7 +3050,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   /**
   * Port number of the gRPC service. Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
   /**
@@ -3060,7 +3060,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * If this is not specified, the default behavior is defined by gRPC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#service VertexAiEndpointWithModelGardenDeployment#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#service VertexAiEndpointWithModelGardenDeployment#service}
   */
   readonly service?: string;
 }
@@ -3068,7 +3068,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -3080,7 +3080,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -3177,13 +3177,13 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * This will be canonicalized upon output, so case-variant names will be
   * understood as the same header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
   */
   readonly name?: string;
   /**
   * The header field value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
   */
   readonly value?: string;
 }
@@ -3191,7 +3191,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3203,7 +3203,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3331,33 +3331,33 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * Host name to connect to, defaults to the model serving container's IP.
   * You probably want to set "Host" in httpHeaders instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
   */
   readonly host?: string;
   /**
   * Path to access on the HTTP server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#path VertexAiEndpointWithModelGardenDeployment#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#path VertexAiEndpointWithModelGardenDeployment#path}
   */
   readonly path?: string;
   /**
   * Number of the port to access on the container.
   * Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
   /**
   * Scheme to use for connecting to the host.
   * Defaults to HTTP. Acceptable values are "HTTP" or "HTTPS".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#scheme VertexAiEndpointWithModelGardenDeployment#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#scheme VertexAiEndpointWithModelGardenDeployment#scheme}
   */
   readonly scheme?: string;
   /**
   * http_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_headers VertexAiEndpointWithModelGardenDeployment#http_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_headers VertexAiEndpointWithModelGardenDeployment#http_headers}
   */
   readonly httpHeaders?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeaders[] | cdktn.IResolvable;
 }
@@ -3365,7 +3365,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -3380,7 +3380,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -3560,14 +3560,14 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * Optional: Host name to connect to, defaults to the model serving
   * container's IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
   */
   readonly host?: string;
   /**
   * Number of the port to access on the container.
   * Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
 }
@@ -3575,7 +3575,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -3587,7 +3587,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -3685,7 +3685,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'failureThreshold'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#failure_threshold VertexAiEndpointWithModelGardenDeployment#failure_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#failure_threshold VertexAiEndpointWithModelGardenDeployment#failure_threshold}
   */
   readonly failureThreshold?: number;
   /**
@@ -3694,7 +3694,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'initialDelaySeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#initial_delay_seconds VertexAiEndpointWithModelGardenDeployment#initial_delay_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#initial_delay_seconds VertexAiEndpointWithModelGardenDeployment#initial_delay_seconds}
   */
   readonly initialDelaySeconds?: number;
   /**
@@ -3703,7 +3703,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'periodSeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#period_seconds VertexAiEndpointWithModelGardenDeployment#period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#period_seconds VertexAiEndpointWithModelGardenDeployment#period_seconds}
   */
   readonly periodSeconds?: number;
   /**
@@ -3712,7 +3712,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'successThreshold'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#success_threshold VertexAiEndpointWithModelGardenDeployment#success_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#success_threshold VertexAiEndpointWithModelGardenDeployment#success_threshold}
   */
   readonly successThreshold?: number;
   /**
@@ -3721,31 +3721,31 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'timeoutSeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeout_seconds VertexAiEndpointWithModelGardenDeployment#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeout_seconds VertexAiEndpointWithModelGardenDeployment#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * exec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#exec VertexAiEndpointWithModelGardenDeployment#exec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#exec VertexAiEndpointWithModelGardenDeployment#exec}
   */
   readonly exec?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExec;
   /**
   * grpc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc VertexAiEndpointWithModelGardenDeployment#grpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc VertexAiEndpointWithModelGardenDeployment#grpc}
   */
   readonly grpc?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpc;
   /**
   * http_get block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_get VertexAiEndpointWithModelGardenDeployment#http_get}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_get VertexAiEndpointWithModelGardenDeployment#http_get}
   */
   readonly httpGet?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet;
   /**
   * tcp_socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tcp_socket VertexAiEndpointWithModelGardenDeployment#tcp_socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tcp_socket VertexAiEndpointWithModelGardenDeployment#tcp_socket}
   */
   readonly tcpSocket?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocket;
 }
@@ -3753,7 +3753,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
@@ -3772,7 +3772,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     failure_threshold: {
@@ -4064,7 +4064,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * The number of the port to expose on the pod's IP address.
   * Must be a valid port number, between 1 and 65535 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#container_port VertexAiEndpointWithModelGardenDeployment#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#container_port VertexAiEndpointWithModelGardenDeployment#container_port}
   */
   readonly containerPort?: number;
 }
@@ -4072,7 +4072,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPorts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_port: cdktn.numberToTerraform(struct!.containerPort),
@@ -4083,7 +4083,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPorts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_port: {
@@ -4187,7 +4187,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * need to explicitly call out to that shell. Exit status of 0 is treated as
   * live/healthy and non-zero is unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
   */
   readonly command?: string[];
 }
@@ -4195,7 +4195,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
@@ -4206,7 +4206,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     command: {
@@ -4273,7 +4273,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   /**
   * Port number of the gRPC service. Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
   /**
@@ -4283,7 +4283,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * If this is not specified, the default behavior is defined by gRPC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#service VertexAiEndpointWithModelGardenDeployment#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#service VertexAiEndpointWithModelGardenDeployment#service}
   */
   readonly service?: string;
 }
@@ -4291,7 +4291,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -4303,7 +4303,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -4400,13 +4400,13 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * This will be canonicalized upon output, so case-variant names will be
   * understood as the same header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#name VertexAiEndpointWithModelGardenDeployment#name}
   */
   readonly name?: string;
   /**
   * The header field value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#value VertexAiEndpointWithModelGardenDeployment#value}
   */
   readonly value?: string;
 }
@@ -4414,7 +4414,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4426,7 +4426,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4554,33 +4554,33 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * Host name to connect to, defaults to the model serving container's IP.
   * You probably want to set "Host" in httpHeaders instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
   */
   readonly host?: string;
   /**
   * Path to access on the HTTP server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#path VertexAiEndpointWithModelGardenDeployment#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#path VertexAiEndpointWithModelGardenDeployment#path}
   */
   readonly path?: string;
   /**
   * Number of the port to access on the container.
   * Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
   /**
   * Scheme to use for connecting to the host.
   * Defaults to HTTP. Acceptable values are "HTTP" or "HTTPS".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#scheme VertexAiEndpointWithModelGardenDeployment#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#scheme VertexAiEndpointWithModelGardenDeployment#scheme}
   */
   readonly scheme?: string;
   /**
   * http_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_headers VertexAiEndpointWithModelGardenDeployment#http_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_headers VertexAiEndpointWithModelGardenDeployment#http_headers}
   */
   readonly httpHeaders?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeaders[] | cdktn.IResolvable;
 }
@@ -4588,7 +4588,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -4603,7 +4603,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -4783,14 +4783,14 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * Optional: Host name to connect to, defaults to the model serving
   * container's IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#host VertexAiEndpointWithModelGardenDeployment#host}
   */
   readonly host?: string;
   /**
   * Number of the port to access on the container.
   * Number must be in the range 1 to 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#port VertexAiEndpointWithModelGardenDeployment#port}
   */
   readonly port?: number;
 }
@@ -4798,7 +4798,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -4810,7 +4810,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -4908,7 +4908,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'failureThreshold'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#failure_threshold VertexAiEndpointWithModelGardenDeployment#failure_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#failure_threshold VertexAiEndpointWithModelGardenDeployment#failure_threshold}
   */
   readonly failureThreshold?: number;
   /**
@@ -4917,7 +4917,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'initialDelaySeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#initial_delay_seconds VertexAiEndpointWithModelGardenDeployment#initial_delay_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#initial_delay_seconds VertexAiEndpointWithModelGardenDeployment#initial_delay_seconds}
   */
   readonly initialDelaySeconds?: number;
   /**
@@ -4926,7 +4926,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'periodSeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#period_seconds VertexAiEndpointWithModelGardenDeployment#period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#period_seconds VertexAiEndpointWithModelGardenDeployment#period_seconds}
   */
   readonly periodSeconds?: number;
   /**
@@ -4935,7 +4935,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'successThreshold'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#success_threshold VertexAiEndpointWithModelGardenDeployment#success_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#success_threshold VertexAiEndpointWithModelGardenDeployment#success_threshold}
   */
   readonly successThreshold?: number;
   /**
@@ -4944,31 +4944,31 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * 
   * Maps to Kubernetes probe argument 'timeoutSeconds'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeout_seconds VertexAiEndpointWithModelGardenDeployment#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#timeout_seconds VertexAiEndpointWithModelGardenDeployment#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * exec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#exec VertexAiEndpointWithModelGardenDeployment#exec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#exec VertexAiEndpointWithModelGardenDeployment#exec}
   */
   readonly exec?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExec;
   /**
   * grpc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc VertexAiEndpointWithModelGardenDeployment#grpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc VertexAiEndpointWithModelGardenDeployment#grpc}
   */
   readonly grpc?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpc;
   /**
   * http_get block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_get VertexAiEndpointWithModelGardenDeployment#http_get}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_get VertexAiEndpointWithModelGardenDeployment#http_get}
   */
   readonly httpGet?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet;
   /**
   * tcp_socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tcp_socket VertexAiEndpointWithModelGardenDeployment#tcp_socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#tcp_socket VertexAiEndpointWithModelGardenDeployment#tcp_socket}
   */
   readonly tcpSocket?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocket;
 }
@@ -4976,7 +4976,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
@@ -4995,7 +4995,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     failure_threshold: {
@@ -5319,7 +5319,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * [v1 core
   * API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.23/#container-v1-core).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#args VertexAiEndpointWithModelGardenDeployment#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#args VertexAiEndpointWithModelGardenDeployment#args}
   */
   readonly args?: string[];
   /**
@@ -5358,14 +5358,14 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * [v1 core
   * API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.23/#container-v1-core).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
   */
   readonly command?: string[];
   /**
   * Deployment timeout.
   * Limit for deployment timeout is 2 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#deployment_timeout VertexAiEndpointWithModelGardenDeployment#deployment_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#deployment_timeout VertexAiEndpointWithModelGardenDeployment#deployment_timeout}
   */
   readonly deploymentTimeout?: string;
   /**
@@ -5395,7 +5395,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * ['AIP_DEPLOYED_MODEL_ID' environment
   * variable](https://cloud.google.com/vertex-ai/docs/predictions/custom-container-requirements#aip-variables).)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#health_route VertexAiEndpointWithModelGardenDeployment#health_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#health_route VertexAiEndpointWithModelGardenDeployment#health_route}
   */
   readonly healthRoute?: string;
   /**
@@ -5416,7 +5416,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * prediction](https://cloud.google.com/vertex-ai/docs/predictions/pre-built-containers)
   * in this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#image_uri VertexAiEndpointWithModelGardenDeployment#image_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#image_uri VertexAiEndpointWithModelGardenDeployment#image_uri}
   */
   readonly imageUri: string;
   /**
@@ -5447,50 +5447,50 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
   * as the ['AIP_DEPLOYED_MODEL_ID' environment
   * variable](https://cloud.google.com/vertex-ai/docs/predictions/custom-container-requirements#aip-variables).)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#predict_route VertexAiEndpointWithModelGardenDeployment#predict_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#predict_route VertexAiEndpointWithModelGardenDeployment#predict_route}
   */
   readonly predictRoute?: string;
   /**
   * The amount of the VM memory to reserve as the shared memory for the model
   * in megabytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#shared_memory_size_mb VertexAiEndpointWithModelGardenDeployment#shared_memory_size_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#shared_memory_size_mb VertexAiEndpointWithModelGardenDeployment#shared_memory_size_mb}
   */
   readonly sharedMemorySizeMb?: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#env VertexAiEndpointWithModelGardenDeployment#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#env VertexAiEndpointWithModelGardenDeployment#env}
   */
   readonly env?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnv[] | cdktn.IResolvable;
   /**
   * grpc_ports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc_ports VertexAiEndpointWithModelGardenDeployment#grpc_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc_ports VertexAiEndpointWithModelGardenDeployment#grpc_ports}
   */
   readonly grpcPorts?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPorts[] | cdktn.IResolvable;
   /**
   * health_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#health_probe VertexAiEndpointWithModelGardenDeployment#health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#health_probe VertexAiEndpointWithModelGardenDeployment#health_probe}
   */
   readonly healthProbe?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe;
   /**
   * liveness_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#liveness_probe VertexAiEndpointWithModelGardenDeployment#liveness_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#liveness_probe VertexAiEndpointWithModelGardenDeployment#liveness_probe}
   */
   readonly livenessProbe?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe;
   /**
   * ports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#ports VertexAiEndpointWithModelGardenDeployment#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#ports VertexAiEndpointWithModelGardenDeployment#ports}
   */
   readonly ports?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPorts[] | cdktn.IResolvable;
   /**
   * startup_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#startup_probe VertexAiEndpointWithModelGardenDeployment#startup_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#startup_probe VertexAiEndpointWithModelGardenDeployment#startup_probe}
   */
   readonly startupProbe?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe;
 }
@@ -5498,7 +5498,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSp
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
@@ -5521,7 +5521,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpe
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     args: {
@@ -5922,14 +5922,14 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfig {
   * Whether the user accepts the End User License Agreement (EULA)
   * for the model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#accept_eula VertexAiEndpointWithModelGardenDeployment#accept_eula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#accept_eula VertexAiEndpointWithModelGardenDeployment#accept_eula}
   */
   readonly acceptEula?: boolean | cdktn.IResolvable;
   /**
   * The Hugging Face read access token used to access the model
   * artifacts of gated models.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#hugging_face_access_token VertexAiEndpointWithModelGardenDeployment#hugging_face_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#hugging_face_access_token VertexAiEndpointWithModelGardenDeployment#hugging_face_access_token}
   */
   readonly huggingFaceAccessToken?: string;
   /**
@@ -5937,20 +5937,20 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfig {
   * downloading the model artifacts from Hugging Face. This is suitable for
   * VPC-SC users with limited internet access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#hugging_face_cache_enabled VertexAiEndpointWithModelGardenDeployment#hugging_face_cache_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#hugging_face_cache_enabled VertexAiEndpointWithModelGardenDeployment#hugging_face_cache_enabled}
   */
   readonly huggingFaceCacheEnabled?: boolean | cdktn.IResolvable;
   /**
   * The user-specified display name of the uploaded model. If not
   * set, a default name will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#model_display_name VertexAiEndpointWithModelGardenDeployment#model_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#model_display_name VertexAiEndpointWithModelGardenDeployment#model_display_name}
   */
   readonly modelDisplayName?: string;
   /**
   * container_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#container_spec VertexAiEndpointWithModelGardenDeployment#container_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#container_spec VertexAiEndpointWithModelGardenDeployment#container_spec}
   */
   readonly containerSpec?: VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec;
 }
@@ -5958,7 +5958,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentModelConfig {
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     accept_eula: cdktn.booleanToTerraform(struct!.acceptEula),
@@ -5973,7 +5973,7 @@ export function vertexAiEndpointWithModelGardenDeploymentModelConfigToTerraform(
 export function vertexAiEndpointWithModelGardenDeploymentModelConfigToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference | VertexAiEndpointWithModelGardenDeploymentModelConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     accept_eula: {
@@ -6150,11 +6150,11 @@ export class VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference
 }
 export interface VertexAiEndpointWithModelGardenDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#create VertexAiEndpointWithModelGardenDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#create VertexAiEndpointWithModelGardenDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#delete VertexAiEndpointWithModelGardenDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#delete VertexAiEndpointWithModelGardenDeployment#delete}
   */
   readonly delete?: string;
 }
@@ -6162,7 +6162,7 @@ export interface VertexAiEndpointWithModelGardenDeploymentTimeouts {
 export function vertexAiEndpointWithModelGardenDeploymentTimeoutsToTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -6174,7 +6174,7 @@ export function vertexAiEndpointWithModelGardenDeploymentTimeoutsToTerraform(str
 export function vertexAiEndpointWithModelGardenDeploymentTimeoutsToHclTerraform(struct?: VertexAiEndpointWithModelGardenDeploymentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -6277,7 +6277,7 @@ export class VertexAiEndpointWithModelGardenDeploymentTimeoutsOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment}
 */
 export class VertexAiEndpointWithModelGardenDeployment extends cdktn.TerraformResource {
 
@@ -6293,7 +6293,7 @@ export class VertexAiEndpointWithModelGardenDeployment extends cdktn.TerraformRe
   * Generates CDKTN code for importing a VertexAiEndpointWithModelGardenDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiEndpointWithModelGardenDeployment to import
-  * @param importFromId The id of the existing VertexAiEndpointWithModelGardenDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiEndpointWithModelGardenDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiEndpointWithModelGardenDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -6305,7 +6305,7 @@ export class VertexAiEndpointWithModelGardenDeployment extends cdktn.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6316,7 +6316,7 @@ export class VertexAiEndpointWithModelGardenDeployment extends cdktn.TerraformRe
       terraformResourceType: 'google_vertex_ai_endpoint_with_model_garden_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

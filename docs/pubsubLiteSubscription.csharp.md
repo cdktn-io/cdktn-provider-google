@@ -4,7 +4,7 @@
 
 ### PubsubLiteSubscription <a name="PubsubLiteSubscription" id="@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription google_pubsub_lite_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription google_pubsub_lite_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscription.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the PubsubLiteSubscription to 
 
 The id of the existing PubsubLiteSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -999,8 +999,8 @@ new PubsubLiteSubscriptionConfig {
 | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.topic">Topic</a></code> | <code>string</code> | A reference to a Topic resource. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.deliveryConfig">DeliveryConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfig">PubsubLiteSubscriptionDeliveryConfig</a></code> | delivery_config block. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#id PubsubLiteSubscription#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#project PubsubLiteSubscription#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#id PubsubLiteSubscription#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#project PubsubLiteSubscription#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.region">Region</a></code> | <code>string</code> | The region of the pubsub lite topic. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts">PubsubLiteSubscriptionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig.property.zone">Zone</a></code> | <code>string</code> | The zone of the pubsub lite topic. |
@@ -1087,7 +1087,7 @@ public string Name { get; set; }
 
 Name of the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#name PubsubLiteSubscription#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#name PubsubLiteSubscription#name}
 
 ---
 
@@ -1101,7 +1101,7 @@ public string Topic { get; set; }
 
 A reference to a Topic resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#topic PubsubLiteSubscription#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#topic PubsubLiteSubscription#topic}
 
 ---
 
@@ -1122,7 +1122,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#deletion_policy PubsubLiteSubscription#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#deletion_policy PubsubLiteSubscription#deletion_policy}
 
 ---
 
@@ -1136,7 +1136,7 @@ public PubsubLiteSubscriptionDeliveryConfig DeliveryConfig { get; set; }
 
 delivery_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#delivery_config PubsubLiteSubscription#delivery_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#delivery_config PubsubLiteSubscription#delivery_config}
 
 ---
 
@@ -1148,7 +1148,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#id PubsubLiteSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#id PubsubLiteSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1163,7 +1163,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#project PubsubLiteSubscription#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#project PubsubLiteSubscription#project}.
 
 ---
 
@@ -1177,7 +1177,7 @@ public string Region { get; set; }
 
 The region of the pubsub lite topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#region PubsubLiteSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#region PubsubLiteSubscription#region}
 
 ---
 
@@ -1191,7 +1191,7 @@ public PubsubLiteSubscriptionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#timeouts PubsubLiteSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#timeouts PubsubLiteSubscription#timeouts}
 
 ---
 
@@ -1205,7 +1205,7 @@ public string Zone { get; set; }
 
 The zone of the pubsub lite topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#zone PubsubLiteSubscription#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#zone PubsubLiteSubscription#zone}
 
 ---
 
@@ -1239,7 +1239,7 @@ public string DeliveryRequirement { get; set; }
 
 When this subscription should send messages to subscribers relative to messages persistence in storage. Possible values: ["DELIVER_IMMEDIATELY", "DELIVER_AFTER_STORED", "DELIVERY_REQUIREMENT_UNSPECIFIED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#delivery_requirement PubsubLiteSubscription#delivery_requirement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#delivery_requirement PubsubLiteSubscription#delivery_requirement}
 
 ---
 
@@ -1261,9 +1261,9 @@ new PubsubLiteSubscriptionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#create PubsubLiteSubscription#create}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#delete PubsubLiteSubscription#delete}. |
-| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#update PubsubLiteSubscription#update}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#create PubsubLiteSubscription#create}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#delete PubsubLiteSubscription#delete}. |
+| <code><a href="#@cdktn/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#update PubsubLiteSubscription#update}. |
 
 ---
 
@@ -1275,7 +1275,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#create PubsubLiteSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#create PubsubLiteSubscription#create}.
 
 ---
 
@@ -1287,7 +1287,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#delete PubsubLiteSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#delete PubsubLiteSubscription#delete}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/pubsub_lite_subscription#update PubsubLiteSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_subscription#update PubsubLiteSubscription#update}.
 
 ---
 

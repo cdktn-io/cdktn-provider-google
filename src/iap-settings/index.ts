@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface IapSettingsConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#deletion_policy IapSettings#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#deletion_policy IapSettings#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#id IapSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#id IapSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,25 +45,25 @@ export interface IapSettingsConfig extends cdktn.TerraformMetaArguments {
   * * projects/{project_id}/iap_web/appengine-{app_id}/services/{service_id}
   * * projects/{project_id}/iap_web/appengine-{app_id}/services/{service_id}/version/{version_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#name IapSettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#name IapSettings#name}
   */
   readonly name: string;
   /**
   * access_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#access_settings IapSettings#access_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#access_settings IapSettings#access_settings}
   */
   readonly accessSettings?: IapSettingsAccessSettings;
   /**
   * application_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#application_settings IapSettings#application_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#application_settings IapSettings#application_settings}
   */
   readonly applicationSettings?: IapSettingsApplicationSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#timeouts IapSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#timeouts IapSettings#timeouts}
   */
   readonly timeouts?: IapSettingsTimeouts;
 }
@@ -71,13 +71,13 @@ export interface IapSettingsAccessSettingsAllowedDomainsSettings {
   /**
   * List of trusted domains.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#domains IapSettings#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#domains IapSettings#domains}
   */
   readonly domains?: string[];
   /**
   * Configuration for customers to opt in for the feature.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#enable IapSettings#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#enable IapSettings#enable}
   */
   readonly enable?: boolean | cdktn.IResolvable;
 }
@@ -85,7 +85,7 @@ export interface IapSettingsAccessSettingsAllowedDomainsSettings {
 export function iapSettingsAccessSettingsAllowedDomainsSettingsToTerraform(struct?: IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference | IapSettingsAccessSettingsAllowedDomainsSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domains),
@@ -97,7 +97,7 @@ export function iapSettingsAccessSettingsAllowedDomainsSettingsToTerraform(struc
 export function iapSettingsAccessSettingsAllowedDomainsSettingsToHclTerraform(struct?: IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference | IapSettingsAccessSettingsAllowedDomainsSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     domains: {
@@ -193,7 +193,7 @@ export interface IapSettingsAccessSettingsCorsSettings {
   * Configuration to allow HTTP OPTIONS calls to skip authorization.
   * If undefined, IAP will not apply any special logic to OPTIONS requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#allow_http_options IapSettings#allow_http_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#allow_http_options IapSettings#allow_http_options}
   */
   readonly allowHttpOptions?: boolean | cdktn.IResolvable;
 }
@@ -201,7 +201,7 @@ export interface IapSettingsAccessSettingsCorsSettings {
 export function iapSettingsAccessSettingsCorsSettingsToTerraform(struct?: IapSettingsAccessSettingsCorsSettingsOutputReference | IapSettingsAccessSettingsCorsSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_http_options: cdktn.booleanToTerraform(struct!.allowHttpOptions),
@@ -212,7 +212,7 @@ export function iapSettingsAccessSettingsCorsSettingsToTerraform(struct?: IapSet
 export function iapSettingsAccessSettingsCorsSettingsToHclTerraform(struct?: IapSettingsAccessSettingsCorsSettingsOutputReference | IapSettingsAccessSettingsCorsSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_http_options: {
@@ -281,7 +281,7 @@ export interface IapSettingsAccessSettingsGcipSettings {
   * the same project share the same login page, though it could be overridden at the
   * sub resource level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#login_page_uri IapSettings#login_page_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#login_page_uri IapSettings#login_page_uri}
   */
   readonly loginPageUri?: string;
   /**
@@ -291,7 +291,7 @@ export interface IapSettingsAccessSettingsGcipSettings {
   * is used, tenantIds should only contain one single element, while for tenant flow,
   * tenantIds can contain multiple elements.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#tenant_ids IapSettings#tenant_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#tenant_ids IapSettings#tenant_ids}
   */
   readonly tenantIds?: string[];
 }
@@ -299,7 +299,7 @@ export interface IapSettingsAccessSettingsGcipSettings {
 export function iapSettingsAccessSettingsGcipSettingsToTerraform(struct?: IapSettingsAccessSettingsGcipSettingsOutputReference | IapSettingsAccessSettingsGcipSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     login_page_uri: cdktn.stringToTerraform(struct!.loginPageUri),
@@ -311,7 +311,7 @@ export function iapSettingsAccessSettingsGcipSettingsToTerraform(struct?: IapSet
 export function iapSettingsAccessSettingsGcipSettingsToHclTerraform(struct?: IapSettingsAccessSettingsGcipSettingsOutputReference | IapSettingsAccessSettingsGcipSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     login_page_uri: {
@@ -406,13 +406,13 @@ export interface IapSettingsAccessSettingsOauthSettings {
   /**
   * OAuth 2.0 client ID used in the OAuth flow to generate an access token. If this field is set, you can skip obtaining the OAuth credentials in this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#client_id IapSettings#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#client_id IapSettings#client_id}
   */
   readonly clientId?: string;
   /**
   * OAuth secret paired with client ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#client_secret IapSettings#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#client_secret IapSettings#client_secret}
   */
   readonly clientSecret?: string;
   /**
@@ -423,13 +423,13 @@ export interface IapSettingsAccessSettingsOauthSettings {
   * since access behavior is managed by IAM policies.
   * * loginHint setting is not a replacement for access control. Always enforce an appropriate access policy if you want to restrict access to users outside your domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#login_hint IapSettings#login_hint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#login_hint IapSettings#login_hint}
   */
   readonly loginHint?: string;
   /**
   * List of client ids allowed to use IAP programmatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#programmatic_clients IapSettings#programmatic_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#programmatic_clients IapSettings#programmatic_clients}
   */
   readonly programmaticClients?: string[];
 }
@@ -437,7 +437,7 @@ export interface IapSettingsAccessSettingsOauthSettings {
 export function iapSettingsAccessSettingsOauthSettingsToTerraform(struct?: IapSettingsAccessSettingsOauthSettingsOutputReference | IapSettingsAccessSettingsOauthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -451,7 +451,7 @@ export function iapSettingsAccessSettingsOauthSettingsToTerraform(struct?: IapSe
 export function iapSettingsAccessSettingsOauthSettingsToHclTerraform(struct?: IapSettingsAccessSettingsOauthSettingsOutputReference | IapSettingsAccessSettingsOauthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -609,7 +609,7 @@ export interface IapSettingsAccessSettingsReauthSettings {
   * A duration in seconds with up to nine fractional digits, ending with 's'.
   * Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#max_age IapSettings#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#max_age IapSettings#max_age}
   */
   readonly maxAge: string;
   /**
@@ -619,7 +619,7 @@ export interface IapSettingsAccessSettingsReauthSettings {
   * * 'SECURE_KEY': User must use their secure key 2nd factor device.
   * * 'ENROLLED_SECOND_FACTORS': User can use any enabled 2nd factor. Possible values: ["LOGIN", "SECURE_KEY", "ENROLLED_SECOND_FACTORS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#method IapSettings#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#method IapSettings#method}
   */
   readonly method: string;
   /**
@@ -631,7 +631,7 @@ export interface IapSettingsAccessSettingsReauthSettings {
   * 		   Effective policy may only be the same or stricter.
   * * 'DEFAULT': This policy acts as a default if no other reauth policy is set. Possible values: ["MINIMUM", "DEFAULT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#policy_type IapSettings#policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#policy_type IapSettings#policy_type}
   */
   readonly policyType: string;
 }
@@ -639,7 +639,7 @@ export interface IapSettingsAccessSettingsReauthSettings {
 export function iapSettingsAccessSettingsReauthSettingsToTerraform(struct?: IapSettingsAccessSettingsReauthSettingsOutputReference | IapSettingsAccessSettingsReauthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_age: cdktn.stringToTerraform(struct!.maxAge),
@@ -652,7 +652,7 @@ export function iapSettingsAccessSettingsReauthSettingsToTerraform(struct?: IapS
 export function iapSettingsAccessSettingsReauthSettingsToHclTerraform(struct?: IapSettingsAccessSettingsReauthSettingsOutputReference | IapSettingsAccessSettingsReauthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_age: {
@@ -767,14 +767,14 @@ export interface IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2 {
   * The OAuth 2.0 client ID registered in the workforce identity
   * federation OAuth 2.0 Server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#client_id IapSettings#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#client_id IapSettings#client_id}
   */
   readonly clientId?: string;
   /**
   * Input only. The OAuth 2.0 client secret created while registering
   * the client ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#client_secret IapSettings#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#client_secret IapSettings#client_secret}
   */
   readonly clientSecret?: string;
 }
@@ -782,7 +782,7 @@ export interface IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2 {
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsOauth2ToTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference | IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -794,7 +794,7 @@ export function iapSettingsAccessSettingsWorkforceIdentitySettingsOauth2ToTerraf
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsOauth2ToHclTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference | IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -894,13 +894,13 @@ export interface IapSettingsAccessSettingsWorkforceIdentitySettings {
   /**
   * The workforce pool resources. Only one workforce pool is accepted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#workforce_pools IapSettings#workforce_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#workforce_pools IapSettings#workforce_pools}
   */
   readonly workforcePools?: string[];
   /**
   * oauth2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#oauth2 IapSettings#oauth2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#oauth2 IapSettings#oauth2}
   */
   readonly oauth2?: IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2;
 }
@@ -908,7 +908,7 @@ export interface IapSettingsAccessSettingsWorkforceIdentitySettings {
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsToTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference | IapSettingsAccessSettingsWorkforceIdentitySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workforce_pools: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.workforcePools),
@@ -920,7 +920,7 @@ export function iapSettingsAccessSettingsWorkforceIdentitySettingsToTerraform(st
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsToHclTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference | IapSettingsAccessSettingsWorkforceIdentitySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workforce_pools: {
@@ -1019,43 +1019,43 @@ export interface IapSettingsAccessSettings {
   * * 'WORKFORCE_IDENTITY_FEDERATION': Use external identities set up on Google Cloud Workforce
   *   				     Identity Federation. Possible values: ["WORKFORCE_IDENTITY_FEDERATION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#identity_sources IapSettings#identity_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#identity_sources IapSettings#identity_sources}
   */
   readonly identitySources?: string[];
   /**
   * allowed_domains_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#allowed_domains_settings IapSettings#allowed_domains_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#allowed_domains_settings IapSettings#allowed_domains_settings}
   */
   readonly allowedDomainsSettings?: IapSettingsAccessSettingsAllowedDomainsSettings;
   /**
   * cors_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#cors_settings IapSettings#cors_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#cors_settings IapSettings#cors_settings}
   */
   readonly corsSettings?: IapSettingsAccessSettingsCorsSettings;
   /**
   * gcip_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#gcip_settings IapSettings#gcip_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#gcip_settings IapSettings#gcip_settings}
   */
   readonly gcipSettings?: IapSettingsAccessSettingsGcipSettings;
   /**
   * oauth_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#oauth_settings IapSettings#oauth_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#oauth_settings IapSettings#oauth_settings}
   */
   readonly oauthSettings?: IapSettingsAccessSettingsOauthSettings;
   /**
   * reauth_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#reauth_settings IapSettings#reauth_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#reauth_settings IapSettings#reauth_settings}
   */
   readonly reauthSettings?: IapSettingsAccessSettingsReauthSettings;
   /**
   * workforce_identity_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#workforce_identity_settings IapSettings#workforce_identity_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#workforce_identity_settings IapSettings#workforce_identity_settings}
   */
   readonly workforceIdentitySettings?: IapSettingsAccessSettingsWorkforceIdentitySettings;
 }
@@ -1063,7 +1063,7 @@ export interface IapSettingsAccessSettings {
 export function iapSettingsAccessSettingsToTerraform(struct?: IapSettingsAccessSettingsOutputReference | IapSettingsAccessSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identitySources),
@@ -1080,7 +1080,7 @@ export function iapSettingsAccessSettingsToTerraform(struct?: IapSettingsAccessS
 export function iapSettingsAccessSettingsToHclTerraform(struct?: IapSettingsAccessSettingsOutputReference | IapSettingsAccessSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_sources: {
@@ -1315,19 +1315,19 @@ export interface IapSettingsApplicationSettingsAccessDeniedPageSettings {
   /**
   * The URI to be redirected to when access is denied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#access_denied_page_uri IapSettings#access_denied_page_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#access_denied_page_uri IapSettings#access_denied_page_uri}
   */
   readonly accessDeniedPageUri?: string;
   /**
   * Whether to generate a troubleshooting URL on access denied events to this application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#generate_troubleshooting_uri IapSettings#generate_troubleshooting_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#generate_troubleshooting_uri IapSettings#generate_troubleshooting_uri}
   */
   readonly generateTroubleshootingUri?: boolean | cdktn.IResolvable;
   /**
   * Whether to generate remediation token on access denied events to this application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#remediation_token_generation_enabled IapSettings#remediation_token_generation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#remediation_token_generation_enabled IapSettings#remediation_token_generation_enabled}
   */
   readonly remediationTokenGenerationEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1335,7 +1335,7 @@ export interface IapSettingsApplicationSettingsAccessDeniedPageSettings {
 export function iapSettingsApplicationSettingsAccessDeniedPageSettingsToTerraform(struct?: IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference | IapSettingsApplicationSettingsAccessDeniedPageSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_denied_page_uri: cdktn.stringToTerraform(struct!.accessDeniedPageUri),
@@ -1348,7 +1348,7 @@ export function iapSettingsApplicationSettingsAccessDeniedPageSettingsToTerrafor
 export function iapSettingsApplicationSettingsAccessDeniedPageSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference | IapSettingsApplicationSettingsAccessDeniedPageSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_denied_page_uri: {
@@ -1472,7 +1472,7 @@ export interface IapSettingsApplicationSettingsAttributePropagationSettings {
   * Whether the provided attribute propagation settings should be evaluated on user requests.
   * If set to true, attributes returned from the expression will be propagated in the set output credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#enable IapSettings#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#enable IapSettings#enable}
   */
   readonly enable?: boolean | cdktn.IResolvable;
   /**
@@ -1480,7 +1480,7 @@ export interface IapSettingsApplicationSettingsAttributePropagationSettings {
   * be selected. Expressions can select different attribute types from attributes:
   * attributes.saml_attributes, attributes.iap_attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#expression IapSettings#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#expression IapSettings#expression}
   */
   readonly expression?: string;
   /**
@@ -1494,7 +1494,7 @@ export interface IapSettingsApplicationSettingsAttributePropagationSettings {
   * * 'RCTOKEN': Propagate attributes in the RCToken of the form: "
   *              additional_claims": { "my_attribute": ["value1", "value2"] } Possible values: ["HEADER", "JWT", "RCTOKEN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#output_credentials IapSettings#output_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#output_credentials IapSettings#output_credentials}
   */
   readonly outputCredentials?: string[];
 }
@@ -1502,7 +1502,7 @@ export interface IapSettingsApplicationSettingsAttributePropagationSettings {
 export function iapSettingsApplicationSettingsAttributePropagationSettingsToTerraform(struct?: IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference | IapSettingsApplicationSettingsAttributePropagationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable: cdktn.booleanToTerraform(struct!.enable),
@@ -1515,7 +1515,7 @@ export function iapSettingsApplicationSettingsAttributePropagationSettingsToTerr
 export function iapSettingsApplicationSettingsAttributePropagationSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference | IapSettingsApplicationSettingsAttributePropagationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable: {
@@ -1638,7 +1638,7 @@ export interface IapSettingsApplicationSettingsCsmSettings {
   /**
   * Audience claim set in the generated RCToken. This value is not validated by IAP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#rctoken_aud IapSettings#rctoken_aud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#rctoken_aud IapSettings#rctoken_aud}
   */
   readonly rctokenAud?: string;
 }
@@ -1646,7 +1646,7 @@ export interface IapSettingsApplicationSettingsCsmSettings {
 export function iapSettingsApplicationSettingsCsmSettingsToTerraform(struct?: IapSettingsApplicationSettingsCsmSettingsOutputReference | IapSettingsApplicationSettingsCsmSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rctoken_aud: cdktn.stringToTerraform(struct!.rctokenAud),
@@ -1657,7 +1657,7 @@ export function iapSettingsApplicationSettingsCsmSettingsToTerraform(struct?: Ia
 export function iapSettingsApplicationSettingsCsmSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsCsmSettingsOutputReference | IapSettingsApplicationSettingsCsmSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rctoken_aud: {
@@ -1725,25 +1725,25 @@ export interface IapSettingsApplicationSettings {
   * The Domain value to set for cookies generated by IAP. This value is not validated by the API,
   * but will be ignored at runtime if invalid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#cookie_domain IapSettings#cookie_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#cookie_domain IapSettings#cookie_domain}
   */
   readonly cookieDomain?: string;
   /**
   * access_denied_page_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#access_denied_page_settings IapSettings#access_denied_page_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#access_denied_page_settings IapSettings#access_denied_page_settings}
   */
   readonly accessDeniedPageSettings?: IapSettingsApplicationSettingsAccessDeniedPageSettings;
   /**
   * attribute_propagation_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#attribute_propagation_settings IapSettings#attribute_propagation_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#attribute_propagation_settings IapSettings#attribute_propagation_settings}
   */
   readonly attributePropagationSettings?: IapSettingsApplicationSettingsAttributePropagationSettings;
   /**
   * csm_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#csm_settings IapSettings#csm_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#csm_settings IapSettings#csm_settings}
   */
   readonly csmSettings?: IapSettingsApplicationSettingsCsmSettings;
 }
@@ -1751,7 +1751,7 @@ export interface IapSettingsApplicationSettings {
 export function iapSettingsApplicationSettingsToTerraform(struct?: IapSettingsApplicationSettingsOutputReference | IapSettingsApplicationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cookie_domain: cdktn.stringToTerraform(struct!.cookieDomain),
@@ -1765,7 +1765,7 @@ export function iapSettingsApplicationSettingsToTerraform(struct?: IapSettingsAp
 export function iapSettingsApplicationSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsOutputReference | IapSettingsApplicationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cookie_domain: {
@@ -1914,15 +1914,15 @@ export class IapSettingsApplicationSettingsOutputReference extends cdktn.Complex
 }
 export interface IapSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#create IapSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#create IapSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#delete IapSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#delete IapSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#update IapSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#update IapSettings#update}
   */
   readonly update?: string;
 }
@@ -1930,7 +1930,7 @@ export interface IapSettingsTimeouts {
 export function iapSettingsTimeoutsToTerraform(struct?: IapSettingsTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1943,7 +1943,7 @@ export function iapSettingsTimeoutsToTerraform(struct?: IapSettingsTimeouts | cd
 export function iapSettingsTimeoutsToHclTerraform(struct?: IapSettingsTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2074,7 +2074,7 @@ export class IapSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings google_iap_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings google_iap_settings}
 */
 export class IapSettings extends cdktn.TerraformResource {
 
@@ -2090,7 +2090,7 @@ export class IapSettings extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IapSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IapSettings to import
-  * @param importFromId The id of the existing IapSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IapSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IapSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2102,7 +2102,7 @@ export class IapSettings extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/iap_settings google_iap_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iap_settings google_iap_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2113,7 +2113,7 @@ export class IapSettings extends cdktn.TerraformResource {
       terraformResourceType: 'google_iap_settings',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

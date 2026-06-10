@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface NetworkServicesEndpointPolicyConfig extends cdktn.TerraformMeta
   /**
   * This field specifies the URL of AuthorizationPolicy resource that applies authorization policies to the inbound traffic at the matched endpoints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#authorization_policy NetworkServicesEndpointPolicy#authorization_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#authorization_policy NetworkServicesEndpointPolicy#authorization_policy}
   */
   readonly authorizationPolicy?: string;
   /**
   * A URL referring to a ClientTlsPolicy resource. ClientTlsPolicy can be set to specify the authentication for traffic from the proxy to the actual endpoints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#client_tls_policy NetworkServicesEndpointPolicy#client_tls_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#client_tls_policy NetworkServicesEndpointPolicy#client_tls_policy}
   */
   readonly clientTlsPolicy?: string;
   /**
@@ -33,17 +33,17 @@ export interface NetworkServicesEndpointPolicyConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#deletion_policy NetworkServicesEndpointPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#deletion_policy NetworkServicesEndpointPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#description NetworkServicesEndpointPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#description NetworkServicesEndpointPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#id NetworkServicesEndpointPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#id NetworkServicesEndpointPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55,47 +55,47 @@ export interface NetworkServicesEndpointPolicyConfig extends cdktn.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#labels NetworkServicesEndpointPolicy#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#labels NetworkServicesEndpointPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the EndpointPolicy resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#name NetworkServicesEndpointPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#name NetworkServicesEndpointPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#project NetworkServicesEndpointPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#project NetworkServicesEndpointPolicy#project}
   */
   readonly project?: string;
   /**
   * A URL referring to ServerTlsPolicy resource. ServerTlsPolicy is used to determine the authentication policy to be applied to terminate the inbound traffic at the identified backends.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#server_tls_policy NetworkServicesEndpointPolicy#server_tls_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#server_tls_policy NetworkServicesEndpointPolicy#server_tls_policy}
   */
   readonly serverTlsPolicy?: string;
   /**
   * The type of endpoint policy. This is primarily used to validate the configuration. Possible values: ["SIDECAR_PROXY", "GRPC_SERVER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#type NetworkServicesEndpointPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#type NetworkServicesEndpointPolicy#type}
   */
   readonly type: string;
   /**
   * endpoint_matcher block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#endpoint_matcher NetworkServicesEndpointPolicy#endpoint_matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#endpoint_matcher NetworkServicesEndpointPolicy#endpoint_matcher}
   */
   readonly endpointMatcher: NetworkServicesEndpointPolicyEndpointMatcher;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#timeouts NetworkServicesEndpointPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#timeouts NetworkServicesEndpointPolicy#timeouts}
   */
   readonly timeouts?: NetworkServicesEndpointPolicyTimeouts;
   /**
   * traffic_port_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#traffic_port_selector NetworkServicesEndpointPolicy#traffic_port_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#traffic_port_selector NetworkServicesEndpointPolicy#traffic_port_selector}
   */
   readonly trafficPortSelector?: NetworkServicesEndpointPolicyTrafficPortSelector;
 }
@@ -103,13 +103,13 @@ export interface NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatche
   /**
   * Required. Label name presented as key in xDS Node Metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#label_name NetworkServicesEndpointPolicy#label_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#label_name NetworkServicesEndpointPolicy#label_name}
   */
   readonly labelName: string;
   /**
   * Required. Label value presented as value corresponding to the above key, in xDS Node Metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#label_value NetworkServicesEndpointPolicy#label_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#label_value NetworkServicesEndpointPolicy#label_value}
   */
   readonly labelValue: string;
 }
@@ -117,7 +117,7 @@ export interface NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatche
 export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     label_name: cdktn.stringToTerraform(struct!.labelName),
@@ -129,7 +129,7 @@ export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher
 export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToHclTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     label_name: {
@@ -250,13 +250,13 @@ export interface NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatche
   /**
   * Specifies how matching should be done. Possible values: ["MATCH_ANY", "MATCH_ALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#metadata_label_match_criteria NetworkServicesEndpointPolicy#metadata_label_match_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#metadata_label_match_criteria NetworkServicesEndpointPolicy#metadata_label_match_criteria}
   */
   readonly metadataLabelMatchCriteria: string;
   /**
   * metadata_labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#metadata_labels NetworkServicesEndpointPolicy#metadata_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#metadata_labels NetworkServicesEndpointPolicy#metadata_labels}
   */
   readonly metadataLabels?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktn.IResolvable;
 }
@@ -264,7 +264,7 @@ export interface NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatche
 export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherToTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata_label_match_criteria: cdktn.stringToTerraform(struct!.metadataLabelMatchCriteria),
@@ -276,7 +276,7 @@ export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher
 export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherToHclTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata_label_match_criteria: {
@@ -368,7 +368,7 @@ export interface NetworkServicesEndpointPolicyEndpointMatcher {
   /**
   * metadata_label_matcher block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#metadata_label_matcher NetworkServicesEndpointPolicy#metadata_label_matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#metadata_label_matcher NetworkServicesEndpointPolicy#metadata_label_matcher}
   */
   readonly metadataLabelMatcher: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher;
 }
@@ -376,7 +376,7 @@ export interface NetworkServicesEndpointPolicyEndpointMatcher {
 export function networkServicesEndpointPolicyEndpointMatcherToTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcher): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata_label_matcher: networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherToTerraform(struct!.metadataLabelMatcher),
@@ -387,7 +387,7 @@ export function networkServicesEndpointPolicyEndpointMatcherToTerraform(struct?:
 export function networkServicesEndpointPolicyEndpointMatcherToHclTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcher): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata_label_matcher: {
@@ -449,15 +449,15 @@ export class NetworkServicesEndpointPolicyEndpointMatcherOutputReference extends
 }
 export interface NetworkServicesEndpointPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#create NetworkServicesEndpointPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#create NetworkServicesEndpointPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#delete NetworkServicesEndpointPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#delete NetworkServicesEndpointPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#update NetworkServicesEndpointPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#update NetworkServicesEndpointPolicy#update}
   */
   readonly update?: string;
 }
@@ -465,7 +465,7 @@ export interface NetworkServicesEndpointPolicyTimeouts {
 export function networkServicesEndpointPolicyTimeoutsToTerraform(struct?: NetworkServicesEndpointPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -478,7 +478,7 @@ export function networkServicesEndpointPolicyTimeoutsToTerraform(struct?: Networ
 export function networkServicesEndpointPolicyTimeoutsToHclTerraform(struct?: NetworkServicesEndpointPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -611,7 +611,7 @@ export interface NetworkServicesEndpointPolicyTrafficPortSelector {
   /**
   * List of ports. Can be port numbers or port range (example, [80-90] specifies all ports from 80 to 90, including 80 and 90) or named ports or * to specify all ports. If the list is empty, all ports are selected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#ports NetworkServicesEndpointPolicy#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#ports NetworkServicesEndpointPolicy#ports}
   */
   readonly ports: string[];
 }
@@ -619,7 +619,7 @@ export interface NetworkServicesEndpointPolicyTrafficPortSelector {
 export function networkServicesEndpointPolicyTrafficPortSelectorToTerraform(struct?: NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference | NetworkServicesEndpointPolicyTrafficPortSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ports: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ports),
@@ -630,7 +630,7 @@ export function networkServicesEndpointPolicyTrafficPortSelectorToTerraform(stru
 export function networkServicesEndpointPolicyTrafficPortSelectorToHclTerraform(struct?: NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference | NetworkServicesEndpointPolicyTrafficPortSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ports: {
@@ -692,7 +692,7 @@ export class NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy google_network_services_endpoint_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy google_network_services_endpoint_policy}
 */
 export class NetworkServicesEndpointPolicy extends cdktn.TerraformResource {
 
@@ -708,7 +708,7 @@ export class NetworkServicesEndpointPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesEndpointPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesEndpointPolicy to import
-  * @param importFromId The id of the existing NetworkServicesEndpointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesEndpointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesEndpointPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -720,7 +720,7 @@ export class NetworkServicesEndpointPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/network_services_endpoint_policy google_network_services_endpoint_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_services_endpoint_policy google_network_services_endpoint_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -731,7 +731,7 @@ export class NetworkServicesEndpointPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_endpoint_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,18 +20,18 @@ export interface DataGoogleSpannerInstanceConfig extends cdktn.TerraformMetaArgu
   * In order to obtain a valid list please consult the
   * [Configuration section of the docs](https://cloud.google.com/spanner/docs/instances).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance#config DataGoogleSpannerInstance#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance#config DataGoogleSpannerInstance#config}
   */
   readonly config?: string;
   /**
   * The descriptive name for this instance as it appears in UIs. Must be
   * unique per project and between 4 and 30 characters in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance#display_name DataGoogleSpannerInstance#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance#display_name DataGoogleSpannerInstance#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance#id DataGoogleSpannerInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance#id DataGoogleSpannerInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,11 +43,11 @@ export interface DataGoogleSpannerInstanceConfig extends cdktn.TerraformMetaArgu
   * in length.
   * If not provided, a random string starting with 'tf-' will be selected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance#name DataGoogleSpannerInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance#name DataGoogleSpannerInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance#project DataGoogleSpannerInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance#project DataGoogleSpannerInstance#project}
   */
   readonly project?: string;
 }
@@ -57,7 +57,7 @@ export interface DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscaling
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsToTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -67,7 +67,7 @@ export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingO
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsToHclTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -147,7 +147,7 @@ export interface DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscaling
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesToTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverrides): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -157,7 +157,7 @@ export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingO
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesToHclTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverrides): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -243,7 +243,7 @@ export interface DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscaling
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionToTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -253,7 +253,7 @@ export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingO
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionToHclTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -318,7 +318,7 @@ export interface DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscaling
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsToTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -328,7 +328,7 @@ export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingO
 export function dataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsToHclTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -400,7 +400,7 @@ export interface DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimits {
 export function dataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsToTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -410,7 +410,7 @@ export function dataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsToTer
 export function dataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsToHclTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -490,7 +490,7 @@ export interface DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargets {
 export function dataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsToTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -500,7 +500,7 @@ export function dataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsToTe
 export function dataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsToHclTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -575,7 +575,7 @@ export interface DataGoogleSpannerInstanceAutoscalingConfig {
 export function dataGoogleSpannerInstanceAutoscalingConfigToTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -585,7 +585,7 @@ export function dataGoogleSpannerInstanceAutoscalingConfigToTerraform(struct?: D
 export function dataGoogleSpannerInstanceAutoscalingConfigToHclTerraform(struct?: DataGoogleSpannerInstanceAutoscalingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -659,7 +659,7 @@ export class DataGoogleSpannerInstanceAutoscalingConfigList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance google_spanner_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance google_spanner_instance}
 */
 export class DataGoogleSpannerInstance extends cdktn.TerraformDataSource {
 
@@ -675,7 +675,7 @@ export class DataGoogleSpannerInstance extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleSpannerInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSpannerInstance to import
-  * @param importFromId The id of the existing DataGoogleSpannerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleSpannerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSpannerInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -687,7 +687,7 @@ export class DataGoogleSpannerInstance extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -698,7 +698,7 @@ export class DataGoogleSpannerInstance extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_spanner_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

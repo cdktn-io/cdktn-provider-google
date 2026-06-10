@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface BeyondcorpSecurityGatewayApplicationConfig extends cdktn.Terraf
   * * Must contain between 4-63 characters from '/a-z-/'.
   * * Must end with a number or letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#application_id BeyondcorpSecurityGatewayApplication#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#application_id BeyondcorpSecurityGatewayApplication#application_id}
   */
   readonly applicationId: string;
   /**
@@ -30,55 +30,55 @@ export interface BeyondcorpSecurityGatewayApplicationConfig extends cdktn.Terraf
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#deletion_policy BeyondcorpSecurityGatewayApplication#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#deletion_policy BeyondcorpSecurityGatewayApplication#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. An arbitrary user-provided name for the Application resource.
   * Cannot exceed 64 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#display_name BeyondcorpSecurityGatewayApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#display_name BeyondcorpSecurityGatewayApplication#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#id BeyondcorpSecurityGatewayApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#id BeyondcorpSecurityGatewayApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#project BeyondcorpSecurityGatewayApplication#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#project BeyondcorpSecurityGatewayApplication#project}
   */
   readonly project?: string;
   /**
   * Type of the external application. Possible values: ["PROXY_GATEWAY", "API_GATEWAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#schema BeyondcorpSecurityGatewayApplication#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#schema BeyondcorpSecurityGatewayApplication#schema}
   */
   readonly schema?: string;
   /**
   * ID of the Security Gateway resource this belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#security_gateway_id BeyondcorpSecurityGatewayApplication#security_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#security_gateway_id BeyondcorpSecurityGatewayApplication#security_gateway_id}
   */
   readonly securityGatewayId: string;
   /**
   * endpoint_matchers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#endpoint_matchers BeyondcorpSecurityGatewayApplication#endpoint_matchers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#endpoint_matchers BeyondcorpSecurityGatewayApplication#endpoint_matchers}
   */
   readonly endpointMatchers?: BeyondcorpSecurityGatewayApplicationEndpointMatchers[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#timeouts BeyondcorpSecurityGatewayApplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#timeouts BeyondcorpSecurityGatewayApplication#timeouts}
   */
   readonly timeouts?: BeyondcorpSecurityGatewayApplicationTimeouts;
   /**
   * upstreams block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#upstreams BeyondcorpSecurityGatewayApplication#upstreams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#upstreams BeyondcorpSecurityGatewayApplication#upstreams}
   */
   readonly upstreams?: BeyondcorpSecurityGatewayApplicationUpstreams[] | cdktn.IResolvable;
 }
@@ -86,13 +86,13 @@ export interface BeyondcorpSecurityGatewayApplicationEndpointMatchers {
   /**
   * Required. Hostname of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#hostname BeyondcorpSecurityGatewayApplication#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#hostname BeyondcorpSecurityGatewayApplication#hostname}
   */
   readonly hostname: string;
   /**
   * Optional. Ports of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#ports BeyondcorpSecurityGatewayApplication#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#ports BeyondcorpSecurityGatewayApplication#ports}
   */
   readonly ports: number[];
 }
@@ -100,7 +100,7 @@ export interface BeyondcorpSecurityGatewayApplicationEndpointMatchers {
 export function beyondcorpSecurityGatewayApplicationEndpointMatchersToTerraform(struct?: BeyondcorpSecurityGatewayApplicationEndpointMatchers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hostname: cdktn.stringToTerraform(struct!.hostname),
@@ -112,7 +112,7 @@ export function beyondcorpSecurityGatewayApplicationEndpointMatchersToTerraform(
 export function beyondcorpSecurityGatewayApplicationEndpointMatchersToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationEndpointMatchers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hostname: {
@@ -231,15 +231,15 @@ export class BeyondcorpSecurityGatewayApplicationEndpointMatchersList extends cd
 }
 export interface BeyondcorpSecurityGatewayApplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#create BeyondcorpSecurityGatewayApplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#create BeyondcorpSecurityGatewayApplication#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#delete BeyondcorpSecurityGatewayApplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#delete BeyondcorpSecurityGatewayApplication#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#update BeyondcorpSecurityGatewayApplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#update BeyondcorpSecurityGatewayApplication#update}
   */
   readonly update?: string;
 }
@@ -247,7 +247,7 @@ export interface BeyondcorpSecurityGatewayApplicationTimeouts {
 export function beyondcorpSecurityGatewayApplicationTimeoutsToTerraform(struct?: BeyondcorpSecurityGatewayApplicationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -260,7 +260,7 @@ export function beyondcorpSecurityGatewayApplicationTimeoutsToTerraform(struct?:
 export function beyondcorpSecurityGatewayApplicationTimeoutsToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -393,7 +393,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy {
   /**
   * Required. List of regions where the application sends traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#regions BeyondcorpSecurityGatewayApplication#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#regions BeyondcorpSecurityGatewayApplication#regions}
   */
   readonly regions: string[];
 }
@@ -401,7 +401,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy {
 export function beyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
@@ -412,7 +412,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyToTerra
 export function beyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     regions: {
@@ -476,13 +476,13 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints 
   /**
   * Hostname of the endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#hostname BeyondcorpSecurityGatewayApplication#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#hostname BeyondcorpSecurityGatewayApplication#hostname}
   */
   readonly hostname: string;
   /**
   * Port of the endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#port BeyondcorpSecurityGatewayApplication#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#port BeyondcorpSecurityGatewayApplication#port}
   */
   readonly port: number;
 }
@@ -490,7 +490,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints 
 export function beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hostname: cdktn.stringToTerraform(struct!.hostname),
@@ -502,7 +502,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsTo
 export function beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hostname: {
@@ -623,7 +623,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsExternal {
   /**
   * endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#endpoints BeyondcorpSecurityGatewayApplication#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#endpoints BeyondcorpSecurityGatewayApplication#endpoints}
   */
   readonly endpoints: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints[] | cdktn.IResolvable;
 }
@@ -631,7 +631,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsExternal {
 export function beyondcorpSecurityGatewayApplicationUpstreamsExternalToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsExternal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoints: cdktn.listMapper(beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsToTerraform, true)(struct!.endpoints),
@@ -642,7 +642,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsExternalToTerraform
 export function beyondcorpSecurityGatewayApplicationUpstreamsExternalToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsExternal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoints: {
@@ -707,7 +707,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsNetwork {
   * Required. Network name is of the format:
   * 'projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#name BeyondcorpSecurityGatewayApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#name BeyondcorpSecurityGatewayApplication#name}
   */
   readonly name: string;
 }
@@ -715,7 +715,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsNetwork {
 export function beyondcorpSecurityGatewayApplicationUpstreamsNetworkToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsNetworkOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsNetwork): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -726,7 +726,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsNetworkToTerraform(
 export function beyondcorpSecurityGatewayApplicationUpstreamsNetworkToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsNetworkOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsNetwork): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -790,7 +790,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
   /**
   * The output type of the delegated device info. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
   */
   readonly outputType?: string;
 }
@@ -798,7 +798,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     output_type: cdktn.stringToTerraform(struct!.outputType),
@@ -809,7 +809,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContex
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     output_type: {
@@ -876,7 +876,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
   /**
   * The output type of the delegated group info. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
   */
   readonly outputType?: string;
 }
@@ -884,7 +884,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     output_type: cdktn.stringToTerraform(struct!.outputType),
@@ -895,7 +895,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContex
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     output_type: {
@@ -962,7 +962,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
   /**
   * The output type of the delegated user info. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
   */
   readonly outputType?: string;
 }
@@ -970,7 +970,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     output_type: cdktn.stringToTerraform(struct!.outputType),
@@ -981,7 +981,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContex
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     output_type: {
@@ -1048,25 +1048,25 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
   /**
   * Default output type for all enabled headers. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
   */
   readonly outputType?: string;
   /**
   * device_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#device_info BeyondcorpSecurityGatewayApplication#device_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#device_info BeyondcorpSecurityGatewayApplication#device_info}
   */
   readonly deviceInfo?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo;
   /**
   * group_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#group_info BeyondcorpSecurityGatewayApplication#group_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#group_info BeyondcorpSecurityGatewayApplication#group_info}
   */
   readonly groupInfo?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo;
   /**
   * user_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#user_info BeyondcorpSecurityGatewayApplication#user_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#user_info BeyondcorpSecurityGatewayApplication#user_info}
   */
   readonly userInfo?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo;
 }
@@ -1074,7 +1074,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolConte
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     output_type: cdktn.stringToTerraform(struct!.outputType),
@@ -1088,7 +1088,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContex
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     output_type: {
@@ -1239,19 +1239,19 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol {
   /**
   * The configuration for the proxy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#allowed_client_headers BeyondcorpSecurityGatewayApplication#allowed_client_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#allowed_client_headers BeyondcorpSecurityGatewayApplication#allowed_client_headers}
   */
   readonly allowedClientHeaders?: string[];
   /**
   * Client IP configuration. The client IP address is included if true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#client_ip BeyondcorpSecurityGatewayApplication#client_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#client_ip BeyondcorpSecurityGatewayApplication#client_ip}
   */
   readonly clientIp?: boolean | cdktn.IResolvable;
   /**
   * Gateway identity configuration. Possible values: ["RESOURCE_NAME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#gateway_identity BeyondcorpSecurityGatewayApplication#gateway_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#gateway_identity BeyondcorpSecurityGatewayApplication#gateway_identity}
   */
   readonly gatewayIdentity?: string;
   /**
@@ -1261,13 +1261,13 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol {
   *   and ".", and SHOULD begin with a letter.
   * > Field values SHOULD contain only ASCII printable characters and tab.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#metadata_headers BeyondcorpSecurityGatewayApplication#metadata_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#metadata_headers BeyondcorpSecurityGatewayApplication#metadata_headers}
   */
   readonly metadataHeaders?: { [key: string]: string };
   /**
   * contextual_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#contextual_headers BeyondcorpSecurityGatewayApplication#contextual_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#contextual_headers BeyondcorpSecurityGatewayApplication#contextual_headers}
   */
   readonly contextualHeaders?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders;
 }
@@ -1275,7 +1275,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol {
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_client_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedClientHeaders),
@@ -1290,7 +1290,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolToTerr
 export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_client_headers: {
@@ -1469,25 +1469,25 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreams {
   /**
   * egress_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#egress_policy BeyondcorpSecurityGatewayApplication#egress_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#egress_policy BeyondcorpSecurityGatewayApplication#egress_policy}
   */
   readonly egressPolicy?: BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy;
   /**
   * external block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#external BeyondcorpSecurityGatewayApplication#external}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#external BeyondcorpSecurityGatewayApplication#external}
   */
   readonly external?: BeyondcorpSecurityGatewayApplicationUpstreamsExternal;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#network BeyondcorpSecurityGatewayApplication#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#network BeyondcorpSecurityGatewayApplication#network}
   */
   readonly network?: BeyondcorpSecurityGatewayApplicationUpstreamsNetwork;
   /**
   * proxy_protocol block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#proxy_protocol BeyondcorpSecurityGatewayApplication#proxy_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#proxy_protocol BeyondcorpSecurityGatewayApplication#proxy_protocol}
   */
   readonly proxyProtocol?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol;
 }
@@ -1495,7 +1495,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreams {
 export function beyondcorpSecurityGatewayApplicationUpstreamsToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     egress_policy: beyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyToTerraform(struct!.egressPolicy),
@@ -1509,7 +1509,7 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsToTerraform(struct?
 export function beyondcorpSecurityGatewayApplicationUpstreamsToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     egress_policy: {
@@ -1690,7 +1690,7 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsList extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application}
 */
 export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResource {
 
@@ -1706,7 +1706,7 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a BeyondcorpSecurityGatewayApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BeyondcorpSecurityGatewayApplication to import
-  * @param importFromId The id of the existing BeyondcorpSecurityGatewayApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BeyondcorpSecurityGatewayApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BeyondcorpSecurityGatewayApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1718,7 +1718,7 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1729,7 +1729,7 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
       terraformResourceType: 'google_beyondcorp_security_gateway_application',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

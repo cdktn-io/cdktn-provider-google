@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/bigquery_dataset
+// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/bigquery_dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,18 +17,18 @@ export interface DataGoogleBigqueryDatasetConfig extends cdktn.TerraformMetaArgu
   * must contain only letters (a-z, A-Z), numbers (0-9), or
   * underscores (_). The maximum length is 1,024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/bigquery_dataset#dataset_id DataGoogleBigqueryDataset#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/bigquery_dataset#dataset_id DataGoogleBigqueryDataset#dataset_id}
   */
   readonly datasetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/bigquery_dataset#id DataGoogleBigqueryDataset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/bigquery_dataset#id DataGoogleBigqueryDataset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/bigquery_dataset#project DataGoogleBigqueryDataset#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/bigquery_dataset#project DataGoogleBigqueryDataset#project}
   */
   readonly project?: string;
 }
@@ -38,7 +38,7 @@ export interface DataGoogleBigqueryDatasetAccessCondition {
 export function dataGoogleBigqueryDatasetAccessConditionToTerraform(struct?: DataGoogleBigqueryDatasetAccessCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -48,7 +48,7 @@ export function dataGoogleBigqueryDatasetAccessConditionToTerraform(struct?: Dat
 export function dataGoogleBigqueryDatasetAccessConditionToHclTerraform(struct?: DataGoogleBigqueryDatasetAccessCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -128,7 +128,7 @@ export interface DataGoogleBigqueryDatasetAccessDatasetDataset {
 export function dataGoogleBigqueryDatasetAccessDatasetDatasetToTerraform(struct?: DataGoogleBigqueryDatasetAccessDatasetDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -138,7 +138,7 @@ export function dataGoogleBigqueryDatasetAccessDatasetDatasetToTerraform(struct?
 export function dataGoogleBigqueryDatasetAccessDatasetDatasetToHclTerraform(struct?: DataGoogleBigqueryDatasetAccessDatasetDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -208,7 +208,7 @@ export interface DataGoogleBigqueryDatasetAccessDataset {
 export function dataGoogleBigqueryDatasetAccessDatasetToTerraform(struct?: DataGoogleBigqueryDatasetAccessDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -218,7 +218,7 @@ export function dataGoogleBigqueryDatasetAccessDatasetToTerraform(struct?: DataG
 export function dataGoogleBigqueryDatasetAccessDatasetToHclTerraform(struct?: DataGoogleBigqueryDatasetAccessDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -289,7 +289,7 @@ export interface DataGoogleBigqueryDatasetAccessRoutine {
 export function dataGoogleBigqueryDatasetAccessRoutineToTerraform(struct?: DataGoogleBigqueryDatasetAccessRoutine): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -299,7 +299,7 @@ export function dataGoogleBigqueryDatasetAccessRoutineToTerraform(struct?: DataG
 export function dataGoogleBigqueryDatasetAccessRoutineToHclTerraform(struct?: DataGoogleBigqueryDatasetAccessRoutine): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -374,7 +374,7 @@ export interface DataGoogleBigqueryDatasetAccessView {
 export function dataGoogleBigqueryDatasetAccessViewToTerraform(struct?: DataGoogleBigqueryDatasetAccessView): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -384,7 +384,7 @@ export function dataGoogleBigqueryDatasetAccessViewToTerraform(struct?: DataGoog
 export function dataGoogleBigqueryDatasetAccessViewToHclTerraform(struct?: DataGoogleBigqueryDatasetAccessView): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -459,7 +459,7 @@ export interface DataGoogleBigqueryDatasetAccess {
 export function dataGoogleBigqueryDatasetAccessToTerraform(struct?: DataGoogleBigqueryDatasetAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -469,7 +469,7 @@ export function dataGoogleBigqueryDatasetAccessToTerraform(struct?: DataGoogleBi
 export function dataGoogleBigqueryDatasetAccessToHclTerraform(struct?: DataGoogleBigqueryDatasetAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -583,7 +583,7 @@ export interface DataGoogleBigqueryDatasetDefaultEncryptionConfiguration {
 export function dataGoogleBigqueryDatasetDefaultEncryptionConfigurationToTerraform(struct?: DataGoogleBigqueryDatasetDefaultEncryptionConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -593,7 +593,7 @@ export function dataGoogleBigqueryDatasetDefaultEncryptionConfigurationToTerrafo
 export function dataGoogleBigqueryDatasetDefaultEncryptionConfigurationToHclTerraform(struct?: DataGoogleBigqueryDatasetDefaultEncryptionConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -658,7 +658,7 @@ export interface DataGoogleBigqueryDatasetExternalCatalogDatasetOptions {
 export function dataGoogleBigqueryDatasetExternalCatalogDatasetOptionsToTerraform(struct?: DataGoogleBigqueryDatasetExternalCatalogDatasetOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -668,7 +668,7 @@ export function dataGoogleBigqueryDatasetExternalCatalogDatasetOptionsToTerrafor
 export function dataGoogleBigqueryDatasetExternalCatalogDatasetOptionsToHclTerraform(struct?: DataGoogleBigqueryDatasetExternalCatalogDatasetOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -739,7 +739,7 @@ export interface DataGoogleBigqueryDatasetExternalDatasetReference {
 export function dataGoogleBigqueryDatasetExternalDatasetReferenceToTerraform(struct?: DataGoogleBigqueryDatasetExternalDatasetReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -749,7 +749,7 @@ export function dataGoogleBigqueryDatasetExternalDatasetReferenceToTerraform(str
 export function dataGoogleBigqueryDatasetExternalDatasetReferenceToHclTerraform(struct?: DataGoogleBigqueryDatasetExternalDatasetReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -815,7 +815,7 @@ export class DataGoogleBigqueryDatasetExternalDatasetReferenceList extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/bigquery_dataset google_bigquery_dataset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/bigquery_dataset google_bigquery_dataset}
 */
 export class DataGoogleBigqueryDataset extends cdktn.TerraformDataSource {
 
@@ -831,7 +831,7 @@ export class DataGoogleBigqueryDataset extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleBigqueryDataset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBigqueryDataset to import
-  * @param importFromId The id of the existing DataGoogleBigqueryDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/bigquery_dataset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleBigqueryDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/bigquery_dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBigqueryDataset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -843,7 +843,7 @@ export class DataGoogleBigqueryDataset extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/data-sources/bigquery_dataset google_bigquery_dataset} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/bigquery_dataset google_bigquery_dataset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -854,7 +854,7 @@ export class DataGoogleBigqueryDataset extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_bigquery_dataset',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.35.0',
+        providerVersion: '7.36.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

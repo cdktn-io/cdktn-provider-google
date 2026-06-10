@@ -4,7 +4,7 @@
 
 ### BinaryAuthorizationAttestor <a name="BinaryAuthorizationAttestor" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor google_binary_authorization_attestor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor google_binary_authorization_attestor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer"></a>
 
@@ -46,8 +46,8 @@ binaryAuthorizationAttestor.BinaryAuthorizationAttestor(
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.description">description</a></code> | <code>str</code> | A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts">BinaryAuthorizationAttestorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 attestation_authority_note block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
 
 ---
 
@@ -145,7 +145,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#deletion_policy BinaryAuthorizationAttestor#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#deletion_policy BinaryAuthorizationAttestor#deletion_policy}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -174,7 +174,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
 
 ---
 
@@ -596,7 +596,7 @@ An attestation by this attestor is stored as a Container Analysis
 ATTESTATION_AUTHORITY Occurrence that names a container image
 and that links to this Note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#note_reference BinaryAuthorizationAttestor#note_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#note_reference BinaryAuthorizationAttestor#note_reference}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -608,7 +608,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 
 public_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
 
 ---
 
@@ -626,7 +626,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}.
 
 ---
 
@@ -634,7 +634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}.
 
 ---
 
@@ -642,7 +642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}.
 
 ---
 
@@ -790,7 +790,7 @@ The construct id used in the generated config for the BinaryAuthorizationAttesto
 
 The id of the existing BinaryAuthorizationAttestor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1178,7 +1178,7 @@ An attestation by this attestor is stored as a Container Analysis
 ATTESTATION_AUTHORITY Occurrence that names a container image
 and that links to this Note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#note_reference BinaryAuthorizationAttestor#note_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#note_reference BinaryAuthorizationAttestor#note_reference}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1194,7 +1194,7 @@ public_keys: IResolvable | typing.List[BinaryAuthorizationAttestorAttestationAut
 
 public_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
 
 ---
 
@@ -1234,7 +1234,7 @@ ascii_armored_pgp_public_key: str
 
 ASCII-armored representation of a PGP public key, as the entire output by the command 'gpg --export --armor foo@example.com' (either LF or CRLF line endings). When using this field, id should be left blank. The BinAuthz API handlers will calculate the ID and fill it in automatically. BinAuthz computes this ID as the OpenPGP RFC4880 V4 fingerprint, represented as upper-case hex. If id is provided by the caller, it will be overwritten by the API-calculated ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#ascii_armored_pgp_public_key BinaryAuthorizationAttestor#ascii_armored_pgp_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#ascii_armored_pgp_public_key BinaryAuthorizationAttestor#ascii_armored_pgp_public_key}
 
 ---
 
@@ -1248,7 +1248,7 @@ comment: str
 
 A descriptive comment. This field may be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#comment BinaryAuthorizationAttestor#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#comment BinaryAuthorizationAttestor#comment}
 
 ---
 
@@ -1269,7 +1269,7 @@ field exactly. Additional restrictions on this field can
 be imposed based on which public key type is encapsulated.
 See the documentation on publicKey cases below for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1286,7 +1286,7 @@ pkix_public_key: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPk
 
 pkix_public_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#pkix_public_key BinaryAuthorizationAttestor#pkix_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#pkix_public_key BinaryAuthorizationAttestor#pkix_public_key}
 
 ---
 
@@ -1322,7 +1322,7 @@ public_key_pem: str
 
 A PEM-encoded public key, as described in 'https://tools.ietf.org/html/rfc7468#section-13'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#public_key_pem BinaryAuthorizationAttestor#public_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#public_key_pem BinaryAuthorizationAttestor#public_key_pem}
 
 ---
 
@@ -1341,7 +1341,7 @@ match the structure and any object identifiers encoded in
 publicKeyPem (i.e. this algorithm must match that of the
 public key).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#signature_algorithm BinaryAuthorizationAttestor#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#signature_algorithm BinaryAuthorizationAttestor#signature_algorithm}
 
 ---
 
@@ -1385,8 +1385,8 @@ binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig(
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.name">name</a></code> | <code>str</code> | The resource name. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.description">description</a></code> | <code>str</code> | A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts">BinaryAuthorizationAttestorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1471,7 +1471,7 @@ attestation_authority_note: BinaryAuthorizationAttestorAttestationAuthorityNote
 
 attestation_authority_note block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#attestation_authority_note BinaryAuthorizationAttestor#attestation_authority_note}
 
 ---
 
@@ -1485,7 +1485,7 @@ name: str
 
 The resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#name BinaryAuthorizationAttestor#name}
 
 ---
 
@@ -1506,7 +1506,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#deletion_policy BinaryAuthorizationAttestor#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#deletion_policy BinaryAuthorizationAttestor#deletion_policy}
 
 ---
 
@@ -1520,7 +1520,7 @@ description: str
 
 A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#description BinaryAuthorizationAttestor#description}
 
 ---
 
@@ -1532,7 +1532,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#id BinaryAuthorizationAttestor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1547,7 +1547,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#project BinaryAuthorizationAttestor#project}.
 
 ---
 
@@ -1561,7 +1561,7 @@ timeouts: BinaryAuthorizationAttestorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#timeouts BinaryAuthorizationAttestor#timeouts}
 
 ---
 
@@ -1583,9 +1583,9 @@ binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}. |
 
 ---
 
@@ -1597,7 +1597,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#create BinaryAuthorizationAttestor#create}.
 
 ---
 
@@ -1609,7 +1609,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#delete BinaryAuthorizationAttestor#delete}.
 
 ---
 
@@ -1621,7 +1621,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#update BinaryAuthorizationAttestor#update}.
 
 ---
 
@@ -2416,7 +2416,7 @@ def put_pkix_public_key(
 
 A PEM-encoded public key, as described in 'https://tools.ietf.org/html/rfc7468#section-13'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#public_key_pem BinaryAuthorizationAttestor#public_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#public_key_pem BinaryAuthorizationAttestor#public_key_pem}
 
 ---
 
@@ -2431,7 +2431,7 @@ match the structure and any object identifiers encoded in
 publicKeyPem (i.e. this algorithm must match that of the
 public key).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.35.0/docs/resources/binary_authorization_attestor#signature_algorithm BinaryAuthorizationAttestor#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/binary_authorization_attestor#signature_algorithm BinaryAuthorizationAttestor#signature_algorithm}
 
 ---
 
